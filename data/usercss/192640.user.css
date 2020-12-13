@@ -2,8 +2,8 @@
 @name           Binance Dark Theme
 @namespace      USO Archive
 @author         Reza Rahemtola
-@description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard and Binance Earn.`
-@version        2020128.19.59
+@description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, Announcement articles and more.`
+@version        20201212.15.47
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -135,7 +135,7 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 /* Binance Earn - Lending */
 .css-1nj9vj, .css-ovbogu{ background-color: #202020 !important;}
 .css-q9a5yv{ color: rgb(240, 185, 11);}
-.css-snz0yf input{ color: #fff !important;}
+.css-snz0yf input, p.css-13v5dao, h2.css-1eaze7k{ color: #fff !important;}
 .css-1yef746 input{ color: #000 !important;}
 
 
@@ -156,7 +156,7 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 
 
 /* Announcement articles */
-.css-3fpgoh, .css-e7d7y6, .css-1ezl0c{ color: #fff !important;}
+.css-3fpgoh, .css-e7d7y6, .css-1ezl0c, .css-mm1dbi{ color: #fff !important;}
   
   
   /* ETH 2.0 Stacking page */

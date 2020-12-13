@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sef Eiba
 @description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area alongside various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ Important note: for Firefox users whom experiencing some animation lag, make sure to go to Customize Settings and select Firefox on the Browser option♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page. You can also change various settings.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        20201212.8.38
+@version        20201212.20.39
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown background "Duel Background Image" {
@@ -987,54 +987,12 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
   */
   /*testing*/
   
-  #game-rps-first {
-      all: unset;
-      background-image: url(https://rawcdn.githack.com/sefeiba/duelingnexus/ddaabe4208012b92090a7ea66bc1fe1b79698c7a/rps/DN_-_Go_First.png);
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      /* put the height and width of your image here */
-      height: 200px;
-      width: 200px;
-      border: none;
-      color:rgba(0, 0, 0, 0);
-      cursor: pointer;
-  }
-
-  #game-rps-second {
-      all: unset;
-      background-image: url(https://rawcdn.githack.com/sefeiba/duelingnexus/ddaabe4208012b92090a7ea66bc1fe1b79698c7a/rps/DN_-_Go_Second.png);
-      background-repeat: no-repeat;
-      background-position: 50% 50%;
-      /* put the height and width of your image here */
-      height: 200px;
-      width: 200px;
-      border: none;
-      color:rgba(0, 0, 0, 0);
-      cursor: pointer;
-  }
-
-  #game-rps-rock, #game-rps-paper, #game-rps-scissors {
-      background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/ddaabe4208012b92090a7ea66bc1fe1b79698c7a/rps/DN_-_Rock.png) no-repeat;
-      box-sizing: border-box;
-      width: 200px;
-      height: 200px;
-      padding-bottom: 200px;
-  }
-
-  #game-rps-paper {
-      background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/ddaabe4208012b92090a7ea66bc1fe1b79698c7a/rps/DN_-_Paper.png) no-repeat;
-      box-sizing: border-box;
-      width: 200px;
-      height: 200px;
-      padding-bottom: 200px;
-  }
-
-  #game-rps-scissors {
-      background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/ddaabe4208012b92090a7ea66bc1fe1b79698c7a/rps/DN_-_Scissor.png) no-repeat;
-      box-sizing: border-box;
-      width: 200px;
-      height: 200px;
-      padding-bottom: 200px;
+  #game-rps-first, #game-rps-second {
+    backdrop-filter: none !important;
+    width: 15vw;
+    border-radius: 10px;
+    margin: 6px;
+    min-height: 32px;
   }
 
   #game-rps-container {

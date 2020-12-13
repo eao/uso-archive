@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         LonelyPsycho
 @description    `☉关于作者​	作者并非专业前端人员，仅自学过一段时间css，因为无法接受百度轻因为百度更新影响导致的界面崩溃，故尝试修改。​	可能代码质量并不能和真正的前端人员相比，但是我依旧在尽力去学习CSS这个语言，也希望再未来可以将更好的视觉体验带给大家。​	作者同时为一名高三学生，需要参加2021届的高考，时间有限，如果出现新的bug可能并不能及时更新，请见谅。​	顺便再打个广告，https://github.com/zhuozhiyongde/Alfred_HeWeather_Workflow，这是我自己写的一个Alfred查询天气的workflow，如果有mac用户有这方面的需求可以下载哦~☉关于反馈​	Stylish反馈太垃圾了，新建了一个石墨文档，如果有意见/需求请到此反馈：https://shimo.im/docs/YgJ9grYK8kvRwYjK☉关于代码​	本代码依托Baidu Lite构筑，加入了相当一部分的我自己的代码，以适应百度样式的更新/加入新功能/融合我的理解。​	本代码开源，且允许自行修改、构筑新的分支。​	部分代码来自于@CWorld的Pure Baidu，也是一个很棒的百度样式，不仅支持搜索界面还支持其他百度站点，推荐下载（如果觉得他的更好就不用下这个了）​	部分代码改编自Baidu Lite，再次致谢@pan_cao。`
-@version        2020108.16.1
+@version        20201212.15.14
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -158,6 +158,7 @@
 	#container.sam_newgrid {
 		margin-left: 0px !important;
 		margin-top: 20px !important;
+		padding-left: 0px !important;
 	}
 	
 	/*清空搜索结果原有样式*/
@@ -176,11 +177,11 @@
 	
 	/*②美化搜索结果*/
 	/*调整卡片样式*/
-	.c-container, .dl, #op_wiseapp_td {
-		border: 1px solid #EEE;
-		line-height: 1.65;
-		background: #fff;
-		border-radius: 3px;
+	.c-container, .dl, #op_wiseapp_td, .c-border.ec-pl-container {
+		border: 1px solid #EEE !important;
+		line-height: 1.65 !important;
+		background: #fff !important;
+		border-radius: 3px !important;
 		padding: 25px !important;
 		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
 		width: 560px !important;
@@ -318,6 +319,10 @@
 		box-shadow: none !important;
 	}
 	
+	#content_left .c-border.ec-pl-container {
+		box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14) !important;
+	}
+	
 	/*百度经验样式恢复*/
 	.c-result-content article {
 		padding: 0px;
@@ -333,9 +338,9 @@
 	}
 	
 	/*搜索结果悬浮动态*/
-	.c-container:hover {
+	.c-container:hover, #content_left .c-border.ec-pl-container:hover {
 		transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
-		box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px !important;
 	}
 	
 	/*百度搜图悬浮放大取消*/
@@ -525,6 +530,11 @@
 		border-radius: 10px;
 		margin: 10px auto;
 		background: rgba(255, 255, 255, 0.8) !important;
+	}
+	
+	/*授时*/
+	.op-beijingtime-background {
+		width: 100%;
 	}
 	
 	/*⑥滚动条等控件伪类更改样式*/
@@ -814,7 +824,7 @@
 	/*设置横标伪类*/
 	#s_tab b:after {
 		border-bottom: 1px solid #4e6ef2;
-		border-radius: 15px 15px 0 0 !important;
+		border-radius: 150px !important;
 		margin-top: 1px !important;
 	}
 	
@@ -996,6 +1006,9 @@
 		margin-right: 0px !important;
 	}
 	
+	.wrapper_new .page-inner{
+		width:100%;
+	}
 	.page-inner {
 		text-align: center;
 		padding: 7px 0px 20px 0px !important;
@@ -1141,7 +1154,7 @@
 @-moz-document domain("zhidao.baidu.com")
 {
 	/*隐藏侧边栏、底栏等无关元素*/
-	#qb-side, .wgt-union-bottom, #js-accuse, .task-list-button, .task-panel, .open-box-shadow-show, .wgt-footer-new, .jump-top-box .jump-goto-star, .nav-menu-container, #answer-bar::after, .question-number-text-chain, .level-rank, .wgt-replyer-all-slogan, .wgt-replyer-all-follow, .bottom-dashed-line, .aside-list, .channel.grid, .level-rank-content, .level-rank-container, .adTopImg, .iknow-icons.wgt-header-title-btn, .exp-topwld-tip, .footer-help {
+	#qb-side, .wgt-union-bottom, #js-accuse, .task-list-button, .task-panel, .open-box-shadow-show, .wgt-footer-new, .jump-top-box .jump-goto-star, .nav-menu-container, #answer-bar::after, .question-number-text-chain, .level-rank, .wgt-replyer-all-slogan, .wgt-replyer-all-follow, .bottom-dashed-line, .aside-list, .channel.grid, .level-rank-content, .level-rank-container, .adTopImg, .iknow-icons.wgt-header-title-btn, .exp-topwld-tip, .footer-help,.EC_ads_container,.EC_ads_listborder,.wgt-ads{
 		display: none !important;
 	}
 	
@@ -1200,7 +1213,10 @@
 		transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
 		box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 6px, rgba(0, 0, 0, 0.117647) 0px 1px 4px;
 	}
-	
+	/*隐藏无聊的置顶元素*/
+	.wgt-best-operator.fixed,.wgt-answers-operator.fixed{
+		display: none;
+	}
 	.answer-fold, .answer-hide {
 		display: none;
 	}
@@ -1257,8 +1273,8 @@
 	/*格式化搜索框*/
 	.search-box-new .hdi, .newsearch .search-box-new .hdi {
 		width: 558px !important;
-		height: 36px;
-		padding: 0!important;
+		height: 36px !important;
+		padding: 0 !important;
 		background-color: #fff;
 		border: none;
 		border-radius: 3px;
@@ -1420,7 +1436,7 @@
 
 @-moz-document url("https://zhidao.baidu.com")
 {
-	.nav-menu-container {
+	.nav-menu-container,.ui-autocomplete{
 		display: none !important;
 	}
 	

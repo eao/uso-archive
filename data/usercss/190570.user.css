@@ -2,8 +2,8 @@
 @name           ニコ生(Re) ダークテーマ(Niconico Live Dark Theme)
 @namespace      USO Archive
 @author         Azuma
-@description    `ニコ生のダークテーマです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています。放送用ページは使ってないし使ってる人がいるのかよくわからないので手を着けてません。広告は目に見える部分だけとりあえず除去しました。動作はChromeとFirefoxで確認しています。何か要望等あれば<a href="https://twitter.com/WATANUKI_AZUMA">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>（どなたでも利用いただける設定にしています）にお願いします。--修正済み不具合--・ニコニ広告ページがおかしい→ニコニ広告ページのダークテーマ化で対処--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
-@version        2020126.12.18
+@description    `ニコ生のダークテーマです（ついでにニコニ広告ページもダーク化しています）。ChromeとFirefoxで動作確認済みです、同系統のブラウザであれば基本的に問題はないはずです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています（なっていない場所があればマシュマロにご報告いただければ可能な範囲で対応します）。その他なにかあれば<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion" target="_blank" rel="noopener">マシュマロ</a>にお願いします。--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
+@version        20201212.17.51
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -193,6 +193,8 @@ body{
     background-color: #333;
     border: solid 2px #5a5a5a;
 }
+  
+.___site-header___3BZ6_ [class*=___search-form___]:hover [class*=___search-button___], .___site-header___3BZ6_ [class*=___search-form___]:hover [class*=___text-box___]{background-color: #888;}
 
 /* フォロー中の番組 */
 .___program-card___2_Exo{
@@ -238,10 +240,9 @@ body{
 .___item___3IrXi{border-top: 1px solid #6f6f6f;}
 
 .___description___1jHOS a{color: #3f97d6 !important}
-  
-/* フォローボタン */  
-.___toggle-button___VC3MN[aria-pressed=true]{background-color: #a9a9a9;color: #616161 !important;border: 2px solid #5f5f5f;}
 
+/* フォローボタン */
+.___toggle-button___VC3MN[aria-pressed=true]{background-color: #a9a9a9;color: #616161 !important;border: 2px solid #5f5f5f;}
 
 /*コメント入力欄の説明してる文字色*/
 input::placeholder{
@@ -271,6 +272,10 @@ li a:hover{
 /* コメント欄上広告のプロモーション吹き出し */
 .___promotion-balloon___UsNYE,.___promotion-balloon___UsNYE:before{background-color: #585858;}
 
+/* 詳細設定タブ */
+.___player-setting-view___1fMCm{background-color: #4a4a4a;border: solid 1px #2b2b2b;}
+.___header___3LzXR{background-color: #444;}
+.___content___l4fUf,.___player-screen-size-menu-button-field___2gb6o,.___player-performance-setting-menu___ORz3p{color: #ddd;}
 
 /*ソーシャルボタンまわり*/
 
@@ -286,39 +291,33 @@ li a:hover{
 /* 文字設定 */
 h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc,.___description___3aLzk{
     font-weight:800;
-    font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
     text-decoration: none;
     color: #ccc !important; 
     border: inset 0px #222742 !important;
 }
-.___table-row___27ghe[data-comment-type=operator] .___comment-text___2cPL0{
-    color: #23ca6f !important;
-}
-.___body___2BWU6{
-    color: #eee !important;
-}
+.___table-row___27ghe[data-comment-type=operator] .___comment-text___2cPL0{color: #23ca6f !important;}
+.___body___2BWU6{color: #eee !important;}
 
 /*ヘッダーまわり*/
-.common-header-15gxh1a, .common-header-1cuw74j, .common-header-5onxr7, .common-header-zz80x3, .common-header-1gq7o6w{
-    background-color: #666 !important
-} 
-.common-header-xp52wl:hover,.common-header-1cuw74j:hover, .common-header-5onxr7:hover, .common-header-zz80x3:hover, .common-header-1gq7o6w:hover{
-    background-color: #2b2b2b !important
-}
+.common-header-15gxh1a, .common-header-1cuw74j, .common-header-5onxr7, .common-header-zz80x3, .common-header-1gq7o6w{background-color: #666 !important} 
+.common-header-xp52wl:hover,.common-header-1cuw74j:hover, .common-header-5onxr7:hover, .common-header-zz80x3:hover, .common-header-1gq7o6w:hover{background-color: #2b2b2b !important}
 
-.common-header-r1rgum, .common-header-vhrjlg{
-    display: none
-}
+.common-header-r1rgum, .common-header-vhrjlg{display: none}
 
-.nico-CommonHeaderRoot .common-header-cvcm83 > *{
-    border-top: 1px solid rgb(85, 85, 85) !important
-}
-.nico-CommonHeaderRoot .common-header-zz80x3{
-    border-bottom: 1px solid rgb(85, 85, 85) !important
-}
-.nico-CommonHeaderRoot .common-header-1kfkrjf{
-    margin: 0px 0px 0px
-}
+.nico-CommonHeaderRoot .common-header-cvcm83 > *{border-top: 1px solid rgb(85, 85, 85) !important}
+.nico-CommonHeaderRoot .common-header-zz80x3{border-bottom: 1px solid rgb(85, 85, 85) !important}
+.nico-CommonHeaderRoot .common-header-1kfkrjf{margin: 0px 0px 0px}
+
+.nico-CommonHeaderRoot .common-header-105n2rz,.nico-CommonHeaderRoot .common-header-kolmxm,.nico-CommonHeaderRoot .common-header-1swev0c{background-color: #666;}
+.nico-CommonHeaderRoot .common-header-abyv5k,.nico-CommonHeaderRoot .common-header-kolmxm,.nico-CommonHeaderRoot .common-header-ey0i79{color: #ddd}
+.nico-CommonHeaderRoot .common-header-1swev0c:hover{background-color: #2b2b2b;}
+.nico-CommonHeaderRoot .common-header-2cl2ey,.nico-CommonHeaderRoot .common-header-uruoug{background-color: rgb(66, 66, 66);}
+.nico-CommonHeaderRoot .common-header-9l26sq{color: #ccc;}
+
+.common-header-sig2g>svg>path{fill:#eee !important}
+
+/* ギフトタブ周辺border色 */
+.___rich-view-status___3mt-b{border: 1px solid #2b2b2b;}
 
 
 /*削除する要素*/
@@ -336,6 +335,12 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 }
 }
 
+@-moz-document url-prefix("https://live.nicovideo.jp/history") {
+    /* 生放送視聴履歴 */
+    body{background: #353535;}
+    .container{background: #303030;}
+}
+
 @-moz-document url-prefix("https://nicoad.nicovideo.jp/") {
 /*ニコニ広告部分*/
 
@@ -343,7 +348,6 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 h1,h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,legend,hr,img,em,
   ins,del,cite,abbr,acronym,sup,sub,dfn,code,var,samp,kbd,b,i, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.more > a[data-v-4690f66a],figcaption,.text[data-v-1ac11be7],.headline > h2[data-v-8ba5a13c],.text > h2[data-v-3f6c3ee1],.opener[data-v-1d3d7103]{
     font-weight:800;
-    font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
     text-decoration: none;
     color: #ccc !important; 
     border: inset 0px #222742 !important;
@@ -353,23 +357,23 @@ h1,h3,h4,h5,h6,p,blockquote,pre,table,th,tr,td,ul,ol,li,dl,dt,dd,form,fieldset,l
 .item[data-v-c3f70850] > a{color:#ccc}
 .beginner-button{color:#5b65a5 !important}
 
-.header-bar[data-v-0d10b35d],.nicoad-conductor-carousel[data-v-7044b6a3]{
-    background-color: #3c3c3c !important
-}
-.tab-bar[data-v-0b4aebf6]{
-    background-color: #555;
-    margin-top: -1px;
-}
-.parent-container[data-v-4a7dbe18]{
-    background-color: #555
-}
-.item-button[data-v-1c138322]{
-    background-color: #555;
-    border: 2px solid #252525;
-}
-html{
-    background: #555
-}
+body{color: #ddd;}
+html{background: #555;}
+
+/* たぶんギフトタブ */
+.header-bar[data-v-0d10b35d],.nicoad-conductor-carousel[data-v-7044b6a3],.nage-user-profile[data-v-0c946432]{background-color: #3c3c3c !important}
+.header-bar[data-v-0d10b35d]{border-bottom: 1px solid rgb(62 62 62);}
+.tab-bar[data-v-0b4aebf6]{background-color: #555;margin-top: -1px;}
+.parent-container[data-v-4a7dbe18]{background-color: #555}
+.rich-view-tab-bar > ul > li > button[aria-selected="true"][data-v-2da0b2a0]{background-color: rgb(51, 51, 51);color: #f1f1f1 !important;}
+.rich-view-tab-bar > ul > li > button[data-v-2da0b2a0]{color: rgb(208, 208, 208);background-color: rgb(93, 93, 93);}
+.rich-view-drawer-transition[data-v-153b7996]{background-color: #464646;}
+.rich-view-tab-bar[data-v-2da0b2a0]{background-color: rgb(70, 70, 70);}
+.visual-conductor[data-v-2c914fec]{border: 4px solid rgb(109, 109, 109);}
+
+.item-button[data-v-1c138322]{background-color: #bbb;border: 2px solid #252525;}
+.container[data-v-2288cd18]{background-color: rgb(45, 45, 45);}
+
 
 /* 画面上部 */
 .nicoad-main-visual[data-v-9e32e95c]{
@@ -400,6 +404,7 @@ html{
     background-color: linear-gradient(#4f4f4f,#5b5b5b 10%,#595959 80%,#4f4f4f);
 }
 .c3-axis text{fill: #fdfdfd;}
+
 .currently-advertising[data-v-3351af76]{color: #313131 !important;background-color: rgba(48, 142, 48, 0.8);}
 p > [data-v-3351af76]{color: #ddd !important;}
 .publish-type-label[data-v-174af068]{color: #4f4f4f !important;}
@@ -419,6 +424,7 @@ p > [data-v-3351af76]{color: #ddd !important;}
 .result-content[data-v-3351af76]{background-image: linear-gradient(#393939,#404040 10%,#3e3e3e 80%,#4a4a4a);}
 .result-content[data-v-3351af76]::before{border-top: #868686;}
 
+
 /* チケットページ */
 .items > dt > span[data-v-f25416d8]{background-image: linear-gradient(#464646 50%,#464646 50.1%);}
 .items > dt > span[data-v-f25416d8]::after{background-image: linear-gradient(-135deg,#686868 50%,#656668 50.1%);}
@@ -432,7 +438,25 @@ p > [data-v-3351af76]{color: #ddd !important;}
 	background: radial-gradient(farthest-corner at center bottom,hsla(0, 0%, 44.3%, 0.6),hsla(0, 0%, 23.5%, 0.51)) no-repeat 50% 100%/20% 0;
 }
 
+/* 広告設定時ポップアップ */
+.publish-contributor-info[data-v-56d8a92e],.publish-entrance[data-v-7714524f]{background-color: #252525;}
+.tab-target[data-v-56d8a92e]{background-color: #404040;box-shadow: 0 0 8px #696969;}
+.user-info[data-v-621cbd12]:not(:disabled){color: #62ab44;}
+.publish-frame-grade-visualizer[data-v-8b2307a8]{background-image: radial-gradient(ellipse at center top,#c3c3c3,#383838);}
+.info dt>small[data-v-72ae8949],.info dt>strong[data-v-72ae8949],.info dd[data-v-72ae8949]{color: #2f2f2f;}
 
+.modal-wrapper[data-v-3aa22a35]{background-color:hsl(0deg 0% 30% / 80%)}
+
+@media (max-width: 1023px) {
+    .modal-wrapper[data-v-3aa22a35]{background-color:#383838}
+    .modal-header[data-has-title][data-v-3aa22a35]{background-color: hsl(0deg 0% 16%);}
+}
+
+.name[data-v-3ed7e338],.empty[data-v-3ed7e338]{color: #ddd;}
+.choice[data-warn][data-v-3ed7e338]{color: #ff8508 !important;} /* 期限切れ近いチケット */
+@media (hover:hover) {
+    .choice[aria-selected=false][data-v-3ed7e338]:hover{background-color: #696969;}
+}
 
 
 .help-button[data-color-scheme="portal"] circle[data-v-6b25ead6]{fill:#979797;}
@@ -442,8 +466,22 @@ p > [data-v-3351af76]{color: #ddd !important;}
 /* SVG */
 .more > a > svg[data-v-4690f66a]{fill:#ccc}
 path[data-v-6b25ead6]{fill:#3e3e3e !important;}
-  /* グラフのダークテーマ化 うまくいかないのでコメントアウト
+/* グラフのダークテーマ化 うまくいかないのでコメントアウト
 .c3-shape .c3-shape-0 .c3-bar .c3-bar-0{
 	stroke: rgb(67,112,176) !important;
 	fill: rgb(67,112,176) !important;} */
+}
+
+@-moz-document url-prefix("https://emotion.nicovideo.jp/play/") {
+/* エモーションタブ */
+.wrapper[data-v-fee511b8],.header-bar[data-v-0d10b35d],.conductor-bar[data-v-53e2fb32]{background-color: #4c4c4c;}
+.header-bar[data-v-0d10b35d]{border: 1px solid rgb(53, 53, 53);}
+body{background-color: rgb(84, 84, 84);}
+.emotion-history-list[data-v-49e4e5d0]{background-color:rgba(88, 88, 88, 0.95) ;}
+
+body,.title-column[data-v-0d10b35d]{color: #ddd;}
+
+a{color: rgb(110, 222, 114);}
+.___close-button___2olJ->svg>path{fill: #c5c5c5;}
+
 }

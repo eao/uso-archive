@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         flatron4eg
 @description    `Fresh look for one of the popular torrent trackers in CIS - rutor.`
-@version        20201211.13.50
+@version        20201212.14.15
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -82,8 +82,8 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 b {color:#6d7175;}
-a, .fake_link, div#down a, a>b {color: #000; font-weight: 900; text-decoration: none}
-a:hover, .fake_link:hover, div#down a:hover, a>b:hover {color:#ee7534; text-decoration: none !important}
+a, .fake_link, div#down a, a>b, #bolder a {color: #000; font-weight: 900; text-decoration: none}
+a:hover, .fake_link:hover, div#down a:hover, a>b:hover, #bolder a:hover {color:#ee7534; text-decoration: none !important}
 td {font-size: 14px}
 
 * {font-family: 'Montserrat', sans-serif !important;}
@@ -219,6 +219,7 @@ table#files td {border: 0; padding:4px 40px; font-size:14px; font-weight: bold; 
 .hidehead:hover {background:#ecedf2 !important}
 .hidehead:before {content:"\f067"; font-family:"Font Awesome 5 Free"; margin-right:10px}
 .hidebody {border: 0; background:#f7f8fc; padding:12px 26px; border-radius: 0 0 14px 14px; padding-top: 0}
+.hidebody::before {clear: both;content: "";display: table; height: 0;}
 .hidebody img {max-width: 100%}
 .hidehead[style='background-image: url("data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw==");'] {border-radius: 14px 14px 0 0}
 .hidehead[style='background-image: url("data:image/gif;base64,R0lGODlhCQAJAMQeAOLt+ff8//z+/4CRxo2by7vF6a254X6PxICQw87a74CQxuXo84CQxM/b7/H6/v7+/oGRxouayoGSxv7+/8LN7IqZyv7//4KSxur0/MrV74OTx9Ld8trl9gwMDP///wAAACH5BAEAAB4ALAAAAAAJAAkAAAU4oFcpwzFAkWgUVLZxCQGxLgdgGtS+t6NJmY5QOEFcNo/kZGLRXGwYR0DQjDSiU8uCIJJIGJdLKgQAOw==");']:before {content: '\f068'}
