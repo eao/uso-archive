@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sef Eiba
 @description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area alongside various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ Important note: for Firefox users whom experiencing some animation lag, make sure to go to Customize Settings and select Firefox on the Browser option♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page. You can also change various settings.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        20201212.20.39
+@version        20201214.3.8
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown background "Duel Background Image" {
@@ -987,12 +987,18 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
   */
   /*testing*/
   
+  #game-loading-text, #game-result-container > p {
+    margin-top: 5vh;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0) 100%);
+  }
+  
   #game-rps-first, #game-rps-second {
     backdrop-filter: none !important;
     width: 15vw;
     border-radius: 10px;
     margin: 6px;
-    min-height: 32px;
   }
 
   #game-rps-container {

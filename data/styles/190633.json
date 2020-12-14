@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "telex",
     "createdAt": "2020-10-12T07:30:05.000Z",
-    "updatedAt": "2020-10-12T07:45:03.000Z",
+    "updatedAt": "2020-12-14T07:22:39.000Z",
     "license": "CC0-1.0",
     "author": {
       "id": 1045721,
@@ -16,7 +16,7 @@
   },
   "stats": {
     "installs": {
-      "total": 1,
+      "total": 10,
       "weekly": 1
     }
   },
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document url-prefix(\"https://telex.hu\") {\r\n    html {\r\n        background-color: #272822;\r\n        color: #dfdfdf;\r\n    }\r\n\r\n    .article_title {\r\n        color: #cfcfff;\r\n    }\r\n\r\n    .article_cat {\r\n        background-color: #474842;\r\n    }\r\n}"
+    "css": "@-moz-document url-prefix(\"https://telex.hu\") {\r\nhtml, body, body.index-page {\r\n    background-color: #272822;\r\n    color: #dfdfdf;\r\n}\r\n\r\n.article_title, .article_date, .cover_image_text, .article_tags a {\r\n    color: #cfcfff;\r\n}\r\n\r\n.article_cat,\r\n.single-article .article-html-content figure.image figcaption, .single-article .ck figure.image figcaption\r\n{\r\n    background-color: #474842;\r\n    color: #dfdfdf;\r\n}\r\n\r\nnav.nav, .social-icon-wrapper {\r\n    background-color: #c7c8c2;   \r\n}\r\n}"
   }
 }

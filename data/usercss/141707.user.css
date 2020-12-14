@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Oploverz Minima v1.1
+@name           Oploverz Minima v1.2
 @namespace      USO Archive
 @author         sourmilk
-@description    `Oploverz Minima v1.1 - Created by Sourmilk`
-@version        2018316.6.10
-@license        NO-REDISTRIBUTION
+@description    `Updated on December 14, 2020Oploverz Minima v1.2 - Created by sourmilk`
+@version        20201214.6.4
+@license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.oploverz.in") {
-#eyeDiv, .text-share, #innity-in-post, #wc-comment-header, #sidebar, .recommended, .box, .strip, .headads, #btm_banner, .boxed .left, center iframe, #sidebar .section:nth-child(3), #sidebar .section:nth-child(4), #sidebar .section:nth-child(5), #sidebar .section:nth-child(6) {display:none !important;}
+#eyeDiv, .text-share, #innity-in-post, #wc-comment-header, #sidebar, .recommended, .box, .strip, .headads, #btm_banner, .boxed .left, center iframe, #sidebar .section:nth-child(3), #sidebar .section:nth-child(4), #sidebar .section:nth-child(5), #sidebar .section:nth-child(6), #sgpb-popup-dialog-main-div-wrapper, .sgpb-popup-overlay, #wpd-bubble-wrapper, #ctr_banner, iframe[__idm_frm__], a[title=" 1xbet "] {display:none !important;visibility: hidden!important;}
 .postbody .boxed .right .lts {float: none;width: auto;}
 .postbody .boxed .right .lts ul li .dtl {width: auto;float: none;padding-left: 155px;}
 .postbody {width: 100%;float: none;margin-right: 0;}
