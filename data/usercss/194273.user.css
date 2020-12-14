@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         l_kasik
 @description    `!!! THIS STYLE MAY NOT FUNCTION PROPERLY WITHOUT DARK MODE ON !!!This theme is mostly made of other themes i found on here. Every one of them is credited in the CSS.`
-@version        20201212.14.37
+@version        20201213.17.20
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1174,3 +1174,4 @@ a.btn-common-play-game-lg {
     {
     background-image: url(https://i.vgy.me/fx7P1L.jpg);
     }
+    /*Avatar Shop Creator Names Not Showing Bug Fix*/

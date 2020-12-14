@@ -3,12 +3,11 @@
 @namespace      USO Archive
 @author         tyf
 @description    `白底黑字佈景專用，這版面最低瀏覽寬度 1250px，不適用於低解析螢幕.隨寬度拉大，字體也會稍微放大一點，避免用高解析螢幕時字體太小.上方板塊選單、右方側欄 會自動隱藏，少佔版面.按鈕選單互動，文章列表色彩區分，內容大圖完整呈現.Windows 用戶，建議下載 Mac 的蘋方體字型來用，取代微軟正黑體`
-@version        20201029.12.58
+@version        20201213.13.3
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.mobile01.com") {
-
 /*
 	========== 廣告 ==========
 	這一段擋廣告的語法會拖慢效能
@@ -61,6 +60,7 @@ article,
 .c-articleCard--small .c-articleCard__desc,
 .l-jumpList li a,
 .l-jumpList li span,
+.c-tabNav__wrap>li a,
 .o-fMini,
 .o-hashtag.is-mini {
 	font-size: calc(9pt + .28vw)
@@ -1579,9 +1579,13 @@ article a:active {
 	margin-left: 0;
 	border-radius: 0 3mm 3mm 0;
 	box-shadow: 0 0 0 1px rgba(255, 255, 255, .7);
-	opacity: 1;
 	visibility: visible;
+	opacity: .5;
 	transition: .3s
+}
+
+.docking_share:hover {
+	opacity: 1;
 }
 
 .docking_share[style="display: none;"] {
@@ -2023,6 +2027,15 @@ article a:active {
 	transition: 0s;
 }
 
+.l-qnaList__account,
+.l-accountRateList {
+	width: 9em;
+}
+
+.l-qnaList__answer.u-ellipsis {
+	white-space: normal;
+}
+
 /* event */
 .l-selectedThumb--specialTopic {
 	background-size: cover;
@@ -2098,11 +2111,11 @@ article a:active {
 
 @media screen and (max-width: 1000px) {
 	.c-menuLv1 a {
-		font-size: 12pt;
+		font-size: 11pt;
 	}
 
 	.c-menuLv1>li>a {
-		padding: 6px calc((915px - 46em) / 44)
+		padding: 6px calc(19px - 1em)
 	}
 
 	.l-footerLinks>li a {
@@ -2131,11 +2144,11 @@ article a:active {
 	}
 
 	.c-menuLv1 a {
-		font-size: calc(10pt + .32vw) !important;
+		font-size: calc(9pt + .33vw) !important;
 	}
 
 	.c-menuLv1>li>a {
-		padding: 6px calc((70vw - 34em) / 44)
+		padding: 6px calc(1.2vw - .5em)
 	}
 
 	.t1,

@@ -3,8 +3,8 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, Announcement articles and more.`
-@version        20201212.15.47
-@license        CC-BY-4.0
+@version        20201213.20.9
+@license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("binance.com") {
@@ -157,9 +157,10 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 
 /* Announcement articles */
 .css-3fpgoh, .css-e7d7y6, .css-1ezl0c, .css-mm1dbi{ color: #fff !important;}
-  
-  
-  /* ETH 2.0 Stacking page */
+}
+
+@-moz-document url-prefix("https://www.binance.com/en/eth2") {
+/* ETH 2.0 Stacking page */
   .css-cxo7uz, .css-1hhz0rw, .css-1ygd8f0{ background-color: #202020 !important;}
   .css-1g3dl8s, .css-a11hgw{ color: #fff !important;}
 }

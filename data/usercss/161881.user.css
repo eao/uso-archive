@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ali Abbasi
 @description    `"Noto Naskh Arabic" font for Google`
-@version        2020119.18.16
+@version        20201213.16.5
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -43,6 +43,9 @@
         font-family: "Noto Naskh Arabic UI", Helvetica, Arial, sans-serif;
     }
 	.aAU .cf.hX { border: none; }
+    .J-N, .J-LC, .J-JK {
+       padding-right: 45px;
+    }
   
   	/* Gmail Print */
     .bodycontainer * {

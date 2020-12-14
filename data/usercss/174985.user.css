@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ekted
 @description    `Returns the BGG homepage to a more compact view.`
-@version        20201210.22.37
+@version        20201213.21.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -44,6 +44,10 @@ gg-header header, .global-header, .media-header, .legacy .moduletable th, .legac
 }
 
 .home-tab__inner-container {
+    display: none;
+}
+
+geekoutput-footer {
     display: none;
 }
 

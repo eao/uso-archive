@@ -3,15 +3,15 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for userstyles.org`
-@version        20201129.23.14
-@license        CC-BY-4.0
+@version        20201213.14.53
+@license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("userstyles.org") {
 /* General */
 div#view-responsive{ background-color: #202020 !important;}
 .navigation{ background-color: #111 !important;}
-.navigation .links-box .navigation-link .navigation-title, label{ color: #fff;}
+.navigation .links-box .navigation-link .navigation-title, label, table{ color: #fff;}
   .linking-note{ color: #5B6472 !important;}
 
 h1{ color: #fff !important}

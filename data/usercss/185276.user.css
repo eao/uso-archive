@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Saarim Shahid
 @description    `A theme for: tiktok.comUpdated very regularly!Please report issues here: http://m.me/sir.saarim.<a href="http://m.me/sir.saarim">Report Issue</a>`
-@version        20201123.1.55
+@version        20201213.13.37
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -63,7 +63,22 @@ header .help-container .help-item,
 .campaign-card .main-article,
 .desktop-container,
 .header-container.middle.jsx-2041358087,
-.side-bar.jsx-3866147749, .side-bar-wrapper.middle.jsx-3322756911 {
+.side-bar.jsx-3866147749,
+.side-bar-wrapper.middle.jsx-3322756911,
+.header-container.middle.jsx-2537748390,
+.content-container.jsx-1331557196,
+.comment-post-outside-container.jsx-1331557196,
+.more-actions.jsx-1045131853 .action-container.jsx-1045131853,
+.modal.confirm.jsx-1311152707 .content.jsx-1311152707,
+.modal.confirm.jsx-1311152707 .btns.jsx-1311152707 .modal-btn-confirm.jsx-1311152707,
+.modal.confirm.jsx-1311152707 .btns.jsx-1311152707 .modal-btn-cancel.jsx-1311152707,
+.share-pc-card.jsx-3606761601,
+.mentionSuggestions,
+.emojiSelectPopover,
+.profile.jsx-563585381 .profile-actions.jsx-563585381,
+.user-item-inner.jsx-3752310609,
+.scroll-container.jsx-1067475104,
+.inbox.jsx-1540997056 {
 	background-color: #1D1E1F !important;
 }
 
@@ -71,7 +86,9 @@ header .help-container .help-item,
 .more-actions.jsx-4035564160 .action-container.jsx-4035564160,
 .profile.jsx-2902964253 .profile-actions.jsx-2902964253,
 .more-actions.jsx-3371939883 .action-container.jsx-3371939883,
-.header-container.jsx-2041358087 {
+.header-container.jsx-2041358087,
+.mention-item-outside-wrapper.jsx-3141527170:hover,
+.notification-item .avatar img {
 	background-color: #000 !important;
 }
 
@@ -122,7 +139,10 @@ header .help-container .help-item,
 .side-bar.jsx-3866147749 .user-list.hidden-bottom-line.jsx-3866147749,
 .side-bar.jsx-3866147749 .user-list-skeleton.jsx-3866147749,
 .side-bar.jsx-3866147749 .user-list.jsx-3866147749,
-.video-feed-container.jsx-1115548107 .video-feed-item {
+.video-feed-container.jsx-1115548107 .video-feed-item,
+.comment-input-inner-wrapper.jsx-3076546058,
+.comment-container.jsx-1331557196:not(.no-top-line)::before,
+.comment-post-outside-container.jsx-1331557196 {
 	border-color: rgb(245, 137, 158) !important;
 }
 
@@ -130,7 +150,8 @@ header .help-container .help-item,
 .side-bar.jsx-1733799211 .user-list.jsx-1733799211,
 .side-bar.jsx-1023132131 .user-list-skeleton.jsx-1023132131,
 .side-bar.jsx-1023132131 .user-list.jsx-1023132131,
-.description.jsx-2442625435 {
+.description.jsx-2442625435,
+.comment-pc .view-more.padding.jsx-3118473030:not(.hidden)::before {
 	border-top: 1px solid rgb(245, 137, 158) !important;
 	border-bottom: 1px solid rgb(245, 137, 158) !important;
 }
@@ -141,7 +162,9 @@ header .help-container .help-item,
 .detail-board.jsx-1531115747 .feedback-container.jsx-1531115747 .submit.disabled.jsx-1531115747,
 header .help-container .help-item,
 .campaign-card .main-article,
-.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-follow-wrapper .follow-button:hover {
+.video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-follow-wrapper .follow-button:hover,
+.modal.confirm.jsx-1311152707 .btns.jsx-1311152707 .modal-btn-confirm.jsx-1311152707,
+.modal.confirm.jsx-1311152707 .btns.jsx-1311152707 .modal-btn-cancel.jsx-1311152707 {
 	border-top: 1px solid #FE2C55 !important;
 	border-bottom: 1px solid #FE2C55 !important;
 	border-left: 1px solid #FE2C55 !important;
@@ -194,7 +217,8 @@ circle {
 .upload-file-container .image-upload-ele,
 .video-feed-tab.jsx-1681171502 .bottom-line.jsx-1681171502,
 .comment-pc .view-more.padding.jsx-1174869635:not(.hidden)::before,
-.detail-board.jsx-1531115747 .feedback-container.jsx-1531115747 .submit.disabled.jsx-1531115747:hover {
+.detail-board.jsx-1531115747 .feedback-container.jsx-1531115747 .submit.disabled.jsx-1531115747:hover,
+.notification-item .avatar img:hover {
 	background-color: red!important;
 }
 
@@ -274,7 +298,11 @@ a.duet-with.jsx-709044605::before,
 .logo-container-drawer .logo-text,
 .hamburger-menu .hamburger-menu-wrapper,
 .logo-container-drawer .logo-icon,
-header .help-container .help-item img {
+header .help-container .help-item img,
+.logo-container.jsx-997609344,
+.tiktok-header .logo-container,
+.emojiSelectButtonPressed,
+.like-container.jsx-3124502475 .icon.jsx-3124502475 {
 	filter: invert(100%);
 	-webkit-filter: invert(100%);
 }
@@ -283,7 +311,13 @@ header .help-container .help-item img {
 	-webkit-filter: invert(30%);
 }
 
+.comment-input-inner-wrapper.jsx-3076546058 {
+	background-color: #bebebe
+}
 
+.comment-input-inner-wrapper.jsx-3076546058 .editor.jsx-3076546058 .public-DraftEditor-content {
+	color: black
+}
 
 a,
 p,
@@ -424,7 +458,16 @@ div.jsx-3640141109 video-music-content pause music-title-decoration,
 .share-pc-card.jsx-3606761601 .share-item-wrapper.jsx-3606761601 .plat-text.jsx-3606761601,
 .side-bar.jsx-3866147749 .login-wrapper.jsx-3866147749 span.jsx-3866147749,
 .side-bar.jsx-3866147749 .bottom-wrapper.jsx-3866147749 .copyright.jsx-3866147749,
-.detail-board.jsx-1531115747 .feedback-container.jsx-1531115747 .submit.disabled.jsx-1531115747 {
+.detail-board.jsx-1531115747 .feedback-container.jsx-1531115747 .submit.disabled.jsx-1531115747,
+.comment-pc.jsx-3124502475 .comment-text.jsx-3124502475 .reply.jsx-3124502475,
+.comment-pc.jsx-3124502475 .comment-text.jsx-3124502475 .comment-time.jsx-3124502475,
+.comment-post-outside-container.jsx-1331557196,
+.comment-post-inner-wrapper.jsx-2175848453 .post-container.jsx-2175848453,
+.like-container.jsx-3124502475 .count.jsx-3124502475,
+.modal.confirm.jsx-1311152707 .btns.jsx-1311152707 .modal-btn-confirm.jsx-1311152707,
+.modal.confirm.jsx-1311152707 .btns.jsx-1311152707 .modal-btn-cancel.jsx-1311152707,
+.emojiSelectPopoverEntry,
+.emojiSelectPopoverEntryFocused {
 	color: aliceblue !important
 }
 }

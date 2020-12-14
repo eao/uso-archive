@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ron Mideiros
 @description    `Update for the new Gmail Layout (2018)`
-@version        2020917.4.19
+@version        20201214.0.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced text email "email address" ""
@@ -42,7 +42,7 @@ table.cf tr.zE:hover, table.tlc tr.ur:hover { background-color: #222 !important;
 .Tm {border-left:5px solid #363636 !important; }
 
 /* Logo  */
-.gb_sc:before {
+.gb_ve:before {
   content: "/*[[email]]*/" !important;
   text-decoration: none !important;
   font-size: 1.5em !important;
