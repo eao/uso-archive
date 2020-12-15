@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201210.15.58
+@version        20201214.15.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -141,7 +141,11 @@
 #twister .swatches li.swatchUnavailableHover,
 #zg-center-div .zg-item-immersion,
 #zg-other-container,
-
+.smartcs-messages-container .smartcs-message-cards .card-footer,
+.smartcs-messages-container .smartcs-message-cards .card-footer-disabled,
+.smartcs-messages-container .smartcs-buttons-button,
+.smartcs-messages-container .smartcs-buttons-button-disabled,
+.smartcs-messages-container .smartcs-message-bot .smartcs-message,
 .GB-SUPPLE .tallCellView,
 ._1uVcNB ._3nQ0yZ:hover,
 ._1uVcNB:focus ._3nQ0yZ.Kqyj9k,
@@ -310,6 +314,7 @@ h2.featureHeading
 
 /* Size 17px ________________*/
 
+.smartcs-messages-container .smartcs-message-cards .card-body .item-title,
 #askDPSearchPromptLabel,
 #productDescription p,
 .a-price[data-a-size="b"][data-a-strike=true],
@@ -965,6 +970,7 @@ input[type="radio"]:checked + label
 .ped_cg_content_subheader,
 .playlistDetailsListItem .title,
 .songList .titleCell,
+.smartcs-messages-container .smartcs-message-cards .card-footer, .smartcs-messages-container .smartcs-message-cards .card-footer-disabled,
 .style__button__1MgdH.style__beacon__2ECwE.style__secondary__39EKa .style__text__2xIA2,
 style__button__1MgdH.style__beacon__2ECwE.style__shoppingCart__2nJlh .style__text__2xIA2,
 .style__itemInfo__2OAi_ .style__featureBullets__1BoLb ul > li > span,
@@ -990,6 +996,7 @@ ul.a-list-link a
 
 /*___ Khaki ________________________________________________________________________*/
 
+.smartcs-messages-container .smartcs-message-cards .card-body .item-title,
 #AUI_A9AdsMiddleBoxTop h2,
 #customerReviewsHeader,
 #detailpage-click2call-header,
@@ -1166,6 +1173,7 @@ time
 
 /*___ Green ________________________________________________________________________*/
 
+#subtotals-marketplace-table .a-text-right,
 #od-subtotals .a-text-right .a-color-base,
 #usedPrice,
 .GB-SUPPLE .gridColumn4.singleCell .dealPriceText,
@@ -1193,6 +1201,8 @@ div.vxd-wrap .acs-product-block__price--buying
 }
 
 /*___ Red __________________________________________________________________________*/
+
+.smartcs-message-composer .action-row .left-group:hover,
 .a-price[data-a-size=mini][data-a-strike=true],
 .a-price[data-a-size="s"][data-a-strike=true],
 .a-price[data-a-size="b"][data-a-strike=true],
@@ -1209,6 +1219,7 @@ div.vxd-wrap .acs-product-block__price--buying
 }
 
 /*__________________________________________________________________________________*/
+
 input[type=email],
 input[type=number],
 input[type=password],
@@ -1224,6 +1235,7 @@ textarea
 }
 
 /*__________________________________________________________________________________*/
+
 ::selection
 {
 	background: #ff9!important;
@@ -1258,6 +1270,7 @@ body
 	color: #fff!important;
 }
 
+.smartcs-message-composer .action-row .right-group:hover,
 .wl-list:hover .a-color-base
 {
 	color: #ff0!important;
@@ -1269,6 +1282,7 @@ body
 	transition: color, 5s, ease-out!important;
 }
 
+textarea::-webkit-input-placeholder,
 .a-color-secondary,
 .nowPlayingView .nowPlayingViewContainer .nowPlayingViewBody .nowPlayingLyricsContainer .lyricsLine.highlighted
 {
@@ -1329,6 +1343,7 @@ div#ns_FA6MTAA3CA3G7CDPYGHR_2855_wrap div.button
 
 
 /* Test ( Amazon Assistant) __________________________________________________________________________*/
+
 #aa-xcomp #aa-xcomp-container
 {
 	background: #000000e6!important;
@@ -1357,6 +1372,7 @@ div#ns_FA6MTAA3CA3G7CDPYGHR_2855_wrap div.button
 }
 
 /*___ Background Gray ______________________________________________________________*/
+
 #browsePanel .browsePanelHeader,
 #navFooter.navLeftFooter,
 .a20m footer.site-footer,
@@ -1392,6 +1408,7 @@ ul.a-tabs
 }
 
 /*___ Background 0000 ______________________________________________________________*/
+
 #left-content.dragonfly.normalColorScheme,
 #nav-search .nav-search-field,
 #pageContent,
@@ -1492,6 +1509,7 @@ ul.a-pagination li a
 .aplus-v2 .premium-aplus-module-5 table.a-bordered td.attribute,
 .aplus-v2 th.apm-tablemodule-keyhead,
 .av-s-header-retail .av-s-filters-dropdown .av-s-refine-drop-section .av-s-refine-drop-section-drop .av-s-refine-drop-section-drop-item,
+
 .av-s-header-retail .av-s-filters-dropdown .av-s-refine-drop-section > label,
 .av-s-header-retail .av-s-filters-dropdown > label,
 .button .buttonOption,
@@ -1530,6 +1548,7 @@ ul.a-pagination li a
 .sc-background-dark,
 .scroll-carousel_carouselControl__Id0y9,
 .selectContainer,
+.smartcs-header,
 .songList .subHeader,
 .style__itemOuter__2dxew a,
 .style__itemOuter__2dxew.style__hovered__3Uhkf a,
@@ -1837,7 +1856,7 @@ a.iss-banner-ad span:active
 #zg #zg_left_col1,
 #zg ul#zg_browseRoot,
 #zg-right-col,
-
+.smartcs-container,
 ._1gQKv6,
 .a-box.a-box-normal.a-text-center.ped_cg_content_box,
 .a-color-alternate-background,
@@ -1911,6 +1930,7 @@ div.slotContainer
 #zg ul#zg_browseRoot:hover,
 #zg-right-col:hover,
 
+.smartcs-container:hover,
 ._1gQKv6:hover,
 .a-box.a-box-normal.a-text-center.ped_cg_content_box:hover,
 .a-color-alternate-background:hover,
@@ -1976,6 +1996,8 @@ div.slotContainer:hover
 ._3PfIMz._3cqYaO ._1bS_Hq,
 ._3PfIMz.ghzfef ._1bS_Hq,
 
+.a-box.a-color-alternate-background,
+.a-box.a-color-offset-background,
 .a-ember body,
 .a-popover-wrapper,
 .a-scroller-vertical,
@@ -1998,7 +2020,7 @@ div.slotContainer:hover
 .nav-flyout,
 
 .octopus-pc-item-block,
-
+.smartcs-messages-container .smartcs-message-cards .card,
 .sc-list .sc-list-item-border,
 .shipment-is-delivered,
 .suggestions-list,
@@ -2007,12 +2029,13 @@ div.slotContainer:hover
 
 .zviBc
 {
-	background-color: #212020!important;
+	background-color: #2a2a2a!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.smartcs-messages-container .smartcs-message-cards .card:hover,
 .wl-grid-item:hover,
 .octopus-pc-category-card-v2-item:hover,
 .a-cardui:hover,
@@ -2031,6 +2054,8 @@ div.slotContainer:hover
 ._3PfIMz._3cqYaO ._1bS_Hq:hover,
 ._3PfIMz.ghzfef ._1bS_Hq:hover,
 
+.a-box.a-color-alternate-background:hover,
+.a-box.a-color-offset-background:hover,
 .a-popover-wrapper:hover,
 .a-scroller-vertical:hover,
 .a-spacing-medium.p13n-sc-list-item:hover,
@@ -2065,6 +2090,7 @@ div.slotContainer:hover
 }
 
 /*___ Red Gradient _________________________________________________________________*/
+
 #outOfStock,
 
 #promise-background-container.background-normal,
@@ -2092,6 +2118,7 @@ div.slotContainer:hover
 }
 
 /*__ Green Gradient _________________________________________________________________*/
+
 ._14ydqK._14ydqK._14ydqK,
 ._14ydqK._14ydqK._14ydqK:link,
 ._14ydqK._14ydqK._14ydqK:visited
@@ -2102,6 +2129,7 @@ div.slotContainer:hover
 }
 
 /*__ Blue Gradient _________________________________________________________________*/
+
 #epcompstripeBody #epcomp-stripe .stripe-content .stripe-container #percivalWidget .widget-container,
 #navFooter.navLeftFooter .navFooterBackToTop,
 
@@ -2204,6 +2232,8 @@ div.slotContainer:hover
 }
 
 /*__________________________________________________________________________________*/
+
+.smartcs-messages-container .smartcs-message-bot .smartcs-message,
 .textnav-pill > a,
 .a-box-title .a-box-inner
 {
@@ -2214,6 +2244,7 @@ div.slotContainer:hover
 }
 
 /*___ Active Highlight Background _________________________________________________________*/
+
 #iv-tab-view-container ul.iv-tab-views .iv-tab-heading.iv-active a,
 #iv-tab-view-container ul.iv-tab-views li.iv-active a,
 
@@ -2223,7 +2254,7 @@ div.slotContainer:hover
 .aplus-v2 .premium-aplus-module-5 table.a-bordered td.active-item,
 
 .comparison_baseitem_column,
-
+.smartcs-messages-container .smartcs-message-cards .card-footer:hover, .smartcs-messages-container .smartcs-message-cards .card-footer-disabled:hover,
 .searchViewHeader .libraryCatalogTabsToggle li a.selected,
 
 ul.a-pagination li.a-selected,
@@ -2234,6 +2265,8 @@ ul.a-tabs li.a-active a
 	border-left-color: #434343!important;
 }
 
+.smartcs-messages-container .smartcs-buttons-button:hover,
+.smartcs-messages-container .smartcs-buttons-button-disabled:hover,
 .wl-list.selected
 {
 	background: linear-gradient(to right, #a98400db, #0000)!important;
@@ -2241,6 +2274,7 @@ ul.a-tabs li.a-active a
 }
 
 /*___ Highlight Background _________________________________________________________*/
+
 #prodDetails .prodDetTable tr:hover,
 #tracking-events-container .a-row:nth-child(3):not(.tracking-event-trackingId-text):not(.tracking-event-carrier-header),
 

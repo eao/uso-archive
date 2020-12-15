@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `A Pokemon GBA based ThemeNote:Use the Light Theme on Apperance SettingsMore of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        20201214.6.13
+@version        20201214.15.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bg "Background Image" {
@@ -33,6 +33,31 @@
 
 body {
     font-family: YADretroFont!important;
+background:url(https://i.ibb.co/Dbz70N2/hoenn.jpg), #4368bf;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size:cover;
+	background-blend-mode: normal;
+	background-position:center;
+}
+
+/*playlist page*/
+ytd-playlist-sidebar-renderer {
+    background-color: #fff0;
+}
+ytd-browse[page-subtype=playlist] ytd-two-column-browse-results-renderer.ytd-browse {
+    background-color: #fff0;
+}
+#container.ytd-playlist-panel-renderer {
+    border: 1px solid #27c9d5;
+    box-shadow: 0px 0px 0px 3px #554242;
+}
+.header.ytd-playlist-panel-renderer {
+    background-color: #90d5ca;
+	border: 2px solid #fff
+}
+.playlist-items.ytd-playlist-panel-renderer {
+    background-color: #fffde0;
 }
 
 html:not(.style-scope)[dark], :not(.style-scope)[dark] {

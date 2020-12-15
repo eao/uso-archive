@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         tyf
 @description    `白底黑字佈景專用，這版面最低瀏覽寬度 1250px，不適用於低解析螢幕.隨寬度拉大，字體也會稍微放大一點，避免用高解析螢幕時字體太小.上方板塊選單、右方側欄 會自動隱藏，少佔版面.按鈕選單互動，文章列表色彩區分，內容大圖完整呈現.Windows 用戶，建議下載 Mac 的蘋方體字型來用，取代微軟正黑體`
-@version        20201213.13.3
+@version        20201214.18.48
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -21,6 +21,18 @@ div[id^="div-gpt-ad-"] {
 }
 
 /*	==========================	*/
+
+::-webkit-scrollbar {
+	background: #ddd;
+	width: 1mm;
+	height: 1mm;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #283;
+	border-radius: 1mm;
+}
+
 html,
 body {
 	font-family: sans-serif;
@@ -1386,7 +1398,7 @@ article .imagectl {
 	padding: 1mm;
 	margin-left: 2mm;
 	border-radius: 2mm;
-	box-shadow: 0 0 1mm #666
+	box-shadow: 0 2px 3mm #888
 }
 
 .c-scrollSpy {
@@ -1397,16 +1409,18 @@ article .imagectl {
 
 .c-scrollSpy__item {
 	padding: .2em .8em;
-	border-radius: 0 1em 1em 0
+	border-radius: 0 1em 1em 0;
 }
 
 .c-scrollSpy__item a {
-	color: #667
+	color: #667;
+	transition: .15s;
 }
 
 .c-scrollSpy__item.is-active {
 	background: #fff;
-	box-shadow: inset 0 0 1mm #888
+	box-shadow: inset 0 0 1mm #888;
+	transition: .15s;
 }
 
 article a {

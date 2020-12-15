@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `Note: Use the dark theme in your Appearance settingsMore of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        2020129.7.58
+@version        20201215.0.38
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image" {
@@ -57,12 +57,20 @@
 7 "10" <<<EOT 10 EOT;
 
 }
+@advanced color link "Link Color" #00EDFF
+@advanced color visited "Visited Link" #F41694
 
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 /********************************/
 /*2021 Youtube Retro Wave by YAD*/
 /********************************/
+
+
+a:link {color: /*[[link]]*/!important}
+a:visited {color: /*[[visited]]*/!important}
+a:hover {color: #fff!important}
+a:active {color: #412222!important}
 
 
 #account-name.ytd-active-account-header-renderer {/*name*/

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.4.5++
+@name           Compact Tube (White) v1.4.6
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201212.15.50
+@version        20201215.0.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.4.5++ */
+/* CompactTube (White) v1.4.6 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -60,9 +60,11 @@
                     RU: Опера использует "Tahoma" как основной шрифт, в то время как Хром использует "Arial".
                     выберите нужный вам, отключив другой.    ◄█ */
 
-            /* Christmas Socks/Рождественские Носки :D */
+
+            /* Christmas Socks / Рождественские Носки :D */
 ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 10px; left: -20px; content: url("https://i114.fastpic.ru/big/2020/1210/7f/fee2e73ed074bfbfc5ba634b88a1ea7f.png");
-    margin-left: 10px; filter: drop-shadow(1px 1px 1px rgb(128, 128, 128)); margin-top: -35px;} 
+    margin-left: 10px; filter: drop-shadow(1px 1px 1px rgb(128, 128, 128)); margin-top: -35px; }
+
 
 /* убрать отключаемые новости об акциях - типа COVID-19: - "none" - убрать: "flow"- показать */
 ytd-compact-promoted-item-renderer[view-style=COMPACT_PROMOTED_ITEM_STYLE_RICH_GRID] #dismissable.ytd-compact-promoted-item-renderer {display: none;}
@@ -98,6 +100,10 @@ ytd-continuation-item-renderer.ytd-watch-next-secondary-results-renderer {displa
 
     /* Убрать секцию главного Меню "Ваши Фильмы": - "none" - убрать: "flow"- показать */
     ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-child(3) {display: flow;}
+
+    /* Отключить рекламный обзор Роликов в плеере "Карусели" в разделах Игры(Gaming), Музыка(Music) и тд.
+    (останутся только Превью картинки)  : - "none" - отключить: "flow"- не отключать */
+    ytd-default-promo-panel-renderer-inline-playback-renderer {display: flow;}
 
     /* блокировать Рекламу в выкладке на Главной Странице (блокирует но оставляет пустое место)
     : - "none" - убрать: "flow"- показать.  */
@@ -259,22 +265,23 @@ yt-search-query-correction { display: block; margin-top: var(--yt-search-correct
 
 /* элемент: Запросы, похожие на... (Центровка) */
 ytd-horizontal-card-list-renderer.ytd-item-section-renderer:not(:first-child) {
-    -o-padding: 4px 0 24px;
-    padding-top: 4px;
-    padding-bottom: 24px;
-    padding-right: 6px;
-    padding-left: 6px;
-    margin-bottom: 24px;}
+        padding: 4px 6px 24px 6px; /* 4px 0 24px */
+    -o-padding-top: 4px;
+    -o-padding-bottom: 24px;
+    -o-padding-right: 6px;
+    -o-padding-left: 6px;
+    margin-bottom: 8px;} /* 24px!? */
 
 
 /* элемент: Запросы, похожие на... [Дополнительный] (Центровка)
 после активации необходима КОМПЕНСАЦИЯ сдвига элементов в разделе: ВИДЕОИГРЫ(Gaming) */
 ytd-horizontal-card-list-renderer.ytd-item-section-renderer:first-child {
+        padding: 0px 6px 0px 6px;
     -o-padding-top: 16px;
     -o-margin-left: 6px;
     -o-margin-right: 6px;
-        padding-right: 6px;
-        padding-left: 6px;}
+        -o-padding-right: 6px;
+        -o-padding-left: 6px;}
 
 /* border: 1px solid rgb(202, 43, 43); - тестовый бордюр*/
 
@@ -498,6 +505,49 @@ ytd-thumbnail-overlay-time-status-renderer[overlay-type=WATCH_CARD_HERO] {
     margin: 6px; padding: 6px; z-index: 1;}
 
 
+/* Общий размер Шрифтов для всей колонки Карточек (Названия Видео и Каналов) [в Поиске - Справа] */
+    .metadata.ytd-watch-card-compact-video-renderer * {font-size: 1.2rem;}
+/* Отсткпы в колонке Карточек [в Поиске - Справа] */
+    .metadata.ytd-watch-card-compact-video-renderer {
+    padding: 0 0px 0 0px; /*0 16px 0 8px;*/
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;}
+/* параметры строки Названия Каналов в колонке Карточек [в Поиске - Справа] */
+    .subtitle.ytd-watch-card-compact-video-renderer {
+    color: var(--ytd-metadata-line-color, var(--yt-spec-text-secondary));
+    font-size: var(--ytd-thumbnail-attribution_-_font-size);
+    font-weight: bold; /* var(--ytd-thumbnail-attribution_-_font-weight) */
+    line-height: var(--ytd-thumbnail-attribution_-_line-height);
+    letter-spacing: var(--ytd-thumbnail-attribution_-_letter-spacing);
+    text-transform: var(--ytd-thumbnail-attribution_-_text-transform);}
+/* параметры строки Количества Просмотров и Даты публикации в колонке Карточек [в Поиске - Справа] */
+    ytd-watch-card-compact-video-renderer[is-condensed] .subtitle.ytd-watch-card-compact-video-renderer {
+    --yt-endpoint-color: var(--yt-spec-text-secondary);
+    color: var(--yt-spec-text-secondary);
+    font-size: 1.2rem; /* var(--ytd-thumbnail-attribution_-_font-size) */
+    font-weight: var(--ytd-thumbnail-attribution_-_font-weight);
+    line-height: var(--ytd-thumbnail-attribution_-_line-height);
+    letter-spacing: var(--ytd-thumbnail-attribution_-_letter-spacing);
+    text-transform: var(--ytd-thumbnail-attribution_-_text-transform);}
+/* "Показать все" - настройка: в колонке Карточек [в Поиске - Справа] */
+#view-all-endpoint.yt-simple-endpoint.ytd-vertical-watch-card-list-renderer {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--yt-spec-10-percent-layer);
+    text-transform: none; /* uppercase */
+    max-height: var(--yt-link-line-height, 1.6rem);
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: var(--yt-link-font-size, 1.4rem) !important; /* var(--yt-link-font-size, 1.4rem)*/
+    font-weight: 500;
+    line-height: var(--ytd-link-line-height, 1.6rem);
+    letter-spacing: var(--yt-link-letter-spacing, normal);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
 /* Размер Превью в Правой половине "collage-hero" */
 yt-img-shadow.ytd-collage-hero-image-renderer.no-transition {height: 77.5px; width: 123px;}
 
@@ -670,6 +720,42 @@ ytd-grid-movie-renderer {
     display: flex; flex-direction: row; 
     -o-border: 1px solid #eaeaea;
     -o-box-shadow: inset 0px 0px 0px 1px #eaeaea;}
+
+
+/* Верхнее Меню Размела "Музыка" доп. параметры */
+paper-tab.ytd-topic-channel-details-renderer {
+    padding: 0 11px; /*0 32px*/
+    vertical-align: middle;
+    font-size: 1.3rem;
+    text-transform: none;}
+/* Верхнее Меню Размела "Музыка" доп. параметры */
+paper-tabs.ytd-topic-channel-details-renderer {
+    --paper-tabs-selection-bar-color: #f00; /*var(--yt-spec-text-secondary)*/
+    --paper-tabs-selection-bar_-_border-bottom-width: 3px;
+    box-sizing: border-box;
+    color: var(--yt-spec-text-secondary);
+    height: 48px;
+    padding-bottom: 1px;
+    margin-left: -56px; /*51px*/  
+    font-weight: var(--ytd-tab-system_-_font-weight);
+    letter-spacing: var(--ytd-tab-system_-_letter-spacing);
+    text-transform: none; /* var(--ytd-tab-system_-_text-transform) */
+    font-size: 1.3rem;}
+
+/* Скрытие элементов прокрутки меню Размела "Музыка" */
+paper-icon-button.paper-tabs {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    margin: 0 4px;
+    opacity: 0}
+/* Скрытие элементов прокрутки меню Размела "Музыка" - отображать скрытые (если они есть) при наведении курсора */
+paper-icon-button.paper-tabs:hover {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    margin: 0 4px;
+    opacity: 0.8}
 
 /* Центровка Плейлистов "Yutube Music" - на Странице с Видео */
 ytd-compact-playlist-renderer.ytd-watch-next-secondary-results-renderer {margin-top: 7px;margin-left: 10px; margin-bottom: 8px;}
@@ -1261,7 +1347,7 @@ ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
    ≡≡≡≡≡ ║▼▲║ Скроллбар для всего Ютуба (Тёмная и Светлая темы) ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
          ╚══╝                                  */
 /* Установка Самого Скроллбара */
-::-webkit-scrollbar {width: 1.3em;}
+::-webkit-scrollbar {width: 13px;} /*1.3em*/
 /* Ползунок Скроллбара  */
 ::-webkit-scrollbar-thumb {background: rgba(155, 155, 155, .34); box-shadow: inset 0px 0px 0px 0.3px rgba(45, 45, 45, .11);}
 /* Путь Скроллбара*/
@@ -1320,6 +1406,7 @@ ytd-thumbnail-overlay-resume-playback-renderer:after {
     text-align: center; /* Выравнивание по центру */
     display: block;
     width: 14%;
+    min-width: 16px;
     -o-overflow: hidden;
     -o-height: 100%;
     text-transform: lowercase;
@@ -1352,8 +1439,16 @@ ytd-thumbnail-overlay-resume-playback-renderer:hover:after {
     line-height: var(--ytd-badge_-_line-height);
     flex-direction: row;
     display: block;
-    width: 14%;}
+    width: 14%;
+    min-width: 16px;}
 /* ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓ */
+
+/* ■■■■■■■ Настройка Меню: - "Сохранить в... " ■■■■■■■ */
+/* Ширина Скроллбара в Меню: - "Сохранить в... " */
+#playlists.ytd-add-to-playlist-renderer.scrollable::-webkit-scrollbar {width: 14px;}
+/* Ширана Меню: - "Сохранить в... " */
+#playlists.ytd-add-to-playlist-renderer {max-height: 300px; max-width: 600px; width: 286px;}   /* Ширина Меню */
+/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 
 /* Название Канала под Видео на вкладке с Видео (позицианирование) */
 ytd-channel-name#channel-name.ytd-video-owner-renderer {margin-top: -16px;}
@@ -2679,6 +2774,8 @@ margin-top: -2px;} */
 ytd-message-renderer.ytd-live-chat-frame, #show-hide-button.ytd-live-chat-frame {flex: none; background: var(--yt-spec-brand-background-primary);}
 /* Шапка Лайв-Чат'а - Нижний Бордюр */
 yt-live-chat-header-renderer.yt-live-chat-renderer {box-shadow: inset 0 -1px 0 0 var(--yt-spec-10-percent-layer);}
+/* Ширира Скроллбара Лайв-Чат'а */
+yt-live-chat-item-list-renderer[allow-scroll] #item-scroller.yt-live-chat-item-list-renderer::-webkit-scrollbar {width: 1.3em;}
 
 
 /* ================= чёрный ПЛЕЙЛИСТ под видео ================= */
@@ -2698,6 +2795,8 @@ box-shadow: 0px 0px 1px 1px rgba(178, 178, 178, .27);}
 /* Цвет Активного поля Скроллбара в Плейлисте под Видео */
 .playlist-items.ytd-playlist-panel-renderer::-webkit-scrollbar-track:active {background-color: #4D4D4D;}
 
+/* Ширина Скроллбара Плейлиста под Видео */
+.playlist-items.ytd-playlist-panel-renderer::-webkit-scrollbar {width: 10px;}
 
 
 /* Цвет Бэкграунда Роликов в Плейлисте под Видео */
@@ -3186,7 +3285,7 @@ paper-tab.ytd-c4-tabbed-header-renderer {padding: 0 11px; vertical-align: middle
 -o-paper-tab.ytd-c4-tabbed-header-renderer {height: 100%; width: 1%; font-size: 1.3rem; text-transform: capitalize;} /*старый вариант*/
 
 /* МЕНЮ КАНАЛА: Главная, Видео, Плейлисты, Каналы, Обсуждение, О Канале (Дополнительные Параметры) */
-paper-tabs.ytd-c4-tabbed-header-renderer {--paper-tabs-selection-bar-color: #f00;; /* Цвет подчёркивания */
+paper-tabs.ytd-c4-tabbed-header-renderer {--paper-tabs-selection-bar-color: #f00; /* Цвет подчёркивания */
 --paper-tabs-selection-bar_-_border-bottom-width: 3px; /* высота подчёркивания пункта меню*/
 color: var(--yt-lightsource-secondary-title-color);  /* Цвет НЕ выделенных пунктов меню*/ height: 48px ;padding-bottom: 1px;}
 /*Скрытие элементов прокрутки МЕНЮ КАНАЛА*/
@@ -3194,6 +3293,7 @@ paper-tabs.ytd-c4-tabbed-header-renderer paper-icon-button.paper-tabs {-o-visibi
 /*Скрытие элементов прокрутки МЕНЮ КАНАЛА - отображать скрытые (если они есть) при наведении курсора */
 paper-tabs.ytd-c4-tabbed-header-renderer paper-icon-button.paper-tabs:hover {-o-visibility: hidden; opacity: 0.5;}
 -o-.not-visible.paper-tabs {opacity: 0;cursor: default;}
+
 
 /*------------------------------------------------------*/
 

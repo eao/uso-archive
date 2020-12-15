@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Isi-Daddy
 @description    `Eclipse Redesign shall not only bring back the feeling of the old deviantart, but also help your orientation by making the general appearance smaller and add more colours as separators.`
-@version        2020122.23.29
+@version        20201214.14.18
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -697,7 +697,7 @@ width: auto !important
     height: 28px;
     width: 45px;
     position: absolute;
-    bottom: 85px;
+    bottom: 65px;
     left: -72px;      
     border-radius: 3px;
 }
@@ -754,7 +754,7 @@ display: unset
 
 ._24VFR.DTx7C._2BA58 ._18qYl{
 position: absolute;
-    bottom: 85px;
+    bottom: 65px;
 left: -72px}
 
 /*comment bottom padding, good border*/
@@ -773,7 +773,7 @@ span ._1iSvR {/*icon kommenta/*/
 
 
 .HK-F2{ /*abstand reply zu text*/
-	margin-top: -10px !important;
+	margin-top: 0px !important;
 }
 
 ._30j3W {
@@ -781,40 +781,58 @@ span ._1iSvR {/*icon kommenta/*/
 }
 
 /*reply button style*/
-._3ARPi._15m8B._2y_KG{
-transform: translate(-30px,5px)}
+/*._3ARPi._15m8B._2y_KG,*/
+._3ARPi.RaOha.QBgq4{
+transform: translate(-71px,7px)}
 
-button._35sMb{
+button._35sMb,
+button.QBgq4{
 margin-top: -50px !important;}
 
-.theme-dark a._35sMb, .theme-dark button._35sMb{background-color: #06070d;    color: #f2f2f2;}
+.theme-dark a._35sMb, .theme-dark button._35sMb,
+.theme-dark a.QBgq4,
+.theme-dark button.QBgq4{background-color: #06070d;    color: #f2f2f2;}
 .theme-light a._35sMb,
-.theme-light button._35sMb{background-color: #f2f2f2;    color: #5d5d6c;}
+.theme-light button._35sMb,
+.theme-light a.QBgq4,
+.theme-light button.QBgq4{background-color: #f2f2f2;    color: #5d5d6c;}
 .theme-light.light-green a._35sMb,
-.theme-light.light-green button._35sMb{
+.theme-light.light-green button._35sMb,
+.theme-light.light-green a.QBgq4,
+.theme-light.light-green button.QBgq4{
     background-color: #dbe2da; 
     color: #2c3635;}
 .theme-dark a._35sMb,
 .theme-light a._35sMb,
 .theme-dark button._35sMb,
-.theme-light button._35sMb { 
+.theme-light button._35sMb,
+.theme-dark a.QBgq4,
+.theme-light a.QBgq4,
+.theme-dark button.QBgq4,
+.theme-light button.QBgq4 { 
     padding: 8px 12px;	
     border-radius: 3px;
     font-size: 14px;
    /* margin-top: 10px;*/
 }
 .theme-dark a._35sMb:hover, 
-.theme-dark button._35sMb:hover{
+.theme-dark button._35sMb:hover,
+.theme-dark a.QBgq4:hover, 
+.theme-dark button.QBgq4:hover{
    background-color: #f2f2f2;
    color: #5d5d6c;    
 }
 .theme-light a._35sMb:hover,
-.theme-light button._35sMb:hover{
+.theme-light button._35sMb:hover,
+.theme-light a.QBgq4:hover,
+.theme-light button.QBgq4:hover{
    background-color: #28352c;
    color: #f2f2f2;    
 }
 .theme-light.light-green a._35sMb:hover
-.theme-light.light-green button._35sMb:hover{
+.theme-light.light-green button._35sMb:hover,
+.theme-light.light-green a.QBgq4:hover
+.theme-light.light-green button.QBgq4:hover{
    background-color: #28352c !important;
    color: #f2f2f2;    
 }
@@ -890,7 +908,8 @@ a._335cJ {
    transform: translate(0%, -30%);    
 }
 
-div._35sMb{
+div._35sMb,
+div.QBgq4{
     transform: translate(-190%, -65%) 
 }
 
@@ -901,7 +920,8 @@ div._35sMb{
     margin-top: 10px;
 }
 
-._335cJ._35sMb{
+._335cJ._35sMb,
+._335cJ.QBgq4{
 	margin-top: 0;
 }
 
@@ -1067,6 +1087,17 @@ p.public-DraftStyleDefault-text-ltr,
 .public-DraftStyleDefault-block-depth0{
 	min-height: 0 !important;
 }
+
+.RaOha.QBgq4 ._3ARPi._2y_KG{
+position: absolute;
+left: -175px;
+bottom: 0px;}
+
+.RaOha.QBgq4 ._3ARPi._15m8B._2y_KG{
+bottom: 25px;
+left: -186px;}
+
+
 }
 
 @-moz-document url-prefix("https://www.deviantart.com/") {
