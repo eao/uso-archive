@@ -2,8 +2,8 @@
 @name           Youtube Siklab 🔥
 @namespace      USO Archive
 @author         YAD
-@description    `Featured Wallpaper: Shakugan No Shana.Use the dark theme in your Appearance settings.More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        2020129.4.18
+@description    `Featured Wallpaper: Shakugan No Shana.<i>Note:</i>  <b>Use the Dark Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/191573_additional_37559.jpeg" target="_blank"><b>📝</b></a>More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
+@version        20201215.9.40
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchange1 "Background Image" {
@@ -17,7 +17,16 @@
 2 "OFF" <<<EOT OFF EOT;
 
 }
-@advanced text ampoge "Videos Per Row" "4"
+@advanced dropdown ampoge "Videos Per Row" {
+	1 "Default*" <<<EOT 4 EOT;
+2 "5" <<<EOT 5 EOT;
+3 "6" <<<EOT 6 EOT;
+4 "7" <<<EOT 7 EOT;
+5 "8" <<<EOT 8 EOT;
+6 "9" <<<EOT 9 EOT;
+7 "10" <<<EOT 10 EOT;
+
+}
 
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
@@ -352,6 +361,24 @@ text-shadow: #aa0 0 -2px 5px, #bf4600 0 -4px 15px, #a10000 0 -6px 25px;
     background: #08080800;
 	background-image: linear-gradient(90deg, #0b0202c4 0%, #ff0000d4 90%, #ee070712 100%);
 }
+/*volume box*/
+.ytp-volume-slider-active .ytp-volume-panel
+{
+  width: 54px;
+}
+.ytp-volume-slider-handle:after
+{
+  background: #ffffff00;
+}
+.ytp-big-mode .ytp-volume-slider-handle:after {
+    left: 9px;
+    background: #ffffff00;
+}
+.ytp-big-mode .ytp-volume-slider-active .ytp-volume-panel
+{
+  width: 81px;
+}
+
 
 .ytp-play-progress {
 	background: #d5000059;

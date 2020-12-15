@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         dsk
 @description    `I've modified the Spotify web player at open.spotify.com to enable for a more compact view. It does not interfere with the work area when listening while working. If you set the blowser window width to less than 960px, you will get a compact view. It is optimized for display at a width of about 340px.`
-@version        2020819.10.7
+@version        20201215.11.56
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -40,18 +40,19 @@
 		margin-right: 0 !important;
 		margin-left: auto !important;
 	}
+	/* left-nav-bar*/
 	.Root__nav-bar {
 		transition-duration: .3s;
 		transition-timing-function: ease-in-out;
 	}
 	[dir=ltr] .Root__nav-bar {
-		left: -210px;
+		left: -245px;
 		position: relative;
 	}
 	[dir=rtl] .Root__nav-bar {
-		right: -210px;
+		right: -245px;
 	}
-	.Root__nav-bar:hover {
+	.Root__nav-bar > nav {
 		background-color: rgba(0, 0, 0, .8);
 	}
 	[dir=ltr] .Root__nav-bar:hover {
@@ -71,36 +72,32 @@
 	.Root__top-container{
 		grid-template-columns: 20px 1fr;
 	}
-	
+	/*
 	[dir=ltr] .Root__main-view,
 	[dir=rtl] .Root__main-view {
 		padding-right: 0;
 		padding-left: 0;
 		padding-bottom: 0;
 		max-width:calc(100vw - 20px);
+	}*/
+	.main-view-container .os-viewport{
+		overflow-x: hidden !important;;
 	}
 
+	/*  */
 	.main-view-container__scroll-node > div{
 		max-width: calc(100% - 10px);	
 	}
 	.main-view-container__scroll-node-child > section > div:first-child{
-		padding:0;
+		padding:0px;
 		flex-direction:column;
 	}
 		.main-view-container__scroll-node-child > section > div:first-child h1{
 		font-size:36px !important;
 		line-height:36px !important;
 	}
-	/*
-	.main-view-container__scroll-node-child > header > div > div,
-	.main-view-container__scroll-node-child > header > div > button{margin:0 5px 0 0 !important;
-	}
-	.main-view-container__scroll-node-child > header > div > div button{margin:0 !important;}
-	.main-view-container__scroll-node-child > header div[role=search] input{
-		padding: 3px 10px 3px 36px;
-		width: auto;
-	}*/ 
 	
+	/* search */
 	[dir=ltr] .SearchInputBox {
 		left: 0;
 	}

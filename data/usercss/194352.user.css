@@ -2,17 +2,24 @@
 @name           Youtube Back to Hoenn
 @namespace      USO Archive
 @author         YAD
-@description    `A Pokemon GBA based ThemeNote:Use the Light Theme on Apperance SettingsMore of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        20201214.15.11
+@description    `<i>Note:</i>  <b>Use the Light Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/194352_additional_37560.jpeg" target="_blank"><b>📝</b></a>A Pokemon GBA based Theme.More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
+@version        20201215.9.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced dropdown bg "Background Image" {
+@advanced dropdown bg "Background Image 🖼️" {
 1 "Default*" <<<EOT https://i.ibb.co/Dbz70N2/hoenn.jpg EOT;
 
 	bg-custom-dropdown "Custom" <<<EOT /*[[bg-custom]]*\/ EOT;
 }
-@advanced text bg-custom "Background Image (Custom)" "https://example.com/image.png"
-@advanced dropdown ampoge "Videos Per Row" {
+@advanced text bg-custom "Background Image 🖼️ (Custom)" "https://example.com/image.png"
+@advanced dropdown vidbg "Player Background 🖼️" {
+1 "Default*" <<<EOT https://i.postimg.cc/J0s4fw7t/hoenn.png EOT;
+2 "None" <<<EOT http://yad EOT;
+
+	vidbg-custom-dropdown "Custom" <<<EOT /*[[vidbg-custom]]*\/ EOT;
+}
+@advanced text vidbg-custom "Player Background 🖼️ (Custom)" "https://example.com/image.png"
+@advanced dropdown ampoge "Videos Per Row 🎞️" {
 	1 "Default*" <<<EOT 4 EOT;
 2 "5" <<<EOT 5 EOT;
 3 "6" <<<EOT 6 EOT;
@@ -33,12 +40,6 @@
 
 body {
     font-family: YADretroFont!important;
-background:url(https://i.ibb.co/Dbz70N2/hoenn.jpg), #4368bf;
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-	background-size:cover;
-	background-blend-mode: normal;
-	background-position:center;
 }
 
 /*playlist page*/
@@ -185,22 +186,6 @@ ytd-toggle-button-renderer.style-default-active[is-icon-button] {
 /*share save*/
 ytd-button-renderer #button.ytd-button-renderer {
     color: #80626c!important;
-}
-
-/*sub*/
-paper-button.ytd-subscribe-button-renderer {
-    background-color: #3050C7;
-	font-family: YADretroFont!important;
-}
-.ytp-sb-subscribe, a.ytp-sb-subscribe {
-    background-color: #3050C7;
-    color: #FBF9FA;
-}
-.iv-branding .branding-context-container-inner {
-    background-color: #B8A8E9;
-    border-radius: 5px;
-    color: #FBF9FA;
-	border: 3px solid #80658b
 }
 
 /*survey*/
@@ -493,6 +478,17 @@ ytd-rich-metadata-renderer {
     background: #fcfcfc36;
 }
 
+/*volume box*/
+.ytp-volume-slider-active .ytp-volume-panel {
+    width: 56px;	
+}
+.ytp-volume-slider-handle:after {
+    background: #ffffff38;
+}
+.ytp-big-mode .ytp-volume-slider-active .ytp-volume-panel {
+    width: 81px;
+}
+
 /*
 ╭━━╮╱╱╱╱╱╱╭╮╱╱╭━━━━╮╱╱╭╮╱╭╮
 ┃╭╮┃╱╱╱╱╱╱┃┃╱╱┃╭╮╭╮┃╱╱┃┃╱┃┃
@@ -511,6 +507,10 @@ ytd-rich-metadata-renderer {
 */
 
 /*live chat*/
+yt-formatted-string.ytd-menu-navigation-item-renderer {
+    color: #ffffff;
+	font-family: YADretroFont;
+}
 ytd-menu-popup-renderer {
     box-shadow: unset;
 }
@@ -728,9 +728,40 @@ ytd-searchbox[has-focus] #container.ytd-searchbox {
 
 /*join*/
 ytd-button-renderer.style-suggestive[is-paper-button] {
-    border: 3px solid #fff;
+    border: 3px solid #385075;
     background-color: #70b8f0;
     color: #fff;
+}
+ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-renderer {
+    border: 1px solid #065fd400;
+}
+
+/*sub*/
+paper-button.ytd-subscribe-button-renderer {
+    background-color: #70b8f0;
+	font-family: YADretroFont!important;
+	border: 3px solid #385075
+}
+.ytp-sb-subscribe, a.ytp-sb-subscribe {
+    background-color: #70b8f0;
+    color: #FBF9FA;
+}
+.iv-branding .branding-context-container-inner {
+    background-color: #B8A8E9;
+    border-radius: 5px;
+    color: #FBF9FA;
+	border: 3px solid #80658b
+}
+paper-button.ytd-subscribe-button-renderer[subscribed] {
+    background-color: #9ba1a4;
+    color: #eeecec;
+}
+
+/*bottom video info*/
+ytd-clarification-renderer[background-style=info] {
+    background: #95f4d8;
+    border: 3px solid #492f2f;
+	border-bottom: 0px;
 }
 
 /*share dialog*/
@@ -822,7 +853,7 @@ ytd-rich-grid-renderer.style-scope.ytd-two-column-browse-results-renderer {
 paper-toast {
     background-color: #bb3434;
     border-radius: 5px;
-    box-shadow: 0px 0px 0px 3px #450e0e
+    box-shadow: 0px 0px 0px 3px #512828!important;
 }
 yt-confirm-dialog-renderer[dialog][dialog][dialog] {
     background-color: #4fb4a1;
@@ -922,7 +953,7 @@ yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud
 /*video wall*/
 .html5-video-player {
 	background: #3e095e00;
-    background-image: url(https://i.postimg.cc/J0s4fw7t/hoenn.png);
+    background-image: url(/*[[vidbg]]*/);
 	background-position: center;
 	background-blend-mode: screen;
 	background-attachment: fixed

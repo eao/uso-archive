@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Stunner
 @description    `Тёмная тема для нового <a href="//informatics.msk.ru">информатикса</a>`
-@version        20201214.10.11
+@version        20201215.7.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -203,5 +203,12 @@
     }
     .dropdown-divider {
         border-top: 1px solid #2e2e2e;
+    }
+    :not(pre) > code[class*="language-"], pre[class*="language-"] {
+        background: #2e2e2e;
+    }
+    code[class*="language-"], pre[class*="language-"] {
+        color: #ccc;
+        text-shadow: none;
     }
 }

@@ -2,43 +2,43 @@
 @name           Youtube RetroWave
 @namespace      USO Archive
 @author         YAD
-@description    `Note: Use the dark theme in your Appearance settingsMore of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        20201215.0.38
+@description    `<i>Note:</i>  <b>Use the Dark Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/191573_additional_37559.jpeg" target="_blank"> <b>📝</b></a>More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
+@version        20201215.8.9
 @license        CC-BY-NC-4.0
 @preprocessor   uso
-@advanced dropdown yadbgchanger "Background Image" {
+@advanced dropdown yadbgchanger "Background Image 🖼️" {
 1 "Default*" <<<EOT https://i.ibb.co/d7j0KjB/retrowave.png EOT;
 3 "CyberPunk" <<<EOT https://i.ibb.co/CKs830t/cyberpunk.jpg EOT;
 2 "None" <<<EOT http://yad EOT;
 
 	yadbgchanger-custom-dropdown "Custom" <<<EOT /*[[yadbgchanger-custom]]*\/ EOT;
 }
-@advanced text yadbgchanger-custom "Background Image (Custom)" "https://example.com/image.png"
-@advanced dropdown araw "Sun" {
+@advanced text yadbgchanger-custom "Background Image 🖼️ (Custom)" "https://example.com/image.png"
+@advanced dropdown araw "Sun ☀️" {
 1 "Default*" <<<EOT https://i.ibb.co/rs1HkNp/wave.gif EOT;
 2 "None" <<<EOT http://yad EOT;
 
 	araw-custom-dropdown "Custom" <<<EOT /*[[araw-custom]]*\/ EOT;
 }
-@advanced text araw-custom "Sun (Custom)" "https://example.com/image.png"
-@advanced dropdown yadbgsize "Background Size" {
+@advanced text araw-custom "Sun ☀️ (Custom)" "https://example.com/image.png"
+@advanced dropdown yadbgsize "Background Size 📐" {
 	1 "Fit*" <<<EOT 100% EOT;
 2 "Fill" <<<EOT cover EOT;
 
 }
-@advanced color yadbgcolor "Background Color" #14031E
-@advanced dropdown logoniyad "Change Logo" {
+@advanced color yadbgcolor "Background Color 🎨" #14031E
+@advanced dropdown logoniyad "Change Logo ♻️" {
 1 "Default*" <<<EOT data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM6dj0iaHR0cHM6Ly92ZWN0YS5pby9uYW5vIg0KCSB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQ5MiAxMTAiDQoJIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQ5MiAxMTA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRjAwMDA7IiBkPSJNMTU0LjMsMTcuNWMtMS44Mi02LjczLTcuMDctMTEuOTgtMTMuOC0xMy44Yy0xMi4xLTMuMy02MC44LTMuMy02MC44LTMuM1MzMSwwLjUsMTguOSwzLjgNCglDMTIuMTcsNS42Miw2LjkyLDEwLjg3LDUuMSwxNy42QzEuNDQsMzkuMSwwLjAyLDcxLjg2LDUuMiw5Mi41YzEuODIsNi43Myw3LjA3LDExLjk4LDEzLjgsMTMuOGMxMi4xLDMuMyw2MC44LDMuMyw2MC44LDMuMw0KCXM0OC43LDAsNjAuOC0zLjNjNi43My0xLjgyLDExLjk4LTcuMDcsMTMuOC0xMy44QzE1OC4yNiw3MC45NywxNTkuNDUsMzguMjMsMTU0LjMsMTcuNXoiLz4NCjxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNNjQuMiw3OC40TDEwNC42LDU1TDY0LjIsMzEuNlY3OC40eiIvPg0KPGc+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0Y3RjBGMDsiIGQ9Ik0yMjcuOSw5OS43Yy0zLjEtMi4xLTUuMy01LjMtNi42LTkuN3MtMS45LTEwLjItMS45LTE3LjV2LTkuOWMwLTcuMywwLjctMTMuMywyLjItMTcuNw0KCQljMS41LTQuNSwzLjgtNy43LDctOS43czcuMy0zLjEsMTIuNC0zLjFjNSwwLDkuMSwxLDEyLjEsMy4xYzMsMi4xLDUuMyw1LjMsNi43LDkuN3MyLjEsMTAuMywyLjEsMTcuNnY5LjljMCw3LjMtMC43LDEzLjEtMi4xLDE3LjUNCgkJcy0zLjYsNy42LTYuNyw5LjdjLTMuMSwyLTcuMywzLjEtMTIuNSwzLjFDMjM1LjIsMTAyLjgsMjMxLDEwMS43LDIyNy45LDk5Ljd6IE0yNDUuMiw4OWMwLjktMi4yLDEuMy01LjksMS4zLTEwLjlWNTYuOA0KCQljMC00LjktMC40LTguNS0xLjMtMTAuN2MtMC45LTIuMy0yLjQtMy40LTQuNS0zLjRzLTMuNSwxLjEtNC40LDMuNHMtMS4zLDUuOC0xLjMsMTAuN3YyMS4zYzAsNSwwLjQsOC43LDEuMiwxMC45czIuMywzLjMsNC41LDMuMw0KCQlDMjQyLjgsOTIuMywyNDQuMyw5MS4yLDI0NS4yLDg5eiBNNDY0LjQsNzIuN3YzLjVsMC40LDkuOWMwLjMsMi4yLDAuOCwzLjgsMS42LDQuOHMyLjEsMS41LDMuOCwxLjVjMi4zLDAsMy45LTAuOSw0LjctMi43DQoJCWMwLjktMS44LDEuMy00LjgsMS40LTguOWwxMy4zLDAuOGMwLjEsMC42LDAuMSwxLjQsMC4xLDIuNGMwLDYuMy0xLjcsMTEtNS4yLDE0LjFzLTguMyw0LjctMTQuNiw0LjdjLTcuNiwwLTEyLjktMi40LTE1LjktNy4xDQoJCXMtNC42LTEyLjEtNC42LTIyVjYxLjZjMC4zNC0xNywzLjMzLTI5LjQ1LDIwLjktMjkuNWM1LjMsMCw5LjMsMSwxMi4xLDIuOXM0LjgsNC45LDYsOXMxLjcsOS43LDEuNywxNi45djExLjdoLTI1LjdMNDY0LjQsNzIuN3oNCgkJIE00NjYuNCw0My45Yy0wLjgsMS0xLjMsMi41LTEuNiw0LjdzLTAuNCwxMC0wLjQsMTB2NC45aDExLjJ2LTQuOWMwLDQuOS0wLjEtNy43LTAuNC0xMHMtMC44LTMuOS0xLjYtNC44cy0yLTEuNC0zLjYtMS40DQoJCUM0NjguMyw0Mi41LDQ2Ny4xLDQzLDQ2Ni40LDQzLjl6IE0xOTAuNSw3MS40TDE3Myw4LjJoMTUuM2MwLDAsNy4xNSwzMS43LDkuNiw0Ni42aDAuNGMyLjc4LTE1LjgyLDkuOC00Ni42LDkuOC00Ni42aDE1LjMNCgkJbC0xNy43LDYzLjF2MzAuM2gtMTUuMVY3MS40SDE5MC41eiIvPg0KCTxwYXRoIGlkPSJBIiBzdHlsZT0iZmlsbDojRjdGMEYwOyIgZD0iTTMxMS41LDMzLjR2NjguM2gtMTJsLTEuMy04LjRoLTAuM2MtMy4zLDYuMy04LjIsOS41LTE0LjcsOS41DQoJCWMtMTEuNzctMC4wMy0xMy4wOC0xMC0xMy4yLTE4LjR2LTUxaDE1LjR2NTAuMWMwLDMsMC4zLDUuMiwxLDYuNWMxLjQyLDIuNzgsNS4xLDIuMDcsNy4xLDAuN2MxLjE1LTAuNzgsMi4wOS0xLjg1LDIuNy0zLjFWMzMuNA0KCQlIMzExLjV6Ii8+DQoJPHBhdGggc3R5bGU9ImZpbGw6I0Y3RjBGMDsiIGQ9Ik0zNTMuMywyMC42SDMzOHY4MS4xaC0xNVYyMC42aC0xNS4zVjguMmg0NS41djEyLjRMMzUzLjMsMjAuNnogTTQ0MS4yLDQ0LjMNCgkJYy0wLjktNC4zLTIuNC03LjQtNC41LTkuNGMtMi4xLTEuOS00LjktMi45LTguNi0yLjljLTIuODEtMC4wMS01LjU3LDAuODMtNy45LDIuNGMtMi41LDEuNi00LjMsMy43LTUuNyw2LjNoLTAuMXYtMzZoLTE0Ljh2OTYuOQ0KCQloMTIuN2wxLjYtNi41aDAuM2MxLjIyLDIuMjksMy4wNiw0LjE5LDUuMyw1LjVjMi40LDEuMyw1LDIsNy45LDJjNS4yLDAsOS0yLjQsMTEuNS03LjJjMi40LTQuOCwzLjctMTIuMywzLjctMjIuNFY2Mi4yDQoJCUM0NDIuNiw1NC42LDQ0Mi4xLDQ4LjYsNDQxLjIsNDQuM3ogTTQyNy4xLDcyLjJjMCw1LTAuMiw4LjktMC42LDExLjdzLTEuMSw0LjgtMi4xLDZzLTIuMywxLjgtMy45LDEuOGMtMy4xLTAuMS00Ljg2LTEuNS02LjEtMy42DQoJCVY0OS4zYzAuNS0xLjksMS40LTMuNCwyLjctNC42YzIuMi0yLjQ3LDUuOTYtMi41LDcuNywwYzAuOSwxLjIsMS40LDMuMywxLjgsNi4yYzAuMywyLjksMC41LDcsMC41LDEyLjRWNzIuMnoiLz4NCjwvZz4NCjxnPg0KCTxwYXRoIGlkPSJBXzFfIiBzdHlsZT0iZmlsbDojRjdGMEYwOyIgZD0iTTM5MC40LDMzLjR2NjguM2gtMTJsLTEuMy04LjRoLTAuM2MtMy4zLDYuMy04LjIsOS41LTE0LjcsOS41DQoJCWMtMTEuNzctMC4wMy0xMy4wOC0xMC0xMy4yLTE4LjR2LTUxaDE1LjR2NTAuMWMwLDMsMC4zLDUuMiwxLDYuNWMxLjQyLDIuNzgsNS4xLDIuMDcsNy4xLDAuN2MxLjE1LTAuNzgsMi4wOS0xLjg1LDIuNy0zLjFWMzMuNA0KCQlIMzkwLjR6Ii8+DQo8L2c+DQo8L3N2Zz4NCg== EOT;
 
 	logoniyad-custom-dropdown "Custom" <<<EOT /*[[logoniyad-custom]]*\/ EOT;
 }
-@advanced text logoniyad-custom "Change Logo (Custom)" "https://example.com/image.png"
-@advanced dropdown yadcolorize "Logo Changing Color" {
+@advanced text logoniyad-custom "Change Logo ♻️ (Custom)" "https://example.com/image.png"
+@advanced dropdown yadcolorize "Logo Changing Color 🌈" {
 	1 "ON*" <<<EOT yadlogo EOT;
 2 "OFF" <<<EOT none EOT;
 
 }
-@advanced dropdown yadspinner "Loading Spinner" {
+@advanced dropdown yadspinner "Loading Spinner ߷" {
 	1 "Dotted*" <<<EOT dotted EOT;
 2 "Dashed" <<<EOT dashed EOT;
 3 "Double" <<<EOT double EOT;
@@ -47,7 +47,7 @@
 6 "Ridge" <<<EOT ridge EOT;
 
 }
-@advanced dropdown ampoge "Videos Per Row" {
+@advanced dropdown ampoge "Videos Per Row 🎞️" {
 	1 "Default*" <<<EOT 4 EOT;
 2 "5" <<<EOT 5 EOT;
 3 "6" <<<EOT 6 EOT;
@@ -66,11 +66,268 @@
 /*2021 Youtube Retro Wave by YAD*/
 /********************************/
 
+body {
+    color: #fff!important
+}
+
+/*light*/
+#guide-content.ytd-app {
+    background: #dcff0800;
+}
+#sections.ytd-guide-renderer > *.ytd-guide-renderer:not(:last-child) {
+    background-color: #7bc09100;
+}
+#contentContainer.app-drawer {
+    background-color: #f9f9f900;
+}
+.title.ytd-guide-entry-renderer {
+    color: #ffffff;
+}
+
+ytd-guide-entry-renderer[active] .guide-icon.ytd-guide-entry-renderer {
+    color: #00eaf6;
+}
+
+ytd-simple-menu-header-renderer {
+    background-color: rgba(73, 18, 108, 0);
+    color: #fff;
+}
+.text.ytd-notification-renderer {
+    color: #ffffff;
+}
+
+.title.ytd-video-primary-info-renderer {
+    color: azure;
+}
+.content.ytd-video-secondary-info-renderer {
+    color: #ffffff;
+}
+#content-text.ytd-comment-renderer {
+    color: #ffffff;
+}
+h3.ytd-compact-video-renderer {
+    color: #fff;
+}
+#icon-label.yt-dropdown-menu {
+    color: #bebebe;
+}
+#date.ytd-video-primary-info-renderer {
+    color: #bebebe;
+}
+#owner-sub-count.ytd-video-owner-renderer {
+    color: #a5a5a5
+}
+.more-button.ytd-video-secondary-info-renderer, .less-button.ytd-video-secondary-info-renderer {
+    color: #a5a5a5
+}
+ytd-toggle-button-renderer.style-text[is-icon-button] #text.ytd-toggle-button-renderer {
+    color: #a5a5a5;
+}
+ytd-toggle-button-renderer.style-default-active[is-icon-button] {
+    color: #00bfff;
+}
+ytd-button-renderer.style-text[is-icon-button] #text.ytd-button-renderer, ytd-button-renderer.style-default[is-icon-button] #text.ytd-button-renderer, ytd-button-renderer.style-opacity[is-icon-button] #text.ytd-button-renderer {
+    color: #a5a5a5;
+}
+yt-formatted-string.ytd-menu-navigation-item-renderer {
+    color: #ffffff;
+}
+
+ytd-active-account-header-renderer {
+    background-color: #fff0;
+    border-bottom: 1px solid var(--yt-spec-10-percent-layer);
+}
+paper-item.ytd-compact-link-renderer {
+    color: aliceblue;
+}
+#email.ytd-active-account-header-renderer {
+    color: aliceblue;
+}
+ytd-toggle-theme-compact-link-renderer {
+    color: #ffffff;
+}
+paper-button.ytd-subscribe-button-renderer[subscribed] {
+    background-color: var(--yt-spec-badge-chip-background);
+    color: #bebebe;
+}
+
+ytd-masthead {
+    --yt-spec-brand-background-solid: #f5151500;
+    --yt-spec-brand-background-primary: #da000000;
+    --yt-spec-brand-background-secondary: #21212100;
+	--yt-spec-general-background-a: #1ed03300;
+    --yt-spec-general-background-b: #e31a1a00;
+    --yt-spec-general-background-c: #df1e1e00;
+	--yt-spec-call-to-action: #00fff7;
+}
+
+#channel-name.ytd-video-meta-block {
+    --yt-endpoint-color: #c1bdbd;
+    --yt-endpoint-visited-color: #fc098b;
+    color: #0fe1da;
+}
+#metadata-line.ytd-video-meta-block {
+    color: #bebebe;
+}
+yt-formatted-string.ytd-menu-service-item-renderer {
+    color: #fff;
+}
+
+paper-listbox.yt-dropdown-menu .iron-selected.yt-dropdown-menu {
+    background-color: #ffffff0d;
+}
+.item.yt-dropdown-menu {
+	color: #fff;
+}
+paper-listbox.yt-dropdown-menu paper-item.yt-dropdown-menu:hover {
+     background-color: #ffffff24;
+}
+yt-formatted-string.ytd-comments-header-renderer {
+    color: #cfcfcf;
+}
+.more-button.ytd-comment-replies-renderer, .less-button.ytd-comment-replies-renderer {
+color: #919191;
+}
+
+yt-live-chat-header-renderer {
+    color: #fff!important;
+    background-color: #59108754;
+}
+yt-live-chat-ticker-renderer {
+    background-color: #68048f78;
+}
+
+#show-hide-button.ytd-live-chat-frame > ytd-toggle-button-renderer.ytd-live-chat-frame {
+    color: #fff!important;
+    background-color: #bb00ff54;
+}
+#label-text.yt-dropdown-menu {
+    color: #fff;
+}
+#message.yt-live-chat-text-message-renderer {
+    color: #ffffff;
+}
+#message.yt-live-chat-viewer-engagement-message-renderer {
+    color: #ffffff;
+}
+#author-name.yt-live-chat-author-chip {
+    color: var(--paper-cyan-a200);
+}
+#upnext.ytd-compact-autoplay-renderer {
+	color: var(--paper-cyan-a200);
+}
+
+#video-title.ytd-rich-grid-media {
+    color: #ffffff;
+}
+
+ytd-browse[page-subtype=channels] {
+    background: #f1f1f100;
+}
+#subtitle.ytd-shelf-renderer {
+    color: #ffffff;
+}
+#title.ytd-shelf-renderer {
+     color: #ffffff;
+}
+#channel-header.ytd-c4-tabbed-header-renderer {
+    background-color: #f9f9f900;
+}
+#channel-container.ytd-c4-tabbed-header-renderer, #tabs-container.ytd-c4-tabbed-header-renderer {
+    background-color: #8d3ed58a;
+	background-image: linear-gradient(100deg, #00fffc7d 0%, #ff00b27d 100%); 
+}
+#subscriber-count.ytd-c4-tabbed-header-renderer {
+    color: #fff;
+}
+#channel-name.ytd-c4-tabbed-header-renderer {
+    color:#fff
+}
+#tabs-inner-container.ytd-c4-tabbed-header-renderer {
+    background-color: #f9f9f900;
+}
+paper-tab.ytd-c4-tabbed-header-renderer:hover {
+    color: #ffffff;
+}
+paper-tab.iron-selected.ytd-c4-tabbed-header-renderer {
+    color: #ffffff;
+}
+paper-tabs.ytd-c4-tabbed-header-renderer {
+    color: #aeaeae;
+}
+
+ytd-mini-guide-renderer {
+    background-color: #fff0;
+}
+ytd-mini-guide-entry-renderer {
+    background-color: #70636300;
+}
+ytd-mini-guide-entry-renderer[active] .guide-icon.ytd-mini-guide-entry-renderer {
+    color: #00e4ff;
+}
+ytd-mini-guide-entry-renderer[active] .title.ytd-mini-guide-entry-renderer {
+    color: #fff;
+}
+
+ytd-post-renderer[uses-compact-lockup_] {
+    border-top: 2px solid #0ff;
+    background-color: #76518d8c;
+}
+ytd-post-renderer[uses-compact-lockup_] #home-content-text.ytd-post-renderer {
+    color: #ffffff;
+}
+#title.ytd-rich-shelf-renderer {
+    color: #ffffff;
+}
+.input-content.paper-input-container > input, .input-content.paper-input-container > iron-input, .input-content.paper-input-container > textarea, .input-content.paper-input-container > iron-autogrow-textarea, .input-content.paper-input-container > .paper-input-input {
+    color: #ffffff;
+}
+ytd-button-renderer.style-primary[is-paper-button] {
+    background-color: #7608a4;
+	color: #ffffff;
+}
+#content-text.ytd-backstage-post-renderer {
+    color: #ffffff;
+}
+.more-button.ytd-backstage-post-renderer, .less-button.ytd-backstage-post-renderer {
+    color: #838383;
+}
+ytd-comment-action-buttons-renderer {
+    color: #dddddd;
+}
+ytd-comment-action-buttons-renderer.ytd-backstage-post-renderer ytd-button-renderer.ytd-comment-action-buttons-renderer[is-icon-button].style-default-active.ytd-comment-action-buttons-renderer, ytd-comment-action-buttons-renderer.ytd-backstage-post-renderer ytd-toggle-button-renderer.ytd-comment-action-buttons-renderer[is-icon-button].style-default-active.ytd-comment-action-buttons-renderer {
+    color: #00b9f8;
+}
+
+ytd-settings-sidebar-renderer {
+    background-color: #f1f1f100;
+}
+#title.ytd-settings-sidebar-renderer {
+    color: #00e2ff;
+}
+ytd-page-introduction-renderer {
+     color: #fff;
+}
+#title.ytd-item-section-header-renderer {
+    color: #fff;
+}
+#title.ytd-settings-options-renderer {
+    color: #fff;
+}
+#title.ytd-settings-switch-renderer {
+    color: #ffffff;
+}
+#label.ytd-settings-checkbox-renderer {
+    color: #fff
+}
+/*light end*/
+
 
 a:link {color: /*[[link]]*/!important}
 a:visited {color: /*[[visited]]*/!important}
 a:hover {color: #fff!important}
-a:active {color: #412222!important}
+a:active {color: #00ffed!important;
+text-shadow: 0 0 8px}
 
 
 #account-name.ytd-active-account-header-renderer {/*name*/
