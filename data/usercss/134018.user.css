@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Fenom X
 @description    `Изменениe стиля сайта www.vk.comМинимум изменений.Долой кружки :)Улучшение читабельности.Следите за обновлениями ;)`
-@version        2020105.12.40
+@version        20201216.10.35
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,6 +24,21 @@
 [dir] stl_bg 
 {
     background: #cccccc;
+}
+
+[dir=ltr] #page_header_wrap 
+{
+    background: #6382aa;
+}
+
+[dir] body.new_header_design #page_header_cont 
+{
+    border-bottom: 1px solid #cccccc;
+}
+
+[dir] body.new_header_design .top_profile_img 
+{
+    border-radius: 10%;
 }
 
 [dir] input.text.ts_input
@@ -57,6 +72,16 @@
 }
 
 [dir] .nim-peer.nim-peer_smaller .nim-peer--photo>img, [dir] .nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img 
+{
+    border-radius: 7%;
+}
+
+[dir] .group_row_img 
+{
+    border-radius: 7%;
+}
+
+[dir] .search_item_img 
 {
     border-radius: 7%;
 }

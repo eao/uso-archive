@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Meant to be combined with (and installed after) <a href="https://userstyles.org/styles/86145/">crayon for mal</a>.`
-@version        20201121.14.9
+@version        20201216.5.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -237,28 +237,6 @@ td[width="225"] div[style*="center"] img:first-of-type:active, a.js-picture-gall
 
 #addtolist a {color: white !important;}
 
-#addtolist table {text-align: center !important;margin-left: 0 !important;}
-#addtolist table .spaceit:first-of-type {
-    padding-left: 5px !important;
-    width: 30px !important;
-    font-size: 10px !important;
-    text-align: right !important;
-    font-family: Segoe UI Semibold !important; }
-#addtolist tr:nth-child(2) .spaceit:first-of-type,
-#addtolist tr:nth-child(3) .spaceit:first-of-type,
-#addtolist tr:nth-child(4) .spaceit:first-of-type {font-size: 0 !important;}
-#addtolist tr:nth-child(2) .spaceit:first-of-type:before {content: "Episode:";font-size: 10px !important;}
-#addtolist tr:nth-child(3) .spaceit:first-of-type:before {content: "Score:";font-size: 10px !important;}
-#addtolist table .spaceit + .spaceit {padding-left: 10px !important;text-align: left !important;}
-select#myinfo_status.inputtext, select#myinfo_score.inputtext {width: 95% !important;}
-.profileRows.pb0 + #addtolist .inputButton, .profileRows.pb0 + #addtolist #addtolistresult,
-h2.mt8 + #addtolist .inputButton, h2.mt8 + #addtolist small {
-    position: relative;
-    left: -23px !important;
-    top: 6px !important; }
-.inputButton + #addtolistresult a, h2.mt8 + #addtolist small a {background: none !important;box-shadow: none !important; }
-#addtolist #myinfoDisplay {margin: 10px 0 -5px !important;padding-left: 0 !important;font-size: 10px !important;}
-
 #addtolist .inputButton, .inputButton + #addtolistresult a, h2.mt8 + #addtolist .inputButton + small a {
     background: none !important;
     border-bottom: 2px dotted white !important;
@@ -276,7 +254,7 @@ h2.mt8 + #addtolist .inputButton, h2.mt8 + #addtolist small {
 .borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit {min-width: 362px !important;max-width: 362px !important;} /* Mod */
 
 /* Reviews (Preliminary tag and text) */
-.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {left: 510px !important;} /* Mod */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {left: 490px !important;} /* Mod */
 
 /* Recommendations (New) */
 .anime-slide-block .btn-anime {width: 98px !important;}
@@ -313,12 +291,6 @@ div.picSurround img[src*="mark_23.gif"] {background: linear-gradient(to bottom r
 
 /* Footer */
 #footer-block .footer-link.di-ib {left: 154px;padding: 5px 71px 8px !important; /* Mod */} 
-}
-
-@-moz-document url-prefix("https://myanimelist.net/manga.php?id="), regexp("https://myanimelist.net/manga/(?!genre|magazine).*") {
-#addtolist tr:nth-child(2) .spaceit:first-of-type:before {content: "Chapter:";font-size: 10px !important;}
-#addtolist tr:nth-child(3) .spaceit:first-of-type:before {content: "Volume:";font-size: 10px !important;}
-#addtolist tr:nth-child(4) .spaceit:first-of-type:before {content: "Score:";font-size: 10px !important;}
 }
 
 @-moz-document url-prefix("https://myanimelist.net/anime.php?id="), url-prefix("https://myanimelist.net/manga.php?id="), regexp("https://myanimelist.net/anime/(?!season|genre|producer).*"), regexp("https://myanimelist.net/manga/(?!genre|magazine).*") {

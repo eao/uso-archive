@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         zigboom
 @description    `Google redesigned in dark Grays, custom images, gradients, advanced CSS3 effects and more. For web designs, check out https://www.zigboom.com`
-@version        20201214.18.15
+@version        20201216.8.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -76,7 +76,7 @@ a.gb_s.evenMoreLink, .gb_h:hover .gb_m, .gb_h:hover .gb_n, .R9zNe, .uWmgv, .gb_J
 
 /* Unwanted arrows */
                     
-.gb_eb  {
+.gb_eb, .ZXJQ7c  {
  border-style: none !important; 
 }
 
@@ -88,7 +88,7 @@ a.gb_s.evenMoreLink, .gb_h:hover .gb_m, .gb_h:hover .gb_n, .R9zNe, .uWmgv, .gb_J
     
 /* New Header */
 
-.gb_T div, .sfbgx, .gb_jf, .gb_Ef, .frame:before, .source-input, .jZWadf, .sfbg, header, .RvYhPd, .RvYhPd::before {
+.gb_T div, .sfbgx, .gb_jf, .gb_Ef, .frame:before, .source-input, .jZWadf, .sfbg, header, .RvYhPd, .RvYhPd::before, #hdtb, .yg51vc, .s8GCU, .ZXJQ7c {
  background: #181818 !important;
 }
 
@@ -576,11 +576,10 @@ opacity: 0.99 !important;
 
 /*  Search */
 
-#appbar {
+#appbar, #hdtb {
  background-color: transparent !important; 
       border-bottom: 1px solid #333 !important;   
  	  box-shadow: 0 0 2px #000, 0 0 2px #000 !important;
-      border-top: 2px solid #333 !important;   
 }
 
 #appbar > DIV, .kno-sb {

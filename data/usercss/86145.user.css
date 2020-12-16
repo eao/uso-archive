@@ -2,8 +2,8 @@
 @name           crayon for mal
 @namespace      USO Archive
 @author         pajamapop
-@description    `Comes in various parts! An extra is <i>only sorta</i> needed for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. Easily changeable background by <a href="https://userstyles.org/styles/169748/">installing another style</a>.<b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
-@version        2020128.23.12
+@description    `Comes in various parts! An extra is <i>barely</i> needed for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. Easily changeable background by <a href="https://userstyles.org/styles/169748/">installing another style</a>.<b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
+@version        20201216.4.58
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -79,7 +79,7 @@ small {font-size: 10px !important;}
 body[onload="onloadManga();"] {background: rgba(var(--colorBackground)) !important;}
 .page-common .ff-avenir, .breadcrumb, .ff-Verdana, .floatRightHeader {font-family: Segoe UI !important;}
 .breadcrumb {font-size: 13px !important;display: none !important;}
-.page-common .fn-red1 {color: rgba(var(--colorPink)) !important;}
+.page-common .fn-red1, .badresult-text {color: rgba(var(--colorPink)) !important;}
 
 #horiznav_nav {
     margin: 10px !important;
@@ -562,7 +562,7 @@ body.notification .notification-section:last-child {margin-bottom: 2px !importan
     background: rgba(var(--colorBlue)) !important; color: white !important;
     font-family: Segoe UI !important; padding: 6px 7px 7px !important;
     border-bottom: 2px solid rgba(var(--colorBackground)) !important;
-    border-radius: 3px !important; box-shadow: 0 0 2px rgba(var(--colorBlue)) !important; }
+    border-radius: 3px !important; box-shadow: 0 0 0 1px rgba(var(--colorBlue),.35) !important; }
 
 #horiznav_nav ul li a.horiznav_active, .btn-seasonal .btn-type.on {
     background: rgba(var(--colorPink)) !important; color: white !important;
@@ -819,7 +819,7 @@ h2.mt8 + #addtolist {margin: 15px 11px 16px 14px !important;}
 #profileRows a:hover, .profileRows.pb0 a:hover, .js-favorite-button + div.fn-grey5 {
     background: rgba(var(--colorOrange)) !important;
     color: white !important;
-    box-shadow: 0 0 2px rgba(var(--colorOrange)) !important;
+    box-shadow: 0 0 0 1px rgba(var(--colorOrange),.35) !important;
     border-bottom: 2px solid rgba(var(--colorBackground)) !important; }
 
 /* Left frame of Profile/Anime/People/Char page */
@@ -909,7 +909,8 @@ input[id*="favText"] {width: 300px !important;}
 a[onclick*="showAdvanced"], .spaceit > a[onclick^="edit"][title="Edit Comment"],
 .forum-search-side + div > a.fs10.fn-blue1, .quickadd-content a.btn-status-edit,
 .quickadd-content a.btn-status-add, .club-list .btn-club-join,
-.search_all .btn-search-more, .btn-form-submit {
+.search_all .btn-search-more, .btn-form-submit,
+body.page_account_setting a.btn {
     font-family: Segoe UI !important; font-size: 9px !important;
     font-weight: normal !important; font-style: normal !important;
     margin: 3px !important; padding: 0 3px 1px !important;
@@ -1005,18 +1006,20 @@ a + .button_add, a + .button_edit {position: relative;top: -2px !important;}
 .inputButton, .inputButton:visited, .inputButton:hover, a[onclick*="showAdvanced"],
 a[onclick*="showAdvanced"]:visited, a[onclick*="showAdvanced"]:hover,
 #dialog .inputButton.submit, .forum-search-side + div > a.fs10.fn-blue1,
-.search_all .btn-search-more, .btn-form-submit {
+.search_all .btn-search-more, .btn-form-submit, body.page_account_setting a.btn {
     font-family: Segoe UI Semibold, Segoe UI !important;
     font-size: 12px !important; color: rgba(var(--colorButtonDarkText)) !important;
     padding: 3px 5px 4px !important; text-transform: none !important;
     border-radius: 3px !important; border-color: rgba(var(--colorGreen)) !important; }
 .inputButton.ml8 {margin-left: 8px !important;}
 
-.inputButton:hover, #dialog .inputButton.submit:hover, .search_all .btn-search-more:hover, .btn-form-submit:hover {
+.inputButton:hover, #dialog .inputButton.submit:hover,
+.search_all .btn-search-more:hover, .btn-form-submit:hover,
+body.page_account_setting a.btn:hover {
     background: rgba(var(--colorGreen)) !important;
     color: white !important;
     border-color: rgba(var(--colorButton)) !important;
-    box-shadow: 0 0 2px rgba(var(--colorGreen)) !important; }
+    box-shadow: 0 0 0 1px rgba(var(--colorGreen),.35) !important; }
 
 .anime-filter .btn-anime-watch-status {font-family: Segoe UI !important;height: auto !important;}
 
@@ -1043,7 +1046,7 @@ a[onclick*="showAdvanced"]:hover {
     background: rgba(var(--colorOrange)) !important;
     color: white !important;
     border-color: rgba(var(--colorButton)) !important;
-    box-shadow: 0 0 3px rgba(var(--colorOrange)) !important; }
+    box-shadow: 0 0 0 1px rgba(var(--colorOrange),.35) !important; }
 
 /* Blue buttons (Index, Quick Reply, People/Char Search, A/M Pages) */
 .forum-search-side + div > a.fs10.fn-blue1,#quickReply input[value="Submit"],
@@ -1056,7 +1059,7 @@ form[name^="search"] input[value="Search"]:hover, .addtolist-block .inputButton:
     background: rgba(var(--colorBlue)) !important;
     color: white !important;
     border-color: rgba(var(--colorButton)) !important;
-    box-shadow: 0 0 3px rgba(var(--colorBlue)) !important; }
+    box-shadow: 0 0 0 1px rgba(var(--colorBlue),.35) !important; }
 .forum-search-side + div > a.fs10.fn-blue1 {margin: -1px 3px 0 0 !important;padding: 3px 5px !important;float: right;}
 form[name^="search"] input[value="Search"] {position: relative;top: -1px;}
 
@@ -2064,24 +2067,35 @@ div[style|="margin-bottom: 6px;"] + div[style|="padding-left: 10px;"] {padding-l
     box-shadow: 0 0 4px rgba(var(--colorBlue),0.75) !important;
     position: absolute; right: 11px !important; top: 45px !important; }
 
+/* Add to list box */
 #addtolist {
     background: rgba(var(--colorLightBlue)); text-align: center;
     border-radius: 5px; padding: 16px 10px;
     box-shadow: 0 0 4px rgba(var(--colorBlue),0.75); }
 
-#addtolist table {text-align: left !important;margin-left: 4px !important;}
+#addtolist table {text-align: center !important;margin-left: 0 !important;}
 #addtolist table .spaceit:first-of-type {
-    width: 50px !important;
+    padding-left: 5px !important;
+    width: 30px !important;
     font-size: 10px !important;
-    text-align: right !important; }
-#addtolist table .spaceit + .spaceit {padding-left: 10px !important;}
-select#myinfo_status.inputtext, select#myinfo_score.inputtext {width: 90% !important;}
-.profileRows.pb0 + #addtolist .inputButton, .profileRows.pb0 + #addtolist #addtolistresult {
+    text-align: right !important;
+    font-family: Segoe UI Semibold !important; }
+#addtolist tr:nth-child(2) .spaceit:first-of-type,
+#addtolist tr:nth-child(3) .spaceit:first-of-type,
+#addtolist tr:nth-child(4) .spaceit:first-of-type {font-size: 0 !important;}
+#addtolist tr:nth-child(2) .spaceit:first-of-type:before {content: "Episode:";font-size: 10px !important;}
+#addtolist tr:nth-child(3) .spaceit:first-of-type:before {content: "Score:";font-size: 10px !important;}
+#addtolist.js-manga-addtolist-block tr:nth-child(2) .spaceit:first-of-type:before {content: "Chapter:";font-size: 10px !important;}
+#addtolist.js-manga-addtolist-block tr:nth-child(3) .spaceit:first-of-type:before {content: "Volume:";font-size: 10px !important;}
+#addtolist.js-manga-addtolist-block tr:nth-child(4) .spaceit:first-of-type:before {content: "Score:";font-size: 10px !important;}
+#addtolist table .spaceit + .spaceit {padding-left: 10px !important;text-align: left !important;}
+select#myinfo_status.inputtext, select#myinfo_score.inputtext {width: 95% !important;}
+.profileRows.pb0 + #addtolist .inputButton, .profileRows.pb0 + #addtolist #addtolistresult,
+h2.mt8 + #addtolist .inputButton, h2.mt8 + #addtolist small {
     position: relative;
-    left: -22px !important;
+    left: -23px !important;
     top: 6px !important; }
-h2.mt8 + #addtolist .inputButton, h2.mt8 + #addtolist small {position: relative;left: -16px !important;top: 6px !important;}
-.inputButton + #addtolistresult a, h2.mt8 + #addtolist small a {background: none !important; box-shadow: none !important; }
+.inputButton + #addtolistresult a, h2.mt8 + #addtolist small a {background: none !important;box-shadow: none !important;}
 #addtolist #myinfoDisplay {margin: 10px 0 -5px !important;padding-left: 0 !important;font-size: 10px !important;}
 
 /* User, Helpful, Count, Rating, Date, Preliminary */
@@ -2097,7 +2111,7 @@ div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit /* Helpful (Pr
 .borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div /* Preliminary */,
 div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit + div /* Preliminary (Profile) */ {
     color: #808080 !important;
-    padding: 9px 0 !important; position: relative;
+    height: 13px !important; padding: 9px 0 !important; position: relative;
     text-align: center !important; font-size: 10px !important; font-style: normal !important;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
@@ -2158,7 +2172,7 @@ div[id^="revArea"] + div[style="float: left;"] {height: 0 !important;} /* Profil
     background: #89cce9 !important; color: white !important;
     font-weight: bold !important; font-size: 17px !important;
     min-width: 115px !important; max-width: 115px !important;
-    padding: 3px 0 6px !important;
+    padding: 3px 0 15px !important;
     top: -62px !important; left: -51px !important; }
 .borderDark > .spaceit > .mb8 > div:nth-child(3) a {
     color: white !important;
@@ -2869,7 +2883,7 @@ a[href*="go=report&type=club"] {font-style: normal !important;color: rgba(var(--
     padding: 6px 0 7px !important;
     transition-duration: 0.2s !important; }
 .club-list a[href*="request"].btn-club-join:hover {box-shadow: 0 0 4px rgba(var(--colorOrange)) !important;}
-.club-list .btn-club-join:hover {transition-duration: 0.2s !important;}
+/* .club-list .btn-club-join:hover {transition-duration: 0.2s !important;} */
 
 /* 'Pages' (Top/Bottom) */
 .club-search-form-search + div .pagination {display: none !important;}
@@ -3638,7 +3652,7 @@ h4 > a[href$="/friends"]:hover,
     background: rgba(var(--colorBlue)) !important; color: white !important;
     font-family: Segoe UI !important; padding: 6px 7px 7px !important;
     border-bottom: 2px solid rgba(var(--colorBackground)) !important; border-radius: 3px !important;
-    box-shadow: 0 0 2px rgba(var(--colorBlue)); margin-top: -1px !important; }
+    box-shadow: 0 0 0 1px rgba(var(--colorBlue),.35); margin-top: -1px !important; }
 .user-status li.icon-history.link a:hover span {color: white !important;}
 .user-status li.icon-history.link a:hover {margin-top: 0 !important;}
 
@@ -3758,7 +3772,7 @@ h4 > a[href$="/friends"]:hover:before {color: white !important;}
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(4) a:hover {
     background: rgba(var(--colorOrange)) !important;
     color: white !important;
-    box-shadow: 0 0 2px rgba(var(--colorOrange)) !important;
+    box-shadow: 0 0 0 1px rgba(var(--colorOrange),.35) !important;
     border-bottom: 2px solid rgba(var(--colorBackground)) !important; }
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(1):hover span,
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(4):hover span {color: white !important;}
@@ -4922,6 +4936,17 @@ div[style="padding: 0 15px"] > br + .goodresult {margin-bottom: 20px !important;
 
 /* Signature text box */
 textarea[cols="60"][rows="2"] {height: 100px !important;}
+
+/* Account settings */
+body.page_account_setting .info-container {
+    border-bottom: none !important;
+    border-top: 2px solid #e0dee0 !important;
+    margin: 0 24px !important;
+    padding: 24px !important; }
+body.page_account_setting .info-container h2 {border: none !important;}
+body.page_account_setting #horiznav_nav + .info-container {border: none !important;padding: 24px !important;}
+body.page_account_setting .info-container .info-item .mfa-status .disabled {color: rgba(var(--colorPink)) !important;}
+body.page_account_setting .info-container .info-item .mfa-status .enabled {color: rgba(var(--colorGreen)) !important;}
 }
 
 @-moz-document url-prefix("https://myanimelist.net/editprofile.php?go=stylepref&do=cssadv&id=") {

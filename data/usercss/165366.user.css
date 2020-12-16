@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         upolo
 @description    `style is just for me, but feel free to use it too`
-@version        2020107.8.23
+@version        20201216.5.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -28,10 +28,13 @@
     background-color: #121c21;
 }
    
+[dir] .ImageStatusPopup {
+    background-color: #121c21;
+}
 
 [dir] #page_header_cont {
     background-color: #121c21;
-    border-bottom: none;
+    border-bottom: none !important;
 }
         /*polls*/
 
@@ -63,7 +66,7 @@
 }
 
 [dir=ltr] .thumbed_link__thumb {
-  border-radius: none; 
+  border-radius: 0; 
 }
 
 [dir] .thumbed_link__label {
@@ -446,6 +449,21 @@ input.text.ts_input, input.ui_search_field, .im-chat-input .im-chat-input--txt-w
     -moz-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.42) !important;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.42) !important;
 }
+
+        /*icon fixes*/
+
+[dir] body.new_header_design .top_home_link .top_home_logo, [dir] body.new_header_design.WideScreenAppPage .top_home_link .top_home_logo {
+    background: url(https://vk.com/images/svg_icons/ic_head_logo.svg) no-repeat left/contain
+}
+
+[dir] body.new_header_design .top_home_link .top_home_logo {
+    background-size: auto 20px;
+}
+
+[dir] body.new_header_design #side_bar .left_icon {
+    filter: brightness(0) saturate(100%) invert(38%) sepia(8%) saturate(691%) hue-rotate(175deg) brightness(104%) contrast(87%);
+}
+
 
 .ui_scroll_default_theme>.ui_scroll_bar_container>.ui_scroll_bar_outer>.ui_scroll_bar_inner {
     right: 9px;

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `Vanilla Dark 2 VK Fix/Mod PART 1 of 2 is herehttps://userstyles.org/styles/132224read description and set all style settings there`
-@version        20201215.20.55
+@version        20201216.10.37
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -737,11 +737,12 @@ img[src="/images/x_null.gif"],[style*="/images/x_null.gif"],img[src="/images/x_n
 .fans_rows .post_full_like_wrap,.fans_rows .wall_text+.replies{border-bottom:1px solid var(--color3)}
 
 /* фикс колокольчика с уведомлениями */
+body.new_header_design .top_notify_count{color:#e6e6e6;background-color:#841515!important}
+[dir] body.new_header_design .top_nav_btn.active .top_notify_count::after,[dir] body.new_header_design .top_nav_btn.active:hover .top_notify_count::after{border-color:#b51919}
 .top_nav_btn#top_notify_btn.has_notify .top_nav_btn_icon{filter:invert(.6)!important}
 #top_notify_btn.top_nav_btn.active.has_notify .top_nav_btn_icon{filter:invert(.8)!important}
 .top_nav_btn.active .top_nav_btn_icon{filter:saturate(0)brightness(.15)opacity(1)!important}
-.top_notify_count{background-color:#8D331A}
-#top_notify_btn.top_nav_btn:not(.active).has_notify:hover .top_nav_btn_icon{filter:invert(.2) !important}
+#top_notify_btn.top_nav_btn:not(.active).has_notify:hover .top_nav_btn_icon{filter:invert(.2)!important}
 
 /* раздел помощи */
 .tickets_thank_you_form__title,.tickets_thank_you_form__inner{background:transparent}
@@ -1505,28 +1506,37 @@ a[href*="telegram.me"] .cell_img{filter:invert(.93)hue-rotate(180deg)saturate(.7
 .payments_money_transfer_amount_wrap.money_error .payments_money_transfer_notice{color:#f1513d}
 
 /* ПОСТИРЫ */
-.poster__open-btn,._disable .poster__open-btn:hover{filter:invert(.85)saturate(0)sepia(1)saturate(1.9)hue-rotate(175deg)var(--filt22);transition:filter .5s}
-._disable .poster__open-btn{opacity:.2!important}
-.poster__open-btn:hover{filter:none;opacity:1}
-#submit_post_box:not(.shown):not(.test_posting_experiment_b):not(.test_posting_experiment_c):not(.own_field) .poster__open-btn-wrapper{border-left:1px solid #2d2d2d}
-.poster__open-btn-wrapper{border-right:1px solid #2d2d2d}
-.poster__close-button{filter:invert(.9)}
-.poster__settings-btn-wrapper{border-left:none}
-.poster__toolbar{background:transparent}
-.poster .post_actions_btns,.poster__toolbar-wrapper{border-top:1px solid var(--color3)}
-.poster__slider-arrow{background-color:rgba(0,0,0,.85);transition:background-color .5s}
-.poster__slider-arrow:hover{background-color:#000}
-.poster__slider-arrow._left{box-shadow:5px 0 5px 0px #000000ba}
-.poster__slider-arrow._right{box-shadow:-5px 0 5px 0px #000000ba}
-.poster__slider-item._active:after{border-color:var(--color2)}
-.poster__change-bkg-btn{background-color:rgba(0,0,0,.85);transition:color .5s}
-.poster__change-bkg-btn:hover{color:#ccc}
-.poster__loading-wrapper{background-color:rgba(0,0,0,.85)}
-.poster__text .mem_link,.poster__text>a{text-decoration:none}
-.poster__text .mem_link:hover,.poster__text>a:hover{text-decoration:underline}
-.eltt .eltt_fancy_action{color:var(--color2)}
-.eltt .eltt_fancy_action.radiobtn.on{color:var(--color1)}
-.eltt .eltt_fancy_action:hover{background-color:var(--color3);color:var(--color1)}
+[dir] .poster__open-btn,[dir] ._disable .poster__open-btn:hover{filter:invert(.85)saturate(0)sepia(1)saturate(1.9)hue-rotate(175deg)var(--filt22);transition:filter .5s}
+[dir] ._disable .poster__open-btn{opacity:.2!important}
+[dir] .poster__open-btn:hover{filter:none;opacity:1}
+[dir] #submit_post_box:not(.shown):not(.test_posting_experiment_b):not(.test_posting_experiment_c):not(.own_field) .poster__open-btn-wrapper{border-left:1px solid #2d2d2d}
+[dir] .poster__open-btn-wrapper{border-right:1px solid #2d2d2d}
+[dir] .poster__close-button{filter:invert(.9)}
+[dir] .poster__settings-btn-wrapper{border-left:none}
+[dir] .poster__toolbar{background:transparent}
+[dir] .poster .post_actions_btns,[dir] .poster__toolbar-wrapper{border-top:1px solid var(--color3)}
+[dir] .poster__slider-arrow{background-color:rgba(0,0,0,.85);transition:background-color .5s}
+[dir] .poster__slider-arrow:hover{background-color:#000}
+[dir] .poster__slider-arrow._left{box-shadow:5px 0 5px 0px #000000ba}
+[dir] .poster__slider-arrow._right{box-shadow:-5px 0 5px 0px #000000ba}
+[dir] .poster__slider-item._active:after{border-color:var(--color2)}
+[dir] .poster__change-bkg-btn{background-color:rgba(0,0,0,.85);transition:color .5s}
+[dir] .poster__change-bkg-btn:hover{color:#ccc}
+[dir] .poster__loading-wrapper{background-color:rgba(0,0,0,.85)}
+[dir] .poster__text .mem_link,.poster__text>a{text-decoration:none}
+[dir] .poster__text .mem_link:hover,.poster__text>a:hover{text-decoration:underline}
+[dir] .eltt .eltt_fancy_action{color:var(--color2)}
+[dir] .eltt .eltt_fancy_action.radiobtn.on{color:var(--color1)}
+[dir] .eltt .eltt_fancy_action:hover{background-color:var(--color3);color:var(--color1)}
+[dir] .poster__new-bkg-btn-wrapper{color:var(--color2)}
+[dir] .poster__new-bkg-btn-wrapper:hover{color:var(--color1)}
+[dir] .poster-uploader__drop-box{border:2px dashed var(--color2)}
+[dir] .poster-uploader__drop-box:hover{background-color:#2f2f2f36;border:2px dashed var(--color1)}
+[dir] .poster-uploader__add-icon{filter:var(--filt2)saturate(.3)}
+[dir] .poster-uploader__add-button{color:var(--color2)}
+[dir] .poster__btns-wrapper{border-top:1px solid var(--color3)}
+[dir] .poster__cta-btn{background:#2626268c;color:#999}
+[dir] .poster__cta-btn:hover{background:#262626de;color:var(--color1)}
 
 /* реклама аудио */
 .audio_page_player_remove_ads{color:var(--color1)}

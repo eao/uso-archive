@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Tak jak powyżej.`
-@version        202067.22.54
+@version        20201216.11.13
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -20,7 +20,7 @@
         }
         ::-webkit-scrollbar-thumb {
              border-radius: 2px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #3d4456;
         }
 
@@ -50,7 +50,7 @@ p, .marg_b8, span, input, .login_txt, .window .content .left .register, .window 
     background: #3d4456;
 }
 .longarrow_white_right {
-    background: url(https://www.cdaction.pl/views/img1/longarrow_right.gif)
+    background: url(https://www.cdaction.pl/views/img1/longarrow_right.gif) no-repeat;
 }
 .longarrow_white_left {
     background: url(https://www.cdaction.pl/views/img1/longarrow_left.gif) no-repeat;
@@ -65,7 +65,7 @@ div.pagination .c1s {
 }
 .powrot > .pagination {
     position: relative;
-        bottom: -5px !important;
+    bottom: -5px !important;
 }
 .iframe-popup-content button.popup-later:hover {
     background: #333;
@@ -92,10 +92,25 @@ a.twitter-timeline:after {
 #news_content .lead a:hover, #news_content .tresc a:hover, #newsy a:hover {
     color: #697f9f;
 }
-.tresc blockquote > p {
+.tresc blockquote > p, #news_content {
     color: #999;
 }
 #strzala_l, #strzala_p, #strzala_r {
     filter: invert(100);
+}
+.avatar > a > img {
+	display: none;
+}
+.padBottom > .avatar > a > img {
+	display: block;
+	border-radius: 10px;
+}
+.avatar  {
+	border: 1px solid #626a75;
+	border-radius: 11px;
+}
+iframe {
+	border-color: #34383e !important;
+	background-color: #0000 !important;
 }
 }

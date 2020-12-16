@@ -1,14 +1,71 @@
 /* ==UserStyle==
-@name           Roblox in 2019
+@name           Roblox in 2019 (NOW CUSTOMISABLE)
 @namespace      USO Archive
 @author         Loc.
 @description    `Roblox in 2019 ~(ThatGuyLoc)~ V.4.0.0, based off GalactiCosmo's Roblox Old Light Theme.Original version here: https://userstyles.org/styles/177302/roblox-old-light-theme-2019`
-@version        20201215.23.59
+@version        20201216.8.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced color --header "Header Colour" #0074BD
-@advanced color --background "Background Colour" #E3E3E3
-@advanced color --text-dark "Text Colour" #191919
+@advanced color RbxHeader "Header Colour" #0074BD
+@advanced color BodyAndContent "Background Colour" #E3E3E3
+@advanced color FontColour "Text Colour" #191919
+@advanced dropdown AvatarShopCatalog "Avatar Shop Text " {
+	CatalogOption "Catalog*" <<<EOT a.font-header-2.nav-menu-title.text-header[href="/catalog"]:after {
+	content: "Catalog";
+	font-size: 16px;
+	visibility: visible;
+	padding: 8px 9px;
+	border-radius: 5px;
+}
+a.font-header-2.nav-menu-title.text-header[href="/catalog"] {
+	font-size: 0;
+	visibility: hidden;
+	padding: 0;
+	margin-top: 6px;
+}
+.light-theme ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1):hover::after {
+	background-color: rgba(25, 25, 25, .1);
+	border-radius: 5px !important
+}
+ul.nav > li.cursor-pointer:hover {
+	cursor: default;
+}
+.heading .ng-binding {
+	font-size: 0
+}
+.heading .ng-binding:after {
+	content: "Catalog";
+	font-size: 34px
+} EOT;
+DefaultOption "Avatar Shop" <<<EOT a.font-header-2.nav-menu-title.text-header[href="/catalog"]:after {
+	content: "Avatar Shop";
+	font-size: 16px;
+	visibility: visible;
+	padding: 8px 9px;
+	border-radius: 5px;
+}
+a.font-header-2.nav-menu-title.text-header[href="/catalog"] {
+	font-size: 0;
+	visibility: hidden;
+	padding: 0;
+	margin-top: 6px;
+}
+.light-theme ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1):hover::after {
+	background-color: rgba(25, 25, 25, .1);
+	border-radius: 5px !important
+}
+ul.nav > li.cursor-pointer:hover {
+	cursor: default;
+}
+.heading .ng-binding {
+	font-size: 0
+}
+.heading .ng-binding:after {
+	content: "Avatar Shop";
+	font-size: 34px
+} EOT;
+
+}
 
 ==/UserStyle== */
 @-moz-document url("https://www.roblox.com/"), url("https://web.roblox.com/"), url-prefix("https://www.roblox.com/account/signupredir?"), url-prefix("https://web.roblox.com/account/signupredir?") {
