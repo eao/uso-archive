@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `стиль РАЗРЕЗАН НА 2 ЧАСТИ. для нормального функционирования нужны обе / this style is CUT INTO 2 PARTS, you need both parts so it'd function properly. the second partVanilla Dark 2 VK Fix/Mod PART 2 of 2здесь / is here:https://userstyles.org/styles/165927/ЭТА ТЕМА - ДОПОЛНЕНИЕ/ИСПРАВЛЕНИЯ ДЛЯ VANILLA DARK 2, НЕ ОТДЕЛЬНЫЙ СТИЛЬ.НЕ ЗАБЫВАЕМ СНАЧАЛА УСТАНАВЛИВАТЬ https://userstyles.org/styles/126419/vanilla-dark-2 После обновления Vanilla Dark 2 этот фикс-мод возможно нужно будет переключить (ВЫКЛ/ВКЛ), чтобы он нормально работал.Паблос в ВКшечке: https://vk.com/worstmodThis Fix/Mod IS NOT A STANDALONE THEME.Make sure to install Vanilla Dark 2 first https://userstyles.org/styles/126419/vanilla-dark-2This Fix/Mod may need to be switched (OFF/ON) after Vanilla Dark 2 update to function properly.Check https://vk.com/worstmod if you have any questions/suggestions.`
-@version        2020108.5.3
+@version        20201215.15.3
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown blackaudioplay "Чёрные кнопки плеера + загрузчики:" {
@@ -245,22 +245,27 @@ fastchatsimple "обычные (неплохо для сумрачных лич�
 [dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
 
 /* затемняем лого - букву Ж слева вверху)) *\/
-.top_home_link .top_home_logo{opacity:0.4;transition:opacity 0.5s}
-.top_home_link:hover .top_home_logo{opacity:0.8;transition:opacity 0.5s}
+.top_home_link .top_home_logo{opacity:0.6;filter:invert(.9)hue-rotate(180deg)var(--filt2)saturate(.3);transition:opacity 0.5s}
+.top_home_link:hover .top_home_logo{opacity:.9;transition:opacity 0.5s}
 
 /* плеер в шапке цвет текста *\/
 .top_audio_player .top_audio_player_title{color:#909090!important}
  EOT;
 hollowheadoff "выкл" <<<EOT /* поиск в шапке фикс фона *\/
-[dir] .TopSearch__input{background-color:var(--color4)}
+[dir] body.new_header_design #page_header_cont{background-color:var(--color3);border-bottom: 1px solid #464542}
+[dir] .TopSearch__input{background-color:var(--color3)!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}
+[dir] .TopSearch__input::selection{background:#4e5e71!important}
+#ts_wrap .input_back .input_back_content{color:#999!important}
+.top_nav_btn:hover .top_nav_btn_icon{filter:saturate(0)brightness(4)opacity(1)!important}
+.top_nav_btn .top_nav_btn_icon{filter:saturate(0)brightness(2.5)opacity(1)!important}
+[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
 
 /* затемняем лого - букву Ж слева вверху)) *\/
-.top_home_link .top_home_logo{opacity:0.4;transition:opacity 0.5s}
-.top_home_link:hover .top_home_logo{opacity:0.8;transition:opacity 0.5s}
+.top_home_link .top_home_logo{opacity:0.6;filter:invert(.9)hue-rotate(180deg)var(--filt2)saturate(.3);transition:opacity 0.5s}
+.top_home_link:hover .top_home_logo{opacity:.9;transition:opacity 0.5s}
 
 /* плеер в шапке цвет текста *\/
-.top_audio_player .top_audio_player_title{color: #909090 !important}
- EOT;
+.top_audio_player .top_audio_player_title{color: #909090 !important} EOT;
 hollowheadoffcolor "выкл (цветная шапка)" <<<EOT  EOT;
 
 }
@@ -424,9 +429,17 @@ div::-webkit-scrollbar-thumb:hover{background:#444!important}
 /*[[nameremove]]*/
 
 /* поправляем левую менюшку (и логотип) */
-#side_bar ol{background:rgba(0,0,0,/*[[opaque]]*/);padding:0px 0px 0px 8px;border:1px solid #2A2A2C;border-radius:4px}
+#side_bar ol{background:rgba(0,0,0,0.75);border:1px solid #2A2A2C;border-radius:4px}
 #side_bar li span.left_label.inl_bl{opacity:1!important}
-#side_bar .more_div{margin:5px 9px 0px 0px;padding-top:2px;border-top:1px solid #111}
+#side_bar .more_div{margin:5px 9px 0px 7px!important;padding-top:2px!important;border-top:1px solid #111!important}
+[dir] body.new_header_design #side_bar ol li .left_row{padding:0}
+[dir] body.new_header_design #side_bar ol li{padding-left:8px}
+[dir="ltr"] body.new_header_design #side_bar ol {margin:0 10px 10px -6px}
+[dir="ltr"] .left_settings{margin:calc(-1*var(--left-menu-row-height)) 0 0 -28px}
+[dir] body.new_header_design #side_bar ol li .left_row .left_label{color:var(--color1);transition:color .3s}
+[dir] body.new_header_design #side_bar ol li .left_row:hover .left_label{color:var(--color1)}
+[dir] body.new_header_design #side_bar ol li .left_row .left_icon{filter:var(--filt2)brightness(1.1)saturate(.5)!important}
+[dir] body.new_header_design #side_bar ol li .left_row:hover .left_icon{filter:var(--filt2)brightness(1.5)saturate(.5)!important}
 /*[[sidebarnotext]]*/
 .top_home_link .top_home_logo{padding-left:8px}
 .left_label{transition:filter .3s}

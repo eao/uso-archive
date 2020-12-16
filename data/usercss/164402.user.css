@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ryousuke
 @description    `GK Dark & Gold - Site et forums`
-@version        2020127.9.43
+@version        20201215.18.29
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1425,7 +1425,70 @@ span.highlighted {
     display: none!important
 }
 .gk__poool-pw:after {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255,255,255,0)), to(#111));
-    background: -o-linear-gradient(top, rgba(255,255,255,0) 0, #111 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#111));
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, #111 100%);
+}
+/*award*/
+.g2__lyt__ctnr.is--light {
+    background-color: #181819;
+}
+.gk__main__content--white {
+    background-color: #181819;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 0%);
+}
+.g2__o-awd-ctn {
+    background-color: #181819;
+}
+.g2__o-awd-stp {
+    background-color: #181819;
+}
+.g2__o-awd-stp__t {
+    color: #edaf00;
+}
+.g2__o-awd-stp__st {
+    color: #edaf00;
+}
+.g2__o-awd-stp__st-i {
+    color: #cccccc;
+}
+.g2__m-awd-nav__stp-idr:before,
+.g2__m-awd-nav__stp-idr:after {
+    background-color: #edaf00;
+}
+.g2__m-awd-nav__stp-idr > span {
+    background-color: #edaf00;
+    color: #000;
+}
+.g2__m-awd-nav__dts-idr span {
+    border: .0625rem solid #edaf00;
+    background-color: #000000;
+}
+.g2__font-tundora,
+.g2__font-tundora--has-hover {
+    color: #edaf00;
+}
+.has--hover.g2__pnl--pr img {
+    filter: brightness(0.8);
+}
+.g2__a-bdg {
+    background-color: #000000;
+}
+.g2__m-awd-i-cntr__f-cnt:after {
+    background-color: #181819;
+}
+.g2__gka-rcp {
+    background-color: #181819;
+}
+.g2__gka-rcp__t {
+    color: #edaf00;
+}
+.g2__gka-rcp__st {
+    color: #f5a623;
+}
+.g2__gka-rcp > ul > li > p:nth-of-type(1):before {
+    background-color: #edaf00;
+}
+.g2__gka-rcp > ul > li {
+    color: #edaf00;
 }
 }

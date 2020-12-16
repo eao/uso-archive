@@ -3,9 +3,13 @@
 @namespace      USO Archive
 @author         Loc.
 @description    `Roblox in 2019 ~(ThatGuyLoc)~ V.4.0.0, based off GalactiCosmo's Roblox Old Light Theme.Original version here: https://userstyles.org/styles/177302/roblox-old-light-theme-2019`
-@version        20201211.8.27
+@version        20201215.23.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
+@advanced color --header "Header Colour" #0074BD
+@advanced color --background "Background Colour" #E3E3E3
+@advanced color --text-dark "Text Colour" #191919
+
 ==/UserStyle== */
 @-moz-document url("https://www.roblox.com/"), url("https://web.roblox.com/"), url-prefix("https://www.roblox.com/account/signupredir?"), url-prefix("https://web.roblox.com/account/signupredir?") {
 /* Roblox in 2019 ~(ThatGuyLoc)~ V.4.0.0, based off GalactiCosmo's Roblox Old Light Theme.
@@ -36,10 +40,9 @@ I'm thinking of moving this theme to greasyfork, because userstyles is so slow.
 {{---######---OTHER THEMES BY ME---######---}}
 Roblox Old Dark Theme: https://userstyles.org/styles/190904
 Roblox 2017/2018 Theme: https://userstyles.org/styles/191623
-Roblox+ OBC (Coming Soon!)
-
-{{---######---CSS STARTS HERE---######}}
-*/
+Roblox+ OBC (Coming Soon!) */
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*** Rollercoaster background ***/
 #RollerContainer.rollercoaster-background {
 	background-image: url(https://images.rbxcdn.com/dcbdfaf1c08058e71f65c09f7b98ff04.jpg);
 }
@@ -212,10 +215,34 @@ Roblox+ OBC (Coming Soon!)
 }
 
 @-moz-document url-prefix("https://web.roblox.com"), url-prefix("https://www.roblox.com") {
-/* {{---######---2019 STYLEGUIDE---######---}} */
+/*** Custom Settings ***/
+:root {
+	--text-dark: #191919;
+	--background: #E3E3E3;
+	--header: #0074BD;
+	--header-text: #FFF;
+	--header-light: #00A2FF;
+	--button-white: #FFF;
+	--alert-button-hover: #D86868;
+	--button-blue: #00A2FF;
+	--button-blue-hover: #32BDFF;
+	--button-blue-disabled: #99DAFF;
+	--button-text: #FFF;
+	--button-green: #02B757;
+	--button-green-hover: #3FC679;
+	--roundify: 3px;
+	--2019--small-details: none;
+	--dropdown-menu: #FFF;
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
 .light-theme .rbx-header {
-	background: #0074BD;
-	border: #0074BD;
+	background: var(--header);
+	border: var(--header);
+}
+body, 
+.light-theme,
+.light-theme .content {
+	background: var(--background);
 }
 /*
 {{---######---BREADCRUMB---######---}}
@@ -236,14 +263,16 @@ Roblox+ OBC (Coming Soon!)
 /*
 {{---######---BUTTONS---######---}}
 */
-/* Call to Action Buttons */
+.light-theme button {
+	border-radius: var(--roundify) !important;
+}
+/*** Call to Action Buttons ***/
 .light-theme .btn-cta-xs,
 .light-theme .btn-cta-sm,
 .light-theme .btn-cta-md,
 .light-theme .btn-cta-lg {
-	background-color: #02b757;
-	border-color: #02b757;
-	border-radius: 3px !important;
+	background-color: var(--button-green);
+	border-color: var(--button-green);
 }
 .light-theme .btn-cta-xs[disabled],
 .light-theme .btn-cta-sm[disabled],
@@ -266,13 +295,13 @@ Roblox+ OBC (Coming Soon!)
 	background-color: #108237;
 	border-color: #108237;
 }
-/* Growth Buttons */
+/*** Growth Buttons ***/
 .light-theme .btn-growth-xs,
 .light-theme .btn-growth-sm,
 .light-theme .btn-growth-md,
 .light-theme .btn-growth-lg {
-	background-color: #02b757;
-	border-color: #02b757;
+	background-color: var(--button-green);
+	border-color: var(--button-green);
 	border-radius: 3px;
 }
 .light-theme .btn-growth-xs[disabled],
@@ -297,46 +326,68 @@ Roblox+ OBC (Coming Soon!)
 	border-color: #108237;
 	border-radius: 3px;
 }
-/* Secondary Action Buttons */
+/*** Primary Action Buttons ***/
+.light-theme .btn-primary-xs,
+.light-theme .btn-primary-sm,
+.light-theme .btn-primary-md,
+.light-theme .btn-primary-lg {
+	background-color: var(--button-green) !important;
+	border-color: var(--button-green) !important;
+	border-radius: var(--roundify) !important;
+}
+.light-theme .btn-primary-xs:hover,
+.light-theme .btn-primary-sm:hover,
+.light-theme .btn-primary-md:hover,
+.light-theme .btn-primary-lg:hover {
+	background-color: var(--button-green-hover) !important;
+	border-color: var(--button-green-hover) !important;
+}
+.light-theme .btn-primary-xs:focus,
+.light-theme .btn-primary-sm:focus,
+.light-theme .btn-primary-md:focus,
+.light-theme .btn-primary-lg:focus {
+	background-color: #108237 !important;
+	border-color: #108237 !important;
+}
+/*** Secondary Action Buttons ***/
 .light-theme .btn-secondary-xs,
 .light-theme .btn-secondary-sm,
 .light-theme .btn-secondary-md,
 .light-theme .btn-secondary-lg {
-	background-color: #00a2ff;
-	border-color: #00a2ff;
-	color: #fff !important;
-	border-radius: 3px
+	background-color: var(--button-blue) !important;
+	border-color: var(--button-blue) !important;
+	color: var(--button-text) !important;
 }
 .light-theme .btn-secondary-xs[disabled],
 .light-theme .btn-secondary-sm[disabled],
 .light-theme .btn-secondary-md[disabled],
 .light-theme .btn-secondary-lg[disabled] {
-	background-color: #99DAFF;
-	border-color: #99DAFF;
-	color: #fff;
+	background-color: var(--button-blue-disabled);
+	border-color: var(--button-blue-disabled) !important;
+	color: var(--button-text);
 }
 .light-theme .btn-secondary-xs:hover,
 .light-theme .btn-secondary-sm:hover,
 .light-theme .btn-secondary-md:hover,
 .light-theme .btn-secondary-lg:hover {
-	background-color: #32BDFF;
-	border-color: #32BDFF;
-	color: #FFF;
+	background-color: var(--button-blue-hover) !important;
+	border-color: var(--button-blue-hover) !important;
+	color: var(--button-text) !important;
 }
 .light-theme .btn-secondary-xs:focus,
 .light-theme .btn-secondary-sm:focus,
 .light-theme .btn-secondary-md:focus,
 .light-theme .btn-secondary-lg:focus {
 	background-color: #32BDFF !important;
-	border-color: #32BDFF;
-	color: #FFF;
+	border-color: #32BDFF !important;
+	color: var(--button-text);
 }
-/* Control + Configure Buttons */
+/*** Control + Configure Buttons ***/
 .light-theme .btn-control-xs,
 .light-theme .btn-control-sm,
 .light-theme .btn-control-md,
 .light-theme .btn-control-lg {
-	background-color: #FFF !important;
+	background-color: var(--button-text) !important;
 	border-color: #B8B8B8 !important;
 	color: #191919 !important;
 	border-radius: 3px !important;
@@ -349,7 +400,7 @@ Roblox+ OBC (Coming Soon!)
 	border-color: #B8B8B8;
 	color: #808080 !important;
 }
-/* Alert Buttons */
+/*** Alert Buttons ***/
 .light-theme .btn-alert-xs,
 .light-theme .btn-alert-sm,
 .light-theme .btn-alert-md,
@@ -363,40 +414,38 @@ Roblox+ OBC (Coming Soon!)
 .light-theme .btn-alert-sm:hover,
 .light-theme .btn-alert-md:hover,
 .light-theme .btn-alert-lg:hover {
-	background-color: #D86868 !important;
-	border-color: #D86868 !important;
-	color: #FFF !important;
+	background-color: var(--alert-button-hover) !important;
+	border-color: var(--alert-button-hover) !important;
+	color: var(--button-text) !important;
 }
-/* Icon Buttons */
+/*** Icon Buttons ***/
 .light-theme .btn-generic-edit-xs,
 .light-theme .btn-generic-edit-sm,
 .light-theme .btn-generic-edit-md,
 .light-theme .btn-generic-edit-lg {
 	background-color: #fff !important;
 	border-color: #b8b8b8 !important;
-	border-radius: 3px !important
 }
-/* Play button */
+/*** Play button ***/
 .light-theme .btn-common-play-game-lg {
-	background-color: #02B757;
-	border-color: #02B757;
+	background-color: var(--button-green);
+	border-color: var(--button-green);
 	border-radius: 5px !important;
 }
 .light-theme .btn-common-play-game-lg:hover {
-	background-color: #3FC679!important;
+	background-color: var(--button-green-hover) !important;
 	border-color: #3FC679!important;
 }
-/* Purchase game button */
+/*** Purchase game button ***/
 .light-theme .btn-branded-robux-white-lg {
-	background-color: #02b757;
-	border-color: #02b757;
-	border-radius: 3px !important;
+	background-color: var(--button-green);
+	border-color: var(--button-green);
 }
 .light-theme .btn-branded-robux-white-lg:hover {
 	background-color: #3fc679 !important;
 	border-color: #3fc679 !important;
 }
-/* Buy Buttons */
+/*** Buy Buttons ***/
 .light-theme .btn-buy-xs,
 .light-theme .btn-buy-sm,
 .light-theme .btn-buy-md,
@@ -404,7 +453,6 @@ Roblox+ OBC (Coming Soon!)
 	background-color: #fff;
 	border-color: #B8B8B8;
 	color: #656668;
-	border-radius: 3px;
 }
 .light-theme .btn-buy-xs[disabled],
 .light-theme .btn-buy-sm[disabled],
@@ -413,15 +461,14 @@ Roblox+ OBC (Coming Soon!)
 	background-color: #fff;
 	border-color: #B8B8B8;
 	color: #B8B8B8;
-	border-radius: 3px;
 }
 .light-theme .btn-buy-xs:hover,
 .light-theme .btn-buy-sm:hover,
 .light-theme .btn-buy-md:hover,
 .light-theme .btn-buy-lg:hover {
-	background-color: #3FC679 !important;
-	border-color: #3FC679 !important;
-	color: #FFF !important;
+	background-color: var(--button-green-hover) !important;
+	border-color: var(--button-green-hover) !important;
+	color: var(--button-text) !important;
 }
 .light-theme .btn-buy-xs:focus,
 .light-theme .btn-buy-sm:focus,
@@ -431,10 +478,132 @@ Roblox+ OBC (Coming Soon!)
 	border-color: #108237 !important;
 	color: #FFF !important;
 }
-/*
-{{---######---CARDS---######---}}
-*/
+/*** Dropdown buttons ***/
+.input-dropdown-btn {
+	border: 1px solid #b8b8b8 !important;
+}
+.light-theme .input-group-btn .input-dropdown-btn,
+.light-theme .input-group-btn .input-dropdown-btn:focus,
+.light-theme .input-group-btn .input-dropdown-btn:hover {
+	border: 1px solid #b8b8b8;
+	color: #191919;
+	background-color: #fff;
+}
+/*** Dropdows active state ***/
+.light-theme .input-group-btn .input-dropdown-btn:focus {
+	border: 2px solid #191919 !important;
+	border-radius: 3px !important;
+}
+.light-theme .input-group-btn .input-dropdown-btn:focus,
+.light-theme .input-group-btn .input-dropdown-btn:hover {
+	color: var(--button-text);
+	background-color: var(--button-blue);
+	border-color: var(--button-blue);
+}
+
+/* Settings, Help & Logout links */
+.light-theme .dropdown-menu li:hover {
+	background-color: #F2F2F2;
+	box-shadow: 4px 0 0 0 #00A2FF inset;
+	cursor: pointer;
+}
+/* Search links */
+.light-theme .rbx-header .rbx-navbar-search .rbx-navbar-search-option.selected {
+	background-color: #f2f2f2;
+	box-shadow: inset 4px 0 0 0 #00a2ff;
+	cursor: pointer;
+	border-radius: 3px;
+}
+/* Other Dropdowns */
+.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active,
+.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:active,
+.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:focus,
+.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:hover {
+	box-shadow: inset 0 -4px 0 0 #00a2ff;
+}
+.light-theme .rbx-header .navbar-search .navbar-search-option,
+.light-theme .rbx-header .navbar-search .navbar-search-option.selected {
+	background-color: var(--button-white);
+}
+.light-theme .rbx-header .navbar-search .navbar-search-option a:hover,
+.light-theme .rbx-header .navbar-search .navbar-search-option.selected a:hover {
+	box-shadow: inset 4px 0 0 0 #00a2ff;
+}
+/*** Profile Avatar Card ***/
+.light-theme .profile-avatar-left {
+	background-color: #fff;
+}
+/*** Remove 2020 Selectors ***/
+#nav-giftcards {
+	display: var(--2019--small-details);
+}
+.btr-setting-reset-button {
+	display: var(--2019--small-details);
+}
+/*** Text Replace ***/
+/*** Avatar Shop to Catalog ***/
+a.font-header-2.nav-menu-title.text-header[href="/catalog"]:after {
+	content: "Catalog";
+	font-size: 16px;
+	visibility: visible;
+	padding: 8px 9px;
+	border-radius: 5px;
+}
+a.font-header-2.nav-menu-title.text-header[href="/catalog"] {
+	font-size: 0;
+	visibility: hidden;
+	padding: 0;
+	margin-top: 6px;
+}
+.light-theme ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1):hover::after {
+	background-color: rgba(25, 25, 25, .1);
+	border-radius: 5px !important
+}
+ul.nav > li.cursor-pointer:hover {
+	cursor: default;
+}
+/* Catalog Text in the "Avatar Shop" or some dumb name like that */
+.heading .ng-binding {
+	font-size: 0
+}
+.heading .ng-binding:after {
+	content: "Catalog";
+	font-size: 34px
+}
+/* Official Store to Shop */
+.cursor-pointer .dynamic-ellipsis-item {
+	font-size: 0 !important;
+}
+.cursor-pointer .dynamic-ellipsis-item:after {
+	font-size: 16px;
+	content: 'Shop'
+}
+/* Chat/View Profile Button */
+.interaction-item {
+	background-color: var(--dropdown-menu);
+	color: #191919 !important;
+	box-shadow: none !important;
+}
+/* Verified Tick Icon */
+.light-theme .icon-checkmark-16x16 {
+	background-image: url('https://images.rbxcdn.com/8f9d73863e52851ec5910be4ffa5ed78-generic_01312019.svg')
+}
+/* Text On Every Robux Thing */
+.light-theme .text-robux {
+	color: #02b757 !important;
+}
+.light-theme .text-robux-tile {
+	color: #02b757 !important
+}
+/*** Item Card Equipped ***/
+.light-theme .item-card-equipped {
+    border-radius: 1px !important;
+    height: 180px !important;
+}
 /* Game Cards */
+.light-theme .game-card-container {
+	border-radius: 1px
+}
 .light-theme .game-card-container {
 	background-color: #fff;
 }
@@ -490,15 +659,6 @@ Roblox+ OBC (Coming Soon!)
 .light-theme .item-card-container .item-card-name {
 	padding: 0 5px;
 }
-
-body,
-.light-theme,
-.light-theme .content {
-	background: #e3e3e3;
-}
-.gotham-font.light-theme .refresh-link-icon {
-	color: #00a2ff !important;
-}
 /*{{---######---SCROLLERS---######---}}*/
 .light-theme .scroller.disabled {
 	border: 1px solid #e3e3e3;
@@ -507,7 +667,7 @@ body,
 .light-theme .scroller:hover {
 	background-color: #ffffff;
 }
-/*{{---######---LEFT-COLUMN---######---}}*/
+/*** Left Column ***/
 .light-theme .rbx-left-col {
 	background-color: #fff;
 }
@@ -531,14 +691,7 @@ body,
 .light-theme .icon-nav-trade {
 	background-image: url(https://images.rbxcdn.com/f4000b6d03a0df7153556d2514045629-navigation_10022018.svg);
 }
-/* Official Store to Shop */
-.cursor-pointer .dynamic-ellipsis-item {
-	font-size: 0 !important;
-}
-.cursor-pointer .dynamic-ellipsis-item:after {
-	font-size: 16px;
-	content: 'Shop'
-}
+
 /* Premium/ Get Premium to Upgrade Now */
 .light-theme #upgrade-now-button {
 	background-color: #00A2FF;
@@ -575,21 +728,12 @@ a#upgrade-now-button {
 	position: relative;
 	top: -8px
 }
-/*{{---######---Buttons (From 1st to last in the official styleguide)---######---}}*/
-.gotham-font.light-theme .see-all-link-icon {
-	color: #00a2ff !important;
-	background: none !important;
-}
 .margin-top-none .text-robux,
 .item-cards .item-card-price .text-robux {
 	color: #02b757;
 }
 .item-cards-embed .xsmall.text-label {
 	font-size: 12px;
-}
-.light-theme .avatar-card-btns {
-	background-color: rgba(25, 25, 25, .1);
-	border-top: 1px solid #F2F2F2;
 }
 /* Header Links li.hov */
 .light-theme .rbx-header .rbx-navbar li .nav-menu-title:focus,
@@ -620,20 +764,6 @@ a#upgrade-now-button {
 .light-theme .input-group .input-group-btn #navbar-search-btn {
 	right: 0;
 	left: unset;
-}
-.light-theme .rbx-header .navbar-search .navbar-search-option,
-.light-theme .rbx-header .navbar-search .navbar-search-option.selected {
-	background-color: #fff;
-}
-.light-theme .rbx-header .navbar-search .navbar-search-option a:hover,
-.light-theme .rbx-header .navbar-search .navbar-search-option.selected a:hover {
-	box-shadow: inset 4px 0 0 0 #00a2ff;
-}
-/*
-{{---######---NAVIGATION-BARS---######---}}
-*/
-#nav-giftcards {
-	display: none;
 }
 .light-theme .pill-toggle {
 	background-color: #fff;
@@ -788,11 +918,6 @@ a#upgrade-now-button {
 	background-color: #00a2ff;
 	border-color: #00a2ff;
 }
-.light-theme .dropdown-menu li:hover {
-	background-color: #F2F2F2;
-	box-shadow: 4px 0 0 0 #00A2FF inset;
-	cursor: pointer;
-}
 .light-theme .profile-container .asset-item .item-name:hover {
 	color: #00A2FF !important;
 	text-decoration: none !important;
@@ -807,11 +932,14 @@ a#upgrade-now-button {
 .light-theme .people-list .friend .friend-link:hover {
 	text-decoration: none !important;
 }
-/* Facebook Login Button */
+/*** Social Login Button ***/
 .social-login {
 	background-color: #3b5998 !important;
 	color: #fff!important;
 	border: none
+}
+.social-login:hover {
+	background-color: #4366b1 !important;
 }
 /* Green Buttons */
 .light-theme a.btn-common-play-game-lg,
@@ -834,84 +962,11 @@ a#upgrade-now-button {
 	background-color: #3fc679;
 	border-color: #3fc679;
 }
-.light-theme .btn-growth-lg {
-	background-color: #02b757;
-	border: 1px solid #02b757;
-	border-radius: 3px !important;
-}
-.light-theme .btn-primary-sm {
-	background-color: #02b757 !important;
-	border: 1px solid #02b757 !important;
-	border-radius: 3px !important;
-	max-width: 60px !important;
-}
-.light-theme .btn-growth-md {
-	background-color: #02b757;
-	border: 1px solid #02b757;
-	border-radius: 3px;
-}
-.light-theme .btn-growth-md:focus,
-.light-theme .btn-growth-md:hover {
-	background-color: #3fc679;
-	border-color: #3fc679;
-}
-.light-theme .btn-growth-xs,
-.light-theme .btn-growth-xs:hover,
-.light-theme .btn-growth-xs:focus {
-	background-color: #02b757;
-	border: 1px solid #02b757;
-}
-.light-theme .touch .btn-primary-md:hover,
-.light-theme .touch .btn-primary-md:focus,
-.light-theme .touch .btn-primary-md:visited {
-	background-color: rgb(2, 183, 87);
-	border-color: rgb(2, 183, 87);
-}
 .light-theme .btn-common-play-game-lg:hover {
 	background-color: #3FC679!important;
 	border-color: #3FC679!important;
 }
-.light-theme .btn-primary-lg:hover {
-	background-color: #3fc679!important;
-	border-color: #3fc679 !important
-}
-.light-theme .touch .request-error-page-content .action-buttons .btn-primary-md:hover,
-.light-theme .touch .request-error-page-content .action-buttons .btn-primary-md:focus,
-.light-theme .touch .request-error-page-content .action-buttons .btn-primary-md:visited {
-	color: #fff;
-	background-color: #3fc679;
-	border-color: transparent;
-}
-.light-theme .request-error-page-content .action-buttons .btn-primary-md {
-	background-color: #02b757;
-	border-color: #02b757;
-	color: #fff;
-	border-radius: 3px;
-}
-.light-theme .request-error-page-content .action-buttons .btn-primary-md:hover {
-	background-color: #3fc679 !important;
-	border-color: #3fc679 !important;
-	color: #fff;
-	border-radius: 3px;
-}
-.light-theme .btn-primary-sm:hover,
-.light-theme .btn-primary-lg:hover,
-.btn-common-play-game-lg:hover,
-.light-theme .request-error-page-content .action-buttons .btn-primary-md {
-	background-color: #3fc679!important;
-	border-color: #3fc679!important;
-	color: #fff !important;
-	border-radius: 3px !important;
-}
-.btn-primary-md {
-	background-color: #02b757 !important;
-	border: 1px solid #02b757 !important;
-	border-radius: 3px !important;
-}
-.light-theme .btn-primary-md:hover {
-	background-color: #3fc679;
-	border-color: #3fc679;
-}
+
 .PurchaseButton:hover {
 	background-color: #3fc679 !important;
 	border-color: #3fc679 !important;
@@ -921,15 +976,6 @@ a#upgrade-now-button {
 	background-color: #3FC679!important;
 	border-color: #3FC679!important;
 	border-radius: 5px !important;
-}
-.light-theme .btn-primary-lg {
-	background-color: #02b757;
-	border: 1px solid #02b757;
-	border-radius: 4px !important;
-}
-.light-theme .btn-primary-lg:hover {
-	background-color: #3fc679!important;
-	border-color: #3fc679 !important
 }
 .light-theme .message-inbound .link-card-btn:hover {
 	background-color: #3fc679 !important;
@@ -954,20 +1000,6 @@ a#upgrade-now-button {
 .rbx-header.light-theme .text-header:link,
 .rbx-header.light-theme .text-header:visited {
 	color: #fff;
-}
-/* Font Colour Grey */
-.light-theme .text-footer {
-	color: #b8b8b8;
-}
-/* Font Colour Black */
-.light-theme .text,
-button {
-	color: #191919;
-}
-.light-theme .footer .text-footer-nav:active,
-.light-theme .footer .text-footer-nav:focus,
-.light-theme .footer .text-footer-nav:hover {
-	color: #191919 !important;
 }
 /*{{---######---HTTPS://WEB.ROBLOX.COM/HOME---######---}}*/
 .user-name-container a:before {
@@ -1005,14 +1037,14 @@ body,
 .dark-theme .scroller:hover {
 	background-color: #ffffff;
 }
-/* Header Text (Games, Catalog, Create, Robux)*/
+
 .light-theme .rbx-header .text-header,
 .light-theme .rbx-header .text-header:active,
 .light-theme .rbx-header .text-header:focus,
 .light-theme .rbx-header .text-header:hover,
 .light-theme .rbx-header .text-header:link,
 .light-theme .rbx-header .text-header:visited {
-	color: #ffffff;
+	color: var(--header-text);
 }
 /* "See All" icon */
 .gotham-font.light-theme .refresh-link,
@@ -1122,12 +1154,6 @@ body,
 .light-theme #wrap.pinned .right-wrapper::before {
 	background-color: #e3e3e3;
 }
-.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active,
-.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:active,
-.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:focus,
-.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:hover {
-	box-shadow: inset 0 -4px 0 0 #00a2ff;
-}
 .group-details .group-header .group-image span[thumbnail-type] {
 	background-color: transparent;
 }
@@ -1217,9 +1243,7 @@ body,
 .slide-switcher .slide-item-container span[thumbnail-type] {
 	background-color: transparent;
 }
-.light-theme .profile-avatar-left {
-	background-color: #fff;
-}
+
 .light-theme .profile-avatar-right .profile-avatar-mask {
 	background-color: rgba(117, 117, 117, 0.5)
 }
@@ -1231,10 +1255,6 @@ body,
 }
 .light-theme .slide-switcher.games {
 	background-color: #118237;
-}
-.btn-default {
-	border: 1px solid #b8b8b8 !important;
-	/* This is tagged !important because it doesn't work any other way */
 }
 .light-theme .profile-accoutrements-container .profile-accoutrements-page-container .profile-accoutrements-page {
 	border-color: #fff;
@@ -1272,13 +1292,6 @@ body,
 .light-theme .menu-vertical .menu-option.active,
 .light-theme .menu-vertical .menu-option:hover {
 	box-shadow: inset 4px 0 0 0 #00a2ff
-}
-.light-theme .input-group-btn .input-dropdown-btn,
-.light-theme .input-group-btn .input-dropdown-btn:focus,
-.light-theme .input-group-btn .input-dropdown-btn:hover {
-	border: 1px solid #b8b8b8;
-	color: #191919;
-	background-color: #fff;
 }
 .light-theme .btn-control-md.disabled,
 .light-theme .btn-control-md.disabled.active,
@@ -1427,12 +1440,6 @@ div[style="col-sm-6 slide-item-container-left"] {
 }
 .active .private-server-price .text-robux {
 	color: #02b757
-}
-.light-theme .rbx-header .rbx-navbar-search .rbx-navbar-search-option.selected {
-	background-color: #f2f2f2;
-	box-shadow: inset 4px 0 0 0 #00a2ff;
-	cursor: pointer;
-	border-radius: 3px;
 }
 .light-theme .rbx-header .rbx-navbar-search .input-field,
 .light-theme .rbx-header .rbx-navbar-search .input-field:focus {
@@ -1605,6 +1612,7 @@ f .light-theme .game-card-container .game-card-thumb-container {
 .featured-game-tile:hover .thumb-container::before {
 	display: none;
 }
+
 .featured-game-tile {
 	-webkit-transition: transform .15s;
 	-o-transition: transform .15s;
@@ -1666,20 +1674,6 @@ input[type="range"]::-moz-range-progress {
 .game-card-thumb-container {
 	border-radius: 0;
 }
-.light-theme .input-group-btn .input-dropdown-btn {
-	border: 1px solid #b8b8b8;
-}
-.light-theme .input-group-btn .input-dropdown-btn:focus,
-.light-theme .input-group-btn .input-dropdown-btn:hover {
-	border: 1px solid #b8b8b8;
-	color: #fff;
-	background-color: #00a2ff;
-	border-color: #00a2ff;
-}
-.light-theme .input-group-btn .input-dropdown-btn:focus .icon-down-16x16,
-.light-theme .input-group-btn .input-dropdown-btn:hover .icon-down-16x16 {
-	background-position: -16px -272px;
-}
 .game-main-content .game-calls-to-action .game-name {
 	max-height: 140px;
 	line-break: strict;
@@ -1709,13 +1703,81 @@ input[type="range"]::-moz-range-progress {
 .light-theme .avatar-card-btns {
 	border-bottom-color: #f5f5f5 !important
 }
-.PurchaseButton {
-	border-radius: 3px!important
-}
 /* Avatar Editor Card Background */
 .left-wrapper .section-content.remove-panel {
 	background-color: transparent !important
 }
+.rbx-menu-item.font-header-2 {
+	font-weight: normal !important;
+}
+.item-card-container {
+	height: 215px
+}
+.item-card-label {
+	position: relative;
+	top: 173px
+}
+.item-card-price {
+	position: relative;
+	top: 190px !important;
+}
+.items-list.avatar-item-list .item-card .item-card-container {
+	height: 180px;
+	border-radius: 1px !important
+}
+/*
+{{---######---BTRoblox & Roblox+---######---}}
+*/
+#header .btr-nav-notif {
+	background-color: #fff!important;
+	color: #191919 !important;
+	border: 2px solid #0074bd !important;
+}
+.btr-item-card-more {
+	border-radius: 3px !important;
+	background-color: #fff !important;
+	max-width: 124px;
+	position: absolute;
+	left: 0px !important;
+	bottom: -37px;
+}
+#nav-money:hover {
+	color: #00a2ff
+}
+.light-theme .icon-nav-message-btr,
+.light-theme .icon-nav-friend-btr {
+	filter: brightness(1)
+}
+/* MANDATORY CODE */
+.light-theme input[type=range]::-webkit-slider-thumb:hover {
+	box-shadow: 0px 0 0 6px rgba(0, 162, 255, .5) !important;
+}
+.light-theme input[type=range]::-webkit-slider-thumb {
+	border: 2px solid #00a2ff !important
+}
+input[type=progress]::-webkit-slider-runnable-track {
+	background: #00a2ff !important;
+	box-shadow: webkit-slider-thumb-shadow(10px) !important;
+	transition: background-color 150ms;
+}
+input[type=range]::-webkit-slider-runnable-track {
+	background: #e3e3e3 !important;
+}
+.light-theme input[type=range]::-webkit-slider-thumb[disabled] {
+	border: 2px solid #e3e3e3 !important;
+}
+.container-footer {
+	height: 173px
+}
+/* That was (and will be) the longest Custom Style I will ever write. Bye!! */
+}
+
+@-moz-document url-prefix("https://web.roblox.com"), url-prefix("https://www.roblox.com") {
+/*** DARK MODE ***/
+}
+
+@-moz-document url-prefix("https://web.roblox.com"), url-prefix("https://www.roblox.com") {
+/* Font Colours (This is in a seperate section so I don't have to struggle finding these) */
 .light-theme .text-link,
 .light-theme .text-link.small,
 .light-theme .text-link.small:active,
@@ -1786,61 +1848,85 @@ input[type="range"]::-moz-range-progress {
 .vlist .list-item .list-body .list-content .light-theme a:visited {
 	color: #00a2ff;
 }
-.rbx-menu-item.font-header-2 {
-	font-weight: normal !important;
+.gotham-font.light-theme .refresh-link,
+.gotham-font.light-theme .refresh-link-icon,
+.gotham-font.light-theme .refresh-link-icon:active,
+.gotham-font.light-theme .refresh-link-icon:hover,
+.gotham-font.light-theme .refresh-link-icon:link,
+.gotham-font.light-theme .refresh-link-icon:visited,
+.gotham-font.light-theme .refresh-link:active,
+.gotham-font.light-theme .refresh-link:hover,
+.gotham-font.light-theme .refresh-link:link,
+.gotham-font.light-theme .refresh-link:visited,
+.gotham-font.light-theme .see-all-link,
+.gotham-font.light-theme .see-all-link-icon,
+.gotham-font.light-theme .see-all-link-icon:active,
+.gotham-font.light-theme .see-all-link-icon:hover,
+.gotham-font.light-theme .see-all-link-icon:link,
+.gotham-font.light-theme .see-all-link-icon:visited,
+.gotham-font.light-theme .see-all-link:active,
+.gotham-font.light-theme .see-all-link:hover,
+.gotham-font.light-theme .see-all-link:link,
+.gotham-font.light-theme .see-all-link:visited,
+.gotham-font.light-theme .touch .refresh-link,
+.gotham-font.light-theme .touch .refresh-link-icon,
+.gotham-font.light-theme .touch .refresh-link-icon:active,
+.gotham-font.light-theme .touch .refresh-link-icon:hover,
+.gotham-font.light-theme .touch .refresh-link-icon:link,
+.gotham-font.light-theme .touch .refresh-link-icon:visited,
+.gotham-font.light-theme .touch .refresh-link:active,
+.gotham-font.light-theme .touch .refresh-link:hover,
+.gotham-font.light-theme .touch .refresh-link:link,
+.gotham-font.light-theme .touch .refresh-link:visited,
+.gotham-font.light-theme .touch .see-all-link,
+.gotham-font.light-theme .touch .see-all-link-icon,
+.gotham-font.light-theme .touch .see-all-link-icon:active,
+.gotham-font.light-theme .touch .see-all-link-icon:hover,
+.gotham-font.light-theme .touch .see-all-link-icon:link,
+.gotham-font.light-theme .touch .see-all-link-icon:visited,
+.gotham-font.light-theme .touch .see-all-link:active,
+.gotham-font.light-theme .touch .see-all-link:hover,
+.gotham-font.light-theme .touch .see-all-link:link,
+.gotham-font.light-theme .touch .see-all-link:visited {
+	color: #00a2ff !important;
+	background-color: transparent;
+	border: none;
 }
-.signup-button {
-	font-weight: normal !important;
-	border-radius: 3px !important;
+.gotham-font.light-theme .refresh-link-icon {
+	color: #00a2ff !important;
 }
-.signup-button:hover {
-	background-color: #3FC679 !important;
-	border-color: #3FC679 !important;
+.gotham-font.light-theme .see-all-link-icon {
+	color: #00a2ff !important;
+	background: none !important;
 }
-/*
-{{---######---BTRoblox & Roblox+---######---}}
-*/
-#header .btr-nav-notif {
-	background-color: #fff!important;
+.gotham-font.light-theme .see-all-link {
+	color: #00a2ff !important;
+	background: none !important;
+}
+.gotham-font.light-theme .see-all-link:hover {
+	color: #00a2ff !important;
+	background: none !important;
+}
+.gotham-font.light-theme .refresh-link-icon {
+	background-color: transparent !important
+}
+/* Font Colour Black */
+.light-theme .text,
+button {
+	color: #191919;
+}
+.light-theme .footer .text-footer-nav:active,
+.light-theme .footer .text-footer-nav:focus,
+.light-theme .footer .text-footer-nav:hover {
 	color: #191919 !important;
-	border: 2px solid #0074bd !important;
 }
-.btr-item-card-more {
-	border-radius: 3px !important;
-	background-color: #fff !important;
-	max-width: 124px;
-	position: absolute;
-	left: 0px !important;
-	bottom: -37px;
+/* Font Colour Grey */
+.light-theme .text-footer {
+	color: #b8b8b8;
 }
-#nav-money:hover {
-	color: #00a2ff
-}
-.light-theme .icon-nav-message-btr,
-.light-theme .icon-nav-friend-btr {
-	filter: brightness(1)
-}
-.icon-robux-gray-16x16 {
-	background-position: 0 -95px !important;
-	/* This fixes the issue when buying a V.I.P server, the robux icon is a TBC icon */
-}
-/* MANDATORY CODE */
-.light-theme input[type=range]::-webkit-slider-thumb:hover {
-	box-shadow: 0px 0 0 6px rgba(0, 162, 255, .5) !important;
-}
-.light-theme input[type=range]::-webkit-slider-thumb {
-	border: 2px solid #00a2ff !important
-}
-input[type=progress]::-webkit-slider-runnable-track {
-	background: #00a2ff !important;
-	box-shadow: none !important;
-	-webkit-appearance: none
-}
-input[type=range]::-webkit-slider-runnable-track {
-	background: #e3e3e3 !important;
-}
-.light-theme input[type=range]::-webkit-slider-thumb[disabled] {
-	border: 2px solid #e3e3e3 !important;
+.light-theme .people-list .friend .friend-link {
+	color: #303030 !important;
+	text-decoration: none;
 }
 }
 
@@ -1853,19 +1939,13 @@ input[type=range]::-webkit-slider-runnable-track {
 .light-theme .input-field {
 	border-right: 1px solid #b8b8b8 !important
 }
-.ng-dirty {
-	padding: 1px 10px !important
+.light-theme .input-field {
+	padding: 1px 10px !important;
 }
 }
 
 @-moz-document url-prefix("https://web.roblox.com/catalog") {
-/*
-{{---######---FONT_CHANGER---######---}}
-* {
-FONT-FAMILY: "Arial";
-FONT-WEIGHT: BOLD
-}
-*/
+/*** Catalog ***/
 .light-theme .game-card-container {
 	border-radius: 0
 }
@@ -2189,8 +2269,8 @@ FONT-WEIGHT: BOLD
 	background-position: 0 -252px;
 }
 .light-theme .icon-robux-gray-16x16 {
-	background-position: 0 -73px;
-	background-size: 24px auto;
+	background-position: 0 -73px !important;
+	background-size: 24px auto !important;
 	height: 12px;
 	width: 12px;
 }
@@ -2654,26 +2734,6 @@ div.item-card-container.recommended-item-link > div.item-card-price {
 	background-color: #00a2ff;
 	color: #ffffff;
 }
-a.font-header-2.nav-menu-title.text-header[href="/catalog"]:after {
-	content: "Catalog";
-	font-size: 16px;
-	visibility: visible;
-	padding: 8px 9px;
-	border-radius: 5px;
-}
-a.font-header-2.nav-menu-title.text-header[href="/catalog"] {
-	font-size: 0;
-	visibility: hidden;
-	padding: 0;
-	margin-top: 6px;
-}
-.light-theme ul.nav:nth-child(2) > li:nth-child(2) > a:nth-child(1):hover::after {
-	background-color: rgba(25, 25, 25, .1);
-	border-radius: 5px !important
-}
-ul.nav > li.cursor-pointer:hover {
-	cursor: default;
-}
 }
 
 @-moz-document url-prefix("https://web.roblox.com"), url-prefix("https://www.roblox.com") {
@@ -2683,9 +2743,7 @@ ul.nav > li.cursor-pointer:hover {
 .light-theme .gotham-font .see-all-link-icon:after {
 	display: none
 }
-.btr-setting-reset-button {
-	display: none
-}
+
 .gotham-font.light-theme .refresh-link-icon:after {
 	display: none
 }

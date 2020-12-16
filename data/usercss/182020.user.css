@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         System Shock (Lightforce)
 @description    `Style créé initialement par Ryousuke ici : https://userstyles.org/styles/164402/gamekult-dark-goldCette version comporte quelque ajouts/complétions à son travail`
-@version        20201114.9.53
+@version        20201215.20.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1292,5 +1292,17 @@ div.poll .poll-results-chart
 .g2__a-faq-sm>li>a, .g2__a-faq-sm>li>span, .g2__a-faq-ans__a, .g2__i-acs__lgt--bg__desc, .g2__i-gm__lgt--bg__vrdct, .g2__i-ptfrm__lgt--bg__desc
 {
 	color: #d0d0d0;
+}
+.gk__main__content--white, .g2__gka-rcp
+{
+    background-color: #191919;
+}
+.g2__gka-rcp__st, .g2__gka-rcp>ul>li>p:nth-of-type(2)
+{
+    color: #C5C5C5;
+}
+.g2__gka-rcp>ul>li
+{
+    color: #f5a623;
 }
 }

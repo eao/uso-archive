@@ -11,28 +11,28 @@
     "about": null,
     "license": "ccby"
   },
-  "updated": "2019-11-11T07:22:34.000Z",
-  "weekly_install_count": 11,
-  "total_install_count": 579,
+  "updated": "2020-12-16T00:31:58.000Z",
+  "weekly_install_count": 16,
+  "total_install_count": 695,
   "rating": 3,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/175136_additional_34362.png?r=1602144809",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/175136_additional_34362.png?r=1608078719",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
   "admin_delete_reason_id": null,
   "obsoletion_message": null,
   "screenshots": [
-    "https://userstyles.org/style_screenshots/175136_additional_34362.png?r=1602144809",
-    "https://userstyles.org/style_screenshots/175136_additional_34363.png?r=1602144809"
+    "https://userstyles.org/style_screenshots/175136_additional_34362.png?r=1608078719",
+    "https://userstyles.org/style_screenshots/175136_additional_34363.png?r=1608078719"
   ],
   "license": null,
   "created": "2019-09-09T05:35:24.000Z",
   "category": "site",
   "raw_subcategory": "discordapp",
   "subcategory": "discordapp",
-  "additional_info": null,
+  "additional_info": "Updated to now be available on discord.com",
   "style_tags": [],
-  "css": "/* ==UserStyle==\r\n@name           Collapsable channel list for Discord\r\n@version        1.0.0\r\n@description    Collapsable channel list for discord\r\n@author         Bayangan\r\n==/UserStyle== */\r\n\r\n@-moz-document domain(\"discordapp.com\") {\r\n    div.sidebar-2K8pFh {\r\n        width:10px;\r\n        transition: width 0.3s;\r\n    }\r\n    div.sidebar-2K8pFh:hover {\r\n        width:240px;\r\n    }\r\n\r\n    /*[[server-list-size]]*/\r\n}",
+  "css": "/* ==UserStyle==\r\n@name           Collapsable channel list for Discord\r\n@version        1.0.0\r\n@description    Collapsable channel list for discord\r\n@author         Bayangan\r\n==/UserStyle== */\r\n\r\n@-moz-document domain(\"discordapp.com\"), domain(\"discord.com\") {\r\n    div.sidebar-2K8pFh {\r\n        width:10px;\r\n        transition: width 0.3s;\r\n    }\r\n    div.sidebar-2K8pFh:hover {\r\n        width:240px;\r\n    }\r\n\r\n    /*[[server-list-size]]*/\r\n}",
   "discussions": [
     {
       "id": 79929,

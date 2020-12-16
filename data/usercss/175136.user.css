@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ryan Barnes
 @description    `Shrinks the discord channel list when it's not being hovered over`
-@version        20191111.9.22
+@version        20201216.0.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown server-list-size "Server list size" {
@@ -40,7 +40,7 @@ div.base-3dtUhz {
 @author         Bayangan
 ==/UserStyle== */
 
-@-moz-document domain("discordapp.com") {
+@-moz-document domain("discordapp.com"), domain("discord.com") {
     div.sidebar-2K8pFh {
         width:10px;
         transition: width 0.3s;
