@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BOGDAN DJ
 @description    `Тёмная тема VK`
-@version        20201216.9.53
+@version        20201216.22.32
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -22,6 +22,10 @@
 /*  #282828 | #2C2C36 | #2A2A2C | #2F353A */
 /*  #222222 | #23232D | #212122 | #2b3034 */
 /*  #191919 | #1D1D24 | #19191A | #262a2e */
+
+:root {
+	--gray_800: #939393;
+}
 
    /*sidebar_fixed*/
    /*no_input_minimize*/

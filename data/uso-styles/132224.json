@@ -11,18 +11,18 @@
     "about": null,
     "license": "ccbync"
   },
-  "updated": "2020-12-16T10:17:17.000Z",
+  "updated": "2020-12-17T00:42:08.000Z",
   "weekly_install_count": 42,
   "total_install_count": 9715,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/132224_after.jpeg?r=1608113849",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/132224_after.jpeg?r=1608165738",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
   "admin_delete_reason_id": null,
   "obsoletion_message": null,
   "screenshots": [
-    "https://userstyles.org/style_screenshots/132224_additional_23902.jpeg?r=1608113849"
+    "https://userstyles.org/style_screenshots/132224_additional_23902.jpeg?r=1608165738"
   ],
   "license": "ccbync",
   "created": "2016-09-01T23:09:08.000Z",
@@ -342,7 +342,7 @@
           "id": 1634343,
           "style_setting_id": 453378,
           "label": "вкл",
-          "value": "/* прозрачная шапка */\r\n[dir] #page_header_cont{background-color:rgba(0,0,0,0.75)!important;border:none!important}\r\n[dir] .TopSearch__input{background-color:transparent!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}\r\n[dir] .TopSearch__input::selection{background:#4e5e71!important}\r\n#ts_wrap .input_back .input_back_content{color:#999!important}\r\n.top_nav_btn .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1)!important}\r\n.top_nav_btn:hover .top_nav_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}\r\n[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}\r\n\r\n/* фильтр лого - буквы Ж слева вверху)) */\r\n.top_home_link .top_home_logo{opacity:0.6;filter:invert(.9)hue-rotate(180deg)var(--filt2)saturate(.3);transition:opacity 0.5s}\r\n.top_home_link:hover .top_home_logo{opacity:.9;transition:opacity 0.5s}\r\n\r\n/* плеер в шапке фикс */\r\n.top_audio_player .top_audio_player_title{color:#909090!important}\r\n[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}\r\n[dir=\"ltr\"] body.new_header_design .top_audio_player{min-width:90%}\r\n",
+          "value": "/* прозрачная шапка */\r\n[dir] body.new_header_design #page_header_cont{background-color:rgba(0,0,0,0.75)!important;border:none!important}\r\n[dir] body.new_header_design .TopSearch__input{background-color:transparent!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}\r\n[dir] .TopSearch__input::selection{background:#4e5e71!important}\r\n#ts_wrap .input_back .input_back_content{color:#999!important}\r\n.top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}\r\n.top_nav_btn:hover .top_nav_btn_icon{filter:var(--filt2)saturate(.9)brightness(2)!important}\r\n[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}\r\n\r\n/* фильтр лого - буквы Ж слева вверху)) */\r\n.top_home_link .top_home_logo{opacity:0.6;filter:invert(.9)hue-rotate(180deg)var(--filt2)saturate(.3);transition:opacity 0.5s}\r\n.top_home_link:hover .top_home_logo{opacity:.9;transition:opacity 0.5s}\r\n\r\n/* плеер в шапке фикс */\r\n.top_audio_player .top_audio_player_title{color:#909090!important}\r\n[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}\r\n[dir=\"ltr\"] body.new_header_design .top_audio_player{min-width:90%}\r\n",
           "default": true,
           "ordinal": 1,
           "install_key": "hollowheadon"
@@ -351,7 +351,7 @@
           "id": 1634342,
           "style_setting_id": 453378,
           "label": "выкл",
-          "value": "/* поиск в шапке фикс фона */\r\n[dir] body.new_header_design #page_header_cont{background-color:var(--color3);border-bottom: 1px solid #464542}\r\n[dir] .TopSearch__input{background-color:var(--color3)!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}\r\n[dir] .TopSearch__input::selection{background:#4e5e71!important}\r\n#ts_wrap .input_back .input_back_content{color:#999!important}\r\n.top_nav_btn .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1)!important}\r\n.top_nav_btn:hover .top_nav_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}\r\n[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}\r\n\r\n/* фильтр лого - буквы Ж слева вверху)) */\r\n.top_home_link .top_home_logo{opacity:0.6;filter:invert(.9)hue-rotate(180deg)var(--filt2)saturate(.3);transition:opacity 0.5s}\r\n.top_home_link:hover .top_home_logo{opacity:.9;transition:opacity 0.5s}\r\n\r\n/* плеер в шапке фикс */\r\n.top_audio_player .top_audio_player_title{color:#909090!important}\r\n[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}\r\n[dir=\"ltr\"] body.new_header_design .top_audio_player{min-width:90%}",
+          "value": "/* поиск в шапке фикс фона */\r\n[dir] body.new_header_design #page_header_cont{background-color:var(--color3)!important;border:none!important}\r\n[dir] body.new_header_design .TopSearch__input{background-color:var(--color3)!important;color:#fff!important;filter:var(--filt2)saturate(.7)brightness(.7);background-image:url(https://vk.com/images/svg_icons/ic_head_loupe.svg)!important}\r\n[dir] .TopSearch__input::selection{background:#4e5e71!important}\r\n#ts_wrap .input_back .input_back_content{color:#999!important}\r\n.top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}\r\n.top_nav_btn:hover .top_nav_btn_icon{filter:var(--filt2)saturate(.9)brightness(2)!important}\r\n[dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}\r\n\r\n/* фильтр лого - буквы Ж слева вверху)) */\r\n.top_home_link .top_home_logo{opacity:0.6;filter:invert(.9)hue-rotate(180deg)var(--filt2)saturate(.3);transition:opacity 0.5s}\r\n.top_home_link:hover .top_home_logo{opacity:.9;transition:opacity 0.5s}\r\n\r\n/* плеер в шапке фикс */\r\n.top_audio_player .top_audio_player_title{color:#909090!important}\r\n[dir] body.new_header_design .top_audio_player_btn_icon{filter:var(--filt2)saturate(.9)brightness(1.2)!important}\r\n[dir=\"ltr\"] body.new_header_design .top_audio_player{min-width:90%}",
           "default": false,
           "ordinal": 3,
           "install_key": "hollowheadoff"

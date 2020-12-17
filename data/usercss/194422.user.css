@@ -1,0 +1,63 @@
+/* ==UserStyle==
+@name           Старый дизайн шапки
+@namespace      USO Archive
+@author         Recycle Bin
+@description    `Возвращает прежний синий цвет шапке от ВКонтакте. При этом стиль логотипа и иконок остаётся как после редизайнаИдеально подойдёт тем, кому нравится новый дизайн, но не нравится белое оформление шапкиТакже теперь все языки используют логотип с названием (полезно тем, кто использует ВЕ на советским/дореволюционным/украинским/етц.)`
+@version        20201216.12.34
+@license        CC-BY-SA-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url-prefix("https://vk.com") {
+/* СДЕЛАЛ vk.com/0x20c -- ЖАЛОБЫ И ПРЕДЛОЖЕНИЯ СЛАТЬ СЮДА :)))) */
+
+/* ОБЩИЕ ЦВЕТА И ШИРИНА */
+body.new_header_design {--header-height: 42px !important;}
+body.new_header_design #page_header_cont {
+	background-color: #4a76a8 !important;
+	border-bottom: 1px solid #4a76a8 !important;
+}
+
+/* ЛОГОТИП */
+body.new_header_design .top_home_link .top_home_logo {
+	background-size: auto 30px;
+	background: url(https://i.imgur.com/LUmsZdu.png) !important;
+	background-repeat: no-repeat !important;
+	height: 24px !important;
+}
+
+/* ПОИСК */
+body.new_header_design .TopSearch__input {
+	background-color: #224b7a !important;
+	border-radius: 8px !important;
+	height: 28px !important;
+}
+body.new_header_design .TopSearch .input_back_content {color: #86a1bf !important;}
+body.new_header_design .TopSearch__input {color: #becbd9 !important;}
+
+/* ЦЕНТР УВЕДОМЛЕНИЙ */
+body.new_header_design .top_nav_btn_icon {filter: brightness(5.0) !important;}
+body.new_header_design .top_nav_btn .top_notify_count {border: 2px solid #4a76a8 !important;}
+.top_nav_btn:hover {background-color: #00143321 !important;}
+body.new_header_design .top_nav_btn:hover .top_notify_count::after {border-color: #406998 !important;}
+.top_nav_btn.active {background-color: #2a5885 !important;}
+#top_notify_btn.has_notify .top_notify_count {display: block; background-color: #FF734D !important;}
+
+/* ПЛЕЕР */
+body.new_header_design .top_audio_player:hover {background-color: #00143321 !important;}
+.top_audio_player_btn.top_audio_player_prev {padding-left: 10px !important;}
+.top_audio_player .top_audio_player_btn {
+	float: left !important;
+	filter: brightness(3.0) !important;
+	margin: -1px !important;
+}
+body.new_header_design .top_audio_player_prev, body.new_header_design .top_audio_player_next, body.new_header_design .top_audio_player_play {margin: -2px !important;}
+body.new_header_design .top_audio_player_title_wrap {padding-left: 6px !important;}
+body.new_header_design .top_audio_player_title {color: #becbd9 !important;}
+
+
+/* ПАНЕЛЬ УПРАВЛЕНИЯ АККАУНТОМ */
+[dir] body.new_header_design .top_nav_link:hover, [dir] body.new_header_design .top_nav_btn:hover {background-color: #00143321 !important;}
+body.new_header_design .top_nav_link.active {background-color: #2a5885 !important;}
+body.new_header_design .top_nav_link {color: #eff2f4 !important;}
+body.new_header_design .top_nav_link.active {color: #ffffff !important;}
+}

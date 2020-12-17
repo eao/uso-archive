@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.4.6
+@name           Compact Tube (White) v1.4.7
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201215.0.18
+@version        20201216.21.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.4.6 */
+/* CompactTube (White) v1.4.7 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -61,9 +61,21 @@
                     выберите нужный вам, отключив другой.    ◄█ */
 
 
-            /* Christmas Socks / Рождественские Носки :D */
+        /* v1 Christmas Socks / Рождественские Носки :D */
 ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 10px; left: -20px; content: url("https://i114.fastpic.ru/big/2020/1210/7f/fee2e73ed074bfbfc5ba634b88a1ea7f.png");
     margin-left: 10px; filter: drop-shadow(1px 1px 1px rgb(128, 128, 128)); margin-top: -35px; }
+
+        /* v2 Christmas Gifts / Новогодние Подарки */
+x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 25px; left: -12px; content: url("https://i114.fastpic.ru/big/2020/1215/1d/2dce7316c918350de877693f66695d1d.png");
+    margin-left: 10px; filter: drop-shadow(1px 1px 0px rgba(128, 128, 128, .22)); margin-top: -35px;}
+
+        /* v3 Christmas Tree / Новогодняя Ёлка */
+x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 25px; left: 5px; content: url("https://i114.fastpic.ru/big/2020/1215/8d/a8ea9f258f497d41e92278abfbe9b78d.png");
+    margin-left: 10px; filter: drop-shadow(0px -1.5px 3px rgb(246, 210, 5)); margin-top: -35px;}
+
+        /* v4 Christmas Gift / Новогодний Подарок */
+x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 24px; left: -4px; content: url("https://i114.fastpic.ru/big/2020/1215/84/821825801cef72fdeccf67413d23cb84.png");
+    margin-left: 10px; filter: drop-shadow(1px 2px 1px rgba(53, 53, 53, .17)); margin-top: -35px;}
 
 
 /* убрать отключаемые новости об акциях - типа COVID-19: - "none" - убрать: "flow"- показать */
@@ -1389,12 +1401,12 @@ ytd-thumbnail-overlay-resume-playback-renderer:after {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: -55%;
+    margin-top: -55.005%;
     margin-right: 0px;
     color: var(--yt-spec-static-brand-white); /*var(--yt-spec-static-brand-white)*/
     background-color: rgba(0, 0, 0, .7); /*var(--yt-spec-static-overlay-background-heavy)*/
     -o-padding: 0.2em 0.15em 0.03em 0.01em;
-    padding: 3px 1% 3px 0.1%;
+    padding: 3.7px 1% 2.3px 0.1%;
     height: auto;
     max-height: 17px;
     letter-spacing: 0.6px/*0.5px*/;
@@ -1425,12 +1437,12 @@ ytd-thumbnail-overlay-resume-playback-renderer:hover:after {
     position: absolute;
     top: 0;
     left: 0;
-    margin-top: -55%;
+    margin-top: -55.005%;
     margin-right: 0px;
     color: var(--yt-spec-static-brand-white); /*var(--yt-spec-static-brand-white)*/
     background-color: rgba(0, 0, 0, .7); /*var(--yt-spec-static-overlay-background-heavy)*/
     -o-padding: 0.2em 0.15em 0.03em 0.01em;
-    padding: 3px 1% 3px 0.1%;
+    padding: 3.7px 1% 2.3px 0.1%;
     height: auto;
     max-height: 17px;
     letter-spacing: 0.6px/*0.5px*/;
@@ -1449,6 +1461,32 @@ ytd-thumbnail-overlay-resume-playback-renderer:hover:after {
 /* Ширана Меню: - "Сохранить в... " */
 #playlists.ytd-add-to-playlist-renderer {max-height: 300px; max-width: 600px; width: 286px;}   /* Ширина Меню */
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+/* ╔══════════════════ Следующее Видео ══════════════════╗ */
+
+/* Пометка "Следующее Видео" (Next ➞) */
+    /* arrow-right-f09f949-!!! */
+ytd-compact-autoplay-renderer.ytd-watch-next-secondary-results-renderer:before
+{content: "Next " url(https://i114.fastpic.ru/big/2020/1217/84/1706b50a545778f90a56296079637784.png);
+    -o-filter: invert(0.5) brightness(80%);
+    margin: 0px 0px 0px 0px;
+    position: relative; left: 10px; top: -2px;
+    display: block;
+    color: #808080; /* var(--yt-spec-text-secondary) */
+    font-size: 1.3rem;
+    font-weight: 400 !important;
+    -o-padding: 0px 0px 10px 10px !important;
+    height: 26px;
+    width: auto;}
+
+/* Разделение Следующего Видео и обычных */
+ytd-compact-autoplay-renderer.ytd-watch-next-secondary-results-renderer {
+    display: block;
+    padding-top: 8px; 
+    padding-bottom: 7px;
+    border-bottom: 1px solid var(--yt-spec-10-percent-layer);
+    margin-bottom: 8px;}
+/* ╚═════════════════════════════════════════════════════╝ */
 
 /* Название Канала под Видео на вкладке с Видео (позицианирование) */
 ytd-channel-name#channel-name.ytd-video-owner-renderer {margin-top: -16px;}

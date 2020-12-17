@@ -2,8 +2,8 @@
 @name           Старый Дизайн ВКонтакте 2016 | Актуально в 2020
 @namespace      USO Archive
 @author         AshDefenders
-@description    `Стиль возращает старый дизайн ВКонтакте который был до редизайна в 2020 годаЕсли у вас есть чем дополнить стиль то можете написать в вк vk.dom/defenders08 или в тг @defenders08k1`
-@version        20201211.11.34
+@description    `Стиль возвращает старый дизайн ВКонтакте который был до редизайна 2020 годаЕсли у вас есть чем дополнить стиль то можете написать в вк vk.dom/defenders08 или в тг @defenders08k1`
+@version        20201216.17.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -42,11 +42,14 @@ body.new_header_design {
     width: 230px;
     padding: 6px 6px 6px 19px;
     font-size: 13px;
-    color: #2a5885 /* qualified */ !important;
+    color: #000 /* qualified */ !important;
+}
+#ts_wrap div, #ts_wrap input {
+    color: rgb(141, 171, 199) !important;
 }
 [dir] body.new_header_design .TopSearch__input #text{
     font-size: 13px;
-    color: #2a5885 /* qualified */ !important;
+    color: #000 /* qualified */ !important;
 }
 [dir] body.new_header_design .TopSearch__input:focus {
     background-color: #fff;
@@ -72,6 +75,10 @@ body.new_header_design {
     background-color: var(--orange_prominent);
     height: 10px;
 }
+/* [dir] body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon {
+    opacity: 1 !important;
+    background: url(https://get-styles.ru/i/w/22d2e11b060c.png) center center no-repeat !important;
+} */
 [dir] body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon svg{
     color: #1e3c5f;
 }
@@ -274,9 +281,18 @@ body.new_header_design .side_bar_inner {
     width: 164px;
     margin-left: -2px;
 }
-[dir] body.new_header_design #side_bar .left_count_wrap .left_count {
+/* [dir] body.new_header_design #side_bar .left_count_wrap .left_count {
     padding: 1.5px 7px;
     color: var(--steel_gray_A540);
+} */
+[dir] body.new_header_design #side_bar .left_count_wrap .left_count {
+    color: #2a5885 !important;
+    padding: 3px 6px;
+}
+.left_row .left_count_wrap, body.new_header_design #side_bar_inner .left_row:hover .left_count_wrap, #side_bar_inner .left_row .left_count_wrap {
+    background: #d3d9de !important;
+    height: 24px;
+    border-radius: 3px!important;
 }
 [dir] body.new_header_design .left_count_wrap {
     border-radius: 2px;
@@ -316,6 +332,9 @@ body.new_header_design .side_bar_inner {
 body.new_header_design .audio_page_player2.audio_page_player_fixed {
     top: 0px;
 }
+[dir] .im-action_invite::before {
+    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20fill%3D%22%23818C99%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%203.25c.41%200%20.75.34.75.75v5.25H16a.75.75%200%20010%201.5h-5.25V16a.75.75%200%2001-1.5%200v-5.25H4a.75.75%200%20010-1.5h5.25V4c0-.41.34-.75.75-.75z%22%2F%3E%3C%2Fsvg%3E);
+}
 [dir] .im-action_media::before {
     background-image: url(https://i.imgur.com/p3GfsxI.png);
 }
@@ -324,6 +343,9 @@ body.new_header_design .audio_page_player2.audio_page_player_fixed {
 }
 [dir] .im-action_unread::before {
     background-image: url(https://i.imgur.com/cwAqY7Q.png);
+}
+[dir] .im-action_mute::before {
+    background-image: url(https://i.imgur.com/QN9t1H6.png);
 }
 [dir] .im-action_unmute::before {
     background-image: url(https://i.imgur.com/PETqC6t.png);

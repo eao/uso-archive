@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         soupy
 @description    `I couldn't find a good dark theme for Torn and the official one is taking too long so I made a quick dark mode for Torn`
-@version        2020122.13.1
+@version        20201216.15.30
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("torn.com") {
-/*Last update: Un-inverted the attacking page */
+/*Last update: Christmas Town Fixes */
 
 
 html:not([stylus-iframe]):after {
@@ -1679,6 +1679,68 @@ i.elimination-team-logo {
 }
 
 li.icons {
+    filter: invert(1)hue-rotate(180deg)
+}
+}
+
+@-moz-document url-prefix("https://www.torn.com/christmas_town.php") {
+ul.status-icons___2xEXb.big___19BbV {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+h2.header___ibZei.desktop___1cgAZ {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+header.dkk-widget_green {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.itemImageContainer___2kW-W img{
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.score-board___1YIAt img {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.chest___3egPm {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.game-actions___VzBfB img {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.bodyWrap___2sq_J img {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.user-map-container img {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.board___XBP_X {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.wreath___3aWHy {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.cookies-layer___2Zdm0 {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.figure___4b5Hw {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.wrap___33dMr img{
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.board___2UFrz {
     filter: invert(1)hue-rotate(180deg)
 }
 }

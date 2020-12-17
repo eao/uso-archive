@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        2020128.11.21
+@version        20201216.14.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color Background "Main Background (html)" #090909
@@ -3548,6 +3548,7 @@ body:not(.subscriber) .sidebox.submit-link::before,.submit-text::before,
 #sort-menu,
 #sr-drop-down,
 #usermenu-content,
+span.app-scope,
 table#srList[style="display: block;"],
 [class*="tooltipped"]:after,
 [id*="popover"],
@@ -4846,8 +4847,10 @@ span.res-fancy-toggle-button.RESshortcutside,
 
 html body center div#HEADER table tbody tr td a,
 html body center div#SOLID div#CONTENT div.html1 div.html div.body div div div div a:hover,
+#addSubreddit,
 #bttb,
 #button_u,
+#editShortcutDialog form div.RESFormItem div.RESFieldItem button#sortButton,
 #gb a.gb_4.gb_4,
 .AppSelectorModal__actionButton.m-blue,
 .btn-edon,
@@ -4955,7 +4958,9 @@ label._3tm-97fb8noV8kwxNOON_9
 
 /*Button Hover with Text*/
 
+#addSubreddit:hover,
 #bttb:hover,
+#editShortcutDialog form div.RESFormItem div.RESFieldItem button#sortButton:hover,
 #gb a.gb_4.gb_4:hover,
 a.login-required.access-required:hover,
 button:hover, .res-nightmode button:hover,
@@ -5790,8 +5795,10 @@ div.midcol.voting-icons.dislikes div.score.dislikes
 }
 
 button:active,.res-nightmode button:active,
+#addSubreddit:active,
 #bttb:active,
 #CountrySort--CountrySortPicker:active,
+#editShortcutDialog form div.RESFormItem div.RESFieldItem button#sortButton:active,
 #header-bottom-left ul.tabmenu li a.choice:active,
 #ListingSort--SortPicker:active,
 #LayoutSwitch--picker:active,
@@ -5911,6 +5918,14 @@ a._2PAz5_NMDCV5XtywB9mVpg:active,
 label._3tm-97fb8noV8kwxNOON_9:active
 {
     filter:brightness(0.6)!important;
+    transition:0s!important;
+}
+
+
+/*Bleedover fixes*/
+#RESShortcutsAddFormContainer:active
+{
+    filter:brightness(1)!important;
     transition:0s!important;
 }
 
