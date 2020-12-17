@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Meant to be combined with (and installed after) <a href="https://userstyles.org/styles/86145/">crayon for mal</a>.`
-@version        20201216.5.1
+@version        20201217.7.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -247,8 +247,9 @@ td[width="225"] div[style*="center"] img:first-of-type:active, a.js-picture-gall
     font-size: 10px !important;
     padding: 1px 3px 3px !important; }
 .inputButton + #addtolistresult a, h2.mt8 + #addtolist .inputButton + small a {height: 12px !important;line-height: 1em !important;}
-#addtolist .inputButton:hover, .inputButton + #addtolistresult a:hover, h2.mt8 + #addtolist .inputButton + small a:hover {
-    border-bottom: 2px solid white !important; }
+#addtolist .inputButton:hover,
+.inputButton + #addtolistresult a:hover,
+h2.mt8 + #addtolist .inputButton + small a:hover {border-bottom: 2px solid white !important;color: white !important;}
 
 /* Reviews ('??? people found this review helpful') */
 .borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit {min-width: 362px !important;max-width: 362px !important;} /* Mod */
@@ -290,7 +291,7 @@ div.picSurround img[src*="mark_23.gif"] {background: linear-gradient(to bottom r
 .di-tc.va-t[style="width:392px;"] {width: 431px !important;} /* Mod */
 
 /* Footer */
-#footer-block .footer-link.di-ib {left: 154px;padding: 5px 71px 8px !important; /* Mod */} 
+#footer-block .footer-link.di-ib {left: 154px;padding: 5px 71px 8px !important; /* Mod */}
 }
 
 @-moz-document url-prefix("https://myanimelist.net/anime.php?id="), url-prefix("https://myanimelist.net/manga.php?id="), regexp("https://myanimelist.net/anime/(?!season|genre|producer).*"), regexp("https://myanimelist.net/manga/(?!genre|magazine).*") {

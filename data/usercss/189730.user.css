@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           ニコニコ動画(Re) 動画ページダークテーマ for HTML5
+@name           ニコニコ動画(Re) 動画ページダークテーマ
 @namespace      USO Archive
 @author         Azuma
-@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。もとになっているCSS通り動画部分を上に移動することでスクロールすることなく動画視聴が可能になっています。インストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。広告非表示をデフォルトにしています。表示することもできますがニコニ広告エリアをダークテーマ化していないのでおかしなことになることをあらかじめご了承ください。動作確認は一応ChromeとFirefoxで行っています。全ての動作を確認できていない関係もあり、一部対応していない部分がある可能性があります。その場合は<a href="https://twitter.com/WATANUKI_AZUMA/">Twitter</a>もしくは<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>に投げていただければできる範囲で何とかします。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。`
-@version        2020129.11.52
+@description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。もとになっているCSS通り動画部分を上に移動することでスクロールすることなく動画視聴が可能になっています。インストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。広告非表示をデフォルトにしています。表示することもできますがニコニ広告エリアをダークテーマ化していないのでおかしなことになることをあらかじめご了承ください。動作確認は一応ChromeとFirefoxで行っています。何かあれば<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>に投げていただければできる範囲で何とかします。あわせて<a href="https://userstyles.org/styles/190570/re-niconico-live-dark-theme">ニコ生のテーマ</a>も出しているので、ぜひご活用ください。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。`
+@version        20201217.3.37
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown ----------- "かんたんコメントエリア" {
@@ -225,7 +225,7 @@ order:5!important
 .ViewerNGRegister-cancelButton,.ViewerNGRegister-submitButton:disabled,.ViewerNGRegister-submitButton,.NGSettingPanelContainer-openViewerNGRegisterButton,.NGSettingPanelContainer-removeButton{color: #dbdbdb;background: #6a6a6a;}
 
 /* スクロールバーを細く(Firefoxのみ) */
-.DataGrid-Body.CommentPanelDataGrid-Body,.PlayerOptionMenu,.DataGrid-Body
+.DataGrid-Body.CommentPanelDataGrid-Body,.PlayerOptionMenu,.DataGrid-Body,.common-header-wgjwwi
 {
     scrollbar-color: #1b1b1b #7a7a7a;
     scrollbar-width: thin;
@@ -321,46 +321,24 @@ button.ActionButton.TwitterAccountPanel-button{
 
 /* ヘッダーホバー時のタブメニューまわり */
 /* ユーザー */
-.common-header-5onxr7,
-.common-header-1cuw74j,
-.common-header-1kfkrjf,
-.common-header-zz80x3,
-.common-header-1gq7o6w,
-.common-header-icn1vf,
-.common-header-cvcm83,
-.common-header-15gxh1a {
-    background-color: #666 !important
-}
-.common-header-5onxr7:hover,
-.common-header-1kfkrjf:hover,
-.common-header-zz80x3:hover,
-.common-header-1gq7o6w:hover,
-.common-header-icn1vf:hover,
-.common-header-xp52wl:hover {
-    background-color: #2b2b2b !important
-}
-.common-header-g80xl3 {
-    background-color: rgb(89, 89, 89) !important
-}
-.common-header-1sypczf {
-    color: rgb(225, 225, 225) !important
-}
+.common-header-5onxr7,.common-header-1cuw74j,.common-header-1kfkrjf,.common-header-zz80x3,.common-header-1gq7o6w,.common-header-icn1vf,.common-header-cvcm83,.common-header-15gxh1a,.nico-CommonHeaderRoot .common-header-1swev0c{background-color: #666 !important;}
 
-.nico-CommonHeaderRoot .common-header-r1rgum {
-    display: none;
-}
+.common-header-5onxr7:hover,.common-header-1kfkrjf:hover,.common-header-zz80x3:hover,.common-header-1gq7o6w:hover,.common-header-icn1vf:hover,.common-header-xp52wl:hover,.nico-CommonHeaderRoot .common-header-1swev0c:hover{background-color: #2b2b2b !important;}
+
+.common-header-g80xl3{background-color: rgb(89, 89, 89) !important;}
+
+.common-header-1sypczf{color: rgb(225, 225, 225) !important;}
+
+.nico-CommonHeaderRoot .common-header-r1rgum{display: none;}
 
 /* お知らせ */
-.common-header-1111win {
-    border-bottom: 1px solid rgb(160 160 160) !important
-}
-.common-header-105n2rz,
-.common-header-kolmxm {
-    background-color: #666 !important
-}
-.common-header-abyv5k {
-    color: #fff !important
-}
+.common-header-1111win{border-bottom: 1px solid rgb(160 160 160) !important;}
+
+.common-header-105n2rz,.common-header-kolmxm{background-color: #666 !important;}
+
+.nico-CommonHeaderRoot .common-header-uruoug{background-color: rgb(51, 51, 51);}
+
+.common-header-abyv5k{color: #fff !important;}
 .common-header-2cl2ey {
     background-color: rgb(74 74 74) !important
 }

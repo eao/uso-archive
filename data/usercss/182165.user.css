@@ -3,10 +3,9 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201216.14.32
+@version        20201217.6.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
-@advanced color Background "Main Background (html)" #090909
 @advanced dropdown RCWallpaper "Wallpaper" {
 WPBlackWood1K "Black Wood - 1K (1920 x 1080)*" <<<EOT https://i.redd.it/5hvfny0bxh151.jpg EOT;
 WPNone "None" <<<EOT http://DISABLED_REPLACE_URL_TO_ENABLE.kmv EOT;
@@ -19,6 +18,7 @@ WPBASE64 "Manual BASE64 Setup (Inject in Code #1)" <<<EOT data:image/jpeg;base64
 	RCWallpaper-custom-dropdown "Custom" <<<EOT /*[[RCWallpaper-custom]]*\/ EOT;
 }
 @advanced text RCWallpaper-custom "Wallpaper (Custom)" "https://example.com/image.png"
+@advanced color Background "Main Background (html)" #090909
 @advanced color Backgrounds "Menus, Popups, Bars etc." #090909
 @advanced color Notifications "Notifications & Announcements" #090909
 @advanced color Reply "Reply Box" #090909
@@ -2522,6 +2522,7 @@ a ._12FoOEddL7j_RgMQN0SNeU
 .dropdown.lightdrop .selected,
 /*4chan*/.hand,
 .read-next-title,
+.RESMacroDropdownTitle,
 ._2NS1CWm-CUQYu57CmZ05ep,
 ._eYtD2XCVieq6emjKBH3m
 {
@@ -2570,6 +2571,7 @@ div#sr-header-area a:hover,
 .res-commentNavToggle:hover,
 .res-nightmode a strong:hover,
 .res-nightmode form a:hover,
+.RESMacroDropdownTitle:hover,
 .search-expando-button:hover,
 .search-link.may-blank:hover,
 .side a:hover,
@@ -2806,14 +2808,20 @@ li strong a:active,
 /*p a:active,*/
 p strong a:active,
 ul li strong a:active,
+a.title.may-blank:active,
+.comment-thread:active,.comment-thread div:active,
+.contact-us-page .button:active,.res-nightmode .contact-us-page .button:active,
 .guiders_content p.guiders_description div table tbody tr td a:active,
 .link > .entry .title .domain a:active,
-a.title.may-blank:active,
+.entry .buttons li a:active,
+.flat-list.buttons li:active,
+.jcf-select .jcf-select-text .jcf-option-hideme:active,
+.link:hover > .entry .flat-list a:active,
+.link .tagline a:active,
 .md p strong a:active,
 .menuarea .dropdown.lightdrop .selected:active,
 .morecomments a:active,
-.side a:active,
-.sidecontentbox .content a:active,
+
 /*-------------------RES Nightmode Links-------------------*/
 .res-nightmode a:active,
 .res-nightmode blockquote a:active,
@@ -2835,14 +2843,10 @@ a.title.may-blank:active,
 .res-nightmode .sidecontentbox .content a:active,
 /*=========================================================*/
 
-.comment-thread:active,.comment-thread div:active,
-.contact-us-page .button:active,.res-nightmode .contact-us-page .button:active,
-.entry .buttons li a:active,
-.flat-list.buttons li:active,
-.jcf-select .jcf-select-text .jcf-option-hideme:active,
-.link:hover > .entry .flat-list a:active,
-.link .tagline a:active,
+.RESMacroDropdownTitle:active,
 .search-link.may-blank:active,
+.side a:active,
+.sidecontentbox .content a:active,
 ._2FZY7HXlkf-PdemHbQoAEt:active ._36D5hmBSZbFxkFMkiWg6cY,._2FZY7HXlkf-PdemHbQoAEt:active .tbIApBd2DM_drfZQJjIum,
 ._eYtD2XCVieq6emjKBH3m:active
 {
@@ -3549,6 +3553,7 @@ body:not(.subscriber) .sidebox.submit-link::before,.submit-text::before,
 #sr-drop-down,
 #usermenu-content,
 span.app-scope,
+span.RESMacroDropdown,
 table#srList[style="display: block;"],
 [class*="tooltipped"]:after,
 [id*="popover"],
@@ -3894,6 +3899,7 @@ body.dark article.comment:nth-child(n)
 /* --------------------- Highlighting --------------------- */
 
 /*RES Highlight Boxes*/
+.RESMacroDropdownList li a.edit-btn.btn-macro,
 /*Load More Comments Thingy*/.entry.unvoted.selected,
 /*Text Line only - Compatibility fix:*/
 .entry.res-selected .md p,
@@ -3994,7 +4000,6 @@ body.res .RES-keyNav-activeElement,
 /* ------------------- Custom Dropdowns ------------------- */
 
 /*Transition needed*/
-
 .RESDropdownList li div,.res-nightmode .RESDropdownList li div,
 .Header__tooltipItem,
 .vzhy90YD0qH7ZDJi7xMGw
@@ -4018,6 +4023,7 @@ body.res .RES-keyNav-activeElement,
 /*4chan*/#fp-menu li:hover,.dd-menu li:hover,.MuiListItem-gutters:hover,.MuiMenuItem-gutters:hover,
 #RESSubredditGroupDropdown a:hover,
 #sidebar .chan:hover,
+a.edit-btn.btn-macro:hover,
 .RESDropdownList li:hover,.res-nightmode .RESDropdownList li:hover,.RESDropdownList li:hover a,.res-nightmode .RESDropdownList li:hover a,
 .RESDropdownList li:hover span,.res-nightmode .RESDropdownList li:hover span,
 .choice:hover,
@@ -4186,6 +4192,7 @@ li.sr-name-row.sr-selected,
 /*4chan*/#fp-menu li:active,.dd-menu li:active,.MuiMenuItem-gutters:active,.MuiListItem-root:active,
 #RESSubredditGroupDropdown a:active,
 #sr-drop-down li:active,
+a.edit-btn.btn-macro:active,
 li.sr-name-row.sr-selected:active,
 .context-menu-item:active,
 .FancySelect__option:active,
@@ -7814,6 +7821,7 @@ ytp-bottom:hover,
 .res-filterline-filter,
 .res-filterline-show-help,
 .res-iframe-expando-drag-handle,
+.RESMacroDropdownTitle,
 .res-media-controls button::after,
 .res-nightmode a,
 .res-step,
@@ -8111,6 +8119,7 @@ ytp-bottom:active,
 .res-media-controls button.res-media-controls-lookup.res-icon:active,
 .res-media-controls button.res-media-controls-lookup.res-icon:active::after,
 */
+.RESMacroDropdownTitle:active,
 .RESSubscriptionButton:active,
 .RESCloseButton:active,
 .ring:active,

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Ночная тема для Яндекс.Поиска, Картинок, Видео и Коллекций———————————————————————————————10.12.20 — Исправлены некоторые баги———————————————————————————————26.08.19 — Тема была полностью переработана• Переработан дизайн• Добавлена поддержка Яндекс.Коллекции`
-@version        20201210.15.19
+@version        20201217.12.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -391,6 +391,9 @@ body .keyboard__switcher {color: #eee !important;}
 .i-ua_browser_desktop .home-link_pseudo_yes:hover {color: #e85253 !important;}
 
 .home-arrow__sample {color: #eee;}
+
+.services-new__promo-bubble-line:before, .services-new__promo-bubble-circle {background-color: hsl(170,50%,25%);}
+.services-new__promo:before {background-color: #444;}
 
 .services-new__separator {background-color: #333;}
 .services-new__item-title {color: #eee;}

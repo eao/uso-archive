@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         Edhill Anka
 @description    `Make the actual Stylish / Stylus plugin itself dark! <b>(Chrome Only - see info section!)</b>`
-@version        2017104.18.56
-@license        NO-REDISTRIBUTION
+@version        20201217.2.9
+@license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document regexp("chrome-extension://.*") {
 html,
 body,
-body>div {
+body>div, #confirm > div, .menu-items-wrapper {
     background: #1A1A1A !important;
 }
 body:not(.CodeMirror-cursors):not(.CodeMirror-cursor),

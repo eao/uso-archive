@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Cassiedragon
 @description    `A pastel style for WaniKani. Probably won't be suitable for most users, as some text can be hard to read, but I made this for my dying laptop monitor that doesn't work well with bright colours.`
-@version        202085.10.44
+@version        20201217.2.52
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -280,5 +280,11 @@ header #main-info.radical {
 }
 .radical {
     background-color: #8fd3ff;
+}
+
+.dashboard section.system-alert,
+.dashboard section.alert-where-user-scripts-cant-ignore,
+.dashboard section.sale-alert {
+    background-image: linear-gradient(to bottom, #ffbfe1, #ffa7ec);
 }
 }

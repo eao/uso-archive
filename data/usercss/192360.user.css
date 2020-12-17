@@ -2,8 +2,8 @@
 @name           Eldarya - Corrections Website [all servers]
 @namespace      USO Archive
 @author         Вика Пименова
-@description    `All Eldarya locations: https://vk.com/album-56022934_208393093Основные изменения:Текст верхнего меню немного увеличен, а его фон затемнёнНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнееВ гардеробе и в магазине одежды сократилось пустое пространствоИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке добавлено белое обрамление для надписейФон на главной странице и в гардеробе больше не размытыйГардероб теперь не прыгаетИнвентарь теперь похож на чердакИконки на рынке не выходят за рамкиИконки во вкладке "Мои торги" расположены горизонтально, как это было в старой версии сайта`
-@version        20201128.18.7
+@description    `All Eldarya locations: https://vk.com/album-56022934_208393093Основные изменения:Текст верхнего меню немного увеличен, а его фон затемнёнНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнееВ гардеробе и в магазине одежды сократилось пустое пространствоИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке добавлено белое обрамление для надписейФон на главной странице и в гардеробе больше не размытыйГардероб теперь не прыгаетИнвентарь теперь похож на чердакИконки на рынке не выходят за рамкиИконки во вкладке "Мои торги" расположены горизонтально, как это было в старой версии сайтаДобавлена возможность изменить фон и цвет тени букв верхнего меню`
+@version        20201217.11.2
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown menu_color "Тени слов в меню (Shadows of words in the top menu)" {
@@ -111,6 +111,7 @@ i3blur "Размытое (Blur)" <<<EOT https://i.ibb.co/mz6hjPW/966-V6s7y-Sl-A2
 #menu-bar {
     background: rgba(50, 21, 64, 0.65);
     height: 42px;
+    white-space: nowrap;
 }
 
   /*Крупные буквы в меню*/
@@ -425,52 +426,27 @@ i3blur "Размытое (Blur)" <<<EOT https://i.ibb.co/mz6hjPW/966-V6s7y-Sl-A2
 #minigames-list, #malls-list {
     margin: 70px auto auto;
 }
+
+/*Корректировка для Рождества*/
+
+#timer-help-container #event-timer, #timer-help-container #clock-icon {
+    padding: 3px 0px 0px 0px;
 }
 
-@-moz-document url-prefix("https://www.eldarya.ru") {
-/*Корректировка для Чёрной пятницы*/
+#timer-help-container #clock-icon {
+    margin-top: 18px !important;
+}
 
-#menu-bar #menu li.main-menu-event.selected a:before, #menu-bar #menu li.main-menu-event a:before {
-    content: "ЧП";
-    font-size: 20px;
-    text-shadow: 0 0 12px white;
-    line-height: 38px;
+#christmas2020-page-main-container {
+    padding: 60px 50px 0px 0px;
+}
+
+#currencies.event {
+    top: 100px !important;
+}
+
+#menu-bar #menu li.main-menu-event a {
     font-weight: 900;
 }
 
-#menu-bar #menu li.main-menu-event.selected a, #menu-bar #menu li.main-menu-event a {
-    font-size: 0px;
-}
-
-#timer-help-container #clock-icon{
-    padding: 60px 0px 0px 0px;
-}
-
-#timer-help-container #event-timer {
-    padding: 60px 50px 0px 0px;
-}
-}
-
-@-moz-document url-prefix("https://www.eldarya.fr"), url-prefix("https://www.eldarya.com"), url-prefix("https://www.eldarya.pl"), url-prefix("https://www.eldarya.es"), url-prefix("https://www.eldarya.com.br"), url-prefix("https://www.eldarya.it"), url-prefix("https://www.eldarya.de"), url-prefix("https://www.eldarya.hu") {
-/*Correct for Black friday*/
-
-#menu-bar #menu li.main-menu-event.selected a:before, #menu-bar #menu li.main-menu-event a:before {
-    content: "BF";
-    font-size: 20px;
-    text-shadow: 0 0 12px white;
-    line-height: 38px;
-    font-weight: 900;
-}
-
-#menu-bar #menu li.main-menu-event.selected a, #menu-bar #menu li.main-menu-event a {
-    font-size: 0px;
-}
-
-#timer-help-container #clock-icon{
-    padding: 60px 0px 0px 0px;
-}
-
-#timer-help-container #event-timer {
-    padding: 60px 50px 0px 0px;
-}
 }

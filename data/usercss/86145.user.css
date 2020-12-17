@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Comes in various parts! An extra is <i>barely</i> needed for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. Easily changeable background by <a href="https://userstyles.org/styles/169748/">installing another style</a>.<b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
-@version        20201216.4.58
+@version        20201217.7.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -605,18 +605,19 @@ body.featured-news h3.header3.header3-underline,
 #advancedSearch .fs12.fw-b.mt24.mb8,
 .video-menu-category, .widget .widget-header,
 .widget .ranking-header, .border_solid {
+    color: rgba(var(--colorTextHeader)) !important;
     font-family: Segoe UI !important;
-    border-bottom: 2px solid #e0dee0 !important;
-    color: rgba(var(--colorTextHeader)) !important; border-radius: 4px;
-    padding: 3px 0 !important; margin: 4px 0 5px 0 !important; }
+    border-bottom: 2px solid #e0dee0 !important; border-radius: 4px;
+    margin: 4px 0 5px 0 !important; padding: 3px 0 3px 2px !important; }
 
 .normal_header, .normal_header strong, h2, .normal_header[colspan="2"],
 .normal_header[align="center"] a, #panel_left div.normal_header, /* .header, (Breaks new History page) */
 body.featured-news h3.header3.header3-underline, .user-profile h4, h5,
 #advancedSearch .fs12.fw-b.mt24.mb8, .video-menu-category .btn-category,
-.widget .widget-header, .widget .ranking-header, .border_solid {
+.widget .widget-header, .widget .ranking-header, .border_solid,
+.news-content-block p.header {
     font-size: 15px !important;
-    font-weight: 400 !important;
+    font-weight: normal !important;
     letter-spacing: 2px !important;
     line-height: 12px !important;
     height: 12px !important; }
@@ -1080,9 +1081,9 @@ form[name^="search"] input[value="Search"] {position: relative;top: -1px;}
 /* View poll results, Add/Edit details, History link (Edit entry page) */
 input[value="Vote Now"] + div a, .inputButton + #addtolistresult a, h2.mt8 + #addtolist .inputButton + small a, span[id^="total"] + small a {
     font-style: normal !important;
-    font-size: 10px;
-    margin-left: 3px;
-    padding-bottom: 1px;
+    font-size: 10px !important;
+    margin-left: 3px !important;
+    padding-bottom: 1px !important;
     border-bottom: 2px solid #e0dee0 !important; }
 input[value="Vote Now"] + div {display: inline-block;margin-left: 4px !important;}
 
@@ -1797,7 +1798,7 @@ div[style*="%; background-color"] {border-radius: 3px;} /* Stats */
 body[bgcolor="#FFFFFF"][onload="initpicker()"] {background: white !important;}
 
 /* Login */
-.login-form-block .pt16 > .fl-r.di-ib.fs12.ff-avenir {position: relative;top: 82px;right: 6px;font-size: 13px !important;}
+.login-form-block .pt16 > .fl-r.di-ib.fs12.ff-avenir {position: relative;top: 85px;right: 6px;font-size: 13px !important;} /* 'Show Password' */
 .login-form-block .pt12.pb8.ac {position: relative;top: 35px;} /* Forgot PW */
 .login-form-block .pt24.pb8.ac {position: relative;top: -30px;padding-top: 0 !important;} /* Sign Up */
 .social-login-block {display: block !important;}
@@ -2016,6 +2017,9 @@ td[valign="top"][width="225"] .normal_header
     font-size: 10px !important;
     position: relative !important;
     bottom: 1px; left: 2px; }
+
+/* Small header text */
+.js-scrollfix-bottom-rel table .floatRightHeader {margin-top: 4px !important;}
 
 /* Invisible 'Read Rec' bar */
 td[valign="top"] + td[valign="top"] > div + .borderClass.bgColor1 + .spaceit {margin-top: -6px !important;}
@@ -2284,6 +2288,7 @@ a[name="members"] + h2 > span {top: 0;}
 .table-recently-updated .borderClass {height: 30px !important;}
 .table-recently-updated tr .borderClass:first-child {width: 217px !important;border-radius: 3px 0 0 3px;}
 .table-recently-updated tr .borderClass:last-child {width: 160px !important;border-radius: 0 3px 3px 0;}
+a[name="members"] + div span {font-size: 10px !important;letter-spacing: 1px !important;margin-top: 4px;padding-right: 2px;}
 
 /* Top of reviews */
 .borderDark[style^="padding: 4px"] .textReadability.word-break {border: none !important;}
@@ -2325,7 +2330,7 @@ table[class="mt16 mb8"], div#episode_video.anime-slide-block {display: none !imp
     box-shadow: 0 0 4px rgba(var(--colorBlue),0.75); }
 .mr12.js-reviews-chk-preliminary {margin-right: 0 !important;}
 
-/* Hide Videos Section */
+/* Hide 'Videos' section */
 .breadcrumb + table > tbody > tr > td[valign="top"] > h2:nth-of-type(3),
 h2[style="margin-top: 15px;"]  + .video-block
 	{display: none !important;}
@@ -2392,7 +2397,7 @@ td[width="225"] .picSurround + div[style*="center;"]:hover {opacity: 1 !importan
 .anime-slide-block .btn-anime-slide-side.left {background-position: -22px 0px !important;}
 .anime-slide-block .btn-anime-slide-side .btn-inner {height: 45px !important;width: 22px !important;}
 
-/* Music section */
+/* Hide 'Music' section */
 .itunes-wrapper h2 .floatRightHeader {display: none !important;}
 
 /* Characters/Staff fix */
@@ -2416,9 +2421,15 @@ h2 > .floatRightHeader + br + label {position: relative;top: -11px;margin-left: 
 /* 'Anime Recommendations Filter' script fix */
 #RecHeader .checkbox {margin-top: -1px;}
 
-/* Enhanced MAL script fix */
+/* 'Enhanced MAL' script fix */
 .borderClass[width="225"] > div[style*="width: 225px"] {width: 230px !important;} /* Undo short 'Add to fav' button */
 .floatRightHeader + h2 .floatRightHeader {display: none !important;} /* Hide 'Add/More' */
+
+/* 'Popup for Edit Details' script fix */
+#addtolist .inputButton + small .button_add {
+    display: inline !important; color: rgba(var(--colorTextLink)) !important;
+    margin: 0 0 0 3px !important; padding: 0 0 1px !important; }
+#addtolist .inputButton + small .button_add:hover {color: rgba(var(--colorBlue)) !important;transition: 0.2s !important;}
 }
 
 @-moz-document url-prefix("https://myanimelist.net/reviews.php") {
@@ -3155,13 +3166,14 @@ table[class*="-ranking-table"] tr.ranking-list:last-child td:last-child,
 
 /* Main Header */
 .fs18.fw-b.ff-avenir.mt24.top-rank-header2 {
+    color: rgba(var(--colorTextHeader)) !important;
     font-family: Segoe UI !important;
-    border-bottom: 2px solid #e0dee0 !important;
-    color: rgba(var(--colorTextHeader)) !important; border-radius: 4px;
-    padding: 3px 0 !important;
-    margin-top: 5px !important;
+    font-weight: normal !important;
     font-size: 15px !important;
-    font-weight: normal !important; }
+    margin-top: 5px !important;
+    padding: 3px 0 3px 2px !important;
+    border-bottom: 2px solid #e0dee0 !important;
+    border-radius: 4px; }
 
 /* Blue header */
 table[class*="-ranking-table"] .table-header td.rank, .club-list .table-header .club {border-radius: 5px 0 0 0;}
@@ -3301,6 +3313,7 @@ h2[class*="top-rank-header"] label[for="firstName"] {display: none !important;}
     margin: -11px 0 0 0 !important;
     padding: 0 13px !important;
     width: 95.9% !important; }
+.right-column .widget {margin: 20px 0 0 !important;}
 .left-column.pt12 {margin: 5px 0 0 1px !important;width: 62.9% !important;padding-top: 5px !important;border: none !important;}
 .left-column > article > .panel_introduction.left {margin: 0 !important;}
 .left-column .widget {margin: 0 4px 21px 3px !important;}
@@ -3362,6 +3375,12 @@ h3 > [style^="float: right;"] a, div > [style^="float: right;"] a {
 /* Reviews */
 .widget.reviews.right .info {padding-right: 3px !important;}
 
+/* Anime covers */
+.btn-anime, .btn-anime .link {border: none !important;border-radius: 3px;}
+
+/* Seasonal header */
+.widget.seasonal .index_h2_seo a {line-height: 12px !important;}
+
 /* Seasonal titles */
 .widget-slide-block .widget-slide .btn-anime .link .title {letter-spacing: 1px;width: 100% !important;}
 
@@ -3380,6 +3399,7 @@ h3 > [style^="float: right;"] a, div > [style^="float: right;"] a {
     font-weight: bold !important; }
 .widget-slide-block .link:hover, .widget-slide-block img:hover {opacity: 1 !important;}
 .widget-slide-block .widget-slide .btn-anime .external-link > a {letter-spacing: 1px;}
+.latest_updated_h3, .promotional_videos_h3 {font-weight: normal !important;letter-spacing: 1px;}
 
 /* Undo small text */
 .recommendations_h3, .reviews_h3 > a, .discussions_h3 > a {font-size: 14px !important;}

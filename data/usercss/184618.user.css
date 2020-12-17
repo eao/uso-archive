@@ -1,13 +1,13 @@
 /* ==UserStyle==
-@name           gitmoji
+@name           gitmoji.dev
 @namespace      USO Archive
 @author         KABA
-@description    `at https://gitmoji.carloscuesta.me/for Select & Text (Icon) copy`
-@version        20201126.4.34
+@description    `at https://gitmoji.dev/gitmoji page styel for Select & Copy Icon (Text)`
+@version        20201217.3.41
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("carloscuesta.me") {
+@-moz-document domain("gitmoji.dev") {
 .wrap { max-width: 1200px }
 main.wrap { padding-left: .2rem; padding-right: .2rem }
 

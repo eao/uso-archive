@@ -1,0 +1,39 @@
+{
+  "id": 194439,
+  "info": {
+    "name": "Traductor de Google - Modo Nocturno",
+    "description": "Tema elaborado a partir del estilo original, por lo que lo hace muy liviano y no afecta el rendimiento de la pagina ni del navegador.\r\n\r\nPara conocer mas detalles, consulta el código fuente en:\r\n\r\nhttps://github.com/lordballiwns/theme-stylish/blob/main/Blogger%20-%20Modo%20Nocturno.css\r\n\r\nConoce mas detalles de los lanzamiento y pre lanzamientos en:\r\n\r\nhttps://nightstylish.blogspot.com/2020/12/MN-TG.html\r\n\r\n*Se recomienda su uso en Traductor de Google Mexico",
+    "additionalInfo": "Google Traductor - Modo Nocturno\r\n\r\nv1.0\r\n|Lanzamiento inicial\r\n|Se cambian los colores a partir del estilo original, sin afectar el rendimiento de las paginas\r\n|Correcciones menores para el lanzamiento final\r\n|Se añade compatibilidad para Microsoft Edge",
+    "format": "uso",
+    "category": "google",
+    "createdAt": "2020-12-17T05:38:46.000Z",
+    "updatedAt": "2020-12-17T05:38:46.000Z",
+    "license": "CC-BY-NC-SA-4.0",
+    "author": {
+      "id": 1080802,
+      "name": "Lord Balliwns"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 1,
+      "weekly": 1
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "194439_after.png",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document url-prefix(\"https://translate.google.com.mx/\") {\r\nbody { color: #eee;}\r\n/*----*/\r\n/*--Header--*/\r\nheader {background: #000!important;}\r\n.gb_qa {color: #eee;}\r\n.pGxpHc header {border-bottom: 1px solid #444;}\r\n/*--Panel-Lateral--*/\r\n.gb_Cc.gb_ma {box-shadow: 0 0 16px #444;}\r\n.gb_Cc {background: #111; color: #ccc;}\r\n.gb_qa svg, .gb_Cc svg, .gb_Zc .gb_fe, .gb_Oc .gb_fe {color: #fff;}\r\n.GR2kEe:not(:last-child) {border-bottom: 1px #444 solid;}\r\n.yJWPX:hover {background-color: #222;}\r\n/*--Menu-Derecha-Izrquierda--*/\r\n.gb_wc .gb_4e.gb_5e button:hover svg, .gb_4e button:hover svg, .gb_D:hover {background-color: #222;}\r\n#gb#gb a.gb_D {color: #ccc;}\r\n.gb_wc .gb_4e.gb_5e button:active svg, .gb_4e button:active svg, .gb_D:active {background-color: #666;}\r\n.gb_wc .gb_4e.gb_5e button:focus svg, .gb_wc .gb_4e.gb_5e button:focus:hover svg, .gb_4e button:focus svg, .gb_4e button:focus:hover svg, .gb_D:focus, .gb_D:focus:hover {background-color: #555;}\r\n.gb_D[aria-expanded=\"true\"], .gb_D:hover[aria-expanded=\"true\"] {background-color: #252525;}\r\n.gb_D[aria-expanded=\"true\"] .gb_6e, .gb_D[aria-expanded=\"true\"] .gb_7e {fill: #ccc;}\r\n/*----*/\r\n/*--Cuerpo--*/\r\n.RvYhPd::before {background: #111; border-bottom: 1px solid #444;}\r\n.RvYhPd {background: #111;}\r\n/*--Botones-T-D--*/\r\n.BSw7K.iYelWb .irkilc:not(:disabled), .BSw7K.MFKVse .hL2wFc:not(:disabled) {background-color: #000050;}\r\n.cWQYBc {background: #000100; margin-right: .5em;}\r\n.cWQYBc .irkilc, .cWQYBc .hL2wFc {color: #3296ff;}\r\n.Rj2Mlf:not(:disabled) {border-color:#555;}\r\n.Rj2Mlf:hover:not(:disabled), .Rj2Mlf:active:not(:disabled) {border-color:#555;}\r\n.Rj2Mlf:hover:not(:disabled), .Rj2Mlf:active:not(:disabled), .Rj2Mlf:focus:not(:disabled), .Rj2Mlf.VfPpkd-ksKsZd-mWPk3d-OWXEXe-AHe6Kc-XpnDCe:not(:disabled) {color: #64c8ff;}\r\n/*--Traductor--*/\r\n.ccvoYb {background: #222; box-shadow: 0 1px 4px 0 #444;}\r\n.aCQag {border-bottom: 1px solid #444;}\r\n.X4DQ0::after {background: linear-gradient(to right,#333,#444);}\r\n.yUUmWd.VfPpkd-AznF2e-OWXEXe-auswjd .VfPpkd-jY41G-V67aGc {color: #00ffff;}\r\n.PRdtG .VfPpkd-AznF2e-wEcVzc-OWXEXe-NowJzb {border-color: #00ffff;}\r\n/*--Idiomas--*/\r\n.yUUmWd .VfPpkd-jY41G-V67aGc {color: #bbb;}\r\n.JJYS0b:hover .VfPpkd-jY41G-V67aGc, .JJYS0b:active .VfPpkd-jY41G-V67aGc, .JJYS0b:focus .VfPpkd-jY41G-V67aGc {color: #fff;}\r\n/*--Boton-de-accion--*/\r\n.q7sDqe:not(:disabled) .VfPpkd-kBDsod, .q7sDqe:not(:disabled) {color: #fff;}\r\n.VfPpkd-Bz112c-LgbsSe:hover::before {opacity: .25;opacity: var(--mdc-ripple-hover-opacity,0.25);}\r\n.VfPpkd-Bz112c-LgbsSe:not(.VfPpkd-ksKsZd-mWPk3d):focus::before {opacity: .50;opacity: var(--mdc-ripple-focus-opacity,0.50);}\r\n.yHy1rc:disabled, .fzRBVc:disabled {color: #eee;}\r\n.VfPpkd-Bz112c-LgbsSe:not(.VfPpkd-ksKsZd-mWPk3d):active::after {opacity: .25;opacity: var(--mdc-ripple-press-opacity,0.25);}\r\n.VfPpkd-Bz112c-LgbsSe:hover::before {opacity: .50;opacity: var(--mdc-ripple-focus-opacity,0.50);}\r\n/*--Ingresar-Texto--*/\r\n.er8xn {color: #ddd;}\r\n.KjuTac {background: #555;}\r\n.ODAbH {color: #64c8ff;}\r\n.VhOj3e {color: #ccc;}\r\n.mvqA2c {color: #64c8ff;}\r\n/*--Pronunciacion-*/\r\n.UdTY9 {color: #ccc;}\r\n/*--Botones-de-accion-inferior--*/\r\n.SSgGrd:not(:disabled) {color: #eee;}\r\n.ZTPlmc {color: #eee;}\r\n.ita-kd-icon-button {color: #eee;}\r\n.ita-kd-img {background-color: #ddd;border-radius:50%;}\r\n/*--Traduccion--*/\r\n.P6w8m.BDJ8fb:not(.Jj6Lae) {background: #151515;}\r\n.KmsAmb .tL9Q4c, .J0lOec {color: #fff;}\r\n.tm8pq, .V5PAJd {color: #ddd;}\r\n.HVGOKe {color: #ddd;}\r\n.HVGOKe .G2nOM {color: #3296ff;}\r\n.k99SMd .tZKn2d {color: red;}\r\n.QGDZGb {color: red;}\r\n.yieiFb {Color: #eee;}\r\n.NlvNvf {color: #ddd;}\r\n.Pfag {color: #fff;}\r\n.BAZ5oe {background: #151515;}\r\n.fcuAz {color: #eee;}\r\n.brilXb {color: #ccc;}\r\n.P6w8m {background: #252525;}\r\n/*--Seleccion-de-idioma--*/\r\n.bvzp8c {background: #222;box-shadow: 0 1px 4px 0 #444;}\r\n.RstnCb {border-bottom: 1px solid #444; background: #333;}\r\n.KskmCc {background: #404040;color: #eee;font-weight: bold;}\r\n.ordo2.KKjvXb {background: #666;color: #64c8ff;}\r\n.ordo2:hover {background-color: #444;}\r\n.ordo2 {color: #ddd;}\r\n/*--Definiciones--*/\r\n.I87fLc.XzOhkf {background: #151515;border: 1px solid #444;}\r\n.nYkDR {color: #ddd;}\r\n.S6GkK {color: #fff;font-weight: bold;}\r\n.eIKIse {color: #64ffff}\r\n.RSggmb {border: 1px solid #ddd;color: #fff;}\r\n.MZgjEb {color: #eee;}\r\n.gHl6Mc {color: #fff;}\r\n.PsfnLc {border: 1px solid #050505;color: #ddd;}\r\n.Qk6AXd {color: #fff;}\r\n.I87fLc:not(.XzOhkf) .Dwvecf, .ZShpvc {border-top: 1px solid #444;}\r\n.dPxysd {color: #ccc;}\r\n.VK4HE:hover .dPxysd, .VK4HE:focus .dPxysd, .qTO0c:hover .dPxysd, .qTO0c:focus .dPxysd {color: #FFF;}\r\n.LV4pme {color: #eee;}\r\n.j7bWb {color: #bbb;}\r\n.xex4Kc {color: #bbb;}\r\n.ksE5nf.EiZ8Dd {background-color: #64ffff}\r\n/*--Notas--*/\r\n.a88hkc {color: #EEE;}\r\n/*--Pie de pagina--*/\r\n.ySES5 {background: #444;border: 1px solid #000;}\r\n.TYVfy {color: #ccc;}\r\n.TcXXXb {color: #eee;}\r\n\r\n}"
+  }
+}

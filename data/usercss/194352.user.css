@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `<i>Note:</i>  <b>Use the Light Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/194352_additional_37560.jpeg" target="_blank"><b>📝</b></a>A Pokemon GBA based Theme.More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        20201215.12.36
+@version        20201217.3.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bg "Background Image 🖼️" {
@@ -1146,6 +1146,19 @@ html[dark] .watch-skeleton .skeleton-bg-color {/*skeletal system*/
 	background-position: bottom;
 	background-blend-mode: screen;
     background-size: 100px
+}
+
+/*nav small*/
+#left-arrow.yt-chip-cloud-renderer, #right-arrow.yt-chip-cloud-renderer {
+    background: #a3ffde;
+	border-radius: 50%;
+	height: 36px;
+	box-shadow: inset 0px 0px 0px 2px #474544
+}
+
+/*history page*/
+ytd-two-column-browse-results-renderer[page-subtype=history] #secondary.ytd-two-column-browse-results-renderer {
+    background-color: #f1f1f100;
 }
 
 }
