@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark and highlights`
-@version        2020101.5.4
+@version        20201217.19.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -74,12 +74,13 @@
 	text-decoration: none!important;
 }
 
-selector
+.css_tab1 li label,
+.css_tab2 li label
 {
 	text-transform: capitalize!important;
 }
 
-.gh-ui-6-5 .gh-eb-li-a:hover,
+#PicturePanel div.img,
 #gh-bt,
 #gh-ug,
 #itmSellerDesc,
@@ -96,14 +97,18 @@ selector
 .card-item .image,
 .carousel__control,
 .category-wrapper .category-carousel .category-pill,
+.css_tab1 li label,
+.css_tab2 li label,
 .ebayui-pagination__li a[aria-current="page"],
 .fits-msg-wrapper.confirmation-border,
 .fits-msg-wrapper.info-border,
 .fits-msg-wrapper.success-border,
 .gh-sch-prom #gh-ac-box,
 .gh-sch-prom #gh-cat-box,
+.gh-ui-6-5 .gh-eb-li-a:hover,
 .hl-cat-nav__active span,
 .hl-garage-carousel__link:hover,
+.img-holder,
 .itemAttr .section,
 .l-shad,
 .layoutborder,
@@ -131,12 +136,14 @@ selector
 .srp-main--isLarge .fake-tabs.srp-format-tabs li,
 .srp-main--isLarge .srp-list .s-item__image,
 .srp-main--isLarge .srp-river,
+.b-guidance--text .b-guidancecard__link,
 .srp-merch__items .s-item__image,
 .srp-merch__items .s-item__wrapper:hover,
 .srp-rail__right .s-browse-related .b-tile__imgwrap,
 .vi-filmstp .lst.icon a.pic,
 .vi-filmstp .sel,
 .x-tray-pill,
+.s-item__image--prettify,
 :focus,
 body.summary-ui .merch-placeholder,
 body.summary-ui .my-container.item-list .ajax-wrap
@@ -155,6 +162,8 @@ body.summary-ui .my-container.item-list .ajax-wrap
 }
 
 .b-info__title,
+.mfe-lex .mfe-title,
+.mfe-reco .container-truncate, .mfe-reco .container-truncate>span,
 .s-item__subtitle,
 .truncate
 {
@@ -162,7 +171,9 @@ body.summary-ui .my-container.item-list .ajax-wrap
 }
 
 .b-info,
-.mfe-lex .mfe-clean-spaces
+.mfe-lex .mfe-clean-spaces,
+.mfe-reco .container-truncate,
+.mfe-reco .container-truncate>span
 {
 	overflow: visible!important;
 }
@@ -175,17 +186,33 @@ table
 
 /*___ Fonts ________________________________________________________________________*/
 
+.hl-item__displayPrice,
+.vi-VR-cvipCntr1 span#prcIsum,
 body.vi-bb-flex.vi-white-spacing .vi-price #prcIsum
 {
 	font-size: 21px!important;
 }
 
+.accordion_content p,
+.b-textlink,
+.css_tab1 li label,
+.css_tab2 li label,
+.hl-cat-nav ul,
+.mfe-lex .mfe-title,
 .reviews .reviews--details .reviews--body .review--section .review--section--r .review--content,
-body ul#bc a span
+.tab-content p,
+.tab-content ul li,
+.tab-content2 p,
+.tab-content2 ul li,
+body ul#bc a span,
+button,
+html>body
 {
 	font-size: 19px!important;
 }
 
+.hl-item__additionalPrice,
+.hl-item__discount,
 .rpTbl tr th,
 body,
 table,
@@ -200,7 +227,7 @@ ul#bc li
 	font-size: 15px!important;
 }
 
-
+.hl-cat-nav li a,
 .seller-details
 {
 	line-height: 29px!important;
@@ -267,6 +294,7 @@ selector
 
 /*___ Margins ______________________________________________________________________*/
 
+.srp-main--isLarge .srp-grid .s-item,
 #Left,
 #domain-nav,
 .b-visualnav__tile.b-visualnav__tile__6,
@@ -327,11 +355,14 @@ html > body .hl-module
 
 /*___ Paddings _____________________________________________________________________*/
 
-#CenterPanel,
-#fTblFTr td,
-#fTblFTr th,
+.b-topproducts .x-carousel__body ul li,
+.srp-main--isLarge .srp-grid .s-item,
+.b-visualnav__tile,
+.css_accordion,
 #Left,
 #domain-nav,
+#fTblFTr td,
+#fTblFTr th,
 #mainContent,
 #subbody,
 #top-nav,
@@ -342,6 +373,7 @@ html > body .hl-module
 .carousel__list > li,
 .info-section,
 .pagecontainer__leftnav,
+.popup_container,
 .similar-items-panel .similar-item,
 .srp-rail__right,
 .vi-app-index__main-container-wrapper,
@@ -353,12 +385,18 @@ html > body .hl-module
 	padding: 12px!important;
 }
 
+.css_accordion li,
 .bsi-c1 div,
 .bsi-c2 div,
 input,
 select
 {
-	padding: 3px 6px!important;
+	padding: 13px 6px!important;
+}
+
+#CenterPanel
+{
+	padding: 11px 6px 44px 10px;
 }
 
 #app-info .application .app-vehicle-value,
@@ -375,12 +413,14 @@ select
 
 /*___ Heights ______________________________________________________________________*/
 
+img.img140,
 .b-horizontallistings .b-info__title,
 .topSold .b-info__title
 {
 	max-height: none!important;
 }
 
+.mfe-lex .mfe-title,
 .b-horizontallistings .b-info__title,
 .topSold .b-info__title
 {
@@ -394,6 +434,7 @@ select
 .col-8,
 .grid,
 .grid-ctr,
+.hl-cat-nav,
 .pagecontainer,
 .srp--list-view .srp-main--isLarge,
 .srp--list-view .x-header,
@@ -401,18 +442,22 @@ select
 .sz1280,
 .two-column.container,
 .widgets-placeholder,
+.wrapper,
 .x-header,
 .x-overlay.dialog[role=dialog] > [role=document],
 body .sz1280 .vi-bc-topM .vi-VR-brumb-hasNoPrdlnks,
 body.xo.desktop,
-html > body,
 html > body #gh,
-html > body .hl-module
+html > body .hl-module,
+html > body,
+img.img140
 {
 	max-width: none!important;
 }
 
 .b-deals .b-tile,
+.css_tab1 li label,
+.css_tab2 li label,
 body.sz1200 .my-ebay
 {
 	width: auto!important;
@@ -475,6 +520,10 @@ html > body
 	width: calc(94% - 527px);
 }
 
+.vi-VR-cvipCntr1 div.lable {
+    width: 32%;
+}
+
 .similar-items-panel .similar-item
 {
 	width: 22.736842%;
@@ -500,6 +549,7 @@ html > body
 	width: 26%;
 }
 
+.srp-main--isLarge .srp-grid .s-item,
 .mfe-lex .column-recos .mfe-reco-ct
 {
 	width: 23%;
@@ -516,6 +566,10 @@ html > body
 	width: 15%;
 }
 
+.x-textrange__block {
+    width: 71px;
+}
+
 #Left
 {
 	width: 11%;
@@ -529,6 +583,7 @@ html > body
 
 @-moz-document domain("ebay.com"), domain("vi.vipr.ebaydesc.com") {
 /*__________________________________________________________________________________*/
+
 #ebay-f a,
 .asp .pnl-h span.seeall button.seeall,
 .bluelnk a,
@@ -560,6 +615,7 @@ a[href]:visited
 #vi-inc-coupn-msg b,
 .app-itemspecifics-mobile-wrapper__value--secondary,
 .asp .pnl-h span.seeall button.seeall:hover,
+.b-motors-links .b-motors-links__text:hover,
 .bluelnk a:hover,
 .bluelnk a:link:hover,
 .ebayui-pagination__li a[aria-current="page"],
@@ -602,6 +658,8 @@ input[type="radio"]:checked + label
 
 /*__________________________________________________________________________________*/
 
+.pagecontainer__leftnav .b-categorynavigations .b-textlink,
+.pagecontainer__leftnav .b-speciallinks .b-textlink,
 #Body #si-fb,
 #StaySignedInContainer,
 #app-product-sticky-header .btn,
@@ -835,6 +893,7 @@ legend
 .sh-svc,
 .success--order-list-total,
 .uship-contact-info b,
+.vi-VR-cvipCntr1 div.lable,
 .vi-atf-logistics-component,
 .vi-bb-flex .is .lable,
 .vi-bb-flex .lbl,
@@ -935,6 +994,7 @@ time
 .s-item__price,
 .success--order-list-total span:nth-child(2),
 .vi-hd-ops .ms-as,
+.vi-VR-cvipCntr1 span#prcIsum,
 .vi-vpqp-price,
 body #CenterPanel .actPanel .mm-dp div *,
 body #CenterPanel .actPanel .vi-price span,
@@ -1118,6 +1178,8 @@ html > body #gh
 
 /*___ Background 0000 ______________________________________________________________*/
 
+.b-guidance--text .b-guidancecard__link,
+.whitebg .pagecontainer__leftnav .container,
 #app-info .fit-header,
 #fTblFTr td,
 #fTblFTr th,
@@ -1147,6 +1209,8 @@ html > body #gh
 .b-module,
 .b-tile,
 .card.ebayui-dne-item-featured-card--topDeals > h2,
+.css_tab1 li label,
+.css_tab2 li label,
 .desc_details tr,
 .dh,
 .dne-itemtile,
@@ -1308,6 +1372,7 @@ div.sme-item-gallery > div.body-wrp
 .reviews .rating--details .write--review a.btn,
 .select-info-btn,
 .solt-wrapper .app-solt__link,
+.template_buttons li a,
 .x-motors-cardset .x-motors-card-finder,
 .x-motors-cardset a.x-motors-card-nav:not([href^="javascript"]).btn,
 .x-refine__body--flush-left .x-refine__main__list--more .x-see-all__container button,
@@ -1334,6 +1399,7 @@ button.expand-btn--primary
 .reviews .rating--details .write--review a.btn:hover,
 .select-info-btn:hover,
 .solt-wrapper .app-solt__link:hover,
+.template_buttons li a:hover,
 .x-motors-cardset .x-motors-card-finder:hover,
 .x-motors-cardset a.x-motors-card-nav:not([href^="javascript"]).btn:hover,
 .x-refine__body--flush-left .x-refine__main__list--more .x-see-all__container button:hover,
@@ -1358,6 +1424,7 @@ button.expand-btn--primary:hover
 .reviews .rating--details .write--review a.btn:active,
 .select-info-btn:active,
 .solt-wrapper .app-solt__link:active,
+.template_buttons li a:active,
 .x-motors-cardset .x-motors-card-finder:active,
 .x-motors-cardset a.x-motors-card-nav:not([href^="javascript"]).btn:active,
 .x-refine__body--flush-left .x-refine__main__list--more .x-see-all__container button:active,
@@ -1550,7 +1617,6 @@ button.btn--primary.sfk-btn--facebook:active
 #app-info,
 #core-policy,
 #domain-nav,
-#mainContent,
 #payment,
 #promotionsCntr,
 #return-policy,
@@ -1579,6 +1645,7 @@ button.btn--primary.sfk-btn--facebook:active
 .pgCenter,
 .srp-main-content,
 .srp-rail__left,
+.css_accordion,
 .srp-rail__right,
 .tab-content-m
 {
@@ -1588,13 +1655,13 @@ button.btn--primary.sfk-btn--facebook:active
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.css_accordion:hover,
 #CenterPanel:hover,
 #Left:hover,
 #about:hover,
 #app-info:hover,
 #core-policy:hover,
 #domain-nav:hover,
-#mainContent:hover,
 #payment:hover,
 #promotionsCntr:hover,
 #return-policy:hover,
@@ -1630,6 +1697,9 @@ button.btn--primary.sfk-btn--facebook:active
 
 /*___ Plain ________________________________________________________________________*/
 
+.srp-main--isLarge .srp-grid .s-item,
+.b-visualnav__tile,
+.popup_container,
 #doc2,
 #gAC .ui-autocomplete,
 #gf-f,
@@ -1679,12 +1749,15 @@ div.gh-o,
 div.vi-ds3cont-box-marpad,
 html > body .hl-module
 {
-	background-color: #111!important;
+	background-color: #1c1c1c!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.srp-main--isLarge .srp-grid .s-item:hover,
+.b-visualnav__tile:hover,
+.popup_container:hover,
 #gAC .ui-autocomplete:hover,
 #gf-f:hover,
 #gh-eb-Alerts-o:hover,
@@ -1862,6 +1935,8 @@ ul.l-adv li a:hover
 
 /*__ Gray Gradient _______________________________________________________________*/
 
+.tab-content2,
+.tab-content,
 .w2b-cnt.w2b-3.w2b-brdr,
 [style="background: rgb(238, 238, 238); color: rgb(102, 102, 102);"]
 {
@@ -1873,6 +1948,8 @@ ul.l-adv li a:hover
 
 /*__ Purple Gradient _______________________________________________________________*/
 
+.css-tab2:checked + .tab-label,
+.css-tab1:checked + .tab-label,
 .gh-sticky-coupon-v3 .gh-sticky-banner-v3__wrapper.active,
 [style="background: rgb(248, 248, 248); color: rgb(102, 102, 102);"]
 {
@@ -1891,6 +1968,7 @@ ul.l-adv li a:hover
 
 /*___ Highlight Background _________________________________________________________*/
 
+.css_accordion li:not(:first-child):hover,
 .app-itemspecifics-mobile-wrapper .cc-stdmargin__top:hover,
 .desc_details tr:hover,
 .my-ebay .menu-body ul li:hover,
@@ -1905,6 +1983,7 @@ ul.l-adv li a:hover
 @-moz-document domain("ebay.com"), domain("vi.vipr.ebaydesc.com") {
 /*__________________________________________________________________________________*/
 
+.popup_container,
 #about,
 #app-info,
 #core-policy,
@@ -1948,9 +2027,11 @@ ul.l-adv li a:hover
 .s-item,
 .similar-items-panel .similar-item,
 .ssRow,
+.b-visualnav__tile,
 .thumbPicturePanel .app-filmstrip.desktop .cc-image-component:not(.owl-highlight),
 .vi-filmstp ul.lst li,
 .vi-swc-content,
+.b-topproducts .x-carousel__body ul li,
 div.sme-item-card,
 tr.row
 {
@@ -1959,6 +2040,9 @@ tr.row
 
 /*__________________________________________________________________________________*/
 
+.b-topproducts .x-carousel__body ul li:hover,
+.b-visualnav__tile:hover,
+.popup_container:hover,
 #about:hover,
 #app-info:hover,
 #core-policy:hover,
@@ -2432,14 +2516,12 @@ button.expand-btn--primary svg
 /* Empty Heart _______________________________________________________*/
 
 .s-item__watchheart-text--watch svg,
-.s-item__watchheart-text--watch,
 [aria-pressed="false"] .heartIcon
 {
 	background: url(https://i.ibb.co/cD452WP/healthy-hear-darkt-32x32.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-.s-item__watchheart-text--watch,
 .s-item__watchheart-text--watch svg,
 [aria-pressed="false"] .heartIcon
 {

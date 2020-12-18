@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Google - Results Counter v.23
+@name           Google - Results Counter v.36
 @namespace      USO Archive
 @author         decembre
 @description    `Add counter for Google results to my userstyles:<a href="https://userstyles.org/styles/116884/google-multi-columns-dark-and-gray-v-8">GooGle - Multi-Columns Dark and Gray</a>Add Support too for:- <a href="https://greasyfork.org/fr/scripts/7664-faviconizegoogle"><b>FaviconizeGoogle</b></a>:`
-@version        2020427.12.18
+@version        20201217.14.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,7 +15,7 @@ url-prefix(https://www.google)  { */
 @-moz-document regexp("https?://(www|news|play|host-b)\\.google(\\.com?)?(\\.[a-z][a-z])?/(|webhp|search|news|play|ig|service-a).*"), domain("encrypted.google.com")
 {
 
-/* ==== Google - Results Counter v.23 (new23) ==== */
+/* ==== Google - Results Counter v.36 (new36) ==== */
 /* Add Support too for:
  - FaviconizeGoogle - https://greasyfork.org/fr/scripts/7664-faviconizegoogle
 === */
@@ -25,7 +25,7 @@ url-prefix(https://www.google)  { */
 body#gsr {
     counter-increment: myIndex  0 !important;
 }
-/* (new21) */
+/* (new36) */
 #res .g h3:before  {
     counter-increment: myIndex  ! important;
     content: counter(myIndex, decimal-leading-zero);
@@ -33,7 +33,7 @@ body#gsr {
     display: inline-block;
     min-width: 15px;
     margin-top: -2px !important;
-    margin-left: -19px;
+    margin-left: -22px;
     padding: 1px 2px;
     border-radius: 3px;
     font-size: 10px;
@@ -42,19 +42,21 @@ body#gsr {
     background: #333;
     z-index: 10;
 }
+#res .g h3  {
+margin-left: 0px;
+    padding: 1px 2px 1px 10px;
+}
 
+/*  (new36) GM FaviconizeGoogle */
 
-/*  (new22) GM FaviconizeGoogle */
-
-
-#res  .g .r a[data-faviconized="yes"] h3:before  {
+#res .g .r a[data-faviconized="yes"] h3:before  {
     counter-increment: myIndex  ! important;
     content: counter(myIndex, decimal-leading-zero);
     position: absolute;
     display: inline-block;
     min-width: 15px;
     margin-top: -1px;
-    margin-left: -25px;
+    margin-left: -23px !important;
     padding: 1px 2px;
     border-radius: 3px;
     font-size: 10px;
@@ -63,6 +65,12 @@ body#gsr {
     text-indent: 0px !important;
     z-index: 10;
     background: #333;
+border: 1px solid red !important;
+}
+#search a[data-faviconized="yes"] h3  {
+    height: 1.3em;
+    padding-left: 1.4em !important;
+/* border: 1px solid red !important; */
 }
 
 /* VIDEO SEARCH */

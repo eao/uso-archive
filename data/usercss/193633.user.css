@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Over 2700 lines of code.Its isn't 100% complete but most of the features are supported(fe. google translate widget, weather etc.)Supports:-Google Maps-Google Maps iframe-Captcha-News-SettingsPartial Support:-Flights-Books-Shopping-Finance`
-@version        20201211.8.11
+@version        20201217.15.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -179,6 +179,9 @@ svg#wob_gsvg > text {
 .YPxNKd {
 	background: #1b1b1bb8;
 }
+.d7sCQ {
+	border-color: #1b1b1bb8;
+}
 .keP9hb {
     box-shadow: 0 2px 2px 0 rgba(255, 255, 255, .16), 0 0 0 1px rgba(255, 255, 255, .08);
 }
@@ -187,7 +190,7 @@ svg#wob_gsvg > text {
     box-shadow: 0 2px 2px 0 rgba(255, 255, 255, .16), 0 0 0 1px rgba(255, 255, 255, .08);
 	backdrop-filter: blur(1px);
 }
-.WGwSK, .cfBJGe {
+.WGwSK, .cfBJGe, .TZZypb {
 	color: #ddd;
 }
 span.EZRelc {
@@ -196,16 +199,28 @@ span.EZRelc {
 .cp7THd {
 	color: #858585;
 }
-.pTi5ve, .P1usbc, .f, .IThcWe, .gyWzne, .kno-ftr a, .vp45yf, .GlPvmc, .rjmdhd, .uo4vr, .kno-ftr.rpBMYb, .LHJvCe, .Y3v8qd, .isfR2, .uiBRm, .F3p6q, a.EbH0bb, .kxJ65e, .FGlSad, a.Ndm45b, .Aq14fc, .S23sjd, .f4A6t, .jUVTC, .CEMjEf, a:visited .I1HL6b, .I1HL6b, .l821if, .T96xUb {
+.pTi5ve, .P1usbc, .f, .IThcWe, .gyWzne, .kno-ftr a, .vp45yf, .GlPvmc, .rjmdhd, .uo4vr, .kno-ftr.rpBMYb, .LHJvCe, .Y3v8qd, .isfR2, .uiBRm, .F3p6q, a.EbH0bb, .kxJ65e, .FGlSad, a.Ndm45b, .Aq14fc, .S23sjd, .f4A6t, .jUVTC, .CEMjEf, a:visited .I1HL6b, .I1HL6b, .l821if, .T96xUb, .iPyfyb .VQr16d, .ZIF80, .eHaQD {
 	color: #80858a;
+}
+.RnpQO {
+    color: rgba(255, 255, 255, .54);
+}
+.QjH6g {
+	filter: invert(100);
+}
+.QjH6g span {
+	filter: inherit;
 }
 .cbL4Ld {
 	background: #000;
 }
+.rqTuzc:hover {
+	background: #0a0a0ab8;
+}
 .a, cite, cite a:link, cite a:visited, .s75CSd, ._-ct, a.ab_button:hover, .h-c-icon--footer, a:visited .zTpPx, a .zTpPx, .Vouh6c, .nzKMdd, .L04Uw, .mmxugd {
 	color: #d0d1d4;
 }
-.IsZvec, .s, .hb8SAc, .WF4CUc, .o5GQac img, .lr_c_stnl, #rcnt .action-menu-item a.fl, .action-menu-item a.fl, .gb_4b, .jEdCLc, .u1M3kd.g6Ealc, .e1fR0c, .e1fR0c:hover {
+.IsZvec, .s, .hb8SAc, .WF4CUc, .o5GQac img, .lr_c_stnl, #rcnt .action-menu-item a.fl, .action-menu-item a.fl, .gb_4b, .jEdCLc, .u1M3kd.g6Ealc, .e1fR0c, .e1fR0c:hover, .aVSTQd {
     color: #adb7c4;
 }
 .CAe8ic {
@@ -294,8 +309,11 @@ a.fl:link, .fl a, .gl a:link, .WpKAof, .wUrVib, .EZRelc, .SW5pqf, title-with-lhs
 .b0KoTc {
     color: rgba(255, 255, 255, .54);
 }
-.rhscol .I6TXqe {
+.rhscol .I6TXqe, .rqTuzc {
 	border-color: #2f3031b8;
+}
+.rqTuzc {
+	background: #000000b8;
 }
 .I6TXqe {
 	background: #000000b8;
@@ -1085,8 +1103,17 @@ header#gb {
 .goog-slider-horizontal .goog-slider-scale {
 	border-color: #333333b8;
 }
-.slmarker {
+.slmarker, .J6UZg .goog-date-picker table thead td {
 	border-color: #2a2b2db8;
+}
+.J6UZg .goog-date-picker-other-month, .suap3e {
+	color: #2a2b2db8;
+}
+button.goog-date-picker-btn.goog-date-picker-previousMonth, button.goog-date-picker-btn.goog-date-picker-nextMonth {
+	filter: invert(100);
+}
+.J6UZg td.goog-date-picker-date:hover {
+	background: #2a2b2db8;
 }
 .jfk-radiobutton:hover .jfk-radiobutton-radio {
     box-shadow: inset 0 1px 1px rgba(255, 255, 255, .1);
@@ -1103,6 +1130,41 @@ header#gb {
     box-shadow: inset 0 1px 2px rgba(255, 255, 255, .1);
     background: #080808b8;
     color: #ccc;
+}
+.nvELY {
+	filter: invert(100);
+}
+.y0fQ9c, .Gwgzqd {
+	filter: invert(100);
+}
+.vOvh1b {
+	background: #000;
+}
+.J6UZg .goog-date-picker, .qomYCd {
+	background: #08090ab8;
+}
+.T3kYXe, .OouJcb, .rzG2be, .UfY8P tr:nth-child(2) .goog-date-picker-other-month {
+	color: #80858a;
+}
+.Jy9Ore, .Qtsmnf {
+	color: #d0d1d4;
+}
+.fE5Rge {
+	background: #000000b8;
+	border-color: #2a2b2db8;
+}
+.fE5Rge:hover {
+	background: #06090eb8;
+	border-color: #2a2b2db8;
+}
+.OouJcb, .rzG2be {
+	background: #000000b8;
+	border-color: #2a2b2db8;
+}
+.J6UZg {
+	background: #000000b8;
+	border-color: #2a2b2db8;
+	box-shadow: 0 4px 16px rgba(255, 255, 255, .2);
 }
 .jfk-button-standard {
     background-color: #050505b8;

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         zigboom
 @description    `Google redesigned in dark Grays, custom images, gradients, advanced CSS3 effects and more. For web designs, check out https://www.zigboom.com`
-@version        20201216.17.28
+@version        20201217.18.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1380,15 +1380,11 @@ border-radius: 24px !important;
 
 /* Sidebar Items | Header Title */
 
-.SFllF:hover, .zWHNCf .SFllF.KKjvXb, .VxptDf .jKS7Jd, .RF3lAd, .uUmIDd:hover, .YDRMcc, .YtXOzd {
+.SFllF:hover, .zWHNCf .SFllF.KKjvXb, .VxptDf .jKS7Jd, .RF3lAd, .uUmIDd:hover, .YDRMcc, .YtXOzdת .oKubKe[aria-selected="true"], .Rdnmze {
     background: #282828 !important;
 }
 
-.oKubKe[aria-selected="true"], .Rdnmze {
-    background-color: #444 !important;
-}
-
-.NiLAwe, .Qo7o0c, .EOlQu .JQQdOc, .lBwEZb>.JQQdOc, .lBwEZb:not(.Au3bp) .TzkJxd, .SXu5Cc, .SXu5Cc .JQQdOc, .wi7gLd, .YDRMcc .JQQdOc, .Dyy7Cc .JQQdOc, .YtXOzd {
+.NiLAwe, .Qo7o0c, .EOlQu .JQQdOc, .lBwEZb>.JQQdOc, .lBwEZb:not(.Au3bp) .TzkJxd, .SXu5Cc, .SXu5Cc .JQQdOc, .wi7gLd, .YDRMcc .JQQdOc, .Dyy7Cc .JQQdOc, .YtXOzd, .dm7YTc .i9ZCec {
     border-color: #333 !important;
 }
 
@@ -1396,7 +1392,7 @@ border-radius: 24px !important;
     box-shadow: 0 1px 1px 1px rgba(0,0,0,0.4);
 }
 
-.gb_sc, .gXqRq .zdxZbf .gq1Z8c, .ZqhUjb.lSLCF .aTzV9b, .dIehj::before, .gb_qc .gb_re:before {
+.gb_sc, .gXqRq .zdxZbf .gq1Z8c, .ZqhUjb.lSLCF .aTzV9b, .dIehj::before, .gb_qc .gb_re:before, .dm7YTc .i9ZCec .s7bIcf {
     filter: grayscale(100%) brightness(110%); 
     opacity: 0.9;
 }

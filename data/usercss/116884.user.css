@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           GooGle - Multi-Columns Dark and Gray v.35
+@name           GooGle - Multi-Columns Dark and Gray v.36
 @namespace      USO Archive
 @author         decembre
 @description    `Less scrolling with a multi columns interface.....Firefox OKChrome : OKNot working together with a "working" GooglemonkeyR:But all forks of it, at 2019.07, seems broken and need to be updated.When they work, use my userstyle:<a href="https://userstyles.org/styles/121836/">Google - GM - Google MonkeyR Companion</a>`
-@version        20201210.19.34
+@version        20201217.14.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,7 +30,7 @@ https://cse.google.fr/cse?cx=partner-pub-8110924381468607:6449306375&ie=ISO-8859
 regexp("https?://(www|news|play|host-b)\\.google(\\.com?)?(\\.[a-z][a-z])?/(|webhp|search|news|play|ig|service-a).*"), url-prefix("https://cse.google") {
 
 
-/* ==== Google - Multi-Columns Dark and Gray v.35 (new35) - ==== */
+/* ==== Google - Multi-Columns Dark and Gray v.36 (new36) - ==== */
 
 /* PB but work touch too GOOGLE PLAY STORE -
 https://play.google.com/store
@@ -1271,8 +1271,8 @@ border-bottom: 1px solid red !important;
 border-top: 1px solid peru;
 }
 
-/* SEARCH + IMAGE SEARCH - GM "GOOGLE FAVICONISED" */
-.wXeWr.islib.nfEiy.mM5pbd[data-faviconized="yes"] + img {
+/* (new36) SEARCH + IMAGE SEARCH - GM "GOOGLE FAVICONISED" */
+.wXeWr.islib.nfEiy.mM5pbd + img {
     position: relative !important;
     float: left !important;
     left: -1.2em !important;
@@ -1283,16 +1283,21 @@ border-top: 1px solid peru;
     vertical-align: middle;
     width: 1.3em;
     height: 1.3em;
-    left: -2.16em;
-    top: 1.6em !important;
+    margin-left: 2.16em;
+    top: 1.7em !important;
     padding-bottom: 0.2em;
     padding-right: 0.65em;
 }
-#res .g .r a[data-faviconized="yes"] h3 {
+/* #res .g .r a[data-faviconized="yes"] h3,
+#res  .g  .favicon + a {
     height: 1.3em;
-    margin-left: 0.4em !important;
+    margin-left: 0.9em !important;
+} */
+/* (new36) */
+[data-faviconized="yes"] h3 {
+    height: 1.3em;
+    margin-left: 0.5em !important;
 }
-
 /* TERMES MANQUANTS */
 .bkWMgd .TXwUJf {
     height: 15px;

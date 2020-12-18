@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         kandy
 @description    `Если кнопка установки не работает, пробуем сначала нажать на кнопку Show CSS, а потом уже Install. Если не помогло, вместо расширения Stylish, устанавливаем Stylus.Краткий мануал по опциям: https://goo.gl/RY5XCGGithub: https://github.com/kapraru/vanilla-dark-vkПоддержать разработку:Яндекс.Кошелек - 410011732809550Paypal - a@kapra.ru`
-@version        20201216.16.38
+@version        20201217.22.25
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown style-color "Стиль" {
@@ -254,6 +254,9 @@ input[readonly*='true']{
 }
 [dir] .deep_active .replies .replies_wrap_deep .replies_next, [dir] .deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .replies .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_next {
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='12' viewBox='0 0 12 12' width='12'%3E%3Cg fill='none' transform='matrix(1 0 0 -1 0 12)'%3E%3Cpath d='m0 0h12v12h-12z'/%3E%3Cpath d='m5.248 1.338a.997.997 0 0 1 .665-.334.998.998 0 0 1 .794.289l4 4a1 1 0 1 1 -1.414 1.414l-2.293-2.293v5.59c0 .55-.444.996-1 .996-.552 0-1-.456-1-.995v-5.59l-2.293 2.291a1 1 0 0 1 -1.414-1.414l3.955-3.955z' fill='%23B9B384' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+[dir] body.new_header_design .top_audio_player_play .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_next .top_audio_player_btn_icon  {
+  filter: saturate(0);
 } EOT;
 aqua "Aqua" <<<EOT /* Aqua *\/
 
@@ -752,6 +755,9 @@ input[readonly*='true']{
 }
 [dir] .deep_active .replies .replies_wrap_deep .replies_next, [dir] .deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .replies .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_next {
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='12' viewBox='0 0 12 12' width='12'%3E%3Cg fill='none' transform='matrix(1 0 0 -1 0 12)'%3E%3Cpath d='m0 0h12v12h-12z'/%3E%3Cpath d='m5.248 1.338a.997.997 0 0 1 .665-.334.998.998 0 0 1 .794.289l4 4a1 1 0 1 1 -1.414 1.414l-2.293-2.293v5.59c0 .55-.444.996-1 .996-.552 0-1-.456-1-.995v-5.59l-2.293 2.291a1 1 0 0 1 -1.414-1.414l3.955-3.955z' fill='%23ff7b5d' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+[dir] body.new_header_design .top_audio_player_play .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_next .top_audio_player_btn_icon  {
+  filter: saturate(0);
 } EOT;
 mint "Mint" <<<EOT /* Mint *\/
 
@@ -974,6 +980,9 @@ input[readonly*='true']{
 }
 [dir] .deep_active .replies .replies_wrap_deep .replies_next, [dir] .deep_active .wl_replies_block_wrap .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .replies .replies_wrap_deep .replies_next, [dir] .deep_active.wall_module .wl_replies_block_wrap .replies_wrap_deep .replies_next {
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='12' viewBox='0 0 12 12' width='12'%3E%3Cg fill='none' transform='matrix(1 0 0 -1 0 12)'%3E%3Cpath d='m0 0h12v12h-12z'/%3E%3Cpath d='m5.248 1.338a.997.997 0 0 1 .665-.334.998.998 0 0 1 .794.289l4 4a1 1 0 1 1 -1.414 1.414l-2.293-2.293v5.59c0 .55-.444.996-1 .996-.552 0-1-.456-1-.995v-5.59l-2.293 2.291a1 1 0 0 1 -1.414-1.414l3.955-3.955z' fill='%2363b97f' opacity='.5'/%3E%3C/g%3E%3C/svg%3E");
+}
+[dir] body.new_header_design .top_audio_player_play .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_next .top_audio_player_btn_icon  {
+  filter: saturate(0);
 } EOT;
 cream-color "Cream (с цветной шапкой)" <<<EOT /* Cream (с цветной шапкой) *\/
 
@@ -1271,6 +1280,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-color: var(--color2);
   filter: brightness(.9);
   color: #fff;
+}
+[dir] body.new_header_design .top_audio_player_play .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_next .top_audio_player_btn_icon  {
+  filter: saturate(0);
 } EOT;
 aqua-color "Aqua (с цветной шапкой)" <<<EOT /* Aqua (с цветной шапкой) *\/
 
@@ -2284,6 +2296,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-color: var(--color2);
   filter: brightness(.9);
   color: #fff;
+}
+[dir] body.new_header_design .top_audio_player_play .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_next .top_audio_player_btn_icon  {
+  filter: saturate(0);
 } EOT;
 mint-color "Mint (с цветной шапкой)" <<<EOT /* Mint (с цветной шапкой) *\/
 
@@ -2572,6 +2587,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   background-color: var(--color2);
   filter: brightness(.9);
   color: #fff;
+}
+[dir] body.new_header_design .top_audio_player_play .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_next .top_audio_player_btn_icon  {
+  filter: saturate(0);
 } EOT;
 colorless "Черно-белый" <<<EOT /* Черно-белый *\/
 
@@ -2823,7 +2841,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 [dir] body.new_header_design .p_head_l0 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l97 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l114 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l1 .top_home_link .top_home_logo {
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='25' width='136'%3E%3Cpath d='M0 11.5c0-5.42 0-8.13 1.68-9.82C3.37 0 6.08 0 11.5 0h1c5.42 0 8.13 0 9.82 1.68C24 3.37 24 6.08 24 11.5v1c0 5.42 0 8.13-1.68 9.82C20.63 24 17.92 24 12.5 24h-1c-5.42 0-8.13 0-9.82-1.68C0 20.63 0 17.92 0 12.5z' fill='%23bbb'/%3E%3Cg clip-rule='evenodd' fill-rule='evenodd'%3E%3Cpath d='M6.5 7.5H4.75c-.5 0-.6.24-.6.5 0 .46.6 2.76 2.76 5.8 1.45 2.07 3.49 3.2 5.34 3.2 1.11 0 1.25-.25 1.25-.68v-1.57c0-.5.1-.6.46-.6.26 0 .7.13 1.74 1.13 1.19 1.19 1.38 1.72 2.05 1.72h1.75c.5 0 .75-.25.6-.74-.15-.5-.72-1.2-1.47-2.05-.4-.49-1.02-1-1.2-1.26-.26-.34-.2-.49 0-.78 0 0 2.13-3 2.35-4.03.11-.37 0-.64-.53-.64H17.5a.76.76 0 00-.76.5s-.9 2.16-2.15 3.57c-.41.41-.6.54-.82.54-.1 0-.27-.13-.27-.5V8.14c0-.44-.13-.64-.5-.64h-2.75c-.28 0-.45.2-.45.4 0 .42.64.52.7 1.7v2.58c0 .57-.1.67-.32.67-.6 0-2.04-2.18-2.9-4.67-.16-.48-.33-.68-.78-.68z' fill='%23111'/%3E%3Cpath d='M66.86 12.5c0 3.24-2.43 5.5-5.78 5.5s-5.78-2.26-5.78-5.5S57.73 7 61.08 7s5.78 2.26 5.78 5.5zm-8.97 0c0 1.97 1.3 3.3 3.19 3.3s3.19-1.33 3.19-3.3c0-1.98-1.3-3.25-3.19-3.25s-3.19 1.28-3.19 3.25zm-17.14-.21c.95-.44 1.56-1.18 1.56-2.33 0-1.73-1.58-2.96-3.87-2.96h-5.27v11h5.5c2.37 0 4.02-1.29 4.02-3.05 0-1.33-.87-2.32-1.94-2.66zM35.6 9.01h2.83c.85 0 1.44.5 1.44 1.2s-.6 1.2-1.44 1.2h-2.83zM38.67 16h-3.06V13.3h3.06c.96 0 1.59.55 1.59 1.36s-.63 1.33-1.59 1.33zM51.84 18h3.19l-5.06-5.71L54.61 7h-2.9l-3.68 4.27h-.6V7H45v11h2.44v-4.38h.59zM76.47 7v4.34h-4.93V7H69.1v11h2.43v-4.44h4.93V18h2.43V7zM86.9 18h-2.44V9.22h-3.8V7H90.7v2.22h-3.8zm9.5-11c-2.11 0-3.91.89-4.52 2.8l2.24.37c.34-.67 1.05-1.2 2.15-1.2 1.33 0 2.06.84 2.17 2.28h-2.32c-3.23 0-4.79 1.42-4.79 3.45 0 2.05 1.59 3.3 3.78 3.3 1.8 0 3-.72 3.53-1.63l.5 1.63h1.76v-6.18c0-3.19-1.74-4.82-4.5-4.82zm-.72 9c-1.19 0-1.9-.5-1.9-1.4 0-.85.57-1.44 2.43-1.44h2.35c0 1.8-1.19 2.84-2.88 2.84zm17.99 2h-3.2l-3.8-4.38h-.6V18h-2.43V7h2.43v4.27h.6L110.34 7h2.9l-4.63 5.29zm3.88 0h2.43V9.22h3.8V7h-10.04v2.22h3.8zM130.1 7c3.34 0 5.56 2.4 5.56 5.37 0 .3-.02.55-.04.79h-8.54c.23 1.69 1.36 2.69 3.17 2.69 1.29 0 2.15-.4 2.68-1.2l2.29.39c-.88 2.01-2.83 2.96-5.12 2.96a5.28 5.28 0 01-5.51-5.5c0-3.12 2.17-5.5 5.51-5.5zm2.92 4.25c-.4-1.37-1.4-2.15-2.92-2.15-1.48 0-2.47.74-2.87 2.15z' fill='%23888'/%3E%3C/g%3E%3C/svg%3E");
 }
- EOT;
+[dir] body.new_header_design .top_audio_player_play .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon, [dir] body.new_header_design .top_audio_player_next .top_audio_player_btn_icon  {
+  filter: saturate(0);
+} EOT;
 
 }
 @advanced dropdown header_to_sidebar "Свернуть шапку в правый сайдбар " {
@@ -3515,6 +3535,69 @@ input.text.ts_input {
 }
 [dir] #top_profile_menu:before, [dir] #top_profile_menu:after {
   display: none;
+}
+body.new_header_design #side_bar ol li .left_row {
+  width: 20px!important;
+}
+#top_audio_layer_place .eltt.eltt_vis.eltt_bottom {
+  top: 28px!important;
+}
+body.new_header_design .TopSearch input:not(:focus) {
+  border-radius: 50%!important;
+}
+#page_header {
+  position: relative;
+}
+.HeaderNav__item.HeaderNav__btns {
+  top: 10px;
+}
+.HeaderNav__item--player {
+  top: 15px;
+  display: block;
+
+
+  left: -25px;
+  position: absolute;
+
+  z-index: 999999999999;
+}
+[dir=ltr] body.new_header_design .top_audio_player {
+  position: relative;
+  z-index: 99999;
+
+}
+[dir] body.new_header_design .TopSearch__input {
+  background-position: 9px;
+}
+#top_nav > li:last-child {
+  top: 25px;
+}
+#top_nav {
+  padding-top: 15px;
+}
+[dir=ltr] body.new_header_design .ts_cont_wrap {
+  left: 890px;
+}
+#top_nav {
+  height: max-content;
+}
+#top_notify_btn {
+  left: 9px;
+  border-radius: 50%;
+  width: 26px!important;
+  height: 26px!important;
+  padding: 3px!important;
+}
+.top_audio_player_title_wrap {
+  z-index: 99999;
+}
+[dir=ltr] body.new_header_design .top_audio_player_title_wrap {
+  left: 100px;
+
+}
+[dir=ltr] body.new_header_design .top_audio_player_title_wrap div {
+  color: var(--color6)!important;  
+  line-height: 28px;
 } EOT;
 
 }
@@ -4302,13 +4385,13 @@ div#wcm_messages_stat_graph div div,
 .graph_right_menu.clear_fix a[id^='svg_enabler_svg_menu'],
 .graph_right_menu.clear_fix a[id^='svg_enabler_svg_mobile_views_menu'],
 .graph_right_menu.clear_fix a[id^='svg_enabler_svg_sources_menu'],
-.stats_community_messages_info_title, .TemplatesSettings div.TemplatesSettings__input, .TemplatesSettings div.TemplatesSettings__textarea, .TemplatesDropDown__item:hover .TemplatesDropDown__item-content, .post_action_tt_item, .wall_module .reply.reply_deleted .reply_text, .wall_module .ui_tabs .ui_tab_group_sel, .ui_tabs .ui_tab_group_item, .audio_subscribe_promo__text, .AudioPlaylistSnippet .ActionButton--shuffle__text, .ads_ad_description, .PlaceholderSmall__text, .article_layer .article_layer__content_footer .article_layer__content_footer_button, .audio_pl_edit_box .ape_add_audios_btn, .audio_pl_edit_box .ape_add_pl_audios_btn, .PeerProfile__content, .PeerProfileTagsGridItem, .PeerProfileTagsModalField__input, .media_selector .ms_items_more .ms_item, .BannerItem--cover .BannerItem__button .flat_button, .BannerItem--cover_header .BannerItem__button .flat_button, body.new_header_design #side_bar .left_label, body.new_header_design .top_nav_link, [dir] .ui_rmenu_count {
+.stats_community_messages_info_title, .TemplatesSettings div.TemplatesSettings__input, .TemplatesSettings div.TemplatesSettings__textarea, .TemplatesDropDown__item:hover .TemplatesDropDown__item-content, .post_action_tt_item, .wall_module .reply.reply_deleted .reply_text, .wall_module .ui_tabs .ui_tab_group_sel, .ui_tabs .ui_tab_group_item, .audio_subscribe_promo__text, .AudioPlaylistSnippet .ActionButton--shuffle__text, .ads_ad_description, .PlaceholderSmall__text, .article_layer .article_layer__content_footer .article_layer__content_footer_button, .audio_pl_edit_box .ape_add_audios_btn, .audio_pl_edit_box .ape_add_pl_audios_btn, .PeerProfile__content, .PeerProfileTagsGridItem, .PeerProfileTagsModalField__input, .media_selector .ms_items_more .ms_item, .BannerItem--cover .BannerItem__button .flat_button, .BannerItem--cover_header .BannerItem__button .flat_button, body.new_header_design .top_nav_link, [dir] .ui_rmenu_count, .im-page--redesigned-menu .ui_actions_menu_item {
 	color:var(--color6);
 }
 .im-chat-input .im-chat-input--text *, .lang_column b, .page_actions_expanded a.page_actions_item, [dir] .ui_rmenu_count {
 	color:var(--color6) !important;
 }
-.wd_lnk, .wall_module .published_by_date, .wall_module .wall_post_source, .im-mess-stack .im-mess-stack--tools a, .im-mess-stack .im-mess-stack--tools, .wall_module .reply_date, .post_date, .post_date .post_link, .post_date .wall_text_name_explain_promoted_post, .wall_module .reply_to, .fc_msgs .audio_inline_player .slider .slider_slide, .friends_field .group_link, .mention_tt_extra, .mention_tt_extra a, .fc_msgs .audio_row:not(.audio_row_current):hover .audio_title_wrap, .wall_module .reply_fakebox, a.bp_date, .im-page .im-page--lastact, .tabbed_box .summary_tab .summary_tab3 span, .tabbed_box .summary_tab_sel .summary_tab3 span, .im-mess-stack .im-mess-stack--content .im-mess-stack--tools, .im-mess-stack .im-mess-stack--tools, .im-mess-stack .im-mess-stack--tools a._im_mess_link, .im-mess-stack .im-mess-stack--content .im-mess-stack--tools a, .datepicker_text, .im-mess-stack .im-mess-stack--content .im-mess-stack--pname, .cal_table .past_day, .validation_device_notice, .blst_other, .im-search--date-input .cal_table .day, .page_friend_reply_date, .feedback_date .post_link, .feedback_date, .im-page--members, .audio_w_covers .audio_row .audio_row__performer, .audio_row .audio_row__duration, .audio_pl_snippet .audio_pl_snippet__stats, .post_header_info .explain, .post_author, .wall_module .reply_author, .im-mess.im-mess_srv .im-mess--text, .im-mess .im-mess--text .im_srv_lnk, .im-mess .im-mess--text .im_srv_mess_link, .im-mess--lbl-was-edited, .podcast_episode_layer__full_title, .podcast_episode_layer__desc_info, .podcast_episode_layer__list_title, .deep_active.wall_module:not(.closed_comments) .post_replies_count, .deep_active:not(.closed_comments) .post_replies_count, .ChatSettingsMembersWidget__add, .wall_module .reply_to, .wall_module .wd_lnk, .TemplatesDropDown__item-content, .wk_voting_option_count, .cal_table .inactive_day, .groups_edit_event_log_page .groups_edit_event_log_items_wrap .groups_edit_event_log_item_label, .like_views {
+.wd_lnk, .wall_module .published_by_date, .wall_module .wall_post_source, .im-mess-stack .im-mess-stack--tools a, .im-mess-stack .im-mess-stack--tools, .wall_module .reply_date, .post_date, .post_date .post_link, .post_date .wall_text_name_explain_promoted_post, .wall_module .reply_to, .fc_msgs .audio_inline_player .slider .slider_slide, .friends_field .group_link, .mention_tt_extra, .mention_tt_extra a, .fc_msgs .audio_row:not(.audio_row_current):hover .audio_title_wrap, .wall_module .reply_fakebox, a.bp_date, .im-page .im-page--lastact, .tabbed_box .summary_tab .summary_tab3 span, .tabbed_box .summary_tab_sel .summary_tab3 span, .im-mess-stack .im-mess-stack--content .im-mess-stack--tools, .im-mess-stack .im-mess-stack--tools, .im-mess-stack .im-mess-stack--tools a._im_mess_link, .im-mess-stack .im-mess-stack--content .im-mess-stack--tools a, .datepicker_text, .im-mess-stack .im-mess-stack--content .im-mess-stack--pname, .cal_table .past_day, .validation_device_notice, .blst_other, .im-search--date-input .cal_table .day, .page_friend_reply_date, .feedback_date .post_link, .feedback_date, .im-page--members, .audio_w_covers .audio_row .audio_row__performer, .audio_row .audio_row__duration, .audio_pl_snippet .audio_pl_snippet__stats, .post_header_info .explain, .post_author, .wall_module .reply_author, .im-mess.im-mess_srv .im-mess--text, .im-mess .im-mess--text .im_srv_lnk, .im-mess .im-mess--text .im_srv_mess_link, .im-mess--lbl-was-edited, .podcast_episode_layer__full_title, .podcast_episode_layer__desc_info, .podcast_episode_layer__list_title, .deep_active.wall_module:not(.closed_comments) .post_replies_count, .deep_active:not(.closed_comments) .post_replies_count, .ChatSettingsMembersWidget__add, .wall_module .reply_to, .wall_module .wd_lnk, .TemplatesDropDown__item-content, .wk_voting_option_count, .cal_table .inactive_day, .groups_edit_event_log_page .groups_edit_event_log_items_wrap .groups_edit_event_log_item_label, .like_views, body.new_header_design .TopSearch__input::placeholder, body.new_header_design .TopSearch .input_back_content, body.new_header_design .top_audio_player_title {
 	color:var(--color8);
 }
 .ui_header_ext_search {
@@ -4530,6 +4613,9 @@ div#wcm_messages_stat_graph div div,
 .top_notify_count, [dir] .top_notify_count {
 	border:none!important;
 }
+[dir] body.new_header_design #side_bar .left_count_wrap .left_count {
+  color: #111;
+}
 [dir] .top_notify_count {
     background-color: var(--color1);
     color: #111;
@@ -4581,7 +4667,7 @@ div#wcm_messages_stat_graph div div,
 a, .page_counter .count, .page_counter:hover .label, .post_author .author, .wall_module .author, .wall_module .copy_author, .page_doc_row .page_doc_title, .wall_module .post_like_count, .wall_module .post_share_count, .wall_module .my_like .like_count, .wall_module .my_share .share_count, .ui_rmenu_item, .ts_contact_name, .ui_actions_menu_item .wddi_text, .wddi_text, .pv_like, .pv_liked .pv_like_count, .friends_find_user_name, .friends_import_header, .top_profile_mrow, .listing, .audio_owner_info_name a, .wall_module .media_desc .a, .wide_column .topics_module .topic_title, .bp_author, .pg_lnk_sel .pg_in, .blst_title, .blst_mem, .fw_reply_author, .wall_module a.page_media_link_title, .wall_module span.page_media_link_title, a.docs_item_name, .mail_box_label_peer, div.top_result_baloon a, .olist.audio_album .olist_item_performer, .olist_item_name, #notifiers_wrap a, .notifier_baloon_msg span.group_link, .notifier_baloon_msg span.mem_link, .chat_onl, .fc_contact_name, .im-page-btn, a b, b a, .app_link, .apps_notification_header a, .header_side_link, .header_side_link a, .ads_ad_title_box.apps_only, .ads_ad_title_box.groups_only, .page_media_poll_title, .payments_getvotes_method_title, .page_actions_item, .ui_ownblock_label, .lang_box_row_label, .blog_product_title, .blog_snapster_title, .blog_about_company_stat_number, .blog_about_company_office_city, .blog_about_link_title, .summary_tab3, .page_group_name, .feed_article_title, .privacy_dropdown .item, .privacy_dropdown .item_sel, .privacy_dropdown .item_sel_plus, .idd_popup .idd_item, .wall_module .media_desc .lnk .lnk_mail_title, .im-page .im-page--mess-search, .group_edit_labeled .idd_wrap .idd_selected_value, a.group_l_title, a.group_u_title, .friends_cur_filters .token, .feedback_header .author, .feedback_header .group_link, .feedback_header .mem_link, .feedback_sticky_text .group_link, .feedback_sticky_text .mem_link, .current_audio, .top_nav_btn b, .group_box_name .group_link, .group_box_name .mem_link, .im-mess .im-mess--btn, .nim-dialog.nim-dialog_muted.nim-dialog_selected .nim-dialog--unread, 
 .nim-dialog.nim-dialog_selected .nim-dialog--unread, .post_upload_dropbox, .page_actions_cont.narrow .page_actions_header_inner, .top_nav_btn a b, .exchange_table_hint, .exchange_task_actions a, .exchange_task_label a, .help_tile_faqs__row_a, .help_table_question_visible .help_table_question__q, .apps_i_group .apps_i_group_name, .page_actions_item.page_actions_item_lock, .flist_item_name, .notify_tt_text .group_link, .notify_tt_text .mem_link, .blog_more_but, .blog_arhive_title a, .tickets_author, .tickets_author .mem_link, .tu_row_title__a, .help_tile_faqs__row_a, .help_table_question .help_table_question__q, .ui_actions_menu_item, .vkmenu ol li a:hover, .audio_filter.download_controls.layout-post-2016 > div.label, #side_bar ol li .left_row, .ui_actions_menu_item.ui_actions_menu_item_lock .ui_actions_menu_item_lock_text, .market_item_owner_name, .market_album_name_link, a.settings_blb_title, .mv_actions_block .download_control > .download_label, .post_like:hover, .post_share:hover, .my_like .market_like_count, .apps_i_description_show_more, .payments_offer_row_title, .im-mess-stack .im-mess-stack--content .im-mess-stack--pname>a, .im_cal_clear_lnk, .feed_filters_show_types_btn, a.group_app_button, .box_controls.group_age_disclaimer_box .flat_button.group_age_disclaimer_close, .wcommunity_name .wcommunity_name_link, .wcommunity_post_date, .post_author .author, .wall_module .author, .page_group_name, .wall_module .copy_author, #marketplace .market_content .link, .im-fwd .im-fwd--title, a.group_blb_user_name, .group_blb_user_row, .feed_blog_reminder_large .feed_blog_reminder_title, .feed_blog_reminder_link, .audio_pl_edit_box .ape_cover_title, .audio_pl_edit_box .ape_audio_item_wrap .ape_attach, ._audio_section__search .audio_row.audio_has_lyrics .audio_row__title_inner, .ap_layer__content .audio_row.audio_has_lyrics .audio_row__title_inner, .audio_page__audio_rows .audio_row.audio_has_lyrics .audio_row__title_inner, .audio_section_global_search__audios_block .audio_row.audio_has_lyrics .audio_row__title_inner, .audio_row__more_actions .audio_row__more_action, .audio_row .audio_row__performer, .im-page .nim-conversation-search-row .nim-dialog--name .nim-dialog--name-w, .post_dislike:hover, .im-page .im-page--clear-recent, .im-page-pinned--name, .im-page-pinned--media, .im-dropbox--msg, .blog_entry_text_wrap .wk_text a b, .blog_entry_text a b, .article a, .article_layer .article_layer__footer .article_layer__footer_button:hover, .Link, .Entity__title, .story_feed_new_item.stories_feed_preview_item .stories_feed_preview_author .stories_feed_preview_author_name, .like_btn.like.active .like_button_count, .audio_row .audio_row__performers a, .group_info_rows_redesign a, .page_photo.page_action_menu_groups .page_actions_item.group_send_msg_status_block .group_send_msg_status_block_title, .audio_pl_snippet2 .audio_pl_snippet__more_btn, .audio_pl_snippet2 .audio_pl_snippet__action_btn_listen, .stories_groups_block_stories_wrap .stories_groups_block_stories_button, .group_online_answer_status_title, .group_online_status_title, a .app_widget_tiles_title, .button_action_light.activated, a.group_app_button_multi, .ads_ad_title.apps_only, .big.with_icons .result_list ul li, .audio_w_covers .audio_podcast .audio_row__title_inner, .group_settings_advice a, .notify_sources_tt_content .line_cell .info.group_notify_add_source_button, .ChatSettingsMembersWidget__add, .audio_page_player2 .audio_page_player_play_rate, .im-replied--author-link, .audio_artist_snippet__play, .bookmark_tag, #groups_apps_catalog_promo .apps_group_catalog_promo_header,
 .apps_group_catalog_header .apps_group_catalog_header_desc .apps_group_catalog_header_desc_text,
-.group_settings_advice a, .links-list__title, .deep_active .post_replies_header .post_replies_reorder, .deep_active.wall_module .post_replies_header .post_replies_reorder, .idd_wrap .idd_selected_value, .groups_edit_event_log_page .groups_edit_event_log_filter .ui_tooltipMenu__current, .groups_edit_event_log_page .groups_edit_event_log_controls, .mail_link__title, .thumbed_link__title, #group_section_menu .module_body .ui_gallery .ui_gallery_item .groups_menu_item.groups_menu_item_add .groups_menu_item_title,.notifications_new_events, .stories_groups_block_stories_empty .page_module_upload, #app_widget_header_btn, #qr_code_btn, .post_suggest .post_suggest__action_text, .im-page--title-reconnect, .Select__control, .PeerProfileTagsModal .Button--secondary, .LinkButton, .PeerProfile__manageTagsLink, .PeerProfileTagsModal__addLink, .wall_module a.wall_reply_greeting, .flat_button.im-top-banner--button-tertiary, .im-top-banner--button-tertiary, .top_profile_vkconnect_row {
+.group_settings_advice a, .links-list__title, .deep_active .post_replies_header .post_replies_reorder, .deep_active.wall_module .post_replies_header .post_replies_reorder, .idd_wrap .idd_selected_value, .groups_edit_event_log_page .groups_edit_event_log_filter .ui_tooltipMenu__current, .groups_edit_event_log_page .groups_edit_event_log_controls, .mail_link__title, .thumbed_link__title, #group_section_menu .module_body .ui_gallery .ui_gallery_item .groups_menu_item.groups_menu_item_add .groups_menu_item_title,.notifications_new_events, .stories_groups_block_stories_empty .page_module_upload, #app_widget_header_btn, #qr_code_btn, .post_suggest .post_suggest__action_text, .im-page--title-reconnect, .Select__control, .PeerProfileTagsModal .Button--secondary, .LinkButton, .PeerProfile__manageTagsLink, .PeerProfileTagsModal__addLink, .wall_module a.wall_reply_greeting, .flat_button.im-top-banner--button-tertiary, .im-top-banner--button-tertiary, .top_profile_vkconnect_row, body.new_header_design #side_bar .left_label {
 	color:var(--color1);
 }
 
@@ -4778,7 +4864,7 @@ img[src="/images/camera_100.png"], img[src="/images/camera_100.png?ava=1"], img[
 	background-image:var(--dots)!important;
 }
 
-.exchange_subtab1.active, .exchange_subtab1.active:hover, .ads_nav .nav_selected, .ads_nav .nav_selected:hover, .ui_search_filters_pane .token .token_title, .wall_module .page_media_chat-invitation .page_media_link_desc_td .wall_postlink_preview_btn .flat_button {
+.exchange_subtab1.active, .exchange_subtab1.active:hover, .ads_nav .nav_selected, .ads_nav .nav_selected:hover, .ui_search_filters_pane .token .token_title, .wall_module .page_media_chat-invitation .page_media_link_desc_td .wall_postlink_preview_btn .flat_button, [dir] body.new_header_design #side_bar .left_count_wrap .left_count {
   color:#111;
 }
 
@@ -5123,6 +5209,9 @@ input.ui_search_field#groups_list_search {
     border-bottom-left-radius: 6px;
     border-top-color: var(--color3);
 }
+[dir] .feed_groups_recomm__all {
+  border-top-color: var(--color3);
+}
 [dir] .ui_rmenu_count.ui_rmenu_count_grey {
   color: var(--color8);
 }
@@ -5175,9 +5264,12 @@ filter: invert(0)!important;
   color: var(--color6);
 }
 [dir=ltr] #side_bar ol li .left_row:hover .left_count_wrap {
+  height: 20px;
+}
+[dir=ltr] #side_bar ol li .left_row:hover .left_count_wrap {
   padding: 0 3px!important;
   min-width: 16px;
-  height: 22px;
+  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5206,7 +5298,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   filter: none;
 }
 [dir] body.new_header_design .p_head_l0 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l97 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l114 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l1 .top_home_link .top_home_logo {
-background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='25' width='136'%3E%3Cpath d='M0 11.5c0-5.42 0-8.13 1.68-9.82C3.37 0 6.08 0 11.5 0h1c5.42 0 8.13 0 9.82 1.68C24 3.37 24 6.08 24 11.5v1c0 5.42 0 8.13-1.68 9.82C20.63 24 17.92 24 12.5 24h-1c-5.42 0-8.13 0-9.82-1.68C0 20.63 0 17.92 0 12.5z' fill='%23bbb'/%3E%3Cg clip-rule='evenodd' fill-rule='evenodd'%3E%3Cpath d='M6.5 7.5H4.75c-.5 0-.6.24-.6.5 0 .46.6 2.76 2.76 5.8 1.45 2.07 3.49 3.2 5.34 3.2 1.11 0 1.25-.25 1.25-.68v-1.57c0-.5.1-.6.46-.6.26 0 .7.13 1.74 1.13 1.19 1.19 1.38 1.72 2.05 1.72h1.75c.5 0 .75-.25.6-.74-.15-.5-.72-1.2-1.47-2.05-.4-.49-1.02-1-1.2-1.26-.26-.34-.2-.49 0-.78 0 0 2.13-3 2.35-4.03.11-.37 0-.64-.53-.64H17.5a.76.76 0 00-.76.5s-.9 2.16-2.15 3.57c-.41.41-.6.54-.82.54-.1 0-.27-.13-.27-.5V8.14c0-.44-.13-.64-.5-.64h-2.75c-.28 0-.45.2-.45.4 0 .42.64.52.7 1.7v2.58c0 .57-.1.67-.32.67-.6 0-2.04-2.18-2.9-4.67-.16-.48-.33-.68-.78-.68z' fill='%23111'/%3E%3Cpath d='M66.86 12.5c0 3.24-2.43 5.5-5.78 5.5s-5.78-2.26-5.78-5.5S57.73 7 61.08 7s5.78 2.26 5.78 5.5zm-8.97 0c0 1.97 1.3 3.3 3.19 3.3s3.19-1.33 3.19-3.3c0-1.98-1.3-3.25-3.19-3.25s-3.19 1.28-3.19 3.25zm-17.14-.21c.95-.44 1.56-1.18 1.56-2.33 0-1.73-1.58-2.96-3.87-2.96h-5.27v11h5.5c2.37 0 4.02-1.29 4.02-3.05 0-1.33-.87-2.32-1.94-2.66zM35.6 9.01h2.83c.85 0 1.44.5 1.44 1.2s-.6 1.2-1.44 1.2h-2.83zM38.67 16h-3.06V13.3h3.06c.96 0 1.59.55 1.59 1.36s-.63 1.33-1.59 1.33zM51.84 18h3.19l-5.06-5.71L54.61 7h-2.9l-3.68 4.27h-.6V7H45v11h2.44v-4.38h.59zM76.47 7v4.34h-4.93V7H69.1v11h2.43v-4.44h4.93V18h2.43V7zM86.9 18h-2.44V9.22h-3.8V7H90.7v2.22h-3.8zm9.5-11c-2.11 0-3.91.89-4.52 2.8l2.24.37c.34-.67 1.05-1.2 2.15-1.2 1.33 0 2.06.84 2.17 2.28h-2.32c-3.23 0-4.79 1.42-4.79 3.45 0 2.05 1.59 3.3 3.78 3.3 1.8 0 3-.72 3.53-1.63l.5 1.63h1.76v-6.18c0-3.19-1.74-4.82-4.5-4.82zm-.72 9c-1.19 0-1.9-.5-1.9-1.4 0-.85.57-1.44 2.43-1.44h2.35c0 1.8-1.19 2.84-2.88 2.84zm17.99 2h-3.2l-3.8-4.38h-.6V18h-2.43V7h2.43v4.27h.6L110.34 7h2.9l-4.63 5.29zm3.88 0h2.43V9.22h3.8V7h-10.04v2.22h3.8zM130.1 7c3.34 0 5.56 2.4 5.56 5.37 0 .3-.02.55-.04.79h-8.54c.23 1.69 1.36 2.69 3.17 2.69 1.29 0 2.15-.4 2.68-1.2l2.29.39c-.88 2.01-2.83 2.96-5.12 2.96a5.28 5.28 0 01-5.51-5.5c0-3.12 2.17-5.5 5.51-5.5zm2.92 4.25c-.4-1.37-1.4-2.15-2.92-2.15-1.48 0-2.47.74-2.87 2.15z' fill='%23888'/%3E%3C/g%3E%3C/svg%3E");
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='25' width='136'%3E%3Cpath d='M0 11.5c0-5.42 0-8.13 1.68-9.82C3.37 0 6.08 0 11.5 0h1c5.42 0 8.13 0 9.82 1.68C24 3.37 24 6.08 24 11.5v1c0 5.42 0 8.13-1.68 9.82C20.63 24 17.92 24 12.5 24h-1c-5.42 0-8.13 0-9.82-1.68C0 20.63 0 17.92 0 12.5z' fill='%23bbb'/%3E%3Cg clip-rule='evenodd' fill-rule='evenodd'%3E%3Cpath d='M6.5 7.5H4.75c-.5 0-.6.24-.6.5 0 .46.6 2.76 2.76 5.8 1.45 2.07 3.49 3.2 5.34 3.2 1.11 0 1.25-.25 1.25-.68v-1.57c0-.5.1-.6.46-.6.26 0 .7.13 1.74 1.13 1.19 1.19 1.38 1.72 2.05 1.72h1.75c.5 0 .75-.25.6-.74-.15-.5-.72-1.2-1.47-2.05-.4-.49-1.02-1-1.2-1.26-.26-.34-.2-.49 0-.78 0 0 2.13-3 2.35-4.03.11-.37 0-.64-.53-.64H17.5a.76.76 0 00-.76.5s-.9 2.16-2.15 3.57c-.41.41-.6.54-.82.54-.1 0-.27-.13-.27-.5V8.14c0-.44-.13-.64-.5-.64h-2.75c-.28 0-.45.2-.45.4 0 .42.64.52.7 1.7v2.58c0 .57-.1.67-.32.67-.6 0-2.04-2.18-2.9-4.67-.16-.48-.33-.68-.78-.68z' fill='%23111'/%3E%3Cpath d='M66.86 12.5c0 3.24-2.43 5.5-5.78 5.5s-5.78-2.26-5.78-5.5S57.73 7 61.08 7s5.78 2.26 5.78 5.5zm-8.97 0c0 1.97 1.3 3.3 3.19 3.3s3.19-1.33 3.19-3.3c0-1.98-1.3-3.25-3.19-3.25s-3.19 1.28-3.19 3.25zm-17.14-.21c.95-.44 1.56-1.18 1.56-2.33 0-1.73-1.58-2.96-3.87-2.96h-5.27v11h5.5c2.37 0 4.02-1.29 4.02-3.05 0-1.33-.87-2.32-1.94-2.66zM35.6 9.01h2.83c.85 0 1.44.5 1.44 1.2s-.6 1.2-1.44 1.2h-2.83zM38.67 16h-3.06V13.3h3.06c.96 0 1.59.55 1.59 1.36s-.63 1.33-1.59 1.33zM51.84 18h3.19l-5.06-5.71L54.61 7h-2.9l-3.68 4.27h-.6V7H45v11h2.44v-4.38h.59zM76.47 7v4.34h-4.93V7H69.1v11h2.43v-4.44h4.93V18h2.43V7zM86.9 18h-2.44V9.22h-3.8V7H90.7v2.22h-3.8zm9.5-11c-2.11 0-3.91.89-4.52 2.8l2.24.37c.34-.67 1.05-1.2 2.15-1.2 1.33 0 2.06.84 2.17 2.28h-2.32c-3.23 0-4.79 1.42-4.79 3.45 0 2.05 1.59 3.3 3.78 3.3 1.8 0 3-.72 3.53-1.63l.5 1.63h1.76v-6.18c0-3.19-1.74-4.82-4.5-4.82zm-.72 9c-1.19 0-1.9-.5-1.9-1.4 0-.85.57-1.44 2.43-1.44h2.35c0 1.8-1.19 2.84-2.88 2.84zm17.99 2h-3.2l-3.8-4.38h-.6V18h-2.43V7h2.43v4.27h.6L110.34 7h2.9l-4.63 5.29zm3.88 0h2.43V9.22h3.8V7h-10.04v2.22h3.8zM130.1 7c3.34 0 5.56 2.4 5.56 5.37 0 .3-.02.55-.04.79h-8.54c.23 1.69 1.36 2.69 3.17 2.69 1.29 0 2.15-.4 2.68-1.2l2.29.39c-.88 2.01-2.83 2.96-5.12 2.96a5.28 5.28 0 01-5.51-5.5c0-3.12 2.17-5.5 5.51-5.5zm2.92 4.25c-.4-1.37-1.4-2.15-2.92-2.15-1.48 0-2.47.74-2.87 2.15z' fill='%23888'/%3E%3C/g%3E%3C/svg%3E") !important;
+}
+[dir] body.new_header_design #side_bar .left_count_wrap .left_count {
+  padding: 0 3px 0 4px;
 }
 
+#side_bar_inner .left_count_wrap .left_count {
+  line-height: 24px;
+}
+[dir=ltr] #side_bar ol li .inl_bl.left_count {
+  margin-bottom: 0;
+}
 }
