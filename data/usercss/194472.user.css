@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         xstmass
 @description    `Modified version of Vanilla Dark style`
-@version        20201217.17.43
+@version        20201218.4.34
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,7 +14,7 @@
 @-moz-document regexp('https?://vk.com/(?!dev/|dev$|editapp?|editapp\?id=\d+|editapp\?act=\S+|support\?act=new_app&app_id=\d+|stats\?aid=\d+|apps.act=manage|about$|about.act=manage|ads$|ads.z=|jobs$|jobs.act=manage|ads/targeting$|ads/targeting.act=manage|ads/company_page$|ads/company_page.act=manage|jobs$|ads/special_projects$|products.w=|products$|messenger$).*')
 {
 
-   /* Фиксированное меню */
+/* Фиксированное меню */
 
 .side_bar_inner {
   position: fixed !important;
@@ -681,8 +681,7 @@ img[src="/images/camera_100.png"], img[src="/images/camera_100.png?ava=1"], img[
 /*maincolor1*/
 .wide_column .page_upload_label, .media_selector .ms_item:before, .checkbox_pic, .wall_module .post_like_icon, .audio_added_next #next,  .audio_acts .audio_act, .wall_module .reply .reply_action:hover, .wall_module .reply_action, .feed_filter_icon, .feed_lists_icon .ui_actions_menu_icons, .ts_contact_status, .friends_possible_add, .friends_possible_remove, .left_settings_inner, .page_upload_label, .chat_onl:after, .chats_sp, .im-deselect, .sticker_hints_arrow:hover
 {
-	-webkit-filter:hue-rotate(142deg)brightness(1.5)saturate(8)contrast(1) !important;
- 	 filter:hue-rotate(11deg)brightness(1.5)saturate(8)contrast(1) !important;
+	-webkit-filter:hue-rotate(350deg) !important
 }
 #side_bar .left_icon, .topics_module .topic_icon {
 	-webkit-filter: hue-rotate(11deg)brightness(1.5)saturate(1)contrast(1) !important
@@ -790,9 +789,6 @@ input[readonly*='true']{
   filter:hue-rotate(153deg)brightness(0.8)saturate(3) !important;
 }
 /*↑---------filter----------↑*/
-.audio_row.audio_row__playing .audio_row__play_btn, [dir] .audio_row.audio_row__playing .audio_row__play_btn {
-  background-image: url('data:image/svg+xml;charset=utf-8,<svg%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20width%3D"24"%20height%3D"24"%20viewBox%3D"0%200%2024%2024">%0A%20%20%20%20<g%20fill%3D"none"%20fill-rule%3D"evenodd">%0A%20%20%20%20%20%20%20%20<circle%20cx%3D"12"%20cy%3D"12"%20r%3D"12"%20fill%3D"%23f58e78"%2F>%0A%20%20%20%20%20%20%20%20<path%20fill%3D"%23111"%20d%3D"M8%2C7.59559822%20C8%2C7.26665841%208.27685547%2C7%208.60709476%2C7%20L10.3929052%2C7%20C10.7281944%2C7%2011%2C7.26747584%2011%2C7.59559822%20L11%2C16.4044018%20C11%2C16.7333416%2010.7231445%2C17%2010.3929052%2C17%20L8.60709476%2C17%20C8.27180558%2C17%208%2C16.7325242%208%2C16.4044018%20L8%2C7.59559822%20Z%20M13%2C7.59559822%20C13%2C7.26665841%2013.2768555%2C7%2013.6070948%2C7%20L15.3929052%2C7%20C15.7281944%2C7%2016%2C7.26747584%2016%2C7.59559822%20L16%2C16.4044018%20C16%2C16.7333416%2015.7231445%2C17%2015.3929052%2C17%20L13.6070948%2C17%20C13.2718056%2C17%2013%2C16.7325242%2013%2C16.4044018%20L13%2C7.59559822%20Z"%2F>%0A%20%20%20%20<%2Fg>%0A<%2Fsvg>');
-}
 .audio_page_player .audio_page_player__cover {
 	-webkit-filter:none!important;
 	filter:none!important;
@@ -1303,7 +1299,7 @@ input.ui_search_field#groups_list_search {
 }
 
 [dir] .pv_cont .pv_no_commments_placeholder, [dir] .pv_cont .pv_closed_commments_placeholder {
-filter: invert(0)!important;
+filter: hue-rotate(199deg)brightness(1)contrast(0.5) !important
 }
 [dir] #page_header_cont {
   background-color: var(--color4);
@@ -1386,5 +1382,23 @@ body.new_header_design .left_count_wrap {
 }
 [dir=ltr] .scroll_fix {
     background: #1e2123;
+}
+
+[dir] body.new_header_design .left_count_wrap {
+    border-radius: 14px!important;
+}
+
+
+div.ui_actions_menu._ui_menu.im-page--redesigned-menu {
+  background-color: #1E2123!important;
+}
+
+a.ui_actions_menu_item.im-action.im-action:hover {
+  background-color: #272A2C!important;
+}
+[dir] body.new_header_design.ny_2020_logo .top_home_link .top_home_logo, [dir] body.new_header_design.WideScreenAppPage.ny_2020_logo .top_home_link .top_home_logo {
+    background-image: url(https://i.vgy.me/quXzck.png) !important;
+    margin-left: 1px;
+    margin-top: 5px;
 }
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Meant to be combined with (and installed after) <a href="https://userstyles.org/styles/86145/">crayon for mal</a>.`
-@version        20201217.7.10
+@version        20201218.8.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -127,12 +127,12 @@ body.featured-news h3.header3.header3-underline,
     border-bottom: none !important;
     background: linear-gradient(to left,#f46592 0%,#8c7dd0 100%) left bottom transparent no-repeat !important;
     background-size: 100% 3px !important;
-    padding: 3px 0 6px !important; }
+    padding: 3px 0 6px 2px !important; }
 
 .h2_overwrite {background: none !important;} /* Fix for double headers */
 
 /* Lower navigation */
-#contentWrapper > div .h1 {
+#contentWrapper > div .h1, .for-pc + div #contentWrapper > .h1 {
     border: none !important; border-radius: 0 0 10px 10px !important;
     padding: 12px 20px 14px !important;
     max-height: 20px !important; }
@@ -307,4 +307,10 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 #horiznav_nav ul li a[href$="/moreinfo"] {font-size: 0 !important;line-height: 19.5px !important;}
 #horiznav_nav ul li a[href$="/moreinfo"]:before {content: "More";font-size: 13px !important;}
 #horiznav_nav ul li a[href$="/moreinfo"].horiznav_active:before {font-size: 16px !important;}
+}
+
+@-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/anime\\/[^\\/]+\\/[^\\/]+\\/pics.*") {
+/* Fixes for code changes to Anime/Manga pics page */
+
+.for-pc + #wrapper {width: 1234px !important;}
 }

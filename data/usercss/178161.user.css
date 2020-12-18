@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sef Eiba
 @description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area alongside various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ Important note: for Firefox users whom experiencing some animation lag, make sure to go to Customize Settings and select Firefox on the Browser option♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page. You can also change various settings.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        20201216.11.40
+@version        20201218.9.11
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown background "Duel Background Image" {
@@ -1018,6 +1018,12 @@ eldorado-atk-arrow "Eldorado Attack Arrow" <<<EOT .game-attack-animation {
   */
   /*testing*/
   
+  #game-tooltip-overlay-extension > img:nth-child(n) {
+    margin-top: 6px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+  
   #game-announce-list > div:nth-child(n) {
     margin-bottom: 6px;
   }
@@ -1278,7 +1284,6 @@ eldorado-atk-arrow "Eldorado Attack Arrow" <<<EOT .game-attack-animation {
     padding-left: 0;
     padding-top: 1.5vh;
     padding-bottom: 1vh;
-    z-index: 201;
     max-height: 96%;
     overflow-x: hidden;
     overflow-y: auto;
