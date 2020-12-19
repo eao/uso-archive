@@ -3,18 +3,20 @@
 @namespace      USO Archive
 @author         Стас Бармин
 @description    `SV - Simple View of VK 0.6.2Redesign of header, messages, chatbox, sidebar, background and much more!thx Michail Nikolayev`
-@version        2020108.22.27
+@version        20201218.17.41
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("http://vk.com/"), url-prefix("https://vk.com/") {
 /*ШАПКА*/
+[dir] body.new_header_design #page_header_cont {
+    border-bottom: hidden;
+}
 [dir=ltr] #page_header_cont {
     background: #e27f95f0;
     background-image: url(https://i.imgur.com/xRHa2vG.jpg);
     opacity: 0.99;
     background-size: cover !important;
-    border-bottom: hidden;
 }
 [dir] .top_profile_name,
 [dir] .top_audio_player .top_audio_player_title {
@@ -22,66 +24,63 @@
     color: #fff;
 }
 
-/*кнопки в шапке*/
-[dir] .top_nav_btn:hover,
-[dir] .top_nav_link:hover,
-[dir] .top_audio_player:hover,
-[dir] .top_nav_link.active,
-[dir] .top_nav_btn.active,
-[dir] .top_audio_player.active {
+/*Скрыть блок с популярными историями*/
+.ShortVideoFeedBlock {
+    display: none;
+}
+
+/*отключение новых размеров шапки и меню*/
+body.new_header_design {
+    --header-height: 43px;
+    --left-menu-row-height: 30px;
+}
+
+/*КНОПКИ В ШАПКЕ*/
+/*фикс фона*/
+[dir] body.new_header_design .top_nav_link:hover,
+[dir] body.new_header_design .top_nav_btn:hover {
     background-color: rgba(255, 255, 255, 0);
 }
-[dir] .top_nav_btn#top_notify_btn .top_nav_btn_icon {
-    background-image: url(https://svgshare.com/i/8Sw.svg);
+[dir] body.new_header_design .top_audio_player:hover {
+    background-color: rgba(255, 255, 255, 0);
 }
-[dir] .top_nav_btn#top_notify_btn:hover .top_nav_btn_icon {
-    background-image: url(https://svgshare.com/i/8Sw.svg);
+[dir] body.new_header_design .top_nav_btn.active {
+    background-color: rgba(255, 255, 255, 0);
 }
-
-[dir] .top_nav_btn#top_audio .top_nav_btn_icon {
-    background-image: url(https://svgshare.com/i/8Sr.svg);
-}
-[dir] .top_nav_btn#top_audio:hover .top_nav_btn_icon {
-    background-image: url(https://svgshare.com/i/8Sr.svg);
-}
-
-[dir] .top_audio_play__button,
-[dir] .top_audio_play__button:hover {
-    position: relative;
-    display: block;
-    -webkit-appearance: none;
-    cursor: pointer;
-    width: 22px;
-    top: 11px;
-    height: 20px;
-    border: none;
-    border-radius: 3px;
-    background-color: #fff;
+/*название трека*/
+.top_audio_player .top_audio_player_title_wrap {
     overflow: visible;
 }
-[dir] .top_audio_play__button:before,
-[dir] .top_audio_play__button:hover:before {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 8px;
-    height: 8px;
-    background-color: #fff;
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: 6px;
-    left: -2px;
-    border-radius: 1px;
+body.new_header_design .top_audio_player .top_audio_player_title {
+    color: rgba(255, 255, 255, .9);
 }
-/*кнопки в шапке*/
-[dir=ltr] .TopSearch__input {
-    border: 0;
-    box-sizing: border-box;
-    padding: 6px 6px 6px 19px;
-    margin: 8px 0;
+body.new_header_design .top_audio_player:hover .top_audio_player_title {
+    color: rgba(255, 255, 255, .9);
+}
+/*кнопки*/
+[dir] body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon {
+    background-image: url(https://svgshare.com/i/SSo.svg);
+    fill: rgba(255, 255, 255, 0);
+}
+[dir] body.new_header_design .top_nav_btn .top_notify_count {
+    padding: 1px 4px;
+}
+[dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon {
+    background-image: url(https://svgshare.com/i/SQH.svg);
+}
+[dir] body.new_header_design .top_audio_player_playing .top_audio_player_play .top_audio_player_btn_icon {
+    background-image: url(https://svgshare.com/i/SRF.svg);
+}
+[dir] body.new_header_design .top_audio_player_next .top_audio_player_btn_icon {
+    background-image: url(https://svgshare.com/i/SQq.svg);
+}
+[dir] body.new_header_design .top_audio_player_play .top_audio_player_btn_icon {
+    background-image: url(https://svgshare.com/i/SRw.svg);
+}
+/*КНОПКИ В ШАПКЕ*/
+/*поиск*/
+[dir] body.new_header_design .TopSearch__input {
     height: 25px;
-    line-height: 16px;
-    width: 230px;
     border-radius: 14px;
     -o-transition: background-color 0.05s, color 0.05s;
     transition: background-color 0.05s, color 0.05s;
@@ -89,9 +88,8 @@
     padding-left: 19px;
     border-left: 8px solid transparent;
     background-position: left 6px;
-    color: #d9e2ec;
+    opacity: 1
 }
-
 /*ШАПКА*/
 /* Блок уведомлений */
 #top_notify_btn.active #top_notify_wrap {
@@ -113,11 +111,11 @@ div#top_audio_player.top_audio_player_enabled.top_audio_player_playing:after {
     left: 435px;
     opacity: 1;
 }
-[dir] .top_profile_name,
-[dir] .top_audio_player .top_audio_player_title {
+[dir] body.new_header_design .top_profile_name,
+[dir] body.new_header_design .top_audio_player .top_audio_player_title {
     max-width: 325px;
 }
-.top_audio_player.top_audio_player_enabled {
+body.new_header_design .top_audio_player.top_audio_player_enabled {
     overflow: visible;
 }
 /* Анимация музыки в шапке */
@@ -147,13 +145,21 @@ body[onresize] {
 /*сайдбар*/
 [dir] #side_bar ol {
     list-style: none;
-    margin: 0px 0px 10px;
-    padding: 0px 0px 0px 8px;
-    background-color: #fff;
-    border-radius: 2px;
-    box-shadow: 0 1px 0 0 #e1e2e6, 0 0 0 1px #e6e7eb;
+    background: var(--white);
+    border-radius: 4px;
+    box-shadow: 0 1px 0 0 var(--steel_gray_120), 0 0 0 1px var(--steel_gray_80);
+    margin: 15px 0 0;
 }
 
+[dir=ltr] body.new_header_design #side_bar ol li {
+    margin-left: inherit;
+}
+
+[dir=ltr] body.new_header_design #side_bar ol {
+    margin: 0px 14px 0px -11px;
+    padding: 0px 0px 0px 10px;
+}
+/*сайдбар*/
 /*блок ссылок*/
 .left_menu_nav_wrap a {
     display: none;
@@ -163,7 +169,8 @@ body[onresize] {
 .left_menu_nav_wrap {
     margin-left: 200px;
 }
-
+/*Фикс фона в диалогах*/
+/*Фикс фона в диалогах*/
 /*Убрать текст сообщения в диалогах*/
 [dir] .nim-dialog.nim-dialog_classic .nim-dialog--name {
     margin-top: 16px;
@@ -207,7 +214,7 @@ body[onresize] {
 /*Убрать текст сообщения в диалогах*/
 /*слайдер*/
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 11px;
 }
 ::-webkit-scrollbar-thumb {
     border-width: 1px 1px 1px 2px;
@@ -292,25 +299,24 @@ body[onresize] {
 
 /*оповещение*/
 /*иконка настроек*/
-[dir] .top_profile_arrow {
-    background: url(https://img-fotki.yandex.ru/get/169995/140708045.0/0_18a228_1e04d9ad_orig) no-repeat;
-    background-size: 24px;
+[dir] body.new_header_design .top_nav_link.active {
+    background-color: rgba(255, 255, 255, 0);
+}
+[dir] body.new_header_design .top_profile_arrow {
+    background: url(https://svgshare.com/i/SRy.svg) no-repeat;
+    background-size: 25px;
     background-position: center;
     width: 26px;
-    height: 42px;
+    height: 43px;
     opacity: 1;
     margin: -1px;
 }
-.top_nav_link.top_profile_link {
+body.new_header_design .top_nav_link.top_profile_link {
     padding: 0px 10px 0px 10px!important;
 }
-.top_profile_name,
-.top_profile_img {
+body.new_header_design .top_profile_name,
+body.new_header_design .top_profile_img {
     display: none!important;
-}
-[dir=ltr] #top_profile_menu:before,
-[dir=ltr] #top_profile_menu:after {
-    right: 27px;
 }
 /*иконка настроек*/
 /*убираем иконки*/

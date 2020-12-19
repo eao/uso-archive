@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         xstmass
 @description    `Modified version of Vanilla Dark style`
-@version        20201218.4.34
+@version        20201218.18.52
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -696,10 +696,6 @@ img[src="/images/camera_100.png"], img[src="/images/camera_100.png?ava=1"], img[
   filter:hue-rotate(146deg)brightness(1.4)saturate(1.4)contrast(1) !important;
 }
 
-.top_nav_btn .top_nav_btn_icon,  .ui_search_filters_pane .token .token_del  {
-	-webkit-filter:hue-rotate(10deg)saturate(0.2)brightness(0.51)opacity(0.85);
-  filter:hue-rotate(10deg)saturate(0.1)brightness(0.4)opacity(0.7);
-}
 
 #top_audio .top_nav_btn_icon {
   -webkit-filter: saturate(0.1)brightness(0.8)opacity(0.7);

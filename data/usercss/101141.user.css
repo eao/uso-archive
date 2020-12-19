@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         lainverse
 @description    `Набор дополнительных стилей, которые невозможно применить средствами Adblock Plus, но которые необходимы для более корректного отображения отдельных сайтов, и блокировки на них рекламы.Рекомендуется использовать совместно с <a href="https://greasyfork.org/ru/scripts/19993-ru-adlist-js-fixes">RU AdList JS Fixes</a>.`
-@version        2020128.21.37
+@version        20201218.22.41
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name           RU AdList CSS Fixes
-@version        0.20201208.2240
+@version        0.20201219.39
 @namespace      ruadlist/ru-adlist-css-fixes
 @homepageURL    https://forums.lanik.us/viewforum.php?f=102
 @supportURL     https://forums.lanik.us/viewforum.php?f=102
@@ -71,6 +71,7 @@
   domain("hdrezka.cm"),
   domain("hdrezka.co"),
   domain("hdrezka.gift"),
+  domain("hdrezka.in"),
   domain("hdrezka.ink"),
   domain("hdrezka.link"),
   domain("hdrezka.live"),
@@ -196,6 +197,7 @@
   domain("hdrezka.club"),
   domain("hdrezka.cm"),
   domain("hdrezka.gift"),
+  domain("hdrezka.in"),
   domain("hdrezka.ink"),
   domain("hdrezka.link"),
   domain("hdrezka.live"),
@@ -643,6 +645,15 @@
     }
 }
 
+@-moz-document domain("anekdot.ru") {
+    body {
+        background-color: rgb(255, 255, 238) !important
+    }
+    .nav-line {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("anime-rus.ru") {
     #hide_show {
         display: none !important
@@ -827,18 +838,6 @@
   domain("tv.mail.ru") {
     .cols__inner > noindex {
         display: none !important
-    }
-}
-
-@-moz-document
-  domain("autonews.ru"),
-  domain("rbc.ru"),
-  domain("rbcplus.ru"),
-  domain("sportrbc.ru") {
-    .banner, .banner__container, .banner__filmstrip {
-        position: absolute !important;
-        top: -10000px !important;
-        left: -10000px !important
     }
 }
 
@@ -1094,6 +1093,7 @@
 
 @-moz-document
   domain("cinema-hd.ru"),
+  domain("dc-marvel.org"),
   domain("filmshd.vip"),
   domain("kinomaxfilm.ru"),
   domain("newseries.club") {
@@ -1213,6 +1213,12 @@
 @-moz-document domain("deti.mail.ru") {
     .deti-slot_exchange {
         display: none !important
+    }
+}
+
+@-moz-document domain("diets.ru") {
+    body > #container {
+        top: 0 !important
     }
 }
 
@@ -1948,6 +1954,12 @@
     }
 }
 
+@-moz-document domain("gubkinskiy.com") {
+    #page-content {
+        margin-top: 0 !important
+    }
+}
+
 @-moz-document domain("happy-hack.ru") {
     body:not(#id) > table[id^="blockblock"] {
         display: none !important
@@ -2250,8 +2262,14 @@
     .ten_topbar ~ div[class]:not([id]):nth-child(-n+10):not(.ten_ears_wrap):not(.content_wrap):not(.footer_wrap) {
         display: none !important
     }
+    .ten_topbar {
+        height: 0 !important
+    }
     .ten_ears_wrap {
         margin: 35px auto 0 auto !important
+    }
+    body > .menu_wrap {
+        position: relative !important
     }
 }
 
@@ -3367,7 +3385,7 @@
 }
 
 @-moz-document domain("rbc.ru") {
-    .l-sticky-right > style + div[class], .l-sticky-right-parent, .popup_push {
+    .l-sticky-right-parent, .popup_push {
         display: none !important
     }
     #js_col_left > .l-sticky {
@@ -3524,6 +3542,12 @@
 @-moz-document domain("sergeistrelec.ru") {
     div[id][style^="background"][style*="fixed"][style*="z-index"] {
         display: none !important
+    }
+}
+
+@-moz-document domain("shaiba.kz") {
+    .page-layout-without-banner {
+        margin-top: 0 !important
     }
 }
 
@@ -4014,6 +4038,10 @@
 @-moz-document domain("videoredaktor.ru") {
     div[style^="min-height: 100vh;"] {
         min-height: 0 !important
+    }
+    .bbbOwner {
+        min-height: 0 !important;
+        height: 0 !important
     }
 }
 

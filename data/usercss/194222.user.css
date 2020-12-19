@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AshDefenders
 @description    `Стиль возвращает старый дизайн ВКонтакте который был до редизайна 2020 годаЕсли у вас есть чем дополнить стиль то можете написать в вк vk.com/defenders08 или в тг @defenders08k1СЛЕДИТЕ ЗА ОБНОВЛЕНИЯМИ СТИЛЯ, ОБНОВЛЯЙТЕ ДЛЯ ИСПРАВЛЕНИЯ БАГОВ!!!Группа VK: https://vk.com/designoldvk (Напоминания о обновлениях)`
-@version        20201218.11.54
+@version        20201218.16.16
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -333,7 +333,7 @@ body.new_header_design .side_bar_inner {
     background-image: url(https://i.imgur.com/rOV0bpk.png);
 }
 [dir] .media_selector .ms_item.ms_item_map:before {
-    background-image: url(https://i.imgur.com/uwo8KO5.png);
+    background-image: url(https://i.imgur.com/WAJgFXh.png);
 }
 [dir] .media_selector .ms_item.ms_item_poll:before {
     background-image: url(https://i.imgur.com/dZT8eRJ.png);
@@ -346,6 +346,34 @@ body.new_header_design .side_bar_inner {
 }
 [dir] .media_selector .ms_item.ms_item_money:before {
     background-image: url(https://i.imgur.com/QLrIKPG.png);
+}
+[dir] .emoji_smile_icon_vector {
+    background: url(https://i.imgur.com/pQoR0K2.png) no-repeat 4px 4px;
+}
+[dir] .emoji_smile_icon {
+    background: url(https://i.imgur.com/pQoR0K2.png) no-repeat 4px 4px;
+}
+[dir] .media_selector .ms_item.ms_item_postpone:before {
+    background-image: url(https://i.imgur.com/wRR3FXK.png);
+}
+[dir] .wall_module .reply_box_photo {
+    background: url(https://i.imgur.com/kYwQCgi.png) center no-repeat;
+    background-size: 16px;
+    cursor: pointer;
+    border: 0;
+    box-shadow: none;
+}
+[dir] .wall_module .emoji_smile_icon_vector {
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 2px 4px;
+}
+/* [dir] .im-chat-input .im-chat-input--attach-label {
+    background: url(https://i.imgur.com/kYwQCgi.png) center no-repeat;
+} */
+.im-chat-input .im-chat-input--smile-wrap .emoji_smile_icon_vector {
+    opacity: 0.7;
+    background: url(http://svgur.com/i/SRX.svg);
 }
 body.new_header_design .audio_page_player2.audio_page_player_fixed {
     top: 0px;
@@ -382,5 +410,3 @@ body.new_header_design .audio_page_player2.audio_page_player_fixed {
     margin: 4px 4px;
 }
 }
-
-/* гыгпывпгспгывг */

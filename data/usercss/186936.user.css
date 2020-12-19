@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.4.7
+@name           Compact Tube (White) v1.4.8
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201216.21.47
+@version        20201218.13.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.4.7 */
+/* CompactTube (White) v1.4.8 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -32,7 +32,7 @@
    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ОТКЛЮЧАЕМЫЕ ЭЛЕМЕНТЫ  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ■■■■■■■■■■■■■■■■■■■  ОТКЛЮЧАЕМЫЕ ЭЛЕМЕНТЫ / DISCONNECTABLE ELEMENTS  ■■■■■■■■■■■■■■■■■■■ */
 
 /* Watched Videos Mark / Отметка просмотренных Видео (✓) */
         /* ENG: to disable, delete " x " symbol before the line.
@@ -42,6 +42,11 @@
     /* ENG: Remove Filter-Bar of video on the Main page: - "none" - remove: "flow" - show */
     /* RU: Убрать Фильтр-Бар видео на Главной странице: - "none" - убрать: "flow"- показать */
     ytd-feed-filter-chip-bar-renderer {display: flow;}
+
+    /* ENG: Disable Chip(Tags) Filter-Bar on the Video tab: - "none" - turn off: "flow" - do not turn off */
+    /* RU: Отключить Фильтр-Бар Чипов(тегов) на вкладке с Видео:  - "none" - отключить: "flow" - не отключать */
+    #chips.yt-chip-cloud-renderer {display: flow;}
+
 
 /* █► ENG: Use Classic fonts (excludes the problematic "Roboto" font).
             to disable, add "x" before the line. to enable, erase "x".
@@ -62,7 +67,7 @@
 
 
         /* v1 Christmas Socks / Рождественские Носки :D */
-ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 10px; left: -20px; content: url("https://i114.fastpic.ru/big/2020/1210/7f/fee2e73ed074bfbfc5ba634b88a1ea7f.png");
+  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 10px; left: -20px; content: url("https://i114.fastpic.ru/big/2020/1210/7f/fee2e73ed074bfbfc5ba634b88a1ea7f.png");
     margin-left: 10px; filter: drop-shadow(1px 1px 1px rgb(128, 128, 128)); margin-top: -35px; }
 
         /* v2 Christmas Gifts / Новогодние Подарки */
@@ -106,6 +111,8 @@ ytd-checkbox-survey-renderer[dialog][dialog][dialog] {display: none;}
 
 /* убрать бесконечную подгрузку предлагаемых видео на вкладке "c Видео": - "none" - убрать: "flow"- показать */
 ytd-continuation-item-renderer.ytd-watch-next-secondary-results-renderer {display: none;}
+ytd-continuation-item-renderer.ytd-item-section-renderer {display: none;} /* ENG: zone */
+yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;} /* Old ver. */
 
 /* убрать ярлык "прокрутите экран вниз" в полноэкранном режиме Видео: - "none" - убрать: "flow"- показать */
 .ytp-fullerscreen-edu-button.ytp-button {display: none;}
@@ -769,8 +776,13 @@ paper-icon-button.paper-tabs:hover {
     margin: 0 4px;
     opacity: 0.8}
 
-/* Центровка Плейлистов "Yutube Music" - на Странице с Видео */
-ytd-compact-playlist-renderer.ytd-watch-next-secondary-results-renderer {margin-top: 7px;margin-left: 10px; margin-bottom: 8px;}
+/* Центровка Плейлистов "Yutube Music" - на Странице с Видео - зона: RU */
+ytd-compact-playlist-renderer.ytd-watch-next-secondary-results-renderer {
+    margin-top: 8px; margin-left: 10px; margin-bottom: 7px; -o-padding-bottom: 0px;}
+/* Центровка Плейлистов "Yutube Music" - на Странице с Видео - зона: ENG */
+ytd-compact-playlist-renderer.ytd-item-section-renderer {margin-left: 10px; padding-bottom: 7px;}
+
+
 /* Контур - Плейлистов "Yutube Music" - на Странице с Видео */
 ytd-compact-playlist-renderer:not([watch-feed-big-thumbs]) ytd-playlist-thumbnail.ytd-compact-playlist-renderer {
 margin-right: 8px; height: 94px; width: 168px; box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
@@ -1475,7 +1487,7 @@ ytd-compact-autoplay-renderer.ytd-watch-next-secondary-results-renderer:before
     color: #808080; /* var(--yt-spec-text-secondary) */
     font-size: 1.3rem;
     font-weight: 400 !important;
-    -o-padding: 0px 0px 10px 10px !important;
+    padding: 0px 0px 7px 0px !important;
     height: 26px;
     width: auto;}
 
@@ -1671,23 +1683,80 @@ ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-comments]
 /* исправление бага с полем Поиска ПОСЛЕ наведения Мыши */
 input#search.gsfi.ytd-searchbox {-o-background-color: #02ff35/*test*/; position: relative; top: 1px; left: 0px;}
 
+
+/* СТЕРЕТЬ ненужную черту под заголовком ! 
+    и Позицианирование Общих Заголовков (Тренды, Подписки, Библиотека(История), Главная Канала) */
+#title-container.ytd-shelf-renderer {
+    box-shadow: inset 0px -4px 0px 0px var(--yt-spec-brand-background-primary);
+    color: var(--yt-spec-text-primary);
+    height: 2rem;
+    position: relative; -o-bottom: 0px; /* !!! работает только с этим параметром */
+    -o-padding-bottom: 5px;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;}
+
+
+/* Добавить 15px  ниже самого последнего видео в колонке видео справа на Вкладке с Видео зона; ENG */
+ytd-compact-video-renderer.ytd-item-section-renderer:last-of-type
+{margin-bottom: 15px !important;}
+/* Добавить 15px  ниже самого последнего видео в колонке видео справа на Вкладке с Видео зона; RU */
+ytd-compact-video-renderer.ytd-watch-next-secondary-results-renderer:last-of-type
+{margin-bottom: 15px !important;}
+
 /* пространство ниже столбца Видео Справа (отступ для панели задач Виндоус) */
 ytd-watch-next-secondary-results-renderer:after {
+    -o-display: block;
     width: auto;
     height: 48px;
-    content: " ";
-    background: var(--yt-spec-general-background-b);
+    content: "";
+    -o-visibility: hidden;
+    -o-opacity: 0;
+    -o-z-index: -1;
+    background: var(--yt-spec-general-background-b);    /* var(--yt-spec-general-background-b) */
     box-shadow: 0px 3px 0px 3px var(--yt-spec-general-background-b); /* test #fb0f0f */
     border-top: 1px solid var(--yt-spec-10-percent-layer);}
+        /*――――――――――――――――――――――――――――――――――――――――――――――――――――――*/
+        /* Бордюр под Последним Видео в Колонке Видео Справа на Вкладке с Видео - Зона: ENG */
+        /* для " пространство ниже общего Контента - v1 old " 
+            отключать в "пространство ниже столбца Видео Справа" border-top: 1px */
+        -o-.ytd-watch-next-secondary-results-renderer:last-child:after 
+        {border-top: 1px solid var(--yt-spec-10-percent-layer);}
+        /*――――――――――――――――――――――――――――――――――――――――――――――――――――――*/
+        /* Бордюр под Последним Видео в Колонке Видео Справа на Вкладке с Видео - Зона: RU */
+        /* для " пространство ниже общего Контента - v1 old " 
+            отключать в "пространство ниже столбца Видео Справа" border-top: 1px */
+        -o-#items.ytd-watch-next-secondary-results-renderer 
+        {border-bottom: 1px solid var(--ytd-searchbox-legacy-button-border-color);}
 
-/* пространство ниже общего Контента (отступ для панели задач Виндоус) <в Тренде, Подписки, Библиотека(История), Комментарии, Страниы Каналов> */
-ytd-item-section-renderer:last-child:after {
+/* пространство ниже общего Контента (отступ для панели задач Виндоус) <в Тренде, Подписки, Библиотека(История), Комментарии, Страниы Каналов> - v2 new */
+/* ytd-item-section-renderer.ytd-section-list-renderer:last-child:after */
+ytd-section-list-renderer:last-child:after {
     display: block;
     width: auto;
-    height: 40px;
+    height: 40px; /* 40px */
     content: " ";
-    background: var(--yt-spec-general-background-b);
-    box-shadow: 0px 3px 0px 3px var(--yt-spec-general-background-b); /* test #fb0f0f */
+    visibility: hidden;
+    opacity: 0;
+    background: var(--yt-spec-general-background-b);  /* var(--yt-spec-general-background-b) */
+    box-shadow: 0px 3px 0px 3px var(--yt-spec-general-background-b); /* test #fb0f0f */ /* var(--yt-spec-general-background-b) */
+    border-top: 0px solid var(--yt-spec-10-percent-layer);}
+
+
+/* пространство ниже общего Контента (отступ для панели задач Виндоус) <в Тренде, Подписки, Библиотека(История), Комментарии, Страниы Каналов> - v1 old */
+-o-ytd-item-section-renderer:last-child:after {
+    display: block;
+    width: auto;
+    height: 40px; /* 40px */
+    content: " ";
+    background: var(--yt-spec-general-background-b); /* var(--yt-spec-general-background-b) */
+    box-shadow: 0px 3px 0px 3px var(--yt-spec-general-background-b); /* test #fb0f0f */ /* var(--yt-spec-general-background-b) */
     border-top: 1px solid var(--yt-spec-10-percent-layer);}
 
 /* Настройка Бэйджа Автора Канала в Комментариях */
@@ -1914,23 +1983,38 @@ background-color: rgba(238, 238, 238, .6);} /*modern: #909090 , old rgba(238, 23
 #player-container.ytd-channel-video-player-renderer {-o-position: relative; -o-left: 6px; margin: 0 10px 0 0px;}
 /*position: relative; left: 6px; margin: 0 14px 0 0px;*/
 
-/* Центровка Видео - Микс (Mix) (Название Темы) YouTube - на странице с Видео */
-#dismissable.ytd-compact-radio-renderer, #dismissed.ytd-compact-radio-renderer {
+
+/* Центровка Видео - Микс (Mix) (Название Темы) YouTube - на странице с Видео - зона: RU + ENG */
+#dismissable.ytd-compact-radio-renderer{
     width: 100%;
-    margin-top: 7px;
+    margin-top: 8px;
+    margin-bottom: -1px;
     margin-left: 10px;}
+/* Центровка Видео - Микс (Mix) (Название Темы) YouTube - на странице с Видео - зона: + ENG */
+ytd-compact-radio-renderer.ytd-item-section-renderer.use-ellipsis {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 7px 0px;}
+/* Центровка Видео - Микс (Mix) (Название Темы) YouTube - на странице с Видео (старая версия)) */
+/* -o-#dismissable.ytd-compact-radio-renderer, -o-#dismissed.ytd-compact-radio-renderer {
+    width: 100%;
+    margin-top: 8px;
+    margin-bottom: -1px;
+    margin-left: 10px;} */
+
 
 /* Центровка Плейлистов в разделе "ПОИСК" */
 ytd-playlist-renderer:not([use-prominent-thumbs]) ytd-playlist-thumbnail.ytd-playlist-renderer {
     width: 246px; height: 138px;
     margin-left: 6px; margin-right: 11px;}
 
-/* Рзмер и позицианирование Превью Джемов и Миксов YouTube в разделе Библиотека(История) в меню "ЕЩЁ" */
+/* Рзмер и позицианирование Превью Джемов и Миксов YouTube в разделе Библиотека(История) в меню "ЕЩЁ" 
+    + Контур Мжемов и Миксов */
 ytd-thumbnail.ytd-grid-radio-renderer {
     height: 113.0px;
     width: 202px;
     margin-top: 7px;
-    margin-left: 6px;}
+    margin-left: 6px;
+    box-shadow: 0px 0px 1px 0px rgb(85, 102, 136)}
 
 /* Позицианирование, Размер Шрифта и Цвет названия Джемов и Миксов YouTube в разделе Библиотека(История) в меню "ЕЩЁ" */
 ytd-grid-radio-renderer #video-title.ytd-grid-radio-renderer {
@@ -2155,19 +2239,19 @@ ytd-search-sub-menu-renderer {
 
 
 /* !!!!!!!!  -  ТЕСТ - вспомогательное (хрень) */
-    -o-#contents ytd-shelf-renderer {
+/*    -o-#contents ytd-shelf-renderer {
     -o-margin-top: 7px; 
         -o-margin-bottom: -7px;
-    -o-position: relative; top: -16px;}
+    -o-position: relative; top: -16px;} */
 
 /* что-то тестировал взамен (ytd-shelf-renderer) - НЕ НУЖНО */
--o-#contents.ytd-item-section-renderer > ytd-shelf-renderer.ytd-item-section-renderer:last-child {
+/* -o-#contents.ytd-item-section-renderer > ytd-shelf-renderer.ytd-item-section-renderer:last-child {
     border-bottom: none; 
     background: rgb(255, 255, 255); 
     box-shadow: 0px 0px 1px 1px rgb(226, 226, 226); 
     -o-margin-top:6px; margin-bottom: -6px;
     position: relative; top: 6px;
-}
+} */
 
 
 
@@ -2212,7 +2296,7 @@ ytd-search-sub-menu-renderer {
 /* ВИДЕО на КАНАЛЕ  ($) */
 ytd-grid-renderer {
     background: var(--yt-spec-brand-background-primary);
-    box-shadow: 0px 1px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
+    box-shadow: 0px 0.5px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
     margin-top: -12px; /*-5px, -4px*/
     -o-position: relative; top: -5px; left: 0px; /* top: -5px; left: 0px; - отключаю, сдвигает сетку везде*/
     display: -ms-flexbox;
@@ -2875,8 +2959,31 @@ ytd-playlist-panel-video-renderer[selected][watch-color-update_] {background-col
 ytd-playlist-panel-video-renderer[watch-color-update_]:hover:not(.dragging) {
 background-color: #262626; box-shadow: inset 0px 0px 25px 5px #525252} /*#262626, var(--yt-spec-badge-chip-background) */
 
-/* Отступ сверху миниатюр Видео (и между миниатюраии) на Вкладке с Видео */
-ytd-compact-video-renderer {padding-top: 7px;}
+/* =============================================================== */
+
+
+/* Отступ сверху (уже снизу) миниатюр Видео (и между миниатюраии) на Вкладке с Видео */
+ytd-compact-video-renderer {
+    -o-padding-top: 7px; /* выключено, так надо */
+        padding-bottom: 7px;}
+
+/* Отступ сверху и снизу миниатюр Видео (и между миниатюраии) на Вкладке с Видео */
+ytd-compact-video-renderer.ytd-watch-next-secondary-results-renderer{
+    padding-top: 8px;
+    padding-bottom: 7px;}
+
+
+/* отступ Сверху для первого видео после того которое помеченым Следующим в показе (для тонкой настройки) */
+    /* для разных зон Ютуб работает по разному! ... :O и параметры одной зонын е видны на другой */
+-o-ytd-compact-video-renderer.ytd-item-section-renderer.style-scope:nth-of-type(1) {padding-top: 8px;} /* зона: ENG */
+-o-ytd-compact-video-renderer.ytd-watch-next-secondary-results-renderer.style-scope:nth-of-type(1) {padding-top: 8px;} /* зона: RU */
+
+/* Уменьшить интервалы между Видео на вкладке с Видео в - зоне:  RU (так надо) */
+ytd-compact-video-renderer.ytd-watch-next-secondary-results-renderer:not([expansion=collapsed]).ytd-watch-next-secondary-results-renderer {margin-bottom: 0px;}
+
+/* Фильт Чипов (тегов) на вкладке с Видео - отступ Слева, Справа и Снизу */
+#chips.yt-chip-cloud-renderer {margin-left: 10px; margin-top: 7px; padding-right: 10px !important;}
+
 /* ============================================================== */
 
 

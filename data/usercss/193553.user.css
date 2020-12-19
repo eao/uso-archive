@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         tanko
 @description    `simple dark mode for old reddit`
-@version        20201217.12.36
+@version        20201218.15.45
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -84,6 +84,7 @@
 	.md pre,
 	.interstitial,
 	.modal-body,
+	.reddit-infobar.with-icon,
 	.link,
 	.comment,
 	#header {

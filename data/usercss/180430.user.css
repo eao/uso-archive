@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Atx
 @description    `Do you like my style? Please support my work and fund me a coffee (via PayPal to the left of "Install" button). Also share style with your friends. Thank you for being awesome!Darkest Fusion supports almost every Google site. Due to an style size limit Darkest Fusion has been divided into 2 parts. That part contains dark theme for less used Google sites:<strong>Developers, Firebase, Docs, Forms, Flights, Play, Music, Scholar and Script</strong>.<strong><mark>First style is available >>> <a href ="https://userstyles.org/styles/167419/google-darkest-fusion-configurable">there</a>  <<< </mark></strong>Keep and Support currently have stock dark themes.Originally based on great work by DeathTBO who abandoned his project so I decided to continue his work by rebuilting everything from scratch. I hope you like my vision for Dark Google :)`
-@version        20201124.18.47
+@version        20201218.17.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown docs_sheets "Even darker Docs and darker sheets" {
@@ -97,8 +97,8 @@ ul.nav-main a, ul.nav-main li, .header, #section-do-more, #section-save, #sectio
 * Name:			Google Darkest Fusion
 * Homepage:		https://userstyles.org/styles/167419/
 * Author:		Atx
-* Version:		v1.10
-* Updated: 		24.11.2020
+* Version:		v1.11
+* Updated: 		18.12.2020
 */
 
 activating_style_indicator
@@ -241,7 +241,7 @@ devsite-footer-linkboxes, devsite-footer-utility, body[layout=docs] .devsite-art
 	background-color: #131313 !important;
 }
 
-.cfc-platform-bar-white {
+.cfc-platform-bar-white, .devsite-top-logo-row, devsite-header cloudx-tabs-nav.upper-tabs .devsite-tabs-wrapper, devsite-header devsite-tabs.upper-tabs .devsite-tabs-wrapper, devsite-header devsite-tabs.upper-tabs tab[overflow-tab]::after {
 	background-color: #161616 !important;
 }
 
@@ -249,7 +249,7 @@ devsite-footer-linkboxes, devsite-footer-utility, body[layout=docs] .devsite-art
 	background-color: #1C1C1C !important;
 }
 
-devsite-selector, md-dialog, .mat-dialog-container.mat-dialog-container, .cta-button--white, tr:nth-child(2n) > td:hover, pre, .pre-style, .implementation-path tr:nth-child(2n):hover td, .button-white:hover, .button-white:focus, .button-white:active, .button, button, input[type="button"], input[type="file"], input[type="image"], input[type="reset"], input[type="submit"], .devsite-footer-utility-button > a, devsite-dialog, .mat-card, .mat-select-panel, .a12n-interactive-input.md-toolbar-tools, .fb-thead-sort-container > tr > th, md-select-menu.md-gmp-blue-theme md-content, .mat-button-base.mat-primary, devsite-select .devsite-select-toggle, fb-card-action-bar .fb-card-action-bar, .fire-inline-editor-overlay, .cta-link:not(.cta-link--white):active, .cta-link:not(.cta-link--white):focus, .cta-link:not(.cta-link--white):hover, .fb-table-elem > tbody .fb-table-detail-card, .stack-trace .stack-trace-heading, .c5e-input-container input[type=text][disabled], .c5e-input-container input[type=password][disabled], .c5e-input-container input[type=url][disabled], .c5e-input-container input[type=number][disabled], .c5e-input-container input[type=email][disabled], .c5e-input-container input[type=search][disabled], .c5e-input-container input[type=time][disabled], .c5e-input-container input[type=tel][disabled], .c5e-input-container md-select[disabled], .c5e-input-container mat-select[disabled], .c5e-input-container textarea[disabled], .cfc-panel-color-white {
+devsite-selector, md-dialog, .mat-dialog-container.mat-dialog-container, .cta-button--white, tr:nth-child(2n) > td:hover, pre, .pre-style, .implementation-path tr:nth-child(2n):hover td, .button-white:hover, .button-white:focus, .button-white:active, .button, button, input[type="button"], input[type="file"], input[type="image"], input[type="reset"], input[type="submit"], .devsite-footer-utility-button > a, devsite-dialog, .mat-card, .mat-select-panel, .a12n-interactive-input.md-toolbar-tools, .fb-thead-sort-container > tr > th, md-select-menu.md-gmp-blue-theme md-content, .mat-button-base.mat-primary, devsite-select .devsite-select-toggle, fb-card-action-bar .fb-card-action-bar, .fire-inline-editor-overlay, .cta-link:not(.cta-link--white):active, .cta-link:not(.cta-link--white):focus, .cta-link:not(.cta-link--white):hover, .fb-table-elem > tbody .fb-table-detail-card, .stack-trace .stack-trace-heading, .c5e-input-container input[type=text][disabled], .c5e-input-container input[type=password][disabled], .c5e-input-container input[type=url][disabled], .c5e-input-container input[type=number][disabled], .c5e-input-container input[type=email][disabled], .c5e-input-container input[type=search][disabled], .c5e-input-container input[type=time][disabled], .c5e-input-container input[type=tel][disabled], .c5e-input-container md-select[disabled], .c5e-input-container mat-select[disabled], .c5e-input-container textarea[disabled], .cfc-panel-color-white, .devsite-footer {
 	background-color: #1C1C1C !important;
 }
 
@@ -294,7 +294,7 @@ devsite-select .devsite-select-list, devsite-search .devsite-searchbox, pre.Code
 	background-color: #DDD !important;
 }
 
-.devsite-toc .devsite-nav-title, devsite-footer-linkboxes .devsite-footer-linkbox-link, devsite-footer-utility .devsite-footer-utility-link, devsite-footer-utility .devsite-footer-sites-link, filter-content h2, h3, h4, h5, .mat-card .project-display-name, .learn-more-card.mat-card .description .title, .fb-dialog-header, .mat-card, .mat-select-value, .fb-thead-sort-container > tr > th, .a12n-placeholder, md-icon.md-gmp-blue-theme, .a12n-advanced-label, .fb-featurebar-tabs md-tab-item, .fire-dialog-header .fire-dialog-titlem, .mod-detail h6, h1[is-upgraded], h2[explore-extensions], .fire-dialog-header .fire-dialog-title, .mat-select-panel.mat-select-panel .mat-optgroup .mat-optgroup-label, .mat-option.ng-star-inserted, .title-copy, span.a12n-provider-enable-toggle-label, span.a12n-passwordless-enable-toggle-label, .c9s-session-card .stack-frames .stack-frame.developer-code, .c9s-session-card .stack-frames .stack-frame.blamed-frame, .c9s-aggregate-stats.mat-card .stat-value, .mat-tab-label, .mat-tab-link, .c9s-session-card .stack-frames .stack-frame.developer-code, .c9s-session-card .stack-frames .stack frame.blamed-frame, .c9s-aggregate-stats.mat-card .stat-value, .mat-tab-label, .mat-tab-link, .mdp-calendar .mdp-calendar-date:not(.mdp-calendar-selected-date), .md-calendar .md-calendar-date:not(.md-calendar-selected-date), .c9s-session-data .data-section-column .data-section-heading, .c9s-session-data, p9e-counter .p9e-value-container, p9e-card .p9e-card-subtitle, .c5e-applockup-appId, .fire-rules-card .fire-master-container [fire-master] .simulator-container .simulator-title-bar .simulator-title, .h5g-advanced-card .h5g-advanced-section .h5g-advanced-content .h5g-advanced-label, md-tabs.time-series-score-card .time-series-total-value, fire-breadcrumbs .crumbs .crumb .crumb-text-container .crumb-text.active, .c5e-download-config-label, .c5e-settings-clientlabel, .c5e-applockup-appId, .c5e-section-label, .i10s-link-card .i10s-card-header .i10s-card-logo-text, .c5e-sa-detail .c5e-sa-detail-title, .profile-primary-text, .iam-role-container, .fb-level-select .md-select-value, .mat-cell, .mat-footer-cell, .c5e-input-static-value, .fb-table-elem > thead th.fb-th-selected, .fb-table-elem > thead th.fb-th-selected i.fb-th-arrow, fb-loading-message fb-loading-message-heading, p9e-app-menu-item .p9e-app-name, .fb-table-elem > tbody td, .sdk-snippet-body > h1, .sdk-snippet-body > p, .sdk-snippet-body mat-radio-group, .stack-trace .stack-trace-heading, fire-empty-chart .position-container, fire-empty-chart .no-data, .mdp-date-range-menu .selection-header-value, .mdp-date-range-menu .selection-header-value .inactive-date, .pln, .mat-expansion-pane, .mat-expansion-panel {
+.devsite-toc .devsite-nav-title, devsite-footer-linkboxes .devsite-footer-linkbox-link, devsite-footer-utility .devsite-footer-utility-link, devsite-footer-utility .devsite-footer-sites-link, filter-content h2, h3, h4, h5, .mat-card .project-display-name, .learn-more-card.mat-card .description .title, .fb-dialog-header, .mat-card, .mat-select-value, .fb-thead-sort-container > tr > th, .a12n-placeholder, md-icon.md-gmp-blue-theme, .a12n-advanced-label, .fb-featurebar-tabs md-tab-item, .fire-dialog-header .fire-dialog-titlem, .mod-detail h6, h1[is-upgraded], h2[explore-extensions], .fire-dialog-header .fire-dialog-title, .mat-select-panel.mat-select-panel .mat-optgroup .mat-optgroup-label, .mat-option.ng-star-inserted, .title-copy, span.a12n-provider-enable-toggle-label, span.a12n-passwordless-enable-toggle-label, .c9s-session-card .stack-frames .stack-frame.developer-code, .c9s-session-card .stack-frames .stack-frame.blamed-frame, .c9s-aggregate-stats.mat-card .stat-value, .mat-tab-label, .mat-tab-link, .c9s-session-card .stack-frames .stack-frame.developer-code, .c9s-session-card .stack-frames .stack frame.blamed-frame, .c9s-aggregate-stats.mat-card .stat-value, .mat-tab-label, .mat-tab-link, .mdp-calendar .mdp-calendar-date:not(.mdp-calendar-selected-date), .md-calendar .md-calendar-date:not(.md-calendar-selected-date), .c9s-session-data .data-section-column .data-section-heading, .c9s-session-data, p9e-counter .p9e-value-container, p9e-card .p9e-card-subtitle, .c5e-applockup-appId, .fire-rules-card .fire-master-container [fire-master] .simulator-container .simulator-title-bar .simulator-title, .h5g-advanced-card .h5g-advanced-section .h5g-advanced-content .h5g-advanced-label, md-tabs.time-series-score-card .time-series-total-value, fire-breadcrumbs .crumbs .crumb .crumb-text-container .crumb-text.active, .c5e-download-config-label, .c5e-settings-clientlabel, .c5e-applockup-appId, .c5e-section-label, .i10s-link-card .i10s-card-header .i10s-card-logo-text, .c5e-sa-detail .c5e-sa-detail-title, .profile-primary-text, .iam-role-container, .fb-level-select .md-select-value, .mat-cell, .mat-footer-cell, .c5e-input-static-value, .fb-table-elem > thead th.fb-th-selected, .fb-table-elem > thead th.fb-th-selected i.fb-th-arrow, fb-loading-message fb-loading-message-heading, p9e-app-menu-item .p9e-app-name, .fb-table-elem > tbody td, .sdk-snippet-body > h1, .sdk-snippet-body > p, .sdk-snippet-body mat-radio-group, .stack-trace .stack-trace-heading, fire-empty-chart .position-container, fire-empty-chart .no-data, .mdp-date-range-menu .selection-header-value, .mdp-date-range-menu .selection-header-value .inactive-date, .pln, .mat-expansion-pane, .mat-expansion-panel, .gc-analytics-event  {
 	color: #FAFAFA !important;
 }
 
@@ -335,7 +335,7 @@ p9e-line-chart .p9e-x-axis text, p9e-line-chart .p9e-y-axis text {
 	fill: rgba(225, 225, 225, .38);
 }
 
-.devsite-footer, .devsite-footer-utility .devsite-footer-sites, devsite-footer-linkboxes .devsite-footer-linkboxes-list, .content-wrapper > .card, .card hr, tr, devsite-selector, body devsite-selector devsite-tabs[connected], devsite-page-rating[position="footer"], .button, button, input[type="button"], input[type="file"], input[type="image"], input[type="reset"], input[type="submit"], .devsite-footer-utility-button > a, .mat-checkbox-frame, .mat-divider, md-dialog.md-gmp-blue-theme.md-content-overflow .md-actions, md-dialog.md-gmp-blue-theme.md-content-overflow md-dialog-actions, md-divider.md-gmp-blue-theme, .a12n-provider-beta-label, .mod-detail__header, body devsite-select .devsite-select-toggle, md-radio-button.md-gmp-blue-theme .md-off, body.c5e-a11y-colors .fb-featurebar, body.c5e-a11y-colors fire-featurebar, .mod-detail__expandables > devsite-expandable, .fb-table-elem > tbody .fb-table-detail-content .fb-table-detail-content-wrapper, .fb-table-elem > tbody td, fire-empty-chart .top-container, fire-empty-chart .layout-container, .c9s-session-card .fire-stacked-card .session-card-header, .c9s-session-card .stack-frames .stack-frame.native-frame, .stack-trace .stack-frames, .stack-trace .stack-trace-heading, .devsite-suggest-footer, .devsite-suggest-results-container, .mat-card {
+.devsite-footer, .devsite-footer-utility .devsite-footer-sites, devsite-footer-linkboxes .devsite-footer-linkboxes-list, .content-wrapper > .card, .card hr, tr, devsite-selector, body devsite-selector devsite-tabs[connected], devsite-page-rating[position="footer"], .button, button, input[type="button"], input[type="file"], input[type="image"], input[type="reset"], input[type="submit"], .devsite-footer-utility-button > a, .mat-checkbox-frame, .mat-divider, md-dialog.md-gmp-blue-theme.md-content-overflow .md-actions, md-dialog.md-gmp-blue-theme.md-content-overflow md-dialog-actions, md-divider.md-gmp-blue-theme, .a12n-provider-beta-label, .mod-detail__header, body devsite-select .devsite-select-toggle, md-radio-button.md-gmp-blue-theme .md-off, body.c5e-a11y-colors .fb-featurebar, body.c5e-a11y-colors fire-featurebar, .mod-detail__expandables > devsite-expandable, .fb-table-elem > tbody .fb-table-detail-content .fb-table-detail-content-wrapper, .fb-table-elem > tbody td, fire-empty-chart .top-container, fire-empty-chart .layout-container, .c9s-session-card .fire-stacked-card .session-card-header, .c9s-session-card .stack-frames .stack-frame.native-frame, .stack-trace .stack-frames, .stack-trace .stack-trace-heading, .devsite-suggest-footer, .devsite-suggest-results-container, .mat-card, .devsite-footer-promos-list {
 	border-color: #4C4C4C !important;
 }
 
@@ -1045,7 +1045,7 @@ a:link:not(.maia-button)
 }
 
 @-moz-document regexp("https:\\/\\/(www\\.)?script\\.google\\.(com|([a-z]{2}))(.[a-z]{2})?\\/.*") {
-#docs-chrome, .status-bar, .h3yMzd, .SBFkwd {
+#docs-chrome, .status-bar, .h3yMzd, .SBFkwd, .monaco-editor, .monaco-editor-background, .monaco-editor .inputarea.ime-input, .CodeMirror {
 	background-color: #161616 !important;
 }
 
@@ -1053,11 +1053,11 @@ a:link:not(.maia-button)
 	background-color: #1C1C1C !important;
 }
 
-.XBU8lb[role="button"], .Uck9dc, .pLKo6, .JPdR6b, .survey .mdl-card .invitation, .question.rating > *, .f9RONd, .question-active, .mdl-card__actions, .gwt-Button, .editor .gwt-TabLayoutPanelTabs, .editor .code-area .CodeMirror-gutter-text, .docs-menubar .goog-control-open, .goog-menu, .resource-list, .editor .code-area .CodeMirror-gutter, .modal-dialog-buttons button, .goog-flat-menu-button, .jfk-button-standard, .editor .gwt-TabLayoutPanelTab, .resource-context-menu, .deploy-box select, .goog-toolbar-menu-button-open, .docs-title-widget-enabled:hover .docs-title, #docs-menu-shield, .aYGNvc, .gb_qe {
+.XBU8lb[role="button"], .Uck9dc, .pLKo6, .JPdR6b, .survey .mdl-card .invitation, .question.rating > *, .f9RONd, .question-active, .mdl-card__actions, .gwt-Button, .editor .gwt-TabLayoutPanelTabs, .editor .code-area .CodeMirror-gutter-text, .docs-menubar .goog-control-open, .goog-menu, .resource-list, .editor .code-area .CodeMirror-gutter, .modal-dialog-buttons button, .goog-flat-menu-button, .jfk-button-standard, .editor .gwt-TabLayoutPanelTab, .resource-context-menu, .deploy-box select, .goog-toolbar-menu-button-open, .docs-title-widget-enabled:hover .docs-title, #docs-menu-shield, .aYGNvc, .gb_qe, .goog-toolbar-button-checked {
 	background-color: #2C2C2C !important;
 }
 
-.XBU8lb[role="button"]:hover, .QcbH4c:not(.jBCeZb):hover .RveJvd, .QcbH4c:not(.jBCeZb):hover .a8fkq, .QcbH4c:not(.jBCeZb):hover .cJuJEf .Auu9lc, .z80M1.FwR7Pc, .gwt-Button:hover, .gwt-Button:active, .docs-menubar .goog-control-hover, .goog-menuitem.goog-menuitem-highlight, .workspace .gwt-SplitLayoutPanel-HDragger, .resource-list .project-items-list .selected, .resource-list .project-items-list .selected:hover, .editor .gwt-TabLayoutPanelTab-selected, .workspace .gwt-SplitLayoutPanel-VDragger, .goog-flat-menu-button:hover, .jfk-button-standard:hover, .goog-toolbar-button-hover, .gwt-MenuItem:hover, .goog-toolbar-button-hover, .goog-toolbar-menu-button-hover, .XEfnH:hover:not(.Uathie), .XEfnH:focus:not(.Uathie), .XEfnH[aria-selected="true"] {
+.XBU8lb[role="button"]:hover, .QcbH4c:not(.jBCeZb):hover .RveJvd, .QcbH4c:not(.jBCeZb):hover .a8fkq, .QcbH4c:not(.jBCeZb):hover .cJuJEf .Auu9lc, .z80M1.FwR7Pc, .gwt-Button:hover, .gwt-Button:active, .docs-menubar .goog-control-hover, .goog-menuitem.goog-menuitem-highlight, .workspace .gwt-SplitLayoutPanel-HDragger, .resource-list .project-items-list .selected, .resource-list .project-items-list .selected:hover, .editor .gwt-TabLayoutPanelTab-selected, .workspace .gwt-SplitLayoutPanel-VDragger, .goog-flat-menu-button:hover, .jfk-button-standard:hover, .goog-toolbar-button-hover, .gwt-MenuItem:hover, .goog-toolbar-button-hover, .goog-toolbar-menu-button-hover, .XEfnH:hover:not(.Uathie), .XEfnH:focus:not(.Uathie), .XEfnH[aria-selected="true"], .gwt-MenuItem-selected {
 	background-color: #3C3C3C !important;
 }
 
@@ -1065,7 +1065,7 @@ a:link:not(.maia-button)
 	background-color: #4C4C4C !important;
 }
 
-#docs-toolbar-wrapper, .gwt-Button, .modal-dialog-buttons button, .goog-flat-menu-button, .jfk-button-standard, .goog-toolbar-button-hover, .deploy-box select, .goog-toolbar-button-hover, .goog-toolbar-menu-button-hover, .goog-toolbar-menu-button-open {
+#docs-toolbar-wrapper, .gwt-Button, .modal-dialog-buttons button, .goog-flat-menu-button, .jfk-button-standard, .goog-toolbar-button-hover, .deploy-box select, .goog-toolbar-button-hover, .goog-toolbar-menu-button-hover, .goog-toolbar-menu-button-open, .goog-toolbar-button-checked {
 	background-image: none !important;
 }
 
@@ -1081,11 +1081,43 @@ a:link:not(.maia-button)
 	color: #666 !important;
 }
 
+.cm-s-default span.cm-keyword {
+    color: #D0f !important;
+}
+
+.cm-s-default span.cm-string {
+   color: #ff5858 !important; 
+}
+
+.cm-s-default span.cm-def {
+    color: #58eeff !important;
+}
+
+.cm-s-default span.cm-variable-2 {
+    color: #00aeff !important;
+}
+
+.cm-s-default span.cm-comment {
+    color: #15b300 !important;
+}
+
+.cm-s-default span.cm-variable {
+    color: #ff7900 !important;
+}
+
+.CodeMirror-lines div div pre {
+    color: #FAFAFA !important;
+}
+
 .QcbH4c:not(.jBCeZb):hover .RveJvd, .QcbH4c:not(.jBCeZb):hover .a8fkq, .QcbH4c:not(.jBCeZb):hover .cJuJEf .Auu9lc, .fKz7Od {
 	fill: #CCC !important;
 }
 
-.kCtYwe, .FBElVb, .f9RONd, .pLKo6, .mdl-textfield__input, .goog-toolbar-separator.goog-inline-block, .gwt-Button:hover, .gwt-Button:active, .maestro-dialog, .editor .gwt-TabLayoutPanelTabs, .docs-menubar .goog-control-hover, .goog-menuseparator, .workspace .gwt-SplitLayoutPanel-HDragger, .resource-list .project-items-list .item, #docs-toolbar-wrapper, .editor .gwt-TabLayoutPanelTab-selected, .editor .code-area .CodeMirror-gutter, .status-bar, .workspace .gwt-SplitLayoutPanel-VDragger, .workspace .aux-info .treetable-wrapper, .workspace .aux-info .debugger-callstack-wrapper, .modal-dialog-buttons button, .script-dryrun-dialog-create, .jfk-button-standard, .goog-flat-menu-button, .editor .gwt-TabLayoutPanelTab, .goog-toolbar-button-hover, .gwt-TextBox, .search-box, .deploy-box select, .goog-toolbar-button-hover, .goog-toolbar-menu-button-hover, .goog-toolbar-menu-button-open, .jfk-tooltip, .h3yMzd, .SBFkwd, .aYGNvc, .JmIASc .Xaqsc .k5aVkf:last-child, .PK2PH {
+.editor .code-area .CodeMirror-cursor {
+    border-color: #FAFAFA !important;
+}
+
+.kCtYwe, .FBElVb, .f9RONd, .pLKo6, .mdl-textfield__input, .goog-toolbar-separator.goog-inline-block, .gwt-Button:hover, .gwt-Button:active, .maestro-dialog, .editor .gwt-TabLayoutPanelTabs, .docs-menubar .goog-control-hover, .goog-menuseparator, .workspace .gwt-SplitLayoutPanel-HDragger, .resource-list .project-items-list .item, #docs-toolbar-wrapper, .editor .gwt-TabLayoutPanelTab-selected, .editor .code-area .CodeMirror-gutter, .status-bar, .workspace .gwt-SplitLayoutPanel-VDragger, .workspace .aux-info .treetable-wrapper, .workspace .aux-info .debugger-callstack-wrapper, .modal-dialog-buttons button, .script-dryrun-dialog-create, .jfk-button-standard, .goog-flat-menu-button, .editor .gwt-TabLayoutPanelTab, .goog-toolbar-button-hover, .gwt-TextBox, .search-box, .deploy-box select, .goog-toolbar-button-hover, .goog-toolbar-menu-button-hover, .goog-toolbar-menu-button-open, .jfk-tooltip, .h3yMzd, .SBFkwd, .aYGNvc, .JmIASc .Xaqsc .k5aVkf:last-child, .PK2PH, .goog-toolbar-button-checked {
 	border-color: #4C4C4C !important;
 }
 
