@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Señor C.
 @description    `Este es un Modo Oscuro que hice para la eVirtual de la Universidad Técnica de Manabí, porque a mi novia le encanta el modo oscuro :3`
-@version        2020129.0.14
+@version        20201219.2.42
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -445,6 +445,21 @@ background: rgb(30,30,30);
     color: #fff!important;
     background-color: #004600!important;
     border-color: #001300!important;
+}
+
+table.quizreviewsummary th.cell {
+    background: #262626 !important;
+}
+.table th, table.collection th, table.flexible th, .generaltable th, .table td, table.collection td, table.flexible td, .generaltable td {
+    border-top: 1px solid #1e1f21 !important;
+}
+table.quizreviewsummary td.cell {
+    background: black !important; 
+}
+.alert-warning, #page-admin-index .adminwarning, .uninstalldeleteconfirmexternal, .que .outcome, .que .comment {
+    color: #c9a06b!important;
+    background-color: #2c2416!important;
+    border-color: #2c2416!important;
 }
 /*fin del agregado xd*/
 

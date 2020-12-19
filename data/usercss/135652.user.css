@@ -3,13 +3,20 @@
 @namespace      USO Archive
 @author         Sara Is a Fag
 @description    `Simple minimalistic theme. I made for myself.Removed background image, some ad banners and sponsored recommendations.`
-@version        2020831.6.28
+@version        20201219.6.51
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document 
 domain("www.last.fm"),
 domain("secure.last.fm") {
+
+/** {border-radius:0% !important;}*/
+/*.avatar-shape, .avatar:after, .avatar img {animation-play-state:paused; border-radius: 0% !important;}*/
+
+*{font-family: Open Sans,Lucida Grande,Helvetica Neue,Helvetica,Arial,Sans-serif;}
+.leader_bottom, .leader_plus_middle1, .leader_plus_middle2, .leader_plus_top, .mpu_bottom, .mpu_plus_top {display: none;}
+
 
 /*Заголовок*/
 .header .header-background {z-index: -1;} /*Удаляет Фон*/
@@ -69,7 +76,7 @@ domain("secure.last.fm") {
 /*.vote-button.vote-button--unvoted {padding-left: 33px;}
 .vote-button.vote-button--voted {padding-left: 33px;} /*Смещает Текст*/
 /*.vote-button.vote-button--voted {color: #41b700 !important;} /*Перекрашивает Нажатый Лайк*/
-/*.vote-button-toggle .vote-button:before {background-image: url();}
+/*.vote-button-toggle .vote-button:before {background-image: url(https://4.downloader.disk.yandex.ru/preview/590075b2a0be82ed2c4eab5a3e49ef01153412c87935cddf5fc30001aba59cb9/inf/1XpLU1tj8i6nmi5slSLeqOFtTBRgDGj6HNdraCOeM8OCic6u49IqMrBnutS4JVUMUwep3u0cjNktT2e9Ed9T8g%3D%3D?uid=0&filename=Lastfm%20Like.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&size=XXL);}
 
 /*"Друзья Слушают"*/
 .kerve.widget .widget_title, .kerve.widget h2 {font-size: 15px;} /*Размер Текста*/
@@ -101,12 +108,12 @@ i, cite, em, var, address, dfn {font-style: normal;} /*Убирает Курси
 /*Лайк и Плей Треков */
 /*.header .love-button {display: none !important;} /*Лайк на Старнице Трека*/
 /*.library-track-metadata .love-button {display: none !important;} /*Лайк в Библиотеке*/
-/*.chartlist .chartlist-play-button:before {background-image: url();}
-.chartlist .chartlist-play-button:focus:before {background-image: url();}
-.chartlist .chartlist-play-button:hover:before {background-image: url();}
-.chartlist .love-button:before {background-image: url();}
-.chartlist button.love-button--loved:focus:before {background-image: url();}
-.chartlist button.love-button--loved:hover:before {background-image: url();}*/
+/*.chartlist .chartlist-play-button:before {background-image: url(https://4.downloader.disk.yandex.ru/preview/956041fcd30624e10c42b73ac68cd2b39a6a65b8d477998505584cba747a22da/inf/1XpLU1tj8i6nmi5slSLeqBTJdeysLmHRLV3Wyee0eMdesrbcVtLex37MJgy2goIPM-msmxP7lK45-p2nScDyXg%3D%3D?uid=0&filename=tracklist_play.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&size=XXL);}
+.chartlist .chartlist-play-button:focus:before {background-image: url(https://4.downloader.disk.yandex.ru/preview/956041fcd30624e10c42b73ac68cd2b39a6a65b8d477998505584cba747a22da/inf/1XpLU1tj8i6nmi5slSLeqBTJdeysLmHRLV3Wyee0eMdesrbcVtLex37MJgy2goIPM-msmxP7lK45-p2nScDyXg%3D%3D?uid=0&filename=tracklist_play.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&size=XXL);}
+.chartlist .chartlist-play-button:hover:before {background-image: url(https://4.downloader.disk.yandex.ru/preview/956041fcd30624e10c42b73ac68cd2b39a6a65b8d477998505584cba747a22da/inf/1XpLU1tj8i6nmi5slSLeqBTJdeysLmHRLV3Wyee0eMdesrbcVtLex37MJgy2goIPM-msmxP7lK45-p2nScDyXg%3D%3D?uid=0&filename=tracklist_play.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&size=XXL);}
+.chartlist .love-button:before {background-image: url(https://2.downloader.disk.yandex.ru/preview/6fd085dcd6d24070f46dec978edd88dad29cca70029fe427f10d613c391934d7/inf/1XpLU1tj8i6nmi5slSLeqJOgbQcNd3HjgDTM8wYm7BNX62sGQ8-nzgBlNfvXV0YXhbauy2-shrTfXjeny2b49g%3D%3D?uid=0&filename=tracklist_love.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&size=1280x676);}
+.chartlist button.love-button--loved:focus:before {background-image: url(https://2.downloader.disk.yandex.ru/preview/6fd085dcd6d24070f46dec978edd88dad29cca70029fe427f10d613c391934d7/inf/1XpLU1tj8i6nmi5slSLeqJOgbQcNd3HjgDTM8wYm7BNX62sGQ8-nzgBlNfvXV0YXhbauy2-shrTfXjeny2b49g%3D%3D?uid=0&filename=tracklist_love.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&size=1280x676);}
+.chartlist button.love-button--loved:hover:before {background-image: url(https://2.downloader.disk.yandex.ru/preview/6fd085dcd6d24070f46dec978edd88dad29cca70029fe427f10d613c391934d7/inf/1XpLU1tj8i6nmi5slSLeqJOgbQcNd3HjgDTM8wYm7BNX62sGQ8-nzgBlNfvXV0YXhbauy2-shrTfXjeny2b49g%3D%3D?uid=0&filename=tracklist_love.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&tknv=v2&size=1280x676);}*/
 
 /*Кнопка Рекомендаций*/
 .recommended-next-button {display: none !important;}
@@ -131,7 +138,10 @@ i, cite, em, var, address, dfn {font-style: normal;} /*Убирает Курси
 .header .header-message-user:before {background-image: url(https://i.imgur.com/iCCG7wp.png);}
 .header .header-message-user:before {width: 163px; height: 43px; margin-left: -147px; margin-top: -25px;}
 .header .header-message-user:hover:before, .header .header-message-user:focus:before {background-image: url(https://i.imgur.com/ygsIGyC.png);}
+/*.header .header-message-user:hover:before {width: 130px; height: 43px; margin-left: -115px; margin-top: 10px;}*/
 .header--overview .header-info-secondary {padding-right: 175px;}
+
+
 
 /*Заполнение Форм*/
 .tag-cta, .tag-cta:hover {background: white !important;}

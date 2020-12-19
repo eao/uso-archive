@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         RiKEZ
 @description    `Theme for ScoreSaber`
-@version        20201022.14.4
+@version        20201219.6.13
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -339,5 +339,26 @@ color: #fffaae !important;
 
 .rank {
 color: #fffaae !important;
+}
+
+div.ranking {
+overflow-x: visible;
+}
+
+th.compact.bb_link {
+display: table-cell !important;
+}
+
+th.compact.bb_link .button.is-danger {
+background-color: white;
+}
+
+th.compact.bb_link .button.is-danger:hover, .button.is-danger.is-hovered {
+background-color: white;
+border-color: #b5b5b5;
+}
+
+th.compact .fa, th.compact  .fas {
+color: black;
 }
 }

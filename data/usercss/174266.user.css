@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         soupy
 @description    `I couldn't find a good dark theme for Torn and the official one is taking too long so I made a quick dark mode for Torn`
-@version        20201216.15.30
+@version        20201219.7.25
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("torn.com") {
-/*Last update: Christmas Town Fixes */
+/*Last update: More Christmas Town Fixes */
 
 
 html:not([stylus-iframe]):after {
@@ -1741,6 +1741,22 @@ div.wrap___33dMr img{
 }
 
 div.board___2UFrz {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.wrap___1F4oi img{
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.text-container.santa___1zMVO.customImage___3E7hV img {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+div.chest-dialog img {
+    filter: invert(1)hue-rotate(180deg)
+}
+
+i.chests-2 {
     filter: invert(1)hue-rotate(180deg)
 }
 }

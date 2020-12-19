@@ -2,8 +2,8 @@
 @name           SV
 @namespace      USO Archive
 @author         Стас Бармин
-@description    `SV - Simple View of VK 0.6.2Redesign of header, messages, chatbox, sidebar, background and much more!thx Michail Nikolayev`
-@version        20201218.17.41
+@description    `SV - Simple View of VK 0.7.1Redesign of header, messages, chatbox, sidebar, background and much more!thx Michail Nikolayev`
+@version        20201219.9.17
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -35,6 +35,17 @@ body.new_header_design {
     --left-menu-row-height: 30px;
 }
 
+/*лого*/
+[dir] body.new_header_design .p_head_l0 .top_home_link .top_home_logo,
+[dir] body.new_header_design .p_head_l97 .top_home_link .top_home_logo,
+[dir] body.new_header_design .p_head_l114 .top_home_link .top_home_logo,
+[dir] body.new_header_design .p_head_l1 .top_home_link .top_home_logo,
+[dir] body.new_header_design.ny_2020_logo .p_head_l0 .top_home_link .top_home_logo,
+[dir] body.new_header_design.ny_2020_logo .p_head_l97 .top_home_link .top_home_logo,
+[dir] body.new_header_design.ny_2020_logo .p_head_l114 .top_home_link .top_home_logo,
+[dir] body.new_header_design.ny_2020_logo .p_head_l1 .top_home_link .top_home_logo {
+    background-image: url(https://svgshare.com/i/SSX.svg);
+}
 /*КНОПКИ В ШАПКЕ*/
 /*фикс фона*/
 [dir] body.new_header_design .top_nav_link:hover,

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         愛気
 @description    `根据Ryan Galbraith的样式 (hao123 精简美化)和神代綺凜的样式(Bilibili 哔哩哔哩 Nekopara)所编辑隐藏了所有广告(18年12月之后若有新广告请自己隐藏,或者点击更新),同时保留了顶栏若有需要更改背景图片,请直接点击编辑,里面有注释告诉你听哪个是改背景图片的该样式支持hao123新版/旧版(已测试通用)---重要---若点击下载无效,请先点击下面的"show CSS Code"按钮,等加载完内容再点击下载即可若有疑问请联系QQ:949244916`
-@version        20201110.4.26
+@version        20201219.6.48
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,7 +24,7 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
   }
-                    
+
   #sites2_wrapper  >*
   {
 /*调整中间那个框的边框圆角弯度*/
@@ -167,7 +167,10 @@
   {
     display: none !important;
   }
-
+  .movinglink-anim-stop
+  {
+    display: none !important;
+  }
   .hao123-footer
   {
     display: none !important;

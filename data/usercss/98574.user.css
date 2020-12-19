@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201214.15.24
+@version        20201219.6.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -279,6 +279,7 @@ img.acs-shwcs-image
 #nav-subnav .nav-a,
 #need-help-deciding .secHeader,
 #pf-fitment-wrapper h2,
+#priceblock_ourprice,
 #revMHLContainer h2,
 #reviewBucketHeader,
 #rhfMainHeading,
@@ -290,7 +291,7 @@ img.acs-shwcs-image
 h2.amtcmp,
 h2.featureHeading
 {
-	font-size: 42px;
+	font-size: 42px!important;
 }
 
 /* Size 2rem ________________*/
@@ -337,6 +338,7 @@ h2.featureHeading
 
 /* Size 15px ________________*/
 
+#HLCXComparisonTable .a-size-base,
 #nav-subnav .nav-a,
 #nav-AssociateStripe .amzn-ss-link-container-label,
 .a-box-group > .a-box .a-box-inner .a-row,
@@ -351,9 +353,8 @@ body
 	font-size: 15px!important;
 }
 
-/* Size 14px ________________*/
+/* Size 13px ________________*/
 
-#HLCXComparisonTable .a-size-base,
 #nav-subnav.spacious .nav-a,
 #see-more-text,
 .a-size-base,
