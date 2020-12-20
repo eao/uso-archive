@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           NightMode For Zhihu.com 夜间知乎
+@name           夜间知乎 NightMode For Zhihu.com
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `自用，上传只为保存。`
-@version        20201125.0.50
+@version        20201220.6.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 /*=== 
  *【自用，上传只为保存】
  * 作者：QIUZAIYOU 
- * 最后更新：20201125
+ * 最后更新：20201220
 ===*/
 /* 垃圾元素屏蔽 */
 .AdblockBanner,
@@ -222,7 +222,8 @@ a.toggle-expand:hover,
 .AutoInviteItem-wrapper--desktop,
 .CommentCollapseButton,
 .css-10rt8mt,
-.SearchBar-tool input {
+.SearchBar-tool input,
+.MCNLinkCard {
     background: #373737!important;
 }
 .lower {
@@ -349,7 +350,8 @@ textarea.zg-form-text-input,
 .Question-mainColumnLoginTitle,
 .Question-mainColumnLoginDes,
 .AnswerAuthor-user-name,
-.Modal-title {
+.Modal-title,
+.MCNLinkCard-title {
     color: #868686!important;
 }
 .ztext blockquote,
@@ -435,7 +437,9 @@ html[data-theme=dark] .TextMessage-sender a,
     color: #2b94ff!important;
 }
 .tab-navs .tab-nav.active > a,
-.AnswerItem-statusReason {
+.AnswerItem-statusReason,
+.MCNLinkCard-price,
+.MCNLinkCard-button {
     color: #e43!important;
 }
 .Qrcode-container p.Qrcode-scanResultTips {
@@ -647,7 +651,8 @@ div[class*="-module-"]:before,
 .UserAvatar,
 .PushNotifications-count,
 .Messages-count,
-.Question-mainColumnLoginButton {
+.Question-mainColumnLoginButton,
+.css-ybodb {
     border-color: #2c2c2c!important;
 }
 

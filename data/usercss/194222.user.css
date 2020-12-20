@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AshDefenders
 @description    `Стиль возвращает старый дизайн ВКонтакте который был до редизайна 2020 годаЕсли у вас есть чем дополнить стиль то можете написать в вк vk.com/defenders08 или в тг @defenders08k1СЛЕДИТЕ ЗА ОБНОВЛЕНИЯМИ СТИЛЯ, ОБНОВЛЯЙТЕ ДЛЯ ИСПРАВЛЕНИЯ БАГОВ!!!Группа VK: https://vk.com/designoldvk (Напоминания о обновлениях)`
-@version        20201218.16.16
+@version        20201220.12.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -40,6 +40,24 @@ body {
     /* background-position-x: 1px; */
     height: 50px;
 }
+body.new_header_design #page_header .lamp {
+    display: none;
+}
+[dir] 
+
+body.new_header_design #page_header path {
+    display: none;
+}
+[dir] body.new_header_design.ny_2020_logo .top_home_link .top_home_logo, [dir] body.new_header_design.WideScreenAppPage.ny_2020_logo .top_home_link .top_home_logo {
+    background-image: url(https://i.imgur.com/vtj9udl.png);
+    background-size: 46px 23px;
+    width: 156px;
+    background-position-y: 13px;
+    /* background-position-x: 1px; */
+    height: 50px;
+}
+
+/* Новогодний логотип */
 body.new_header_design .top_home_link .top_home_logo, body.new_header_design.WideScreenAppPage .top_home_link .top_home_logo {
     width: 34px;
     height: 19px;
@@ -171,6 +189,11 @@ body.new_header_design .top_nav_link.top_profile_link:hover {
 }
 
 
+[dir=ltr] .left_settings_inner {
+    left: 0;
+    right: 0;
+    margin-top: 12px;
+}
 [dir] body.new_header_design #side_bar #l_pr .left_icon {
         background: url(https://i.imgur.com/VmF1YJT.png) no-repeat;
     background-position: center;
@@ -379,7 +402,7 @@ body.new_header_design .audio_page_player2.audio_page_player_fixed {
     top: 0px;
 }
 [dir] .im-action_invite::before {
-    background-image: url(data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2220%22%20height%3D%2220%22%20fill%3D%22%23818C99%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M10%203.25c.41%200%20.75.34.75.75v5.25H16a.75.75%200%20010%201.5h-5.25V16a.75.75%200%2001-1.5%200v-5.25H4a.75.75%200%20010-1.5h5.25V4c0-.41.34-.75.75-.75z%22%2F%3E%3C%2Fsvg%3E);
+    background-image: url(https://i.imgur.com/QLYQoTo.png);
 }
 [dir] .im-action_media::before {
     background-image: url(https://i.imgur.com/p3GfsxI.png);
@@ -408,5 +431,15 @@ body.new_header_design .audio_page_player2.audio_page_player_fixed {
 }
 [dir] .im-page--redesigned-menu .ui_actions_menu_sep {
     margin: 4px 4px;
+}
+[dir] .friends_only_pic {
+    background: url(https://i.imgur.com/qXz9cQ5.png) center no-repeat;
+}
+[dir] .friends_only_pic.on {
+    background-image: url(https://i.imgur.com/aqib4Ep.png);
+}
+[dir] .feed_lists_icon .ui_actions_menu_icons {
+    background-image: url(https://i.imgur.com/QLYQoTo.png);
+    background-size: 12px;
 }
 }

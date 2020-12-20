@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         David Colby
 @description    `This style makes all websites more dark themed by changing as much text as possible to grey, deletes as many borders as possible, and makes the Jupyter Notebook localhost server more dark as well. However, this *only* works if you invert all colors on your display first.`
-@version        20201126.18.18
+@version        20201220.5.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,10 +16,10 @@
     color: #000000 !important; background: #d5d5d5 !important;
 }
 .xterm-cursor-layer {
-	z-index: 0 !important;
+    z-index: 0 !important;
 }
 .xterm-viewport, .xterm-screen {
-    background: #e9e9e9 !important;
+    background: #d4d6d4 !important;
 }
 .cm-keyword, div.CodeMirror span.CodeMirror-matchingbracket {
     font-weight: bolder !important; color: #00ff00;
@@ -34,7 +34,10 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket, .cm-error {
     background: rgba(0, 127, 127, .3) !important;
 }
 * {
-    color: #777777 !important; border: none; background: rgba(255, 255, 255, .2) !important;
+    color: #777777; background: rgba(255, 255, 255, .2);
+}
+.xterm-viewport, .xterm-screen {
+    background: #e9ebe9 !important;
 }
 .cm-atom {
     color: #bb6600 !important;

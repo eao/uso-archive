@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         cyberpunk
 @description    `\(^_^)/`
-@version        2020923.22.53
+@version        20201220.8.57
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown Fontstyle "Font style" {
@@ -194,14 +194,6 @@ img.fc_contact_photo,
 .nim-dialog.nim-dialog_classic:not(.nim-dialog_deleted):hover.nim-dialog_unread-out .nim-dialog--inner-text,
 .nim-dialog.nim-dialog_classic.nim-dialog_unread-out .nim-dialog--inner-text {
     background: #d9d9d9;
-}
-/*лого*/
-
-.top_home_logo {
-    background: url(https://i.imgur.com/aamNvtQ.png)!important;
-    width: 154px!important;
-    height: 42px!important;
-    margin: 0!important;
 }
 /*фон*/
 

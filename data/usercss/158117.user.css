@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——⭐如有问题请到我的网站【www.asifadeaway.com】点击右下角会话按钮给我留言⭐1、常用页面夜间模式全覆盖2、去除广告3、去除导航栏中游戏等无用杂项4、部分icon更换使之更符合当前主题5、自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素`
-@version        20201216.14.24
+@version        20201220.7.3
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -77,7 +77,7 @@ BarrageContent_ON "开" <<<EOT .Barrage-content:not([class*="Barrage-content--co
 @-moz-document url-prefix("https://www.douyu.com/"), url-prefix("http://www.douyu.com/") {
 /*=== 
     作者：QIUZAIYOU 
-    最后更新：20201216
+    最后更新：20201220
 ===*/
 /*=== 屏蔽元素 ===*/
 .giftbatter-box,
@@ -4005,7 +4005,7 @@ div[class*='wenti1-'] input[class*='problemIconInput-'],
 .HomePageClassify-header-all,
 .YubaMessage .Badge,
 .SociatyLabel-name.is-special,
-.Header-follow-tab.is-active {
+.Header-follow-tab.is-active,.layout-Partition-title,.layout-Slider~.layout-Partition .layout-Partition-title {
     color: #fff!important;
 }
 .DyCover-hot,

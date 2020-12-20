@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.4.8
+@name           Compact Tube (White) v1.4.9
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201218.13.1
+@version        20201220.10.58
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.4.8 */
+/* CompactTube (White) v1.4.9 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -1684,25 +1684,6 @@ ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-comments]
 input#search.gsfi.ytd-searchbox {-o-background-color: #02ff35/*test*/; position: relative; top: 1px; left: 0px;}
 
 
-/* СТЕРЕТЬ ненужную черту под заголовком ! 
-    и Позицианирование Общих Заголовков (Тренды, Подписки, Библиотека(История), Главная Канала) */
-#title-container.ytd-shelf-renderer {
-    box-shadow: inset 0px -4px 0px 0px var(--yt-spec-brand-background-primary);
-    color: var(--yt-spec-text-primary);
-    height: 2rem;
-    position: relative; -o-bottom: 0px; /* !!! работает только с этим параметром */
-    -o-padding-bottom: 5px;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;}
-
-
 /* Добавить 15px  ниже самого последнего видео в колонке видео справа на Вкладке с Видео зона; ENG */
 ytd-compact-video-renderer.ytd-item-section-renderer:last-of-type
 {margin-bottom: 15px !important;}
@@ -1735,7 +1716,8 @@ ytd-watch-next-secondary-results-renderer:after {
         -o-#items.ytd-watch-next-secondary-results-renderer 
         {border-bottom: 1px solid var(--ytd-searchbox-legacy-button-border-color);}
 
-/* пространство ниже общего Контента (отступ для панели задач Виндоус) <в Тренде, Подписки, Библиотека(История), Комментарии, Страниы Каналов> - v2 new */
+/* пространство ниже общего Контента (отступ для панели задач Виндоус) 
+<в Тренде, Подписки, Библиотека(История), Комментарии, Страниы Каналов> - v2 new */
 /* ytd-item-section-renderer.ytd-section-list-renderer:last-child:after */
 ytd-section-list-renderer:last-child:after {
     display: block;
@@ -1749,7 +1731,8 @@ ytd-section-list-renderer:last-child:after {
     border-top: 0px solid var(--yt-spec-10-percent-layer);}
 
 
-/* пространство ниже общего Контента (отступ для панели задач Виндоус) <в Тренде, Подписки, Библиотека(История), Комментарии, Страниы Каналов> - v1 old */
+/* пространство ниже общего Контента (отступ для панели задач Виндоус) 
+<в Тренде, Подписки, Библиотека(История), Комментарии, Страниы Каналов> - v1 old */
 -o-ytd-item-section-renderer:last-child:after {
     display: block;
     width: auto;
@@ -1758,6 +1741,22 @@ ytd-section-list-renderer:last-child:after {
     background: var(--yt-spec-general-background-b); /* var(--yt-spec-general-background-b) */
     box-shadow: 0px 3px 0px 3px var(--yt-spec-general-background-b); /* test #fb0f0f */ /* var(--yt-spec-general-background-b) */
     border-top: 1px solid var(--yt-spec-10-percent-layer);}
+
+/* пространство ниже Комментов (отступ для панели задач Виндоус) */
+/* ytd-comments:last-child:after , ytd-comments:last-of-type:after */
+ytd-comments:after {
+    display: block;
+    width: auto;
+    height: 40px; /* 40px */
+    content: "";
+    -o-visibility: hidden;
+    -o-opacity: 0;
+    -o-background: #ff5c00;
+    background: var(--yt-spec-general-background-b) !important;  /* var(--yt-spec-general-background-b) */
+    box-shadow: 0px 3px 0px 3px var(--yt-spec-general-background-b),
+    0px -1px 0px 0px var(--ytd-searchbox-legacy-button-border-color);
+    -o-border-top: 1px solid var(--yt-spec-10-percent-layer);}
+
 
 /* Настройка Бэйджа Автора Канала в Комментариях */
 ytd-author-comment-badge-renderer {
@@ -2108,8 +2107,8 @@ position: relative; top: 0px; left: 5px;}
     background: var(--yt-spec-brand-background-primary);
     -o-box-shadow: 0px 0px 0px 1px rgba(178, 178, 178, .27);
     -o-border-right: 1px solid var(--yt-spec-10-percent-layer);
-    -o-border-left: 1px solid var(--yt-spec-10-percent-layer);
-}
+    -o-border-left: 1px solid var(--yt-spec-10-percent-layer);}
+
     
 /*блок верхнего меню канала (на странице Каналов)*/
 /* цвет блока, затенение(рамка), Бордюр, позиционирование */
@@ -2293,11 +2292,23 @@ ytd-search-sub-menu-renderer {
 
                     /* КАНАЛ: - ВИДЕО*/
 
+/* (ВИДЕО на КАНАЛЕ) Фильтр Выравнивающий Яркость фонов при их наложении */
+-o-ytd-grid-renderer {-o-background: var(--yt-spec-brand-background-primary); filter: contrast(100.537%);}
+
 /* ВИДЕО на КАНАЛЕ  ($) */
 ytd-grid-renderer {
-    background: var(--yt-spec-brand-background-primary);
-    box-shadow: 0px 0.5px 1px 1px var(--ytd-searchbox-legacy-button-border-color);
-    margin-top: -12px; /*-5px, -4px*/
+    background: var(--yt-spec-brand-background-primary); filter: contrast(100.537%); /* Фильтр компенсатор Яркости */
+    box-shadow:        /* Третий вариант: - лучший (верх не добавлен специально) */
+    -1px 0px 0px 0px var(--ytd-searchbox-legacy-button-border-color), /* L */
+    1px 0px 0px 0px var(--ytd-searchbox-legacy-button-border-color), /* R */
+    0px 1px 0px 0px var(--ytd-searchbox-legacy-button-border-color); /* B */
+/*        -o-box-shadow: 0px 0.5px 1px 1px var(--ytd-searchbox-legacy-button-border-color);   /* первый вариант */
+/*        -o-box-shadow:      /* Второй Вариант */
+/*         0px -2px 0px 0px var(--yt-spec-brand-background-primary), 
+        0px -2px 0px 0px var(--yt-spec-brand-background-primary), 
+        inset 0px 2px 0px 0px var(--yt-spec-brand-background-primary),        
+        0px 1px 1px 1px var(--ytd-searchbox-legacy-button-border-color); */
+    margin-top: -12px; /*-5px, -4px , -12 последнее*/
     -o-position: relative; top: -5px; left: 0px; /* top: -5px; left: 0px; - отключаю, сдвигает сетку везде*/
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -2309,12 +2320,12 @@ ytd-grid-renderer {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
     padding-top: 5px; /*5px*/
-    padding-bottom: 5px;
-}
+    padding-bottom: 5px;}
+
 /* Блок Меню - Загрузки, ВОСПРОИЗВЕСТИ ВСЁ (ВИДЕО на КАНАЛЕ) ($) */
 ytd-channel-sub-menu-renderer {
     height: 56px;
-    margin: 6px 0 7px;
+    margin: 6px 0 7px;  /* 6px 0 -5px; !!! NEW - test */       /* 6px 0 7px; ! OLD */
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -2327,6 +2338,18 @@ ytd-channel-sub-menu-renderer {
     position: relative; top: 2px; left: 0px;
     background: var(--yt-spec-brand-background-primary);
     box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);}
+
+/* СТЕРЕТЬ ненужную черту под заголовком ! 
+    и Позицианирование Общих Заголовков (Тренды, Подписки, Библиотека(История), Главная Канала) */
+/* -o-#title-container.ytd-shelf-renderer {
+    -o-box-shadow: inset 0px -4px 0px 0px var(--yt-spec-brand-background-primary);
+    color: var(--yt-spec-text-primary);
+    height: 2rem;
+    -o-position: relative; -o-bottom: 0px; /* !!! работает только с этим параметром */
+/*     -o-padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;} */
 
 /* Меню: - Загрузки, ВОСПРОИЗВЕСТИ ВСЁ, Все плейлисты, Интересные Каналы - пизиционирование*/
 /* (в разделах на Канале: ВИДЕО, ПЛЕЙЛИСТЫ, КАНАЛЫ) */
@@ -2522,6 +2545,7 @@ color: rgba(118, 118, 118, .5);} /*rgb(178, 178, 178)*/
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  СТРАНИЦА ВИДЕО  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
 /* Блок комментариев на странице с Видео - ПЕРЕДЕЛАТЬ - НЕ ТО, портит Тренды*/
 ytd-comments {
                 -o-overflow-x: hidden; /* test : уже не нужен и вредит доп блокам показывая контуры*/
@@ -2838,16 +2862,19 @@ ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_TOPIC] y
 /* ©■©■©■© "Данные Лицензирования" под видео (Компания, Исполнитель, Альбом, Лицензиар) ©■©■©■© */
 
     /* Общий размер Шрифта и % видимости */
-ytd-metadata-row-container-renderer.sticky.ytd-video-secondary-info-renderer * 
-{font-size: 1.1rem; opacity: 0.97;}
+    /* Отключаю, переделываю Параметры Индивидуально: 
+    конфликт с -> : "Миниатюра контента (обложка - Игры, Фильма и тд.) - Размер и позиционирование" 
+    и данными : из предыдущего раздела "ИНФОРМАЦИЯ о КОНТЕНТЕ использованном в видео" */
+-o-ytd-metadata-row-container-renderer.sticky.ytd-video-secondary-info-renderer *
+{-o-font-size: 1.1rem; -o-opacity: 0.97;}
 
     /* (Компания, Исполнитель, Альбом, Лицензиар) - (Цвет шрифта) */
-#title.ytd-metadata-row-renderer {color: var(--yt-spec-text-secondary);}
+#title.ytd-metadata-row-renderer {color: var(--yt-spec-text-secondary); font-size: 1.1rem; opacity: 0.97;}
     /* Текст описания - (Цвет шрифта) */
-.content.ytd-metadata-row-renderer {color: var(--yt-spec-grey-4);}
+.content.ytd-metadata-row-renderer {color: var(--yt-spec-grey-4); font-size: 1.1rem; opacity: 0.97;}
     /* Музыка из этого Видео: , Подробнее...: , Оформите опдписку: - (Цвет шрифта)*/
 ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer * 
-{color: var(--yt-spec-text-secondary) !important; filter: contrast(135%)}
+{color: var(--yt-spec-text-secondary) !important; filter: contrast(135%); font-size: 1.1rem !important; opacity: 0.97;}
 
     /* Интервалы между строками информационного поля */
 ytd-metadata-row-renderer.ytd-metadata-row-container-renderer 
@@ -2981,8 +3008,13 @@ ytd-compact-video-renderer.ytd-watch-next-secondary-results-renderer{
 /* Уменьшить интервалы между Видео на вкладке с Видео в - зоне:  RU (так надо) */
 ytd-compact-video-renderer.ytd-watch-next-secondary-results-renderer:not([expansion=collapsed]).ytd-watch-next-secondary-results-renderer {margin-bottom: 0px;}
 
-/* Фильт Чипов (тегов) на вкладке с Видео - отступ Слева, Справа и Снизу */
+/* Фильтр Чипов (тегов) на вкладке с Видео - отступ Слева, Справа и Сверху */
 #chips.yt-chip-cloud-renderer {margin-left: 10px; margin-top: 7px; padding-right: 10px !important;}
+
+/* Цвет Стрелок Фильтра Чипов (тегов) на вкладке с Видео */
+#left-arrow.yt-chip-cloud-renderer, #right-arrow.yt-chip-cloud-renderer {
+    background: var(--yt-spec-brand-background-primary);
+    color: var(--yt-spec-text-secondary); opacity: 0.95;}
 
 /* ============================================================== */
 

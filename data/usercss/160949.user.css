@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         OPENAPP
 @description    `Dynamics 365 version 8.2.5.4 - Style for solution CRM 365 Exclusive 1.3.5.2+URL: https://server.domain.lan/organisation/main.aspxmain.aspx is the url for mobile phones to override the old style.This works with orginal Dynamics 365 and CRM 2016 8.2.2.112+<a href="https://github.com/Compycloud/Dynamics-365-CRM-CUSTOM-CSS-Exclusive">Now on github.com</a>Supports <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne/">Stylus for Google Chrome </a><a href="https://addons.mozilla.org/en-US/firefox/addon/styl-us/">Stylus for Firefox supports mobile phones</a><a href="https://addons.opera.com/en/extensions/details/stylus/">Stylus for Opera</a>Mobile Firefox:Disable Autofocus in about:config will not work.*Open "about:config" page: search for "browser.autofocus" and set it to "false".<a href="https://www.openapp.se">https://www.openapp.se</a>`
-@version        2019914.18.47
+@version        20201220.9.37
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 /* i really want this to be global */
-/* 2019.09.15 1.0.7.6 */
+/* 2020.12.20 1.1.0.0 */
 .stdTable .ms-crm-Setting-ContextHeader-Title, body.hideUserProfile, .stage, #dashboardListDiv, div.stdTable, div#crmRibbonManager, .ms-crm-control-SideStrip, DIV.ms-crm-InlineTabContainer-Read, DIV.ms-crm-InlineTabContainer-Read-SLAKpiQuickView, TR.ms-crm-Form-HeaderContainer, div.ms-crm-Form-Area.ms-crm-Form-Area-position, DIV.ms-crm-Form-FooterContainer, DIV.ms-crm-Form-AreaContainer, DIV.ms-crm-Form-AreaContainerQuick, div#rofContainer, div.ms-crm-Form-HeaderContainer, .refresh-form div.ms-crm-Form-HeaderContainer, .refresh-form-footer table, .ms-crm-List-Title, table.ms-crm-Grid-Control-Bar, div#rofContainer div.ms-crm-Form-Container, .ms-crm-Dashboard-Area DIV.ms-crm-InlineTab {
     background-color: #F8F8F8;
 }
@@ -175,6 +175,10 @@ div.ms-crm-TopBarContainer.newNavBarMode {
     margin-top: 0px;
     margin-bottom: 0px;
     cursor: pointer;
+}
+#crmRibbonManager ul.ms-crm-CommandBar-Menu :not(ul.ms-crm-AssociatedGridCommandBar-Menu) {
+    margin-top: 0px;
+    margin-left: 5px;
 }
 #crmRibbonManager {
     /* height: 30px !important; */

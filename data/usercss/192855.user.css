@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Devista
 @description    `Nevra daily maana popup`
-@version        2020126.23.30
+@version        20201220.12.11
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -39,12 +39,14 @@ body.season-s2 .flavr-container.first-connexion .flavr-fixer .flavr-outer {
 
 body.season-s1 .flavr-container.first-connexion .flavr-fixer .flavr-outer:after {
     background: url("https://www.eldarya.pl/assets/img/npc/library/mood/1899d2acedadc185c381859106956247.png");
+    background-size: cover;
+    margin-left: 105px;
 }
 
 body.season-s2 .flavr-container.first-connexion .flavr-fixer .flavr-outer:after {
     background: url("https://www.eldarya.pl/assets/img/npc/library/mood/1899d2acedadc185c381859106956247.png");
     background-size: cover;
-    margin-left: 120px;
+    margin-left: 105px;
 }
 
 
@@ -58,7 +60,7 @@ div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.
 div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-button:after {
     content: 'Love you too!';
     visibility: visible;
-    background: linear-gradient(211deg, #F600FF 0%, #A73FF0 100%);
+    background: linear-gradient(211deg, #1dc6ac 0%, #9745d0 100%);
     box-shadow: inset 0 0 21px rgba(187,9,198,0.55), 0 5px 4px 1px rgba(79,16,128,0.36);
     font-size: 1.2rem;
     padding: 0.1rem 0.6rem;
@@ -73,7 +75,7 @@ div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.
     letter-spacing: 3px;
     position: relative;
     cursor: pointer;
-    margin-left: -80px;
+    margin-left: -85px;
 }
 
 .flavr-container .flavr-overlay {
