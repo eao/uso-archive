@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         teslagen2
 @description    `Cette feuille de style permet d'avoir la liste sur un papier quand on va au marché.Elle effectue les transformations suivantes :- retire les éléments superflus- affiche chaque mois sur une page séparée- retire les mois que vous avez masqués par un clic- affiche le tout sur fond blanc pour économiser l'encre`
-@version        2020617.13.47
+@version        20201219.13.29
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -36,6 +36,9 @@
     {
         display: none;
     }
+
+    /* L'énorme bandeau d'appel au soutien */
+    .show { display: none !important; }
 
     li.month.open { display: block; }
     

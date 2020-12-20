@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Comes in various parts! An extra is <i>barely</i> needed for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. Easily changeable background by <a href="https://userstyles.org/styles/169748/">installing another style</a>.<b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
-@version        20201218.8.50
+@version        20201219.22.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1997,6 +1997,9 @@ iframe.movie.youtube, .news-container iframe.movie.youtube {height: 395px;width:
 .news-container .spoiler iframe.movie.youtube {height: 373px;width: 663px;}
 .forum_border_around iframe.movie.youtube {height: 500px;width: 889px;}
 .forum_border_around .spoiler iframe.movie.youtube {height: 475px;width: 846px;}
+
+/* Suggestions icon (Header question mark) */
+.icon-about-recommendations {color: rgba(var(--colorBlue)) !important;line-height: 10px !important;z-index: 100;}
 }
 
 @-moz-document url("https://myanimelist.net/info.php?go=bbcode"), url-prefix("https://myanimelist.net/panel.php?keepThis=true"), url-prefix("https://myanimelist.net/panel.php?go=add"), url-prefix("https://myanimelist.net/editlist.php"), url-prefix("https://myanimelist.net/ajaxtb.php"), url-prefix("https://myanimelist.net/info.php?"), url-prefix("https://myanimelist.net/rss.php"), url-prefix("https://myanimelist.net/addtolist.php?hidenav=1"), url-prefix("https://myanimelist.net/panel.php?go=editmanga"), url-prefix("https://myanimelist.net/ownlist/style/theme"), url-prefix("https://myanimelist.net/ownlist/anime"), url-prefix("https://myanimelist.net/ownlist/manga") {
@@ -2025,8 +2028,9 @@ td[valign="top"][width="225"] .normal_header
     position: relative !important;
     bottom: 1px; left: 2px; }
 
-/* Small header text (Details page) */
-#horiznav_nav + .breadcrumb + table .floatRightHeader {margin-top: 5px !important;}
+/* Small header text (Anime details page, all other anime tabs) */
+#horiznav_nav + .breadcrumb + table .pb16 + div > .floatRightHeader {margin-top: 4px !important;}
+.border_solid > .floatRightHeader {margin-top: 1px !important;}
 
 /* Invisible 'Read Rec' bar */
 td[valign="top"] + td[valign="top"] > div + .borderClass.bgColor1 + .spaceit {margin-top: -6px !important;}
@@ -2166,7 +2170,10 @@ div[id^="revArea"] + div[style="float: left;"] td + td > a {top: -42px !importan
 div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit /* Profile */ {
     background: #f6f6f6 !important;
     top: -31px !important; left: 148px !important;
-    min-width: 241px !important; max-width: 241px !important; }
+    min-width: 221px !important; max-width: 221px !important; }
+.pb24 .borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit {
+    min-width: 241px !important;
+    max-width: 241px !important; } /* Details page */
 div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit {
     top: -37px !important;left: 188px !important;
     min-width: 225px !important; max-width: 225px !important; } /* Profile */
@@ -2202,7 +2209,8 @@ div[id^="revArea"] + div[style="float: left;"] {height: 0 !important;} /* Profil
 div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit + div /* Profile */ {
     top: -92px; left: 389px; letter-spacing: 1px;
     min-width: 158px !important; max-width: 158px !important; }
-.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {top: -92px; left: 369px;}
+.pb24 .borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {top: -92px; left: 389px;} /* Details page */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {top: -92px; left: 369px;} /* Reviews tab */
 div[id^="revArea"] + div[style="float: left;"] .lightLink.spaceit + div {top: -98px;left: 413px;} /* Profile */
 
 /* User image */
@@ -2377,13 +2385,13 @@ td[width="225"] .picSurround + div[style*="center;"]:hover {opacity: 1 !importan
 /* Recommendations (Titles, 'Users') */
 .anime-slide-block .title {max-width: 71px !important;width: 100% !important;}
 .anime-slide-block .title, .anime-slide-block .users {
-    background: white !important; color: rgba(var(--colorTextLink)) !important; text-align: center;
+    background: white !important; color: rgba(var(--colorTextLink)) !important;
     font-family: Segoe UI !important; font-size: 13px !important;
     font-style: normal !important; font-weight: bold;
-    max-height: 28px; padding: 3px 5px 4px !important;
-    line-height: 14px !important; text-shadow: none !important;
+    max-height: 28px; line-height: 14px !important;
+    text-align: center; text-shadow: none !important;
     white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-    border-radius: 0; opacity: 0.9; }
+    padding: 3px 5px 4px !important; border-radius: 0; opacity: 0.9; }
 .anime-slide-block:hover .title {
     max-height: 96px;
     transition-duration: 0.5s !important;
@@ -2401,7 +2409,7 @@ td[width="225"] .picSurround + div[style*="center;"]:hover {opacity: 1 !importan
     height: 45px !important;
     width: 22px !important;
     margin-top: -45px !important; }
-.anime-slide-block .btn-anime-slide-side.left {background-position: -22px 0px !important;}
+.anime-slide-block .btn-anime-slide-side.left {background-position: -23px 0 !important;}
 .anime-slide-block .btn-anime-slide-side .btn-inner {height: 45px !important;width: 22px !important;}
 
 /* Hide 'Music' section */
@@ -2660,9 +2668,6 @@ select[name="sy"] + small, select[name="ey"] + small {display: none !important;}
 .search_all .content-right .information div a {font-style: normal !important;}
 .search_all .content-right #anime + article .list,
 .search_all .content-right #featured + article .list {padding-top: 4px !important;padding-bottom: 8px !important;}
-
-/* Rec Icon Colour */
-.icon-about-recommendations {color: rgba(var(--colorBlue)) !important;line-height: 10px !important;}
 
 /* 'MAL Search Filter' script fix */
 script + .normal_header.clearfix.pt16 br {display: none !important;} /* /anime.php? */
@@ -3320,7 +3325,8 @@ h2[class*="top-rank-header"] label[for="firstName"] {display: none !important;}
     margin: -11px 0 0 0 !important;
     padding: 0 13px !important;
     width: 95.9% !important; }
-.right-column .widget {margin: 20px 0 0 !important;}
+.right-column article.widget {margin: 20px 0 0 !important;}
+.right-column article.widget:last-of-type {padding-bottom: 10px !important;}
 .left-column.pt12 {margin: 5px 0 0 1px !important;width: 62.9% !important;padding-top: 5px !important;border: none !important;}
 .left-column > article > .panel_introduction.left {margin: 0 !important;}
 .left-column .widget {margin: 0 4px 21px 3px !important;}
@@ -3402,31 +3408,76 @@ h3 > [style^="float: right;"] a, div > [style^="float: right;"] a {
 /* Anime covers */
 .btn-anime, .btn-anime .link, .auto-recommendations .item {border: none !important;border-radius: 3px;}
 
-/* Seasonal header */
-.widget.seasonal .index_h2_seo a {line-height: 12px !important;}
-
-/* Seasonal titles */
-.widget-slide-block .widget-slide .btn-anime .link .title {letter-spacing: 1px;width: 100% !important;}
-
 /* Manga Store */
 #widget-manga-store, #widget-manga-store .widget-slide-outer {width: 635px !important;}
 
-/* Suggestions */
-.widget .icon-about-recommendations {color: rgba(var(--colorBlue)) !important;margin-top: -3px;z-index: 100;}
+/* Seasonal */
+.widget.seasonal .index_h2_seo a {line-height: 12px !important;} /* Fix header */
+#widget-seasonal-video .widget-slide .btn-anime {width: 152.5px !important;}
+#widget-seasonal-video .widget-slide-outer, #widget-seasonal-video .widget-slide {height: 225px !important;}
 
-/* Lastest episodes */
+/* Seasonal (Right frame) */
+.right #widget-seasonal-video .widget-slide-outer, .right #widget-seasonal-video .widget-slide {height: 170px !important;}
+.right #widget-seasonal-video .widget-slide-outer {width: 370px !important;}
+.right #widget-seasonal-video .btn-anime {height: 168px !important;width: 117.5px !important;}
+.right #widget-seasonal-video .btn-anime .title {bottom: 59px !important;width: 103px !important;}
+.right #widget-seasonal-video .btn-anime img {height: auto;width: 117px;}
+
+/* Suggestions */
+.auto-recommendations {height: 195px !important;}
+.auto-recommendations a.item {height: 187px !important;width: 115px !important;}
+.auto-recommendations a.item:nth-child(5n+6) {margin-left: 16px !important;}
+.auto-recommendations .btn-side.right {right: 1px !important;}
+
+/* Seasonal, Suggestions, Latest episodes (White border) */
+#widget-seasonal-video .btn-anime, .auto-recommendations a.item, .btn-anime.episode .link.episode, #widget-manga-store .btn-anime .link {
+    border: 3px solid white !important; border-radius: 3px;
+    box-shadow: 0 0 0 1px #e0dee0; margin: 1px 6px 0 1px !important; }
+.widget-slide .btn-anime:hover, .auto-recommendations a.item:hover, .auto-recommendations .btn-side:hover {opacity: 1 !important; }
+
+/* Seasonal, Suggestions (Titles) */
+.auto-recommendations a.item .title, #widget-seasonal-video .btn-anime .title {
+    background: white !important; color: rgba(var(--colorTextLink)) !important;
+    font-family: Segoe UI !important; font-size: 13px !important;
+    font-style: normal !important; font-weight: bold;
+    max-height: 107px; line-height: 14px !important;
+    text-align: center; text-shadow: none !important;
+    white-space: normal; overflow: hidden; text-overflow: ellipsis;
+    padding: 6px 5px 7px !important; border-radius: 0; opacity: 0.9; }
+.auto-recommendations a.item .title {bottom: -1px !important;left: -1px !important;width: 107px !important;}
+#widget-seasonal-video .btn-anime .title {bottom: 6px !important;width: 137px !important;}
+
+/* Suggestions (Smaller arrow buttons) */
+.auto-recommendations .btn-side {
+    background-size: 60px auto !important;
+    height: 60px !important;
+    width: 27px !important;
+    margin-top: -60px !important; }
+.auto-recommendations .btn-side.left {background-position: -33px 0 !important;}
+
+/* Lastest episodes, Manga store, Promo videos */
 .widget.latest_episode_video.left #widget-episode-video .widget-slide-outer,
 .widget.latest_episode_video.left #widget-episode-video {width: 635px !important;}
+.latest_episode_video .widget-slide-outer, .latest_episode_video .widget-slide,
+#widget-manga-store .widget-slide-outer, #widget-manga-store .widget-slide {height: 191px !important;}
 .index-watch-description {display: none !important;}
+.latest_episode_video .btn-anime.episode, #widget-manga-store .btn-anime {width: 121.5px !important;}
+#widget-manga-store .btn-anime .link {height: auto !important;width: auto !important;}
 .widget-slide .btn-anime.episode .link a { 
-    font-family: "Segoe UI" !important;
+    font-family: Segoe UI !important;
     font-style: normal !important;
-    letter-spacing: 1px;
+    font-weight: bold !important;
     color: white !important;
-    font-weight: bold !important; }
+    padding: 1px 7px 3px !important; }
 .widget-slide-block .link:hover, .widget-slide-block img:hover {opacity: 1 !important;}
-.widget-slide-block .widget-slide .btn-anime .external-link > a {letter-spacing: 1px;}
-.latest_updated_h3, .promotional_videos_h3 {font-weight: normal !important;letter-spacing: 1px;}
+.latest_updated_h3, .promotional_videos_h3, #widget-manga-store .btn-anime .external-link {
+    margin-top: 2px !important; width: 106px !important;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.latest_updated_h3 a, .promotional_videos_h3 a, #widget-manga-store .btn-anime .external-link a {
+    font-size: 13px !important;
+    font-style: normal !important;
+    font-weight: bold !important; }
+.promotional_videos_h3 {width: 210px !important;}
 
 /* Undo small text */
 .recommendations_h3, .reviews_h3 > a, .discussions_h3 > a {font-size: 14px !important;}
@@ -5200,7 +5251,7 @@ div + .di-tc.pt4.pb4.pl8.pr8.ar.fn-grey2 {
 .video-embed img {display: block;margin: auto !important;border-radius: 3px;}
 .video-embed img:hover {opacity: 1 !important;}
 .video-embed .btn-embedded-denied .inner-text {
-    font-family: "Segoe UI" !important;
+    font-family: Segoe UI !important;
     font-size: 17px !important;
     font-style: normal !important;
     margin: auto 279px !important;
@@ -5400,8 +5451,8 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 .goodresult {margin: 25px 0 -20px !important;}
 }
 
-@-moz-document url-prefix("https://myanimelist.net/history/"), regexp("^https:\\/\\/myanimelist\\.net\\/anime\\/[^\\/]+\\/[^\\/]+\\/pics.*") {
-/* Fixes for code changes to History page, Anime/Manga pics page */
+@-moz-document url-prefix("https://myanimelist.net/history/"), url-prefix("https://myanimelist.net/blog.php?"), regexp("^https:\\/\\/myanimelist\\.net\\/anime\\/[^\\/]+\\/[^\\/]+\\/pics.*") {
+/* Fixes for code changes related to mobile/PC */
 
 .for-pc + #wrapper > #header {border: none !important;height: auto !important;margin: inherit !important;padding: inherit !important;}
 .for-pc + #wrapper > #header a {font-size: inherit !important;line-height: inherit !important;letter-spacing: inherit !important;}
@@ -5409,7 +5460,7 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 .for-pc .header-profile .header-profile-dropdown ul li:first-child a {padding-bottom: 15px !important;} /* 'Profile' */
 .for-pc + #wrapper > #header #nav li a {line-height: 36px !important;}
 
-.page-history #contentWrapper, .h1 a, .page-rwd .rwd-font-verdana ul a {font-family: Segoe UI !important;}
+.page-history #contentWrapper, .h1 a, .page-rwd .rwd-font-verdana ul a, .page-rwd.page-blog-detail #content {font-family: Segoe UI !important;}
 
 #contentWrapper + #menu, #enh_fancybox_outer + #menu {display: none !important;} /* Appears at bottom of page */
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Simon Nemeth
 @description    `Something to make the new Facebook more manageable. I'm not great at this so it may be messy but it works.`
-@version        20201219.1.15
+@version        20201219.23.25
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,14 +12,26 @@ html {
     margin-left: 220px;
     margin-right: 220px;
 }
-.sp_ApzUP5qhJWw.sx_8db297 {
+.sp_XAZEy9Cf__c.sx_5223e6 {
     filter: invert(1);
 }
-.sp_ssmKBJBkmNz.sx_702384 {
+.sp_dmsEYXsz1mq.sx_f6c2c8 {
     filter: invert(1);
 }
-.sp_ApzUP5qhJWw.sx_452969 {
+.sp_XAZEy9Cf__c.sx_455148 {
     filter: invert(1);
+}
+.q66pz984 {
+    color: #000 !important;
+}
+.q66pz984 {
+    filter: drop-shadow(0px 0px 2px white);
+}
+.oo1teu6h {
+    background-color: #4f6faf !important;
+}
+.eltiug27 {
+    fill: hsl(0deg 0% 100%) !important;
 }
 .scaledImageFitWidth  {
     border-radius: 10px;
@@ -36,10 +48,6 @@ html {
 }
 .b2s5l15y {
     padding-top: 6px;
-}
-.sp_ApzUP5qhJWw.sx_8db297::after{
-    background: #EC008C !important;
-    mix-blend-mode: multiply !important;
 }
 .lrazzd5p {
     font-weight: 400;

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Стас Бармин
 @description    `SV - Simple View of VK 0.7.1Redesign of header, messages, chatbox, sidebar, background and much more!thx Michail Nikolayev`
-@version        20201219.9.17
+@version        20201219.16.5
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -319,7 +319,7 @@ body[onresize] {
     background-position: center;
     width: 26px;
     height: 43px;
-    opacity: 1;
+    opacity: .95;
     margin: -1px;
 }
 body.new_header_design .top_nav_link.top_profile_link {

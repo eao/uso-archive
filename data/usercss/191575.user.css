@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `ニコニコ動画の新マイページをダークテーマ風にしてみました。よりダークな感じにしたい方はカスタマイズで変更できます（Darkの比較級はDarkerとかそういう話はしないで…）、他にカスタマイズで広告消したりできるようになっているのでご活用ください。一部ダークテーマ化ができていない箇所があります（作者が利用していない機能等）。何かあれば<a href="https://marshmallow-qa.com/watanuki_azuma" target="_blank">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。--たぶん併用できるよ他作者様CSS--gonbuto様が公開している「<a href="https://userstyles.org/styles/191488/re-2020-10">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」↑併用する場合はカスタマイズから併用オプションを利用することをおすすめします（おかしな場所があったら報告してください…）。自分用改修を含むオプションはそのまんま自分用に改修したものです、一部上記Styleの修正を勝手に行っているので利用はおすすめしません…スクリーンショットを撮影した環境では上記CSSを併せて適用しています。--既知の不具合--・マイリスト検索結果ページがおかしくなる→URLがね……そもそもあれ使ってる人いるんですかね？いるなら対応します……--同作者の公開しているほかのダークテーマ--<a href="http://userstyles.org/styles/189730" target="_blank">動画ページダークテーマ</a><a href="http://userstyles.org/styles/190570" target="_blank">ニコ生ダークテーマ</a>`
-@version        20201218.5.31
+@version        20201219.14.44
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown -------- "詰めるだけと併用" {
@@ -33,7 +33,9 @@
 .SubMenuButton{width:90%;}
 .SideContainer {  margin-right: auto; width: 184px;}
 .ExpandBoxButton{height: auto;}
-.UserPageHeader{margin-top: -20px;margin-bottom: -10px;} EOT;
+.UserPageHeader{margin-top: -20px;margin-bottom: -10px;}
+.SubMenuLink{width: 95%;}
+.SideContainer{width: 185px;} EOT;
 
 }
 @advanced color ------------- "赤文字部分の色が変えられます" #53D253
@@ -52,6 +54,28 @@ MoreDarkOn "する" <<<EOT /* More Dark On*\/
 body,.NicorepoPage-content{background-color: #1e1e1e !important;}
 .NicorepoItem-item,.UserItem-content,.MylistMediaObject-linkArea{background-color:#282828 !important; border: 1px solid #333 !important;}
  EOT;
+
+}
+@advanced dropdown EnabelOrangeTheme "オレンジテーマ化（緑で設定されている部分がオレンジ化します）" {
+	DisableOrange "しない*" <<<EOT /* Disable Orange theme *\/ EOT;
+EnableOrange "する" <<<EOT /* Enable Orange like theme *\/
+
+/* 文字 *\/
+.UserDetailsHeader-levelLabelValue, .UserDetailsStatusItem-link, .CopyForm-copy, .SubMenuLink-link:hover .SubMenuLink-label, .SubMenuLink-link_active .SubMenuLink-label, .UserItem:hover .UserItem-nickname, .VideoMediaObject-linkArea:hover .VideoMediaObject-bodyTitle, .ModalContent-footerCancelButton, .MylistMediaObject:hover .MylistMediaObject-bodyTitle, .BadgeContainer-infoLink:hover, .ExpandBoxButton-overlay:hover + .ExpandBoxButton, .ExpandBoxButton:hover, .UserDescription .ExpandBox_is-expanded a{color: #dd9b00;}
+
+a:hover, .CommunityItem:hover .CommunityItem-name, .FollowingTagContainer-tagNameLink:hover, .ChannelItem:hover .ChannelItem-name{color: #f49112;}
+
+.MainMenuItem-active{color: #d9b04f;}
+
+.NicorepoItem-activityDescription[style="color: rgb(208, 2, 27);"]{color: #FBBC00 !important;}
+
+.MainMenuContainer-activeBorder{background-color: #d09200;}
+.RadioItem > input:checked + label::after{background: #f0b80e;}
+.MainMenuContainer-garageLink{background: linear-gradient(90deg,#9f6900,#b9a500);}
+.SubMenuLink-link_internal:hover{background-color: #3e342b;}
+.FollowButton:hover{background-color: #886700;}
+.FollowButton_following{background-color: #b08500;}
+.FollowButton{color: #ffe8bb;border: 1px solid #c88404;} EOT;
 
 }
 
@@ -90,7 +114,7 @@ body,.NicorepoPage-content{background-color: #1e1e1e !important;}
 
 .CrossSearch_Re-form{background: #515151;box-shadow: inset 0 0 0 1px #646464;}
 
-.CrossSearch_Re-inputt,.CrossSearch_Re-input::placeholde{color: #fff;}
+.CrossSearch_Re-inputt,.CrossSearch_Re-input::placeholder{color: #fff;}
 .CrossSearch_Re-button{background:url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd' stroke-linejoin='round' stroke-miterlimit='1.4'%3E%3Cpath d='M60.3 74.5a40 40 0 1114.1-14.1l23.3 23.1a8 8 0 010 11.3l-2.9 2.9a8 8 0 01-11.3 0L60.3 74.5zM40 14a26 26 0 110 52 26 26 0 010-52z' fill='%23eee'/%3E%3C/svg%3E") no-repeat;}  
   
 /*サブメニュー共通*/
@@ -293,6 +317,8 @@ a:hover,.CommunityItem:hover .CommunityItem-name,.FollowingTagContainer-tagNameL
 /*[[--]]*/
 
 /*[[MoreDarkTheme]]*/
+  
+/*[[EnabelOrangeTheme]]*/
 
 }
 @-moz-document url-prefix("https://www.nicovideo.jp/series/") {

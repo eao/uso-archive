@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Meant to be combined with (and installed after) <a href="https://userstyles.org/styles/86145/">crayon for mal</a>.`
-@version        20201218.8.14
+@version        20201219.22.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -252,10 +252,12 @@ td[width="225"] div[style*="center"] img:first-of-type:active, a.js-picture-gall
 h2.mt8 + #addtolist .inputButton + small a:hover {border-bottom: 2px solid white !important;color: white !important;}
 
 /* Reviews ('??? people found this review helpful') */
-.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit {min-width: 362px !important;max-width: 362px !important;} /* Mod */
+.borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit {min-width: 342px !important;max-width: 342px !important;} /* Mod */
+.pb24 .borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit {min-width: 362px !important;max-width: 362px !important;} /* Mod */
 
 /* Reviews (Preliminary tag and text) */
 .borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {left: 490px !important;} /* Mod */
+.pb24 .borderDark > .spaceit > .mb8 + div[style="float: left;"] tr .lightLink.spaceit + div {left: 510px !important;} /* Mod */
 
 /* Recommendations (New) */
 .anime-slide-block .btn-anime {width: 98px !important;}
@@ -299,12 +301,12 @@ div.picSurround img[src*="mark_23.gif"] {background: linear-gradient(to bottom r
 tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {margin: 5px 0 10px 0 !important;padding: 9px 10px 11px 10px !important;}
 
 /* Characters (& Staff) */
-#horiznav_nav ul li a[href$="/characters"] {font-size: 0 !important;line-height: 19.5px !important;}
+#horiznav_nav ul li a[href$="/characters"] {font-size: 0 !important;line-height: 22px !important;}
 #horiznav_nav ul li a[href$="/characters"]:before {content: "Characters,";font-size: 13px !important;}
 #horiznav_nav ul li a[href$="/characters"].horiznav_active:before {font-size: 16px !important;}
 
 /* More (Info) */
-#horiznav_nav ul li a[href$="/moreinfo"] {font-size: 0 !important;line-height: 19.5px !important;}
+#horiznav_nav ul li a[href$="/moreinfo"] {font-size: 0 !important;line-height: 22px !important;}
 #horiznav_nav ul li a[href$="/moreinfo"]:before {content: "More";font-size: 13px !important;}
 #horiznav_nav ul li a[href$="/moreinfo"].horiznav_active:before {font-size: 16px !important;}
 }

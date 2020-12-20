@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         EotT
 @description    `Opvolger van https://userstyles.org/styles/162546/tweakers-dark-by-eott.Deze versie is helemaal herschreven, en zou beter moeten zijn dan de eerste versie.Ik heb deze style gemaakt, aangezien de huidige reeds bestaande stylen niet helemaal aan mijn wensen voldeden. Indien er problemen zouden zijn (bv elementen die niet goed gestyled zijn), laat het me hier weten (of per pm op Tweakers), en ik zal het zo snel mogelijk proberen op te lossen. (Pm's via Tweakers zullen sneller beantwoord worden, aangezien ik dagelijks op Tweakers kom.)In a nutshell:* Volledige donkere site, inclusief forum en mobiel (responsive).* Tweakblogs niet inbegrepen* Ondersteuning. Bij bugs of nieuwigheden op tweakers -> Meestal binnen de dag aangepast.`
-@version        2020127.8.35
+@version        20201219.16.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -149,7 +149,8 @@ body.fullFocusView #fullFocusButtons .button,
 #categoryBrowser li a,
 body.fullFocusView #fullFocusBody,
 body.fullFocusView #fullFocusHeader,
-.premium-notice
+.premium-notice,
+.usabilla-survey-fallback:only-child
 {
     background-color: rgb(27,27,27);
 }
@@ -426,7 +427,8 @@ body.fullFocusView .pageIndexWrapper .pageIndex,
 .vraagAanbodContent .vraagAanbodForm .relationeditor .relationWidget .label label,
 #ub-premium-fallback:only-child h2,
 .tabbedContentWrapper.display-tags > ul.tabbedContent li.active,
-.premium-notice .notice-header h2{
+.premium-notice .notice-header h2,
+.usabilla-survey-fallback:only-child h2{
     color: rgb(200,200,200);
 }
 
@@ -1948,5 +1950,19 @@ ul.topKarma li.emperor > a{
 .benchdb-article-chart .benchTable .resultScore.higher,
 .messageheader .date .oldage{
     filter: brightness(1.2);
+}
+
+.streamer,
+.messageheader .date .oldage{
+    color: #dc506e; /* light red*/
+}
+
+.ul.topKarma.show li.emperor{
+    border-color: #dc506e; /* light red*/
+}
+
+.article tr td[colspan]{
+    border-left: 1px solid rgba(200, 200, 200,0.1);
+    border-right: 1px solid rgba(200, 200, 200,0.1);
 }
 }
