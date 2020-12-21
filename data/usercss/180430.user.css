@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Atx
 @description    `Do you like my style? Please support my work and fund me a coffee (via PayPal to the left of "Install" button). Also share style with your friends. Thank you for being awesome!Darkest Fusion supports almost every Google site. Due to an style size limit Darkest Fusion has been divided into 2 parts. That part contains dark theme for less used Google sites:<strong>Developers, Firebase, Docs, Forms, Flights, Play, Music, Scholar and Script</strong>.<strong><mark>First style is available >>> <a href ="https://userstyles.org/styles/167419/google-darkest-fusion-configurable">there</a>  <<< </mark></strong>Keep and Support currently have stock dark themes.Originally based on great work by DeathTBO who abandoned his project so I decided to continue his work by rebuilting everything from scratch. I hope you like my vision for Dark Google :)`
-@version        20201218.17.45
+@version        20201220.16.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown docs_sheets "Even darker Docs and darker sheets" {
@@ -97,8 +97,8 @@ ul.nav-main a, ul.nav-main li, .header, #section-do-more, #section-save, #sectio
 * Name:			Google Darkest Fusion
 * Homepage:		https://userstyles.org/styles/167419/
 * Author:		Atx
-* Version:		v1.11
-* Updated: 		18.12.2020
+* Version:		v1.2
+* Updated: 		20.12.2020
 */
 
 activating_style_indicator
@@ -1151,6 +1151,44 @@ a:link:not(.maia-button)
 
 .docs-icon-run::before, .docs-icon-debug::before, .docs-icon-debug-continue::before, .docs-icon-debug-pause::before, .docs-icon-debug-stop::before, .docs-icon-debug-stepin::before, .docs-icon-debug-stepover::before, .docs-icon-debug-stepout::before, .docs-icon-debug-data::before, .docs-icon-debug-inheritance::before, .docs-icon-triggers::before, .docs-icon-forms-logo::before, .docs-icon-forms-bw-logo::before, .docs-icon-gmail-logo::before, .docs-icon-gmail-bw-logo::before, .docs-icon-hangouts-chat-logo::before, .docs-icon-calendar-logo::before, .docs-icon-sites-logo::before, .docs-icon-spreadsheets-logo::before, .docs-icon-spreadsheets-bw-logo::before, .docs-icon-documents-logo::before, .docs-icon-documents-bw-logo::before, .docs-icon-scriptfile::before, .docs-icon-script-logo-large::before, .docs-icon-extension-bw::before, .docs-icon-web-app-bw::before, .docs-icon-slides-logo::before, .docs-icon-hints-unavailable::before, .docs-icon-hints-unseen::before, .docs-icon-hints-seen::before, .docs-icon-script-bar-chart {
 	content: url('https://i.imgur.com/wgQhpDl.png');
+}
+}
+
+@-moz-document regexp("https:\\/\\/(www\\.)?shopping\\.google\\.(com|([a-z]{2}))(.[a-z]{2})?\\/.*"), regexp("https:\\/\\/(www\\.)?google\\.(com|([a-z]{2}))(.[a-z]{2})?\\/shopping\\/.*"), regexp("https:\\/\\/(www\\.)?google\\.(com|([a-z]{2}))(.[a-z]{2})?\\/search\\?psb.*") {
+.ExmP5d, .sh-h__header {
+    background-color: #161616 !important;
+}
+
+.z86TMb, .zEqjYe, .sh-ma-menu__menu.sh-ma-menu__menu-open .AsTrLc, .tOCzVb, .tH3hpc, .dOwBOc th, .sh-osd__offer-row, .zjGH6d, .jfk-bubble, .KZmu8e, .iDGvh, ._-.sh-fp__pagination-button {
+    background-color: #2C2C2C !important;
+}
+
+.zEqjYe:hover, .AsTrLc, .sh-osd__content, ._-.sh-fp__pagination-button:hover {
+    background-color: #3C3C3C !important;
+}
+
+.xQyaHf:hover {
+    background-color: #4C4C4C !important;
+}
+
+.z86TMb, .fYz4Vc, .rUXef, .mg0Txf, .sLPbxf, #otJ0lf, .sBPZEd::before, .dOwBOc th, .dOwBOc, .SH30Lb, .jfk-bubble, .sh-vrd__option, .sh-sr__shop-result-group:last-of-type, .lBRvsb, .z6XoBf, .QfjlV, .sh-h__header, ._-fo, .sh-fp__container {
+    border-color: #4C4C4C !important;
+}
+
+.jmaXG, .gjI9Ve, .PTXMyf, .AsTrLc, #RozmiarVeulp, .P3O8Ne, .A1lKs, .hKCo7d, .T14wmb,.VEbNnc, .yUz2C, .sh-h-input__search-form, .rprnAe, ._-fU {
+    color: #FAFAFA !important;
+}
+
+.tSTi7b, .r7gAOb, .aMOixe, .azTb0d, .KgL16d, .sh-ds__desc, .uHBBRe, .CfDnHe, .S7WPVd > span, ._-fV, ._-fi {
+    color: #CCC !important;
+}
+
+.r7gAOb::placeholder, .L9k4yd {
+    color: #777 !important;
+}
+
+.lxC5uf {
+    box-shadow: 0 0 0 8px #4C4C4C !important;
 }
 }
 

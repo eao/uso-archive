@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Dark Theme for archive.orgLink Colours are customizable.Includes smooth hovers, transitions, Media Dim, eBook Dark Mode (colour inversion), custom scrollbars and cursors;https://userstyles.org/styles/176247/https://userstyles.org/styles/177189/https://userstyles.org/styles/182441/https://userstyles.org/styles/175086/To easily switch from eBook inversion to normal, see the complimentary theme;https://userstyles.org/styles/179071/archive-org-disable-ebook-inversion-kmvAll options are in separate codes. Delete any of them to disable.PS: Due to properties of Custom CSS, one needs uninstall in order to Update.Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact:https://www.reddit.com/r/KMV/`
-@version        20201211.15.19
+@version        20201221.0.33
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color ArchiveLinks "Links Colour" #9B8440
@@ -1122,9 +1122,10 @@ a .view-navbar .selected-option,
     transition: none !important;
 }
 
+/*Playlist Height*/
 .jwlist
 {
-    height: 200px !important;
+    height: 250px !important;
 }
 
 .jwlistV2 .jwrowV2.playing
@@ -1152,6 +1153,12 @@ a .view-navbar .selected-option,
     transition: all 0.4s ease-in-out;
 }
 
+
+/*Download Directory (archive.org/download/*) - Width Increase*/
+html body.navia.dirlisting div#wrap main#maincontent div.container.container-ia
+{
+    max-width: 100%;
+}
 
 /* Calendar Page - Feedback-button, Top Right & RSS-Button */
 .btn-primary,

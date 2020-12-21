@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Devista
 @description    `A pack of styles for Eldarya New Era:- Lance daily maana reward pop-up,- Lance as a companion (on profile and on pet page),- Pet page with additional Lance image,- change of background, colors & font sizes.`
-@version        2020126.23.35
+@version        20201220.13.6
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,7 +12,7 @@
 
 /*daily maana popup - Ash*/
 
-  div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-message h1
+ div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-message h1
   {
     display: none;
   }
@@ -61,7 +61,7 @@
   div.flavr-container.modal.center.first-connexion.npc-undefined.new-layout-popup.shown .flavr-button
   {
      display: block;
-      	padding: 0px;
+	padding: 0px;
     	border: 0px;
   }
 
@@ -71,7 +71,7 @@
     background: linear-gradient(211deg, #F600FF 0%, #A73FF0 100%);
     box-shadow: inset 0 0 21px rgba(187,9,198,0.55), 0 5px 4px 1px rgba(79,16,128,0.36);
     font-size: 1.2rem;
-    padding: 0rem 0.6rem;
+    padding: 0.2rem 0.6rem;
     display: inline-block;
     font-weight: bold;
     text-align: center;
@@ -80,10 +80,10 @@
     color: #fff;
     line-height: 1.8;
     font-family: "Alegreya Sans SC", sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     position: relative;
     cursor: pointer;
-    margin-left: -80px;
+    margin-left: -90px;
   }
 
   .flavr-container .flavr-overlay
@@ -102,6 +102,7 @@
   {
     animation: popup-skew alternate infinite 8000ms linear, show-popup forwards 1000ms ease-in-out 950ms;
   }
+
 }
 
 @-moz-document domain("eldarya.fr"), domain("eldarya.com"), domain("eldarya.com.br"), domain("eldarya.pl"), domain("eldarya.de"), domain("eldarya.dk"), domain("eldarya.es"), domain("eldarya.hu"), domain("eldarya.it"), domain("eldarya.nl"), domain("eldarya.ro"), domain("eldarya.ru"), domain("eldarya.se"), domain("eldarya.uk")
