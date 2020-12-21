@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `ニコニコ動画の新マイページをダークテーマ風にしてみました。よりダークな感じにしたい方はカスタマイズで変更できます（Darkの比較級はDarkerとかそういう話はしないで…）、他にカスタマイズで広告消したりできるようになっているのでご活用ください。一部ダークテーマ化ができていない箇所があります（作者が利用していない機能等）。何かあれば<a href="https://marshmallow-qa.com/watanuki_azuma" target="_blank">マシュマロ</a>に投げていただければ可能な範囲で対応したいと思います。--たぶん併用できるよ他作者様CSS--gonbuto様が公開している「<a href="https://userstyles.org/styles/191488/re-2020-10">ニコニコ(Re)のマイページ(2020年10月版)を詰めるだけ</a>」↑併用する場合はカスタマイズから併用オプションを利用することをおすすめします（おかしな場所があったら報告してください…）。自分用改修を含むオプションはそのまんま自分用に改修したものです、一部上記Styleの修正を勝手に行っているので利用はおすすめしません…スクリーンショットを撮影した環境では上記CSSを併せて適用しています。--既知の不具合--・マイリスト検索結果ページがおかしくなる→URLがね……そもそもあれ使ってる人いるんですかね？いるなら対応します……--同作者の公開しているほかのダークテーマ--<a href="http://userstyles.org/styles/189730" target="_blank">動画ページダークテーマ</a><a href="http://userstyles.org/styles/190570" target="_blank">ニコ生ダークテーマ</a>`
-@version        20201220.8.32
+@version        20201221.5.30
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown -------- "詰めるだけと併用" {
@@ -34,8 +34,7 @@
 .SideContainer {margin-right: auto !important; width: 185px !important;}
 .ExpandBoxButton{height: auto !important;}
 .UserPageHeader{margin-top: -20px !important;margin-bottom: -10px !important;}
-.SubMenuLink{width: 95% !important;}
-.UserDetailsContainer{height: 135px;} EOT;
+.SubMenuLink{width: 95% !important;} EOT;
 
 }
 @advanced color ------------- "赤文字部分の色が変えられます" #53D253
@@ -53,13 +52,12 @@ MoreDarkOn "する" <<<EOT /* More Dark On*\/
 .UserPageHeader,.UserPage-header, .UserPageHeader, .UserDetailsHeader, .OtherMypageLinks, .ThreePointMenu, .ShareModal-modal, .MainMenuContainer-menu{background-color:#171717 !important;}
 body,.NicorepoPage-content{background-color: #1e1e1e !important;}
 .NicorepoItem-item,.UserItem-content,.MylistMediaObject-linkArea{background-color:#282828 !important; border: 1px solid #333 !important;}
-.UserDetailsHeader-levelLabel, .UserDetailsHeader-account, .UserDetailsStatusItem-linkLabel, .Dropdown-button, .NiconicoPoint, .OtherMypageLinks-link, .ThreePointMenu > *, .ShareModal-modal, .UserDetailsHeader-nickname, .MainMenuItem, .SubMenuLink-label, .ModalActionButton, .NicorepoItem-senderName, .NicorepoItem-item, .NicorepoItem-contentDetailTitle, .NicorepoItem-activityCreatedAt, .NicorepoItem-senderName:visited, .FeedbackLink, .NicorepoMuteItem-detail, .NicorepoMuteSettingContainer-infoHelp, .LiveLink, .FolloweeContainer-header, .SubMenuHeader-title, .UserItem-description, .UserItem-nickname, .WatchLaterHeader-name, .WatchLaterHeader-metaValue, .WatchLaterHeader-advice, .Checkbox-label, .MylistItemAddition-addedAt, .VideoMediaObject-bodyTitle, .VideoMediaObject-bodyDescription, .VideoMetaData-videoRegisteredAt, .VideoMetaData-count > *, .MylistPageSubMenuHeader-counterValue, .SortMylistsListItem-name, .ModalContent-footerSubmitButton, .MylistMediaObject-bodyFollowerCount, .MylistMediaObject-bodyDescription, .MylistMediaObject-bodyTitle, .VideoWatchHistoryContainer-headerTotalCountValue, .VideoWatchHistoryContainer-headerAnnounce, .LikeItemAfter-thanksMessage > h1, .BlankState-title, .a-list__title, .StampCard-title, .StampContainer-stampRanking a, .ExpandBoxButton, h1, .MylistHeader-name, .MylistHeader-metaItemValue, .CommunityItem-name, .CommunityItem-description, .FollowingTagContainer-tagNameLink, .FollowingTagContainer-nicodicSummary, a, .ChannelItem-description, .ChannelItem-name, .TagrepoItem-contentTagsItem, .TagrepoContainer-headerTagName, .LikeItemAfter-ownerName, .BlankState-recommendTitle, .BlankState-body, .BlankState-linkInner, .MylistDescription .ExpandBox_is-expanded, .NicoruHistoryPassiveItem-date{color: #c3c3c3 !important;}
+.UserDetailsHeader-levelLabel, .UserDetailsHeader-account, .UserDetailsStatusItem-linkLabel, .Dropdown-button, .NiconicoPoint, .OtherMypageLinks-link, .ThreePointMenu > *, .ShareModal-modal, .UserDetailsHeader-nickname, .MainMenuItem, .SubMenuLink-label, .ModalActionButton, .NicorepoItem-senderName, .NicorepoItem-item, .NicorepoItem-contentDetailTitle, .NicorepoItem-activityCreatedAt, .NicorepoItem-senderName:visited, .FeedbackLink, .NicorepoMuteItem-detail, .NicorepoMuteSettingContainer-infoHelp, .LiveLink, .FolloweeContainer-header, .SubMenuHeader-title, .UserItem-description, .UserItem-nickname, .WatchLaterHeader-name, .WatchLaterHeader-metaValue, .WatchLaterHeader-advice, .Checkbox-label, .MylistItemAddition-addedAt, .VideoMediaObject-bodyTitle, .VideoMediaObject-bodyDescription, .VideoMetaData-videoRegisteredAt, .VideoMetaData-count > *, .MylistPageSubMenuHeader-counterValue, .SortMylistsListItem-name, .ModalContent-footerSubmitButton, .MylistMediaObject-bodyFollowerCount, .MylistMediaObject-bodyDescription, .MylistMediaObject-bodyTitle, .VideoWatchHistoryContainer-headerTotalCountValue, .VideoWatchHistoryContainer-headerAnnounce, .LikeItemAfter-thanksMessage > h1, .BlankState-title, .a-list__title, .StampCard-title, .StampContainer-stampRanking a, .ExpandBoxButton, h1, .MylistHeader-name, .MylistHeader-metaItemValue, .CommunityItem-name, .CommunityItem-description, .FollowingTagContainer-tagNameLink, .FollowingTagContainer-nicodicSummary, a, .ChannelItem-description, .ChannelItem-name, .TagrepoItem-contentTagsItem, .TagrepoContainer-headerTagName, .LikeItemAfter-ownerName, .BlankState-recommendTitle, .BlankState-body, .BlankState-linkInner, .MylistDescription .ExpandBox_is-expanded, .NicoruHistoryPassiveItem-date{color: #c3c3c3;}
 .ThreePointMenu>:hover{color: #ccc; background-color: #383838;} EOT;
 
 }
 @advanced dropdown EnabelOrangeTheme "オレンジテーマ化（緑で設定されている部分がオレンジ化します）" {
-	DisableOrange "しない*" <<<EOT /* Disable Orange theme *\/ EOT;
-EnableOrange "する" <<<EOT /* Enable Orange like theme *\/
+	EnableOrange "する*" <<<EOT /* Enable Orange like theme *\/
 
 /* 文字 *\/
 .UserDetailsHeader-levelLabelValue, .UserDetailsStatusItem-link, .CopyForm-copy, .SubMenuLink-link:hover .SubMenuLink-label, .SubMenuLink-link_active .SubMenuLink-label, .UserItem:hover .UserItem-nickname, .VideoMediaObject-linkArea:hover .VideoMediaObject-bodyTitle, .ModalContent-footerCancelButton, .MylistMediaObject:hover .MylistMediaObject-bodyTitle, .BadgeContainer-infoLink:hover, .ExpandBoxButton-overlay:hover + .ExpandBoxButton, .ExpandBoxButton:hover, .UserDescription .ExpandBox_is-expanded a{color: #dd9b00;}
@@ -77,6 +75,7 @@ a:hover, .CommunityItem:hover .CommunityItem-name, .FollowingTagContainer-tagNam
 .FollowButton:hover{background-color: #886700;}
 .FollowButton_following{background-color: #b08500;}
 .FollowButton{color: #ffe8bb;border: 1px solid #c88404;} EOT;
+DisableOrange "しない" <<<EOT /* Disable Orange theme *\/ EOT;
 
 }
 
@@ -142,7 +141,7 @@ body
 
 /* ミュート設定 */
 .ModalContent{background-color: #555;}
-.SubMenuButton{color: #e2e2e2;}
+.SubMenuButton{color: #e2e2e2 !important;}
 
 /* フォロー */
 .UserItem-content

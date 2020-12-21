@@ -2,8 +2,8 @@
 @name           Reddit Custom (RES Compatible) - KMV
 @namespace      USO Archive
 @author         KMVerum
-@description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgpoal.cosaidit.netvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201217.6.50
+@description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgconspiracies.winpoal.cosaidit.netvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
+@version        20201221.12.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -41,7 +41,8 @@ WPBASE64 "Manual BASE64 Setup (Inject in Code #1)" <<<EOT data:image/jpeg;base64
 @advanced dropdown RCPostBG00 "Post Highlight (New Reddit)" {
 	RCPostBG02 "Background - (Post Highlight (incl. RES))*" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+div.container main.main div.main-content.post-list div.post:focus-within
 {
     background:
         linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
@@ -55,7 +56,8 @@ WPBASE64 "Manual BASE64 Setup (Inject in Code #1)" <<<EOT data:image/jpeg;base64
 RCPostBG00 "No Background" <<<EOT /*Option Chosen - [No Background]*\/ EOT;
 RCPostBG01 "Border" <<<EOT /*Option Chosen - [Border]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+div.container main.main div.main-content.post-list div.post:focus-within
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     transition:2s;
@@ -635,45 +637,55 @@ RCPostH-15 "+15px" <<<EOT /* Option chosen: [+10px] *\/
 	RCPostHighlight00 "None*" <<<EOT /*Option Chosen - [None]*\/ EOT;
 RCPostHighlight01 "Increased Brightness" <<<EOT /*Option Chosen - [Increased Brightness]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
+div.container main.main div.main-content.post-list div.post
 {
     filter:brightness(1);
     transition:.4s;
 }
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
+div.container main.main div.main-content.post-list div.post:hover
 {
     filter:brightness(1.25);
     transition:.2s;
 }
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active,
+div.container main.main div.main-content.post-list div.post:focus-within,
+div.container main.main div.main-content.post-list div.post:focus-within:hover,
+div.container main.main div.main-content.post-list div.post:focus-within:active
 {
     filter:brightness(1);
 } EOT;
 RCPostHighlight02 "Border" <<<EOT /*Option Chosen - [Border]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
+div.container main.main div.main-content.post-list div.post
 {
     transition:.4s;
 }
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
+div.container main.main div.main-content.post-list div.post:hover
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     transition:.2s;
 } EOT;
 RCPostHighlight03 "Border + Increased Brightness" <<<EOT /*Option Chosen - [Border + Increased Brightness]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+div.container main.main div.main-content.post-list div.post:focus-within
 {
     transition:2s!important;
 }
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
+div.container main.main div.main-content.post-list div.post
 {
     filter:brightness(1);
     transition:.4s;
 }
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
+div.container main.main div.main-content.post-list div.post:hover
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     filter:brightness(1.25);
@@ -681,17 +693,22 @@ RCPostHighlight03 "Border + Increased Brightness" <<<EOT /*Option Chosen - [Bord
 }
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
-.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+.rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active,
+div.container main.main div.main-content.post-list div.post:focus-within,
+div.container main.main div.main-content.post-list div.post:focus-within:hover,
+div.container main.main div.main-content.post-list div.post:focus-within:active
 {
     filter:brightness(1);
 } EOT;
 RCPostHighlight04 "Background (Same as RES Highlight)" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
+div.container main.main div.main-content.post-list div.post
 {
     transition:.4s;
 }
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
+div.container main.main div.main-content.post-list div.post:hover
 {
     background:
         linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
@@ -702,18 +719,21 @@ RCPostHighlight04 "Background (Same as RES Highlight)" <<<EOT /*Option Chosen - 
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     transition:.2s;
 }
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+div.container main.main div.main-content.post-list div.post:focus-within
 {
     transition:.2s!important;
 } EOT;
 RCPostHighlight05 "Background + Increased Brightness" <<<EOT /*Option Chosen - [Background + Increased Brightness]*\/
 
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
+div.container main.main div.main-content.post-list div.post
 {
     filter:brightness(1);
     transition:.4s;
 }
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
+div.container main.main div.main-content.post-list div.post:hover
 {
     background:
         linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
@@ -725,7 +745,8 @@ RCPostHighlight05 "Background + Increased Brightness" <<<EOT /*Option Chosen - [
     filter:brightness(1.25);
     transition:.2s;
 }
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
+div.container main.main div.main-content.post-list div.post:focus-within
 {
     filter:brightness(1);
     transition:.2s!important;
@@ -1535,7 +1556,7 @@ RCUpdating08 "Pick any option to have this list added at the bottom of Code #1."
 }
 
 ==/UserStyle== */
-@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("ar.reddit.com"), domain("amp.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com") {
+@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("ar.reddit.com"), domain("amp.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com"), domain("conspiracies.win"), domain("authentication.win") {
 /*
 /* Reddit Custom (RES Compatible) - KMV
 /* https://userstyles.org/styles/182165/
@@ -2085,7 +2106,7 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 /* ==================== END OF CODE #1 ==================== */
 }
 
-@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("ar.reddit.com"), domain("amp.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com") {
+@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("ar.reddit.com"), domain("amp.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com"), domain("conspiracies.win"), domain("authentication.win") {
 /*Template Colours*/
 
   :root
@@ -2259,7 +2280,6 @@ body .content .thing .title.loggedin, body .content .thing .title,
 .kU8ebCMnbXfjCWfqn0WPb:hover,._6_44iTtZoeY6_XChKt5b0:hover
 {
     color:var(--RCPostTitle)!important;
-    --newCommunityTheme-titleText:var(--RCPostTitle)!important;
     transition:.4s;
 }
 
@@ -2293,6 +2313,7 @@ h2.whoaversename,
 .commentingAs,
 .description,
 .dropdown.srdrop .selected,
+.happening-now .title,
 .hover-bubble.multi-selector strong,
 .linkinfo .date,
 .listingsignupbar__title,
@@ -2301,7 +2322,7 @@ h2.whoaversename,
 .res-nightmode td,
 .RESDialogSmall,
 .side *,
-.happening-now .title,
+.sidebar .timeframe,
 .titlebox::before,
 .titlebox h1,
 .titlebox .md h2,
@@ -2337,7 +2358,6 @@ h2.whoaversename,
 .author-d-1gg9uz65z1iz85zgdz68zmqkz84zo2qovwsz86z55nz72zz87zijutz86zxiz66zaz86zuz89z1nrqy5dz86zz65zsz85z
 {
     color:var(--RCTextHeader)!important;
-    --newCommunityTheme-bodyText: var(--RCTextHeader)!important;
     fill:var(--RCTextHeader);
 }
 
@@ -3159,6 +3179,7 @@ html body header,
 .listingsignupbar__cta-container,
 .listingsignupbar__close,
 .login-form-side,
+.main-content,
 .Message__header,
 .morelink,.res-nightmode .morelink,
 .morelink a,
@@ -3315,7 +3336,8 @@ html.res-nightmode body.res .side,
 
 
 /* Plus Border */
-/*poal.co*/#innersb
+/*poal.co*/#innersb,
+/*conspiracies.win*/.theme-light aside.sidebar, .slideout-panel-left div.container aside.sidebar
 {
     background:linear-gradient(180deg,var(--RCBackgrounds),#0000)!important;
     border-radius:4px;
@@ -3503,6 +3525,7 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div section,
 .RESDropdownList,
 .RESDropdownOptions,
 .RESNotification,
+/*conspiracies.win*/.slideout-panel-left header.header,
 ._-0i7atRJ5NBsrRM5wuPpX,
 ._1oYEKCssGFjqxQ9jJMNj5G,
 ._2-aCCpAklEV0DkVWrpodjE._2-cUhM9bP2B5FPfQsDLJGR,
@@ -3534,6 +3557,7 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div section,
 
 body:not(.subscriber) .link .title a[class*="title"]::after,
 body:not(.subscriber) .sidebox.submit-link::before,.submit-text::before,
+/*conspiracies.win*/body.theme-light div#panel.wrapper.profile.panel.slideout-panel.slideout-panel-left header.header,
 #alert_message .drop-choices,
 #context-menu,
 #coverage .slick-slide a,
@@ -3552,6 +3576,7 @@ body:not(.subscriber) .sidebox.submit-link::before,.submit-text::before,
 #sort-menu,
 #sr-drop-down,
 #usermenu-content,
+/*conspiracies.win*/div.inner div.dropdown-container div.dropdown-content,div.container.padded main.module.narrow,div.container.padded main.module.narrow h1.head,
 span.app-scope,
 span.RESMacroDropdown,
 table#srList[style="display: block;"],
@@ -3840,12 +3865,22 @@ body.dark article.comment:nth-child(n)
     box-shadow:none;
 }
 
-/*saidit.net Custom Comment lines*/
-.commentarea .comment a.expand
+
+/*Prep for below - Background Removal*/
+/*conspiracies.win*/.comment .details a[data-action="minimize"]
+{
+    background: #0000 !important;
+}
+
+/*Custom Comment lines*/
+/*saidit.net*/
+.commentarea .comment a.expand,
+/*conspiracies.win*/.comment .details a[data-action="minimize"]
 {
     border-left: 1px dotted #555 !important;
 }
-.commentarea .comment a.expand:hover
+.commentarea .comment a.expand:hover,
+/*conspiracies.win*/.comment .details a[data-action="minimize"]:hover
 {
     border-left: 1px dotted #888 !important;
     transition:0s!important;
@@ -3880,13 +3915,101 @@ body.dark article.comment:nth-child(n)
 
 
 
-/*----------------------- Gradients -----------------------*/
+/*Conspiracies.win Custom Dark*/
 
-/*Comment bottom gradient Color*/
-._1ump7uMrSA43cqok14tPrG
+/*Links*/
+.theme-dark .actions a:not(.pill)
 {
-    --commentswrapper-gradient-color: var(--RCBackgrounds)!important;
+    color: #b2b3b2 !important;
 }
+
+
+/*Lighter links*/
+.theme-dark .nav-profile a,
+
+.theme-dark .header .title,
+.theme-dark .header .description
+{
+    color: #d8d8d8 !important;
+}
+
+
+/*Text*/
+.theme-dark .comment .content,
+.theme-dark .context,
+.theme-dark .footer,
+.theme-dark .footer a,
+.theme-dark .form input:not([type="submit"]):not([type="button"]),
+.theme-dark .form select,
+.theme-dark .form textarea,
+.theme-dark .form .create,
+.theme-dark .form .status,
+.theme-dark .message,
+.theme-dark .main-content h1,
+.theme-dark .main-content h2,
+.theme-dark .message.unread,
+.theme-dark .more,
+.theme-dark .module .body,
+.theme-dark .module .head,
+.theme-dark .nav-profile,
+.theme-dark .page .content *,
+.theme-dark .popup .head,
+.theme-dark .popup .close,
+.theme-dark .popup .inner,
+.theme-dark .post-list .content,
+.theme-dark .post-single .content :not([type="submit"]):not([type="button"]):not(a),
+.theme-dark .post .title,
+.theme-dark .preview-mode,
+.theme-dark .sidebar h3,
+.theme-dark .sidebar .mods p,
+.theme-dark .sidebar .mods .flair,
+.theme-dark .sidebar-notes,
+.theme-dark .status-bar,
+.theme-dark .total
+{
+    color: #ddd !important;
+}
+
+.theme-dark .comment-parent .author a,
+.theme-dark .comment-parent .title a,
+.theme-dark .comment.reported .content a,
+.theme-dark .context a,
+.theme-dark .details a.author,
+.theme-dark .sidebar .mods a,
+.theme-dark .nav-message a,
+.theme-dark .actions .comments,
+.theme-dark .post-single .content a
+{
+    color: #1978b0 !important;
+}
+
+
+.theme-dark,
+.theme-dark .comment:nth-child(n+1):nth-child(2n),
+.theme-dark .comment:nth-child(n+1):nth-child(2n+1),
+.theme-dark .post:nth-child(2n),
+.theme-dark .post:nth-child(2n+1),
+.theme-dark .container,
+.theme-dark .header,
+.theme-dark .main-content
+.theme-dark .wrapper
+{
+    background: #000d15 !important;
+}
+.theme-dark .header .bar
+{
+    border-bottom: 1px solid #000a10;
+}
+/*Dark-Mode Sidebar*/
+.theme-dark aside.sidebar
+{
+    background: #000d15 !important;
+    
+}
+
+
+
+/*----------------------- Gradients -----------------------*/
 
 /*Tutorial New Accounts: "This is your home on Reddit"*/
 .tutorial_post
@@ -4791,6 +4914,7 @@ code,
 /*a.login-required.access-required,*/
 html body center div#SOLID div#CONTENT div.html1 div.html div.body div div div div a,
 button.subreddit-subscribe:hover,.res-nightmode button.subreddit-subscribe:hover,
+div.main-content div.more a,
 .blueButton,
 .give-gold.login-required.access-required.gold-give-gold:hover,
 ._33n6Hxno5QDQIbv7MzWYA6:hover,
@@ -4838,6 +4962,14 @@ span.res-fancy-toggle-button.RESshortcutside,
     color:var(--RCButtonText)!important;
     transition:.4s;
 }
+
+/*Transparent/Converted Buttons with Link Colour*/
+div.main-content div.more a:hover
+{
+    color:var(--RCTextLinkHover)!important;
+    transition:.4s!important;
+}
+
 
 
 /*Solid - Buttons Only*/
@@ -5610,6 +5742,36 @@ img.pointer:active
 }
 
 
+/*conspiracies.win*/
+div.vote a
+{
+    color:#cbcbcb88!important;
+}
+div.vote a:hover
+{
+    color:#cbcbcb!important;
+}
+
+div.vote[data-vote="up"] a[data-direction="up"],
+div.vote[data-vote="up"] .count
+{
+    color:#ff8b60!important;
+}
+div.vote[data-vote="down"] a[data-direction="down"],
+div.vote[data-vote="down"] .count
+{
+    color:#9494ff!important;
+}
+
+div.vote a:active,
+div.vote[data-vote="up"] a[data-direction="up"]:active,
+div.vote[data-vote="down"] a[data-direction="down"]:active
+{
+    filter:brightness(.6)!important;
+    transition:0s!important;
+}
+
+
 /*voat.co*/
 
 .arrow-downvote,
@@ -5815,6 +5977,7 @@ button:active,.res-nightmode button:active,
 a.login-required.access-required:active,
 html body center div#HEADER table tbody tr td a:active,
 html body center div#SOLID div#CONTENT div.html1 div.html div.body div div div div a:active,
+div.main-content div.more a:active,
 span.res-fancy-toggle-button.RESDashboardToggle:active,
 span.res-fancy-toggle-button.RESshortcutside:active,
 .AnimatedForm__selectboxOption:active,
@@ -7594,7 +7757,7 @@ p.debuginfo:hover:after{color:var(--RCText)!important;content:"Reddit Custom (RE
 /* ==================== END OF CODE #2 ==================== */
 }
 
-@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("archived.moe"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("amp.reddit.com"), domain("ar.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com") {
+@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("archived.moe"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("amp.reddit.com"), domain("ar.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com"), domain("conspiracies.win"), domain("authentication.win") {
 /* 
 /* Cursor - Black - KMV (Modified)
 /* taken from:
@@ -7813,6 +7976,7 @@ ytp-bottom:hover,
 .redButton,
 .reddit-video-player-root > div > * .reddit-video-seek-bar-root,
 .redditSingleClick::after,
+/*conspiracies.win*/.reply .styling .preview, .edit .styling .preview, .submit-post .styling .preview, .submit-message .styling .preview,
 .report-modal .report-reason-item label,
 .reported-stamp.has-reasons,
 .res-commentNavToggle,.res-commentNavToggle-type,
@@ -8103,6 +8267,7 @@ ytp-bottom:active,
 .rec-item button.add:active,
 .redButton:active,
 .redditSingleClick:active::after,
+/*conspiracies.win*/.reply .styling .preview:active, .edit .styling .preview:active, .submit-post .styling .preview:active, .submit-message .styling .preview:active,
 .report-modal .report-reason-item label:active,
 .reported-stamp.has-reasons:active,
 /*
@@ -8277,18 +8442,18 @@ body.navia :-moz-full-screen,
 
 :root
 {
-    --RCBackground: /*[[Background]]*/;
-    --RCBackgrounds: /*[[Backgrounds]]*/;
-    --RCMenuHighlight: /*[[MenuHighlighting]]*/;
-    --RCBox-Shadow: /*[[BoxShadows]]*/;
-    --RCBorder: /*[[Borders]]*/;
-    --RCButton: /*[[Button]]*/;
-    --RCButtonText: /*[[ButtonText]]*/;
-    --RCTextLink: /*[[Links]]*/;
-    --RCTextLinkHover: /*[[LinksHover]]*/;
-    --RCTextHeader: /*[[Headers]]*/;
-    --RCText: /*[[Text]]*/;
-    --RCDarkText: /*[[LinksUnderPosts]]*/;
+    --RCBackground: #090909;
+    --RCBackgrounds: #090909;
+    --RCMenuHighlight: #191919;
+    --RCBox-Shadow: #444444;
+    --RCBorder: #333333;
+    --RCButton: #090909;
+    --RCButtonText: #AAAAAA;
+    --RCTextLink: #9b8440;
+    --RCTextLinkHover: #dabd73;
+    --RCTextHeader: #BBBBBB;
+    --RCText: #989898;
+    --RCDarkText: #717171;
 }
 
 /*--------------------------- Text ---------------------------*/
@@ -8389,7 +8554,9 @@ body > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1)
     background: #0000 !important;
 }
 
-.challenge-modal [class*="header-title"]
+.challenge-modal [class*="header-title"],
+html body div div div div.rc-doscaptcha-header,
+html body div div div.rc-doscaptcha-footer
 {
     background: var(--RCBackgrounds) !important;
 }

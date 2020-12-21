@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Simon Nemeth
 @description    `Something to make the new Facebook more manageable. I'm not great at this so it may be messy but it works.`
-@version        20201219.23.25
+@version        20201221.1.30
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,14 +12,23 @@ html {
     margin-left: 220px;
     margin-right: 220px;
 }
-.sp_XAZEy9Cf__c.sx_5223e6 {
-    filter: invert(1);
+.sp_JPRtGa-kpmy.sx_84d197 {
+    filter: invert(1) drop-shadow(0px 0px 2px #3b5998);
 }
-.sp_dmsEYXsz1mq.sx_f6c2c8 {
-    filter: invert(1);
+.sp_lEy1gKUaRdz.sx_2413cb {
+    filter: invert(1) drop-shadow(0px 0px 2px #3b5998);
 }
-.sp_XAZEy9Cf__c.sx_455148 {
-    filter: invert(1);
+.sp_JPRtGa-kpmy.sx_63104f {
+    filter: invert(1) drop-shadow(0px 0px 2px #3b5998);
+}
+.sp_JPRtGa-kpmy.sx_982e53 {
+    filter: invert(1) drop-shadow(0px 0px 2px #3b5998);
+}
+.sp_TWKtw99AXcM.sx_bb6842 {
+    filter: invert(1) drop-shadow(0px 0px 2px #3b5998);
+}
+.sp_CGrnM02I_-x.sx_2fcf97 {
+    filter: invert(1) drop-shadow(0px 0px 2px #3b5998);
 }
 .q66pz984 {
     color: #000 !important;
@@ -27,11 +36,9 @@ html {
 .q66pz984 {
     filter: drop-shadow(0px 0px 2px white);
 }
-.oo1teu6h {
-    background-color: #4f6faf !important;
-}
 .eltiug27 {
     fill: hsl(0deg 0% 100%) !important;
+    filter: drop-shadow(0px 0px 1px #3b5998);
 }
 .scaledImageFitWidth  {
     border-radius: 10px;
@@ -166,8 +173,8 @@ html {
     border-left-width: 0px;
     margin-left: 6px;
     margin-right: 6px;
-    border-bottom-right-radius: 24px;
-    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px !important;
+    border-top-left-radius: 24px !important;
     box-shadow: 4px 4px 3px #BBBBBB17;
 }
 .hnhda86s {
@@ -260,6 +267,12 @@ html {
 .qlfml3jp {
     border-top-right-radius: 8px;
 }
+.ue3kfks5 {
+    border-bottom-right-radius: 24px !important;
+}
+.ue3kfks5 {
+    border-top-left-radius: 24px !important;
+}
 .i09qtzwb.rq0escxv.n7fi1qx3.pmk7jnqg.j9ispegn.kr520xx4.datstx6m.k4urcfbm.__web-inspector-hide-shortcut__ {
     visibility: hidden
 }
@@ -269,9 +282,9 @@ html {
     margin-top: 8px;
     margin-left: 9px;
     margin-right: 9px;
-    border-bottom-right-radius: 24px;
+    border-bottom-right-radius: 24px !important;
     box-shadow: 4px 4px 3px #88888817;
-    border-top-left-radius: 24px;
+    border-top-left-radius: 24px !important;
 }
 .b3i9ofy5.e72ty7fz.qlfml3jp.inkptoze.qmr60zad.rq0escxv.oo9gr5id.q9uorilb.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.d2edcug0.jm1wdb64.l9j0dhe7.l3itjdph.qv66sw1b {
     box-shadow: 4px 4px 3px #88888817;

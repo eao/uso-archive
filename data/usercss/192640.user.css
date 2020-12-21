@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        20201218.17.50
+@version        20201221.11.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -19,14 +19,6 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 .css-1sgz1lk, .css-g80xfv, .css-1i1yepl, .css-hd6rm5, .css-1lmrg27, .css-xtxu3e{ color: #fff !important;}
 .css-wmy69a{ background-color: #fff !important;}
 .css-waz29z{ color: #76808F !important;}
-
-
-/* Wallet Overview */
-.css-11ut0zx{ background-color: #111 !important;}
-.css-k1w8nb, .css-1l2gayd, .css-nkpzbo, .css-10i7i1h{ background-color: #202020 !important;}
-.css-w6vv8o, .css-2gtxtw, .css-mjtoek, .css-1qogyxd{ color: #fff !important;}
-.css-k1w8nb{ border-radius: 0;}
-.css-xivc9r, .css-hrh325, .css-1jyr6bw, .css-18h5seh{ background-color: #fff !important;}
 
 
 /* Fiat and Spot Wallet */
@@ -170,4 +162,22 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 .css-dnh2dz, .css-8svhb8{ background-color: #202020 !important;}
 .css-1g3dl8s, .css-a11hgw{ color: #fff !important;}
 input.css-1vgh1xx{ color: #000 !important;}
+}
+
+@-moz-document url-prefix("https://www.binance.com/en/my/wallet/account/main/dust") {
+/* Dust convertion to BNB */
+.css-1sstzk2{
+    background-color: #202020 !important;
+    color: #fff !important;
+}
+}
+
+@-moz-document url("https://www.binance.com/en/my/wallet/account/overview") {
+/* Wallet Overview */
+.css-11ut0zx{ background-color: #111 !important;}
+.css-k1w8nb, .css-1l2gayd, .css-nkpzbo, .css-10i7i1h, .css-1g4bkrf{ background-color: #202020 !important;}
+.css-w6vv8o, .css-2gtxtw, .css-mjtoek, .css-1qogyxd{ color: #fff !important;}
+.css-k1w8nb{ border-radius: 0;}
+.css-xivc9r, .css-hrh325, .css-1jyr6bw, .css-18h5seh{ background-color: #fff !important;}
+.css-1g4bkrf{ border: none !important;}
 }
