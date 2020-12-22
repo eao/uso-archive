@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgconspiracies.winpoal.cosaidit.netvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201221.12.25
+@version        20201221.23.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -42,7 +42,8 @@ WPBASE64 "Manual BASE64 Setup (Inject in Code #1)" <<<EOT data:image/jpeg;base64
 	RCPostBG02 "Background - (Post Highlight (incl. RES))*" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within
+div.container main.main div.main-content.post-list div.post:focus-within,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within
 {
     background:
         linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
@@ -57,13 +58,18 @@ RCPostBG00 "No Background" <<<EOT /*Option Chosen - [No Background]*\/ EOT;
 RCPostBG01 "Border" <<<EOT /*Option Chosen - [Border]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within
+div.container main.main div.main-content.post-list div.post:focus-within,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     transition:2s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
-.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active
+.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active,
+div.container main.main div.main-content.post-list div.post:focus-within:hover,
+div.container main.main div.main-content.post-list div.post:focus-within:active,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within:hover,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within:active
 {
     background:none!important;
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
@@ -634,8 +640,7 @@ RCPostH-15 "+15px" <<<EOT /* Option chosen: [+10px] *\/
 
 }
 @advanced dropdown RCPostHighlight00 "Post Hover Effect (New Reddit)" {
-	RCPostHighlight00 "None*" <<<EOT /*Option Chosen - [None]*\/ EOT;
-RCPostHighlight01 "Increased Brightness" <<<EOT /*Option Chosen - [Increased Brightness]*\/
+	RCPostHighlight01 "Increased Brightness*" <<<EOT /*Option Chosen - [Increased Brightness]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
 div.container main.main div.main-content.post-list div.post
@@ -644,7 +649,8 @@ div.container main.main div.main-content.post-list div.post
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
-div.container main.main div.main-content.post-list div.post:hover
+div.container main.main div.main-content.post-list div.post:hover,
+dark-theme div.container main.main div.main-content.post-list div.post:hover
 {
     filter:brightness(1.25);
     transition:.2s;
@@ -654,19 +660,25 @@ div.container main.main div.main-content.post-list div.post:hover
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active,
 div.container main.main div.main-content.post-list div.post:focus-within,
 div.container main.main div.main-content.post-list div.post:focus-within:hover,
-div.container main.main div.main-content.post-list div.post:focus-within:active
+div.container main.main div.main-content.post-list div.post:focus-within:active,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within:hover,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within:active
 {
     filter:brightness(1);
 } EOT;
+RCPostHighlight00 "None" <<<EOT /*Option Chosen - [None]*\/ EOT;
 RCPostHighlight02 "Border" <<<EOT /*Option Chosen - [Border]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
-div.container main.main div.main-content.post-list div.post
+div.container main.main div.main-content.post-list div.post,
+dark-theme div.container main.main div.main-content.post-list div.post
 {
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
-div.container main.main div.main-content.post-list div.post:hover
+div.container main.main div.main-content.post-list div.post:hover,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within:hover
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     transition:.2s;
@@ -674,18 +686,21 @@ div.container main.main div.main-content.post-list div.post:hover
 RCPostHighlight03 "Border + Increased Brightness" <<<EOT /*Option Chosen - [Border + Increased Brightness]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within
+div.container main.main div.main-content.post-list div.post:focus-within,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within
 {
     transition:2s!important;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
-div.container main.main div.main-content.post-list div.post
+div.container main.main div.main-content.post-list div.post,
+dark-theme div.container main.main div.main-content.post-list div.post
 {
     filter:brightness(1);
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
-div.container main.main div.main-content.post-list div.post:hover
+div.container main.main div.main-content.post-list div.post:hover,
+dark-theme div.container main.main div.main-content.post-list div.post:hover
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     filter:brightness(1.25);
@@ -696,19 +711,24 @@ div.container main.main div.main-content.post-list div.post:hover
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active,
 div.container main.main div.main-content.post-list div.post:focus-within,
 div.container main.main div.main-content.post-list div.post:focus-within:hover,
-div.container main.main div.main-content.post-list div.post:focus-within:active
+div.container main.main div.main-content.post-list div.post:focus-within:active,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within:hover,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within:active
 {
     filter:brightness(1);
 } EOT;
 RCPostHighlight04 "Background (Same as RES Highlight)" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
-div.container main.main div.main-content.post-list div.post
+div.container main.main div.main-content.post-list div.post,
+dark-theme div.container main.main div.main-content.post-list div.post
 {
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
-div.container main.main div.main-content.post-list div.post:hover
+div.container main.main div.main-content.post-list div.post:hover,
+dark-theme div.container main.main div.main-content.post-list div.post:hover
 {
     background:
         linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
@@ -720,20 +740,23 @@ div.container main.main div.main-content.post-list div.post:hover
     transition:.2s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within
+div.container main.main div.main-content.post-list div.post:focus-within,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within
 {
     transition:.2s!important;
 } EOT;
 RCPostHighlight05 "Background + Increased Brightness" <<<EOT /*Option Chosen - [Background + Increased Brightness]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
-div.container main.main div.main-content.post-list div.post
+div.container main.main div.main-content.post-list div.post,
+dark-theme div.container main.main div.main-content.post-list div.post
 {
     filter:brightness(1);
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
-div.container main.main div.main-content.post-list div.post:hover
+div.container main.main div.main-content.post-list div.post:hover,
+dark-theme div.container main.main div.main-content.post-list div.post:hover
 {
     background:
         linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
@@ -746,7 +769,8 @@ div.container main.main div.main-content.post-list div.post:hover
     transition:.2s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within
+div.container main.main div.main-content.post-list div.post:focus-within,
+dark-theme div.container main.main div.main-content.post-list div.post:focus-within
 {
     filter:brightness(1);
     transition:.2s!important;
@@ -1063,7 +1087,8 @@ span.score-hidden,
 .userkarma,
 ._3w73P89exX_1mpdhQCURo6,
 .t4Hq30BDzTeJ85vREX7_M,
-._2ETuFsVzMBxiHia6HfJCTQ._3_GZIIN1xcMEC5AVuv4kfa
+._2ETuFsVzMBxiHia6HfJCTQ._3_GZIIN1xcMEC5AVuv4kfa,
+/*Conspiracies.win/div.details span.points.desktop,div.details span.breakdown
 {
     display:none;
 }
@@ -1082,7 +1107,8 @@ span.score-hidden,
 .t4Hq30BDzTeJ85vREX7_M,
 .crosspost-preview-tagline .dot,
 div._2Pkdj4FrQFtK8COeODi_kK:nth-child(1),
-div.side div.spacer div.linkinfo div.date span
+div.side div.spacer div.linkinfo div.date span,
+/*Conspiracies.win/.post .vote .count
 {
     visibility: hidden;
 }
@@ -1096,7 +1122,8 @@ div.side div.spacer div.linkinfo div.date span
 .score-unvoted:after,
 .res-nightmode .link .score.likes:after,
 .res-nightmode .link .score.dislikes:after,
-.res-nightmode .link .score.unvoted:after
+.res-nightmode .link .score.unvoted:after,
+/*Conspiracies.win/.post .vote .count:after
 {
     display: block;
     visibility: visible;
@@ -1190,7 +1217,8 @@ span.score-hidden,
 .userkarma,
 ._3w73P89exX_1mpdhQCURo6,
 .t4Hq30BDzTeJ85vREX7_M,
-._2ETuFsVzMBxiHia6HfJCTQ._3_GZIIN1xcMEC5AVuv4kfa
+._2ETuFsVzMBxiHia6HfJCTQ._3_GZIIN1xcMEC5AVuv4kfa,
+/*Conspiracies.win*\/div.details span.points.desktop,div.details span.breakdown
 {
     display:none;
 }
@@ -1209,7 +1237,8 @@ span.score-hidden,
 .t4Hq30BDzTeJ85vREX7_M,
 .crosspost-preview-tagline .dot,
 div._2Pkdj4FrQFtK8COeODi_kK:nth-child(1),
-div.side div.spacer div.linkinfo div.date span
+div.side div.spacer div.linkinfo div.date span,
+/*Conspiracies.win*\/.post .vote .count
 {
     visibility: hidden;
 }
@@ -1223,7 +1252,8 @@ div.side div.spacer div.linkinfo div.date span
 .score-unvoted:after,
 .res-nightmode .link .score.likes:after,
 .res-nightmode .link .score.dislikes:after,
-.res-nightmode .link .score.unvoted:after
+.res-nightmode .link .score.unvoted:after,
+/*Conspiracies.win*\/.post .vote .count:after
 {
     display: block;
     visibility: visible;
@@ -2161,6 +2191,14 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 
     /*RES "Reload Page" Text*/
     --RCRESReload: #5cc540 !important;
+    
+    
+    /*Conspiracies.win Dark Mode*/
+    --RCCDTBackground: #150000;
+    --RCCDTLinks: #b0191999;
+    --RCCDTLinksHover: #b01919;
+    --RCCDTText: #777;
+    --RCCDTHeaders: #d8d8d8;
 }
 
 /* ----------------- BAK of Default Settings -----------------/*
@@ -2216,6 +2254,14 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 
     /*RES "Reload Page" Text/
     --RCRESReload: #5cc540 !important;
+
+
+    /*Conspiracies.win Dark Mode/
+    --RCCDTBackground: #150000;
+    --RCCDTLinks: #b0191999;
+    --RCCDTLinksHover: #b01919;
+    --RCCDTText: #777;
+    --RCCDTHeaders: #d8d8d8;
 }
 ------------------------------------------------------------*/
 
@@ -2275,6 +2321,7 @@ body .content .thing .title.loggedin, body .content .thing .title,
 ._2-cXnP74241WI7fpcpfPmg,
 ._2aqH0n-kSzFY7HZZ5GL-Jb,
 ._2yYPPW47QxD4lFQTKpfpLQ,
+/*conspiracies.win*/div.nav-main div.inner a.active,div.nav-main div.inner a:hover,
 
 /*Converted Buttons*/
 .kU8ebCMnbXfjCWfqn0WPb:hover,._6_44iTtZoeY6_XChKt5b0:hover
@@ -2320,6 +2367,7 @@ h2.whoaversename,
 .NewComment__AuthorName,
 .res-nightmode form,
 .res-nightmode td,
+/*conspiracies.win*/.nav-main .inner a,.nav-main .inner a.active,
 .RESDialogSmall,
 .side *,
 .sidebar .timeframe,
@@ -2572,6 +2620,7 @@ div#sr-header-area a:hover,
 #srList td a:hover,
 #tobottom.btn-wrap span.button:hover,#filters-ctrl.button:hover,#qf-ctrl.button:hover,
 .author.may-blank.id-t2_11ypoj:hover,
+/*4chan*/.burichan_new .backlink a:hover, .yotsuba_b_new .backlink a:hover,div.post div.postInfo span.postNum a:hover, .posteruid .hand:hover,
 .close-button:hover,
 .comment .md a:hover,
 .contact-us-page .button:hover,.res-nightmode .contact-us-page .button:hover,
@@ -2585,7 +2634,7 @@ div#sr-header-area a:hover,
 .link:hover > .entry .title .domain a:hover,
 .md a:hover,
 .morelink a:hover,
-/*4chan*/.burichan_new .backlink a:hover, .yotsuba_b_new .backlink a:hover,div.post div.postInfo span.postNum a:hover, .posteruid .hand:hover,
+/*conspiracies.win*/.nav-main .inner a:hover,
 .pref-lang.choice:hover,
 .read-next-title:hover,
 .res-commentNavToggle:hover,
@@ -2637,6 +2686,7 @@ div.res-filterline div.res-filterline-filters div.res-filterline-filter:hover,
 /*RES Filter Dropdown - End*/
 
 .tabmenu li.selected a
+/*conspiracies.win/.nav-main .inner a.active,.nav-main .inner a.active:hover*/
 {
     color:var(--RCTextLinkHover)!important;
     text-decoration:underline!important;
@@ -2648,6 +2698,7 @@ div.res-filterline div.res-filterline-filters div.res-filterline-filter:hover,
 {
     background:#000!important;
 }
+
 
 /*Top-Bar Shortcuts*/
 #RESStaticShortcuts a.subbarlink.RESShortcutsCurrentSub:hover,
@@ -2745,6 +2796,7 @@ xxx
 }
 
 /*Sub-links Treatment*/
+/*conspiracies.win*/.actions a:not(.pill),.theme-dark .actions a:not(.pill),
 .entry .buttons li,
 .entry .buttons li a,
 .buttons a,
@@ -2755,6 +2807,7 @@ xxx
     padding:0!important;
     transition:.4s!important;
 }
+/*conspiracies.win*/.actions a:not(.pill):hover,.theme-dark .actions a:not(.pill):hover,
 .entry .buttons li:hover,
 .entry .buttons li a:hover,
 .buttons a:hover,
@@ -2766,7 +2819,10 @@ xxx
     color:var(--RCText)!important;
     transition:.2s!important;
 }
-
+.actions a:not(.pill):active,.theme-dark .actions a:not(.pill):active
+{
+    transition:0s!important;
+}
 
 a[data-click-id="timestamp"],
 /*a[data-click-id="body"]:visited h2,*/
@@ -2784,6 +2840,7 @@ a[data-click-id="timestamp"],
 }
 */
 
+a.title:visited,
 a.title.may-blank:visited,
 body .content .thing .title:visited,
 body .content .thing .title.loggedin:visited,
@@ -2828,6 +2885,7 @@ li strong a:active,
 /*p a:active,*/
 p strong a:active,
 ul li strong a:active,
+a.title:active,
 a.title.may-blank:active,
 .comment-thread:active,.comment-thread div:active,
 .contact-us-page .button:active,.res-nightmode .contact-us-page .button:active,
@@ -2841,6 +2899,7 @@ a.title.may-blank:active,
 .md p strong a:active,
 .menuarea .dropdown.lightdrop .selected:active,
 .morecomments a:active,
+/*conspiracies.win*/.actions a:active,.nav-main .inner a:active,
 
 /*-------------------RES Nightmode Links-------------------*/
 .res-nightmode a:active,
@@ -2915,6 +2974,18 @@ a *
 {
     font-weight:normal!important;
 }
+
+
+/*Conspiracies.win - Bold Active Tab*/
+.nav-main .inner a.active
+{
+    font-weight:bold;
+}
+.nav-main .inner a:hover
+{
+    text-decoration:underline;
+}
+
 
 
 /*Post Position and Spacing (old.reddit - Original - forced)*/
@@ -3366,6 +3437,22 @@ html.res-nightmode body.res .side,
 }
 
 
+/*conspiracies.win*/
+
+.slideout-panel-left header.header div.bar
+{
+    background:rgba(0,0,0,.24) !important;
+}
+
+
+div.bar div.nav-main div.inner a.active
+{
+    background:rgba(0,0,0,.24) !important;
+    border-bottom: 2px solid rgba(128,128,128,.5)!important;
+}
+
+
+
 /* ----------------- Gradient Backgrounds ----------------- */
 
 div[style^="left:"] div[role="button"],
@@ -3409,6 +3496,7 @@ div[style^="left:"] div[role="button"],
 #report-action-form,
 article.post,
 .alert:nth-child(7),
+/*Conspiracies.win*/div.container main.main article.main-content div.post,div.preview-mode.content,
 .searchpane,
 .expando-gate.expando-gate--interstitial,
 .res-nightmode .reddit-infobar,
@@ -3525,7 +3613,7 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div section,
 .RESDropdownList,
 .RESDropdownOptions,
 .RESNotification,
-/*conspiracies.win*/.slideout-panel-left header.header,
+/*conspiracies.win*/.slideout-panel-left header.header,body div.wrapper.single header.header,
 ._-0i7atRJ5NBsrRM5wuPpX,
 ._1oYEKCssGFjqxQ9jJMNj5G,
 ._2-aCCpAklEV0DkVWrpodjE._2-cUhM9bP2B5FPfQsDLJGR,
@@ -3585,6 +3673,7 @@ table#srList[style="display: block;"],
 [id*="tooltipster"],
 .c-form-control-feedback-wrapper [id*="tooltip"],
 .cookie,
+/*conspiracies.win*/div.cookie-consent,
 .spoiler-text-tooltip,
 .author-tooltip.hover-bubble,
 .author-tooltip__head,
@@ -3915,35 +4004,28 @@ body.dark article.comment:nth-child(n)
 
 
 
-/*Conspiracies.win Custom Dark*/
-
-/*Links*/
-.theme-dark .actions a:not(.pill)
-{
-    color: #b2b3b2 !important;
-}
-
+/*Conspiracies.win Custom Dark Theme*/
 
 /*Lighter links*/
-.theme-dark .nav-profile a,
-
 .theme-dark .header .title,
-.theme-dark .header .description
+.theme-dark .header .description,
+.theme-dark .nav-profile a,
+.theme-dark .post .title
 {
-    color: #d8d8d8 !important;
+    color: var(--RCCDTHeaders) !important;
 }
 
-
 /*Text*/
+.theme-dark div.rendered p,
 .theme-dark .comment .content,
 .theme-dark .context,
 .theme-dark .footer,
-.theme-dark .footer a,
 .theme-dark .form input:not([type="submit"]):not([type="button"]),
 .theme-dark .form select,
 .theme-dark .form textarea,
 .theme-dark .form .create,
 .theme-dark .form .status,
+.theme-dark .inner p,
 .theme-dark .message,
 .theme-dark .main-content h1,
 .theme-dark .main-content h2,
@@ -3958,7 +4040,6 @@ body.dark article.comment:nth-child(n)
 .theme-dark .popup .inner,
 .theme-dark .post-list .content,
 .theme-dark .post-single .content :not([type="submit"]):not([type="button"]):not(a),
-.theme-dark .post .title,
 .theme-dark .preview-mode,
 .theme-dark .sidebar h3,
 .theme-dark .sidebar .mods p,
@@ -3967,46 +4048,112 @@ body.dark article.comment:nth-child(n)
 .theme-dark .status-bar,
 .theme-dark .total
 {
-    color: #ddd !important;
+    color:var(--RCCDTText)!important;
 }
 
+.theme-dark a,
 .theme-dark .comment-parent .author a,
 .theme-dark .comment-parent .title a,
 .theme-dark .comment.reported .content a,
 .theme-dark .context a,
 .theme-dark .details a.author,
+.theme-dark .footer a,
 .theme-dark .sidebar .mods a,
+.theme-dark .nav-main .inner a,
 .theme-dark .nav-message a,
 .theme-dark .actions .comments,
 .theme-dark .post-single .content a
 {
-    color: #1978b0 !important;
+    color:var(--RCCDTLinks)!important;
+}
+.theme-dark a:hover,
+.theme-dark .actions .comments:hover,
+.theme-dark .comment-parent .author a:hover,
+.theme-dark .comment-parent .title a:hover,
+.theme-dark .comment.reported .content a:hover,
+.theme-dark .context a:hover,
+.theme-dark .details a.author:hover,
+.theme-dark .nav-main .inner a:hover,
+.theme-dark .nav-message a:hover,
+.theme-dark .post-single .content a:hover,
+.theme-dark .sidebar .mods a:hover,
+.theme-dark .single .form input[type="submit"]:hover,
+.theme-dark div.cookie-accept-outer span.cookie-accept:hover
+{
+    color: var(--RCCDTLinksHover) !important;
 }
 
+
+.theme-dark .nav-main .inner a.active,
+.theme-dark .nav-main .inner a.active:hover
+{
+    color: var(--RCCDTLinksHover) !important;
+}
+
+.theme-dark div.bar div.nav-main div.inner a.active,
+.theme-dark div.bar div.nav-main div.inner a.active:hover
+{
+    border-bottom: 2px solid var(--RCCDTLinks) !important;
+}
+
+
+.theme-dark a:active,
+.theme-dark .actions .comments:active,
+.theme-dark .comment-parent .author a:active,
+.theme-dark .comment-parent .title a:active,
+.theme-dark .comment.reported .content a:active,
+.theme-dark .context a:active,
+.theme-dark .details a.author:active,
+.theme-dark .nav-message a:active,
+.theme-dark .post-single .content a:active,
+.theme-dark .sidebar .mods a:active,
+.theme-dark .single .form input[type="submit"]:active,
+.theme-dark div.cookie-accept-outer span.cookie-accept:active
+{
+    filter:brightness(.6);
+    transition:0s!important;
+}
+
+.theme-dark .post:nth-child(2n),
+.theme-dark .post:nth-child(2n+1),
+.theme-dark .post-list .content .inner
+{
+    background-color:#0000!important;
+}
 
 .theme-dark,
 .theme-dark .comment:nth-child(n+1):nth-child(2n),
 .theme-dark .comment:nth-child(n+1):nth-child(2n+1),
-.theme-dark .post:nth-child(2n),
-.theme-dark .post:nth-child(2n+1),
+.theme-dark .footer,
 .theme-dark .container,
 .theme-dark .header,
-.theme-dark .main-content
-.theme-dark .wrapper
+.theme-dark .main-content,
+.theme-dark .sidebar .submit-link,
+.theme-dark .sidebar .submit-text,
+.theme-dark .wrapper,
+.theme-dark div.cookie-consent
 {
-    background: #000d15 !important;
+    background: var(--RCCDTBackground) !important;
 }
 .theme-dark .header .bar
 {
-    border-bottom: 1px solid #000a10;
+    border-bottom: 1px solid #100000;
 }
+
 /*Dark-Mode Sidebar*/
 .theme-dark aside.sidebar
 {
-    background: #000d15 !important;
+    background: var(--RCCDTBackground) !important;
     
 }
 
+.theme-dark .nav-main .inner a.active,
+.theme-dark .nav-main .inner a.active:hover,
+.theme-dark .nav-main .inner a
+{
+    background:rgba(0,0,0,.24) !important;
+    border-bottom: 2px solid var(--RCCDTBackground) !important;
+}
 
 
 /*----------------------- Gradients -----------------------*/
@@ -4997,6 +5144,7 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div div div d
 .btn.smooth-links,
 a.c-btn-primary,
 .cookie .button,
+div.cookie-accept-outer span.cookie-accept,
 .filter-holder,
 .FooterAppUpsell__Link,
 .happening-now .button,
@@ -5115,6 +5263,7 @@ html body center div#HEADER table tbody tr td a:hover,
 .blueButton:hover,
 a.c-btn-primary:hover,
 .cookie .button:hover,
+div.cookie-accept-outer span.cookie-accept:hover,
 .drop-choices a.choice:hover .morelink:hover,
 .drop-down-holder .drop-list:hover,
 .fancy-toggle-button a:hover,
@@ -5995,6 +6144,7 @@ span.res-fancy-toggle-button.RESshortcutside:active,
 .combined-search-page .search-page:active,
 .comment .expand:active,
 .cookie .button:active,
+div.cookie-accept-outer span.cookie-accept:active,
 .drop-choices a.choice:hover .morelink:active,
 .drop-down-holder .drop-list:active,
 .FancySelect__value.m-nocolor:active,.ThreadPreviewViewerHeader__button:active,
@@ -6887,6 +7037,7 @@ span.postflair
 /*Archive.is*/body > table tbody tr,body > table tbody > tr:nth-child(2n),
 [id*="thing"].even.stickied.controversial.link,
 [id*="thing"].odd.stickied.controversial.link,
+/*conspiracies.win*/div.container main.main div.main-content.post-list div.post.stickied,
 .linkflair-general.even.locked.stickied.link,
 .linkflair-general.odd.locked.stickied.link,
 .listing-page .even.stickied,
@@ -7895,6 +8046,7 @@ paper-button:hover,
 paper-button#label:hover,
 paper-button.yt-next-continuation:hover,
 paper-item:hover,
+span.cookie-accept,
 yt-icon-button:hover,
 ytd-single-option-survey-option-renderer:hover,
 ytd-toggle-theme-compact-link-renderer:hover,
@@ -8190,6 +8342,7 @@ paper-button:active,
 paper-button#label:active,
 paper-button.yt-next-continuation:active,
 paper-item:active,
+span.cookie-accept:active,
 yt-icon-button:active,
 ytd-single-option-survey-option-renderer:active,
 ytd-toggle-theme-compact-link-renderer:active,

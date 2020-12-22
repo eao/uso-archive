@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>Darklingo++ is a delightful switch on the default Duolingo UI. This style presents you with a <strong>Dark Mode</strong>, the ability to change the <strong>Theme Color</strong> , and it makes both leagues and the scrollbar optional. <i>(More to come in the future)</i>If you find anything that isn't themed correctly, feel free to tell me; feedback is always welcome! 😁 And if you <i>really</i> like this style or any of my others, you can <a href="https://paypal.me/justinikeako">donate</a> (only if you want to 🤗).Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        20201119.15.6
+@version        20201222.0.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color custom-color "Custom Theme Color" #1F98D2
@@ -588,6 +588,7 @@ body {
 ._2ofx2,
 ._2wStr,
 ._2suUz,
+._3s6La,
 ._1SDVx,
 ._3o_lc,
 .OK5hD,
@@ -629,6 +630,7 @@ body {
 	background-color: var(--red-on-bg)
 }
 
+._13GUt ._3CJwJ,
 .PppIj ._1gd-F {
 	background-color: var(--tertiary)
 }
@@ -1211,6 +1213,7 @@ a {
 ._27o_2,
 ._1tvS_,
 ._3Gj5_,
+._29e-M,
 .YEVWG,
 .SaEU8,
 .HnjwC,
@@ -1297,7 +1300,8 @@ a {
 }
 
 ._26wPn._1HjFK::after,
-._1TzvX::after {
+._1TzvX::after,
+._21IEC {
 	background: var(--custom-color-translucent-light);
 	border-color: var(--custom-color)
 }
@@ -1432,7 +1436,8 @@ a {
 
 /* Locked Story */
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-locked.svg"],
-._2zY7s:disabled {
+._2zY7s:disabled,
+._3t-oC svg {
   filter: var(--locked-story)
 }
 
@@ -1487,6 +1492,9 @@ a {
 	opacity: 1
 }
 
+.bjjp9::after {
+	opacity: 0.875
+}
 ._1DC8p {
   opacity: 0.4
 }
@@ -1500,6 +1508,12 @@ a {
 
 
 /** Misc **/
+
+@media (min-width: 1050px) {
+	._2_MEs {
+		margin-right: 12px;
+	}
+}
 
 .V3M4U {
 	outline-color: var(--200)
@@ -1515,14 +1529,25 @@ a {
 	border-top: 1px solid var(--200)
 }
 
+._3jpnK::after,
 .l6VQU::after {
 	filter: brightness(0.6);
 	border-color: #0009
 }
 
+._3jpnK::after,
 .l6VQU::after,
+._3jpnK,
 .l6VQU {
 	background-color: var(--custom-color)
+}
+
+._3t-oC {
+	--outline-color: var(--100)
+}
+
+.gf4sg {
+	--outline-color: var(--200)
 }
 
 
@@ -1624,14 +1649,7 @@ a {
 	margin-top: 4px
 }
 
-@media (min-width: 1050px) {
-	._1CrYJ,
-	._2_MEs,
-	._1TuHK {
-			padding-right: 0;
-			margin-right: 12px
-	}
-}
+
 
 ._3qbk_ ._3cX2U, ._3qbk_ ._3PugZ {
     padding-right: 0;
@@ -1643,6 +1661,8 @@ a {
 	margin-top: 3px
 }
 
+
+
 ._1X8fm td {
 	border-width: 2px
 }
@@ -1651,12 +1671,18 @@ a {
 	border-radius: 5px
 }
 
-._1e1GW::after {
+._1e1GW::after,
+._2t35G:after {
 	border-right-color: var(--100)
 }
 
-._1e1GW::before {
+._1e1GW::before,
+._2t35G:before {
 	border-right-color: var(--200)
+}
+
+.bjjp9:before {
+	border-right-color: var(--custom-color)
 }
 
 ._103zq:after {
@@ -2075,6 +2101,7 @@ html {
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/a72cd95b77171e6e00de85fc7389da67.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/web-ui/images/icons/269fd2d7daf6cfb28a5a2ac765f7e198.svg"],
 ._33Xi1[src="//duolingo-forum-web.duolingo.com/assets/cd66bb5ddbc8d1180c03df2a14def2a3.svg"],
+._3b7Vp [src="//d35aaqx5ub95lt.cloudfront.net/vendor/aed279fcbad509208b45ca7a17f3e8dc.svg"],
 ._3JN0P[src="//d35aaqx5ub95lt.cloudfront.net/images/ba45a1b38107480e030a0a06fc13d6ac.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/f754af1bf4bf03790cc2a70fe3c5a245.svg"],
 [src="//d35aaqx5ub95lt.cloudfront.net/images/checkpoint-castle-complete.svg"],

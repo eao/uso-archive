@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        20201221.11.17
+@version        20201221.15.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -151,20 +151,20 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 .css-3fpgoh, .css-e7d7y6, .css-1ezl0c, .css-mm1dbi, .css-a13acy, table.css-56ebq4 td div{ color: #fff !important;}
 }
 
-@-moz-document url-prefix("https://www.binance.com/en/eth2") {
+@-moz-document regexp("https://www.binance.com/.+/eth2") {
 /* ETH 2.0 Stacking page */
   .css-cxo7uz, .css-1hhz0rw, .css-1ygd8f0{ background-color: #202020 !important;}
   .css-1g3dl8s, .css-a11hgw{ color: #fff !important;}
 }
 
-@-moz-document url-prefix("https://www.binance.com/en/bnbmining") {
+@-moz-document regexp("https://www.binance.com/.+/bnbmining") {
 /* BNB Vault */
 .css-dnh2dz, .css-8svhb8{ background-color: #202020 !important;}
 .css-1g3dl8s, .css-a11hgw{ color: #fff !important;}
 input.css-1vgh1xx{ color: #000 !important;}
 }
 
-@-moz-document url-prefix("https://www.binance.com/en/my/wallet/account/main/dust") {
+@-moz-document regexp("https://www.binance.com/.+/my/wallet/account/main/dust") {
 /* Dust convertion to BNB */
 .css-1sstzk2{
     background-color: #202020 !important;
@@ -172,7 +172,7 @@ input.css-1vgh1xx{ color: #000 !important;}
 }
 }
 
-@-moz-document url("https://www.binance.com/en/my/wallet/account/overview") {
+@-moz-document regexp("https://www.binance.com/.+/my/wallet/account/overview") {
 /* Wallet Overview */
 .css-11ut0zx{ background-color: #111 !important;}
 .css-k1w8nb, .css-1l2gayd, .css-nkpzbo, .css-10i7i1h, .css-1g4bkrf{ background-color: #202020 !important;}

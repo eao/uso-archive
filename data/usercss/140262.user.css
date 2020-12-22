@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Norwin
 @description    `Dark Twitch -by NORWIN--testet with Chrome & Firefox-`
-@version        2020122.10.39
+@version        20201221.12.40
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -117,8 +117,7 @@ input.text, input.countries-input, input.string, textarea, .tw-input, .tw-textar
     .chat-input__buttons-container .tw-align-content-center.tw-align-items-center.tw-flex.tw-flex-row {width: 100%!important;}
     [data-a-target="chat-send-button"]{right: 4%;position: absolute!important;align-items: center!important;}
     [data-test-selector="chat-input-buttons-container"] .tw-align-content-center {align-items: normal!important;}
-    [data-a-target="chat-settings-balloon"]{position:fixed!important;margin-right: 11px!important;bottom: 35px!important;}
-    [data-test-selector="chat-input-buttons-container"] .tw-z-default {z-index: auto!important;}
+    .chat-input__buttons-container [class="tw-absolute tw-attached tw-attached--right tw-attached--up"]{position:fixed!important;left: 2px!important;bottom: 32px!important;}
     /*emotebuttonbttv*/
     #emote-menu-button, #emote-menu-button:focus {background-color:transparent!important;background-size:20px!important;background-position: center!important;background-repeat: no-repeat!important;border:none!important;box-shadow:none!important;}
 /***stream***/

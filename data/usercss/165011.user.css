@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Anonach
 @description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/Rgam9mqn`
-@version        20201130.15.19
+@version        20201221.15.39
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -122,6 +122,8 @@ thm-color-level6 "30%" <<<EOT --clr2: 30%; EOT;
 --theme_nmswitch: hsl(var(--clr),var(--clr2),75%);
 --theme_mpborder: hsl(var(--clr),var(--clr2),85%);
 --theme_mubtn: transparent;
+--theme_sbthumb: var(--theme_scroll);
+--theme_sbtrack: var(--theme_scrollbg);
 --theme_invert: unset;
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.05);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.1);
@@ -180,6 +182,8 @@ thm-scheme0 "Белая" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2),100
 --theme_nmswitch: hsl(var(--clr),var(--clr2),75%);
 --theme_mpborder: hsl(var(--clr),var(--clr2),85%);
 --theme_mubtn: transparent;
+--theme_sbthumb: var(--theme_scroll);
+--theme_sbtrack: var(--theme_scrollbg);
 --theme_invert: unset;
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.05);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.1);
@@ -238,6 +242,8 @@ thm-scheme2 "Серая" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2),83%
 --theme_nmswitch: hsl(var(--clr),var(--clr2),65%);
 --theme_mpborder: hsl(var(--clr),var(--clr2),75%);
 --theme_mubtn: transparent;
+--theme_sbthumb: var(--theme_scroll);
+--theme_sbtrack: var(--theme_scrollbg);
 --theme_invert: unset;
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.05);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.1);
@@ -363,6 +369,8 @@ ng-thm-color-level6 "30%" <<<EOT --clr2: 30%; EOT;
 --theme_nmswitch: var(--theme_default_link);
 --theme_mpborder: hsl(var(--clr),var(--clr2),35%);
 --theme_mubtn: transparent;
+--theme_sbthumb: var(--theme_scroll);
+--theme_sbtrack: var(--theme_scrollbg);
 --theme_invert: unset;
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.15);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.2);
@@ -421,6 +429,8 @@ ng-thm-scheme0 "Темнота" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--cl
 --theme_nmswitch: var(--theme_default_link);
 --theme_mpborder: hsl(var(--clr),var(--clr2),20%);
 --theme_mubtn: transparent;
+--theme_sbthumb: var(--theme_scroll);
+--theme_sbtrack: var(--theme_scrollbg);
 --theme_invert: unset;
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.15);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.2);
@@ -479,6 +489,8 @@ ng-thm-scheme2 "Сумрак" <<<EOT --theme_scrollbg: hsl(var(--clr),var(--clr2
 --theme_nmswitch: var(--theme_default_link);
 --theme_mpborder: hsl(var(--clr),var(--clr2),45%);
 --theme_mubtn: transparent;
+--theme_sbthumb: var(--theme_scroll);
+--theme_sbtrack: var(--theme_scrollbg);
 --theme_invert: unset;
 --theme_shadow: hsl(var(--clr),var(--clr2),2%,.15);
 --theme_shadow2: hsl(var(--clr),var(--clr2),2%,.2);
