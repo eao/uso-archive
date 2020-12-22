@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Pourrito
 @description    `Canta Darker is a theme for Mastodon. It is based on Canta-Dark.· Scrollbar choice :styled: keep as isnative: delete both .column-scroller rulesnone: uncomment rule 2 and delete rule 3`
-@version        20201128.8.8
+@version        20201222.12.6
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1638,5 +1638,17 @@ button.icon-button.disabled i.fa-retweet {
 }
 .timeline-hint {
     color: var(--lightgrey);
+}
+.announcements__item {
+    background: var(--darkbrown);
+}
+.reactions-bar__item:active, .reactions-bar__item:focus, .reactions-bar__item:hover {
+    background: var(--darkest);
+}
+.reactions-bar__item {
+    background: var(--notifbrown);
+}
+.announcements__container {
+    background: var(--darkbrown);
 }
 }

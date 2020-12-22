@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `стиль РАЗРЕЗАН НА 2 ЧАСТИ. для нормального функционирования нужны обе / this style is CUT INTO 2 PARTS, you need both parts so it'd function properly. the second partVanilla Dark 2 VK Fix/Mod PART 2 of 2здесь / is here:https://userstyles.org/styles/165927/ЭТА ТЕМА - ДОПОЛНЕНИЕ/ИСПРАВЛЕНИЯ ДЛЯ VANILLA DARK 2, НЕ ОТДЕЛЬНЫЙ СТИЛЬ.НЕ ЗАБЫВАЕМ СНАЧАЛА УСТАНАВЛИВАТЬ https://userstyles.org/styles/126419/vanilla-dark-2 После обновления Vanilla Dark 2 этот фикс-мод возможно нужно будет переключить (ВЫКЛ/ВКЛ), чтобы он нормально работал.Паблос в ВКшечке: https://vk.com/worstmodThis Fix/Mod IS NOT A STANDALONE THEME.Make sure to install Vanilla Dark 2 first https://userstyles.org/styles/126419/vanilla-dark-2This Fix/Mod may need to be switched (OFF/ON) after Vanilla Dark 2 update to function properly.Check https://vk.com/worstmod if you have any questions/suggestions.`
-@version        20201217.2.52
+@version        20201222.9.30
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown vklogo "Старый ламповый логотип:" {
@@ -348,8 +348,9 @@ flushshitoff "пускай остаётся" <<<EOT  EOT;
 [dir] body.new_header_design #page_header_cont{height:34px}
 [dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*="top: 48px"]{top:34px!important}
 [dir] body.new_header_design{--header-height:33px}
-[dir] body.new_header_design .side_bar_inner{margin-top:32px!important} EOT;
-pageheadernormal "нет, я люблю жирные" <<<EOT  EOT;
+[dir] body.new_header_design .side_bar_inner{margin-top:32px!important}
+body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px} EOT;
+pageheadernormal "нет, я люблю жирные шапки" <<<EOT  EOT;
 
 }
 @advanced dropdown nameremove " ♻ Убрать имя из шапки:" {

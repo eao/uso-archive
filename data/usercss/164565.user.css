@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         umi
 @description    `Dark mode for fc2 live.`
-@version        202046.13.43
+@version        20201222.8.12
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -610,6 +610,7 @@ body .livePlayer .c-chatLines .chat-body,
 .ctr_sub,
 body .m-cont-ni .m-viewOwn,
 #js-operation .operation_row,
+body .m-cont-ni .m-viewSyncComment,
 body .m-cont-ni .m-viewRecSet,
 .c-mdl01_cont
 {

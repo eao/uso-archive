@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           GooGle - Multi-Columns Dark and Gray v.36
+@name           GooGle - Multi-Columns Dark and Gray v.37
 @namespace      USO Archive
 @author         decembre
 @description    `Less scrolling with a multi columns interface.....Firefox OKChrome : OKNot working together with a "working" GooglemonkeyR:But all forks of it, at 2019.07, seems broken and need to be updated.When they work, use my userstyle:<a href="https://userstyles.org/styles/121836/">Google - GM - Google MonkeyR Companion</a>`
-@version        20201217.14.43
+@version        20201222.11.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,7 +30,7 @@ https://cse.google.fr/cse?cx=partner-pub-8110924381468607:6449306375&ie=ISO-8859
 regexp("https?://(www|news|play|host-b)\\.google(\\.com?)?(\\.[a-z][a-z])?/(|webhp|search|news|play|ig|service-a).*"), url-prefix("https://cse.google") {
 
 
-/* ==== Google - Multi-Columns Dark and Gray v.36 (new36) - ==== */
+/* ==== Google - Multi-Columns Dark and Gray v.37 (new37) ==== */
 
 /* PB but work touch too GOOGLE PLAY STORE -
 https://play.google.com/store
@@ -328,7 +328,6 @@ https://forum.userstyles.org/discussion/84139/pagination-not-appearing-on-the-ri
     display: inline-block !important;
     float: none;
     width: 100% !important;
-
     max-width: 100% !important;
 }
 #res {
@@ -340,6 +339,14 @@ https://forum.userstyles.org/discussion/84139/pagination-not-appearing-on-the-ri
     max-width: 100% !important;
     margin-left: -25px !important;
     margin-top: -20px !important;
+}
+
+/* (new37) NEWS - ZEBBRA */
+#rso div:nth-child(even) g-card {
+    background: #222 !important;
+}
+#rso div:nth-child(odd) g-card {
+    background: #111 !important;
 }
 
 
@@ -1846,6 +1853,7 @@ g-more-button {
     width: 78px;
 }
 
+
 /* (new32A) DICO  */
 #search #rso .g.knavi.obcontainer.mod {
     float: left !important;
@@ -1997,6 +2005,19 @@ border: 1px solid gray;
     overflow-y: auto !important;
 background: black !important;
 }
+
+/* (new37) PANEL RIGHT - IMMG CARROUSEL */
+#rhs:hover .liYKde .d7sCQ.kp-header #media_result_group.kno-mrg.kno-swp ,
+#rhs:hover .liYKde .d7sCQ.kp-header #media_result_group.kno-mrg.kno-swp .kno-liu  ,
+#rhs:hover .liYKde .d7sCQ.kp-header #media_result_group.kno-mrg.kno-swp .kno-liu .kno-mrg-m>div .rhsg4.rhsmap5col a img,
+.g.kno-kp.mnr-c.g-blk[data-hveid^="C"] .kp-blk #media_result_group {
+    display: inline-block !important;
+    overflow: visible;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+
 /* (new14 )QUEST - RESULT LINK */
 #center_col .kp-blk  .xpdopen .ifM9O > div + h2 + div .g  {
     display: inline-block !important;
@@ -3919,7 +3940,6 @@ body.vasq #hdtbSum ,
     line-height: 20px !important;
     margin-left: 0 !important;
     top: 0px !important;
-    margin-left: 0px !important;
 }
 g-header-menu.hdtb-mitem{
 position: relative !important;
@@ -4855,8 +4875,9 @@ background: black!important;
 /* (newGOGLE) COLORS - TEST with ELIAN color from :
 https://userstyles.org/styles/89702/elian-google-search-modern-dark
 === */
-/* COLOR - LINKS / TEXTES - === */
-
+/* (new137) COLOR - LINKS / TEXTES - GRAY */
+.Ss2Faf ,
+.u9sbk.W2lMue ,
 body {
 color: gray !important;
 }
@@ -5065,15 +5086,20 @@ https://www.google.com/search?q=FreeStyler&ie=utf-8&oe=utf-8
 border-bottom: 1px solid red !important;
 background: black !important;
 }
+#rhs {
+    border: 1px solid red !important;
+}
+
 /* #rso> .g + div[data-hveid^="CG"]:hover , */
 /* div[data-hveid^="CG"]:hover , */
 #rhs:hover ,
 #rso .rhsvw.g:hover {
     left: 75.9% !important;
+max-height: 83vh !important;
     overflow: hidden !important;
     overflow-y: auto !important;
 }
-/* (new35) COR */
+/* (new37 */
 /* #rso> .g + div[data-hveid^="CG"]::before , */
 /* div[data-hveid^="CG"]::before , */
 #rhs::before ,
@@ -5310,7 +5336,7 @@ border: 1px solid red;
 
 
 
-/* (new35) PANEL RIGHT - TEST - EXTERNAL CONTAINER  - HOVER */
+/* (new37) PANEL RIGHT - TEST - EXTERNAL CONTAINER  - HOVER */
 
 #rso>div[data-hveid="C"]:hover ,
 
@@ -5326,12 +5352,15 @@ border-left: 1px solid red !important;
 background-color: #222 !important;
 }
 
-/* MAP HOVER */
+/* (new37) MAP / NEWS -  HOVER */
 #rso>div[data-hveid^="C"]:hover ,
 [data-hveid^="C"] > div[class^="r-i"][jsl^="$t"]:hover {
-    left: 65.5% !important;
+    left: 63.5% !important;
     height: 100%;
-    max-height: 760px !important;
+min-width: 34% !important;
+max-width: 34% !important;
+padding: 5px 80px 5px 15px !important;
+    max-height: 79vh !important;
     overflow: visible !important;
 border: 1px solid yellow!important;
 border-left: 1px solid red !important;
@@ -5624,7 +5653,7 @@ span.f {
 }
 
 
-/* (new32A) COLOR - LINK / TEXT - PERU - === */
+/* (new37) COLOR - LINK / TEXT - PERU - === */
 
 div.rl_feature .rl_container .gic.rl_center .rl_slider_container g-scrolling-carousel  .EDblX.DAVP1 .rlc__slider-page .h998We .rl_item_base .title ,
 #res.med #rso .bkWMgd >div>g-section-with-header .img-brk g-scrolling-carousel > div .EDblX.DAVP1 > div > div.YDJP6c  a g-more-button div ,
@@ -5670,8 +5699,10 @@ g-more-link a span ,
 .L48Cpd .XBBs5 ,
 #prs a:active ,
 .eLpAgf.UUDH3 ,
+.XTjFC.WF4CUc ,
 .kno-ecr-pt ,
 .kl:active ,
+
 .Zfo8u div ,
 #extrares ,
 .gt-is-sg ,
@@ -5768,7 +5799,7 @@ div[class*="__section-topappbar"] + div  [class*="__tab"]  button[aria-selected=
 }
 
 
-/* (new31A) COLOR - TITTLE / LINKS + VISITED - PER > TAN (#C4A78A) - === */
+/* (new37) COLOR - TITTLE / LINKS + VISITED - PER > TAN (#C4A78A) - === */
 
 .r>a ,
 a {

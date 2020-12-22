@@ -11,18 +11,18 @@
     "about": null,
     "license": "ccbync"
   },
-  "updated": "2020-12-17T02:52:50.000Z",
-  "weekly_install_count": 52,
-  "total_install_count": 9729,
+  "updated": "2020-12-22T09:30:20.000Z",
+  "weekly_install_count": 64,
+  "total_install_count": 9755,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/132224_after.jpeg?r=1608192490",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/132224_after.jpeg?r=1608629428",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
   "admin_delete_reason_id": null,
   "obsoletion_message": null,
   "screenshots": [
-    "https://userstyles.org/style_screenshots/132224_additional_23902.jpeg?r=1608192490"
+    "https://userstyles.org/style_screenshots/132224_additional_23902.jpeg?r=1608629428"
   ],
   "license": "ccbync",
   "created": "2016-09-01T23:09:08.000Z",
@@ -630,7 +630,7 @@
           "id": 1665387,
           "style_setting_id": 469387,
           "label": "включай пресс!",
-          "value": "/* сплющиваем шапку */\r\n[dir] body.new_header_design #page_header_cont{height:34px}\r\n[dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*=\"top: 48px\"]{top:34px!important}\r\n[dir] body.new_header_design{--header-height:33px}\r\n[dir] body.new_header_design .side_bar_inner{margin-top:32px!important}",
+          "value": "/* сплющиваем шапку */\r\n[dir] body.new_header_design #page_header_cont{height:34px}\r\n[dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*=\"top: 48px\"]{top:34px!important}\r\n[dir] body.new_header_design{--header-height:33px}\r\n[dir] body.new_header_design .side_bar_inner{margin-top:32px!important}\r\nbody.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}",
           "default": true,
           "ordinal": 0,
           "install_key": "pageheaderthinaf"
@@ -638,7 +638,7 @@
         {
           "id": 1665388,
           "style_setting_id": 469387,
-          "label": "нет, я люблю жирные",
+          "label": "нет, я люблю жирные шапки",
           "value": "",
           "default": false,
           "ordinal": 1,

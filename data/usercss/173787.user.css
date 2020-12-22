@@ -3,15 +3,11 @@
 @namespace      USO Archive
 @author         vanholtzco
 @description    `Makes the UI responsive and more web app like.Left column navigation displays icons only.Wider feed with a darker background.And more...`
-@version        2020724.23.49
+@version        20201222.8.14
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("twitter.com") {
-body {
-    overflow-y: auto !important;
-}
-
 /* Box Shadow */
 .r-xnswec {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 15px, rgba(0, 0, 0, 0.15) 0px 0px 3px 1px;

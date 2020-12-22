@@ -3,23 +3,22 @@
 @namespace      USO Archive
 @author         JinH
 @description    `for http://gw.jaewon.co.krI AM THE CARTEL.`
-@version        2018928.4.31
+@version        20201222.5.7
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("http://gw.jaewon.co.kr") {
-
-/* !DELETE THIS LINE!
+/*
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR');
-@import url('https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css'); 
-!DELETE THIS LINE! */
+@import url('https://fonts.googleapis.com/css2?family=Material+Icons'); 
+*/
 
 .fa:before,
 .ui-pg-div .ui-icon:before,
 input[type="checkbox"]:before,
 input[type="radio"]:before {
     display: inline-block;
-    font: normal normal normal 24px/1 "Material Design Icons";
+    font-family: 'Material Icons';
     font-size: 24px;
     text-rendering: auto;
     line-height: inherit;
@@ -30,215 +29,215 @@ input[type="radio"]:before {
     vertical-align: middle;
 }
 .fa-home:before {
-    content: "\f2dc";
+    content: "home";
 }
 .fa-envelope-o:before {
-    content: "\f6ed";
+    content: "drafts";
 }
 .fa-calendar:before {
-    content: "\f0ed";
+    content: "event";
 }
 .fa-caret-down:before {
-    content: "\f140";
+    content: "keyboard_arrow_down";
 }
 .fa-star:before {
-    content: "\f4ce";
+    content: "star";
 }
 .fa-star.red:before {
     color: #FFC107;
 }
 .fa-envelope:before {
-    content: "\f1ee";
+    content: "mail";
 }
 .fa-envelope-open-o:before {
-    content: "\f1ef";
+    content: "drafts";
 }
 .fa-paperclip:before {
-    content: "\f3e2";
+    content: "attach_file";
 }
 .fa-inbox:before {
-    content: "\f2fb";
+    content: "inbox";
 }
 .fa-bell:before {
-    content: "\f09a";
+    content: "notifications_active";
 }
 .fa-power-off:before {
-    content: "\f425";
+    content: "power_settings_new";
 }
 .fa-gear:before,
 .fa-cog:before {
-    content: "\f493";
+    content: "settings";
 }
 .fa-angle-down:before {
-    content: "\f142";
+    content: "keyboard_arrow_down";
 }
 .fa-feed:before,
 .fa-rss:before {
-    content: "\f46b";
+    content: "rss_feed";
 }
 .fa-external-link-square:before {
-    content: "\f3cb";
+    content: "launch";
 }
 .fa-refresh:before {
-    content: "\f453";
+    content: "cached";
 }
 .fa-comments-o:before {
-    content: "\f0e5";
+    content: "search";
 }
 .fa-group:before,
 .fa-users:before {
-    content: "\f2b1";
+    content: "groups";
 }
 .fa-envelope-square:before {
-    content: "\f1ee";
+    content: "sticky_note_2";
 }
 .fa-book:before {
-    content: "\f0ba";
+    content: "assignment_turned_in";
 }
 .fa-paste:before,
 .fa-clipboard:before {
-    content: "\f192";
+    content: "article";
 }
 .fa-briefcase:before {
-    content: "\f0d6";
+    content: "work";
 }
 .fa-archive:before {
-    content: "\f686";
+    content: "folder_special";
 }
 .fa-navicon:before,
 .fa-reorder:before,
 .fa-bars:before {
-    content: "\f687";
+    content: "home_repair_service";
 }
 .fa-pencil:before {
-    content: "\f3eb";
+    content: "edit";
 }
 .fa-vcard-o:before,
 .fa-address-card-o:before {
-    content: "\f6ca";
+    content: "contacts";
 }
 .fa-user:before {
-    content: "\f009";
+    content: "account_circle";
 }
 .fa-lock::before {
-    content: "\f33e";
+    content: "lock";
 }
 .fa-edit:before,
 .fa-pencil-square-o:before {
-    content: "\f3eb";
+    content: "edit";
 }
 .fa-calendar-plus-o:before {
-    content: "\f0ed";
+    content: "event";
 }
 .fa-server:before {
-    content: "\f139";
+    content: "dns";
 }
 .fa-trash:before {
-    content: "\f1c0";
+    content: "delete";
 }
 .fa-key:before {
-    content: "\f306";
+    content: "vpn_key";
 }
 .fa-cloud-download:before {
-    content: "\f162";
+    content: "cloud_download";
 }
 .fa-mail-forward:before,
 .fa-share:before {
-    content: "\f453";
+    content: "forward_to_inbox";
 }
 .fa-circle-o-notch:before {
-    content: "\f453";
+    content: "radio_button_unchecked";
 }
 .fa-check:before {
-    content: "\f193";
+    content: "check_circle_outline";
 }
 .fa-folder-o:before {
-    content: "\f24b";
+    content: "folder";
 }
 .fa-stack-overflow:before {
-    content: "\f686";
+    content: "all_inbox";
 }
 .fa-send:before,
 .fa-paper-plane:before {
-    content: "\f3d1";
+    content: "send";
 }
 .fa-hourglass-o:before {
-    content: "\f51b";
+    content: "schedule";
 }
 .fa-angle-double-left:before {
-    content: "\f600";
+    content: "first_page";
 }
 .fa-angle-left:before {
-    content: "\f141";
+    content: "chevron_left";
 }
 .fa-angle-right:before {
-    content: "\f142";
+    content: "chevron_right";
 }
 .fa-angle-double-right:before {
-    content: "\f601";
+    content: "last_page";
 }
 .fa-search:before {
-    content: "\f349";
+    content: "search";
 }
 .fa-gears:before,
 .fa-cogs:before {
-    content: "\f493";
+    content: "setting";
 }
 .fa-trash-o:before {
-    content: "\f1c0";
+    content: "delete_outline";
 }
 .fa-ban:before {
-    content: "\f029";
+    content: "block";
 }
 .fa-clock-o:before {
-    content: "\f150";
+    content: "schedule";
 }
 .fa-user-circle-o:before {
-    content: "\f009";
+    content: "portrait";
 }
 .fa-arrow-up:before {
-    content: "\f143";
+    content: "keyboard_arrow_up";
 }
 .fa-arrow-down:before {
-    content: "\f140";
+    content: "keyboard_arrow_down";
 }
 .fa-folder-open:before {
-    content: "\f24b";
+    content: "folder_open";
 }
 .fa-level-down:before {
-    content: "";
+    content: "vertical_align_bottom";
 }
 .fa-comment-o:before {
-    content: "\f17a";
+    content: "comment";
 }
 .fa-remove:before,
 .fa-close:before,
 .fa-times:before {
-    content: "\f156";
+    content: "close";
 }
 .fa-asterisk:before {
-    content: "\f12c";
+    content: "new_releases";
 }
 .fa-chevron-up:before {
-    content: "\f143";
+    content: "keyboard_arrow_up";
 }
 .fa-chevron-down:before {
-    content: "\f140";
+    content: "keyboard_arrow_down";
 }
 .fa-file-word-o:before {
-    content: "\f22d";
+    content: "category";
     color: #3F51B5;
 }
 .fa-file-excel-o:before {
-    content: "\f21c";
+    content: "category";
     color: #4CAF50;
 }
 .fa-file-o:before {
-    content: "\f21a";
+    content: "category";
     color: #607D8B;
 }
 .fa-file-pdf-o:before {
-    content: "\f226";
+    content: "picture_as_pdf";
     color: #F44336;
 }
 .fa-file-photo-o:before,
@@ -256,7 +255,7 @@ input[type="radio"]:before {
     content: "\f42a";
 }
 .fa-exchange:before {
-    content: "\f134";
+    content: "task_alt";
 }
 .fa-file-powerpoint-o:before {
     content: "\f228";
@@ -271,11 +270,11 @@ input[type="checkbox"] {
     width: 0;
 }
 input[type="checkbox"]:before {
-    content: "\f131";
+    content: "check_box_outline_blank";
     color: #616161;
 }
 input[type="checkbox"]:checked:before {
-    content: "\f132";
+    content: "check_box";
     color: #F44336;
 }
 input[type="radio"] {
@@ -1062,7 +1061,7 @@ div#pg_grid-pager.ui-pager-control:after {
     background: none;
 }
 .fa-exchange:before {
-    content: "\f134";
+    content: "task_alt";
     color: #FF5722;
 }
 
@@ -1196,7 +1195,7 @@ body.no-skin {
 }
 .fileupload-buttonbar .ui-button-text span:before {
     display: inline-block;
-    font: normal normal normal 24px/1 "Material Design Icons";
+    font-family: 'Material Icons';
     font-size: 20px;
     text-rendering: auto;
     line-height: inherit;
@@ -1476,7 +1475,7 @@ a.tx-text,
 .tx-toolbar .tx-bar li a:before,
 .tx-styledlist-menu li.tx-menu-list-item a:before {
     display: inline-block;
-    font: normal normal normal 24px/1 "Material Design Icons";
+    font-family: 'Material Icons';
     font-size: 24px;
     text-rendering: auto;
     line-height: inherit;
@@ -1736,7 +1735,7 @@ a.tx-text,
 #myid td:before {
     position: absolute;
     display: inline-block;
-    font: normal normal normal 24px/1 "Material Design Icons";
+    font-family: 'Material Icons';
     font-size: 24px;
     text-rendering: auto;
     line-height: inherit;

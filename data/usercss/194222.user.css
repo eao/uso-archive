@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AshDefenders
 @description    `Стиль возвращает старый дизайн ВКонтакте который был до редизайна 2020 годаЕсли у вас есть чем дополнить стиль то можете написать в вк vk.com/defenders08 или в тг @defenders08k1СЛЕДИТЕ ЗА ОБНОВЛЕНИЯМИ СТИЛЯ, ОБНОВЛЯЙТЕ ДЛЯ ИСПРАВЛЕНИЯ БАГОВ!!!Группа VK: https://vk.com/designoldvk (Напоминания о обновлениях)`
-@version        20201220.12.26
+@version        20201222.11.16
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -26,6 +26,11 @@ body {
     background-size: 32px;
     margin-top: 7px;
 }
+/* [dir] .TopHomeLink--logoWithText {
+    background-image: url(http://svgur.com/i/QQF.svg);
+    background-size: 32px;
+    margin-top: 2px;
+} */
 /* Новогодний логотип */
 [dir] body.new_header_design.ny_2020_logo .p_head_l0 .top_home_link .top_home_logo::before, [dir] body.new_header_design.ny_2020_logo .p_head_l97 .top_home_link .top_home_logo::before, [dir] body.new_header_design.ny_2020_logo .p_head_l114 .top_home_link .top_home_logo::before, [dir] body.new_header_design.ny_2020_logo .p_head_l1 .top_home_link .top_home_logo::before {
     background-image: none;
@@ -38,6 +43,24 @@ body {
     width: 156px;
     background-position-y: 9px;
     /* background-position-x: 1px; */
+    height: 50px;
+}
+[dir] .TopHomeLink--logoWithText {
+    background-image: url(https://i.imgur.com/vtj9udl.png);
+    background-size: 32px;
+    margin-top: 2px;
+    background-size: 46px 23px;
+    width: 156px;
+    background-position-y: 12px;
+    height: 50px;
+}
+[dir] .TopHomeLink--ny2021logo:not(.TopHomeLink--logoWithText), [dir] body.WideScreenAppPage .TopHomeLink--ny2021logo {
+    background-image: url(https://i.imgur.com/vtj9udl.png);
+    background-size: 32px;
+    margin-top: 2px;
+    background-size: 46px 23px;
+    width: 156px;
+    background-position-y: 12px;
     height: 50px;
 }
 body.new_header_design #page_header .lamp {

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——⭐如有问题请到我的网站【www.asifadeaway.com】点击右下角会话按钮给我留言⭐1、常用页面夜间模式全覆盖2、去除广告3、去除导航栏中游戏等无用杂项4、部分icon更换使之更符合当前主题5、自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素`
-@version        20201220.7.3
+@version        20201222.12.12
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -77,7 +77,7 @@ BarrageContent_ON "开" <<<EOT .Barrage-content:not([class*="Barrage-content--co
 @-moz-document url-prefix("https://www.douyu.com/"), url-prefix("http://www.douyu.com/") {
 /*=== 
     作者：QIUZAIYOU 
-    最后更新：20201220
+    最后更新：20201222
 ===*/
 /*=== 屏蔽元素 ===*/
 .giftbatter-box,
@@ -4854,12 +4854,16 @@ img[src*="room_list_default"] {
 #header > .head .js_search .headerFont,
 .rotaryTicket-content .quiz-search-time .ticketUse_tab_btn dd a,
 .rotaryTicket-content .quiz-search-time .ticketGet_tab_btn dd a,
-.quiz-search-time + span {
+.quiz-search-time + span,.u_mainbody,.control_group .control,.draw-record-page-item {
     color: #868686!important;
 }
 .rotaryTicket-content .quiz-search-time .ticketUse_tab_btn dd.cur a,
 .rotaryTicket-content .quiz-search-time .ticketGet_tab_btn dd.cur a {
     color: #fff!important;
+}
+.draw-record-page-item:hover, .draw-record-page-item.is-active{
+color: #f60!important;
+border-color: #f60!important;
 }
 .my-quiz-page .quiz-search-time .money-type-nav,
 .rotaryTicket-content .quiz-search-time .ticketUse_tab_btn,
@@ -4868,7 +4872,7 @@ img[src*="room_list_default"] {
 .u_mainbody table tr th,
 .inquire,
 .invoice-btn,
-.fed-check {
+.fed-check,.shark_tit {
     border-color: #424242!important;
 }
 .quiz-search-time + span {
