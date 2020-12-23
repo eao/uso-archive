@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Simon Nemeth
 @description    `Something to make the new Facebook more manageable. I'm not great at this so it may be messy but it works.`
-@version        20201221.1.30
+@version        20201223.0.55
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,6 +11,10 @@
 html {
     margin-left: 220px;
     margin-right: 220px;
+}
+.thodolrn {
+    padding-left: 550px;
+    justify-content: left;
 }
 .sp_JPRtGa-kpmy.sx_84d197 {
     filter: invert(1) drop-shadow(0px 0px 2px #3b5998);
@@ -37,8 +41,10 @@ html {
     filter: drop-shadow(0px 0px 2px white);
 }
 .eltiug27 {
-    fill: hsl(0deg 0% 100%) !important;
-    filter: drop-shadow(0px 0px 1px #3b5998);
+    fill: #000 !important;
+}
+.op6gxeva {
+    -webkit-filter: none;
 }
 .scaledImageFitWidth  {
     border-radius: 10px;
@@ -62,7 +68,6 @@ html {
 .hop1g133 {
     border: 1px solid #e5e5e5 !important; 
     box-shadow: 1px 1px 5px #88888817;
-    background-color: white !important;
 }
 .nw2je8n7 {
     padding-top: 10px;
@@ -146,7 +151,7 @@ html {
     padding-left: 5px;
 }
 .buofh1pr.to382e16.o5zgeu5y.jrc8bbd0.dawyy4b1.bx45vsiw.h676nmdw {
-    margin-right: 452px;
+    margin-right: 500px;
 }
 .ekbqdzos.ekbqdzos {
     width: 320px !important;
@@ -224,7 +229,7 @@ html {
     width: 310px;
 }
 .qbubdy2e {
-    fill: #fdfdfd;
+    fill: #f8f8f9;
 }
 .h3gjbzrl {
     min-height: 100vh;
@@ -239,7 +244,7 @@ html {
     margin-top: 30px
 }
 .nred35xi {
-    background-color: #fdfdfd;
+    background-color: #f8f8f9;
 }
 .jgsskzai {
     background-color: #f7f7f7f2 !important;
@@ -315,10 +320,10 @@ html {
     padding-left: 16px !important;
 }
 .cwj9ozl2 {
-    background-color: inherit;
+    background-color: #f8f8f9;
 }
 .hybvsw6c {
-    background-color: #ffffffd6;
+    background-color: #f8f8f9;
 }
 .btwxx1t3.j83agx80.hybvsw6c.ll8tlv6m {
     background-color: #fff0;
@@ -407,7 +412,8 @@ strong {
     font-weight: 400;
 }
 .oajrlxb2.tdjehn4e.qu0x051f.esr5mh6w.e9989ue4.r7d6kgcz.rq0escxv.nhd2j8a9.j83agx80.p7hjln8o.kvgmc6g5.cxmmr5t8.oygrvhab.hcukyx3x.jb3vyjys.rz4wbd8a.qt6c0cv9.a8nywdso.i1ao9s8h.esuyzwwr.f1sip0of.lzcic4wl.l9j0dhe7.abiwlrkh.p8dawk7l.bp9cbjyn.s45kfl79.emlxlaya.bkmhp75w.spb7xbtv.rt8b4zig.n8ej3o3l.agehan2d.sk4xxmp2.taijpn5t.qypqp5cg.q676j6op {
-    background-color: #3b5998;
+    background-color: #c4a667;
+    filter: invert(1);
 }
 .pmt1y7k9 {
     flex-basis: 744px;
@@ -442,7 +448,7 @@ strong {
     max-height: fit-content;
 }
 .fzdkajry {
-    fill: #ffffff;
+    fill: #000000;;
 }
 .rq0escxv.l9j0dhe7.du4w35lb.cddn0xzi.j83agx80.cbu4d94t.byvelhso {
     background-color: #3b5998;

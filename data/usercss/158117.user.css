@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——⭐如有问题请到我的网站【www.asifadeaway.com】点击右下角会话按钮给我留言⭐1、常用页面夜间模式全覆盖2、去除广告3、去除导航栏中游戏等无用杂项4、部分icon更换使之更符合当前主题5、自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素`
-@version        20201222.12.12
+@version        20201222.14.15
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -444,7 +444,7 @@ span[class*='HeaderGif-'],
 .LotteryDrawEnter,
 .MatchFocus,
 *[class*='MatchSystem'],
-.RoleAvatar-wrapper,
+.RoleAvatar-wrapper img,
 .RoomLevel,
 .getYw {
     display: none!important;
@@ -4223,6 +4223,20 @@ div[class*='wenti1-'] select,
     border-color: transparent transparent #272727!important;
 }
 /* 狗日的其他 */
+.PrivateLetter{
+    -webkit-box-shadow: -1px 0 6px 0 #212121;
+    -moz-box-shadow: -1px 0 6px 0 #212121;
+    box-shadow: -1px 0 6px 0 #212121;
+}
+.RoleAvatar-wrapper:after {
+    content: "假主播";
+    position: unset;
+    height: 20px;
+    border-radius: 4px;
+    border-color: #f60;
+    color: #f60;
+    padding: 0 3px;
+}
 .PkView-timeBar {
     width: -webkit-fit-content!important;
     width: -moz-fit-content!important;
@@ -4695,9 +4709,10 @@ img[src*="room_list_default"] {
     overflow-x: hidden!important;
 }
 .ChatBarrageCollectPop {
-    width: 334px!important;
-    left: -322px!important;
-    bottom: 73px!important;
+    position: absolute;
+    width: 335px!important;
+    left: -317px!important;
+    bottom: 14px!important;
     background-color: #212121!important;
     border: none!important;
 }
@@ -5674,6 +5689,7 @@ body {
 .header-tab {
     border-color: #373737!important;
 }
+.app,
 .main-left,
 .main-left-footer,
 .chat-detail-item.you .cd-item-content,
@@ -5684,7 +5700,9 @@ body {
 .editor-emotion-selector,
 .editor-emotion-selector-new,
 .editor-package_name-wrapper .sss,
-.cd-operate-setting-items {
+.cd-operate-setting-items,
+.official-list,
+div.eatingItem-activeListWrap-2H5MY .eatingItem-boxDown-1DekO {
     background: #2c2c2c!important;
 }
 .main-right,
@@ -5742,10 +5760,12 @@ h4.friendlist-grouping-head > span.head-num,
 .friend-request-item-header,
 [class*="motorcadeHeader-motorcadeName-"],
 .chat-with-friend-stranger-tip,
-.cd-operate-setting-item {
+.cd-operate-setting-item,
+.official-list-return{
     color: #868686!important;
 }
-.cd-operate-item:hover {
+.cd-operate-item:hover,
+.official-list-return:hover {
     color: #f70!important;
 }
 .header-search.active {

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         CocoTheMii
 @description    `Brings back the final pre-Adventure version of WinWorld, introduced in August 2014. It also works pretty well as a dark theme, if that's what you're looking for. The forums are currently not affected by this style, but I am considering adding this in the future. This style is majestically powered.`
-@version        20201128.5.23
+@version        20201222.22.45
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -494,6 +494,10 @@ table#downloadsTable tbody tr:hover td {
 
 table#downloadsTable tbody tr:last-child {
     border-bottom: 1px solid #777788;
+}
+
+table#downloadsTable tbody tr td img[title="ppc"] {
+    filter: invert(1);
 }
 
 div.vanilla-credit {

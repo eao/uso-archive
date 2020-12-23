@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           Userstyles / Greasy Fork Enhancer Dark-Grey v.188
+@name           Userstyles / Greasy Fork Enhancer Dark-Grey v.189
 @namespace      USO Archive
 @author         decembre
 @description    `▶ It's (or just better) FOR  A WIDESCREEN : (1920x1080)! ▶ Adaptation for (the always working):<a href="https://greasyfork.org/fr/scripts/4336-ts-citrus-gfork"><b>[TS] Citrus GFork</b></a>Broken since 2020.12., but there is a fix:<b><a href="https://greasyfork.org/en/scripts/4336-ts-citrus-gfork/discussions/69927">If you want a temporary fix (before its author come back to us), try :  Unofficial fix of the &quot;Citrus GFork&quot; script</a></b>▶ You can test too my Userscript:<a href="https://greasyfork.org/fr/scripts/29452-userstyles-tables-sorter-simple">USERSTYLES - TABLES Sorter SIMPLE</a>"Sort Userstyles Table on Profile page:click on the top header of each column..."`
-@version        2020129.21.31
+@version        20201222.12.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://greasyfork.org/forum/"), url-prefix("https://74.86.192.75/"), domain("userstyles.org"), domain("greasyfork.org"), domain("sleazyfork.org") {
 
 
-/* ==== Userstyles / Greasy Fork Enhancer Dark-Grey  188  -  WATnew06 - with FIX by Konf - Without EDIT COMMENT  - TEST NEW FORUM GREASYFORK ==== */
+/* ==== Userstyles / Greasy Fork Enhancer Dark-Grey  189  -  WATnew06 - with FIX by Konf - Without EDIT COMMENT  - TEST NEW FORUM GREASYFORK ==== */
 /* CITRUS FIX by Konf(2020.12.09) :
 https://greasyfork.org/en/discussions/requests/69803-help-to-fix-ts-citrus-gfork#comment-173029
 =================== */
@@ -4895,10 +4895,14 @@ background: rgba(0, 0, 0, 0.8) ;
 border-bottom: 1px solid gray ;
 background-color: #f9ecdb ;
 }
+/* (new189) */
 .width-constraint #script-info > #script-content  #script-meta {
-    display: table ;
-    min-width: 950px ;
+    display: inline-block !important;
+    width: 950px !important;
+    min-width: 950px !important;
+    max-width: 950px !important;
     margin-top: 25px ;
+    margin-left: -6px !important;
     padding: 5px ;
 border-bottom: 1px dotted gray ;
 }
@@ -11159,25 +11163,55 @@ body[style="overflow: auto"] ,
 body[style="overflow: visible;"] {
   overflow: visible !important;
 }
-/* (new166)(ALL) LINKS - BLUE LIGHT === */
+
+
+
+/* GREAS - CODE PAGE - STRIPP BACKG - 
+TEST CODERAY HUGE CODE: https://greasyfork.org/en/scripts/1896-nwpb/code
+=== */
+#script-info .CodeRay {
+    display: inline-block ;
+    max-width: 99.8% ;
+    background-image: linear-gradient(rgba(85, 85, 85, 0.05) 90%, transparent 50%, transparent) ;
+    background-size: 30px 15px ;
+}
+#script-info .CodeRay tbody {
+    display: inline-block ;
+    width: 99.98% ;
+}
+
+#script-info .CodeRay tbody .code {
+    display: inline-block ;
+    min-width: 905px ;
+    max-width: 905px ;
+}
+#script-info .CodeRay tbody .code pre {
+    min-width: 900px ;
+    max-width: 900px ;
+    word-wrap: break-word ;
+    white-space: pre-line ;
+}
+
+
+/* ===== (new189) COLOR - LINK ===== */
+
+/* LINK - TEXT DECO NONE */
 
 a:link {
-    color: #6D878F  ;
     text-decoration: none ;
 }
-/* (new185) GREASY - LINKS  PERU (keep!important;) - === */ 
-body:not(.Settings) a:not(.Button) {
-    color: peru !important;
-}
-body:not(.Settings) a:not(.Button):visited {
-    color: tan !important;
-}
-/* LINK / TXT  SPECIAL - === */
 
-#Head a, 
-#site-nav a {
-    color: peru !important;
-}
+/* (new189)(ALL) LINKS - BLUE LIGHT === */
+
+/* a:link {
+    color: #6D878F  ;
+    text-decoration: none ;
+} */
+
+
+
+/* (new189) LINK / TXT  SPECIAL */
+
 .MItem.MCount.CommentCount ,
 .MItem.MCount.ViewCount {
     color: #b7b7b7 ;
@@ -11199,7 +11233,80 @@ table#style-table .meta span.date.date2{
     text-decoration: none !important;
 }
 
-/* LINKS HOVER - COLOR tomato / TOMATO - === */
+
+
+/* (new189) (ALL) LINKS - PERU / TOMATO (visited) */
+
+body:not(.Settings) a:not(.Button) ,
+#Head a, 
+#site-nav a,
+#additional-info>a b ,
+a {
+    color: peru  !important
+}
+
+a:visited {
+    color: tomato  !important
+}
+
+
+/* (new189) VISITED  ACTIVE- GOLD / GOLD - === */
+section#style-info div#main-style-info div#stylish-installed-style-installed.install-status.install-info a.install-note ,
+#style-install-unknown>p>a, 
+#style-install-unknown>p>a:visited, 
+#style-install-unknown>p>a:active {
+    color: GOLD !important;
+}
+
+
+/* (new189) VISITED - TAN */
+
+body:not(.Settings) a:not(.Button):visited ,
+#additional-info>a:visited ,
+#additional-info>a:visited b ,
+.discussion-list>li>a:visited ,
+.About>dt>a:visited ,
+.Item-Body .Message>a:visited ,
+.script-author-description>p>a:visited ,
+.script-author-description>ul>li>ul>li>a:visited ,
+.script-author-description>ul>li>a:visited ,
+.DataList .Item .Title>a:visited ,
+.inline-list>li>a:visited ,
+.DataList .ItemDiscussion.Item.Read a:visited {
+    color: TAN !important;
+}
+
+
+/* (new189) VISITED - GOLDENROD */
+.thetitle>a:visited>b  {
+    color: GOLDENROD !important;
+}
+
+
+/* (new189) VISITED - ROSYBROWN */
+.width-constraint #discussions li > a:first-of-type:visited {
+    color: ROSYBROWN  !important;
+}
+
+
+/* (new189) VISITED / HOVER  - Color A VOIR */
+a:hover {
+    color: #73B379 !important;
+}
+a:visited:hover  {
+    color: #B9D56E !important;
+    text-decoration: none !important;
+}
+
+
+/* END ==== LINK - VISITED ==== */
+
+
+
+/* (new189) START ==== LINK - HOVER ===== */
+
+
+/* (new189) LINKS HOVER - TOMATO  */
 
 #show-code + #control-panel>a:hover ,
 #main-header>h1>a:hover ,
@@ -11273,12 +11380,7 @@ table#style-table .meta span.date.date2{
 #start-discussion:hover ,
 #start-discussion-top:hover ,
 #start-discussion-bottom:hover ,
-.inline-list>li>a:hover {
-    color: TOMATO ;
-}
-
-/* LINK HOVER - SPECIAL - === */
-
+.inline-list>li>a:hover , 
 #discussions-area #discussions li:hover a:not(:last-of-type),
 .CommentsWrap .Comment:hover a:not(.FlagContent):not([rel="nofollow"]) ,
 .CommentsWrap .Comment a.FlagContent:hover ,
@@ -11286,96 +11388,23 @@ table#style-table .meta span.date.date2{
 .width-constraint #discussions li>a:nth-child(2):hover , 
 .width-constraint #discussions li>a:first-of-type:hover ,
 .width-constraint #discussions li:hover > a:nth-child(4) ,
-.width-constraint #discussions li:hover>time {
-    color: tomato ;
-}
-
-
-/* GREAS - CODE PAGE - STRIPP BACKG - 
-TEST CODERAY HUGE CODE: https://greasyfork.org/en/scripts/1896-nwpb/code
-=== */
-#script-info .CodeRay {
-    display: inline-block ;
-    max-width: 99.8% ;
-    background-image: linear-gradient(rgba(85, 85, 85, 0.05) 90%, transparent 50%, transparent) ;
-    background-size: 30px 15px ;
-}
-#script-info .CodeRay tbody {
-    display: inline-block ;
-    width: 99.98% ;
-}
-
-#script-info .CodeRay tbody .code {
-    display: inline-block ;
-    min-width: 905px ;
-    max-width: 905px ;
-}
-#script-info .CodeRay tbody .code pre {
-    min-width: 900px ;
-    max-width: 900px ;
-    word-wrap: break-word ;
-    white-space: pre-line ;
-}
-
-/* (new166) (ALL) LINKS VISITED / VISITED HOVER - === */
-
-
-a:visited {
-    color: #278CAD  !important
-}
-#additional-info>a:visited {
-    color: #6BA9BE  !important
-}
-a:hover {
-    color: #73B379 !important;
-}
-a:visited:hover  {
-    color: #B9D56E !important;
-    text-decoration: none !important;
-}
-
-/* VISITED - gold / GOLD - === */
-section#style-info div#main-style-info div#stylish-installed-style-installed.install-status.install-info a.install-note ,
-#style-install-unknown>p>a, 
-#style-install-unknown>p>a:visited, 
-#style-install-unknown>p>a:active {
-    color: GOLD !important;
-}
-/* VISITED - tan  /TAN - === */
-.discussion-list>li>a:visited ,
-.About>dt>a:visited ,
-.Item-Body .Message>a:visited ,
-.script-author-description>p>a:visited ,
-.script-author-description>ul>li>ul>li>a:visited ,
-.script-author-description>ul>li>a:visited ,
-.DataList .Item .Title>a:visited ,
-.inline-list>li>a:visited ,
-.DataList .ItemDiscussion.Item.Read a:visited {
-    color: TAN !important;
-}
-/* VISITED - goldenrod / GOLDENROD - === */
-.thetitle>a:visited>b  {
-    color: GOLDENROD !important;
-}
-/* VISITED - hover tomato / TOMATO - === */
+.width-constraint #discussions li:hover>time ,
 .Message>ol>li>small>a:hover ,
 .Message>dl>dd>a:hover ,
-.UserQuote .QuoteAuthor a:hover ,
+.UserQuote .QuoteAuthor a:hover  {
+    color: TOMATO !important;
+}
+
+
+/* (new189) LINK - HOVER + VISITED - TOMATO  */
 .inline-list>li>a:visited:hover ,
+.DataList .ItemDiscussion.Item.Read a:visited:hover ,
 .DataList .ItemDiscussion.Item.Read a:visited:hover {
     color: TOMATO !important;
 }
 
-/* VISITED - rosybrown / ROSYBROWN - === */
-.width-constraint #discussions li > a:first-of-type:visited {
-    color: ROSYBROWN  !important;
-}
-/* NEW TOP HEADER NAV MENU - VISITED - === */
-#Frame .Row .SiteMenu  a:hover {
-    color: tomato !important;
-}
 
-/* ============ END VISITED LINKS ====== */
+/* ============ END COLOR LINKS ====== */
 
 
 /* TEST - GM "DIEP.IO by Terjanq" - ONLY for THIS SCRIPT - FIGHT AGAINST a VERY STRANGE TYPO EFFECT - with / without GM "CITRUS" - 

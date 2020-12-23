@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Lord Balliwns
 @description    `Presentamos iMGSRC con la conversión al estilo Nocturno de Proyecto Tigger Swan.`
-@version        20201220.9.10
+@version        20201222.15.28
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -27,4 +27,8 @@ th {background: #202020;}
 .tdd TR:nth-child(2n) {background: #252525;}
 .tdd TR:nth-child(2n):hover {background: #404040}
 td.curt {background: #555}
+.uilt {background-color: #252525;border-top: dotted 1px #555;}
+input {background: #303030!important; color: #fff!important; border: solid 1px #444 !important;}
+textarea {color: #ddd;border: solid 1px #444; background: #303030;}
+select, input[type="text"], input[type="password"] {color: #eee;border: solid 1px #444; background: #303030;}
 }

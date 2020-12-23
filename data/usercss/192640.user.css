@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        20201221.15.36
+@version        20201222.20.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -180,4 +180,18 @@ input.css-1vgh1xx{ color: #000 !important;}
 .css-k1w8nb{ border-radius: 0;}
 .css-xivc9r, .css-hrh325, .css-1jyr6bw, .css-18h5seh{ background-color: #fff !important;}
 .css-1g4bkrf{ border: none !important;}
+}
+
+@-moz-document regexp("https://www.binance.com/.+/my/security/address-management") {
+/* Security - Address Management */
+.css-1868gi1, .css-cmf86e{ color: #fff !important;}
+.css-2w1ery, .css-z8eth{ color: #76808F !important;}
+}
+
+@-moz-document regexp("https://www.binance.com/.+/my/wallet/history/.+") {
+/* Transaction history */
+.css-11ut0zx{ background-color: #111 !important;}
+.css-vd2g05{ background-color: #202020 !important;}
+.css-oc72yu:hover, .css-oc72yu.active, .css-1xux0h5 .rc-picker-range input, button.css-yiu8h4{ color: #76808F !important;}
+.css-hnqfl3{ color: #F0B90B !important;}
 }

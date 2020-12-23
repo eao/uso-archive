@@ -2,8 +2,8 @@
 @name           Warframe Fandom Wiki Dark
 @namespace      USO Archive
 @author         Edhill Anka
-@description    `A dark theme specifically for the Warframe Fandom Wiki.`
-@version        20201111.9.18
+@description    `A dark theme specifically for the Warframe Fandom Wiki.Also check out <a href="https://userstyles.org/styles/192774/warframe-fandom-sidebar-removal">Warframe Fandom Sidebar Removal</a> if you prefer a cleaner look with more article space.`
+@version        20201222.15.6
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -823,7 +823,8 @@ a.image > img[alt^='Tenno'],
 a.image > img[alt^='Solaris'],
 a.image > img[alt*='OrokinScript'],
 span[style] > img[alt^='Corpus'],
-span[style] > img[alt^='Grineer'] {
+span[style] > img[alt^='Grineer'],
+img[src^='https://wikimedia.org/api/rest_v1/media/math/render/'] {
     filter: invert();
 }
 

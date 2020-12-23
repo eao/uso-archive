@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.4.9
+@name           Compact Tube (White) v1.5.0
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201220.10.58
+@version        20201222.22.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.4.9 */
+/* CompactTube (White) v1.5.0 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -1371,7 +1371,7 @@ ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
    ≡≡≡≡≡ ║▼▲║ Скроллбар для всего Ютуба (Тёмная и Светлая темы) ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
          ╚══╝                                  */
 /* Установка Самого Скроллбара */
-::-webkit-scrollbar {width: 13px;} /*1.3em*/
+::-webkit-scrollbar {width: 13px;   height: 13px;} /*1.3em*/
 /* Ползунок Скроллбара  */
 ::-webkit-scrollbar-thumb {background: rgba(155, 155, 155, .34); box-shadow: inset 0px 0px 0px 0.3px rgba(45, 45, 45, .11);}
 /* Путь Скроллбара*/
@@ -1379,6 +1379,9 @@ ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
 /* стрелки промотки вверх и вниз Скроллбара */
 -o-::-webkit-scrollbar-button {height: 14px; background: var(--yt-opalescence-grey-opacity-lighten-3);
 border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
+
+/* точка пересечения Скроллбаров */
+::-webkit-scrollbar-corner {width: 13px; height: 13px; background: rgba(155, 155, 155, .34); box-shadow: inset 0px 0px 0px 1px rgba(26, 26, 26, .11);}
 
 /* Подсвечивание Ползука при наведении курсора Мыши */
 ::-webkit-scrollbar-thumb:hover {background: rgba(155, 155, 155, .58);}
@@ -3437,6 +3440,22 @@ ytd-guide-entry-renderer[active] .title.ytd-guide-entry-renderer {
     line-height: var(--yt-guide-highlight-line-height, 1.8rem);}
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+
+/* ■■■■■■■■  Исправления Интеграции Чужих дополнений (опционально) ■■■■■■■■ */
+
+/* (i) По своему усмотрению могу добавлять фиксы позицианирования интенграции чужих элементов,
+       которые могут работать параллельно стилю, если это не будет идти ему во вред (i)*/
+
+        /* "PotPlayer YouTube Shortcut: by "depresjon" */
+/* позиционирование Кнопок ПотПлеера / Positioning the PotPlayer Buttons */
+        /* chrome.google.com/webstore/detail/cfdpeaefecdlkdlgdpjjllmhlnckcodp
+           addons.mozilla.org/firefox/addon/potplayer-youtube-shortcut  */
+.yt-ppbutton {position: relative; top: 16px; left: 79px !important;     /* Светлые Кнопки */
+    box-shadow: 0 0 2px 0 var(--ytd-searchbox-legacy-button-border-color);}
+.yt-ppbuttonBlack {position: relative; top: 16px; left: 79px !important;    /* Тёмные Кнопки */
+    box-shadow: inset 0 0 5px 1px #191919, 0 0 2px 0 var(--ytd-searchbox-legacy-button-border-color);}
+
+/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
 
 /* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ */
