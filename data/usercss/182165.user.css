@@ -2,8 +2,8 @@
 @name           Reddit Custom (RES Compatible) - KMV
 @namespace      USO Archive
 @author         KMVerum
-@description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.orgconspiracies.win - (New, Dec. 2020)poal.cosaidit.netvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201222.5.55
+@description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.top - (New, Dec. 2020)conspiracies.win - (New, Dec. 2020)poal.cosaidit.netvoat.coarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
+@version        20201223.9.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -38,12 +38,12 @@ WPBASE64 "Manual BASE64 Setup (Inject in Code #1)" <<<EOT data:image/jpeg;base64
 @advanced color Titles "Post Titles" #CCCCCC
 @advanced color Visited "Visited Posts" #777777
 @advanced color LinksUnderPosts "Post Info & Links" #717171
-@advanced dropdown RCPostBG00 "Post Highlight (New Reddit)" {
+@advanced dropdown RCPostBG00 "Post Highlight (Under development)" {
 	RCPostBG02 "Background - (Post Highlight (incl. RES))*" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within
+.post-list div.post:focus-within,
+dark-theme .post-list div.post:focus-within
 {
     background:
         linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
@@ -58,25 +58,25 @@ RCPostBG00 "No Background" <<<EOT /*Option Chosen - [No Background]*\/ EOT;
 RCPostBG01 "Border" <<<EOT /*Option Chosen - [Border]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within
+.post-list div.post:focus-within,
+dark-theme .post-list div.post:focus-within
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     transition:2s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active,
-div.container main.main div.main-content.post-list div.post:focus-within:hover,
-div.container main.main div.main-content.post-list div.post:focus-within:active,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within:hover,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within:active
+.post-list div.post:focus-within:hover,
+.post-list div.post:focus-within:active,
+dark-theme .post-list div.post:focus-within:hover,
+dark-theme .post-list div.post:focus-within:active
 {
     background:none!important;
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
 } EOT;
 
 }
-@advanced dropdown RCPostHeight "Post Spacing" {
+@advanced dropdown RCPostHeight "Post Spacing (Reddit)" {
 	RCPostH-3 "+3px (Recommended)*" <<<EOT /* Option chosen: [+3px] *\/
 
 /*old.reddit - Classic - [Default: 0px]*\/
@@ -639,18 +639,20 @@ RCPostH-15 "+15px" <<<EOT /* Option chosen: [+10px] *\/
 } EOT;
 
 }
-@advanced dropdown RCPostHighlight00 "Post Hover Effect (New Reddit)" {
+@advanced dropdown RCPostHighlight00 "Post Hover Effect (Under development)" {
 	RCPostHighlight01 "Increased Brightness*" <<<EOT /*Option Chosen - [Increased Brightness]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
-div.container main.main div.main-content.post-list div.post
+.post-list div.post
 {
     filter:brightness(1);
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
-div.container main.main div.main-content.post-list div.post:hover,
-dark-theme div.container main.main div.main-content.post-list div.post:hover
+.post-list div.post:hover,
+.post-list div.post:focus-within:hover,
+dark-theme .post-list div.post:hover,
+dark-theme .post-list div.post:focus-within:hover
 {
     filter:brightness(1.25);
     transition:.2s;
@@ -658,12 +660,12 @@ dark-theme div.container main.main div.main-content.post-list div.post:hover
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active,
-div.container main.main div.main-content.post-list div.post:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within:hover,
-div.container main.main div.main-content.post-list div.post:focus-within:active,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within:hover,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within:active
+.post-list div.post:focus-within,
+.post-list div.post:focus-within:hover,
+.post-list div.post:focus-within:active,
+dark-theme .post-list div.post:focus-within,
+dark-theme .post-list div.post:focus-within:hover,
+dark-theme .post-list div.post:focus-within:active
 {
     filter:brightness(1);
 } EOT;
@@ -671,14 +673,16 @@ RCPostHighlight00 "None" <<<EOT /*Option Chosen - [None]*\/ EOT;
 RCPostHighlight02 "Border" <<<EOT /*Option Chosen - [Border]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
-div.container main.main div.main-content.post-list div.post,
-dark-theme div.container main.main div.main-content.post-list div.post
+.post-list div.post,
+dark-theme .post-list div.post
 {
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
-div.container main.main div.main-content.post-list div.post:hover,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within:hover
+.post-list div.post:hover,
+.post-list div.post:focus-within:hover,
+dark-theme .post-list div.post:hover,
+dark-theme .post-list div.post:focus-within:hover
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     transition:.2s;
@@ -686,21 +690,21 @@ dark-theme div.container main.main div.main-content.post-list div.post:focus-wit
 RCPostHighlight03 "Border + Increased Brightness" <<<EOT /*Option Chosen - [Border + Increased Brightness]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within
+.post-list div.post:focus-within,
+dark-theme .post-list div.post:focus-within
 {
     transition:2s!important;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
 div.container main.main div.main-content.post-list div.post,
-dark-theme div.container main.main div.main-content.post-list div.post
+dark-theme .post-list div.post
 {
     filter:brightness(1);
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
 div.container main.main div.main-content.post-list div.post:hover,
-dark-theme div.container main.main div.main-content.post-list div.post:hover
+dark-theme .post-list div.post:hover
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     filter:brightness(1.25);
@@ -709,26 +713,26 @@ dark-theme div.container main.main div.main-content.post-list div.post:hover
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:hover,
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within:active,
-div.container main.main div.main-content.post-list div.post:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within:hover,
-div.container main.main div.main-content.post-list div.post:focus-within:active,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within:hover,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within:active
+.post-list div.post:focus-within,
+.post-list div.post:focus-within:hover,
+.post-list div.post:focus-within:active,
+dark-theme .post-list div.post:focus-within,
+dark-theme .post-list div.post:focus-within:hover,
+dark-theme .post-list div.post:focus-within:active
 {
     filter:brightness(1);
 } EOT;
 RCPostHighlight04 "Background (Same as RES Highlight)" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
-div.container main.main div.main-content.post-list div.post,
-dark-theme div.container main.main div.main-content.post-list div.post
+.post-list div.post,
+dark-theme .post-list div.post
 {
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
 div.container main.main div.main-content.post-list div.post:hover,
-dark-theme div.container main.main div.main-content.post-list div.post:hover
+dark-theme .post-list div.post:hover
 {
     background:
         linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
@@ -740,23 +744,23 @@ dark-theme div.container main.main div.main-content.post-list div.post:hover
     transition:.2s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within
+.post-list div.post:focus-within,
+dark-theme .post-list div.post:focus-within
 {
     transition:.2s!important;
 } EOT;
 RCPostHighlight05 "Background + Increased Brightness" <<<EOT /*Option Chosen - [Background + Increased Brightness]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
-div.container main.main div.main-content.post-list div.post,
-dark-theme div.container main.main div.main-content.post-list div.post
+.post-list div.post,
+dark-theme .post-list div.post
 {
     filter:brightness(1);
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
-div.container main.main div.main-content.post-list div.post:hover,
-dark-theme div.container main.main div.main-content.post-list div.post:hover
+.post-list div.post:hover,
+dark-theme .post-list div.post:hover
 {
     background:
         linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
@@ -769,8 +773,8 @@ dark-theme div.container main.main div.main-content.post-list div.post:hover
     transition:.2s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
-div.container main.main div.main-content.post-list div.post:focus-within,
-dark-theme div.container main.main div.main-content.post-list div.post:focus-within
+.post-list div.post:focus-within,
+dark-theme .post-list div.post:focus-within
 {
     filter:brightness(1);
     transition:.2s!important;
@@ -892,7 +896,7 @@ div[data-slot],
 [data-before-content*="advertisement"],
 [id*="google_ads_iframe"],
 .ad-container,
-.adc-resp-bg,
+.adc-resp-bg,.adg-rects,
 .NqMdak8MgbuSVZAABdAw9
 ._1rmObrmUCfC5t42SbwkzYC
 {
@@ -918,7 +922,7 @@ div[data-slot],
 [data-before-content*="advertisement"],
 [id*="google_ads_iframe"],
 .ad-container,
-.adc-resp-bg,
+.adc-resp-bg,.adg-rects,
 .NqMdak8MgbuSVZAABdAw9
 ._1rmObrmUCfC5t42SbwkzYC
 {
@@ -944,7 +948,7 @@ div[data-slot],
 [data-before-content*="advertisement"],
 [id*="google_ads_iframe"],
 .ad-container,
-.adc-resp-bg,
+.adc-resp-bg,.adg-rects,
 .NqMdak8MgbuSVZAABdAw9
 ._1rmObrmUCfC5t42SbwkzYC
 {
@@ -979,7 +983,7 @@ div[data-slot],
 [data-before-content*="advertisement"],
 [id*="google_ads_iframe"],
 .ad-container,
-.adc-resp-bg,
+.adc-resp-bg,.adg-rects,
 .NqMdak8MgbuSVZAABdAw9
 ._1rmObrmUCfC5t42SbwkzYC
 {
@@ -1056,7 +1060,7 @@ div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > butt
 } EOT;
 
 }
-@advanced dropdown RCScores "Scores & Points" {
+@advanced dropdown RCScores "Scores & Points (Under development)" {
 	RCScoresEnabled "Leave be*" <<<EOT /*Score Hider Disabled*\/
 
 /*
@@ -1351,242 +1355,18 @@ EmailYes "Leave be" <<<EOT /*Untouched*\/
 
 }
 @advanced dropdown RCUpdating "Updating:" {
-	RCUpdating00 "Due to properties of Custom CSS, one needs uninstall in order to update.*" <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
-RCUpdating01 "1) Simply keep this page open (to keep settings)" <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
-RCUpdating02 "2) Delete it in Stylish/Stylus" <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
-RCUpdating03 "3) Click Update above as usual" <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
-RCUpdating06 "More Colour Options are available in Code #2." <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
-RCUpdating07 "This is merely an announcement due to character-limitations below." <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
-RCUpdating08 "Pick any option to have this list added at the bottom of Code #1." <<<EOT /*----------------------------------------------------------*\/
-/*                                                          *\/
-/*    Due to properties of Custom CSS, one needs uninstall  *\/
-/*                   in order to update.                    *\/
-/*                                                          *\/
-/*                       Simply go to                       *\/
-/*                                                          *\/
-/*            https://userstyles.org/styles/182165/         *\/
-/*                    (to keep settings),                   *\/
-/*                                                          *\/
-/*             delete theme from Stylish/Stylus,            *\/
-/*           then click Update on page as ususal.           *\/
-/*                                                          *\/
-/*                                                          *\/
-/*              Alpha-settings (transparency)               *\/
-/*       can be added in/to the template colors below.      *\/
-/*                                                          *\/
-/*                #xxxxxx00 is transparent.                 *\/
-/*                #xxxxxx77 is semi-transparent             *\/
-/*                #xxxxxxff is solid.                       *\/
-/*                                                          *\/
-/*                        Hex Ranking:                      *\/
-/*                                                          *\/
-/*              0 1 2 3 4 5 6 7 8 9 a b c d e f             *\/
-/*              |                             |             *\/
-/*         Transparent                      Solid           *\/
-/*                                                          *\/
-/*                            PS:                           *\/
-/*       All wallpapers are available for download at:      *\/
-/*                                                          *\/
-/*               https://old.reddit.com/r/KMV/              *\/
-/*                                                          *\/
-/*----------------------------------------------------------*\/ EOT;
+	RCUpdating00 "Due to properties of Custom CSS, one needs uninstall in order to update.*" <<<EOT /*Updating*\/ EOT;
+RCUpdating01 "1) Simply keep this page open (to keep settings)" <<<EOT /*Updating*\/ EOT;
+RCUpdating02 "2) Delete it in Stylish/Stylus" <<<EOT /*Updating*\/ EOT;
+RCUpdating03 "3) Click Update above as usual" <<<EOT /*Updating*\/ EOT;
+RCUpdating06 "More Colour Options are available in Code #2." <<<EOT /*Updating*\/ EOT;
+RCUpdating07 "This is merely an announcement due to character-limitations below." <<<EOT /*Updating*\/ EOT;
+RCUpdating08 "Pick any option to have this list added in Code #1." <<<EOT /*Updating*\/ EOT;
 
 }
 
 ==/UserStyle== */
-@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("ar.reddit.com"), domain("amp.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com"), domain("conspiracies.win"), domain("authentication.win"), domain("status.communities.win") {
+@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("8ch.net"), domain("8kun.top"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("ar.reddit.com"), domain("amp.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com"), domain("conspiracies.win"), domain("authentication.win"), domain("status.communities.win") {
 /*
 /* Reddit Custom (RES Compatible) - KMV
 /* https://userstyles.org/styles/182165/
@@ -1770,6 +1550,7 @@ body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 }
 
     
+
 /* =================== GUIDE TO WALLPAPERS =================== 
 
 Manual installation of custom Wallpapers;
@@ -1985,6 +1766,41 @@ More on this particular setup (tiles):
 https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 
 
+
+/* ===================== *//*[[RCUpdating]]*//* =====================
+
+
+    Due to properties of Custom CSS, one needs uninstall
+                   in order to update.
+
+                       Simply go to
+
+            https://userstyles.org/styles/182165/
+                    (to keep settings),
+
+             delete theme from Stylish/Stylus,
+           then click Update on page as ususal.
+
+
+              Alpha-settings (transparency)
+       can be added in/to the template colors below.
+
+                #xxxxxx00 is transparent.
+                #xxxxxx77 is semi-transparent
+                #xxxxxxff is solid.
+
+                        Hex Ranking:
+
+              0 1 2 3 4 5 6 7 8 9 a b c d e f
+              |                             |
+         Transparent                      Solid
+
+                            PS:
+       All wallpapers are available for download at:
+
+               https://old.reddit.com/r/KMV/
+
+
 /* ===================== End of Guide ===================== */
 
 
@@ -1995,149 +1811,46 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 
 /*[[RCPostBG00]]*/
 
-/*[[RCPostBG01]]*/
-
-/*[[RCPostBG02]]*/
-
 
 /* ===================== Post Spacing ===================== */
 
 /*[[RCPostHeight]]*/
-
-/*[[RCPostH-0]]*/
-
-/*[[RCPostH-1]]*/
-
-/*[[RCPostH-2]]*/
-
-/*[[RCPostH-3]]*/
-
-/*[[RCPostH-4]]*/
-
-/*[[RCPostH-5]]*/
-
-/*[[RCPostH-6]]*/
-
-/*[[RCPostH-7]]*/
-
-/*[[RCPostH-8]]*/
-
-/*[[RCPostH-9]]*/
-
-/*[[RCPostH-10]]*/
-
-/*[[RCPostH-11]]*/
-
-/*[[RCPostH-12]]*/
-
-/*[[RCPostH-13]]*/
-
-/*[[RCPostH-14]]*/
-
-/*[[RCPostH-15]]*/
 
 
 /* =============== Post Hover on New Reddit =============== */
 
 /*[[RCPostHighlight00]]*/
 
-/*[[RCPostHighlight01]]*/
-
-/*[[RCPostHighlight02]]*/
-
-/*[[RCPostHighlight03]]*/
-
-/*[[RCPostHighlight04]]*/
-
-/*[[RCPostHighlight05]]*/
-
-/*[[RCPostHighlight06]]*/
-
-/*[[RCPostHighlight07]]*/
-
-/*[[RCPostHighlight08]]*/
-
-/*[[RCPostHighlight09]]*/
-
-/*[[RCPostHighlight10]]*/
-
 
 /* ======================= Media dim ======================= */
 
 /*[[RCNightmode]]*/
-
-/*[[RCNoMediaDim]]*/
-
-/*[[RCMediaDim]]*/
 
 
 /* ===================== Award Removal ===================== */
 
 /*[[RCAwards]]*/
 
-/*[[RCGold]]*/
-
-/*[[RCNoGold]]*/
-
 
 /* ================== Reddit Score Hider ================== */
 
 /*[[RCScores]]*/
-
-/*[[RCScoresEnabled]]*/
-
-/*[[RCScoresDisabled]]*/
 
 
 /* ====================== Ad Removal ====================== */
 
 /*[[RCAds]]*/
 
-/*[[RCLeaveAds]]*/
-
-/*[[RCAdsRemoved]]*/
-
-/*[[RCAdsAndPromos]]*/
-
-/*[[RCPromosOnly]]*/
-
 
 /* ================= E-Mail Request Popup ================= */
 
 /*[[EmailRemoval]]*/
 
-/*[[EmailYes]]*/
-
-/*[[EmailNo]]*/
-
-
-/* ======================= Updating ======================= */
-
-/*[[RCUpdating]]*/
-
-/*[[RCUpdating00]]*/
-
-/*[[RCUpdating01]]*/
-
-/*[[RCUpdating02]]*/
-
-/*[[RCUpdating03]]*/
-
-/*[[RCUpdating04]]*/
-
-/*[[RCUpdating05]]*/
-
-/*[[RCUpdating06]]*/
-
-/*[[RCUpdating07]]*/
-
-/*[[RCUpdating08]]*/
-
 
 /* ==================== END OF CODE #1 ==================== */
 }
 
-@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("ar.reddit.com"), domain("amp.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com"), domain("conspiracies.win"), domain("authentication.win"), domain("status.communities.win") {
+@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("8ch.net"), domain("8kun.top"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("ar.reddit.com"), domain("amp.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com"), domain("conspiracies.win"), domain("authentication.win"), domain("status.communities.win") {
 /*Template Colours*/
 
   :root
@@ -2351,7 +2064,7 @@ button.premium-banner__button,.res-nightmode button.premium-banner__button,
 #page-title,
 #srList tr,
 .RESDropdownList li a,.res-nightmode .RESDropdownList li a,
-.RESDropdownList li span,.res-nightmode .RESDropdownList li span,
+.RESDropdownList li span,.res-nightmode .RESDropdownList li span,span,
 form.toggle *,
 /*4chan*/div.post div.postInfo span.subject,
 h2.whoaversename,
@@ -2537,7 +2250,8 @@ tbody a,
 #tobottom.btn-wrap span.button,#filters-ctrl.button,#qf-ctrl.button,
 .author.may-blank.id-t2_11ypoj,
 div .bylink,
-/*conspiracies.win*/div.styling div.preview,
+div.idata a,
+/*conspiracies.win*/div.inner p a:hover,div.styling div.preview,
 .close-button,
 .comment .md a,
 .contact-us-page .button,.res-nightmode .contact-us-page .button,
@@ -2604,6 +2318,7 @@ a ._12FoOEddL7j_RgMQN0SNeU
 
 
 a em:hover,
+a.unimportant:hover,
 aside a:hover,
 /*div a:hover,*/
 /*Observe*/
@@ -2617,6 +2332,8 @@ h6 a:hover,
 li a:hover,
 p a:hover,
 tbody a:hover,
+div.boardlist a:hover,
+div.idata a:hover,
 /*4chan*/#arc-list .quotelink:hover,a#globalToggle.button.redButton.mobile.hidden:hover,
 #header a.login-required.login-link:hover,
 #header .user > .login-required:hover,
@@ -2871,8 +2588,6 @@ body .content .thing .title.loggedin:visited,
 
 /* ------------ On-Click Brightness Reduction ------------ */
 
-aside a:active,
-/*4chan*/#arc-list .quotelink:active, .burichan_new .backlink a:active, .yotsuba_b_new .backlink a:active, a#globalToggle.button.redButton.mobile.hidden:active,
 div#header-bottom-right span.user a.login-required.login-link:active,
 #header .user > .login-required:active,
 #header-bottom-right ul.flat-list.hover li a.pref-lang.choice:active,
@@ -2883,6 +2598,7 @@ div#sr-header-area a:active,
 tbody a:active,
 
 /*==========================Links==========================*/
+aside a:active,
 blockquote a:active,
 blockquote ul li a:active,
 blockquote ul li strong a:active,
@@ -2895,7 +2611,11 @@ p strong a:active,
 ul li strong a:active,
 a.title:active,
 a.title.may-blank:active,
-/*conspiracies.win*/div.styling div.preview:active,
+a.unimportant:active,
+/*4chan*/#arc-list .quotelink:active, .burichan_new .backlink a:active, .yotsuba_b_new .backlink a:active, a#globalToggle.button.redButton.mobile.hidden:active,
+div.idata a:active,
+/*conspiracies.win*/div.inner a:active,div.inner p a:active,div.styling div.preview:active,
+div.boardlist a:active,
 .comment-thread:active,.comment-thread div:active,
 .contact-us-page .button:active,.res-nightmode .contact-us-page .button:active,
 .guiders_content p.guiders_description div table tbody tr td a:active,
@@ -3427,7 +3147,8 @@ html.res-nightmode body.res .side,
 /* -------------------- Alpha + Border ------------------- */
 
 .res-nightmode .res-show-link,
-.res-show-link
+.res-show-link,
+#options_background, #alert_background
 {
     background:#000000cc!important;
     background-color:#000000cc!important;
@@ -3534,6 +3255,7 @@ div[style^="left:"] div[role="button"],
 #report-action-form,
 article.post,
 .alert:nth-child(7),
+div.module, div.ban,
 /*Conspiracies.win*/div.container main.main article.main-content div.post,div.preview-mode.content,
 .searchpane,
 .expando-gate.expando-gate--interstitial,
@@ -3695,6 +3417,7 @@ body:not(.subscriber) .sidebox.submit-link::before,.submit-text::before,
 #genericModal.welcome,
 #hiddensubs,
 #onetrust-banner-sdk .ot-sdk-container, #onetrust-pc-sdk .ot-sdk-container, #ot-sdk-cookie-policy .ot-sdk-container,
+#options_div, #alert_div,
 /*4chan*/.MuiList-root.MuiList-padding,#post-menu,#post-preview,#quote-preview,#tooltip,.MuiDialog-paperWidthSm,.MuiMenu-paper,
 #RESNotifications,
 #RESNotification-0,
@@ -3711,7 +3434,7 @@ table#srList[style="display: block;"],
 [id*="tooltipster"],
 .c-form-control-feedback-wrapper [id*="tooltip"],
 .cookie,
-/*conspiracies.win*/div.cookie-consent,
+/*conspiracies.win*/div.cookie-consent,body.theme-light div.container.padded main.module,body.theme-light div.container.padded main.module h1,div.container main.module,div.container main.module .head,
 .spoiler-text-tooltip,
 .author-tooltip.hover-bubble,
 .author-tooltip__head,
@@ -4285,25 +4008,6 @@ body.res .RES-keyNav-activeElement,
     box-shadow:0px 0px 3px 3px var(--RCBox-Shadow)!important;
 }
 
-/*Custom non-RES Highlight (Shelf)*/
-/*
-.entry.unvoted:active
-{
-    background: var(--RCBackgrounds) !important;
-    border-radius: 4px!important;
-    box-shadow: 0px 0px 2px 0px var(--RCBox-Shadow);
-    transition: .1s!important;
-    filter: opacity(2);
-}
-.entry
-{
-    background: #0000!important;
-    box-shadow: 0 0 2px 0px #0000;
-    transition: 1s!important;
-    transition-delay: 30s!important;
-}
-*/
-
 
 
 /* ------------------- Custom Dropdowns ------------------- */
@@ -4524,6 +4228,7 @@ li.sr-name-row.sr-selected:active,
 .ui-widget-content.ui-menu-item.ui-state-focus:active,
 ._10errIUo7wzwfnjkiqXfXP:active,
 ._1eQr_TkUOm6M6XqM8GTZqp,._1eQr_TkUOm6M6XqM8GTZqp::before,._3p0xqZowgYYjYMOdinU151:active,
+/*conspiracies.win*/.single .form input[type="submit"]:active, .page .main-content .form input[type="submit"]:active,
 ._1LEks0EGX8JP8wFUs2r1Gd:active,
 ._1p4TpHzWWRAkGYYw9_jU-B:active,
 ._1YWXCINvcuU7nk0ED-bta8:active,
@@ -4718,7 +4423,8 @@ xxx
 input,
 .login-form-side input,
 #search input[type="text"],
-.search-form form [type="search"]
+.search-form form [type="search"],
+/*conspiracies.win*/.submit-post #title,.single .form textarea, .page .main-content .form textarea, .popup .form textarea
 {
     color:var(--RCTextHeader);
     background:var(--RCBackgrounds)!important;
@@ -4731,7 +4437,8 @@ input,
 input:hover,
 #search input[type="text"]:hover,
 .res-nightmode #search input[type="text"]:hover,
-.search-form form [type="search"]:hover
+.search-form form [type="search"]:hover,
+/*conspiracies.win*/.submit-post #title:hover,.single .form textarea:hover, .page .main-content .form textarea:hover, .popup .form textarea:hover
 {
     background:var(--RCBackgrounds)!important;
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
@@ -4743,7 +4450,8 @@ input:hover,
 input:focus,
 #search input[type="text"]:focus,
 .res-nightmode #search input[type="text"]:focus,
-.search-form form [type="search"]:focus
+.search-form form [type="search"]:focus,
+/*conspiracies.win*/.submit-post #title:focus,.single .form textarea:focus, .page .main-content .form textarea:focus, .popup .form textarea:focus
 {
     background:var(--RCReply)!important;
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
@@ -4973,14 +4681,6 @@ code,
     border-radius:4px!important;
 }
 
-/*Pinned Title Floater
-.res-show-link,
-.res-nightmode .res-show-link
-{
-    background: #000 !important;
-    border-radius: 4px!important;
-}
-
 
 /*Reddit Comment Hover Disable - Border Optional*/
 
@@ -5007,44 +4707,6 @@ code,
     border-radius:8px;
     transition:delay!important;
 }
-/*._1g70Ndz7edo5LA6hie1Gkt
-{
-    background-color: #0000!important;
-    box-shadow: 0 0 2px 0px #0000;
-    transition: 1s;
-}*/
-/*
-/*Post Hover*/
-/*._2XDITKxlj4y3M99thqyCsO:hover
-{
-    background-color: #0000!important;
-    border-radius: 8px;
-    transition: ease-out .4s !important;
-}
-/*._2XDITKxlj4y3M99thqyCsO
-{
-    background-color: #00000047!important;
-    border-radius: 8px;
-    transition: ease-out 1.2s !important;
-}*/
-/*New Reddit Color Picker
-._1i-ndNsTQtNr82sMJ0renj
-
-{
-    background-color: #111 !important;
-    border-radius: 4px!important;
-    box-shadow: 0px 0px 3px 0px #555!important;
-    z-index:1;
-}
-
-._35Suh6FFPv_wB32f8XV32 ,
-._1oW-7sYYlQS4GeHmj1ubBp
-{
-    background: #0000 !important;
-    z-index:999;
-    transition: .4s !important;
-}*/
-
 
 .SiteHeader
 {
@@ -5688,7 +5350,6 @@ button#COIN_PURCHASE_DROPDOWN_ID._1t5i5bNwZeJ7FuUXZ9rM-p:focus,
 
 
 /*RES Dropdown Menu - Night-/Day Mode Toggle Button*/
-/*.RESDropdownList li span,.res-nightmode .RESDropdownList li span,*/
 .RESDropdownList .toggleButton .toggleThumb,
 .res-nightmode .RESDropdownList.toggleButton .toggleThumb
 {
@@ -6154,21 +5815,7 @@ div.midcol.voting-icons.dislikes div.score.dislikes
     color:var(--RCButtonHoverText)!important;
     transition:.2s!important;
 }
-/*
-.tabmenu li.selected
-{
-    background:var(--RCButtonHover)!important;
-    background-color:var(--RCButtonHover)!important;
-    color:var(--RCTextLinkHover)!important;
-    transition:.4s!important;
-}
 
-
-/*li.tabmenu.selected, .choice.primary,
-.tabmenu .selected a
-{
-    background: #191919 !important;
-}*/
 
 
 /* ------------------- Buttons on-click ------------------- */
@@ -6962,6 +6609,47 @@ span.flairrichtext.flaircolorlight.linkflairlabel:active,
 {
     filter:brightness(.6)!important;
     transition:0s!important;
+}
+
+
+
+/*conspiracies.win*/
+.single .tags input[type="checkbox"] + label
+{
+    color:var(--RCTextHeader)!important;
+    background-color:inherit!important;
+    filter:brightness(50%)opacity(.6)!important;
+    border:1px solid #c7c7c780!important;
+    border-radius:4px;
+    font-size:0.85em;
+    transition:.4s;
+}
+.single .tags input[type="checkbox"] + label:hover
+{
+    filter:brightness(60%)opacity(1)!important;
+    transition:.2s;
+}
+.single .tags input[type="checkbox"]:checked + label:hover
+{
+    filter:brightness(125%)opacity(1)!important;
+    box-shadow: 0px 0px 3px 0px #c7c7c780!important;
+    transition:.2s;
+}
+.single .tags input[type="checkbox"]:checked + label
+{
+    color:var(--RCLinkHover)!important;
+    background-color:inherit!important;
+    filter:brightness(100%)opacity(1)!important;
+    border:1px solid #c7c7c780!important;
+    border-radius:4px;
+    font-size:0.85em;
+    transition:.4s;
+}
+.single .tags input[type="checkbox"] + label:active,
+.single .tags input[type="checkbox"]:checked + label:active
+{
+    filter:brightness(40%)opacity(.75)!important;
+    transition:0s;
 }
 
 
@@ -7779,21 +7467,12 @@ body > table tbody img
 /*---------------------- Item Removal ----------------------*/
 
 
-/*div[data-slot],*/
-/* Hide subreddits top bar */
-/*#sr-more-link,*/
-/*/*[[sr-top-bar]]*/
 .search-expando.collapsed:before,
 .comment-fade,
 .grippy:after,
 /* Item Removal */
-/*.goldvertisement,*/
 .nub,
-/*.embed-comment,*/
 .threadline,
-/*div.side [href*="submit?sidebar"]::before,*/
-/*E-mail Reminder*/
-/*._1OgkiGPJJAUnekNcyEXyik._1jVWaoUHaY301BmBwE48DE,*/
 /*Cookie Notification*/
 #eu-cookie-policy
 {
@@ -8001,7 +7680,7 @@ p.debuginfo:hover:after{color:var(--RCText)!important;content:"Reddit Custom (RE
 /* ==================== END OF CODE #2 ==================== */
 }
 
-@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("archived.moe"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("amp.reddit.com"), domain("ar.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com"), domain("conspiracies.win"), domain("authentication.win"), domain("status.communities.win") {
+@-moz-document domain("www.reddit.com"), domain("old.reddit.com"), domain("np.reddit.com"), domain("snew.notabug.io"), domain("notabug.io"), domain("www.removeddit.com"), domain("www.reveddit.com"), domain("pushshift.io"), domain("4chan.org"), domain("www.4chan.org"), domain("boards.4chan.org"), domain("boards.4channel.org"), domain("archive.4plebs.org"), domain("p.4chan.org"), domain("archived.moe"), domain("8ch.net"), domain("8kun.top"), domain("poal.co"), domain("saidit.net"), domain("voat.co"), domain("web.archive.org"), domain("archive.fo"), domain("archive.is"), domain("archive.md"), domain("archive.vn"), domain("ads.reddit.com"), domain("af.reddit.com"), domain("amp.reddit.com"), domain("ar.reddit.com"), domain("ba.reddit.com"), domain("be.reddit.com"), domain("bg.reddit.com"), domain("bn-IN.reddit.com"), domain("bn.bd.reddit.com"), domain("bs.reddit.comx"), domain("ca.reddit.com"), domain("cc.reddit.com"), domain("co.reddit.com"), domain("cs.reddit.com"), domain("cy.reddit.com"), domain("da.reddit.com"), domain("dd.reddit.com"), domain("de.reddit.com"), domain("ds.reddit.com"), domain("el.reddit.com"), domain("en.reddit.com"), domain("en.au.reddit.com"), domain("en.ca.reddit.com"), domain("en.gb.reddit.com"), domain("en.us.reddit.com"), domain("eo.reddit.com"), domain("es.reddit.com"), domain("es-ar.reddit.com"), domain("es-cl.reddit.com"), domain("es-mx.reddit.com"), domain("et.reddit.com"), domain("eu.reddit.com"), domain("fa.reddit.com"), domain("fi.reddit.com"), domain("fil.reddit.com"), domain("fr.reddit.com.reddit.com"), domain("fr.ca.reddit.com"), domain("fy-NL.reddit.com"), domain("ga-ie.reddit.com"), domain("gd.reddit.com"), domain("gl.reddit.com"), domain("he.reddit.com"), domain("hi.reddit.com"), domain("hr.reddit.com"), domain("hu.reddit.com"), domain("hy.reddit.com"), domain("id.reddit.com"), domain("is.reddit.com"), domain("it.reddit.com"), domain("ja.reddit.com"), domain("kn_IN.reddit.com"), domain("ko.reddit.com"), domain("la.reddit.com"), domain("leet.reddit.com"), domain("lol.reddit.com"), domain("lt.reddit.com"), domain("lv.reddit.com"), domain("mod.reddit.com"), domain("ms.reddit.com"), domain("mt-MT.reddit.com"), domain("ne.reddit.com"), domain("new.reddit.com"), domain("nl.reddit.com"), domain("nn.reddit.com"), domain("no.reddit.com"), domain("oauth.reddit.com"), domain("pa.reddit.com"), domain("pir.reddit.com"), domain("pl.reddit.com"), domain("ps.reddit.com"), domain("pt.reddit.com"), domain("pt-pt.reddit.com"), domain("pt_BR.reddit.com"), domain("ro.reddit.com"), domain("ru.reddit.com"), domain("sk.reddit.com"), domain("sr.reddit.com"), domain("sr-la.reddit.com"), domain("ss.reddit.com"), domain("sv.reddit.com"), domain("ta.reddit.com"), domain("th.reddit.com"), domain("tr.reddit.com"), domain("ty.reddit.com"), domain("uk.reddit.com"), domain("us-en.reddit.com"), domain("us.reddit.com"), domain("vi.reddit.com"), domain("zh.reddit.com"), domain("zh.cn.reddit.com"), domain("reddit.zendesk.com"), domain("redditblog.com"), domain("www.redditgifts.com"), domain("www.reddithelp.com"), domain("www.redditinc.com"), domain("www.redditstatic.com"), domain("webcache.googleusercontent.com"), domain("conspiracies.win"), domain("authentication.win"), domain("status.communities.win") {
 /* 
 /* Cursor - Black - KMV (Modified)
 /* taken from:
@@ -8029,6 +7708,8 @@ body,
 /* Hover */
 
 [class*="Click"]:hover:after,
+[class*="clickable"],
+[class*="clickable"] *,
 [class*="close"]:hover,
 [class*="close"]:hover *,
 [class*="close"] *:hover,
@@ -8330,6 +8011,8 @@ circle:hover,._2UkVCdCS7jDS13coUav5oC._1LOeEKaSieqdJrgbfv411 ._1RZNl6Crcd1--tYLU
 [class*="button"]:active:after,
 [class*="Button"]:active:after,
 [class*="Click"]:active:after,
+[class*="clickable"]:active,
+[class*="clickable"] *:active,
 [class*="close"]:active,
 [class*="close"]:active *,
 [class*="close"] *:active,
@@ -9140,5 +8823,29 @@ html body.no-selection div#anchor.anchor.normal.light div.anchor-content div.che
 html body.invisible_mode form.form-group.form-captcha
 {
     margin-bottom: 0px;
+}
+}
+
+@-moz-document domain("8ch.net") {
+body
+{
+    color: var(--RCText);
+}
+html body a
+{
+    color: var(--RCTextLink);
+    filter:brightness(1);
+    transition:.4s!important;
+}
+html body a:hover
+{
+    color: var(--RCTextLinkHover);
+    transition:.2s!important;
+}
+html body a:active
+{
+    color: var(--RCTextLinkHover);
+    filter:brightness(.6);
+    transition:0s!important;
 }
 }

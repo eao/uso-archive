@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         vios10009 Ƹ̵̡Ӝ̵̨̄Ʒ
 @description    `在動畫瘋享受夜間模式主題的背景.如果發現問題，可以寄信到『vios10009@gmail.com』來回報問題。`
-@version        2020115.12.45
+@version        20201223.11.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,7 +15,7 @@
 
 範圍：巴哈姆特動畫瘋
 
-最後修改日期：2020 / 1 / 15
+最後修改日期：2020 / 12 / 23
 
 參考作者：hbl917070（深海異音）
 
@@ -146,6 +146,12 @@ ul.member .top_btn_notice a:hover:after
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000, 2px 2px 2px rgba(0, 0, 0, 0.5);;
 }
 
+/*觸碰文字色彩*/
+.mainmenu a:hover
+{
+    color: rgba(18, 1200, 255, 1);
+}
+
 /*本季新番*/
 body .BH_background .container .index_new .title .arrange .anime_date_list .btn_date_active
 {
@@ -208,6 +214,15 @@ body .BH_background .container .index_new .title .arrange .anime_date_list .btn_
     border: 5px solid rgba( 253, 130, 0, 0.5);
     border-radius: 20px;
     background: linear-gradient(green,yellow);
+}
+span[style="color:red"],.age-cer-area .age-cer-info .cer-info-text span
+{
+ 	color: #23ffeb !important;   
+}
+.age-cer-area .age-cer-info .cer-info-text a
+{
+ 	font-weight:bold;
+    color: #72e8ff;
 }
 
 /*彈幕*/
@@ -470,5 +485,10 @@ a[stats='object Object'],a[href='https://developers.facebook.com/products/social
 ._5o4h ._1gl3
 {
         background: rgba(64, 128, 255, 0.5) !important;    
+}
+/*FB留言背景色*/
+:root, .__fb-light-mode
+{
+    background: rgba(10, 10, 10, 0.8) !important;
 }
 }

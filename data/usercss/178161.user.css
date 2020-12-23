@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sef Eiba
 @description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area alongside various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ Important note: for Firefox users whom experiencing some animation lag, make sure to go to Customize Settings and select Firefox on the Browser option♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page. You can also change various settings.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        20201218.22.26
+@version        20201223.9.51
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown background "Duel Background Image" {
@@ -935,7 +935,7 @@ SockES_yes "Yes" <<<EOT /* Sock's extension styling *\/
 @advanced dropdown attack-sword "Attack Sword" {
 	default-atk-sword "Default Attack Sword*" <<<EOT  EOT;
 eldorado-atk-sword "Eldorado Attack Sword" <<<EOT .game-attack-animation {
-      background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/9cbba8a697b39e8b55560349a0d75a3655269a35/test/eldorado-attack-sword.svg) no-repeat;
+      background: url(https://raw.githubusercontent.com/sefeiba/duelingnexus/master/test/eldorado-attack-sword.svg) no-repeat;
       background-size: cover;
       display: block;
       box-sizing: border-box;
@@ -944,7 +944,7 @@ eldorado-atk-sword "Eldorado Attack Sword" <<<EOT .game-attack-animation {
       padding-bottom: 100%;
   } EOT;
 eldorado-atk-knife "Eldorado Attack Knife" <<<EOT .game-attack-animation {
-      background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/9cbba8a697b39e8b55560349a0d75a3655269a35/test/eldorado-attack-knife.svg) no-repeat;
+      background: url(https://raw.githubusercontent.com/sefeiba/duelingnexus/master/test/eldorado-attack-knife.svg) no-repeat;
       background-size: cover;
       display: block;
       box-sizing: border-box;
@@ -953,7 +953,16 @@ eldorado-atk-knife "Eldorado Attack Knife" <<<EOT .game-attack-animation {
       padding-bottom: 100%;
   } EOT;
 eldorado-atk-arrow "Eldorado Attack Arrow" <<<EOT .game-attack-animation {
-      background: url(https://rawcdn.githack.com/sefeiba/duelingnexus/9cbba8a697b39e8b55560349a0d75a3655269a35/test/eldorado-attack-arrow.svg) no-repeat;
+      background: url(https://raw.githubusercontent.com/sefeiba/duelingnexus/master/test/eldorado-attack-arrow.svg) no-repeat;
+      background-size: cover;
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      height: 100%;
+      padding-bottom: 100%;
+  } EOT;
+white-atk-sword "White Attack Sword" <<<EOT .game-attack-animation {
+      background: url(https://raw.githubusercontent.com/sefeiba/duelingnexus/master/test/glowing-attack-sword.svg) no-repeat;
       background-size: cover;
       display: block;
       box-sizing: border-box;
@@ -1051,7 +1060,6 @@ eldorado-atk-arrow "Eldorado Attack Arrow" <<<EOT .game-attack-animation {
   #game-rps-container {
     background-color: rgba(0, 0, 0, 0.7);
     height: 100vh;
-    backdrop-filter: blur(7px);
     margin-top: 0px;
     padding-top: 5vh;
   }
@@ -1521,6 +1529,10 @@ eldorado-atk-arrow "Eldorado Attack Arrow" <<<EOT .game-attack-animation {
   #game-field-player-banished div.game-field-zone-content {
     margin-top: 3%;
     margin-left: -0.1%;
+  }
+  
+  #game-field-player-banished {
+    transform: translate(-0.9vw, 0);
   }
 
   /*
