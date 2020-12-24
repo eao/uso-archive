@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         hori68
 @description    `トップページのチャンネル一覧で、まったく見る気のないチャンネルを非表示にします。その他、トップページ向けの機能が若干あります。チャンネルをCHと略している箇所があります。各設定の既定値は公式にあわせているので、全ての設定を真剣に考えないでも大丈夫です。意味不明な項目は放置で、これを変えたい！という項目だけいじれば、そこだけ変わって他は公式通りの表示になるはずです。`
-@version        2020726.15.49
+@version        20201224.11.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown ch_lines "CH表示列数上限※2" {
@@ -675,13 +675,6 @@ discovery-off "非表示" <<<EOT a[href$="/now-on-air/discovery"]{
 } EOT;
 
 }
-@advanced dropdown mtv-hits "MTV HITS" {
-	mtv-hits-on "表示*" <<<EOT  EOT;
-mtv-hits-off "非表示" <<<EOT a[href$="/now-on-air/mtv-hits"]{
-    display:none !important;
-} EOT;
-
-}
 @advanced dropdown hiphop "HIPHOP" {
 	hiphop-on "表示*" <<<EOT  EOT;
 hiphop-off "非表示" <<<EOT a[href$="/now-on-air/hiphop"]{
@@ -808,6 +801,13 @@ ppv-off "非表示" <<<EOT a[href$="/now-on-air/payperview-pr"]{
 } EOT;
 
 }
+@advanced dropdown ppv2 "PPV2" {
+	ppv2-on "表示*" <<<EOT  EOT;
+ppv2-off "非表示" <<<EOT a[href$="/now-on-air/payperview-pr-2"]{
+    display:none !important;
+} EOT;
+
+}
 
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -877,7 +877,6 @@ ppv-off "非表示" <<<EOT a[href$="/now-on-air/payperview-pr"]{
 /*[[everybody-anime2]]*/
 /*[[commercial]]*/
 /*[[discovery]]*/
-/*[[mtv-hits]]*/
 /*[[hiphop]]*/
 /*[[abema-radio]]*/
 /*[[fighting-sports]]*/
@@ -896,4 +895,5 @@ ppv-off "非表示" <<<EOT a[href$="/now-on-air/payperview-pr"]{
 /*[[mahjong-live]]*/
 /*[[sumo]]*/
 /*[[ppv]]*/
+/*[[ppv2]]*/
 }

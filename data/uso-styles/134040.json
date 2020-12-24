@@ -11,11 +11,11 @@
     "about": null,
     "license": "ccby"
   },
-  "updated": "2020-07-26T12:49:13.000Z",
-  "weekly_install_count": 2,
-  "total_install_count": 483,
+  "updated": "2020-12-24T11:11:53.000Z",
+  "weekly_install_count": 5,
+  "total_install_count": 527,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/134040_after.png?r=1601626017",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/134040_after.png?r=1608808315",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
@@ -29,7 +29,7 @@
   "subcategory": "abema",
   "additional_info": "Google Chromeで動作確認しています。\r\n期間限定のチャンネルがあります。既に終了したチャンネルがあるかもしれません。\r\n\r\n※2 チャンネル表示列数上限\r\nチャンネルを横に最大幾つ並べるかを指定します。実際の列数はブラウザサイズに応じて3～本指定値の間で変動します。\r\n\r\n※3 選択CH\r\n選択CHとはマウスカーソルを置くことで選ばれるチャンネル、明るくなって映像が動き出すチャンネルのことです。",
   "style_tags": [],
-  "css": "@namespace url(http://www.w3.org/1999/xhtml);\r\n\r\n@-moz-document url(\"https://abema.tv/\"), url(\"https://abema.tv/video\"), url(\"https://abema.tv/timetable\"), url-prefix(\"https://abema.tv/now-on-air\") {\r\n\r\n.com-tv-top-CommercialBanner {\r\n    margin: 0 auto !important;\r\n}\r\n\r\n.com-tv-top-ChannelCardGrid{\r\n    margin: 8px 0px 0px 0px !important;\r\n}\r\n\r\n.com-tv-top-ChannelCard {\r\n    width:initial !important;\r\n}\r\n\r\n.com-tv-top-ChannelCard__container{\r\n    background-color: #171717 !important;\r\n    margin:initial !important;\r\n}\r\n\r\n.com-tv-top-ChannelCard__container:before{\r\n    padding-top: 8px !important;\r\n}\r\n\r\n.com-tv-ChannelCard__container-inner{\r\n    position:initial !important;\r\n}\r\n\r\n.com-tv-ChannelCard__content {\r\n    margin: 8px !important;\r\n    position: relative !important;\r\n}\r\n\r\n.com-a-ResponsiveMainContent__inner {\r\n    max-width:initial !important;\r\n    min-width:initial !important;\r\n}\r\n\r\n/*[[ch_lines]]*/\r\n\r\n/*[[top_cm]]*/\r\n\r\n/*[[sch_zoom]]*/\r\n\r\n/*[[sch_nm_disp]]*/\r\n\r\n/*[[abema-news]]*/\r\n/*[[abema-special]]*/\r\n/*[[special-plus]]*/\r\n/*[[special-plus-2]]*/\r\n/*[[special-plus-3]]*/\r\n/*[[special-plus-4]]*/\r\n/*[[special-plus-5]]*/\r\n/*[[special-plus-6]]*/\r\n/*[[drama]]*/\r\n/*[[asia-drama]]*/\r\n/*[[asia-drama-2]]*/\r\n/*[[k-world]]*/\r\n/*[[abema-anime]]*/\r\n/*[[abema-anime2]]*/\r\n/*[[anime-live]]*/\r\n/*[[anime-live2]]*/\r\n/*[[everybody-anime]]*/\r\n/*[[everybody-anime2]]*/\r\n/*[[commercial]]*/\r\n/*[[discovery]]*/\r\n/*[[mtv-hits]]*/\r\n/*[[hiphop]]*/\r\n/*[[abema-radio]]*/\r\n/*[[fighting-sports]]*/\r\n/*[[fighting-sports2]]*/\r\n/*[[world-sports]]*/\r\n/*[[world-sports1]]*/\r\n/*[[world-sports2]]*/\r\n/*[[ufc]]*/\r\n/*[[golf]]*/\r\n/*[[boatrace]]*/\r\n/*[[keirin-auto]]*/\r\n/*[[fishing]]*/\r\n/*[[shogi]]*/\r\n/*[[shogi-live]]*/\r\n/*[[mahjong]]*/\r\n/*[[mahjong-live]]*/\r\n/*[[sumo]]*/\r\n/*[[ppv]]*/\r\n}\r\n",
+  "css": "@namespace url(http://www.w3.org/1999/xhtml);\r\n\r\n@-moz-document url(\"https://abema.tv/\"), url(\"https://abema.tv/video\"), url(\"https://abema.tv/timetable\"), url-prefix(\"https://abema.tv/now-on-air\") {\r\n\r\n.com-tv-top-CommercialBanner {\r\n    margin: 0 auto !important;\r\n}\r\n\r\n.com-tv-top-ChannelCardGrid{\r\n    margin: 8px 0px 0px 0px !important;\r\n}\r\n\r\n.com-tv-top-ChannelCard {\r\n    width:initial !important;\r\n}\r\n\r\n.com-tv-top-ChannelCard__container{\r\n    background-color: #171717 !important;\r\n    margin:initial !important;\r\n}\r\n\r\n.com-tv-top-ChannelCard__container:before{\r\n    padding-top: 8px !important;\r\n}\r\n\r\n.com-tv-ChannelCard__container-inner{\r\n    position:initial !important;\r\n}\r\n\r\n.com-tv-ChannelCard__content {\r\n    margin: 8px !important;\r\n    position: relative !important;\r\n}\r\n\r\n.com-a-ResponsiveMainContent__inner {\r\n    max-width:initial !important;\r\n    min-width:initial !important;\r\n}\r\n\r\n/*[[ch_lines]]*/\r\n\r\n/*[[top_cm]]*/\r\n\r\n/*[[sch_zoom]]*/\r\n\r\n/*[[sch_nm_disp]]*/\r\n\r\n/*[[abema-news]]*/\r\n/*[[abema-special]]*/\r\n/*[[special-plus]]*/\r\n/*[[special-plus-2]]*/\r\n/*[[special-plus-3]]*/\r\n/*[[special-plus-4]]*/\r\n/*[[special-plus-5]]*/\r\n/*[[special-plus-6]]*/\r\n/*[[drama]]*/\r\n/*[[asia-drama]]*/\r\n/*[[asia-drama-2]]*/\r\n/*[[k-world]]*/\r\n/*[[abema-anime]]*/\r\n/*[[abema-anime2]]*/\r\n/*[[anime-live]]*/\r\n/*[[anime-live2]]*/\r\n/*[[everybody-anime]]*/\r\n/*[[everybody-anime2]]*/\r\n/*[[commercial]]*/\r\n/*[[discovery]]*/\r\n/*[[hiphop]]*/\r\n/*[[abema-radio]]*/\r\n/*[[fighting-sports]]*/\r\n/*[[fighting-sports2]]*/\r\n/*[[world-sports]]*/\r\n/*[[world-sports1]]*/\r\n/*[[world-sports2]]*/\r\n/*[[ufc]]*/\r\n/*[[golf]]*/\r\n/*[[boatrace]]*/\r\n/*[[keirin-auto]]*/\r\n/*[[fishing]]*/\r\n/*[[shogi]]*/\r\n/*[[shogi-live]]*/\r\n/*[[mahjong]]*/\r\n/*[[mahjong-live]]*/\r\n/*[[sumo]]*/\r\n/*[[ppv]]*/\r\n/*[[ppv2]]*/\r\n}\r\n",
   "discussions": [],
   "discussionsCount": 0,
   "commentsCount": 0,
@@ -735,34 +735,6 @@
       ]
     },
     {
-      "id": 456314,
-      "style_id": 134040,
-      "install_key": "mtv-hits",
-      "label": "MTV HITS",
-      "ordinal": 144,
-      "setting_type": "dropdown",
-      "style_setting_options": [
-        {
-          "id": 1640933,
-          "style_setting_id": 456314,
-          "label": "表示",
-          "value": "",
-          "default": true,
-          "ordinal": 0,
-          "install_key": "mtv-hits-on"
-        },
-        {
-          "id": 1640934,
-          "style_setting_id": 456314,
-          "label": "非表示",
-          "value": "a[href$=\"/now-on-air/mtv-hits\"]{\r\n    display:none !important;\r\n}",
-          "default": false,
-          "ordinal": 1,
-          "install_key": "mtv-hits-off"
-        }
-      ]
-    },
-    {
       "id": 456330,
       "style_id": 134040,
       "install_key": "hiphop",
@@ -1263,6 +1235,34 @@
           "default": false,
           "ordinal": 1,
           "install_key": "ppv-off"
+        }
+      ]
+    },
+    {
+      "id": 469395,
+      "style_id": 134040,
+      "install_key": "ppv2",
+      "label": "PPV2",
+      "ordinal": 163,
+      "setting_type": "dropdown",
+      "style_setting_options": [
+        {
+          "id": 1665400,
+          "style_setting_id": 469395,
+          "label": "表示",
+          "value": "",
+          "default": true,
+          "ordinal": 0,
+          "install_key": "ppv2-on"
+        },
+        {
+          "id": 1665401,
+          "style_setting_id": 469395,
+          "label": "非表示",
+          "value": "a[href$=\"/now-on-air/payperview-pr-2\"]{\r\n    display:none !important;\r\n}",
+          "default": false,
+          "ordinal": 1,
+          "install_key": "ppv2-off"
         }
       ]
     }

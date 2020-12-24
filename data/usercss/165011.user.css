@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Anonach
 @description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/Rgam9mqn`
-@version        20201221.15.39
+@version        20201224.12.31
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1522,9 +1522,9 @@ span[style="background-color: rgb(255, 0, 0);"] {background-color: var(--theme_r
 .post__message {margin: 8px 20px; scrollbar-color: var(--theme_scroll) transparent; scrollbar-width: thin;}
 .post__images_type_single + .post__message {margin: 0 20px 8px; min-width: 200px;}
 
-.post_preview {animation: open .1s ease-out; border-color: transparent !important; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px var(--theme_shadow2) !important;}
+.post_preview {border-color: transparent !important; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 6px var(--theme_shadow2) !important;}
 .post_type_reply:before {content: "";}
-.post_type_reply {border-color: transparent; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px var(--theme_shadow); margin-left: 0; transition: .1s;}
+.post_type_reply {border-color: transparent; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px var(--theme_shadow); margin-left: 0;}
 
 .post_type_watched, .post_type_replied {margin-left: 10px;}
 .post_type_watched:before {display: block; position: absolute; top: 0; bottom: 0; left: -10px; border-left: 2px solid var(--theme_default_borderhighlight);}

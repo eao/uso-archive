@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        20201223.14.50
+@version        20201224.12.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -137,10 +137,6 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 .css-gdhe4w .form-con, .css-gdhe4w .form-con .why{ background-color: #202020 !important;}
 .css-gdhe4w .form-con .why .items .item{ background-color: #fff !important;}
 .css-gdhe4w .lead-in span, .css-gdhe4w .form-con .why .title{ color: #fff !important;}
-
-
-/* Announcement articles */
-.css-3fpgoh, .css-e7d7y6, .css-1ezl0c, .css-mm1dbi, .css-a13acy, table.css-56ebq4 td div{ color: #fff !important;}
 }
 
 @-moz-document regexp("https://www.binance.com/.+/eth2") {
@@ -204,4 +200,9 @@ input.css-1vgh1xx{ color: #000 !important;}
 .css-1afj3g1{ color: #000 !important;}
 .css-14a0dhn, .css-97kf19, .css-1wmfgbz, .css-asjsta, .css-1why4o4, .css-1jq86li, .css-197z3hk:hover{ color: #76808F !important;}
 .css-zw4eg9, .css-oewxpj, .css-1ts5bmq{ color: #fff !important;}
+}
+
+@-moz-document regexp("https://www.binance.com/.+/support/announcement/.+") {
+/* Announcement articles */
+.css-3fpgoh, .css-e7d7y6, .css-1ezl0c, .css-mm1dbi, .css-a13acy, table.css-56ebq4 td div, .css-56ebq4 td, .css-3btkoi{ color: #fff !important;}
 }

@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         decembre
 @description    `▶ It's (or just better) FOR  A WIDESCREEN : (1920x1080)! ▶ Adaptation for (the always working):<a href="https://greasyfork.org/fr/scripts/4336-ts-citrus-gfork"><b>[TS] Citrus GFork</b></a>Broken since 2020.12., but there is a fix:<b><a href="https://greasyfork.org/en/scripts/4336-ts-citrus-gfork/discussions/69927">If you want a temporary fix (before its author come back to us), try :  Unofficial fix of the &quot;Citrus GFork&quot; script</a></b>▶ You can test too my Userscript:<a href="https://greasyfork.org/fr/scripts/29452-userstyles-tables-sorter-simple">USERSTYLES - TABLES Sorter SIMPLE</a>"Sort Userstyles Table on Profile page:click on the top header of each column..."`
-@version        20201222.12.45
+@version        20201224.10.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://greasyfork.org/forum/"), url-prefix("https://74.86.192.75/"), domain("userstyles.org"), domain("greasyfork.org"), domain("sleazyfork.org") {
 
 
-/* ==== Userstyles / Greasy Fork Enhancer Dark-Grey  189  -  WATnew06 - with FIX by Konf - Without EDIT COMMENT  - TEST NEW FORUM GREASYFORK ==== */
+/* ==== Userstyles / Greasy Fork Enhancer Dark-Grey  189.5  -  WATnew06 - with FIX by Konf - Without EDIT COMMENT  - TEST NEW FORUM GREASYFORK ==== */
 /* CITRUS FIX by Konf(2020.12.09) :
 https://greasyfork.org/en/discussions/requests/69803-help-to-fix-ts-citrus-gfork#comment-173029
 =================== */
