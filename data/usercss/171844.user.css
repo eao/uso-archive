@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         D.D.D.
 @description    `Aims to make Fandom.com wikis cleaner on desktop.`
-@version        20201031.12.56
+@version        20201224.0.53
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -80,6 +80,7 @@ div.WikiaPage div.WikiaPageContentWrapper {display:block;width:80%;float:right;}
   div.post-details-desktop div.post-details-desktop__main {width:70%;display:table-column!important;float:left;}
   div.wds-fandom-content-well aside.post-details-desktop__right {display:table-column!important;float:right;width:30%;}
   div.wds-fandom-content-well div.home-page-desktop {width:83%;float:right;}
+#globalNavigation .wds-dropdown__content {background-color:white!important;}
   /* MINOR STYLE FIXES */
   span.headnote {margin-top:0px!important;}
   div#catlinks {background-color:rgba(0,0,0,0);}

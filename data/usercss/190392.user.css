@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `My eyes are in pain, thats why I made dark theme for almost every Microsoft site possible.`
-@version        2020122.0.15
+@version        20201223.22.37
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1329,6 +1329,18 @@ button.c-tag:hover, button.c-tag:focus, a.c-tag:hover, a.c-tag:focus {
 button.c-tag:active, a.c-tag:active {
     background: rgba(255, 255, 255, .2);
 }
+.m-social.f-horizontal ul>li, .c-social.f-horizontal ul>li {
+	filter: invert(100);
+}
+.searchsubhero {
+	background: #161616 !important;
+}
+.SB-hero-banner .banner-background {
+	background: #161616;
+}
+.badge-silver {
+	background: #383838 !important;
+}
 }
 
 @-moz-document domain("microsoft.com") {
@@ -2209,6 +2221,68 @@ div.head #header-common .logo:focus, div.head #header-common .logo:hover {
 	background: #010101;
 	border-color: #2c2c2c;
 	color: #fff;
+}
+div.head, .filmstripouter.light, body #maincontent, body #precontent, body #prefooter, .rc>a:first-of-type .overlay {
+	background: #000;
+}
+.storyimage .caption .attribution {
+	color: #fff;
+}
+.storyimage .caption, .filmstripouter.light section.filmstrip li a div .truncate {
+	color: #999;
+}
+.paddle a {
+    background: #000;
+    box-shadow: 0 0 20px rgba(255, 255, 255, .2);
+}
+.paddle a .headline {
+	color: #ccc;
+}
+.paddle.previous a::before, .paddle.next a::before {
+	color: #fff;
+}
+.paddle a::before {
+    background: #000;
+    box-shadow: 0 0 20px rgba(255, 255, 255, .2);
+}
+nav.megamenu>div.menu {
+    box-shadow: 0 0.1rem 0.1rem 0.1rem #1f1f1f;
+}
+nav.megamenu .start.vertsn {
+	background: #000;
+	border-color: #1f1f1f;
+}
+nav.megamenu .start.moresn {
+	background: #070707;
+	border-color: #1f1f1f;
+}
+nav.megamenu a, nav.megamenu li {
+	color: #ccc;
+}
+.megamenu h2 {
+	color: #505050;
+}
+.todaystripe .mediuma {
+	background: #000;
+	border-color: #2f2f2f;
+}
+.todaystripe .smalla, .todaystripe .infopane-placeholder, .stripeouter .paging-container>div:not(.normaldensity):not(.bigherodensity):not(.highdensity):not(.stripeheadlinelinklist), .stripeouter .paging-container>div>ul, .stripeouter .paging-container>div>section>ul {
+	border-color: #2f2f2f;
+}
+.weatodaymini {
+    border-right-color: rgba(255, 255, 255, .15);
+}
+.todaynavigation .stripearrow {
+    box-shadow: 0 0 10rem 7rem #040402;
+}
+.stripemenu.expanded span {
+	color: #eee;
+}
+.stripemenu button:nth-child(n+2):active, .stripemenu span:active {
+    background: #50505040;
+}
+.stripemenu button:nth-child(n+2):hover, .stripemenu span:hover {
+    background: #50505026;
 }
 }
 

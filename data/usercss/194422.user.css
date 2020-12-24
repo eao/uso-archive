@@ -1,36 +1,33 @@
 /* ==UserStyle==
-@name           Старый дизайн шапки
+@name           Старая новая шапка
 @namespace      USO Archive
 @author         Recycle Bin
-@description    `Возвращает прежний синий цвет шапке от ВКонтакте. При этом стиль логотипа и иконок остаётся как после редизайнаИдеально подойдёт тем, кому нравится новый дизайн, но не нравится белое оформление шапкиТакже теперь все языки используют логотип с названием (полезно тем, кто использует ВЕ на советским/дореволюционным/украинским/етц.)`
-@version        20201216.12.34
+@description    `Возвращает прежний синий вид шапке от ВКонтакте. При этом стиль логотипа и иконок остаётся как после редизайнаТакже теперь <b>все</b> языки используют логотип с названием (будет полезно тем, кто использует ВК на советским/дореволюционным/украинским/етц.)Идеально подойдёт тем, кому пришёлся по душе новый дизайн, но не нравится белое оформление шапки`
+@version        20201223.20.29
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://vk.com") {
-/* СДЕЛАЛ vk.com/0x20c -- ЖАЛОБЫ И ПРЕДЛОЖЕНИЯ СЛАТЬ СЮДА :)))) */
+/* СДЕЛАЛ vk.com/0x20c -- ЖАЛОБЫ И ПРЕДЛОЖЕНИЯ СЛАТЬ СЮДА :) */
 
 /* ОБЩИЕ ЦВЕТА И ШИРИНА */
 body.new_header_design {--header-height: 42px !important;}
 body.new_header_design #page_header_cont {
 	background-color: #4a76a8 !important;
-	border-bottom: 1px solid #4a76a8 !important;
-}
+	border-bottom: 1px solid #4a76a8 !important;}
 
 /* ЛОГОТИП */
-body.new_header_design .top_home_link .top_home_logo {
+body.new_header_design .top_home_link .top_home_logo, .TopHomeLink--ny2021logo:not(.TopHomeLink--logoWithText), [dir] body.WideScreenAppPage .TopHomeLink--ny2021logo {
 	background-size: auto 30px;
 	background: url(https://i.imgur.com/LUmsZdu.png) !important;
 	background-repeat: no-repeat !important;
-	height: 24px !important;
-}
+	height: 24px !important;}
 
 /* ПОИСК */
 body.new_header_design .TopSearch__input {
 	background-color: #224b7a !important;
 	border-radius: 8px !important;
-	height: 28px !important;
-}
+	height: 28px !important;}
 body.new_header_design .TopSearch .input_back_content {color: #86a1bf !important;}
 body.new_header_design .TopSearch__input {color: #becbd9 !important;}
 
@@ -48,8 +45,7 @@ body.new_header_design .top_audio_player:hover {background-color: #00143321 !imp
 .top_audio_player .top_audio_player_btn {
 	float: left !important;
 	filter: brightness(3.0) !important;
-	margin: -1px !important;
-}
+	margin: -1px !important;}
 body.new_header_design .top_audio_player_prev, body.new_header_design .top_audio_player_next, body.new_header_design .top_audio_player_play {margin: -2px !important;}
 body.new_header_design .top_audio_player_title_wrap {padding-left: 6px !important;}
 body.new_header_design .top_audio_player_title {color: #becbd9 !important;}

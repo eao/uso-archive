@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AshDefenders
 @description    `Стиль возвращает старый дизайн ВКонтакте который был до редизайна 2020 годаЕсли у вас есть чем дополнить стиль то можете написать в вк vk.com/defenders08 или в тг @defenders08k1СЛЕДИТЕ ЗА ОБНОВЛЕНИЯМИ СТИЛЯ, ОБНОВЛЯЙТЕ ДЛЯ ИСПРАВЛЕНИЯ БАГОВ!!!Группа VK: https://vk.com/designoldvk (Напоминания о обновлениях)`
-@version        20201222.11.16
+@version        20201223.17.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -45,6 +45,9 @@ body {
     /* background-position-x: 1px; */
     height: 50px;
 }
+[dir] body.new_header_design .p_head_l0 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l97 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l114 .top_home_link .top_home_logo, [dir] body.new_header_design .p_head_l1 .top_home_link .top_home_logo, [dir] body.new_header_design.ny_2020_logo .p_head_l0 .top_home_link .top_home_logo, [dir] body.new_header_design.ny_2020_logo .p_head_l97 .top_home_link .top_home_logo, [dir] body.new_header_design.ny_2020_logo .p_head_l114 .top_home_link .top_home_logo, [dir] body.new_header_design.ny_2020_logo .p_head_l1 .top_home_link .top_home_logo:active {
+    background-position-y: 10px;
+}
 [dir] .TopHomeLink--logoWithText {
     background-image: url(https://i.imgur.com/vtj9udl.png);
     background-size: 32px;
@@ -54,6 +57,9 @@ body {
     background-position-y: 12px;
     height: 50px;
 }
+[dir] .TopHomeLink--logoWithText:active {
+    margin-top: 3px;
+}
 [dir] .TopHomeLink--ny2021logo:not(.TopHomeLink--logoWithText), [dir] body.WideScreenAppPage .TopHomeLink--ny2021logo {
     background-image: url(https://i.imgur.com/vtj9udl.png);
     background-size: 32px;
@@ -62,6 +68,9 @@ body {
     width: 156px;
     background-position-y: 12px;
     height: 50px;
+}
+[dir] .TopHomeLink--ny2021logo:not(.TopHomeLink--logoWithText), [dir] body.WideScreenAppPage .TopHomeLink--ny2021logo:active {
+    margin-top: 3px;
 }
 body.new_header_design #page_header .lamp {
     display: none;
@@ -154,6 +163,7 @@ body.new_header_design .top_nav_btn {
 }
 [dir] body.new_header_design .top_nav_btn#top_audio .top_nav_btn_icon {
     background-image: url(http://svgur.com/i/SEo.svg);
+    width: 20px;
 }
 [dir] body.new_header_design .top_nav_btn.active {
     background-color: #2a588561;
@@ -357,6 +367,9 @@ body.new_header_design .side_bar_inner {
     background: #d3d9de !important;
     height: 24px;
     border-radius: 3px!important;
+}
+[dir=ltr] body.new_header_design #side_bar .more_div {
+    margin: 9px 0 0 9px;
 }
 [dir] body.new_header_design .left_count_wrap {
     border-radius: 2px;
