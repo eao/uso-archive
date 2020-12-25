@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        2020121.8.37
+@version        20201224.17.50
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v6.0*/
+/* Dark Creator Studio v6.1*/
 /* Created by Leon Flame, edited by Lexan*/
 
 /* Dark Scrollbar*/
@@ -939,6 +939,18 @@ ytcp-chip.ytcp-static-chip-bar{
     transition: .1s;
 }
 
+.primary.style-scope.yta-line-chart-base[d="M16.94 6.91l-1.41 1.45c.9.94 1.46 2.22 1.46 3.64s-.56 2.71-1.46 3.64l1.41 1.45c1.27-1.31 2.05-3.11 2.05-5.09s-.78-3.79-2.05-5.09zM19.77 4l-1.41 1.45A9.422 9.422 0 0121 12.01c0 2.57-1.01 4.88-2.64 6.54l1.4 1.45c2.01-2.04 3.24-4.87 3.24-7.99 0-3.13-1.23-5.96-3.23-8.01zM7.06 6.91c-1.27 1.3-2.05 3.1-2.05 5.09s.78 3.79 2.05 5.09l1.41-1.45c-.9-.94-1.46-2.22-1.46-3.64s.56-2.71 1.46-3.64L7.06 6.91zM5.64 5.45L4.24 4C2.23 6.04 1 8.87 1 11.99c0 3.13 1.23 5.96 3.23 8.01l1.41-1.45C4.02 16.87 3 14.56 3 11.99s1.01-4.88 2.64-6.54z"], .secondary.style-scope.yta-line-chart-base{
+    fill: var(--text-darken2-color);
+}
+
+.empty-state-message.yta-audience-retention-video-highlights-card{
+    color: var(--text-darken2-color);
+}
+
+.layout.center-justified.yta-audience-retention-video-highlights-card, .layout.center-center.yta-audience-retention-video-highlights-card{
+    background-color: var(--item-color);
+}
+
 /*Analytics - Advanced Mode*/
 
 #entity-title-value.text.debug-dimension-value.style-scope.yta-title-cell{
@@ -1308,6 +1320,27 @@ paper-dialog.ytcp-dialog > *.ytcp-dialog, paper-dialog.ytcp-dialog > *.ytcp-dial
 
 #add-translations-button.style-scope.ytgn-video-translations-section{
     background-color: var(--item-color);
+}
+
+#no-language.ytgn-video-translations-section{
+    background: var(--bg-color) !important;
+}
+
+.choose-add-method.ytve-captions-editor-options-panel ul.ytve-captions-editor-options-panel li.ytve-captions-editor-options-panel a.ytve-captions-editor-options-panel:hover{
+    background-color: var(--bg3-color);
+    transition: .1s;
+}
+
+ytve-captions-editor-caption-segment-line[selected] #row-container.ytve-captions-editor-caption-segment-line, #row-container.row-highlighted.ytve-captions-editor-caption-segment-line{
+    background-color: var(--bg2-color);
+}
+
+#add-segment-after-button.ytve-captions-editor-caption-segment-line::before, #add-segment-before-button.ytve-captions-editor-caption-segment-line::before{
+    background-color: var(--bg-color);
+}
+
+#publish-button.style-scope.ytgn-video-translation-cell-captions{
+    color: var(--accent-color) !important;
 }
 
 /*Welcome Screen*/
@@ -2140,6 +2173,19 @@ iron-icon.check-icon.yt-trust-tiers-features-level{
 .feature-level-unlocked.yt-trust-tiers-features-level{
     background-color: rgba(0, 130, 7, 0.3);
     color: var(--green-color);
+}
+
+/*Feedback*/
+#title.yta-feedback-dialog{
+    color: var(--text-color);
+}
+
+.paragraph.yta-feedback-dialog, .after-submit-content.yta-feedback-dialog{
+    color: var(--text-darken-color);
+}
+
+#send-button.style-scope.yta-feedback-dialog, #close-button.style-scope.yta-feedback-dialog{
+    color: var(--accent-color);
 }
 
 /*Well congrats, you made it to the end, have a cookie*/

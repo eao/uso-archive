@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jannek
 @description    `Code compleatly ripped from https://userstyles.org/styles/153816/darksearch-nass-o-fork but fixed some issues i had with this style.`
-@version        20201210.9.24
+@version        20201224.13.35
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -335,7 +335,6 @@ cite a:visited,
     color: #85A691 !important;
 }
 /* Strong Blue links #54A6F8 */
-#hdtb-msb .hdtb-mitem.hdtb-msel,
 #hdtb-msb .hdtb-mitem.hdtb-msel-pre {
     border-bottom: 3px solid #84a6e0 !important;
     color: #84a6e0 !important;

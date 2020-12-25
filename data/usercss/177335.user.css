@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           target.com by BamaBraves
+@name           Target Dark by BamaBraves
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20191116.12.38
+@version        20201224.15.27
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -62,6 +62,7 @@
 @-moz-document domain("target.com") {
 /*__________________________________________________________________________________*/
 
+.h-text-underline,
 * {
 	text-decoration: none!important;
 }
@@ -71,6 +72,12 @@ selector
 	text-transform: capitalize!important;
 }
 
+.cukqCp,
+.ffTgtf,
+.hCzwFv:hover,
+.KBJVt,
+[data-test="product-card-default"],
+.bJLEBY,
 .bTfBWr,
 .brWldj,
 .dqwuwk,
@@ -79,9 +86,13 @@ selector
 .dvFLyC,
 .eASAwe,
 .eMrQdC,
+.ehNQuQ,
+.flyMJd,
+.ggrRdX,
 .hWRFSI::before,
 .hhtxGj,
 .iRrvFA::before,
+.jcWCSL,
 .liTTVO,
 :focus
  {
@@ -98,6 +109,7 @@ selector
 
 .becdOD,
 .bwScXo,
+.dTSEuF,
 .iNdVHB {
     white-space: pre-wrap!important;
 }
@@ -106,31 +118,45 @@ selector
     flex-basis: 31.3333% !important;
 }
 
+text {
+    fill: rgb(253, 255, 0);
+}
+
 /*___ Fonts ________________________________________________________________________*/
 
-selector
+[class*="ProductRecPrice"],
+[data-test="product-price"]
+ {
+	font-size: 30px!important;
+}
+
+.h-text-bs
  {
 	font-size: 21px!important;
 }
 
+.bWMnBK,
 .FjafI,
+.bfMWBG,
+.fVCKBw,
 .h-text-red,
 .jwQSpp,
 .kYNFFy,
+.kZVcDL,
 .kbKKju,
-[class*="ProductRecPrice"],
-[data-test="product-price"]
+.h-text-md
  {
 	font-size: 19px!important;
 }
 
 .becdOD,
-.h-text-sm
+.h-text-sm,
+.iyHJmf
  {
-	font-size: 17px!important;
+	font-size: 16px!important;
 }
 
-selector
+.cLzdOb
  {
 	font-size: 15px!important;
 }
@@ -160,7 +186,12 @@ selector
 
 /*___ Margins ______________________________________________________________________*/
 
+.h-padding-h-default,
+.bTvKos,
+.bxnpmb,
+.dyxkzS,
 .h-display-flex.bkaXIn,
+.iUMqJe,
 .kPvlkb,
 .l-container-fixed,
 .l-container-standard,
@@ -178,9 +209,14 @@ selector
 
 /*___ Paddings _____________________________________________________________________*/
 
+.bTvKos,
+.bjMKHx .styles__CardHeaderStyled-sc-1g7ha8h-1,
+.bxnpmb,
+.dyxkzS,
 .fvakIb,
 .h-display-flex.bkaXIn,
 .hqUMae,
+.iUMqJe,
 .l-container-fixed,
 [data-component="productgrid"],
 [style="text-align: center; margin: 15px auto; max-width: 1250px;"]
@@ -195,7 +231,7 @@ selector
 
 /*___ Heights ______________________________________________________________________*/
 
-selector
+.h-custom-scrollbar
  {
 	max-height: none!important;
 }
@@ -205,13 +241,21 @@ selector
 	height: auto!important;
 }
 
+.esQUKz {
+    height: 20rem;
+}
+
 /*___ Widths _______________________________________________________________________*/
 
+.bxnpmb,
+.cPgsrR,
 .dUwxNs,
+.dyxkzS,
 .fAjOoF,
 .ghSDUS,
 .hCBLXT,
 .hIVKIH,
+.jHOraq,
 .l-container-fixed,
 .l-container-standard,
 [style="text-align: center; margin: 15px auto; max-width: 1250px;"]
@@ -224,6 +268,7 @@ selector
 	width: auto!important;
 }
 
+.cPgsrR,
 .ghSDUS,
 .hIVKIH,
 .home-template .tab-content,
@@ -234,8 +279,26 @@ selector
 	width: 98%!important;
 }
 
+.KBJVt img,
+.hCzwFv img {
+    width: 47px;
+}
 
+.fMpYji > * {
+    flex-basis: 31.3333% !important;
+}
 
+.eXyYlC {
+    flex-basis: 23%;
+}
+
+.bxnpmb {
+    flex-basis: 23%;
+}
+
+.dyxkzS {
+    flex-basis: 22%;
+}
 
 
 
@@ -245,6 +308,8 @@ selector
 @-moz-document domain("target.com") {
 /*__________________________________________________________________________________*/
 
+.bNIVbL,
+.ggRyRP,
 .gTYbyN,
 a[href],
 td span {
@@ -259,6 +324,8 @@ a[href]:visited {
 
 /*__________________________________________________________________________________*/
 
+.bNIVbL:hover,
+.ggRyRP:hover,
 .calendar-sr-support-line2,
 .gTYbyN:hover,
 a[href]:hover span,
@@ -273,16 +340,24 @@ input[type="radio"]:checked+label
 
 /*__________________________________________________________________________________*/
 
+.CheckboxLabel-sc-1cw16wj-0.jMWtVo,
 .bRkfHv,
 .becdOD,
 .calendar-sr-support,
+.cLzdOb,
 .dJinvO,
 .dwa-carousel-pages span,
+.exhbep,
+.fVCKBw,
 .fuyFnh,
+.gUIqgH,
 .h-text-bs,
 .h-text-grayDark,
 .hIPWOh,
 .iseebj,
+.iyHJmf,
+.kExtTk,
+.lijEAy,
 .qnNGA,
 body,
 li,
@@ -294,6 +369,10 @@ p
 
 /*___ Khaki ________________________________________________________________________*/
 
+.cMLLLs,
+.h-text-black,
+.h-text-bs.h-margin-t-default.h-margin-l-default,
+.h-text-grayDarkest,
 .h-text-grayMedium,
 .iMvgkP,
 .jHUxVJ,
@@ -306,8 +385,10 @@ h2
 
 /*___ Burlywood ____________________________________________________________________*/
 
+.cAEHux,
 .fDTzWI,
 .hZEQIw,
+b,
 h3,
 h4
  {
@@ -318,6 +399,7 @@ h4
 /*___ Sandy Brown __________________________________________________________________*/
 
 .dNFHIy,
+.jAAjfu,
 h5,
 h6,
 label
@@ -340,6 +422,7 @@ time
 
 /*___ Green ________________________________________________________________________*/
 
+.ProductRecsPrice-i064qn-0.eIXWOx,
 .FjafI,
 .dUAdev,
 .h-text-red,
@@ -364,9 +447,9 @@ time
 /*__________________________________________________________________________________*/
 
 .cuMjYC,
+.ggrRdX,
 .hCwhLB,
 .hcjDbG,
-input,
 input[type=email],
 input[type=number],
 input[type=password],
@@ -437,8 +520,13 @@ html {
 	background-image: none!important;
 }
 
+.heIQlP {
+    background: rgb(107 4 4);
+}
+
 /*___ Background Gray ______________________________________________________________*/
 
+.jTWKas,
 .dwa-carousel-pages,
 .eArdao,
 .hUpumF,
@@ -448,10 +536,11 @@ html {
 }
 
 .bgrIUz,
+.cWUXto,
 .secondary-header,
 .targetHeader--utilityNav
  {
-    background-color: #0a0909!important;
+    background-color: #1a1a1a!important;
 }
 
 /*___ Background 0000 ______________________________________________________________*/
@@ -463,7 +552,9 @@ html {
 .dOZgrI,
 .elAYop,
 .fiTVUG,
-.jQWPKN
+.iitNjd label,
+.jQWPKN,
+.joRrfH
  {
 	background: rgba(0, 0, 0, 0)!important;
 }
@@ -471,27 +562,40 @@ html {
 /*___ Background-color 0000 ________________________________________________________*/
 
 .EnOHP,
+.KBJVt,
 .bmPPQC,
 .brWldj,
 .byzzrn,
+.cSsjzF,
 .coDjIO,
 .contentWrapper,
+.dBfMvR,
 .dNFHIy,
 .dlBABM,
 .duRofb,
+.eMmMkA,
+.eTkerV,
+.eikTtd,
 .eoVtjv,
 .fAjOoF,
+.flyMJd,
 .h-bg-grayLightest,
 .h-bg-white,
 .hCBLXT,
+.hCzwFv,
 .hIVKIH,
+.jAAjfu,
 .jfQAnG,
+.jlGVWt,
 .jpphPO,
 .jslRdW,
 .kIAOhA,
+.kVgmck,
 .ktUEKH:active,
 .lhVAol,
 .ljqWSy,
+.pjSfP,
+.styles__CheckboxInput-j5z4n3-1:checked + .styles__CheckboxWrap-j5z4n3-3 .styles__CheckboxVisual-j5z4n3-5,
 .tcfPW,
 header .search-header .search-input-form-button,
 section.home .home-carousel:nth-child(even)
@@ -507,6 +611,7 @@ section.home .home-carousel:nth-child(even)
 .dwa-hotspot-panel .btn-default,
 .fOlxiQ,
 .gkVvOp,
+.igoiFK,
 .kUXMc
  {
 	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
@@ -522,6 +627,7 @@ section.home .home-carousel:nth-child(even)
 .dwa-hotspot-panel .btn-default:hover,
 .fOlxiQ:hover,
 .gkVvOp:hover,
+.igoiFK:hover,
 .kUXMc:hover
  {
 	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
@@ -534,6 +640,7 @@ section.home .home-carousel:nth-child(even)
 .dwa-hotspot-panel .btn-default:active,
 .fOlxiQ:active,
 .gkVvOp:active,
+.igoiFK:active,
 .kUXMc:active
  {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
@@ -542,7 +649,9 @@ section.home .home-carousel:nth-child(even)
 /*__ Red __________________________________________________________________________*/
 
 .bhPjBX,
+.cUPKuy,
 .cbBVCy,
+.fKOLVe,
 .gILiVz,
 .jkzMMC,
 [data-test="review-card--not-helpful-button"],
@@ -556,7 +665,9 @@ section.home .home-offers-links .btn-primary
 }
 
 .bhPjBX:hover,
+.cUPKuy:hover,
 .cbBVCy:hover,
+.fKOLVe:hover,
 .gILiVz:hover,
 .jkzMMC:hover,
 [data-test="review-card--not-helpful-button"]:hover,
@@ -567,7 +678,9 @@ section.home .home-offers-links .btn-primary:hover
 }
 
 .bhPjBX:active,
+.cUPKuy:active,
 .cbBVCy:active,
+.fKOLVe:active,
 .gILiVz:active,
 .jkzMMC:active,
 [data-test="review-card--not-helpful-button"]:active,
@@ -578,6 +691,7 @@ section.home .home-offers-links .btn-primary:active
 
 /*__ Orange ________________________________________________________________________*/
 
+.bszsaO,
 .eYendH,
 .lktwRj,
 .ql-container .btn.save-to-quicklist-btn
@@ -589,6 +703,7 @@ section.home .home-offers-links .btn-primary:active
 	color: #fff!important;
 }
 
+.bszsaO:hover,
 .eYendH:hover,
 .lktwRj:hover,
 .ql-container .btn.save-to-quicklist-btn:hover
@@ -597,6 +712,7 @@ section.home .home-offers-links .btn-primary:active
 	color: #ff0!important;
 }
 
+.bszsaO:active,
 .eYendH:active,
 .lktwRj:active,
 .ql-container .btn.save-to-quicklist-btn:active
@@ -660,9 +776,13 @@ section.home .home-offers-links .btn-primary:active
 /*___ Plain Black __________________________________________________________________*/
 
 .ReactModal__Content.ReactModal__Content--after-open.Modal-sc-1f98yyv-0.dWxTOo,
+.dyxkzS,
+.esQUKz,
 .fvakIb,
 .ghSDUS,
+.h-padding-h-default,
 .home-template .tab-content,
+.iUMqJe,
 .kGyprE,
 .kPvlkb,
 .l-container-fixed,
@@ -677,9 +797,13 @@ section.home .home-offers-links .btn-primary:active
 }
 
 .ReactModal__Content.ReactModal__Content--after-open.Modal-sc-1f98yyv-0.dWxTOo:hover,
+.dyxkzS:hover,
+.esQUKz:hover,
 .fvakIb:hover,
 .ghSDUS:hover,
+.h-padding-h-default:hover,
 .home-template .tab-content:hover,
+.iUMqJe:hover,
 .kGyprE:hover,
 .kPvlkb:hover,
 .l-container-fixed:hover,
@@ -692,35 +816,53 @@ section.home .home-offers-links .btn-primary:active
 
 /*___ Plain ________________________________________________________________________*/
 
-.ilNlmc,
+#categoriesMenu,
+#pickupAndDelivery,
+#secondaryMenu,
+#trendingMenu,
 .ReactModal__Content.ReactModal__Content--after-open.Modal-sc-1f98yyv-0.eKjBHN,
+.bTvKos,
 .bkNQyK.ReactModal__Content,
+.bxnpmb,
 .h-display-flex.bkaXIn,
 .hqUMae,
 .iNoZKC,
-.kKTgKi
+.ilNlmc,
+.kKTgKi,
+.kYmdcv
  {
-	background-color: #111!important;
+	background-color: #1c1c1c!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-.ilNlmc:hover,
+#categoriesMenu:hover,
+#pickupAndDelivery:hover,
+#secondaryMenu:hover,
+#trendingMenu:hover,
 .ReactModal__Content.ReactModal__Content--after-open.Modal-sc-1f98yyv-0.eKjBHN:hover,
+.bTvKos:hover,
 .bkNQyK.ReactModal__Content:hover,
+.bxnpmb:hover,
 .h-display-flex.bkaXIn:hover,
 .hqUMae:hover,
 .iNoZKC:hover,
-.kKTgKi:hover
+.ilNlmc:hover,
+.kKTgKi:hover,
+.kYmdcv:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 /*___ Red Gradient _________________________________________________________________*/
 
+.fxBYVU,
+.jIEHcO,
 .dDaLXi,
+.dswiMC,
 .iEUZTl #headerMain,
+.iYQVBZ,
 .targetHeader--mainNav,
 header
  {
@@ -729,6 +871,8 @@ header
 
 /*___ Highlight Background _________________________________________________________*/
 
+.NavigationListItem-ljyubl-0.ehaTbx:hover,
+.cukqCp:hover,
 .kpmcBt
  {
 	background: linear-gradient(to right, #383838, #0000)!important;
@@ -742,10 +886,17 @@ header
 
 .IYXqt,
 .bTfBWr,
+.caXqFU,
+.cukqCp,
+.cxWEDM,
+.eikTtd,
 .elAYop,
+.hCzwFv,
 .hyhOBK .mediaBlock,
 .ijmlcx:not(:first-child),
 .jYUItr .mediaBlock,
+.jlGVWt,
+.joRrfH,
 .ugvjc,
 section.home .home-carousel
  {
@@ -755,12 +906,20 @@ section.home .home-carousel
 /*__________________________________________________________________________________*/
 
 .IYXqt:hover,
+.KBJVt,
 .bTfBWr:hover,
 .bTfBWr[data-active="true"],
+.caXqFU:hover,
+.cukqCp:hover,
+.cxWEDM:hover,
+.eikTtd:hover,
 .elAYop:hover,
+.hCzwFv:hover,
 .hyhOBK .mediaBlock:hover,
 .ijmlcx:not(:first-child):hover,
 .jYUItr .mediaBlock:hover,
+.jlGVWt:hover,
+.joRrfH:hover,
 .ugvjc:hover,
 section.home .home-carousel:hover
  {
@@ -804,8 +963,23 @@ li:hover
 	fill: rgb(255, 255, 255);
 }
 
+/* Plus _______________________________________________________________*/
+
+[data-icon-name="NavigationPlusFill"] svg {
+	background: url(https://i.ibb.co/r063cKM/add-32x32.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[data-icon-name="NavigationPlusFill"] svg {
+    background-size: 19px!important;
+    height: 26px!important;
+    padding-left: 22px!important;
+    width: 10px!important;
+}
+
 /* Arrow Down _______________________________________________________________*/
 
+[data-icon-name="NavigationArrowDownFill"] svg,
 .my-account-drop-down,
 .emdwZQ svg,
 .bPHCIc svg {
@@ -813,6 +987,7 @@ li:hover
 	box-sizing: border-box!important;
 }
 
+[data-icon-name="NavigationArrowDownFill"] svg,
 .my-account-drop-down,
 .emdwZQ svg,
 .bPHCIc svg {
@@ -844,6 +1019,7 @@ li:hover
 
 /* Cart _______________________________________________________________*/
 
+[data-icon-name="CommerceCart"] svg,
 [src="/modules/core/img/cart.svg"],
 .lojGzd svg {
 	background: url(https://i.ibb.co/42GPC9s/shoppingcart.png) no-repeat!important;
@@ -855,6 +1031,7 @@ li:hover
 	background-size: 27px!important;
 }
 
+[data-icon-name="CommerceCart"] svg,
 header .target-cart img {
 	background-size: 32px!important;
 	padding-left: 84px!important;
@@ -868,8 +1045,19 @@ header .target-cart {
 
 /* Checkmark _______________________________________________________________*/
 
+.styles__CheckboxInput-j5z4n3-1:checked + .styles__CheckboxWrap-j5z4n3-3 .styles__CheckboxVisual-j5z4n3-5::after,
+.jMWtVo::before,
+.ckpQqj:checked + .CheckboxLabel-sc-1cw16wj-0::after {
+    border: none;
+	left: 0px;
+    transform: none!important;
+}
+
 /* Checked __________________________________________*/
 
+.styles__CheckboxInput-j5z4n3-1:checked + .styles__CheckboxWrap-j5z4n3-3 .styles__CheckboxVisual-j5z4n3-5::after,
+.ckpQqj:checked + .CheckboxLabel-sc-1cw16wj-0::after,
+.styles__CheckboxInput-j5z4n3-1.zafmo,
 .drbzSX:checked+.CheckboxLabel-sc-1cw16wj-0::before {
 	background: url(https://i.ibb.co/HgsTqFS/checkbox-checked.png) no-repeat!important;
 	box-sizing: border-box!important;
@@ -882,6 +1070,8 @@ header .target-cart {
 
 /* Unchecked __________________________________________*/
 
+.jMWtVo::before,
+.styles__CheckboxVisual-j5z4n3-5.bJLEBY,
 .eASAwe,
 .iRrvFA::before,
 .hWRFSI::before {
@@ -889,6 +1079,11 @@ header .target-cart {
 	box-sizing: border-box!important;
 }
 
+.styles__CheckboxInput-j5z4n3-1:checked + .styles__CheckboxWrap-j5z4n3-3 .styles__CheckboxVisual-j5z4n3-5::after,
+.ckpQqj:checked + .CheckboxLabel-sc-1cw16wj-0::after,
+.jMWtVo::before,
+.styles__CheckboxInput-j5z4n3-1.zafmo,
+.styles__CheckboxVisual-j5z4n3-5.bJLEBY,
 .eASAwe,
 .iRrvFA::before,
 .hWRFSI::before {
@@ -896,6 +1091,11 @@ header .target-cart {
 	padding-left: 30px!important;
 }
 
+.styles__CheckboxInput-j5z4n3-1:checked + .styles__CheckboxWrap-j5z4n3-3 .styles__CheckboxVisual-j5z4n3-5::after,
+.ckpQqj:checked + .CheckboxLabel-sc-1cw16wj-0::after,
+.jMWtVo::before,
+.styles__CheckboxInput-j5z4n3-1.zafmo,
+.styles__CheckboxVisual-j5z4n3-5.bJLEBY,
 .eASAwe,
 .iRrvFA::before,
 .hWRFSI::before {

@@ -3,18 +3,22 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `Zerohedge dark theme for ZeroHedge.com`
-@version        2020830.3.26
+@version        20201224.18.41
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain(www.zerohedge.com) {
 html, body {
     background: #222;
+    color: #bbb;
     font-size: 15px;
 }
 h1 {
     color: #bbb;
     font-size: 26px;
+}
+h2 a, h2 a:hover, h2 a:visited {
+    color: #bbb;
 }
 img {
     filter:brightness(90%);
@@ -25,9 +29,11 @@ h2, .node--type-article.node--view-mode-teaser h2 {
 p, h3 {
     font-size: 16px;
 }
-#header {
-    background: #333;
-    color: #bbb;
+li[class*='Header_menuItem__'] a {
+    color: #bbb !important;
+}
+img[class*='Header_overflowMenuIndicator'] {
+    filter: invert(75%);
 }
 .node--sticky {
     background: #222 !important;
@@ -51,13 +57,16 @@ p, h3 {
 .node span,
 .field--name-comment-body p,
 .up-current-score,
-.down-current-score  {
+.down-current-score,
+li[class*='ZeroHedgeReads_listItem__'] a,
+div[class*='ZeroHedgeReads_header__'] {
     color: #bbb;
 }
-.sidebar-left-wrapper .block,
-.sidebar-right-wrapper .block-wrapper {
+div[class*='BlockLogin_container__'],
+div[class*='ZeroHedgeReads_listControl__'],
+div[class*='ZeroHedgeReads_container__'] {
     background: #222 !important;
-    color: #fff;
+    color: #eee;
 }
 .sidebar-right-wrapper, #exit-modal, .newsletter-insert, .carousel-placement {display:none !important}
 #header{
@@ -96,7 +105,8 @@ a[href="/video"]:after {
 #header .header-logo {
     overflow: hidden;
 }
-#header .header-logo .logo-full {
+#header .header-logo .logo-full,
+img[class^='Header_siteHeaderLogo__'] {
     filter: invert(85%);
     padding-left: 0;
     padding-right: 25px;
@@ -207,5 +217,11 @@ p span {
 .node.node--view-mode-full figure.caption figcaption {
     background: #333;
     color: #ccc;
+}
+div[class*='Article_stickyContainer__'] {
+    background-color: #333;
+}
+hr {
+    background-color: #888;
 }
 }

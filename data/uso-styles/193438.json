@@ -1,7 +1,7 @@
 {
   "id": 193438,
   "name": "Foundations of Python Programming Dark Theme",
-  "description": "A simple Dark Theme for FOPP website",
+  "description": "A simple Dark Theme for FOPP website.",
   "user": {
     "id": 1068424,
     "name": "Reza Rahemtola",
@@ -11,11 +11,11 @@
     "about": null,
     "license": "ccby"
   },
-  "updated": "2020-11-28T14:59:48.000Z",
-  "weekly_install_count": 0,
-  "total_install_count": 0,
+  "updated": "2020-12-24T18:45:52.000Z",
+  "weekly_install_count": 1,
+  "total_install_count": 3,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/193438_after.png?r=1606575591",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/193438_after.png?r=1608835552",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
@@ -29,7 +29,7 @@
   "subcategory": "umsi",
   "additional_info": null,
   "style_tags": [],
-  "css": "@-moz-document domain(\"fopp.umsi.education\") {\r\n/* Background */\r\nbody, div.container[id=\"main-content\"], footer div.container{ background-color: #202020 !important;}\r\n\r\n\r\n/* Text color */\r\ndiv.container[id=\"main-content\"], footer{ color: #fff !important}\r\n}",
+  "css": "@-moz-document domain(\"fopp.umsi.education\") {\r\n/* Background */\r\nbody, div.container[id=\"main-content\"], footer div.container{ background-color: #202020 !important;}\r\n\r\n\r\n/* Text color */\r\ndiv.container[id=\"main-content\"], footer{ color: #fff !important}\r\n}\r\n\r\n@-moz-document regexp(\"https://fopp.umsi.education/assignments/.+\") {\r\n/* Assignments */\r\ndiv.container{ \r\n    background-color: transparent !important;\r\n    color: #fff !important;\r\n}\r\n}",
   "discussions": [],
   "discussionsCount": 0,
   "commentsCount": 0,

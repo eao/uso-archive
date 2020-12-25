@@ -1,0 +1,97 @@
+/* ==UserStyle==
+@name           Diki Black v2
+@namespace      USO Archive
+@author         Vesterlay
+@description    `Black theme for diki.pl`
+@version        20201224.16.31
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("diki.pl") {
+/* 
+Author: Vesterlay 
+Version: 1.1
+Licence: MIT IF NOT STATED OTHERWISE
+*/
+:root {
+    --result-border: #8c8c8c30;
+    --background-color: #222;
+}
+
+p,ul,ol,td {
+    color: #ccc;
+}
+
+li.ui-menu-item {
+    color: #000;
+}
+.dikibody h1.mainPageSloganUnderLogo {
+    color: #C4B5B5;
+}
+#thinHeaderMenu .menuItem.menuProfileItem {
+    background: #c30407!important;
+}
+#thinHeaderMenuIcon div,
+#thinHeaderMenuIcon div::before,
+#thinHeaderMenuIcon div::after {
+    background-color: #fff;
+}
+div.dikibody div.partOfSpeechSectionHeader span.partOfSpeech {
+    color: #C20A0A;
+}
+div.dikibody h2.dictionarySectionHeader,
+span.hw,
+div.fentry,
+div.similarCollocations,
+span.partOfSpeech,
+span.headerPartOfSpeech,
+div.dikibody .picturesource,
+div.dikibody .picturedescription,
+div.dikibody div.seealso {
+    color: #fff!important;
+}
+#thinHeaderMenuIcon:not(.noHover):hover div,
+#thinHeaderMenuIcon:not(.noHover):hover div::before,
+#thinHeaderMenuIcon:not(.noHover):hover div::after {
+    background-color: #a2a2a2;
+}
+body.dikibody,
+.qTipPopupModal.qtip.qtipOverEntireViewport,
+.qTipPopupModal.qtip .qtip-content {
+    background-color: var(--background-color);
+}
+div.dikibody .foreignToNativeMeanings div.exampleSentence,
+div.dikibody .foreignToNativeMeanings div.ref,
+div.dikibody .nativeToForeignEntrySlices div.exampleSentence,
+div.dikibody .nativeToForeignEntrySlices div.ref,
+span.fentrymain {
+    color: #ccc;
+}
+div.vf {
+    color: #ccc!important;
+}
+div.dikibody ul.wordByWordTranslation li div.word {
+    background-color: #732628;
+}
+div.dikibody .foreignToNativeMeanings li.hl,
+div.dikibody .nativeToForeignEntrySlices li.hl {
+    background-color: #c3040724;
+}
+div.dikibody div.diki-results-container {
+    background-color: #222;
+    border: 1px solid var(--result-border);
+}
+div.dikibody div.diki-results-container div.diki-results-left-column {
+    border-right: 1px solid var(--result-border);
+}
+div.dikibody div.diki-results-container div.diki-results-right-column {
+    border-left: 1px solid var(--result-border);
+}
+body.isDesktop.clearSearchForIosEnabled.dikibody div.dikibody div#contentWrapper div.helpTroubleshootingContents.dikicolumn p,
+body.isDesktop.clearSearchForIosEnabled.dikibody div.dikibody div#contentWrapper div.helpTroubleshootingContents.dikicolumn ul li,
+body.isDesktop.clearSearchForIosEnabled.dikibody div.dikibody div#contentWrapper div.lastSearchesContents.dikiPageContents div.cityBgr div.lastSearchesRow p,
+body.isDesktop.clearSearchForIosEnabled.dikibody div.dikibody div#contentWrapper div.lastSearchesContents.dikiPageContents div.lastSearchesRow.center p,
+div.dikicolumn p {
+    color: #fff;
+}
+}

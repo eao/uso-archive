@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `A dark theme for AliExpress.com--- AliExpress`
-@version        20201119.15.33
+@version        20201224.18.50
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1124,8 +1124,9 @@ td[class="anchor-wrap anchor1-wrap"] {
 }.anchor-wrap a {
 	color: #ddd;
 }
-.page-background {
-	background: #222;
+.page-background,
+.page-container{
+	background: #222 !important;
 }
 .cg-main .big-title {
 	background-color: transparent;
@@ -1159,7 +1160,8 @@ td[class="anchor-wrap anchor1-wrap"] {
 .check-out-root div {
 	background: #111;
 }
-.home-firstscreen {
+.home-firstscreen,
+.home-firstscreen > * {
     background-color: transparent !important;
 }
 .home-firstscreen .festival-categories .product-item span {
