@@ -2,8 +2,8 @@
 @name           ニコニコ動画  niconico for Gecko/HTML5
 @namespace      USO Archive
 @author         Remiy
-@description    `<b>ニコニコ動画 niconico 専用Style v.2.0.1</b><u>対応:</u>HTML5版ニコニコ動画専用。ニコ生は現時点では非対応。Gecko(Firefox)で開発していますが、多分Webkit(Chrome)などでも大丈夫です。<u>変更点と説明:</u>・プレイヤー部分の上部移動、大型化スクロール無しで見れます。・広告等非表示広告、市場など個人的に邪魔だと思ったもの全て消しています。時報は入ります、ごめんなさい。・画面の自動調整プレイヤー部分は画面の大きさにより自動調整し、おおよそ16:9になるにしています。どの解像度でも問題ないですが、1600*900以上推奨です。低解像度だとボタンがうまく表示できません。・プレイヤープレイヤー下部にマウスオーバーするとコントローラが表示されます。こちらも次の動画ボタンなど非表示にしています。・その他画面下部の謎のスペースは畳んである動画説明文を展開したとき、今のStyleでは幅を自動調整してくれずフッタに重なるため、長めの説明文を表示できるであろうスペースを確保しています。`
-@version        2020214.20.27
+@description    `<b>ニコニコ動画 niconico 専用Style v.2.1.0</b><u>対応:</u>HTML5版ニコニコ動画専用。ニコ生は現時点では非対応。Gecko(Firefox)で開発していますが、多分Webkit(Chrome)などでも大丈夫です。<u>変更点と説明:</u>・プレイヤー部分の上部移動、大型化スクロール無しで見れます。・広告等非表示広告、市場など個人的に邪魔だと思ったもの全て消しています。時報は入ります、ごめんなさい。・画面の自動調整プレイヤー部分は画面の大きさにより自動調整し、おおよそ16:9になるにしています。どの解像度でも問題ないですが、1600*900以上推奨です。低解像度だとボタンがうまく表示できません。・プレイヤープレイヤー下部にマウスオーバーするとコントローラが表示されます。こちらも次の動画ボタンなど非表示にしています。・その他画面下部の謎のスペースは畳んである動画説明文を展開したとき、今のStyleでは幅を自動調整してくれずフッタに重なるため、長めの説明文を表示できるであろうスペースを確保しています。`
+@version        20201225.9.16
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 @-moz-document domain("www.nicovideo.jp") {
 /*Userstyle for nicovideo.jp by Remiy.*/
 /* https://userstyles.org/styles/141816/niconico-for-gecko-html5 */
-/*Update: 2020.02.15*/
+/*Update: 2020.12.25*/
 
 /*====================消すもの====================*/
 #PAGEURGENT,/*動画の上に割り込むお知らせなど*/
@@ -23,12 +23,14 @@
 .MiniBannerAdContainer,/*広告*/
 .PlayerSkipNextButton,/*動画部分コントローラ､次の動画ボタン*/
 .UadButtonBalloon,/**/
-.SwitchToFlashLead-button/*Flash切り替えボタン*/
+.SwitchToFlashLead-button,/*Flash切り替えボタン*/
+.WakutkoolNoticeContainer/*初月無料*/
 { 
 	display:none !important;
 }
 
 /*====================黒背景====================*/
+
 input.CommentCommandInput,input.CommentCommandInput,/*コマンド入力欄*/
 div.CommentInput,/*コメント入力欄*/
 pan.CommentPanelDataGrid-headerCell,/*コメント一覧*/
@@ -92,7 +94,6 @@ span.CommentPanelDataGrid-cell:hover,/*コマンドとコメントとコメン�
 .CommentPanelContextMenuContainer-menuItem:hover{
     background: #eee !important;
     color: #000 !important;
-
 }
 
 /*コメントホバー時フォント色*/
@@ -116,7 +117,7 @@ span.CommentPanelDataGrid-cell:hover,/*コマンドとコメントとコメン�
 .ControllerContainer{
 	position: absolute;
 	z-index: 2;
-	bottom: 38px;
+	bottom: 68px;
 	opacity: 0;
 	-moz-transition: 0.8s;
 	-webkit-transition: 0.8s;
@@ -159,6 +160,31 @@ body.is-autoResize .WatchAppContainer-main {
 /*急に現れた動画上の広告。*/
 .MarqueeContainer .Marquee{
 	z-index: 0 !important;
+}
+
+/*====================コメント、コマンド欄====================*/
+/*Reのコメント、コマンド欄*/
+.ControllerBoxCommentAreaContainer{
+    padding: 0;
+    background: #000;
+}
+
+/*コメント下のタグ*/
+.EasyCommentContainer{
+    background: #f4f4f4;
+    margin-top: 0px;
+    padding: 0px;
+}
+
+/*コメントバーのpadding*/
+.ControllerBoxCommentAreaContainer .ControllerBoxCommentAreaContainer-commentPostAndLikeArea{
+    padding: 0px;
+    padding-right: 8px;
+}
+
+/*Reのコメント、コマンド欄の枠線*/
+.ControllerBoxCommentAreaContainer{
+    border-right: none;
 }
 
 /*====================動画エリア右(コメント欄)====================*/
@@ -238,8 +264,8 @@ body.is-autoResize .WatchAppContainer-main {
 
 /*動画タイトル*/
 .VideoTitle{
-	color: #eee;
-	margin:-72px -72px -72px 0px;
+/*	color: #eee; */
+	margin:-42px -72px -72px 0px;
 }
 
 /*動画情報*/
@@ -308,20 +334,25 @@ body{
     color: #57f;
 }
 
-.VideoMediaObject-thumbnail{
-    width:5vw;
-}
+/*サムネサイズ*/
+/*.VideoMediaObject-thumbnail{
+ /*   width:5vw;
+/*}
+*/
 
 .react-grid-HeaderRow{
     border-bottom:1px #fff solid;
 }
 
-.VideoDescription-html{
-    color:#aaa !important;
-}
+/*動画説明のフォント色*/
+/*.VideoDescription-html{
+/*    color:#aaa !important;
+/*}
+*/
 
 .___header-table-base___RcIqV, .___header-table___2EekI {
 	border-bottom: #fff 1px solid;
 }
+
 
 }

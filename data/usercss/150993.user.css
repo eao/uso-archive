@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         hhcss
 @description    `<p>Customize Settings</p>`
-@version        202023.10.5
+@version        20201225.7.48
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown one_column "レイアウト" {
@@ -118,7 +118,8 @@ a.itemThumbWrap:before {
 }
 @advanced dropdown ad_fuck "広告" {
 	ad_fuck_01 "表示*" <<<EOT  EOT;
-ad_fuck_02 "非表示" <<<EOT #premiumHeader,
+ad_fuck_02 "非表示" <<<EOT .Card-main.TagRelatedBannerContainer,
+#premiumHeader,
 .premiumHeader,
 .headerBanner,
 .HeaderContainer-ads,
@@ -226,7 +227,11 @@ display: none !important;
 }
 @advanced dropdown hide_premium "プレミアムへの勧誘" {
 	hide_premium_01 "表示*" <<<EOT  EOT;
-hide_premium_02 "非表示（プレ会員は使用不可）" <<<EOT .Link PremiumLink PreVideoStartPremiumLinkContainer-link,
+hide_premium_02 "非表示（プレ会員は使用不可）" <<<EOT .common-header-r1rgum,
+.PreVideoStartPremiumLinkContainer,
+a.common-header-1mfteqq,
+.WakutkoolNoticeContainer,
+.Link PremiumLink PreVideoStartPremiumLinkContainer-link,
 .PreVideoStartPremiumLinkContainer-message,
 .VideoQualityMenuItem-premiumMessage,
 a#siteHeaderNotificationPremium>span,
@@ -3159,6 +3164,68 @@ border: 1px solid #54545470 !important;
     background: #3a30008f !important;
 }
 
+/* 2020-12-25 */
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------*/
+.EasyCommentContainer-scrollButton[data-title]:not([disabled]),
+.EasyCommentContainer-easyComments,
+.ControllerBoxCommentAreaContainer {
+    background: #111111 !important;
+}
+.EasyCommentButton {
+    background: #000000 !important;
+}
+button.ActionButton.EasyCommentContainer-scrollButton.EasyCommentContainer-nextButton>svg {
+    filter: invert(100%);
+    opacity: 0.4;
+}
+.ContentTree-summary .Link {
+    background-color: #232323 !important;
+}
+
+button.ActionButton.LikeButton.LikeContainer-button {
+    background: #000 !important;
+    box-shadow: inset 0px 0px 0px 1px #222 !important;
+    color: #888 !important;
+}
+
+.Thumbnail.is-skelton {
+    background-color: rgb(0 0 0 / 0) !important;
+}
+.ColumnTitle-linkText {
+    color: #c3c3c3 !important;
+}
+
+.nico-CommonHeaderRoot .common-header-5onxr7,
+.nico-CommonHeaderRoot .common-header-1cuw74j,
+.nico-CommonHeaderRoot .common-header-15gxh1a,
+.nico-CommonHeaderRoot .common-header-zz80x3 {
+    background-color: rgb(0 0 0) !important;
+}
+
+.nico-CommonHeaderRoot .common-header-1319btw {
+    color: rgb(206 206 206) !important;
+}
+
+.nico-CommonHeaderRoot .common-header-5onxr7:hover,
+.nico-CommonHeaderRoot .common-header-zz80x3:hover {
+    background-color: rgb(25 25 25) !important;
+}
+
+.nico-CommonHeaderRoot .common-header-430bj8 {
+    color: rgb(175 175 175) !important;
+}
+
+
+.nico-CommonHeaderRoot .common-header-1gq7o6w {
+    background-color: rgb(21 21 21) !important;
+}
+.nico-CommonHeaderRoot .common-header-1u02t5o {
+    color: rgb(226 226 226)!important;
+}
+
+.nico-CommonHeaderRoot .common-header-g80xl3 {
+    background-color: rgb(35 35 35) !important;
+}
 
 /* OPTIONAL */
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------*/

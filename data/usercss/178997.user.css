@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2020919.15.59
+@version        20201225.4.57
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -82,17 +82,23 @@ selector {
 .c-facet-button,
 .ctd-card,
 .delay-disclaimer,
+.fast-track .checkout-panel,
 .fulfillment-group__item-row,
+.large-view .order-summary__fast-track,
 .order__body,
 .pf-container .listViewControls__tabs--selected,
+.recommendations--single .pager-carousel,
 .shop-carousel-with-dotd .carousel-with-dotd-CarouselWithDOTD .carousel-with-dotd-Carousel .flex-carousel-arrow-right button,
 .shop-facets .app-container.lv,
 .shop-facets .lv .facet,
 .shop-media-gallery .media-gallery-v2 .tab-title.selected,
 .shop-shopping-assistant .appContainer .rail,
+.st-judes-donation__payment--fast-track,
+.thank-you-enhancement__account-info-card, .thank-you-enhancement__finance-card, .thank-you-enhancement__iconic-promo, .thank-you-enhancement__lease-card, .thank-you-enhancement__order-confirmation-card, .thank-you-enhancement__recommendations-card, .thank-you-enhancement__schedule-delivery-card,
 .widget-image-asset-carousel .ImageAssetCarousel .carousel-item.carousel-item-border,
 .widget-polaroid,
-:focus {
+:focus
+{
 	border: none!important;
 	box-shadow: none!important;
 	outline: none!important;
@@ -108,35 +114,47 @@ selector {
 
 /*___ Fonts ________________________________________________________________________*/
 
-#main-results >body {
+#main-results >body,
+.price-block__primary-price,
+.shop-commerce-elements .jYfhhT .commerce-element .pricing
+{
 	font-size: 21px!important;
 }
 
 .pf-container .listViewControls__tabs-container,
+.price-block__reg-price,
+.price-block__savings-price,
 .widget-icon-headline .body
 {
 	font-size: 19px!important;
 }
 
+.availability__info,
+.body-copy,
 .btn.btn-sm,
-body {
+[style="margin-top: 10px; font-size: 13px; line-height: 16px;"],
+body
+{
 	font-size: 17px!important;
 }
 
 .disclaimer,
 .pricing-lib-price-7-1943-6 .priceView-buy-new-option__price-medium,
 .small,
-.widget-topper .disclaimer
+.widget-topper .disclaimer,
+[style="display:block;font-size:13px"],
+[style="margin-bottom:0;font-size:11px;text-decoration:none;color:#0146BE"]
 {
 	font-size: 15px!important;
 }
 
-selector {
-	line-height: 19px!important;
+[style="margin-top: 10px; font-size: 13px; line-height: 16px;"] {
+	line-height: 21px!important;
 }
 
 /*___ Remove Items _________________________________________________________________*/
 
+.fluid-large-view__lower-container:after,
 [id*="shop-digital-ad-"],
 [id*="shop-google-adsense-"] {
 	left: -9999px!important;
@@ -163,6 +181,10 @@ selector {
 	margin-left: 34px;
 }
 
+[style="margin-bottom:0;font-size:11px;text-decoration:none;color:#0146BE"] span {
+	padding-left: 12px!important;
+}
+
 #cust-timeline-drawer {
     margin-top: 0px!important;
 }
@@ -179,6 +201,8 @@ selector {
 
 .add-to-order-carousel .pl-flex-carousel ul>li.item,
 .app-background,
+.checkout__col--primary,
+.checkout__col--secondary,
 .facet-section,
 .row:not(:first-child):not(:empty),
 .size-l .container-v2,
@@ -196,6 +220,11 @@ selector {
 
 /*___ Paddings _____________________________________________________________________*/
 
+.checkout__col--primary,
+.checkout__col--secondary,
+.fluid-large-view__disclaimers,
+.fluid-large-view__main-content,
+.fluid-large-view__sidebar-content,
 .row:not(:first-child):not(:empty),
 .size-l .container-v2,
 [id*="shop-product-carousels-"] {
@@ -229,6 +258,7 @@ selector {
 #site-control-content>.container,
 #site-control-content>.widget-container>.container,
 #widgets-view .widget-container .container>.contained-row,
+.checkout__container,
 .container-v2,
 .order-details-page__xl-width,
 .pf-container
@@ -250,6 +280,13 @@ selector {
 .container-v2 .col-xl-9,
 .container-v2,
 .customer-domain-my-devices .cdmd__l,
+.large-view .thank-you-enhancement__account-info-card,
+.large-view .thank-you-enhancement__finance-card,
+.large-view .thank-you-enhancement__iconic-promo,
+.large-view .thank-you-enhancement__lease-card,
+.large-view .thank-you-enhancement__order-confirmation-card,
+.large-view .thank-you-enhancement__recommendations-card,
+.large-view .thank-you-enhancement__schedule-delivery-card,
 .order-details-page__xl-width,
 .shop-header .header-large .top-navigation-section .top-navigation-container
 {
@@ -264,6 +301,10 @@ selector {
     width: 76.666667%;
 }
 
+.checkout__col--primary {
+    width: 63.666667%;
+}
+
 .order-details-page__add-to-order-wrapper {
     width: 37rem;
 }
@@ -273,14 +314,19 @@ selector {
 /*__________________________________________________________________________________*/
 
 #account-menu-app .greeting-container button,
+.btn-default-link,
+.button--link,
 .c-facet-category,
 .profile-navigation__title,
+.shop-compare .textlink,
 .shop-header .header-large .active .products_flyout .byCategories .categories_ul .categories_li .categories_btn,
 .shop-header .header-large .active .products_flyout .byCategories .categories_ul .categories_li a,
 .shop-header .header-large .global-navigation>ul>li>button,
 .shop-header .header-large .utility-navigation>ul>li>button,
+[data-track="Store Availability: Change Location"] .css-901oao.r-ek8w24,
 a[href],
-td span {
+td span
+{
 	color: #0ff!important;
 	text-shadow: 1px 1px #000!important;
 }
@@ -292,19 +338,25 @@ a[href]:visited {
 
 /*__________________________________________________________________________________*/
 
+.btn-default-link:hover,
 .btn-link:hover,
+.button--link:hover,
 .pf-container .listViewControls__tabs--selected a,
+.shop-compare .textlink.active,
+.shop-compare .textlink:hover,
 .shop-header .header-large .active .products_flyout .byCategories .categories_ul .categories_li:hover .categories_btn,
 .shop-header .header-large .active .products_flyout .byCategories .categories_ul .categories_li:hover a,
 .shop-header .header-large .global-navigation>ul>li>button:hover,
 .shop-header .header-large .utility-navigation>ul>li>button:hover,
 .shop-media-gallery .media-gallery-v2 .tab-title.selected,
 .shop-save-for-later .appContainer button.save-for-later-save:hover,
+[data-track="Store Availability: Change Location"] .css-901oao.r-ek8w24:hover,
 a[href]:hover span,
 a[href]:hover,
 h1,
 input[type="checkbox"]:checked+label,
-input[type="radio"]:checked+label {
+input[type="radio"]:checked+label
+{
 	color: #ff0!important;
 	text-shadow: 1px 1px #000!important;
 }
@@ -314,9 +366,12 @@ input[type="radio"]:checked+label {
 #account-menu-app .am-rewards-auth-state__points-container,
 .c-facet-button,
 .c-facet-count,
+.css-901oao.r-ek8w24.r-n6v787,
 .gift-with-purchase-price__free-gift-message-medium-inline,
 .price-match-guarantee-heading-icon,
+.pricing-basic-banner__special-offer__banner-detail,
 .pricing-lib-price-7-1943-6 .price-view-pb,
+.promotional-banner__text-msOffice,
 .shop-compare .product-details-text,
 .shop-compare .table-row,
 .shop-complete-your-purchase .description-button>span,
@@ -338,15 +393,22 @@ p {
 /*___ Khaki ________________________________________________________________________*/
 
 .c-accordion-trigger,
+.css-901oao.css-bfa6kz.r-ek8w24,
+.heading-4,
+.pricing-basic-banner,
 .shop-compare .displayName,
 .shop-compare .recsHeader,
 .shop-location-card .btn-unstyled,
 .shop-my-devices-list .dg-list-item__card .dg-list-item__item-name,
 .shop-save-for-later .appContainer button.save-for-later-save,
 .total-cost-clarity-content__finance-message strong,
+.type-subhead,
+.type-subhead-regular,
 .widget-topper h3,
+[style="display: block; color: rgb(29, 37, 44); font-size: 1.5rem; font-weight: 500;"],
 h1,
-h2 {
+h2
+{
 	color: #F0E890!important;
 	font-weight: 700!important;
 	text-shadow: 1px 1px #000!important;
@@ -356,8 +418,11 @@ h2 {
 
 #account-menu-app li a,
 .btn-link,
+.css-1dbjc4n .r-1orvn2u,
 .pricing-price__sale-message,
 .shop-warranty-selector .iSyLKq legend,
+.st-judes-donation__form-title,
+.st-judes-donation__title,
 .widget-topper .disclaimer,
 h3,
 h4 {
@@ -368,15 +433,18 @@ h4 {
 
 /*___ Sandy Brown __________________________________________________________________*/
 
-.shop-complete-your-purchase .lv .package-summary span,
 .item-total__tax-and-surcharges,
 .label-value-row,
-.open-box-option__label-medium,
 .open-box-option__label,
+.open-box-option__label-medium,
 .orderHeader__channel,
+.price-summary__item-total-description,
+.price-summary__sales-tax-description,
+.price-summary__savings-description,
 .priceView-offer-badge,
 .pricing-lib-price-7-1943-6 .priceView-open-box-title,
 .profileSubNav > span,
+.shop-complete-your-purchase .lv .package-summary span,
 .shop-facets .get-it-fast-subheading,
 .shop-header .sw-banner .sw-banner-heading,
 .shop-product-title .product-data-label,
@@ -394,7 +462,10 @@ label {
 
 /*___ Blue _________________________________________________________________________*/
 
+.availability__info strong,
 .container .slim-order-details-summary__order-date,
+.price-block__savings-price,
+.price-summary__savings-value,
 .priceView-offer-badge strong,
 .shop-my-devices-list .dg-list-item__card .dg-list-item__date,
 [style="display: block; color: rgb(48, 136, 0);"],
@@ -406,15 +477,21 @@ time {
 
 /*___ Green ________________________________________________________________________*/
 
-.shop-complete-your-purchase .lv .package-summary span:nth-child(2),
+.cash-money,
 .dollar-amount,
 .dollar-amount.warranty__price.bold,
 .open-box-option__link,
 .open-box-option__link-medium,
 .orderHeader__total,
+.price-block__primary-price,
+.price-summary__item-total-value,
+.price-summary__total-value,
 .priceView-customer-price,
 .pricing-lib-price-7-1943-5 .total-cost-clarity-content__monthly-payment strong,
 .pricing-lib-price-7-1943-6 .priceView-open-box-price .open-box-lowest-price,
+.shop-commerce-elements .jYfhhT .added-to-cart,
+.shop-commerce-elements .jYfhhT .commerce-element .pricing,
+.shop-complete-your-purchase .lv .package-summary span:nth-child(2),
 .total-cost-clarity-content__monthly-payment strong
 {
 	color: #07ff24!important;
@@ -425,6 +502,7 @@ time {
 /*___ Red __________________________________________________________________________*/
 
 .btn[disabled],
+.price-block__reg-price,
 .priceView-hero-price.priceView-previous-price,
 .priceView-layout-mini .pricing-lib-price-7-1943-6 .priceView-previous-price,
 .pricing-lib-price-7-1943-6 .priceView-buy-new-option__price-medium,
@@ -470,9 +548,11 @@ pre ::selection {
 	opacity: 1;
 }
 
+.css-901oao.r-ek8w24.r-glunga,
 .gift-with-purchase-price__total-message-medium,
 .shop-sku-list-item .is-sponsored,
-.widget-polaroid .polaroid-text .disclaimer {
+.widget-polaroid .polaroid-text .disclaimer
+{
 	color: #ff6d6d!important;
 }
 }
@@ -485,22 +565,35 @@ body {
 	background-attachment: fixed!important;
 }
 
+.shop-compare .compareContainer .is-show-gradient .show-more-specs-container .gradient,
 .widget-image-asset-carousel .ImageAssetCarousel>.col-xs-12 .image-asset-carousel-bg {
 	background-image: none!important;
 }
 
+.promotional-banner,
+.shop-compare .compareContainer .is-show-gradient .show-more-specs-container .gradient,
+.shop-compare .displayName-wrapper,
+.shop-compare .table-header
+{
+	background-color: #292727!important;
+}
 
 /*___ Background Gray ______________________________________________________________*/
 
+.checkout-header,
+.shop-compare .compareLV .compareAppContainer .compareProductContent .comparison-page-save-for-later-container,
 .shop-footer .appContainer .footer-email-wrap,
 .shop-header .header-large .top-navigation-section {
 	background-color: #060505!important;
 }
 
 .profile-navigation--size-l,
+.r-14lw9ot,
+.shop-compare .sticky-bg-color,
 .shop-footer .appContainer.lv,
-.shop-header .header-large .fullbleed-wrapper {
-	background-color: #0a0909!important;
+.shop-header .header-large .fullbleed-wrapper
+{
+	background-color: #1a1a1a!important;
 }
 
 /*___ Background 0000 ______________________________________________________________*/
@@ -511,26 +604,38 @@ body {
 .ctd--lv .ctd-drawer__scroller,
 .ctd-card,
 .ctd-welcome,
+.fast-track,
+.fulfillment-list-entry,
+.order-summary-card__fast-track,
 .widget-carousel,
-.widget-primary-message.rotatingPanelHorizontal[data-panel-type=dotIndicator] .pill-background {
+.widget-primary-message.rotatingPanelHorizontal[data-panel-type=dotIndicator] .pill-background
+{
 	background: rgba(0, 0, 0, 0)!important;
 }
 
 /*___ Background-color 0000 ________________________________________________________*/
 
-.shop-shopping-assistant .appContainer .rail,
-.shop-specifications .all-specs-wrapper,
+#cart-content.cart-redesign #cartApp,
 #survey_border,
+._-_-_-_-core-src-components-modal-___modal__modal-content___Xp2wq,
+.cart-redesign .finance-banner__container,
+.checkout__gray-bg,
 .customer-domain-my-devices,
 .flex-carousel-arrow-left button, .flex-carousel-arrow-right button,
+.large-view .order-summary__fast-track,
 .order,
+.price-block__savings-price,
+.recommendations--single .pager-carousel,
 .shop-header .header-large .store-locator-lv .store-loc-btn,
 .shop-location-list .location-card-list-container .store .your-store-badge,
 .shop-location-list .location-zip-wrapper,
 .shop-location-tooltip #lt-container,
 .shop-media-gallery .media-gallery-v2 .tab-title,
 .shop-search-bar .appContainer .search-bar .header-search-button,
+.shop-shopping-assistant .appContainer .rail,
+.shop-specifications .all-specs-wrapper,
 .slim-order-details__recognized,
+.st-judes-donation__payment--fast-track,
 .widget-image-asset-carousel .ImageAssetCarousel .carousel-item
 {
 	background-color: rgba(0, 0, 0, 0)!important;
@@ -565,13 +670,21 @@ body {
 
 #survey_blue_border,
 .app-background,
+.c-modal-grid,
 .c-modal-small-view,
+.checkout__col--primary,
+.checkout__col--secondary,
 .container-v2 .col-lg-10,
 .container-v2 .col-xl-3,
 .ctd-drawer,
+.fluid-large-view__main-content,
+.fluid-large-view__sidebar-content,
 .order-details-page__column-wrapper,
 .row:not(:first-child):not(.flex-panel-wrapper),
+.shop-compare .compareContainer .compareAppContainer,
+.shop-compare .stepupContainer .compareAppContainer,
 .size-l .container-v2,
+.thank-you-enhancement__donation-card,
 [id*="shop-product-carousels-"]
 {
 	background-color: #000!important;
@@ -582,13 +695,21 @@ body {
 
 #survey_blue_border:hover,
 .app-background:hover,
+.c-modal-grid:hover,
 .c-modal-small-view:hover,
+.checkout__col--primary:hover,
+.checkout__col--secondary:hover,
 .container-v2 .col-lg-10:hover,
 .container-v2 .col-xl-3:hover,
 .ctd-drawer:hover,
+.fluid-large-view__main-content:hover,
+.fluid-large-view__sidebar-content:hover,
 .order-details-page__column-wrapper:hover,
 .row:not(:first-child):not(.flex-panel-wrapper):hover,
+.shop-compare .compareContainer .compareAppContainer:hover,
+.shop-compare .stepupContainer .compareAppContainer:hover,
 .size-l .container-v2:hover,
+.thank-you-enhancement__donation-card:hover,
 [id*="shop-product-carousels-"]:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -597,48 +718,80 @@ body {
 /*___ Plain ________________________________________________________________________*/
 
 #suggestViewClientComponent div,
+._-_-_-_-core-src-components-modal-___modal__modal-dialog___13K6x,
 .c-overlay,
+.card,
 .facet-section,
+.fast-track .checkout-panel,
 .flex-carousel-slider ul>li.item .v-base,
 .fulfillment-group__item-row,
 .pl-flex-carousel-slider ul>li.item .v-base,
+.popover,
 .shop-carousel-with-dotd .carousel-with-dotd-CarouselWithDOTD .carousel-with-dotd-Box,
+.shop-compare .talk-bubble,
+.shop-compare-tray .product-container,
 .shop-header .header-large .menu-box-right,
 .shop-location-list .location-card-list-container .store,
-.shop-my-devices-list .dg-list-item__card
+.shop-my-devices-list .dg-list-item__card,
+.shop-product-carousels .bEnzdc .product-carousel .pager-carousel .pager-carousel-content .child-items-wrapper .child-items>li
 {
-	background-color: #111!important;
+	background-color: #1c1c1c!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 #suggestViewClientComponent div:hover,
+._-_-_-_-core-src-components-modal-___modal__modal-dialog___13K6x:hover,
 .c-overlay:hover,
+.card:hover,
 .facet-section:hover,
+.fast-track .checkout-panel:hover,
 .flex-carousel-slider ul>li.item .v-base:hover,
 .fulfillment-group__item-row:hover,
 .pl-flex-carousel-slider ul>li.item .v-base:hover,
+.popover:hover,
 .shop-carousel-with-dotd .carousel-with-dotd-CarouselWithDOTD .carousel-with-dotd-Box:hover,
+.shop-compare .talk-bubble:hover,
+.shop-compare-tray .product-container:hover,
 .shop-header .header-large .menu-box-right:hover,
 .shop-location-list .location-card-list-container .store:hover,
-.shop-my-devices-list .dg-list-item__card:hover
+.shop-my-devices-list .dg-list-item__card:hover,
+.shop-product-carousels .bEnzdc .product-carousel .pager-carousel .pager-carousel-content .child-items-wrapper .child-items>li:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 /*___ Red Gradient _________________________________________________________________*/
 
-.delay-disclaimer {
+.carrier-late-message__container,
+.delay-disclaimer,
+.fluid-large-view__disclaimers,
+.shop-header .sw-banner
+{
 	background: linear-gradient(to bottom, #300202 0%, #590505 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+}
+
+.status-tracker-bar__purchase--info .status-tracker-bar__percent[style="width: 40%;"] {
+	background: linear-gradient(to left, #da0f0f, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
 	border-radius: 22px!important;
 }
 
 /*__ Blue Gradient _________________________________________________________________*/
 
-.status-tracker-bar__purchase--info .status-tracker-bar__percent[style="width: 40%;"] {
-	background: linear-gradient(to left, #da0f0f, #000 100%)!important;
+.pricing-basic-banner__card,
+.thank-you-enhancement__account-info-card,
+.thank-you-enhancement__finance-card,
+.thank-you-enhancement__iconic-promo,
+.thank-you-enhancement__lease-card,
+.thank-you-enhancement__order-confirmation-card,
+.thank-you-enhancement__recommendations-card,
+.thank-you-enhancement__schedule-delivery-card
+{
+	background: linear-gradient(to bottom, #05065c, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
 	border-radius: 22px!important;
 }
@@ -647,6 +800,13 @@ body {
 
 .status-tracker-bar__purchase--info .status-tracker-bar__percent[style="width: 75%;"] {
 	background: linear-gradient(to left, #15534d 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+	text-shadow: 1px 1px #555!important;
+}
+
+.pdp-returns-pricing-message {
+	background: linear-gradient(to bottom, #195315 0%, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
 	border-radius: 22px!important;
 	text-shadow: 1px 1px #555!important;
@@ -672,7 +832,9 @@ body {
 
 /*___ Highlight Background _________________________________________________________*/
 
-.c-accordion-trigger:hover {
+.c-accordion-trigger:hover,
+.shop-compare .accordion-content .table-row:hover
+{
 	background: linear-gradient(to right, #383838, #0000)!important;
 	border-left-color: #434343!important;
 }
@@ -687,16 +849,19 @@ body {
 .col-xs-2,
 .col-xs-4,
 .container-v2 .col-xs-2,
+.css-1dbjc4n,
 .flex-carousel-slider ul>li.item,
 .fulfillment-group__item-row,
 .pl-flex-carousel-slider ul>li.item,
+.product-carousel .pager-carousel .pager-carousel-content .child-items-wrapper .child-items>li,
 .shop-compare .table-cell-data,
+.shop-compare .table-row,
+.shop-compare-tray .product-container,
 .shop-header .header-large .active .value-prop-band .valueProp_ul .valueProp_li,
 .shop-header .header-large .active ul li,
 .shop-location-list .location-card-list-container .store,
 .shop-media-gallery .media-gallery-v2 .thumbnail-container,
 .shop-my-devices-list .dg-list-item__card,
-.product-carousel .pager-carousel .pager-carousel-content .child-items-wrapper .child-items>li,
 .shop-sku-list .lv .sku-item-list .sku-item,
 .table-row,
 .widget-polaroid
@@ -712,17 +877,20 @@ body {
 .col-xs-2:hover,
 .col-xs-4:hover,
 .container-v2 .col-xs-2:hover,
+.css-1dbjc4n:hover,
 .flex-carousel-slider ul>li.item:hover,
 .fulfillment-group__item-row:hover,
 .pl-flex-carousel-slider ul>li.item:hover,
+.product-carousel .pager-carousel .pager-carousel-content .child-items-wrapper .child-items>li:hover,
 .shop-compare .table-cell-data:hover,
+.shop-compare .table-row:hover,
+.shop-compare-tray .product-container:hover,
 .shop-header .header-large .active .value-prop-band .valueProp_ul .valueProp_li:hover,
 .shop-header .header-large .active ul li:hover,
 .shop-location-list .location-card-list-container .store:hover,
 .shop-media-gallery .media-gallery-v2 .thumbnail-container.c-tile.selected,
 .shop-media-gallery .media-gallery-v2 .thumbnail-container:hover,
 .shop-my-devices-list .dg-list-item__card:hover,
-.product-carousel .pager-carousel .pager-carousel-content .child-items-wrapper .child-items>li:hover,
 .shop-sku-list .lv .sku-item-list .sku-item:hover,
 .table-row:hover,
 .widget-polaroid:hover

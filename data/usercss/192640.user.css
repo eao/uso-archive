@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        20201224.16.41
+@version        20201225.11.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -202,7 +202,7 @@ input.css-1vgh1xx{ color: #000 !important;}
 .css-zw4eg9, .css-oewxpj, .css-1ts5bmq{ color: #fff !important;}
 }
 
-@-moz-document regexp("https://www.binance.com/.+/support/announcement/.+") {
+@-moz-document regexp("https://www.binance.com/.+/support/announcement/.+"), regexp("https://www.binance.com/.+/support/.+") {
 /* Announcement articles */
 .css-3fpgoh, .css-e7d7y6, .css-1ezl0c, .css-mm1dbi, .css-a13acy, table.css-56ebq4 td div, .css-56ebq4 td, .css-3btkoi{ color: #fff !important;}
 }

@@ -1,0 +1,97 @@
+/* ==UserStyle==
+@name           dark & simple twitter
+@namespace      USO Archive
+@author         sergio9929
+@description    `A simple and clean twitter dark theme.<a href="https://userstyles.org/style_screenshots/194920_additional_37582.png?r=1608870953" target="_blank">Twitter theme settings screenshot</a>Screenshots:<a href="https://userstyles.org/style_screenshots/194920_additional_37578.png?r=1608870953" target="_blank">1080p Profile</a><a href="https://userstyles.org/style_screenshots/194920_additional_37579.png?r=1608870953" target="_blank">1440p Home</a><a href="https://userstyles.org/style_screenshots/194920_additional_37580.png?r=1608870953" target="_blank">1440p Home 2</a><a href="https://userstyles.org/style_screenshots/194920_additional_37581.png?r=1608870953" target="_blank">1440p Trending Topics</a>`
+@version        20201225.4.21
+@license        CC-BY-NC-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain(twitter.com) {
+:root {
+    --color1: rgb(10 10 10);
+    --color2: black;
+    --hover-color: rgba(255, 255, 255, .04);
+}
+
+/* contenedor de tarjetas */
+.r-1ye8kvj {
+    border-top-width: 0px!important;
+}
+
+/* tarjetas */
+.r-ry3cjt {
+    border-radius: 16px;
+    margin-bottom: 2px;
+}
+/* borde */
+.r-1kqtdi0 {
+    border-color: var(--color2);
+    border-width: 2px;
+}
+
+/* Qué está pasando y A quién seguir */
+.r-1ysxnx4 {
+    background-color: var(--hover-color);
+}
+/* borde */
+.r-k0dy70 {
+    border-color: var(--color2);
+}
+
+/* espacio entre tarjetas */
+.r-1igl3o0 {
+    border-bottom-color: var(--color2);
+}
+.r-qklmqi {
+    border-bottom-width: 2px;
+}
+
+/* borde (no se muy bien de donde) */
+.r-2sztyj {
+    border-top-color: var(--color2);
+}
+
+/* ¿Que esta pasando? */
+.r-atwnbb,
+.r-1wtj0ep {
+    background-color: transparent;
+}
+.r-atwnbb {
+    background-color: var(--hover-color);
+    border-radius: 16px;
+}
+/* espacio de debajo */
+.r-1or9b2r {
+    background-color: var(--color2);
+}
+
+/* linea de hilo */
+.r-gu4em3 {
+    /* background-color: rgb(121 75 196); */
+}
+.r-109y4c4 {
+    height: 2px;
+    background-color: black!important;
+}
+
+/* modal */
+.r-qo02w8 {
+    background-color: var(--color1);
+    box-shadow: rgb(0 0 0) 0px 0px 30px 5px;
+}
+
+/* hover */
+.r-1cuuowz {
+    background-color: var(--hover-color);
+}
+
+/* buscar y "te sigue" */
+.r-z32n2g {
+    background-color: var(--hover-color);
+}
+
+.r-1udbk01 {
+    background-color: var(--hover-color);
+}
+}
