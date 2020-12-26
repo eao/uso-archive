@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>Darklingo++ is a delightful switch on the default Duolingo UI. This style presents you with a <strong>Dark Mode</strong>, the ability to change the <strong>Theme Color</strong> , and it makes both leagues and the scrollbar optional. <i>(More to come in the future)</i>If you find anything that isn't themed correctly, feel free to tell me; feedback is always welcome! 😁 And if you <i>really</i> like this style or any of my others, you can <a href="https://paypal.me/justinikeako">donate</a> (only if you want to 🤗).Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        20201222.0.6
+@version        20201226.5.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color custom-color "Custom Theme Color" #1F98D2
@@ -540,6 +540,7 @@ body {
 ._22L18:hover,
 ._2FdDp:hover,
 ._21W8z:hover,
+._1cSqW:hover,
 .FrL-W:hover,
 .Ud2qM:hover,
 .YH-oX:hover,
@@ -592,6 +593,8 @@ body {
 ._1SDVx,
 ._3o_lc,
 .OK5hD,
+.rPdDn,
+.XJIrJ,
 .cZJnc {
 	background-color: var(--custom-color)
 }
@@ -770,6 +773,7 @@ input[type=checkbox]:checked,
 ._26wPn._1HjFK .Z7UoT,
 ._1c25o > ._196g_,
 ._2b454::before,
+.XJIrJ::before,
 ._2GRGJ._3LJUV,
 ._2GRGJ._3LJUV,
 ._17nEt:focus,

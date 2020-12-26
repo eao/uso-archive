@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         haleakalari
 @description    `This obliterates party hats on 4chan.`
-@version        20201226.0.15
+@version        20201226.2.40
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,6 +13,8 @@ img[class="party-hat"] {
 }
 
 img[src="//static.4chan.org/image/partyhat.gif"],
-img[src="//s.4cdn.org/image/xmashat.gif"] {
+img[src="//s.4cdn.org/image/xmashat.gif"],
+img[src="//static.4chan.org/image/xmashat.gif"],
+img[src="//s.4cdn.org/image/partyhat.gif"] {
  display: none;
 }

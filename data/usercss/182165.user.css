@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.top - (New, Dec. 2020)poal.cosaidit.netvoat.coconspiracies.win - (New, Dec. 2020)thedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201224.0.43
+@version        20201226.2.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -2916,7 +2916,7 @@ html body header,
 .listing-page .hot-page,
 .modal-body label.control-label,
 .modal-header,
-.panel-default > .panel-heading,
+.panel-default > .panel-heading,.panel-info > .panel-heading,
 .res-nightmode .link.odd,
 .res-nightmode .linklisting,
 .res-nightmode .listing-page .hot-page,
@@ -3269,6 +3269,7 @@ div[style^="left:"] div[role="button"],
 /* ------------- Gradient Background + Border ------------- */
 
 #report-action-form,
+#postcontent,
 article.post,
 .alert:nth-child(7),
 div.module, div.ban,
@@ -5213,8 +5214,8 @@ button#COIN_PURCHASE_DROPDOWN_ID._1t5i5bNwZeJ7FuUXZ9rM-p:focus,
     filter:brightness(1)!important;
 }
 
-/*Custom "Get Coins" Button - Top Bar*/
 
+/*Custom "Get Coins" Button - Top Bar*/
 ._1t5i5bNwZeJ7FuUXZ9rM-p._24moloPNpotQ_Incvvxwtt,
 .jEUbSHJJx8vISKpWirlfx._24moloPNpotQ_Incvvxwtt
 {
@@ -5222,15 +5223,26 @@ button#COIN_PURCHASE_DROPDOWN_ID._1t5i5bNwZeJ7FuUXZ9rM-p:focus,
     box-shadow:0px 0px 0px 0px #0000;
     border-radius:40px;
 }
+/*Coins on Sale*/
+.jEUbSHJJx8vISKpWirlfx._1dJtiWITrnvIbQdXgYgdym
+{
+    background:#000!important;
+    box-shadow:0px 0px 2px 0px #ffff0088;
+    border-radius:40px;
+    transition:.4s;
+}
 
-._1t5i5bNwZeJ7FuUXZ9rM-p:hover
+._1t5i5bNwZeJ7FuUXZ9rM-p:hover,
+.jEUbSHJJx8vISKpWirlfx._1dJtiWITrnvIbQdXgYgdym:hover
 {
     background:#000!important;
     box-shadow:0px 0px 5px 0px #ffff00;
     border-radius:40px;
-    
+    transition:.4s;
 }
-._1t5i5bNwZeJ7FuUXZ9rM-p
+
+._1t5i5bNwZeJ7FuUXZ9rM-p,
+.jEUbSHJJx8vISKpWirlfx._1dJtiWITrnvIbQdXgYgdym
 {
     transition:2s!important;
     transition-delay:1s!important;
@@ -7867,6 +7879,7 @@ ytp-bottom:hover,
 .drop-choices a.choice,
 .dropdown.srdrop .selected,
 .entry .buttons li a,
+.expando,
 .expando-gate__text,
 /*4chan*/.extButton:hover, img.pointer:hover,.extButton.expbtn,
 .fallbackDiv .fallbackImg:hover,
@@ -8165,6 +8178,7 @@ ytp-bottom:active,
 .drop-choices a.choice:active,
 .dropdown.srdrop .selected:active,
 .entry .buttons li a:active,
+.expando:active,
 .expando-gate__text:active,
 /*4chan*/.extButton:active, img.pointer:active,
 .fallbackDiv .fallbackImg:active,
