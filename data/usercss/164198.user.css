@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Тёмная тема для Народной карты ЯндексАвтор: https://n.maps.yandex.ru/#!/users/225790763Dark theme for Yandex Map EditorAuthor: https://mapeditor.yandex.com/#!/users/225790763`
-@version        2020930.18.35
+@version        20201225.17.55
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown darkmapclub "Dark Map Club" {
@@ -613,6 +613,8 @@ a.ymaps-2-1-77-traffic-info__source-link:hover {color: #e85253;}
 .nk-button_theme_air.nk-button_view_action span {color: #fbd553; transition: .2s cubic-bezier(.455,.03,.515,.955);}
 .nk-button_theme_air.nk-button_view_action.nk-button_hovered span {color: #ffeba0;}
 .nk-button_theme_air.nk-button_view_action.nk-button.nk-button_pressed span {color: #eee;}
+
+.nk-category-selector-view__header {background-color: #5c4a1e;}
 
 .nk-category-selector-groups-view__group:nth-of-type(4) > span > svg > g > circle:last-child, .nk-category-selector-groups-view__group:nth-of-type(9) > span > svg > path:last-child, .nk-category-selector-groups-view__group:nth-of-type(11) > span > svg > circle:nth-child(8), .nk-category-selector-groups-view__group:nth-of-type(11) > span > svg > circle:nth-child(9), .nk-category-selector-groups-view__group:nth-of-type(11) > span > svg > circle:nth-child(10) {fill: #222;}
 

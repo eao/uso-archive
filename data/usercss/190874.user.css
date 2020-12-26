@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As in title.`
-@version        20201016.15.13
+@version        20201226.0.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -292,16 +292,16 @@ input[type=checkbox]+label>span:first-of-type {
 .lb-outerContainer {
 	background-color: #111;
 }
-.cpp .de1, .cpp .de2, .python .de1, .python .de2, .javascript .de1, .javascript .de2, .php .de1, .php .de2, .html4strict .de1, .html4strict .de2, .lua .de1, .lua .de2, .postgresql .de1, .postgresql .de2, .postgresql .kw1, .c .de1, .c .de2, .pawn .de1, .pawn .de2, .pawn .kw2, .vbnet .sy0, .vbnet .de1, .vbnet .de2, .vbnet .me1, .vbnet .br0, .csharp .de1, .csharp .de2, .csharp .kw5, .css .de1, .css .de2, .css .kw1, .yaml .de1, .yaml .de2 {
+.cpp .de1, .cpp .de2, .python .de1, .python .de2, .javascript .de1, .javascript .de2, .php .de1, .php .de2, .html4strict .de1, .html4strict .de2, .lua .de1, .lua .de2, .postgresql .de1, .postgresql .de2, .postgresql .kw1, .c .de1, .c .de2, .pawn .de1, .pawn .de2, .pawn .kw2, .vbnet .sy0, .vbnet .de1, .vbnet .de2, .vbnet .me1, .vbnet .br0, .csharp .de1, .csharp .de2, .csharp .kw5, .css .de1, .css .de2, .css .kw1, .yaml .de1, .yaml .de2, .asm .de1, .asm .de2, .java .de1, .java .de2, .java .kw1, .mirc .kw2, .mirc .de1, .mirc .de2 {
 	color: #fff;
 }
-.cpp .nu0, .lua .kw3, .vbnet .kw1 {
+.cpp .nu0, .lua .kw3, .vbnet .kw1, .java .kw3 {
     color: #05f;
 }
-.cpp .sy2, .pawn .kw3, .pawn .es0, .lua .es1 {
+.cpp .sy2, .pawn .kw3, .pawn .es0, .lua .es1, .asm .kw5, .asm .kw1, .java .st0, .java .kw4, .mirc .re0, .cm-s-default .cm-attribute {
     color: #003eb9;
 }
-.cpp .co1, .td_smaller, .login-page .main-heading {
+.cpp .co1, .td_smaller, .login-page .main-heading, .asm .co1 {
 	color: #999;
 }
 .python .st0 {
@@ -318,6 +318,9 @@ input[type=checkbox]+label>span:first-of-type {
 }
 .css .re4 {
 	color: #bbb;
+}
+.cm-s-default .cm-meta {
+	color: #aaa;
 }
 .pagination a {
 	background: #171717;
@@ -381,5 +384,23 @@ img#signupform-verifycode-image, [src='/themes/pastebin/img/refresh.png'], .post
 }
 .message__window {
 	border-color: #252525 ;
+}
+.toggle__control label {
+    --toggleAreaColor: #111;
+    --toggleAreaBorderColor: #2e2e2e;
+    --toggleCircleColor: #2e2e2e;
+    background: var(--toggleAreaColor);
+    border-color: var(--toggleAreaBorderColor);
+}
+.toggle__control input:checked+label {
+	background: #111;
+	border-color: #2e2e2e;
+}
+.CodeMirror {
+    background-color: #111;
+    border-color: #333;
+    -webkit-box-shadow: inset 0 1px 1px rgba(255, 255, 255, .075);
+    box-shadow: inset 0 1px 1px rgba(255, 255, 255, .075);
+	color: #fff;
 }
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Mike Channon
 @description    `A mix of the early Classic (Yellow theme) and the XDA 2021 theme. Especially suited to those who don't like super bright themes and prefer a a more mellow background. By editing you can easily change from yellow shades to any color of your choice. For lovers of the past, but who want all the features of the new! Also removes the right side panel.`
-@version        20201211.18.40
+@version        20201225.13.40
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -113,5 +113,24 @@ span.node-icon {
 
 div.node-extra {
     background-color: #fffacd;
+}
+@media(min-width: 901px) {
+    .p-body-main--withSidebar .p-body-content {
+        max-width: 100%;
+    }
+}
+@media(min-width: 900px) {
+    .p-body-sidebar {
+        display: none
+    }
+}
+#spot_container_content_below {
+    display: none;
+}
+#spot_thread_above_messages {
+    display: none;
+}
+#spot_thread_below_messages {
+    display: none;
 }
 }

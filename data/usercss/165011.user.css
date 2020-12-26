@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Anonach
 @description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/Rgam9mqn`
-@version        20201224.12.31
+@version        20201225.12.50
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1270,7 +1270,7 @@ a.logo::before {content: "flash_on"; display: inline-block; font: 80px/1 'Materi
 .linktoboard a:hover {color: var(--theme_default_link);}
 .linktoboard a::before {content: "arrow_back"; font: 24px/1 'Material Icons'; padding: 2px; margin: -2px; vertical-align: -6px;}
 
-.ctlg {margin: 0 10px 10px;}
+.ctlg {margin: 0 auto 10px;}
 .ctlg__thread {border: none; box-shadow: 0 0 0 1px var(--theme_default_border), 0 1px 3px var(--theme_shadow); margin: 5px;}
 .ctlg__thread_abs {box-shadow: 0 0 0 1px var(--theme_default_border), 0 6px 16px var(--theme_shadow3); margin: 0; margin-top: -20px; margin-left: -70px;}
 .ctlg__img {padding: 10px 10px 0 10px;}
