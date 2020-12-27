@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "crabdance",
     "createdAt": "2020-12-26T13:52:59.000Z",
-    "updatedAt": "2020-12-26T14:53:51.000Z",
+    "updatedAt": "2020-12-27T10:18:55.000Z",
     "license": "CC0-1.0",
     "author": {
       "id": 845030,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 0,
-      "weekly": 0
+      "total": 3,
+      "weekly": 3
     }
   },
   "screenshots": {
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"crabdance.pp.ua\") {\r\nhtml {\r\n\theight: 100%;\r\n}\r\n.discord-btn, .headerbar, .forabg, #page-footer, #phpbb_announcement > div > div > strong {\r\n\tdisplay: none;\r\n}\r\n#phpbb {\r\n\tbackground: url(https://creative-moscow.ru/assets/images/background.jpg) no-repeat #1d1e22;\r\n\tbackground-size: cover;\r\n\tbackground-attachment: fixed;\r\n    height: 97%;\r\n}\r\n.chat-message {\r\n\tfont-size: 15px;\r\n}\r\n#phpbb_announcement > div > div:after {\r\n\tcolor: red;\r\n\tcontent:'Кира питуч ко ко ко 🐓';\r\n\tfont-size: 20px;\r\n}\r\n}"
+    "css": "@-moz-document domain(\"crabdance.pp.ua\") {\r\nhtml {\r\n\theight: 100%;\r\n}\r\nbody {\r\n\tbackground: url(https://creative-moscow.ru/assets/images/background.jpg) no-repeat #1d1e22;\r\n\tbackground-size: cover;\r\n\tbackground-attachment: fixed;\r\n}\r\n.discord-btn, .headerbar, #page-footer, #phpbb_announcement > div > div > strong, #ajaxchat .forabg {\r\n\tdisplay: none;\r\n}\r\n.chat-message {\r\n\tfont-size: 15px;\r\n}\r\n#phpbb_announcement > div > div:after {\r\n\tcolor: red;\r\n\tcontent:'Кира питуч ко ко ко 🐓';\r\n\tfont-size: 20px;\r\n}\r\n}"
   }
 }

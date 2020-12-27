@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         RemberMe
 @description    `Новогодняя тема BurGame для стиля Prosilver (Dark Edition) 😹`
-@version        20201226.14.53
+@version        20201227.10.18
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,14 +11,13 @@
 html {
 	height: 100%;
 }
-.discord-btn, .headerbar, .forabg, #page-footer, #phpbb_announcement > div > div > strong {
-	display: none;
-}
-#phpbb {
+body {
 	background: url(https://creative-moscow.ru/assets/images/background.jpg) no-repeat #1d1e22;
 	background-size: cover;
 	background-attachment: fixed;
-    height: 97%;
+}
+.discord-btn, .headerbar, #page-footer, #phpbb_announcement > div > div > strong, #ajaxchat .forabg {
+	display: none;
 }
 .chat-message {
 	font-size: 15px;

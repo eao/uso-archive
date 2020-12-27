@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "twitter",
     "createdAt": "2020-12-25T04:21:45.000Z",
-    "updatedAt": "2020-12-25T21:47:22.000Z",
+    "updatedAt": "2020-12-27T01:15:17.000Z",
     "license": "CC-BY-NC-4.0",
     "author": {
       "id": 1093520,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 2,
-      "weekly": 2
+      "total": 3,
+      "weekly": 3
     }
   },
   "screenshots": {
@@ -56,6 +56,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(twitter.com) {\r\n:root {\r\n    --color1: rgb(15, 15, 15);\r\n    --color2: black;\r\n    --hover-color: rgba(255, 255, 255, .05);\r\n}\r\n\r\n\r\n/* contenedor de tarjetas */\r\n.r-1ye8kvj {\r\n    border-top-width: 0px!important;\r\n}\r\n\r\n/* tarjetas */\r\n.r-ry3cjt {\r\n    border-radius: 16px;\r\n    margin-bottom: 2px;\r\n}\r\n/* borde */\r\n.r-1kqtdi0 {\r\n    border-color: var(--color2);\r\n    border-width: 2px;\r\n}\r\n\r\narticle .r-1867qdf>div{\r\n    background-color: var(--hover-color);\r\n}\r\n\r\n/* Qué está pasando y A quién seguir */\r\n.r-1ysxnx4 {\r\n    background-color: var(--hover-color);\r\n    border-color: var(--color2);\r\n}\r\n/* borde */\r\n.r-k0dy70 {\r\n    border-color: var(--color2);\r\n}\r\n\r\n/* espacio entre tarjetas */\r\n.r-1igl3o0 {\r\n    border-bottom-color: var(--color2);\r\n}\r\n.r-qklmqi {\r\n    border-bottom-width: 2px;\r\n}\r\n\r\n/* borde (no se muy bien de donde) */\r\n.r-2sztyj {\r\n    border-top-color: var(--color2);\r\n}\r\n\r\n/* ¿Que esta pasando? */\r\n/* espacio de debajo */\r\n.r-1or9b2r {\r\n    background-color: var(--color2);\r\n}\r\n\r\n/* linea de hilo */\r\n.r-gu4em3 {\r\n/*     background-color: rgb(121 75 196); */\r\n}\r\n.r-109y4c4 {\r\n    height: 2px;\r\n    background-color: black!important;\r\n}\r\n\r\n/* mostrar respuestas */\r\n.r-qhyqy2 {\r\n    border-radius: 16px;\r\n}\r\n\r\n/* modal */\r\n.r-qo02w8 {\r\n    background-color: var(--color1);\r\n    box-shadow: rgb(0 0 0) 0px 0px 30px 5px;\r\n}\r\n\r\n/* hover */\r\n.r-1cuuowz {\r\n    background-color: var(--hover-color);\r\n}\r\n\r\n/* buscar y \"te sigue\" */\r\n.r-z32n2g {\r\n    background-color: var(--hover-color);\r\n}\r\n\r\n.r-1udbk01 {\r\n    background-color: var(--hover-color);\r\n}\r\n}"
+    "css": "@-moz-document domain(twitter.com) {\r\n:root {\r\n    --color1: rgb(15, 15, 15);\r\n    --color2: black;\r\n    --hover-color: rgba(255, 255, 255, .06);\r\n}\r\n\r\n\r\n/* contenedor de tarjetas */\r\n.r-1ye8kvj {\r\n    border-top-width: 0px!important;\r\n}\r\n\r\n/* tarjetas */\r\n.r-ry3cjt {\r\n    border-radius: 16px;\r\n    margin-bottom: 2px;\r\n}\r\n/* borde */\r\n.r-1kqtdi0 {\r\n    border-color: var(--color2);\r\n    border-width: 2px;\r\n}\r\n\r\narticle .r-1867qdf>div{\r\n    background-color: var(--hover-color);\r\n}\r\n\r\n/* Qué está pasando y A quién seguir */\r\n.r-1ysxnx4 {\r\n    background-color: var(--hover-color);\r\n    border-color: var(--color2);\r\n}\r\n/* borde */\r\n.r-k0dy70 {\r\n    border-color: var(--color2);\r\n}\r\n\r\n/* espacio entre tarjetas */\r\n.r-1igl3o0 {\r\n    border-bottom-color: var(--color2);\r\n}\r\n.r-qklmqi {\r\n    border-bottom-width: 2px;\r\n}\r\n\r\n/* borde (no se muy bien de donde) */\r\n.r-2sztyj {\r\n    border-top-color: var(--color2);\r\n}\r\n\r\n/* ¿Que esta pasando? */\r\n/* espacio de debajo */\r\n.r-1or9b2r {\r\n    background-color: var(--color2);\r\n}\r\n\r\n/* linea de hilo */\r\n.r-gu4em3 {\r\n/*     background-color: rgb(121 75 196); */\r\n}\r\n.r-109y4c4 {\r\n    height: 2px;\r\n    background-color: black!important;\r\n}\r\n\r\n/* mostrar respuestas */\r\n.r-qhyqy2 {\r\n    border-radius: 16px;\r\n}\r\n\r\n/* modal */\r\n.r-qo02w8 {\r\n    background-color: var(--color1);\r\n    box-shadow: rgb(0 0 0) 0px 0px 30px 5px;\r\n}\r\n\r\n/* hover */\r\n.r-1cuuowz {\r\n    background-color: var(--hover-color);\r\n}\r\n\r\n/* buscar y \"te sigue\" */\r\n.r-z32n2g {\r\n    background-color: var(--hover-color);\r\n}\r\n\r\n.r-1udbk01 {\r\n    background-color: var(--hover-color);\r\n}\r\n}"
   }
 }

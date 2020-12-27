@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Тёмная тема для Яндекс.Погоды`
-@version        2020717.12.30
+@version        20201227.7.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -265,6 +265,10 @@ path[stroke-dasharray="3"] {stroke: #fff !important;}
 .climate-cities__country-name {color: rgba(255,255,255,.5);}
 
 /* Temperature */
+.map-left-pane {background: #222;}
+.map-left-pane .scrollable__scrollbar-thumb {background: rgba(255,255,255,.2);}
+.map-left-pane .scrollable_scroll-active_yes .scrollable__scrollbar-thumb {background: rgba(255,255,255,.3) !important;}
+
 .weather-maps__layers.radio-button, .weather-maps-alert_theme_default {background: #222;}
 .weather-maps-alert_closable_yes .weather-maps-alert__close {filter: invert(1);}
 .weather-maps-alert__contraindications {background-color: #333;}

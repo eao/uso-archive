@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Ночная тема для Яндекс.Поиска, Картинок, Видео и Коллекций———————————————————————————————10.12.20 — Исправлены некоторые баги———————————————————————————————26.08.19 — Тема была полностью переработана• Переработан дизайн• Добавлена поддержка Яндекс.Коллекции`
-@version        20201217.12.10
+@version        20201227.7.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -334,6 +334,17 @@ img[style="height:100px;width:140px;margin-left:-8px;margin-top:3px;"], img[styl
 .input__control {color: #eee;}
 .button_theme_websearch .button__text {background-color: #444; border-color: #444; color: #fc0;}
 .button_theme_websearch.button_hovered_yes .button__text {background-color: #555; border-color: #555;}
+
+.search2 {background: #444;}
+.input_size_ws-head {background: #222; border-color: #444;}
+.input_theme_websearch {color: #eee;}
+.button_theme_websearch {background: #444; color: #fc0;}
+.search__rounded-arrow {fill: #444; stroke: #444;}
+.button_theme_websearch.button_hovered_yes {background: #555;}
+.button_theme_websearch.button_hovered_yes .search__rounded-arrow {fill: #555; stroke: #555;}
+
+.mini-suggest__popup_theme_flat {background: #333;}
+.mini-suggest__popup_theme_flat .mini-suggest__popup-content {background: #333;}
 
 .document_new-search_yes .search2 {background: #444;}
 .document_new-search_yes .input_size_ws-head {background: #222; border-color: #444;}
@@ -885,13 +896,15 @@ html {background: #222;}
 .yaplus_available_yes:hover .yaplus__link .link__inner {color: #e85253;}
 .link_theme_normal.link_hovered_yes, .link_theme_normal.link_hovered_yes:visited, .link_theme_normal:active, .link_theme_normal:visited:active {color: #e85253;}
 
+.serp-user__registration-button.button2[class]::before {background-color: #333; border-color: #333;}
+.serp-user__login-link.button2[class]::before, .serp-user__login-link.button2_theme_action.button2[class]:hover::before, .serp-user__login-link.button2_theme_action:not([aria-disabled=true]).button2[class]:active::before {background: hsl(218,50%,45%);}
+
 .button2_view_classic.button2_theme_action:before {background-color: #665200;}
 .button2_view_classic.button2_theme_action.button2_hovered_yes:before, .button2_view_classic.button2_theme_action:not([aria-disabled=true]):hover:before {background-color: #766210;}
 .button2_theme_action {color: #eee;}
-.icon_type_user {filter: invert(1);}
 
 .header-favorites-button__link::before {filter: invert(1);}
-.notifier__icon {fill: #fff;}
+.notifier__icon, .notifier__icon svg {fill: #fff;}
 .notifier_has-unread_yes .notifier__icon[class][class] svg {fill: #fff;}
 .serp-user[class] .serp-user__registration-link-experiment {color: #eee;}
 .serp-user[class] .serp-user__registration-link-experiment::before {border-color: rgba(255,255,255,.2);}
@@ -1063,6 +1076,9 @@ a.user-account_hovered_yes {color: #e85253;}
 
 /* ===== Page ===== */
 
+.related__button {background: #333; color: #eee !important;}
+.related__button.link_hovered_yes {background-color: #444;}
+
 .carousel_theme_gray {background: #333;}
 .thumb_border_yes:after {box-shadow: inset 0 0 0 1px rgba(255,255,255,.05);}
 .showcase__item-text {color: #eee;}
@@ -1116,6 +1132,7 @@ body .calculator__btn.button2.button2_hovered_yes:after, body .calculator__btn.b
 .translate-form .translate-form__input .textarea__control, .Textarea_theme_normal .Textarea-Control {color: #eee;}
 .translate-form__output-part, .Translate-Output {background-color: rgba(255,255,255,.04);}
 
+.weather-forecast__organic .sitelinks::after {background-image: linear-gradient(90deg,rgba(0,0,0,0)0%,#222 80%);}
 .weather-forecast__tile {border-right: none;}
 .weather-forecast__tiles .weather-forecast__tile:first-child {border-radius: 4px 0 0 4px;}
 .weather-forecast__tiles .weather-forecast__tile:last-child {border-radius: 0 4px 4px 0;}

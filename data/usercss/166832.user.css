@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201025.12.19
+@version        20201227.6.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("online-convert.com") {
- ::-webkit-scrollbar {
+::-webkit-scrollbar {
  	/* Width */
  	width: 1.2em!important;
  }
@@ -63,7 +63,6 @@
  	border-radius: 22px!important;
  	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
  }
-
 }
 
 @-moz-document domain("online-convert.com") {
@@ -108,6 +107,10 @@ textarea
 
 .book-summary ul.summary li a, .book-summary ul.summary li span {
     white-space: pre-line;
+}
+
+form.forms .small {
+    text-align: center;
 }
 
 /*___ Fonts ________________________________________________________________________*/
@@ -240,6 +243,10 @@ textarea
     height: 15rem!important;
 }
 
+.file-size .progress {
+    margin: 6px 0;
+    height: 30px;
+}
 /*___ Widths _______________________________________________________________________*/
 
 .col-lg-10,
@@ -284,7 +291,9 @@ form.forms ul li .size1-2
 	width: 13rem;
 }
 
-
+form.forms .small {
+    width: 9rem;
+}
 }
 
 @-moz-document domain("online-convert.com") {
@@ -449,6 +458,7 @@ html
 #menu .cd-accordion-menu .menu-item>a,
 
 .content-wrapper,
+.files-list .file-row,
 .files-list .file-row:nth-of-type(2n+1),
 .footer .cd-accordion-menu .menu-item>a,
 .main-container > .container,
@@ -713,6 +723,7 @@ html
 
 .block .features li,
 .book-summary ul.summary li a,
+.files-list .file-row,
 .home_description li,
 .language-dropdown li a,
 .language-dropup li a,
@@ -725,6 +736,7 @@ html
 
 .block .features li:hover,
 .book-summary ul.summary li a:hover,
+.files-list .file-row:hover,
 .home_description li:hover,
 .language-dropdown li a:hover,
 .language-dropup li a:hover,
@@ -746,7 +758,6 @@ img
 {
 	-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
 }
-
 }
 
 @-moz-document domain("online-convert.com") {
