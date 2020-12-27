@@ -3,15 +3,15 @@
 @namespace      USO Archive
 @author         Vesterlay
 @description    `Black theme for diki.pl`
-@version        20201224.16.31
+@version        20201226.20.26
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("diki.pl") {
 /* 
 Author: Vesterlay 
-Version: 1.1
-Licence: MIT IF NOT STATED OTHERWISE
+Version: 1.2
+Licence: MIT UNLESS STATED OTHERWISE
 */
 :root {
     --result-border: #8c8c8c30;
@@ -43,7 +43,6 @@ div.dikibody h2.dictionarySectionHeader,
 span.hw,
 div.fentry,
 div.similarCollocations,
-span.partOfSpeech,
 span.headerPartOfSpeech,
 div.dikibody .picturesource,
 div.dikibody .picturedescription,

@@ -3,20 +3,14 @@
 @namespace      USO Archive
 @author         Intel4004
 @description    `aftershock для слепых`
-@version        2020827.18.14
+@version        20201226.18.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("aftershock.news")
 {
 
-/*27.08.2020*/
-
-/*Левый столбец*/
-.aft-sidebar1
-  {
-  width: 200px !important;
-  }
+/*26.12.2020*/
 
 /*Заголовок статьи*/
 body .aft-postheader,
@@ -52,8 +46,8 @@ div#comments h2.aft-postheader
   background: #D2DEE4 !important;
   }
 
-/*Жирная кнопка премотки вверх*/
-#backtotop
+/*Всплывающие метрики*/
+.ui-tooltip
   {
   display: none !important;
   }

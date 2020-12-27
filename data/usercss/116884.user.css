@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           GooGle - Multi-Columns Dark and Gray v.37
+@name           GooGle - Multi-Columns Dark and Gray v.38
 @namespace      USO Archive
 @author         decembre
 @description    `Less scrolling with a multi columns interface.....Firefox OKChrome : OKNot working together with a "working" GooglemonkeyR:But all forks of it, at 2019.07, seems broken and need to be updated.When they work, use my userstyle:<a href="https://userstyles.org/styles/121836/">Google - GM - Google MonkeyR Companion</a>`
-@version        20201222.11.23
+@version        20201226.22.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,7 +30,7 @@ https://cse.google.fr/cse?cx=partner-pub-8110924381468607:6449306375&ie=ISO-8859
 regexp("https?://(www|news|play|host-b)\\.google(\\.com?)?(\\.[a-z][a-z])?/(|webhp|search|news|play|ig|service-a).*"), url-prefix("https://cse.google") {
 
 
-/* ==== Google - Multi-Columns Dark and Gray v.37 (new37) ==== */
+/* ==== Google - Multi-Columns Dark and Gray v.38 (new38) ==== */
 
 /* PB but work touch too GOOGLE PLAY STORE -
 https://play.google.com/store
@@ -5336,7 +5336,7 @@ border: 1px solid red;
 
 
 
-/* (new37) PANEL RIGHT - TEST - EXTERNAL CONTAINER  - HOVER */
+/* (new38) PANEL RIGHT - TEST - EXTERNAL CONTAINER  - HOVER */
 
 #rso>div[data-hveid="C"]:hover ,
 
@@ -5352,7 +5352,7 @@ border-left: 1px solid red !important;
 background-color: #222 !important;
 }
 
-/* (new37) MAP / NEWS -  HOVER */
+/* (new38) MAP / NEWS -  HOVER */
 #rso>div[data-hveid^="C"]:hover ,
 [data-hveid^="C"] > div[class^="r-i"][jsl^="$t"]:hover {
     left: 63.5% !important;
@@ -5366,6 +5366,55 @@ border: 1px solid yellow!important;
 border-left: 1px solid red !important;
 background-color: #222 !important;
 }
+/* (new38) TWITTER */
+#rso>div[data-hveid^="C"]:hover .s  .st .dHOsHb {
+    display: inline-block;
+    width: 96% !important;
+    margin-left: 5px !important;
+    margin-right: 0px !important;
+    padding: 0px;
+}
+#rso>div[data-hveid^="C"]:hover .s  .st .dHOsHb g-inner-card {
+    background-color: #222 !important;
+    border-radius: 3px !important;
+    padding: 2px 7px !important;
+}
+#rso>div[data-hveid^="C"]:hover .s  .st .dHOsHb .eadHV {
+    white-space: normal;
+    padding: 5px 5px 2px 20px;
+    border-radius: 3px 3px 0 0 ;
+    background: #222;
+}
+
+
+/* (new38) - IMG CARROU */
+#rso> .LnbJhc:hover g-section-with-header .GNxIwf  .EDblX.DAVP1  .JX86yc {
+    display: inline-block;
+vertical-align: top !important;
+    margin: 2px 2px 0 6px !important;
+    text-align: center;
+    width: 23% !important;
+    border-radius: 5px !important;
+border: 1px solid #333 !important;
+}
+/* IMG - NO PREVIEW */
+#rso> .LnbJhc:hover g-section-with-header .GNxIwf  .EDblX.DAVP1  .JX86yc img.rISBZc:not([src="null"]) {
+    display: inline-block;
+    height: 126px !important;
+    margin: auto;
+    width: 100% !important;
+    min-width: 100% !important;
+    text-align: center;
+    vertical-align: bottom;
+object-fit: contain !important;
+object-position: 50% 50% !important;
+background-color: #111 !important;
+}
+/* NO IMG */
+#rso> .LnbJhc:hover g-section-with-header .GNxIwf  .EDblX.DAVP1  .JX86yc img.rISBZc[src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="] {
+background-color: #333 !important;
+}
+
 
 /* PANEL RIGHT - TEST - INTERNAL CONTAINER */
 #rhs.rhscol.col.rhstc5  .g.mnr-c.g-blk[data-hveid^="C"] .kp-blk:not(.nGydZ) {

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         davdi1337
 @description    `Minimalistic purple spotify theme with rounded buttons.Screenshot(old): <a href="https://i.imgur.com/l6pVqI8.jpg">CLICK HERE!</a>Screenshot(new) <a href="https://i.imgur.com/oLaCxLU.jpg">CLICK HERE!</a>Please send feedback, if you like the theme.`
-@version        2020127.10.52
+@version        20201226.14.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -751,7 +751,7 @@ div._5845794624a406a62eb5b71d3d1c4d63-scss > img {
 }
 /* watermark */
 #main > div > div.Root__top-container > div.Root__nav-bar > nav > div:nth-child(4):before {
-    content: "Style Version: 11.20";
+    content: "Style Version: 20.12.26";
     color: #fff;
     opacity: .3;
     font-size: 14px;
@@ -759,7 +759,7 @@ div._5845794624a406a62eb5b71d3d1c4d63-scss > img {
     font-family: spotify-circular, spotify-circular-cyrillic, spotify-circular-arabic, spotify-circular-hebrew, Helvetica Neue, helvetica, arial, Hiragino Kaku Gothic Pro, Meiryo, MS Gothic, sans-serif;
     position: relative;
     text-align: center;
-    left: calc(0% + 21%);
+    display: block;
     bottom: calc(0% + 5%);
 }
 /* watermark */
@@ -800,5 +800,16 @@ div._5845794624a406a62eb5b71d3d1c4d63-scss > img {
 
 ._9921e51b5b554df14ba83705a29399d0-scss {
     height: 100%!important;
+}
+/* 12.26 */
+._39234eb5c173f8b6de80ed73820b1be8-scss._2b9d3fe8c4a53ea94eb650fbbb9b0124-scss,
+.ebfd411a126f1e7bea6133f21b4ef88e-scss._46e671f2323a45b17a6f4a3d15c2961f-scss{
+    color: var(--button2);
+}
+.ebfd411a126f1e7bea6133f21b4ef88e-scss._46e671f2323a45b17a6f4a3d15c2961f-scss:not([disabled]):focus, .ebfd411a126f1e7bea6133f21b4ef88e-scss._46e671f2323a45b17a6f4a3d15c2961f-scss:not([disabled]):hover,
+._39234eb5c173f8b6de80ed73820b1be8-scss._2b9d3fe8c4a53ea94eb650fbbb9b0124-scss:not([disabled]):focus, ._39234eb5c173f8b6de80ed73820b1be8-scss._2b9d3fe8c4a53ea94eb650fbbb9b0124-scss:not([disabled]):hover,
+._39234eb5c173f8b6de80ed73820b1be8-scss._2b9d3fe8c4a53ea94eb650fbbb9b0124-scss:not([disabled]):focus:not(:focus-visible):not(:hover),
+.ebfd411a126f1e7bea6133f21b4ef88e-scss._46e671f2323a45b17a6f4a3d15c2961f-scss:not([disabled]):focus:not(:focus-visible):not(:hover){
+    color: var(--buttonhover2);
 }
 }

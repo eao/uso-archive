@@ -1,0 +1,31 @@
+/* ==UserStyle==
+@name           BurGame Remember Edition
+@namespace      USO Archive
+@author         RemberMe
+@description    `Новогодняя тема BurGame для стиля Prosilver (Dark Edition) 😹`
+@version        20201226.14.53
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("crabdance.pp.ua") {
+html {
+	height: 100%;
+}
+.discord-btn, .headerbar, .forabg, #page-footer, #phpbb_announcement > div > div > strong {
+	display: none;
+}
+#phpbb {
+	background: url(https://creative-moscow.ru/assets/images/background.jpg) no-repeat #1d1e22;
+	background-size: cover;
+	background-attachment: fixed;
+    height: 97%;
+}
+.chat-message {
+	font-size: 15px;
+}
+#phpbb_announcement > div > div:after {
+	color: red;
+	content:'Кира питуч ко ко ко 🐓';
+	font-size: 20px;
+}
+}

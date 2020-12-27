@@ -1,0 +1,28 @@
+/* ==UserStyle==
+@name           iDoRecall Dark Theme
+@namespace      USO Archive
+@author         Reza Rahemtola
+@description    `A simple Dark Theme for the iDoRecall app.`
+@version        20201227.0.21
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document url-prefix("https://app.idorecall.com/recalls") {
+/* Recalls */
+.meta-container, .recalls-list-wrapper, .tags-overlay-container, .recall-item:hover{ background-color: #202020 !important;}
+.recall-item .recall-title{ color: #fff !important;}
+.filter-btn, .tags-overlay-container, .search-criteria{ color: #76808F !important;}
+}
+
+@-moz-document url-prefix("https://app.idorecall.com/library") {
+/* Library */
+.meta-container, .library-list-wrapper, .tags-overlay-container, .tag:hover{ background-color: #202020 !important;}
+.filter-btn, .tags-overlay-container, .search-criteria{ color: #76808F !important;}
+.library-title-container .title, .create-note, .meta-container-bottom{ color: #fff !important;}
+}
+
+@-moz-document url-prefix("https://app.idorecall.com/practice") {
+/* Practice */
+html, body, .practice-footer{ background-color: #202020 !important;}
+.achieve-item-wrap, .progress-bar-determinare{ color: #fff !important;}
+}
