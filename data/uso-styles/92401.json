@@ -11,11 +11,11 @@
     "about": null,
     "license": "ccbyncsa"
   },
-  "updated": "2020-12-27T21:27:05.000Z",
+  "updated": "2020-12-28T08:00:15.000Z",
   "weekly_install_count": 3,
   "total_install_count": 11665,
   "rating": null,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/92401_after.jpeg?r=1609104425",
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/92401_after.jpeg?r=1609142418",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
@@ -88,7 +88,7 @@
           "id": 1648891,
           "style_setting_id": 460401,
           "label": "Always visible",
-          "value": "/*[[MH]]*//*",
+          "value": "/*[MH]*//*",
           "default": true,
           "ordinal": 0,
           "install_key": "Y"
@@ -97,7 +97,7 @@
           "id": 1648892,
           "style_setting_id": 460401,
           "label": "Autohide",
-          "value": "/*[[MH]]*/",
+          "value": "/*[MH]*/",
           "default": false,
           "ordinal": 1,
           "install_key": "N"

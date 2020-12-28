@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for userstyles.org`
-@version        20201213.14.53
+@version        20201228.2.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,7 +14,7 @@ div#view-responsive{ background-color: #202020 !important;}
 .navigation .links-box .navigation-link .navigation-title, label, table{ color: #fff;}
   .linking-note{ color: #5B6472 !important;}
 
-h1{ color: #fff !important}
+h1, h2{ color: #fff !important}
 
 
 /* Style page */

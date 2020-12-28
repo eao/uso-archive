@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zhou Yahui
 @description    `NOTE: KICKASSANIME'S DARK MODE HAS TO BE ENABLED IN ORDER FOR THIS THEME TO WORK.Detailed guide on how to use this style is available in this reddit post: https://www.reddit.com/r/KickAssAnime/comments/co5jqh/custom_kickassanime/Customizable KickAssAnime.rsFeatures: Cleaner and better designEasily customizableCustom background imageAlso applies to Dailymotion, Disqus, and other video playersCleaner video player, also matches themeVibrant Video for brighter video (Doesn't work on mobile)Ads are hiddenCheck out my other styles:https://userstyles.org/users/812884DISCORD:Join my Discord server to get notifications when a new update has been released, get direct support from me and others, and it is generally faster than userstyles to get in touch with me : https://discord.gg/Emv2rtkTheme by Zhou Yahui`
-@version        20201125.19.59
+@version        20201228.1.37
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown th "Theme" {
@@ -67,7 +67,7 @@ text-shadow:none;
 } EOT;
 
 }
-@advanced color min "Custom Main color" #14111A
+@advanced color min "Custom Main color" #0F0821
 @advanced color scn "Custom Secondary color" #06030D
 @advanced color acn "Custom Accent color" #FF0000
 @advanced color txn "Custom Text color " #FFFFFF
@@ -309,8 +309,8 @@ st "Insert image below *" <<<EOT https://en.gfwiki.com/images/4/49/BANNER_Blank.
 @advanced text ci-custom "Make sure \"Custom Image?\" Dropdown setting is set to \"Yes\" (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
-@-moz-document domain("kickassanime.rs"), domain("animo-pace-stream.io"), domain("haloani.ru"), domain("kickassanime.io") {
-/*V3.12.18_201125*/
+@-moz-document domain("kickassanime.rs"), domain("animo-pace-stream.io"), domain("haloani.ru"), domain("kickassanime.io"), domain("kaa-play.com") {
+/*V3.12.19_201228*/
 /*[[th]]*/
 /*[[hah]]*/
 /*[[thh]]*/

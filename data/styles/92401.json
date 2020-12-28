@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "youtube",
     "createdAt": "2013-08-30T07:14:48.000Z",
-    "updatedAt": "2020-12-27T21:27:05.000Z",
+    "updatedAt": "2020-12-28T08:00:15.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 18532,
@@ -91,13 +91,13 @@
           {
             "key": "Y",
             "label": "Always visible",
-            "value": "/*[[MH]]*//*",
+            "value": "/*[MH]*//*",
             "default": true
           },
           {
             "key": "N",
             "label": "Autohide",
-            "value": "/*[[MH]]*/",
+            "value": "/*[MH]*/",
             "default": false
           }
         ]

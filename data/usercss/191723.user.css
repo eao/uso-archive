@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is designed to make the desktop version of Instagram look and feel like Instagram's Dark Theme on mobile, while also providing a widescreen fix for Direct Messages and other parts of Instagram's UIIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        20201217.7.35
+@version        20201228.2.15
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("instagram.com") {
-/* Instagram Dark Theme v2.0.1*/
+/* Instagram Dark Theme v3.0*/
 /* Created by Lexan*/
 
 /*DM THEME COLOUR - If you would like a different colour for your DM Chat bubbles, change this value*/
@@ -311,28 +311,25 @@ a, a:visited{
 }
 
 .PdwC2 {
-    max-width: 95vw !important;
+    max-width: 80% !important;
+    max-height: 100% !important;
 }
 
 .JyscU ._97aPb {
-    max-height: 95vh !important;
+    max-height: 100% !important;
 }
 
 .rQDP3 {
-    max-height: 90vh !important;
+    max-height: 100% !important;
 }
 
 .pR7Pc {
-    max-height: 90vh !important;
+    max-height: 100% !important;
 }
 
 .eLAPa {
-    max-height: 90vh !important;
+    max-height: 100% !important;
 }
-
-/*.zZYga {
-    overflow: hidden;
-}*/
 
 ._8-yf5 [d="M41.8 9.8L27.5 24l14.2 14.2c.6.6.6 1.5 0 2.1l-1.4 1.4c-.6.6-1.5.6-2.1 0L24 27.5 9.8 41.8c-.6.6-1.5.6-2.1 0l-1.4-1.4c-.6-.6-.6-1.5 0-2.1L20.5 24 6.2 9.8c-.6-.6-.6-1.5 0-2.1l1.4-1.4c.6-.6 1.5-.6 2.1 0L24 20.5 38.3 6.2c.6-.6 1.5-.6 2.1 0l1.4 1.4c.6.6.6 1.6 0 2.2z"]{
     fill: #000 !important;

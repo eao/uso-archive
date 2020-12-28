@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Saarim Shahid
 @description    `A theme for: tiktok.comUpdated very regularly!Please report issues here: http://m.me/sir.saarim.<a href="http://m.me/sir.saarim">Report Issue</a>`
-@version        20201218.14.44
+@version        20201228.6.28
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -21,6 +21,10 @@
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
+
+
+
+
 .header-container.jsx-4096498568 .header-content.jsx-4096498568,
 .main-body > div:last-child,
 .main-body,
@@ -79,7 +83,13 @@ header .help-container .help-item,
 .user-item-inner.jsx-3752310609,
 .scroll-container.jsx-1067475104,
 .inbox.jsx-1540997056,
-.modal.jsx-3916395931 {
+.modal.jsx-3916395931,
+.promotion-download.jsx-3979932517,
+.contact-container .contact-wrapper,
+.card-container .card-text-container,
+.transparency-center .p4,
+.card,
+.app-promotion.jsx-3979932517 > span.jsx-3979932517 {
 	background-color: #1D1E1F !important;
 }
 
@@ -169,7 +179,13 @@ header .help-container .help-item,
 .video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-follow-wrapper .follow-button:hover,
 .modal.confirm.jsx-1311152707 .btns.jsx-1311152707 .modal-btn-confirm.jsx-1311152707,
 .modal.confirm.jsx-1311152707 .btns.jsx-1311152707 .modal-btn-cancel.jsx-1311152707,
-.container.jsx-884924262 {
+.container.jsx-884924262,
+.contact-container .contact-wrapper,
+.card-container .card-text-container,
+.transparency-center .p4,
+.card,
+.article-wrapper,
+.app-promotion.jsx-3979932517 > span.jsx-3979932517 {
 	border-top: 1px solid #FE2C55 !important;
 	border-bottom: 1px solid #FE2C55 !important;
 	border-left: 1px solid #FE2C55 !important;
@@ -317,7 +333,9 @@ header .help-container .help-item img,
 .emojiSelectButtonPressed,
 .like-container.jsx-1998704864 .icon.jsx-1998704864,
 .container.jsx-884924262 .icon-style.jsx-884924262,
-.stage-2.jsx-3758851661 .close.jsx-3758851661 {
+.stage-2.jsx-3758851661 .close.jsx-3758851661,
+.contact-container .contact-wrapper .contact-row .contact-card img,
+.logo-container.jsx-832362280 {
 	filter: invert(100%);
 	-webkit-filter: invert(100%);
 }
@@ -504,7 +522,16 @@ div.jsx-3640141109 video-music-content pause music-title-decoration,
 .button.disabled.jsx-352266594,
 .button.jsx-352266594,
 .stage-2-text.jsx-3758851661 .filename.jsx-3758851661,
-.stage-2-text.jsx-3758851661, .side-bar.jsx-532438284 .login-wrapper.jsx-532438284 span.jsx-532438284 {
+.stage-2-text.jsx-3758851661,
+.side-bar.jsx-532438284 .login-wrapper.jsx-532438284 span.jsx-532438284,
+.title_1OPbp,
+.titleWrap_1ppFq,
+[dir=ltr] .text_1eZ9b,
+span,
+.wrap-content_3A4-J .desc_3TEXJ,
+.wrap-content_1wZWo .carousel-text-desc_3rM6a,
+.wrap-content_1wZWo .carousel-text-reason_23Lc3,
+font {
 	color: aliceblue !important
 }
 }

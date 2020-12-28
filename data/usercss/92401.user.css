@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         frog
 @description    `&bull; Expands the <b>large player</b> (<i>click</i> <b>&#x25AD;</b>) to display in maximal size.<br>&bull; Preference to autohide the top masthead toolbar (default visible).<br>&bull; Hide the cursor by hovering over the video edge.<br>&bull; Displays title of video in search bar (Firefox only).<br>&bull; Resizes accordingly if window size is changed.<br>&bull; Tested only on Youtube's new material design.`
-@version        20201227.21.27
+@version        20201228.8.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown MH "Masthead toolbar" {
-	Y "Always visible*" <<<EOT /*[[MH]]*\//* EOT;
-N "Autohide" <<<EOT /*[[MH]]*\/ EOT;
+	Y "Always visible*" <<<EOT /*[MH]*\//* EOT;
+N "Autohide" <<<EOT /*[MH]*\/ EOT;
 
 }
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MariaLovesQueen
 @description    `<b>Дорогие пользователи, прошу пишите мне на этом сайте в feedback или куда-нибудь в лс, если видите в этом стиле ошибки, недокрашенные области и пр.</b> Мне самой сложно следить за всем, помогайте. Дата последних изменений в стиле находится выше в графе <b>Last Updated</b>, иными словами, если вы видите что дата там изменилась значит стиль был немного доработан.<br><br>Изменения: плеер выше :D Исправлена ошибка перекрытия фоном плеера, заменен фон на чёрный в родной темной теме сайта.`
-@version        20201017.18.23
+@version        20201228.11.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -64,12 +64,12 @@
 
 
 /*recolor background*/
-.b-newest_slider__inner, #hd-comments-list>.comments-tree-list .comments-tree-list, .b-search__live, .b-tophead-dropdown ul, .b-topnav__sub_inner, body.b-theme__template__night.has-brand #wrapper, body.b-theme__template__night, body.b-theme__template__night .b-footer, body.b-theme__template__night .b-tophead_wrapper, .no-touch {
+.b-christmas, .b-christmas .b-collections__newest, .b-newest_slider__inner, #hd-comments-list>.comments-tree-list .comments-tree-list, .b-search__live, .b-tophead-dropdown ul, .b-topnav__sub_inner, body.b-theme__template__night.has-brand #wrapper, body.b-theme__template__night, body.b-theme__template__night .b-footer, body.b-theme__template__night .b-tophead_wrapper, .no-touch {
     background: #000 !important;
 	color: #999 !important;
 }
 
-.b-person__popup_photo, .b-post__qa_list_link, .b-post__schedule_block_title, .comments-form, .b-search__live_all, .b-sidecover, .b-post__social_holder, .b-person__popup_holder_photo .overlay, .b-person__popup_content .stats a, .b-tophead-dropdown.hovered, .b-tophead_wrapper, .b-translators__block, .b-videosaves__list_item .new-episode.own, .b-seriesupdate__block_date.collapsible.expandable, .b-seriesupdate__block_list_item, .b-seriesupdate__block_date, .b-newest_slider, .b-newest_slider__list, .b-collections__newest, .b-newest_slider_wrapper, .b-content__inline_item-cover, .b-wrapper, #top-nav, body.has-brand #wrapper, #wrapper {
+body.b-theme__template__night .b-newest_slider .cntrl, body.b-theme__template__night .tumbler__wrapper, .b-videosaves__list_item .new-episode, .b-person__popup_photo, .b-post__qa_list_link, .b-post__schedule_block_title, .comments-form, .b-search__live_all, .b-sidecover, .b-post__social_holder, .b-person__popup_holder_photo .overlay, .b-person__popup_content .stats a, .b-tophead-dropdown.hovered, .b-tophead_wrapper, .b-translators__block, .b-videosaves__list_item .new-episode.own, .b-seriesupdate__block_date.collapsible.expandable, .b-seriesupdate__block_list_item, .b-seriesupdate__block_date, .b-newest_slider, .b-newest_slider__list, .b-collections__newest, .b-newest_slider_wrapper, .b-content__inline_item-cover, .b-wrapper, #top-nav, body.has-brand #wrapper, #wrapper {
     background-color: rgba(0,0,0,0) !important;
 }
 
@@ -78,7 +78,7 @@
 	color: #999 !important;
 }
 
-body.b-theme__template__night .sod_list_wrapper, body.b-theme__template__night .sod_select, .tooltipster-default, .btn-helper, .btn-action, .title_spoiler a, #hd-comments-list>.comments-tree-list>li:nth-child(odd) .comments-tree-item, #dlemasscomments #dle-comments-list>div:nth-child(odd) .comments-tree-item, #hd-comments-list>.comments-tree-list>li:nth-child(odd), #dlemasscomments #dle-comments-list>div:nth-child(odd), .b-search__form, .b-search__field {
+.b-content__bubble, body.b-theme__template__night .sod_list_wrapper, body.b-theme__template__night .sod_select, .tooltipster-default, .btn-helper, .btn-action, .title_spoiler a, #hd-comments-list>.comments-tree-list>li:nth-child(odd) .comments-tree-item, #dlemasscomments #dle-comments-list>div:nth-child(odd) .comments-tree-item, #hd-comments-list>.comments-tree-list>li:nth-child(odd), #dlemasscomments #dle-comments-list>div:nth-child(odd), .b-search__form, .b-search__field {
 	background-color: #111 !important;
 }
 
@@ -87,19 +87,19 @@ body.b-theme__template__night .sod_list_wrapper, body.b-theme__template__night .
 }
 
 /*recolor text*/
-.b-person__popup_content .t, .b-post__info, .b-post__info_rates, .b-comment, .b-post__qa_list_item .title, .b-post__schedule_table, .b-search__field, .bold, .b-videosaves__list_item .td, .b-seriesupdate__block_list_item_inner .cell-2, .b-newest_slider__title {
+.label, .b-person__popup_content .t, .b-post__info, .b-post__info_rates, .b-comment, .b-post__qa_list_item .title, .b-post__schedule_table, .b-search__field, .bold, .b-videosaves__list_item .td, .b-seriesupdate__block_list_item_inner .cell-2, .b-newest_slider__title {
 	color: #999 !important;
 }
 
-body.b-theme__template__night .persons-list-holder .person-name-item a, .btn-helper, .b-comment__like_it i, .b-comment__quoteuser, .title_spoiler a, .b-post__qa_list_item .title:hover, .b-comment .name, .b-search__live_all, .b-post__info .l, .b-person__popup_content .stats a, .b-tophead-dropdown, .persons-list-holder .person-name-item a, .b-videosaves__list_item:hover .td, .user-things a .count, .b-newest_slider__title span, .b-topnav__item-link, a {
+.b-content__bubble_rates, .b-content__bubble_rating b, .b-videosaves__list_item .th, .b-videosaves__list_item .new-episode, body.b-theme__template__night .persons-list-holder .person-name-item a, .btn-helper, .b-comment__like_it i, .b-comment__quoteuser, .title_spoiler a, .b-post__qa_list_item .title:hover, .b-comment .name, .b-search__live_all, .b-post__info .l, .b-person__popup_content .stats a, .b-tophead-dropdown, .persons-list-holder .person-name-item a, .b-videosaves__list_item:hover .td, .user-things a .count, .b-newest_slider__title span, .b-topnav__item-link, a {
 	color: #ccc !important;
 }
 
-.b-user__settings .sep-title, .btn-helper:hover, .b-comment__like_it i:hover, .b-comment__quoteuser:hover, .b-post__rating .num, .b-post__partcontent_item.current .title, .b-search__section_list .enty, .b-search__live_all:hover, .b-person__popup_content .stats a:hover, .b-tophead-dropdown.hovered, .persons-list-holder .person-name-item a:hover, .b-videosaves__list_item:hover .td a, .user-things a:hover .count, .b-seriesupdate__block_date.collapsible.expandable:hover .act, .b-seriesupdate__block_date.collapsible.expandable, .b-seriesupdate__block_date.collapsible, .b-seriesupdate__block_date:hover .act, .b-newest_slider__title span:hover, .b-topnav__item-link:hover, .b-topnav__item-link.active, .b-topnav__item-link.active_section, a:hover, a:active {
+.b-videosaves__list_item .new-episode.own, .b-user__settings .sep-title, .btn-helper:hover, .b-comment__like_it i:hover, .b-comment__quoteuser:hover, .b-post__rating .num, .b-post__partcontent_item.current .title, .b-search__section_list .enty, .b-search__live_all:hover, .b-person__popup_content .stats a:hover, .b-tophead-dropdown.hovered, .persons-list-holder .person-name-item a:hover, .b-videosaves__list_item:hover .td a, .user-things a:hover .count, .b-seriesupdate__block_date.collapsible.expandable:hover .act, .b-seriesupdate__block_date.collapsible.expandable, .b-seriesupdate__block_date.collapsible, .b-seriesupdate__block_date:hover .act, .b-newest_slider__title span:hover, .b-topnav__item-link:hover, .b-topnav__item-link.active, .b-topnav__item-link.active_section, a:hover, a:active {
 	color: #fff !important;
 }
 
-.b-comment .date, .b-post__social_holder .share-label, .persons-list-holder .item, .b-post__description_text, .b-videosaves__list_item .new-episode, .b-seriesupdate__block_date.collapsible.expandable .act, .b-seriesupdate__block_date .act,  .b-seriesupdate__block_list_item_inner .cell-1  {
+.b-comment .date, .b-post__social_holder .share-label, .persons-list-holder .item, .b-post__description_text, .b-seriesupdate__block_date.collapsible.expandable .act, .b-seriesupdate__block_date .act,  .b-seriesupdate__block_list_item_inner .cell-1  {
 	color: #777 !important;
 }
 
@@ -117,7 +117,19 @@ body.b-theme__template__night .sod_list_wrapper, .sod_select, body.b-theme__temp
 
 /*filter*/
 .b-rating, .ya-share2__list_direction_horizontal > .ya-share2__item, .b-post__rating_layer{
-	filter: grayscale(100%);
+	filter: grayscale(100%) !important;
+}
+
+.b-christmas .b-tophead__logo, .b-tophead__logo {
+	filter: contrast(1.8) !important;
+}
+
+.b-topnav__item-link .dropdwn {
+	filter: invert(1) !important;
+}
+
+body.b-theme__template__night .b-topnav__item-link .dropdwn {
+	filter: none !important;
 }
 
 /*other*/
