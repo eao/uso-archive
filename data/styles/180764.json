@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "gitlab",
     "createdAt": "2020-03-04T16:00:34.000Z",
-    "updatedAt": "2020-03-20T19:24:35.000Z",
+    "updatedAt": "2020-12-27T19:18:38.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 894816,
@@ -18,8 +18,8 @@
   },
   "stats": {
     "installs": {
-      "total": 41,
-      "weekly": 0
+      "total": 48,
+      "weekly": 1
     }
   },
   "screenshots": {
@@ -36,6 +36,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(gitlab.com)\r\n{\r\nbody, .card,.info-well {\r\n\tbackground-color:black;\r\n\tcolor:#0f0;\r\n\tfilter:invert();\r\n}\r\nbody.ui-indigo .navbar-gitlab {\r\n\tfilter:invert();\r\n\tborder-color:green;\r\n}\r\np {\r\n\tcolor:#0f0;\r\n}\r\nh1, h2, h3, h4, h5, h6 {\r\n\tcolor:hotpink;\r\n}\r\n.code.white .n,a {\r\n\tcolor:orange;\r\n}\r\n.dropdown-menu, .dropdown-menu-nav {\r\n\tfilter:invert();\r\n}\r\nimg {\r\n\tfilter:invert();\r\n}\r\n}"
+    "css": "@-moz-document domain(gitlab.com)\r\n{\r\nbody, .card,.info-well {\r\n\tbackground-color:black;\r\n\tcolor:#0f0;\r\n\tfilter:invert();\r\n}\r\nui-indigo {\r\n\tfilter:invert();\r\n\tborder-color:green;\r\n}\r\n.navbar-gitlab {\r\n    position: relative\r\n}\r\np {\r\n\tcolor:#0f0;\r\n}\r\nh1, h2, h3, h4, h5, h6 {\r\n\tcolor:hotpink;\r\n}\r\n.code.white .n,a {\r\n\tcolor:orange;\r\n}\r\n\r\nimg {\r\n\tfilter:invert();\r\n}\r\n}"
   }
 }

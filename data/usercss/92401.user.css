@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         frog
 @description    `&bull; Expands the <b>large player</b> (<i>click</i> <b>&#x25AD;</b>) to display in maximal size.<br>&bull; Preference to autohide the top masthead toolbar (default visible).<br>&bull; Hide the cursor by hovering over the video edge.<br>&bull; Displays title of video in search bar (Firefox only).<br>&bull; Resizes accordingly if window size is changed.<br>&bull; Tested only on Youtube's new material design.`
-@version        2020113.14.7
+@version        20201227.21.27
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown MH "Masthead toolbar" {
@@ -19,7 +19,7 @@ body:not(.no-scroll) {overflow-y:scroll!important;--P:calc(100vh - 56px);--N:cal
 ytd-app[style*="--ytd-masthead-height"] {--P:calc(100vh - var(--ytd-masthead-height));--N:calc(var(--ytd-masthead-height) - 100vh);}
 
 #player.skeleton.theater, .theater .html5-video-player, .theater .html5-main-video,
-ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy {height:var(--P)!important;max-height:none;z-index:2;margin-bottom:0!important;background:black}
+ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy {height:var(--P)!important;max-height:none!important;z-index:2;margin-bottom:0!important;background:black}
 
 [theater] *.ytd-watch {
 --flex1280-mode-player-height: var(--P);

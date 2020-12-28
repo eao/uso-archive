@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         by_ix
 @description    `If you find any issues, feel free to send me a message to <b>"Send Feedback"</b> or in PM: <b><a href="https://www.pinterest.ca/by_ix">Link</a></b>.<input type="pinterest, pinterest.ru, pinterest.ca, pinterest.com, pinterest.de, pinterest.uk, pinterest.fr, pinterest.au, pinterest.mx, pinterest.co, pinterest.ch, pinteres, pint, пинтерест, пинтерес, пинт, dark, darkmode, dark mode, dark theme, purple, purple theme, black, black theme, night, nightmode, night theme, night mode, google, roblox, facebook, instagram, twitter, whatsapp, youtube, vk, vkontakte, v kontakte, вотсап, вотс, ватсап, васт ап, вотс ап, вк, вконтакте, в контакте, инст, инстаграм, фейс, фейсбук, твиттер, твит, твитт, роблокс, гугл, ютюб, ютуб, ночная тема, ночная, ночь, тёмная тема, темная тема, темная для пинта, темная тема для пинтерест, темный пинтерест, ночной пинтерест, ночной пинт, ночная тема для пинтерест." size="5">`
-@version        2020826.18.44
+@version        20201227.22.35
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,7 +16,7 @@
 
 ----- Created: 08.09.2019
 
------ Updated: 27.08.2020
+----- Updated: 28.12.2020
 
 ----- Good Luck.
 
@@ -505,6 +505,9 @@ ul.results [style*="background-color: rgb(241, 241, 241)"] {
 .hjj.wYR.zI7.iyn.Hsu [style*="height: 164px"] {
     height: 55px !important;
 }
+.hjj.zI7.iyn.Hsu [style*="height: 164px"] {
+    height: 55px !important;
+}
 span.tBJ.dyH.iFc.yTZ.pBj.DrD.IZT.swG {
     font-size: 14px;
 }
@@ -722,33 +725,14 @@ h2.lH1.dyH.iFc.ut5.pBj.sdb.IZT {
 .User.medium .thumbImageWrapper {
     padding: 0 0 2px 2px;
 }
-
-
-/*-------------------------------------------------------*/
-
-.XiG.sLG.zI7.iyn.Hsu [style*="width: 1309px"] {
-    width: 1301px !important;
+.XiG.zI7.iyn.Hsu [style*="height: 157px; width: 118px; border-color: white"] {
+    border-color: #262729!important;
 }
-.XiG.sLG.zI7.iyn.Hsu [style*="width: 1440px"] {
-    width: 1432px !important;
+.gjz.jzS.mQ8.un8.A6h [style*="width: 656px"] {
+    width: 100% !important;
 }
-.XiG.sLG.zI7.iyn.Hsu [style*="width: 1600px"] {
-    width: 1592px !important;
-}
-.XiG.sLG.zI7.iyn.Hsu [style*="width: 1745px"] {
-    width: 1737px !important;
-}
-.XiG.sLG.zI7.iyn.Hsu [style*="width: 1920px"] {
-    width: 1912px !important;
-}
-.XiG.sLG.zI7.iyn.Hsu [style*="width: 2133px"] {
-    width: 2125px !important;
-}
-.XiG.sLG.zI7.iyn.Hsu [style*="width: 2400px"] {
-    width: 2392px !important;
-}
-.XiG.sLG.zI7.iyn.Hsu [style*="width: 3840px"] {
-    width: 3832px !important;
+.Jea.m2F.mQ8.zI7.iyn.Hsu {
+    overflow: hidden;
 }
 
 /*-------------------------------------------------------*/

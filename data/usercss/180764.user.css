@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         forkedpath
 @description    `gitlab.com black`
-@version        2020320.21.24
+@version        20201227.19.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,9 +14,12 @@ body, .card,.info-well {
 	color:#0f0;
 	filter:invert();
 }
-body.ui-indigo .navbar-gitlab {
+ui-indigo {
 	filter:invert();
 	border-color:green;
+}
+.navbar-gitlab {
+    position: relative
 }
 p {
 	color:#0f0;
@@ -27,9 +30,7 @@ h1, h2, h3, h4, h5, h6 {
 .code.white .n,a {
 	color:orange;
 }
-.dropdown-menu, .dropdown-menu-nav {
-	filter:invert();
-}
+
 img {
 	filter:invert();
 }

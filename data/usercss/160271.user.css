@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         a1mighty
 @description    `<a target="_blank" href="https://nightcoremaker.com/tools/misc/CleanBlizzardForums_2019_08_12.png">High quality screenshot</a>Makes new Blizzard forums better and cleaner with:- wider posts with less height- floating navigation bar moved to the right edge of screen- no topic info in first post- no 'Suggested Topics'- no emoji- minor changes (red likes, etc)`
-@version        2019812.11.14
+@version        20201227.20.52
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,7 +15,8 @@ body
 
 .timeline-container
 {
-    right: 30px;
+    position: absolute;
+    right: auto !important;
 }
 
 .topic-map
@@ -36,12 +37,6 @@ body
 .emoji
 {
     display: none;
-}
-
-.desktop-view .topic-post.topic-owner:first-of-type::before
-{
-    width: 200vw !important;
-    margin-left: -25vw !important;
 }
 
 .widget-button
@@ -118,11 +113,6 @@ body
     opacity: 1.0;
 }
 
-#main
-{
-    overflow-x: hidden;
-}
-
 .reply-to-tab img
 {
     display: none;
@@ -146,6 +136,11 @@ body
 .small-action
 {
     display: none;
+}
+
+.desktop-view #topic-title
+{
+    padding-top: inherit;
 }
 
 .topic-status-info

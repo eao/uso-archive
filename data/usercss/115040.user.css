@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         dolos
 @description    `Somewhat complete mono volafile.org that is the result of 40min hard work. It is the best!!!!`
-@version        202087.11.11
+@version        20201227.14.23
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -212,6 +212,8 @@ table th {
 #chat_input {
   padding: 0.5ex 1ex;
   font-size: inherit;
+  border-bottom: 24px solid var(--input-color) !important;
+  height: calc(5em + 24px) !important;
 }
 
 #toggles span.toggle_icon {
@@ -741,5 +743,13 @@ textarea[name="motd"] {
 textarea[name="files"] {
   width: 30em;
   height: 12em;
+}
+
+.page_admin_adiscover tr:nth-child(odd) {
+  background-color: rgba(255,255,255,0.04);
+}
+
+.page_admin_adiscover tr:hover {
+  background-color: rgba(255,255,255,0.1);
 }
 }
