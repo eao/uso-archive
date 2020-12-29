@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Ночная тема для Яндекс.Поиска, Картинок, Видео и Коллекций———————————————————————————————10.12.20 — Исправлены некоторые баги———————————————————————————————26.08.19 — Тема была полностью переработана• Переработан дизайн• Добавлена поддержка Яндекс.Коллекции`
-@version        20201227.7.34
+@version        20201228.17.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1815,6 +1815,12 @@ a.user-account_hovered_yes {color: #e85253;}
 .Theme_color_yandex-default .Button2_view_default:before {background-color: #333;}
 .Theme_color_yandex-default .Button2_view_default:not([aria-disabled=true]):hover:before {background-color: #444;}
 
+.CbirOcr-Content {border-color: #333;}
+.CbirOcr-Text {color: #eee;}
+.Fold_type_arrow .Fold-MoreArrow:before {background-color: #333;}
+.Fold_type_arrow .Fold-MoreIcon {filter: invert(1);}
+.CbirOcr-ControlButton.Button2.Button2_view_default.Button2_tone_gray .Button2-Icon {filter: invert(1);}
+
 .CbirPreview-Background_theme_light {background-color: #222;}
 .CbirPreview-CropMarkerShape:focus, .CbirPreview-CropMarkerShape_active {border-color: #333;}
 .CbirPreview-CropMarkerRect {border-color: #333;}
@@ -1984,8 +1990,9 @@ a.user-account_hovered_yes {color: #e85253;}
 .page-layout_page_search .serp-list_type_search .serp-item.serp-item_with-player {border-color: #444;}
 
 .link_theme_normal {color: #7d9dc7;}
-.serp-item__title {color: #7d9dc7;}
-.serp-item_layout_horizontal.serp-item_hovered_yes .serp-item__title {color: #e85253;}
+.page-layout_page_search .serp-item.serp-item_theme_horiz-r .serp-item__title {color: #7d9dc7;}
+.page-layout_page_search .serp-item.serp-item_theme_horiz-r .serp-item__title.link_hovered_yes {color: #e85253;}
+.page-layout_page_search .serp-item.serp-item_theme_horiz-r .serp-item__text {color: #999;}
 .serp-item_visited_yes.serp-item_selected_yes .serp-item__title {color: #eee;}
 .serp-item_visited_yes .serp-item__title {color: #967dbb;}
 .serp-url, .serp-url__link:link, .serp-url__link:visited {color: #7cb73c;}

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `<i>Note:</i>  <b>Use the Light Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/194352_additional_37560.jpeg" target="_blank"><b>📝</b></a>A Pokemon GBA based Theme.More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        20201226.3.21
+@version        20201228.15.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bg "Background Image 🖼️" {
@@ -362,7 +362,7 @@ paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button 
 
 /*left coloumn*/
 #guide-content.ytd-app {
-    background: #e7d044;
+    background: #62a074;
     border: 0px solid #433c44;
     border-radius: 0px 9px 9px 0px;
 	box-shadow: inset 0px 0px 0px 4px #433c44;

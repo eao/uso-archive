@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        20201224.17.50
+@version        20201228.22.56
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v6.1*/
+/* Dark Creator Studio v6.2*/
 /* Created by Leon Flame, edited by Lexan*/
 
 /* Dark Scrollbar*/
@@ -1198,7 +1198,7 @@ ytcp-video-row[horizontal-scroll] .last-floating-column.ytcp-video-row:after{
     color: var(--text-darken-color);
 }
 
-.chain-edit-button.ytcp-bulk-actions+.chain-edit-button.ytcp-bulk-actions{
+.chain-edit-button.ytcp-bulk-actions+.chain-edit-button.ytcp-bulk-actions, .create-playlist-button.action-button.style-scope.ytcp-playlist-dialog{
     background-color: var(--accent-color);
 }
 
@@ -1476,6 +1476,18 @@ ytve-captions-editor-caption-segment-line[selected] #row-container.ytve-captions
 
 .scroll-button.yt-third-party-share-target-section-renderer{
     background-color: var(--item-color);
+}
+
+.progress-title.ytcp-multi-progress-monitor{
+    color: var(--text-color);
+}
+
+.progress-status-text.ytcp-multi-progress-monitor{
+    color: var(--text-darken2-color);
+}
+
+.style-scope.ytcp-video-list-cell-actions.cancel-upload-button, .style-scope.ytcp-video-list-cell-actions.edit-draft-button{
+    color: var(--accent-color);
 }
 
 /*Cards*/

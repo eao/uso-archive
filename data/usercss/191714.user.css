@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As in title.`
-@version        20201031.15.14
+@version        20201228.19.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -586,7 +586,7 @@ svg.arbor-logo__dropbox-wordmark.arbor-logo__dropbox-wordmark--micro > g > g > p
     border-top-color: rgba(32, 33, 35, .6);
     border-bottom-color: rgba(32, 33, 34, .6);
 }
-.arbor-foreground-color--shark, .entitlements .entitlement__container .response-time-sub, #find-receipt, .mc-snackbar-actions, .thirdparty_activity-onboarding-card-button-notnow, .maestro .file_activity_stream_card, .sc-comment-editor-controls .sc-comment-editor-controls-cancel, .sc-thread-controls, .sc-thread-controls .sc-thread-toggle, .sc-comment-collapsed-timestamp-info, .sc-comment-timestamp, .sc-thread-reply-hint, .maestro .c-tabs__tab, .maestro .share-page__empty-view, .scl-sharing-dropdown-menu-item__description, .redesign .share-page-recents-tab .share-page-file-row__size-text, .redesign .share-page-recents-tab .share-page-folder-row__size-text, .redesign .share-page-folders-tab .share-page-file-row__size-text, .redesign .share-page-folders-tab .share-page-folder-row__size-text, .redesign .share-page-files-tab .share-page-file-row__size-text, .redesign .share-page-files-tab .share-page-folder-row__size-text {
+.arbor-foreground-color--shark, .entitlements .entitlement__container .response-time-sub, #find-receipt, .mc-snackbar-actions, .thirdparty_activity-onboarding-card-button-notnow, .maestro .file_activity_stream_card, .sc-comment-editor-controls .sc-comment-editor-controls-cancel, .sc-thread-controls, .sc-thread-controls .sc-thread-toggle, .sc-comment-collapsed-timestamp-info, .sc-comment-timestamp, .sc-thread-reply-hint, .maestro .c-tabs__tab, .maestro .share-page__empty-view, .scl-sharing-dropdown-menu-item__description, .redesign .share-page-recents-tab .share-page-file-row__size-text, .redesign .share-page-recents-tab .share-page-folder-row__size-text, .redesign .share-page-folders-tab .share-page-file-row__size-text, .redesign .share-page-folders-tab .share-page-folder-row__size-text, .redesign .share-page-files-tab .share-page-file-row__size-text, .redesign .share-page-files-tab .share-page-folder-row__size-text, .agent-message-bubble {
 	color: #93abc4;
 }
 .arbor-background-color--panda-gray--light {
@@ -667,8 +667,11 @@ hr {
 .value-prop__check > path {
 	fill: #fff;
 }
-.react-file-viewer__preview--edit-mode {
+.react-file-viewer__preview--edit-mode, .sc-suggested-comments-button {
     background-color: #1d2737;
+}
+.sc-suggested-comments-button:hover {
+    background: #475162;
 }
 .thirdparty_activity-onboarding-card-container {
 	background: #0e0e0e;
@@ -813,10 +816,10 @@ textarea {
 .chat-bubble-arrow {
     border-color: transparent transparent #0e0e0e transparent;
 }
-.react-file-viewer {
+.react-file-viewer, .agent-message-bubble {
 	background: #151719
 }
-#upsell-home-modal .db-modal-box, #upsell-post-share-modal .db-modal-box, #db-modal-upsell-home-modal .db-modal-box, #db-modal-upsell-post-share-modal .db-modal-box {
+#upsell-home-modal .db-modal-box, #upsell-post-share-modal .db-modal-box, #db-modal-upsell-home-modal .db-modal-box, #db-modal-upsell-post-share-modal .db-modal-box, .universal-nav .arbor-nav__item--avatar {
 	background: #14161a;
 }
 .dig-Banner--attention {
@@ -831,5 +834,27 @@ textarea {
 }
 .dig-Menu-canvas {
     box-shadow: 0 0 12px 0 rgba(255, 255, 255, .12);
+}
+.waffle-menu__wrapper, .magic-box .magic-box-clear, .magic-box .magic-box-suggestions, .brws-files-view-list .brws-file-row .mc-media-actions, .brws-files-view-list .brws-filesharedwithme-row .mc-media-actions, .brws-files-view-list .brws-paper-row .mc-media-actions, .brws-pinned-team-folder-view .brws-file-row .mc-media-actions, .brws-pinned-team-folder-view .brws-filesharedwithme-row .mc-media-actions, .brws-pinned-team-folder-view .brws-paper-row .mc-media-actions {
+	background: #0e0e0e;
+}
+.dig-Menu-row-subtitle {
+	color: #999;
+}
+.waffle-row__wrapper .waffle-row__icon {
+    background-color: #0e0e0e;
+    border-color: rgba(255, 255, 255, .05);
+}
+.magic-box {
+	color: #d1d1d1;
+}
+.brws-file-row.brws-file-row-hover-forced .mc-media-actions, .brws-file-row:hover .mc-media-actions, .brws-filesharedwithme-row.brws-file-row-hover-forced .mc-media-actions, .brws-filesharedwithme-row:hover .mc-media-actions, .brws-paper-row.brws-file-row-hover-forced .mc-media-actions, .brws-paper-row:hover .mc-media-actions {
+	background: #111;
+}
+.plans-matrix__plan-audience-subheader {
+    color: #93aabd;
+}
+.main:not(:focus-within), #background {
+    background-color: #0e0e0e;
 }
 }

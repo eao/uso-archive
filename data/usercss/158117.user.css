@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——⭐如有问题请到我的网站【www.asifadeaway.com】点击右下角会话按钮给我留言⭐1、常用页面夜间模式全覆盖2、去除广告3、去除导航栏中游戏等无用杂项4、部分icon更换使之更符合当前主题5、自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素`
-@version        20201227.6.37
+@version        20201228.15.19
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -77,7 +77,7 @@ BarrageContent_ON "开" <<<EOT .Barrage-content:not([class*="Barrage-content--co
 @-moz-document url-prefix("https://www.douyu.com/"), url-prefix("http://www.douyu.com/") {
 /*=== 
     作者：QIUZAIYOU 
-    最后更新：20201227
+    最后更新：20201228
 ===*/
 /*=== 屏蔽元素 ===*/
 .giftbatter-box,
@@ -356,7 +356,9 @@ div[class*='-ad'],
 div[class*='-Ad'] {
     display: none!important;
 }
-.ToolbarActivityArea,
+.GuessMainPanelHeader-icon fishballTreasure,
+.ToolbarActivityArea>div>div>div:not([data-flag="anchor_quiz"]),
+.ToolbarActivityArea .ActivityTips,
 .Title-videoSiteLink,
 .Title-roomOtherBottom,
 .Title-columnTag,
@@ -1537,7 +1539,7 @@ div.title {
 }
 .guess-main-panel .panel-left .guess-name,
 .GuessMainPanelHeader-slogon {
-    color: #868686!important;
+    color: #fff!important;
 }
 .guess-game-box-theme .guess-game-box-main {
     padding: 8px 12px 8px!important;
@@ -1724,6 +1726,9 @@ div.action-item:nth-child(2):hover {
 .guess-tip-dealer .rulesBox {
     color: #868686!important;
     background: #2c2c2c!important;
+}
+.guessGameContainer.is-diyRoom .GuessMainPanelHeader-icon .iconTips:before{
+    border-top-color:#f70;
 }
 .rank-emty {
     background: none!important;
@@ -3417,7 +3422,10 @@ a[title="播单"],
 .PcDiversion,
 .FirePower-icon:before,
 .index-common-1-rrh,
-.video-above {
+.video-above,
+.GuessGameMiniPanel-wrapper,
+.ActiviesExpanel-ExpandBtn,
+.GuessMainPanelHeader-icon.fishballTreasure {
     opacity: 0!important;
     display: none!important;
 }
@@ -4230,6 +4238,19 @@ div[class*='wenti1-'] select,
     border-color: transparent transparent #272727!important;
 }
 /* 狗日的其他 */
+.ToolbarActivityArea > div > div:not(.ActiviesExpanel) {
+    display: grid!important;
+    grid-template-columns: repeat(10, 40px)!important;
+    grid-template-rows: repeat(1, 40px)!important;
+    grid-column-gap: 5px!important;
+}
+.ToolbarActivityArea > div > div > div,
+.shark-webp .GuessIcon,
+.GuessIcon{
+    width: 40px!important;
+    height: 40px!important;
+    margin: 0!important;
+}
 .PrivateLetter{
     -webkit-box-shadow: -1px 0 6px 0 #212121;
     -moz-box-shadow: -1px 0 6px 0 #212121;
@@ -5138,6 +5159,12 @@ div[class*='simpleDanmu-'] span[class*='icon-'] {
 .officalAct-region .officalAct-link .LazyLoad {
     background: url(https://www.asifadeaway.com/NightMode/douyu/official_activities_empty.png);
     background-size: cover;
+}
+.shark-webp .GuessIcon,
+.GuessIcon{
+    background: url(https://www.asifadeaway.com/NightMode/douyu/GuessIcon.png);
+    background-size: cover;
+    background-repeat: no-repeat!important;
 }
 }
 

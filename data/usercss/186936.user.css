@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.5.0+
+@name           Compact Tube (White) v1.5.1
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201223.22.34
+@version        20201228.23.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.0 */
+/* CompactTube (White) v1.5.1 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -71,16 +71,24 @@ x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 10
     margin-left: 10px; filter: drop-shadow(1px 1px 1px rgb(128, 128, 128)); margin-top: -35px; }
 
         /* v2 Christmas Gifts / Новогодние Подарки */
-  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 25px; left: -12px; content: url("https://i114.fastpic.ru/big/2020/1215/1d/2dce7316c918350de877693f66695d1d.png");
+x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 25px; left: -12px; content: url("https://i114.fastpic.ru/big/2020/1215/1d/2dce7316c918350de877693f66695d1d.png");
     margin-left: 10px; filter: drop-shadow(1px 1px 0px rgba(128, 128, 128, .22)); margin-top: -35px;}
 
-        /* v3 Christmas Tree / Новогодняя Ёлка */
+        /* v3 Christmas Tree 1 / Новогодняя Ёлка 1 */
 x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 25px; left: 5px; content: url("https://i114.fastpic.ru/big/2020/1215/8d/a8ea9f258f497d41e92278abfbe9b78d.png");
     margin-left: 10px; filter: drop-shadow(0px -1.5px 3px rgb(246, 210, 5)); margin-top: -35px;}
 
         /* v4 Christmas Gift / Новогодний Подарок */
-x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 24px; left: -4px; content: url("https://i114.fastpic.ru/big/2020/1215/84/821825801cef72fdeccf67413d23cb84.png");
+  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 24px; left: -4px; content: url("https://i114.fastpic.ru/big/2020/1215/84/821825801cef72fdeccf67413d23cb84.png");
     margin-left: 10px; filter: drop-shadow(1px 2px 1px rgba(53, 53, 53, .17)); margin-top: -35px;}
+
+        /* v5 Christmas Tree 2 / Новогодняя Ёлка 2 */
+x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 26px; left: -4px; content: url("https://i114.fastpic.ru/big/2020/1229/5a/1c3e35f9bbe6075530a9d35a1378265a.png");
+    margin-left: 10px; filter: drop-shadow(0px -1.5px 3px rgba(246, 210, 5, .63)); margin-top: -35px;}
+
+        /* v6 Christmas Tree 3 / Новогодняя Ёлка 3 */
+x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 26px; left: -4px; content: url("https://i114.fastpic.ru/big/2020/1229/47/bac62e4f214d322a936c742f104c6d47.png");
+    margin-left: 10px; filter: drop-shadow(0px -1.5px 2px rgba(246, 210, 5, .33)); margin-top: -35px;}
 
 
 /* убрать отключаемые новости об акциях - типа COVID-19: - "none" - убрать: "flow"- показать */
@@ -137,6 +145,10 @@ yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;} 
 /* Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.) 
     "none" - Отключить "flow" - Показать */
 .ytp-expand-pause-overlay .ytp-pause-overlay {display: none;}
+
+/* Расширенный Лоток Эмоджи для Удобства выбора Эмоджи в ЛайвЧате */
+x  yt-emoji-picker-renderer.yt-live-chat-message-input-renderer {
+    min-height: 280px; /*def: 130px*/ max-height: 280px; /*def: 220px*/ margin: 16px -24px 0;}
 
 /* отключить окошко ЛайвЧат'а - под Видео: - "none" - отключить: "flow"- показать */
 ytd-live-chat-frame {display: flow;}
@@ -203,7 +215,7 @@ ytd-alert-with-button-renderer[is-displayed] {
 /*сетка на 6 миниатюр Главной страницы - modern Chrome*/
 [style] * {
 
-    --ytd-rich-grid-items-per-row: 6; /*6;*/
+    --ytd-rich-grid-items-per-row: 6; /*6; - Количество Видео в ряд на главной странице/Number of Videos in a row on the main page */
 
     --ytd-rich-grid-posts-per-row: 4; /*4;*/
 
@@ -2021,7 +2033,7 @@ ytd-thumbnail.ytd-grid-radio-renderer {
 /* Позицианирование, Размер Шрифта и Цвет названия Джемов и Миксов YouTube в разделе Библиотека(История) в меню "ЕЩЁ" */
 ytd-grid-radio-renderer #video-title.ytd-grid-radio-renderer {
     color: #167AC6;
-    margin: 5px 0px 2px/*8px*/ 6px;
+    margin: 8px/*5px*/ 0px 2px/*8px*/ 6px;
     max-height: 3.2rem; /*calc(2 * var(--yt-link-line-height, 1.6rem))*/
     overflow: hidden;
     text-overflow: ellipsis;
@@ -3341,6 +3353,16 @@ a.yt-simple-endpoint.ytd-notification-renderer {
     -o-background: rgb(251, 8, 8) !important;
     color: var(--yt-endpoint-color, var(--yt-spec-text-primary));
     -o-padding: 2px 0px 0px 0px;}
+
+/* Отступы в Заголовках (Недавние Комментарии) и ( Другие Уведомления) в  Меню Колокольчика */
+h2.yt-multi-page-menu-section-renderer {
+    padding-bottom: 4px; /* test */
+    color: var(--yt-primary-text-color);
+    margin: var(--ytd-margin-2x) 0px var(--ytd-margin-base) var(--ytd-margin-4x); 
+    /* Def: margin: var(--ytd-margin-4x) 0px var(--ytd-margin-base) var(--ytd-margin-4x)*/
+    font-weight: 400;
+    flex: var(--layout-flex_-_flex);
+    flex-basis: var(--layout-flex_-_flex-basis);}
 
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
