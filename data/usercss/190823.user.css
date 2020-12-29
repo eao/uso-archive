@@ -1,14 +1,13 @@
 /* ==UserStyle==
-@name           Mod The Sims Dark Theme
+@name           Mod The Sims Dark Theme !! UPDATED !!
 @namespace      USO Archive
 @author         ItsShuno
 @description    `a dark theme for Mod The Sims!`
-@version        20201029.22.47
+@version        20201229.10.22
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
-/* i really want this to be global */
-
+@-moz-document domain("modthesims.info") {
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
@@ -272,4 +271,5 @@ div.postbitcontent > div.clearfix {
     background-color: #151515;
     padding: 1em;
     color: #ffffff;
+}
 }

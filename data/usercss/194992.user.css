@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for the iDoRecall web app.`
-@version        20201228.16.11
+@version        20201229.2.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -14,6 +14,11 @@
     color: #fff !important;
 }
 .filter-btn, .tags-overlay-container, .search-criteria{ color: #76808F !important;}
+}
+
+@-moz-document url-prefix("https://app.idorecall.com/") {
+/* General */
+body{ background-color: #202020 !important;}
 }
 
 @-moz-document url-prefix("https://app.idorecall.com/library"), regexp("https://app.idorecall.com/groups/.+/library") {

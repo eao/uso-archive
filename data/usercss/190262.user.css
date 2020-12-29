@@ -1,23 +1,20 @@
 /* ==UserStyle==
-@name           Momio Dark & Relax Mode
+@name           Momio Dark & Relax Mode !! UPDATED !!
 @namespace      USO Archive
 @author         ItsShuno
-@description    `with this skin your momio becomes a dark and relaxed place! thanks for using!`
-@version        20201013.22.44
+@description    `with this skin your momio becomes a dark and relaxed place! thanks for using! :)----updated! the theme is now ONLY displayed on momio.me and not on every website! I'm so sorry.`
+@version        20201229.10.13
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
-/* i really want this to be global */
-
-#waiper_content.waiper_bg_sky {
-    background: #424242;
-}
-
-
+@-moz-document domain("momio.me") {
 .wallHeader.friend, .wallHeader.myWall {
     background-color: #828282;
 }
 
+#waiper_content.waiper_bg_sky {
+    background: #424242;
+}
 .skyButton.darkBlueButton {
     background-color: #353535;
 }
@@ -1078,4 +1075,5 @@ html.fimahyeji.idc0_322 {
 
 .login-header-container {
     transform: none;
+}
 }

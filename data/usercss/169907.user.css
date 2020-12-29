@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Simple Baidu 简百度
+@name           简百度 Simple Baidu
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2020123.12.14
+@version        20201229.5.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown doubleList "搜索结果双列显示" {
@@ -75,11 +75,15 @@ doubleList_ON "开" <<<EOT /* 调整搜索结果样式以适配双列 *\/
 }
 
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.baidu.com"), url-prefix("http://www.baidu.com") {
+@-moz-document url-prefix("http://example.com")
+{
 /*=== 
-作者：QIUZAIYOU 
-最后更新：20201203
+ * 版权信息
+ * 作者：QIUZAIYOU 
+ * 最后更新：20201203
 ===*/
+}
+@-moz-document url-prefix("https://www.baidu.com"), url-prefix("http://www.baidu.com") {
 /* 垃圾元素屏蔽 */
 .qrcodeCon,
 #u1 > a.bri,

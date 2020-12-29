@@ -1,14 +1,13 @@
 /* ==UserStyle==
-@name           Clean Momio Landing Page
+@name           Clean Momio Landing Page !! UPDATED !!
 @namespace      USO Archive
 @author         ItsShuno
 @description    `This is a custom design for the Momio home screen.`
-@version        2020719.8.17
+@version        20201229.10.25
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
-/* i really want this to be global */
-
+@-moz-document domain("momio.me") {
 .landingpage {
     background: url(https://i.ibb.co/37WybfR/Momio-Clean-Design.png) center top no-repeat #6bdaff;
 }
@@ -83,4 +82,5 @@
 
 .skyButton.purple {
     background-color: #56c5e9;
+}
 }

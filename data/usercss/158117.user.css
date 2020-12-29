@@ -3,37 +3,37 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `—— （根据本人自己的使用习惯制作，所以...你懂的 ）——⭐如有问题请到我的网站【www.asifadeaway.com】点击右下角会话按钮给我留言⭐1、常用页面夜间模式全覆盖2、去除广告3、去除导航栏中游戏等无用杂项4、部分icon更换使之更符合当前主题5、自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素`
-@version        20201228.15.19
+@version        20201229.11.22
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
 	UserLevel_ON "开*" <<<EOT .UserLevel, EOT;
-UserLevel_OFF "关" <<<EOT /*UserLevel*\/ EOT;
+UserLevel_OFF "关" <<<EOT /*[[UserLevel]]*\/ EOT;
 
 }
 @advanced dropdown ChatFansBarrage "粉丝弹幕屏蔽" {
-	ChatFansBarrage_OFF "关*" <<<EOT /*ChatFansBarrage*\/ EOT;
+	ChatFansBarrage_OFF "关*" <<<EOT /*[[ChatFansBarrage]]*\/ EOT;
 ChatFansBarrage_ON "开" <<<EOT .ChatFansBarrage, EOT;
 
 }
 @advanced dropdown ChatLetter "站内信屏蔽" {
-	ChatLetter_OFF "关*" <<<EOT /*ChatLetter*\/ EOT;
+	ChatLetter_OFF "关*" <<<EOT /*[[ChatLetter]]*\/ EOT;
 ChatLetter_ON "开" <<<EOT .ChatLetter, EOT;
 
 }
 @advanced dropdown FansMedal "粉丝牌屏蔽" {
 	FansMedal_ON "开*" <<<EOT .FansMedal.Barrage-icon, EOT;
-FansMedal_OFF "关" <<<EOT /*FansMedal*\/ EOT;
+FansMedal_OFF "关" <<<EOT /*[[FansMedal]]*\/ EOT;
 
 }
 @advanced dropdown BarrageNoble "贵族徽章屏蔽" {
 	BarrageNoble_ON "开*" <<<EOT .Barrage-noble.Barrage-icon, EOT;
-BarrageNoble_OFF "关" <<<EOT /*BarrageNoble*\/ EOT;
+BarrageNoble_OFF "关" <<<EOT /*[[BarrageNoble]]*\/ EOT;
 
 }
 @advanced dropdown RoomVipIcon "房间VIP图标屏蔽" {
 	RoomVipIcon_ON "开*" <<<EOT .Barrage-roomVipIcon, EOT;
-RoomVipIcon_OFF "关" <<<EOT /*RoomVipIcon*\/ EOT;
+RoomVipIcon_OFF "关" <<<EOT /*[[RoomVipIcon]]*\/ EOT;
 
 }
 @advanced dropdown Scrollbar "浏览器滚动条样式更改" {
@@ -55,12 +55,12 @@ RoomVipIcon_OFF "关" <<<EOT /*RoomVipIcon*\/ EOT;
         background-color: #424242!important;
         -webkit-border-radius: 6px!important;
     } EOT;
-Scrollbar_OFF "关" <<<EOT /*Scrollbar*\/ EOT;
+Scrollbar_OFF "关" <<<EOT /*[[Scrollbar]]*\/ EOT;
 
 }
 @advanced dropdown PlayerRank "弹幕侧上方排名屏蔽" {
 	PlayerRank_ON "开*" <<<EOT .layout-Player-rank, EOT;
-PlayerRank_OFF "关" <<<EOT /*PlayerRank*\/ EOT;
+PlayerRank_OFF "关" <<<EOT /*[[PlayerRank]]*\/ EOT;
 
 }
 @advanced dropdown BarrageContent "粉丝弹幕颜色显示" {
@@ -74,11 +74,14 @@ BarrageContent_ON "开" <<<EOT .Barrage-content:not([class*="Barrage-content--co
 @advanced color AnchorContentColor "主播发言颜色" #FF6600
 
 ==/UserStyle== */
-@-moz-document url-prefix("https://www.douyu.com/"), url-prefix("http://www.douyu.com/") {
+@-moz-document url-prefix("http://example.com") {
 /*=== 
-    作者：QIUZAIYOU 
-    最后更新：20201228
+ * 版权信息
+ * 作者：QIUZAIYOU 
+ * 最后更新：20201228
 ===*/
+}
+@-moz-document url-prefix("https://www.douyu.com/"), url-prefix("http://www.douyu.com/") {
 /*=== 屏蔽元素 ===*/
 .giftbatter-box,
 .fans-badge-icon,
@@ -205,7 +208,7 @@ div[class*="newMask-"],
 .js-room-yuba-entry {
     display: none!important;
 }
-/* 全站广告 */
+/*=== 全站广告 ===*/
 .f-sign-cont,
 .his-sign-cont,
 .row-3,
@@ -271,7 +274,7 @@ div[data-component-id*="ladderNav"],
 .ywreturntip {
     display: none!important;
 }
-/* 视频内广告屏蔽(H5播放器) */
+/*=== 视频内广告屏蔽(H5播放器) ===*/
 .QRcode,
 .lianmai-tips {
     display: none!important;
@@ -295,7 +298,7 @@ div[class*="noHandlerAd-"],
 div[class*="adsRoot"] {
     display: none!important;
 }
-/* 礼物区活动 */
+/*=== 礼物区活动 ===*/
 div[data-flag="goldenplay"],
 div[data-flag="jifen"],
 div[data-flag="taobaogoods"],
@@ -313,7 +316,7 @@ div[data-flag*="giftweek"],
 .PaladinWeek {
     display: none!important;
 }
-/* 竟猜 */
+/*=== 竟猜 ===*/
 .action-item[data-id="76"],
 .live-room-normal-left,
 .PlayerSub {
@@ -322,12 +325,12 @@ div[data-flag*="giftweek"],
 .action-item[data-id="76"] .action-img {
     display: none!important;
 }
-/* 告白 */
+/*=== 告白 ===*/
 .js-love180520-wrap,
 .love180520-giftTip {
     display: none!important;
 }
-/* 欢迎XX进入直播间 */
+/*=== 欢迎XX进入直播间 ===*/
 li.jschartli > p > span,
 li.jschartli > p > a {
     display: none!important;
@@ -336,7 +339,7 @@ li.jschartli > p > span.name,
 li.jschartli > p > span.chat-msg-item.text-cont {
     display: inline-block!important;
 }
-/* 竟猜获得鱼丸提示 */
+/*=== 竟猜获得鱼丸提示 ===*/
 .chat-cont .normal-notice-new .mycont-r {
     color: #868686!important;
     background-color: #fff3df!important;
@@ -345,13 +348,13 @@ li.jschartli > p > span.chat-msg-item.text-cont {
 li p i.sys-icon {
     display: none!important;
 }
-/* 弹幕池系统提示 */
+/*=== 弹幕池系统提示 ===*/
 .chat-cont .normal-notice-new,
 .chat-sysbroadcast-header,
 .chat-sysbroadcast-body {
     display: none!important;
 }
-/* update fixed */
+/*=== update fixed ===*/
 div[class*='-ad'],
 div[class*='-Ad'] {
     display: none!important;
@@ -413,14 +416,14 @@ span[class='imgbox'] i[class*='icon_'],
 .listcustomize-topcon-title .listcustomize-topcon-link-box {
     display: none!important;
 }
-/* 弹幕侧 */
-.layout-Player-rank,
-.UserLevel,
-/*ChatFansBarrage*/
-/*ChatLetter*/
-.FansMedal.Barrage-icon,
-.Barrage-noble.Barrage-icon,
-.Barrage-roomVipIcon,
+/*=== 弹幕侧 ===*/
+/*[[PlayerRank]]*/
+/*[[UserLevel]]*/
+/*[[ChatFansBarrage]]*/
+/*[[ChatLetter]]*/
+/*[[FansMedal]]*/
+/*[[BarrageNoble]]*/
+/*[[RoomVipIcon]]*/
 .Barrage-noble,
 .Motor,
 .Barrage-userEnter,
@@ -464,7 +467,7 @@ div[class*='-add'] {
 }
 
 @-moz-document url-prefix("https://www.douyu.com/"), url-prefix("http://www.douyu.com/") {
-/* 直播间活动元素 */
+/*=== 直播间活动元素 ===*/
 div[style*='https://sta-op.douyucdn.cn'],
 div[style*='https://shark.douyucdn.cn'] {
     display: none!important;
@@ -554,7 +557,7 @@ body.is-fullScreenPage .layout-Player {
     overflow: auto;
     margin-top: 0;
 }
-/* 礼物宝箱 */
+/*=== 礼物宝箱 ===*/
 #treasure,
 .Treasure,
 .shark-webp .Treasure.is-ready,
@@ -588,25 +591,8 @@ body.is-fullScreenPage .layout-Player {
 }
 
 @-moz-document url-prefix("https://www.douyu.com/"), url-prefix("http://www.douyu.com/") {
-/* Chrome - 修改滚动条 */
-::-webkit-scrollbar {
-    width: 6px!important;
-    height: 6px!important;
-}
-::-webkit-scrollbar-track-piece {
-    background-color: #141414!important;
-    -webkit-border-radius: 0!important;
-}
-::-webkit-scrollbar-thumb:vertical {
-    height: 5px!important;
-    background-color: #424242!important;
-    -webkit-border-radius: 6px!important;
-}
-::-webkit-scrollbar-thumb:horizontal {
-    width: 5px!important;
-    background-color: #424242!important;
-    -webkit-border-radius: 6px!important;
-}
+/*=== Chrome - 修改滚动条 ===*/
+/*[[Scrollbar]]*/
 /*=== 修改基本样式 ===*/
 .HeaderWrap {
     background: #2c2c2c!important;
@@ -646,7 +632,7 @@ body.is-fullScreenPage .layout-Player {
 .cs-textarea {
     color: #868686!important;
 }
-/* 全站字体 */
+/*=== 全站字体 ===*/
 #header.annualfestival-header .head-nav > li > a,
 #header.annualfestival-header .head-oth .o-broadcast .b-txt,
 #header.annualfestival-header .head-oth .o-download .d-txt,
@@ -691,7 +677,7 @@ body.is-fullScreenPage .layout-Player {
 .Header-menu-link :hover .public-DropMenu-link i {
     color: #f60!important;
 }
-/* /全站字体 */
+/*=== /全站字体 ===*/
 #header .head-oth .o-follow .f-pop > i::after,
 #header .head-oth .o-history .h-pop > i::after,
 #header .head-nav .assort .a-pop > i::after,
@@ -1113,9 +1099,9 @@ div.border2:nth-child(2),
 .play-list li a:hover {
     border-bottom-color: #2c2c2c!important;
 }
-/* .play-list li p span {
+/*=== .play-list li p span {
     background: url(https://www.asifadeaway.com/NightMode/douyu/mem-icos.png) 0 4px no-repeat!important;
-} */
+} ===*/
 .tcd-page-code a,
 .jumptxt,
 .u_main .u_nav ul li a,
@@ -1413,7 +1399,7 @@ div.title {
     color: #f2f2f2!important;
     background: rgba(24, 24, 24, .9)!important;
 }
-/* 礼物背包 */
+/*=== 礼物背包 ===*/
 .more-gift-btn,
 .ToolbarGiftArea-giftExpandBtn {
     background: url(https://www.asifadeaway.com/NightMode/douyu/more-gift-btn.png)no-repeat!important;
@@ -1494,7 +1480,7 @@ div.title {
 .Backpack-closeButton:hover {
     color: #f70!important;
 }
-/* 竞猜 */
+/*=== 竞猜 ===*/
 .guess-main-panel .moreOptionBox,
 .GuessGameBox,
 .GuessMainPanelHeader-icon.myMore .foldBox {
@@ -1788,7 +1774,7 @@ div.action-item:nth-child(2):hover {
 .GuessContItem-middle {
     text-indent: -9999px!important;
 }
-/* 经验条 */
+/*=== 经验条 ===*/
 .o-login .l-menu .level-con .bar,
 .level-con .bar {
     background: #2c2c2c!important;
@@ -1797,7 +1783,7 @@ div.action-item:nth-child(2):hover {
 .o-login .l-menu .level-con .bar .bar-num {
     color: #fff!important;
 }
-/* 用户卡片 */
+/*=== 用户卡片 ===*/
 .chat-user-card,
 .chat-user-card-wrap,
 a.action-item {
@@ -1831,7 +1817,7 @@ a.action-item {
     border-color: #1f1f1f!important;
     background: #1f1f1f!important;
 }
-/* 弹幕系统提醒 */
+/*=== 弹幕系统提醒 ===*/
 .anchortip-inchat--protectLevelFail,
 .anchortip-inchat--rankup,
 .chat-cont .c-list .firstpay-chat,
@@ -1861,7 +1847,7 @@ a.action-item {
 .NobleCard-close:hover {
     color: #f70!important;
 }
-/* 用户卡片 -- 小姐姐 */
+/*=== 用户卡片 -- 小姐姐 ===*/
 .girl--privilege {
     background: url(https://shark.douyucdn.cn/app/douyu/res/page/room-normal/girl-pri/bk.png)!important;
 }
@@ -1881,18 +1867,18 @@ a.action-item {
 .girl--privilege .user-card-title h1 {
     color: #fff!important;
 }
-/* 用户卡片 -- 贵族 */
+/*=== 用户卡片 -- 贵族 ===*/
 .status--noble {
     background: none!important;
 }
 .status--noble .chat-user-card {
     background: #1f1f1f!important;
 }
-/* 直播结束自动跳转下一个直播间 */
+/*=== 直播结束自动跳转下一个直播间 ===*/
 .dialog-more-video {
     background: #2c2c2c;
 }
-/* 顶部导航栏 */
+/*=== 顶部导航栏 ===*/
 #header .head-oth .o-follow .icofont,
 #header .head .phoneapp .attent .iconfont {
     background-position: 0 -24px!important;
@@ -1940,7 +1926,7 @@ a.action-item {
 #js-header > div > div > div.Header-right > div.Header-history-wrap > div > div > div > div > div > div:nth-child(1) {
     padding-bottom: 15px!important;
 }
-/* 搜索 */
+/*=== 搜索 ===*/
 .search-suggest-box-main .search-title i,
 .Search-hot-titleIcon {
     background: url(https://www.asifadeaway.com/NightMode/douyu/search_icon.png) no-repeat!important;
@@ -1971,7 +1957,7 @@ a.action-item {
 .FilterSwitchStatus-switch.is-checked {
     background: #f70!important;
 }
-/* 礼物、表情、屏蔽、验证等界面 */
+/*=== 礼物、表情、屏蔽、验证等界面 ===*/
 .ChatEmotion,
 .ChatLetter,
 .BarrageFilter,
@@ -2289,7 +2275,7 @@ a.action-item {
 .GiftExpandPanel-arrowOuter {
     border-color: #212121 transparent transparent;
 }
-/* .GiftInfoPanel, */
+/*=== .GiftInfoPanel, ===*/
 .BackpackInfoPanel {
     border: 1px solid #2c2c2c;
     background: #212121!important;
@@ -2355,7 +2341,7 @@ a.action-item {
 .cq_layer .cq_list ul li .cq_level .text {
     color: #868686!important;
 }
-/* 用户举报 */
+/*=== 用户举报 ===*/
 .user-report-dialog {
     border-color: #242424!important;
     box-shadow: none!important;
@@ -2376,7 +2362,7 @@ a.action-item {
 .FKLiWrap-deleteBtn:hover {
     background-position: 0 -114px!important;
 }
-/* 直播间举报 */
+/*=== 直播间举报 ===*/
 .room-mes .headline .feedback-report-button {
     margin-top: 9px!important;
     margin-right: 8px!important;
@@ -2387,11 +2373,11 @@ a.action-item {
 .emperor-recommend .emperor-name {
     margin-left: 17px!important;
 }
-/* 直播间弹幕过滤关键字前小圆点 */
+/*=== 直播间弹幕过滤关键字前小圆点 ===*/
 #room-filter-keywords-wrap .filter-keywords-main-content li .room-filter-list-icon {
     background-color: #868686!important;
 }
-/* 播放器右键菜单 （H5播放器） */
+/*=== 播放器右键菜单 （H5播放器） ===*/
 *[class='menu-da2a9e'] {
     border-color: #2c2c2c!important;
     box-shadow: none!important;
@@ -2413,7 +2399,7 @@ a.action-item {
 .Header-menu-link {
     background: #2c2c2c!important;
 }
-/* 直播加载 */
+/*=== 直播加载 ===*/
 /*div[class*='content-']:before {
     content: ""!important;
     display: block!important;
@@ -2442,7 +2428,7 @@ div[class*='content-'] div[class*='switchBox-'] div[class*='reload-']:hover {
 div[class*='tip2-'] {
     display: none!important;
 }
-/* 播放器控制栏（H5播放器） */
+/*=== 播放器控制栏（H5播放器） ===*/
 div[class*='tip-'] {
     border-color: #1c1c1c!important;
     background: #1c1c1c!important;
@@ -2466,62 +2452,62 @@ div[class*='controlbar-'] [class*='hidedanmu-'] {
     background: url(https://www.asifadeaway.com/NightMode/douyu/hidedanmu.png) no-repeat 50%!important;
 }
 div[class*='controlbar-'] [title='播放'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-play.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-play.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='暂停'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-pause.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-pause.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='重新载入'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-reload.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-reload.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='战术视窗'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-zsbt.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-zsbt.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='问题反馈'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-feedback.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-feedback.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='设置静音'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-volume1.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-volume1.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='取消静音'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-volume2.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-volume2.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='弹幕设置'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-seting.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-seting.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='网页全屏'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-pagescreen.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-pagescreen.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='退出网页全屏'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-pagescreen_exit_web.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-pagescreen_exit_web.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='全屏'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-fullscreen.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-fullscreen.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='controlbar-'] [title='退出全屏'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-pagescreen_exit_window.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/controlbar-pagescreen_exit_window.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
@@ -2538,31 +2524,31 @@ div[class*='controlbar-'] div[class*='sendDanmu-'] {
     color: #868686!important;
 }
 div[class*='volume-bar-'] div[class*='point'] {
-    /* 	background: url(https://www.asifadeaway.com/NightMode/douyu/volume_point.png) no-repeat 50%!important; */
+    /*=== 	background: url(https://www.asifadeaway.com/NightMode/douyu/volume_point.png) no-repeat 50%!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 div[class*='volume-bar-'] div[class*='front-ad'] {
     display: block!important;
 }
-/* 网页全屏切换 */
+/*=== 网页全屏切换 ===*/
 .body-flash-fullpage .toggle-chatgift-area .toggle-chatgift-btn,
 .body-flash-fullpage .toggle-chatgift-area.ie-bg {
-    /* 	background-image: url('https://www.asifadeaway.com/NightMode/douyu/side-bar-hider.png')!important; */
+    /*=== 	background-image: url('https://www.asifadeaway.com/NightMode/douyu/side-bar-hider.png')!important; ===*/
     -webkit-filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
     filter: invert(50%) sepia(51%) saturate(3237%) hue-rotate(1deg) brightness(102%) contrast(101%)!important;
 }
 .body-flash-fullpage .toggle-chatgift-slider {
     background-color: #2c2c2c!important;
 }
-/* 弹幕名称 */
+/*=== 弹幕名称 ===*/
 .chat-cont .c-list li.chartli.girl-chart .my-cont .name a,
 .chat-cont .c-list li.girl-chart .text-cont .name a,
 .chat-cont .c-list li.jschartli a.nick.chat-girl,
 .girl-offline p.text-cont.girl-cont .hy-name {
     color: #2b94ff!important;
 }
-/* 播放器右侧弹幕池里自己的弹幕 */
+/*=== 播放器右侧弹幕池里自己的弹幕 ===*/
 li.jschartli p.my-cont span.m {
     color: #ff5d23!important;
     display: inline-block!important;
@@ -2573,7 +2559,7 @@ li.jschartli p.my-cont {
     border: 1px dashed #ff5d23!important;
     background: #141414!important;
 }
-/* 鱼吧小组动态 */
+/*=== 鱼吧小组动态 ===*/
 .yuba-group-active .item {
     padding: 0 10px 10px!important;
 }
@@ -2594,7 +2580,7 @@ li.jschartli p.my-cont {
 .YubaGroup-cover {
     border-radius: 0!important;
 }
-/* 主播等级经验 */
+/*=== 主播等级经验 ===*/
 .anchorlevel-lead--userview .anchorlevel-lead-arrowicon,
 .anchorlevelinfo-tip-arrowicon {
     background: url('https://www.asifadeaway.com/NightMode/douyu/arrow-top.png') no-repeat;
@@ -2620,7 +2606,7 @@ li.jschartli p.my-cont {
 .anchorlevelinfo-tip-levelinfointro {
     color: #868686!important;
 }
-/* 禁言提示 */
+/*=== 禁言提示 ===*/
 li.sys-msg {
     color: #f00!important;
 }
@@ -2638,7 +2624,7 @@ li.sys-msg p a {
 .chat-cont .c-list li.jschartli .nick-new {
     max-width: none!important;
 }
-/* 主播升级提示 */
+/*=== 主播升级提示 ===*/
 li.normal-notice-new span {
     color: #f70!important;
     display: inline-block!important;
@@ -2652,7 +2638,7 @@ li.normal-notice-new i.sys-icon {
 li.normal-notice-new .anchortip-inchat-cont {
     padding-left: 0!important;
 }
-/* 网页全屏礼物区控件 */
+/*=== 网页全屏礼物区控件 ===*/
 .body-flash-fullpage .m-wealth {
     padding-top: 13px!important;
 }
@@ -2668,7 +2654,7 @@ li.normal-notice-new .anchortip-inchat-cont {
 .RewardModule-iconnew {
     background-position: 0 0!important;
 }
-/* 直播结束推荐 */
+/*=== 直播结束推荐 ===*/
 .RecommendItem-3d2861 {
     border-color: #2c2c2c!important;
 }
@@ -2683,7 +2669,7 @@ li.normal-notice-new .anchortip-inchat-cont {
 .Title-lastLiveTimeIcon {
     background: url(http://www.asifadeaway.com/douyu/clock.png) no-repeat!important;
 }
-/* 个人中心 */
+/*=== 个人中心 ===*/
 .live_wrap {
     padding-top: 70px!important;
 }
@@ -2778,7 +2764,7 @@ li.normal-notice-new .anchortip-inchat-cont {
     border-radius: 4px;
     color: #fff!important;
 }
-/*update fixed */
+/*update fixed ===*/
 .Barrage-toolbarLock.is-lock .Barrage-toolbarIcon {
     background-image: url(https://www.asifadeaway.com/NightMode/douyu/barrage-toolbar-is-lock.png);
 }
@@ -2800,7 +2786,7 @@ li.normal-notice-new .anchortip-inchat-cont {
 .layout-Player-barrage {
     background: #2c2c2c!important;
 }
-.Barrage-content,
+/*[[BarrageContent]]*/
 .Title-anchorNameH1,
 .Title-followCancleText,
 .Barrage-toolbarClear,
@@ -2962,12 +2948,12 @@ body.is-fullScreenPage .layout-Player-asidetoggleButton:hover ~ .layout-Player-a
     content: " "!important;
     display: inline!important;
 }
-/* 站内信 */
+/*=== 站内信 ===*/
 .u_mainbody,
 .web-message-wrapper {
     border-color: #373737!important;
 }
-/* 充值提示 */
+/*=== 充值提示 ===*/
 .RemindYCLow .dy-Modal-title {
     padding: 15px!important;
     color: #868686!important;
@@ -3002,7 +2988,7 @@ body.is-fullScreenPage .layout-Player-asidetoggleButton:hover ~ .layout-Player-a
 .dy-Modal-body {
     background: #212121!important;
 }
-/* 弹幕池用户卡片 */
+/*=== 弹幕池用户卡片 ===*/
 .NormalCard,
 .NormalCard-icon {
     background: #212121!important;
@@ -3033,7 +3019,7 @@ body.is-fullScreenPage .layout-Player-asidetoggleButton:hover ~ .layout-Player-a
 .NormalCard-close:hover {
     color: #f70!important;
 }
-/* 滚动弹幕举报 */
+/*=== 滚动弹幕举报 ===*/
 div[class*='danmudiv-'] {
     background: url(https://www.asifadeaway.com/NightMode/douyu/danmuReportBg.png) no-repeat!important;
 }
@@ -3067,7 +3053,7 @@ div[class*='txtHidden-'] {
     color: #e43!important;
     font-weight: bold!important;
 }
-/* 主播等级 */
+/*=== 主播等级 ===*/
 .AnchorLevelTip {
     background: #2c2c2c!important;
     border-color: #424242!important;
@@ -3093,15 +3079,15 @@ div[class*='txtHidden-'] {
 .AnchorLevelTip-tipBar {
     background: #424242!important;
 }
-/* 首页板块 */
+/*=== 首页板块 ===*/
 .banner .starshow {
     margin-top: 0!important;
 }
-/* 直播间活动屏蔽 */
+/*=== 直播间活动屏蔽 ===*/
 .bc-wrapper {
     width: 100%!important;
 }
-/* 直播栏目-在线直播 */
+/*=== 直播栏目-在线直播 ===*/
 .listcustomize-column-wrap {
     height: 112px!important;
 }
@@ -3169,7 +3155,7 @@ li[class*='_list'] .normal_show {
 .hero_expand .hero_tag_list .hero_cate ul li span {
     color: #868686!important;
 }
-/* 直播结束跳转直播间 */
+/*=== 直播结束跳转直播间 ===*/
 .dy-ModalRadius-content,
 .dy-ModalRadius-close {
     background: #212121!important;
@@ -3196,7 +3182,7 @@ li[class*='_list'] .normal_show {
     color: rgb(255, 146, 26)!important;
 }
 .ClosingRecommend-online,
-/* .Title-anchorHotIcon, */
+/*=== .Title-anchorHotIcon, ===*/
 .listcustomize-topcon-msg .watch-icon,
 .SociatyAnchorCard-hot:before {
     background: url(https://www.asifadeaway.com/NightMode/douyu/closing-recommend-icon.png) 0px center no-repeat!important;
@@ -3208,7 +3194,7 @@ li[class*='_list'] .normal_show {
 .dy-ModalRadius-close {
     transition: none!important;
 }
-/* 成就 */
+/*=== 成就 ===*/
 .AchievementAnchor-tips {
     background: #2c2c2c!important;
 }
@@ -3229,18 +3215,18 @@ li[class*='_list'] .normal_show {
 .AchievementAnchor-more {
     display: none!important;
 }
-/* 超管提醒 */
+/*=== 超管提醒 ===*/
 li.jschartli p span img.super-admin {
     display: inline-block!important;
 }
 .Barrage-listItem .superAdmin ~ .Barrage-content {
     color: red!important;
 }
-/* 已关注 */
+/*=== 已关注 ===*/
 .Title-followSplit {
     background: none!important;
 }
-/* 赛事及赛事直播间 */
+/*=== 赛事及赛事直播间 ===*/
 .Barrage-topFloater,
 .BarragePUBG,
 .BarrageBanner,
@@ -3336,7 +3322,7 @@ li.jschartli p span img.super-admin {
 .Match-PreviewPart-scrollRight:hover {
     background: url(https://www.asifadeaway.com/NightMode/douyu/Match-PreviewPart-scrollRightHover.png)!important;
 }
-/* 24H热帖 */
+/*=== 24H热帖 ===*/
 .left-menu .leftnav-cate .recom-cont .yb-list-24 .yb-num.yb-num-1 {
     background: #ff2400!important;
 }
@@ -3346,7 +3332,7 @@ li.jschartli p span img.super-admin {
 .left-menu .leftnav-cate .recom-cont .yb-list-24 .yb-num.yb-num-3 {
     background: #349ff9!important;
 }
-/* 认证 */
+/*=== 认证 ===*/
 .impress-tag-list .official-intro,
 .Title-official {
     background-color: #333!important;
@@ -3357,7 +3343,7 @@ li.jschartli p span img.super-admin {
 .Title-authenticationTips span:hover {
     color: #f70!important;
 }
-/* 狗日的斗鱼又更新了(2019.10.05) */
+/*=== 狗日的斗鱼又更新了(2019.10.05) ===*/
 body {
     overflow-X: hidden!important;
 }
@@ -3443,7 +3429,7 @@ div[class*='wenti1-'] input[class*='q1-'] {
 .layout-Module {
     margin-top: 20px!important;
 }
-/* 狗日的背景 */
+/*=== 狗日的背景 ===*/
 .Header-wrap,
 .layout-Aside,
 .Aside-toggle,
@@ -3537,7 +3523,8 @@ ul.DropPane-drop li a,
 .NobleRank,
 .FansRankAllList,
 .RankAllMain-content,
-.VideoCollection-content {
+.VideoCollection-content,
+.PublicAnnounce-panel {
     background: #2c2c2c!important;
 }
 .AnchorRank-more,
@@ -3586,7 +3573,8 @@ div[class*='wenti1-'] input[class*='q1-'],
 .CustomGroupMenu-wrapper,
 .Title-followBtnBox.is-followed,
 .AnchorComment-modal,
-.Title-anchorName-block:hover {
+.Title-anchorName-block:hover,
+.VideoEntry-list {
     background: #272727!important;
 }
 .layout-Module-head.is-fixed,
@@ -3622,7 +3610,8 @@ div[class*='wenti1-'] input[class*='q1-'],
 .FansRankInfo,
 .FansRankList-itemRank,
 .FansRankAllList-itemRank,
-.Header-follow-tab {
+.Header-follow-tab,
+.VideoAnchorItem:hover {
     background-color: #373737!important;
 }
 .Header-follow-tab.is-active {
@@ -3633,7 +3622,7 @@ div[class*='wenti1-'] input[class*='q1-'],
 .VideoCollectionMix .layout-videoCollection-item {
     background: transparent!important;
 }
-/* 狗日的字体 */
+/*=== 狗日的字体 ===*/
 .Header-wrap .EntryNav-desc,
 .Header-wrap .Header-menu-link > a,
 .Header-wrap .public-DropMenu-link,
@@ -3867,7 +3856,11 @@ a.Title-anchorName h2,
 .VideoCollection-desc,
 .VideoCollection-label,
 .Search-rank-hot,
-.Search-rank-wrapper > a > i {
+.Search-rank-wrapper > a > i,
+.PublicAnnounce h3,
+.VideoEntry-text,
+.VideoAnchorItem-title,
+.VideoReplayItem-date {
     color: #868686!important;
 }
 .RichRankList-item.is-stealth .RichRankList-name {
@@ -3973,7 +3966,9 @@ ul.DropPane-drop li:hover a,
 .CustomGroupManager-groupItem,
 .CustomGroupManager-title strong,
 .Title-anchorName-block:hover,
-.Search-default-item:hover {
+.Search-default-item:hover,
+.VideoAnchorItem:hover .VideoAnchorItem-title,
+.VideoEntry-tabItem.is-active .VideoEntry-text {
     color: #ff5d23!important;
 }
 .layout-Player-announce .AnchorAnnounce > h3,
@@ -4069,7 +4064,7 @@ svg.DyListCover-hotIcon {
 .layout-videoCollection-item:hover .VideoCollection-title {
     color: #f60!important;
 }
-/* 狗日的边框 */
+/*=== 狗日的边框 ===*/
 .RoomList-tags li,
 .layout-Module-label,
 .layout-Module-label--hasList,
@@ -4147,7 +4142,10 @@ div[class*='wenti1-'] select,
 .ChatTabContainer-titleWraper--tabLi,
 .FansRankBottom,
 .RankAllMain .ChatRankWeek-listItem:nth-child(4),
-.ListHeader-pop-label {
+.ListHeader-pop-label,
+.VideoAnchorItem,
+.VideoEntry-list,
+.VideoEntry-replaylist  {
     border-color: #424242!important;
 }
 .is-followed .Title-followText:nth-child(3):after {
@@ -4197,6 +4195,10 @@ div[class*='wenti1-'] select,
 .layout-Module-label--hasList.is-active:after {
     border-top-color: #ff5d23!important;
 }
+.VideoEntry .VideoEntry-tabItem:first-child:after{
+    border-right-color: #424242!important;
+}
+
 .layout-Module-filter-more:hover,
 .layout-Module-label--hasList.is-active,
 .layout-Module-label.is-active,
@@ -4237,7 +4239,7 @@ div[class*='wenti1-'] select,
 .AnchorComment-modal::after {
     border-color: transparent transparent #272727!important;
 }
-/* 狗日的其他 */
+/*=== 狗日的其他 ===*/
 .ToolbarActivityArea > div > div:not(.ActiviesExpanel) {
     display: grid!important;
     grid-template-columns: repeat(10, 40px)!important;
@@ -4464,10 +4466,10 @@ div[class='ListHeader-hero-content-tag']:before {
     filter: invert(50%) sepia(51%) saturate(4942%) hue-rotate(0deg) brightness(102%) contrast(105%);
 }
 .shark-webp .OnlineVipList-lineTitle {
-    /* #fff -> #868686 */
+    /*=== #fff -> #868686 ===*/
     -webkit-filter: invert(46%) sepia(7%) saturate(4%) hue-rotate(122deg) brightness(97%) contrast(85%);
     filter: invert(46%) sepia(7%) saturate(4%) hue-rotate(122deg) brightness(97%) contrast(85%);
-    /* #fff -> #2c2c2c*/
+    /*=== #fff -> #2c2c2c*/
     /*filter: invert(83%) sepia(0%) saturate(1901%) hue-rotate(152deg) brightness(103%) contrast(101%);*/
 }
 .shark-webp .ChatRankWeek-listItem--noresult,
@@ -4607,7 +4609,7 @@ div[class='ListHeader-hero-content-tag']:before {
 [ class*="controlbar-"] div[class*="rate-"] div[class*="text-"] {
     padding: 0 7px!important;
 }
-/* - 超管提醒 - */
+/*=== - 超管提醒 - ===*/
 .Barrage-main span[title*="鲨鱼"] {
     color: #f60!important;
 }
@@ -4626,16 +4628,16 @@ div[class='ListHeader-hero-content-tag']:before {
 .AnchorRankList-liveRoom:hover .AnchorRankList-liveIcon {
     background-position: 0 0!important;
 }
-/* - 网页全屏 - */
+/*=== - 网页全屏 - ===*/
 body.is-fullScreenPage .u-specialStateInput[name=js-aside-state]:checked ~ .layout-Main {
     padding-top: 0!important;
 }
-/* - 主播招募 - */
+/*=== - 主播招募 - ===*/
 .change-tips-wraper {
     width: 780px!important;
     margin-left: 0!important;
 }
-/* ---------- */
+/*=== ---------- ===*/
 .DropPane-linkAll {
     margin-bottom: 10px!important;
 }
@@ -4729,10 +4731,10 @@ img[src*="room_list_default"] {
 .ChatBarrageCollectPop-dialog {
     bottom: 73px!important;
 }
-/* .AssembleExpressHeader {
+/*=== .AssembleExpressHeader {
     left: inherit!important;
     right: -12px!important;
-} */
+} ===*/
 [style*='scroll'] {
     overflow-x: hidden!important;
 }
@@ -4766,7 +4768,7 @@ img[src*="room_list_default"] {
     padding-top: 0!important;
     height: 55px;
 }
-/* 关注分组 */
+/*=== 关注分组 ===*/
 .CustomGroupManager-groupEditor,
 .CustomGroupManager-groupList {
     margin: 0!important;
@@ -4783,7 +4785,7 @@ img[src*="room_list_default"] {
 .CustomGroupManager-title {
     padding: 0!important;
 }
-/* 2019.03.04 */
+/*=== 2019.03.04 ===*/
 .Title {
     border: none!important;
     height: 111px;
@@ -4839,30 +4841,30 @@ img[src*="room_list_default"] {
     -webkit-filter: invert(57%) sepia(9%) saturate(6%) hue-rotate(89deg) brightness(91%) contrast(90%);
     filter: invert(57%) sepia(9%) saturate(6%) hue-rotate(89deg) brightness(91%) contrast(90%);
 }
-/* 用户昵称颜色 */
+/*=== 用户昵称颜色 ===*/
 .Barrage-nickName {
-    color: #2B94FF!important;
+    color: /*[[UserNameColor]]*/!important;
 }
-/* 用户发言颜色 */
+/*=== 用户发言颜色 ===*/
 .UserLevel + .Barrage-nickName + .Barrage-content:not([class*="Barrage-content--color"]),
 .UserLevel + span + .Barrage-nickName + .Barrage-content:not([class*="Barrage-content--color"]),
 .UserLevel + span + span + .Barrage-nickName + .Barrage-content:not([class*="Barrage-content--color"]) {
-    color: #868686!important;
+    color: /*[[UserContentColor]]*/!important;
 }
-/* 主播昵称颜色 */
+/*=== 主播昵称颜色 ===*/
 .AnchorLevel + .Barrage-nickName,
 .AnchorLevel + span + .Barrage-nickName {
-    color: #FF6600!important;
+    color: /*[[AnchorNameColor]]*/!important;
 }
-/* 主播发言颜色 */
+/*=== 主播发言颜色 ===*/
 .AnchorLevel + .Barrage-nickName + .Barrage-content,
 .AnchorLevel + span + .Barrage-nickName + .Barrage-content {
-    color: #FF6600!important;
+    color: /*[[AnchorContentColor]]*/!important;
 }
 }
 
 @-moz-document url-prefix("https://www.douyu.com/g_") {
-/* 直播分类 */
+/*=== 直播分类 ===*/
 .layout-Main {
     padding-top: 0!important;
 }
@@ -4872,7 +4874,7 @@ img[src*="room_list_default"] {
 }
 
 @-moz-document regexp("https:\\/\\/www\\.douyu\\.com\\/\\d*"), regexp("https:\\/\\/www\\.douyu\\.com\\/topic\\/.*") {
-/* 直播间 */
+/*=== 直播间 ===*/
 .u-specialStateInput[name=js-aside-state]:checked ~ .layout-Main {
     padding-top: 80px!important;
 }
@@ -4886,14 +4888,14 @@ img[src*="room_list_default"] {
 }
 
 @-moz-document url("https://www.douyu.com/home_beta") {
-/* 目前无用 */
+/*=== 目前无用 ===*/
 .layout-Module {
     margin-top: 20px!important;
 }
 }
 
 @-moz-document url("https://www.douyu.com/member"), url("https://www.douyu.com/room/apply"), url-prefix("https://www.douyu.com/member") {
-/* 个人中心 */
+/*=== 个人中心 ===*/
 #header > .head .js_search .headerFont,
 .rotaryTicket-content .quiz-search-time .ticketUse_tab_btn dd a,
 .rotaryTicket-content .quiz-search-time .ticketGet_tab_btn dd a,
@@ -4984,11 +4986,11 @@ border-color: #f60!important;
 .share-box .tit .share-icon {
     background: url(https://www.asifadeaway.com/NightMode/douyu/uinfo.png) no-repeat!important;
 }
-/* .Title-followIcon,
+/*=== .Title-followIcon,
 .shark-webp .Title-followIcon {
     background: url(https://www.asifadeaway.com/NightMode/douyu/iconLove_new.webp) no-repeat!important;
-} */
-/* 礼物背包icon */
+} ===*/
+/*=== 礼物背包icon ===*/
 .backpack-btn .icon {
     background: url(https://www.asifadeaway.com/NightMode/douyu/icon.png) -120px 0 no-repeat!important;
 }
@@ -5014,7 +5016,7 @@ border-color: #f60!important;
 .Backpack-nextBtn:hover .icon {
     background-position: -30px -60px!important;
 }
-/* 礼物背包icon结束 */
+/*=== 礼物背包icon结束 ===*/
 .o-login .l-menu .authenticate .uname-aut i {
     background-position: 0 -65px!important;
 }
@@ -5030,7 +5032,7 @@ border-color: #f60!important;
 .Title-dataLoadding {
     margin: 7px 0!important;
 }
-/* 未登录 */
+/*=== 未登录 ===*/
 .PlayerCaseSub-Main {
     background: #2c2c2c!important;
 }
@@ -5040,7 +5042,7 @@ border-color: #f60!important;
 div[class*="multiBitRate-b008b6"] {
     display: none!important;
 }
-/* 输入框 */
+/*=== 输入框 ===*/
 .chat-feat .cs-textarea {
     border-color: #f70!important;
 }
@@ -5050,21 +5052,21 @@ div[class*="multiBitRate-b008b6"] {
 .chat-feat .b-btn {
     background: #f70!important;
 }
-/* 登录页 */
+/*=== 登录页 ===*/
 #passport-iframe-con {
     border: 1px solid #212121!important;
     background: #212121 none repeat scroll 0% 0%!important;
 }
-/* 房管icon */
+/*=== 房管icon ===*/
 .Barrage-icon--roomAdmin {
     display: inline-block!important;
     background-image: url(https://www.asifadeaway.com/NightMode/douyu/room-admin.png)!important;
 }
-/* 精简弹幕 */
+/*=== 精简弹幕 ===*/
 div[class*='simpleDanmu-'] span[class*='icon-'] {
     background: url(https://www.asifadeaway.com/NightMode/douyu/chekItemBg.png)!important;
 }
-/* 开播数 */
+/*=== 开播数 ===*/
 .idol-list-more a i,
 .idol-online i,
 .info-list i,
@@ -5079,7 +5081,7 @@ div[class*='simpleDanmu-'] span[class*='icon-'] {
 .listcustomize-topcon-msg em {
     margin-left: 3px!important;
 }
-/* 2019.02.14 */
+/*=== 2019.02.14 ===*/
 .shark-webp .Shortcut-listItem:hover i.is-attention,
 .shark-webp .Shortcut-listItem:hover i.is-center,
 .shark-webp .Shortcut-listItem:hover i.is-guide,
@@ -5121,7 +5123,7 @@ div[class*='simpleDanmu-'] span[class*='icon-'] {
     background-repeat: no-repeat!important;
     background-image: url(https://www.asifadeaway.com/NightMode/douyu/zbflgg.png)!important;
 }
-/* - 直播间公告 - */
+/*=== - 直播间公告 - ===*/
 .AnchorAnnounce > h3 {
     background: url(https://www.asifadeaway.com/NightMode/douyu/announcement_icon.png) left 2px no-repeat!important;
 }
@@ -5710,7 +5712,7 @@ body {
 }
 
 @-moz-document url-prefix("https://msg.douyu.com/web/index.html?") {
-/* 站内信 */
+/*=== 站内信 ===*/
 .u_mainbody .web-message-wrapper {
     border: none!important;
 }
@@ -5871,7 +5873,7 @@ h4.friendlist-grouping-head {
 }
 
 @-moz-document url-prefix("https://www.douyu.com/directory/myFollow"), url-prefix("http://www.douyu.com/directory/myFollow") {
-/* 我的关注 */
+/*=== 我的关注 ===*/
 .layout-Cover-list .layout-Cover-item:first-child {
     display: none!important;
 }

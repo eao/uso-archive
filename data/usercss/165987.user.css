@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2020123.16.27
+@version        20201229.12.10
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -49,92 +49,160 @@
  	border-radius: 22px!important;
  	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
  }
+
+ /* Color of the bottom corner of the scrollable element, where two scrollbar meet. ______________*/
+
+::-webkit-scrollbar-corner
+ {
+ 	background: #530205!important;
+ 	box-shadow: inset 0 12px 13px rgba(0, 0, 0, 0.6), rgba(55, 55, 55, 1) 0 1px 0!important;
+ }
+
+::-webkit-scrollbar-corner:hover
+ {
+ 	border-radius: 22px!important;
+ 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+ }
+
 }
 
 @-moz-document domain("time.is") {
+/*__________________________________________________________________________________*/
+
 * {
-	border: none!important;
-	border: 0!important;
-	box-shadow: none!important;
-	outline: none!important;
 	text-decoration: none!important;
 }
 
-#q {
-	width: 200px!important;
+selector
+ {
+	text-transform: capitalize!important;
 }
 
-#q:focus {
-	width: 600px!important;
+.tbx a,
+:focus
+ {
+	border: none!important;
+	outline: none!important;
+	box-shadow: none!important;
 }
 
-/*___________________________________________________________________________________________*/
+#favs li a {
+    text-align: left;
+}
 
-#fs-video-container,
-#quote,
-#slot-footer-wrapper,
+/*___ Fonts ________________________________________________________________________*/
+
+selector
+ {
+	font-size: 21px!important;
+}
+
+selector
+ {
+	font-size: 19px!important;
+}
+
+selector
+ {
+	font-size: 17px!important;
+}
+
+selector
+ {
+	font-size: 15px!important;
+}
+
+selector
+ {
+	line-height: 19px!important;
+}
+
+/*___ Remove Items _________________________________________________________________*/
+
+#recover,
+#timeisFreeStarVideoAdContainer,
 .cad,
-.noprint.tr.faded,
-.rad {
+.sticky-footer-standard
+ {
+	left: -9999px!important;
 	position: absolute!important;
 	top: -9999px!important;
-	left: -9999px!important;
 }
 
-/*___________________________________________________________________________________________*/
+/*___ Left/Right/Top/Bottom ________________________________________________________*/
 
-.tbx a {
-	text-align: center!important;
+selector
+ {
+    top: 10px!important;
 }
 
-/*___________________________________________________________________________________________*/
+/*___ Margins ______________________________________________________________________*/
 
-#custom_code {
-	height: 142px!important;
-}
-
-/*___________________________________________________________________________________________*/
-
-.dinfo,
-.month,
-.section.even,
-.section.odd,
-.tbx a {
+#mainwrapper,
+section
+ {
 	margin: 12px!important;
-	padding: 6px!important;
 }
 
-.wtab input {
-	margin: 2px 11px 2px 10px!important;
+selector
+ {
+	margin: 3px 6px!important;
 }
 
-._1BN1N {
-	top: -39px!important;
-	left: 315px!important;
+/*___ Paddings _____________________________________________________________________*/
+
+section
+ {
+	padding: 12px!important;
 }
 
-/*___________________________________________________________________________________________*/
-
-#customize,
-.cloud a.multizone.country,
-.country,
-.highlight,
-.multizone.country,
-div .button {
-	padding: 6px!important;
+.d footer nav .hzlist li.chosen a,
+.d nav li.chosen a,
+nav li.chosen a {
+    padding: 7px 11px!important;
 }
 
-/*___________________________________________________________________________________________*/
+/*___ Heights ______________________________________________________________________*/
+
+selector
+ {
+	max-height: none!important;
+}
+
+selector
+ {
+	height: auto!important;
+}
+
+/*___ Widths _______________________________________________________________________*/
+
+body
+ {
+	max-width: none!important;
+}
+
+selector
+ {
+	width: auto!important;
+}
+
+#mainwrapper
+ {
+	width: 98%!important;
+}
 
 section {
-	height: 37em!important;
+    width: 97%;
 }
 
-/* ____________________________________________________________________________________________*/
 
-section {
-	top: 15em!important;
-}
+
+
+
+
+
+
+
 }
 
 @-moz-document domain("time.is") {
@@ -164,15 +232,26 @@ input[type="radio"]:checked+label {
 
 /*__________________________________________________________________________________*/
 
-#favs li a .time,
+#daydiv,
+#daydiv1,
+#lC,
+#pL a:link,
+#pL a:visited,
+#pL1 a,
+body,
+input,
 li,
-p {
+p,
+select,
+textarea
+{
 	color: #fff!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Khaki ________________________________________________________________________*/
 
+#locw,
 h1,
 h2 {
 	color: #F0E890!important;
@@ -181,6 +260,7 @@ h2 {
 
 /*___ Burlywood ____________________________________________________________________*/
 
+#clock span[style="width:208px;margin-left:-65px;font-size:178px"],
 h3,
 h4 {
 	color: #e0b880!important;
@@ -189,6 +269,7 @@ h4 {
 
 /*___ Sandy Brown __________________________________________________________________*/
 
+.mts .clockplace,
 h5,
 h6,
 label {
@@ -199,8 +280,12 @@ label {
 /*___ Blue _________________________________________________________________________*/
 
 #favs li a .time span,
+#favs li a .time,
+.mts .clockdate,
+.nw,
 [title="Click for calendar"],
-time {
+time
+{
 	color: #07beff!important;
 	text-shadow: 1px 1px #000!important;
 }
@@ -250,174 +335,252 @@ pre ::selection {
 }
 
 @-moz-document domain("time.is") {
-html,
-html body,
+/*__________________________________________________________________________________*/
+
 body,
-selector {
+html {
 	background: url(https://image.ibb.co/hVmiOe/wallpaper_with_black_background_45_free_wallpaper.jpg)!important;
 	background-attachment: fixed!important;
 }
 
-/*___________________________________________________________________________________________*/
-
-#overlayer {
-	background: #000!important;
+selector {
+	background-image: none;
 }
 
-/*___________________________________________________________________________________________*/
+/*___ Background Gray ______________________________________________________________*/
 
-#maptext .action_buttons a,
-.CM td.headline,
-.CM tr:hover,
-.caln a:hover span,
-.caln td.chosen a span,
-.caln tr.dayheaders:hover,
-.cloud .cloudfav,
-.cloud .cloudhome,
-.cloud .s1,
-.cloud .s2,
-.cloud li.on a,
-.infotable tr:hover,
-.inputframe,
-.lg a:link,
-.lg a:visited,
-.ptab,
-.susdiv tr,
-.wb .diff_bar div,
-.wb footer .hzlist li a:hover,
-.wb footer nav .hzlist li.chosen a,
-.wb nav li.chosen a,
-.widget_examples,
-div.action_buttons a:hover,
-fieldset,
+#top_cities_tmp,
+#menupositioner
+ {
+	background-color: #060505!important;
+}
+
+selector
+ {
+    background-color: #1a1a1a!important;
+}
+
+/*___ Background 0000 ______________________________________________________________*/
+
+.tbx a,
+#top_cities_tmp a.s1,
+#top_cities_tmp a.s1:hover,
+#top_cities_tmp a.s2,
+#top_cities_tmp a.s2:hover,
+.cloud a:hover,
+.d footer .hzlist li a:hover,
 footer .hzlist a:hover,
-legend,
+footer,
 nav a:hover,
-nav li.chosen a,
-nav li.chosen a:hover {
+nav li.chosen a:hover,
+nav
+ {
 	background: rgba(0, 0, 0, 0)!important;
 }
 
-/*___________________________________________________________________________________________*/
+/*___ Background-color 0000 ________________________________________________________*/
 
-.ptab tr:hover {
-	border-left-color: #434343!important;
-	background: -webkit-gradient(linear, left top, right top, from(#383838), to(#0000))!important;
-	background: linear-gradient(to right, #383838, #0000)!important;
+selector
+ {
+	background-color: rgba(0, 0, 0, 0)!important;
 }
 
-/*___________________________________________________________________________________________*/
+/*__ Blue __________________________________________________________________________*/
 
-.dateinput,
-.infobox,
-.txtin,
-pre {
-	background: #111!important;
-	background: url(https://image.ibb.co/e8fWZk/red_carbon_pattern_by_mystica_264_d4ceu9m.png) #111!important;
-}
-
-/*__ Blue ________________________________________________________________________________________*/
-
-div .button {
+selector
+ {
+	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
 	border-radius: 10px!important;
 	border: none!important;
-	background-image: linear-gradient(to bottom right, #05497F, #000)!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
 }
 
-div .button:hover {
-	background-image: linear-gradient(to bottom right, #06508F, #000)!important;
+selector:hover
+ {
+	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
 	color: #ff0!important;
 }
 
-div .button:active {
+selector:active
+ {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
-/*__ Plain _________________________________________________________________________________________*/
+/*__ Red __________________________________________________________________________*/
 
-#compare_form .susdiv table,
-#customize,
-.dinfo,
-.month,
-.section.even,
-.section.odd,
-.susdiv,
-.tbx a {
-	background-color: #222!important;
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0!important;
-	box-shadow: 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+selector
+ {
+	background-image: linear-gradient(to bottom right, #f00, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
+	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
+}
+
+selector:hover
+ {
+	background-image: linear-gradient(to bottom right, #f11, #000)!important;
+	color: #ff0!important;
+}
+
+selector:active
+ {
+	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+}
+
+/*__ Orange ________________________________________________________________________*/
+
+selector
+ {
+	background-image: linear-gradient(to bottom right, #da3a04, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
+	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
+}
+
+selector:hover
+ {
+	background-image: linear-gradient(to bottom right, #eb4b15, #000)!important;
+	color: #ff0!important;
+}
+
+selector:active
+ {
+	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+}
+
+/*___ Green ________________________________________________________________________*/
+
+selector
+ {
+	background-image: linear-gradient(to bottom right, #81BC2E, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
+	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
+}
+
+selector:hover
+ {
+	background-image: linear-gradient(to bottom right, #92cd3f, #000)!important;
+	color: #ff0!important;
+}
+
+selector:active
+ {
+	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+}
+
+/*___ Plain Black __________________________________________________________________*/
+
+#mainwrapper,
+section
+ {
+	background-color: #000!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-#compare_form .susdiv table:hover,
-#customize:hover,
-.dinfo:hover,
-.month:hover,
-.section.even:hover,
-.section.odd:hover,
-.susdiv:hover,
-.tbx a:hover {
-	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
-	box-shadow: 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+#mainwrapper:hover,
+section:hover
+ {
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-/*__ Noise _________________________________________________________________________________________*/
+/*___ Plain ________________________________________________________________________*/
 
-#top_cities,
-.even,
-footer,
-nav {
-	background-image: linear-gradient(to bottom, rgba(0, 0, 0, .1), rgba(0, 0, 0, 0)), url(https://image.ibb.co/e39YEk/noise2.jpg)!important;
-	background-repeat: repeat-x, repeat!important;
-	background-size: 100px 15px, 140px 140px!important;
+selector
+ {
+	background-color: #1c1c1c!important;
+	border-radius: 22px!important;
+	border: 1px solid rgba(0, 0, 0, .25)!important;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-#top_cities:hover,
-.even:hover,
-nav:hover {
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), rgba(0, 0, 0, 0)), url(https://image.ibb.co/e39YEk/noise2.jpg)!important;
+selector:hover
+ {
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-/*__ Noise Red _____________________________________________________________________________________*/
+/*___ Red Gradient _________________________________________________________________*/
 
-.bold {
-	background-image: linear-gradient(to bottom, rgba(255, 0, 0, .1), rgba(0, 0, 0, 0)), url(https://image.ibb.co/e39YEk/noise2.jpg)!important;
-	background-repeat: repeat-x, repeat!important;
-	background-size: 100px 15px, 140px 140px!important;
+.lg a:link,
+.lg a:visited
+ {
+	background: linear-gradient(to bottom, #c35 0%, #590505 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
 }
 
-.bold,
-div#language_cloud a:hover {
-	background-image: linear-gradient(to bottom, rgba(255, 0, 0, .3), rgba(0, 0, 0, 0)), url(https://image.ibb.co/e39YEk/noise2.jpg)!important;
+/*__ Blue Gradient _________________________________________________________________*/
+
+selector
+ {
+	background: linear-gradient(to bottom, #03193c, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
 }
 
-/*__ Red Gradient _________________________________________________________________________________________*/
+/*__ Green Gradient ________________________________________________________________*/
 
-.highlight,
-.susdiv .chosen,
-.wb .diff_bar
-{
-	border-bottom: 1px solid #000;
-	background: linear-gradient(to bottom, #b60000 0%, #7a0000 100%);
-	font: normal 12px/14px Arial, sans-serif;
+.d footer nav .hzlist li.chosen a,
+.d nav li.chosen a,
+nav li.chosen a
+ {
+	background: linear-gradient(to bottom, #15534d 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+	text-shadow: 1px 1px #555!important;
 }
 
-.diff_table tr:hover .diff_bar,
-li:hover .highlight
-{
-	border-bottom: 1px solid #000;
-	background: linear-gradient(to bottom, #00b6b6 0%, #015a5a 100%);
-	font: normal 12px/14px Arial, sans-serif;
+/*__ Yellow Gradient _______________________________________________________________*/
+
+selector
+ {
+	background: linear-gradient(to bottom, #9d9d5d 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+	text-shadow: 1px 1px #555!important;
 }
 
-/*__ Shadow _________________________________________________________________________________________*/
+/*__ Orange Gradient _______________________________________________________________*/
 
-.infobox {
-	box-shadow: 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
+selector
+ {
+	background: linear-gradient(to bottom, #da3a04 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+	text-shadow: 1px 1px #555!important;
 }
+
+/*__________________________________________________________________________________*/
+
+code,
+pre
+ {
+	background: #111!important;
+	background: url(https://image.ibb.co/e8fWZk/red_carbon_pattern_by_mystica_264_d4ceu9m.png) #111!important;
+	background: url(https://image.ibb.co/msdy5U/Red_Fabric.jpg) #111!important;
+}
+
+/*___ Highlight Background _________________________________________________________*/
+
+selector:hover
+ {
+	background: linear-gradient(to right, #383838, #0000)!important;
+	border-left-color: #434343!important;
+}
+
+
+
+
+
+
+
+
 }
 
 @-moz-document domain("time.is") {
@@ -447,4 +610,23 @@ img {
 img {
 	-webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
 }
+}
+
+@-moz-document domain("time.is") {
+
+/* Search _______________________________________________________________*/
+
+#q.txtin {
+	background: url(https://image.ibb.co/hVxuzR/search.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+#q.txtin {
+    background-size: 25px!important;
+    height: 35px!important;
+    padding-left: 25px!important;
+    width: 10px!important;
+}
+
+
 }

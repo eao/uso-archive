@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pgain2004
 @description    `相对熟悉CSS后新写的主题，窄屏自适应，适配度高。依赖一些CSS3特性和emoji库，较老系统(如Win7)显示效果可能打折扣。tag:S1 stage1st stage1 saraba1st 泥潭 婆罗门论坛`
-@version        2020121.6.54
+@version        20201229.6.29
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown chromium "Chromium系浏览器适配" {
@@ -2373,6 +2373,11 @@ thinscroll_0 "关闭" <<<EOT /* EOT;
 @advanced text mh "帖内图片最大高度" "none"
 @advanced text plc "内容链接字色" "var(--sec)"
 @advanced text plch "内容链接字色(悬浮高亮)" "var(--secp)"
+@advanced dropdown forcenarrownav "强制宽度不影响顶栏" {
+	forcenarrownav_0 "否*" <<<EOT  EOT;
+forcenarrownav_1 "是" <<<EOT /* EOT;
+
+}
 
 ==/UserStyle== */
 @-moz-document domain("saraba1st.com") {
@@ -2791,6 +2796,7 @@ body>#wp{margin-top:80px;padding:0 12px}
 	.tip{background:var(--pri);border-color:var(--prid)}
 	.zoominner{background-color:var(--pri);padding:0 10px}
 	.zoominner p{color:var(--tl)}
+	#e_attach_menu .bbs,#e_attach_menu .bbda,#e_attach_menu .upfl table td{border-bottom:none!important}
 		/*1-4-10-1 私信*/
 		#fctrl_sendpm{background:var(--pri);padding:4px}
 		#fctrl_sendpm em{color:var(--t);text-shadow:none;line-height:22px}
@@ -3468,15 +3474,19 @@ a[onclick="refreshMsg();"]:before{display:inline-block;content:"⭯";color:var(-
 	.slst .pbw:first-child{border-top:1px solid var(--prid)}
 }
 
-/*10 强制窄屏(注意，会令布局冲突错乱！)*//*[[forcenarrow]]*/
+/*10 强制窄屏(注意，会令布局冲突错乱！)*/
+/*[[forcenarrow]]*/
 @media(min-width:/*[[widthlimit]]*/px){
 	.wp{width:/*[[width]]*/px}
+}/**/
+
+/*[[forcenarrow]]*//*[[forcenarrownav]]*/
+@media(min-width:/*[[widthlimit]]*/px){
 	#hd .wp{width:calc(/*[[width]]*/px + 12px);padding:0 calc((100% - /*[[width]]*/px - 12px) / 2)}
 	#qmenu_menu{left:calc((100% - /*[[width]]*/px) / 2)!important}
 	#chart{right:calc((100% - 960px) / 2 + 6px)!important}
 	#pt{padding-left:calc((100% - /*[[width]]*/px) / 2)}
 	#pgt{right:calc((100% - /*[[width]]*/px - 12px) / 2)}
-
 	.pg a.nxt{background-image:none}
 	.pg a,.pg strong,.pg label,#visitedforums>a{margin-left:-1px;padding:0 5px}
 	.pg a.prev,.pg a.nxt{display:none}

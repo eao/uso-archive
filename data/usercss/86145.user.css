@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Comes in various parts! An extra is <i>barely</i> needed for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. Easily changeable background by <a href="https://userstyles.org/styles/169748/">installing another style</a>.<b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
-@version        20201219.22.23
+@version        20201229.12.16
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -278,7 +278,7 @@ td[width="225"] + td #horiznav_nav {margin: 10px 0 24px -3px !important;width: 1
 .header-list .header-list-dropdown ul:before {
     content: "List"; position: absolute; opacity: 1;
     color: rgba(var(--colorDarkText)); border: 14px solid transparent;
-    font-size: 15px; font-weight: bold; }
+    font-size: 14px; font-weight: bold; }
 .header-list .header-list-dropdown ul:hover:before {content: "List ▹";}
 .header-list .header-list-dropdown ul li {position: relative;height: 22px;width: 30px;}
 .header-list .header-list-dropdown ul li a {
@@ -1993,7 +1993,7 @@ body:not(.ownlist):before, #myanimelist:before, #headerSmall + div[style*="margi
 div[style="width: 439px;"] + .pt24.pb24.mt24.mb24 {display: none !important;} /* Bottom of forum posts */
 
 /* Widen youtube videos */
-iframe.movie.youtube, .news-container iframe.movie.youtube {height: 395px;width: 703px;}
+.news-container iframe.movie.youtube {height: 395px;width: 703px;}
 .news-container .spoiler iframe.movie.youtube {height: 373px;width: 663px;}
 .forum_border_around iframe.movie.youtube {height: 500px;width: 889px;}
 .forum_border_around .spoiler iframe.movie.youtube {height: 475px;width: 846px;}
@@ -3728,7 +3728,7 @@ div#content > div.spaceit:hover {transition: 0.3s;box-shadow: 0 0 4px rgba(var(-
 .icon-team-title.database_administrator:after {background: rgba(var(--colorPink)) !important;} /* Red */
 
 /* 'Edit Profile' (top right) */
-#contentWrapper > div .h1 .header-right {margin: 1px 5px 0 0 !important;}
+#contentWrapper > div .h1 .header-right {margin: 2px 5px 0 0 !important;}
 
 /* Old Header */
 .user-status li.icon-history.link a, .user-status.border-top.mt12.mb12 a[href$="/reviews"] span,
@@ -5321,7 +5321,7 @@ div + .di-tc.pt4.pb4.pl8.pr8.ar.fn-grey2 {
     padding: 0px !important;
     font-style: normal !important;
     font-family: Segoe UI !important; }
-.breadcrumb + .video-block.episode-video {margin-top: 17px !important;}
+.breadcrumb + .video-block.episode-video {margin-top: 14px !important;}
 .video-block .video-list-outer {margin: 0 16px 16px !important;}
 .video-block .video-list:hover, .video-block .video-list img.thumbs {opacity: 1 !important;border-radius: 3px;}
 .video-block section {text-align: center;margin-top: 8px;}
@@ -5451,7 +5451,7 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 .goodresult {margin: 25px 0 -20px !important;}
 }
 
-@-moz-document url-prefix("https://myanimelist.net/history/"), url-prefix("https://myanimelist.net/blog.php?"), regexp("^https:\\/\\/myanimelist\\.net\\/anime\\/[^\\/]+\\/[^\\/]+\\/pics.*") {
+@-moz-document url-prefix("https://myanimelist.net/history/"), url-prefix("https://myanimelist.net/blog.php?"), regexp("^https:\\/\\/myanimelist\\.net\\/anime\\/[^\\/]+\\/[^\\/]+\\/pics.*"), regexp("^https:\\/\\/myanimelist\\.net\\/character\\/[^\\/]+\\/[^\\/]+\\/pictures.*"), regexp("^https:\\/\\/myanimelist\\.net\\/people\\/[^\\/]+\\/[^\\/]+\\/pictures.*") {
 /* Fixes for code changes related to mobile/PC */
 
 .for-pc + #wrapper > #header {border: none !important;height: auto !important;margin: inherit !important;padding: inherit !important;}
@@ -5459,6 +5459,7 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 .for-pc + #wrapper > #header .non-link, .for-pc + #wrapper > #header .header-profile .header-profile-dropdown ul li:first-child a {font-size: 14px !important;}
 .for-pc .header-profile .header-profile-dropdown ul li:first-child a {padding-bottom: 15px !important;} /* 'Profile' */
 .for-pc + #wrapper > #header #nav li a {line-height: 36px !important;}
+.for-pc.h1.edit-info .h1-title {width: 867px !important;} /* 'Edit ??? Information' */
 
 .page-history #contentWrapper, .h1 a, .page-rwd .rwd-font-verdana ul a, .page-rwd.page-blog-detail #content {font-family: Segoe UI !important;}
 
