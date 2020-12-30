@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Anonach
 @description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/Rgam9mqn`
-@version        20201225.12.50
+@version        20201229.13.43
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1124,6 +1124,9 @@ body {line-height: 1.43;}
 
 @keyframes open {from {opacity: 0;} to {opacity: 1;}}
 
+#adminbar__more::before {background: url(https://i.ibb.co/v1TnDqZ/sinner.png) 100% no-repeat; background-size: 100% auto; content: 'ХЕЙ АНОН!'; color: var(--theme_default_text); font-weight: bold; font-size: 18px; text-align: right; display: block; height: 340px; width: 150px; position: fixed; right: 10px; bottom: -185px; transition: .6s ease; z-index: 100; text-shadow: 0px 1px 5px var(--theme_default_postbg);}
+#adminbar__more:hover::before {background-size: 100% auto; content: 'С НОВЫМ ГОДОМ!'; font-size: 24px; height: 510px; width: 212px; bottom: 0;}
+
 /* Молодец! Ты нашел секретные первоапрельские футанари обои! Просто закомментируй код снизу добавив слэш и звездочки в начале и в конце кода, чтобы убрать обои */
 
 /*html{background-image: url(http://immage.biz/images/2020/01/06/SsHp.jpg); background-attachment: fixed; background-size: 100% auto; background-repeat: no-repeat; background-color: #e5e5e5 !important;}
@@ -1135,8 +1138,8 @@ body {background: transparent !important;}
 input[type="text"], input[type="password"], textarea, .input {background-color: var(--theme_default_glassbg) !important;}
 .post_preview {background: var(--theme_default_postbg) !important;}
 
-#adminbar__more::before {background: url(http://immage.biz/images/2020/01/05/Sndb.png) 100% no-repeat; background-size: 100% auto; content: '🍑?'; color: var(--theme_default_text); font-weight: bold; font-size: 24px; text-align: right; display: block; height: 340px; width: 150px; position: fixed; right: 40px; bottom: -180px; transition: .6s ease;}
-#adminbar__more:hover::before {background-size: 100% auto; content: '🍆!'; font-size: 32px; height: 510px; width: 212px; bottom: 0;}
+#adminbar__more::before {background: url(https://i.ibb.co/v1TnDqZ/sinner.png) 100% no-repeat; background-size: 100% auto; content: 'ХЕЙ АНОН!'; color: var(--theme_default_text); font-weight: bold; font-size: 18px; text-align: right; display: block; height: 340px; width: 150px; position: fixed; right: 10px; bottom: -185px; transition: .6s ease; z-index: 100;}
+#adminbar__more:hover::before {background-size: 100% auto; content: 'С НОВЫМ ГОДОМ!'; font-size: 24px; height: 510px; width: 212px; bottom: 0;}
 
 .boardname::after {content: "и с 1 апреля";}
 

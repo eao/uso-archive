@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         xstmass
 @description    `Modified version of Vanilla Dark style`
-@version        20201229.0.2
+@version        20201229.16.30
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1391,6 +1391,9 @@ div.ui_actions_menu._ui_menu.im-page--redesigned-menu {
 
 a.ui_actions_menu_item.im-action.im-action:hover {
   background-color: #272A2C!important;
+}
+[dir] .TopHomeLink--logoWithText {
+    background-image: url(https://i.imgur.com/NoIe5n8.png) !important;
     margin-left: 1px;
     margin-top: 5px;
 }

@@ -2,8 +2,8 @@
 @name           football.ua - dark mode
 @namespace      USO Archive
 @author         Oleksii Garkavenko
-@description    `Темна тема для football.uaНе судіть строго - це моя перша робота :)`
-@version        20201129.21.30
+@description    `Темна тема для football.ua`
+@version        20201229.16.20
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -38,6 +38,7 @@ body > .ui-datepicker,
 .road,
 footer p,
 .main-tournament-table th,
+.match-info-table th,
 .trophies h3,
 .players-table th,
 .no-blogs .add-blog,
@@ -48,8 +49,10 @@ footer p,
 
 .page,
 .container,
+.conference .question-block,
 .header-search input,
 .search-results .search-block,
+.edit-block h3,
 .feed-table td,
 .feed-table th,
 .left-menu li a,
@@ -63,9 +66,11 @@ footer p,
 .jselect .jselect-title,
 .jselect .jselect-li,
 .matches,
+.match-details-teams .score span,
 .statistic-table tr:nth-child(odd) td,
 .main-tournament-table tr:nth-child(odd) td,
 .player-statistic-table tr:nth-child(odd) td,
+.article-text table tr:nth-child(odd) td,
 .subject-tags h3:after,
 .ui-dialog .ui-dialog-content .edit-form,
 .ui-dialog .ui-dialog-content .ui-dialog-buttonpane,
@@ -76,6 +81,10 @@ footer p,
 }
 
 .author-article .article-author,
+.conference .question-search .question-input,
+.edit-form .label .form-input,
+.edit-form .label textarea,
+.profile-edit .form-buttons .cancel,
 .players-table tr:nth-child(even) td,
 .statistic-table tr:nth-child(even) td,
 .main-tournament-table tr:nth-child(even) td,
@@ -88,10 +97,17 @@ footer p,
 .input-group > .custom-select:not(:last-child),
 .page-link,
 .select-block .selectboxit-options,
-.pagination a {
+.pagination a,
+#UserNotification {
     background: #555;
 }
 
+.add-comment .comment-textarea,
+.comment_form textarea,
+.f-dropdown .dropdown-menu-umh LI > A, 
+.f-dropdown .dropdown-menu-umh LABEL,
+.f-dropdown .dropdown-menu-umh, 
+.f-dropdown .dropdown-panel,
 .reply_text,
 .search-results .search-block input,
 .modal-body,
@@ -153,8 +169,11 @@ footer p,
 a,
 body,
 .feed-table td,
+.add-comment .comment-textarea,
 .author-article h1,
 .author-article h2,
+.f-dropdown .dropdown-menu-umh LI > A, 
+.f-dropdown .dropdown-menu-umh LABEL,
 .header-search input,
 .tv-match h4,
 .tv-match .time,
@@ -171,6 +190,7 @@ body,
 .m_command_name,
 .m_command_points,
 .matches_time,
+.match-info-table th,
 .statistic_table a,
 .news_feed_time,
 .news_feed_title,
@@ -190,7 +210,7 @@ body,
 .profile h3,
 .page-link,
 .pagination a {
-    color: #eeeeee;
+    color: #eeeeee!important;
 }
 
 .main-article .text p,
@@ -217,28 +237,24 @@ body,
 .archive-list li .type,
 .read-also .date,
 .news-feed .news-date,
+.news-feed li a:visited,
 .subject-switcher .date,
 .cabinet .user .user-text .user-table td:first-child,
 .profile .profile-info-table td:first-child,
 .search-results .result-block p,
 .gallery .date {
-    color: #999;
+    color: #999!important;
 }
 
-.comment-item .like-counter {
-    color: #565656;
-}
 
 .article-text h3.feed-header,
-.feed-header,
-.add-comment .comment-textarea,
-.comment_form textarea,
-.popup .label .form-input {
-    color: #000;
+.comment-item .like-counter,
+.feed-header {
+    color: #000!important;
 }
 
 .news-feed .important-time {
-    color: #d7420c;
+    color: #d7420c!important;
 }
   
 }

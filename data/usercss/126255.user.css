@@ -1,22 +1,29 @@
 /* ==UserStyle==
-@name           💡 关灯，人人影视！
+@name           【废弃】💡 关灯，人人影视！ #新地址 greasyfork.org/scripts/419366
 @namespace      USO Archive
 @author         franciszhao
-@description    `【特色介绍】　　custom.css 系列是适用于中文用户的轻量级美化样式表，可用于支持 Stylish / Stylus 扩展的浏览器。本样式表专为“YYeTs 人人影视”相关网站定制，采用深色视觉设计，统一页面风格，隐藏广告，特别为夜间浏览调校。为进一步提升视觉效果，建议搭配“<a href="https://userstyles.org/styles/123597" target="_blank">全局思源黑体</a>”或“<a href="https://userstyles.org/styles/126234" target="_blank">全局微软雅黑</a>”字体替换规则使用。【重要说明】　　1. 使用前请先<a href="https://n2o.io/go?page=custom.css" target="_blank">下载相关字体</a>。　　2. 因无法及时查看本网站留言消息，问题反馈请邮件联系 francis@n2o.io，本人会第一时间回复和处理。　　3. CSS 只能单纯隐藏广告元素，浏览器还是会在后台加载内容，如搭配广告过滤扩展 Adblock Plus 一起使用可彻底屏蔽，拥有最纯净的浏览体验。请通过浏览器的“应用商店”或“附加组件”等页面搜索并下载，安装成功后欢迎订阅本人编写的 <a href="https://n2o.io/go?page=quarklist" target="_blank">QuarkList 过滤规则</a>。`
-@version        2020820.17.52
+@description    `【 重 要 通 知 】<br><br>因本网站卡翻天，甚至魔法上网都打不开，本样式已永久停更，请直接删除后移步 <a href="https://greasyfork.org/scripts/419366"> Greasy Fork</a> 重新安装。<br><br>【 重 要 通 知 】`
+@version        20201230.0.58
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
 
+/* ==UserStyle==
+@name 💡 关灯，人人影视！
+@namespace franciszhao
+@version 2.2.9
+@updateURL https://greasyfork.org/scripts/419366/code/419366.user.css
+==/UserStyle== */
+
 /*!
- * theme-yyets-dark-2.3.1.scss
- * https://n2o.io/go?page=custom.css
+ * 重 要 通 知
  *
- * © 2020 Francis Zhao <francis@n2o.io>
- * https://n2o.io/license
+ * 因 userstyles.org 网站卡翻天，甚至魔法上网都打不开，本样式已永久停更，
+ * 请直接删除后移步 Greasy Fork 重新安装。
+ * 新地址：https://greasyfork.org/scripts/419366
  *
- * Date: 2020-08-20T22:00+07:00
+ * 重 要 通 知
  */
 
 /* i really want this to be global */

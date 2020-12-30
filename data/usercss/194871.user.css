@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         Vesterlay
 @description    `Black theme for diki.pl`
-@version        20201226.20.26
+@version        20201229.21.36
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("diki.pl") {
 /* 
 Author: Vesterlay 
-Version: 1.2
+Version: 1.3
 Licence: MIT UNLESS STATED OTHERWISE
 */
 :root {
@@ -18,7 +18,10 @@ Licence: MIT UNLESS STATED OTHERWISE
     --background-color: #222;
 }
 
-p,ul,ol,td {
+p,
+ul,
+ol,
+td {
     color: #ccc;
 }
 
@@ -36,8 +39,18 @@ li.ui-menu-item {
 #thinHeaderMenuIcon div::after {
     background-color: #fff;
 }
-div.dikibody div.partOfSpeechSectionHeader span.partOfSpeech {
+div.dikibody div.partOfSpeechSectionHeader span.partOfSpeech,
+span.headerPartOfSpeech {
     color: #C20A0A;
+}
+div.collocationHeadwordGroupHeader:not(.noHover):hover,
+div.browsedCollocationHeader:not(.noHover):hover,
+div.browsedCollocationHeader.currentCollocation,
+div.collocationListHeader {
+    background: #353d4075;
+}
+div.collocationListHeader {
+    background: unset!important;
 }
 div.dikibody h2.dictionarySectionHeader,
 span.hw,
@@ -46,8 +59,27 @@ div.similarCollocations,
 span.headerPartOfSpeech,
 div.dikibody .picturesource,
 div.dikibody .picturedescription,
-div.dikibody div.seealso {
+div.dikibody div.seealso,
+.showCollocationsLink,
+div.pf,
+.partOfSpeechSectionHeader,
+div.relatedCollocationGroup,
+.automaticCollocationTranslation,
+.dictionaryEntryHeaderAdditionalInformation,
+p.sentencesSourceInfo,
+div.collocationHeadwordGroupHeader a.collocationBrowseLink,
+div.collocationListHeader a.collocationBrowseLink,
+div.browsedCollocationHeader a.collocationBrowseLink {
     color: #fff!important;
+}
+p.sentencesSourceInfo:hover,
+.gray,
+.gray:visited,
+.gray:not(.noHover):hover {
+    color: #fff!important;
+}
+span.shl {
+    background-color: #393636!important;
 }
 #thinHeaderMenuIcon:not(.noHover):hover div,
 #thinHeaderMenuIcon:not(.noHover):hover div::before,
@@ -66,7 +98,8 @@ div.dikibody .nativeToForeignEntrySlices div.ref,
 span.fentrymain {
     color: #ccc;
 }
-div.vf {
+div.vf,
+.qtip-default {
     color: #ccc!important;
 }
 div.dikibody ul.wordByWordTranslation li div.word {

@@ -3,13 +3,13 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for the iDoRecall web app.`
-@version        20201229.2.32
+@version        20201229.17.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://app.idorecall.com/recalls"), regexp("https://app.idorecall.com/groups/.+/recalls.*") {
 /* Recalls */
-.meta-container, .recalls-list-wrapper, .tags-overlay-container, .recall-item:hover, .columns-wrapper.meta-opened .meta-info-col{ background-color: #202020 !important;}
+.meta-container, .recalls-list-wrapper, .tags-overlay-container, .recall-item:hover, .columns-wrapper.meta-opened .meta-info-col, .tags-overlay-container .recalls .tag:hover{ background-color: #202020 !important;}
 .recall-item .recall-title, .fixed-header .close-desktop, .form .form-group > .control-label, .controls-panel-record, .mat-checkbox-layout, .form-row input, .form .form-group.wrap-metacognition, .adjust-control, .mat-checkbox-disabled .mat-checkbox-label{ 
     color: #fff !important;
 }

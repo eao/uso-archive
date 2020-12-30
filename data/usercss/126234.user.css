@@ -1,22 +1,29 @@
 /* ==UserStyle==
-@name           全局微软雅黑
+@name           【废弃】全局微软雅黑 #新地址 greasyfork.org/scripts/419363
 @namespace      USO Archive
 @author         franciszhao
-@description    `【特色介绍】　　custom.css 系列是适用于中文用户的轻量级美化样式表，可用于支持 Stylish / Stylus 扩展的浏览器。本样式表使用了 Microsoft 的 Microsoft YaHei、Microsoft JhengHei、Consolas 字体家族，另有“<a href="https://userstyles.org/styles/123597" target="_blank">全局思源黑体</a>”可供选择，请根据个人喜好任选其一，不要同时使用。【重要说明】　　1. 使用前请先<a href="https://n2o.io/go?page=custom.css" target="_blank">下载相关字体</a>。　　2. 因无法及时查看本网站留言消息，问题反馈请邮件联系 francis@n2o.io，本人会第一时间回复和处理。　　3. CSS 只能单纯隐藏广告元素，浏览器还是会在后台加载内容，如搭配广告过滤扩展 Adblock Plus 一起使用可彻底屏蔽，拥有最纯净的浏览体验。请通过浏览器的“应用商店”或“附加组件”等页面搜索并下载，安装成功后欢迎订阅本人编写的 <a href="https://n2o.io/go?page=quarklist" target="_blank">QuarkList 过滤规则</a>。`
-@version        20201029.9.21
+@description    `【 重 要 通 知 】<br><br>因本网站卡翻天，甚至魔法上网都打不开，本样式已永久停更，请直接删除后移步 <a href="https://greasyfork.org/scripts/419363"> Greasy Fork</a> 重新安装。<br><br>【 重 要 通 知 】`
+@version        20201230.0.58
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
 
+/* ==UserStyle==
+@name 全局微软雅黑
+@namespace franciszhao
+@version 2.1.9
+@updateURL https://greasyfork.org/scripts/419363/code/419363.user.css
+==/UserStyle== */
+
 /*!
- * font-family-microsoft-2.1.1.scss
- * https://n2o.io/go?page=custom.css
+ * 重 要 通 知
  *
- * © 2020 Francis Zhao <francis@n2o.io>
- * https://n2o.io/license
+ * 因 userstyles.org 网站卡翻天，甚至魔法上网都打不开，本样式已永久停更，
+ * 请直接删除后移步 Greasy Fork 重新安装。
+ * 新地址：https://greasyfork.org/scripts/419363
  *
- * Date: 2020-10-29T15:00+07:00
+ * 重 要 通 知
  */
 
 /* i really want this to be global */
