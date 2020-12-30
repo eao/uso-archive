@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.top - (New, Dec. 2020)poal.cosaidit.netvoat.coconspiracies.win - (New, Dec. 2020)thedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201226.2.2
+@version        20201230.6.29
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -38,7 +38,7 @@ WPBASE64 "Manual BASE64 Setup (Inject in Code #1)" <<<EOT data:image/jpeg;base64
 @advanced color Titles "Post Titles" #CCCCCC
 @advanced color Visited "Visited Posts" #777777
 @advanced color LinksUnderPosts "Post Info & Links" #717171
-@advanced dropdown RCPostBG00 "Post Highlight (Under development)" {
+@advanced dropdown RCPostBG00 "Post Background (Under development)" {
 	RCPostBG02 "Background - (Post Highlight (incl. RES))*" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
@@ -643,18 +643,21 @@ RCPostH-15 "+15px" <<<EOT /* Option chosen: [+10px] *\/
 	RCPostHighlight01 "Increased Brightness*" <<<EOT /*Option Chosen - [Increased Brightness]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
+div.alldaposts div.post,
+div.alldaposts div.post div.expando-master:hover,
 .post-list div.post
 {
-    filter:brightness(1);
+    filter:brightness(1)!important;
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
+div.alldaposts div.post:hover,
 .post-list div.post:hover,
 .post-list div.post:focus-within:hover,
 dark-theme .post-list div.post:hover,
 dark-theme .post-list div.post:focus-within:hover
 {
-    filter:brightness(1.25);
+    filter:brightness(1.25)!important;
     transition:.2s;
 }
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
@@ -667,18 +670,21 @@ dark-theme .post-list div.post:focus-within,
 dark-theme .post-list div.post:focus-within:hover,
 dark-theme .post-list div.post:focus-within:active
 {
-    filter:brightness(1);
+    filter:brightness(1)!important;
 } EOT;
 RCPostHighlight00 "None" <<<EOT /*Option Chosen - [None]*\/ EOT;
 RCPostHighlight02 "Border" <<<EOT /*Option Chosen - [Border]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
+div.alldaposts div.post,
+div.alldaposts div.post div.expando-master:hover,
 .post-list div.post,
 dark-theme .post-list div.post
 {
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
+div.alldaposts div.post:hover,
 .post-list div.post:hover,
 .post-list div.post:focus-within:hover,
 dark-theme .post-list div.post:hover,
@@ -696,18 +702,21 @@ dark-theme .post-list div.post:focus-within
     transition:2s!important;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
+div.alldaposts div.post,
+div.alldaposts div.post div.expando-master:hover,
 div.container main.main div.main-content.post-list div.post,
 dark-theme .post-list div.post
 {
-    filter:brightness(1);
+    filter:brightness(1)!important;
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
+div.alldaposts div.post:hover,
 div.container main.main div.main-content.post-list div.post:hover,
 dark-theme .post-list div.post:hover
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    filter:brightness(1.25);
+    filter:brightness(1.25)!important;
     transition:.2s;
 }
 .rpBJOHq2PR60pnwJlUyP0.rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
@@ -720,18 +729,19 @@ dark-theme .post-list div.post:focus-within,
 dark-theme .post-list div.post:focus-within:hover,
 dark-theme .post-list div.post:focus-within:active
 {
-    filter:brightness(1);
+    filter:brightness(1)!important;
 } EOT;
 RCPostHighlight04 "Background (Same as RES Highlight)" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
+div.alldaposts div.post,
 .post-list div.post,
 dark-theme .post-list div.post
 {
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
-div.container main.main div.main-content.post-list div.post:hover,
+div.alldaposts div.post:hover,
 dark-theme .post-list div.post:hover
 {
     background:
@@ -752,13 +762,16 @@ dark-theme .post-list div.post:focus-within
 RCPostHighlight05 "Background + Increased Brightness" <<<EOT /*Option Chosen - [Background + Increased Brightness]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
+div.alldaposts div.post,
+div.alldaposts div.post div.expando-master:hover,
 .post-list div.post,
 dark-theme .post-list div.post
 {
-    filter:brightness(1);
+    filter:brightness(1)!important;
     transition:.4s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:hover,
+div.alldaposts div.post:hover,
 .post-list div.post:hover,
 dark-theme .post-list div.post:hover
 {
@@ -769,75 +782,29 @@ dark-theme .post-list div.post:hover
         linear-gradient(360deg, var(--RCRESHighlightBox) 0%, #0000 70%) !important;
     border-radius:4px;
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
-    filter:brightness(1.25);
+    filter:brightness(1.25)!important;
     transition:.2s;
 }
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
 .post-list div.post:focus-within,
 dark-theme .post-list div.post:focus-within
 {
-    filter:brightness(1);
+    filter:brightness(1)!important;
     transition:.2s!important;
-} EOT;
+}
+ EOT;
 
 }
 @advanced dropdown RCNightmode "Media Dim (Nightmode)" {
-	RCNoMediaDim "No*" <<<EOT /*Nighmode disabled*\/
-/*
-/* To install as separate theme:
-/*
-/* https://userstyles.org/styles/176259/
-/*
-/*
-/* Activate to Enable;
-
-iframe,
-img,
-video,
-path,
-.md-container div.md h5 a,
-.premium-banner-outer
-/*._2MkcR85HDnYngvlVW2gMMa*\/
-
-/* < REMOVE THIS LINE ALSO
-
-{
-    filter:brightness(0.75);
-}
-
-
-[style*='background-image: url("https://www.redditstatic.com/'],
-[style*='background-image: url("https://styles.redditmedia.com/'],
-div.post div.file .fileThumb img,
-.thumbnail.default,
-.thumbnail.image,
-.thumbnail.self,
-.thumbnail.spoiler,
-._17nmfaMf1Rq20sVfEmle0O,
-._1g70Ndz7edo5LA6hie1Gkt
-{
-    filter:brightness(.75);
-    transition: .4s;
-}
-
-img.middlead, .middlead>div, .middlead a img
-{
-    transition: .4s;
-}
-
-div.post div.file .fileThumb img:hover,img.middlead:hover, .middlead>div:hover, .middlead a img:hover,
-._1g70Ndz7edo5LA6hie1Gkt:hover
-{
-    filter:brightness(1);
-    transition: .4s!important;
-}
-
-.twitter-tweet-rendered
-{
-    filter:brightness(1.25);
-    box-shadow: none;
-}
-*\/ EOT;
+	RCNoMediaDim "No*" <<<EOT /*---------------------------------------*\/
+/*                                       *\/
+/*           Nighmode disabled           *\/
+/*                                       *\/
+/*      To install as separate theme:    *\/
+/*                                       *\/
+/* https://userstyles.org/styles/176259/ *\/
+/*                                       *\/
+/*---------------------------------------*\/ EOT;
 RCMediaDim "-25% Brightness" <<<EOT /*Media Dim Enabled*\/
 
 iframe,
@@ -845,7 +812,9 @@ img,
 video,
 path,
 .md-container div.md h5 a,
-.premium-banner-outer
+.premium-banner-outer,
+.pure-u-1 .sbimg,
+/* *.win *\/.sidebar .img
 /*._2MkcR85HDnYngvlVW2gMMa*\/
 {
     filter:brightness(0.75);
@@ -853,6 +822,7 @@ path,
 
 [style*='background-image: url("https://www.redditstatic.com/'],
 [style*='background-image: url("https://styles.redditmedia.com/'],
+/*thedonald.win*\/.panel.slideout-panel.slideout-panel-left header.header[data-community="TheDonald"] div.bg,.sidebar blockquote [href="https://suicidepreventionlifeline.org/"],
 /*4chan*\/div.post div.file .fileThumb img,
 .thumbnail.default,
 .thumbnail.image,
@@ -871,6 +841,7 @@ path,
 }
 
 /*4chan*\/div.post div.file .fileThumb img:hover,img.middlead:hover, .middlead>div:hover, .middlead a img:hover,
+/*thedonald.win*\/.panel.slideout-panel.slideout-panel-left header.header[data-community="TheDonald"] div.bg:hover,.sidebar blockquote [href="https://suicidepreventionlifeline.org/"]:hover,
 ._1g70Ndz7edo5LA6hie1Gkt:hover
 {
     filter:brightness(1);
@@ -895,48 +866,20 @@ div[data-slot],
 [class*="RightAd"],
 [data-before-content*="advertisement"],
 [id*="google_ads_iframe"],
+section.description.box.col.col-12 div.col.col-12 span[style="display:inline-block;"],
 .ad-container,
 .adc-resp-bg,.adg-rects,
 .NqMdak8MgbuSVZAABdAw9
 ._1rmObrmUCfC5t42SbwkzYC
 {
-    display:none;
+    display:none!important;
 }
 
 [class*="promotedlink"]
 {
     display:none;
 } EOT;
-RCLeaveAds "No" <<<EOT /*Ads left as is*\/
-
-/* Option to activate *\/
-
-/*Ad removal
-
-div[data-slot],
-[class*="ArticleAd"],
-[class*="GoogleAd"],
-[class*="HomeAds"],
-[class*="LeftAd"],
-[class*="RightAd"],
-[data-before-content*="advertisement"],
-[id*="google_ads_iframe"],
-.ad-container,
-.adc-resp-bg,.adg-rects,
-.NqMdak8MgbuSVZAABdAw9
-._1rmObrmUCfC5t42SbwkzYC
-{
-    display:none;
-}
-
-/*Promotions Removal
-
-[class*="promotedlink"]
-{
-    display:none;
-}
-
-*\/ EOT;
+RCLeaveAds "No" <<<EOT /*Ads left as is*\/ EOT;
 RCAdsRemoved "Yes" <<<EOT /*Ads Removed*\/
 
 div[data-slot],
@@ -947,12 +890,13 @@ div[data-slot],
 [class*="RightAd"],
 [data-before-content*="advertisement"],
 [id*="google_ads_iframe"],
+section.description.box.col.col-12 div.col.col-12 span[style="display:inline-block;"],
 .ad-container,
 .adc-resp-bg,.adg-rects,
 .NqMdak8MgbuSVZAABdAw9
 ._1rmObrmUCfC5t42SbwkzYC
 {
-    display:none;
+    display:none!important;
 }
 
 
@@ -982,6 +926,7 @@ div[data-slot],
 [class*="RightAd"],
 [data-before-content*="advertisement"],
 [id*="google_ads_iframe"],
+section.description.box.col.col-12 div.col.col-12 span[style="display:inline-block;"],
 .ad-container,
 .adc-resp-bg,.adg-rects,
 .NqMdak8MgbuSVZAABdAw9
@@ -993,7 +938,7 @@ div[data-slot],
 *\/ EOT;
 
 }
-@advanced dropdown RCAwards "Awards" {
+@advanced dropdown RCAwards "Awards (Reddit)" {
 	RCGold "Enabled*" <<<EOT /*---------------------------------------*\/
 /*                                       *\/
 /*        --- Awards enabled ---         *\/
@@ -1326,8 +1271,22 @@ div.side div.spacer div.linkinfo div.date span:after
 } EOT;
 
 }
-@advanced dropdown EmailRemoval "E-mail Request Popup" {
-	EmailNo "Hide*" <<<EOT /*Removed*\/
+@advanced dropdown EmailRemoval "E-mail Request & CC Popups" {
+	EmailCookieNo "Hide both*" <<<EOT /*Cookie- & E-Mail reminders Removed*\/
+
+/*E-Mail*\/
+#ecb.email-collection-banner,
+.email-collection-banner.footer_2,
+.email-collection-content.footer_2,
+.kEQVd8aneM1tVkcIKUyDT,
+
+/*Cookies*\/
+.show-cookie-popup .cookie
+{
+    display:none!important;
+} EOT;
+EmailYes "Leave be" <<<EOT /*Untouched*\/ EOT;
+EmailNo "Hide E-Mail reminders" <<<EOT /*E-Mail reminders Removed*\/
 
 #ecb.email-collection-banner,
 .email-collection-banner.footer_2,
@@ -1336,22 +1295,12 @@ div.side div.spacer div.linkinfo div.date span:after
 {
     display:none!important;
 } EOT;
-EmailYes "Leave be" <<<EOT /*Untouched*\/
+CookiesNo "Hide Cookies reminders" <<<EOT /*Cookie reminders Removed*\/
 
-/*Enable code to remove:*\/
-
-/*
-
-#ecb.email-collection-banner,
-.email-collection-banner.footer_2,
-.email-collection-content.footer_2,
-.kEQVd8aneM1tVkcIKUyDT
+.show-cookie-popup .cookie
 {
     display:none!important;
-}
-
-*\/
- EOT;
+} EOT;
 
 }
 @advanced dropdown RCUpdating "Updating:" {
@@ -1796,9 +1745,10 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
          Transparent                      Solid
 
                             PS:
-       All wallpapers are available for download at:
+         Wallpapers are available for download at:
 
                https://old.reddit.com/r/KMV/
+         https://archive.org/details/KMV-Resources
 
 
 /* ===================== End of Guide ===================== */
@@ -1817,7 +1767,7 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 /*[[RCPostHeight]]*/
 
 
-/* =============== Post Hover on New Reddit =============== */
+/* ====================== Post Hover ====================== */
 
 /*[[RCPostHighlight00]]*/
 
@@ -1842,7 +1792,7 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 /*[[RCAds]]*/
 
 
-/* ================= E-Mail Request Popup ================= */
+/* ============== E-Mail & CC Request Popup ============== */
 
 /*[[EmailRemoval]]*/
 
@@ -2304,6 +2254,11 @@ a ._12FoOEddL7j_RgMQN0SNeU
 
 /*Transitions needed for below*/
 
+/*Thedonald.win*/.sidebar blockquote [href="https://suicidepreventionlifeline.org/"]
+{
+    transition:.4s;
+}
+
 /*div a,*/
 .dropdown.lightdrop .selected,
 /*4chan*/.hand,
@@ -2558,11 +2513,6 @@ a[data-click-id="timestamp"],
     transition:.4s!important;
 }
 
-/*.buttons a:visited
-{
-    color: var(--RCDarkText) !important;
-}
-*/
 
 a.title:visited,
 a.title.may-blank:visited,
@@ -2615,6 +2565,7 @@ a.unimportant:active,
 /*4chan*/#arc-list .quotelink:active, .burichan_new .backlink a:active, .yotsuba_b_new .backlink a:active, a#globalToggle.button.redButton.mobile.hidden:active,
 div.idata a:active,
 /*conspiracies.win*/div.inner a:active,div.inner p a:active,div.styling div.preview:active,
+/*Thedonald.win*/.sidebar blockquote [href="https://suicidepreventionlifeline.org/"]:active,
 div.boardlist a:active,
 .comment-thread:active,.comment-thread div:active,
 .contact-us-page .button:active,.res-nightmode .contact-us-page .button:active,
@@ -2704,16 +2655,12 @@ a *
 }
 
 
-/*Conspiracies.win - Bold Active Tab*/
+/* *.win - Bold Active Tab */
 .nav-main .inner a.active
 {
     font-weight:bold;
+    transition:.4s;
 }
-.nav-main .inner a:hover
-{
-    text-decoration:underline;
-}
-
 
 
 /*Post Position and Spacing (old.reddit - Original - forced)*/
@@ -3216,10 +3163,12 @@ body.status-page footer
 
 /*conspiracies.win*/
 
-.slideout-panel-left header.header div.bar
+.slideout-panel-left header.header div.bar,
+.slideout-panel-left header.header div.bar:hover
 {
     background:rgba(0,0,0,.24) !important;
 }
+div.bar div.nav-main div.inner a:hover,
 div.bar div.nav-main div.inner a.active
 {
     background:rgba(0,0,0,.24) !important;
@@ -4987,7 +4936,7 @@ a.c-btn-primary:hover,
 /*conspiracies.win*/
 div.container aside.sidebar a.submit-link:hover,
 div.container aside.sidebar a.submit-text:hover,
-
+/*thedonal.win*/.panel.slideout-panel.slideout-panel-left header.header div.bg ul.social li.item a:hover,
 .cookie .button:hover,
 div.cookie-accept-outer span.cookie-accept:hover,
 .drop-choices a.choice:hover .morelink:hover,
@@ -5712,20 +5661,6 @@ div.midcol.voting-icons.dislikes div.score.dislikes
     color: #7C72DD !important;
 }
 
-
-/*
-.arrow
-{
-    filter: brightness(45%);
-}
-.arrow.upmod,
-.arrow.downmod
-{
-    filter: brightness(50%) contrast(120%);
-}
-*/
-
-
 .voteButton,
 .voteButton:hover,
 ._2UH-_HmB6X-2cCsOZVDtC5:hover
@@ -5889,7 +5824,7 @@ span.res-fancy-toggle-button.RESshortcutside:active,
 /*conspiracies.win*/
 div.container aside.sidebar a.submit-link:active,
 div.container aside.sidebar a.submit-text:active,
-
+/*thedonal.win*/.panel.slideout-panel.slideout-panel-left header.header div.bg ul.social li.item a:active,
 
 .cookie .button:active,
 div.cookie-accept-outer span.cookie-accept:active,
@@ -6827,6 +6762,7 @@ span.postflair
 [id*="thing"].even.stickied.controversial.link,
 [id*="thing"].odd.stickied.controversial.link,
 /*conspiracies.win*/div.container main.main div.main-content.post-list div.post.stickied,
+/*thedonald.win*/div.post.stickied div.body div.top a.title,
 .linkflair-general.even.locked.stickied.link,
 .linkflair-general.odd.locked.stickied.link,
 .listing-page .even.stickied,
@@ -7491,7 +7427,17 @@ body > table tbody img
 }
 
 
-
+/*thedonald.win logo hover fix*/
+.panel.slideout-panel.slideout-panel-left header.header div.bg a.logo[href="https://thedonald.win/"]
+{
+    filter:invert(0)hue-rotate(0deg);
+    transition:0s!important;
+}
+.panel.slideout-panel.slideout-panel-left header.header div.bg a.logo[href="https://thedonald.win/"]:hover
+{
+    
+    transition:0s!important;
+}
 /*---------------------- Item Removal ----------------------*/
 
 
@@ -7824,6 +7770,7 @@ span a:hover,
 summary:hover,
 svg:hover,
 use:hover,
+#checkbox-label,.anchor,
 #backup-title:hover,
 #button:hover,
 #chat,

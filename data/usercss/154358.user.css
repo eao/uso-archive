@@ -1,13 +1,13 @@
 /* ==UserStyle==
-@name           темный nnmclub.me без рекламы
+@name           темный nnm-club.me без рекламы
 @namespace      USO Archive
 @author         Игорь Шадрин
-@description    `http://nnmclub.me`
-@version        20201226.16.27
+@description    `http://nnm-club.me`
+@version        20201230.5.3
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("nnmclub.me")
+@-moz-document domain("nnm-club.me")
 {
 
 .portbody {

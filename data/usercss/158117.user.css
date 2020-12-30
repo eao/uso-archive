@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `Github项目地址：https://github.com/QIUZAIYOU/Stylish—— （根据本人自己的使用习惯制作，所以...你懂的 ）——⭐如有问题请到我的网站【www.asifadeaway.com】点击右下角会话按钮给我留言⭐1、常用页面夜间模式全覆盖2、去除广告3、去除导航栏中游戏等无用杂项4、部分icon更换使之更符合当前主题5、自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素`
-@version        20201229.14.39
+@version        20201230.7.20
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -68,6 +68,11 @@ PlayerRank_OFF "关" <<<EOT /*[[PlayerRank]]*\/ EOT;
 BarrageContent_ON "开" <<<EOT .Barrage-content:not([class*="Barrage-content--color"]),  EOT;
 
 }
+@advanced dropdown ToolbarActivityArea "播放器下方互动按钮屏蔽" {
+	ToolbarActivity_ON "开*" <<<EOT .ToolbarActivityArea, EOT;
+ToolbarActivity_OFF "关" <<<EOT /*[[ToolbarActivityArea]]*\/ EOT;
+
+}
 @advanced color UserNameColor "用户昵称颜色" #2B94FF
 @advanced color UserContentColor "用户发言颜色" #868686
 @advanced color AnchorNameColor "主播昵称颜色" #FF6600
@@ -78,7 +83,7 @@ BarrageContent_ON "开" <<<EOT .Barrage-content:not([class*="Barrage-content--co
     /*=== 
      * 版权信息
      * 作者：QIUZAIYOU 
-     * 最后更新：20201229
+     * 最后更新：20201230
      * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -349,7 +354,7 @@ url-prefix("http://www.douyu.com/") {
     div[class*='-ad'],
     div[class*='-Ad'],
     .GuessMainPanelHeader-icon fishballTreasure,
-    .ToolbarActivityArea>div>div>div:not([data-flag="anchor_quiz"]),
+    .ToolbarActivityArea>div>div>div,
     .ToolbarActivityArea .ActivityTips,
     .Title-videoSiteLink,
     .Title-roomOtherBottom,
@@ -453,6 +458,16 @@ url-prefix("http://www.douyu.com/") {
     div[class*='-add'] {
         display: block!important;
     }
+    /* --  播放器下方互动按钮  -- */
+    .ToolbarActivityArea>div>div>div[data-flag="anchor_quiz"],
+    .ToolbarActivityArea>div>div>.PlayerToolbar-FishpondTreasure{
+        display: block!important;
+    }
+    /*[[ToolbarActivityArea]]*/
+    .asifadeaway{
+        display: none!important;
+    }
+    
 }
 
 @-moz-document url-prefix("https://www.douyu.com/"),
@@ -3344,7 +3359,6 @@ url-prefix("http://www.douyu.com/") {
     .DyCover-imgWrap>.DyImg.DyCover-pic>.LazyLoad.is-visible>img[src*='https://shark2.douyucdn.cn/front-publish/sdk-file-master/offical_activities_defalut'],
     .DyCover-imgWrap img[src*='https://shark2.douyucdn.cn/front-publish/live-master/assets/images/default-cover'],
     .CloudGameLink-text,
-    .FishpondTreasure,
     .RomanticDateComponent,
     .BattleShipEnter,
     .TurntableLottery,
@@ -3377,7 +3391,8 @@ url-prefix("http://www.douyu.com/") {
     .video-above,
     .GuessGameMiniPanel-wrapper,
     .ActiviesExpanel-ExpandBtn,
-    .GuessMainPanelHeader-icon.fishballTreasure {
+    .GuessMainPanelHeader-icon.fishballTreasure,
+    .FishpondEntrance-word {
         opacity: 0!important;
         display: none!important;
     }
@@ -3490,7 +3505,9 @@ url-prefix("http://www.douyu.com/") {
     .FansRankAllList,
     .RankAllMain-content,
     .VideoCollection-content,
-    .PublicAnnounce-panel {
+    .PublicAnnounce-panel,
+    .FTP-taskRight,
+    .FTP-task{
         background: #2c2c2c!important;
     }
     .AnchorRank-more,
@@ -3540,7 +3557,8 @@ url-prefix("http://www.douyu.com/") {
     .Title-followBtnBox.is-followed,
     .AnchorComment-modal,
     .Title-anchorName-block:hover,
-    .VideoEntry-list {
+    .VideoEntry-list,
+    .FTP-singleTask-btn.is-got, .FTP-singleTask-btn.is-unfinished{
         background: #272727!important;
     }
     .layout-Module-head.is-fixed,
@@ -3562,7 +3580,8 @@ url-prefix("http://www.douyu.com/") {
     .ChatFansBarragePop,
     .AssembleExpressHeader,
     .GiftInfoPanel-imgBox,
-    .Barrage-roomVip--super {
+    .Barrage-roomVip--super,
+    .FTP-taskLeft{
         background-color: #212121!important;
     }
     .TagItem-editing:hover {
@@ -3826,7 +3845,10 @@ url-prefix("http://www.douyu.com/") {
     .PublicAnnounce h3,
     .VideoEntry-text,
     .VideoAnchorItem-title,
-    .VideoReplayItem-date {
+    .VideoReplayItem-date,
+    .FTP-btn,
+    .FTP-singleTask-name,
+    .FT-modal .FT-modal-info{
         color: #868686!important;
     }
     .RichRankList-item.is-stealth .RichRankList-name {
@@ -3976,7 +3998,8 @@ url-prefix("http://www.douyu.com/") {
     .SociatyLabel-name.is-special,
     .Header-follow-tab.is-active,
     .layout-Partition-title,
-    .layout-Slider~.layout-Partition .layout-Partition-title {
+    .layout-Slider~.layout-Partition .layout-Partition-title,
+    .FTP-btn.is-active{
         color: #fff!important;
     }
     .DyCover-hot,
@@ -4113,7 +4136,8 @@ url-prefix("http://www.douyu.com/") {
     .ListHeader-pop-label,
     .VideoAnchorItem,
     .VideoEntry-list,
-    .VideoEntry-replaylist {
+    .VideoEntry-replaylist,
+    .FTP-singleTask{
         border-color: #424242!important;
     }
     .is-followed .Title-followText:nth-child(3):after {
@@ -4207,6 +4231,9 @@ url-prefix("http://www.douyu.com/") {
         border-color: transparent transparent #272727!important;
     }
     /* -- 狗日的其他 -- */
+    div[role="document"][class="dy-Modal"][style*="width"]{
+        width:360px!important;
+    }
     .ToolbarActivityArea>div>div:not(.ActiviesExpanel) {
         display: grid!important;
         grid-template-columns: repeat(10, 40px)!important;
@@ -4215,7 +4242,8 @@ url-prefix("http://www.douyu.com/") {
     }
     .ToolbarActivityArea>div>div>div,
     .shark-webp .GuessIcon,
-    .GuessIcon {
+    .GuessIcon,
+    .FishpondEntrance-icon{
         width: 40px!important;
         height: 40px!important;
         margin: 0!important;
@@ -5129,10 +5157,18 @@ url-prefix("http://www.douyu.com/") {
         background-size: cover;
     }
     .shark-webp .GuessIcon,
-    .GuessIcon {
-        background: url(https://www.asifadeaway.com/NightMode/douyu/GuessIcon.png);
-        background-size: cover;
+    .GuessIcon,
+    .FishpondEntrance-icon {
+        background-size: cover!important;
         background-repeat: no-repeat!important;
+    }
+    .shark-webp .GuessIcon,
+    .GuessIcon{
+        background: url(https://www.asifadeaway.com/NightMode/douyu/GuessIcon.png);
+    }
+    .shark-webp .FishpondEntrance-icon,
+    .FishpondEntrance-icon{
+        background: url(https://www.asifadeaway.com/NightMode/douyu/FishpondEntranceIcon.png);
     }
 }
 

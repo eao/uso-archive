@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `Github项目地址：https://github.com/QIUZAIYOU/Stylish去广告，样式更改。`
-@version        20201229.14.14
+@version        20201230.8.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown doubleList "搜索结果双列显示" {
-	doubleList_OFF "关*" <<<EOT /* doubleList *\/ EOT;
+	doubleList_OFF "关*" <<<EOT /*[[doubleLis]]*\/ EOT;
 doubleList_ON "开" <<<EOT /* 调整搜索结果样式以适配双列 *\/
 #content_left {
     display: flex!important;

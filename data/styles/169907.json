@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "baidu",
     "createdAt": "2019-03-15T09:37:36.000Z",
-    "updatedAt": "2020-12-29T14:14:50.000Z",
+    "updatedAt": "2020-12-30T08:12:19.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 586088,
@@ -50,7 +50,7 @@
           {
             "key": "doubleList_OFF",
             "label": "关",
-            "value": "/* doubleList */",
+            "value": "/*[[doubleLis]]*/",
             "default": true
           }
         ]

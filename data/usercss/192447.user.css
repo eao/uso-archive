@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           VK RetroWave-NightCall and Cyberpunk v1
+@name           VK RetroWave-NightCall and Cyberpunk v1.3
 @namespace      USO Archive
 @author         Lavshyak
-@description    `Киберпанковский вк, версия 1.Разрабатывался для монитора 1920*1080 в Firefox.Насчет отображения рекламы не знаю, у меня адблок.`
-@version        20201111.9.42
+@description    `Обновил для вк на момент 30.12.2020, теперь цвета более адекватные; скрыл рекламу в левом меню, которую не мог скрыть адблок по причине хитрости разрабов вк.Киберпанковский вк, версия 1.3Разрабатывался для монитора 1920*1080 в Firefox.Насчет отображения рекламы не знаю, у меня адблок.`
+@version        20201230.8.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -35,6 +35,12 @@
     -ms-flex-align: center;
     align-items: center;
 }
+body.new_header_design #side_bar .left_label {
+    color: #9198c1;
+    font-size: 13px;
+}
+
+
 
 /*выделен прямоугольник*/
 [dir] #side_bar ol li .left_row:hover {
@@ -71,6 +77,25 @@
     /*background-color: rgb(99, 56, 153);*/
     background-color: #46489b;
 }
+body.new_header_design .top_nav_link {
+    color: #fff;
+}
+[dir] body.new_header_design #page_header_cont {
+    background-color: var(--white);
+    border-bottom: 1px solid #007fff;
+        border-bottom-color: #7b32e8;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+}
+[dir] .TopHomeLink--logoWithText {
+    background-image: none;
+    background-size: auto 24px;
+}
+[dir] body.new_header_design .top_audio_player:hover {
+    background-color: #ffffffbd;
+}
+
+
 
 /*трек*/
 [dir] .page_block {
@@ -103,8 +128,20 @@
 
 /*вернуться наверх (панель слева появляется)*/
 [dir] .stl_active.over_fast #stl_bg {
-    background-color: rgba(50, 0, 111, .44);
-    background: linear-gradient(to top,  rgba(161, 0, 255, .09),rgba(7, 0, 255, .09));
+    background-color: rgba(50, 0, 111, .09);
+    background: linear-gradient(to top,  rgba(161, 0, 255, .09),rgba(0, 0, 255, .09));
 }
 
+
+/*под хидером*/
+[dir] .im-page_classic.im-page .im-page--header {
+    margin-top: -63px;
+    border-top: solid 15px rgba(0,0,0,0);
+    border-bottom: none;
+    border-radius: 0;
+}
+#ads_left {
+    overflow: hidden !important;
+    display: none !important;
+}
 }

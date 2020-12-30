@@ -2,8 +2,8 @@
 @name           Anilist Hossori
 @namespace      USO Archive
 @author         Slick Boy D
-@description    `This userstyle gives the site a slicker look. Also supports all site themes.Also works together with hoh's script. -> https://greasyfork.org/en/scripts/370473-aniscripts`
-@version        20201122.16.39
+@description    `This userstyle gives the site a sleeker look. Also supports all site themes.Also works together with hoh's script. -> https://greasyfork.org/en/scripts/370473-aniscripts`
+@version        20201230.2.34
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown colortheme "Color Theme" {
@@ -618,7 +618,7 @@ hohcorrecton "On" <<<EOT /*UI correction(ACTIVATE ONLY IF YOU'RE USING HOH'S USE
 	background: grey!important;
 }
 .site-theme-dark::-webkit-scrollbar-thumb{
-	background: rgba(var(--color-foreground-grey-dark))!important;
+	background: rgba(var(--color-foreground-grey-light))!important;
 }
 .text ::-webkit-scrollbar, .about ::-webkit-scrollbar,
 .activity-text ::-webkit-scrollbar, .input.el-textarea ::-webkit-scrollbar{
@@ -769,10 +769,10 @@ div,
 /*Donator Badge alignment*/
 .details > .donator-badge{
 	left: 100px!important;
-	padding:3px 5px 3px 5px!important;
-	top: 108%!important;
-	background: rgba(var(--color-foreground-blue))!important;
+	top: 100%!important;
 	transform: translate(0px, -34px);
+	padding:4px 5px 3px 5px!important;
+	background: rgba(var(--color-foreground-blue))!important;
 	font-size: 1rem!important;
 }
 #app > div.page-content > div > div > div.activity-feed-wrap > div.activity-feed > div:nth-child(n) > div.wrap > div.list > div > div.donator-badge,
@@ -1401,8 +1401,13 @@ h2.section-header.link:hover {
 	color: rgb(255, 255, 255);
 	filter: drop-shadow(0 0 3px rgb(0, 0, 0));
 	position: absolute;
-	z-index: 999;
 	border-radius: 50px;
+	z-index: 99;
+}
+.medialist.cards .entry-card .notes:before{
+	left: -37px;
+	min-width: 200px;
+	z-index: 100!important;
 }
 .medialist.cards .list-section .list-entries {
 	grid-gap: 24px;
@@ -1467,9 +1472,6 @@ h2.section-header.link:hover {
 }
 .status:first-letter {
 	text-transform: uppercase;
-}
-.medialist.cards .entry-card .notes, .medialist.cards .entry-card .repeat{
-	z-index:99!important;
 }
 .medialist.cards .entry-card .release-status {
     height: 15px;
