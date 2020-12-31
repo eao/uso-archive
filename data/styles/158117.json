@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "douyu",
     "createdAt": "2018-04-06T04:34:08.000Z",
-    "updatedAt": "2020-12-30T07:20:41.000Z",
+    "updatedAt": "2020-12-31T05:23:19.000Z",
     "license": "CC-BY-NC-ND-4.0",
     "author": {
       "id": 586088,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 1676,
-      "weekly": 10
+      "total": 1681,
+      "weekly": 14
     },
     "rating": 3
   },
@@ -241,7 +241,7 @@
           {
             "key": "Scrollbar_ON",
             "label": "开",
-            "value": "     ::-webkit-scrollbar {\r\n        width: 6px!important;\r\n        height: 6px!important;\r\n    }\r\n     ::-webkit-scrollbar-track-piece {\r\n        background-color: #141414!important;\r\n        -webkit-border-radius: 0!important;\r\n    }\r\n     ::-webkit-scrollbar-thumb:vertical {\r\n        height: 5px!important;\r\n        background-color: #424242!important;\r\n        -webkit-border-radius: 6px!important;\r\n    }\r\n     ::-webkit-scrollbar-thumb:horizontal {\r\n        width: 5px!important;\r\n        background-color: #424242!important;\r\n        -webkit-border-radius: 6px!important;\r\n    }",
+            "value": "::-webkit-scrollbar {\r\n\twidth: 6px!important;\r\n\theight: 6px!important;\r\n}\r\n\r\n::-webkit-scrollbar-track-piece {\r\n\tbackground-color: #141414!important;\r\n\t-webkit-border-radius: 0!important;\r\n}\r\n\r\n::-webkit-scrollbar-thumb:vertical {\r\n\theight: 5px!important;\r\n\tbackground-color: #424242!important;\r\n\t-webkit-border-radius: 6px!important;\r\n}\r\n\r\n::-webkit-scrollbar-thumb:horizontal {\r\n\twidth: 5px!important;\r\n\tbackground-color: #424242!important;\r\n\t-webkit-border-radius: 6px!important;\r\n}\r\n\r\n::-webkit-scrollbar-corner {\r\n\tbackground-color: #141414!important;\r\n\t-webkit-border-radius: 0!important\r\n}",
             "default": true
           },
           {

@@ -1,21 +1,21 @@
 /* ==UserStyle==
-@name           R.E.S.F. - Education Sans Frontieres-Dark/Grey v.1
+@name           R.E.S.F. Education Sans Frontieres-Dark/Grey v.13
 @namespace      USO Archive
 @author         decembre
-@description    `Pour une Interface plus lisible (à mon gout...)de ce bel outil que met à notre disposition R.E.S.F. (Réseau Education Sans Frontières).Afin de contrer les lois iniques qui menacent d’expulsion les élèves et parents d’élèves sans papiers, n'hésitez pas à le visiter (et à les soutenir...) !LIEN du Site : http://www.educationsansfrontieres.org/`
-@version        2019914.17.16
+@description    `Pour une Interface plus lisible (à mon gout...)de ce bel outil que met à notre disposition R.E.S.F. (Réseau Education Sans Frontières).Afin de contrer les lois iniques qui menacent d’expulsion les élèves et parents d’élèves sans papiers, n'hésitez pas à le visiter (et à les soutenir...) !Ancienne adresse : http://www.educationsansfrontieres.org/Nouvelle adresse (Octobre 2020):<a href="https://reseau-resf.fr/">Réseau Éducation Sans Frontières (Resf) - Nouveau Site</a>`
+@version        20201231.1.22
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document domain("www.educationsansfrontieres.org") {
+@-moz-document domain("www.educationsansfrontieres.org"), domain("reseau-resf.fr") {
 
 
-/* ==== 0- R.E.S.F. - Education Sans Frontieres - v.12 ====  */
+/* ==== 0- R.E.S.F. Education Sans Frontieres-Dark/Grey v.13 ====  */
 
-/* (new4) - COOKIE MESSAGE - === */
-.chapo {
+/* (new14) - COOKIE MESSAGE - === */
+.chapo:not(.crayon) {
   border-bottom: 1px dotted lightgrey;
   border-top: 1px dotted lightgrey;
   font-family: Verdana,Arial,Sans,sans-serif;
@@ -26,25 +26,16 @@
   position: absolute !important;
   top: -91px !important;
   width: 314px !important;
+/* color: red !important; */
 }
-/* (new4) - correctionpour
+
+/* (new13) - correctionpour
 http://www.educationsansfrontieres.org/spip.php?article51382
 === */
-.autobr {
-  display: none !important;
-}
 .contenu_article .chapo + .texte {
 width: 87%!important;
 }
-/* (new4)- correction pour
-http://www.educationsansfrontieres.org/article48821.html 
-=== */
 
-/* (new8) PIED DE PAGE - SUPP - === */
-.autobr ,
-#pied {
-  display: none !important;
-}
 
 /* (new4) PETITIONS VISITED - === */
 .la a:visited h2 ,
@@ -212,7 +203,8 @@ display: inline-block !important;
     border-top: 1px dotted lightgrey;
     text-align: left !important;
 }
-.cartouche>div:not(.ancre1):not(#date_article) {
+/* (new13) */
+.cartouche>div:not(.ancre1):not(#date_article):not(.d-sm-flex) {
     color: peru !important;
     font-size: 8pt;
     margin-top: -201px !important;
@@ -685,15 +677,7 @@ color:#6583BF !important;
 text-transform:capitalize !important;
 }
 
-/* GENERAL COLOR TEXT - === */
-body {
-    color: grey !important;
-}
 
-/* PETITION - REPONSE - === */
-.reponse_formulaire {
-    color: #B1B1B1 !important;
-}
 
 /* ====== TESt ======== */
 
@@ -1357,18 +1341,21 @@ a {
 
 
 
-/* (new8) INFOS */
+/* (new13) INFOS */
 .surtitre {
-    display: inline-block !important;
-/*     top: -27px !important; */
-    float: left !important;
-    background-color: #CC1414 !important;
-    border-bottom: 1px solid lightgrey;
-    border-right: 1px solid lightgrey;
-    border-radius: 5px 5px 5px 5px !important;
-    box-shadow: 0 0 4px #999999 !important;
     position: relative !important;
+    display: inline-block !important;
+    float: left !important;
+/*     top: -27px !important; */
+    padding: 2px 5px !important;
+    border-radius: 5px  !important;
+box-shadow: 0 0 4px #999999 !important;
+/* background-color: #CC1414 !important; */
 }
+.cartouche>h2 {
+    display: inline-block !important;
+}
+
 .cartouche, .cartouche>h1>font {
     color: #AE2020 !important;
     padding: 8px;
@@ -1560,33 +1547,12 @@ width: 100%!important;
 .texte p[style="margin-left:35.4pt;"] + p >.autobr + img {
     background-color: red !important;
 display: inline-block !important;
-/* position: relative !important; */
 float: none !important;
 height: 360px !important;
 width: auto !important;
-/* width: 100%!important; */
-/* text-align: center; */
     z-index: 10 !important;
 }
 
-
-
-
-/* PAGES SPECIALES === */
-/* QUe mettre ici" - Petition - A VOIR - 
-html>body {
-    color: #969595 !important;
-    font-size: 17px !important;
-padding:100px !important;
-width:850px !important;
-}
-html > body > b {
-    color: #911212 !important;
-    font-size: 19px !important;
-    margin-left: 50px !important;
-    padding-right: 10px !important;
-    padding-top: 2px !important;
-} === */
 
 html>body>a {
     color: #648B99 !important;
@@ -1597,46 +1563,88 @@ html>body>a {
 html>body>img {
     padding: 0 5px !important;
 }
-/* Page - Faire Connaitre Petition/Infos - A VOIR - 
-html>body>table {
-    height: 387px !important;
-    margin-left: -92px !important;
-    margin-top: -94px !important;
-    table-layout: fixed;
-    width: 1005px !important;
+
+/* (new13) NEW SITE =====*/
+
+.card, 
+.well {
+    padding: 5px !important;
+    border-radius: 5px;
 }
-html>body>p {
-    margin-left: -81px !important;
-    margin-top: -88px !important;
-    width: 943px !important;
+.crayon.article-texte-705.texte.surlignable>p:nth-child(n + 2){
+    padding: 5px !important;
+    border-radius: 5px;
+}
+/* p:-moz-only-whitespace {
+  display: none !important;
+} */
+/* ====== COLOR ======== */
+
+/* (new13) COLOR - LINK - PERU */
+a {
+    color: peru !important;
+    text-decoration: none !important;
 }
 
-#xEditingArea > iframe {
-    height: 312px !important;
-    width: 900px !important;
-margin-left:20px !important;
-margin-right:-900px !important;
-display:inline-block !important;
-} === */
+/* (new13) COLOR - LINK - VISITED- TAN */
+a:visited {
+    color: tan !important;
+}
 
 
+/* (new13) LINK - HOVER */
+.la.pas_recent > a:hover, 
+.la.recent_j > a:hover, 
+.la.recent_s > a:hover, 
+.texte > p > a:hover {
+    color: peru !important;
+}
+
+
+/* (new13) GENERAL COLOR TEXT - GRAY */
+.chapo ,
+h1, 
+.h1, 
+.h1-like, 
+h2, .h2, 
+.h2-like, 
+h3, .h3, 
+.h3-like, 
+h4, 
+.h4, 
+.h4-like, 
+h5, .h5, 
+.h5-like, 
+h6, .h6, 
+.h6-like  ,
+body {
+    color: grey !important;
+}
+
+/* COLOR - DIVERS - PETITION - REPONSE */
+.reponse_formulaire {
+    color: #B1B1B1 !important;
+}
+
+/*  COLOR - TXT - PERU */
 #bandeau > div ,
-body, 
+/* body,  */
 #navigation, 
 .encart, 
 .formulaire_spip {
     font-family: Verdana,Arial,Sans,sans-serif !important;
-color: peru !important;
+    color: peru !important;
 }
 
 
-/* (new2) - CHRONIQUE DE L'INNOMABLE - TXT - 
-http://www.educationsansfrontieres.org/article43937.html
-=== */
+/*  COLOR - GOLD */
+.long .publication time {
+    font-family: "Rubik Bold",Verdana,sans-serif;
+color: gold !important;
+}
 
-/* ROUGE BRIQUE */
+/* COLOR - ROUGE BRIQUE */
 .texte>p>b>span[style="color: blue;"] ,
-
 .texte>span[style^="color: rgb(153, 51, 0);"] ,
 .texte>span>strong>span[style="color: rgb(128, 0, 0);"] ,
 #principal.contenu .texte>p>b>span[style^="color: rgb(153, 51, 0);"] ,
@@ -1652,7 +1660,8 @@ span[style="color: rgb(153, 51, 0);"] ,
 .texte>span>span[style="color: rgb(153, 51, 0);"] {
     color: rgb(153, 51, 0) !important;
 }
-/* VERT*/
+
+/* COLOR - VERT */
 .texte>span[style="color: rgb(51, 153, 102);"] b span ,
 .texte span b span[style="color: green;"] ,
 .texte>span>span>span[style="color: rgb(51, 153, 102);"] ,
@@ -1661,7 +1670,8 @@ span[style="color: rgb(153, 51, 0);"] ,
 .texte>span>span[style="color: rgb(51, 153, 102);"] {
 color: rgb(51, 153, 102) !important;
 }
-/* ROUGE */
+
+/* COLOR - ROUGE */
 .texte>b>span[style^="color: red;"] ,
 .texte>span>b>span[style="color: red;"] ,
 .MsoNormal>b>span[style="color: red;"] ,
@@ -1670,7 +1680,8 @@ color: rgb(51, 153, 102) !important;
 .texte>span[style="color: rgb(255, 0, 0);"] {
 color: red !important;
 }
-/* BLUE */
+
+/* COLOR - BLUE */
 .texte>span>span[style="color: rgb(0, 0, 255);"] ,
 .texte>span[style="color: rgb(0, 0, 255);"] b span ,
 .MsoNormal>b>span[style="color: blue;"] ,
@@ -1679,9 +1690,14 @@ color: red !important;
 .texte>span[style="color: rgb(0, 0, 255);"] ,
 .MsoNormal>b>span[style="color: blue;"]{
     color: blue !important;
-background: transparent !important;
+    background: transparent !important;
 }
+
+
+/* ==== COLOR - BACKGROUND ===== */
+
 /* BACKGROUND TRANSPARENT */
+
 .texte>span>span>span>strong>span[style^="background: white;"] ,
 .texte>span>strong>span>span[style^="background: white;"] ,
 .texte>span>span[style^="background: white;"] ,
@@ -1691,12 +1707,59 @@ background: transparent !important;
 .texte>span>strong>span[style^="background: white;"] ,
 .texte>span[style^="background: white;"] ,
 .texte>span[style="color: rgb(0, 0, 255);"] b {
-background: transparent !important;
+    background: transparent !important;
 }
-/* (new4) A SUPP - CACHE TOUS les textes des petitions - SUPP PARAGRAPHES VIDES */
-/* .texte>p:not([class="MsoNormal"]) {
-display: none !important;
-} */
+
+/* BACKGROUND -  #222 */
+.card, 
+.well ,
+hr ,
+.row_first th ,
+.nav-pills .nav-link.active, 
+.nav-pills .active.menu-items__lien, 
+.nav-pills .show > .nav-link, 
+.nav-pills .show > .menu-items__lien ,
+.navbar-expand-md .navbar-collapse ,
+.footer ,
+.well {
+    background-color: #222 !important;
+}
+
+
+.crayon.article-texte-705.texte.surlignable>p:nth-child(n + 2){
+    background-color: #333 !important;
+}
+
+/* BACKGROUND - BLUE GRAY/BLACK - #3D4B4A */
+
+.bandeau {
+    background-color: #3D4B4A !important;
+}
+
+
+/* (new13) COLOR - SVG - RED */
+.liste.articles, 
+.card, 
+.rubrique > header, 
+.rubrique-deuxieme-niveau > header, 
+.rubrique-collectif > header, 
+.page_article article aside, 
+.agenda-collectif {
+    background-image: url("data:image/svg+xml,%3csvg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 6 8\'%3e%3cline x1=\'0\' y1=\'8\' x2=\'3\' y2=\'0\' stroke=\'red\' stroke-width=\'1\' /%3e%3c/svg%3e") !important;
+    background-position: center bottom;
+    background-repeat: repeat-x;
+    background-size: 6px 8px;
+/* stroke: red !important; */
+
+}
+
+
+/* (new13) BACKGROUD - FOR IMG - WHITE */
+.img-fluid {
+    background: white !important;
+}
+
+
 /* ============== END =============== */
 
 }

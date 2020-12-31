@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `Github项目地址：https://github.com/QIUZAIYOU/Stylish—— （根据本人自己的使用习惯制作，所以...你懂的 ）——⭐如有问题请到我的网站【www.asifadeaway.com】点击右下角会话按钮给我留言⭐1、常用页面夜间模式全覆盖2、去除广告3、去除导航栏中游戏等无用杂项4、部分icon更换使之更符合当前主题5、自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素`
-@version        20201230.7.20
+@version        20201231.5.23
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -37,24 +37,32 @@ RoomVipIcon_OFF "关" <<<EOT /*[[RoomVipIcon]]*\/ EOT;
 
 }
 @advanced dropdown Scrollbar "浏览器滚动条样式更改" {
-	Scrollbar_ON "开*" <<<EOT      ::-webkit-scrollbar {
-        width: 6px!important;
-        height: 6px!important;
-    }
-     ::-webkit-scrollbar-track-piece {
-        background-color: #141414!important;
-        -webkit-border-radius: 0!important;
-    }
-     ::-webkit-scrollbar-thumb:vertical {
-        height: 5px!important;
-        background-color: #424242!important;
-        -webkit-border-radius: 6px!important;
-    }
-     ::-webkit-scrollbar-thumb:horizontal {
-        width: 5px!important;
-        background-color: #424242!important;
-        -webkit-border-radius: 6px!important;
-    } EOT;
+	Scrollbar_ON "开*" <<<EOT ::-webkit-scrollbar {
+	width: 6px!important;
+	height: 6px!important;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #141414!important;
+	-webkit-border-radius: 0!important;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	height: 5px!important;
+	background-color: #424242!important;
+	-webkit-border-radius: 6px!important;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	width: 5px!important;
+	background-color: #424242!important;
+	-webkit-border-radius: 6px!important;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: #141414!important;
+	-webkit-border-radius: 0!important
+} EOT;
 Scrollbar_OFF "关" <<<EOT /*[[Scrollbar]]*\/ EOT;
 
 }

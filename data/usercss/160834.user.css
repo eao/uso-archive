@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Knight Yoshi
 @description    `This will restyle Funimation to remove the harsh, bright white colors, making it easier on the eyes.<br><br>It also makes the video player bigger, to make it easier to watch without being in fullscreen.`
-@version        2020121.3.12
+@version        20201231.3.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -28,7 +28,8 @@ body.show-details .navbar-default .navbar-nav > .active,
 li.comment,
 .navbar-default,
 .funimation-includes header,
-[style="background-color:#f2f2f2;"] {
+[style="background-color:#f2f2f2;"],
+#funimation-popover-settings.funimation-popover ul.flex-row-custom li.flex-column-custom > ul.sidebar-sub-menu {
     background: #333 !important;
     color: #fefefe;
 }
@@ -97,7 +98,8 @@ header #trigger span,
     color: #e30046;
 }
 
-img[src$="purple.png"] {
+img[src$="purple.png"],
+.funimation-popover ul li a.arrow-sub-menu-toggle {
 	filter: grayscale(100%) contrast(0.6) invert(1);
 }
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `Dark mode for app.fluencia.com`
-@version        20201230.19.11
+@version        20201231.5.25
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -29,7 +29,9 @@ body:not(.body-fresh) .input .number-list .number,
 .unit-list-item-title,.unit-list-item-count,
 .unit-list-item-description,
 body:not(.body-fresh) .input .input-second-attempt,
-.progress-widget-text-description {
+.progress-widget-text-description,
+.modal-general .modal-title,
+.modal-general .modal-body {
     color: #ddd !important;
 }
 .plans-list-feature-title,
@@ -151,7 +153,15 @@ body:not(.body-fresh) #quiz-question .tip {
     border-radius: 4px;
 }
 body:not(.body-fresh) .feedback .feedback-item-0 {
-    background-color: hsl(283, 50%, 35%);
+    background-color: hsl(205, 50%, 35%);
+}
+body:not(.body-fresh) .feedback .feedback-item-1 {
+    background-color: hsl(285, 50%, 35%);
+    margin: 5px 0px;
+}
+body:not(.body-fresh) .verb-table .text-highlighted,
+body:not(.body-fresh) .feedback-note {
+    color: hsl(55, 70%, 65%);
 }
 body:not(.body-fresh) .input .input-second-attempt {
     background: #444;
@@ -247,10 +257,6 @@ hr {
 .voice-area tspan {
     fill: #ddd;;
 }
-body:not(.body-fresh) .verb-table .text-highlighted,
-body:not(.body-fresh) .feedback-note {
-    color: hsl(200, 100%, 50%);
-}
 body:not(.body-fresh) .input .number-list-disabled .choice-error, body:not(.body-fresh) .input .number-list-disabled .choice-success {
     background-color: #444;
 }
@@ -258,7 +264,7 @@ body:not(.body-fresh) .input .number-list li:hover {
     background-color: #555;
 }
 .images-area .choice-success:hover .image-label {
-    background: #8dd101;
+    background: hsl(80, 85%, 40%);
 }
 body:not(.body-fresh) .help-bar-icons a {
     background: #444;
@@ -273,5 +279,31 @@ body:not(.body-fresh) .help-bar-icons .toggle-accent {
 }
 body:not(.body-fresh) .feedback #diff-container .ins {
     color: #8bd001;
+}
+.modal-general .modal-holder {
+    background: #333;
+}
+.modal-footer {
+    background-color: #444;
+    border-top: 1px solid #333;
+    box-shadow: inset 0 1px 0 #555;
+}
+.modal-general {
+    border: 10px solid #555;
+    background: #555;
+    box-shadow: 0 1px 0 #666;
+}
+.close,
+.close:hover, .close:focus{
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+}
+.quiz-loading .quiz-loading-activity[class*="ico-"] {
+    background: #999;
+    box-shadow: 0 0 0 0 #777;
+}
+[class^="ico-"], [class*=" ico-"] {
+    color: #333;
+    box-shadow: 0 -1px 0 0 #555 inset;
 }
 }
