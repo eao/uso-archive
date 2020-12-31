@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Simon Nemeth
 @description    `Something to make the new Facebook more manageable. I'm not great at this so it may be messy but it works.`
-@version        20201226.1.55
+@version        20201230.18.3
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -28,17 +28,32 @@ html {
 .sp_JPRtGa-kpmy.sx_982e53 {
     filter: invert(1) drop-shadow(0px 0px 2px #3b5998);
 }
-.sp_TWKtw99AXcM.sx_bb6842 {
-    filter: invert(1) drop-shadow(0px 0px 2px #3b5998);
-}
 .sp_CGrnM02I_-x.sx_2fcf97 {
     filter: invert(1) drop-shadow(0px 0px 2px #3b5998);
 }
 .n3ffmt46 {
     font-weight: 500;
 }
+.d2edcug0.hpfvmrgz.qv66sw1b.c1et5uql.rrkovp55.a8c37x1j.keod5gw0.nxhoafnm.aigsh9s9.d9wwppkn.fe6kdd0r.mau55g9w.c8b282yb.mdeji52x.sq6gx45u.j5wam9gi.lrazzd5p.oo9gr5id {
+    margin-bottom: 8px;
+}
+.g1cxx5fr {
+    line-height: 26px;
+}
+.a5q79mjw {
+    font-size: 1.0625rem;
+}
+.gfeo3gy3 {
+    font-size: .9375rem;
+}
 .q66pz984 {
     color: #000 !important;
+}
+.w0hvl6rk {
+    margin-bottom: 8px;
+}
+.qjjbsfad {
+    margin-top: 8px;
 }
 .hop1g133 {
     border-top-right-radius: 8px;

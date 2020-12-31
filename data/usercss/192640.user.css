@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        20201229.12.25
+@version        20201230.19.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -230,4 +230,12 @@ input.css-1vgh1xx{ color: #000 !important;}
 .bUKhCu{ background-color: #202020 !important;}
 .breadcrumb-item:last-child, .breadcrumb-item:last-child a{ color: #848e9c !important;}
 .boMvyw .content .title, .boMvyw .content .desc.detail, .boMvyw .date{ color: #fff !important;}
+}
+
+@-moz-document regexp("https://www.binance.com/.+/busd") {
+/* BUSD Page */
+.css-1uqw7h5, .css-9taffg{ background-color: #fff !important;}
+.bnc-collapse, .css-fgdug3, .bnc-collapse-content > .bnc-collapse-content-box, .css-urilx2{ background-color: #202020 !important;}
+.css-1djzycp, .css-efl5ww, .css-12sic20, .css-1a5vpzx, .css-1q1zkhd, .css-usctw5, .css-1c3fw5u, .css-cmf86e, .css-17cjw2q{ color: #fff !important;}
+.css-1bvx4id .bnc-collapse-header{ color: #76808F !important;}
 }

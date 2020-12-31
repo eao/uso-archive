@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sara Is a Fag
 @description    `Simple minimalistic theme. I made for myself.Removed background image, some ad banners and sponsored recommendations.`
-@version        20201219.6.51
+@version        20201230.12.58
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -135,9 +135,9 @@ i, cite, em, var, address, dfn {font-style: normal;} /*Убирает Курси
 .follower-btn .follower-btn-add-follower {font-size: 0px;} /*Удаляет Текст*/
 
 /*Почта*/
-.header .header-message-user:before {background-image: url(https://i.imgur.com/iCCG7wp.png);}
+.header .header-message-user:before {background-image: url(https://i.imgur.com/wfNIaWt.png);}
 .header .header-message-user:before {width: 163px; height: 43px; margin-left: -147px; margin-top: -25px;}
-.header .header-message-user:hover:before, .header .header-message-user:focus:before {background-image: url(https://i.imgur.com/ygsIGyC.png);}
+.header .header-message-user:hover:before, .header .header-message-user:focus:before {background-image: url(https://i.imgur.com/KOl6BgA.png);}
 /*.header .header-message-user:hover:before {width: 130px; height: 43px; margin-left: -115px; margin-top: 10px;}*/
 .header--overview .header-info-secondary {padding-right: 175px;}
 
