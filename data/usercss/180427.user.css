@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justonsant ³
 @description    `Полностью чёрный стиль для Drive2 FullBlack style for Drive2О багах сообщите мне:https://vk.com/justonsant`
-@version        2020810.20.36
+@version        202111.0.55
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,7 +15,8 @@ html {filter:invert(100%); background-color:#000;}
 img {filter:invert(100%);}
 .c-top {filter:invert(100%);}
 
-
-/*29.7.20
-[class^=c-bubble-^] {filter:invert(100%);}*/
+[class^=c-bubble__body] {filter:invert(100%);}
+[class^=c-car-info] {background-color: #fff;}
+[class^=c-car-info__caption] {color: #000;}
+strong {filter:invert(100%);}
 }

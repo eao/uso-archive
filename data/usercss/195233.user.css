@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TheLegendOfWolf_
 @description    `Blue YouTube.`
-@version        20201231.10.23
+@version        20201231.18.20
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -844,6 +844,35 @@ paper-listbox.yt-dropdown-menu {
     padding: 4px 0;
 }
 
+
+/*mały pasek przy napisach*/
+
+
+
+.ytp-chrome-controls .ytp-button[aria-pressed]:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    border-radius: 2px;
+    width: 0;
+    left: 45px;
+    bottom: 6px;
+    background-color: #12a0FF;
+    -moz-transition: left .1s cubic-bezier(0.4,0.0,1,1),width .1s cubic-bezier(0.4,0.0,1,1);
+    -webkit-transition: left .1s cubic-bezier(0.4,0.0,1,1),width .1s cubic-bezier(0.4,0.0,1,1);
+    transition: left .1s cubic-bezier(0.4,0.0,1,1),width .1s cubic-bezier(0.4,0.0,1,1);
+}
+
+
+
+/*komy v2*/
+
+
+#text.style-scope.ytd-button-renderer{
+color: #12A0FF;
+
+}
 
 
 

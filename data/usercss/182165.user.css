@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.top - (New, Dec. 2020)poal.cosaidit.netvoat.coconspiracies.win - (New, Dec. 2020)thedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201231.8.34
+@version        20201231.20.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -1281,8 +1281,10 @@ div.side div.spacer div.linkinfo div.date span:after
 .kEQVd8aneM1tVkcIKUyDT,
 
 /*Cookies*\/
+#eu-cookie-policy,
 .cookie-consent,
-.show-cookie-popup .cookie
+.show-cookie-popup .cookie,
+._3q-XSJ2vokDQrvdG6mR__k
 {
     display:none!important;
 } EOT;
@@ -1298,8 +1300,10 @@ EmailNo "Hide E-Mail reminders" <<<EOT /*E-Mail reminders Removed*\/
 } EOT;
 CookiesNo "Hide Cookies reminders" <<<EOT /*Cookie reminders Removed*\/
 
+#eu-cookie-policy,
 .cookie-consent,
-.show-cookie-popup .cookie
+.show-cookie-popup .cookie,
+._3q-XSJ2vokDQrvdG6mR__k
 {
     display:none!important;
 } EOT;

@@ -1,25 +1,22 @@
 /* ==UserStyle==
-@name           Goodblox - Classic Theme
+@name           Goodblox ‣ Classic Theme (UPDATED!)
 @namespace      USO Archive
 @author         person299
-@description    `fixes the current event's forced theme and brings back the classic lookother themes can replace the bannerthere's nothing i can do about the snow thingif you don't like anything about it just edit it`
-@version        2020117.4.0
-@license        CC-BY-SA-4.0
+@description    `Fixes event themes and brings back the classic GoodBlox lookThis also fixes older themes that were broken by this new event theme Other themes can replace the banner`
+@version        20201231.19.42
+@license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("goodblox.xyz") {
-/*
-"the" -person#0591
-enjoy
-*/
+body #MasterContainer {
+	background: #fff     
+}
 
 body {
     color: #000;
-    background-color: #fff0;
-    background-image: linear-gradient(-0deg, #fff0, #fff0); /*This basically makes the background white, remove this line for other backgrounds from other themes.*/
 } 
-    
-    #Logo img {
+
+#Logo img {
     content: url("https://goodblox.xyz/resources/logo.png");
 }
 
@@ -30,12 +27,4 @@ body {
 a:link, a:visited, a:active {
     color: Blue;
 }
-    
-
-
-
-
-
-
 }
-

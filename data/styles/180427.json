@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "drive2",
     "createdAt": "2020-02-22T13:58:29.000Z",
-    "updatedAt": "2020-08-10T17:36:25.000Z",
+    "updatedAt": "2021-01-01T00:55:22.000Z",
     "license": "CC-BY-4.0",
     "author": {
       "id": 894869,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 15,
-      "weekly": 1
+      "total": 17,
+      "weekly": 0
     }
   },
   "screenshots": {
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"drive2.ru\"), domain(\"drive2.com\"), domain(\"drive2.ua\") {\r\n/*10.8.20*/\r\nhtml {filter:invert(100%); background-color:#000;}\r\n    body {background-color:#fff;}\r\n\r\nimg {filter:invert(100%);}\r\n.c-top {filter:invert(100%);}\r\n\r\n\r\n/*29.7.20\r\n[class^=c-bubble-^] {filter:invert(100%);}*/\r\n}"
+    "css": "@-moz-document domain(\"drive2.ru\"), domain(\"drive2.com\"), domain(\"drive2.ua\") {\r\n/*10.8.20*/\r\nhtml {filter:invert(100%); background-color:#000;}\r\n    body {background-color:#fff;}\r\n\r\nimg {filter:invert(100%);}\r\n.c-top {filter:invert(100%);}\r\n\r\n[class^=c-bubble__body] {filter:invert(100%);}\r\n[class^=c-car-info] {background-color: #fff;}\r\n[class^=c-car-info__caption] {color: #000;}\r\nstrong {filter:invert(100%);}\r\n}"
   }
 }

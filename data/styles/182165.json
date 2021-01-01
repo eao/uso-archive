@@ -3,11 +3,11 @@
   "info": {
     "name": "Reddit Custom (RES Compatible) - KMV",
     "description": "Reddit Custom Theme - International Version.\r\n\r\nCredit to \"jiRafa\" for request.\r\n\r\nCompatibility:\r\nRES - (https://redditenhancementsuite.com/)\r\nall *.reddit.com domains found to date\r\n(many main-) custom Subreddit themes\r\nsnew.notabug.io\r\nwww.removeddit.com\r\nwww.reveddit.com\r\n4chan.org\r\n8kun.top - (New, Dec. 2020)\r\npoal.co\r\nsaidit.net\r\nvoat.co\r\nconspiracies.win - (New, Dec. 2020)\r\nthedonald.win\r\narchive.fo/is/md/vn\r\nGoogle reCAPTCHA\r\nGoogle Webcache\r\nWaybackMachine (web.archive.org)\r\n\r\nIncludes custom black cursor + pointers based on;\r\nhttps://userstyles.org/styles/175086/\r\n\r\nRecommended add-on: Custom Browser Scrollbars:\r\nhttps://userstyles.org/styles/182441/\r\n\r\n\r\nTested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.\r\n\r\n\r\nPS; Waterfox is a little wonky on custom wallpapers.\r\nIf problems occur, choose \"none\".\r\n\r\n\r\nStylus recommended:\r\nhttps://add0n.com/stylus.html\r\n\r\nContact:\r\nhttps://old.reddit.com/r/KMV/\r\n(all Wallpapers are here as well)",
-    "additionalInfo": "20201231 Differenciated RES Day-/Nightmode Link Ranking Text. Added conspiracies.win Cookie Consent to Cookie Remover.\r\n20201230 Updated media-dim and Tabs on TheDonald.win, added post hovers for poal.co and media dim in sidebar & added Cookie Notification Removals (Reddit currently).\r\n20201226 Updated Coins On Sale Button (Reddit), and cursors.",
+    "additionalInfo": "20201231 Differenciated RES Day-/Nightmode Link Ranking Text. Added Cookie Consent to Cookie Remover to conspiracies.win & New Reddit.\r\n20201230 Updated media-dim and Tabs on TheDonald.win, added post hovers for poal.co and media dim in sidebar & added Cookie Notification Removals (Reddit currently).\r\n20201226 Updated Coins On Sale Button (Reddit), and cursors.",
     "format": "uso",
     "category": "reddit",
     "createdAt": "2020-04-09T00:15:15.000Z",
-    "updatedAt": "2020-12-31T08:34:37.000Z",
+    "updatedAt": "2020-12-31T20:15:09.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 370722,
@@ -625,13 +625,13 @@
           {
             "key": "CookiesNo",
             "label": "Hide Cookies reminders",
-            "value": "/*Cookie reminders Removed*/\r\n\r\n.cookie-consent,\r\n.show-cookie-popup .cookie\r\n{\r\n    display:none!important;\r\n}",
+            "value": "/*Cookie reminders Removed*/\r\n\r\n#eu-cookie-policy,\r\n.cookie-consent,\r\n.show-cookie-popup .cookie,\r\n._3q-XSJ2vokDQrvdG6mR__k\r\n{\r\n    display:none!important;\r\n}",
             "default": false
           },
           {
             "key": "EmailCookieNo",
             "label": "Hide both",
-            "value": "/*Cookie- & E-Mail reminders Removed*/\r\n\r\n/*E-Mail*/\r\n#ecb.email-collection-banner,\r\n.email-collection-banner.footer_2,\r\n.email-collection-content.footer_2,\r\n.kEQVd8aneM1tVkcIKUyDT,\r\n\r\n/*Cookies*/\r\n.cookie-consent,\r\n.show-cookie-popup .cookie\r\n{\r\n    display:none!important;\r\n}",
+            "value": "/*Cookie- & E-Mail reminders Removed*/\r\n\r\n/*E-Mail*/\r\n#ecb.email-collection-banner,\r\n.email-collection-banner.footer_2,\r\n.email-collection-content.footer_2,\r\n.kEQVd8aneM1tVkcIKUyDT,\r\n\r\n/*Cookies*/\r\n#eu-cookie-policy,\r\n.cookie-consent,\r\n.show-cookie-popup .cookie,\r\n._3q-XSJ2vokDQrvdG6mR__k\r\n{\r\n    display:none!important;\r\n}",
             "default": true
           }
         ]
