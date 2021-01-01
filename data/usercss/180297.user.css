@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Pourrito
 @description    `Canta Darker is a theme for Mastodon. It is based on Canta-Dark.· Scrollbar choice :styled: keep as isnative: delete both .column-scroller rulesnone: uncomment rule 2 and delete rule 3`
-@version        20201222.12.6
+@version        202111.7.17
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -76,6 +76,12 @@ div.drawer {
 .account__display-name strong,
 .status__display-name strong {
 	color: var(--blue);
+}
+.display-name__html {
+    font-weight: 400;
+}
+.notification__display-name {
+    font-weight: 400;
 }
 .account__section-headline {
 	background: var(--darkest);
@@ -1054,11 +1060,11 @@ button.icon-button i.fa-retweet:hover {
 	background-color: var(--darkest);
 }
 .modal-root__overlay {
-	background: var(--darkest);
+	background: var(--darkest)!important;
 	opacity: .95
 }
 .media-modal__nav {
-	background: var(--darkest);
+	background: transparent;
 }
 .fa-close::before,
 .fa-remove::before,
@@ -1650,5 +1656,23 @@ button.icon-button.disabled i.fa-retweet {
 }
 .announcements__container {
     background: var(--darkbrown);
+}
+.notification.unread::before, .status__wrapper.unread::before {
+    border-left: none;
+}
+.list-adder__lists {
+    background: var(--darkest);
+}
+.list-adder__account {
+    background: var(--darkest);
+}
+.list-adder .list__display-name {
+    color: var(--blue);
+}
+.column-header__collapsible {
+    color: var(--lightgrey);
+}
+.button.logo-button.disabled:active, .button.logo-button.disabled:focus, .button.logo-button.disabled:hover, .button.logo-button:disabled:active, .button.logo-button:disabled:focus, .button.logo-button:disabled:hover {
+    background: var(--lightgrey);
 }
 }

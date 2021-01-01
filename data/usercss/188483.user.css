@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        20201228.22.56
+@version        202111.10.31
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v6.2*/
+/* Dark Creator Studio v6.3*/
 /* Created by Leon Flame, edited by Lexan*/
 
 /* Dark Scrollbar*/
@@ -1490,6 +1490,63 @@ ytve-captions-editor-caption-segment-line[selected] #row-container.ytve-captions
     color: var(--accent-color);
 }
 
+.visibility-description.ytcp-video-visibility-select, .unlisted-recommended-description.ytcp-video-visibility-select {
+    color: var(--text-darken2-color);
+}
+
+.step.ytcp-stepper:not([disabled]).ytcp-stepper:hover, ytcp-stepper[keyboard-focus] .step.ytcp-stepper:not([disabled]).ytcp-stepper:focus{
+    background: rgba(255, 0, 0, 0.2);
+    transition: .05s;
+}
+
+/*Containers*/ ytcp-introduction-guidance.ytpp-self-certification-questionnaire, .accuracy-notification.ytpp-self-certification-questionnaire, .predictor-wrapper.ytpp-self-certification-predictor, .container.ytcp-uploads-video-elements{
+    background-color: var(--bg3-color);
+    border-radius: 4px;
+}
+
+#container.ytcp-expansion-panel .button-area.ytcp-expansion-panel, #container.ytcp-expansion-panel{
+    border: 0 !important;
+    border-radius: 4px;
+    background-color: var(--bg3-color) !important;
+}
+
+ytpp-channel-scorecard /*YT ADRATES SCORECARD*/{
+    background-color: var(--bg2-color);
+}
+
+.scorecard-subhead.ytpp-channel-scorecard, .meter-percentage.ytpp-channel-scorecard-meter, .cell-body.ytpp-channel-scorecard-row span.ytpp-channel-scorecard-row{
+    color: var(--text-color);
+}
+
+.accuracy-body-text.ytpp-channel-scorecard-accuracy-panel{
+    color: var(--text-darken2-color);
+}
+
+ytpp-channel-scorecard-table{
+    background-color: var(--bg3-color);
+}
+
+#row-container.ytpp-channel-scorecard-row{
+    background-color: var(--bg2-color);
+}
+
+#row-container.row-highlighted.ytpp-channel-scorecard-row{
+    background-color: var(--bg3-color);
+    transition: .09s;
+}
+
+.style-scope.iron-icon[d="M20 18c1.1 0 1.99-.9 1.99-2L22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2H0v2h24v-2h-4zM4 6h16v10H4V6z"]{
+    fill: var(--text-darken2-color);
+}
+
+.notification-left.ytpp-self-certification-questionnaire{
+    border-right: 1px solid var(--divider-color);
+}
+
+#notification-view-ratings.style-scope.ytpp-self-certification-questionnaire{
+    color: var(--accent-color);
+}
+
 /*Cards*/
 .info-card-type-option-container.ytve-info-cards-editor-default-options:hover{
     background-color: var(--item-color) !important;
@@ -2873,10 +2930,6 @@ h2.ytcp-uploads-review {
     color: var(--text-color);
 }
 
-.visibility-description.ytcp-video-visibility-select, .unlisted-recommended-description.ytcp-video-visibility-select {
-    color: var(--text-color);
-}
-
 .description.ytcp-premiere-scheduler {
     color: var(--text-color);
 }
@@ -3909,12 +3962,6 @@ ytcp-thumbnails-compact-editor-uploader[active] .upload-picker.ytcp-thumbnails-c
 
 .predictor-wrapper.ytpp-self-certification-predictor{
     border-radius: 10px;
-}
-
-#container.ytcp-expansion-panel .button-area.ytcp-expansion-panel, #container.ytcp-expansion-panel{
-    border: 0 !important;
-    border-radius: 10px;
-    background-color: var(--bg3-color);
 }
 
 ytcp-badge[state="done"] .container.ytcp-badge, ytcp-badge[state="done"] .container.ytcp-badge iron-icon.ytcp-badge{

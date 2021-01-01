@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         fmla
 @description    `VK full: width auto multicolumn, glass random background image, auto hide nav bar, text shadow.Вконтакте полная: ширина авто по нескольким столбцам, стекляное случайное фоновое изображение, автоматически скрываемые панели навигации, тень текста.`
-@version        2020811.22.27
+@version        202111.12.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -23,7 +23,12 @@ body.no_stl #stl_bg {display: block;}
 
 .side_bar, .body_im .side_bar, .side_bar.sticky_top{position: fixed !important; top: 0px !important; left: 8px !important; width: 40px !important; margin: 0 0 0 12px !important;}
 .left_count_wrap {padding: 4px 2px;}
-.side_bar:hover, .side_bar.sticky_top:hover {width: 105px !important; z-index: 200 !important; background: #fff;}
+#side_bar ol li .left_row {-ms-flex-align: left !important; align-items:  left !important; width: 100% !important;}
+#side_bar ol {margin: 0 0 0 -6px !important;}
+#side_bar ol li .left_row {border-radius: 0 !important; padding: 0 0 !important;}
+#side_bar ol li {margin-left: 0 !important;}
+#side_bar .left_icon {margin: 0 !important;}
+.side_bar:hover, .side_bar.sticky_top:hover, #side_bar ol li:hover, #side_bar ol li .left_row:hover {width: 105px !important; z-index: 200 !important}
 .body_im .side_bar {left: 0px !important; padding: 0 0 0 20px !important;  margin : 0 0 !important}
 .nim-dialog {padding: 0 0 0 2px !important;}
 .nim-dialog .nim-dialog--photo {padding: 9px 2px 8px 0;}

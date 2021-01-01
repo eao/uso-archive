@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `FirefoxWork fine with google search.The others google's site are just randomly green or abandoned.firefox`
-@version        20201210.11.19
+@version        202111.6.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -402,7 +402,7 @@
 @-moz-document regexp('http(s)?://www\.google\.((\\S{2,3})(\.(\\S{2,3}))?)/'){
   /*index*/  /*index*/  /*index*/
   #searchform{}
-  #searchform>.sfbg{background:transparent!important;}
+  #searchform>.sfbg{background:#000!important;margin:-30px auto 0!important;}
   #searchform>.sfbg>.sfbgg{background:transparent!important;}
 }
 @-moz-document regexp('http(s)?://www\.google\.((\\S{2,3})(\.(\\S{2,3}))?)/.*'){
@@ -462,7 +462,7 @@
 
   /*top search option bar*/  /*top search option bar*/  /*top search option bar*/
   #searchform{}
-  #searchform>.sfbg{background:#000!important;}
+  #searchform>.sfbg{background:#000!important;margin:-30px auto 0!important;}
   #searchform>.sfbg>.sfbgg{background:transparent!important;}
   /**/#hdtbSum, #appbar{background:#000!important;}
   /**/#hdtb-msb .hdtb-imb:hover a{background:#050!important;}
@@ -557,6 +557,7 @@
   /*title*/ #res .g .rc>div:nth-child(1)>a>h3        {font:30px/100% arial!important;color:#c60!important;padding:0px!important;margin:0px!important;white-space:nowrap!important;display:block!important;overflow:visible!important;}
   /*title*/ #res .g .rc>div:nth-child(1)>a:visited>h3{color:#860!important;}
   /*title*/ #res .g .rc>div:nth-child(1)>a>h3 *{font-size:inherit!important;line-height:inherit!important;color:inherit!important;display:block!important;overflow:visible!important;}
+  /*title*/ #res .g .rc>div:nth-child(1)>a>h3>.newtabicon{display:none!important;}
   /*btn*/   #res .g .rc>div:nth-child(1)>div{display:none!important;}
   /*desc*/  #res .g .rc>div:nth-child(2){max-width:initial!important;padding:3px 0 0!important;}
   /*date*/  #res .g .rc>div:nth-child(2)>div{}
@@ -564,8 +565,11 @@
   /*date*/  #res .g .rc>div:nth-child(2)>div>span>.f{font:20px/100% arial!important;color:#0af!important;}
   /*descHL*/#res .g .rc>div:nth-child(2)>div>span>em{color:#a11!important;background:#000!important;}
   /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc          {width:100%!important;padding:5px 10px 10px 60px!important;margin:0px!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div      {font:22px/100% arial!important;}
+  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div      {font:22px/100% arial!important;overflow:visible!important;}
   /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div:hover{background:#063!important;}
+  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div>*    {overflow:visible!important;}
+  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div>*>*  {overflow:visible!important;}
+  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div>*>*>*{overflow:visible!important;}
   /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a:link   {color:#960!important;}
   /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a:visited{color:#888!important;}
   /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a:hover  {color:#c60!important;}
@@ -606,6 +610,11 @@
   
   
   /*video OLD*/
+  /*video*/ #res g-section-with-header{}
+  /*video*/ #res g-section-with-header g-fab      {background:#246!important;}
+  /*video*/ #res g-section-with-header g-fab:hover{background:#434!important;}
+  /*video*/ #res g-section-with-header .MXl0lf      {background:#246!important;}
+  /*video*/ #res g-section-with-header .MXl0lf:hover{background:#434!important;}
   /*video*/ #res g-section-with-header>.e2BEnf.U7izfe{}/*title*/
   /*video*/ #res g-section-with-header .mR2gOd{overflow:visible!important;}
   /*video*/ #res g-section-with-header .mR2gOd~*{display:none!important;}

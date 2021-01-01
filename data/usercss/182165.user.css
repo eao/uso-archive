@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.top - (New, Dec. 2020)poal.cosaidit.netvoat.coconspiracies.win - (New, Dec. 2020)thedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        20201231.20.15
+@version        202111.8.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -642,6 +642,7 @@ RCPostH-15 "+15px" <<<EOT /* Option chosen: [+10px] *\/
 @advanced dropdown RCPostHighlight00 "Post Hover Effect (Under development)" {
 	RCPostHighlight01 "Increased Brightness*" <<<EOT /*Option Chosen - [Increased Brightness]*\/
 
+._1oQyIsiPHYt6nx7VOmd1sz._1RYN-7H8gYctjOQeL8p2Q7.scrollerItem:hover,
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
 div.alldaposts div.post,
 div.alldaposts div.post div.expando-master:hover,
@@ -701,6 +702,7 @@ dark-theme .post-list div.post:focus-within
 {
     transition:2s!important;
 }
+._1oQyIsiPHYt6nx7VOmd1sz._1RYN-7H8gYctjOQeL8p2Q7.scrollerItem:hover,
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
 div.alldaposts div.post,
 div.alldaposts div.post div.expando-master:hover,
@@ -761,6 +763,7 @@ dark-theme .post-list div.post:focus-within
 } EOT;
 RCPostHighlight05 "Background + Increased Brightness" <<<EOT /*Option Chosen - [Background + Increased Brightness]*\/
 
+._1oQyIsiPHYt6nx7VOmd1sz._1RYN-7H8gYctjOQeL8p2Q7.scrollerItem:hover,
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem,
 div.alldaposts div.post,
 div.alldaposts div.post div.expando-master:hover,
@@ -947,35 +950,7 @@ section.description.box.col.col-12 div.col.col-12 span[style="display:inline-blo
 /*                                       *\/
 /* https://userstyles.org/styles/184078/ *\/
 /*                                       *\/
-/*---------------------------------------*\/
-
-/*
-
-[id*="Award"],
-[id*="Coin"],
-[class*="award"],
-.giftgold,
-
-/*Top Bar "Get Coins" Button
-.jEUbSHJJx8vISKpWirlfx,
-._2LeW9tc_6Fs1n7Ou8uD-70,
-
-/*"Reddit Coins" inside Top Menu
-a._1YWXCINvcuU7nk0ED-bta8:nth-child(7),
-
-/*"Give Award" under posts
-.gold-give-gold,
-._10K5i7NW6qcm-UoCtpB3aK.YszYBnnIoNY8pZ6UwCivd._3yh2bniLq7bYr4BaiXowdO._1EWxiIupuIjiExPQeK4Kud._28vEaVlLWeas1CDiLuTCap,
-/*Awards besides Title
-._3XoW0oYd5806XiOr24gGdb,
-/*"Give Award" under comments
-div:nth-child(4) > div:nth-child(1) > button:nth-child(2),
-div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > button:nth-child(2)
-{
-    display: none !important;
-}
-
-*\/ EOT;
+/*---------------------------------------*\/ EOT;
 RCNoGold "Disabled" <<<EOT /*Awards Disabled*\/
 
 [id*="Award"],
@@ -1006,139 +981,7 @@ div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > butt
 
 }
 @advanced dropdown RCScores "Scores & Points (Under development)" {
-	RCScoresEnabled "Leave be*" <<<EOT /*Score Hider Disabled*\/
-
-/*
-/* Option included
-/* 
-/* Reddit Score Hider - KMV
-/* https://userstyles.org/styles/178364/
-/*
-/* Designed for Stylus:
-/* https://add0n.com/stylus.html
-/*
-/* Other Themes by KMV:
-/* https://userstyles.org/users/370722
-/*
-/* Contact: http://old.reddit.com/r/KMV/
-/*
-*\/
-
-/* Score removal *
-
-.crosspost-preview-tagline > span:nth-child(1),
-.tagline .score,
-.res-nightmode .side .score,
-.res-nightmode .tagline .score,
-span.score-hidden,
-.search-score,
-.side .score,
-.userkarma,
-._3w73P89exX_1mpdhQCURo6,
-.t4Hq30BDzTeJ85vREX7_M,
-._2ETuFsVzMBxiHia6HfJCTQ._3_GZIIN1xcMEC5AVuv4kfa,
-/*Conspiracies.win/div.details span.points.desktop,div.details span.breakdown
-{
-    display:none;
-}
-
-
-/* Score hiding for further tweaking below *
-.link .score,
-.score.likes,
-.score.dislikes,
-.score-unvoted,
-.res-nightmode .link .score.likes,
-.res-nightmode .link .score.dislikes,
-.res-nightmode .link .score.unvoted,
-._1rZYMD_4xY3gRcSS3p8ODO,
-._3_GZIIN1xcMEC5AVuv4kfa,
-.t4Hq30BDzTeJ85vREX7_M,
-.crosspost-preview-tagline .dot,
-div._2Pkdj4FrQFtK8COeODi_kK:nth-child(1),
-div.side div.spacer div.linkinfo div.date span,
-/*Conspiracies.win/.post .vote .count
-{
-    visibility: hidden;
-}
-
-
-/* Post Dots - old.reddit *
-
-.link .score:after,
-.score.likes:after,
-.score.dislikes:after,
-.score-unvoted:after,
-.res-nightmode .link .score.likes:after,
-.res-nightmode .link .score.dislikes:after,
-.res-nightmode .link .score.unvoted:after,
-/*Conspiracies.win/.post .vote .count:after
-{
-    display: block;
-    visibility: visible;
-    content: '•';
-    margin-top:-14px;
-}
-
-
-/* Post Dots - New Reddit *
-
-._1rZYMD_4xY3gRcSS3p8ODO:after,
-.t4Hq30BDzTeJ85vREX7_M:after
-{
-    display: block;
-    text-align: center;
-    visibility: visible;
-    content: '•';
-    margin-top:-17px;
-}
-
-
-/* "XXX Comments" Tweak under Posts to fit Left Margin *
-
-._2Pkdj4FrQFtK8COeODi_kK
-{
-    margin-left: -30px;
-}
-
-
-/*  Dot between User and Time on Comment - New Reddit *
-
-.f3THgbzMYccGW8vbqZBUH:after
-{
-    text-align: center;
-    content: '·';
-    padding-left: 4px;
-    color: #ccc;
-}
-
-
-/* Crosspost Tweak - old.reddit *
-
-.crosspost-preview-tagline.tagline span.dot
-{
-    text-align: left;
-    visibility: visible;
-}
-
-.crosspost-preview-tagline.tagline
-{
-    left: -2%;
-}
-
-
-/*  Right Sidebar Date - old.reddit
-    Replacement of small "t" with Large "T" :
-    
-    "this post was submitted on" > "This post was submitted on"*
-
-div.side div.spacer div.linkinfo div.date span:after
-{
-    
-    margin-left:-9rem;
-    visibility: visible;
-    content: 'This post was submitted on ';
-} EOT;
+	RCScoresEnabled "Leave be*" <<<EOT /*Score Hider Disabled*\/ EOT;
 RCScoresDisabled "Hide" <<<EOT /*Score and Points Disabled*\/
 
 /* Reddit Score Hider - KMV
@@ -1686,18 +1529,28 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     --RCTextHeader: /*[[Headers]]*/;
     --RCText: /*[[Text]]*/;
 
+    /*Overrides (Ignore)*/
+    --newCommunityTheme-field: var(--RCTextHeader);
+    --newCommunityTheme-inactive: var(--RCDarkText);
+
+
 
     /*MANUAL COLOUR OPTIONS*/
 
-    /*Post Backgrounds*/
-    --RCNews: #00190088;
-    --RCDeleted: #22000066;
-    --RCUserRemoved: #00002288;
-    
+    /*Chat- & Mail Notification*/
+    --RCCHaveMsgBackground:#61d300;
+    --RCCHaveMsgText:#000;
+
     /*Tags*/
     --RCspoiler: #a65e0d !important;
     --RCnsfw: #d10023 !important;
     --RCquarantine: #bfa028 !important;
+
+    /*Special Post Highlighting*/
+    --RCNews: #00190088;
+    --RCDeleted: #22000066;
+    --RCUserRemoved: #00002288;    
+
 
 
     /*RES ONLY*/
@@ -1749,18 +1602,28 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     --RCTextHeader: #BBBBBB;
     --RCText: [[Text]];
 
+    /*Overrides (Ignore)/
+    --newCommunityTheme-field: var(--RCTextHeader);
+    --newCommunityTheme-inactive: var(--RCDarkText);
+
+
 
     /*MANUAL COLOUR OPTIONS*/
 
-    /*Post Backgrounds/
-    --RCNews: #00190088;
-    --RCDeleted: #22000066;
-    --RCUserRemoved: #00002288;
-    
+    /*Chat- & Mail Notification/
+    --RCCHaveMsgBackground:#ff7500;
+    --RCCHaveMsgText:#000;
+
     /*Tags/
     --RCspoiler: #a65e0d !important;
     --RCnsfw: #d10023 !important;
     --RCquarantine: #bfa028 !important;
+
+    /*Special Post Highlighting/
+    --RCNews: #00190088;
+    --RCDeleted: #22000066;
+    --RCUserRemoved: #00002288;    
+
 
 
     /*RES ONLY*/
@@ -1778,14 +1641,15 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 
     /*RES "Reload Page" Text/
     --RCRESReload: #5cc540 !important;
-
-
+    
+    
     /*Conspiracies.win Dark Mode/
     --RCCDTBackground: #150000;
     --RCCDTLinks: #b0191999;
     --RCCDTLinksHover: #b01919;
     --RCCDTText: #777;
     --RCCDTHeaders: #d8d8d8;
+}
 }
 ------------------------------------------------------------*/
 
@@ -2397,6 +2261,7 @@ body .content .thing .title.loggedin:visited,
 }
 
 
+
 /* ------------ On-Click Brightness Reduction ------------ */
 
 div#header-bottom-right span.user a.login-required.login-link:active,
@@ -2853,7 +2718,8 @@ tr,
 .linklisting .even,
 .sitetable.nestedlisting > .comment,
 .res-nightmode .listing-page .linklisting .even.thing,
-.res-nightmode .listing-page .linklisting .odd.thing
+.res-nightmode .listing-page .linklisting .odd.thing,
+._1oQyIsiPHYt6nx7VOmd1sz._1RYN-7H8gYctjOQeL8p2Q7.scrollerItem:hover
 {
     background-color:transparent!important;
     box-shadow:none!important;
@@ -3302,8 +3168,7 @@ table#srList[style="display: block;"],
 .submit .morelink::after,
 .Toaster,
 .ui-widget-content,
-/*Main Dropdown:*/
-._197SqY-gDtObhzjz9SlSEp,
+/*Main Dropdown:*/._197SqY-gDtObhzjz9SlSEp,
 ._1HSQGYlfPWzs40LP4_oFi5,
 ._1i-ndNsTQtNr82sMJ0renj,
 ._1LEks0EGX8JP8wFUs2r1Gd,
@@ -3314,6 +3179,7 @@ table#srList[style="display: block;"],
 ._2s0lkCZGZKebUrqQ6cPnFg,
 ._2uSuNRa3OeptFDJCKQ3vU6,
 ._2uYY-KeuYHKiwl-9aF0UiL,
+/*Chat Loading Screen*/div._2zstkXjlzum5VrIXwJ_LbE,
 ._3DQXGvoE1SM3Kmz20of7Iz,
 ._3RhWPJfjpsEoBw52x0fQp2,
 ._3uK2I0hi3JFTKnMUFHD2Pd/*Tool-tip*/,
@@ -3861,6 +3727,9 @@ body.res .RES-keyNav-activeElement,
 
 
 /*Hover*/
+
+/* * [role="menu"] [role="menuitem"]:hover,*/
+
 /*4chan*/#fp-menu li:hover,.dd-menu li:hover,.MuiListItem-gutters:hover,.MuiMenuItem-gutters:hover,
 #RESSubredditGroupDropdown a:hover,
 #sidebar .chan:hover,
@@ -3902,14 +3771,14 @@ a.edit-btn.btn-macro:hover,
 ._1YWXCINvcuU7nk0ED-bta8:focus,
 ._1YWXCINvcuU7nk0ED-bta8:hover>.vzhy90YD0qH7ZDJi7xMGw,._2KotRmn9DgdA58Ikji2mnV:hover>._3m4MQxMy4WfgIkMhHh-UAg,._2MgAHlPDdKvXiG-Qbz5cbC:hover>._1nBP1OfpQDgTmzRFqaVult,._2MgAHlPDdKvXiG-Qbz5cbC:hover>._2aqH0n-kSzFY7HZZ5GL-Jb,
 ._27e9yld2jAIIWQNc4A70if:focus,
+._2Kg5EXAuLcqhsBbdEr4SGZ,._2H29-4MOHAslt1eKYtcGaV,._1ClyNNAK4vP9o_uoSwKe0Q,._1xWVaijFIih7uj-n4FXzH2:hover,
 ._2KotRmn9DgdA58Ikji2mnV:hover,
 ._2MgAHlPDdKvXiG-Qbz5cbC:hover,
 ._3FXf9zUWKXtpapv4rBHh1L._2cJiWyA-Vif_pfBPZVATnV:hover,
 ._3LwUIE7yX7CZQKmD2L87vf:hover,
 ._3LwUIE7yX7CZQKmD2L87vf:hover>._2-cXnP74241WI7fpcpfPmg,
-
-._2Kg5EXAuLcqhsBbdEr4SGZ,._2H29-4MOHAslt1eKYtcGaV,._1ClyNNAK4vP9o_uoSwKe0Q,._1xWVaijFIih7uj-n4FXzH2:hover,
 .jFCRipwFbBNJ4rl18HMK5:hover,
+.tN3ccVHcnPD-hU9Iy1MAV._3EydiRSMl_H2N9IS6m76km:hover,
 .vzhy90YD0qH7ZDJi7xMGw:hover
 {
     background-color:var(--RCMenuHighlight)!important;
@@ -4068,7 +3937,8 @@ li.sr-name-row.sr-selected:active,
 ._20OHBqoDD71_8fv7tuG6u6.cuK0QQebBI_tpWwN_YN9M:active,
 ._2eawLPCtwzvTZhWKtaUgZQ._3LyKu57c-QkPvlFvAgWop5._3fGEO8uLSvUJEOP4lDX35p:active,
 ._2Kg5EXAuLcqhsBbdEr4SGZ:active,
-._3FXf9zUWKXtpapv4rBHh1L._2cJiWyA-Vif_pfBPZVATnV:active
+._3FXf9zUWKXtpapv4rBHh1L._2cJiWyA-Vif_pfBPZVATnV:active,
+.tN3ccVHcnPD-hU9Iy1MAV._3EydiRSMl_H2N9IS6m76km:active
 {
     filter:brightness(.6)!important;
     transition:0s!important;
@@ -4126,8 +3996,6 @@ li.sr-name-row.sr-selected:active,
     filter:invert(80%)hue-rotate(180deg)!important;
     transition:.4s;
 }
-
-
 #RESAccountSwitcherIcon,
 .nohavemail
 {
@@ -4143,6 +4011,15 @@ li.sr-name-row.sr-selected:active,
     transition-delay:0s!important;
     transition:.2s!important;
 }
+#mail.nohavemail:hover
+{
+    filter:invert(50%)hue-rotate(180deg)!important;
+    transition:.2s;
+}
+#mail.nohavemail:active
+{
+    filter:invert(100%)hue-rotate(180deg)!important;
+}
 
 #header-img:active,
 #RESAccountSwitcherIcon:active,
@@ -4151,12 +4028,6 @@ li.sr-name-row.sr-selected:active,
 {
     filter:invert(0%)hue-rotate(0deg)brightness(.6)!important;
     transition:0s!important;
-}
-
-#mail.nohavemail:hover
-{
-    filter:invert(50%)hue-rotate(180deg)!important;
-    transition:.2s;
 }
 
 #RESSettingsButton
@@ -4169,13 +4040,85 @@ li.sr-name-row.sr-selected:active,
     transition:.2s;
 }
 
-/*.sr-bar,
-.dropdown.srdrop
+
+
+/*Custom Chat- & Mail Notification*/
+
+#chat-count.message-count,
+.message-count,
+.res-nightmode .message-count
 {
-    float: left !important;
-    margin-left: 0.5em;
+    color:var(--RCCHaveMsgText)!important;
 }
-*/
+.ra_3TRn5G7dbrfbhx8kYi._3aintJ344BVk82tG06NQea
+{
+    fill:var(--RCCHaveMsgBackground)!important;
+    filter:brightness(1.25)!important;
+}
+._1x6pySZ2CoUnAfsFhGe7J1:hover
+{
+    background-color:var(--RCCHaveMsgBackground)!important;
+    filter:brightness(1.5);
+}
+
+
+#mail.havemail,
+a.message-count
+{
+    background: var(--RCCHaveMsgBackground)!important;
+    background-color: var(--RCCHaveMsgBackground)!important;
+}
+
+#chat
+{
+    background-image: none;
+    background: #b6b6b6!important;
+    border-radius:40px!important;
+    border:1px solid!important;
+    border-width: 2px 2px 3px 1px !important;
+    right:2.5px;
+    height:11px;
+    width:9px;
+    border-color: 
+        #0000
+        #0000
+        var(--RCBackgrounds)
+        var(--RCBackgrounds) !important;
+    display:inline-block!important;
+    transform:rotate(83deg);
+}
+#chat.active
+{
+    background-image: none;
+    background: var(--RCCHaveMsgBackground)!important;
+    border-radius:40px!important;
+    border:1px solid!important;
+    border-width: 2px 2px 3px 1px !important;
+    padding-right:2px;
+    padding-left:1px;
+    padding-top:1px;
+    padding-bottom:1px;
+    height:11px;
+    width:9px;
+    border-color: 
+        #0000 
+        #0000 
+        var(--RCBackgrounds) 
+        var(--RCBackgrounds)!important;
+    display:inline-block!important;
+    transform:rotate(85deg);
+}
+#chat:hover
+{
+    transform:rotate(85deg) scale(1.1);
+    filter:brightness(1.25);
+}
+#chat:active
+{
+    transform:rotate(85deg) scale(.9);
+}
+
+
 
 #RESShortcutsEditContainer
 {
@@ -4599,7 +4542,8 @@ div.main-content div.more a,
 ._33n6Hxno5QDQIbv7MzWYA6:hover,
 ._34yMY7-6MNnz3utfjExvIq,
 ._2PAz5_NMDCV5XtywB9mVpg._1s79QnBguPbckxiiPvFXGP,
-._326PJFFRv8chYfOlaEYmGt
+._326PJFFRv8chYfOlaEYmGt,
+button._22LJahVHZg-w-Ok4e54Ekf:hover
 {
     background:#0000!important;
     background-color:#0000!important;
@@ -5271,48 +5215,25 @@ button#COIN_PURCHASE_DROPDOWN_ID._1t5i5bNwZeJ7FuUXZ9rM-p:focus,
 /* ----------------- Post Expand-Buttons ----------------- */
 
 .expando-button,
+.expando-button *,
+.expando-button.collapsed,
 .expando-button.expanded,
-.expando-button.image.collapsed,
-.expando-button.image.expanded,
-.expando-button.collapsed.crosspost,
-.expando-button.expanded.crosspost,
-.expando-button.collapsed.selftext,
-.expando-button.expanded.selftext,
-.expando-button.collapsed.video,
-.expando-button.expanded.video,
-.expando-button.video-muted.collapsed,
 /*4chan*/.extButton, img.pointer
 {
     filter: brightness(65%) contrast(180%);
     transition:0s!important;
 }
 .expando-button:hover,
+.expando-button *:hover,
+.expando-button.collapsed:hover,
 .expando-button.expanded:hover,
-.expando-button.image.collapsed:hover,
-.expando-button.image.expanded:hover,
-.expando-button.collapsed.crosspost:hover,
-.expando-button.expanded.crosspost:hover,
-.expando-button.collapsed.selftext:hover,
-.expando-button.expanded.selftext:hover,
-.expando-button.collapsed.video:hover,
-.expando-button.expanded.video:hover,
-.expando-button.video-muted.collapsed:hover,
 /*4chan*/.extButton:hover, img.pointer:hover
 {
     filter: brightness(85%) contrast(180%);
     transition:0s!important;
 }
 .expando-button:active,
-.expando-button.expanded:active,
-.expando-button.image.collapsed:active,
-.expando-button.image.expanded:active,
-.expando-button.collapsed.crosspost:active,
-.expando-button.expanded.crosspost:active,
-.expando-button.collapsed.selftext:active,
-.expando-button.expanded.selftext:active,
-.expando-button.collapsed.video:active,
-.expando-button.expanded.video:active,
-.expando-button.video-muted.collapsed:active,
+.expando-button *:active,
 /*4chan*/.extButton:active, img.pointer:active
 {
     filter: brightness(45%) contrast(180%);
@@ -5321,46 +5242,23 @@ button#COIN_PURCHASE_DROPDOWN_ID._1t5i5bNwZeJ7FuUXZ9rM-p:focus,
 }
 
 .res-nightmode .expando-button,
-.res-nightmode .expando-button.expanded,
-.res-nightmode .expando-button.image.collapsed,
-.res-nightmode .expando-button.image.expanded,
-.res-nightmode .expando-button.collapsed.crosspost,
-.res-nightmode .expando-button.expanded.crosspost,
-.res-nightmode .expando-button.collapsed.selftext,
-.res-nightmode .expando-button.expanded.selftext,
-.res-nightmode .expando-button.collapsed.video,
-.res-nightmode .expando-button.expanded.video,
-.res-nightmode .expando-button.video-muted.collapsed
+.res-nightmode .expando-button *,
+.res-nightmode .expando-button.collapsed,
+.res-nightmode .expando-button.expanded
 {
     filter: brightness(55%) contrast(180%);
     transition:0s!important;
 }
 .res-nightmode .expando-button:hover,
-.res-nightmode .expando-button.expanded:hover,
-.res-nightmode .expando-button.image.collapsed:hover,
-.res-nightmode .expando-button.image.expanded:hover,
-.res-nightmode .expando-button.collapsed.crosspost:hover,
-.res-nightmode .expando-button.expanded.crosspost:hover,
-.res-nightmode .expando-button.collapsed.selftext:hover,
-.res-nightmode .expando-button.expanded.selftext:hover,
-.res-nightmode .expando-button.collapsed.video:hover,
-.res-nightmode .expando-button.expanded.video:hover,
-.res-nightmode .expando-button.video-muted.collapsed:hover
+.res-nightmode .expando-button *:hover,
+.res-nightmode .expando-button.collapsed:hover,
+.res-nightmode .expando-button.expanded:hover
 {
     filter: brightness(65%) contrast(180%);
     transition:0s!important;
 }
 .res-nightmode .expando-button:active,
-.res-nightmode .expando-button.expanded:active,
-.res-nightmode .expando-button.image.collapsed:active,
-.res-nightmode .expando-button.image.expanded:active,
-.res-nightmode .expando-button.collapsed.crosspost:active,
-.res-nightmode .expando-button.expanded.crosspost:active,
-.res-nightmode .expando-button.collapsed.selftext:active,
-.res-nightmode .expando-button.expanded.selftext:active,
-.res-nightmode .expando-button.collapsed.video:active,
-.res-nightmode .expando-button.expanded.video:active,
-.res-nightmode .expando-button.video-muted.collapsed:active
+.res-nightmode .expando-button *:active
 {
     filter: brightness(45%) contrast(180%);
     background-color: transparent !important;
@@ -5822,17 +5720,19 @@ label._3tm-97fb8noV8kwxNOON_9:active
 }
 
 * svg,
+button._22LJahVHZg-w-Ok4e54Ekf svg,
 .fzTkuBRFT8iIn1XnJX_Yn:hover
 {
     filter:saturate(.8)brightness(.75)contrast(.8)!important;
-    transition: .4s !important;
+    transition:.4s!important;
 }
 
 * svg:hover,
+button._22LJahVHZg-w-Ok4e54Ekf:hover svg,
 .quarantine #header-img.default-header:hover
 {
     filter:saturate(1)brightness(1.25)contrast(1)!important;
-    transition: .2s !important;
+    transition:.2s!important;
 }
 * svg:after,
 * svg:focus
@@ -5840,6 +5740,12 @@ label._3tm-97fb8noV8kwxNOON_9:active
     filter:saturate(1)brightness(1.25)contrast(1)!important;
     transition:.4s!important;
 }
+button._22LJahVHZg-w-Ok4e54Ekf:active svg
+{
+    filter:saturate(1)brightness(.6)contrast(1)!important;
+    transition:0s!important;
+}
+
 
 
 /*New Reddit Top Bar Button Icons*/
@@ -5851,7 +5757,6 @@ label._3tm-97fb8noV8kwxNOON_9:active
     transition:.2s!important;
 }
 ._1vXXD2qKLnHetdKvisFzBD ._3dZnYgFFpifT-M_Vs2FAq6:hover>svg,
-._1x6pySZ2CoUnAfsFhGe7J1:hover>svg,
 .FOioVk_DUTmZIKKa82Mm1:hover>svg
 {
     filter:brightness(4)!important;
@@ -6004,29 +5909,27 @@ svg._1bWuGs_1sq4Pqy099x_yy-:active,
 .tVQ1dB4n0mAWdcQNxFq-K,
 ._1h1uw7kxU6VJk75NglIHM2.Hu4mluXNcKxmITzoPIZ2,
 ._1H6XmzDZeFebELnU6sY0C0,
+._1qhSxdEj1WQNv1ToBDZ2SG,
 ._2ERphYf08pZHF6WWqsLCvA,
-._2zstkXjlzum5VrIXwJ_LbE,
-._3mRkaGP5f0vxRe_U_Gy02A
+._3mRkaGP5f0vxRe_U_Gy02A,
+._1ScY1cHS-Vgv6eoU-LmjTi
 {
     background-color:var(--RCBackgrounds)!important;
     transition:.4s!important;
 }
 
-/*Chat Loading Screen*/
-._2zstkXjlzum5VrIXwJ_LbE
-{
-    background-color:var(--RCBackgrounds)!important;
-    transition:.4s!important;
-}
 /*Chat Loading Screen Spinner*/
-._1o-ux8CJI01lsz3U88wukN
+img._2aBU27Uc0L10Q-sondXGQo[src="https://www.redditstatic.com/desktop2x/img/loader_2orbit_loop.gif"]
 {
-    background-color:#0000!important;
-    transition:.4s!important;
+    background-image:none!important;
+    background:none!important;
+    background-color:var(--RCBackgrounds)!important;
+    
+    
 }
 
 /*"Looking for internet" message*/
-.Z2zpHoQtb1-SNgOtRrt8J
+span._1F_LuK64VyIwueMX3ce6a_
 {
     background-color:var(--RCBackgrounds)!important;
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow);
@@ -7104,6 +7007,11 @@ html[res-warning]::before
     filter:brightness(1.2);
     transition:.4s;
 }
+._3GfG_jvS9X-90Q_8zU4uCu._3Y1KnhioRYkYGb93uAKhBZ:active
+{
+    filter:brightness(.6);
+    transition:0s;
+}
 
 
 /*RES Filterline Toggle*/
@@ -7133,8 +7041,49 @@ input.res-filterline-toggle-powered::after:hover
 }
 
 
+/*RES Notification Dim*/
+#RESNotifications
+{
+    filter:opacity(.25);
+    transition:1s;
+}
+#RESNotifications:hover
+{
+    filter:opacity(1);
+    transition:.4s;
+}
+
+aside.read-next.active
+{
+    transform:scale(0);
+    filter:opacity(0);
+}
+.read-next.active.fixed
+{
+    transform:scale(1);
+    filter:opacity(1);
+    transition:.5s;
+}
+
+hidden
+{
+    transform:scale(0);
+    filter:opacity(0);
+    transition:.5s;
+}
+
+visible
+{
+    transform:scale(1);
+    filter:opacity(1);
+    transition:.5s;
+}
+
+
+
 
 /*Pre-load Grids*/
+/*Updates from Reddit*/._3ERp7BA69QHx5yO7JpiNpE,
 /*Thumbnail*/._1F-hYShaC9dYxEEe3_TCGR,
 /*Text*/._YedzkdLjjcYoXUE26Cyb,
 /*Posts*/._3UEq__yL-82zX4EyuluREz,
@@ -7142,6 +7091,8 @@ input.res-filterline-toggle-powered::after:hover
 /*In settings*/._2W91N2EYmGXA3UspceNbT5,.yryytG_EcZg8aB9Ed6HHd,._1JeAoaBUBb6WWqaa03mTST
 {
     filter:brightness(.1);
+    
+    
 }
 
 
