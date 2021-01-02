@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.top - (New, Dec. 2020)poal.cosaidit.netvoat.coconspiracies.win - (New, Dec. 2020)thedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        202111.8.52
+@version        202112.11.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -33,12 +33,14 @@ WPBASE64 "Manual BASE64 Setup (Inject in Code #1)" <<<EOT data:image/jpeg;base64
 @advanced color ButtonTextHover "Buttons Hover Text" #FFFFFF
 @advanced color Links "Links" #DDDDDD
 @advanced color LinksHover "Links Hover" #FFFFFF
+@advanced color Inbox "Inbox Notification" #FF7500
+@advanced color InboxText "Inbox Notification Text" #000000
 @advanced color Headers "Headers" #BBBBBB
 @advanced color Text "General Text" #989898
 @advanced color Titles "Post Titles" #CCCCCC
 @advanced color Visited "Visited Posts" #777777
 @advanced color LinksUnderPosts "Post Info & Links" #717171
-@advanced dropdown RCPostBG00 "Post Background (Under development)" {
+@advanced dropdown RCPostBG00 "Post Background (Reddit & *.win)" {
 	RCPostBG02 "Background - (Post Highlight (incl. RES))*" <<<EOT /*Option Chosen - [Background (Same as RES Highlight)]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
@@ -639,7 +641,7 @@ RCPostH-15 "+15px" <<<EOT /* Option chosen: [+10px] *\/
 } EOT;
 
 }
-@advanced dropdown RCPostHighlight00 "Post Hover Effect (Under development)" {
+@advanced dropdown RCPostHighlight00 "Post Hover Effect (Reddit & *.win)" {
 	RCPostHighlight01 "Increased Brightness*" <<<EOT /*Option Chosen - [Increased Brightness]*\/
 
 ._1oQyIsiPHYt6nx7VOmd1sz._1RYN-7H8gYctjOQeL8p2Q7.scrollerItem:hover,
@@ -941,7 +943,7 @@ section.description.box.col.col-12 div.col.col-12 span[style="display:inline-blo
 *\/ EOT;
 
 }
-@advanced dropdown RCAwards "Awards (Reddit)" {
+@advanced dropdown RCAwards "Reddit Awards" {
 	RCGold "Enabled*" <<<EOT /*---------------------------------------*\/
 /*                                       *\/
 /*        --- Awards enabled ---         *\/
@@ -982,18 +984,17 @@ div:nth-child(2) > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > butt
 }
 @advanced dropdown RCScores "Scores & Points (Under development)" {
 	RCScoresEnabled "Leave be*" <<<EOT /*Score Hider Disabled*\/ EOT;
-RCScoresDisabled "Hide" <<<EOT /*Score and Points Disabled*\/
-
+RCScoresDisabled "Hide" <<<EOT /* 
 /* Reddit Score Hider - KMV
 /* https://userstyles.org/styles/178364/
 /*
-/* Designed for Stylus:
+/* Designed for STYLUS:
 /* https://add0n.com/stylus.html
 /*
 /* Other Themes by KMV:
 /* https://userstyles.org/users/370722
 /*
-/* Contact: http://old.reddit.com/r/KMV/
+/* Contact: http://www.reddit.com/r/KMV/
 /*
 *\/
 
@@ -1004,13 +1005,13 @@ RCScoresDisabled "Hide" <<<EOT /*Score and Points Disabled*\/
 .res-nightmode .side .score,
 .res-nightmode .tagline .score,
 span.score-hidden,
-.search-score,
 .side .score,
 .userkarma,
 ._3w73P89exX_1mpdhQCURo6,
 .t4Hq30BDzTeJ85vREX7_M,
 ._2ETuFsVzMBxiHia6HfJCTQ._3_GZIIN1xcMEC5AVuv4kfa,
-/*Conspiracies.win*\/div.details span.points.desktop,div.details span.breakdown
+/*Conspiracies.win*\/div.details span.points.desktop,div.details span.breakdown,
+/*poal.co*\/.combar
 {
     display:none;
 }
@@ -1030,22 +1031,24 @@ span.score-hidden,
 .crosspost-preview-tagline .dot,
 div._2Pkdj4FrQFtK8COeODi_kK:nth-child(1),
 div.side div.spacer div.linkinfo div.date span,
-/*Conspiracies.win*\/.post .vote .count
+/*Conspiracies.win*\/.post .vote .count,
+/*poal.co*\/div.votebuttons div.score
 {
-    visibility: hidden;
+    visibility: hidden!important;
 }
 
 
 /* Post Dots - old.reddit *\/
 
-.link .score:after,
-.score.likes:after,
-.score.dislikes:after,
-.score-unvoted:after,
-.res-nightmode .link .score.likes:after,
-.res-nightmode .link .score.dislikes:after,
-.res-nightmode .link .score.unvoted:after,
-/*Conspiracies.win*\/.post .vote .count:after
+.link .score::after,
+.score.likes::after,
+.score.dislikes::after,
+.score-unvoted::after,
+.res-nightmode .link .score.likes::after,
+.res-nightmode .link .score.dislikes::after,
+.res-nightmode .link .score.unvoted::after,
+/*Conspiracies.win*\/.post .vote .count::after,
+/*poal.co*\/div.votebuttons div.score::after
 {
     display: block;
     visibility: visible;
@@ -1521,6 +1524,8 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     --RCButtonHover: /*[[ButtonHover]]*/;
     --RCButtonText: /*[[ButtonText]]*/;
     --RCButtonHoverText: /*[[ButtonTextHover]]*/;
+    --RCCHaveMsgBackground: /*[[Inbox]]*/;
+    --RCCHaveMsgText: /*[[InboxText]]*/;
     --RCTextLink: /*[[Links]]*/;
     --RCTextLinkHover: /*[[LinksHover]]*/;
     --RCPostTitle: /*[[Titles]]*/;
@@ -1536,10 +1541,6 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 
 
     /*MANUAL COLOUR OPTIONS*/
-
-    /*Chat- & Mail Notification*/
-    --RCCHaveMsgBackground:#61d300;
-    --RCCHaveMsgText:#000;
 
     /*Tags*/
     --RCspoiler: #a65e0d !important;
@@ -1569,7 +1570,8 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     /*RES "Reload Page" Text*/
     --RCRESReload: #5cc540 !important;
     
-    
+
+
     /*Conspiracies.win Dark Mode*/
     --RCCDTBackground: #150000;
     --RCCDTLinks: #b0191999;
@@ -1578,7 +1580,7 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     --RCCDTHeaders: #d8d8d8;
 }
 
-/* ----------------- BAK of Default Settings -----------------/*
+/* --------------- BAK of Default Settings --------------- /*
 :root
 {
     --RCBackground: #090909;
@@ -1594,6 +1596,8 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     --RCButtonHover: #191919;
     --RCButtonText: #AAAAAA;
     --RCButtonHoverText: #FFFFFF;
+    --RCCHaveMsgBackground: #ff7500;
+    --RCCHaveMsgText: #000;
     --RCTextLink: #DDDDDD;
     --RCTextLinkHover: #FFFFFF;
     --RCPostTitle: #CCCCCC;
@@ -1609,10 +1613,6 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 
 
     /*MANUAL COLOUR OPTIONS*/
-
-    /*Chat- & Mail Notification/
-    --RCCHaveMsgBackground:#ff7500;
-    --RCCHaveMsgText:#000;
 
     /*Tags/
     --RCspoiler: #a65e0d !important;
@@ -1641,8 +1641,9 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 
     /*RES "Reload Page" Text/
     --RCRESReload: #5cc540 !important;
-    
-    
+
+
+
     /*Conspiracies.win Dark Mode/
     --RCCDTBackground: #150000;
     --RCCDTLinks: #b0191999;
@@ -2408,7 +2409,8 @@ a *
 /*------------------------ Borders ------------------------*/
 
 /*New Reddit Frontpage Posts*/
-._1npCwF50X2J7Wt82SZi6J0
+._1npCwF50X2J7Wt82SZi6J0,
+._2uwkPlP_LglpLTAm6dfFmd
 {
     border-radius:4px!important;
     border:none!important;
@@ -3074,7 +3076,8 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div section,
 ._2lgyQv1Xe7SzrqkbUeaEFL,
 ._8aA-2ZrheEy6k2e1iShKQ._2QagxVHOpd1MZxMCUI8-aC,
 .cx1ohrUAq6ARaXTX2u8YN,
-._m7PpFuKATP9fZF4xKf9R
+._m7PpFuKATP9fZF4xKf9R,
+._9ZuQyDXhFth1qKJF4KNm8
 {
     background:var(--RCBackgrounds)!important;
     background-color:var(--RCBackgrounds)!important;
@@ -3150,7 +3153,7 @@ table#srList[style="display: block;"],
 .modal-dialog,
 .nav-center .navbar-nav > li,
 .navbar .navbar-nav > li,
-/*conspiracies.win*/.popup-save.popup,
+/*conspiracies.win*/.popup-save.popup,.popup-captcha.popup,
 .publisher-link li a,
 .ReactModal__Content,
 .report-modal .modal-content,
@@ -3938,7 +3941,8 @@ li.sr-name-row.sr-selected:active,
 ._2eawLPCtwzvTZhWKtaUgZQ._3LyKu57c-QkPvlFvAgWop5._3fGEO8uLSvUJEOP4lDX35p:active,
 ._2Kg5EXAuLcqhsBbdEr4SGZ:active,
 ._3FXf9zUWKXtpapv4rBHh1L._2cJiWyA-Vif_pfBPZVATnV:active,
-.tN3ccVHcnPD-hU9Iy1MAV._3EydiRSMl_H2N9IS6m76km:active
+.tN3ccVHcnPD-hU9Iy1MAV._3EydiRSMl_H2N9IS6m76km:active,
+.jFCRipwFbBNJ4rl18HMK5:active
 {
     filter:brightness(.6)!important;
     transition:0s!important;
@@ -4042,34 +4046,92 @@ li.sr-name-row.sr-selected:active,
 
 
 
-/*Custom Chat- & Mail Notification*/
+/* ---------- Custom Chat- & Inbox Notification ---------- */
 
+/*Inbox Notification Text*/
 #chat-count.message-count,
 .message-count,
-.res-nightmode .message-count
+.res-nightmode .message-count,
+/* *.win */.mail-indicator.unread::after,
+/*poal.co*/body span.mailcount
 {
     color:var(--RCCHaveMsgText)!important;
 }
-.ra_3TRn5G7dbrfbhx8kYi._3aintJ344BVk82tG06NQea
-{
-    fill:var(--RCCHaveMsgBackground)!important;
-    filter:brightness(1.25)!important;
-}
-._1x6pySZ2CoUnAfsFhGe7J1:hover
-{
-    background-color:var(--RCCHaveMsgBackground)!important;
-    filter:brightness(1.5);
-}
 
-
-#mail.havemail,
-a.message-count
+/*Inbox Notification Backrounds*/
+a.message-count,
+/* *.win */.mail-indicator.unread::after,
+/*poal.co*/body span.mailcount
 {
     background: var(--RCCHaveMsgBackground)!important;
     background-color: var(--RCCHaveMsgBackground)!important;
 }
+.mail-indicator.unread
+{
+    color:var(--RCCHaveMsgBackground)!important;
+}
+.ra_3TRn5G7dbrfbhx8kYi._3aintJ344BVk82tG06NQea,
+/*poal.co*/span.p-icon.hasmail.p-icon path
+{
+    fill:var(--RCCHaveMsgBackground)!important;
+    filter:brightness(1.25)!important;
+}
 
-#chat
+/*Hovers*/
+._1x6pySZ2CoUnAfsFhGe7J1:hover
+{
+    background-color:var(--RCCHaveMsgBackground)!important;
+    filter:brightness(1.5)!important;
+}
+
+/*poal.co*/span.hasmail
+{
+    filter:brightness(1)!important;
+    transition:.4s;
+}
+/*poal.co*/span.hasmail:hover
+{
+    filter:brightness(1.25)!important;
+    transition:.2s;
+}
+/*poal.co*/span.hasmail:active
+{
+    filter:brightness(.6)!important;
+    transition:0s;
+}
+
+/*On-click fix*/
+/* *.win */div.inner a.unread:active
+{
+    filter:none!important;
+}
+
+
+/*old.Reddit icon*/
+#mail.havemail
+{
+    background:var(--RCCHaveMsgBackground)!important;
+    border-top: 7px solid var(--RCBox-Shadow)!important;
+    border-left: 8px solid transparent!important;
+    border-right: 8px solid transparent!important;
+    height: 3px;
+    width: 0px!important;
+}
+/*RES Floater Icon*/
+#NREMail.havemail
+{
+    background:var(--RCCHaveMsgBackground)!important;
+    position:relative;
+    border-top: 5px solid var(--RCBox-Shadow)!important;
+    border-left: 5px solid transparent!important;
+    border-right: 5px solid transparent!important;
+    height: 1px;
+    width: 0px!important;
+    right:3px!important;
+}
+
+/*Home-made Chat Icon - old.reddit*/
+div a#chat
 {
     background-image: none;
     background: #b6b6b6!important;
@@ -4087,7 +4149,7 @@ a.message-count
     display:inline-block!important;
     transform:rotate(83deg);
 }
-#chat.active
+div a#chat.active
 {
     background-image: none;
     background: var(--RCCHaveMsgBackground)!important;
@@ -4108,15 +4170,17 @@ a.message-count
     display:inline-block!important;
     transform:rotate(85deg);
 }
-#chat:hover
+div a#chat:hover
 {
     transform:rotate(85deg) scale(1.1);
     filter:brightness(1.25);
 }
-#chat:active
+div a#chat:active
 {
     transform:rotate(85deg) scale(.9);
 }
+
+/* --------------- Chat & Inbox Icons - END --------------- */
 
 
 
@@ -4778,18 +4842,23 @@ span.res-fancy-toggle-button.RESshortcutside:hover,
 .usertext button:hover,
 .wiki-page .pageactions .wikiaction:hover,
 a._2PAz5_NMDCV5XtywB9mVpg:hover,
+label._3tm-97fb8noV8kwxNOON_9:hover,
 ._3K5j589m2GGg7J3pR96mQf:hover,
 .wLV79_wV-ziNiWmf3Y7OV.j5ti73p7EAjBJvJlSjppe:hover,
 ._10K5i7NW6qcm-UoCtpB3aK._3LwUIE7yX7CZQKmD2L87vf._1gYorLdXyKMUS-i9loCkHd._3zv8UgDcsOix4lXOk2qE9v:hover,
+._1aS-wQ7rpbcxKT0d5kjrbh:hover,
 ._1HunhFR-0b-AYs0WG9mU_P:hover,
 ._1i7CStyaaHQU2aiG0GdpSA:hover,
 ._1khvWSB4GNuM2XwSjluHzO.Cvt0D6iVwU5TI0SY2nIGC,
 ._1Q1oKEA1qDipo5Tk0b_YlY:hover,
 ._1x6pySZ2CoUnAfsFhGe7J1:hover,
 ._27e9yld2jAIIWQNc4A70if:hover,
+._3dZnYgFFpifT-M_Vs2FAq6:hover,
 ._2f5uYHvlfzs2DngQsiCdvB:hover,
+._2GrMpxDnqcoKtPHot56EWQ:hover,
 ._2nelDm85zKKmuD94NequP0:hover,
 ._2lrHxBsyZpA36hEKC_alta:hover,
+._2yhUdcPyG1k3qsmDb4y6u_:hover,
 ._326PJFFRv8chYfOlaEYmGt:hover,
 ._34yMY7-6MNnz3utfjExvIq:hover,
 ._3hUbl08LBz2mbXjy0iYhOS:hover,
@@ -4797,7 +4866,6 @@ a._2PAz5_NMDCV5XtywB9mVpg:hover,
 ._3oyS3dPRsa51zDEONlIdts:hover,
 ._3UhcBirLMXHSbN5vYYBGSF:hover,
 ._3X4hbg4asgVvLaVYU6dUzs:hover,
-._3dZnYgFFpifT-M_Vs2FAq6:hover,
 .HNozj_dKjQZ59ZsfEegz8:hover,
 .M2Hk_S2yvXpsNPfZMBMur:hover,
 .PH-V9ggsF2mi5JTDmDqdR:hover,
@@ -4805,8 +4873,7 @@ a._2PAz5_NMDCV5XtywB9mVpg:hover,
 .U2iuzTD5-OeYSFP8fg9ky:hover,
 .wLV79_wV-ziNiWmf3Y7OV:hover,
 .wLV79_wV-ziNiWmf3Y7OV._33qmTi-steAtfFkONvaiX3:hover,
-.wLV79_wV-ziNiWmf3Y7OV.j5ti73p7EAjBJvJlSjppe:hover,
-label._3tm-97fb8noV8kwxNOON_9:hover
+.wLV79_wV-ziNiWmf3Y7OV.j5ti73p7EAjBJvJlSjppe:hover
 {
     background:var(--RCButtonHover)!important;
     background-color:var(--RCButtonHover)!important;
@@ -5045,17 +5112,18 @@ button#COIN_PURCHASE_DROPDOWN_ID._1t5i5bNwZeJ7FuUXZ9rM-p:focus,
 }
 
 
-/*New Reddit Sorting Buttons Filler*/
+/*New Reddit Buttons Filler*/
 
 ._1F02c6Yw0dfhdWwl99UrYn._1F02c6Yw0dfhdWwl99UrYn._1fiOgAxLiYfEU41C1NOX9B,
-._2bDYspp_i6ETGHhD6zIa94
+._2bDYspp_i6ETGHhD6zIa94,
+._35qsI3TFFX54FD3PjwpLCv
 {
-    fill:var(--RCTextLink);
+    fill:var(--RCButtonText)!important;
 }
 ._1F02c6Yw0dfhdWwl99UrYn._1F02c6Yw0dfhdWwl99UrYn._1fiOgAxLiYfEU41C1NOX9B:hover,
 ._2bDYspp_i6ETGHhD6zIa94:hover
 {
-    fill:var(--RCTextLinkHover);
+    fill:var(--RCBottonHoverText);
 }
 
 
@@ -5632,6 +5700,7 @@ div.cookie-accept-outer span.cookie-accept:active,
 .voteButton:active,
 .wiki-page .pageactions .wikiaction:active,
 a._2PAz5_NMDCV5XtywB9mVpg:active,
+label._3tm-97fb8noV8kwxNOON_9:active,
 ._1ekaLCxKd98FlrNC_Oo2rT:active,
 ._1HunhFR-0b-AYs0WG9mU_P:active,
 ._1Hw7tY9pMr-T1F4P1C-xNU:active,
@@ -5645,10 +5714,12 @@ a._2PAz5_NMDCV5XtywB9mVpg:active,
 ._28vEaVlLWeas1CDiLuTCap:active,
 ._2bDYspp_i6ETGHhD6zIa94:active,
 ._2f5uYHvlfzs2DngQsiCdvB:active,
+._2GrMpxDnqcoKtPHot56EWQ:active,
 ._2jhMYYIyWfC22MBJXfjc_j:active,
 ._2KotRmn9DgdA58Ikji2mnV:active,
 ._2MgAHlPDdKvXiG-Qbz5cbC:active,
 ._2nelDm85zKKmuD94NequP0:active,
+._2yhUdcPyG1k3qsmDb4y6u_:active,
 ._2zcGm9WDxG67GYyNNvHzlA:active,
 ._326PJFFRv8chYfOlaEYmGt:active,
 ._34yMY7-6MNnz3utfjExvIq:active,
@@ -5678,12 +5749,18 @@ a._2PAz5_NMDCV5XtywB9mVpg:active,
 .wLV79_wV-ziNiWmf3Y7OV:active,
 .wLV79_wV-ziNiWmf3Y7OV._33qmTi-steAtfFkONvaiX3:active,
 .wLV79_wV-ziNiWmf3Y7OV.j5ti73p7EAjBJvJlSjppe:active,
-label._3tm-97fb8noV8kwxNOON_9:active
+._1aS-wQ7rpbcxKT0d5kjrbh:active
 {
     filter:brightness(0.6)!important;
     transition:0s!important;
 }
 
+/*poal.co 404 page Navigator*/
+div.error.not-found div select.btn:active
+{
+    transition:0s!important;
+    filter:none!important;
+}
 
 /*Bleedover fixes*/
 #RESShortcutsAddFormContainer:active
@@ -5781,13 +5858,15 @@ button._22LJahVHZg-w-Ok4e54Ekf:active svg
 }
 .h-jI8r2f9ozTNqu_2TBeY>svg,
 .M2Hk_S2yvXpsNPfZMBMur>svg,
+.poal-logo img,
 ._2bDYspp_i6ETGHhD6zIa94.Ls9uHSAO9p2g7EMya2KXp,
 ._2ONLRjLuDplXKbcaS8dGe_:hover
 {
     filter:brightness(.75)!important;
     transition:.4s!important;
 }
-._2bDYspp_i6ETGHhD6zIa94.Ls9uHSAO9p2g7EMya2KXp:hover
+._2bDYspp_i6ETGHhD6zIa94.Ls9uHSAO9p2g7EMya2KXp:hover,
+.poal-logo img:hover
 {
     filter:brightness(.9)!important;
     transition:0s!important;
@@ -5806,6 +5885,7 @@ input.res-filterline-toggle-powered:hover,
 }
 .res-filterline-external-filter .gearIcon:active,
 input.res-filterline-toggle-powered:active,
+.poal-logo img:active,
 .h-jI8r2f9ozTNqu_2TBeY:active,
 .n08B7PrU01wzgZYIh-s7N:active
 {
@@ -5903,6 +5983,15 @@ svg._1bWuGs_1sq4Pqy099x_yy-:active,
 
 /*-------------------------- Chat --------------------------*/
 
+
+/*Pop-in/out Effect*/
+#chat-app.active
+{
+    transform:scale(1)!important;
+    transition:.3s!important;
+}
+
+
 /*Main Backgrounds*/
 #chat-container,
 .RaDn8d65cHW3dCPgTkSRN,
@@ -5919,14 +6008,11 @@ svg._1bWuGs_1sq4Pqy099x_yy-:active,
 }
 
 /*Chat Loading Screen Spinner*/
-img._2aBU27Uc0L10Q-sondXGQo[src="https://www.redditstatic.com/desktop2x/img/loader_2orbit_loop.gif"]
+._2aBU27Uc0L10Q-sondXGQo
 {
-    background-image:none!important;
-    background:none!important;
-    background-color:var(--RCBackgrounds)!important;
-    
-    
+    filter:invert(.96);
 }
+
 
 /*"Looking for internet" message*/
 span._1F_LuK64VyIwueMX3ce6a_
@@ -6387,7 +6473,7 @@ span.flairrichtext.flaircolorlight.linkflairlabel:active,
 /*NSFW Warning*/
 .nsfw-stamp acronym,
 .res-nightmode .nsfw-stamp acronym,
-._1wzhGvvafQFOWAyA157okr
+span._1wzhGvvafQFOWAyA157okr
 {
     background: #000!important;
     color: var(--RCnsfw) !important;
@@ -6725,7 +6811,7 @@ a.authorlink.csticky:hover
 
 
 
-/* ---------------------- Side Menu ---------------------- */
+/* -------------------- Left Side Menu -------------------- */
 
 .grippy
 {
@@ -7042,17 +7128,6 @@ input.res-filterline-toggle-powered::after:hover
 
 
 /*RES Notification Dim*/
-#RESNotifications
-{
-    filter:opacity(.25);
-    transition:1s;
-}
-#RESNotifications:hover
-{
-    filter:opacity(1);
-    transition:.4s;
-}
-
 aside.read-next.active
 {
     transform:scale(0);
@@ -7064,21 +7139,6 @@ aside.read-next.active
     filter:opacity(1);
     transition:.5s;
 }
-
-hidden
-{
-    transform:scale(0);
-    filter:opacity(0);
-    transition:.5s;
-}
-
-visible
-{
-    transform:scale(1);
-    filter:opacity(1);
-    transition:.5s;
-}
-
 
 
 
@@ -7330,143 +7390,175 @@ div.content
 /* -------------------- Various Fixes -------------------- */
 
 /*Moderator - Themes - Colour-Picker*/
-div._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(234, 0, 39);"]
+div._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(234, 0, 39);"],
+div._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(234, 0, 39);"]
 {
     background-color: rgb(234, 0, 39) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(255, 69, 0);"]
+div._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(255, 69, 0);"],
+div._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(255, 69, 0);"]
 {
     background-color: rgb(255, 69, 0) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(255, 176, 0);"]
+div._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(255, 176, 0);"],
+div._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(255, 176, 0);"]
 {
     background-color: rgb(255, 176, 0) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(255, 214, 53);"]
+div._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(255, 214, 53);"],
+div._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(255, 214, 53);"]
 {
     background-color: rgb(255, 214, 53) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(148, 224, 68);"]
+div._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(148, 224, 68);"],
+div._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(148, 224, 68);"]
 {
     background-color: rgb(148, 224, 68) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(70, 209, 96);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(70, 209, 96);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(70, 209, 96);"]
 {
     background-color: rgb(70, 209, 96) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(13, 211, 187);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(13, 211, 187);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(13, 211, 187);"]
 {
     background-color: rgb(13, 211, 187) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(0, 166, 165);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(0, 166, 165);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(0, 166, 165);"]
 {
     background-color: rgb(0, 166, 165) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(184, 0, 31);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(184, 0, 31);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(184, 0, 31);"]
 {
     background-color: rgb(184, 0, 31) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(204, 54, 0);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(204, 54, 0);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(204, 54, 0);"]
 {
     background-color: rgb(204, 54, 0) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(204, 139, 0);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(204, 139, 0);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(204, 139, 0);"]
 {
     background-color: rgb(204, 139, 0) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(204, 172, 43);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(204, 172, 43);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(204, 172, 43);"]
 {
     background-color: rgb(204, 172, 43)  !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(115, 173, 52);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(204, 172, 43);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(115, 173, 52);"]
 {
     background-color: rgb(115, 173, 52) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(52, 158, 72);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(52, 158, 72);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(52, 158, 72);"]
 {
     background-color: rgb(52, 158, 72) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(10, 161, 143);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(10, 161, 143);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(10, 161, 143);"]
 {
     background-color: rgb(10, 161, 143) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(0, 115, 115);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(0, 115, 115);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(0, 115, 115);"]
 {
     background-color: rgb(0, 115, 115) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(0, 121, 211);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(0, 121, 211);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(0, 121, 211);"]
 {
     background-color: rgb(0, 121, 211) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(1, 73, 128);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(1, 73, 128);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(1, 73, 128);"]
 {
     background-color: rgb(1, 73, 128) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(113, 147, 255);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(113, 147, 255);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(113, 147, 255);"]
 {
     background-color: rgb(113, 147, 255) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(255, 102, 172);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(255, 102, 172);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(255, 102, 172);"]
 {
     background-color: rgb(255, 102, 172) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(158, 141, 73);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(158, 141, 73);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(158, 141, 73);"]
 {
     background-color: rgb(158, 141, 73) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(221, 189, 55);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(221, 189, 55);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(221, 189, 55);"]
 {
     background-color: rgb(221, 189, 55) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(237, 239, 241);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(237, 239, 241);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(237, 239, 241);"]
 {
     background-color: rgb(237, 239, 241) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(55, 60, 63);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(55, 60, 63);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(55, 60, 63);"]
 {
     background-color: rgb(55, 60, 63) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(0, 91, 161);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(0, 91, 161);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(0, 91, 161);"]
 {
     background-color: rgb(0, 91, 161) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(2, 102, 179);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(2, 102, 179);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(2, 102, 179);"]
 {
     background-color: rgb(2, 102, 179) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(90, 116, 204);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(90, 116, 204);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(90, 116, 204);"]
 {
     background-color: rgb(90, 116, 204) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(204, 82, 137);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(204, 82, 137);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(204, 82, 137);"]
 {
     background-color: rgb(204, 82, 137) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(107, 96, 49);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(107, 96, 49);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(107, 96, 49);"]
 {
     background-color: rgb(107, 96, 49) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(171, 145, 43);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(171, 145, 43);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(171, 145, 43);"]
 {
     background-color: rgb(171, 145, 43) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(187, 189, 191);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(187, 189, 191);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(187, 189, 191);"]
 {
     background-color: rgb(187, 189, 191) !important;
 }
-._35Suh6FFPv_wB32f8XV32[style="background-color: rgb(100, 109, 115);"]
+._2uwkPlP_LglpLTAm6dfFmd[style*="background-color: rgb(100, 109, 115);"],
+._35Suh6FFPv_wB32f8XV32[style*="background-color: rgb(100, 109, 115);"]
 {
     background-color: rgb(100, 109, 115) !important;
 }
+._2uwkPlP_LglpLTAm6dfFmd:hover,
 ._35Suh6FFPv_wB32f8XV32:hover
 {
     filter:brightness(1.075);
 }
 
-
 /* -------------------------------------------------------- */
 
-p.debuginfo:hover:after{color:var(--RCText)!important;content:"Reddit Custom (RES Compatible) - KMV";text-align:center;font-size:10px!important;position:fixed;left:0;bottom:0;}._34dh2eyzMvJfjCBLeoWiDD:hover:after{content:"Reddit Custom (RES Compatible) - KMV";margin-left:-72.5%;margin-top:10%!important;}
+p.debuginfo:hover::after{color:var(--RCText)!important;content:"Reddit Custom (RES Compatible) - KMV";text-align:center;font-size:10px!important;position:fixed;left:0;bottom:0;}._34dh2eyzMvJfjCBLeoWiDD:hover:after{content:"Reddit Custom (RES Compatible) - KMV";margin-left:-72.5%;margin-top:10%!important;}
 
 /* ==================== END OF CODE #2 ==================== */
 }

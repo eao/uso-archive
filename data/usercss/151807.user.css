@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `test`
-@version        20201124.7.8
+@version        202112.6.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -556,18 +556,18 @@
   /*autoPlay*/#related ytd-compact-autoplay-renderer #head paper-toggle-button[aria-pressed="false"] .toggle-button.paper-toggle-button{background:#333!important;}
   /*autoPlay*/#related ytd-compact-autoplay-renderer #head paper-toggle-button .toggle-button.paper-toggle-button:hover                {background:#c60!important;}
   /*autoPlay*/#related ytd-compact-autoplay-renderer #contents{background:#000!important;margin:0 0 20px!important;border-radius:0 0 15px 0!important;}
-  /*box*/     #related #items>*{padding:0px!important;margin:0px!important;}
-  /*box*/     #related #items>*:nth-child(2n){background:#030!important;}
-  /*box*/     #related #items>*:hover{background:#000!important;}
-  /*box*/     #related #items>* ytd-thumbnail{margin:0px!important;}
-  /*box*/     #related #items>* ytd-thumbnail{}
-  /*title*/   #related #items>* .metadata{padding:0px!important;}
-  /*title*/   #related #items>* a{padding:2px 0px 0px 0px!important;}
-  /*title*/   #related #items>* a h3{color:#c60!important;min-height:56px!important;}
-  /*title*/   #related #items>* a h3 .badge{padding:0px!important;}
-  /*title*/   #related #items>* a h3 #video-title{max-height:56px!important;}
-  /*title*/   #related #items>* a h3 #video-title{font-size:19px!important;line-height:100%!important;font-weight:100!important;margin:0px!important;}
-  /*title*/   #related #items>*:hover a #video-title{max-height:initial!important;display:block!important;overflow:visible!important;}
+  /*box*/     #related #items ytd-compact-video-renderer{padding:0px!important;margin:0px!important;}
+  /*box*/     #related #items ytd-compact-video-renderer:nth-child(2n){background:#030!important;}
+  /*box*/     #related #items ytd-compact-video-renderer:hover{background:#000!important;}
+  /*box*/     #related #items ytd-compact-video-renderer ytd-thumbnail{margin:0px!important;}
+  /*box*/     #related #items ytd-compact-video-renderer ytd-thumbnail{}
+  /*title*/   #related #items ytd-compact-video-renderer .metadata{padding:0px!important;}
+  /*title*/   #related #items ytd-compact-video-renderer a{padding:2px 0px 0px 0px!important;}
+  /*title*/   #related #items ytd-compact-video-renderer a h3{color:#c60!important;min-height:56px!important;}
+  /*title*/   #related #items ytd-compact-video-renderer a h3 .badge{padding:0px!important;}
+  /*title*/   #related #items ytd-compact-video-renderer a h3 #video-title{max-height:56px!important;}
+  /*title*/   #related #items ytd-compact-video-renderer a h3 #video-title{font-size:19px!important;line-height:100%!important;font-weight:100!important;margin:0px!important;}
+  /*title*/   #related #items ytd-compact-video-renderer:hover a #video-title{max-height:initial!important;display:block!important;overflow:visible!important;}
   /*title*/   #related #items>* a:visited h3{color:#888!important;}
   /*info*/    #related #items>* #metadata{}
   /*info*/    #related #items>* #metadata *{max-width:initial!important;max-height:initial!important;overflow:visible!important;}
@@ -599,7 +599,7 @@
   /*popup*/paper-listbox>.ytd-menu-popup-renderer>paper-item:hover{background:#560!important;}
   /*popup*/paper-listbox>.ytd-menu-popup-renderer>paper-item>yt-icon svg{fill:#a11!important;}
   /*related misc*/
-  /*new*/     ytd-compact-video-renderer .badge-style-type-simple.ytd-badge-supported-renderer{background:#000!important;}
+  /*new*/     ytd-compact-video-renderer .badge-style-type-simple.ytd-badge-supported-renderer{display:none!important;background:#000!important;}
   /*more*/    ytd-compact-video-renderer #continuations paper-button[animated]{background:#000!important;transition:none!important;}
   /*more*/#related ytd-compact-playlist-renderer{display:none!important;}
   

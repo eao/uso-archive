@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `Dark mode for app.fluencia.com`
-@version        20201231.5.25
+@version        202112.3.33
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -86,8 +86,8 @@ body:not(.body-fresh) .quiz-done-container, .quiz-done-stats-correct-pct, .quiz-
     color: #ddd;
 }
 body:not(.body-fresh) .answer-area {
-    background: #555;
-    border: solid #999;
+    background: #444;
+    border: solid #777;
     color: #ddd;
 }
 #header {
@@ -260,11 +260,17 @@ hr {
 body:not(.body-fresh) .input .number-list-disabled .choice-error, body:not(.body-fresh) .input .number-list-disabled .choice-success {
     background-color: #444;
 }
-body:not(.body-fresh) .input .number-list li:hover {
-    background-color: #555;
-}
 .images-area .choice-success:hover .image-label {
     background: hsl(80, 85%, 40%);
+    color: #fff;
+}
+.images-area .choice-error:hover .image-label {
+    background: hsl(2, 85%, 40%);
+    color: #fff;
+}
+.images-area .image .image-label span,
+.images-area .choice-success:hover .image-label, .images-area .choice-success:hover .image-label span {
+    color: #ddd;
 }
 body:not(.body-fresh) .help-bar-icons a {
     background: #444;
@@ -299,11 +305,39 @@ body:not(.body-fresh) .feedback #diff-container .ins {
     text-shadow: 0 1px 0 #fff;
 }
 .quiz-loading .quiz-loading-activity[class*="ico-"] {
-    background: #999;
+    background: #5eba66;
+    box-shadow: 0 0 0 0 #777;
+}
+.quiz-loading .quiz-loading-activity[class*="ico-"]:hover {
+    background: #5eba66;
     box-shadow: 0 0 0 0 #777;
 }
 [class^="ico-"], [class*=" ico-"] {
     color: #333;
     box-shadow: 0 -1px 0 0 #555 inset;
+}
+.smart-review-loading-footer {
+    background-color: #444;
+    border-top: 1px solid #555;
+}
+.well {
+    background-color: #444;
+    border: 1px solid #555;
+}
+body:not(.body-fresh) .alert {
+    background-color: #333;
+}
+body:not(.body-fresh) .alert .alert-holder {
+    color: #ddd;
+    background: #333;
+}
+body:not(.body-fresh) .alert {
+    border: 10px solid #555;
+}
+.tip .table-bordered {
+    border: 1px solid hsl(205, 55%, 40%);
+}
+.tip .table th, .tip .table td {
+    border-top: 1px solid hsl(205, 55%, 40%);
 }
 }
