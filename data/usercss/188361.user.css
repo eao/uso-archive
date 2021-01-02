@@ -3,13 +3,17 @@
 @namespace      USO Archive
 @author         floriegl
 @description    `Removes all advertisement banners, favorites, groups und the header of folders.`
-@version        20201226.12.44
+@version        202111.22.21
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://outlook.live.com/mail/") {
 /* Right-side ad banner */
 div#app > div > div:nth-child(2) > div > div > div > div > div:nth-child(4) {
+    display: none !important;
+}
+    
+div#app > div > div:nth-child(2) > div > div > div > div > div:nth-child(5) {
     display: none !important;
 }
 

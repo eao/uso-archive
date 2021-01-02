@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Flame-0
 @description    `Dark Theme for bitcointalk.org | Based on Nord. An arctic, north-bluish color palette.Repository: https://github.com/Flame-0/nord-bitcointalk`
-@version        20201227.12.18
+@version        202111.19.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -427,7 +427,8 @@ div#bodyarea .mirrortab_active_first {
 }
 div#bodyarea .maintab_active_back,
 div#bodyarea .mirrortab_active_back {
-    background: url("https://bitcointalk.org/Themes/custom1/images/catbg.jpg") #88A6C0 repeat-x;
+    background: none;
+    background-color: #2e3440;
 }
 div#bodyarea .maintab_active_last,
 div#bodyarea .mirrortab_active_last {
@@ -586,7 +587,8 @@ img.userimg {
     max-width: 100%
 }
 .trustscore {
-    white-space: nowrap
+    white-space: nowrap;
+    color: #eceff4 !important;
 }
 .nohover:hover {
     text-decoration: none

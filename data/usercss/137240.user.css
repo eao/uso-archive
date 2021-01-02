@@ -3,14 +3,13 @@
 @namespace      USO Archive
 @author         OrriGo
 @description    `Google Dark Theme - OrriGoThe latest Google Dark Material Theme with attention to detail, makes this the best experience for those looking for a darker, more pleasant on the eyes browsing experience.`
-@version        2019915.2.23
+@version        202111.14.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url("https://www.google.com"), url("https://www.google.de/search"), regexp("https?://(www|encrypted|images|translate|accounts).google.(com|([a-z]{2}))(.[a-z]{2})?/(?!mobile|intl|alerts|shopping|finance|calendar|nexus|contacts|services|advanced_search|voice|maps|dashboard|settings|android|adsense|analytics|doodles|chrome|fonts|patents|translate_p).*"), regexp("https://www.google.de") {
 /*================================
-15/09/2019 - Version: v5.0
-- New Update
+01/01/2021 - Version: v6.0
 - Fix colors Google
 ================================*/
 
@@ -2922,6 +2921,52 @@ body > section > div > section > div.download__panel.personal > a.maia-button.bu
 .w8qArf .fl {
     color: #e8e8e8!important;
 }
+.yg51vc {
+    background: #fff0!important;
+}
+.I6TXqe {
+    background: #fff0!important;
+    }
+.Xeztj {
+    background: #fff0!important;
+    }
+.Nxb87 {
+    background: #222222!important;
+    }
+.nNwWze {
+    background: #222222!important;
+    }
+.mIKy0c.dGWpb {
+    background:  #222222!important;
+    }
+.q2eaDe {
+    background:  #222222!important;
+    }
+.vg4Xpd {
+    background:  #222222!important;
+    }
+.dr1yeb{
+    background:  #222222!important;
+    }
+.QsV5nc .yF4Rkc  {
+    color:  #3296c8!important;
+    }
+.IsZvec{
+    color: #999!important;
+    }
+.W3btD {
+    color: #999!important;
+    }
+.s8GCU {
+    background:  #222222!important;
+    }
+.Lj9fsd{
+    background:  #222222!important;
+    }
+.jZWadf {
+background:  #222222!important;
+    }
+
 }
 
 @-moz-document regexp("https://www.google."), regexp("https://(www|encrypted|images).google.(com|co.[a-z]{2}|com.[a-z]{2}|[a-z]{2})?/.*") {

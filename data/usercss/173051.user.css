@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         fmla
 @description    `VK full: width auto multicolumn, glass random background image, auto hide nav bar, text shadow.Вконтакте полная: ширина авто по нескольким столбцам, стекляное случайное фоновое изображение, автоматически скрываемые панели навигации, тень текста.`
-@version        202111.12.11
+@version        202111.13.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,7 +16,7 @@ body.no_stl #stl_bg {display: block;}
 #stl_text{margin-left: 0px; padding: 0 8px !important; font-size: 0px}
 #stl_side {width: 52px !important; left: 8px !important;}
 
-.scroll_fix_wrap._page_wrap, .scroll_fix, .page_header_cont, #page_layout{padding: 0 0 !important; margin: 0 0 !important; width: 100% !important;}
+.scroll_fix_wrap._page_wrap, .scroll_fix, .page_header_cont, #page_layout{padding: 0 0 !important; margin: 0 0 !important; width: 100% !important; --layout-width: 99% !important;}
 
 .page_header_cont, #page_header_cont .back, .page_header_wrap, #page_header, .head_nav_item.fl_l, .top_home_link {height: 36px !important}
 .market_module .page_market_more_btn {margin: 0px 0px -25px;}

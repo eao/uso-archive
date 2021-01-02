@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         {eMeM}
 @description    `Dark Theme`
-@version        2020629.12.52
+@version        202111.21.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -145,4 +145,34 @@ td.Knap {
 ::-webkit-scrollbar-thumb:hover {
   background: #4c4c4c;
 }
+}
+
+@-moz-document regexp("(https|http)://animesub.info/wl/") {
+    
+ body {
+    color: #ccc;
+}   
+    .title {
+    background-color: #2d2d2d;
+}
+    #tabs li {
+    background: #333;
+}
+    
+.list tr:hover td { background-color:#555; }
+
+    
+input[type=button],
+input[type=submit] { color:#ccc; background-color:#333; }
+    
+input[type=button]:hover,
+input[type=submit]:hover { color:#ddd; background-color:#555; }
+
+    
+#tabs li.active { background:#000;}
+    #tabs li.active a { color:#6bb93b; }
+
+    
+    .list .even td { background-color:#333; }
+
 }

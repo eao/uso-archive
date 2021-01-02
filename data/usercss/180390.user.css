@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MariaLovesQueen
 @description    `<b>Дорогие пользователи, прошу пишите мне на этом сайте в feedback или куда-нибудь в лс, если видите в этом стиле ошибки, недокрашенные области и пр.</b> Мне самой сложно следить за всем, помогайте. Дата последних изменений в стиле находится выше в графе <b>Last Updated</b>, иными словами, если вы видите что дата там изменилась значит стиль был немного доработан.<br><br>Изменения: плеер выше :D Исправлена ошибка перекрытия фоном плеера, заменен фон на чёрный в родной темной теме сайта.`
-@version        20201228.11.0
+@version        202111.21.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -69,7 +69,7 @@
 	color: #999 !important;
 }
 
-body.b-theme__template__night .b-newest_slider .cntrl, body.b-theme__template__night .tumbler__wrapper, .b-videosaves__list_item .new-episode, .b-person__popup_photo, .b-post__qa_list_link, .b-post__schedule_block_title, .comments-form, .b-search__live_all, .b-sidecover, .b-post__social_holder, .b-person__popup_holder_photo .overlay, .b-person__popup_content .stats a, .b-tophead-dropdown.hovered, .b-tophead_wrapper, .b-translators__block, .b-videosaves__list_item .new-episode.own, .b-seriesupdate__block_date.collapsible.expandable, .b-seriesupdate__block_list_item, .b-seriesupdate__block_date, .b-newest_slider, .b-newest_slider__list, .b-collections__newest, .b-newest_slider_wrapper, .b-content__inline_item-cover, .b-wrapper, #top-nav, body.has-brand #wrapper, #wrapper {
+.b-favorites_content__cats_list_item .edit-cat, .b-favorites_content__cats_list_item .edit-cat:hover, body.b-theme__template__night .b-newest_slider .cntrl, body.b-theme__template__night .tumbler__wrapper, .b-videosaves__list_item .new-episode, .b-person__popup_photo, .b-post__qa_list_link, .b-post__schedule_block_title, .comments-form, .b-search__live_all, .b-sidecover, .b-post__social_holder, .b-person__popup_holder_photo .overlay, .b-person__popup_content .stats a, .b-tophead-dropdown.hovered, .b-tophead_wrapper, .b-translators__block, .b-videosaves__list_item .new-episode.own, .b-seriesupdate__block_date.collapsible.expandable, .b-seriesupdate__block_list_item, .b-seriesupdate__block_date, .b-newest_slider, .b-newest_slider__list, .b-collections__newest, .b-newest_slider_wrapper, .b-content__inline_item-cover, .b-wrapper, #top-nav, body.has-brand #wrapper, #wrapper {
     background-color: rgba(0,0,0,0) !important;
 }
 
@@ -78,11 +78,11 @@ body.b-theme__template__night .b-newest_slider .cntrl, body.b-theme__template__n
 	color: #999 !important;
 }
 
-.b-content__bubble, body.b-theme__template__night .sod_list_wrapper, body.b-theme__template__night .sod_select, .tooltipster-default, .btn-helper, .btn-action, .title_spoiler a, #hd-comments-list>.comments-tree-list>li:nth-child(odd) .comments-tree-item, #dlemasscomments #dle-comments-list>div:nth-child(odd) .comments-tree-item, #hd-comments-list>.comments-tree-list>li:nth-child(odd), #dlemasscomments #dle-comments-list>div:nth-child(odd), .b-search__form, .b-search__field {
+div.b-favorites_content__cats_list_item .edit-cat, .b-favorites_content__cats_list .draggable, .b-favorites_content__cats_list_item .b-favorites_content__cats_list_link.active, .b-favorites_content__cats_list .draggable, .b-favorites_content__cats_list_link, .b-userset__fav_holder, .b-content__bubble, body.b-theme__template__night .sod_list_wrapper, body.b-theme__template__night .sod_select, .tooltipster-default, .btn-helper, .btn-action, .title_spoiler a, #hd-comments-list>.comments-tree-list>li:nth-child(odd) .comments-tree-item, #dlemasscomments #dle-comments-list>div:nth-child(odd) .comments-tree-item, #hd-comments-list>.comments-tree-list>li:nth-child(odd), #dlemasscomments #dle-comments-list>div:nth-child(odd), .b-search__form, .b-search__field {
 	background-color: #111 !important;
 }
 
-.btn-helper:hover, .btn-action:hover, #hd-comments-list>.comments-tree-list>li:nth-child(even) .comments-tree-item, #dlemasscomments #dle-comments-list>div:nth-child(even) .comments-tree-item, #hd-comments-list>.comments-tree-list>li:nth-child(even), #dlemasscomments #dle-comments-list>div:nth-child(even), .b-comment__admin  {
+.b-content__filters_types .filter-link.active, .b-favorites_content__cats_list_item:hover .b-favorites_content__cats_list_link, .btn-helper:hover, .btn-action:hover, #hd-comments-list>.comments-tree-list>li:nth-child(even) .comments-tree-item, #dlemasscomments #dle-comments-list>div:nth-child(even) .comments-tree-item, #hd-comments-list>.comments-tree-list>li:nth-child(even), #dlemasscomments #dle-comments-list>div:nth-child(even), .b-comment__admin  {
 	background-color: #222 !important;
 }
 
@@ -95,7 +95,7 @@ body.b-theme__template__night .b-newest_slider .cntrl, body.b-theme__template__n
 	color: #ccc !important;
 }
 
-.b-videosaves__list_item .new-episode.own, .b-user__settings .sep-title, .btn-helper:hover, .b-comment__like_it i:hover, .b-comment__quoteuser:hover, .b-post__rating .num, .b-post__partcontent_item.current .title, .b-search__section_list .enty, .b-search__live_all:hover, .b-person__popup_content .stats a:hover, .b-tophead-dropdown.hovered, .persons-list-holder .person-name-item a:hover, .b-videosaves__list_item:hover .td a, .user-things a:hover .count, .b-seriesupdate__block_date.collapsible.expandable:hover .act, .b-seriesupdate__block_date.collapsible.expandable, .b-seriesupdate__block_date.collapsible, .b-seriesupdate__block_date:hover .act, .b-newest_slider__title span:hover, .b-topnav__item-link:hover, .b-topnav__item-link.active, .b-topnav__item-link.active_section, a:hover, a:active {
+.b-content__filters_types .filter-link.active, .b-favorites_content__cats_list_item .b-favorites_content__cats_list_link.active, .b-videosaves__list_item .new-episode.own, .b-user__settings .sep-title, .btn-helper:hover, .b-comment__like_it i:hover, .b-comment__quoteuser:hover, .b-post__rating .num, .b-post__partcontent_item.current .title, .b-search__section_list .enty, .b-search__live_all:hover, .b-person__popup_content .stats a:hover, .b-tophead-dropdown.hovered, .persons-list-holder .person-name-item a:hover, .b-videosaves__list_item:hover .td a, .user-things a:hover .count, .b-seriesupdate__block_date.collapsible.expandable:hover .act, .b-seriesupdate__block_date.collapsible.expandable, .b-seriesupdate__block_date.collapsible, .b-seriesupdate__block_date:hover .act, .b-newest_slider__title span:hover, .b-topnav__item-link:hover, .b-topnav__item-link.active, .b-topnav__item-link.active_section, a:hover, a:active {
 	color: #fff !important;
 }
 
@@ -109,7 +109,7 @@ body.b-theme__template__night .b-newest_slider .cntrl, body.b-theme__template__n
 	text-decoration: none !important;
 }
 
-body.b-theme__template__night .sod_list_wrapper, .sod_select, body.b-theme__template__night .sod_select:hover, body.b-theme__template__night .sod_select.open, body.b-theme__template__night .sod_select.focus, .b-person__popup_photo, .btn-helper, .btn-action, .b-comment__like_it i, .b-comment__quoteuser, .title_spoiler a, .b-post__qa_list_item .inner, .b-post__schedule_table td, .fixed-header .b-topnav_wrapper.shi, .fixed-header .b-topnav_wrapper.shm, .b-search__section_list a, .b-sidecover, .b-person__popup_holder_photo .overlay, .tooltipster-default, .b-tophead-dropdown, .b-tophead-dropdown ul, .b-tophead-dropdown.hovered, .persons-list-holder .person-name-item a, .td, .th, .b-topnav__sub_inner a, .b-topnav__sub_inner, .b-seriesupdate__block_list_item, .b-navigation, .b-newest_slider__title span, .b-content__inline_item-cover, #top-nav {
+#ps-favorites-case .change-name-link, .b-favorites_content__cats_list_item, .b-favorites_content__cats_list_item .b-favorites_content__cats_list_link.active, .b-favorites_content__cats_list, .b-favorites_content__cats_list_item:first-child, .b-userset__fav_link, .b-userset__fav_holder, body.b-theme__template__night .sod_list_wrapper, .sod_select, body.b-theme__template__night .sod_select:hover, body.b-theme__template__night .sod_select.open, body.b-theme__template__night .sod_select.focus, .b-person__popup_photo, .btn-helper, .btn-action, .b-comment__like_it i, .b-comment__quoteuser, .title_spoiler a, .b-post__qa_list_item .inner, .b-post__schedule_table td, .fixed-header .b-topnav_wrapper.shi, .fixed-header .b-topnav_wrapper.shm, .b-search__section_list a, .b-sidecover, .b-person__popup_holder_photo .overlay, .tooltipster-default, .b-tophead-dropdown, .b-tophead-dropdown ul, .b-tophead-dropdown.hovered, .persons-list-holder .person-name-item a, .td, .th, .b-topnav__sub_inner a, .b-topnav__sub_inner, .b-seriesupdate__block_list_item, .b-navigation, .b-newest_slider__title span, .b-content__inline_item-cover, #top-nav {
 	border: none !important;
 	box-shadow: none !important;
 	border-radius: 0 !important;

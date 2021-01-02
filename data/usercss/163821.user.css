@@ -3,23 +3,27 @@
 @namespace      USO Archive
 @author         _A7med
 @description    `Remove the right ad bar from Outlook.com,Live.com,Hotmail.com and the bottom one`
-@version        20201127.22.11
+@version        202111.20.48
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("outlook.live.com")
 {
- div[id="app"] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4) {
+ /* left side bottom ad */
+div[id="app"] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
     display: none !important;
 }
 
 
-div[id="app"] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+/* right side ad */
+div[id="app"] > div:nth-child(1) > div:nth-child(2)> div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(4){
     display: none !important;
 }
+
+/* top ad in small screen */
 
 @media only screen and (max-width: 990px) {
-    div[id="app"] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+    div[id="app"] > div:nth-child(1)> div:nth-child(2)> div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(5){
         display: none !important;
     }
 }

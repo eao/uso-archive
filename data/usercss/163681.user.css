@@ -2,15 +2,15 @@
 @name           3ddd.ru - Dark Theme
 @namespace      USO Archive
 @author         Lev M
-@description    `3ddd.ru - Dark ThemeStyle Version 0.5.5`
-@version        20201025.16.1
+@description    `3ddd.ru - Dark ThemeStyle Version 0.5.6`
+@version        202111.18.6
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("3ddd.ru") {
 /*
 
-Версия стиля 0.5.5
+Версия стиля 0.5.6
 
 1. Что бы обновить стиль, в расширении stylus нажмите кнопку "менеджер" и рядом с названием сайта нажмите кнопку проверить обновления. 
 Если вы вносили какие то изменения в основной код, то предварительно скопируйте свои правки и после обновления вставьте их обратно.
@@ -3421,5 +3421,92 @@ body
 {
     background-color: #282828;
     border: 1px solid #444;
+}
+.finance-tabs li
+{
+    background: #202020;
+}
+#funds_withdrawal .sum-head
+{
+    color:#fa9513;
+}
+.withdrawal-new .tab_content
+{
+    border: 1px solid #444;
+    border-top: 1px solid #444444;
+    background-color: #3c3c3c;
+}
+.withdrawal-new .tab.active
+{
+    background: #3c3c3c!important;
+    border-bottom: #444!important;
+}
+.withdrawal-new .tab
+{
+    border: 1px solid #414141;
+    background-color: #202020 !important;
+    background: #202020 !important;
+}
+.withdrawal-new .tab:hover
+{
+    border: 1px solid #3c3c3c;
+    background-color: #3c3c3c !important;
+    background: #454545 !important;
+}
+#funds_withdrawal .dark-grey
+{
+    color: #c2c2c2 !important;
+}
+#funds_withdrawal .medium-grey
+{
+    color: #c2c2c2 !important;
+}
+.false-input {
+    color: #c2c2c2 !important;
+}
+#funds_withdrawal label
+{
+    color: #c2c2c2 !important;
+}
+.invoice-sumbit
+{
+    border: 1px solid #414141;
+    background: #202020!important;
+    color: #adadad;
+}
+.invoice-sumbit:hover
+{
+    border: 1px solid #414141;
+    background: #91c001!important;
+    color: #f1f1f1;
+}
+
+#funds_withdrawal .black
+{
+    color: #e3e3e3;
+    background-color: #444;
+}
+.invoice-form.search-form input
+{
+    border: 1px solid #7a7878;
+    color: #e3e3e3;
+    background-color: #444;
+}
+.invoice-form.search-form input .input-group-text
+{
+    border: 1px solid #7a7878;
+}
+.selectize-input.full
+{
+    border: 1px solid #7a7878;
+    background-color: #444;
+    color: #e3e3e3;
+}
+#funds_withdrawal label {
+    color: #c2c2c2 !important;
+    border-color: #7a7878;
+}
+.withdrawal-new .tab img {
+    filter: invert(30%) grayscale(100%) brightness(2);
 }
 }

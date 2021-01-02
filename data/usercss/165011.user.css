@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Anonach
 @description    `Тотальный редизайн Двача._________________________Вариант в виде CSS: https://pastebin.com/raw/QaNXedLq`
-@version        20201231.18.28
+@version        202111.16.50
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown link-color "Цвет ссылки" {
@@ -1332,6 +1332,7 @@ a.logo::before {content: "flash_on"; display: inline-block; font: 80px/1 'Materi
 select {background: var(--theme_default_altbtnbg); background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="44"><defs><g><path id="select" d="M10.3 0L5.5 4.7.7 0 0 .7 5.5 6 11 .7z"/></g></defs><use href="%23select" x="0" fill="%23000"/><use href="%23select" x="0" y="22" fill="%23fff"/></svg>') !important; background-position: var(--theme_select) !important; background-repeat: no-repeat !important; border: 1px solid var(--theme_default_border); border-radius: 3px; color: var(--theme_default_text); padding: 2px 22px 2px 6px !important; outline: none; transition: border .1s, background .1s, color .1s; -webkit-appearance: none; -moz-appearance: none; appearance: none;}
 select:focus {background: var(--theme_default_altbtnbghover); border-color: var(--theme_default_altborder);}
 .style-switcher {height: 24px;}
+.selectbox:after {display: none;}
 
 /* Setting */
 .settings__prefs {margin-left: 15px;}
