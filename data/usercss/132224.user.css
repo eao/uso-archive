@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `стиль РАЗРЕЗАН НА 2 ЧАСТИ. для нормального функционирования нужны обе / this style is CUT INTO 2 PARTS, you need both parts so it'd function properly. the second partVanilla Dark 2 VK Fix/Mod PART 2 of 2здесь / is here:https://userstyles.org/styles/165927/ЭТА ТЕМА - ДОПОЛНЕНИЕ/ИСПРАВЛЕНИЯ ДЛЯ VANILLA DARK 2, НЕ ОТДЕЛЬНЫЙ СТИЛЬ.НЕ ЗАБЫВАЕМ СНАЧАЛА УСТАНАВЛИВАТЬ https://userstyles.org/styles/126419/vanilla-dark-2 После обновления Vanilla Dark 2 этот фикс-мод возможно нужно будет переключить (ВЫКЛ/ВКЛ), чтобы он нормально работал.Паблос в ВКшечке: https://vk.com/worstmodThis Fix/Mod IS NOT A STANDALONE THEME.Make sure to install Vanilla Dark 2 first https://userstyles.org/styles/126419/vanilla-dark-2This Fix/Mod may need to be switched (OFF/ON) after Vanilla Dark 2 update to function properly.Check https://vk.com/worstmod if you have any questions/suggestions.`
-@version        20201226.4.49
+@version        202113.12.12
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown vklogo "Старый ламповый логотип:" {
@@ -350,7 +350,8 @@ flushshitoff "пускай остаётся" <<<EOT  EOT;
 [dir] body.new_header_design .ts_cont_wrap,#top_notify_btn.active #top_notify_wrap,[dir] #top_audio_layer_place > #audio_layer_tt,[dir] .narrow_column.fixed[style*="top: 48px"]{top:34px!important}
 [dir] body.new_header_design{--header-height:33px}
 [dir] body.new_header_design .side_bar_inner{margin-top:32px!important}
-body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px} EOT;
+body.new_header_design .top_nav_btn .top_notify_count{top:2px;left:20px}
+[dir] .audio_page_player2.audio_page_player_fixed_shown{transform:translate(0,27px)} EOT;
 pageheadernormal "нет, я люблю жирные шапки" <<<EOT  EOT;
 
 }
@@ -623,24 +624,24 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .photos_photo_edit_row.photos_edit_selected .photos_photo_edit_row_selector:hover,.media_check_btn:hover{opacity:1}
 
 /* чиним фон при загрузке фоток в альбом */
-.photos_container_edit_grid .photo_mask_progress{background-color:rgba(30,30,30,.84)}
-.photos_photo_edit_row_thumb{background-color:#2A2A2A!important}
-.ui_progress .ui_progress_back{background-color:#211F1F;border:1px solid #323232}
-.ui_progress .ui_progress_bar{filter:hue-rotate(260deg)contrast(1.4)saturate(.7)}
+[dir] .photos_container_edit_grid .photo_mask_progress{background-color:rgba(30,30,30,.84)}
+[dir] .photos_photo_edit_row_thumb{background-color:#2A2A2A!important}
+[dir] .ui_progress .ui_progress_back{background-color:#211F1F;border:1px solid #323232}
+[dir] .ui_progress .ui_progress_bar{filter:hue-rotate(260deg)contrast(1.4)saturate(.7)}
 
 /* фикс редактирования фотоальбома */ 
-.photos_edit_selection_header{background:rgba(0,0,0,.3);margin:0}
-.photos_edit_selection_header.photos_header_fixed{padding:8px 20px 10px;background:rgba(0,0,0,/*[[headopaque]]*/)}
-.photos_edit_selection_header:not(.photos_header_fixed) .fl_l{margin-left:20px}
-.photos_edit_selection_header:not(.photos_header_fixed) .fl_r{margin-right:20px}
-.photos_container_edit_grid .photos_photo_edit_row{background:transparent}
-.photos_photo_edit_row_desc_input{background:rgba(0,0,0,.3);border-color:var(--color3)!important}
-.photos_photo_edit_row_desc_input:focus{background:rgba(0,0,0,.7)!important}
-.photos_container_edit_grid .photos_photo_edit_row_desc_placeholder{background:rgba(0,0,0,.3)}
-.photos_cancel_move{background-color:rgba(0,0,0,.8)}
+[dir] .photos_edit_selection_header{background:rgba(0,0,0,.3);margin:0}
+[dir] .photos_edit_selection_header.photos_header_fixed{padding:8px 20px 10px;background:rgba(0,0,0,0.75)}
+[dir] .photos_edit_selection_header:not(.photos_header_fixed) .fl_l{margin-left:20px}
+[dir] .photos_edit_selection_header:not(.photos_header_fixed) .fl_r{margin-right:20px}
+[dir] .photos_container_edit_grid .photos_photo_edit_row{background:transparent}
+[dir] .photos_photo_edit_row_desc_input{background:rgba(0,0,0,.3);border-color:var(--color3)!important}
+[dir] .photos_photo_edit_row_desc_input:focus{background:rgba(0,0,0,.7)!important}
+[dir] .photos_container_edit_grid .photos_photo_edit_row_desc_placeholder{background:rgba(0,0,0,.3)}
+[dir] .photos_cancel_move{background-color:rgba(0,0,0,.8)}
 
 /* альбом без фоток подпись */
-.photos_container_albums .photos_album_no_cover .photos_album_title_wrap{color:var(--color7)}
+[dir] .photos_container_albums .photos_album_no_cover .photos_album_title_wrap{color:#666}
 
 /* фотки товара */
 .market_ei_photo_add{background-color:#EFEFEF;filter:invert(.95)saturate(0)}
@@ -650,11 +651,9 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 [src="/images/market_camera.png"]{filter:invert(.98)hue-rotate(180deg)saturate(.3)}
 
 /* треклист / плееры */
-.ap_layer_wrap .ap_layer__content{background:rgba(0,0,0,/*[[opaque]]*/)}
-.audio_page_player2{background:rgba(0,0,0,.5)}
-.audio_page_player2.audio_page_player_fixed{background:rgba(0,0,0,/*[[opaque]]*/)}
-
-
+[dir] .ap_layer_wrap .ap_layer__content{background:rgba(0,0,0,/*[[opaque]]*/)}
+.audio_page_player2{background:#0000}
+.audio_page_player2.audio_page_player_fixed{background:rgba(0,0,0,/*[[opaque]]*/)!important}
 
 /*[[moveplayer]]*/
 

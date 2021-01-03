@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Angular Documentation Dark
+@name           SG Dark - Angular Documentation
 @namespace      USO Archive
 @author         sebastienguillon
 @description    `A dark style for the Angular documentation`
-@version        20201223.0.35
+@version        202113.7.30
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -22,6 +22,18 @@ aio-search-results .search-results p, aio-search-results .search-results li, aio
     background-color: #222;
     color: #0f0;
 }
+
+.toc-inner ul.toc-list:not(.embedded) li:before {
+	border-color: #333;
+}
+
+table tbody>tr>td, table tbody>tr>th {
+    border-color: #333;
+}
+table tbody>tr>th {
+    background-color: #222;
+}
+
 .mat-toolbar.mat-primary {
     background-color: #151515;
     color: #f0f;
@@ -54,7 +66,7 @@ mat-sidenav-container.sidenav-container.mat-drawer-container.mat-sidenav-contain
 }
 mat-sidenav.mat-sidenav.sidenav, .form-select-button {
     background-color: #151515;
-    color: #fc46;
+    color: #999;
     border: 1px solid #333;
 }
 mat-sidenav .doc-version {
@@ -178,4 +190,23 @@ footer:after {
     color: #1976d2;
 }
 
+.docs-content .api-list li a:hover {
+    background-color: #151515;
+}
+.docs-content .api-list li a {
+    transition: all .1s;
+}
+
+aio-api-list .form-search input {
+    color: #ccc;
+}
+ul.form-select-dropdown, .form-select-dropdown li {
+    background-color: #111;
+}
+.form-select-dropdown li.selected {
+    background-color: #333;
+}
+.form-select-dropdown li:hover {
+    background-color: #222;
+}
 }

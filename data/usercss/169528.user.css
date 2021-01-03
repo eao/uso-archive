@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlienDrew
 @description    `Makes the entire microsoft login dark.`
-@version        2020101.12.57
+@version        202113.9.21
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -750,7 +750,7 @@ fieldset {
 }
 
 /* image/input edits */
-img.tile-img, .help-button img, .backButton img, #moreOptions > img.desktopMode.desktopMode, #fidoDialogTitle img, #gitHubDialogTitle img, #errorBannerCloseLink img, #debugDetailsCopyMessage img, input[type="checkbox"] {
+img.tile-img, .help-button img, .backButton img, #moreOptions > img.desktopMode.desktopMode, #fidoDialogTitle img, #gitHubDialogTitle img, #errorBannerCloseLink img, #debugDetailsCopyMessage img, input[type="checkbox"], div[aria-label="Open menu"] > img {
     filter: invert(100%) hue-rotate(180deg)
 }
 div[style="background: rgb(242, 242, 242);"].background-image-holder {

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `Vanilla Dark 2 VK Fix/Mod PART 1 of 2 is herehttps://userstyles.org/styles/132224read description and set all style settings there`
-@version        20201231.21.51
+@version        202113.11.50
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,6 +13,9 @@
 [dir] .ownerButton__icon {filter: invert(.9)hue-rotate(180deg)var(--filt2)brightness(.75)contrast(1.4)saturate(.5)}
 .ownerButton__title {color:var(--color2)}
 .ownerButton__title:hover{color:#fff}
+
+/* ошибка */
+[dir] .error{background-color:#ce00001f}
 
 /* фикс косяка с поиском в VD2 */
 [dir] #video_search_input.ui_search_field{background-image:none!important;padding:8px 70px 8px 12px!important}
@@ -869,19 +872,19 @@ a .app_widget_tiles_title{color:#bbb}
 .page_verified,.nim-dialog--verfifed,.im-page--header-verified{filter:saturate(0)invert(1)contrast(2)}
 
 /* настройки приватности списки доступа */
-.privacy_dropdown .l_header .l_header_label,.privacy_dropdown .l_header,.privacy_dropdown .l_item{background-color:#171717;color:#BBB}
-.privacy_dropdown .l_item:hover{background-color:#111;color:#CCC}
-.privacy_dropdown .l_item_sel{background:#151515 url("https://vk.com/images/icons/dropdown_check.png?2") no-repeat scroll left 9px;color:#CCC;filter:saturate(0)}
-.privacy_dropdown .l_item_sel:hover{background:#111 url("https://vk.com/images/icons/dropdown_check.png?2") no-repeat scroll left 9px;color:#AAA}
-.group1,.group2,.group3,.group4,.group5,.group6,.group7,.group8,.group9,.group10{background-color:#171717}
-.privacy_custom_box .cp_plus_friends_type{color:#CCC}
-.privacy_custom_box .plus_friends{border-bottom:1px solid #333}
-.subheader{border-bottom:none}
-.flist_full .flist_item_wrap:hover{background:none}
-.l_item .privacy_item_icon{filter:var(--filt2)brightness(.5)}
-.privacy_locked{background:none}
-.privacy_locked:before{position:absolute;content:" ";display:block;height:16px;width:10px;margin-left:-16px;background:url(https://vk.com/images/icons/lock_icons.png) no-repeat 0 2px;filter:var(--filt2)brightness(.4)}
-.privacy_dropdown .header .header_label,.privacy_dropdown .l_header::after{filter:var(--filt2)}
+[dir] .privacy_dropdown .l_header .l_header_label,[dir] .privacy_dropdown .l_header,[dir] .privacy_dropdown .l_item{background-color:#171717;color:#BBB}
+[dir] .privacy_dropdown .l_item:hover{background-color:#111;color:#CCC}
+[dir] .privacy_dropdown .l_item_sel{background:#151515 url("https://vk.com/images/icons/dropdown_check.png?2") no-repeat scroll left 9px;color:#CCC;filter:saturate(0)}
+[dir] .privacy_dropdown .l_item_sel:hover{background:#111 url("https://vk.com/images/icons/dropdown_check.png?2") no-repeat scroll left 9px;color:#AAA}
+[dir] .group1,[dir] .group2,[dir] .group3,[dir] .group4,[dir] .group5,[dir] .group6,[dir] .group7,[dir] .group8,[dir] .group9,[dir] .group10{background-color:#171717}
+[dir] .privacy_custom_box .cp_plus_friends_type{color:#CCC}
+[dir] .privacy_custom_box .plus_friends{border-bottom:1px solid #333}
+[dir] .subheader{border-bottom:none}
+[dir] .flist_full .flist_item_wrap:hover{background:none}
+[dir] .l_item .privacy_item_icon{filter:var(--filt2)brightness(.5)}
+[dir] .privacy_locked{background:none}
+[dir] .privacy_locked:before{position:absolute;content:" ";display:block;height:16px;width:10px;margin-left:-16px;background:url(https://vk.com/images/icons/lock_icons.png) no-repeat 0 2px;filter:var(--filt2)brightness(.4)}
+.privacy_dropdown .header .header_label,[dir] .privacy_dropdown .l_header::after{filter:var(--filt2)}
 
 /* настройка оповещений на сайте */
 .settings_separated_row_iconed.icon_type_clock:before,.settings_separated_row_iconed.icon_type_email:before,.settings_separated_row_iconed.icon_type_ienable:before,.settings_separated_row_iconed.icon_type_isounds:before,.settings_separated_row_iconed.icon_type_itexts:before{background-color:#333333}

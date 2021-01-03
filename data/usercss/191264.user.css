@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As every CurseForge dark theme doesn't work or its just shit, I decide to make my own.`
-@version        20201023.20.24
+@version        202113.1.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -147,7 +147,7 @@ input  {
     background: rgba(0, 0, 0, .3);
     color: #fff;
 }
-[src='http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y'] {
+[src='http://www.gravatar.com/avatar/00000000000000000000000000000000?d=mm&f=y'], [src='https://media.forgecdn.net/avatars/thumbnails/52/102/64/64/636111139761599118.png'], [src='https://media.forgecdn.net/avatars/thumbnails/6/75/64/64/635351598555753321.png'], [src='https://media.forgecdn.net/avatars/thumbnails/6/77/64/64/635351599006894511.png'], [src='https://media.forgecdn.net/avatars/thumbnails/6/76/64/64/635351598683223748.png'], [src='https://media.forgecdn.net/avatars/thumbnails/6/78/64/64/635351599155374805.png'], [src='https://media.forgecdn.net/avatars/thumbnails/6/79/64/64/635351599486461159.png'], [src='https://media.forgecdn.net/avatars/thumbnails/6/80/64/64/635351599620886449.png'], [src='https://media.forgecdn.net/avatars/thumbnails/53/339/64/64/636123919846079516.png'], [src='https://media.forgecdn.net/avatars/thumbnails/52/99/64/64/636111139136535634.png'], [src='https://media.forgecdn.net/avatars/thumbnails/52/103/64/64/636111139893035422.png'] {
 	filter: invert(100);
 }
 .project-avatar-64 {
@@ -329,7 +329,6 @@ body.body-home .ec-featured-sites .featured-site-info-container .button.secondar
 	color: #fff;
 }
 .u-dropDown .u-dropDownMenu li>a:hover {
-	background: #111;
 	color: #fff;
 }
 body.body-forum .single-column #content .p-forum-a table:not(.mceLayout):not(.mceToolbar):not(.mceListBox):not(.mceSplitButton) tr td, body.body-user .single-column #content .p-forum-a table:not(.mceLayout):not(.mceToolbar):not(.mceListBox):not(.mceSplitButton) tr td, body.body-devtracker .single-column #content .p-forum-a table:not(.mceLayout):not(.mceToolbar):not(.mceListBox):not(.mceSplitButton) tr td {
@@ -541,5 +540,79 @@ iframe#field-description_ifr, [src='https://media.forgecdn.net/avatars/thumbnail
 }
 .user-menu__item, .user-menu input[type="submit"] {
 	color: #e9e7ec;
+}
+.text-white.font-bold.text\=3xl {
+	visibility: hidden;
+}
+.text-white.font-bold.text\=3xl:before {
+	content: "Welcome to CumZone!";
+	visibility: visible;
+}
+.home-hero .container>h1:after {
+	visibility: visible;
+	filter: invert(41%) sepia(80%) saturate(3047%) hue-rotate(238deg) brightness(92%) contrast(89%);
+}
+a.button.button--inverse.mr-2 {
+	background: #000 !important;
+}
+.cookiebar {
+    border-color: #333;
+    background: #151515;
+}
+.cookiebar span, .cookiebar a {
+	color: #fdfdfd !important;
+}
+#main-dialog-box h2, #main-dialog-box p, nav.box a, nav.ui-dialog a, .listing-container:not(.custom-formatting) nav.alert.no-results a, nav.project-list-bubble-item a, .u-dropDown:hover nav.u-dropDownMenu a, nav.spoiler a, body[class*="body-user-my"] .listing-user nav.user-list-item a, body[class*="body-user-my"] .listing-user-profile nav.user-list-item a, .body-user-followers .listing-user nav.user-list-item a, .body-user-followers .listing-user-profile nav.user-list-item a, nav.e-settings-container a, .body-publicprojectsettings-members nav.field-errors a, .body-publicprojectsettings-filedefaultrelations nav.field-errors a, .button.button--hollow .icon, .form-gray-footer button.button--hollow .icon, .body-privatemessage-create .form-submit button.button--hollow .icon, .user-profile-buttons a.button--hollow .icon, .input>button.button--hollow .icon, .body-privatemessage-details .bcc-form .container-div-recipients .field>button.button--hollow .icon, .body-privatemessage-create .field>button.button--hollow .icon, .b-userAction .b-userAction-item *, .button.button--hollow .label, .form-gray-footer button.button--hollow .label, .body-privatemessage-create .form-submit button.button--hollow .label, .user-profile-buttons a.button--hollow .label, .input>button.button--hollow .label, .body-privatemessage-details .bcc-form .container-div-recipients .field>button.button--hollow .label, .body-privatemessage-create .field>button.button--hollow .label, .listing th .asc, .listing th .desc {
+	color: #fdfdfd;
+}
+.listing th .asc:hover:before, .listing th .desc:hover:before {
+    border-top-color: #c7c7c799;
+}
+.listing th .desc.selected:after {
+    border-bottom-color: #fdfdfd;
+}
+.listing th .asc:hover:after, .listing th .desc:hover:after {
+    border-bottom-color: #c7c7c799;
+}
+.author-box, .desktop-box {
+	background-color: #0d0d0d;
+}
+#main-dialog-box {
+	background: #000;
+	border-color: #2a282e;
+	box-shadow: 0px 3px 3px rgba(255, 255, 255, .15);
+}
+.author-upsell__layer {
+    background-color: #895adf;
+}
+.icon, .pagination .pagination-prev:not(.pagination-prev--inactive):not(.pagination-next--inactive) path, .pagination .pagination-next:not(.pagination-prev--inactive):not(.pagination-next--inactive) path, .user-tag-follow:not(.followed):hover .icon, .forum-post-body a {
+	color: #895adf;
+}
+.flex.items-center.h-full > a {
+	color: #895adf !important;
+}
+.user-menu__item:hover {
+	background: #895adf;
+}
+.border-primary-500 {
+	border-color: #895adf;
+}
+.p-comment-post pre {
+	background: #141019;
+	color: #9e93ae;
+}
+.select2-results .select2-highlighted {
+    background-color: #3b3a3e;
+}
+.p-user-content {
+	background: #0000 !important;
+}
+.body-privatemessage-index .p-pm-filter .user-actions .user-action.selected {
+	background: #151515;
+}
+.pm-nav.box.p-2.mt-6 > ul > li > a, aside.max-w-60.w-full.mr-4 > div > ul > li > a {
+	background: #0000 !important;
+	border-color: #0000 !important;
+	background-image: none !important;
 }
 }
