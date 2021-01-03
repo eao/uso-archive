@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Vinyl Darkscratch-Kazotetsu
 @description    `A dark theme for the Geocaching.com website, as well as a few other related websites (GeoCheck.org and GeoChecker.com).  Colors are changeable via the variables set on :root.Any issues?  Additional websites to add?  Want to check out my other dark theme styles?  Let me know by contacting me through my social media (and please provide a screenshot if possible): https://www.queengoob.org/darkthemes`
-@version        20201227.12.27
+@version        202112.17.37
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("geocaching.com"), domain("geocheck.org"), domain("geochecker.com"), domain("pathtags.com") {
+@-moz-document domain("geocaching.com"), domain("geocheck.org"), domain("geochecker.com"), domain("certitudes.org"), domain("pathtags.com") {
 :root {
     --background: #181818;
     --background-2: #202020;
@@ -19,6 +19,7 @@
     --foreground: #ccc;
     --foreground-2: white;
     --foreground-disabled: #828282;
+    --foreground-invert: black;
     --main: #02874d;
     --main-dark: #0a1f15;
     --error: #ec0404;
@@ -78,7 +79,9 @@ input[type="email"],
 .cke .cke_button.cke_button__source.cke_button_on:focus,
 .cke .cke_button.cke_button__source.cke_button_on:active,
 .toolbar select,
-.filters-toggle .btn-show {
+.filters-toggle .btn-show,
+#inputArea input[type="text"],
+#inputArea input[type="text"]:focus {
     color: var(--foreground);
     background-color: var(--background);
     border: var(--border-input);
@@ -147,7 +150,8 @@ div.scrollbarpaper-track,
 .sidebar-search-view,
 .sidebar-toggle,
 #search-filters,
-.cache-detail-preview {
+.cache-detail-preview,
+.gc-add-to-list .create-new-list-form-section .create-new-list-form {
     background-color: var(--background);
     color: var(--foreground);
 }
@@ -319,7 +323,12 @@ legend,
 .cache-preview-action-menu ul a, .cache-preview-action-menu ul a:visited, .cache-preview-action-menu ul button,
 .cache-preview-attributes .favorites-points,
 .cache-preview-attributes .geocache-owner > span,
-.cache-activity-log .type-and-date {
+.cache-activity-log .type-and-date,
+.selectize-dropdown-content>[data-selectable],
+#create-new-list-textfield-header,
+.gc-add-to-list .existing-lists-header,
+.gc-add-to-list .existing-list .gc-button,
+.gc-add-to-list .create-new-list-form-section .create-new-list-textfield {
     color: var(--foreground);
 }
 
@@ -374,7 +383,10 @@ span.flatpickr-weekday,
 .cache-preview-header h1,
 .cache-preview-attributes .geocache-owner > span > span,
 .cache-activity-log .username,
-.cache-activity-log .username:visited {
+.cache-activity-log .username:visited,
+.selectize-dropdown-content>[data-selectable].active,
+.search-option-list-item mark,
+.chip .chip-label {
     color: var(--foreground-2);
 }
 
@@ -514,7 +526,10 @@ html .ui-button.ui-state-disabled:active,
 .cache-preview-attributes,
 .cache-open-text-cta,
 .cache-preview-activities,
-.cache-preview-description {
+.cache-preview-description,
+.selectize-dropdown,
+.user-typeahead-list,
+.gc-add-to-list {
     background: var(--background-2);
     color: var(--foreground);
     border-color: var(--background-3);
@@ -534,7 +549,8 @@ a.ui-button:active,
 .opc-progress-bar-item._active:before,
 .opc-progress-bar-item._active > span:before,
 .noUi-connect,
-.noUi-handle {
+.noUi-handle,
+.cache-preview-attributes .box-fill {
     background: var(--main);
     border-color: var(--main);
 }
@@ -612,16 +628,22 @@ div.scrollbarpaper-drag,
 .layer-control.is-open,
 .Popover-body,
 .search-option-list-item:hover, .search-option-list-item.active,
+.TopScroll .btn,
 .scroll-to-top .btn,
 .cache-preview-header,
-.cache-preview-description .hint-text.is-visible {
+.cache-preview-description .hint-text.is-visible,
+.selectize-control.multi .selectize-input>div,
+.selectize-dropdown-content>[data-selectable].active,
+.user-typeahead-list .user-typeahead-list-item.active, .user-typeahead-list .user-typeahead-list-item:hover,
+.chip {
     background: var(--background-3);
     color: var(--foreground);
 }
 
 .search-results-table tr.disabled td,
 .conversation-panel .activity-item.disabled,
-.dt-info .locked-treasure {
+.dt-info .locked-treasure,
+.zoom-control button:disabled {
     background: var(--background-4);
     border-color: var(--background-2);
 }
@@ -723,12 +745,14 @@ hr,
 .cache-preview-header,
 .cache-preview-attributes .geocache-owner,
 .cache-activity-log,
-.cache-preview-activities > header {
+.cache-preview-activities > header,
+.marker-label {
     border-color: var(--border);
 }
 
 
-.hide-page-aside select {
+.hide-page-aside select,
+.gc-add-to-list .create-new-list-form-section {
     border-color: var(--border-input);
 }
 
@@ -836,6 +860,10 @@ table.Table tr td.TertiaryRow {
     color: var(--foreground-disabled);
 }
 
+.user-typeahead-list {
+    box-shadow: 0 0 13px black;
+}
+
 span.favorite-rank {
     background-color: hsl(216, 95%, 46%);
 }
@@ -851,18 +879,25 @@ span.favorite-rank[title="0"] {
     background-color: transparent;
 }
 
-.pagination-controls .pagination-control:hover {
+.pagination-controls .pagination-control:hover,
+.cache-preview-attributes .attribute-box {
     color: var(--main);
 }
 
 .gc-gauge,
 .list-favorites .section-meta .favorites-meta-progress .gc-gauge,
-.page-footer {
+.page-footer,
+.marker-label,
+.cache-preview-attributes .attribute-box {
     background-color: var(--main-dark);
 }
 
 img[src="/images/attributes/attribute-blank.png"] {
     display: none;
+}
+
+.zoom-control button:disabled {
+    filter: grayscale(1);
 }
 
 #fancybox-outer,
@@ -911,9 +946,16 @@ font[color="white"] {
 }
 
 font[color="black"],
+*[style*="color:#000000"]
 *[style*="color: #000000"],
+*[style*="color:black"]
 *[style*="color: black"] {
     color: var(--foreground-2);
+}
+
+*[style*="background-color:#FFFF00"],
+*[style*="background-color: #FFFF00"] {
+    color: var(--foreground-invert);
 }
 
 .widget.block.block-static-block span[style*="color: #000000"] {
@@ -940,7 +982,10 @@ img[src="/account/app/ui-icons/icons/global/gps.svg"],
 .treasure-filter-tool-tip,
 .cache-attributes-filter-tool-tip,
 .responsive-table-menu button.toggle:not(:hover)::after,
-.search-results-table th.sort-column.sort-asc a:after, .search-results-table th.sort-column.sort-desc a:after {
+.search-results-table th.sort-column.sort-asc a:after, .search-results-table th.sort-column.sort-desc a:after,
+.-sort-asc div::after,
+.-sort-desc div::after,
+#pnlLazyLoad img {
     filter: invert(100%);
 }
 
@@ -1088,6 +1133,26 @@ td.attemptyellow {
 .input-requirements {
     background-color: var(--background-2) !important;
     color: var(--foreground);
+}
+}
+
+@-moz-document domain("certitudes.org") {
+/* -=- Certitude Styling -=- */
+table#rk, #inputArea {
+    background: var(--main-dark);
+    color: var(--foreground);
+}
+
+#inputArea {
+    border-color: var(--border);
+}
+
+a.bookmark {
+    background: var(--background-2);
+}
+
+#inputArea input[type="text"] {
+    background-image: none;
 }
 }
 

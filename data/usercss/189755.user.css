@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As in title.`
-@version        2020923.14.13
+@version        202113.1.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -64,12 +64,24 @@ body, .mini_card, .bBDcg, .mini_article_card, .gajVFV, .bxGFTc, .bMwme, .grid_la
 	background: #0e0e0e;
 	color: #fff;
 }
+.song_body {
+	background: #0e0e0e;
+}
 .jSLZLy {
 	background: #0f0f0f;
 	color: #fff;
 }
-.cnuJjX {
+.song_album a:hover {
+	color: #bababa;
+}
+.track_listing a:hover {
+	color: #999;
+}
+.cnuJjX, .song_album a, .track_listing {
 	color: #fff;
+}
+.recirculated_content-title {
+	color: #ddd;
 }
 .quick_search--header {
 	background: #0e0e0e;
@@ -86,6 +98,7 @@ body, .mini_card, .bBDcg, .mini_article_card, .gajVFV, .bxGFTc, .bMwme, .grid_la
 .bCpoMC:hover .EditorialPlacement__Title-sc-11ot04a-1 h2, .bCpoMC:hover .EditorialPlacement__Title-sc-11ot04a-1 h3 {
     text-shadow: #0e0e0e 0.03em 0px, #0e0e0e -0.03em 0px, #0e0e0e 0px 0.03em, #0e0e0e 0px -0.03em, #0e0e0e 0.06em 0px, #0e0e0e -0.06em 0px, #0e0e0e 0.09em 0px, #0e0e0e -0.09em 0px, #0e0e0e 0.12em 0px, #0e0e0e -0.12em 0px, #0e0e0e 0.15em 0px, #0e0e0e -0.15em 0px;
 	color: #fff;
+	background-image: linear-gradient(rgb(255 255 255), rgb(255, 255, 255));
 }
 .bCpoMC, .ljPCDr {
 	color: #eee;
@@ -319,6 +332,10 @@ span.ReferentFragment__Highlight-oqvzi6-1.fwABiJ {
 .apple_music_player_container--border {
     border-color: #fff;
     box-shadow: 0 4px 8px rgba(255, 255, 255, .2);
+}
+.ipKECQ svg {
+    stroke: rgb(255, 255, 255);
+    fill: rgb(66, 74, 85);
 }
 }
 

@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         AN drew
 @description    `首页仅保留导航栏、logo、搜索框。`
-@version        20201023.3.14
+@version        202112.15.30
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name        Pithy JD | 简洁京东 (CSS)
 @description 首页仅保留导航栏、logo、搜索框。
-@version     1.1.1
+@version     1.1.2
 @namespace https://greasyfork.org/users/472487
 ==/UserStyle== */
 
@@ -151,7 +151,7 @@ div[style='background:;']
 {
     display:none !important;
 }
-.ui-mask
+.ui-mask, .br-tab-wrap
 {
     display:none !important;
 }
