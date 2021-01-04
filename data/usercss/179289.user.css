@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Rikka Takarada
 @description    `Simple dark theme for trakt`
-@version        20201024.23.41
+@version        202113.21.55
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -22,7 +22,7 @@ section {
     background: var(--color-primary-black);
 }
 .subnav-wrapper {
-    background-color: var(--color-secondary-black);
+    background-color: var(--color-secondary-black) !important;
 }
 #progress-wrapper {
     background-color: var(--color-primary-black);
@@ -33,7 +33,7 @@ section {
 #progress-wrapper .row .main-info .seasons {
     background-color: var(--color-secondary-black);
 }
-body {
+body, .subnav-wrapper .left h2 .right a {
     color: var(--text-color);
 }
 .posters .poster,
@@ -308,7 +308,8 @@ header#top-nav #xs-sign-in ,
 #user-menu ul li.dark-knight,
 #user-menu ul li a[href^="/widgets"] ,
 #user-menu ul li a.yir-loader,
-.show-advanced-filters-link {
+.show-advanced-filters-link,
+#filter-watchnow-launcher {
     display: none;
 }
 
@@ -359,6 +360,25 @@ body.settings .panel .control-label {
 #seasons-episodes-sortable .under-info h3 a:hover .main-title-sxe, #seasons-episodes-sortable .under-info h3 a:focus .main-title-sxe,
 #seasons-episodes-sortable .under-info h3 a:hover, #seasons-episodes-sortable .under-info h3 a:focus {
     color: var(--color-red-light);
+}
+
+body.discover #recent-comments-wrapper #recent-comments {
+	background-color:  var(--color-secondary-black);
+}
+body.discover #recent-comments-wrapper #recent-comments-title h4 {
+	color: var(--text-color-strong);
+}
+body.discover #recent-comments-wrapper #recent-comments-title h5 {
+	color: var(--text-color);
+}
+body.discover #recent-comments-wrapper #recent-comments .comment-outer-wrapper .above-comment {
+	background-color:  var(--color-primary-black);
+}
+
+.comment-wrapper.featured .comment-text[data-readmore][aria-expanded=false] .shade,
+.subnav-text .text[data-readmore][aria-expanded=false] .shade {
+    background-image: linear-gradient(to bottom, transparent 0%,var(--color-primary-black) 100%);
+    background-repeat: repeat-x;
 }
 
 @media (max-width: 767px) {

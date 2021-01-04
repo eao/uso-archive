@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `Dark mode for app.fluencia.com`
-@version        202112.3.33
+@version        202113.19.19
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -153,7 +153,7 @@ body:not(.body-fresh) #quiz-question .tip {
     border-radius: 4px;
 }
 body:not(.body-fresh) .feedback .feedback-item-0 {
-    background-color: hsl(205, 50%, 35%);
+    background-color: hsl(215, 50%, 35%);
 }
 body:not(.body-fresh) .feedback .feedback-item-1 {
     background-color: hsl(285, 50%, 35%);
@@ -339,5 +339,14 @@ body:not(.body-fresh) .alert {
 }
 .tip .table th, .tip .table td {
     border-top: 1px solid hsl(205, 55%, 40%);
+}
+.search-category-list {
+    background-color: #333;
+}
+.search-skill-item:hover {
+    background-color: #444;
+}
+.search-view a {
+    color: #ddd;
 }
 }

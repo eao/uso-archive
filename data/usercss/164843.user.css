@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Valacar
 @description    `Blue theme for GreasyFork.org.`
-@version        2019221.19.19
+@version        202113.21.22
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -55,25 +55,82 @@ a:visited
   color: #000 !important;
 }
 
-#additional-info > div
-{
-  border: 1px solid #dae5ea !important;
-  background-color: #e5eef2 !important;
-}
-
 pre,
 code,
 #code-container,
 .Message pre ol
 {
-  border: #c9d9e3 !important;
+  border: #b6bcc1 !important;
   background-color: #f5fbff !important;
 }
 
-.CodeRay .line-numbers,
+.code-container
+{
+  border: 1px solid #c4cace !important;
+}
+
+/* code background */
 .linenums
 {
-  background-color: #e4ebef !important;
+  background-color: #ebf3f9 !important;
+}
+
+/* zebra code lines */
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9
+{
+  background-color: inherit !important;
+}
+
+.kwd
+{
+  color: #0d3e9f !important;
+  font-weight: bold !important;
+}
+
+.str
+{
+  color: #1c8606 !important;
+}
+
+.com
+{
+  color: #800 !important;
+  font-style: italic !important;
+}
+
+.typ
+{
+  color: #8e338e !important;
+}
+
+.lit
+{
+  color: #b67d16;
+}
+
+.clo,
+.opn,
+.pun
+{
+  color: #004e66;
+}
+
+/* line number vertical border */
+.linenums > li:before
+{
+  content: '' !important;
+  border-left: 1px solid #f0f7fd !important;
+  padding-left: 1em !important;
+}
+
+/* line numbers */
+.linenums > li::marker
+{
+  color: #bec4c8 !important;
 }
 
 .list-option-group .list-current
@@ -142,65 +199,26 @@ nav nav,
   border-color: #7c99b1 !important;
 }
 
-.CodeRay .comment
-{
-  color: #b6bfc5 !important;
-}
-
-.CodeRay .keyword
-{
-  color: #508fc6 !important;
-}
-
-.CodeRay .string,
-.CodeRay .string > *
-{
-  color: #88b724 !important;
-  background-color: transparent !important;
-}
-
-.CodeRay .integer
-{
-  color: #ba6300 !important;
-}
-
-.CodeRay .key
-{
-  color: #bc7ecc !important;
-}
-
-.CodeRay .function
-{
-  color: #31b8c1 !important;
-}
-
-.CodeRay .local-variable
-{
-  color: #009f90 !important;
-}
-
-.CodeRay .regexp .content
-{
-  color: #64a5d0 !important;
-}
-
-.CodeRay .regexp .modifier
-{
-  color: #a78bea !important;
-}
-
-.CodeRay .regexp
-{
-  background-color: rgba(55, 138, 170, 0.05) !important;
-}
-
 form.new_user input[type="submit"]
 {
   background-color: #90b5d5 !important;
   background-image: linear-gradient(#bbdaf2, #4b7baa) !important;
 }
 
-#main-header .subtitle {
-    text-shadow: -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 1px 1px 0px #000;
+#main-header .subtitle
+{
+  text-shadow: -1px -1px 0px #000, 1px -1px 0px #000, -1px 1px 0px #000, 1px 1px 0px #000;
 }
+
+.user-content
+{
+  background: linear-gradient(90deg, #ecf7fb, #fff 1em);
+  border-left: 2px solid #ecf7fb;
+}
+
+.user-screenshots img
+{
+  padding-bottom: 20px !important;
+}
+
 }

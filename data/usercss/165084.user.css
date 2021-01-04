@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         {eMeM}
 @description    `Dark Theme`
-@version        202112.8.45
+@version        202113.14.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -53,7 +53,7 @@ Koniec napisu */
 .MBN {
     background-image: none;
     color: #D0D0D0;
-    background-color: #6d6d6d;
+    background-color: #5d5d5d;
     text-align: center;
 }
 
@@ -151,13 +151,48 @@ td.Knap {
 }
 body > center > table > tbody > tr:nth-child(1) > td:nth-child(2) > table > tbody > tr > td:nth-child(3) > table:nth-child(4) > tbody > tr > td:nth-child(3) > div:nth-child(3)
 {
-    background-color: #30333f;
-} 
+    background-color: 5d5d5d;
+}
+
+input[type=checkbox] {
+         position: relative;
+	       cursor: pointer;
+    }
+    input[type=checkbox]:before {
+         content: "";
+         display: block;
+         position: absolute;
+         width: 10px;
+         height: 10px;
+         top: 0;
+         left: 0;
+         border: 2px solid #555555;
+         border-radius: 3px;
+         background-color: #202020;
+}
+    input[type=checkbox]:checked:after {
+         content: "";
+         display: block;
+         width: 3px;
+         height: 6px;
+         border: solid #00bb00;
+         border-width: 0 2px 2px 0;
+         -webkit-transform: rotate(45deg);
+         -ms-transform: rotate(45deg);
+         transform: rotate(45deg);
+         position: absolute;
+         top: 2px;
+         left: 5px;
+}
+
+.NewData {
+    color: #d0d0d0;
+    Background-color:#5d5d5d;
+}
 }
 
 @-moz-document regexp("(https|http)://animesub.info/wl/") {
-    
- body {
+body {
     color: #ccc;
 }   
     .title {
@@ -182,5 +217,4 @@ input[type=submit]:hover { color:#ddd; background-color:#555; }
 
     
     .list .even td { background-color:#333; }
-
 }

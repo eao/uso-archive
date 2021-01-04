@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         zigboom
 @description    `Lukol.com - Anonymous Search Engine - styled in dark gray monochrome colors. Dark, clean & easy on the eyes.`
-@version        2020627.17.44
+@version        202113.18.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -19,6 +19,7 @@ body * {
     border-color: transparent !important;
     color: #999 !important;
 }
+
 
 .gsc-webResult.gsc-result, .gsc-results .gsc-imageResult {
     background-color: transparent !important;
