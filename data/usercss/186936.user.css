@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.5.1
+@name           Compact Tube (White) v1.5.2
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        20201228.23.6
+@version        202114.9.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.1 */
+/* CompactTube (White) v1.5.2 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -64,31 +64,6 @@
                     ─────────────────────────────────────────────────────────
                     RU: Опера использует "Tahoma" как основной шрифт, в то время как Хром использует "Arial".
                     выберите нужный вам, отключив другой.    ◄█ */
-
-
-        /* v1 Christmas Socks / Рождественские Носки :D */
-x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 10px; left: -20px; content: url("https://i114.fastpic.ru/big/2020/1210/7f/fee2e73ed074bfbfc5ba634b88a1ea7f.png");
-    margin-left: 10px; filter: drop-shadow(1px 1px 1px rgb(128, 128, 128)); margin-top: -35px; }
-
-        /* v2 Christmas Gifts / Новогодние Подарки */
-x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 25px; left: -12px; content: url("https://i114.fastpic.ru/big/2020/1215/1d/2dce7316c918350de877693f66695d1d.png");
-    margin-left: 10px; filter: drop-shadow(1px 1px 0px rgba(128, 128, 128, .22)); margin-top: -35px;}
-
-        /* v3 Christmas Tree 1 / Новогодняя Ёлка 1 */
-x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 25px; left: 5px; content: url("https://i114.fastpic.ru/big/2020/1215/8d/a8ea9f258f497d41e92278abfbe9b78d.png");
-    margin-left: 10px; filter: drop-shadow(0px -1.5px 3px rgb(246, 210, 5)); margin-top: -35px;}
-
-        /* v4 Christmas Gift / Новогодний Подарок */
-  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 24px; left: -4px; content: url("https://i114.fastpic.ru/big/2020/1215/84/821825801cef72fdeccf67413d23cb84.png");
-    margin-left: 10px; filter: drop-shadow(1px 2px 1px rgba(53, 53, 53, .17)); margin-top: -35px;}
-
-        /* v5 Christmas Tree 2 / Новогодняя Ёлка 2 */
-x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 26px; left: -4px; content: url("https://i114.fastpic.ru/big/2020/1229/5a/1c3e35f9bbe6075530a9d35a1378265a.png");
-    margin-left: 10px; filter: drop-shadow(0px -1.5px 3px rgba(246, 210, 5, .63)); margin-top: -35px;}
-
-        /* v6 Christmas Tree 3 / Новогодняя Ёлка 3 */
-x  ytd-topbar-logo-renderer#logo.ytd-masthead:after {position: relative; top: 26px; left: -4px; content: url("https://i114.fastpic.ru/big/2020/1229/47/bac62e4f214d322a936c742f104c6d47.png");
-    margin-left: 10px; filter: drop-shadow(0px -1.5px 2px rgba(246, 210, 5, .33)); margin-top: -35px;}
 
 
 /* убрать отключаемые новости об акциях - типа COVID-19: - "none" - убрать: "flow"- показать */
@@ -965,7 +940,7 @@ ytd-video-meta-block.grid, ytd-video-meta-block.compact .ytd-video-meta-block[me
 font-size: 1.2rem; /*1.1rem тестовый образец*/ line-height: 1.8rem; /*1.4rem тестовый образец*/ color: #767676 ! important;
 margin-top: 1px; /*-1.3px тестовый образец*/}
 
-/* Название Каналов [ВЕЗДЕ](использовалось для центровке вместе с Метаданными при их изменениях)- тестовый образец* */
+/* Название Каналов [ВЕЗДЕ](использовалось для центровки вместе с Метаданными при их изменениях)- тестовый образец* */
 /* Ютуб может на ГЛАВНОЙ странице показывать в метаданных когда ождается трансляция, но эта возможность скрыта из за нехватки места до нижнего блока*/
 -o-#channel-name.ytd-video-meta-block {-o-font-size: 1.3rem ! important; max-width: 100%; 
 display: flex; flex-direction: row; align-items: center; -o-margin-top: -3px;}
@@ -1106,7 +1081,8 @@ ytd-comment-history-entry-renderer {
     flex-direction: row;}
 
 /* Библиотека(История) - вкладка "ЕЩЁ" : пункт: Посмотреть историю на странице "Мои действия" (размер шрифта) */
-yt-formatted-string#text.ytd-button-renderer.style-text.size-default {text-transform: none; font-size: 1.3rem;}
+yt-formatted-string#text.ytd-button-renderer.style-text.size-default 
+{text-transform: none; font-size: 1.3rem; margin-top: -1px /*test!*/;}
 
 /* Информация - как попасть в ныне недоступные разделы в Истории */
 -o-#contents.style-scope.ytd-browse-feed-actions-renderer:after
@@ -1490,7 +1466,8 @@ ytd-thumbnail-overlay-resume-playback-renderer:hover:after {
 /* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
 
 /* ╔══════════════════ Следующее Видео ══════════════════╗ */
-
+/*  v1  url(https://i114.fastpic.ru/big/2020/1217/84/1706b50a545778f90a56296079637784.png) 
+    v2  url(https://i114.fastpic.ru/big/2020/1229/f6/adc9217d94819e25855a2f9484fc6af6.png)  */
 /* Пометка "Следующее Видео" (Next ➞) */
     /* arrow-right-f09f949-!!! */
 ytd-compact-autoplay-renderer.ytd-watch-next-secondary-results-renderer:before
@@ -1587,14 +1564,25 @@ relative; top: 19px; font-size: 1.2rem; content: "Compact Tube (White) by Jakill
 yt-formatted-string.ytd-expanded-shelf-contents-renderer 
 {display: block; margin-top: 10px; margin-bottom: -10px; margin-left: 45%; margin-right: auto; 
 font-size: 1.3rem; font-weight: 500; letter-spacing: 0.007px; text-transform: capitalize;}
-/*раскрывающий элемент "ЕЩЁ" - под Видео*/
+/*раскрывающий элемент "ЕЩЁ" - под Видео - (Old ver.) */
 .more-button.ytd-video-secondary-info-renderer, .less-button.ytd-video-secondary-info-renderer 
-{display: inline-block; margin-top: 5px; position: relative; top: 11px; margin-left: 160px; width: 100%; font-size: 1.1rem;
-font-weight: 500; letter-spacing: 0.007px; text-transform: uppercase; border-top: 1px solid var(--yt-spec-10-percent-layer);}
+{display: inline-block; margin-top: 5px; position: relative; top: 11px; margin-left: 160px; width: 17.2em /*100%*/; font-size: 1.1rem;
+font-weight: 500; letter-spacing: 0.007px; text-transform: uppercase; 
+border-top: 1px solid var(--ytd-searchbox-legacy-button-border-color); color: var(--yt-spec-text-secondary) !important;}
+
+/* Раскрывающий элемент : Читать дальше / Свернуть (цвет шрифта) */
+-o-.more-button.ytd-comment-renderer, -o-.less-button.ytd-comment-renderer {
+    text-transform: none;
+    color: #167AC6; /* var(--yt-spec-text-secondary) */
+    font-size: var(--yt-link-font-size, 1.4rem);
+    font-weight: 500;
+    line-height: var(--ytd-link-line-height, 1.6rem);
+    letter-spacing: var(--yt-link-letter-spacing, normal);}
+
 /*раскрывающий элемент "ЕЩЁ" - в Библиотеке (ИСТОРИИ)*/
 #show-more-button.ytd-grid-renderer 
 {margin-bottom: 3px; /*DEF: 16px;*/ margin-top: -10px; align-self: flex-start; 
-margin-left: 45%; margin-right: auto; font-size: 1.3rem; text-transform: capitalize;}
+margin-left: 45%; margin-right: auto; font-size: 1.3rem !important; text-transform: capitalize;}
 
 /******************************** КНОПКИ УПРАВЛЕНИЯ ***********************************/
 
@@ -1899,7 +1887,7 @@ ytd-playlist-thumbnail.ytd-grid-playlist-renderer {width: 202px;/*202px*/ height
     -o-td-playlist-thumbnail.ytd-grid-playlist-renderer {width: 97%;} /*только размер Првью Плейлистов*/
 
 /*позиционирование Названия Плейлиста + Размер шрифта - под миниатюрой плейлиста на ВКЛАДКЕ Библиотека(История)*/
-#video-title.ytd-grid-playlist-renderer {max-height: 3.2rem; overflow: hidden; margin-bottom: -8px;
+#video-title.ytd-grid-playlist-renderer {max-height: 3.2rem; overflow: hidden; margin-bottom: -8px; margin-top: -3px;/*test!*/
     text-overflow: ellipsis; white-space: normal; margin-left: 6px; font-size: var(--yt-link-font-size, 1.3rem);
     font-weight: 500; line-height: var(--ytd-link-line-height, 1.6rem)/*1.6rem*/; letter-spacing: var(--yt-link-letter-spacing, normal);}
 
@@ -2033,7 +2021,7 @@ ytd-thumbnail.ytd-grid-radio-renderer {
 /* Позицианирование, Размер Шрифта и Цвет названия Джемов и Миксов YouTube в разделе Библиотека(История) в меню "ЕЩЁ" */
 ytd-grid-radio-renderer #video-title.ytd-grid-radio-renderer {
     color: #167AC6;
-    margin: 8px/*5px*/ 0px 2px/*8px*/ 6px;
+    margin: 5px/*5px*/ 0px 2px/*8px*/ 6px;
     max-height: 3.2rem; /*calc(2 * var(--yt-link-line-height, 1.6rem))*/
     overflow: hidden;
     text-overflow: ellipsis;
@@ -2690,6 +2678,7 @@ ytd-badge-supported-renderer.ytd-video-primary-info-renderer {margin: 2px 0px 0p
 /* Описание под Роликом - позиционирование */
 ytd-expander.ytd-video-secondary-info-renderer {
       margin-left: 10px; /*def: 54px*/
+        margin-right: 10px !important;
     font-size: var(--ytd-user-comment_-_font-size);
     font-weight: var(--ytd-user-comment_-_font-weight);
     line-height: var(--ytd-user-comment_-_line-height);
@@ -2763,8 +2752,9 @@ ytd-expander.ytd-video-secondary-info-renderer {
 /* ОБЕ кнопки - ПОЗИЦИАНИРОВАНИЕ, размер шрифта*/
 #cancel-button.ytd-commentbox, #submit-button.ytd-commentbox {
     margin-left: 8px;
-    margin-right: -1px;
-    font-size: 1.2rem;}
+    margin-right: 0px; /*-1px Test!*/
+    text-transform: uppercase !important;
+    font-size: 1.2rem !important;}
 
 /* элемент: количество Комментариев и УПОРЯДОЧИТЬ */
 #title.ytd-comments-header-renderer {
@@ -3490,8 +3480,9 @@ ytd-guide-entry-renderer[active] .title.ytd-guide-entry-renderer {
 /*сетка (Названия видео - отступ сверху), (Ник Автора, количество просмотров, дата публикации - отступ снизу) */
 h3.ytd-grid-video-renderer {margin: 2px 0 1px;}
 
-/*размер шрифта Названия Видео на главной странице Канала*/
-ytd-grid-video-renderer #video-title.yt-simple-endpoint.ytd-grid-video-renderer {font-size: 1.3rem; font-weight: 500; margin-top: -2px;}
+/* размер шрифта Названия Видео на главной странице Канала и позицианирование */
+ytd-grid-video-renderer #video-title.yt-simple-endpoint.ytd-grid-video-renderer 
+{font-size: 1.3rem; font-weight: 500; margin-top: -4px;/*-2px*/}
 /* размер и параметры шрифта просмотров и времени публикации Видео на главной странице Канала и в меню Видео */
 #metadata-line.ytd-grid-video-renderer {line-height: 1.3em; color: #767676; max-width: 100%; max-height: 2.6rem; font-size: 1.1rem; font-weight: 500;
 -o-display: inline-block; -o-letter-spacing: 0px; margin-top: 0px; }

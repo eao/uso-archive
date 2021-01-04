@@ -1,12 +1,13 @@
 /* ==UserStyle==
-@name           PseudoRetro for Sokker.org
+@name           Sokker.org - PseudoRetro
 @namespace      USO Archive
 @author         domeq
 @description    `BETA version. Only for WINDOWS (PC) & Chrome/Vivaldi. Required resolution more than 1200 px.`
-@version        202113.20.56
+@version        202114.10.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
+@namespace url(http://www.w3.org/1999/xhtml);
 @-moz-document domain(sokker.org) {
 
 body {

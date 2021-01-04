@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Quite shitty StyleSheet I might say, quite difficult to change, but not impossible.`
-@version        202094.1.34
+@version        202114.10.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("getgianni.com") {
 ::-webkit-scrollbar-track {
              -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, 0.3);
-             border-radius: 0px;
+             border-radius: 2px;
              background-color: #020202;
         }
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
@@ -19,8 +19,8 @@
              background-color: #020202;
         }
         ::-webkit-scrollbar-thumb {
-             border-radius: 0px;
-             -webkit-box-shadow: inset 0 0 0px rgba(0, 0, 0, .3);
+             border-radius: 2px;
+             -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .6);
              background-color: #c2c2c2;
         }
 
@@ -76,9 +76,6 @@ body:not(.device-mobile-optimized) ._22oPj[aria-disabled=false]:hover ._1_kc0 {
 body:not(.device-mobile-optimized) ._22oPj[aria-disabled=false]:hover ._3fUtn {
 	color: #323232;
 }
-._22oPj[aria-disabled=false] ._1_kc0 {
-	border-color: #c2c2c2;
-}
 #comp-k7kosq3l > .MusicPlayer843000796__mainLayoutWrapper > .MusicPlayer843000796__mainLayout > .MusicPlayer843000796__lowerLayout > .MusicPlayer843000796__playLayout > .MusicPlayer843000796__playButton.PlayPause2621953503__button > svg > g > path, #comp-k7ko0yvw > .MusicPlayer843000796__mainLayoutWrapper > .MusicPlayer843000796__mainLayout > .MusicPlayer843000796__lowerLayout > .MusicPlayer843000796__playLayout > .MusicPlayer843000796__playButton.PlayPause2621953503__button > svg > g > path, #comp-k886laja > .MusicPlayer843000796__mainLayoutWrapper > .MusicPlayer843000796__mainLayout > .MusicPlayer843000796__lowerLayout > .MusicPlayer843000796__playLayout > .MusicPlayer843000796__playButton.PlayPause2621953503__button > svg, #comp-k886laja > .MusicPlayer843000796__mainLayoutWrapper > .MusicPlayer843000796__mainLayout > .MusicPlayer843000796__lowerLayout > .MusicPlayer843000796__playLayout > .MusicPlayer843000796__playButton.PlayPause2621953503__button > svg > g > path, #comp-k886lajk > .MusicPlayer843000796__mainLayoutWrapper > .MusicPlayer843000796__mainLayout > .MusicPlayer843000796__lowerLayout > .MusicPlayer843000796__playLayout > .MusicPlayer843000796__playButton.PlayPause2621953503__button > svg, #comp-k886lajk > .MusicPlayer843000796__mainLayoutWrapper > .MusicPlayer843000796__mainLayout > .MusicPlayer843000796__lowerLayout > .MusicPlayer843000796__playLayout > .MusicPlayer843000796__playButton.PlayPause2621953503__button > svg > g > path {
 	fill: #c2c2c2;
 }
@@ -104,9 +101,24 @@ body:not(.device-mobile-optimized) ._22oPj[aria-disabled=false]:hover ._3fUtn {
 ._1bOh_ ._1HJvm, ._2pwC9 {
 	border-color: #c2c2c2;
 }
+.MusicPlayer843000796__timeStamp {
+	color: #c2c2c2;
+}
+.PlayPause1887003341__button {
+	color: #c2c2c2;
+}
+.MusicPlayer843000796__playButton:hover, .MusicPlayer843000796__progressRangeBar:hover {
+	color: #cfcfcf;
+}
+h1.font_0 > span {
+	color: #c2c2c2 !important;
+}
+[src='https://static.wixstatic.com/media/7e831e_b94774bf2f8c4a6d98ded88aa7fc3f60~mv2.png/v1/fill/w_258,h_34,al_c,q_85,usm_0.66_1.00_0.01/0bedc653-bcde-4011-a483-c393c6a83ce7-149.webp'], [src='https://static.wixstatic.com/media/7e831e_1bb1e49ee81d4008900a4355a73ecc05~mv2.jpg/v1/fill/w_192,h_129,al_c,q_80,usm_0.66_1.00_0.01/Think-Big-Studios_Logo_Final_Black.webp'], [src='https://static.wixstatic.com/media/7e831e_6b8820db25fd4b328cc7d3287c272c6d~mv2.png/v1/fill/w_211,h_141,al_c,q_85,usm_0.66_1.00_0.01/300px-New_Blood_Interactive_logo.webp'] {
+	filter: invert(100) !important;
+}
 }
 
-@-moz-document url-prefix("https://www.getgianni.com/past") {
+@-moz-document url-prefix("https://www.getgianni.com/past"), url-prefix("https://www.getgianni.com//past") {
 span > span > span > span > span {
 	background: #000 !important;
 	color: #c2c2c2 !important;
@@ -114,7 +126,7 @@ span > span > span > span > span {
 }
 }
 
-@-moz-document url-prefix("https://www.getgianni.com/about") {
+@-moz-document url-prefix("https://www.getgianni.com/about"), url-prefix("https://www.getgianni.com//about") {
 h1.font_0 > span > span > span > span {
 	color: #c2c2c2;
 }
@@ -124,5 +136,11 @@ body:not(.device-mobile-optimized) ._22oPj[aria-disabled=false]:hover ._1_kc0 {
 }
 body:not(.device-mobile-optimized) ._22oPj[aria-disabled=false]:hover ._3fUtn {
 	color: #323232;
+}
+}
+
+@-moz-document url-prefix("https://www.getgianni.com//specs") {
+p > span > span > span, a > span > span > span  {
+	color: #c2c2c2;
 }
 }

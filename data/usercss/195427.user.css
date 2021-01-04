@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ZarkBit
 @description    `mehNot finished.`
-@version        202112.21.4
+@version        202114.11.48
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -58,7 +58,7 @@ body {
     display: block;
 }
 
-#ipsTabs_elTabBar_1_panel div ul div:nth-child(7),div:nth-child(16),div:nth-child(25),div:nth-child(34),p:nth-child(43),p:nth-child(52) {
+#ipsTabs_elTabBar_1_panel div ul div:nth-child(7),p:nth-child(7),div:nth-child(16),p:nth-child(16),div:nth-child(25),p:nth-child(25),div:nth-child(34),p:nth-child(34),div:nth-child(43),p:nth-child(43),div:nth-child(52),p:nth-child(52) {
     max-height: 0px;
 }
 

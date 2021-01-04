@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `firefox`
-@version        2020117.6.22
+@version        202114.3.29
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1209,6 +1209,74 @@
     #BH-slave>#flySalve{display:none!important;}
     
 }
+@-moz-document regexp("http(s)?://home\.gamer\.com\.tw/artwork\.php.*"){
+    body{display:block!important;}
+    body>.creation-container{width:900px!important;margin:20px auto 0!important;padding:0!important;overflow:visible!important;}
+    .creation-container>.creation-center{width:100%!important;margin:0 auto!important;display:block!important;}
+    .creation-center>.card-base{background:#040!important;}
+    .creation-center>.card-base>.article-content.article-top{background:#000!important;padding:5px 10px!important;}
+    .creation-center>.card-base>.article-content.article-top>.fort-badge {}
+    .creation-center>.card-base>.article-content.article-top>.fill-object{}
+    .creation-center>.card-base>.creation-hr{display:none!important;}
+    .creation-center>.card-base>.series-info-box{background:#222!important;padding:5px 10px!important;}
+    .creation-center>.card-base>.series-info-box>.cover-img  {}
+    .creation-center>.card-base>.series-info-box>.series-info{}
+    .creation-center>.card-base>.series-info-box>.series-info>.series-link     {font:20px/100% arial!important;}
+    .creation-center>.card-base>.series-info-box>.series-info>.series-link>span{font-size:inherit!important;line-height:inherit!important;color:#a11!important;height:initial!important;padding:0!important;}
+    .creation-center>.card-base>.series-info-box>.series-info>.caption-text{font:20px/100% arial!important;color:#ccc!important;}
+    .creation-center>.card-base>#div_illustration{padding:0!important;}
+    .creation-center>.card-base>#div_illustration>.image-setting{}
+    .creation-center>.card-base>[class="article-content"]         {padding:0!important;}
+    .creation-center>.card-base>[class="article-content"]>#article{}
+    .creation-center>.card-base>[class="article-content"]>#article>#article_content  {font:24px/120% arial!important;color:#ccc!important;padding:10px 50px!important;}
+    .creation-center>.card-base>[class="article-content"]>#article>#article_content *[color="#5C5C5C"],
+    .creation-center>.card-base>[class="article-content"]>#article>#article_content *[color="#000000"]{color:#ccc!important;}
+    .creation-center>.card-base>[class="article-content"]>#article>#article_content *{font:24px/120% arial!important;background:transparent!important;}
+    .creation-center>.card-base>[class="article-content"]>#article>.ct-btn-box        {background:#020!important;padding:20px 40px 0px!important;}
+    .creation-center>.card-base>[class="article-content"]>#article>.ct-btn-box>a      {background:#234!important;font:20px/100% arial!important;color:#c60!important;padding:8px 30px 5px!important;height:initial!important;}
+    .creation-center>.card-base>[class="article-content"]>#article>.ct-btn-box>a:hover{background:#434!important;}
+    .creation-center>.card-base>[class="article-content"]>#article>.tags-container  {background:#020!important;padding:0px 40px!important;margin:0!important;}
+    .creation-center>.card-base>[class="article-content"]>#article>.tags-container>a{}
+    .creation-center>.card-base>[class="article-content"]>#article>.article-intro-digital{background:#020!important;padding:0px 40px 30px!important;margin:0!important;}
+    .creation-center>.card-base>[class="article-content"]>#article>.article-intro-digital>#showGPer{}
+    .creation-center>.card-base>[class="article-content"]>#article>.article-intro-digital>#showbookmarker{}
+    .creation-center>.card-base>[class="article-content"]>#article>.article-intro-digital>.intro-text{}
+    .creation-center>.card-base>.sticky-bottom{position:static!important;}
+    .creation-center>.card-base>.sticky-bottom>.image-status-bar{background:#000!important;}
+    .creation-center>.card-base>.sticky-bottom>.image-status-bar>div{}
+    .creation-center>.card-base>#replys{background:#040!important;}
+    .creation-center>.card-base>#replys>.total-comment{}
+    .creation-center>.card-base>#replys>.reply-box              {padding:0!important;margin:0!important;}
+    .creation-center>.card-base>#replys>.reply-box:nth-child(2n){background:#030!important;}
+    .creation-center>.card-base>#replys>.reply-box>a{}
+    .creation-center>.card-base>#replys>.reply-box>div{}
+    .creation-center>.card-base>#replys>.reply-box>div>a      {font:24px/120% arial!important;}
+    .creation-center>.card-base>#replys>.reply-box>div>article{font:24px/120% arial!important;color:#ccc!important;}
+    .creation-center>.card-base>#replys>.reply-box>div>div    {font:20px/120% arial!important;color:#aa1!important;}
+    .creation-center>.card-base>#replys>.reply-box>div>div>span{font-size:inherit!important;line-height:inherit!important;color:inherit!important;}
+    .creation-center>.card-base>#replys>.c-reply__editor      {display:none!important;}
+    .creation-center>.card-base>#replys:hover>.c-reply__editor{display:flex!important;display:-webkit-box!important;display:-ms-flexbox!important;}
+    .creation-center>.card-base>#replys>.c-reply__editor>.user-avatar-img{}
+    .creation-center>.card-base>#replys>.c-reply__editor>.reply-input    {color:#ccc!important;background:#333!important;}
+    .creation-center>.card-base>#replys>.c-reply__editor>.reply-input>textarea{color:inherit!important;background:inherit!important;}
+    .creation-center>#BH-footer{}
+    .creation-center>.fixed-btn-box{}
+    .creation-center>.fixed-btn-box>a      {background:#000!important;color:#c60!important;}
+    .creation-center>.fixed-btn-box>a:hover{background:#063!important;}
+    
+    .creation-right  {width:0px!important;min-width:initial!important;display:block!important;margin:0!important;position:static!important;}
+    .creation-right>*{width:300px!important;margin:0 0 0 20px!important;}
+    .creation-right>.card-base{background:#040!important;}
+    .creation-right>.card-base>.user-info-box{}
+    .creation-right>.card-base>.ct-btn.primary      {background:#246!important;}
+    .creation-right>.card-base>.ct-btn.primary:hover{background:#434!important;}
+    .creation-right>.card-base>.fill-object     {}
+    .creation-right>.card-base>.fill-object>span{color:#a11!important;}
+    .creation-right>.card-base>.fill-object>div {}
+    .creation-right>.card-base>.box-col__4      {}
+    .creation-right>[id*="-ad-"]{display:none!important;}
+}
+
 @-moz-document regexp("http(s)?://buy\.gamer\.com\.tw.*"){
     body{background:#020!important;color:#ccc!important;}
     #BH-master .BH-lbox.ES-lbox5 *{color:#ccc!important;}

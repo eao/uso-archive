@@ -3,10 +3,10 @@
 @namespace      USO Archive
 @author         Giorgio Adamo
 @description    `<b>Sick of light? Join the darkness!</b>You can easily <b>change the accent/theme color</b> according to your preference by clicking the button <b>CUSTOMIZE SETTINGS</b> right below the preview picture.Constantly updating as the newest WhatsApp web update release comes online (last update: November 20th 2020). It may take a couple of days to fix the skin after a new release comes out, but don't worry... I will be on the case ;)Consider supporting me by donating on <a href="paypal.me/giorgioadamo"><b>Paypal</b></a>Stay safe and have a productive day!`
-@version        20201130.18.23
+@version        202114.3.36
 @license        CC-BY-NC-4.0
 @preprocessor   uso
-@advanced color mainColor "Accent color" #FD9777
+@advanced color mainColor "Accent color" #FD9C51
 
 ==/UserStyle== */
 @-moz-document domain("web.whatsapp.com") {
@@ -111,7 +111,8 @@ progress[value]::-webkit-progress-value {
 /*========= alert message - maintenance =========*/
 
 .app-wrapper-web:after {
-  display:none;
+  display: flex;
+  display: none;
   color: var(--mainColor);
   content: var(--alertMessage);
   animation: alert 50s infinite linear;
@@ -125,7 +126,6 @@ progress[value]::-webkit-progress-value {
   animation-iteration-count: 2;
   z-index: 99999999999999999999999999;
   background: var(--darkGray);
-  display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;

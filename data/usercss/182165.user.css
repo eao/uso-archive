@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.top - (New, Dec. 2020)poal.cosaidit.netvoat.coconspiracies.win - (New, Dec. 2020)thedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        202112.11.24
+@version        202114.12.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -953,7 +953,17 @@ section.description.box.col.col-12 div.col.col-12 span[style="display:inline-blo
 /* https://userstyles.org/styles/184078/ *\/
 /*                                       *\/
 /*---------------------------------------*\/ EOT;
-RCNoGold "Disabled" <<<EOT /*Awards Disabled*\/
+RCNoGold "Disabled" <<<EOT /*
+/* Reddit Reward Removal - KMV
+/* https://userstyles.org/styles/184078/
+/*
+/* Other Themes by KMV:
+/* https://userstyles.org/users/370722
+/*
+/* Contact: http://www.reddit.com/r/KMV/
+/*
+*\/
+
 
 [id*="Award"],
 [id*="Coin"],
@@ -971,7 +981,7 @@ a._1YWXCINvcuU7nk0ED-bta8:nth-child(7),
 .gold-give-gold,
 ._10K5i7NW6qcm-UoCtpB3aK.YszYBnnIoNY8pZ6UwCivd._3yh2bniLq7bYr4BaiXowdO._1EWxiIupuIjiExPQeK4Kud._28vEaVlLWeas1CDiLuTCap,
 
-/*Awards besides Title*\/
+/*Award mentions on posts*\/
 ._3XoW0oYd5806XiOr24gGdb,
 
 /*"Give Award" under comments*\/

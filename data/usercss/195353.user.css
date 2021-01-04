@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         sebastienguillon
 @description    `A dark style for developer.mozilla.org`
-@version        202111.21.59
+@version        202114.11.33
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("angular.io") {
+@-moz-document domain("developer.mozilla.org") {
 html, body, .titlebar-container, header .page-header-main, .main-nav ul.main-menu, .main-nav ul.main-menu ul.show, .metadata, .header-search, input[type="search"], .title, .output {
     background-color: #151515;
     color: #ccc;
