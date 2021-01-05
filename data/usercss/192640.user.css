@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        20201231.12.36
+@version        202114.15.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -112,11 +112,11 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 
 @-moz-document regexp("https://www.binance.com/.+/earn.+") {
 /* Binance Earn */
-.css-1hawo8q, .css-1j562lq, .css-sfadok{ background-color: #202020 !important;}
+.css-1hawo8q, .css-1j562lq, .css-sfadok, .css-17a0d0u, .css-12719hn, .css-1bitln1{ background-color: #202020 !important;}
 .css-pjvc4s, .css-1hawo8q .content .tabs{ background-color: #111 !important;}
-.css-1hawo8q .heading .main, .css-9aixja, .css-1hawo8q .content .tabs .item .title, .css-sfadok .coin{ color: #fff !important;}
+.css-1hawo8q .heading .main, .css-9aixja, .css-1hawo8q .content .tabs .item .title, .css-sfadok .coin, .css-17a0d0u .coin, .css-1bitln1 .coin, .css-12719hn .title, .css-1k5sh5n, .css-rz32rr{ color: #fff !important;}
 .css-1hawo8q .content .tabs .item.active .title{ color: #000 !important;}
-.css-vurnku.duration{ color: #76808F !important;}
+.css-vurnku.duration, .css-17a0d0u .cell .text, .css-1bitln1 .cell .text{ color: #76808F !important;}
 }
 
 @-moz-document regexp("https://www.binance.com/.+/lending.+"), regexp("https://www.binance.com/.+/savings.+") {
@@ -130,7 +130,7 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 
 @-moz-document regexp("https://www.binance.com/.+/pos"), regexp("https://www.binance.com/.+/defi-staking") {
 /* Binance Earn - Staking */
-.css-ovbogu, .css-1hhz0rw, .css-vurnku{ background-color: #202020 !important;}
+.css-ovbogu, .css-1hhz0rw, .css-1nj9vj .css-vurnku{ background-color: #202020 !important;}
 .css-a8960h, .css-1eaze7k, .css-1pf9jik, .css-13v5dao{ color: #fff !important;}
 .css-1ayo2g3, .css-1hm1xxl, .css-1e6ax81, .css-12cg94g{ color: #76808F !important;}
 }
@@ -161,8 +161,8 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 
 @-moz-document regexp("https://www.binance.com/.+/eth2") {
 /* ETH 2.0 Stacking page */
-  .css-cxo7uz, .css-1hhz0rw, .css-1ygd8f0{ background-color: #202020 !important;}
-  .css-1g3dl8s, .css-a11hgw, .css-qry565, .css-os9svu, .css-8hgg7m, .css-79jo2f{ color: #fff !important;}
+  .css-cxo7uz, .css-1hhz0rw, .css-1ygd8f0, .css-3r005q{ background-color: #202020 !important;}
+  .css-1g3dl8s, .css-a11hgw, .css-qry565, .css-os9svu, .css-8hgg7m, .css-79jo2f, .css-1qs0gf4, .css-15r8c65, .css-77a6ym{ color: #fff !important;}
 }
 
 @-moz-document regexp("https://www.binance.com/.+/bnbmining") {

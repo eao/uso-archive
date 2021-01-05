@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           Flickr Widescreen - ALLinONE (Part 2) v.160
+@name           Flickr Widescreen - ALLinONE (Part 2) v.161
 @namespace      USO Archive
 @author         decembre
-@description    `It's ONLY for a WIDESCREEN(1920x1080)!<b>►►  Additional Userstyles to my <mark>- <b><a href="https://userstyles.org/styles/52167/">Flickr Widescreen - ALLinONE (Part 1)</a>:</b></mark>for some userscripts (GM : Greasemonkey) i use since a long time and  additionals styles for some not often used Flickr's pages</b><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE TOTAL"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle/script)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        20201117.12.17
+@description    `It's ONLY for a WIDESCREEN(1920x1080)!<b>►►  Additional Userstyles to my <mark>- <b><a href="https://userstyles.org/styles/52167/">Flickr Widescreen - ALLinONE (Part 1)</a>:</b></mark>for some userscripts (GM : Greasemonkey) i use since a long time and  additionals styles for some not often used Flickr's pages</b><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE TOTAL"</b> at once,you can use my userscript [Greasyfork]:<b><a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle)</a></b>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
+@version        202114.13.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("flickr.com") {
 
-/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2)  v.160 (new160)  ==== */
+/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2)  v.161 (new161.5)  ==== */
 
 /* START == ADDITIONALS STYLE ==== */
 
@@ -25,9 +25,117 @@
     display: none !important;
 }
 
+/* (new161) POOL EDIT ABOUT / CHECK INVIT SENT */
+#Main h1#Tertiary + table tbody tr td#Hint + #GoodStuff:not(.admin_moderation)  {
+    position: relative !important;
+    display: inline-block ;
+    width: 99% !important;
+    left: 0px ;
+    top: 0px;
+    margin: 0px ;
+    padding: 0 ;
+text-align: center !important;
+}
+
+/* POOL - INVIT - CTS ADMIN */
+#Tertiary + .ThinCase>form[action="/groups_join.gne"] {
+    display: inline-block ;
+    padding: 5px ;
+    text-align: left ;
+    border-radius: 5px;
+border: 1px solid gray;
+}
+/* MAIL MES/POOL SEND INVIT/DEL COM */
+#GoodStuff>form {
+    display: inline-block !important;
+    width: 100% !important;
+    max-width: 705px !important;
+    min-width: 705px !important;
+    border-radius: 5px !important;
+    padding: 15px 0px 5px 20px !important;
+border: 1px solid red ;
+}
+
+.FlickrMailMessage ,
+#GoodStuff>form[action="groups_invite.gne"]  {
+    display: inline-block ;
+    width: 400px ;
+    margin-top: 75px ;
+    margin-left: -190px ;
+    padding: 20px ;
+}
+/* (new161) POOL INVIT */
+#GoodStuff>form[action="groups_invite.gne"]  {
+    width: 400px ;
+    margin: auto ;
+    padding: 5px !important;
+}
+#group-invite-container {
+    display: inline-block ;
+    width: 400px ;
+    margin-top: 40px ;
+    margin-left: 700px ;
+    padding: 20px ;
+}
+#GoodStuff>form[action*="deletecomment"] {
+    margin-left: 0px ;
+    width: 400px ;
+    padding: 20px ;
+}
+#group-invite-form>p>textarea {
+    padding: 10px ;
+}
+/* (new161) */
+.bo-selecta li p.measured span.name .realname ,
+.bo-selecta li p.measured span.name strong.username ,
+#BoSelectaResultsBox li p span.name .realname ,
+#BoSelectaResultsBox li p span.name strong.username {
+    margin-left: 28px !important;
+}
+
+/* (new161) POOL ADMIN RULES*/
+#GoodStuff>form[action$="/admin/rules/"] {
+    margin-top: 20px ;
+    padding: 0px !important;
+}
+#GoodStuff>form[action$="/admin/rules/"] table td ,
+#GoodStuff>form[action$="/admin/rules/"] table {
+    display: inline-block ;
+    width: 100% ;
+/* text-align: center !important; */
+}
+/* POOL - POST NEW DISCUSSION */
+#GoodStuff > form[action="groups_newtopic.gne"] {
+    margin-left: 537px !important;
+}
+/* PREVIEW POOL NEW DISC */
+#GoodStuff > form[action="groups_newtopic.gne"]>table .Preview  {
+    position: absolute ;
+    width: 400px ;
+    height: 800px ;
+    top: -50px ;
+    right: 120px ;
+    padding: 15px ;
+border: 1px solid blue ;
+}
+
+/* (new161) EXPLO - MORE MENU + MODAL */
+.fluid.html-explore-page-view .fluid-subnav .subnav-content .subnav-items-container .more-link {
+    position: absolute ;
+    left: 400px ;
+    top: 0 ;
+}
+.fluid.html-explore-page-view .droparound.menu {
+    position: fixed;
+    width: 322px !important;
+    right: 0px;
+    left: 1936px !important;
+    top: 20.5px !important;
+}
+
 /* NEW FEEDS - WIDE */
 .feed-new-page-view .feed-new-page-container .feed-new-page-content-container ,
-html.scrolling-layout.html-feed-new-page-view  .fluid-centered {
+.html-feed-new-page-view  .fluid-centered {
 display: inline-block !important;
     margin-right: auto ;
     min-width: 100% ;
@@ -50,6 +158,35 @@ background: #333 ;
 border-bottom: 1px solid red ;
 }
 
+/* (new161) EXPLO - CALEND */
+.Day {
+    display: inline-block !important;
+    width: 73px !important;
+    vertical-align: bottom;
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+color: #000;
+background: #333 !important;
+
+}
+.AllMonths>tbody>tr + tr> td {
+    display: inline-block !important;
+    height: 75px !important;
+    width: 75px !important;
+}
+.CalendarBlank {
+    position: relative !important;
+    display: inline-block !important;
+    height: 75px !important;
+    width: 75px !important;
+padding: 4px !important;
+background-color: #111 !important;
+}
+.AllMonths tbody tr + tr  .CalendarBlank:last-of-type {
+    display: none !important;
+}
+
 /* NEW FEEDS - RIGHT INF */
 .html-feed-new-page-view .feed-new-page-content-container .info-column {
     position: fixed !important;
@@ -65,7 +202,7 @@ border-bottom: 1px solid red ;
 background: black ;
 border: 1px solid red ;
 }
-.html-feed-new-page-view  .feed-new-page-content-container .info-column:hover {
+.html-feed-new-page-view .feed-new-page-content-container .info-column:hover {
     left: 1550px !important;
     transition: all ease 2s !important;
 }
@@ -95,7 +232,7 @@ border: 1px solid red ;
     transition: right ease 1s ;
 }
 
-/* NEW FEEDS - CONTAINER - ITEMS */
+/* NEW FEEDS - CONT - ITEMS */
 
 /* NEW FEEDS - PUB ? */
 .feed-layout[style="margin-bottom: 40px;"] ,
@@ -103,7 +240,6 @@ border: 1px solid red ;
 .html-feed-new-page-view .feed-new-page-content-container  .feed-item:only-of-type {
     display: none !important;
 }
-
 /* NEW FEEDS - ERROR MESSS (PB Friends / Familly ?) */
 .feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-column-content .feed-load-error-container {
     width: 97% !important;
@@ -112,7 +248,6 @@ border: 1px solid red !important;
 .feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-column-content .feed-load-error-container  .error-message {
     color: red ;
 }
-
 /* NEW FEEDS - DEFERED */
 .html-feed-new-page-view .feed-new-page-content-container .photo-card-view .photo-card .photo-card-content .photo-card-photo .photo.contain[data-defer-src*="staticflickr.com"] {
 background-color: blue !important;
@@ -122,7 +257,6 @@ background-color: blue !important;
 .feed-new-page-view .feed-new-page-container .feed-new-page-content-container .feed-column .feed-column-content {
     top: 57px ;
 }
-
 /* ==== FEEDS ALL  ====== */
 .feed-layout{
 display: inline-block !important;
@@ -132,7 +266,6 @@ display: inline-block !important;
     margin-bottom: 40px;
     padding: 5px !important;
 }
-
 /* NEW FEEDS - RADIUS */
 .html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view ,
 .html-feed-new-page-view .photo-card-view .photo-card ,
@@ -160,11 +293,11 @@ display: inline-block !important;
     height: auto ;
     width: 100% !important;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card {
+.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card {
     display: flex;
     justify-content: center ;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .view.photo-card-view >.photo-card.theme-flat.layout-compact {
+.html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact {
     text-align: center ;
 }
 .html-feed-new-page-view .feed-new-page-content-container .feed-column-content .feed-layout .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .header {
@@ -187,21 +320,21 @@ display: inline-block !important;
     width: 100% !important;
 }
  
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .photo-card-photo {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .photo-card-photo {
     flex: 1 1 300px ;
     height: 100% ;
     width: 100% ;
 }
 /* VISITED */
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .view.photo-card-view .photo-card-content a.photo-link {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-view .photo-card-content a.photo-link {
 border: 1px solid gray!important;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .view.photo-card-view .photo-card-content a.photo-link:visited {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-view .photo-card-content a.photo-link:visited {
 border: 1px solid red!important;
 }
 
 /* NEW FEEDS - ONLY ONE PHOTO ITEM */
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type {
     position: absolute ;
     display: flex ;
     flex-direction: row ;
@@ -210,50 +343,50 @@ border: 1px solid red!important;
     left: 0 ;
     top: 0 ;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .photo-card-view  {
     height: 400px ;
     min-width: 100% ;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .photo-card-view  .photo-card.theme-card {
     height: 400px ;
     min-width: 100% ;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .photo-card-view  .photo-card.theme-card .photo-card-content {
     height: auto ;
     min-width: 100% ;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content .photo-card-photo .photo {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type photo-card-view  .photo-card.theme-card .photo-card-content .photo-card-photo .photo {
     height: 100% ;
     max-height: 400px ;
     width: auto ;
     background-size: contain ;
 }
 /* ONLY ONE HOVER HEADER USER*/
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container {
     display: inline-block ;
     min-width: 40% ;
     padding: 0 ;
     text-align: center ;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay {
     display: inline-block ;
     width: 100% ;
     text-align: center ;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container {
     display: inline-block ;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container  .avatar {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container  .avatar {
     display: inline-block ;
     float: left ;
 }
-.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"])  .view.photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .view.photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container  .attribution {
+.html-feed-new-page-view .feed-new-page-content-container .feed-item:not([style^="position: absolute; flex-direction: column;"]):not([style^="margin-bottom: 32px;"]) .photo-card-view >.photo-card.theme-flat.layout-compact .photo-card-content .card-batch-layout .card-batch-photo-item:only-of-type .photo-card-view  .photo-card.theme-card .photo-card-content  .photo-card-photo .head-overlay .header-container .photo-card-header.compact.theme-overlay .left-container  .attribution {
     display: inline-block ;
     height: 24px;
     line-height: 24px;
 }
 /* NEW FEEDS - OPTIONS */
-.fluid.html-feed-new-page-view .view.fluid-droparound-view.flickr-view-root-view {
+.fluid.html-feed-new-page-view .fluid-droparound-view {
     position: absolute ;
     top: 0px ;
 }
@@ -264,7 +397,7 @@ margin-top: 0px ;
 
 /* ==== END - NEW FEEDS COMPACT ==== */
 
-/* SET - COM CONTAINER - REVERSE ORDER - === */
+/* SET - COM CONT - REV ORDER */
 #ViewSet .vsComments {
     float: right !important;
     margin: 0 5px 0 0 !important;
@@ -369,30 +502,29 @@ border: 1px solid red !important;
     height: 96px !important;
     width: 92px !important;
 }
-/* (new152) */
 #ViewSet .vsThumbnail {
-display: inline-block !important;
-width: 375px !important;
+    display: inline-block !important;
+    width: 375px !important;
     height: 274px;
     margin: auto;
     padding: 20px 10px;
     text-align: center;
 }
 #ViewSet p.vsDescription:not(:empty) {
-position: absolute !important;
-display: inline-block !important;
-width: 324px !important;
+    position: absolute !important;
+    display: inline-block !important;
+    width: 324px !important;
     height: 280px;
-left: 403px;
+    left: 403px;
     margin: auto ;
-top: 128px !important;
+    top: 128px !important;
     padding: 10px ;
     overflow: hidden;
 background: #222 !important;
 }
 #ViewSet .vsNumbers {
-position: absolute !important;
-display: inline-block !important;
+    position: absolute !important;
+    display: inline-block !important;
     height: 15px;
     line-height: 15px;
     width: 385px ;
@@ -413,7 +545,7 @@ display: inline-block !important;
     display: none ;
 }
 
-/* (new152) ALBUM - EDIT */
+/* ALB - EDIT */
 #gray_set_button_bar {
     position: absolute ;
 }
@@ -422,8 +554,6 @@ display: inline-block !important;
     width: 86% !important;
     font-size: 15px !important;
 }
-
-
 #gray_set_button_bar ~ #SubNav form >span ,
 #gray_set_button_bar ~ #SubNav form >input {
     float: right;
@@ -442,32 +572,30 @@ display: inline-block !important;
 }
 #gray_set_button_bar ~  #ViewSet #setThumbs + p + div {
     position: absolute ;
-/*     display: inline-block; */
     width: 344px;
     height: 295px;
     left: 403px;
     right: 1300px;
     top: 127px;
-z-index: 50000 !important;
-/* background: red !important; */
+    z-index: 50000 !important;
 }
 #gray_set_button_bar ~  #ViewSet #setThumbs + p + div textarea {
     width: 97% !important;
     max-height: 235px;
 }
 #gray_set_button_bar ~  #ViewSet #setThumbs + p + div + .vsDescription:hover {
-cursor: pointer !important;
+    cursor: pointer !important;
 }
 #gray_set_button_bar ~  #ViewSet #setThumbs + p + div + .vsDescription:hover:after {
-content: "🖋" ;
-position: absolute ;
-top:  0 ;
-right: 0 ;
-border-radius: 5px ;
-font-size: 20px ;
+    content: "🖋" ;
+    position: absolute ;
+    top:  0 ;
+    right: 0 ;
+    border-radius: 5px ;
+    font-size: 20px ;
+    cursor: pointer !important;
 color: white ;
 background: black ;
-cursor: pointer !important;
 }
 
 
@@ -479,9 +607,9 @@ https://codepen.io/cubeghost/pen/dPeQqR
 cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAAACVBMVEX///8AAAD///9+749PAAAAAXRSTlMAQObYZgAAAD5JREFUGNN1j9EKADAIAnP//9GjFq6w7iU4DNRsB06cb44TJ+UzYUcniqnqoA6ag/62JhjKIU0rxx1lKveuXJ5UAQs/G/2vAAAAAElFTkSuQmCC),auto;
 }
 
-/* GM "Video Speed Button" - === */
+/* GM "Video Speed Button" */
 .fluid.html-photo-page-scrappy-view div[style^="position: fixed; top: 0px; right: 0px; z-index: 100;"] ,
-.fluid.html-photo-page-scrappy-view .view.fluid-droparound-view + div[style^="position: fixed; top: 0px; right: 0px; z-index: 100;"] {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view + div[style^="position: fixed; top: 0px; right: 0px; z-index: 100;"] {
     position: fixed !important;
     top: 816px !important;
     right: 1052px !important;
@@ -507,7 +635,7 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAA
 #liquid-photo-buffer {
     display: none !important;
 }
-/*  API PAGE - SERVCE TEST - === */
+/*  API PAGE - SERVCE TEST */
 #Main>iframe[src^="/services/api/"] {
     color: gray !important;
     height: 400px;
@@ -516,18 +644,18 @@ cursor:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAPCAMAAAAxmgQeAAA
 html>body>pre {
     color: gray !important;
 }
-/* (ALL??) - ARCHIVES ONLY WORK ??? - OPTIONS BAR (chose view: WORKING) - === */
+/* (ALL??) - ARCH ONLY WORK ??? - OPTIONS BAR (chose view: WORKING) */
 .new-header:not(.breakout-justified).header-underlap.js .searchified-options {
     position: relative !important;
     display: inline-block !important;
     top: 10px !important;
     margin-top: 80px !important;
 }
-/* A SUPP?? - ADD COM BOX - SUPP TXT "Want to format your reply?" - === */ 
+/* A SUPP?? - ADD COM BOX - SUPP TXT "Want format reply?" */ 
 .html-info-trigger {
     margin: 5px 0 15px;
 }
-/* GALL ?? - POOL - ADMIN - POPOVER COM - === */
+/* GAL ?? - POOL - ADMIN - POPOVER COM */
 .pool-photo.photo-display-item.inline-commenting #comments.comments-popover {
     position: fixed !important;
     display: inline-block !important;
@@ -550,7 +678,7 @@ border: 1px solid red !important;
 border: 1px dashed red !important;
 background: blue !important;
 }
-/* ANTI JUMP TOP - ALL  */
+/* ANTI JUMP TOP - ALL */
 html.styleguide body {
     box-sizing: border-box;
     position: relative;
@@ -560,50 +688,25 @@ html.styleguide body {
     padding-bottom: 0px !important;
     padding-top: 0 !important;
 }
-
-/* ANTI JUMP - JU - POOL no BETA - === */
+/* ANTI JUMP - JU - POOL no BETA */
 #pool-photos.ju.photo-display-container::before {
-  content: "";
-  float: left;
-  padding-bottom: 25%;
+    content: "";
+    float: left;
+    padding-bottom: 25%;
 }
 #pool-photos.ju.photo-display-container::after {
-  clear: left;
-  content: " ";
-  display: table;
+    clear: left;
+    content: " ";
+    display: table;
 }
-/* POOL BETA / NO BETA - IMAGES COUNTER - === */
-.fluid:not(.html-photo-page-scrappy-view)  #content {
-    counter-increment: myIndex  ! important;
-}
-.fluid:not(.html-photo-page-scrappy-view)  #content .view.photo-list-photo-view:before  {
-    counter-increment: myIndex ;
-    content: counter(myIndex, decimal-leading-zero) ;
-    position: absolute ;
-    width: auto ;
-    min-width: 17px ;
-    line-height: 15px ;
-    margin-top: 15px ;
-    border-radius: 10px ;
-    font-size: 10px ;
-    text-align: center ;
-    z-index: 100 ;
-color: tomato ;
-background: rgba(62, 59, 59, 0.6) ;
-box-shadow: 0 0 2px rgba(162, 160, 160, 0.6) inset ;
-}
-.fluid.html-group-pool-page-view #content  .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer) .photo-list-photo-view:before  {
-    margin-top: -5px ;
-    margin-left: -5px ;
-color: gold ;
-}
+
 
 /* END === ADDITIONAL STYLES  ==== */
 
 
 /* START == YOUR GROUPS LIST ==== */
 
-/* YOUR GROUPS LIST - THUMB CONT - ALL - === */
+/* YOUR GROUPS LIST - THUMB CONT - ALL */
 #groups-list .groups-maincol.list-view {
     max-width: 1870px ;
     margin-top: 0px ;
@@ -612,12 +715,12 @@ color: gold ;
     position: relative;
     margin-top: 40px;
 }
-/* YOUR GROUPS LIST - LISTE/ THUMB POOL */
+/* YOUR POOL LIST - LIST/THUMB POOL */
 #groups-list.groups-thumbs {
     margin-right: 0;
     top: -40px ;
 }
-/* YOUR GROUP LIST - THUMB POOL */
+/* YOUR POOL LIST - THUMB POOL */
 #groups-opt.opt-out-bug.enable_rebootify_groups_members_page +  #subnav-refresh.subnav-refresh.subnav-view.subnav-state-ready {
 display: inline-block ;
     width: 100% ;
@@ -628,7 +731,7 @@ display: inline-block ;
 #groups-list.groups-thumbs .SetsContainer.GroupsCenterContainer {
     margin: 5px -40px -35px -11px ;
 }
-/* YOUR GROUP - RIGHT SIDE - BETA/NO BETA - === */
+/* YOUR POOL - RIGHT SIDE - BETA/NO BETA= */
 #groups-list .groups-sidebar {
     position: absolute ;
     width: 510px ;
@@ -671,7 +774,7 @@ border: 1px solid gray ;
     overflow: hidden ;
     overflow-y: auto ;
 }
-/* YOUR GROUP LIST - ITEMS COUNT - === */
+/* YOUR POOL LIST - ITEMS COUNT */
 #groups-list {
     counter-increment: myIndex ;
 }
@@ -694,7 +797,7 @@ border: 1px solid gray ;
     font-size: 10px ;
     z-index: 10 ;
 }
-/* YOUR - GROUP LIST - CONT - NO BETA - === */
+/* YOUR POOL LIST - CONT - NO BETA */
 #groups-list .groups-maincol.list-view #groups-list {
     width: 1870px ;
     margin-top: 0px ;
@@ -866,7 +969,6 @@ border: 1px solid gray ;
     margin: 199px 0 0 0 !important;
     text-align: center ;
 }
-/* (new145) */
 #groups-list .SetsContainer.GroupsCenterContainer .Sets .SetCase .setLinkDiv ,
 #groups-list .SetsContainer.GroupsCenterContainer .Sets .SetCase .setLinkDiv .setThumb {
     display: none ;
@@ -927,14 +1029,14 @@ border: 1px solid gray ;
     transform: scale(1) ;
 }
 
-/* POOLS META - ADD LABELS - === */
+/* POOL META - ADD LABEL */
 /* MEMB numb */
 #groups-list .SetsContainer.GroupsCenterContainer  a[href$="/members"]:before ,
-/* MEMB PEND ok */
+/* MEMB PEND */
 #groups-list .SetsContainer.GroupsCenterContainer a[href^="/groups_pending.gne"]:before ,
 /* PHOT numbk */
 #groups-list .Sets .setText p a[href^="/groups/"]:not([href$="/pending"]):not([href$="/members"]):before ,
-/* PHOT PEND ok */
+/* PHOT PEND */
 #groups-list .Sets .setText p a[href$="/admin/pending"]:before {
     margin-right: 5px ;
     font-size: 10px ;
@@ -989,11 +1091,11 @@ photo-list-photo-container.loading ,
     flex-direction: column;
     justify-content: center;
 }
-/* GALL / ALB / PHOSTREAM - WIDE - === */
-.fluid.html-photostream-page-view.scrolling-layout  #content .view.photostream-page-view  .photolist-container.fluid-centered ,
-.fluid.html-albums-list-page-view.scrolling-layout  #content .albums-list-container.fluid-centered ,
-.fluid.html-album-page-view.scrolling-layout #content .view.album-page-view.flickr-view-root-view .album-container.fluid-centered ,
-.fluid.html-gallery-page-view.scrolling-layout  #content .fluid-centered.gallery-page-container {
+/* GAL/ALB/STREAM - WIDE */
+.fluid.html-photostream-page-view  #content .photostream-page-view  .photolist-container.fluid-centered ,
+.fluid.html-albums-list-page-view  #content .albums-list-container.fluid-centered ,
+.fluid.html-album-page-view #content .album-page-view.flickr-view-root-view .album-container.fluid-centered ,
+.fluid.html-gallery-page-view  #content .fluid-centered.gallery-page-container {
     float: none !important;
     display: inline-block !important;
     min-width: 100% !important;
@@ -1003,27 +1105,26 @@ photo-list-photo-container.loading ,
 .fluid.html-gallery-page-view body {
     margin-top: -52px ;
 }
-html.scrolling-layout #content .galleries-list-container.fluid-centered {
+html #content .galleries-list-container.fluid-centered {
     max-width: 98% !important;
     min-width: 98% !important;
     padding: 0 20px !important;
     margin-top: -58px ;
 }
-.fluid.html-photostream-page-view.scrolling-layout .photolist-container.fluid-centered {
+.fluid.html-photostream-page-view .photolist-container.fluid-centered {
     margin-top: -48px ;
 }
-/* PHOTSTREAM - TOP HEADER */
-.fluid.html-photostream-page-view.scrolling-layout.yui3-js-enabled .subnav-content.fluid-centered {
+/* STREAM - TOP HEADER */
+.fluid.html-photostream-page-view .subnav-content.fluid-centered {
     margin-left: auto;
     margin-right: auto;
     max-width: 100% !important;
 }
-/* ALBUM EDIT COVER - === */
-
+/* ALB EDIT COVER */
 .album-header-view > .album-header-content > .edit-cover-photo {
     top: 35px;
 }
-/* (new157) GALLERY - HEADER - === */
+/* GAL - HEADER= */
 .gallery-page-view .gallery-page-container .details-section {
     position: sticky !important;
     top: 35px !important;
@@ -1042,7 +1143,6 @@ z-index: 50000 !important;
 border-bottom: 1px solid gray ;
 background: #222  !important;
 }
-/* (new159) */
 .gallery-page-view .gallery-page-container .details-section .description.short.no-read-more {
     max-height: 100% !important;
 border-bottom: 1px solid gray ;
@@ -1050,30 +1150,23 @@ background: #222  !important;
 }
 
 .gallery-page-view .gallery-page-container .details-section .description.short p {
-/* position: sticky !important; */
     width: 60%;
-height: 100% !important;
+    height: 100% !important;
     line-height: 15px ;
     max-height: 17px !important;  
      min-height: 17px !important;
-/* top: -100px !important; */
-margin-bottom: 20px !important;
+    margin-bottom: 20px !important;
     padding: 3px 0 14px 0 ;
     overflow: hidden !important;
-/* border-bottom: 1px solid red ; */
-/* background-image: linear-gradient(0deg, red 10px, rgba(15, 15, 16, 0.8) 30px) !important; */
-/* background-image: linear-gradient(0deg, rgba(18, 18, 18, 0.3) 5px, rgba(0, 0, 0, 0.5) 13px) !important; */
 }
 .gallery-page-view .gallery-page-container .details-section .description:not(.short) p {
     height: 100% !important;
-min-height: 400px !important;
+    min-height: 400px !important;
     max-height: 400px !important;
-padding-bottom: 30px !important;
+    padding-bottom: 30px !important;
     overflow-y: auto ;
 background: black !important;
-/* border-bottom: 1px solid green ; */
 }
-
 .gallery-page-view .gallery-page-container .details-section .description .read-less-button, 
 .gallery-page-view .gallery-page-container .details-section .description .read-more-button {
     margin-top: -10px ;
@@ -1117,8 +1210,6 @@ color: gray ;
     display: inline-block;
     width: 100%;
 }
-
-
 .gallery-page-view .gallery-page-container .stats {
     position: fixed !important;
     display: inline-block !important;
@@ -1137,8 +1228,8 @@ color: gray ;
     z-index: 50000 !important;
 background: #333 !important;
 }
-/* GAL - LIST - === */
-html.scrolling-layout #content .galleries-list-container.fluid-centered .photo-list-gallery-view {
+/* GAL - LIST */
+html #content .galleries-list-container.fluid-centered .photo-list-gallery-view {
     position: relative !important;
     display: inline-block !important;
     margin: -40px 0px 65px 35px !important;
@@ -1148,17 +1239,17 @@ html.scrolling-layout #content .galleries-list-container.fluid-centered .photo-l
 .gallery-page-view .gallery-page-container .photos-section .photo-list-container {
     top: 10px !important;
 }
-.galleries-list-container.fluid-centered .view.galleries-list-toolbar-view {
+.galleries-list-container.fluid-centered .galleries-list-toolbar-view {
     position: absolute !important;
     height: 20px !important;
     right: 18px !important;
     top: 90px !important;
 }
-.html-gallery-page-view .view.photo-list-gallery-photo-view {
+.html-gallery-page-view .photo-list-gallery-photo-view {
     padding: 3px !important;
 }
-/* GAL - COUNT IETMS - GM "Superloader" - === */
-.fluid.html-galleries-list-page-view #content .view.photo-list-view {
+/* GAL - COUNT IETMS - GM "Superloader" */
+.fluid.html-galleries-list-page-view #content .photo-list-view {
     display: inline-block !important;
     height: 100% !important;
     min-height: 2462px !important; 
@@ -1167,11 +1258,11 @@ html.scrolling-layout #content .galleries-list-container.fluid-centered .photo-l
     counter-increment: myIndex 1;
     counter-reset: myIndex -1 !important;
 }
-.fluid.html-galleries-list-page-view #content .sp-separator ~  .view.photo-list-view {
+.fluid.html-galleries-list-page-view #content .sp-separator ~ .photo-list-view {
     min-height: 2462px !important; 
     max-height: 2462px !important;
 }
-html.scrolling-layout #content .galleries-list-container.fluid-centered .photo-list-gallery-view:before {
+html #content .galleries-list-container.fluid-centered .photo-list-gallery-view:before {
     position: absolute ;
     counter-increment: myIndex ;
     content: counter(myIndex, decimal-leading-zero) ;
@@ -1182,20 +1273,20 @@ html.scrolling-layout #content .galleries-list-container.fluid-centered .photo-l
     z-index: 10 ;
 background: gold ;
 }
-/* GAL - LIST - THUMBNAIL - INFO BACKGROUND / FAV STAR - === */
+/* GAL - LIST - THUMB - INFO BACKG/FAV STAR */
 .gallery-page-view .gallery-page-container .photos-section {
     width: 100% !important;
     border-top: 1px solid #333;
 }
-.html-gallery-page-view .fluid-centered.gallery-page-container .photos-section .photo-list-container .view.photo-list-view  .view.photo-list-gallery-photo-view.forced-aspect-ratio:not(:hover) .sub-photo-info-bar {
+.html-gallery-page-view .fluid-centered.gallery-page-container .photos-section .photo-list-container .photo-list-view .photo-list-gallery-photo-view.forced-aspect-ratio:not(:hover) .sub-photo-info-bar {
     opacity: 1 !important;
     visibility: hidden !important;
 }
-.html-gallery-page-view .fluid-centered.gallery-page-container .photos-section .photo-list-container .view.photo-list-view  .view.photo-list-gallery-photo-view.forced-aspect-ratio:not(:hover) .sub-photo-info-bar .engagement-item.fave {
+.html-gallery-page-view .fluid-centered.gallery-page-container .photos-section .photo-list-container .photo-list-view .photo-list-gallery-photo-view.forced-aspect-ratio:not(:hover) .sub-photo-info-bar .engagement-item.fave {
     opacity: 0.5 !important;
     visibility: visible !important;
 }
-/* GAL - POPUP REORDER / COVER SELEC - === */
+/* GAL - POPUP REORDER/COVER SELEC */
 .modal.subview-modal.reorder-grid-modal ,
 .modal.subview-modal.photo-selector.gallery-coverphoto-selector {
     position: fixed !important;
@@ -1229,8 +1320,8 @@ background: gold ;
     margin-left: 4px;
     margin-right: 4px;
 }
-/* GAL - ACTION BAR - === */
-.view.gallery-page-view .action-bar ,
+/* GAL - ACT BAR */
+.gallery-page-view .action-bar ,
 .gallery-page-view .gallery-page-container .action-bar {
     position: fixed;
     height: 37px  !important;
@@ -1246,7 +1337,7 @@ background: gold ;
     height: 37px  !important;
     line-height: 37px !important;
 }
-.fluid.html-gallery-page-view.scrolling-layout #content .action-bar-content.fluid-centered {
+.fluid.html-gallery-page-view #content .action-bar-content.fluid-centered {
     width: 100%;
     min-width: 1890px !important;
     max-width: 1890px !important;
@@ -1255,7 +1346,7 @@ background: gold ;
     padding-left: 5px;
     padding-right: 5px;
 }
-/* ADD / REORDER / VIEWS SIZE / SHARE - IN ACT BAR - === */
+/* ADD/REORDER/VIEWS SIZE/SHARE - IN ACT BAR */
 .gallery-page-view .gallery-page-container .photos-section .photos-section-header {
     position: fixed !important;
     display: flex;
@@ -1278,13 +1369,13 @@ border-bottom: 1px solid red;
 .gallery-page-view .gallery-page-container .action-bar .actions .action.share {
     margin-right: 23px !important;
 }
-/* GAL - POP MENU ADD to POOL/GAL - ===*/
-.fluid.html-gallery-page-view .droparound.subview-droparound.auto-size .view.add-to-stuff-view.flickr-view-root-view {
+/* GAL - POP MENU ADD to POOL/GAL */
+.fluid.html-gallery-page-view .droparound.subview-droparound.auto-size .add-to-stuff-view.flickr-view-root-view {
     opacity: 1 !important;
 }
-/*  GAL - COM OVERLAY + ADAPT ALBUM / SET - ADD TO POOL + GALL POPUP - === */
-.fluid.html-album-page-view.scrolling-layout  body   .fluid-droparound-overlay.transparent:not(.transparent)  ,
-.fluid.html-gallery-page-view.scrolling-layout  body  .fluid-droparound-overlay:not(.transparent)  {
+/*  GAL - COM OVERLAY + ADAP ALBUM/SET - ADD TO POOL + GALL POPUP */
+.fluid.html-album-page-view  body   .fluid-droparound-overlay.transparent:not(.transparent)  ,
+.fluid.html-gallery-page-view  body  .fluid-droparound-overlay:not(.transparent)  {
     position: fixed !important;
     display: inline-block !important;
     z-index: -1 !important;
@@ -1292,16 +1383,16 @@ border-bottom: 1px solid red;
     visibility: visible !important;
 background-color: blue !important;
 }
-.fluid.html-album-page-view.scrolling-layout  body   .fluid-droparound-overlay.transparent ,
-.fluid.html-gallery-page-view.scrolling-layout  body  .fluid-droparound-overlay.transparent  {
+.fluid.html-album-page-view  body   .fluid-droparound-overlay.transparent ,
+.fluid.html-gallery-page-view  body  .fluid-droparound-overlay.transparent  {
     position: fixed !important;
     display: inline-block !important;
     pointer-events: none !important;
     visibility: visible !important;
 }
-/* GAL - POPUP ADD COM - === */
-.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.gallery-photo-comments ,
-.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.gallery-photo-remark {
+/* GAL - POPUP ADD COM */
+.fluid.html-gallery-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.gallery-photo-comments ,
+.fluid.html-gallery-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.gallery-photo-remark {
     display: inline-block !important;
     width: 390px !important;
     height: auto !important;
@@ -1325,25 +1416,25 @@ background-color: blue !important;
     padding-bottom: 20px !important;
     overflow: auto;
 }
-.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.gallery-photo-comments .remark-container .remark-edit-container {
+.fluid.html-gallery-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.gallery-photo-comments .remark-container .remark-edit-container {
     margin-top: -12px !important;
 }
-/* GAL - ADD CUR NOTE - PHOTO ITEM - === */
-.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.gallery-photo-comments .remark-container .remark-edit-container:before {
+/* GAL - ADD CUR NOTE - PHO ITEM */
+.fluid.html-gallery-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.gallery-photo-comments .remark-container .remark-edit-container:before {
     position: absolute ;
     content: "Add a Curator Note: " ;
     top: -2px ;
 color: red ;
 }
-/* GAL -  SEE CURA NOTE - POPUP - === */
+/* GAL -  SEE CURA NOTE - POP */
 .gallery-page-remark-view .remark-container p:before {
     position: absolute ;
     content: "Curator Note: " ;
     top: -2px ;
 color: gold ;
 }
-/* GAL - COM PHOT ITEM - === */
-.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.gallery-photo-remark {
+/* GAL - COM PHO ITEM */
+.fluid.html-gallery-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.gallery-photo-remark {
     position: fixed !important;
     max-height: 295px !important;
     min-height: 295px !important;
@@ -1354,17 +1445,17 @@ color: gold ;
     padding: 20px 0 0;
 box-shadow: 0px 7px 5px 5px rgba(0, 0, 0, 0.9) !important;
 } 
-.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.gallery-photo-remark  .body .content.subview.auto-size .view.photo-comments-view {
+.fluid.html-gallery-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.gallery-photo-remark .body .content.subview.auto-size .photo-comments-view {
     max-height: 270px !important;
     min-height: 270px !important;
 }
-.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.gallery-photo-remark .droparrow.up ,
-.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.gallery-photo-remark .droparrow.down {
+.fluid.html-gallery-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.gallery-photo-remark .droparrow.up ,
+.fluid.html-gallery-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.gallery-photo-remark .droparrow.down {
     left: 0 !important;
     right: 0 !important;
     top: 275px !important;
 }
-.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.gallery-photo-remark:before {
+.fluid.html-gallery-page-view .fluid-droparound-view .droparound.subview-droparound.auto-size.gallery-photo-remark:before {
     position: absolute ;
     content: "Comment(s) on This Photo: " ;
     top: 0px ;
@@ -1376,12 +1467,12 @@ color: gold ;
     height: 100% ;
     left: 0;
 }
-.fluid.html-gallery-page-view .view.comment-item-view.flickr-view-root-view  .comment-item .content-container  .comment-content  br ,
-.fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view  .view.comment-item-view.flickr-view-root-view  .comment-item .content-container  .comment-content br {
+.fluid.html-gallery-page-view .comment-item-view  .comment-item .content-container  .comment-content  br ,
+.fluid.html-gallery-page-view .fluid-droparound-view .comment-item-view.flickr-view-root-view  .comment-item .content-container  .comment-content br {
     display: block !important;
     margin-bottom: -1px !important;
 }
-/* GAL - COM CONTAINER - TOP ACTION BAR - === */
+/* GAL - COM CONT - TOP ACT BAR */
 .gallery-page-view .gallery-page-container .comments-section {
     left: 17%;
     max-width: 550px;
@@ -1421,12 +1512,11 @@ content: "    🔻" ;
     overflow: hidden;
     overflow-y: auto;
 }
-
-/* GAL - COM COUNT - === */
-.html-gallery-page-view .comments-section .view.gallery-comments-view .comments-list-section .comment-list-view .comment-list-container .comment-list {
+/* GAL - COM COUNT */
+.html-gallery-page-view .comments-section .gallery-comments-view .comments-list-section .comment-list-view .comment-list-container .comment-list {
     counter-reset: myIndex 00 !important;
 }
-.html-gallery-page-view .comments-section .view.gallery-comments-view .comments-list-section .comment-list-view .comment-list-container .comment-list .comment-list-item:before {
+.html-gallery-page-view .comments-section .gallery-comments-view .comments-list-section .comment-list-view .comment-list-container .comment-list .comment-list-item:before {
     counter-increment: myIndex ;
     content: counter(myIndex, decimal-leading-zero) ;
     position: absolute ;
@@ -1443,11 +1533,11 @@ color: white ! important;
 box-shadow: 0 0 2px rgba(162, 160, 160, 0.6) inset ;
 background: rgba(62, 59, 59, 0.6) ;
 }
-.html-gallery-page-view .comments-section .view.gallery-comments-view .comments-list-section .comment-list-view  .comment-list-container  .comment-list  .comment-list-item:last-of-type:before {
+.html-gallery-page-view .comments-section .gallery-comments-view .comments-list-section .comment-list-view  .comment-list-container  .comment-list  .comment-list-item:last-of-type:before {
     visibility: visible ;
 color: red ;
 }
-/* GAL - COM ACTION - === */
+/* GAL - COM ACT */
 .fluid.html-gallery-page-view .menu.over-modal.comment-action-menu {
     width: auto;
     z-index: 50000 !important;
@@ -1459,21 +1549,31 @@ color: red ;
     font-size: 14px;
     opacity: 1 ;
 }
-.photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-container {
-    display: inline-block;
-    width: 100% !important;
+/*(new161) */
+.photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-containerdetails-container .avatar {
+    margin-right: 30px;
 }
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-container .details a.title ,
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-container .details a.attribution ,
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .engagement {
     margin-top: 3px !important;
 }
+/* (new161)SMALL */
+.forced-aspect-ratio .photo-list-photo-container .details a:only-of-type  {
+    position: relative !important;
+    top: 24px !important;
+/* background: blue !important; */
+}
+.photo-list-gallery-photo-view .photo-list-photo-container.info-bar-on-hover .sub-photo-info-bar .engagement {
+    position: absolute;
+    bottom: 0;
+}
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .engagement span.engagement-item:hover ,
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .engagement span.engagement-item.hidden {
     display: flex !important;
 color: gray !important;
 }
-/* GALL - CURATOR NOTES - === */
+/* GAL - CURA NOTE */
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar {
     display: inline-block !important;
 }
@@ -1524,8 +1624,7 @@ background: rgba(0, 0, 0, 0.78) !important;
     opacity: 1;
 background: rgba(0, 0, 0, 0.58) !important;
 }
-
-/* GALL - PRESENT / ACTIVE */
+/* GALL - PRES/ACT */
 .photo-list-gallery-photo-view .photo-list-photo-container .photo-container .remark-container.present .remark-line-container {
     position: relative !important;
     display: inline-block  !important;
@@ -1594,7 +1693,7 @@ color: #fff;
     overflow: hidden !important;
 overflow-y: auto !important;
 }
-/* BUTTONS */
+/* BUT */
 .photo-list-gallery-photo-view .photo-list-photo-container .photo-container .remark-container.present .remark-button svg.filled ,
 .photo-list-gallery-photo-view .photo-list-photo-container .photo-container .remark-container .remark-button {
     display: inline-block!important;
@@ -1626,7 +1725,7 @@ visibility: visible !important;
     z-index: 1 !important;
 background-color: red !important;
 }
-/* (new132) GALLERY - CURATOR NOTES COUNT - === */
+/* GAL - CURA NOTE COUNT */
 .gallery-page-view .gallery-page-container .photos-section .photo-list-container{
     counter-increment: myIndex  ! important;
     counter-reset: myIndex -1 !important;
@@ -1650,14 +1749,12 @@ background-color: red !important;
 color: white ;
 background: red ;
 }
-
-/* GALLERY - FAV ICON - === */
+/* GAL - FAV ICON */
 .photo-list-gallery-photo-view .photo-list-photo-container  .engagement-item.fave.faved .engagement-icon .icon {
     color: red !important;
     opacity: 1 !important;
 }
-
-/* GALLERY -  VISITED -  === */
+/* GAL -  VISIT */
 .photo-list-gallery-photo-view .photo-list-photo-container .photo-container .click-target {
     outline: 1px solid gray !important;
 }
@@ -1668,7 +1765,7 @@ background: red ;
 /* ==== END - NEW GALLERY ==== */
 
 
-/* START - TEST VIDEO DURATION ========= */
+/* START - VIDEO DURATION ==== */
 .vjs-progress-holder.vjs-slider.vjs-slider-horizontal:after {
 content: "XX" ;
 content: attr(aria-valuetext) ;
@@ -1705,126 +1802,15 @@ color: white ;
 background: green ;
 }
 
-/* END === START - TEST VIDEO DURATION  ========== */
-
-
-/* START TEST - NEW LOGIN BANNER / SUPP MESSAGE LIMIT UPLOAD - ============ */
-
-/* NEW LOGIN BANNER - === */
-.view.featured-banner-view .featured-banner {
-    display: inline-block !important;
-}
-.view.featured-banner-view {
-    display: inline-block !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 20px;
-    height: 20px !important;
-    margin-left: 20px !important;
-    padding-left: 20px;
-    overflow: hidden !important;
-}
-.view.featured-banner-view:hover {
-    min-width: 400px !important;
-    max-width: 400px  !important;
-    min-height: 100px !important;
-    max-height: 100px !important;
-}
-.featured-banner-view .featured-banner {
-    padding-left: 0px;
-    text-align: left !important;
-}
-.view.featured-banner-view:hover .featured-banner {
-    min-height: 80px !important;
-    max-height: 80px !important;
-    min-width: 400px !important;
-    max-width: 400px  !important;
-    padding-left: 0px;
-    text-align: left !important;
-}
-.featured-banner-view .featured-banner:before {
-    content: "⚠️" ;
-    position: absolute ;
-    display: inline-block ;
-    min-width: 20px ;
-    max-width: 20px ;
-    min-height: 20px ;
-    max-height: 20px ;
-    line-height: 20px ;
-    left: 20px  ;
-    text-align: center ;
-    z-index: 50000 ;
-background: yellow ;
-}
-.view.featured-banner-view:hover .featured-banner:before {
-    content: "⚠️" ;
-    margin-left: -20px ;
-background: red ;
-}
-.view.featured-banner-view .featured-banner .featured-banner-content.fluid-centered {
-    width: 100%!important;
-    min-height: 25px !important;
-    max-height: 25px !important;
-}
-.fluid.html-favorites-page-view.scrolling-layout .view.featured-banner-view:hover .featured-banner .featured-banner-content.fluid-centered {
-    display: inline-block !important;
-    width: 100%!important;
-    min-width: 300px !important;
-    max-width: 300px !important;
-    min-height: 250px !important;
-    max-height: 250px !important;
-    top: 0px !important;
-}
-.fluid .view.global-nav-view:not(:hover) .global-nav .view.featured-banner-view {
-    position: absolute !important;
-    display: inline-block !important;
-    top: 54px !important;
-    left: 0 !important;
-    right: 0 !important;
-}
-.fluid .view.global-nav-view:hover .global-nav .view.featured-banner-view {
-    position: absolute !important;
-    top: 0px !important;
-    z-index: 50000 !important;
-}
-.view.featured-banner-view .featured-banner .featured-banner-content.fluid-centered .button-container {
-    position: absolute !important;
-    min-width: 400px!important;
-    max-width: 400px !important;
-    min-height: 30px !important;
-    max-height: 30px !important;
-    line-height: 30px !important;
-    top: 67px !important;
-    text-align: center !important;
-}
-.view.featured-banner-view .featured-banner .featured-banner-content.fluid-centered .featured-text p ,
-.view.featured-banner-view .featured-banner .featured-banner-content.fluid-centered .featured-text  {
-    display: inline-block !important;
-    min-width: 400px !important;
-    max-width: 400px  !important;
-    min-height: 25px !important;
-    max-height: 25px !important;
-    line-height: 25px !important;
-    margin-bottom: 0;
-    margin-top: 0;
-    text-align: center !important;
-}
-.view.featured-banner-view .featured-banner .featured-banner-content.fluid-centered .featured-text  {
-    padding: 0 !important;
-}
-
-
-/* START TEST - PHOTOSTREAM OLD WAY - with DETAIL (&details=1) - === */
+/* START TEST - STREAM OLD WAY - with DETAIL (&details=1) ==== */
 /* SHARE */
 .zeus.new-footer.new-header.super-liquid.extras.header-underlap  #global-nav.styleguide-global-nav + #main #subnav-refresh .subnav-middle .subnav-holder #button-bar.nav-links.nav-links-tools.clearfix:not(:empty) {
     left: 700px !important;
 }
-
 .PhotoStream {
     margin-bottom: 15px;
     margin-top: 80px !important;
 }
-
 body.zeus .PhotoStream.ps-photos-only .PhotosColumn .photo-display-item, 
 body.zeus .PhotoStream.ps-photos-only .photo-display-item {
     float: left !important;
@@ -1846,7 +1832,6 @@ body.zeus .PhotoStream.ps-photos-only .PhotosColumn .photo-display-item .thumb {
 body.zeus .PhotoStream.ps-photos-only .PhotosColumn .photo-display-item .thumb .photo_container {
     margin-top: 0px !important;
 }
-
 body.zeus .PhotoStream.ps-photos-only .PhotosColumn .photo-display-item .thumb img {
     max-width: 187px !important;
     height: auto !important;
@@ -1862,14 +1847,13 @@ body.zeus .PhotoStream.ps-photos-only .PhotosColumn .photo-display-item .thumb i
     overflow-y: auto !important;
 }
 
-/* PHOTOSTREAM OLD WAY - (SET ???) - EDIT TITLE - MULTILINE not working with CSS need textarea - === */
+/* STREAM OLD WAY - (SET ???) - EDIT TITLE - MULTILINE not working with CSS need textarea */
 .StreamView h4 {
     margin-bottom: 0;
     font-size: 14px;
     overflow: hidden !important;
 color: red !important;
 }
-
 .photostream-photo.photo-display-item .hover-target .meta .StreamView  .Desc .insitu-trigger.insitu-hint.insitu-editing {
     position: fixed !important;
     height: auto !important; 
@@ -1919,10 +1903,10 @@ color: red !important;
     margin-left: 5px !important;
     margin-top: 5px;
 }
-/* END === TEST - PHOTOSTREAM OLD WAY - DETAIL (&details=1) ============= */
+/* END == TEST - STREAM OLD WAY - DETAIL (&details=1) ===== */
 
 
-/* PHOTO - EDIT PRIVACY PAGE - === */
+/* PHO - EDIT PRIVACY PAGE */
 .photoDetails {
     clear: none;
     float: left;
@@ -1964,7 +1948,7 @@ border: 1px solid gray !important;
     border: 1px solid gray !important;
 }
 
-/* START ===== APP GARDEN ======= */
+/* START == APP GARDEN ==== */
 #DiscussPhoto {
     position: absolute !important;
     clear: both;
@@ -2049,7 +2033,7 @@ border: 1px solid gray !important;
     overflow: hidden ;
     text-overflow: ellipsis ;
 }
-/* APPS BY AUTHOR - = */
+/* APPS BY AUT */
 #ag-user-promo {
     position: absolute;
     width: 233px ;
@@ -2087,7 +2071,6 @@ border: 1px solid gray !important;
     margin-top: -129px ;
     padding-left: 234px ;
 }
-
 .app-summary-screenshot {
     height: 75px ;
     width: 757px ;
@@ -2131,7 +2114,7 @@ ul.app-list li .photo_container .photo_container a .pc_img {
 /* END == APP GARDEN ==== */
 
 
-/* (new141) START === POOL DISCUSS - GALLS / ALB  CAPTION - === */
+/* START === POOL DISC/GAL/ALB  CAPTION */
 #DiscussTopic a[href*="/albums/"]  img[width="500"] ,
 #DiscussTopic a[href*="/galleries/"]  img[width="500"] {
     height: auto;
@@ -2160,10 +2143,10 @@ outline: 1px solid gray
 #DiscussTopic a[href*="/albums/"]:after {
     content: "Album : "attr(title) ;
 }
-/* END === TEST - POOL DISCUSS - GAL CAPTION ========== */
+/* END == TEST - POOL DISC/GAL CAPTION /==== */
 
-/* (new153) PHOTO - EXPAND PHOTO - ICON EXPAND IMAGE > COM FORM - HOVER  + ADD NOTE INDIC - === */
-.view.photo-notes-scrappy-view::after,
+/* PHO - EXPAND - ICON EXPAND IMAGE > COM FORM - HOVER  + ADD NOTE INDIC */
+.photo-notes-scrappy-view::after,
 .photo-notes-scrappy-view.box-hovered::after, 
 .fluid.html-photo-page-scrappy-view .height-controller .photo-well-media-scrappy-view.requiredToShowOnServer + .photo-notes-scrappy-view::after, 
 .fluid.html-photo-page-scrappy-view .height-controller .photo-well-media-scrappy-view + .photo-notes-scrappy-view::after {
@@ -2187,7 +2170,7 @@ outline: 1px solid gray
     z-index: 5000000 ;
     transition: opacity 0.1s ease 0s, transform 0.5s ease 0s ;
 }
-.fluid.html-photo-page-scrappy-view .view.photo-page-scrappy-view .height-controller .photo-notes-scrappy-view.box-hovered:hover:after {
+.fluid.html-photo-page-scrappy-view .photo-page-scrappy-view .height-controller .photo-notes-scrappy-view.box-hovered:hover:after {
     content: "📝  Add a Note: \A Hold down mousebutton \A and drag an area" ;
     height: 40px ;
     line-height: 12px ;
@@ -2202,18 +2185,16 @@ outline: 1px solid gray
     opacity: 1 ;
 color: red ;
 }
-
-
-/* START == GM Super_preloaderPlus_one_New == POOL DISCUSS / GALL CAPTION  ==== */
+/* START == GM Super_preloaderPlus_one_New == POOL DISC/GAL CAPTION */
 /* FAVS  */
-.sp-separator + .view.photo-list-view,
-.fluid.html-favorites-page-view .view.photo-list-view  ~ .view.photo-list-view + .sp-separator + .view.photo-list-view {
+.sp-separator + .photo-list-view,
+.fluid.html-favorites-page-view .photo-list-view ~ .photo-list-view + .sp-separator + .photo-list-view {
     margin-top: 24px !important;
 }
-/* END == POOL DISCUSS - GALL CAPTION ===== */
+/* END == POOL DISC/GAL CAPTION ==== */
 
 
-/* START == PHOTO PAGE - MINITHUMB - ORIGIN INDICATOR ===== */
+/* START == PHO - MINITHUMB - ORIGIN INDICATOR ===== */
 .context-slider-scrappy-view .context-slider.big-slider > .wrapper .slider .context-thumb.emptyImage:first-of-type[href*="/in/"]:before {
     display: inline-block !important;
     position: fixed ;
@@ -2223,7 +2204,6 @@ color: red ;
     z-index: 500000 ;
 background: green ;
 }
-
 .context-slider-scrappy-view .context-slider.big-slider > .wrapper .slider .context-thumb.emptyImage:first-of-type[href*="/in/contacts/"]:before {
 content: "🔻 In Contacts 🔻" ;
     top: 49px ;
@@ -2259,13 +2239,12 @@ content: "🔻 In Contacts 🔻" ;
     top: 45px ;
     left: -63px ;
 }
-/* (new144) */
 .context-slider-scrappy-view .context-slider.big-slider > .wrapper .slider .context-thumb.emptyImage:first-of-type[href*="/in/feed-"]:before {
     content: "🔻 In Feeds 🔻" ;
     top: 45px ;
     left: -63px ;
 }
-/* PHOT PAGE - MINITHUMB - ERROR -  === */
+/* PHO - MINITHUMB - ERROR */
 .context-slider-scrappy-view .loadingError {
     height: 10px !important;
     line-height: 10px !important;
@@ -2301,10 +2280,10 @@ content: "🔻 In Contacts 🔻" ;
     font-size: 8px !important;
 }
 
-/* END === PHOTO PAGE - MINITHUMB - ORIGIN INDICATOR ===== */
+/* END === PHO - MINITHUMB - ORIGIN INDIC ==== */
 
 
-/* POOL - SEND INVIT - COUNTER */
+/* POOL - SEND INVIT - COUNT */
 #Main > #subnav-template-positionmask + h1#Tertiary +table #GoodStuff {
     counter-increment: myIndex  ! important;
 }
@@ -2351,8 +2330,7 @@ content: "🔻 In Contacts 🔻" ;
     opacity: 1 ;
 }
 
-
-/* START ==== ORGANIZE ===== */
+/* START == ORGANIZE ==== */
 #findr {
     width: 1905px !important;
 }
@@ -2364,10 +2342,10 @@ content: "🔻 In Contacts 🔻" ;
 background-color: #d4d4d4;
 }
 
-/* END ==== ORGANIZE ===== */
+/* END == ORGANIZE ==== */
 
 
-/* START ==== STATS PAGES ==== */
+/* START == STATS ==== */
 #bod {
     display: inline-block !important;
     margin-top: -20px !important;
@@ -2427,12 +2405,12 @@ background-color: #d4d4d4;
     float: left;
     width: 226px;
 }
-/* END ==== STATS PAGES ======== */
+/* END == STATS PAGES ==== */
 
 
-/* START == CONTACTS RELATED (ACT/MEMB/CONT/MAIL) ===== */
+/* START == CTS RELATED (ACT/MEMB/CONT/MAIL) ===== */
 
-/* CONTACTS PAGES - TOP HEADER - === */
+/* CTS - TOP HEADE */
 .contact-list-header {
     position: absolute ;
     display: inline-block ;
@@ -2442,7 +2420,7 @@ background-color: #d4d4d4;
     left: 250px ;
     padding: 0 4px ;
 }
-/* CONTACTS - FOLLOW - === */
+/* CTS - FOL */
 table.contact-list-table {
     position: absolute ;
     display: inline-block  ;
@@ -2450,7 +2428,7 @@ table.contact-list-table {
     left: 250px ;
     top: -20px ;
 }
-/* CONTACT PAGES - PEOP YOU FOL - YOU LIST THEM "NOTHING YET" - === */
+/* CTS - PEOP YOU FOL - YOU LIST THEM "NOTHING YET"= */
 .contact-list-nothingyet:after {
     content: "X" ;
     position: absolute ;
@@ -2458,7 +2436,7 @@ table.contact-list-table {
     font-size: 20px ;
 color: red ;
 }
-/*  PEOP YOU FOL - PHOT of - ONE BY USER - SMALL THUMB - === */
+/*  PEOP YOU FOL - PHOT of - ONE BY USER - SMALL THUMB */
 .HoldPhotos {
     width: 980px !important;
     margin-left: 418px !important;
@@ -2552,7 +2530,7 @@ float: left !important;
     text-align: left ;
     white-space:pre-wrap ;
 }
-/* CONTACTS - PAGI - === */
+/* CTS - PAG */
 .contact-list-table + #paginator-module.Pages  {
     position: absolute ;
     display: inline-block ;
@@ -2585,15 +2563,15 @@ float: left !important;
     overflow: hidden ;
     overflow-y: auto ;
 }
-/* ==== CONTACT ==== */
-/* CONT - PAGI - === */
+/* ==== CTS ==== */
+/* CTS - PAG */
 .PeopleResults ~ #paginator-module {
     position: absolute ;
     left: 975px ;
     top: 0px ;
     width: 30% ;
 }
-/* CONTA/ALB - TOP HEA - === */
+/* CTS/ALB - TOP HEA - === */
 body.zeus.quirks Table#SubNav {
     display: inline-block ;
     width: 70% ;
@@ -2655,7 +2633,7 @@ outline: 1px solid TAN ;
     border: 1px solid gray !important;
     border-radius: 3px 0 0 3px !important;
 }
-/* CONTACTS FOLLOW THUMBNAIL - === */
+/* COTS FOL THUMB */
 #contacts-thumbs-wrapper #thumbnails {
     width: 1920px !important;
     margin-top: 0px !important;
@@ -2674,18 +2652,13 @@ outline: 1px solid TAN ;
     overflow: visible !important;
     transform: scale(0.4) !important;
 }
-.super-liquid #contacts-thumbs-wrapper .ju.photo-display-container .photo-display-item .meta {
-/*     padding: 5px 0 10px 8px; */
-/* font-size: 26px !important; */
-}
-
-/* CONTACTS FOLLOW THUMBNAIL - BUT OPTION LIGHT BOX - === */
+/* CTS FOL THUMB - BUT OPT LIGHT BOX */
 .searchified-options .searchified-options-view {
     position: relative !important;
     float: left !important;
     left: 16px !important;
 }
-/* POOL ADMIN - MEMBERS */
+/* POOL ADM - MEMB */
 #group-members h2.title {
     font-size: 24px !important;
     margin-top: 54px !important;
@@ -2693,7 +2666,7 @@ outline: 1px solid TAN ;
 #group-members .mem-list.clearfix {
     margin-bottom: -42px !important;
 }
-/* POOL ADMIN - MANAGE MEMB/ CONT /RECENT ACT  */
+/* POOL ADM - MANAGE MEMB/CONT/REC ACT  */
 #Main p#admin_intro {
     width: 1900px !important;
     margin-top: 59px;
@@ -2732,10 +2705,10 @@ border: 1px solid gray !important;
 #Tertiary + .Tab + .char_search {
     position: absolute !important;
     display: inline-block !important;
-    width: 564px !important;
-    height: 30px !important;
-    margin-left: 93px !important;
-    top: 10px !important;
+    width: 364px !important;
+    height: 25px !important;
+    margin-left: 53px !important;
+    top: 5px !important;
 }
 .char_search h3 {
     display: inline-block !important;
@@ -2747,10 +2720,11 @@ border: 1px solid gray !important;
     left: 108px !important;
     top: 52px !important;
 }
+/* (new161) */
 #MemberList ,
 #Tertiary + .Tab  +.char_search + #MemberList {
     position: relative !important;
-    margin-top: -10px !important;
+    margin-top: 20px !important;
 }
 #MemberList td {
     border-bottom: none !important;
@@ -2813,7 +2787,7 @@ border: 1px solid gray !important;
     border-radius: 5px !important;
     text-align: center !important;
 }
-/* POOL MEMBER - BANNED LIST - === */
+/* POOL MEMB - BAN LIST */
 #GoodStuff #MemberList {
     position: relative !important;
     width: 1383px !important;
@@ -2864,7 +2838,7 @@ border: 1px solid gray !important;
     max-width: 300px !important;
     min-width: 300px !important;
 }
-/* POOL ADMIN - BUTTONS BAN etc.. */
+/* POOL ADM - BUT BAN etc.. */
 #MemberList tr td[id*="ban_"] ,
 .char_search + #MemberList tr td[id*="ban_"] {
     position: relative !important;
@@ -2917,7 +2891,7 @@ border: 1px solid gray !important;
     margin-top: 1px !important;
 border: 1px solid gray !important;
 }
-/* POOL ADMIN - DELETE MEMB- TXT "Also Remove items " - === */
+/* POOL ADM - DEL MEMB- TXT "Also Remove" */
 #MemberList tr[id^="member_"] form {
     position: absolute;
     display: inline-block !important;
@@ -2937,7 +2911,7 @@ background: red !important;
     text-align: center !important;
 border: 1px solid gray !important;
 }
-/* MEMB - ACT - UNINVIT / BAN etc MES - === */
+/* MEMB - ACT - UNINVIT/BAN etc MES */
 #MemberList td > i {
     position: absolute;
     display: inline-block !important;
@@ -2953,8 +2927,8 @@ border: 1px solid gray !important;
     z-index: 1500 !important;
 }
 
-/* === PROFILE - CONTACT - MAIL === */
-/* CONT PAGE - Main - === */
+/* === PROF - CTS - MAIL === */
+/* CTS PAGE - Main */
 .PeopleResults>tbody {
     display: inline-block !important;
     min-width: 1901px !important;
@@ -3035,7 +3009,7 @@ border-bottom: 1px dashed gray !important;
     margin-left: 5px !important;
     margin-top: 4px !important;
 }
-/* CONT PAGE - ADD */
+/* CTS PAGE - ADD */
 #SubNav .Extras {
     position: absolute !important;
     display: inline-block !important;
@@ -3060,7 +3034,7 @@ border-bottom: 1px dashed gray !important;
     margin-top:  -15px ;
     margin-left :-36px ;
 }
-/* CONT PAGE - EDIT */
+/* CTS PAGE - EDIT */
 #Main table#SubNav tbody tr td.Extras p span.photo_navi_contact .edit_relationship {
     position: absolute !important;
     display: inline-block !important;
@@ -3074,15 +3048,13 @@ border-bottom: 1px dashed gray !important;
     margin-top:  -10px ;
     margin-left: -0px ;
 }
-
-/* REC ACTIVITY - === */
+/* ==== REC ACTIVITY ==== */
 #Main .tt-col1 {
     position: relative;
     vertical-align: top;
     width: 697px ;
     left: 640px ;
 }
-/* (new151) */
 #tt-recent-nav {
     height: 21px ;
     width: 460px ;
@@ -3110,8 +3082,7 @@ border-bottom: 1px dashed gray !important;
 #tt-recent .tt-col2:hover {
     height: auto ;
 }
-
-/* REC ACTIVITY - ALL - === */
+/* REC ACT - ALL */
 #tt-recent ul.tt-activity li.act-item.f-unread_mail ,
 #tt-recent ul.tt-activity li.act-item {
     position: relative ;
@@ -3130,7 +3101,6 @@ border: 1px solid gray ;
 #tt-recent ul.tt-activity li.act-item.f-unread_mail {
     border: 1px solid gold ;
 }
-
 /* REC ACT - CONTACTED */
 #tt-recent ul.tt-activity li.act-item.f-contacted {
     position: relative ;
@@ -3147,7 +3117,7 @@ border: 1px solid gray ;
     border-radius: 5px ;
 border: 1px solid green ;
 }
-/* REC ACT - MUTED ITEMS - === */
+/* REC ACT - MUTED ITEMS */
 .act-item.apply-hover.f-contacted.tt-muted {
     opacity: 1  ;
 }
@@ -3167,7 +3137,7 @@ border: 1px solid green ;
     transform: translate(8px, 6px) ;
     pointer-events: none ;
 }
-/* REC ACT - CONT or NOT - ICONS - FOLLOW / SUPP SEEING this CONTACT - === */
+/* REC ACT - CTS or NOT - ICONS - FOL/SUPP SEEING this CONTACT */
 .act-item.f-contacted .tt-item-options {
     position: absolute  ;
     top: 16px  ;
@@ -3191,7 +3161,7 @@ border: 1px solid green ;
     opacity: 1 ;
 color: red ;
 }
-/* REC ACT - ALL PHOTO - === */
+/* REC ACT - ALL PHO */
 .act-thumb {
     position: absolute ;
     display: inline-block ;
@@ -3223,14 +3193,14 @@ color: red ;
     text-align: center ;
     font-size: 12px ;
 }
-/* (new152) VISITED */
+/*  VISITED */
 .act-thumb  a .pc_img {
 outline: 1px solid gray ;
 }
 .act-thumb  a:visited .pc_img {
 outline: 1px solid green ;
 }
-/* REC ACT- CONT */
+/* REC ACT - CONT */
 .act-item.f-contacted>.act-thumb{
     margin-top: -25px !important;
     height: 155px;
@@ -3356,7 +3326,6 @@ background: red  ;
     margin-top: 0;
     top: -14px;
 }
-
 ul.tt-activity ul.act-details li.act-detail-item {
     position: relative;
     width: 222px  ;
@@ -3367,14 +3336,14 @@ ul.tt-activity ul.act-details li.act-detail-item {
     padding: 12px 5px 3px 0px  ;
     border-bottom: 1px dotted red  ;
 }
-/* REC ACT - PRO BADGE - === */
+/* REC ACT - PRO BADGE */
 #recent-activity li.act-detail-item.f-fave .pro-badge  {
     display: inline-block  ;
     top: -10px  ;
     left: -45px  ;
     transform: rotate(0deg)  ;
 }
-/* REC ACT - GALL - === */
+/* REC ACT - GAL */
 #toto-main.recent-activity .tt-gallery-thumb {
     width: 82px ;
     height: auto ;
@@ -3389,7 +3358,7 @@ ul.tt-activity ul.act-details li.act-detail-item {
     margin-top: 7px;
     border: 1px solid #333;
 }
-/* REC ACT - CONT - DETAIL CONTAINER */
+/* REC ACT - CONT - DETAIL CONT */
 ul.tt-activity .f-contacted ul.act-details li.act-detail-item {
     width: 250px ! important;
     min-height: 20px ! important;
@@ -3428,7 +3397,7 @@ ul.tt-activity ul.act-details li.act-detail-item.own-activity .act-content {
     border: 1px solid gray  ;
     border-radius: 10px  ;
 }
-/* REC ACT - COM - USER NAME - === */
+/* REC ACT - COM - USER NAME */
 #recent-activity.tt-activity .act-detail-item.f-comment .act-who + .act-content {
     display: inline-block ;
     position: relative ;
@@ -3459,20 +3428,20 @@ li.act-detail-item.f-fave.f-your-photo-their-fave.tt-first >a:first-of-type  {
     overflow: hidden  ;
     text-overflow: ellipsis  ;
 }
-/* REC ACT - ALL - === */
+/* REC ACT - ALL */
 #recent-activity.tt-activity .act-detail-item.f-comment.f-their-photo-their-comment {
     margin-bottom: 5px !important ;
     padding-left: 54px !important ;
     border-bottom: 1px dotted gray ;
  }
-/* REC ACT - COM - MY OWN COM - === */
+/* REC ACT - COM - MY OWN COM */
 ul.tt-activity ul.act-details li.act-detail-item.own-activity.f-comment.f-their-photo-your-comment.tt-first .act-when {
     top: 0px  ;
 }
 #recent-activity.tt-activity .act-detail-item.f-comment.f-their-photo-your-comment.tt-first .act-who + .act-content {
     margin-top: -2px  ;
 }
-/* REC ACT - COM - TXT "Read All Com" - === */
+/* REC ACT - COM - TXT "Read All Com" */
 #recent-activity.tt-activity .act-detail-item > .act-content:only-of-type {
     position: absolute ;
     display: inline-block ;
@@ -3483,7 +3452,7 @@ ul.tt-activity ul.act-details li.act-detail-item.own-activity.f-comment.f-their-
     border-radius: 5px  ;
     text-align: center  ;
 }
-/* REC ACT - COM - Add Com + MUTE ICONS - === */
+/* REC ACT - COM - Add Com + MUTE ICON */
 ul.tt-activity li.hover .tt-item-options, 
 ul.tt-activity li.act-item:hover .tt-item-options {
     visibility: visible  ;
@@ -3495,7 +3464,7 @@ ul.tt-activity li.act-item:hover .tt-item-options p img.tt-unsnooze {
     transform: scale(0.9) ;
     border: 1px solid red ;
 }
-/* REC ACT - CONT*/
+/* REC ACT - CONT */
 .act-item.f-contacted>.act-data {
     position: absolute ;
     display: inline-block ;
@@ -3523,7 +3492,7 @@ outline: 1px solid red  ;
 .act-content>strong {
     display: none ;
 }
-/* (new151) REC ACT - READ ALL COM - === */
+/* REC ACT - READ ALL COM */
 .tt-activity .act-content > div {
     position: relative ;
     display: inline-block ;
@@ -3541,7 +3510,7 @@ outline: 1px solid red  ;
 .tt-activity .act-content > div br {
     display: none ;
 }
-/* REC ACT - PRO BADGE - ==== */
+/* REC ACT - PRO BADGE */
 #recent-activity .pro-badge  {
     display: inline-block ;
     height: 13px ;
@@ -3550,7 +3519,7 @@ outline: 1px solid red  ;
     left: -38px ;
     font-size: 10px ;
 }
-/* REC ACT - COM BADGE PRO - ==== */
+/* REC ACT - COM BADGE PRO */
 .tt-activity .act-content > .pro-badge + b + div{
     position: relative ;
     display: inline-block ;
@@ -3578,7 +3547,7 @@ ul.tt-activity ul.act-details li.act-detail-item .act-when p {
     font-size: 10px  ;
     margin-bottom: 0;
 }
-/* REC ACT - CONT - ICON PROFILE + NAME */
+/* REC ACT - CONT - ICON PROF + NAME */
 .act-item.f-contacted>.act-data>.act-details .act-icon {
     position: absolute ;
     display: inline-block ;
@@ -3602,7 +3571,7 @@ ul.tt-activity .f-contacted ul.act-details  li.act-detail-item .act-when {
     content: "\01F4F7   : " ;
     margin-right: 15px ;
 }
-/* REC ACT - INVITE - === */
+/* REC ACT - INVITE */
 .act-details .act-who + .invitePhoto {
     display: inline-block  ;
     width: 229px ;
@@ -3643,7 +3612,7 @@ ul.tt-activity .f-contacted ul.act-details  li.act-detail-item .act-when {
     left: -33px;
     padding: 5px;
 }
-/* REC ACT - PAGI TT PAGE - === */
+/* REC ACT - PAGI TT PAGE */
 #tt-pages {
     position: absolute ;
     display: inline-block ;
@@ -3660,7 +3629,7 @@ ul.tt-activity .f-contacted ul.act-details  li.act-detail-item .act-when {
     margin-top: -2px ;
     text-align: center ;
 }
-/* REC ACT - FEEDS + SLID BUT -  === */
+/* REC ACT - FEED + SLID BUT */
 #tt-pages + #Feeds {
     left: -50px  !important;
 }
@@ -3683,7 +3652,6 @@ ul.tt-activity .f-contacted ul.act-details  li.act-detail-item .act-when {
 #tt-pages + #Feeds #AtomRSS > div{
     margin-bottom: 0px ;
 }
-
 #tt-pages + #Feeds #AtomRSS > a + a {
     display: inline-block ;
     width: 25px ;
@@ -3699,12 +3667,12 @@ ul.tt-activity .f-contacted ul.act-details  li.act-detail-item .act-when {
 /* END == CONT RELAT (ACT/MEMB/CONT/MAIL) ==== */ 
 
 
-/* END  == ADDITIONAL STYLE === */
+/* END == ADDITIONAL STYLE === */
 
 
 /* START == GM ADAP ==== */
 
-/* GM ADAP GM - "SUPER PRELOADER PLUS ONE NEW" - GALLERIES PAGE - === */
+/* GM ADAP GM - "SUPER PRELOADER PLUS ONE NEW" - GAL PAGE */
 .sp-separator ~  #main {
     position: relative;
     display: inline-block;
@@ -3715,14 +3683,14 @@ ul.tt-activity .f-contacted ul.act-details  li.act-detail-item .act-when {
     overflow-x: hidden;
     overflow-y: auto;
 }
-/* (new152)PB on STREAM PAGES  */
+/* PB on STREAM PAGES  */
 #sp-fw-container ~.fluid-droparound-overlay.transparent{
     display: none ;
 }
 
 /* START == GM "STIG" ==== */
 
-/* (new150)  GM "STIG" - FEEDS LINK - POOL - === */
+/* GM "STIG" - FEED LINK - POOL  */
 div#feedlinks {
     position: absolute;
     display: inline-block;
@@ -3794,22 +3762,21 @@ background: gold ;
 #feedlinks>a[ href^="https://www.flickr.com/services/feeds/geo/?g="]:before {
     content: "Pool Geo Feed" ;
 }
-
-/* STIG - PHOTO PAGE - UNSCALE BUTTON - NOT NEED THEM with my userstyles -  === */
+/* STIG - PHOTO PAGE - UNSCALE BUTTON - NOT NEED */
 .unscaleBtn ,
 .unscaleBtn {
     display: none ;
 }
 
-/* (new107) GM "STIG " - TOP NAV BAR - FEED ICON - FAVS/ALB - === */
-.flickrfixrwebextension .view.global-nav-view ul.gn-tools  #feedlinks
-.flickrfixruserscript  .view.global-nav-view ul.gn-tools  #feedlinks {
+/* GM "STIG " - TOP NAV BAR - FEED ICON - FAVS/ALB */
+.flickrfixrwebextension .global-nav-view ul.gn-tools  #feedlinks
+.flickrfixruserscript .global-nav-view ul.gn-tools  #feedlinks {
     position: absolute;
     display: inline-block;
     right: -125px !important;
     top: 10px;
 }
-/* STIG's TAGS - === */
+/* STIG's TAGS */
 .photo-tags-autotags-view {
     opacity: 0.4 ;
 background: red ;
@@ -3868,7 +3835,7 @@ background-color: #333 !important;
     bottom: 0px ;
     font-size: 10px ;
 }
-/* (new144) STIG - TOP PAGER STREAM/FA/POOL BETA - === */
+/* STIG - TOP PAG STREAM/FA/POOL BETA */
 #topPaginationContainer {
     position: fixed;
     display: inline-block ;
@@ -3906,6 +3873,27 @@ background-color: #333 !important;
 #topPaginationContainer #topPagination span i {
     top: 0px !important;
     background-position: -542px -335px !important;
+}
+/* (new161) not STIG - EXPLO */
+.fluid.html-explore-page-view #topPaginationContainer {
+    max-width: 43%;
+    min-width: 43%;
+    height: 30px;
+    left: 0px ;
+    top: 15px;
+}
+.fluid.html-explore-page-view #topPaginationContainer #topPagination {
+    display: inline-block;
+    height: 30px;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+.explore-page-view .main .explore-pagination a.butt {
+    margin: auto 20px;
+}
+.explore-page-view .main .explore-pagination a.butt.is-disabled {
+    opacity: 0.3 ;
 }
 /* STIG - STREAM */
 .html-photostream-page-view #topPaginationContainer  {
@@ -3946,7 +3934,7 @@ z-index: 50000 !important;
     top: 10px !important;
 
 }
-/* for very MAX PAGI - === */
+/* for very MAX PAGI */
 .fluid.html-group-pool-page-view #topPagination.pagination-view:not(:empty),
 .fluid.html-group-pool-page-view #topPagination.pagination-view a[rel="next"] ,
 .fluid.html-group-pool-page-view #topPagination.pagination-view>span:not(.disabled)  ,
@@ -3966,7 +3954,7 @@ z-index: 50000 !important;
     left: 160px !important;
     top: 3px !important;
  }
-/* STIG - ALBUM TEASER in PHOTOSTREAM FRONTPAGE - === */
+/* STIG - ALB TEASER in STREAM FRONTPAGE */
 #albumTeaser {
     position: fixed !important; 
     display: inline-block !important;
@@ -4044,9 +4032,9 @@ border: 1px solid gray ;
     font-size: 20px !important;
 outline: 1px solid gray ;
 }
-/*  GM "STIG" - PHOTO - MAP - LOCALISATION DATA - for GOOGLE MAP on HOVER - === */
-.fluid.html-photo-page-scrappy-view .flickrfixrwebextension  .view.photo-license-view , 
-.fluid.html-photo-page-scrappy-view .flickrfixruserscript  .view.photo-license-view {
+/*  GM "STIG" - PHO - MAP - LOCA DATA - for GOOGLE MAP on HOVER */
+.fluid.html-photo-page-scrappy-view .flickrfixrwebextension .photo-license-view , 
+.fluid.html-photo-page-scrappy-view .flickrfixruserscript .photo-license-view {
     display: inline-block;
     margin: 0;
     padding: 0 4px;
@@ -4106,18 +4094,16 @@ outline: 1px solid gray ;
     opacity: 1 ;
 background-color: green ;
 }   
-
-/* GM "STIG" - TEST - PHOTOSTREAM - FIX SEARCH PB - === */
-.fluid.html-photostream-page-view.scrolling-layout body.flickrfixrwebextension ,
-.fluid.html-photostream-page-view.scrolling-layout body.flickrfixruserscript {
+/* GM "STIG" - STREAM - FIX SEARCH PB */
+.fluid.html-photostream-page-view body.flickrfixrwebextension ,
+.fluid.html-photostream-page-view body.flickrfixruserscript {
     position: absolute !important;
     display: inline-block !important;
     width: 99.9% !important;
     left: 0 !important;
 }
-/* GM " STIG" - DATE INFO - .has-date-info === */
-
-/*  COPYRIGHT */
+/* GM " STIG" - DATE INFO - .has-date-info */
+/*  COPYR */
 body.flickrfixrwebextension .sub-photo-right-view  .date-license-container ,
 body.flickrfixruserscript .sub-photo-right-view  .date-license-container {
     position: fixed ;
@@ -4127,20 +4113,19 @@ body.flickrfixruserscript .sub-photo-right-view  .date-license-container {
     left: 1670px !important;
     right: 0 !important;
 }
-body.flickrfixrwebextension .view.photo-license-view ,
-body.flickrfixruserscript .view.photo-license-view {
+body.flickrfixrwebextension .photo-license-view ,
+body.flickrfixruserscript .photo-license-view {
     top: 0px !important;
     left: -20px !important;
 }
-/* (new159) DATE */
-body.flickrfixrwebextension .date-license-container .view.sub-photo-date-view.has-date-info ,
+/* DATE */
+body.flickrfixrwebextension .date-license-container .sub-photo-date-view.has-date-info ,
 body.flickrfixrwebextension .sub-photo-right-view .sub-photo-date-view.has-date-info ,
 body.flickrfixruserscript .sub-photo-right-view .sub-photo-date-view.has-date-info {
     position: absolute ;
     top: -24px ;
     right: 242px;
 }
-
 body.flickrfixrwebextension .sub-photo-right-view .sub-photo-date-view.has-date-info > .date-taken ,
 body.flickrfixrwebextension .sub-photo-right-view .sub-photo-right-row1 .sub-photo-date-view > .date-taken ,
 body.flickrfixruserscript .sub-photo-right-view .sub-photo-date-view.has-date-info > .date-taken ,
@@ -4188,7 +4173,6 @@ body.flickrfixruserscript .sub-photo-right-view > .sub-photo-right-row1  .sub-ph
     visibility: visible ;
 color: gold ;
 }
-
 body.flickrfixrwebextension .sub-photo-right-view > .sub-photo-right-row1  .sub-photo-date-view .date-taken.clear-float span:after ,
 body.flickrfixruserscript .sub-photo-right-view > .sub-photo-right-row1  .sub-photo-date-view .date-taken.clear-float span:after   {
     content: "▲" ;
@@ -4227,11 +4211,9 @@ body.flickrfixruserscript .sub-photo-right-view > .sub-photo-right-row1 > .sub-p
     text-align: center ;
 }
   
-/* END ==== GM "STIG" ========== */
+/* END == GM "STIG" ==== */
 
-
-/* ================================= */
-/* === GM "Flickr Download Link" === */ 
+/* == GM "Flickr Download Link" === */ 
 #iddllusgm3 {
     margin-left: 25px !important;
 }
@@ -4239,36 +4221,33 @@ body.flickrfixruserscript .sub-photo-right-view > .sub-photo-right-row1 > .sub-p
     color: tomato !important;
 }
 
-/* END ============================= */
-/* === GM "Flickr Download Link" === */ 
+/* END == GM "Flickr Download Link" ==== */ 
 
-
-/* ======================================================================= */
 /* ==== GM "Flickr Photo Page - View User Infos + Groups List Expand" ==== */
 
 /* PHOTO - USER AVATAR - GM "MORE INFOS" (MY GM) on HOVER - PHOTO - AUTHOR - ==== */
-.view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound {
+.fluid-droparound-view .droparound.subview-droparound {
     z-index: 50000 !important;
 }
 /* PHOTO PAGE - === */
 .droparound.subview-droparound[style="max-height: 165px; min-height: 165px; width: 350px; left: 0px; top: 11px;"]:not(:hover) ,
-img[src^="https://geo.yahoo.com/"] + .view.fluid-droparound-view.flickr-view-root-view , 
-img + .view.fluid-droparound-view.flickr-view-root-view {
+img[src^="https://geo.yahoo.com/"] + .fluid-droparound-view , 
+img + .fluid-droparound-view {
     display: none !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound):not(:hover) {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound):not(:hover) {
     position: fixed !important;
     margin-left: 2500px !important;
     margin-top: 105px !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound):hover {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound):hover {
     position: fixed !important;
     margin-left: 1328px !important;
     margin-top: 105px !important;
 }
 
-/* (new155) MODAL Change Langue - [style="left: 914px; top: 556.5px;"]  */
-.fluid.html-photo-page-scrappy-view.scrolling-layout body .view.fluid-droparound-view.flickr-view-root-view .droparound.menu:not(.over-modal){
+/* (MODAL Change Langue - [style="left: 914px; top: 556.5px;"]  */
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-view .droparound.menu:not(.over-modal){
     position: fixed !important;
     display: inline-block !important;
     height: auto !important;
@@ -4280,9 +4259,8 @@ overflow: hidden !important;
 overflow-y: auto !important;
     z-index: 5000000 !important;
 }
-/* (new118) */
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:not(:hover) ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:not(:hover) {
+.fluid.html-photo-page-scrappy-view body  .fluid-droparound-overlay  + .fluid-droparound-view:not(:hover) ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:not(:hover) {
     position: fixed !important;
     display: inline-block !important;
     width: 51px !important;
@@ -4295,21 +4273,21 @@ overflow-y: auto !important;
     z-index: 50000 !important;
 background-color: red !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:hover  ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:hover {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:hover  ,
+.fluid.html-photo-page-scrappy-view body  .fluid-droparound-overlay  + .fluid-droparound-view:hover ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover {
     position: fixed !important;
     display: inline-block !important;
     right: 20px !important;
     transition: width ease 8.2s !important;
     visibility: visible !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:hover {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:hover {
     z-index: 50000 !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound):before ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:not(.notifs-droparound):not(.user-account-card-droparound):before  ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:not(.notifs-droparound):not(.user-account-card-droparound):before  {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound):before ,
+.fluid.html-photo-page-scrappy-view body  .fluid-droparound-overlay  + .fluid-droparound-view:not(.notifs-droparound):not(.user-account-card-droparound):before  ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:not(.notifs-droparound):not(.user-account-card-droparound):before  {
     content: "> >  " ;
     position: fixed ;
     display: inline-block ;
@@ -4325,15 +4303,15 @@ background-color: red !important;
     z-index: 5000 ;
 border: 1px solid gold ;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound):hover:before  ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:not(.notifs-droparound):not(.user-account-card-droparound):hover:before  ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:not(.notifs-droparound):not(.user-account-card-droparound):hover:before  {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view.droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound):hover:before  ,
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view:not(.notifs-droparound):not(.user-account-card-droparound):hover:before  ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:not(.notifs-droparound):not(.user-account-card-droparound):hover:before  {
     content: "   " ;
     z-index: 0 ;
 border: 1px solid transparent ;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  + .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script + .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) {
+.fluid.html-photo-page-scrappy-view body  .fluid-droparound-overlay + .fluid-droparound-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) {
     display: inline-block !important;
     width: 552px !important;
     min-height:165px !important;
@@ -4342,12 +4320,12 @@ border: 1px solid transparent ;
     transition: all ease 0.1s !important;
     z-index: 500000 !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:hover .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:hover:not(.notifs-droparound):not(.user-account-card-droparound) ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay + .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay + .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:hover:not(.notifs-droparound):not(.user-account-card-droparound) , 
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay + .view.fluid-droparound-view.flickr-view-root-view:hover .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) , 
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script + .view.fluid-droparound-view.flickr-view-root-view:hover .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:hover .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) ,
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view .droparound.subview-droparound:hover:not(.notifs-droparound):not(.user-account-card-droparound) ,
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) ,
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view .droparound.subview-droparound:hover:not(.notifs-droparound):not(.user-account-card-droparound) , 
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view:hover .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) , 
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) {
     display: inline-block !important;
     width: 590px !important;
     min-height: 153px !important;
@@ -4359,26 +4337,26 @@ border: 1px solid transparent ;
     z-index: 5000000 !important;
 border: 1px solid red !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:not(.notifs-droparound)  .body  ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:not(.notifs-droparound):hover .subview-droparound.auto-size:not(.notifs-droparound) .body , 
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .subview-droparound.auto-size:not(.notifs-droparound) .body ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:hover .subview-droparound.auto-size:not(.notifs-droparound) .body {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:not(.notifs-droparound)  .body  ,
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:not(.notifs-droparound):hover .subview-droparound.auto-size:not(.notifs-droparound) .body , 
+.fluid.html-photo-page-scrappy-view body  .fluid-droparound-overlay  + .fluid-droparound-view:hover .subview-droparound.auto-size:not(.notifs-droparound) .body ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover .subview-droparound.auto-size:not(.notifs-droparound) .body {
     min-height: 153px !important;
     max-height: 153px !important;
     width: 590px !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) section {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound) section {
     height: 133px !important;
     margin-top: 0px !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound)  .person-card-view section  .follow-subview > div ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound)  .person-card-view section  .follow-subview {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound)  .person-card-view section  .follow-subview > div ,
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound)  .person-card-view section  .follow-subview {
     display: inline-block !important;
     height: 36px !important;
     line-height: 20px !important;
     top: 0px !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound)  .person-card-view section  .follow-subview  .follow-view > .relationship .follow.ui-button {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound)  .person-card-view section  .follow-subview  .follow-view > .relationship .follow.ui-button {
     height: 26px;
     left: -10px;
     top: 0px;
@@ -4392,74 +4370,68 @@ border: 1px solid red !important;
     height: 25px !important;
     margin-bottom: 0 !important;
 }
-
-/* PHOTO PAGE - MODAL ACCOUNT POPUP*/
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:hover .droparound.subview-droparound.auto-size.user-account-card-droparound .body  .view.user-account-card-view ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:hover .droparound.subview-droparound.auto-size.user-account-card-droparound .body {
+/* PHO - MODAL ACCT POPUP */
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:hover .droparound.subview-droparound.auto-size.user-account-card-droparound .body .user-account-card-view ,
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:hover .droparound.subview-droparound.auto-size.user-account-card-droparound .body {
     min-width: 300px !important;
     max-width: 300px !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:hover .content.subview ,
+.fluid.html-photo-page-scrappy-view body  .fluid-droparound-overlay  + .fluid-droparound-view:hover .content.subview ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover .content.subview {
     display: inline-block !important;
     width: 590px !important;
     max-height: 150px;
     min-height: 150px;
     padding: 0px 12px !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view ,
+.fluid.html-photo-page-scrappy-view body  .fluid-droparound-overlay  + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view  {
     display: inline-block !important;
     max-height: 150px;
     min-height: 150px;
     width: 570px !important;
     top: -1px !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view > div ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view > div ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view > div  {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view > div ,
+.fluid.html-photo-page-scrappy-view body  .fluid-droparound-overlay + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view > div ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view > div  {
     display: inline-block !important;
     max-height: 133px;
     min-height: 133px;
     top: 0px !important;
-/* border: 1px solid violet !important; */
 }
-/* (new155) PHOTO - MORE INFOS */
-.droparound.subview-droparound .head.hide-head + .body .content.subview .view.person-card-view.flickr-view-root-view > div:first-of-type {
+/* PHO - MORE INFS */
+.droparound.subview-droparound .head.hide-head + .body .content.subview .person-card-view.flickr-view-root-view > div:first-of-type {
     width: 100%;
     max-height: 133px;
     min-height: 133px;
-/* border: 3px solid red !important; */
 }
-.droparound.subview-droparound .head.hide-head + .body .content.subview .view.person-card-view.flickr-view-root-view > div:last-of-type {
+.droparound.subview-droparound .head.hide-head + .body .content.subview .person-card-view.flickr-view-root-view > div:last-of-type {
     width: 100%;
     max-height: 15px !important;
     min-height: 15px !important;
-/* border: 1px solid red !important; */
 }
-
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view .view.person-card-view.flickr-view-root-view {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view .person-card-view.flickr-view-root-view {
     height: 132px !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .attribution.shorter ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .attribution.shorter ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .attribution.shorter {
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view  .attribution.shorter ,
+.fluid.html-photo-page-scrappy-view body  .fluid-droparound-overlay + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view  .attribution.shorter ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view .attribution.shorter {
     min-width: 425px !important;
     max-width: 425px !important;
 }
-
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .attribution.shorter .fade-out ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .attribution.shorter .fade-out {
+.fluid.html-photo-page-scrappy-view body  .fluid-droparound-overlay + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view  .attribution.shorter .fade-out ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view .attribution.shorter .fade-out {
     min-width: 425px !important;
     max-width: 425px !important;
     text-overflow: ellipsis !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .ui-dialog-wrapper ,  
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .ui-dialog-wrapper , 
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .ui-dialog-wrapper ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .ui-dialog-wrapper {
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view .ui-dialog-wrapper ,  
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view .ui-dialog-wrapper , 
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view .ui-dialog-wrapper ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view  .ui-dialog-wrapper {
     position: fixed !important;
     height: auto !important;
     width: auto !important;
@@ -4467,16 +4439,14 @@ border: 1px solid red !important;
 border: 1px solid peru !important;
 color: gray !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .ui-dialog-wrapper .following-unfollow ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .ui-dialog-wrapper .following-unfollow {
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay  + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view .ui-dialog-wrapper .following-unfollow ,
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view .ui-dialog-wrapper .following-unfollow {
     background-color: white !important;
 }
-/* new112) */
-.fluid.html-photo-page-scrappy-view.scrolling-layout body  .fluid-droparound-overlay  +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .links.secondary ,
- script +  .view.fluid-droparound-view.flickr-view-root-view:hover .content.subview > .view.person-card-view.flickr-view-root-view  .links.secondary {
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view  .links.secondary ,
+script + .fluid-droparound-view:hover .content.subview > .person-card-view.flickr-view-root-view .links.secondary {
     display: inline-block !important;
     top: -8px !important;
-
 }
 .person-card-view .recent-photos a {
     background-size: contain !important;
@@ -4487,34 +4457,41 @@ color: gray !important;
     top: -8px !important;
     padding-top: 0px;
 }
-.view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound .person-card-view .links a {
+.fluid-droparound-view .droparound.subview-droparound .person-card-view .links a {
     position: relative !important;
     display: inline-block !important;
     margin-right: 10px !important;
 }
-/* (new145) JOINED BUTTON - OVERLAY and subview-droparound - POINTER EVENTS NONE - for GM "View User Infos" - === */
+/* (new161) JOIN BUT - for GM "View User Infos" */
 .fluid .coverphoto-content .title-block-content .title .follow-view,
 .fluid .coverphoto-content .title-block-content .title .join-group-view {
     position: absolute !important;
     display: inline-block !important;
-    width: 180px !important;
+    width: auto !important;
     height: 30px !important;
     line-height: 30px !important;
     right: 170px !important;
     top: 5px !important;
     border-radius: 5px !important;
-    z-index: 5000 !important;
-/* border: 1px solid green !important; */
+    z-index: 5000000 !important;
 }
+
 .fluid .coverphoto-content .title-block-content .title .follow-view {
+    position: absolute !important;
+    display: inline-block !important;
     width: 130px !important;
-    right: -50px !important;
-    top: 13px !important;
+    right: 0px !important;
+    top: 10px !important;
     text-align: center !important;
-/* border: 1px solid blue !important; */
+    z-index: 5000000 !important;
+border: 1px solid peru !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout body .fluid-droparound-overlay + .view.fluid-droparound-view.flickr-view-root-view:not(:hover) .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound), 
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script + .view.fluid-droparound-view.flickr-view-root-view:not(:hover) .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound)  {
+.fluid .coverphoto-content .title-block-content .title .follow-view:hover {
+border: 1px solid red !important;
+}
+
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view:not(:hover) .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound), 
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:not(:hover) .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound)  {
     position: fixed !important;
     display: inline-block !important;
     margin-top: 120px !important;
@@ -4524,15 +4501,15 @@ color: gray !important;
     transition: margin ease 0.7s !important;
     z-index: 500000 !important;
 }
-/* PHOTO PAGE - - OVERLAY - ==== */
-.fluid.html-photo-page-scrappy-view.scrolling-layout .fluid-modal-overlay.transparent:not(:hover) ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body .fluid-droparound-overlay:not(:hover){
+/* PHO - OVERLAY */
+.fluid.html-photo-page-scrappy-view .fluid-modal-overlay.transparent:not(:hover) ,
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay:not(:hover){
     opacity: 0 !important;
     z-index: -100 !important;
     background-color: transparent !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout .fluid-modal-overlay.transparent:hover ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout body .fluid-droparound-overlay:hover {
+.fluid.html-photo-page-scrappy-view .fluid-modal-overlay.transparent:hover ,
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay:hover {
     background-color: transparent;
     bottom: 0;
     left: 0;
@@ -4542,8 +4519,8 @@ color: gray !important;
     visibility: visible;
     z-index: 2000 !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout body .fluid-droparound-overlay + .view.fluid-droparound-view.flickr-view-root-view:hover .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound), 
-.fluid.html-photo-page-scrappy-view.scrolling-layout body script + .view.fluid-droparound-view.flickr-view-root-view:hover .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound)  {
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view:hover .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound), 
+.fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:hover .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound)  {
     position: fixed !important;
     max-height: 153px !important;
     min-height: 153px !important;
@@ -4556,16 +4533,15 @@ color: gray !important;
     z-index: 550000 !important;
 border: 1px solid red !important;
 }
-.fluid.html-photo-page-scrappy-view.scrolling-layout body .fluid-droparound-overlay + .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound) .body {
+.fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound) .body {
     max-height: 150px !important;
     min-height: 150px !important;
     margin-top: 0px !important;
 }
-
-/* (new156) PHOTO PAGE - MENU EDITOR - === */
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:last-of-type:not(:hover) .droparound.html.auto-size.dialog-tooltip ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:last-of-type:hover .droparound.html.auto-size.dialog-tooltip ,
-.fluid.html-photo-page-scrappy-view.scrolling-layout .view.fluid-droparound-view.flickr-view-root-view:last-of-type .droparound.html.auto-size.dialog-tooltip {
+/* PHO - MENU EDITOR */
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:last-of-type:not(:hover) .droparound.html.auto-size.dialog-tooltip ,
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:last-of-type:hover .droparound.html.auto-size.dialog-tooltip ,
+.fluid.html-photo-page-scrappy-view .fluid-droparound-view:last-of-type .droparound.html.auto-size.dialog-tooltip {
     position: fixed !important;
     max-width: 352px !important;
     height: 135px !important;
@@ -4577,17 +4553,13 @@ background-color: #333 !important;
 border: 1px solid red !important;
 border-bottom: 3px solid red !important;
 }
-.view.fluid-droparound-view.flickr-view-root-view .droparound.html.auto-size.dialog-tooltip li:hover {
+.fluid-droparound-view .droparound.html.auto-size.dialog-tooltip li:hover {
     background: black !important;
 }
-/* .view.fluid-droparound-view.flickr-view-root-view:last-of-type .droparound.html.auto-size.dialog-tooltip .droparrow.down {
-    display: none;
-} */
-.view.fluid-droparound-view.flickr-view-root-view:last-of-type .droparound.html.auto-size.dialog-tooltip .body {
+.fluid-droparound-view:last-of-type .droparound.html.auto-size.dialog-tooltip .body {
     max-width: 202px !important;
 } 
-
-/* (new155) POOL COUNTER TOTAL - === */
+/* POOL COUNT TOTAL */
 .sub-photo-contexts-view .sub-photo-context.sub-photo-context-groups .context-list li:last-of-type:before {
     position: fixed !important;
     top: 252px ;
@@ -4597,10 +4569,7 @@ border-bottom: 3px solid red !important;
 color: peru ;
 background: rgba(255, 0, 0, 0.47) ;
 }
-
-/* SET / ALBUM  - USER AVATAR - MORE INFOS - For GM "PM" (OK) and My GM "USER INFOS" on HOVER FOR ST / ALBUM but PB match to CURATOR POPUP - === */
-/* SET / ALBUM - USER AVATAR - For My GM "USER INFOS" but PB match to CURATOR POPUP - === */
-
+/* SET/ALB  - USER AV - MORE INF - For GM "PM" (OK) and My GM "USER INFOS" on HOVER */
 .album-header-view > .album-header-content > .album-title-desc-view {
     margin-bottom: -37px !important;
     margin-top: -28px !important;
@@ -4612,25 +4581,21 @@ background: rgba(255, 0, 0, 0.47) ;
     opacity: 1 !important;
 }
 
-/* ==== GM "Flickr Photo Page - View User Infos + Groups List Expand" ==== */
-/* END  ================================================================== */
+/* END == GM "Flickr Photo Page - View User Infos + Groups List Expand" ==== */
 
-
-/* START ================================ */
-/* ==== GM "FLICKR FUNCTIONAL SUITE" ==== */
-/* (new116) GM - "F.F.S" - TOP NAV - EXPOLRE PANEL - FFS Settings - === */
+/* START == GM "FLICKR FUNCTIONAL SUITE" ==== */
+/* GM - "F.F.S" - TOP NAV - EXP PANEL - FFS Set */
 #global-nav #gn-wrap .nav.small-logo  .toplink > a + #explore-panel.panel .bd {
-display: inline-block !important;
+    display: inline-block !important;
     height: 209px !important;
     margin-bottom: -28px !important;
 }
 #global-nav #gn-wrap .nav.small-logo  .toplink > a + #explore-panel.panel .bd  + li{
-position: relative !important;
-display: inline-block !important;
-z-index: 2000 !important;
+    position: relative !important;
+    display: inline-block !important;
+    z-index: 2000 !important;
 }
-
-/* GM - "F.F.S" - PHOTO STREAM / FAVORIS - ADD WARNING - NOT USE IT(change the FLAG Color) */
+/* GM - "F.F.S" - STREAM/FAV - ADD WARN - NOT USE IT(change the FLAG Color) */
 .fluid.html-photostream-page-view #photostream a[id^="CFS_"],
 .fluid.html-favorites-page-view #photostream a[id^="CFS_"] {
     outline: 1px solid red !important;
@@ -4652,7 +4617,7 @@ z-index: 2000 !important;
     word-break: normal;
 background: gold ;
 }
-/* GM - "F.F.S" - ALBUM / SET PAGE - === */
+/* GM - "F.F.S" - ALB/SET */
 .fluid.html-album-page-view .owner-name.truncate[id^="CFS_"] {
     position: relative !important;
     display: inline-block !important;
@@ -4681,7 +4646,7 @@ background: gold ;
     font-size: 3px !important;
     pointer-events: none !important;
 }
-/* GM - "F.F.S" - PHOTO PAGE - === */
+/* GM - "F.F.S" - PHO */
 .fluid.html-photo-page-scrappy-view .owner-name.truncate[id^="CFS_"] {
     pointer-events: none !important;
 }
@@ -4698,7 +4663,7 @@ background: gold ;
     font-size: 15px !important;
     pointer-events: none !important;
 }
-/* GM - "F.F.S" - NORMAL POPUP MENU - === */
+/* GM - "F.F.S" - NORMAL POPUP MENU */
 #CatFlickrSuitePopUp.ToolTip {
     margin-left: 93px !important;
     margin-top: 6px !important;
@@ -4714,7 +4679,7 @@ background: gold ;
     padding: 5px !important;
     border-radius: 6px !important;
 }
-/* (new146) GM - "F.F.S" - POP POSI - PROF/POOL LIST/GAL/FAV/ALB/PHOSTR - === */
+/* GM - "F.F.S" - POP POSI - PROF/POOL LIST/GAL/FAV/ALB/STREAM */
 .fluid.html-albums-list-page-view .fluid-droparound-overlay.transparent{
     display: none !important;
 }
@@ -4724,11 +4689,11 @@ background: gold ;
 .fluid.html-favorites-page-view #CatFlickrSuitePopUp.ToolTip:before ,
 .fluid.html-albums-list-page-view #CatFlickrSuitePopUp.ToolTip:before ,
 .fluid.html-photostream-page-view #CatFlickrSuitePopUp.ToolTip:before  {
-content: "FFS " ;
-width: 30px !important;
-height: 15px !important;
-font-size: 12px ;
-color: red ;
+    content: "FFS " ;
+    width: 30px !important;
+    height: 15px !important;
+    font-size: 12px ;
+    color: red ;
     z-index: 9999 !important;
     box-shadow: none !important;
 }
@@ -4753,11 +4718,11 @@ color: red ;
 .fluid.html-favorites-page-view #CatFlickrSuitePopUp.ToolTip:hover ,
 .fluid.html-albums-list-page-view #CatFlickrSuitePopUp.ToolTip:hover ,
 .fluid.html-photostream-page-view #CatFlickrSuitePopUp.ToolTip:hover  {
-width: auto !important;
-height: auto !important;
+    width: auto !important;
+    height: auto !important;
     box-shadow: 10px 10px 3px 1px rgba(0, 0, 0, 0.3);
 }
-/* GM - "F.F.S" - PHOTO PAGE - POPUP - CHOOSE COL FLAGS - === */
+/* GM - "F.F.S" - PHO - POPUP - CHOOSE COL FLAGS */
 .SetColor:not(:hover) {
     transition: all ease 0.7s !important;
     text-align: left !important;
@@ -4776,7 +4741,7 @@ height: auto !important;
 #currentColors .SetColor {
     cursor: default !important;
 }
-/* GM - "F.F.S" - POP POS - PHOT  - === */
+/* GM - "F.F.S" - POP POS - PHOT */
 .fluid.html-photo-page-scrappy-view #CatFlickrSuitePopUp.ToolTip {
     position: absolute;
     width: 309px !important;
@@ -4800,7 +4765,7 @@ color: peru !important;
     background: transparent !important;
 color: tan !important;
 }
-/* (new146) GM - "F.F.S" - POP POSI - PROF/ALB/POOL LIST/GALL/FAV/PHOSTR/  - === */
+/* GM - "F.F.S" - POP POSI - PROF/ALB/POOL LIST/GAL/FAV/STREAM */
 .fluid.html-profile-page-view #CatFlickrSuitePopUp.ToolTip ,
 .fluid.html-albums-list-page-view #CatFlickrSuitePopUp.ToolTip  ,
 .fluid.html-photostream-page-view #CatFlickrSuitePopUp.ToolTip ,
@@ -4810,8 +4775,7 @@ color: tan !important;
     left: 180px !important;
     top: 85px !important;
 }
-
-/* GM - "F.F.S"- PHOTO PAGE - TEST for SHORT USER NAME - MORE LONG COLOR FLAG INDICATOR - === */
+/* GM - "F.F.S"- PHO - SHORT USER NAME - MORE LONG COLOR FLAG INDIC */
 .attribution-view.photo-attribution > .attribution-info .owner-name-with-by[id^="CFS_"] {
     position: fixed !important;
     display: inline-block !important;
@@ -4842,22 +4806,22 @@ color: tan !important;
     font-size: 15px !important;
     color: transparent !important;
 }
-/* GM - "F.F.S" - POPUP POSITION - SETS - === */
-.fluid.html-album-page-view.scrolling-layout.yui3-js-enabled #CatFlickrSuitePopUp.ToolTip {
+/* GM - "F.F.S" - POPUP POSI - SETS */
+.fluid.html-album-page-view #CatFlickrSuitePopUp.ToolTip {
     position: fixed !important;
     display: block;
     left: -87px !important;
     top: 275px !important;
     z-index: 9999;
 }
-/* GM - "F.F.S" - MAIL - ==== */
+/* GM - "F.F.S" - MAIL */
 #toto-main.recent-activity .act-content p a[id^="CFS"][href^="/photos/"] {
     display: inline-block ! important;
     width: 180px ! important;
     height: 15px ! important;
     font-size: 17px !important;
 }
-/* GM - "F.F.S" - POPUP POSITION - PENDING PHOTO NEW - === */
+/* GM - "F.F.S" - POPUP POSI - PEND PHO */
 .html-group-admin-pending-page-view #CatFlickrSuitePopUp.ToolTip {
     position: fixed !important;
     max-width: 250px !important;
@@ -4866,43 +4830,44 @@ top: 20% !important;
     padding: 5px !important;
     z-index: 9999 !important;
 }
-
 #toto-main.recent-activity .act-content p a[id^="CFS"][href*="/photos/"] span {
     display: inline-block ! important;
 }
-/* GM - "F.F.S" - USER NAME - SPECIAL INDICATOR FOR NAME WITH "&" - === */
+/* GM - "F.F.S" - USER NAME - SPECIAL INDICA NAME WITH "&" */
 a[id^="CFS"][href*="&"] ,
 a[id^="CFS"][title*="<"] {
     color: GREEN !important;
 }
-/* (new146) GM - "F.F.S" - BACKGROUND RADIUS/PADDING -  META - OWNER -ALL -  === */
-a[id^="CFS"] span:not(.avatar) {
+/* (new161) GM - "F.F.S" - BACKG RADIUS/PAD -  META - OWNER - ALL */
+a[id^="CFS"] span:not(.avatar):not(.title) {
     display: inline !important;
-    color: white !important;
-    text-shadow: 1px 1px 4px #000;
+color: white !important;
+text-shadow: 1px 1px 2px #000 !important;
 }
-a[id^="CFS"] span:first-of-type:not(.avatar) {
+span:first-of-type:not(:only-of-type):not(.avatar):not(.title) ,
+a[id^="CFS"] span:first-of-type:not(:only-of-type):not(.avatar):not(.title) {
     padding: 0 0 0 4px !important;
     border-radius: 2px 0px 0px 2px !important;
     white-space: normal !important;
     min-width: 5px ! important;
 }
-a[id^="CFS"] span:last-of-type:not(.avatar) {
+span:last-of-type:not(:only-of-type):not(.avatar):not(.title) ,
+a[id^="CFS"] span:last-of-type:not(:only-of-type):not(.avatar):not(.title) {
     padding-right: 7px !important;
     border-radius: 0px 2px 2px 0px !important;
 }
-a[id^="CFS"] span:only-child:not(.avatar) {
+a[id^="CFS"] span:only-child:not(.avatar):not(.title) {
     padding: 0 7px !important;
     border-radius: 2px !important;
 }
-/*  (new159) GALL */
-.photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-container .details a.attribution[id^="CFS"] span:not(.avatar) {
+/*  GALL */
+.photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-container .details a.attribution[id^="CFS"] span:not(.avatar):not(.title) {
     vertical-align: middle !important;
     height: 15px !important;
     line-height: 15px !important;
     min-width: 5px ! important;
 }
-.photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-container .details a.attribution[id^="CFS"] span:first-of-type:not(.avatar) {
+.photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-container .details a.attribution[id^="CFS"] span:first-of-type:not(.avatar):not(.title) {
     display: inline-block  !important;
 height: 100% !important;
     height: 16px !important;
@@ -4911,15 +4876,13 @@ height: 100% !important;
     min-width: 4px ! important;
     max-width: 4px ! important;
 }
-
-/* (new159) GM - "F.F.S" - PHOTO PAGE - SOLVE EMPY SPAN - === */
-#photo-details.clearfix #sidebar.wide-sidebar #photo-story #photo-story-attribution.clearfix p.flickr-user span.name span.photo-name-line-1 a[id^="CFS"] span {
+/* GM - "F.F.S" - PHO - SOLVE EMPY SPAN */
+#photo-details.clearfix #sidebar.wide-sidebar #photo-story #photo-story-attribution.clearfix p.flickr-user span.name span.photo-name-line-1 a[id^="CFS"] span:not(.title) {
     display: inline-block !important;
     min-width: 5px ! important;
     min-height: 18.5px ! important;
     margin-bottom: -4px ! important;
 }
-
 /* SMALL */
 #pool-photos.sm #photo-display-container .pool-photo .hover-target .meta  a.owner {
     position: relative !important;
@@ -4936,7 +4899,7 @@ height: 100% !important;
     white-space: nowrap !important;
     text-align: left !important;
 }
-/* (new143) JU NO BETA */
+/* JU NO BETA */
 .photo-display-container.ju > span ~ .row .pool-photo.photo-display-item a.owner ,
 .photo-display-container.ju > span ~ .row .pool-photo.photo-display-item a[id^="CFS"].owner {
     position: relative !important;
@@ -4976,20 +4939,19 @@ height: 100% !important;
     width: 185px !important;
     margin-left: -5px !important;
 }
-/* (new144) for NARROW etc.. :not(.pc_l) */
+/* NARROW etc.. :not(.pc_l) */
 #pool-photos.ju .pool-photo.photo-display-item  .thumb.crazy-narrow  span.photo_container:not(.pc_l):not(.pc_n) + .meta   a.owner ,
 #pool-photos.ju .pool-photo.photo-display-item  .thumb.too-narrow  span.photo_container:not(.pc_l):not(.pc_n) + .meta   a.owner ,
 #pool-photos.ju .pool-photo.photo-display-item  .thumb.waytoo-narrow  span.photo_container:not(.pc_l):not(.pc_n) + .meta   a.owner {
     width: 160px !important;
     margin-left: -10px !important;
 } 
-#pool-photos.sm #photo-display-container .pool-photo .hover-target .meta  a[id^="CFS"] span  {
+#pool-photos.sm #photo-display-container .pool-photo .hover-target .meta  a[id^="CFS"] span:not(.title)  {
     position: relative !important;
     display: inline-block !important;
     height: 15px !important;
     line-height: 15px !important;
 }
-
 .photo-display-container.ju .photo-display-item .meta a:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline)[id^="CFS"] span:first-of-type {
     display: inline-block !important;
     padding: 0 0 0 4px !important;
@@ -5022,7 +4984,6 @@ height: 100% !important;
     padding: 0 0 0 4px !important;
     border-radius: 2px 0px 0px 2px !important;
 }
-
 #pool-photos.sm #photo-display-container .pool-photo .hover-target .meta  a[id^="CFS"] span:last-of-type  {
     display: inline-block !important;
     min-width: 10px !important;
@@ -5065,8 +5026,7 @@ height: 100% !important;
     padding: 0 7px !important;
     border-radius: 2px !important;
 }
-
-/* (new 129) A VOIR GM - "F.F.S" - PHOTO PAGE ? - === */
+/* A VOIR GM - "F.F.S" - PHO ? */
 #photo-details.clearfix #sidebar.wide-sidebar #photo-story #photo-story-attribution.clearfix p.flickr-user span.name span.photo-name-line-1 a[data-track="photoAttributionNameClick"]>span:first-of-type:before  {
     content: "." ;
     position: relative ;
@@ -5085,15 +5045,11 @@ color: transparent ;
 background-color: inherit ;
 color: transparent ;
 }
-
-
-
-/* (new120) GM - "F.F.S" - COLOR FLAG - OPACITY - === */
+/* GM - "F.F.S" - COLOR FLAG - OPAC */
 *[id^="CFS"]{
     opacity: 0.8 !important;
 }
-
-/* GM - "F.F.S" - POOL TAG TOP MENU - === */
+/* GM - "F.F.S" - POOL TAG TOP MENU */
 .clearfix #CFS_Tag_Assoc:before {
     content: "< Pool Tags" ;
     position: absolute ;
@@ -5165,7 +5121,7 @@ border-left: none ;
     padding-right: 7px !important;
     border-radius: 0px 2px 2px 0px !important;
 }
-/* (new151) FORUMS - ITEMS - === */
+/* HELP - ITEMS */
 .TopicListing>tbody>tr:not(:first-of-type) td {
     vertical-align: middle ;
     width: 380px ;
@@ -5181,23 +5137,21 @@ border-left: none ;
     text-overflow: ellipsis ;
     white-space: nowrap ;
 }
-/* (new151) */
 #Main > .TopicListing[cellspacing="0"]:not(.PeopleResults):not(#Photo) td +td > a.pro-badge-new {
     float: left;
     top: 0px ;
     left: 105px ;
     opacity: 0.3 ;
 }
-/* (new136)SUPP Double PRO last line */
+/* SUPP Double PRO last line */
 #Main > .TopicListing[cellspacing="0"]:not(.PeopleResults):not(#Photo) tr:last-of-type  td + td > a.pro-badge-new svg {
     display: none ;
 }
-
-/* GM - "F.F.S" - HELP FORUM - TOPIC LISTING - USER NAME*/
+/* GM - "F.F.S" - HELP - DISC LISTING - USER NAME*/
 #Main > .TopicListing[cellspacing="0"]:not(.PeopleResults):not(#Photo) td +td > a[id^="CFS_"] span {
     white-space: nowrap ;
 }
-/* GM - "Flick Functional Suite" - TEST PEOPLE YOU FOLLOW - PHOTOS OF  - ONE BY USER -  */
+/* GM - "Flick Functional Suite" - PEOPLE YOU FOL - PHOT OF - ONE BY USER  */
 .contact-list-num a[id^="CFS"] span {
     background: transparent !important;
 }
@@ -5206,7 +5160,7 @@ border-left: none ;
 
 /* START == GM "PM"  ==== */
 
-/* GM PM - POOL PENDING - === */
+/* GM PM - POOL PENDING */
 .gPendWho > b {
     position: absolute ; 
     display: inline-block ;
@@ -5240,8 +5194,7 @@ tr:nth-child(2) .gPendDesc .gPendWho:hover > b {
     width: 230px ;
     margin-left: -78px ;
 }
-
-/* GM PM - PHOT - == */
+/* GM PM - PHO */
 .fluid.html-photo-page-scrappy-view .attribution-view .avatar.person.medium > b  {
     position: fixed !important;
     display: inline-block !important;
@@ -5269,7 +5222,7 @@ outline: 1px solid red ;
     margin-left: -10px !important;
     opacity: 1 !important;
 }
-/* GM - "PM" - FORUM HELP - === */
+/* GM - "PM" - HELP */
 .DiscussionResults>tbody tr  td:first-of-type:not(.Who) .Topic p > b {
     display: inline-block !important;
     max-width: 345px !important;
@@ -5307,11 +5260,7 @@ color: white ;
 .char_search +#MemberList tr td:nth-child(2):hover ~td {
     display: inline-block !important;
 }
-
-/* GM - "PM" - ICONS  - 
-text-decoration: underline overline line-through !important;
-#photo-details.clearfix #invites-and-comments .comment-block .comment-content p.comment-head span b a.fpmLink
-=== */
+/* GM - "PM" - ICONS */
 a[title="User Profile"] ,
 a[title="User Photo Archive"] ,
 a[title="User Favourites"] ,
@@ -5326,8 +5275,7 @@ a.fpmLink {
     font-size: 12px !important;
 outline: 0.2px solid #222 !important;
 }
-
-/* GM "PM" - ICONS - INDIC for VISITED */
+/* GM "PM" - ICONS - INDIC VISIT */
 a:visited[title="User Profile"]:after ,
 a:visited[title="User Favourites"]:after ,
 a:visited[title="User Photo Archive"]:after ,
@@ -5336,8 +5284,7 @@ a:visited.fpmLink:after {
 color: red ;
 outline: 0.2px solid violet ;
 }
-
-/* GM - "PM" - ICONS HELPER - DESC HOVER - === */
+/* GM - "PM" - ICONS HELPER - DESC HOVER */
 a.fpmLink:hover:before {
     position: absolute ;
     display: inline-block ;
@@ -5427,7 +5374,7 @@ li.act-detail-item.f-fave.f-your-photo-their-fave.tt-first >a:first-of-type:hove
     visibility: visible !important;
     transform: scale(0.9) !important;
 }
-/* RECENT - PM with PRO BADGE */
+/* REC ACT - PM with PRO BADGE */
 #recent-activity .act-item .act-content a:hover + span.pro-badge + b , 
 #recent-activity .act-item .act-content a + span.pro-badge + b:hover  {
     width: 210px !important;
@@ -5493,8 +5440,7 @@ li.act-detail-item.f-fave:hover b  {
     visibility: visible !important;
     transform: scale(0.9) !important;
 }
-
-/* GM - "PM" - GALL / REC ACT - COM - PM ICON HOVER - === */
+/* GM - "PM" - GAL/REC ACT - COM - PM ICON HOVER */
 .comment-head>span+span {
     position: absolute !important;
     display: inline-block !important;
@@ -5523,9 +5469,6 @@ ul.tt-activity ul.act-details li.act-detail-item > a:first-of-type:before  {
     visibility: visible ;
 background: green ;
 }
-
-/* GM - "PM" - GAL === */
-
 /* GM - "PM" - GAL - COM - USER NAME - ICONS "PM" */
 #gallery-big-photos .gallery-item .curator_chunk p.gallery_photo_name:hover + p b:not(:hover) {
     position: absolute !important;
@@ -5553,7 +5496,6 @@ background: yellow !important;
     visibility: visible ;
 background: green ;
 }
-
 #gallery-big-photos .gallery-item .curator_chunk p.gallery_photo_name + p a + b:not(:hover) {
     position: absolute !important;
     display: inline-block !important;
@@ -5597,8 +5539,7 @@ background: green ;
     visibility: visible !important;
     transform: scale(1) !important;
 }
-
-/* GM - "PM" - GALL - PM ICON ON HOVER - === */
+/* GM - "PM" - GAL - PM ICON ON HOVER */
 #gallery-big-photos .gallery-item .curator_chunk p.gallery_photo_name  + p a + b:not(:hover):before {
     content: "PM ▶" ;
     position: relative ;
@@ -5617,8 +5558,7 @@ background: green ;
     z-index: 0 ;
 background: green ;
 }
-
-/* GM - "PM" - POOL ADMIN - MEMB LIST - ==== */
+/* GM - "PM" - POOL ADMIN - MEMB LIST */
 #MemberList tr td+td b  {
     position: absolute !important;
     display: inline-block !important;
@@ -5650,9 +5590,9 @@ background: green ;
     text-indent: 32px !important;
 }
 
-/* === GM - "PM" - FORUM / HELP - === */
+/* === GM - "PM" - HELP */
 
-/* (new152) GM - "PM" - FORUM / HELP - IN COM / TOP COM RIGHT PANEL */
+/* (GM - "PM" - HELP - IN COM / TOP COM RIGHT PANEL */
 #Hint + #GoodStuff #DiscussTopic table:first-of-type tbody tr h4 a + span + b ,
 #DiscussTopic table.TopicReply tr h4 b ,
 #DiscussTopic table:first-of-type .Who:first-of-type + .Said h4 > a:last-of-type + b ,
@@ -5667,20 +5607,20 @@ background: green ;
     visibility: hidden !important;
     white-space: nowrap !important;
 }
-/* (new152) */
+/* (new161) */
 #DiscussTopic table:first-of-type .Who:first-of-type + .Said h4 > a:last-of-type + b:hover ,
 #GoodStuff #DiscussTopic .TopicReply .Said h4 b:hover {
-    min-width: 530px !important;
-    max-width: 530px !important;
+    min-width: 420px !important;
+    max-width: 420px !important;
     height: auto !important;
     line-height: 20px !important;
-    top: 0px !important;
+    margin-top: -23px !important;
+    top: 10px !important;
     padding: 3px !important;
     cursor: pointer !important;
     visibility: visible !important;
     white-space: pre-wrap !important;
-z-index: 500000 !important;
-/* background: blue !important; */
+    z-index: 500000 !important;
 }
 #DiscussTopic table.TopicReply tr h4 b:hover {
     position: absolute !important;
@@ -5743,8 +5683,7 @@ z-index: 50000 !important;
     cursor: pointer ;
     visibility: visible ;
 }
-
-/* GM - "PM" - FORUM / HELP FORUM - USER NAME */
+/* GM - "PM" - HELP - USER NAME */
 #DiscussTopic table:first-of-type .Who:first-of-type + .Said h4 > a:last-of-type ,
 #GoodStuff #DiscussTopic .TopicReply .Said h4 a  {
     display: inline-block !important;
@@ -5756,7 +5695,6 @@ z-index: 50000 !important;
     height: 20px !important;
     line-height: 20px !important;
 }
-
 /* GM - "PM" - ICON */
 .comment-head>span+span b a:visited.fpmLink:after {
     color: red ;
@@ -5765,9 +5703,8 @@ z-index: 50000 !important;
     top: 16px ;
 color: gray ;
 }
-
-/* GM - "PM" - SET / ALBUM - === */
-.fluid.html-album-page-view .album-header-content .view.attribution-view .avatar.person.medium b {
+/* GM - "PM" - SET/ALB */
+.fluid.html-album-page-view .album-header-content .attribution-view .avatar.person.medium b {
     position: absolute;
     display: inline-block ;
     width: 700px ;
@@ -5775,11 +5712,10 @@ color: gray ;
     top: 66px ;
 background: rgba(0, 0, 0, 0.65);
 }
-.fluid.html-album-page-view .album-header-content .view.attribution-view .avatar.person.medium b  a[href^="http://www.flickriver.com/"] {
+.fluid.html-album-page-view .album-header-content .attribution-view .avatar.person.medium b  a[href^="http://www.flickriver.com/"] {
     width: 20px !important;
 }
-
-/* GM - "PM" - HEADER  - PROFILE - USER NAME - FOR GM "PM" - ICONS to differents services - === */
+/* GM - "PM" - HEADER - PROF - USER NAME - FOR GM "PM" - ICONS */
 .person>h1>span + span {
     position: absolute;
     top: 28px !important;
@@ -5816,7 +5752,7 @@ border: 1px solid gold !important;
     transition: transform ease 0.7s !important;
 }
 
-/* A SUPP ??? - GM - "PM" - PHOT - === */
+/* A SUPP ??? - GM - "PM" - PHOT */
 #photo-story-attribution + span {
     position: relative !important;
     left: -8px !important;
@@ -5828,8 +5764,7 @@ border: 1px solid gold !important;
     color: transparent !important;
     white-space : nowrap !important;
 }
-
-/* GM - "PM" - CONTACTS PAGE - === */
+/* GM - "PM" - CTS PAGE */
 table.contact-list-table td.contact-list-bicon {
     padding: 3px 5px;
     vertical-align: top ;
@@ -5839,8 +5774,7 @@ table.contact-list-table td.contact-list-bicon img {
     height: 34px ;
     width: 34px ;
 }
-
-/* GM - "PM" - CONT */
+/* GM - "PM" - CTS */
 table.contact-list-table td.contact-list-name a:first-of-type + span {
     position: absolute ;
     display: inline-block ;
@@ -5896,19 +5830,16 @@ background: rgba(0, 0, 0, 0.5) ;
     left: 5px !important;
     top: 0px !important;
 }
-
-/* ==== GM "PM" ===== */ 
-/* END ============== */
+/* END == GM "PM" ==== */ 
 
 
-/* START ============================= */
-/* ==== GM "CROSS-RECOMMENDATION" ==== */
+/* START == GM "CROSS-RECOMMENDATION" ==== */
 
-/* (new51) GM - "CROSS-RECOMMENDATION" - PHOTO PAGE - BOTTOM RIGHT SIDEBAR - === */
+/* GM - "CROSS-RECO" - PHO - BOT RIGHT SID */
 #FCR_main>h3 {
     display: none !important;
 }
-.sub-photo-container.centered-content .view.sub-photo-title-desc-view +  #FCR_main {
+.sub-photo-container.centered-content .sub-photo-title-desc-view +  #FCR_main {
     position: fixed !important;
     width: 40px !important;
     height: 52px !important;
@@ -5923,10 +5854,10 @@ background: rgba(0, 0, 0, 0.5) ;
     transition: background ease 0.7s ,  padding ease 0.1s !important;
     overflow: hidden !important;
 }
-.sub-photo-container.centered-content .view.sub-photo-title-desc-view +  #FCR_main #FCR_photos {
+.sub-photo-container.centered-content .sub-photo-title-desc-view + #FCR_main #FCR_photos {
     visibility: hidden !important;
 }
-.sub-photo-container.centered-content .view.sub-photo-title-desc-view +  #FCR_main:hover   {
+.sub-photo-container.centered-content .sub-photo-title-desc-view + #FCR_main:hover   {
     width: 490px !important;
     height: auto !important;
     margin-top: 22px !important;
@@ -5940,10 +5871,10 @@ background: rgba(0, 0, 0, 0.5) ;
     z-index: 59999 !important;
     transition: background ease 0.7s ,  padding ease 0.7s !important;
 }
-.sub-photo-container.centered-content .view.sub-photo-title-desc-view +  #FCR_main:hover #FCR_photos {
+.sub-photo-container.centered-content .sub-photo-title-desc-view + #FCR_main:hover #FCR_photos {
     visibility: visible !important;
 }
-.sub-photo-container.centered-content .view.sub-photo-title-desc-view +  #FCR_main:not(:hover):after  {
+.sub-photo-container.centered-content .sub-photo-title-desc-view + #FCR_main:not(:hover):after  {
 content: "CR" ;
     position: fixed ;
     display: inline-block ;
@@ -5963,7 +5894,7 @@ content: "CR" ;
     transition: background ease 4s ;
 background: peru ;
 }
-.sub-photo-container.centered-content .view.sub-photo-title-desc-view +  #FCR_main:hover:after   {
+.sub-photo-container.centered-content .sub-photo-title-desc-view + #FCR_main:hover:after   {
     content: "CRoss Recomendations ..." ;
     position: fixed ;
     display: inline-block ;
@@ -5983,10 +5914,10 @@ background: peru ;
     opacity: 0.7 ;
     transition: background ease 0.8s ;
 }
-.sub-photo-container.centered-content .view.sub-photo-title-desc-view +  #FCR_main > a {
+.sub-photo-container.centered-content .sub-photo-title-desc-view + #FCR_main > a {
     margin-right: 0 !important;
 }
-.sub-photo-container.centered-content .view.sub-photo-title-desc-view +  #FCR_main > a  > img  {
+.sub-photo-container.centered-content .sub-photo-title-desc-view + #FCR_main > a  > img  {
     position: relative !important;
     display: inline-block !important;
     width: 100% !important;
@@ -6003,9 +5934,7 @@ background: peru ;
     line-height: 67px;
     max-width: 96px;
 }
-
-/* ==== GM "CROSS-RECOMMENDATION" ==== */
-/* END =============================== */
+/* END == GM "CROSS-RECOMMENDATION" ==== */
 
 /* START == GM "Quick Intersting" ==== */
 
@@ -6037,7 +5966,7 @@ a[id^="personmenu_"]:visited {
     color: transparent !important;
 }
 
-/* GM - "Comm ON" - COM ICON - RED ICON === */
+/* GM - "Comm ON" - COM ICON - RED ICON */
 [alt="Yay! You've commented on this photo!"] {
     background:  url(data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA8vD3AHBsaABbD/UAcGxnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEQAAAAAAAREM0QAAAAAQzMzM0AAAAAjERETQAAAACMzMzNAAAAAIxERM0AAAAAjMzMzQAAAAAIiIiQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD+/wAA/n8AAPAfAADgDwAA4A8AAOAPAADgDwAA4A8AAPAfAAD//wAA//8AAP//AAD//wAA) no-repeat!important;
     position: relative !important;
@@ -6053,7 +5982,7 @@ a[id^="personmenu_"]:visited {
     text-decoration: none;
 }
 
-/* GM - "Com ON" - NO COM ICON - GREY - === */
+/* GM - "Com ON" - NO COM ICON - GREY */
 [alt="Go ahead! Make my day! (by commenting)"] {
     background:  url(data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAACmn5cAAAAAAHBsaABwbGcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQMBAQEBAQEBAQEBAQEBAQEDAwEBAQEBAQEBAQEBAwMDAQEDAwEBAQEBAQEBAwEBAQEBAQEDAQEBAQEBAQIBAAAAAAABAwEBAQEBAQECAQEBAQEBAQMBAQEBAQEBAgEAAAAAAQEDAQEBAQEBAQIBAQEBAQEBAwEBAQEBAQEBAgICAgICAwEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf//AAD//wAA//8AAP7/AAD+fwAA8Z8AAO/vAADoLwAA7+8AAOhvAADv7wAA8B8AAP//AAD//wAA//8AAP//AAA=) no-repeat!important;
     position: relative !important;
@@ -6070,7 +5999,7 @@ background-color: transparent !important;
 color: gray !important;
 }
 
-/* GM - "Com ON" - RETRIEV COM ICON - BLACK/RED + FLECHE - === */
+/* GM - "Com ON" - RETRIEV COM ICON - BLACK/RED + FLECHE */
 [title="retrieving"] { 
     background: url(data:image/x-icon;base64,AAABAAEAEBAQAAAAAAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAwybRABIQEgBwbGgAcGxnAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEQAAAAAAAREIkQAAAAAQiIhIkAAAAAyIiESQAAAAEIRERFAAAAAMiIhEkAAAAAyIiEiQAAAAAMzRDQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAA//8AAP//AAD+/wAA/n8AAPAfAADgDwAA4A8AAOAPAADgDwAA4A8AAPAfAAD//wAA//8AAP//AAD//wAA) no-repeat!important;
     position: relative !important;
@@ -6087,15 +6016,12 @@ color: gray !important;
     color: grey !important;
     text-decoration: none;
 }
-/* GM - "Com ON" - COUNT - === */
+/* GM - "Com ON" - COUNT */
 [id^="FCO-image-count"] {
     color: #7D3636 !important;
     z-index: 10 !important;
 }
-/* (new110) GM - "Commented ON" - POOL JU + HOVER - === */
-
-
-/* (new143) */
+/* GM - "Commented ON" - POOL JU + HOVER */
 .ju .row [id^="FCO-photo-"] {
     position: absolute !important;
     display: inline-block;
@@ -6123,7 +6049,7 @@ color: gray !important;
 .ju .row .FCO-gradient:hover + span  {
     color: white !important;
 }
-/* GM - "Com ON" - TOP PAGE - ICON COMM + COUNT - - === */
+/* GM - "Com ON" - TOP PAGE - ICON COMM + COUNT */
 #primary-column #nav ul a img[id^="FCO-image-"] {
     position: relative !important;
     top: 5px !important;
@@ -6140,7 +6066,7 @@ color: gray !important;
     font-size: 74% !important;
     z-index: 2;
 }
-/* GM - "Com ON" - HOME PAGE - "YOUR PHOTOSTREAM" - COMMENT ICON - === */
+/* GM - "Com ON" - HOME - "YOUR STREAM" - COM ICON */
 #toto-main #toto-home .act-thumb [id^="FCO-photo-"] a {
     position: relative !important;
     display: inline-block !important;
@@ -6163,7 +6089,7 @@ color: gray !important;
     top: -1px !important;
     margin-left: 1px !important;
 }
-/* GM - "Com ON" - HOME PAGE - "YOUR CONTACTS"/ "YOUR GROUPS" - COM ICON - === */
+/* GM - "Com ON" - HOME - "YOUR CTS"/"YOUR GROUPS" - COM ICON */
 #toto-main #toto-home #photos-from-box [id^="FCO-photo-"] ,
 #toto-main div#toto-home .tt-col1 #y-groups.tt-block .toggle-content ul.tt-thumbs li [id^="FCO-photo-"]{
     position: absolute !important;
@@ -6181,7 +6107,7 @@ color: gray !important;
     border: 1px gray solid !important;
     opacity: 1 !important;
 }
-/* GM "Com ON" - HOME PAGE - "YOUR CONTACTS"/ "YOUR GROUPS" - COM ICON IMG - === */
+/* GM "Com ON" - HOME - "YOUR CTS"/"YOUR GROUPS" - COM ICON IMG */
 #toto-main #toto-home #photos-from-box [id^="FCO-photo-"] a img ,
 #toto-main div#toto-home .tt-col1 #y-groups.tt-block .toggle-content ul.tt-thumbs li [id^="FCO-photo-"] a img {
     position: relative !important;
@@ -6189,7 +6115,7 @@ color: gray !important;
     left: -5px !important;
     display: block !important;
 }
-/* (A SUPP) NO MATCH - GM - "Com ON" - PHOTO PAGE */
+/* (A SUPP) NO MATCH - GM - "Com ON" - PHOT */
 #button-bar + #stats_ul .stat-item img[alt="Yay! You\'ve commented on this photo!"]{
     margin-left: 10px ! important;
     margin-bottom: -1px !important;
@@ -6228,9 +6154,9 @@ color: gray !important;
     color: white! important;
 }
 /* ==== GM "Com ON" - SQUARE ==== */
-/* GM - "Com ON" - SQUARE (sq) - ARCHIVE/CONTACT/SET - POOL(?)/FAV(?)NOT ACTIVE YET ==== */
+/* GM - "Com ON" - SQUARE (sq) - ARCH/CTS/SET - POOL(?)/FAV(?)NOT ACTIVE YET */
 
-/* GM - "Com ON" - SQUARE (sq) - POOL/FAV/SET/CONTACT - COM ICON / COUNT - === */
+/* GM - "Com ON" - SQUARE (sq) - POOL/FAV/SET/CTS - COM ICON / COUNT - === */
 #pool-photos.sq [id^="FCO-photo-"] ,
 #faves.sq [id^="FCO-photo-"] ,
 #ViewSet #setThumbs.sq [id^="FCO-photo-"] ,
@@ -6282,8 +6208,8 @@ color: gray !important;
     padding-left: 51px !important;
 }
 
-/* ==== GM "Com ON" - SMALL ==== */
-/* GM - "Com ON" - SMALL - POOL - MAIN PAGE - COM ICON / COUNT - === */
+/* GM "Com ON" - SMALL */
+/* GM - "Com ON" - SMALL - POOL - MAIN PAGE - COM ICON/COUNT */
 .group-content-wrapper #pool-photos.sm .thumb [id^="FCO-photo-"]{
     position: relative !important;
     display: inline-block !important;
@@ -6304,8 +6230,7 @@ color: gray !important;
     left: 12px !important;
     top: -2px !important;
 }
-
-/* (new155) GM - "Com ON" - SMALL - POOL - === */
+/* GM - "Com ON" - SMALL - POOL */
 #pool-photos.sm [id^="FCO-photo-"] {
     position: relative !important;
     display: block !important;
@@ -6340,8 +6265,7 @@ color: gray !important;
 #pool-photos.sm .meta .owner+ .inline-icons {
     top: -6px !important;
 }
-
-/* GM - "Com ON" - SMALL - FAV/CONTACTS - === */
+/* GM - "Com ON" - SMALL - FAV/CTS */
 #faves.sm [id^="FCO-photo-"] ,
 .HoldPhotos p.RecentPhotos [id^="FCO-photo-"] ,
 #thumbnails.sm [id^="FCO-photo-"] {
@@ -6389,7 +6313,7 @@ color: gray !important;
    
 /* == GM "Number of FAVS on Photostream Pages and Pool Pages"  GM - "N.FAvs" ==== */
     
-/* GM - "N.FAvs" - ALL - === */
+/* GM - "N.FAvs" - ALL */
 .nof_stats {
     position: relative !important;
     display: inline-block !important;
@@ -6419,8 +6343,7 @@ color: gray !important;
     color: transparent !important;
     transform: scale(1.1) !important;
 }
-
-/* GM - "N.FAvs" - ALL - FAV COUNT HOVER BORDER  - === */
+/* GM - "N.FAvs" - ALL - FAV COUNT HOVER */
 .nof_fave_contributed {
     display: inline-block !important;
     padding: 0 2px !important;
@@ -6429,11 +6352,11 @@ color: gray !important;
     line-height: 15px !important;
     border-radius: 5px !important;
 }
-/* GM - "N.FAvs" - ALL - COUNT - === */
+/* GM - "N.FAvs" - ALL - COUNT */
 .nof_stats a {
     margin: 0 auto !important;
 }
-/* GM - "N.FAvs" - SQUARE (sq) - POOL/FAV/SET - === */
+/* GM - "N.FAvs" - SQUARE (sq) - POOL/FAV/SET */
 #pool-photos.sq [id^="photo-story-stats-"] ,
 #faves.sq [id^="photo-story-stats-"] ,
 #setThumbs.sq [id^="photo-story-stats-"] {
@@ -6453,7 +6376,7 @@ color: gray !important;
 #setThumbs.sq.is_own [id^="photo-story-stats-"] {
     top: -23px !important;
 }
-/* GM - "N.FAvs" -  - SMALL (sm) - POOL - MAIN PAGE - === */
+/* GM - "N.FAvs" - SMALL (sm) - POOL - MAIN PAGE */
 .group-content-wrapper  #div_hold_photos.HoldPhotos #pool-photos.sm #photo-display-container .pool-photo  [id^="photo-story-stats"].nof_stats {
     position: relative ! important;
     display: inline-block ! important;
@@ -6469,7 +6392,7 @@ color: gray !important;
 #pool-photos.sm .pool-photo [id^="nof_"]:first-of-type {
     margin-left: -1px  !important;
 }
-/* GM - "N.FAvs" - SMALL (sm) - POOL/FAV/SET/ARCHIVE - (Without ICONs : my SET option "SHORT ABDREVATION") - === */
+/* GM - "N.FAvs" - SMALL (sm) - POOL/FAV/SET/ARCH - (Without ICONs : my SET option "SHORT ABDREVATION") */
 #pool-photos.sm .nof_stats ,
 #faves.sm .fave .nof_stats ,
 #setThumbs.sm .nof_stats {
@@ -6605,19 +6528,8 @@ color: blue ;
 
 /* END == GM "Flickr Non-Reciprocal Contacts Finder" ==== */
 
-
 /* START == GM "BUDDY INTERSTING" ==== */
-/* GM - "BUD INTE" - POPUP - 622 pics - === */
-#Main #Tertiary + table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-    text-align: left;
-    z-index: 0 !important;
-}
+/* (new161) GM - "BUD INTE" - POPUP - 622 pics - MESS/MAIL/HELP/PEND (cf #Tertiary) */
 .popup {
     position: fixed;
     width: 1870px !important;
@@ -6683,16 +6595,15 @@ color: blue ;
     height: 20px ;
     font-size: 15px ;
 }
-/* (new146) START === GM "View on FlickrRiver" ==== */
 
-/* (new151) IN POOL  */
+/* START === GM "View on FlickrRiver" ==== */
+/* IN POOL */
 .subnav-middle>span {
     position: absolute ;
     top: 10px ;
     right: 68px;
 }
-
-/* IN PHOTO PAGE */
+/* IN PHO */
 .attribution-view.photo-attribution.is-real-fullscreen.is-hidden {
     opacity: 1 !important;
     visibility: hidden !important;
@@ -6722,8 +6633,7 @@ color: blue ;
     opacity: 1 !important;
     visibility: visible !important;
 }
-
-/* GM - "F.F.S" - Visible on HOVER ONLY - ===  */
+/* GM - "F.F.S" - Visible on HOVER ONLY  */
 .attribution-info > span:not(:hover) a span {
     display: inline-block !important;
     background: unset !important;
@@ -6805,13 +6715,13 @@ a.poplnk:link {
     transform: rotate(-90deg) ;
 color: red ;
 }
-/* GM - "F.F.S- From CONTACTS - PHOT FRIENDS pages - SUPP POINTER EVENTS */
+/* GM - "F.F.S- From CTS - PHOT FRI - SUPP P EVENT */
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta .attribution a.owner[id^="CFS_"]  ,
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta span.attribution a,
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta span.attribution ,
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta a.owner[id^="CFS_"] ,
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta a[id^="CFS_"]:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline) {
-font-size: 25px !important;
+     font-size: 25px !important;
      pointer-events: none !important;
 }
 
@@ -6828,7 +6738,19 @@ font-size: 25px !important;
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta span.attribution {
     margin-left: -36px !important;
 }
-/* #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta span.attribution a.owner[id^="CFS_"] */
+/* (new161) TOO NAR */
+#contacts-thumbs-wrapper .photo-display-container.ju .contact.photo-display-item .thumb.too-narrow .photo_container + .meta span.attribution {
+    margin-left: 0px !important;
+}
+
+#contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta span.attribution a.owner[id^="CFS_"] {
+    display: inline-block !important;
+    height: 28px !important;
+    line-height: 28px !important;
+    margin-top: 0 !important;
+    top: 95% !important;
+    font-size: 24px !important;
+}
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta .inline-icons {
     height: 26px !important;
     line-height: 24px !important;
@@ -6839,26 +6761,32 @@ font-size: 25px !important;
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta .inline-icons a {
     height: 26px !important;
     line-height: 27px !important;
-font-size: 24px !important;
+    font-size: 24px !important;
 }
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta .inline-icons a img {
     width: 20px !important;
     height: 20px !important;
     line-height: 10px !important;
-font-size: 24px !important;
+    font-size: 24px !important;
 }
+/* (new161) */
 #contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta a[id^="CFS"]:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline) span {
     display: inline-block;
-    height: 28px !important;
-    line-height: 26px !important;
-font-size: 25px !important;
+    height: 29px !important;
+    line-height: 29px !important;
+    font-size: 25px !important;
 color: white !important;
-outline: 1px solid violet !important;
+text-shadow: 1px 1px 2px #000 !important;
 }
+#contacts-thumbs-wrapper .photo-display-container.ju .photo-display-item .meta a[id^="CFS"]:not(.title):not(.fave-star-inline):not(.comments-icon):not(.lightbox-inline) span:last-of-type {
+    padding: 0 4px 0 0px !important;
+    border-radius: 0 5px 5px 0 !important;
+}
+
 #contacts-thumbs-wrapper .photo-display-container.ju .row  .contact [id^="FCO-photo-"] {
     left: 0px !important;
     margin-top: 12px !important;
     transform: scale(1.4) !important;
 }
-/* END - ==== URL PREF - GM - "F.F.S" - SUPP TOOLTIP where it's not USABLE ==== */
+/* END ==== URL PREF - GM - "F.F.S" - SUPP TOOLTIP where it's not USABLE ==== */
 }

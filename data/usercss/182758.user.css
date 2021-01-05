@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Isi-Daddy
 @description    `Eclipse Redesign shall not only bring back the feeling of the old deviantart, but also help your orientation by making the general appearance smaller and add more colours as separators.`
-@version        20201228.17.31
+@version        202114.15.14
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -910,6 +910,7 @@ a[data-hook="comment_like_button"]{
     padding: 0;
 }
 
+
 ._3wC32.WdFsL ._1ngPc._15m8B._2y_KG{
 	margin-left: -60px;
 }
@@ -1111,7 +1112,7 @@ bottom: 0px;}
 
 .RaOha.QBgq4 ._3ARPi._15m8B._2y_KG{
 bottom: 25px;
-left: -186px;}
+left: -191px;}
 
 
 .Ijp9_._1hMn9 ._1kI05 ._1uBLe ._1Ullx._29EHf{
@@ -1135,6 +1136,17 @@ width: 50px;}
 
 .NWbxb{
 margin-top: 10px}
+
+/*button delete save*/
+
+._24VFR._37o-c ._1Ullx._3G5Fd,
+._24VFR._37o-c ._9rMMY._3jwyq._2hncw._1G2ec._2OBt2{
+width: 25px !important;
+height: 25px;
+padding: 0;
+border-radius: 50%;
+}
+
 }
 
 @-moz-document url-prefix("https://www.deviantart.com/") {

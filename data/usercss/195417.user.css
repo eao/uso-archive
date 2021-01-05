@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Noahcoolboy
 @description    `A modern and good looking purple theme for brick hillWay higher quality than other themes`
-@version        202112.14.16
+@version        202114.16.55
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -277,7 +277,7 @@ button:not(.plain).bucks, .button:not(.plain).bucks {
     background-color: var(--main);
     border-color: var(--main)
 }
-button:not(.plain).btits, .button:not(.plain).bits {
+button:not(.plain).bits, .button:not(.plain).bits {
     background-color: var(--main);
     border-color: var(--main)
 }

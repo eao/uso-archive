@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         MB48
 @description    `<b>Whitelist the website in your adblocker first, then install this style!</b> (this prevents site issues)<b>Dark Theme is optional and can be deactivated in "customize settings" above.</b><br>Cleans a popular anime image catalogue website off all current ads and visual disturbances.<br>Also includes a few minor tweaks like a bigger page selection at the bottom.<br>`
-@version        2020620.2.35
+@version        202114.16.54
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown darktheme "Theme" {
 	darktheme "Dark Theme*" <<<EOT @-moz-document regexp('(http|https):\/\/(gelbooru|youhate)\.(com|us)/+index\.php\\?page=post.*') {
-  body {
+body {
     background-color: #222!important;
   }
   a:hover{
@@ -50,17 +50,17 @@
   img {
     color: #333!important;
   }
-  .navbar-default .navbar-nav > li > a{
+  .navbar .navbar-nav > li > a, .navSubmenu a, header a{
       color: #fff!important;
   }
-  #tag-list {
+  #tag-list, .tag-list {
     background-color: #333!important;
     border-right-color: #000!important;
   }
-  #tag-list div{
+  #tag-list div, .tag-list div{
     color: #DDD!important;
   }
-  #tag-list div a{
+  #tag-list div a, .tag-list div a{
     color: #4fc3f7;
   }
   .tag-type-general span, .tag-type-artist span, .tag-type-character span, .tag-type-copyright span{
@@ -97,10 +97,10 @@
     border-color: #777!important;
     transition: background-color 0.1s ease, border-color 0s ease;
   }
-  .navbar {
+  .navbar, .topnav {
     background: #333!important;
   }
-  .navbar .active a{
+  .navbar .active a, .navSubmenu .active a, .topnav .active{
     color: #FFF!important;
     background-color: #222!important;
   }
@@ -145,6 +145,33 @@
     color: #DDD!important;
     background-color: #333!important;
     border-color: #000!important;
+  }
+  /* 2021 update *\/
+  footer {
+    background: #333!important;
+  }
+  footer *{
+    color: #DDD!important;
+    line-height: 0px!important;
+    opacity: 0.7
+  }
+  aside {
+    color: #DDD!important;
+    background-color: #333!important;
+    border-right-color: #000!important;
+    border-bottom-color: #000!important;
+    margin: 0px 1px 0px 0px!important;
+  }
+  /* re-align search area and color it *\/
+  .searchArea {
+    margin: 0px!important;
+    height: 52px!important;
+    padding: 10px!important;
+    background-color: #333!important;
+  }
+  /* favorite heart *\/
+  .searchArea div form a img {
+    filter: invert(40%)!important
   }
 }
 
@@ -194,6 +221,9 @@ lighttheme "Default Theme" <<<EOT  EOT;
   #tup, #nup, ins, .noticeError, .alert:not(#resized_notice){
     display: none!important;
   }
+  .footerAd, .footerAd2, .headerAd {
+      display: none!important
+  }
   .contain-push > *:not(#post-view):not(.thumbnail-container):not(center):not(#resized_notice):not(#gelcomVideoPlayer):not(#paginator):not(.commentBox):not(br){
     display: none!important;
   }
@@ -227,10 +257,10 @@ lighttheme "Default Theme" <<<EOT  EOT;
     display: none!important;
   }
 
-/*the following 2 kind of do the same thing */
-center > .hidden-xs{
-    display:none!important
-}
+  /*the following 2 kind of do the same thing */
+  center > .hidden-xs{
+      display:none!important
+  }
   .contain-push div[style]:not(.note-container):not(.note-box):not(.note-body):not(.note-box-inner-border):not(#resized_notice):not([id]){
     display:none!important;
   }

@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Flickr WideScreen - Dark & Grey v.160
+@name           Flickr WideScreen - Dark & Grey v.161
 @namespace      USO Archive
 @author         decembre
-@description    `It's the ideal companion of some others of my Flickr Userstyles.Add a Dark Gray Flavor for my Flickr Userstyles :<mark><a href="https://userstyles.org/styles/52167/"><b>Flickr Widescreen - ALLinONE (Part 1)</b></a></mark>AND<mark><a href="https://userstyles.org/styles/131452"><b>Flickr Widescreen - ALLinONE (Part 2)</b></a></mark><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle/script)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        20201117.12.21
+@description    `It's the ideal companion of some others of my Flickr Userstyles.Add a Dark Gray Flavor for my Flickr Userstyles :<mark><a href="https://userstyles.org/styles/52167/"><b>Flickr Widescreen - ALLinONE (Part 1)</b></a></mark>AND<mark><a href="https://userstyles.org/styles/131452"><b>Flickr Widescreen - ALLinONE (Part 2)</b></a></mark><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
+@version        202114.13.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 
 /* STY03 ============================================================================================= */
 /* =================================================================================================== */
-/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.160 (new160)  - (STANDALONE) === */
+/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.161 (new161)  - (STANDALONE) === */
 /* =================================================================================================== */
 /* =================================================================================================== */
 
@@ -762,7 +762,7 @@ html body #main #activityFeed .card.micro-card ,
     background-color: #171717 !important;
 }
 
-/* (new92) BACKGROUND +  BOX SHADOW - MENU / MODAL DIVERS ======= */
+/* (new161) BACKGROUND +  BOX SHADOW - MENU / MODAL DIVERS ======= */
 .view.fluid-droparound-view.flickr-view-root-view .droparound.subview-droparound.auto-size.big-shadow.notifs-droparound .body .content.subview ,
 .modal.subview-modal.modal-restyle  {
     color: gold !important;
@@ -778,7 +778,15 @@ html body #main #activityFeed .card.micro-card ,
     box-shadow: -5px 5px 6px 7px black !important;
     background: #333 !important;
 }
+.group-pool-subheader-view .ui-dropdown ul {
+  background-color: #222;
+  border: 1px solid red;
+  box-shadow: -5px 5px 3px rgba(0, 0, 0, 1);
 
+}
+.group-pool-subheader-view .ui-dropdown ul li:hover:not(.divider) {
+  background-color: #333;
+}
 /* (new69) BACKGROUND - GRAY - === */
 
 .fluid .fluid-magic-tools-view ,
@@ -814,11 +822,9 @@ html body #main #activityFeed .card.micro-card ,
 }
 
 
+/* (new161) BACKGROUND - BLACK - === */
 
-
-/* (new152) BACKGROUND - BLACK - === */
-.group-discussion-topic-view .reply:hover, 
-.group-discussion-topic-view .topic:hover  ,
+#archives-tabs .tabs ,
 .subnav-middle>span ,
 .fluid.html-person-groups-page-view  .sortable-table-wrapper td.show-after-locked ,
 .photo-card-view .photo-card .photo-card-header-view .photo-card-header:not(.theme-overlay) ,
@@ -878,7 +884,7 @@ li.act-detail-item.f-fave.f-your-photo-their-fave.tt-first >a:first-of-type + b 
 .fluid .view.global-nav-view:hover .global-nav ,
 #global-nav .gn-wrap ,
 .global-nav .global-nav-content .nav-menu > li ul.gn-submenu li ,
-.fluid.html-group-pool-page-view .pagination-view:not(:empty) ,
+
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer) .photo-list-photo-interaction:hover .interaction-bar .text ,
 .fluid.html-group-pool-page-view .view.group-pool-subheader-view:not(.requiredToShowOnServer) + .view.photo-list-view:not(.requiredToShowOnServer) .photo-list-photo-interaction .interaction-bar:hover .text ,
 .photo-list-photo-interaction:hover  .interaction-bar:hover .text .attribution:hover a[id^="CFS"] span:first-of-type:not(.avatar)  ,
@@ -1112,9 +1118,27 @@ h3#Tertiary ,
     background-color: black !important;
 }
 
-/* (new159) BACKGROUND - #222 - A VOIR == #222 */
 
 
+/* (new161) BACKGROUND - BLACK LIGHT  == for HOVER == #111 */
+
+#DiscussTopic table:first-of-type .Said:hover ,
+.fluid.html-group-pool-page-view .pagination-view:not(:empty) ,
+.group-topic-detail-col #DiscussTopic table:first-of-type .Said > p:hover ,
+.group-admin-pending-item-view .group-admin-pending-item .item-content-container .details-column .timestamp ,
+.fluid.html-group-discussion-page-view  .group-discussion-page-view  .right-column .topic .message  .message-text:hover ,
+.group-discussion-topic-view .reply:hover , 
+.group-discussion-topic-view .topic:hover ,
+.fluid .group-discussion-topic-view .reply:hover, 
+.fluid .group-discussion-topic-view .topic:hover {
+background: #111 !important;
+}
+
+
+
+/* (new161) BACKGROUND - #222 - A VOIR == #222 */
+
+.fluid.html-group-discussion-page-view  .group-discussion-page-view  .right-column .topic .message ,
 
 #ViewSet p.vsDescription:not(:empty) ,
 #ViewSet .vsNumbers ,
@@ -1265,8 +1289,9 @@ html.html-favorites-page-view.scrolling-layout    #content   .view.fluid-magic-s
 }
 
 
+/* (new161) BACKGROUND - #333 - === */
 
-/* (new159) BACKGROUND - #333 - === */
+.group-topic-detail-col ,
 
 .group-discussion-page-view .left-column  ,
 .fluid.html-group-discussion-page-view  .group-discussion-page-view  .right-column .topic ,
@@ -2012,8 +2037,14 @@ p {
 
 
 
-/* (new83) LINKS COLOR - PERU ONLY (not HOVER) - === */
+/* (new161) LINKS COLOR - PERU ONLY (not HOVER) - === */
 
+table.FlickrMailMessage p.flickr-user.flickrmail-to span.name span.realname ,
+.compose-field-container + .compose-field-container p.flickr-user span.name strong.username ,
+.profile-bio-page-view .general-stats ul li.block a, 
+.profile-bio-page-view .general-stats ul li.block span ,
+
+.group-top-contributors-dropdown-view.ui-dropdown.top-contribs > ul .username ,
 .fluid.html-gallery-page-view .fluid-centered.gallery-page-container .details-section .stats a.stat.comment-count ,
 
 .gallery-edit-view .gallery-edit-container.main .action-container .delete-button ,
@@ -2352,13 +2383,19 @@ a[href^="http://www.flickriver.com"]:visited  ,
 
 
 /* TEXT/LINK - TAN */
+.group-pool-subheader-view .ui-dropdown ul li .reset ,
 body.flickrfixrwebextension .sub-photo-right-view .date-taken .date-taken-label ,
 body.flickrfixruserscript .sub-photo-right-view .date-taken .date-taken-label {
         color: tan !important;
 }
 
 
-/* (new100) LINKS / TITLE - COLOR - PERU - VISITED TAN - HOVER / HOVER:VISITED - === */
+/* (new161) LINKS / TITLE - COLOR - PERU - VISITED TAN - HOVER / HOVER:VISITED - === */
+
+.group-pool-subheader-view .ui-dropdown > span.truncate ,
+.groups-toolbar-content .groups-toolbar-share-content .fluid-share-button .fluid-share-button-label ,
+#global-nav #gn-wrap .nav.small-logo .toplink a span,
+button.join.has-not-joined ,
 .sub-photo-right-view .photo-charm-exif-scrappy-view .exif-charm-list > ul > div.exif-column-1 > li.c-charm-item-camera .exif-camera-name > a ,
 .fluid.html-albums-list-page-view a.interaction-view.avatar.photo-list-album.album .photo-list-album-interaction a.overlay + .interaction-bar .metadata h4.album-title ,
 .album-page-view .album-toolbar-view > .album-toolbar-content > a.back-to-albums > .back-to-albums-text , 
@@ -2401,8 +2438,10 @@ table#mail td a {
         color: peru !important;
 }
 
-/* VISITED - TAN */
-
+/* (new161) VISITED - TAN */
+#GoodStuff #DiscussTopic .Said p a:visited ,
+.group-top-contributors-dropdown-view.ui-dropdown.top-contribs > ul a:visited .username ,
+#global-nav #gn-wrap .nav.small-logo .toplink a:visited span ,
 .sub-photo-right-view .photo-charm-exif-scrappy-view .exif-charm-list > ul > div.exif-column-1 > li.c-charm-item-camera .exif-camera-name > a:visited  ,
 .fluid.html-albums-list-page-view a.interaction-view.avatar.photo-list-album.album:visited  .photo-list-album-interaction a.overlay + .interaction-bar .metadata h4.album-title ,
 .album-page-view .album-toolbar-view > .album-toolbar-content > a.back-to-albums:visited > .back-to-albums-text ,
@@ -2469,7 +2508,14 @@ ul.groups-list-header .SortOptions .group_sort_active,
         color: red !important;
 }
 
-/* (new151) LINKS / TITLE - COLOR - GOLD - === */
+/* (new161) LINKS / TITLE - COLOR - GOLD - === */
+
+table.FlickrMailMessage p.flickr-user.flickrmail-to span.name strong.username ,
+.compose-field-container + .compose-field-container p.flickr-user span.name span.realname  ,
+#Main table tbody tr td#Hint .TopicListing:last-of-type h4  ,
+#Main table tbody tr td#Hint .TopicListing h4 ,
+#Main table tbody tr td#Hint h4 ,
+
 #tt-recent-nav ul b ,
 .group-creation-view .group-creation-container .group-creation-content-container .step-container  ,
 .compose-field-container .compose-field:not(#message):not(#subject) ,
@@ -2671,7 +2717,8 @@ a:visited {
         color: #656c7a !important;
         text-decoration: none !important;
 }
-/* (new120) */
+/* (new161) */
+.photo-list-photo-interaction .interaction-bar .text  a[id^="CFS"].attribution ,
 a[id^="CFS"]{
         color: tan !important;
         text-decoration: none !important;
@@ -2680,9 +2727,18 @@ a[id^="CFS"]:visited {
         color: tomato !important;
         text-decoration: none !important;
 }
-a[id^="CFS"] span:not(.avatar) {
-    color: white !important;
-    text-shadow: 1px 1px 4px #000 !important;
+/* (new161) */
+.photo-list-photo-interaction .interaction-bar .text  a[id^="CFS"].attribution span:not(.avatar),
+a[id^="CFS"]:not([href^="http://www.flickriver.com"]) span:not(.avatar) {
+/*     color: black !important; */
+/* text-shadow: 1px 1px 4px #000 !important; */
+/* text-shadow: none !important; */
+}
+/* (new161) */
+a[id^="CFS"][href^="http://www.flickriver.com"] span:not(.avatar) {
+/*     color: peru !important; */
+/* text-shadow: 1px 1px 4px #000 !important; */
+/* text-shadow: none !important; */
 }
 .photo-notes-scrappy-view .note-text a.author {
           color: white !important;
@@ -2896,8 +2952,10 @@ border: 1px solid  #333 !important;
     background:  transparent !important;
     background-color:  transparent !important;
 }
-
-
+/* (new142) SVG ICON?? - JOIN BUT - COLOR */
+.fluid .butt.join.mini::after, .fluid .butt.join.mini::before, .fluid .butt.join::after, .fluid .butt.join::before, .fluid button.join.mini::after, .fluid button.join.mini::before, .fluid button.join::after, .fluid button.join::before {
+    background-color: peru !important;
+}
 /* (new142) SVG ICON COLOR */
 .photo-card-header-view .photo-card-header .right-container .menu-button svg  ,
 .photo-card-engagement-view .photo-card-engagement span.engagement-item .engagement-icon svg ,
@@ -2919,6 +2977,14 @@ opacity: 1 !important;
 .photo-list-photo-interaction .interaction-bar .engagement .engagement-item.fave.faved .engagement-icon svg.filled {
     fill: red !important;
 }
+
+/* (new161)SVG SELECTED */
+.tab.selected svg {
+    fill: red !important;
+}
+
+
+
 /* FROM PART 2 - GALLERY - COMMENTS */
 .comment-list-view .comment-list-container .comment-list li .comment-item .content-container .comment-content ,
 .fluid.html-gallery-page-view .view.fluid-droparound-view.flickr-view-root-view  .view.comment-item-view.flickr-view-root-view  .comment-item .content-container  .comment-content ,
