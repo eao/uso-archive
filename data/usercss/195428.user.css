@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         fukuyama
 @description    `.`
-@version        202113.5.48
+@version        202115.2.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -116,6 +116,14 @@ background-color:#1c002d;
 }
 .user-name {
     color:#b571c6;
+}
+
+.column.is-3-desktop.is-6-touch.is-item {
+width:10% !important;
+}
+
+.column.is-2-desktop.is-4-touch.is-item {
+width: 10% !important;
 }
 
 .button.level.is-mobile {

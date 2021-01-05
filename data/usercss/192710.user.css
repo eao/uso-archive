@@ -3,11 +3,12 @@
 @namespace      USO Archive
 @author         High_village
 @description    `Dark mode theme for miHoYo's Genshin Impact forum; rest your eyes specially at night.All forum sites should be included (the main homepage is not included only forum sites).If you spot something that is missing just let me know in the comments here or in my original post on miHoYo's forum about the dark mode theme.https://forums.mihoyo.com/genshin/article/85980Have fun travelers o/`
-@version        20201116.2.46
+@version        202115.5.19
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document url-prefix("https://forums.mihoyo.com/genshin/")
+@-moz-document url-prefix("https://forums.mihoyo.com/genshin/"),
+url-prefix("https://www.hoyolab.com/genshin/")
 {
 html, body {
     background-color: #1F1F1F;

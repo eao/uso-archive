@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Tiktok Dark/Night Mode by SIR (2020)
+@name           Tiktok Dark/Night Mode by SIR (2021)
 @namespace      USO Archive
 @author         Saarim Shahid
 @description    `A theme for: tiktok.comUpdated very regularly!Please report issues here: http://m.me/sir.saarim.<a href="http://m.me/sir.saarim">Report Issue</a>`
-@version        20201228.6.28
+@version        202115.5.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.tiktok.com") {
-  /* ------------------------------------------------------ */
+/* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
@@ -21,10 +21,6 @@
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
-
-
-
-
 .header-container.jsx-4096498568 .header-content.jsx-4096498568,
 .main-body > div:last-child,
 .main-body,
@@ -89,7 +85,8 @@ header .help-container .help-item,
 .card-container .card-text-container,
 .transparency-center .p4,
 .card,
-.app-promotion.jsx-3979932517 > span.jsx-3979932517 {
+.app-promotion.jsx-3979932517 > span.jsx-3979932517,
+.inbox-content-header.jsx-2344352055 span.jsx-2344352055 {
 	background-color: #1D1E1F !important;
 }
 
@@ -219,7 +216,8 @@ a.jsx-2902964253:hover,
 .video-feed-item.jsx-179939359 .feed-item-content.jsx-179939359 .item-follow-wrapper .follow-button:hover,
 .nav-item.active.jsx-532438284 span.jsx-532438284:hover,
 .nav-item.jsx-532438284 span.jsx-532438284:hover,
-.identity.gray.jsx-1998704864 {
+.identity.gray.jsx-1998704864,
+.inbox-content-header.jsx-2344352055 span.jsx-2344352055:hover {
 	color: rgb(245, 137, 158) !important;
 	fill: rgb(245, 137, 158) !important;
 }
@@ -255,6 +253,11 @@ circle {
 }
 .side-bar.jsx-2936289316 .nav-item.jsx-2936289316 span.jsx-2936289316 {
 	color: aliceblue
+}
+
+.comment-pc.jsx-1998704864 .identity.jsx-1998704864,
+.copy-link-container.jsx-550377512 .copy-container.jsx-550377512 .word-link.jsx-550377512 {
+	color: red !important;
 }
 
 .video-feed-tab.jsx-2955112291 > p.jsx-2955112291,
@@ -335,7 +338,8 @@ header .help-container .help-item img,
 .container.jsx-884924262 .icon-style.jsx-884924262,
 .stage-2.jsx-3758851661 .close.jsx-3758851661,
 .contact-container .contact-wrapper .contact-row .contact-card img,
-.logo-container.jsx-832362280 {
+.logo-container.jsx-832362280,
+.comment-input-inner-wrapper.jsx-1180591303 .editor.jsx-1180591303 .at-icon.jsx-1180591303 {
 	filter: invert(100%);
 	-webkit-filter: invert(100%);
 }
@@ -345,7 +349,8 @@ header .help-container .help-item img,
 }
 
 .comment-input-inner-wrapper.jsx-3076546058,
-.comment-input-inner-wrapper.jsx-780136105 {
+.comment-input-inner-wrapper.jsx-780136105,
+.comment-input-inner-wrapper.jsx-1180591303 {
 	background-color: #444
 }
 

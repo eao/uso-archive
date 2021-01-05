@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        202114.15.23
+@version        202115.11.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -83,8 +83,9 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 .css-1f3bwjf{ background-color: #111 !important;}
 .css-1s2nkre, .css-htaj6q{ background-color: #202020 !important;}
 .css-8yjbqc{ background-color: #fff !important;}
+}
 
-
+@-moz-document url-prefix("https://launchpad.binance.com") {
 /* Binance Earn - Launchpool */
 .css-1ij3lmk, .css-bq761l{ background-color: #202020 !important;}
 .css-15l1x66.active, .css-15l1x66:hover{ color: #76808F !important;}
@@ -93,12 +94,6 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
     border: none;
     box-shadow: none;
 }
-
-
-/* Finance - Crypto Loans */
-.css-gdhe4w .form-con, .css-gdhe4w .form-con .why{ background-color: #202020 !important;}
-.css-gdhe4w .form-con .why .items .item{ background-color: #fff !important;}
-.css-gdhe4w .lead-in span, .css-gdhe4w .form-con .why .title{ color: #fff !important;}
 }
 
 @-moz-document regexp("https://www.binance.com/.+/my/wallet/account/futures") {

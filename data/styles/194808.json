@@ -2,12 +2,12 @@
   "id": 194808,
   "info": {
     "name": "Picrew Image Maker widescreen",
-    "description": "Makes the picrew image maker fill the entire browser window on widescreen devices.\r\n\r\n(image maker in the screenshots was made by <a href=\"https://picrew.me/image_maker/395214\">nudekay</a>)",
+    "description": "Makes the picrew image maker fill the entire browser window on widescreen devices. Responsive so it should still work on mobile! Also hides the ad container at the bottom for layout reasons.\r\n\r\n(image maker in the screenshots was made by <a href=\"https://picrew.me/image_maker/395214\">nudekay</a>)",
     "additionalInfo": null,
     "format": "uso",
     "category": "picrew",
     "createdAt": "2020-12-23T23:52:03.000Z",
-    "updatedAt": "2020-12-23T23:52:03.000Z",
+    "updatedAt": "2021-01-05T08:44:42.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 300998,
@@ -17,8 +17,8 @@
   },
   "stats": {
     "installs": {
-      "total": 0,
-      "weekly": 0
+      "total": 11,
+      "weekly": 5
     }
   },
   "screenshots": {
@@ -41,6 +41,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document regexp(\"https://picrew.me/image_maker/.*\") {\r\n\t.imagemaker_ad_wrapper {\r\n\t\tdisplay: none;\r\n\t}\r\n\r\n\t.view_pc .imagemaker_container_wrapper,\r\n\t.view_pc .randommaker_container_wrapper {\r\n\t\twidth: 100%;\r\n\t}\r\n\r\n\t.view_pc .imagemaker_container,\r\n\t.view_pc .randommaker_container {\r\n\t\theight: 100%;\r\n\t}\r\n\r\n\t@media screen and (min-width: 800px) {\r\n\t\t.view_pc .imagemaker_container {\r\n\t\t\tflex-direction: row;\r\n\t\t}\r\n\r\n\t\t.view_pc .imagemaker_canvas_wrapper {\r\n\t\t\theight: 100%;\r\n\t\t\tmax-height: unset;\r\n\t\t\twidth: 100%;\r\n\t\t\tmax-width: 50vw;\r\n\t\t}\r\n\r\n\t\t.view_pc .imagemaker_info_wrapper {\r\n\t\t\twidth: 600px;\r\n\t\t\theight: 800px;\r\n\t\t\tmax-height: 90vh;\r\n\t\t\ttop: 50%;\r\n\t\t\tleft: 50%;\r\n\t\t\ttransform: translatex(-50%) translatey(-50%);\r\n\t\t}\r\n\t}\r\n\r\n\t.imagemaker_menu_btn {\r\n\t\twidth: 120px;\r\n\t}\r\n\r\n\t.imagemaker_parts_menu_wrapper {\r\n\t\tpadding-left: 120px;\r\n\t}\r\n\r\n\t.imagemaker_parts_menu ul li {\r\n\t\twidth: 56px;\r\n\t}\r\n\r\n\t.imagemaker_itemlist ul li {\r\n\t\twidth: 24%;\r\n\t\tmax-width: 160px;\r\n\t}\r\n\r\n\t.imagemaker_info_show_btn {\r\n\t\ttop: auto;\r\n\t\tbottom: 4px;\r\n\t}\r\n}\r\n"
+    "css": "@-moz-document regexp(\"https://picrew.me/image_maker/.*\") {\r\n.imagemaker_ad_wrapper {\r\n\tdisplay: none !important;\r\n}\r\n\r\n.imagemaker_container_wrapper,\r\n.randommaker_container_wrapper {\r\n\twidth: 100% !important;\r\n}\r\n\r\n.imagemaker_container,\r\n.randommaker_container {\r\n\theight: 100% !important;\r\n}\r\n\r\n@media screen and (min-width: 800px) {\r\n\t.imagemaker_container {\r\n\t\tflex-direction: row;\r\n\t}\r\n\r\n\t.imagemaker_canvas_wrapper {\r\n\t\theight: 100% !important;\r\n\t\tmax-height: unset;\r\n\t\twidth: 100%;\r\n\t\tmax-width: 50vw;\r\n\t}\r\n\t\r\n\t.imagemaker_info_wrapper {\r\n\t\twidth: 600px;\r\n\t\theight: 800px;\r\n\t\tmax-height: 90vh;\r\n\t\ttop: 50%;\r\n\t\tleft: 50%;\r\n\t\ttransform: translatex(-50%) translatey(-50%);\r\n\t}\r\n}\r\n\r\n.imagemaker_menu_btn {\r\n\twidth: 120px;\r\n}\r\n\r\n.imagemaker_parts_menu_wrapper {\r\n\tpadding-left: 120px;\r\n}\r\n\r\n.imagemaker_parts_menu ul li {\r\n\twidth: 56px;\r\n}\r\n\r\n.imagemaker_itemlist ul li {\r\n\twidth: 24%;\r\n\tmax-width: 160px;\r\n}\r\n\r\n.imagemaker_info_show_btn {\r\n\ttop: auto;\r\n\tbottom: 4px;\r\n}\r\n\r\n}"
   }
 }

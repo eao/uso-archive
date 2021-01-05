@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TheLegendOfWolf_
 @description    `Blue YouTube.`
-@version        20201231.18.20
+@version        202115.12.16
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -875,6 +875,12 @@ color: #12A0FF;
 }
 
 
+
+yt-formatted-string#text.style-scope.ytd-button-renderer.style-primary.size-default{
+
+color: #FFF;
+
+}
 
 
 
