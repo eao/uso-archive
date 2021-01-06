@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        202115.11.43
+@version        202115.21.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,30 +15,58 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 
 
 /* Home page */
-.css-1tibs4k, .css-2dhtzt, .css-1nsyr0e, .css-suti8n, .css-26vijc{ background-color: #202020 !important;}
-.css-1sgz1lk, .css-g80xfv, .css-1i1yepl, .css-hd6rm5, .css-1lmrg27, .css-xtxu3e{ color: #fff !important;}
-.css-wmy69a{ background-color: #fff !important;}
-.css-waz29z{ color: #76808F !important;}
+.css-1ljhw37, .css-1imen1g, .css-1ekkx2i, .css-inn0bn, .css-nk63nc, .css-1hk99xk, .css-1u2sg3i, .css-1ltwx0z{ background-color: #202020 !important;}
+.css-1w1cuk, .css-1jhj8la, .css-1hk99xk{ color: #fff !important;}
+.css-fb4d44 > a{ color: #76808F !important;}
 
 
+/* Dashboard - Profile */
+.css-j0weei, .css-tmp4w8, .css-1x5vd11{ color: #fff !important;}
+.css-1drn95o, .css-1g06a7l{ background-color: #fff !important;}
+.css-1uoge8i, .css-1lohbqv, .css-1llevpm{ color: #76808F !important;}
+}
+
+@-moz-document regexp("https://www.binance.com/.+/my/wallet/history/.+") {
+/* Transaction History */
+.css-1higec{ background-color: #202020 !important; }
+.css-mjveij, .css-bjywr{ color: #fff !important;}
+.css-29mduf, .css-1r5j6bd{ color: #76808F !important;}
+}
+
+@-moz-document regexp("https://www.binance.com/.+/my/settings/preference") {
+/* Settings - Preferences */
+.css-169i5k4, .css-12p1m2i, .css-51w3tl, .css-1xcp7zo, .css-69m0sr{ color: #fff !important;}
+.css-1f3bwjf{ background-color: #111 !important;}
+.css-1s2nkre, .css-htaj6q{ background-color: #202020 !important;}
+.css-8yjbqc{ background-color: #fff !important;}
+}
+
+@-moz-document regexp("https://www.binance.com/.+/my/coupon") {
+/* Reward Center */
+.css-1sstzk2{ background-color: #111 !important;}
+.css-ekwbtp, .css-g6j1vn{ background-color: #202020 !important;}
+.css-15efkfa, .css-ky6tk2{ color: #fff !important;}
+.css-et53cw{ background-color: #fff !important;}
+}
+
+@-moz-document regexp("https://www.binance.com/.+/my/task/list") {
+/* Task Center */
+.css-1lai5m9{ background-color: #111 !important;}
+.css-1kdg3b5, .css-1g2yafe{ background-color: #202020 !important;}
+.css-s0kp61{ color: #fff !important;}
+}
+
+@-moz-document regexp("https://www.binance.com/.+/my/wallet/account/main") {
 /* Fiat and Spot Wallet */
-.css-1imiysb, .css-9cxewd, .css-1sqj6hg{ background-color: #202020 !important;}
+.css-1imiysb, .css-9cxewd, .css-1sqj6hg, .css-vurnku[data-type="table-td"], .css-vurnku[data-type="table-th"]{ background-color: #202020 !important;}
 .css-1h9vsz4{ background-color: #111 !important; }
 .css-lultvz, .css-kfkjb4:hover{ background-color: #fff !important;}
 .css-kfkjb4 {color: rgb(30, 32, 38) !important;}
-.css-1imiysb div div div div[data-bn-type="text"], .css-1nqr2qp{ color: #fff !important;}
-.css-vurnku[data-type="table-td"], .css-vurnku[data-type="table-th"]{ background-color: #202020 !important;}
+.css-1imiysb div div div div[data-bn-type="text"], .css-1nqr2qp, .css-16nd02l input, .css-gymlse{ color: #fff !important;}
 .css-9cwl6c, .css-vurnku[data-type="table-td"]{ color: #76808F !important;}
-.css-16nd02l input, .css-gymlse{ color: #fff !important;}
+}
 
-
-/* Spot Accont PNL */
-.css-yeksi9{ background-color: #111 !important; }
-.css-qr9i14, .css-1ksrllk, .css-125eupg, .css-17sr503, .css-1s6fjii, .css-1xat5bo, .css-jdtm9f{ background-color: #202020 !important;}
-.css-1gv5v1i, .css-63s4xg, .css-f2yw9b, .css-1eh4ftw, .css-1rojeui, .css-poebbt{ color: #fff !important;}
-.css-11ik29j, .css-nvrxea{ color: #76808F !important;}
-
-
+@-moz-document regexp("https://www.binance.com/.+/my/wallet/account/saving") {
 /* Earn Wallet */
 .css-1bwwatp, .css-1o5c6og, .css-1ow88ql, .css-h8vadw, .css-oda0l7, .css-jmlio4{ background-color: #202020 !important; }
 .css-h8vadw, .css-4sk89q{ border-color: #202020 !important;}
@@ -51,38 +79,14 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
     margin: 0 !important;
     padding: 16px 0 0 !important;
 }
+}
 
-
-/* Transaction History */
-.css-1higec{ background-color: #202020 !important; }
-.css-mjveij, .css-bjywr{ color: #fff !important;}
-.css-29mduf, .css-1r5j6bd{ color: #76808F !important;}
-
-
-/* Dashboard - Reward Center */
-.css-1sstzk2{ background-color: #111 !important;}
-.css-ekwbtp, .css-g6j1vn{ background-color: #202020 !important;}
-.css-15efkfa, .css-ky6tk2{ color: #fff !important;}
-.css-et53cw{ background-color: #fff !important;}
-
-
-/* Dashboard - Task Center */
-.css-1lai5m9{ background-color: #111 !important;}
-.css-1kdg3b5, .css-1g2yafe{ background-color: #202020 !important;}
-.css-s0kp61{ color: #fff !important;}
-
-
-/* Dashboard - Profile */
-.css-j0weei, .css-tmp4w8, .css-1x5vd11{ color: #fff !important;}
-.css-1drn95o, .css-1g06a7l{ background-color: #fff !important;}
-.css-1uoge8i, .css-1lohbqv, .css-1llevpm{ color: #76808F !important;}
-
-
-/* Dashboard - Preferences */
-.css-169i5k4, .css-12p1m2i, .css-51w3tl{ color: #fff !important;}
-.css-1f3bwjf{ background-color: #111 !important;}
-.css-1s2nkre, .css-htaj6q{ background-color: #202020 !important;}
-.css-8yjbqc{ background-color: #fff !important;}
+@-moz-document regexp("https://www.binance.com/.+/my/pnl/spot_account") {
+/* Spot Accont PNL */
+.css-yeksi9{ background-color: #111 !important; }
+.css-qr9i14, .css-1ksrllk, .css-125eupg, .css-17sr503, .css-1s6fjii, .css-1xat5bo, .css-jdtm9f{ background-color: #202020 !important;}
+.css-1gv5v1i, .css-63s4xg, .css-f2yw9b, .css-1eh4ftw, .css-1rojeui, .css-poebbt{ color: #fff !important;}
+.css-11ik29j, .css-nvrxea{ color: #76808F !important;}
 }
 
 @-moz-document url-prefix("https://launchpad.binance.com") {
@@ -105,11 +109,11 @@ body, #navigation, .edit-setting, .option-user-url, .text_setting_input, #nav-vi
 .css-d3ui9e:hover{ color: #76808F !important;}
 }
 
-@-moz-document regexp("https://www.binance.com/.+/earn.+") {
+@-moz-document regexp("https://www.binance.com/.+/earn.*") {
 /* Binance Earn */
-.css-1hawo8q, .css-1j562lq, .css-sfadok, .css-17a0d0u, .css-12719hn, .css-1bitln1{ background-color: #202020 !important;}
+.css-1hawo8q, .css-1j562lq, .css-sfadok, .css-17a0d0u, .css-12719hn, .css-1bitln1, .css-mn0qrq{ background-color: #202020 !important;}
 .css-pjvc4s, .css-1hawo8q .content .tabs{ background-color: #111 !important;}
-.css-1hawo8q .heading .main, .css-9aixja, .css-1hawo8q .content .tabs .item .title, .css-sfadok .coin, .css-17a0d0u .coin, .css-1bitln1 .coin, .css-12719hn .title, .css-1k5sh5n, .css-rz32rr{ color: #fff !important;}
+.css-1hawo8q .heading .main, .css-9aixja, .css-1hawo8q .content .tabs .item .title, .css-sfadok .coin, .css-17a0d0u .coin, .css-1bitln1 .coin, .css-12719hn .title, .css-1k5sh5n, .css-rz32rr, .css-mn0qrq .coin{ color: #fff !important;}
 .css-1hawo8q .content .tabs .item.active .title{ color: #000 !important;}
 .css-vurnku.duration, .css-17a0d0u .cell .text, .css-1bitln1 .cell .text{ color: #76808F !important;}
 }
@@ -179,7 +183,7 @@ input.css-1vgh1xx{ color: #000 !important;}
 /* Wallet Overview */
 .css-11ut0zx{ background-color: #111 !important;}
 .css-k1w8nb, .css-1l2gayd, .css-nkpzbo, .css-10i7i1h, .css-1g4bkrf{ background-color: #202020 !important;}
-.css-w6vv8o, .css-2gtxtw, .css-mjtoek, .css-1qogyxd{ color: #fff !important;}
+.css-w6vv8o, .css-2gtxtw, .css-mjtoek, .css-1qogyxd, .css-gymlse{ color: #fff !important;}
 .css-k1w8nb{ border-radius: 0;}
 .css-xivc9r, .css-hrh325, .css-1jyr6bw, .css-18h5seh{ background-color: #fff !important;}
 .css-1g4bkrf{ border: none !important;}
