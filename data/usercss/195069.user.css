@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         reactor04
 @description    `Dark theme for Google Classroom`
-@version        20201228.11.26
+@version        202116.8.44
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -401,5 +401,10 @@ div.n9QKGb {
 /* textarea */
 textarea.hqfVKd  {
     color: #e8e8e8; 
+}
+
+/* Return Grade modal */
+div.I7OXgf.zziILd.t11m5e.ZEeHrd.Inn9w.iWO5td {
+    background-color: #b3b3b3;
 }
 }

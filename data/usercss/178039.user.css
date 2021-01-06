@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Faisal Sarosh
 @description    `This has been created to make the data displayed in CARES to fit normal display dimensions and accommodate better Readability in web design.`
-@version        20201126.22.15
+@version        202116.11.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -31,7 +31,6 @@ background-size: auto auto,cover;
 div.d-flex:nth-child(3){
 	height: 0% !important;
 }
-
 }
 
 @-moz-document url-prefix("https://cares") {
@@ -126,6 +125,11 @@ body {
 {
    margin:-12px;
    background: #0000 url("https://www.360training.com/wcsstore/AuroraStorefrontAssetStore/images/snake-loader-2.svg") no-repeat center center;
+}
+
+#CphMain_lblEnrollmentMessage
+{
+	color:greenyellow !important;
 }
 
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        202111.4.11
+@version        202116.6.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -256,11 +256,14 @@ h2.featureHeading
 #navbar.nav-flex #nav-belt .nav-right #nav-tools #nav-cart #nav-cart-count-container #nav-cart-count,
 #productDescription_feature_div > h2.default,
 #see-more-text,.a-price[data-a-color=base],
+.a-color-price,
+.a-fixed-left-grid .a-col-right a,
 .a-price-fraction,
 .a-size-base,
 .askTypicalExamples,
 .bucket h2,
 .ewc-style .ewc-color-price,
+.order-info .a-span2 .a-color-secondary.value,
 .p13n-sc-truncate-desktop-type2.p13n-sc-truncated,
 .pa_componentTitleTest h2,
 .sbx_mbd .sb_q-jIHN_O
@@ -271,6 +274,7 @@ h2.featureHeading
 /* Size 19px ________________*/
 
 #ask-btf-container,
+.a-button .a-button-inner a,
 .a-unordered-list,
 .aplus-v2 .launchpad-text-left-justify,
 ul
@@ -307,7 +311,6 @@ ul
 #nav-AssociateStripe .amzn-ss-link-container-label,
 .a-box-group > .a-box .a-box-inner .a-row,
 .amzn-ss-wrap .amzn-ss-disabled-txt,.a-price[data-a-size="s"][data-a-strike=true],.a-price[data-a-size=mini][data-a-strike=true],
-.a-size-small,
 .gw-card-layout .a-size-base,
 body
 {
@@ -803,41 +806,13 @@ ppp.nav-ewc-persistent-hover:not(.nav-ewc-compact-view).a-js .sg-col-16-of-20,
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Flyouts on other sites _______________________________________*p/
-
-#MTJkNDM5YTAt {
-    width: 20em;
-}
-
-#aa-xcomp #aa-xcomp-content,
-#aa-xcomp #aa-xcomp-container {
-    width: 23em;
-}
-
-
-
-
-
-
 }
 
 @-moz-document domain("amazon.com"), domain("amazonforum.com"), domain("worker.mturk.com"), domain("match.amazonbrowserapp.com"), domain("amazonbrowserapp.com") {
+
 /*__________________________________________________________________________________*/
 
+.a-button .a-button-inner a,
 .cr-lighthouse-term,
 a[href],
 td span

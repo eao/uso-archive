@@ -2,12 +2,12 @@
 @name           Steam Spoiler Away
 @namespace      USO Archive
 @author         deluxghost
-@description    `直接刮开一些剧透代码，支持 Steam、SteamCN、SteamGifts`
-@version        2017824.14.4
+@description    `直接刮开一些剧透代码，支持 Steam、Keylol、SteamGifts`
+@version        202116.12.34
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("steamcn.com") {
+@-moz-document domain("keylol.com") {
 .bbcode_spoiler_content {
 	opacity: initial;
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2020225.17.14
+@version        202116.5.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -68,23 +68,23 @@ selector {
 }
 
 #categoryContainer .SideBarMenuModuleV2,
-.CCTileDefault-icon.elc-icon,
-.CCTileStore-topIcon,
+.AddOnServicesModule .u-borderLeftWhite,
+.CCTileDefault-icon.elc-icon,.CCTileStore-topIcon,
 .FulfillmentBanner__flyoutContainer___ISIIa,
 .MultiStoryModule-overlay,
 .ProductAddOnServicesWrapper,
 .Search__searchForm___2UBW_,
-.a5_a,
-.a5_a.vh-is-focused,
+.a5_a,.a5_a.vh-is-focused,
 .b_c,
 .grocery-btn,
 .message.warn,
 .paginator .paginator-list li.active,
-.prod-ProductImage .slider .slider-list,
-.prod-alt-image-wrapper .prod-alt-image-carousel--active,
+.prod-ProductImage .slider .slider-list,.prod-alt-image-wrapper .prod-alt-image-carousel--active,
+.review-badge,
 .section-promo,
 .skip-link,
 .u-grey-border,
+.wpa-buybox-module.has-border .wpa-buybox-item,
 :focus {
 	border: none!important;
 	outline: none!important;
@@ -95,17 +95,45 @@ table {
 	border-spacing: 15px;
 }
 
+.TempoTileCarousel .slider-decorator-0,
+.TempoTileCarousel .slider-decorator-1,
+.TempoTileCarousel .slider-frame
+{
+	overflow: visible!important;
+}
+
 /*___ Fonts ________________________________________________________________________*/
 
+.price,
+.price-submap-flyout .slidepanel-body .price-submap-flyout-content
+{
+	font-size: 36px!important;
+}
+
+.review-header .review-title
+{
+	font-size: 23px!important;
+}
+
+#about-product-section .about-product-description-container,
+.CategoryNavbar .MainNavButton a,
+.Grid-col,
+.ProductAttribute__value2___1VnqJ,
+.checkout-comments-container .CommentsHeader-padding .CommentsHeader-subtext,
+.item-tile .tile-title,
 .payment-container .radio-tile.card-not-selectable .radio-tile-content .radio-tile-header .radio-tile-primary,
-.ProductAttribute__value2___1VnqJ {
+.price-old span,.price-ppu span,.price-save span,
+.review-body-text,
+.review-response-text,
+.search-result-product-description
+{
 	font-size: 19px!important;
 }
 
-.FulfillmentBanner__flyoutContent___1uy9W,
-.FulfillmentBanner__flyoutDeliveryContent___346CQ,
-.FulfillmentBanner__flyoutGeoSniffFailContent___j3gZe,
-.FulfillmentBanner__flyoutPickupContent___IFs2D,
+.breadcrumb-list,
+.field-input,
+.checkout-comments-container .product-comment-card .product-comment-card-footer,
+.FulfillmentBanner__flyoutContent___1uy9W,.FulfillmentBanner__flyoutDeliveryContent___346CQ,.FulfillmentBanner__flyoutGeoSniffFailContent___j3gZe,.FulfillmentBanner__flyoutPickupContent___IFs2D,
 .ModuleHeader-subheading {
 	font-size: 17px!important;
 }
@@ -113,6 +141,10 @@ table {
 .i_a,
 .stars-small .stars-reviews {
 	font-size: 15px!important;
+}
+
+.field-input {
+    line-height: 2.375;
 }
 
 /*___ Remove Items _________________________________________________________________*/
@@ -142,18 +174,17 @@ table {
 
 /*___ Margins ______________________________________________________________________*/
 
+#about-product-section,
 #categoryContainer .ResponsiveContainer,
-.LandingPage__banner___3sA2F,
-.LandingPage__carouselContainer___3gkzo,
-.MultiLinkPOVCarousel,
-.MultiStoryModule,
+#checkout-comments,
+#product-reviews,
+.LandingPage__banner___3sA2F,.LandingPage__carouselContainer___3gkzo,
+.MultiLinkPOVCarousel,.MultiStoryModule,
 .SEO-metadata .TempoTileCollapsible,
 .TempoZoneLayout.TempoZoneLayout-navbar~.Grid,
 .cp-left-module,
 .related-search-container,
-.search-product-result,
-.search-result-listview-items>div .search-result-listview-item,
-.search-results,
+.search-product-result,.search-result-listview-items>div .search-result-listview-item,.search-results,
 .sidebar-container,
 .util-bar-container {
 	margin: 12px!important;
@@ -166,29 +197,28 @@ table {
 
 /*___ Paddings _____________________________________________________________________*/
 
+#about-product-section,
 #categoryContainer .ResponsiveContainer,
+#checkout-comments,
+#product-reviews,
 #sign-in-widget .form-box,
+.AddOnServicesModule .u-borderLeftWhite,
 .CategoryApp-leftNav,
 .HeroCategoryPanel,
-.LandingPage__banner___3sA2F,
-.LandingPage__carouselContainer___3gkzo,
+.LandingPage__banner___3sA2F,.LandingPage__carouselContainer___3gkzo,
 .MultiStoryModule,
-.ProductDetails__hLine___3VBUx,
-.ProductDetails__right___1hwgL,
+.ProductDetails__hLine___3VBUx,.ProductDetails__right___1hwgL,
 .ProductsPage__left___1yzKu,
-.TempoTileCarousel,
-.TempoZoneLayout.TempoZoneLayout-navbar~.Grid,
+.TempoTileCarousel,.TempoZoneLayout.TempoZoneLayout-navbar~.Grid,
 .ads-margin-top,
 .cp-left-module,
 .item-tile .tile,
 .merchant-module-wrapper .merchant-module-container .merchant-module,
 .related-search-container,
-.search-product-result,
-.search-result-gridview-item,
-.search-result-listview-items>div .search-result-listview-item,
-.search-results,
+.search-product-result,.search-result-gridview-item,.search-result-listview-items>div .search-result-listview-item,.search-results,
 .sidebar-container,
-.util-bar-container {
+.util-bar-container
+{
 	padding: 12px!important;
 }
 
@@ -203,7 +233,10 @@ button {
 
 /*___ Heights ______________________________________________________________________*/
 
-.search-result-product-title.listview .line-clamp-2 {
+.collapsable, .collapsable:not(.collapsable--open),.collapsable-content-container,
+.review-body,.review-body-text,.review-text,
+.search-result-product-title.listview .line-clamp-2
+{
 	height: auto!important;
 }
 
@@ -215,14 +248,22 @@ button {
 	height: 89px;
 }
 
+ppp.collapsable,
+ppp.collapsable:not(.collapsable--open),
+ppp.collapsable-content-container
+ {
+    min-height: 14rem!important;
+}
+
 /*___ Widths _______________________________________________________________________*/
 
 .MarketingBanner,
 .ResponsiveContainer,
 .be_c,
 .home,
-.search-product-result,
-.search-results {
+.review-body-text,.review-response-text,
+.search-product-result,.search-results
+{
 	max-width: none!important;
 }
 
@@ -230,6 +271,7 @@ button {
 	width: auto!important;
 }
 
+.CustomerReviews-container .ReviewRatingWYR-container,
 .ResponsiveContainer,
 .home {
 	width: 98%!important;
@@ -244,10 +286,12 @@ button {
 /*__________________________________________________________________________________*/
 
 .FulfillmentBanner__flyoutGotIt___22Hv0,
+.btn-fake-link,
 .favoritesTabs__shopFavoritesLink___1cVc4,
+.prod-productsecondaryinformation .secondary-info-margin-right .button-wrapper,
 .shelf-navigation .Tile-heading-link,
 .sidebar-container .expander .facet-see-more,
-a[href],
+a,a[href],
 td span {
 	color: #0ff!important;
 	text-shadow: 1px 1px #000!important;
@@ -262,34 +306,32 @@ a[href]:visited {
 
 #categoryContainer .SideBarMenuModuleV2 .SideBarMenuModuleItem:hover .SideBarMenu-title,
 #sign-in-widget .button-link,
-.CartItem__itemContainer___MYHta:focus .CartItem__name___2Ym-9,
-.CartItem__itemContainer___MYHta:hover .CartItem__name___2Ym-9,
+.CartItem__itemContainer___MYHta:focus .CartItem__name___2Ym-9,.CartItem__itemContainer___MYHta:hover .CartItem__name___2Ym-9,
 .Filter__itemWrapper___3N_Tw:hover button,
 .FulfillmentBanner__flyoutGotIt___22Hv0:hover,
 .NavigationPanel__aisle___1HQGc .NavigationPanel__item___2cVtS:hover,
 .ProductAttribute__value2___1VnqJ,
 .applied-filters-container .header .clear-all:hover,
+.btn-fake-link:hover,
 .f_a.o_a.ac_c:hover .i_a,
 .favoritesTabs__shopFavoritesLink___1cVc4:hover,
 .paginator .paginator-list li.active a,
+.prod-productsecondaryinformation .secondary-info-margin-right .button-wrapper:hover,
 .radio input:checked+.radio-content,
 .sidebar-container .expander .facet-see-more:hover,
 .stars,
-a[href]:hover span,
-a[href]:hover,
+a:hover,a[href]:hover span,a[href]:hover,
 h1,
-input[type="checkbox"]:checked+label,
-input[type="radio"]:checked+label {
+input[type="checkbox"]:checked+label,input[type="radio"]:checked+label {
 	color: #ff0!important;
 	text-shadow: 1px 1px #000!important;
 }
 
 /*__________________________________________________________________________________*/
 
-#categoryContainer .SideBarMenuModuleV2 .SideBarMenuModuleItem .SideBarMenu-title,
-#categoryContainer .SideBarMenuModuleV2 .SideBarMenuModuleItem .SidebarMenu-icon,
-.Cart__footer___1o5UG,
-.Cart__header___32ugu,
+#categoryContainer .SideBarMenuModuleV2 .SideBarMenuModuleItem .SideBarMenu-title,#categoryContainer .SideBarMenuModuleV2 .SideBarMenuModuleItem .SidebarMenu-icon,
+.AboutThisItem .aboutModuleText,
+.Cart__footer___1o5UG,.Cart__header___32ugu,
 .Filter__itemCount___2_04A,
 .FulfillmentBanner__address___Gp0kJ,
 .ModuleHeader-subheading,
@@ -300,44 +342,30 @@ input[type="radio"]:checked+label {
 .alert-warning,
 .applied-filters-container .header .clear-all,
 .cards-tile,
-.credit-card,
-.credit-card.is-expired,
+.checkout-comments-container .CommentsHeader-padding .CommentsHeader-subtext,
+.credit-card,.credit-card.is-expired,
 .f_a,
 .flowtip-flyout,
 .i_a,
 .idmlDocumentsSubtext,
 .message.warn,
-.prod-productsecondaryinformation .other-info,
-.prod-productsecondaryinformation .wm-item-number,
-.product-media-rating,
-.productTile__changeStep___23wp8,
-.productTile__inCart___3JCM5,
-.productTile__priceContainerOldItemPage___212rd,
-.productTile__priceContainerOld___sgN4K,
+.prod-productsecondaryinformation .other-info,.prod-productsecondaryinformation .wm-item-number,
+.product-media-rating,.productTile__changeStep___23wp8,.productTile__inCart___3JCM5,.productTile__priceContainerOldItemPage___212rd,.productTile__priceContainerOld___sgN4K,
 .promo-message-container,
 .radio-content,
-.search-app.feature-2price-1 .search-result-listview-items .free-pickup,
-.search-app.feature-2price-1 .search-result-listview-items .free-pickup-today,
-.search-app.feature-2price-1 .search-result-listview-items .free-shipping,
-.search-app.feature-2price-1 .search-result-listview-items .free-threshold-shipping,
-.search-app.feature-2price-1 .search-result-listview-items .marketplace-sold-by,
-.search-app.feature-2price-1 .search-result-listview-items .search-result-shipping-pass,
-.search-product-result .marketplace-sold-by-company-name,
-.search-product-result .search-result-product-shipping-details,
-.search-product-result .shipping-longer-sub,
+.search-app.feature-2price-1 .search-result-listview-items .free-pickup,.search-app.feature-2price-1 .search-result-listview-items .free-pickup-today,.search-app.feature-2price-1 .search-result-listview-items .free-shipping,.search-app.feature-2price-1 .search-result-listview-items .free-threshold-shipping,.search-app.feature-2price-1 .search-result-listview-items .marketplace-sold-by,.search-app.feature-2price-1 .search-result-listview-items .search-result-shipping-pass,.search-product-result .marketplace-sold-by-company-name,.search-product-result .search-result-product-shipping-details,.search-product-result .shipping-longer-sub,.search-result-sponsored-product .sponsored-product-search,
 .sidebar-container .stars-and-up,
 .stars-reviews,
 .table,
-.u-textGray,
-.u-textGrey,
+.u-textGray,.u-textGrey,
 .util-bar button.button,
-.wc-aplus .wc-rich-features .wc-rich-content-description,
-.wc-aplus ul li,
+.wc-aplus .wc-rich-features .wc-rich-content-description,.wc-aplus ul li,
 body,
-html,
 button,
+html,
 li,
-p {
+p
+{
 	color: #fff!important;
 	text-shadow: 1px 1px #000!important;
 }
@@ -345,6 +373,8 @@ p {
 /*___ Khaki ________________________________________________________________________*/
 
 #categoryContainer .SideBarMenuModuleV2 .expander-toggle,
+.AccordionCard-header,
+.CategoryNavbar .NavTile-label,
 .EditorialPanels-panelTitle,
 .FulfillmentBanner__title___3sisO,
 .HeroBrand .TempoCategoryTile-linkText,
@@ -356,17 +386,11 @@ p {
 .Title__browseTitle___1_aLK,
 .display-name,
 .favoritesTabs__favoritesTabHeader___1FioS,
-.heading-a,
-.heading-b,
-.heading-c,
-.heading-d,
-.heading-e,
-.heading-f,
+.heading-a,.heading-b,.heading-c,.heading-d,.heading-e,.heading-f,
 .l_b,
 .module__HEADING___YrvbH,
 .payment-container .radio-tile .radio-tile-content .radio-tile-header .radio-tile-primary,
-.review-footer-userNickname,
-.review-highlights .highlight-title,
+.review-footer-userNickname,.review-highlights .highlight-title,
 .search-result-product-description .prod-desc-priceUI-1,
 .sidebar-container .button--link.expander-toggle,
 .w_a,
@@ -384,6 +408,7 @@ h2 {
 .RatingFilter,
 .TempoCategoryTile-subText,
 .review-highlights .highlight-count,
+.s-padding-ends.s-padding-sides:first-child,
 .wc-aplus ul.wc-rich-features .wc-has-media h3.wc-feature-main-header,
 h3,
 h4 {
@@ -393,6 +418,7 @@ h4 {
 
 /*___ Sandy Brown __________________________________________________________________*/
 
+.ReviewHelpfulness .helpful-text,
 .ShippingMessage-container.color-black,
 .Title__sorterRight___3uAy1,
 .ada-label,
@@ -400,10 +426,7 @@ h4 {
 .departments-facet-desktop .expander-text,
 .multilevel-departments-facet .expander-text,
 .productTile__sponsoredTile___3-Cr-,
-.search-result-product-shipping-details,
-.search-result-productprice .product-list-price-block,
-.search-result-productprice .secondary-price-prefix,
-.seo-relm-facet .expander-text,
+.search-result-product-shipping-details,.search-result-productprice .product-list-price-block,.search-result-productprice .secondary-price-prefix,.seo-relm-facet .expander-text,
 .w_g,
 .wc-aplus b,
 h5,
@@ -416,9 +439,9 @@ label {
 /*___ Blue _________________________________________________________________________*/
 
 .font-semibold.expires.js-expires,
-.fulfillment-shipping-text p,
-.fulfillment-text,
+.fulfillment-shipping-text p,.fulfillment-text,
 .last-answer-date,
+.review-response-time,
 [data-automation-id="text-review-pickup-selected-date"],
 [itemprop="datePublished"],
 time {
@@ -429,15 +452,10 @@ time {
 /*___ Green ________________________________________________________________________*/
 
 .CartItem__price___mlZd3,
-.Cart__cartMinMax___3a2yH,
-.Cart__cartMinimum___2bss4,
+.Cart__cartMinMax___3a2yH,.Cart__cartMinimum___2bss4,
 .ListPrice__listPrice___1xpuj,
-.Price__containerPrice___qhIUd,
-.Price__groceryPriceContainer___19-ex,
-.price,
-.productTile__pricePerUnitOG___3GzQm,
-.productTile__pricePerUnit___1pcv6,
-.productTile__price___HuMLv,
+.Price__containerPrice___qhIUd,.Price__groceryPriceContainer___19-ex,.price,
+.productTile__pricePerUnitOG___3GzQm,.productTile__pricePerUnit___1pcv6,.productTile__price___HuMLv,
 .promo-message-container b,
 .styles__price___6Dyk8,
 .yes-no-count,
@@ -451,16 +469,15 @@ time {
 /*___ Red __________________________________________________________________________*/
 
 .payment-container .radio-tile.card-not-selectable .radio-tile-content .radio-tile-header .radio-tile-primary,
+.price-old span,.price-old span,.price-ppu span,.price-save span,
 .price.display-inline-block.arrange-fit.price.price-secondary,
-.price-old span,
-.search-result-productprice .product-in-store-only,
-.search-result-productprice .product-pickup-only {
+.search-result-productprice .product-in-store-only,.search-result-productprice .product-pickup-only
+{
 	color: #ff0707!important;
 	text-shadow: 1px 0px 5px #f00!important;
 }
 
 /*__________________________________________________________________________________*/
-
 
 input,
 input[type=email],
@@ -519,13 +536,17 @@ html {
 }
 
 .content-fadeout.has-toggle:after {
-	background-image: linear-gradient(180deg, #07beff00, #07beff);
+    background-image: none;
+}
+
+.modal.modal-transparent.pro-videoSectionModal, .modal.modal-transparent.prod-ZoomImage-dialog, .modal.modal-transparent.review-media-modal {
+    background: #000000e0;
 }
 
 /*___ Background Gray ______________________________________________________________*/
 
-.be_a,
-.be_c,
+.an_b,
+.bg_b,.be_a,.be_c,
 .js-footer,
 .styles__navbar___15IFv,
 .util-bar-container,
@@ -533,8 +554,7 @@ header {
 	background-color: #060505!important;
 }
 
-.Cart__footer___1o5UG,
-.Cart__header___32ugu,
+.Cart__footer___1o5UG,.Cart__header___32ugu,
 .FulfillmentBanner__changeStoreButtonBanner___3Kk4b,
 .MarketingBanner,
 .ReservationOrderBanner__banner___1BK6H,
@@ -545,8 +565,7 @@ header {
 /*___ Background 0000 ______________________________________________________________*/
 
 .CartItem__itemContainer___MYHta,
-.HeroBrand .TempoCategoryTile-linkText,
-.HeroItemCollection-story-block,
+.HeroBrand .TempoCategoryTile-linkText,.HeroItemCollection-story-block,
 .TempoCategoryTile-tile,
 .util-bar {
 	background: rgba(0, 0, 0, 0)!important;
@@ -555,24 +574,25 @@ header {
 /*___ Background-color 0000 ________________________________________________________*/
 
 .Cart__header___32ugu,
-.NavigationPanel__aisle___1HQGc .NavigationPanel__item___2cVtS,
-.NavigationPanel__shelf___wYIYU .NavigationPanel__item___2cVtS,
+.NavigationPanel__aisle___1HQGc .NavigationPanel__item___2cVtS,.NavigationPanel__shelf___wYIYU .NavigationPanel__item___2cVtS,
 .ProductAddOnServicesWrapper .AddOnServicesModule-title,
 .ProductPage__container___SLXU5,
 .ReviewHistogram,
 .Search__searchBtn___15U4m,
 .a5_a,
+.a8_a,
 .al_a,
 .cards-tile,
 .credit-card,
 .grocery-btn,
 .paginator .paginator-hairline-btn.outline,
+.prod-social-wrapper button,
 .search-result-product-description,
 .styles__mainContent___2u4us,
-.u-bgSuperLightGray,
-.u-bgSuperLightGrey,
-.util-bar .desktop-bar-left>div>button:focus,
-.util-bar .desktop-bar-left>div>button:hover {
+.u-bgSuperLightGray,.u-bgSuperLightGrey,
+.util-bar .desktop-bar-left>div>button:focus,.util-bar .desktop-bar-left>div>button:hover,
+table.table-striped tr:nth-child(2n) td
+{
 	background-color: rgba(0, 0, 0, 0)!important;
 }
 
@@ -632,9 +652,8 @@ button[data-automation-id=save-cc]:active {
 /*__ Dark Green ________________________________________________________________________*/
 
 .AddToCart__buttonAddToCart___6kAog,
-.buttons__btn-primary___9p-lA,
-.buttons__secondaryButton___3pJjU,
-.buttons__secondaryButtonQuantityChange___hp8PX {
+.buttons__btn-primary___9p-lA,.buttons__secondaryButton___3pJjU,.buttons__secondaryButtonQuantityChange___hp8PX
+{
 	background-image: linear-gradient(to bottom right, #004911, #000)!important;
 	border-radius: 35px!important;
 	border: none!important;
@@ -643,28 +662,25 @@ button[data-automation-id=save-cc]:active {
 }
 
 .AddToCart__buttonAddToCart___6kAog:hover,
-.buttons__btn-primary___9p-lA:hover,
-.buttons__secondaryButtonQuantityChange___hp8PX:hover,
-.buttons__secondaryButton___3pJjU:hover {
+.buttons__btn-primary___9p-lA:hover,.buttons__secondaryButtonQuantityChange___hp8PX:hover,.buttons__secondaryButton___3pJjU:hover
+{
 	background-image: linear-gradient(to bottom right, #115a22, #000)!important;
 	color: #ff0!important;
 }
 
 .AddToCart__buttonAddToCart___6kAog:active,
-.buttons__btn-primary___9p-lA:active,
-.buttons__secondaryButtonQuantityChange___hp8PX:active,
-.buttons__secondaryButton___3pJjU:active {
+.buttons__btn-primary___9p-lA:active,.buttons__secondaryButtonQuantityChange___hp8PX:active,.buttons__secondaryButton___3pJjU:active
+{
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
 /*___ Green ________________________________________________________________________*/
 
-#add-to-list-container,
-#add-to-registery-container,
+.wpa-buybox-redesigned .wpa-buybox-link .item-cta-text,
+#add-to-list-container,#add-to-registery-container,
 .Cart__largeCheckoutButton___2DUEl,
 .btn-primary,
-.button--ghost,
-.button--primary {
+.button--ghost,.button--primary {
 	background-image: linear-gradient(to bottom right, #81BC2E, #000)!important;
 	border-radius: 35px!important;
 	border: none!important;
@@ -672,22 +688,20 @@ button[data-automation-id=save-cc]:active {
 	color: #fff!important;
 }
 
-#add-to-list-container:hover,
-#add-to-registery-container:hover,
+.wpa-buybox-redesigned .wpa-buybox-link .item-cta-text:hover,
+#add-to-list-container:hover,#add-to-registery-container:hover,
 .Cart__largeCheckoutButton___2DUEl:hover,
 .btn-primary:hover,
-.button--ghost:hover,
-.button--primary:hover {
+.button--ghost:hover,.button--primary:hover {
 	background-image: linear-gradient(to bottom right, #92cd3f, #000)!important;
 	color: #ff0!important;
 }
 
-#add-to-list-container:active,
-#add-to-registery-container:active,
+.wpa-buybox-redesigned .wpa-buybox-link .item-cta-text:active,
+#add-to-list-container:active,#add-to-registery-container:active,
 .Cart__largeCheckoutButton___2DUEl:active,
 .btn-primary:active,
-.button--ghost:active,
-.button--primary:active {
+.button--ghost:active,.button--primary:active {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
@@ -712,34 +726,27 @@ button[data-automation-id=save-cc]:active {
 
 /*___ Plain Black __________________________________________________________________*/
 
+#about-product-section,
 #categoryContainer .ResponsiveContainer,
+#checkout-comments,
 #prescriptive-oss-wrapper,
+#product-reviews,
 #sign-in-widget .form-box,
 .CategoryApp-leftNav,
 .CustomerConnection,
 .HeroCategoryPanel,
-.LandingPage__banner___3sA2F,
-.LandingPage__carouselContainer___3gkzo,
-.MultiLinkPOVCarousel,
-.MultiStoryModule,
+.LandingPage__banner___3sA2F,.LandingPage__carouselContainer___3gkzo,
+.MultiLinkPOVCarousel,.MultiStoryModule,
 .OWM-Section,
-.ProductDetails__hLine___3VBUx,
-.ProductDetails__right___1hwgL,
-.ProductsPage__left___1yzKu,
+.ProductDetails__hLine___3VBUx,.ProductDetails__right___1hwgL,.ProductsPage__left___1yzKu,
 .SEO-metadata,
-.TempoTileCarousel,
-.TempoTileCollapsible,
-.TempoZoneLayout.TempoZoneLayout-navbar~.Grid,
+.TempoTileCarousel,.TempoTileCollapsible,.TempoZoneLayout.TempoZoneLayout-navbar~.Grid,
 .ads-margin-top,
 .align-center.tempo-module,
 .merchant-module,
-.paginator,
 .payment-module__PAYMENT_MODULE___3JeGu,
-.productTile__itemPageTileLong___1Pji6,
-.productTile__itemTileLong___3EFp7,
-.search-product-result,
-.search-result-listview-items>div .search-result-listview-item,
-.search-results,
+.productTile__itemPageTileLong___1Pji6,.productTile__itemTileLong___3EFp7,
+.search-product-result,.search-result-listview-items>div .search-result-listview-item,.search-results,
 .section-promo,
 .sidebar-container,
 .styles__sideBar___3_gFy,
@@ -750,43 +757,42 @@ button[data-automation-id=save-cc]:active {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+#about-product-section:hover,
 #categoryContainer .ResponsiveContainer:hover,
+#checkout-comments:hover,
 #prescriptive-oss-wrapper:hover,
+#product-reviews:hover,
 #sign-in-widget .form-box:hover,
 .CategoryApp-leftNav:hover,
 .CustomerConnection:hover,
 .HeroCategoryPanel:hover,
-.LandingPage__banner___3sA2F:hover,
-.LandingPage__carouselContainer___3gkzo:hover,
+.LandingPage__banner___3sA2F:hover,.LandingPage__carouselContainer___3gkzo:hover,
 .MultiLinkPOVCarousel:hover,
 .MultiStoryModule:hover,
 .OWM-Section:hover,
-.ProductDetails__hLine___3VBUx:hover,
-.ProductDetails__right___1hwgL:hover,
-.ProductsPage__left___1yzKu:hover,
+.ProductDetails__hLine___3VBUx:hover,.ProductDetails__right___1hwgL:hover,.ProductsPage__left___1yzKu:hover,
 .SEO-metadata:hover,
-.TempoTileCarousel:hover,
-.TempoTileCollapsible:hover,
+.TempoTileCarousel:hover,.TempoTileCollapsible:hover,
 .TempoZoneLayout.TempoZoneLayout-navbar~.Grid:hover,
 .ads-margin-top:hover,
 .align-center.tempo-module:hover,
 .merchant-module:hover,
-.paginator:hover,
 .payment-module__PAYMENT_MODULE___3JeGu:hover,
-.productTile__itemPageTileLong___1Pji6:hover,
-.productTile__itemTileLong___3EFp7:hover,
-.search-product-result:hover,
-.search-result-listview-items>div .search-result-listview-item:hover,
-.search-results:hover,
+.productTile__itemPageTileLong___1Pji6:hover,.productTile__itemTileLong___3EFp7:hover,
+.search-product-result:hover,.search-result-listview-items>div .search-result-listview-item:hover,.search-results:hover,
 .section-promo:hover,
 .sidebar-container:hover,
 .styles__sideBar___3_gFy:hover,
-.u-bgPrimaryWhite:hover {
+.u-bgPrimaryWhite:hover
+{
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 /*___ Plain ________________________________________________________________________*/
 
+.ProductAddOnServicesWrapper,
+.fulfillment-buy-box-update,
+.checkout-comments-container .product-comment-card .use-background,
 #categoryContainer .SideBarMenuModuleV2 .SideBarMenuModuleItem .SideBarMenu-flyout,
 .CategoryNavbar .NavFlyout-container,
 .NavFlyout__nav___10YVo,
@@ -801,12 +807,15 @@ button[data-automation-id=save-cc]:active {
 .related-search-container,
 .search-result-gridview-item,
 .x_a {
-	background-color: #111!important;
+	background-color: #1c1c1c!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.ProductAddOnServicesWrapper:hover,
+.fulfillment-buy-box-update:hover,
+.checkout-comments-container .product-comment-card .use-background:hover,
 #categoryContainer .SideBarMenuModuleV2 .SideBarMenuModuleItem .SideBarMenu-flyout:hover,
 .CategoryNavbar .NavFlyout-container:hover,
 .NavFlyout__nav___10YVo:hover,
@@ -866,6 +875,7 @@ button[data-automation-id=save-cc]:active {
 
 /*___ Highlight Background _________________________________________________________*/
 
+.product-specification-table tr:hover,
 .Filter__itemWrapper___3N_Tw:hover,
 .NavigationPanel__aisle___1HQGc .NavigationPanel__item___2cVtS:hover,
 .NavigationPanel__shelf___wYIYU .NavigationPanel__item___2cVtS:hover,
@@ -884,6 +894,26 @@ button[data-automation-id=save-cc]:active {
 .MultiStoryModule-overlay {
 	background: #3e9af840;
 }
+
+/*___ Radial Background _________________________________________________________*/
+
+#b_results .b_topborder .chevronContainerDown,
+#b_results .b_topborder .chevronContainerDown:active
+{
+	background: radial-gradient(ellipse at center, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%)!important;
+}
+
+.review-badge {
+	background: radial-gradient(ellipse at center, #00809d 0%,rgba(14,14,14,1) 70%)!important;
+}
+
+.aa_a {
+	background: radial-gradient(ellipse at center, #00809d 0%,rgba(14, 14, 14, 0) 70%)!important;
+}
+
+
+
+
 }
 
 @-moz-document domain("walmart.com") {
@@ -894,20 +924,28 @@ button[data-automation-id=save-cc]:active {
 .EditorialPanels-single-panel,
 .FeaturedCategoriesCollapsible .TempoTileCollapsible-expander .TempoCategoryTile,
 .Filter__itemWrapper___3N_Tw,
+
+
 .HeroCategoryPanel-tileWrap,
 .NutritionFacts__nutritionTable___AoxN4 tr,
 .OWM-BookSlot-SlotTime,
 .ProductAttribute__value2___1VnqJ p,
+.checkout-comments-container .product-comment-card .use-background,
 .option .option-content,
+
+
 .search-product-result .search-result-gridview-items>li.Grid-col,
 .search-product-result .search-result-listview-items .Grid,
 .search-result-product-description li,
 .slider-list li,
 .specification tr,
-.styles__itemCarousel___1Mkfo [class^=slider-slide],
-li
+.styles__itemCarousel___1Mkfo [class^=slider-slide]
 {
 	filter: brightness(75%)!important;
+}
+
+.CategoryNavbar .NavFlyout-container.adjusted [aria-hidden="true"] {
+    visibility: visible!important;
 }
 
 /*__________________________________________________________________________________*/
@@ -917,20 +955,21 @@ li
 .EditorialPanels-single-panel:hover,
 .FeaturedCategoriesCollapsible .TempoTileCollapsible-expander .TempoCategoryTile:hover,
 .Filter__itemWrapper___3N_Tw:hover,
+
 .HeroCategoryPanel-tileWrap:hover,
 .NutritionFacts__nutritionTable___AoxN4 tr:hover,
 .OWM-BookSlot-SlotTime:hover,
 .ProductAttribute__value2___1VnqJ p:hover,
+.checkout-comments-container .product-comment-card .use-background:hover,
 .option .option-content:hover,
+
 .search-product-result .search-result-gridview-items>li.Grid-col:hover,
 .search-product-result .search-result-listview-items .Grid:hover,
 .search-result-listview-items>div .search-result-listview-item:hover img,
 .search-result-product-description li:hover,
-.slider-list li .prod-alt-image-carousel--active img,
-.slider-list li:hover,
+.slider-list li .prod-alt-image-carousel--active img,.slider-list li:hover,
 .specification tr:hover,
-.styles__itemCarousel___1Mkfo [class^=slider-slide]:hover,
-li:hover
+.styles__itemCarousel___1Mkfo [class^=slider-slide]:hover
 {
 	filter: brightness(100%)!important;
 }
@@ -961,9 +1000,12 @@ img {
 	opacity: 0!important;
 }
 
-selector:hover {
+.CategoryNavbar .MainNavButton.active .NavFlyout-container {
 	opacity: 1!important;
 }
+
+
+
 }
 
 @-moz-document domain("walmart.com") {
@@ -1056,9 +1098,20 @@ selector:hover {
 
 /* Arrow Up _______________________________________________________________*/
 
+.elc-icon-up-arrow:before {
+    content: "";
+}
+
+.elc-icon-up-arrow:before,
 .vhf-icn-pre-fill.typeahead-icon.typeahead-icon-after {
-	background: url(https://i.ibb.co/dt3p6Gj/arrow-upleft.png) no-repeat!important;
+	background: url(https://i.ibb.co/bvZmSFj/red-up.png) no-repeat!important;
 	box-sizing: border-box;
+}
+
+.elc-icon-up-arrow:before {
+	background-size: 21px!important;
+	height: 18px!important;
+	padding-left: 26px!important;
 }
 
 .vhf-icn-pre-fill.typeahead-icon.typeahead-icon-after {
@@ -1284,12 +1337,16 @@ selector:hover {
 
 /* Full ______________________________________*/
 
-.favoriteButton__elc-icon-favorite___1UzeE:before {
+.favoriteButton__elc-icon-favorite___1UzeE:before,
+[src="//i5.walmartimages.com/dfw/63fd9f59-6aed/824dae3a-da8f-4afb-be97-a42a31a64d4f/v1/heart-white.82af709fed14b5f46a5a6321f258b3490f22a11f.svg"]
+{
 	background: url(https://i.ibb.co/FB9kX4W/healthy-heart.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-.favoriteButton__elc-icon-favorite___1UzeE:before {
+.favoriteButton__elc-icon-favorite___1UzeE:before,
+[src="//i5.walmartimages.com/dfw/63fd9f59-6aed/824dae3a-da8f-4afb-be97-a42a31a64d4f/v1/heart-white.82af709fed14b5f46a5a6321f258b3490f22a11f.svg"]
+{
 	background-size: 28px!important;
 	padding-left: 28px!important;
 }
@@ -1424,19 +1481,24 @@ selector:hover {
 
 /* Stars _______________________________________________________________*/
 
+.star-partial:after {
+    background: #fff0;
+}
+
+.star-small {
+    font-size: 0.5rem;
+}
+
+.elc-icon-star-rating:before {
+    content: "";
+}
+
 /* Hollow ________________*/
 
 .gicon-star-empty,
 .star-empty {
 	background: url(https://i.ibb.co/VBcDjnC/star-empty-glow.png) no-repeat!important;
 	box-sizing: border-box;
-}
-
-.gicon-star-empty,
-.star-empty {
-	background-size: 25px!important;
-	height: 23px!important;
-	padding-left: 23px!important;
 }
 
 /* Filled ________________*/
@@ -1447,13 +1509,6 @@ selector:hover {
 	box-sizing: border-box;
 }
 
-.gicon-star-rated,
-.star-rated {
-	background-size: 25px!important;
-	height: 23px!important;
-	padding-left: 23px!important;
-}
-
 /* Partial ________________*/
 
 .gicon-star-partial-small,
@@ -1462,11 +1517,16 @@ selector:hover {
 	box-sizing: border-box;
 }
 
+.gicon-star-empty,
 .gicon-star-partial-small,
-.stars-small .star-partial {
-	background-size: 25px!important;
-	height: 23px!important;
-	padding-left: 23px!important;
+.gicon-star-rated,
+.star-empty,
+.star-rated,
+.stars-small .star-partial
+{
+    background-size: 20px!important;
+    height: 20px!important;
+    padding-left: 21px!important;
 }
 
 /* Store _______________________________________________________________*/
