@@ -1,0 +1,12 @@
+/* ==UserStyle==
+@name           Microsoft Rewards Solutions
+@namespace      USO Archive
+@author         Simone Pellegatta
+@description    `In Microsoft multiple-choice quizzes the right answers will be highlighted in red.`
+@version        202117.7.48
+@license        CC-BY-4.0
+@preprocessor   uso
+==/UserStyle== */
+[iscorrectoption=True] {
+	background-color: red !important;
+}

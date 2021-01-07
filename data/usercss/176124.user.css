@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Akito Itashi
 @description    `This a little theme for Whatsapp, where you can put your favorite picture in the background with some nice UI :)`
-@version        202072.2.30
+@version        202117.11.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color accent "Akzentfarbe" #55F2CF
@@ -15,13 +15,15 @@
 
 ==/UserStyle== */
 @-moz-document url(https://web.whatsapp.com/) {
-:root {
+body, body.dark {
     --accent: /*[[accent]]*/;
-    --image: url('/*[[image]]*/');
+    --image: url(/*[[image]]*/);
     --app-background-stripe: transparent;
     --background-default: rgba(0, 0, 0, 0.25);
     --background-default-active: rgba(255, 255, 255, 0.2);
     --background-default-hover: rgba(255, 255, 255, 0.1);
+    --badge-icon: #fff;
+    --badge-icon-rgb: 255,255,255;
     --border: rgba(255, 255, 255, 0.04);
     --border-chatlist: var(--border-stronger);
     --border-panel: transparent;
@@ -80,45 +82,55 @@
     --secondary-stronger: #ddd;
     --system-message-background: var(--intro-background);
     --system-message-text: var(--primary);
-    --teal: var(--accent);
     --unread-background: var(--intro-background);
     --unread-bar-background: var(--intro-background);
     --unread-marker-background: var(--accent);
 }
 
 /* Body reset */
-body {
-    font-family: font_name, 'Roboto', sans-serif;
-    background-image: var(--image);
-    background-size: cover;
-    background-color: var(--dark);
+body, body.dark {
+    font-family: font_name, 'Roboto', sans-serif !important;
+    background-image: var(--image) !important;
+    background-size: cover !important;
+    background-color: var(--dark) !important;
 }
 .app-wrapper-web {
     background-image: none !important;
 }
 #startup, #initial_startup {
-    background-color: var(--dark);
+    background-color: var(--dark) !important;
 }
 .spinner-path {
-    stroke: var(--accent);
+    stroke: var(--accent) !important;
 }
 #progressbar {
-    color: var(--accent);
-    background-color: #fff;
+    color: var(--accent) !important;
+    background-color: #fff !important;
 }
 .vW7d1 {
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 4% !important;
+    padding-right: 4% !important;
 }
-.h70RQ {
+._36Q2N, ._36Q2N:after, ._2BQrC {
     background-color: transparent !important;
+    box-shadow: none !important;
 }
-.app-wrapper-web .two > ._1xXdX, .app-wrapper-web .two > .Wu52Z, .app-wrapper-web .three > ._1xXdX, .app-wrapper-web .three > .Wu52Z {
+.app-wrapper-web .two > ._2NwAr, .app-wrapper-web .two > ._2l_Ww, .app-wrapper-web .three > ._2NwAr, .app-wrapper-web .three > ._2l_Ww, ._2k4Ax {
     background-color: var(--panel-background-lighter) !important;
-    border-radius: 5px;
+    border-radius: 5px !important;
+}
+.app-wrapper-web .three ._299go {
+    background: none !important;
+    border-radius: 5px !important;
+}
+._LNcL {
+    padding-bottom: 0 !important;
 }
 ._15G96 {
-    color: var(--icon-lighter);
+    color: var(--icon-lighter) !important;
+}
+[data-asset-chat-background-dark] {
+    background: none !important;
 }
 ._1ypOz {
     background-color: var(--panel-background) !important;
@@ -147,10 +159,10 @@ body {
     background-color: var(--outgoing-background) !important;
 }
 .message-in .tail-container {
-    filter: brightness(0.26) grayscale(1);
+    filter: brightness(0.26) grayscale(1) !important;
 }
 .message-out .tail-container {
-    filter: brightness(0.16) grayscale(1);
+    filter: brightness(0.16) grayscale(1) !important;
 }
 
 /* Remove Chat Background */
@@ -165,90 +177,90 @@ body {
 }
 
 /* Flex for .two */
-.app-wrapper-web .two ._1xXdX {
-    flex: 0 0 77px;
+.app-wrapper-web .two ._2NwAr {
+    flex: 0 0 77px !important;
     transition: 0.5s flex-basis ease-in-out;
-    margin-right: 5px;
+    margin-right: 5px !important;
 }
-.app-wrapper-web .two ._1xXdX ._itDl, .app-wrapper-web .two ._1xXdX ._2FBdJ {
-    opacity: 0;
-    transition: 0.5s opacity ease-in-out;
+.app-wrapper-web .two ._2NwAr ._itDl, .app-wrapper-web .two ._2NwAr ._2FBdJ {
+    opacity: 0 !important;
+    transition: 0.5s opacity ease-in-out !important;
 }
 .app-wrapper-web .two ._3Bxar {
-    overflow: visible;
+    overflow: visible !important;
 }
 .app-wrapper-web .two ._15G96 {
-	left: -35px;
-    position: relative;
-    z-index: 100;
-    color: var(--accent);
-    transition: 0.5s left ease-in-out, 0.5s color ease-in-out;
+	left: -35px !important;
+    position: relative !important;
+    z-index: 100 !important;
+    color: var(--accent) !important;
+    transition: 0.5s left ease-in-out, 0.5s color ease-in-out !important;
 }
-.app-wrapper-web .two .Wu52Z {
-    flex: 0 0 calc(100% - 82px);
-    transition: 0.5s flex-basis ease-in-out;
+.app-wrapper-web .two ._2l_Ww {
+    flex: 0 0 calc(100% - 82px) !important;
+    transition: 0.5s flex-basis ease-in-out !important;
 }
-.app-wrapper-web .two ._1xXdX:hover {
-    flex: 0 0 25%;
+.app-wrapper-web .two ._2NwAr:hover {
+    flex: 0 0 25% !important;
 }
-.app-wrapper-web .two ._1xXdX:hover ._15G96 {
-    left: 0;
+.app-wrapper-web .two ._2NwAr:hover ._15G96 {
+    left: 0 !important;
 }
-.app-wrapper-web .two ._1xXdX:hover ._itDl, .app-wrapper-web .two ._1xXdX:hover ._2FBdJ {
-    opacity: 1;
+.app-wrapper-web .two ._2NwAr:hover ._itDl, .app-wrapper-web .two ._2NwAr:hover ._2FBdJ {
+    opacity: 1 !important;
 }
-.app-wrapper-web .two ._1xXdX:hover ~ .Wu52Z {
-    flex: 0 0 calc(75% - 5px);
+.app-wrapper-web .two ._2NwAr:hover ~ ._2l_Ww {
+    flex: 0 0 calc(75% - 5px) !important;
 }
 ._2MSJr {  /* Searchfield */
-    opacity: 0;
-    transition: 0.5s opacity ease-in-out;
+    opacity: 0 !important;
+    transition: 0.5s opacity ease-in-out !important;
 }
-.app-wrapper-web .two ._1xXdX:hover ._2MSJr {
-    opacity: 1;
+.app-wrapper-web .two ._2NwAr:hover ._2MSJr {
+    opacity: 1 !important;
 }
 ._20NlL {  /* Upper Menu */
-    display: none;
+    display: none !important;
 }
-.app-wrapper-web .two ._1xXdX:hover ._20NlL {
-    display: inherit;
+.app-wrapper-web .two ._2NwAr:hover ._20NlL {
+    display: inherit !important;
 }
 
 /* Flex for .three */
-.app-wrapper-web .three ._1xXdX {
-    flex: 0 0 77px;
-    transition: 0.5s flex-basis ease-in-out;
-    margin-right: 5px;
+.app-wrapper-web .three ._2NwAr {
+    flex: 0 0 77px !important;
+    transition: 0.5s flex-basis ease-in-out !important;
+    margin-right: 5px !important;
 }
-.app-wrapper-web .three .Wu52Z {
-    flex: 0 0 calc(65%);
-    transition: 0.5s flex-basis ease-in-out;
-    margin-right: 5px;
+.app-wrapper-web .three ._2l_Ww {
+    flex: 0 0 calc(65%) !important;
+    transition: 0.5s flex-basis ease-in-out !important;
+    margin-right: 5px !important;
 }
-.app-wrapper-web .three ._14VS3 {
-    flex: 0 0 calc(35% - 87px);
-    transition: 0.5s flex-basis ease-in-out;
+.app-wrapper-web .three ._299go {
+    flex: 0 0 calc(35% - 87px) !important;
+    transition: 0.5s flex-basis ease-in-out !important;
 }
-.app-wrapper-web .three ._1xXdX:hover {
-    flex: 0 0 25%;
+.app-wrapper-web .three ._2NwAr:hover {
+    flex: 0 0 25% !important;
 }
-.app-wrapper-web .three ._1xXdX:hover ~ .Wu52Z {
-    flex: 0 0 45.5%;
+.app-wrapper-web .three ._2NwAr:hover ~ ._2l_Ww {
+    flex: 0 0 45.5% !important;
 }
-.app-wrapper-web .three ._1xXdX:hover ~ ._14VS3 {
-    flex: 0 0 calc(35% - 77px);
+.app-wrapper-web .three ._2NwAr:hover ~ ._299go {
+    flex: 0 0 calc(35% - 77px) !important;
 }
 ._2MSJr {  /* Searchfield */
-    opacity: 0;
-    transition: 0.5s opacity ease-in-out;
+    opacity: 0 !important;
+    transition: 0.5s opacity ease-in-out !important;
 }
-.app-wrapper-web .three ._1xXdX:hover ._2MSJr {
-    opacity: 1;
+.app-wrapper-web .three ._2NwAr:hover ._2MSJr {
+    opacity: 1 !important;
 }
 ._20NlL {  /* Upper Menu */
-    display: none;
+    display: none !important;
 }
-.app-wrapper-web .three ._1xXdX:hover ._20NlL {
-    display: inherit;
+.app-wrapper-web .three ._2NwAr:hover ._20NlL {
+    display: inherit !important;
 }
 }

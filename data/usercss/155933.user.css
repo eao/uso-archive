@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         ekorol
 @description    `Simply Black Wide UI. Did for myself. Who likes it - use it! Enjoy!Contact (antispam mail): 2ddbf043@opayq.com`
-@version        2020329.1.21
+@version        202117.9.42
 @license        CC-BY-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -92,6 +92,16 @@ background: #131313 !important;
 .tg_head_logo_dropdown .dropdown-menu > li > a span {
     color: #dadada !important;
 }
+
+@media (max-width: 1870px) {
+.composer_emoji_tooltip {
+    margin-left: -245px;
+}}
+
+@media (max-width: 1870px){
+.composer_emoji_tooltip_tail {
+    left: 90%;
+}}
 
 .tg_head_logo_dropdown .dropdown-menu > li > a span:hover {
     color: #fff !important;

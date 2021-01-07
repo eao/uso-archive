@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Oleksii Garkavenko
 @description    `Темна тема для football.ua`
-@version        20201229.16.20
+@version        202117.10.32
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -19,6 +19,7 @@
 @-moz-document domain("football.ua") {
 /* =============== BACKGROUND ============================== */
 body,
+.article-text table th,
 .left-menu .inner-list li a:hover,
 .left-menu .inner-list li.selected a,
 .left-menu,
@@ -44,7 +45,7 @@ footer p,
 .no-blogs .add-blog,
 .cabinet .user .user-text .c-link,
 .ui-dialog .ui-dialog-titlebar {
-    background: #1b1b1b;
+    background: #1b1b1b!important;
 }
 
 .page,
@@ -70,6 +71,8 @@ footer p,
 .statistic-table tr:nth-child(odd) td,
 .main-tournament-table tr:nth-child(odd) td,
 .player-statistic-table tr:nth-child(odd) td,
+.time-articles a,
+.article-text p,
 .article-text table tr:nth-child(odd) td,
 .subject-tags h3:after,
 .ui-dialog .ui-dialog-content .edit-form,
@@ -77,7 +80,7 @@ footer p,
 .profile h3,
 .no-blogs,
 .ui-dialog .ui-dialog-content {
-    background: #444;
+    background: #444!important;
 }
 
 .author-article .article-author,
@@ -99,7 +102,7 @@ footer p,
 .select-block .selectboxit-options,
 .pagination a,
 #UserNotification {
-    background: #555;
+    background: #555!important;
 }
 
 .add-comment .comment-textarea,
@@ -114,7 +117,7 @@ footer p,
 .modal-header,
 .modal-footer,
 .icon-default {
-    background: #7a7a7a;
+    background: #7a7a7a!important;
 }
 
 
@@ -249,7 +252,9 @@ body,
 
 .article-text h3.feed-header,
 .comment-item .like-counter,
-.feed-header {
+.comment-list .like .like-counter,
+.feed-header,
+.nav-tabs .nav-link.active {
     color: #000!important;
 }
 

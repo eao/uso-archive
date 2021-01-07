@@ -2,8 +2,8 @@
 @name           Amazon - Dark slate
 @namespace      USO Archive
 @author         Sean Mayes
-@description    `If you use and like PLEASE donate just £1 for my hard work, paypal: rail.monkey@ntlworld.comAmazon - Dark slate - I'm back!Although it applies to many many amazon sites it is only tessted on amazon.co.uk so there may be some inconsistences on other other countries sites.PLEASE donate to keep me updated or give me a thanks in the comments, Paypal: rail.monkey@ntlworld.com`
-@version        20201128.11.13
+@description    `If you use and like feel free to buy me a coffee,  paypal: rail.monkey@ntlworld.comAmazon - Dark slate - I'm back!Although it applies to many many amazon sites it is only tessted on amazon.co.uk so there may be some inconsistences on other other countries sites.PLEASE donate to keep me updated or give me a thanks in the comments, Paypal: rail.monkey@ntlworld.com`
+@version        202117.6.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -4591,5 +4591,39 @@ div#bottom-part {
 }
 .sc-background-dark {
     background-color: #1c1f26 !important;
+}
+.kepler-carousel-container,
+.alm-storefront-outside-desktop,
+.alm-storefront-container-desktop {
+    background-color: #1c1f26;
+}
+.f3-sf-widget-background {
+    background-color: #272b35;
+}
+.apb-browse-left-nav {
+    border-right: 2px solid #545b6b;
+}
+.apb-border-bottom {
+    border-bottom: 2px solid #545b6b;
+}
+#zg #zg_tabs li div a {
+    color: #fff !important;
+}
+#zg #zg_tabs {
+    border-bottom: 1px solid #545b6b;
+}
+#zg_browseRoot {
+    border-right: 1px solid #545b6b;
+}
+#zg #zg_banner_text_wrapper,
+#zg_browseRoot span.zg_selected,
+#zg h3 {
+    color: #E47911 !important;
+}
+#zg .zg_bullet {
+    color: #fff !important;
+}
+.icp-helplink, .icp-mkt-change-lnk {
+    color: #E47911;
 }
 }

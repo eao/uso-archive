@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         hori68
 @description    `動画再生を一時停止した時にプレイヤーの上部や下部に表示される様々なもの(シークバーや時刻や動画タイトルなど)を非表示にします。スクリーンショット用？需要があるのかわかりません。`
-@version        20181110.11.32
+@version        202117.6.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,6 +18,17 @@
     div.html5-video-player.paused-mode.ytp-big-mode div.ytp-chrome-top:not(:hover){
         opacity:0 !important;
     }/* full screen joudan no title ya icon ha mouseover ji nomi hyouji */
+
+    div.html5-video-player.paused-mode.ytp-big-mode div.ytp-chrome-top:hover{
+        background-color:rgba(0,0,0,0.4) !important;
+    }/* full screen joudan no title ya icon no kage */
+
+    div.html5-video-player.paused-mode.ytp-big-mode div.ytp-chrome-top{
+        left:0px !important;
+        right:0px !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }/* full screen joudan no title ya icon no kage wo kirei ni miseru inchiki */
 
     div.html5-video-player.paused-mode button.ytp-cards-button{
         display:none !important;
@@ -41,8 +52,8 @@
         content:'';
         display:block;
         width:110%;
-        height:100%;
-        margin-top:-36px;
+        height:110%;
+        margin-top:-40px;
         margin-left:-12px;
         background-color:rgba(0,0,0,0.4);
     }
