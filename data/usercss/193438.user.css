@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for FOPP website.`
-@version        20201224.18.45
+@version        202116.22.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("fopp.umsi.education") {
+@-moz-document url-prefix("https://runestone.academy/runestone/books/published/fopp"), domain("fopp.umsi.education") {
 /* Background */
 body, div.container[id="main-content"], footer div.container{ background-color: #202020 !important;}
 

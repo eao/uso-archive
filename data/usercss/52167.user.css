@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           Flickr Widescreen - ALLinONE (Part 1)  v.161
+@name           Flickr Widescreen - ALLinONE (Part 1)  v.162
 @namespace      USO Archive
 @author         decembre
 @description    `<b><i>It's ONLY for a WIDESCREEN(1920x1080)!</i></b><b>► The Goal: use at its maximum my WideScreen:</b>- for the shots (Maximize the number of shots visible in the window)- for the Info (scroll list and hover)- for an admin happy life (adaptation for selected Greasemonkey scripts)- Less scrolling with a compact and useful styled interface.- Less "IN THE FACE" style (Smaller version of the shots in Photo Page and Justified Views).<mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE"</b> at once,you can use my userscript [Greasyfork]:<b><a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-160-5-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle)</a></b>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        202114.13.25
+@version        202116.23.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("flickr.com"), domain("na.ads.yahoo.com") {
 
-/* ====   FLICKR - TEST - 00 - Flickr WideScreen - ALLinONE (Part 1) v.161.5 - NORMAL NO BETA/BETA ===== */
+/* ====   FLICKR - TEST - 00 - Flickr WideScreen - ALLinONE (Part 1) v.162 (new162) - NORMAL NO BETA/BETA ===== */
 
 /* SUPP PUBS / GEO YAHOO / SPONS ETC... */
 .sub-photo-left-view > .sub-photo-fave-view.faves-present svg.icon ,
@@ -894,12 +894,14 @@ color: gold !important;
 }
 /* (new161) */
 .fluid .coverphoto-content .metadata-flexer {
+
     width: 87.5% !important;
 }
 .subtitle.no-shrink.truncate {
     min-width: 385px;
     max-width: 385px;
 }
+/* (new162) */
 .metadata-item.photo-count ,
 .profile-bio-page-view .general-stats ul li.block ,
 .metadata-item.joined ,
@@ -910,18 +912,23 @@ color: gold !important;
     line-height: 20px ;
     text-align: right ;
 }
+/* (new162) */
 .metadata-item.photo-count {
-    height: 34px !important;
-    line-height: 30px !important ;
+    height: 25px !important;
+    line-height: 25px !important ;
     width: 190px ;
-    top: 7px ;
-    left: 500px ;
+    top: 52px ;
+    left: 1235px ;
     font-size: 20px ;
     text-align: center ;
-    border-radius: 3px 0 0 3px ;
+    border-radius: 3px ;
 border: 1px solid gray ;
 }
-/* STREAM - PB PHO COUNT */
+/* (new162) - FAV */
+.fluid.html-favorites-page-view .coverphoto-content p.metadata-item.photo-count {
+    top: 42px ;
+}
+/* STREAM  */
 .metadata-flexer p:only-of-type {
     margin-left: 5px !important;
 border: 1px dotted gray ;
@@ -998,10 +1005,10 @@ border: 1px solid gray ;
     height: auto ;
     margin-top: 30px ;
 }
+/* === */
 .fluid.html-person-groups-page-view .sortable-table-view:not(:empty):first-of-type  {
     position: relative;
     display: inline-block ;
-    float: left ;
     width: 100% ;
     height: 100% ;
     height: auto ;
@@ -1668,16 +1675,16 @@ color: red ;
     display: inline-block ;
     bottom: 0px;
     margin-left: 20px ;
-}
-/* POOL - QUITT BUT */
+} 
+/* (new162) POOL - QUITT BUT */
 #group-sidebar .DeleteButt {
     position: fixed !important;
-    float: none !important;
     display: inline-block !important;
     max-width: 180px;
     margin-top: 20px;
     top: 110px!important;
-    right: -36px!important;
+    right: -40px!important;
+    letter-spacing: 1px !important;
     overflow: hidden;
     text-overflow: ellipsis;
     transform: rotate(90deg) !important;
@@ -2522,34 +2529,7 @@ border: 1px solid peru ;
     top: -7px !important;
     padding: 0 3px 0 4px !important;
 }
-/* POOL ADMIN - MEMBER LIST (with ADIMS ) */
-.MembersList {
-    margin-left: 575px !important;
-    width: 720px !important;
-    margin-top: 120px !important;
-    padding: 5px;
-    text-align: center;
-    vertical-align: top;
-}
-/* POOL ADMIN  - MODER LIST */
-.Tab +#MemberList >tbody {
-    position: relative!important;
-    display: inline-block !important;
-    min-width: 900px!important;
-    margin-left: 300px !important;
-    margin-top: -63px !important;
-}
-/* (new161) */
-.Tab + #MemberList > tbody {
-    position: relative!important;
-    display: inline-block !important;
-    min-width: 1800px!important;
-    margin-left: 20px !important;
-    margin-top: 0px !important;
-}
-.Tab +#MemberList >tbody tr>td:nth-child(2) {
-    width: 550px !important;
-}
+
 
 /* POOL DISC/"NO DISC "/ MAIL INBOX - CONT */
 .ThinCase {
@@ -3502,6 +3482,7 @@ background: green !important;
 overflow: hidden ;
 background: #222 !important;
 }
+
 /* JU - ALL - CONT */
 .ju {
     width: 1900px !important;
@@ -5159,8 +5140,8 @@ height: 230px !important;
     overflow: hidden;
     overflow-y: auto;
 }
-/* (new161) HOT OFF/HELP/YOUR PEOPLE Follow + LOCKED / POOL INVIT */
-#Main > table:not(.PeopleResults):not(#Photo):not(#SubNav):not(.TopicListing):not(.acct-sett)  {
+/* (new162) HOT OFF/HELP/YOUR PEOPLE Follow + LOCKED / POOL INVIT */
+#Main > table:not(.PeopleResults):not(#Photo):not(#SubNav):not(.TopicListing):not(.acct-sett):not(#MemberList)  {
     position: relative;
     display: inline-block ;
     top: 0px !important;
@@ -5180,15 +5161,17 @@ height: 230px !important;
     display: inline-block ;
     margin-top: 64px ;
 }
-/* ACCOUNT SETTINGS */
+/* (new162) ACC SETT + POOL MBRS MAN */
 .Tab > span.TabOut:first-of-type {
     margin-left: 358px !important;
     font-size: 13px;
-    padding: 2px 8px 4px;
+    padding: 2px 8px 4px !important;
 }
 .Tab > span.TabIn:first-of-type {
     margin-left: 358px !important;
 }
+
+/* (new162) ACC SETT */
 #Main > table.acct-sett  {
     position: relative !important;
     display: inline-block !important;
@@ -9711,9 +9694,10 @@ html.fluid.html-group-home-page-view #content[style="padding-bottom: 111px;"] .m
     max-width: 100% !important;
     margin-top: 14px !important;
 }
-/* (new161) */
+/* (new162) */
 html.fluid.html-group-home-page-view #content[style="padding-bottom: 111px;"] .main.fluid-centered .view.group-blast-view{
-    height: 50px;
+    height: auto !important;
+    margin-top: 51px !important;
 }
 
 
@@ -9754,20 +9738,41 @@ background: rgba(0, 0, 0, 0) url("https://s.yimg.com/ap/build/images/sprites/ico
     padding-left: 70px !important;
 }
 .fluid .coverphoto-content .title-block-content .title {
+    display: inline-block;
     height: 50px !important;
+    width: 100% ;
 }
+/* (new162) */
 .fluid .coverphoto-content .title-block-content .title h1 {
     display: inline-block;
+    min-width: 100% ;
     height: 50px !important;
     line-height: 50px !important;
     margin-top: -10px !important;
+    margin-bottom: -30px !important;
+    padding: 0 !important;
     font-size: 22px !important;
 z-index: 50000;
 }
 .fluid .coverphoto-content .send-flickr-mail {
-    min-width: 31px ;
-    margin-top: 9px !important;
+    position: absolute !important;
+    display: inline-block;
+    min-width: 18px ;
+    max-width: 18px ;
+    height:18px ;
+    line-height: 10px !important;
+    top: 30px !important;
+    left: 30px ;
     padding: 0px ;
+border-radius: 100% ;
+text-align: center ;
+border: 1px solid #222 ;
+}
+.fluid .coverphoto-content .send-flickr-mail svg.icon {
+    height: 18px;
+    width: 18px;
+    margin-left: -1px;
+    margin-top: -1px;
 }
 .fluid .coverphoto-content .title-block-content .group-statistics {
     display: inline-block !important;
@@ -9995,20 +10000,23 @@ background: transparent !important;
 .fluid.html-photostream-page-view  .droparound.menu .droparrow.down {
     left: 107px !important;
 }
-/* (new161) FLUID - TOP HEADER - POOL HOME - OVERVIEW - BLAST INFO ADMIN */
+/* (new162) FLUID - TOP HEADER - POOL HOME - OVERVIEW - BLAST INFO ADMIN */
 .fluid.html-group-home-page-view .group-blast-view > .blast-block {
-    height: 44px !important;
+    height: auto !important;
     margin-bottom: 0px;
-    margin-top: 50px;
+    margin-top: 0px;
     padding: 5px 30px;
 }
 .fluid.html-group-home-page-view .group-blast-view > .blast-block > .blast-message  {
-    height: 25px;
+    height: auto !important;
     margin-top: 0;
 }
-/* (new161) FLUID - BETA POOL - HOME PAGE */
+.fluid.html-group-home-page-view .group-blast-view > .blast-block > .blast-message .blast-message-display {
+    max-width: 80%;
+}
+/* (new162) FLUID - BETA POOL - HOME PAGE */
 .fluid.html-group-home-page-view .group-pool-preview-view {
-    height: 252px !important;
+    height: auto !important;
 }
 .html-group-home-page-view .with-fluid-subnav .group-pool-preview-view h2 {
     width: 100% ;
@@ -10020,22 +10028,28 @@ background: transparent !important;
     width: 100% ;
 }
 .html-group-home-page-view .with-fluid-subnav .group-pool-preview-view .add {
-    position: relative ;
+    position: fixed;
     display: inline-block ;
-    float: right ;
-    right: 30px;
-    margin-top: -37px;
+    height: 20px;
+    line-height: 20px;;
+    right: 10px;
+    top: 60px !important;
+z-index: 50000 !important;
 }
-/* (new161) POOL BETA - PEND MEMB/PHOT */
+/* (new162) POOL BETA - PEND MEMB/PHOT */
 .fluid.html-group-home-page-view .notification-block.move-to-top  {
     position: absolute;
     display: inline-block;
     width: 400px;
-    right: 0px;
-    margin-top: 165px;
+    left: 1048px;
+    margin-top: 0;
+    top: 14px;
     padding: 0;
+    border-radius: 5px ;
     border: none ;
-    background: transparent !important;
+    text-align: center ;
+    z-index: 5000 !important;
+background: green !important;
 }
 
 /* FLUID - TOP HEAD - USER INFOS - CONT */

@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         sergio9929
 @description    `A simple, clean and borderless twitter dark theme.Screenshots:<a href="https://userstyles.org/style_screenshots/194935_additional_37583.png?r=1608934804" target="_blank">1080p Profile</a><a href="https://userstyles.org/style_screenshots/194935_additional_37584.png?r=1608934804" target="_blank">1080p Home</a><a href="https://userstyles.org/style_screenshots/194935_additional_37585.png?r=1608934804" target="_blank">1080p Settings</a>`
-@version        20201225.22.5
+@version        202116.23.36
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain(instagram.com) {
+@-moz-document domain("instagram.com") {
 .sDN5V {
 /*     texto1 */
     --i1d: 200,200,200;
@@ -65,10 +65,50 @@
 }
 
 
-/* corazon inactivo */
+/* iconos */
 ._8-yf5[fill="#262626"] {
     fill: rgba(var(--f75));
 }
+/* corazon activo */
+/* ._8-yf5[fill="#ed4956"] {
+    fill: rgba(var(--f75,142,142,142),1);
+} */
+
+/* sugerencias */
+/* ._6E_wP{
+    border-radius: 16px;
+}
+._41KYi{
+    border-radius: 10px;
+} */
+
+/* tarjetas */
+/* .cGcGK article{
+    border-radius: 16px;
+} */
+
+/* miniaturas */
+/* .pKKVh, ._bz0w{
+    border-radius: 16px;
+    overflow: hidden;
+} */
+
+/* mensajes */
+/* .pV7Qt{
+    border-radius: 16px;
+} */
+
+/* historias */
+/* .VideM{
+    border-radius: 16px;
+} */
+
+/* sugerencias fixed */
+/* ._8UZ6e, .HVWg4{
+    border-radius: 16px;
+    background-color: rgb(var(--d87));
+} */
+
 
 /* mensajes privados hover */
 .-qQT3:hover {
@@ -90,7 +130,17 @@ img.s4Iyt{
     filter:invert(1);
 }
 
+/* cargar mas comentarios */
+.glyphsSpriteCircle_add__outline__24__grey_9{
+    filter:invert(1);
+}
+
 .mOBkM{
     border-color: rgba(var(--f52));
+}
+
+/* silenciar microfono en video */
+.IhCmn{
+    background-color: rgba(0, 0, 0, .6);
 }
 }

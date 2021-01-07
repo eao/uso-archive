@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Flickr WideScreen - Dark & Grey v.161
+@name           Flickr WideScreen - Dark & Grey v.162
 @namespace      USO Archive
 @author         decembre
 @description    `It's the ideal companion of some others of my Flickr Userstyles.Add a Dark Gray Flavor for my Flickr Userstyles :<mark><a href="https://userstyles.org/styles/52167/"><b>Flickr Widescreen - ALLinONE (Part 1)</b></a></mark>AND<mark><a href="https://userstyles.org/styles/131452"><b>Flickr Widescreen - ALLinONE (Part 2)</b></a></mark><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        202114.13.1
+@version        202116.23.27
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 
 /* STY03 ============================================================================================= */
 /* =================================================================================================== */
-/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.161 (new161)  - (STANDALONE) === */
+/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.162 (new162)  - (STANDALONE) === */
 /* =================================================================================================== */
 /* =================================================================================================== */
 
@@ -209,27 +209,31 @@ ul.pool-restrictions {
 
 
 
-/* POOL MANAGE MEMBERS / ACCOUNT SETTINGS - === */
+/* (new162) POOL MANAGE MEMBERS / ACCOUNT SETTINGS - === */
 h3.Tab {
-        border-bottom: 4px solid #b7b7b7 !important;
+        border-bottom: 4px solid red !important;
 }
 .TabIn {
-        border-color: #b7b7b7 #b7b7b7 #c5c5c5 !important;
-        border-left: 1px solid #b7b7b7 !important;
-        border-right: 1px solid #b7b7b7 !important;
-        background: #c5c5c5 !important;
+        border: 1px solid gold !important;
+        border-bottom: 4px solid gold !important;
+        background: #111 !important;
 }
 span.TabOut  {
-        background: #b7b7b7 !important;
+        background: #333 !important;
 }
 span.TabOut a  {
         color: gray !important;
 }
+span.TabOut:hover {
+        color: white !important;
+        border-bottom: 4px solid gold !important;
+        background-color: green !important;
+}
 span.TabOut a:hover, 
 span.TabOut a:visited:hover {
+        text-decoration: none;
+        color: white !important;
         background-color: transparent !important;
-        color: black !important;
-        text-decoration: none !important;
 }
 table.contact-list-table th, table.contact-list-table td {
         border-bottom: 1px solid #777777 !important;
@@ -491,14 +495,21 @@ a.simple_butt:visited {
 }
 .DeleteButt ,
 .SmallDeleteButt {
-/*    background: -moz-linear-gradient(center top , #252424, #4C4C4C) repeat scroll 0 0 transparent !important;*/
+
     color: gray !important;
 }
 .DeleteButt:hover,
 .SmallDeleteButt:hover {
-/*    background: -moz-linear-gradient(center top , #252424, red) repeat scroll 0 0 transparent !important; */
     color: black !important;
 }
+/* (enew162) POOL - LEAVE */
+#group-sidebar .DeleteButt:hover {
+    color: white !important;
+    background-color: red !important;
+}
+
+
+
 
 /* (new28)POOL - JOIN - AGREE BUTTON */
 #groups-about .about form p input.Butt {

@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           Flickr Widescreen - ALLinONE (Part 2) v.161
+@name           Flickr Widescreen - ALLinONE (Part 2) v.162
 @namespace      USO Archive
 @author         decembre
 @description    `It's ONLY for a WIDESCREEN(1920x1080)!<b>►►  Additional Userstyles to my <mark>- <b><a href="https://userstyles.org/styles/52167/">Flickr Widescreen - ALLinONE (Part 1)</a>:</b></mark>for some userscripts (GM : Greasemonkey) i use since a long time and  additionals styles for some not often used Flickr's pages</b><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE TOTAL"</b> at once,you can use my userscript [Greasyfork]:<b><a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle)</a></b>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        202114.13.24
+@version        202116.23.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("flickr.com") {
 
-/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2)  v.161 (new161.5)  ==== */
+/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2) v.162 (new162)  ==== */
 
 /* START == ADDITIONALS STYLE ==== */
 
@@ -2719,13 +2719,52 @@ border: 1px solid gray !important;
     width: 1689px !important;
     left: 108px !important;
     top: 52px !important;
+    padding-bottom: 4px;
+}
+
+/* (new162) POOL ADMIN - MEMBER LIST (with ADIMS ) */
+.MembersList {
+    position: relative !important;
+    display: inline-block !important;
+    margin-left: 100px !important;
+    width: 1700px !important;
+    margin-top: 120px !important;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px ;
+    vertical-align: top;
+border: 1px solid red !important;
+}
+h1#Tertiary + h3.Tab + .MembersList {
+    margin-top: 50px !important;
+}
+#Tertiary + .Tab  + .char_search + table#MemberList {
+    margin-top: 60px !important;
+background: #111 !important;
+outline: 1px solid red !important;
+}
+
+/* POOL ADMIN  - MODER LIST */
+.Tab +#MemberList >tbody {
+    position: relative!important;
+    display: inline-block !important;
+    min-width: 900px!important;
+    margin-left: 300px !important;
+    margin-top: -63px !important;
 }
 /* (new161) */
-#MemberList ,
-#Tertiary + .Tab  +.char_search + #MemberList {
-    position: relative !important;
-    margin-top: 20px !important;
+.Tab + #MemberList > tbody {
+    position: relative!important;
+    display: inline-block !important;
+    min-width: 1800px!important;
+    margin-left: 20px !important;
+    margin-top: 0px !important;
 }
+.Tab +#MemberList >tbody tr>td:nth-child(2) {
+    width: 550px !important;
+}
+/* (new162) */
+
 #MemberList td {
     border-bottom: none !important;
 }
@@ -2838,7 +2877,7 @@ border: 1px solid gray !important;
     max-width: 300px !important;
     min-width: 300px !important;
 }
-/* POOL ADM - BUT BAN etc.. */
+/* (new162) POOL ADM - BUT BAN etc.. */
 #MemberList tr td[id*="ban_"] ,
 .char_search + #MemberList tr td[id*="ban_"] {
     position: relative !important;
@@ -2889,8 +2928,19 @@ border: 1px solid gray !important;
     height: 90px !important;
     margin-right: 27px !important;
     margin-top: 1px !important;
+    border-radius: 5px ;
 border: 1px solid gray !important;
 }
+.Person  a {
+    display: inline-block !important;
+    width: 100px !important;
+    height: 90px !important;
+    line-height: 15px !important;
+   overflow: hidden ;
+   text-overflow: ellipsis ;
+
+}
+
 /* POOL ADM - DEL MEMB- TXT "Also Remove" */
 #MemberList tr[id^="member_"] form {
     position: absolute;
@@ -3953,8 +4003,8 @@ z-index: 50000 !important;
 .fluid.html-album-page-view #topPaginationContainer  {
     left: 160px !important;
     top: 3px !important;
- }
-/* STIG - ALB TEASER in STREAM FRONTPAGE */
+}
+/* (new162) STIG - ALB TEASER in STREAM FRONTPAGE */
 #albumTeaser {
     position: fixed !important; 
     display: inline-block !important;
@@ -3967,38 +4017,42 @@ z-index: 50000 !important;
     padding: 5px  !important;
     overflow: hidden !important;
     overflow-y: auto !important;
-    z-index: 5000 !important;
+    z-index: 5000000 !important;
     transform: scale(0.4) !important;
-outline: 1px solid red !important;
+border: 1px solid red !important;
 }
 #albumTeaser:hover {
     height: auto !important;
     max-height: 400px !important;
     top: 0px !important;
+border-radius: 0 0 5px 5px ;
     transform: scale(1) !important;
 }
-#albumTeaser>div {
+#albumTeaser > div:not(:last-of-type){
     display: inline-block !important;
+    height: 80px;
+    line-height: 80px;
     max-width: 580px !important;
     min-width: 580px !important;
-    margin-top: -5px !important;
+    margin-top: 0px !important;
     margin-bottom: 5px !important;
     font-size: 30px !important;
     text-align: center !important;
 }
 #albumTeaser>div:nth-child(1) {
     height: 39px;
+    line-height: 42px;
     margin-top: -13px !important;
     top: 0px !important;
     margin-bottom: 5px !important;
-    font-size: 38px !important;
+    font-size: 30px !important;
     text-align: left !important;
-border-bottom: 1px solid red !important;
+border-bottom: 4px solid red !important;
 }
 #albumTeaser>div:nth-child(4):before {
     content: "🔻" ;
     position: absolute ;
-    top: 0px ;
+    top: 4px ;
     right: 30px ;
     font-size: 20px ;
 }
@@ -4014,12 +4068,12 @@ border-bottom: 1px solid red !important;
     float: right !important;
     max-width: 400px !important;
     min-width: 400px !important;
-    height: 75px ;
-    line-height: 75px ;
+    height: 65px;
+    line-height:65px;
     margin-left: 15px !important;
     margin-right: 15px !important;
     padding: 5px ;
-    font-size: 30px !important;
+    font-size: 35px !important;
     word-wrap: normal;
     white-space: nowrap;
     overflow: hidden !important;
@@ -4031,6 +4085,31 @@ border: 1px solid gray ;
     float: right !important;
     font-size: 20px !important;
 outline: 1px solid gray ;
+}
+
+/* (new162) LAST with LINK ALL ALB */
+#albumTeaser > div:last-of-type i ,
+#albumTeaser > div:last-of-type {
+    display: inline-block !important;
+    height: 15px;
+    line-height: 15px;
+    max-width: 580px !important;
+    min-width: 580px !important;
+    margin-top: 0px !important;
+    margin-bottom: 5px !important;
+    font-size: 15px !important;
+    text-align: center !important;
+transform: unset !important;
+}
+#albumTeaser > div:last-of-type i a {
+color: gold !important;
+}
+#albumTeaser > div:last-of-type i a:before {
+    content: " ▶ All Albums" !important;
+    height: 15px ;
+    line-height: 15px ;
+    font-size: 15px !important;
+    text-align: center;
 }
 /*  GM "STIG" - PHO - MAP - LOCA DATA - for GOOGLE MAP on HOVER */
 .fluid.html-photo-page-scrappy-view .flickrfixrwebextension .photo-license-view , 
@@ -4844,14 +4923,14 @@ a[id^="CFS"] span:not(.avatar):not(.title) {
 color: white !important;
 text-shadow: 1px 1px 2px #000 !important;
 }
-span:first-of-type:not(:only-of-type):not(.avatar):not(.title) ,
+span:first-of-type:not(:only-of-type):not(.avatar):not(.title):not(.TabOut) ,
 a[id^="CFS"] span:first-of-type:not(:only-of-type):not(.avatar):not(.title) {
     padding: 0 0 0 4px !important;
     border-radius: 2px 0px 0px 2px !important;
     white-space: normal !important;
     min-width: 5px ! important;
 }
-span:last-of-type:not(:only-of-type):not(.avatar):not(.title) ,
+span:last-of-type:not(:only-of-type):not(.avatar):not(.title):not(.TabOut) ,
 a[id^="CFS"] span:last-of-type:not(:only-of-type):not(.avatar):not(.title) {
     padding-right: 7px !important;
     border-radius: 0px 2px 2px 0px !important;

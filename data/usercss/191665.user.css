@@ -2,8 +2,8 @@
 @name           codeforces美化
 @namespace      USO Archive
 @author         wjr
-@description    `The original author is rknguyen,I modified it on the basis.`
-@version        20201119.7.45
+@description    `The original author is rknguyen,I modified it on the basis.You can turn off the animation of header in settings.你可以在设置中关闭顶栏动画。`
+@version        202116.14.29
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown AnimatioOfHeader "animation of header（顶栏动画）" {
@@ -18,7 +18,8 @@ AnimatioOfHeader2 "turn off" <<<EOT  EOT;
 }
 
 ==/UserStyle== */
-@-moz-document domain("codeforces.ml","codeforces.com") {
+@-moz-document domain("codeforces.ml"),
+domain("codeforces.com"){
 
     /*动态颜色动画mymove*/
     @keyframes mymove {

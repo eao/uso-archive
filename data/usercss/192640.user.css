@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        202115.21.36
+@version        202116.14.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -207,9 +207,9 @@ input.css-1vgh1xx{ color: #000 !important;}
 /* Crypto withdrawal */
 .css-1b2thm7, .css-1fmkg85, .css-1gkvypz{ background-color: #202020 !important;}
 .css-16pguw0{ background-color: #111 !important;}
-.css-14a0dhn, .css-x59rtl [data-active="true"], .css-97kf19, .css-1why4o4, .css-jxy4tr, .css-1jq86li{ color: #76808F !important;}
+.css-14a0dhn, .css-x59rtl [data-active="true"], .css-97kf19, .css-1why4o4, .css-jxy4tr, .css-1jq86li, .css-197z3hk:hover{ color: #76808F !important;}
 .css-1fmkg85{ box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px !important;}
-.css-zw4eg9, .css-1yef746 input, .css-oewxpj, .css-1ts5bmq{ color: #fff !important;}
+.css-zw4eg9, .css-1yef746 input, .css-oewxpj, .css-1ts5bmq, .css-1p4nx4e, .css-16y8rpw, .css-1ghrc0w .css-vurnku, .css-eko5jy .css-vurnku, .css-176vm43 .css-vurnku{ color: #fff !important;}
 }
 
 @-moz-document regexp("https://www.binance.com/.+/my/wallet/account/main/deposit/crypto/.+") {
@@ -217,8 +217,16 @@ input.css-1vgh1xx{ color: #000 !important;}
 .css-16pguw0{ background-color: #111 !important;}
 .css-1b2thm7, .css-1gkvypz{ background-color: #202020 !important;}
 .css-1afj3g1{ color: #000 !important;}
-.css-14a0dhn, .css-97kf19, .css-1wmfgbz, .css-asjsta, .css-1why4o4, .css-1jq86li, .css-197z3hk:hover{ color: #76808F !important;}
+.css-14a0dhn, .css-97kf19, .css-1wmfgbz, .css-asjsta, .css-1why4o4, .css-1jq86li, .css-197z3hk:hover, .css-x59rtl [data-active="true"]
 .css-zw4eg9, .css-oewxpj, .css-1ts5bmq{ color: #fff !important;}
+}
+
+@-moz-document regexp("https://www.binance.com/.+/my/wallet/account/main/deposit/fiat/.+") {
+/* Fiat deposit */
+.css-16pguw0{ background-color: #111 !important;}
+.css-1b2thm7, .css-1gkvypz{ background-color: #202020 !important;}
+.css-x59rtl [data-active="true"], .css-197z3hk:hover, .css-97kf19, .css-1y148xh, .css-1bd2egb{ color: #76808F !important;}
+.css-1kj8ebx, .css-2yle10, .css-1e59xw2, .css-1cwhzee{ color: #fff !important;}
 }
 
 @-moz-document regexp("https://www.binance.com/.+/support/announcement/.+"), regexp("https://www.binance.com/.+/support/.+") {
