@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Mark A
 @description    `This theme is for the Sbenny forum.Fair warning!Using this theme can make some parts of the website a little hard to read/see.Credit to Mark A.Special thanks to CozPatch.`
-@version        2020917.14.18
+@version        202117.13.48
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1448,5 +1448,34 @@ span.level {
 }
 .wave .shape-fill.shape-fill-1 {
     fill: transparent;
+}
+.blockLink.is-selected {
+    font-weight: 700;
+    background: url(https://forum.sbenny.com/images/white_spark.gif) 100% transparent;
+    border-left: transparent;
+    padding-left: 7px;
+}
+.user-title-ladder-progress--bar {
+    color: #0ff;
+    background: #309ce8;
+    border-radius: 4px;
+    padding-right: 6px;
+    padding-left: 6px;
+    text-align: right;
+    display: inline-block;
+}
+.user-title-ladder-progress--container {
+    font-weight: 700;
+    border: 1px solid #0ff;
+    border-radius: 4px;
+    padding: 3px;
+}
+[data-widget-key="levelprogress"] h3.block-minorHeader {
+    background: transparent;
+    color: #5eb2ed;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    padding: 0;
 }
 }

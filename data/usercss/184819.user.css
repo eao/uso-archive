@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Mark A
 @description    `Haha! I'm back at it again with another theme that would make your eyes hurt!This is a simply orange (color/colour) theme for the Sbenny forum.Credits to me (Mark A).Special thanks to CozPatch!`
-@version        2020917.14.14
+@version        202117.14.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1078,5 +1078,34 @@ span.level {
 }
 .wave .shape-fill.shape-fill-1 {
     fill: transparent;
+}
+.p-staffBar {
+    font-size: 13px;
+    color: #141414;
+    background: #ff9933;
+    border-bottom: 10px double #ffad33;
+}
+[data-widget-key="levelprogress"] h3.block-minorHeader {
+    background: transparent;
+    color: #ff9933;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    padding: 0;
+}
+.user-title-ladder-progress--bar {
+    color: #0d0d0d;
+    background: linear-gradient(to right, #0f0, #f00, #00f, #0ff, #f0f, #ff0);
+    border-radius: 4px;
+    padding-right: 6px;
+    padding-left: 6px;
+    text-align: right;
+    display: inline-block;
+}
+.user-title-ladder-progress--container {
+    font-weight: 700;
+    border: 1px solid #ff9933;
+    border-radius: 4px;
+    padding: 3px;
 }
 }

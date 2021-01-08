@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Mark A
 @description    `Used for the Sbenny forum.Credit to Mark A.Special thanks to CozPatch.`
-@version        2020917.14.4
+@version        202117.13.30
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1094,5 +1094,35 @@ span.level {
 }
 .wave .shape-fill.shape-fill-1 {
     fill: transparent;
+}
+.user-title-ladder-progress--bar {
+    color: #00f;
+    background: #f970ee;
+    border-radius: 4px;
+    padding-right: 6px;
+    padding-left: 6px;
+    text-align: right;
+    display: inline-block;
+}
+.blockLink.is-selected {
+    font-weight: 700;
+    background: url(https://forum.sbenny.com/images/white_spark.gif) 100% transparent;
+    border-left: 3px solid transparent;
+    padding-left: 7px;
+}
+[data-widget-key="levelprogress"] h3.block-minorHeader {
+    background: transparent;
+    color: #f970ee;
+    font-weight: bold;
+    text-align: center;
+    font-size: 12px;
+    padding: 0;
+}
+.user-title-ladder-progress--container {
+    font-weight: 700;
+    border: 1px dotted #f0f;
+    border-radius: 4px;
+    padding: 3px;
+    box-shadow: 2px 2px 20px 5px #f37cf3;
 }
 }

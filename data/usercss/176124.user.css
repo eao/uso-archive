@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Akito Itashi
 @description    `This a little theme for Whatsapp, where you can put your favorite picture in the background with some nice UI :)`
-@version        202117.11.14
+@version        202117.12.41
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color accent "Akzentfarbe" #55F2CF
@@ -17,7 +17,7 @@
 @-moz-document url(https://web.whatsapp.com/) {
 body, body.dark {
     --accent: /*[[accent]]*/;
-    --image: url(/*[[image]]*/);
+    --image: url('/*[[image]]*/');
     --app-background-stripe: transparent;
     --background-default: rgba(0, 0, 0, 0.25);
     --background-default-active: rgba(255, 255, 255, 0.2);
@@ -126,7 +126,7 @@ body, body.dark {
 ._LNcL {
     padding-bottom: 0 !important;
 }
-._15G96 {
+._2Q3SY {
     color: var(--icon-lighter) !important;
 }
 [data-asset-chat-background-dark] {
@@ -165,11 +165,6 @@ body, body.dark {
     filter: brightness(0.16) grayscale(1) !important;
 }
 
-/* Remove Chat Background */
-.YUoyu {
-    display: none !important;
-}
-
 /* Input field */
 ._2MSJr, ._1Plpp {
     background-color: var(--input-field) !important;
@@ -189,7 +184,7 @@ body, body.dark {
 .app-wrapper-web .two ._3Bxar {
     overflow: visible !important;
 }
-.app-wrapper-web .two ._15G96 {
+.app-wrapper-web .two ._2Q3SY {
 	left: -35px !important;
     position: relative !important;
     z-index: 100 !important;
@@ -203,7 +198,7 @@ body, body.dark {
 .app-wrapper-web .two ._2NwAr:hover {
     flex: 0 0 25% !important;
 }
-.app-wrapper-web .two ._2NwAr:hover ._15G96 {
+.app-wrapper-web .two ._2NwAr:hover ._2Q3SY {
     left: 0 !important;
 }
 .app-wrapper-web .two ._2NwAr:hover ._itDl, .app-wrapper-web .two ._2NwAr:hover ._2FBdJ {
