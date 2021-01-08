@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         quaritexa
 @description    `just clean&white`
-@version        202073.12.3
+@version        202118.5.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -126,5 +126,11 @@ body,
 .b-topic_article .b-text .b-box_left p,
 .b-topic_article .b-text .b-box_right p {
   font-size: 1rem;
+}
+
+.voice-over {
+	position: fixed;
+	margin-left: 0;
+	top: 0;
 }
 }

@@ -3,112 +3,65 @@
 @namespace      USO Archive
 @author         quaritexa
 @description    `just clean&white`
-@version        202073.12.5
+@version        202118.4.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
-:root {
-	--bg: black;
-	--bga: #68a3;
-	--bgh: #2466;
-	--bgm: #4686;
-	--color: white;
-}
+/* remove frames */
+* {box-shadow: none !important}
 
-* {
-	box-shadow: none !important;
-}
+/* remove bg */
+[dir] body,
+[dir] body.new_header_design .TopSearch__input,
+[dir] body.new_header_design #page_header_cont,
+[dir] div[contenteditable="true"],
+[dir] .deep_active .replies .reply_fakebox,
+[dir] .deep_active .replies .reply_box div.submit_post_field, 
+[dir] .deep_active .replies .reply_box div.submit_post_field[contenteditable="true"],
+[dir] .wall_module .reply_box,
+[dir] .wall_module .reply_fakebox_wrap,
+[dir] .wall_module .reply_form,
+_ {background: transparent}
 
+/* remove borders */
+[dir] body.new_header_design #page_header_cont,
+[dir] .deep_active .post_replies_header,
+[dir] .deep_active .replies .replies_wrap_deep,
+[dir] .deep_active .replies .replies_list:empty,
+[dir] .deep_active .replies .reply .reply_wrap,
+[dir] .like_cont,
+[dir] .wall_module .replies_list,
+[dir] .wall_module .reply,
+_ {border: none}
 
-body {
-	background: var(--color);
-}
-.audio_layer_bottom,
-.im-chat-input,
-.im-page_classic.im-page .im-chat-history-resize,
-.stl_active.over_fast #stl_bg,
-.submit_post,
-.ui_tabs_header,
-.wr_header {
-	background: transparent;
-}
-
-/* borders */
-#ads_left.ads_left_empty + .left_menu_nav_wrap,
-#page_header_cont .back,
-#side_bar .more_div,
-#top_notify_wrap,
-.counts_module,
-.deep_active .replies .replies_list,
-.deep_active .replies .replies_wrap_deep,
-.deep_active .replies .reply .reply_wrap,
-.eltt,
-.deep_active .post_replies_header,
-.flat_button.ui_load_more_btn,
-.group_list_row,
-.im-page_classic.im-page .im-page--header,
-.im-page_classic.im-page .im-page--chat-input,
-.im-page_classic .im-page--chat-header,
-.im-page--toolsw,
-.like_cont,
-.nim-dialog .nim-dialog--content,
-.post_full_like_wrap,
-.ui_search,
-.ui_rmenu_sep,
-.wall_module .reply_box,
-.wall_module .reply_fakebox,
-.wide_column .page_top {
-	border: none;
-}
-
+/* text */
 .wall_post_text,
-.im_msg_text,
-.im-mess--text,
-.bp_text {
-	border: none;
+.wall_reply_text,
+_ {
 	font-family: Georgia;
-	font-size: 1.2rem !important;
-	line-height: 1.4 !important;
-	padding: 0;
-}
-.wall_module .copy_quote {
-	border-left-width: 1px;
-}
-.im-page_classic.im-page .im-page--chat-body-wrap-inner {
-	border-bottom-color: transparent;
-}
-#page_header_cont .back {
-	background: var(--bga);
-}
-.top_audio_player .top_audio_player_title,
-input.text.ts_input,
-.ts_wrap .input_back_content {
-	background: none !important;
-	color: var(--color) !important;
-}
-.top_nav_btn.active,
-.top_nav_btn:hover {
-	background-color: var(--bgm);
-}
-.im-page--toolsw,
-.im-page--chat-header {
-	background-color: #fff7 !important;
+	font-size: 1.2rem;
+	line-height: 1.4;
 }
 
 /* comments */
-.wall_reply_text {
-	font-size: 1.3rem;
-	font-family: Georgia;
-}
+.wall_reply_text {font-size: 1.0rem}
 
-.post_field_user_image._post_field_image {
-	display: none;
-}
+/* header */
+[dir="ltr"] #page_header_wrap {background: #000B;}
 
-/* stories */
-.article_layer__content p {
-	font-size: 1.5rem;
-	line-height: 1.3
-}
+/* space between posts */
+.feed_row {padding-top: 1rem}
+
+/* after post */
+[dir] .like_cont {padding: 0}
+
+/* reply comment */
+[dir="ltr"] .post_field_user_link {visibility: hidden}
+
+/* external link preview caption */
+[dir] .media_link__label {border: none; padding-left: 0}
+
+/* quote */
+[dir="ltr"] .wall_module .copy_quote {border-left-width: 1px;}
 }

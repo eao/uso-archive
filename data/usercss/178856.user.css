@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Игорь Шадрин
 @description    `aliexpress.ru`
-@version        20201113.13.41
+@version        202118.6.38
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -635,7 +635,7 @@ h1.product-name {
 
 ._new-home-firstscreen .advertise-main .brand-banner .title {background-color: transparent;}
 
-.container { background-color: #3b3b3b;}
+.container { background-color: #333 !important;}
 .channel-header.container {background-color: #6f6f6f;}
 
 .ui-breadcrumb {background-color: transparent;}
@@ -1368,5 +1368,51 @@ more-ranking .rankings-list .rankings-item {
 .component-wrap {
     background: #292929;
 }
+
+._3yZhh h3 {
+  color: #f60 !important;}
+#root {
+    background-color: #3b3b3b !important;
+}
+._2f28M {
+    color: #f90 !important;}
+
+.G5SWU {color: #f60 !important;}
+
+._1QjEn {color: #f60 !important;}
+
+._1m9pS {color: #ffbc35 !important;}
+
+._2ifN5 {background: #121212 !important;}
+
+._1EI68 {background: #333 !important;}
+
+._2219H {color: #06c !important;}
+
+._3OiDL {color: #f60 !important;}
+
+._1kWPH span {
+    font-size: 13px;
+    color: #121212 !important;
+    background: #ffab02 !important;
+    text-shadow: 1px -1px 2px red !important;}
+
+body {
+    color: #ffab02 !important;}
+
+.f-star-dropdown .fb-star-selector {
+    color: #ffab02 !important;
+}
+
+.tab-container {
+    background:  #3b3b3b no-repeat !important;}
+
+  .product-container .product-cell {background: #333 !important;}  
+  .product-container .floor-name {color: #f60 !important;}
+  .product-container .product-cell .product-list { color: #ffbc35 !important;}
+  .product-container .product-cell .goods-name {color: #f90 !important;}
+
+._2oxCa, .is04A {
+    background-color: #333 !important;}
 
 }

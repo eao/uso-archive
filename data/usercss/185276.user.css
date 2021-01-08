@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Saarim Shahid
 @description    `A theme for: tiktok.comUpdated very regularly!Please report issues here: http://m.me/sir.saarim.<a href="http://m.me/sir.saarim">Report Issue</a>`
-@version        202115.5.56
+@version        202118.12.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("www.tiktok.com") {
-/* ------------------------------------------------------ */
+  /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
 /* ------------------------------------------------------ */
@@ -86,7 +86,9 @@ header .help-container .help-item,
 .transparency-center .p4,
 .card,
 .app-promotion.jsx-3979932517 > span.jsx-3979932517,
-.inbox-content-header.jsx-2344352055 span.jsx-2344352055 {
+.inbox-content-header.jsx-2344352055 span.jsx-2344352055,
+.header-container.middle.jsx-1217828260,
+.app-promotion.jsx-3770168929 > span.show.jsx-3770168929 {
 	background-color: #1D1E1F !important;
 }
 
@@ -182,7 +184,8 @@ header .help-container .help-item,
 .transparency-center .p4,
 .card,
 .article-wrapper,
-.app-promotion.jsx-3979932517 > span.jsx-3979932517 {
+.app-promotion.jsx-3979932517 > span.jsx-3979932517,
+.app-promotion.jsx-3770168929 > span.show.jsx-3770168929 {
 	border-top: 1px solid #FE2C55 !important;
 	border-bottom: 1px solid #FE2C55 !important;
 	border-left: 1px solid #FE2C55 !important;
