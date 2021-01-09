@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Dawwwg
 @description    `Modern dark theme for autoblog.nl. For the best experience combine with the 'Autojunk.nl Dark' theme as both sites are part of the same 'network' and deeplink to eachother.  <b>Features:</b>&bullet; Total dark make-over while respecting the original brand-styling.&bullet; A decluttered and more consistent layout; easy on the eyes.&bullet; Optimized primary-content width and font-styling for improved readability.&bullet; Round-borders, subtle shadows, transparency and a themed scrollbar make it more slick & modern looking.&bullet; Removes the large, redundant 'floormat' footer.&bullet; Effective Ad-suppression even without a dedicated Ad-Blocker plugin. &nbsp; It does not block tracking, but does suppress the display of all Ads except Branded Content articles.`
-@version        20201026.13.28
+@version        202118.19.42
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -61,7 +61,8 @@ blockquote,
 
 .archive-pagination a:hover, 
 .archive-pagination a:focus, 
-.archive-pagination li.active a         { color: #eee }
+.archive-pagination li.active a,
+.rp4wp_component a:hover                { color: #eee }
 
 .archive-description                    { padding: 0 }
 .archive-description .archive-title     { background-color: #181818; margin-bottom: 0 }
@@ -169,8 +170,7 @@ input[type=reset], input[type=submit],
 .entry-comments h3::after               { border: 0; padding: 0; margin: 0 }
 .entry-content h2, 
 .entry-content h3, .entry-content h4    { margin-bottom: 15px; margin-top: 30px }
-a,
-a:hover,a:focus                         { text-decoration: none !important; font-weight: 400; transition: none; color: #ed1c24 }
+a, a:hover, a:focus                      { text-decoration: none !important; font-weight: 400; transition: none; color: #ed1c24 }
 
 .image-linked img,
 .bb-layer.bb-content-layer              { border-radius: 5px }
@@ -259,6 +259,20 @@ iframe,
 {
     .four.columns                   { width: 36.3% }
     .ab_right_bar .three.columns    { width: 30% }
+}
+
+
+/* For 'Ook interessant' */
+.rest-latest-news, .content .rp4wp-related-posts                { padding: 0 }
+.rest-featured-content.title-linked, .rp4wp_component_title a   { font-weight: 400 }
+
+@media only screen and (min-width: 1024px)
+{
+    .rest-latest-news, .rp4wp-related-posts, .display-wide, #gallery-1, .full-width-content .entry-content .alignwide 
+    {
+        margin-left: auto !important; margin-right: auto !important;
+        
+    }
 }
 
 

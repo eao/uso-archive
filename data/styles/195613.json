@@ -5,9 +5,9 @@
     "description": "In Microsoft multiple-choice quizzes the right answers will be highlighted in red.",
     "additionalInfo": null,
     "format": "uso",
-    "category": "global",
+    "category": "bing",
     "createdAt": "2021-01-07T07:48:11.000Z",
-    "updatedAt": "2021-01-07T07:48:11.000Z",
+    "updatedAt": "2021-01-08T16:06:50.000Z",
     "license": "CC-BY-4.0",
     "author": {
       "id": 1101437,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 1,
-      "weekly": 1
+      "total": 2,
+      "weekly": 2
     }
   },
   "screenshots": {
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "[iscorrectoption=True] {\r\n\tbackground-color: red !important;\r\n}"
+    "css": "@-moz-document url-prefix(\"https://www.bing.com/search\") {\r\n\t[iscorrectoption=True] {\r\n\t\tbackground-color: red !important;\r\n\t}\r\n}"
   }
 }

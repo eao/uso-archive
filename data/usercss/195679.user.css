@@ -1,0 +1,1026 @@
+/* ==UserStyle==
+@name           OLD new VK v1.0.0
+@namespace      USO Archive
+@author         jakill02
+@description    `частично Имитирует Старый (Белый) дизайн Вконтакте, частично более новый, существовавший до Декабря 2020-го года, плюс некоторые изменения от автора, вроде отключённой вредной опции (пожаловаться) которая только мешается и которую можно нажать невзначай :D`
+@version        202118.23.58
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("vk.com") {
+/* OLD new VK v1.0.0 */
+
+        /*  страница Стиля: https://userstyles.org/styles/195679  */
+
+/*№№№№№№№№№№ Классические шрифты Вконтакте + белый фон №№№№№№№№№№*/
+body {
+    background: #ffffff !important;
+    margin: 0;
+    padding: 0;
+    direction: ltr;
+    font-size: 13px;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans !important;
+    line-height: 1.154;
+    font-weight: 300;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;}
+
+/*№№№№№№№№№№№№ Доп. настройка Шрифтов №№№№№№№№№№№№№№*/
+
+/* Кнопка - Редактировать (на главной странице)*/
+.page_actions_wide * {font-size: 0.74rem !important;
+font-family: tahoma, arial, verdana, sans-serif, Lucida Sans !important;}
+
+/* Поле ввода текста */
+.dark , .submit_post_inited ,  .im-chat-input * , #post_field * {font-size: 0.74rem !important;
+font-family: tahoma, arial, verdana, sans-serif, Lucida Sans !important;}
+/*###########################################################################*/
+
+
+
+/* Добавка "МОИ" к пунктам левого меню */
+/* (!): возможность добавить/изменить через Скрипт */
+#l_nwsf .left_label:before {content: "Мои ";}   /* новости  (!) */
+    -o-#l_msg .left_label:before {content: "Мой ";}    /* месенджер (!) */
+#l_msg .left_label:before {content: "Мои Сообщения"; display: inline-block; padding-right: 70px;} /* месенджер (!) */
+#l_fr .left_label:before {content: "Мои ";}     /* друзья (!) */
+    -o-#l_gr .left_label:before {content: "Мои ";}     /* Сообщества (!) */
+#l_gr .left_label:before {content: "Мои Группы"; display: inline-block; padding-right: 70px;} /* Сообщества (!) */
+
+/*-------------------------------------------------------------*/
+#l_ph .left_label:before {content: "Мои ";}     /* фотографии (!) */
+#l_aud .left_label:before {content: "Моя ";}    /* музыка (!) */
+#l_vid .left_label:before {content: "Мои ";}    /* видео (!) */
+#l_svd .left_label:before {content: "Мои ";}    /* клипы */
+#l_ap  .left_label:before {content: "Мои ";}    /* приложения (!) */
+/*-------------------------------------------------------------*/
+#l_fav .left_label:before {content: "Мои ";}    /* закладки (!) */
+#l_doc .left_label:before {content: "Мои ";}    /* файлы */
+
+/* Убрать пункты Верхнего меню (Главный раздел) */
+#music_link_td.top_nav_link {display: none}
+
+/* Ширина ТопАудиоплеера (Главный раздел)*/
+.top_audio_player {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--light_blue_100);
+    position: relative;
+    -o-max-width: 190px !important; /* Отключено для комбинирования со Скриптом */
+    height: var(--header-height);
+    display: none;
+    opacity: 0;
+    pointer-events: none;}
+
+/*№№№№№№№№№№№№№ Позицианирование №№№№№№№№№№№№№№*/
+
+/*======== Страница пользователя ========*/
+/* Позицианирование Заголовков разделов (Фотоальбомы, Аудиозаписи и тд.) */
+.module_header .header_label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    margin-top: -5px;}
+/* Позицианирование СЧЁТЧИКОВ Заголовков разделов (Фотоальбомы, Аудиозаписи и тд.) */
+.module_header .header_count {
+    color: var(--gray_400);
+    padding: 0 6px !important;
+    margin-top: -5px;}
+
+/* Позицианирование функциональных Заголовков (Обновления, Показать на карте и тд.) */
+.header_right_link {margin-top: -5px;}
+
+/* Меню подписок на Странице: Отступы */
+.page_list_module .line_cell .desc_info {padding: 0px 0 0 10px !important;}
+/*################################################*/
+
+
+/*№№№№№№№№№№№№№№№№№ Колокольчик - настройка №№№№№№№№№№№№№№№№№№№№*/
+
+/* колокольчик */
+body.new_header_design .top_nav_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92%;
+    width: var(--header-height);
+    -o-filter: brightness(1.6) contrast(1.9);}
+
+/* Размер Иконки Колокольчика */
+.top_nav_btn .top_nav_btn_icon {width: 20px !important; height: 20px !important;}
+
+/* Колокольчик (Старый) пустое состояние */
+body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon  {background-image: url(https://i114.fastpic.ru/big/2021/0108/1e/66502ee9447e13ec564553629258cd1e.png) !important; background-repeat: no-repeat; -o-filter: invert(10%)!important;}
+
+/* Колокольчик (Старый) есть новые оповещения */
+body.new_header_design .top_nav_btn#top_notify_btn.has_notify .top_nav_btn_icon, .top_nav_btn#top_notify_btn.active .top_nav_btn_icon {background-image: url(https://i114.fastpic.ru/big/2021/0108/cf/6422046a07033ecb68a6d733cabc33cf.png) !important;}
+
+/* Колокольчик (НОВЫЙ) + Цвет */
+/* -o-body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon 
+{background-image: url(/images/svg_icons/ic_head_notify.svg);
+    filter: brightness(1.450) contrast(1.6);} */
+
+/* Цвет Поля колокольчика (Активное) */
+body.new_header_design .top_nav_btn.active {
+    background-color: #416A9A !important;} /* var(--steel_gray_60 */
+
+/* Цвет Поля колокольчика (Не Активное) */
+body.new_header_design .top_nav_btn {
+    background-color: #4A76A8;}
+
+/* Цвет Поля колокольчика (Наведение курсора) */
+body.new_header_design .top_nav_btn:hover {
+    background-color: rgb(65, 106, 154) !important;}
+
+/* Цвет количества уведомлений колокольчика */
+[dir] body.new_header_design .top_notify_count {
+    background-color: #FF724C !important;} /* #ff3347 */
+
+/* Цвет и форма Бордюра уведомлений колокольчика */
+[dir] body.new_header_design .top_notify_count {
+        align-items: center !important;
+        vertical-align: middle !important;
+        justify-content: center !important;
+    text-align: center !important;
+    border-radius: 0.55rem !important; /* 12px */
+    border-style: solid;
+    border-width: 2px !important;
+    border-color: #4a76a8 !important;}
+
+/* Цвет Бордюра уведомлений колокольчика (активное состояние) */
+[dir] body.new_header_design .top_nav_btn.active .top_notify_count::after, 
+[dir] body.new_header_design .top_nav_btn.active:hover .top_notify_count::after {
+    border-color: #4a76a8 !important; /* var(--steel_gray_60) */
+}
+
+/* Доп Настройки Счётчика Колокольчика */
+[dir] body.new_header_design .top_notify_count {
+    display: none;
+    /*     padding: 7.5% 7.5% 7.5% 6.99% !important; */
+    -o-padding: 3.5% 7.5% 5.5% 6.99% !important;
+        /* padding: 0.1em 0.44em 0.44em 0.4em !important; */
+    padding: 0.16rem 0.27rem!important;
+    -o-padding-left: 13.9% !important;
+    -o-padding-top: 4.5% !important;
+    color: #fff;
+    font-size: 0.61rem !important; /* 9px */
+    height:11px !important; /* 11px */
+    line-height: 12px !important; /* 12px */
+    min-width: 6px !important; /* 6px, 6.5px */
+    /* top: calc((var(--header-height) - 30px)/2); */
+    position: absolute;
+    top: 3px; left: 20px;
+    z-index: 1;}
+
+/*###################################################*/
+
+
+/*№№№№№№№№№№№№№№ Личные Сообщения №№№№№№№№№№№№№№*/
+/* панель "Поиск" в личных сообщениях */
+[dir] .im-page_classic.im-page .im-page--header {
+    margin-top: -63px;
+    border-top: solid 15px transparent; /* var(--steel_gray_60 */
+    border-bottom: none;
+    border-radius: 0;}
+/* панель "Ник того с кем общаешься" в личных сообщениях */
+[dir] .im-page_classic .im-page--chat-header {
+    margin-top: -15px;
+    border: solid 1px transparent; /* var(--steel_gray_60) */
+    border-top-width: 15px;}
+/* Поле ввода текста в Личке - отступы снизу */
+[dir] .im-page_classic.im-page .im-page--chat-input {
+    border-bottom: solid 15px #fff;} /* solid 15px var(--steel_gray_60) */
+/* Цвет Доп. бэкграунда в личке под полем Ввода Текста */
+[dir] .im-page_classic.im-page .im-chat-history-resize {
+    background: #fff !important;} /* var(--steel_gray_60) */
+/* цвет отступа перед полем Ввода текста */
+[dir] .im-page_classic.im-page .im-page--chat-body-wrap-inner {
+    padding-top: 63px;
+    background: var(--white);
+    padding-bottom: 15px;
+    border-bottom: 0 solid transparent;} /* var(--steel_gray_60) */
+/*######################################################*/
+
+/*№№№№№№№№№№№№№№№№№№ Настройки Шапки №№№№№№№№№№№№№№№№№№№№*/
+/* Новая Шапка */
+body.new_header_design {--header-height: 43px;}/*48px*/
+/* Цвет Шапки */
+[dir=ltr] #page_header_wrap {
+    direction: ltr;
+    background-color: #4A76A8 !important;}
+/* Правый Край Шапки */
+[dir] body.new_header_design #page_header_cont {
+    background-color: #4A76A8; /* var(--white) */
+    border-bottom: 0px solid var(--steel_gray_100);} /* 1px solid var(--steel_gray_100) */
+/* Цвет текста меню */
+body.new_header_design .top_nav_link {color: #fff !important;}
+/* Шрифты Верхнего Меню */
+#page_header {
+    position: relative;
+    height: var(--header-height);
+    font-size: 12.5px;}
+/* активное меню Аккаунта */
+[dir] body.new_header_design .top_nav_link.active {
+    background-color: #416A9A;}
+
+/* Цвет Подсвеченных Пунктов верхнего Меню */
+.top_nav_link:hover {background-color: #416A9A !important;}
+
+/* отступ Аудиоплеера в разделе Музыки (подгонка под высоту новой Шапки) */
+body.new_header_design .audio_page_player2.audio_page_player_fixed {
+    top: 0px;} /* 7px */
+
+/*###############################################################*/
+
+/*№№№№№№№№№№№№№№№№№№  Топ Аудио Плеер  №№№№№№№№№№№№№№№№№№№№№*/
+/* подсвеченный Топ аудиоплеер */
+body.new_header_design .top_audio_player:hover {background: #416A9A !important;}
+
+/* Цвет Играющего трека в топ Плеере */
+body.new_header_design .top_audio_player_title {
+    color: #DAE2EA !important;
+    line-height: 24px;
+    font-size: 14px;
+    position: initial;}
+/* Цвет Играющего трека в топ Плеере - подсвеченный */
+body.new_header_design .top_audio_player:hover .top_audio_player_title {
+    color: #DAE2EA !important;}
+/* Подсветка пнопок Топ плеера */
+button.top_audio_player_btn {filter: brightness(2.4);}
+/*###########################################*/
+
+
+/*№№№№№№№№№№№№№№№№№№  Поле Поиска  №№№№№№№№№№№№№№№№№№№№№*/
+/* поле поиска Верхнее */
+/* Внутренняя ширина поля поиска Цвет Бэкграунда и Шрифта(не активные)*/
+body.new_header_design .TopSearch__input {
+    height: 28px;
+    color: #8FADC8; /* var(--black) */
+    background-color: #224B7A !important;
+    padding-left: 28px !important;}
+/* поле поиска Верхнее - (введение текста) */
+/* Внутренняя ширина поля поиска */
+body.new_header_design .TopSearch__input:focus 
+{   height: 28px; 
+    color: #000 !important;
+    background-color: #fff !important;
+    padding-left: 28px !important;}
+/* Радиус и положение меню Поиска */
+[dir] body.new_header_design .TopSearch__input {;
+    border-radius: 20px; /* 8px */
+    margin: 0 0 2px 0;
+    border: 0;}
+
+/* Цвет надписи "Поиск" в меню Поиск и позицианирование */
+.input_back_content {
+    color: #8FADC8 !important; /* var(--steel_gray_500) */
+    font-size: 12px !important; /* Def. 14px */
+    position: relative; top: -1px !important;}
+
+/* Иконка Поиска, её позиция и цвет */
+[dir] body.new_header_design .TopSearch__input {
+    -o-background-color: var(--steel_gray_60);
+    -o-background-image: url(https://i114.fastpic.ru/big/2021/0108/cc/ff5da3855dc000eaa6f117d42a6dc0cc.png); /* Новая иконка Поиска */
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/12/3caebed3073f4941769c2c46b9511112.png); /* url(/images/svg_icons/ic_head_loupe.svg) ;  Старая Иконка Поиска */
+    background-repeat: no-repeat;
+    background-position: 9px 8px; /* def. 9px; */
+    background-color: var(--blue_640) /*def. BG color*/;}
+/* дефолтная иконка Поиска */
+/* -o-[dir] .TopSearch__input { border: 0; margin: 7px 0; border-radius: 14px;
+    background: var(--blue_640) url(/images/svg_icons/ic_head_loupe.svg) no-repeat !important;} */
+
+/*###########################################*/
+
+
+/* Старый Логотип "VK" для нового Дизайна + */
+[dir] .TopHomeLink--logoWithText {
+ /* Old VK Logo        -o-background-image: url(/images/svg_icons/ic_head_logo.svg); */
+ /* Old VK Logo - NEW */   background-image: url(https://i114.fastpic.ru/big/2021/0108/fe/47d2c104639cff33ee79d005bc5f6ffe.png);
+ /* New VK Logo */       -o-background-image: url(https://i114.fastpic.ru/big/2021/0108/96/ce6ce83fad9d37958d1e96359da87f96.png);
+    background-repeat: no-repeat;
+    z-index: 2000 !important;
+    position: relative; top: -1px;
+    margin: 0px 0px 0 0; /* margin: 3px 10px 0 0; */
+    filter: brightness(110%) contrast(110%); /* Фильтр для Нового Логотипа */
+    background-size: auto 19px;} /*Размер Лого: Old VK Logo 19px ; New VK Logo 30px */
+
+
+/*№№№№№№№№№№№№№№№№ Левое Меню №№№№№№№№№№№№№№№№№№*/
+/* интервалы между пунктами Левого меню (старый дизайн - 28px) */
+body.new_header_design {
+    -o---header-height: 48px; /*48px*/  /* Новая Шапка - Высота */
+    --left-menu-row-height: 27.0px;} /*30px*/ /* интервалы между пунктами Левого меню */
+
+/* Цвет шрифтов Левого меню и Размер Шрифта */
+body.new_header_design #side_bar .left_label {
+    color: #2A5885 !important;
+    font-size: 13px !important;}
+
+/* Счётчик Уведомлений (форма, цвет  и позицианирование) */
+[dir] body.new_header_design .left_count_wrap {
+    border-radius: 3px;
+    box-shadow: inset 0px 0px 0.667px 0.3px rgb(190, 197, 202);
+    background-color: #D3D9DE; /*var(--steel_gray_200*/
+    color: #55677D;
+    padding: 0;
+    margin-right: -6px !important;
+    height: 27px !important;       /*def. 28px*/
+    line-height: 27px !important;} /*def. 28px*/
+/* Что-то с шириной выделенного пункта Меню (Ответы) */
+#feed_li.left_fixer
+{height: 27.0px; line-height: 27px;} /*def. 28px*/
+/*#################################################*/
+
+
+/*№№№№№№№№№№№№№№№№№№№№№№№ ЦВЕТА №№№№№№№№№№№№№№№№№№№№№№№№№№№*/
+
+/* Заголовки цветом*/
+.module_header {background: #F0F2F5 !important;}
+
+/* заголовок (Все записи, Мои записи, Архив записае) - Цвет */
+.wall_module .ui_tabs {background: #F0F2F5  !important;}
+
+/* Текст границы просмотренных постов - ТОЛСТЫЙ*/
+.feedback_unread_bar {font-weight: bold;}
+
+/* Более тёмное выделение Играющего трека */
+[dir] .audio_row.audio_row__current .audio_row_content {
+    background-color: #cdddec ! important; /* var(--light_blue_40); */
+    border-radius: 0px;}
+
+/* Цвет Исполнителя Песни */
+.audio_w_covers .audio_row .audio_row__performers a {
+    color: #5b31ac;
+    font-weight: 400;}
+
+/*№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№*/
+
+
+/* №№№№№№№№№№№№№№№ Настройка Репостов №№№№№№№№№№№№№№№№№ */
+
+/* Убрать VK бордюры в Репостах (оригинал) */
+-o-[dir=ltr] .wall_module .copy_quote {
+    border-left: 0px solid var(--light_blue_100);
+    padding-left: 12px;}/*12px*/
+
+
+/* Убрать VK бордюры в Репостах v1 */
+[dir=ltr] .wall_module .copy_quote {
+    border-left: 0px solid #fff0; /*var(--light_blue_100)*/
+    -o-padding-left: 12px;/*12px*/
+    padding: 6px 7px 6px 7px; /*6px 7px 6px 7px;*/
+    box-shadow: 0px 0px 4px 0px rgb(220, 223, 230);
+    border-radius: 4px;}
+
+/* =================================== */
+
+/* Репосты - Центровка */
+[dir] .wall_text .page_post_sized_thumbs:last-child {
+    -o-padding-bottom: 0;
+    -o-width: auto !important;
+/*  padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px; */
+    -o-padding: 0px 0px 0px 0px; 
+    -o-Margin-left: auto; -o-margin-right: auto;
+    margin: auto;
+    -o-border-top: 5px solid #f00;
+    -o-border-right: 5px solid #f000;
+    -o-margin-top: 0px; -o-margin-bottom: 1px;
+    -o-position: relative; -o-left: -2px; -o-top: 3px;}
+
+/* №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№ */
+
+
+/* №№№№№№№№№№№№№№№№ Вспомогательное №№№№№№№№№№№№№№№№№ */
+
+/* Отключить сообщение - ваш браузер устарел */
+[dir="ltr"] .OldBrowser {display: none;}
+
+/* после просмотренного Ролика с Ютуба (более светлый фон затенения) */
+[dir] #mv_external_finish {
+    background: var(--black_alpha48); /* var(--black) */
+    background-color: var(--black_alpha48);} /* var(--black_alpha88) */
+
+/* убрать ВСЁ Дерьмо из Видеокаталога: 
+    none - убрать  
+    flow - показать */
+.videocat_featured, #videocat_other_blocks
+{display: flow !important;}
+
+/* Убрать Рекламу ниже Левого Меню
+    none - убрать  
+    flow - показать */
+[dir] #ads_left {display: none !important;}
+
+/*===================================================================*/
+/* Отключить пункт меню - Пожаловаться */
+[dir=ltr] #pv_more_acts_tt #pv_more_act_spam {display: none;}
+
+    /* Отключить пункт меню - Добавить товар */
+    -o-[dir] #pv_more_acts_tt #pv_more_act_market {display: none;}
+    /* Отключить пункт меню - Указать Место */
+    -o-[dir=ltr] #pv_more_acts_tt #pv_more_act_place {display: none;}
+/*====================================================================*/
+
+/*перемеещние Cохранки вверх*/
+-o-.pv_cont .pv_bottom_actions .pv_actions_more { margin-left: 0px; -margin-right: 0px;
+     position: absolute;  top: 6em; left: 1.4%; display: block; background-color: rgba(0, 85, 255, 0) ! important; color: rgba(128, 128, 128, .5);
+         opacity: 0.5; padding: 15px 28px 30px 0px; border-radius: 50%; border: 1.2px solid #fff0; font-weight: 600;}
+
+/*перемеещние Cохранки вверх (при наведении)*/
+-o-.pv_cont .pv_bottom_actions .pv_actions_more:hover 
+{color: rgb(128, 128, 128); opacity: 1; border-radius: 50%; border: 1.2px solid #fff0; filter: contrast(190%);}
+
+/* место где будет выводится меню Сохранки*/
+-o-[dir] #pv_more_acts_tt {
+    background-color: var(--gray_800);
+    border: var(--gray_800);
+    border-radius: 2px;
+    margin: 52px 0px 0px 70px;
+    opacity: 0.7;
+    padding: 0px 0px 0px 0px;
+    font-weight: 400;
+    filter: none;
+    font-size: 12px;}
+
+/* размеры элеменов меню */
+-o-[dir=ltr] #pv_more_acts_tt .pv_more_act_item {
+    padding: 0px 25px 0px 10px;}
+    /* размер элемента меню - Сохранить оригинал */
+    -o-[dir=ltr] #pv_more_acts_tt .pv_more_act_item:last-child {
+    padding: 3px 25px 3px 10px;}
+
+/*==============================================================================*/
+
+/* Меню - прикрепить Файл, Видео и тд, на открытой фотографии (позицианирование) */
+[dir=ltr] .pv_reply_form .ms_items_more, [dir=ltr] .pv_comments_list .ms_items_more {-o-right: -120px;}
+
+/*=================================================================================*/
+/*№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№*/
+
+/* №№№№№№№№№№№№№№№ Настройка Стены №№№№№№№№№№№№№№№№№ */
+    /* Текст в Посте */
+    [dir] .wall_post_text {margin-bottom: 6px;}
+
+    /* Центровка Альбома с Фотками в Посте открытом по дате */
+    .page_album_wrap.clear_fix {margin: auto;}
+
+/* №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№№ */
+
+
+
+/* ============ Настройки поля ввода текста в Фотке ============== */
+
+/* Комент в Ответ (в Ответах) */
+/* .wall_module .reply_box div.submit_post_field, [dir=ltr] .wall_module .reply_box div.submit_post_field[contenteditable=true] */
+.wall_module .reply_box div.submit_post_field, .wall_module .reply_box div.submit_post_field[contenteditable=true]
+{border: 4px solid rgb(255, 255, 255);  border-radius: 8px;}
+/* -o-#reply_field19_-147438032_1303_1608554438.reply_field.submit_post_field
+{border: 4px solid rgb(255, 255, 255) !important; border-radius: 8px;} */
+
+
+/*цвет поля ввода текста*/
+[dir] .pv_cont .pv_reply_form_wrap .submit_post_field 
+{background-color: rgba(214, 216, 217, .4); margin-left: 4px; width: auto; margin-right: 4px;}
+
+        /* Цвет рамки внутри поля ввода текста */
+[dir=ltr] .wall_module .reply_box_open .submit_post_field 
+{background-color: rgba(214, 216, 217, .4); padding-right: 40px; box-shadow: inset 0px 0px 0px 3px #bbbbbb36;}
+
+        /* Отступ тексата от края слева внутри Поля ввода Текста */
+[dir=ltr] .wall_module .reply_box div.submit_post_field, [dir=ltr] .wall_module .reply_box div.submit_post_field[contenteditable=true] 
+{padding-left: 10px;}
+
+
+/* #################################################################### */
+
+/* ====================== изменения ВК ============================*/
+/* ====================================================== */
+
+
+/* Исправление аватарок */
+
+.module_body .people_cell_img,
+.post_img,
+.bookmark_page_item__image,
+.notification__media,
+.tickets_image,
+.tickets_image__i,
+.VideoLayerInfo__authorPhotoWrap,.VideoLayerInfo__authorPhoto,/*new(paired)*/
+.tu_thumb,
+.bd_img,
+.wall_module .copy_post_img,
+.wall_module .reply_img,
+.audio_play,
+.audio_page_player .audio_page_player_play .icon,
+.ow_ava.ow_ava_small,
+.group_row_photo,
+.group_row_img,
+.friends_photo_img,
+.right_list_img,
+.ow_ava.ow_ava_comm,
+.fans_fan_img,
+.nim-peer .nim-peer--photo-w,
+.page_list_module .cell_img,
+.page_list_module .thumb,
+.apps_feed_user_photo img,
+.mv_author_img,
+.fans_idolph_wrap,
+.top_notify_cont .feedback_img,
+.feedback_sticky_img,
+.feedback_img,
+.feedback_sticky_icon,
+.like_tt_image,
+.poll_tt_image,
+.search_item_img,
+.bp_img,
+.fave_link_thumb,
+.market_item_owner_img,
+.wddi_img,
+.like_share_ava.wdd_imgs,
+.bd_cell_img,
+.owner_photo_crop_wrap .tag_frame_inner,
+.owner_photo_preview50,
+.owner_photo_preview100,
+.group_u_photo_img,
+.group_l_photo,
+.group_l_photo_img,
+.group_al_thumb,
+.ui_ownblock_img,
+.profile_career_img,
+.flist_item_thumb,
+.group_box_image_wrap,
+.group_box_image_link,
+img.settings_bl_photo,
+.feedback_group_photo_img,
+.nim-peer .nim-peer--photo .im_grid > img,
+.nim-peer .nim-peer--photo > img,
+.nim-peer.nim-peer_small .im_grid > img,
+.ui_zoom_outer,
+.ui_zoom_inner,
+.mail_box_single_ava .mail_box_single_ava_img,
+.post_field_user_image,
+.submit_post_box .thumb_off,
+.submit_post_box .thumb_on,
+.group_contact_image_wrap,
+.mention_tt_img,
+.mention_tt_person_img,
+.friends_import_icon,
+.friends_import_box_icon,
+.friends_common_img,
+.olist_item_photo,
+.im-member-item .im-member-item--photo img,
+.im-member-item .im-member-item--photo,
+.videoplayer_end_info_author_photo,
+.mv_author_photo,
+.feedback_img::after,
+.friends_photo_img::after {
+    border-radius: 2px !important;
+}
+
+.notifier_image,
+.top_profile_img,
+.top_profile_arrow,
+.chat_tab_img,
+a.fc_msgs_img,
+img.fc_contact_photo,
+.ts_contact_img {
+    border-radius: 10% !important;
+}
+
+/* №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№ Старые Иконки №№№№№№№№№№№№№№№№№№№№№№№№№№№№№№ */
+
+/* Иконка - Моя Страница */
+[dir] body.new_header_design #side_bar #l_pr .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: 1px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+      filter: opacity(75%) !important;
+      background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+/* Иконка - Мои Новости */
+[dir] body.new_header_design #side_bar #l_nwsf .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -921px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+      filter: opacity(75%) !important;
+      background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+/* Иконка - Мои Ответы */
+#feed_li .inl_bl.left_label:before {content: "" /* content: "       " */;
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+    padding-left: 30px; /* 2px */
+    background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+    background-position-y: -54px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+      filter: opacity(75%) !important;
+      background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+/* Иконка - Мои Сообщения */
+[dir] body.new_header_design #side_bar #l_msg .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -26px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+      filter: opacity(75%) !important;
+      background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+/* Иконка - Мои Друзья */
+[dir] body.new_header_design #side_bar #l_fr .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -82px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+      filter: opacity(75%) !important;
+      background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+/* Иконка - Мои Группы */
+[dir] body.new_header_design #side_bar #l_gr .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -110px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+      filter: opacity(75%) !important;
+      background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+/* Иконка - Мои Фотографии */
+[dir] body.new_header_design #side_bar #l_ph .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -138px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+/* Иконка - Моя Музыка */
+[dir] body.new_header_design #side_bar #l_aud .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -166px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+/* Иконка - Мои Видео */
+[dir] body.new_header_design #side_bar #l_vid .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -194px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+
+/* Иконка - Мои Клипы */
+[dir] body.new_header_design #side_bar #l_svd .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/62/69d3d964a95332ba71643cd9c6e08962.png)!important;
+background-position-x: 3px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: 0px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+
+/* Иконка - Мои Игры */
+[dir] body.new_header_design #side_bar #l_ap .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -222px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+/* Иконка - Мини-приложения */
+[dir] body.new_header_design #side_bar #l_mini_apps .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -698px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+
+/* Иконка - VK Pay */
+[dir] body.new_header_design #side_bar #l_vkp .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -1028px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+
+
+/* Иконка - Работа */
+[dir] body.new_header_design #side_bar #l_job .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/30/1876f568ed6243a6c1f358ceeb28d430.png)!important;
+background-position-x: 4px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: 2px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+
+
+/* Иконка - Экспресс (мой) */
+[dir] body.new_header_design #side_bar #l_fortune .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0109/84/b56915e620205a74bb4c8871a1a0ef84.png )!important;
+background-position-x: 1px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -1px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(65%) invert(20%)!important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+/* Иконка - Экспресс */
+-o-[dir] body.new_header_design #side_bar #l_fortune .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/38/1f0082aefcb97a54c25930d84caaf238.png )!important;
+background-position-x: 0px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: 0px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(78%) invert(20%)!important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+
+
+/* Иконка - Маркет */
+[dir] body.new_header_design #side_bar #l_mk .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -948px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+/* Иконка - Мои Закладки */
+[dir] body.new_header_design #side_bar #l_fav .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -306px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+
+/* Иконка - Мои Настройки */
+#sett .inl_bl.left_label:before {content: "" /* content: "       " */;
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/73/5c4390014bb460c721275202969e4473.png)!important;
+    padding-left: 30px; /* 2px */
+    background-position-x: 4px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+    background-position-y: -59px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+      filter: opacity(86%) !important;
+      background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;
+    -o-zoom: 100%;}
+
+
+
+/* Иконка - Мои Файлы */
+[dir] body.new_header_design #side_bar #l_doc .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -278px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+/* Иконка - Реклама */
+[dir] body.new_header_design #side_bar #l_ads .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -334px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+
+/* Иконка - Ваши Личные Группы/Сообщества */
+[dir] body.new_header_design #side_bar .l_comm .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -110px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+      filter: opacity(75%) !important;
+      background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+
+
+/* Иконка - Игровые-приложения (genre18) */
+[dir] body.new_header_design #side_bar .genre18 .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -222px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+/* Иконка - Контент-приложения (genre_app) */
+[dir] body.new_header_design #side_bar .genre_app .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -698px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+/* Иконка - Прочие-приложения (genre5) */
+[dir] body.new_header_design #side_bar .genre5 .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -446px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+
+/* №№№№№№№№№№№№№№№№  xxxxxxxxxxx XXXXXXXXXX xxxxxxxxxxx  №№№№№№№№№№№№№№№№ */
+
+/* Иконка - Мои Ответы  (новая версия - не нужно) */
+-o-#feed_li .inl_bl.left_label:before {content: "       " ;
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/8c/56cd0da9a857040d8e20cbfd07490d8c.png	);
+background-repeat: no-repeat; padding-top: 5.5px; padding-left: 2px;
+position: relative; top: 2px; left: -2px; 
+filter: contrast(220%) brightness(130%);
+    -o-background-image: url(https://vk.com/images/svg_icons/ic_head_notify.svg); /* vk.com//images/svg_icons/ic_head_notify.svg */
+    -o-filter: contrast(92%) brightness(210%);}
+
+
+/* Иконка - Настройки (новая версия - не нужно) */
+-o-#sett .inl_bl.left_label:before {content: "       " ; 
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/11/f183d1ec972598731d2b1679a4fd2b11.png	);
+background-repeat: no-repeat; padding-top: 5.5px; padding-left: 2px;
+position: relative; top: 2px; left: -2px; 
+filter: contrast(250%) brightness(75%);
+/* background-image: url(/images/icons/common.png?6); /* Столбец с Иконками ВК vk.com/images/icons/common.png */
+/*    background-position-x: 5px;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+/*    background-position-y: -56px;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+/*    background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;} */}
+}
+
+@-moz-document url-prefix("https://vk.com/audios") {
+
+/* Настройки для раздела "Музыка" */
+
+/* Убрать пункты Верхнего меню в разделе Музыки */
+#people_link_td,#communities_link_td,#games_link_td,#music_link_td.top_nav_link {display: none}
+
+/* Ширина ТопАудиоплеера */
+.top_audio_player {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--light_blue_100);
+    position: relative;
+    max-width: 340px !important;
+    height: var(--header-height);
+    display: none;
+    opacity: 0;
+    pointer-events: none;}
+
+/* Отступ Верхнего Аудиоплеера Слева и Справа */
+[dir=ltr] .top_audio_player {
+    padding-left: 10px !important; padding-right: 10px !important; }
+}
+
+@-moz-document url-prefix("https://prod") {
+
+/* №№№№№№№ Исправление расстояний между буквами для Приложений самого ВК №№№№№№№ 
+            : в домене "https://prod"  */
+
+/*  Всё Целиком */
+.block-wrap *, .DesktopWrapper * {letter-spacing: 0.0px !important;}
+
+    /* Приветствие */
+/*      .block-hello p {letter-spacing: 0.0px !important;}
+    /* Заголовок */
+/*      .block-head {letter-spacing: 0.0px !important;}
+    /* Заголовки */
+/*      .block-empty--title {letter-spacing: .38px !important;}
+    /* Заголовки v2 */
+/*      .block-title--title {letter-spacing: 0.0px !important;}
+    /* Заголовки v3 */
+/*      .block-title--subtitle {letter-spacing: 0.0px !important;}
+    /* Описания */
+/*      .block-empty--subtitle {letter-spacing: 0.0px !important;}
+    /* Доп. Инфо */
+/*      .footer--disclaimer {letter-spacing: 0.0px !important;}
+    /* текст Субшапки Блока */
+/*      .block-subhead p {letter-spacing: 0.0px !important;}
+    /* Заголовок Блока */
+/*      .block-info--title {letter-spacing: 0.0px !important;}
+    /* block-wrap__disclaimer */
+/*      .block-wrap__disclaimer-title{letter-spacing: 0.0px !important;}
+    /* Ники Пользователей */
+/*      .block-clip--user-content b {letter-spacing: 0.0px !important;}
+    /* Ники Друзей */
+/*      .block-friend--name {letter-spacing: 0.0px !important;}
+    /* Названия Приложений */
+/*      .block-services--apps-name {letter-spacing: 0.0px !important;}
+    /* текст в Новостном Блоке Фида */
+/*      .block-news-feed--pop-text {letter-spacing: 0.0px !important;}
+    /* Название Музыкального Трека */
+/*      .block-music--song-name {letter-spacing: 0.0px !important;}
+
+
+/* ########################################################################### */
+}

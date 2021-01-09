@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           moodle perron
+@name           moodle perron 2.0
 @namespace      USO Archive
 @author         Tomás Vargas
 @description    `dark mode`
-@version        2020818.22.21
+@version        202118.20.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,6 @@
 .card-body a {
     color: #5bc0de;
 }
-
 .card-body {
     background-color: #373a3c;
     color: white;
@@ -22,10 +21,10 @@
 .navbar-light .navbar-brand, .navbar-bootswatch .navbar-brand {
     color: white;
 }
-.usertext{
-color:#5bc0de
+.usertext {
+    color:#5bc0de
 }
-.navbar-light .navbar-nav .nav-link:hover, .navbar-bootswatch .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-bootswatch .navbar-nav .nav-link:focus ,nav-link{
+.navbar-light .navbar-nav .nav-link:hover, .navbar-bootswatch .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus, .navbar-bootswatch .navbar-nav .nav-link:focus, nav-link {
     color: #5bc0de;
 }
 .navbar-light .navbar-nav .nav-link, .navbar-bootswatch .navbar-nav .nav-link {
@@ -59,7 +58,7 @@ color:#5bc0de
     padding: .75rem 1.25rem;
     margin-bottom: -1px;
     background-color: #373a3c;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
 }
 .btn-secondary, .btn-default, .btn:hover {
     color: #5bc0de;
@@ -67,7 +66,7 @@ color:#5bc0de
     border-color: #5bc0de;
 }
 .pagination {
-background-color:#373a3c!important;
+    background-color:#373a3c!important;
 }
 #page {
     margin-top: 50px;
@@ -76,9 +75,40 @@ background-color:#373a3c!important;
 #region-main {
     overflow-x: auto;
     overflow-y: visible;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     border-radius: .25rem;
     padding: 1.25rem;
     background-color: #fff;
+}
+#region-main {
+    overflow-x: auto;
+    overflow-y: visible;
+    border: 1px solid rgba(0, 0, 0, .125);
+    border-radius: .25rem;
+    padding: 1.25rem;
+    background-color: #373a3c;
+}
+p, span {
+    color: white!important;
+    background-color:#373a3c!important;
+}
+.availabilityinfo {
+    color: grey!important;
+    background-color:#373a3c!important;
+}
+a, strong {
+    color:#5bc0de!important;
+}
+.dropdown-menu, .popover-region-container {
+    background-color: #373a3c;
+}
+.submissionstatustable, .submissionsummarytable, .generaltable {
+    color:white!important;
+}
+.generaltable tbody tr:hover {
+    color:#5bc0de!important;
+}
+h2 {
+    color:#5bc0de!important;
 }
 }

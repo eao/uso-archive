@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is designed to make the desktop version of Instagram look and feel like Instagram's Dark Theme on mobile, while also providing a widescreen fix for Direct Messages and other parts of Instagram's UIIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        20201228.2.15
+@version        202119.1.0
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("instagram.com") {
-/* Instagram Dark Theme v3.0*/
+/* Instagram Dark Theme v3.1*/
 /* Created by Lexan*/
 
 /*DM THEME COLOUR - If you would like a different colour for your DM Chat bubbles, change this value*/
@@ -47,6 +47,9 @@
     --bg-color: #0b0b0b;
     --bg2-color: #141414;
 	--bg3-color: #222;
+    --item-color: #333;
+    --item-hover-color: #666;
+    --item-active-color: #777;
     --text-color: #fff;
     --text-darken-color: #ddd;
     --text-darken2-color: #aaa;
@@ -249,6 +252,14 @@ a.O4GlU, a.O4GlU:visited{
 .ByB5K{
     background-color: var(--bg3-color);
     border-top: none;
+}
+
+._8Rm4L{ /*Suggestions For You*/
+    background-color: var(--bg2-color);
+}
+
+._7UhW9.PIoXz.qyrsm.KV-D4.uL8Hv{
+    color: var(--dm-blue);
 }
 
 /*Individual Post*/
@@ -783,7 +794,7 @@ a.k8Vux, a.k8Vux:visited{
     background-color: var(--bg-color);
 }
 
-.Ouy_P, .t3CGe{
+.Ouy_P, .t3CG, .nnMky, .gCQgN{
     color: var(--text-color);
 }
 
@@ -804,6 +815,30 @@ a.k8Vux, a.k8Vux:visited{
 
 .bkeOU{
     background: none;
+}
+
+.BAJFR textarea, .BAJFR input{
+    color: var(--text-darken2-color);
+}
+
+.LaVsc{
+    background-color: var(--item-color);
+}
+
+.xDbR6{
+    border: 1px solid var(--item-active-color);
+}
+
+.l3EG9{
+    background-color: var(--bg3-color);
+}
+
+.xWKqq{
+    background-color: var(--dm-blue);
+}
+
+.NChGZ{
+    background-color: var(--text-darken2-color);
 }
 
 /*Settings*/
@@ -975,11 +1010,11 @@ a.k8Vux, a.k8Vux:visited{
     color: var(--text-darken2-color);
 }
 
-/*._2hvTZ{
+._2hvTZ{
     background-color: var(--bg3-color);
     border: none;
     color: var(--text-darken2-color);
-}*/
+}
 
 .izU2O{
     color: var(--text-darken2-color);
