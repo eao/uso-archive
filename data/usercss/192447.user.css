@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           VK RetroWave-NightCall and Cyberpunk v1.3
+@name           VK RetroWave-NightCall and Cyberpunk v21.1.9
 @namespace      USO Archive
 @author         Lavshyak
-@description    `Обновил для вк на момент 30.12.2020, теперь цвета более адекватные; скрыл рекламу в левом меню, которую не мог скрыть адблок по причине хитрости разрабов вк.Киберпанковский вк, версия 1.3Разрабатывался для монитора 1920*1080 в Firefox.Насчет отображения рекламы не знаю, у меня адблок.`
-@version        20201230.8.24
+@description    `Обновил для вк на момент 09.01.2021, теперь цвета более адекватные; скрыл рекламу в левом меню, которую не мог скрыть адблок по причине хитрости разрабов вк.Разрабатывался для монитора 1920*1080 в Firefox.За рекламу не отвечаю, у меня адблок.`
+@version        202119.9.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -143,5 +143,31 @@ body.new_header_design .top_nav_link {
 #ads_left {
     overflow: hidden !important;
     display: none !important;
+}
+
+
+
+/*в музыке*/
+[dir] .CatalogSection--header_section {
+    display: none !important;
+}
+
+
+
+/*справа внизу*/
+[dir] .chat_onl_inner {
+    background-color: rgba(108, 0, 255, .17);
+    border-radius: 3px 3px 0 0;
+}
+[dir] .chat_onl_inner:hover {
+    background-color: rgba(63, 0, 157, .5);
+    border-radius: 3px 3px 0 0;
+}
+
+.chat_onl_wrap.chat_expand{
+    opacity: 0.5 !important;
+}
+.chat_onl_wrap.chat_expand:hover{
+    opacity: 1 !important;
 }
 }

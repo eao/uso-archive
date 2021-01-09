@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         reactor04
 @description    `Dark theme for Google Classroom`
-@version        202116.8.44
+@version        202119.4.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -183,13 +183,16 @@ div.hgjBDc {
   background-color: #999;  
 }
 
+
+
 /* Announcement controls */
 span.l4V7wb {
     color: #b77404;
 }
 
-div.hgjBDc textarea {
-    background-color: #d5d5d5; 
+div.hgjBDc textarea.hqfVKd.tL9Q4c {
+    background-color: #d5d5d5;
+    color: #424242;
 }
 
 /* Stream */
