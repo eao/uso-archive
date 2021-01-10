@@ -1,6 +1,7 @@
 <script>
 	import { Modal } from "sveltestrap";
 	import DOMPurify from "dompurify";
+	import linkifyHtml from "linkifyjs/html";
 	import { createEventDispatcher } from "svelte";
 
 	const dispatch = createEventDispatcher();
@@ -38,7 +39,7 @@
 		let m;
 
 		while ((m = regex.exec(str)) !== null) {
-			str = str.slice(0, m.index) + convertUsoUrl(base, m[0]) + str.slice(m.index + m[0].length);
+			str = str.slice(0, m.index) + (convertUsoUrl(base, m[0]) || "*uso link*") + str.slice(m.index + m[0].length);
 		}
 
 		return str;
@@ -65,8 +66,8 @@
 		} else if (path[0] === "users") {
 			const user = path[1];
 			return createUrl(base, null, search, null, user, page);
-		} else {
-			return url;
+		} else if (path[0] === "style_screenshots") {
+			return dataPrefix + "screenshots/" + path[1];
 		}
 	}
 
@@ -95,8 +96,31 @@
 		return str.slice(str[0] === char ? 1 : 0, str[str.length] === char ? str.length - 1 : str.length);
 	}
 
+	function htmlToTemplate(html) {
+		let temp = document.createElement("template");
+		html = html.trim(); // Never return a space text node as a result
+		temp.innerHTML = html;
+		return temp;
+	}
+
 	function processModalDescription(html) {
-		return DOMPurify.sanitize(replaceUrls(base, html).replace(/\r?\n/g, "<br>"));
+		const sanitized = DOMPurify.sanitize(linkifyHtml(replaceUrls(base, html).replace(/\r?\n/g, "<br>"), { target: "_blank", defaultProtocol: "https" }));
+		const template = htmlToTemplate(sanitized);
+
+		webIsAwful(template.content);
+
+		function webIsAwful(node) {
+			for (const child of node.children) {
+				if (child.nodeName === "A") {
+					child.target = "_blank";
+				}
+				if (child.children && child.children.length > 0) {
+					webIsAwful(child);
+				}
+			}
+		}
+
+		return template.innerHTML;
 	}
 
 	function onDescriptionClick(e) {
