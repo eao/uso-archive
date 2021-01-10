@@ -25,7 +25,7 @@
 	let pagination = {
 		page: 1,
 		totalPages: 1,
-		perPage: 20,
+		perPage: 60,
 	};
 
 	const sortDropdownItems = [
