@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Unleash the Echidnas
 @description    `Less dark than AVEN- Dark, less grey than grey AVEN.`
-@version        20201127.1.55
+@version        2021110.2.33
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -21,6 +21,13 @@ a, /* forum links on main page, thread links in activity feed, quote links in th
     color: #a0a0a0 /* dark enough to be visible against white background of post composer, set down enough from regular text to be visibly different (also underlined in posts) */
 }
 
+.ipsApp .ipsToolList .ipsButton_link, /* cancel post edit button text  */
+.ipsSideMenu_small .ipsSideMenu_item /* initially displayed options and extended options in search popup, unselected options in content and member search */
+{
+    color: #707070; /* left menu in profiles also uses .ipsSideMmenu_item but isn't .ipsSideMenu_small */
+                    /* results in unselected options in content and member search using link color, which isn't ideal but requires ~25 overrides on a per item label basis */
+}
+
 a:hover /* link response on mouse over */
 {
     color: #714fc0; /* default is #573c69, which dims the link and makes it more difficult to read with a dark theme */
@@ -31,28 +38,15 @@ a:hover /* link response on mouse over */
     color: #714fc0 !important; /* forced to use !important to override AVEN default style but still gets overridden when linking posts in threads */
 }
 
-a[data-mentionid], /* user tags in posts */
-.cForumTitle, /* bars above forum groups on main page */
-.ipsApp .ipsButton_important, /* start new topic button on main page */
-.ipsItemStatus.ipsItemStatus_large, /* forum icons */
-.ipsType_sectionTitle, /* top bars on forum group pages */
-.ipsWidget.ipsWidget_horizontal .ipsWidget_title /* announcements bar on main page */
-{
-    background: #714f88 /* somewhat brighter than AVEN default purple of #613f78 */
-}
-
-.ipsSideMenu_small .ipsSideMenu_item /* initially displayed options and extended options in search popup, unselected options in content and member search */
-{
-    color: #38343b; /* left menu in profiles also uses .ipsSideMmenu_item but isn't .ipsSideMenu_small */
-                    /* results in unselected options in content and member search using link color, which isn't ideal but requires ~25 overrides on a per item label bases */
-}
-
+.card.reddit .reddit-title, /* titles of reddit threads linked in posts */
+.card.reddit .reddit-info li .black, /* subreddit IDs (r/<sub>) */
 .cAuthorPane_info.ipsList_reset > li, /* user ranks and post counts in post author info */
 .ipsDataItem_stats_number, /* forum post counts */
 .ipsFieldRow_label, /* reason for edit header and checkbox text when editing posts */
 .ipsList_inline, /* report post link */
 .ipsList_reset > li > span, /* post author information */
 .ipsPager_type, /* text for left and right topic navigation arrows at bottom of thread pages */
+.ipsPagination, /* text for previous or following page numbers at bottom of thread pages */
 .ipsSpoiler_contents.ipsClearfix.cke_widget_editable, /*  */
 .ipsType_center > a, /* all notifications link at bottom of notification dropdown */
 .ipsWidget_statsCount /* total members and max users online numbers at bottom of main page */
@@ -60,7 +54,7 @@ a[data-mentionid], /* user tags in posts */
     color: #a0a0a0;
 }
 
-.cke_editable, /* text in new post box at bottom of page */
+.ipsApp .cke_wysiwyg_div, /* text in new post box at bottom of page */
 html[dir="ltr"] .ipsAlert_icon + .ipsAlert_msg /* popup text when cancelling out of editing a post */
 {
   color: #151516;
@@ -73,7 +67,7 @@ html[dir="ltr"] .ipsAlert_icon + .ipsAlert_msg /* popup text when cancelling out
 
 .chch-22-7 /* text color for typing chat messages */
 {
-    color: #e5e5e6 !important; /* no obviously better option within Chatwee style structure */
+    color: #a0a0a0 !important; /* Chatwee style added important in early 2021, forcing use of important to override */
 }
 
 .chch-roomPanel, /* list of users in main chat popup */
@@ -83,16 +77,18 @@ html[dir="ltr"] .ipsAlert_icon + .ipsAlert_msg /* popup text when cancelling out
 }
 
 .cPost.ipsComment:not( .ipsComment_selected ):not( .ipsModerated ) .cAuthorPane, /* post headers in narrow view */
-.cTopicPostArea /* new post box at bottom of page */
+.cTopicPostArea, /* new post box at bottom of page */
+.ipsAreaBackground_reset /* write a comment border on user pages */
 {
     background: #151516;
 }
 
+a[data-mentionid], /* username text of user tags in posts */
 .ipsBreadcrumb > ul > li, /* forum path at top of page between header and first post */ 
 .ipsBreadcrumb [data-action="defaultStream"], /* action links to right of forum path */
 .ipsBreadcrumb [data-action="markSiteRead"],
 .ipsDataItem_title, /* descriptions in notifcation dropdown and notification list */
-.ipsStreamItem_snippet .ipsType_richText, /* post text in activity feeds */
+.ipsPagination .ipsPagination_page.ipsPagination_active a /* text for current page number at bottom of thread pages */
 .ipsStreamItem_time, /* text of time markers in site activity feed */
 .ipsType_blendLinks, /* thread titles, usernames */
 .ipsType_break, /* thread titles, usernames */
@@ -100,12 +96,14 @@ html[dir="ltr"] .ipsAlert_icon + .ipsAlert_msg /* popup text when cancelling out
 .ipsType_pageTitle, /* feed names, e.g. All Activity */
 .ipsType_richText, /* text in status comments */
 .ipsType_sectionHead, /* title of follow thread and notification dropdown */
+.ipsStreamItem_snippet .ipsType_richText, /* post text in activity feeds */
 .ipsSideMenu_item.ipsSideMenu_itemActive /* selected option in search popup */
 {
     color: #e5e5e6;
 }
 
 .ipsBox:not( .ipsBox_transparent ):not( .ipsModerated ), /* padding of member statistics at bottom of main page */
+.ipsButtonBar, /* toolbar just below message inbox title */
 .ipsColumn, /* post background */
 .ipsComment, /* comments on a user's status */
 .ipsDataItem, /* alternating forum descriptions, recent topics, and recent status updates on main page, */
@@ -115,12 +113,6 @@ html[dir="ltr"] .ipsAlert_icon + .ipsAlert_msg /* popup text when cancelling out
 body[data-role="externalEmbed"] /* tweets in posts but, unfortunately, also tweets in quotes and posts being composed */
 {
     background: #151516;
-}
-
-.ipsBox, /* border of posts */
-.ipsHovercard /* follow thread pop up */
-{
-    border-color: #050506;
 }
 
 .cMessage_active, /* currently viewed message thread in mailbox */
@@ -138,15 +130,20 @@ body[data-role="externalEmbed"] /* tweets in posts but, unfortunately, also twee
     background: #222121; 
 }
 
-.ipsApp .ipsSpacer_bottom /* suppress whitespace between post box and activity feed on user profile page */
+a[data-mentionid], /* background of user tags in posts */
+.cForumTitle, /* bars above forum groups on main page */
+.ipsApp .ipsButton_important, /* start new topic button on main page */
+.ipsItemStatus.ipsItemStatus_large, /* forum icons */
+.ipsType_sectionTitle, /* top bars on forum group pages */
+.ipsWidget.ipsWidget_horizontal .ipsWidget_title /* announcements bar on main page */
 {
-    margin-bottom: 0;
+    background: #714f88 /* somewhat brighter than AVEN default purple of #613f78 */
 }
 
-.ipsDialog_title ~ .ipsHr /* horizontal rule below link popup header */
+.ipsApp .ipsButton_light, /* background of multi-quote + sign at bottom of posts */
+.ipsReact_reactCount > a /* round-ended bar holding post reaction counts. matched to grey heart of reaction heart image */
 {
-    border-color: #050506;
-    margin: 0;
+    background: #fdfdfd; 
 }
 
 .ipsComment_header, /* header bars for messages with other users  */
@@ -163,19 +160,44 @@ body[data-role="externalEmbed"] /* tweets in posts but, unfortunately, also twee
 }
 
 .ipsAreaBackground_light, /* header bars of threads linked in signatures */
-.ipsQuote, /* quotes in posts in threads */
 .ipsSpoiler /* spoilers in posts */
 {
-    border-color: #050506;
     background: #222121; 
+    border-color: #050506;
 }
 
-.ipsQuote_contents, /* quotes in posts being composed */
 #elProfileActivityOverview .ipsStreamItem, /* reactions in user profile's ativity feed */
-.ipsStreamItem /* posts in site activty feeds */
+.ipsStreamItem_contentBlock /* posts in site activty feeds */
 {
     background: #222121; 
     color: #e0e0e1;  
 }
+
+.ipsQuote, /* quotes in posts in threads */
+.ipsQuote .ipsQuote_contents /* quotes in posts being composed */
+{
+    background: #222121; 
+    color: #e0e0e1;  
+    padding-top: 0;
+    padding-bottom: 0.25em;
+}
+
+.ipsBox, /* border of posts */
+.ipsHovercard /* follow thread pop up */
+{
+    border-color: #050506;
+}
+
+.ipsApp .ipsSpacer_bottom /* suppress whitespace between post box and activity feed on user profile page */
+{
+    margin-bottom: 0;
+}
+
+.ipsDialog_title ~ .ipsHr /* horizontal rule below link popup header */
+{
+    border-color: #050506;
+    margin: 0;
+}
+
 
 }

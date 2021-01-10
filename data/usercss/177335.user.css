@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201224.15.27
+@version        2021110.4.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -72,14 +72,12 @@ selector
 	text-transform: capitalize!important;
 }
 
-.cukqCp,
-.ffTgtf,
-.hCzwFv:hover,
 .KBJVt,
-[data-test="product-card-default"],
 .bJLEBY,
 .bTfBWr,
+.bWBzvh,
 .brWldj,
+.cukqCp,
 .dqwuwk,
 .drbzSX:checked + .CheckboxLabel-sc-1cw16wj-0::before,
 .duRofb,
@@ -87,14 +85,19 @@ selector
 .eASAwe,
 .eMrQdC,
 .ehNQuQ,
+.fVCKBw,
+.ffTgtf,
 .flyMJd,
 .ggrRdX,
+.hCzwFv:hover,
 .hWRFSI::before,
 .hhtxGj,
 .iRrvFA::before,
+.ioGdSX svg,
 .jcWCSL,
 .liTTVO,
-:focus
+:focus,
+[data-test="product-card-default"]
  {
 	border: none!important;
 	outline: none!important;
@@ -135,16 +138,16 @@ text {
 	font-size: 21px!important;
 }
 
-.bWMnBK,
 .FjafI,
+.bWMnBK,
 .bfMWBG,
 .fVCKBw,
+.h-text-md,
 .h-text-red,
 .jwQSpp,
 .kYNFFy,
 .kZVcDL,
-.kbKKju,
-.h-text-md
+.kbKKju
  {
 	font-size: 19px!important;
 }
@@ -186,11 +189,11 @@ selector
 
 /*___ Margins ______________________________________________________________________*/
 
-.h-padding-h-default,
 .bTvKos,
 .bxnpmb,
 .dyxkzS,
 .h-display-flex.bkaXIn,
+.h-padding-h-default,
 .iUMqJe,
 .kPvlkb,
 .l-container-fixed,
@@ -422,8 +425,8 @@ time
 
 /*___ Green ________________________________________________________________________*/
 
-.ProductRecsPrice-i064qn-0.eIXWOx,
 .FjafI,
+.ProductRecsPrice-i064qn-0.eIXWOx,
 .dUAdev,
 .h-text-red,
 .jwQSpp,
@@ -515,8 +518,9 @@ html {
 	background-attachment: fixed!important;
 }
 
-.targetHeader,
-.iRgzaK {
+.iRgzaK,
+.targetHeader
+{
 	background-image: none!important;
 }
 
@@ -526,10 +530,10 @@ html {
 
 /*___ Background Gray ______________________________________________________________*/
 
-.jTWKas,
 .dwa-carousel-pages,
 .eArdao,
 .hUpumF,
+.jTWKas,
 .kyFgEE
  {
 	background-color: #060505!important;
@@ -651,6 +655,7 @@ section.home .home-carousel:nth-child(even)
 .bhPjBX,
 .cUPKuy,
 .cbBVCy,
+.eLsRDh,
 .fKOLVe,
 .gILiVz,
 .jkzMMC,
@@ -658,7 +663,7 @@ section.home .home-carousel:nth-child(even)
 section.home .home-offers-links .btn-primary
  {
 	background-image: linear-gradient(to bottom right, #f00, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
@@ -667,6 +672,7 @@ section.home .home-offers-links .btn-primary
 .bhPjBX:hover,
 .cUPKuy:hover,
 .cbBVCy:hover,
+.eLsRDh:hover,
 .fKOLVe:hover,
 .gILiVz:hover,
 .jkzMMC:hover,
@@ -680,6 +686,7 @@ section.home .home-offers-links .btn-primary:hover
 .bhPjBX:active,
 .cUPKuy:active,
 .cbBVCy:active,
+.eLsRDh:active,
 .fKOLVe:active,
 .gILiVz:active,
 .jkzMMC:active,
@@ -691,18 +698,20 @@ section.home .home-offers-links .btn-primary:active
 
 /*__ Orange ________________________________________________________________________*/
 
+.bnUCXr,
 .bszsaO,
 .eYendH,
 .lktwRj,
 .ql-container .btn.save-to-quicklist-btn
  {
 	background-image: linear-gradient(to bottom right, #da3a04, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
 }
 
+.bnUCXr:hover,
 .bszsaO:hover,
 .eYendH:hover,
 .lktwRj:hover,
@@ -712,6 +721,7 @@ section.home .home-offers-links .btn-primary:active
 	color: #ff0!important;
 }
 
+.bnUCXr:active,
 .bszsaO:active,
 .eYendH:active,
 .lktwRj:active,
@@ -824,6 +834,7 @@ section.home .home-offers-links .btn-primary:active
 .bTvKos,
 .bkNQyK.ReactModal__Content,
 .bxnpmb,
+.ebgdLP.ReactModal__Content--after-open,
 .h-display-flex.bkaXIn,
 .hqUMae,
 .iNoZKC,
@@ -845,6 +856,7 @@ section.home .home-offers-links .btn-primary:active
 .bTvKos:hover,
 .bkNQyK.ReactModal__Content:hover,
 .bxnpmb:hover,
+.ebgdLP.ReactModal__Content--after-open:hover,
 .h-display-flex.bkaXIn:hover,
 .hqUMae:hover,
 .iNoZKC:hover,
@@ -857,12 +869,13 @@ section.home .home-offers-links .btn-primary:active
 
 /*___ Red Gradient _________________________________________________________________*/
 
-.fxBYVU,
-.jIEHcO,
 .dDaLXi,
 .dswiMC,
+.fVCKBw,
+.fxBYVU,
 .iEUZTl #headerMain,
 .iYQVBZ,
+.jIEHcO,
 .targetHeader--mainNav,
 header
  {
@@ -876,6 +889,14 @@ header
 .kpmcBt
  {
 	background: linear-gradient(to right, #383838, #0000)!important;
+	border-left-color: #434343!important;
+}
+
+/*___ Highlight Background _________________________________________________________*/
+
+[aria-label*="checked"]
+ {
+	background: linear-gradient(to bottom, #a48f03, #0000)!important;
 	border-left-color: #434343!important;
 }
 

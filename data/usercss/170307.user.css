@@ -2,18 +2,12 @@
 @name           A better layout for RAW LH
 @namespace      USO Archive
 @author         tyf
-@description    `for RAW LH (loveheaven.net, loveha.net, 18lhplus.com, batoscan.net)<ul><li>More comfortable manga list</li><li>Content images fit the window size</li><li>Hide the ADs</li><li>Two-page view mode in a wider window</li></ul>`
-@version        2020127.5.11
+@description    `for RAW LH (lovehug.net, weloma.net)<ul><li>More comfortable manga list</li><li>Content images fit the window size</li><li>Hide the ADs</li><li>Two-page view mode in a wider window</li></ul>`
+@version        2021110.11.57
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-/* ==UserStyle==
-@name			RAW LH
-@author			tyf
-@preprocessor	default
-==/UserStyle== */
-
-@-moz-document domain("loveheaven.net"), domain("loveha.net"), domain("18lhplus.com"), domain("batoscan.net")
+@-moz-document domain("lovehug.net"), domain("weloma.net")
 {
 	body>br,
 	body>iframe,
@@ -26,6 +20,7 @@
 	#contentstory>br,
 	#contentstory>center,
 	#content>br,
+	#rd-side_icon,
 	.col-lg-4> :not(div),
 	.chapter-content br,
 	.chapter-content center,
@@ -52,6 +47,16 @@
 		display: none !important;
 	}
 	
+	::-webkit-scrollbar {
+		width: 2pt;
+		height: 2pt;
+		background: #333
+	}
+	
+	::-webkit-scrollbar-thumb {
+		background-color: #cc90b0;
+	}
+	
 	html,
 	body {
 		height: auto;
@@ -59,7 +64,7 @@
 	
 	body {
 		font: 400 12pt sans-serif;
-		margin-top: 5mm;
+		margin-top: 4mm;
 		background: linear-gradient(90deg,
 				#333 0,
 				#777 45%,
@@ -124,11 +129,12 @@
 		box-shadow: 0 0 3mm #333;
 	}
 	
-	.headroom {
+	.navbar,
+	.headroom:not(.chapter-content) {
+		display: block !important;
 		top: -40px !important;
-		background-color: rgba(180, 100, 60, .7);
-		opacity: .8;
-		border-bottom: 1mm solid #d72;
+		height: auto !important;
+		opacity: .5;
 		box-shadow: 0 0 3mm #555;
 		transform: none !important;
 		transition: all .8s 0.6s;
@@ -136,9 +142,9 @@
 		-webkit-backdrop-filter: blur(5mm);
 	}
 	
+	.navbar:hover,
 	.headroom:hover {
 		top: 0 !important;
-		background-color: #df691a;
 		z-index: 100 !important;
 		opacity: .95;
 		transition: all .1s;
@@ -151,24 +157,22 @@
 	.chapter-before .chapter-select {
 		position: fixed;
 		left: 0;
-		bottom: -35px;
+		bottom: -45px;
 		width: 100vw;
 		padding: 5px 0;
-		background-color: rgba(60, 60, 60, .7);
-		opacity: .5;
+		background-color: rgba(60, 60, 60, .8);
+		opacity: .6;
 		z-index: 9999;
-		box-shadow: 0 -2px 1mm rgba(0, 0, 0, .4);
-		transition: .8s .6s;
-		backdrop-filter: blur(1mm);
-		-webkit-backdrop-filter: blur(1mm);
+		box-shadow: 0 0 2mm rgba(0, 0, 0, .7);
+		transition: .8s .4s;
+		backdrop-filter: blur(3mm);
+		-webkit-backdrop-filter: blur(3mm);
 	}
 	
 	.chapter-before .chapter-select:hover {
 		bottom: 0;
-		background-color: rgba(128, 128, 128, .5);
-		opacity: .95;
-		backdrop-filter: blur(5mm);
-		-webkit-backdrop-filter: blur(5mm);
+		background-color: rgba(135, 140, 140, .6);
+		opacity: 1;
 		transition: .2s;
 	}
 	
@@ -178,13 +182,11 @@
 		min-width: 670px;
 		padding: 0 3mm;
 		margin: 0;
-		overflow-x: hidden;
 	}
 	
-	::-webkit-scrollbar {
-		width: 2pt;
-		height: 2pt;
-		background: rgba(255, 255, 255, .5);
+	.owl-carousel {
+		max-width: 1500px;
+		margin: 0 auto;
 	}
 	
 	#contentstory,
@@ -221,8 +223,9 @@
 	.chapter-content {
 		font-size: 0;
 		width: calc(100% - 4mm) !important;
-		max-width: calc((100vh - 22mm)*1.5);
+		max-width: calc((100vh - 22mm)*1.6);
 		text-align: center;
+		direction: rtl;
 		margin: 0 auto;
 	}
 	
@@ -266,12 +269,12 @@
 	
 	#content>img,
 	.chapter-content .chapter-img {
-		min-width: 45vh;
+		min-width: 50vh;
 		max-width: 100%;
-		height: calc(100vh - 22mm);
+		height: calc(100vh - 20mm);
 		background-color: rgba(255, 255, 255, .4);
 		border: none;
-		margin: 0 auto 16px;
+		margin: 0 auto 15px;
 	}
 	
 	.chapter-content .well {
@@ -286,6 +289,16 @@
 	.page-header {
 		margin: 0;
 		padding: 0;
+	}
+	
+	.container.list,
+	.mCustomScrollbar {
+		padding-top: 0;
+		height: auto !important;
+	}
+	
+	.mCustomScrollbar {
+		overflow: hidden;
 	}
 	
 	.itemupdate,
@@ -457,8 +470,12 @@
 	}
 	
 	.breadcrumb {
+		text-align: left;
 		padding: 1mm 2mm;
-		margin: 0 0 2mm;
+		margin: 0 0 1mm;
+		border-radius: 1em;
+		background-color: rgba(0, 0, 0, .5);
+		box-shadow: 0 0 1mm #888;
 	}
 	
 	.breadcrumb>li+li:before {
@@ -492,7 +509,7 @@
 	
 	.row-list .media,
 	.media-body {
-		overflow: visible;
+		overflow: auto;
 	}
 	
 	.pop_info .group p {
@@ -525,7 +542,7 @@
 		box-shadow: 0 0 0 1px #777;
 		border-radius: 2mm;
 		overflow-x: hidden;
-		overflow-y: scroll;
+		overflow-y: auto;
 		transition: .5s .1s;
 	}
 	
@@ -535,18 +552,17 @@
 		left: 0;
 		content: "";
 		width: 100%;
-		height: 60%;
+		height: 50%;
 		background: linear-gradient(0deg,
-				rgba(128, 128, 128, 1) 1%,
-				rgba(128, 128, 128, .7) 20%,
-				rgba(128, 128, 128, 0) 100%);
+				rgba(80, 80, 80, .9) 0,
+				rgba(80, 80, 80, 0) 100%);
 		border-radius: 0 0 2mm 2mm;
 		z-index: 3;
 		transition: .3s .3s;
 	}
 	
 	#tab-chapper:hover {
-		max-height: 100vh !important;
+		max-height: 300em !important;
 		overflow: auto;
 		transition: .5s;
 	}
@@ -590,6 +606,15 @@
 		padding: 0 25%;
 		margin: 0 0;
 		display: block;
+	}
+	
+	.container.manga {
+		padding-top: 0;
+	}
+	
+	.container.manga .col-md-8.info-manga {
+		width: 66.66%;
+		padding-right: 5mm;
 	}
 	
 	.col-xs-1,
@@ -643,10 +668,6 @@
 		padding: 0;
 	}
 	
-	.searchbutton {
-		background: #fff url("https://rawqq.com/app/manga/themes/default/assets/images/btn_search.png") 50% 50% no-repeat
-	}
-	
 	.fb_iframe_widget {
 		white-space: nowrap;
 		width: auto !important;
@@ -667,10 +688,35 @@
 		height: 7mm;
 	}
 	
+	.end2 {
+		margin-top: 2mm;
+	}
+	
+	.chapter-content .chapter-img {
+		display: inline-block;
+	}
+	
+	#content>img:first-of-type,
+	.chapter-img:first-of-type {
+		display: block;
+	}
+	
+	
 	@media screen {
 		select {
 			font: 12pt sans-serif;
 			line-height: 1.2;
+		}
+	
+		.thumb-item-flow {
+			flex: none;
+			padding: 2mm;
+			margin: 0 0 1mm;
+			border-radius: 2mm;
+		}
+	
+		.thumb-item-flow:hover {
+			background: rgba(255, 255, 255, .2);
 		}
 	
 		.itemupdate {
@@ -694,24 +740,43 @@
 			padding: 0;
 		}
 	
-		.sidebar-content>a {
-			width: 35%;
+		.sidebar-content {
+			clear: both;
+			height: 120px;
+			padding: 0 0 3mm;
 		}
 	
-		.sidebar-content>a>img {
-			width: 100%;
-			height: 58px;
+		.sidebar-content>a {
+			width: 100px;
+			height: 100%;
+			display: inline-block;
 			padding: 0;
+		}
+	
+		.sidebar-content>a img {
+			width: 100%;
+			height: 100%;
+			margin: 0 auto;
+			object-fit: cover;
 		}
 	}
 	
 	@media screen and (min-width: 0) {
+		.modal-open {
+			overflow: auto;
+		}
+	
 		.container {
 			max-width: 100vw;
 		}
 	
 		.suggestsearch {
 			width: 370px;
+		}
+	
+		.thumb-item-flow {
+			width: calc(100% / 4);
+			transition: .2s;
 		}
 	
 		.itemupdate,
@@ -730,11 +795,14 @@
 	
 	@media screen and (max-width: 1000px) {
 	
+		.row>.col-md-8:first-child,
 		.col-lg-8,
 		.info-manga {
 			width: 100%;
 		}
 	
+		.row>.col-md-4:last-child,
+		.col-md-4,
 		.col-lg-4 {
 			position: static;
 			width: 100%;
@@ -753,14 +821,17 @@
 	
 	@media screen and (min-width: 1000px) {
 	
+		.row>.col-md-8:first-child,
 		.col-lg-8,
 		.info-manga {
 			width: calc(100vw - 130px);
 		}
 	
+		.row>.col-md-4:last-child,
 		.col-lg-4 {
 			position: absolute;
 			width: 350px;
+			max-width: 350px;
 			right: -260px;
 			padding: 1em;
 			margin: 0;
@@ -773,6 +844,7 @@
 			transition: all .8s;
 		}
 	
+		.row>.col-md-4:last-child:hover,
 		.col-lg-4:hover {
 			right: 0;
 			opacity: 1;
@@ -782,12 +854,17 @@
 			-webkit-backdrop-filter: blur(5px);
 		}
 	
+		.row>.col-md-4:last-child .tab-pane,
 		.col-lg-4 .panel-body {
 			column-count: 2;
 		}
 	}
 	
 	@media screen and (max-width: 650pt) {
+	
+		.thumb-item-flow {
+			width: calc(100% / 2);
+		}
 	
 		.itemupdate,
 		.row-list {
@@ -797,6 +874,10 @@
 	
 	@media screen and (min-width: 650pt) {
 	
+		.thumb-item-flow {
+			width: calc(100% / 4);
+		}
+	
 		.itemupdate,
 		.row-list {
 			width: calc(100% / 3 - 7px);
@@ -804,6 +885,9 @@
 	}
 	
 	@media screen and (min-width: 900pt) {
+		.thumb-item-flow {
+			width: calc(100% /6);
+		}
 	
 		.itemupdate,
 		.row-list {
@@ -812,6 +896,9 @@
 	}
 	
 	@media screen and (min-width: 1200pt) {
+		.thumb-item-flow {
+			width: calc(100% / 8);
+		}
 	
 		.itemupdate,
 		.row-list {
@@ -831,6 +918,9 @@
 	}
 	
 	@media screen and (min-width: 1700pt) {
+		.thumb-item-flow {
+			width: calc(100% / 10);
+		}
 	
 		.itemupdate,
 		.row-list {
@@ -881,89 +971,25 @@
 	
 	@media screen and (min-width: 133vh) {
 		.chapter-content .chapter-img {
-			max-width: 50%;
+			max-width: 49.5%;
 		}
 	
 		.chapter-content .chapter-img:first-of-type,
 		.chapter-content .chapter-img:last-of-type {
 			border-radius: 2.5mm;
-			box-shadow: 0 0 3mm rgba(0, 0, 0, .5);
+			box-shadow: 0 0 2mm rgba(0, 0, 0, .5);
 		}
-	}
-}
-
-@-moz-document domain("loveheaven.net")
-{
-	.chapter-content {
-		font-size: 0;
-	}
-	
-	.chapter-content .chapter-img {
-		display: block;
-	}
-	
-	@media screen and (max-width: 133vh) {
-	
-		#content,
-		.chapter-content {
-			max-width: calc((100vh - 25mm)/1.4);
-			direction: rtl;
-			font-size: 0;
-		}
-	}
-	
-	@media screen and (min-width: 133vh) {
-		font[color="white"] .chapter-img {
-			max-width: 50%;
-			float: right;
-		}
-	
-		.chapter-content .chapter-img:nth-last-of-type(1),
-		.chapter-content .chapter-img:nth-last-of-type(2) {
-			float: none;
-		}
-	
-		.chapter-content .chapter-img:first-of-type,
-		.chapter-content .chapter-img:last-of-type {
-			clear: both
-		}
-	
-		.chapter-content .chapter-img:nth-of-type(odd):not(:last-of-type) {
-			border-radius: 0 2.5mm 2.5mm 0;
-			box-shadow: 1.7mm 0 2mm rgba(0, 0, 0, .5);
-		}
-	
-		.chapter-content .chapter-img:nth-of-type(even):not(:first-of-type) {
-			border-radius: 2.5mm 0 0 2.5mm;
-			box-shadow: -1.7mm 0 2mm rgba(0, 0, 0, .5);
-		}
-	}
-}
-
-@-moz-document domain("loveha.net"), domain("18lhplus.com"), domain("batoscan.net")
-{
-	.chapter-content {
-		direction: rtl;
-	}
-	
-	.chapter-content .chapter-img {
-		display: inline-block;
-	}
-	
-	#content>img:first-of-type,
-	.chapter-img:first-of-type {
-		display: block;
 	}
 	
 	@media screen and (min-width: 133vh) {
 		.chapter-content .chapter-img:nth-of-type(even):not(:last-of-type) {
 			border-radius: 0 2.5mm 2.5mm 0;
-			box-shadow: 1.7mm 0 2mm rgba(0, 0, 0, .5);
+			box-shadow: 2mm 0 2mm rgba(0, 0, 0, .5);
 		}
 	
 		.chapter-content .chapter-img:nth-of-type(odd):not(:first-of-type) {
 			border-radius: 2.5mm 0 0 2.5mm;
-			box-shadow: -1.7mm 0 2mm rgba(0, 0, 0, .5);
+			box-shadow: -2mm 0 2mm rgba(0, 0, 0, .5);
 		}
 	}
 }
