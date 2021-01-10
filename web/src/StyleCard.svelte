@@ -26,15 +26,26 @@
 	}
 </script>
 
+<style>
+	:global(.style-img) {
+		max-height: 200px;
+		object-fit: cover;
+	}
+</style>
+
 <Card>
 	{#if styleData.sn}
-		<CardImg src={getScreenshotUrl(styleData.sa, styleData.sn)} />
+		<CardImg class="style-img" src={getScreenshotUrl(styleData.sa, styleData.sn)} />
 	{/if}
 	<CardBody>
 		<h5 class="card-title">{styleData.n}</h5>
 		{formatCategory(styleData.c)}
-		<br />Updated: {new Date(styleData.u * 1000).toLocaleString()}
-		<br />Weekly: {styleData.w} | Total: {styleData.t}
+		<br />Updated:
+		{new Date(styleData.u * 1000).toLocaleString()}
+		<br />Weekly:
+		{styleData.w}
+		| Total:
+		{styleData.t}
 		<Button class="d-block w-100" on:click={onView(styleData.i)}>View</Button>
 	</CardBody>
 </Card>
