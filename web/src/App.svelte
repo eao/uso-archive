@@ -183,7 +183,7 @@
 				inputs.search = search || "";
 				inputs.category = category || "";
 				inputs.author = author || "";
-				sorting = sort;
+				sorting = sort || defaultSorting;
 				modalIsOpen = false;
 				filters = inputs;
 				pagination.page = parseInt(page || "1");
@@ -347,8 +347,7 @@
 			</Col>
 		</Row>
 	{:catch e}
-		Error while downloading data
-		{e}
+		Error while downloading data {e}
 	{/await}
 
 	<StyleModal {dataPrefix} on:onPushState={onModalPushState} styleId={modalStyleId} bind:isOpen={modalIsOpen} />
