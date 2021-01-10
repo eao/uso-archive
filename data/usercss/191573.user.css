@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `<i>Note:</i>  <b>Use the Dark Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/191573_additional_37559.jpeg" target="_blank"> <b>📝</b></a>More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        20201215.8.9
+@version        202119.22.55
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image 🖼️" {
@@ -952,6 +952,18 @@ ytd-inline-survey-renderer[expanded] #dismissable.ytd-inline-survey-renderer {
 }
 #dismiss-button.ytd-inline-survey-renderer {
     background-color: #9f5f393b;
+}
+/*voice search*/
+div#voice-search-button {
+    border-radius: 48px;
+    box-shadow: inset 0px 0px 0px 3px #926ca2;
+    background-color: #1e082394;
+}
+
+div#voice-search-button:hover {
+    border-radius: 48px;
+    box-shadow: inset 0px 0px 0px 3px #fff;
+    background-color: #1e082394;
 }
 
 

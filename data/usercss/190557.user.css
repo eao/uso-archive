@@ -3,12 +3,17 @@
 @namespace      USO Archive
 @author         Señor C.
 @description    `This is a Dark Mode for Instagram that's very similar to phone's version, hope you like it.`
-@version        202118.7.4
-@license        CC0-1.0
+@version        202119.22.26
+@license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("instagram.com") {
+body{
+background: black !important;
+}
+
 /*variables 1*/
+
 .sDN5V {
     /*variables modificadas*/
     
@@ -98,20 +103,25 @@
 
 /*tres puntitos de mas opciones y los otros iconos de la barra de navegación*/
 
-._8-yf5[aria-label="Más opciones"], ._8-yf5[aria-label="Inicio"], ._8-yf5[aria-label="Direct"], ._8-yf5[aria-label="Buscar personas"], ._8-yf5[aria-label="Feed de actividad"], ._8-yf5[aria-label="Sección de actividades"], ._8-yf5[aria-label="Comentar"], ._8-yf5[aria-label="Compartir publicación"], ._8-yf5[aria-label="Opciones"], ._8-yf5[aria-label="Reproducir"], ._8-yf5[aria-label="Perfil"], ._8-yf5[aria-label="Guardados"], ._8-yf5[aria-label="Configuración"], ._8-yf5[aria-label="Cambiar de cuenta"], ._8-yf5[aria-label="Publicaciones"], ._8-yf5[aria-label="Guardadas"], ._8-yf5[aria-label="Etiquetadas"], ._8-yf5[aria-label="Comment"], ._8-yf5[aria-label="Share Post"], ._8-yf5[aria-label="Save"], ._8-yf5[aria-label="Home"], ._8-yf5[aria-label="Home"], ._8-yf5[aria-label="Find People"], ._8-yf5[aria-label="Activity Feed"], ._8-yf5[aria-label="Profile"], ._8-yf5[aria-label="Saved"], ._8-yf5[aria-label="Settings"], ._8-yf5[aria-label="Switch Accounts"], ._8-yf5[aria-label="Posts"], ._8-yf5[aria-label="Tagged"], ._8-yf5[aria-label="Options"], ._8-yf5[aria-label="Remove"], ._8-yf5[aria-label="Add Photo or Video"], ._8-yf5[aria-label="Emoji"], ._8-yf5[aria-label="More options"], ._8-yf5[aria-label="Guardar"], ._8-yf5[aria-label="Eliminar"], ._8-yf5[aria-label="Guardado"]{
-     fill: rgb(255,255,255) !important;
+
+a > ._8-yf5 {
+    fill: rgb(255,255,255) !important;
 }
-span svg[aria-label="Me gusta"]{
+div > ._8-yf5 {
+    fill: rgb(255,255,255) !important;
+}
+
+
+span svg[aria-label="Me gusta"], span svg[aria-label="Like"]{
  fill: rgb(255,255,255) !important;
 }
-span svg[aria-label="Like"]{
+
+.QBdPU > svg[aria-label="Me gusta"], .QBdPU > svg[aria-label="Like"]{
  fill: rgb(255,255,255) !important;
 }
-.QBdPU svg[aria-label="Me gusta"]{
- fill: rgb(255,255,255) !important;
-}
-.QBdPU svg[aria-label="Like"]{
- fill: rgb(255,255,255) !important;
+
+.ZyFrc> svg{
+ fill: rgb(237, 73, 86) !important;
 }
 
 
@@ -124,8 +134,8 @@ span svg[aria-label="Like"]{
 }
 
 /*silenciar un video*/
-.IhCmn{
-    background-color: #262626 !important;
+.IhCmn > svg{
+    fill: #262626 !important;
 }
 
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         esvikey
 @description    `Fully edited site.Changed:• Main Page• Song's Page• Album's Page• Annotations• Metadata• Articles• Firehose• 'Add Song' Page• User's Page• All Buttons• Dropdown Menu• ScrollbarEnjoy!`
-@version        20201125.23.55
+@version        202119.14.10
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -277,6 +277,11 @@ a.square_button.react_song_page_preview_link:hover {
 .collection-type-index .back-to-top-link a {
     color: #fff;
     background: #141414
+}
+
+.comment-reason-title{
+    color: #fff;
+    border-bottom: 1px dotted #fff
 }
 
 .cont-activity_streams.ng-scope{

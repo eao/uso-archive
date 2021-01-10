@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           Vivid Bing.com
+@name           Transparent Bing.com
 @namespace      USO Archive
 @author         Jie Lin
 @description    `Make Bing.com UI vivid.`
-@version        201934.9.49
+@version        202119.17.15
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.bing.com/search?") {
 * {
-	font-family: Google sans,"roboto", tahoma, arial, sans-serif !important;
+	font-family: Google sans, "roboto", tahoma, arial, sans-serif !important;
 }
 #b_results > li a:visited {
 	color: #9032BF;
@@ -77,30 +77,28 @@ form {
 	background-color: #f1f1f1;
 	padding: 37px 0 0 0;
 }
-.b_searchboxForm,.b_searchboxForm:hover {
-	border-radius: 20px;
-}
+
 body .b_searchboxForm .b_searchboxSubmit {
-    border: 0px !important;
+	border: 0px !important;
+}
+#sb_form {
+	background-color: transparent!important;
+}
+.b_wpTabsWrapper {
+	background-color: transparent!important;
 }
 }
 
 @-moz-document url-prefix("https://www.bing.com/") {
-body .b_searchbox {
-	background-color: transparent;
+#sb_form {
+	background-color: #fff8;
 }
-body .b_searchboxForm {
-	background-color: #ffffffb0;
-}
-body .b_searchboxForm .b_searchboxSubmit {
-	border: 8px solid #fff0;
-	background-color: #fff0;
-}
+
 #b_footerItems,
 #b_footer {
 	display: none;
 }
-#focus_ovr{
-height:100% !important;	
+#focus_ovr {
+	height: 100% !important;
 }
 }
