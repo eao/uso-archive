@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Seyjin
 @description    `A darkmode theme for the Sims forum.`
-@version        2020117.13.6
+@version        2021110.20.56
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -99,7 +99,7 @@ body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .Comm
 }
 
 /* Couleur alternative du fond de la page */
-.FormWrapper, .editor-fullpage #editor-fullpage-candidate, .editor-fullpage #editor-fullpage-candidate .editor, div.Spoiler.SpoilerConfigured, .Section-Discussion .Message::before, .Info, li.token-input-selected-token, .Count, .DataList a.Delete:hover {
+.FormWrapper, .editor-fullpage #editor-fullpage-candidate, .editor-fullpage #editor-fullpage-candidate .editor, div.Spoiler.SpoilerConfigured, .Section-Discussion .Message::before, .Info, li.token-input-selected-token, .Count, .DataList a.Delete:hover, .userContent .codeBlock {
     background-color: #1c1b22;
 }
 
@@ -109,11 +109,11 @@ body, .DataTableWrap thead td, .DataTableWrap .CommentDate, .DataTableWrap .Comm
 }
 
 /* Marques lu/non-lu des messages */
-.Item.Read {
+.Item.Read, .Section-Discussion .Item-Header {
     background: linear-gradient(to right,  #1979a2 4px, #fff0 3px,#0001);
 }
 
-.Item.New, .Item.Unread {
+.Item.New, .Item.Unread, .MessageList #latest ~ .Item-Header {
     background: linear-gradient(to right,  #ff0 4px, #fff0 3px,#0001);
 }
 

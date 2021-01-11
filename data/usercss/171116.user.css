@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         GreenHouse!
 @description    `Dark style for FRF and some other improvements.`
-@version        2020712.12.39
+@version        2021110.21.30
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -189,14 +189,6 @@ img[src*="./styles/prosilver/theme/images/no_avatar.gif"] { content: url("https:
 .topic_read_locked_mine { background-image: url(https://i.imgur.com/jAeaf0U.png); }
 /* POST IMAGES --> */
 
-/* --> BANNER RE-SIZE */
-.site_logo { background-size: 149px 100px; }
-.site_logo { width: 149px; height: 100px; }
-.headerbar { padding: 1px; }
-h1 { margin-top: 30px; font-size: 3em; }
-.search-header { margin-top: 80px; }
-/* BANNER RE-SIZE --> */
-
 /* --> TOPIC ICONS */
 dl.row-item dt[style^="background-image: url(./images/icons/smile/alert.gif)"] { background-image: url(https://i.imgur.com/3FmDXDt.png) !important; }
 dl.row-item dt[style^="background-image: url(images/icons/smile/alert.gif)"] { background-image: url(https://i.imgur.com/3FmDXDt.png) !important; }
@@ -258,7 +250,7 @@ RESIZED POSTPROFILE --> */
 
 /* --> SCROLLBAR */
 ::-webkit-scrollbar { background: #191a1f; }
-::-webkit-scrollbar-thumb { background: #191a1f; }
+::-webkit-scrollbar-thumb { background: #090909; }
 ::-webkit-scrollbar-track { background: #22232b; }
 /*::-webkit-resizer:not(#inputbox) { background: #22232b; }*/
 ::-webkit-scrollbar-button:vertical:start:decrement { background: linear-gradient(120deg, #191a1f 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(240deg, #191a1f 40%, rgba(0, 0, 0, 0) 41%), linear-gradient(0deg, #191a1f 30%, rgba(0, 0, 0, 0) 31%); background-color: #7b7b7b; }
@@ -325,4 +317,27 @@ details.spoiler { background-color: #1f1f27; }
 .post-reputation.neutral:hover { background:#22232b; text-shadow: none; }
 .button, .button { border-color: #313131; background-color: #22232b; background-image: none; text-shadow: none; -webkit-box-shadow: 0 0 0 1px #585858 inset; }
 /* BUTTON FIXING --> */
+
+/* --> JUMP TO */
+.jumpbox-sub-link { background-color: #22232b; }
+.jumpbox-sub-link:hover { background-color: #191a1f; }
+.jumpbox-cat-link:hover { background-color: #034777; color: #bc2a4d; }
+.jumpbox-cat-link { background-color: #016699; }
+/* JUMP TO --> */
+
+/* --> NEW BANNER*/
+.site_logo { background-image: url(https://i.imgur.com/LVJGHcW.png);}
+.site_logo { background-size: 569px 124px; }
+.site_logo { width: 569px; height: 124px;}
+.site-description h1 { visibility:hidden; margin-top: 0px; font-size: 0em; }
+.site-description p { visibility:hidden; margin-top: 0px; font-size: 0em; }
+.headerbar { padding: 1px; }
+h1 { margin-top: 30px; font-size: 3em; }
+.search-header { margin-top: 100px; }
+.action-bar { margin: 0px; }
+.action-bar a { display: unset; }
+/* NEW BANNER --> */
+
+i, em a { font-weight:700; } /* BOLD RANKS LEGEND */
+.postprofile strong { font-weight:700; } /* BOLD INFO IN POST PROFILES */
 }

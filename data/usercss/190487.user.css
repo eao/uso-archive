@@ -3,12 +3,11 @@
 @namespace      USO Archive
 @author         Señor C.
 @description    `Este es un Modo Oscuro que hice para la eVirtual de la Universidad Técnica de Manabí, porque a mi novia le encanta el modo oscuro :3`
-@version        202119.21.26
+@version        2021110.22.45
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("evirtual.utm.edu.ec") {
-
 body {
     color: #d1d8e0 !important;
     background:#000!important;
@@ -16,6 +15,17 @@ body {
     background-repeat: no-repeat!important;
     background-size: cover!important;
     background-attachment: fixed !important;
+}
+/*barra de desplazamientos xd*/
+
+*::-webkit-scrollbar {
+	width: 15px;
+	background:#121212;
+
+}
+
+*::-webkit-scrollbar-thumb {
+	background: rgba(255,255,255,.3);
 }
 /*----------Login----------*/
 .card-header {
@@ -470,8 +480,10 @@ table.quizreviewsummary td.cell {
     border-color: #2e3235 !important;
     background-color: #1d2e35 !important;
 }
+/*una cosa como una tabla xd*/
 .gradingform_rubric .criterion.even {
     background: #000;
 }
+
 /*Angie, si lees esto, TE AMOO <3!!!!!!!!*/
 }

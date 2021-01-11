@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Dragon0697
 @description    `A dark theme for the pCloud because there was none.I don't know if it works with pCloud Crypto because I don't have it, so please let me know if it doesn't.`
-@version        20201124.22.23
+@version        2021110.18.47
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown audio-player "Audio player color" {
@@ -55,8 +55,19 @@ body{background:#2A2A2A}.menu{padding-left:10px}.left.lnav{margin-left:-10px;bac
     border-top-right-radius: 18px;
     background-color: #5e5d5d;
 }
-.ShareSettingsModal__Row-kcEZkb.Jqenc, .mmizT, .hlNTeu, .ikswrv, .SharedStyledComponents__SettingsWrapper-byauc.liqzii.slide-enter-done, .SharedStyledComponents__SettingsWrapper-byauc.liqzii.slide-exit.slide-exit-active, .SharedStyledComponents__SettingsWrapper-byauc.liqzii.slide-enter.slide-enter-active {
+.ShareSettingsModal__Row-kcEZkb.Jqenc, .mmizT, .hlNTeu, .ikswrv, .SharedStyledComponents__SettingsWrapper-byauc.liqzii.slide-enter-done, .SharedStyledComponents__SettingsWrapper-byauc.liqzii.slide-exit.slide-exit-active, .SharedStyledComponents__SettingsWrapper-byauc.liqzii.slide-enter.slide-enter-active,.SharedStyledComponents__SettingsWrapper-byauc.hfKlrz.slide-enter-done,.fEDeBN .slide-enter-active, .fEDeBN .slide-exit-active, .ShareDropdown__ItemWrapper-cQTVCZ.eDsqcM, .ShareDropdown__ItemWrapper-cQTVCZ.kDRyFD {
     background-color: #404040;
+}
+.EKmzh{
+    color: #b5b4b4;
+}
+.ShareDropdown__ItemWrapper-cQTVCZ.eDsqcM{
+    border-top: solid 1px #939393;
+    border-left: solid 1px #939393;
+    border-right: solid 1px #939393;
+}
+.ShareDropdown__ItemWrapper-cQTVCZ.kDRyFD{
+    border: solid 1px #939393;
 }
 .button-icon-secondary, div.headerunder .search input{
     border: 1px solid #797979;

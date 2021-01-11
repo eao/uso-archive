@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         anthony16127
 @description    `Based off of the Roblox in 2016 style but I partially fixed the robux icon so it doesn't show the red "X" anymore`
-@version        20201025.13.28
+@version        2021110.20.13
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -590,15 +590,16 @@ thumbnail-2d .thumbnail-2d-container img {
 }
 
 .light-theme .icon-default-logo-r, .light-theme .icon-logo-r, .light-theme .icon-logo-r-95 {
-    background-image: url(https://i.ya-webdesign.com/images/roblox-logo-png-2.png);
+    background-image: url(https://i.ibb.co/fr3kCB9/2016-ROBLOX-logo-fix.png);
 }
 
 .dark-theme .icon-default-logo-r, .dark-theme .icon-logo-r, .dark-theme .icon-logo-r-95, .icon-default-logo-r, .icon-logo-r, .icon-logo-r-95 {
-    background-image: url(https://i.ya-webdesign.com/images/roblox-logo-png-2.png) !important;
+    background-image: url(https://i.ibb.co/nbP8Ws1/roblox-logo-png-2.png) !important;
 }
 
 .light-theme .icon-default-logo, .light-theme .icon-logo {
-    background-image: url(https://t5.rbxcdn.com/c9749ac59c201199fc5ec1610dcf7d52) !important;
+    background-image: url(https://i.ibb.co/gP0Kvmr/u-https-logo-all-ru-uploads-posts-2016-03-0-roblox-logo.png) !important;
+    background-size: 118px 30px;
 }
 
 .icon-logo {
@@ -2239,7 +2240,8 @@ div[style="col-sm-6 slide-item-container-left"]
 
 #nav-robux-icon .icon-robux-28x28:hover
 {
-    background-image: url(https://i.imgur.com/kVVY7sp.png);
-    background-position: -0px -0px;
-    background-size: 29px 29px;
+    background-image: url(
+    https://i.ibb.co/3YcVDZ4/robuxwhite.png);
+    background-position: 0px 0px;
+    background-size: 28px 28px;
 }

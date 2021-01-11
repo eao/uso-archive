@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         cckats
 @description    `Combined mew's dark with many fixes with full res images and enabled right click you can find skin that removes login requirement in profiles here: https://userstyles.org/styles/183329/instagram-removed-login-requirementbut with a recent change you can view pictures (without account) with the middle mouse buttonin stories right click is accessible at the right edge of the video. https://userstyles.org/style_screenshots/164671_additional_35276.jpeg?r=1578231516Non-Dark version here: https://userstyles.org/styles/166344/instagram-full-res-right-clickI don't actively use Instagram so report bugs or additions as comments`
-@version        202059.11.41
+@version        2021110.17.20
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,6 +11,10 @@
 /*Instagram skin v2 by cckats */
 :root {
     --heightper: 95vh
+}
+/*Embeds*/
+.EmbeddedMediaImage {
+    pointer-events: all;
 }
 /*images*/
 .PdwC2 {
@@ -38,6 +42,7 @@
 body > div._2dDPU.CkGkG > div.zZYga > div > article > div._97aPb > div > div > div.eLAPa._23QFA > div.KL4Bh {
     padding-bottom: var(--heightper)!important;
 }
+
 .DdSX2 {
      max-width: 90vw; 
 }
@@ -87,9 +92,7 @@ body > div._2dDPU.CkGkG > div.zZYga > div > article > div._97aPb > div {
 .fXIG0 {
     max-height: var(--heightper);
 }
-.OAXCp {
-    padding-bottom: var(--heightper)!important;
-}
+
 /*right click*/
 .PyenC, .fXIG0 {
     height: 135px;
@@ -126,7 +129,7 @@ body > div.RnEpo.Yx5HN > div > div.Igw0E.IwRSH.eGOV_._4EzTm.IM32b > div.Igw0E.Iw
     background-color: var(--dark);
     border:none;
 }
-._5Jsao {
+._5Jsao,._1XyCr {
     background-color: var(--dark);
 }
 .QOqBd {
@@ -173,8 +176,9 @@ body > div.RnEpo.Yx5HN > div > div.Igw0E.IwRSH.eGOV_._4EzTm.IM32b > div.Igw0E.Iw
 }
 /* Some other dark theme fixes */
 
-body > div._2dDPU.CkGkG > div.Igw0E.IwRSH.eGOV_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.yiMZG > button > svg{
-    filter:invert(0.3);
+body > div._2dDPU.CkGkG > div.Igw0E.IwRSH.eGOV_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.yiMZG > button > svg,body > div._2dDPU.CkGkG > div.Igw0E.IwRSH.eGOV_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.yiMZG > button > div > svg,
+body > div._2dDPU.CkGkG > div.zZYga > div > article > div._97aPb > div > div.pR7Pc > div.Igw0E.IwRSH.eGOV_._4EzTm.O1flK.D8xaz.fm1AK.TxciK.yiMZG > div > div > div > ul > li > div > div > div > span > div > svg{
+    filter:invert(0.2);
 }
 .HBUJV {
     filter: invert(1);
@@ -236,8 +240,8 @@ body > div._2dDPU.CkGkG > div.Igw0E.IwRSH.eGOV_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.y
 .y1ezF, .y1ezF .DXJP0, .y1ezF .DXJP0:visited {
     color: var(--light);
 }
-.PrimaryCTA {
-    background-color: #333;
+.PrimaryCTA,.HoverCard .HoverCardRoot {
+    background-color: var(--dark);
 }
 .Feedback {
     filter: invert(1);
@@ -258,17 +262,17 @@ body > div._2dDPU.CkGkG > div.Igw0E.IwRSH.eGOV_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.y
     filter: invert(1);
 }
 ._4l6NB {
-    background-image: -webkit-gradient(linear,left top,right top,from(rgba(51,51,51,.4)),to(#333));
-    background-image: -webkit-linear-gradient(left,rgba(51,51,51,.4),#333);
-    background-image: linear-gradient(to right,rgba(51,51,51,.4),#333);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(51,51,51,.4)),to(var(--darker)));
+    background-image: -webkit-linear-gradient(left,rgba(51,51,51,.4),var(--darker));
+    background-image: linear-gradient(to right,rgba(51,51,51,.4),var(--darker));
 }
 
 ._5wCQW {
-    background-color:var(--darker);
+    background-color:var(--darkest);
 }
 
 .tHaIX {
-    background-color: #333333;
+    background-color: var(--darker);
 }
 
 .Ba7W5 {
@@ -288,7 +292,7 @@ body > div._2dDPU.CkGkG > div.Igw0E.IwRSH.eGOV_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.y
     border: 1px solid #0000;
 }
 .AcVnq, .KQA-S, ._1MzIy, ._3MPWk, ._8Rm4L, .zMhqu {
-    background-color: #333;
+    background-color: var(--dark);
     margin-left: -1px;
     margin-right: -1px;
 }
@@ -318,8 +322,9 @@ body > div._2dDPU.CkGkG > div.Igw0E.IwRSH.eGOV_._4EzTm.BI4qX.qJPeX.fm1AK.TxciK.y
  * Discord: https://discord.gg/NpT8PzA
  */
 :root {
-    --dark: #333333;
-    --darker: #222222;
+    --dark: #222222;
+    --darker: #333333;
+    --darkest: #121212;
     --light: #C1C1C1;
     --lighter: #E9E9E9;
     --accent: #7289DA;
@@ -500,7 +505,8 @@ span > a.notranslate {
 /* Comment separator. */
 .sH9wk,
 .UE9AK {
-    border-color: var(--darker) !important;
+    border-color: var(--dark) !important;
+    background-color: var(--darker) !important;
 }
 
 
@@ -659,7 +665,7 @@ time,
 .u9F97,
 .eLAPa {
     background-image: none !important;
-    background-color: var(--darker) !important;
+    background-color: var(--darkest) !important;
 }
 
 
@@ -851,7 +857,7 @@ button {
 
 /* Text color. */
 .BvMHM form aside,
-.BvMHM h1 {
+.BvMHM h1,.HoverCardUserName .Username {
     color: var(--lighter) !important;
 }
 
@@ -925,5 +931,7 @@ button {
     height: 37px;
     padding: 0px 20px; 
 }
-
+.OAXCp {
+    padding-bottom: var(--heightper)!important;
+}
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Señor C.
 @description    `This is a Dark Mode for Instagram that's very similar to phone's version, hope you like it.`
-@version        202119.22.26
+@version        2021111.0.14
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -61,6 +61,9 @@ background: black !important;
     --f52: 161,161,161 !important;
 	/*fondo de multimedia*/
     --jb7: 10,10,10 !important;
+   /*cuando compartes xd*/
+    --fa7: 27,41,52;
+
 
 	/*---------------------------------*/
     --h1d: 255,255,255;
@@ -76,7 +79,6 @@ background: black !important;
     --f24: 0,149,246;
     --jbb: 53,121,234;
     --eca: 255,255,255;
-    --fa7: 224,241,255;
     --ba8: 168,168,168;
     --eac: 237,73,86;
 }
