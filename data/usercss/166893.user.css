@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2020314.5.38
+@version        2021111.5.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -58,6 +58,9 @@
 	text-decoration: none!important;
 }
 
+.author-avatar,
+.author-menu-box-container,
+.menu-box-inline,
 .nav-bar-hr {
     display: block!important;
 }
@@ -66,10 +69,6 @@
     overflow: visible!important;
 }
 
-.notification-badge {
-    left: 45px!important;
-    z-index: 9!important;
-}
 
 .map-sidebar.neighborhood-map .list li .legend-label,
 .modal dl .control-label,
@@ -85,25 +84,20 @@
 }
 
 ._1evSvvdR,
-.agency-card,
-.agency-card-footer,
-.classified-item-card,
-.classified-item-card-content,
-.css-1ad6d2i,
-.css-1c3sz3l,
-.css-3thtgz,
-.css-txitvo,
+.agency-card,.agency-card-footer,
+.classified-item-card,.classified-item-card-content,
+.css-1ad6d2i,.css-1bzaznf,.css-1c3sz3l,.css-3thtgz,.css-42z7o,.css-7jp723,.css-txitvo,
 .filtered-feed-info-bar,
 .fsf-search-bar-container,
-.listing-card-small .listing-card-content,
-.listing-card-small .listing-card-image,
+.listing-card-small .listing-card-content,.listing-card-small .listing-card-image,
 .listings-desktop-experience-fixed .real-estate-navigation-bar-children,
 .modal,
-.real-estate-navigation-bar,
-.real-estate-navigation-bar-nav-border,
+.profile-component-container,.profile-component-header,
+.real-estate-navigation-bar,.real-estate-navigation-bar-nav-border,.real-estate-promo-card,
 .recommendations-nab-fav-survey-teaser,
 .section-agent-sponsor-cta,
-.tab-bar
+.tab-bar,
+.tag-button
 {
 	border: none!important;
 }
@@ -113,36 +107,49 @@
     overflow: visible;
 }
 
-.author-avatar,
-.menu-box-inline,
-.author-menu-box-container {
-    display: block;
-}
-
 /*___ Fonts ________________________________________________________________________*/
 
-.classified-item-card-title,
-.post-list-item-subject {
+.Linkify,
+._1QrCPIoo._2nXsqARR,
+.classified-item-card-price,.classified-item-card-title,
+.comment-detail-author-name,
+.css-1srqc6z > .css-1srqc6z:first-child .css-14ojare span:first-child,
+.listing-card-price,
+.post-list-item-subject,
+.real-estate-promo-title,
+[data-testid="nav-link_checked"]
+{
 	font-size: 21px!important;
 }
 
+._32rmIjwj,
 .agency-card-name,
-.css-txitvo,
+.classified-item-content-footer,.classifieds-nav-link-text,
+.css-1y777s2,.css-27f5wi,.css-9p9z55,.css-txitvo,.css-vcn44u,
 .post-list-item-reaction-and-comment-container,
-body {
+.profile-visibility-note,
+.real-estate-promo-subtitle,
+body,
+button,
+input,
+select,
+textarea
+{
 	font-size: 17px!important;
 }
 
-.classified-item-card-price,
-.comment-detail-author-name,
-.Linkify,
-.profile-visibility-note {
-	font-size: 17px!important;
-	line-height: 27px!important;
+.notification-badge {
+    font-size: 15px!important;
 }
 
 .post-byline {
     line-height: 51px;
+}
+
+.classified-item-card-price,
+.Linkify,
+.profile-visibility-note {
+	line-height: 27px!important;
 }
 
 .css-txitvo,
@@ -150,11 +157,16 @@ body {
 	line-height: 24px!important;
 }
 
+._3iqzCoOI {
+    line-height: 17px;
+}
 
 /*___ Remove Items _________________________________________________________________*/
 
 .ebay-item-card-container,
 .gam-ad-outer-container,
+.prebid-ad,
+.rhr-feed-promo,
 .static-promo-container,
 .treat-map-legend-sponsorship,
 .value-comp-preview-comparison::after,
@@ -171,6 +183,10 @@ body {
     margin-left: 3rem!important;
 }
 
+._3iqzCoOI {
+    margin-left: 24px;
+}
+
 .filtered-feed-info-bar,
 .suggest-channel-sidebar-container {
     margin-top: -10px!important;
@@ -181,14 +197,20 @@ body {
     margin-left: -.7rem!important;
 }
 
+.nav-item .notification-badge {
+    left: 28px!important;
+}
+
 /*___ Margins ______________________________________________________________________*/
 
 .classified-item-card-container,
 .col-md-12,
+.css-1dkvlfs,
 .info-bar-container.with-navbar,
 .jPanelMenu-panel,
 .navbar-container,
 .post-list-item-subject,
+.profile-component-container,
 .recommendations-top-category-topic-container,
 .slick-initialized .slick-slide
 {
@@ -229,8 +251,13 @@ body {
 }
 
 .listing-card-container,
-.value-comp-preview-listing,
-.value-comp-preview-user-listing {
+.notification-badge,
+.value-comp-preview-listing,.value-comp-preview-user-listing,
+button,
+input,
+select,
+textarea
+{
 	padding: 6px!important;
 }
 
@@ -251,9 +278,18 @@ body {
     height: auto!important;
 }
 
+.avatar-toggle-node.avatar-toggle-node-redesign {
+    height: 58px;
+}
+
 .avatar-image,
 .comment-detail-author img {
     height: 44px!important;
+}
+
+._16mBhzYV
+ {
+    height: 32px;
 }
 
 /*___ Widths _______________________________________________________________________*/
@@ -267,7 +303,9 @@ body {
 }
 
 .listing-card-small .listing-card-image,
-.navbar-container {
+.navbar-container,
+.profile-emergency-contacts-contact-count-message
+{
     width: auto!important;
 }
 
@@ -285,7 +323,7 @@ body {
 .col-md-12:not(.col-lg-4),
 .listings-desktop-experience-fixed .real-estate-navigation-bar-children
 {
-    width: 64%!important;
+    width: 63%!important;
 }
 
 .listings-desktop-experience {
@@ -308,20 +346,24 @@ body {
     width: 17%!important;
 }
 
+.slick-slide
+ {
+    width: 11%!important;
+}
+
 .avatar-image,
 .comment-detail-author img {
     width: 44px!important;
 }
 
-.slick-initialized .slick-slide {
-    width: 3%!important;
-}
+
 }
 
 @-moz-document domain("nextdoor.com") {
 /*__________________________________________________________________________________*/
 
 .post-action-comment-text,
+.see-previous-comments-button-paged,
 .thank-button-text,
 a[href],
 td span {
@@ -336,48 +378,51 @@ a[href]:visited {
 
 /*__________________________________________________________________________________*/
 
-.alpha-bar-letter-active,
-.alpha-bar-letter-selected,
+.alpha-bar-letter-active,.alpha-bar-letter-selected,
 .channel-media:hover .channel-media-heading,
+.css-15vchpg,.css-7jp723:hover,
+.listing-status-badge-forsale,
+.see-previous-comments-button-paged:hover,
 .toggle-bar-menu-item.toggle-bar-menu-item-selected,
+[data-testid="nav-link_checked"],
 a[href]:hover,
 h1,
 input[type="checkbox"]:checked+label,
-input[type="radio"]:checked+label {
+input[type="radio"]:checked+label
+{
 	color: #ff0!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*__________________________________________________________________________________*/
 
-.map-sidebar.neighborhood-map .list li .totals,
-.map-sidebar.neighborhood-map .list li .totals a,
-.agency-card-name,
-.post-list-item-reaction-and-comment-container,
-.list>li .message-meta span,
-.map-sidebar h4+small,
+.GSq6E4o-,
 .Linkify,
+._1UppQy9E,
+._1kIyUB5y,
+._2SrcdpEL,
 ._32rmIjwj,
+._3mYfuOUv,
+.agency-card-name,
 .alpha-bar-letter,
+.brand_refresh_2020 .divider span.sign-in-subtitle-text-other-options,
 .btn-hollow,
-.button-secondary,
-.button-text,
-.channel-invite-button,
-.channel-media-heading,
-.channel-member-count-text,
-.channel-summary-description,
+.button-secondary,.button-text,
+.channel-invite-button,.channel-media-heading,.channel-member-count-text,.channel-summary-description,
 .classified-item-card-subline span:nth-child(2),
 .content-title,
+.css-14ojare span,.css-1d0vy0v span,.css-1yechgf,.css-bxxeby,.css-1nq1vdh,.css-3tna2,.css-7jp723,
 .final-slide-listing-address,
 .header-bar-menu-subheading,
 .info-box-body,
+.list>li .message-meta span,
+.map-sidebar h4+small,.map-sidebar.neighborhood-map .list li .totals a,.map-sidebar.neighborhood-map .list li .totals,
 .mod-option-body,
 .neighbor-address,
-.pet-card-owner-info,
-.pet-intro-description,
-.post-list-item-body,
-.post-list-item-reaction-count,
-.profile-visibility-note,
+.otp-passcode-login-description,
+.pet-card-owner-info,.pet-intro-description,
+.post-action-container,.post-list-item-body,.post-list-item-reaction-and-comment-container,.post-list-item-reaction-count,
+.postbox-group-container,.postbox-header-detail, .postbox-post-types,
+.profile-emergency-contacts-learn-more,.profile-visibility-note,
 .recommendations-nab-fav-survey-teaser-body,
 .thank-count-link,
 .toggle-bar-menu-item,
@@ -385,102 +430,84 @@ body,
 li,
 p {
 	color: #fff!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Khaki ________________________________________________________________________*/
 
-.smartlink-title,
-.list>li .message,
-.classifieds-safety-guide-modal-title,
+._1QrCPIoo._2nXsqARR,
+._2tn6CC9c,
 .agency-info-bar-header,
 .cee-modal-header,
-.channel-layout-header-title,
-.channel-summary-name,
-.channels-carousel-promo .channel-layout-header-title,
-.classified-item-card-title,
-.classified-single-item-author-byline,
-.classifieds-category-filter-section-header,
+.channel-layout-header-title,.channel-summary-name,.channels-carousel-promo .channel-layout-header-title,
+.classified-item-card-title,.classified-single-item-author-byline,.classifieds-category-filter-section-header,.classifieds-safety-guide-modal-title,
 .comment-byline-cursor,
+.css-14ojare span:first-child,.css-1awafem,
 .filtered-feed-info-bar-header,
 .groups-info-bar-header,
+.header-bar-item-content-with-image,
 .info-box .info-box-title,
+.list>li .message,
 .listing-summary-address,
 .main-column-header-text,
 .menu-box-section-header,
 .mod-option-title,
 .nav-bar-section-title,
-.pet-card-name,
-.pet-card-owner-name,
-.pet-directory-header-text,
-.pet-intro-title,
+.pet-card-name,.pet-card-owner-name,.pet-directory-header-text,.pet-intro-title,
 .profile-summary-name,
-.recommendations-nab-fav-survey-teaser-title,
-.recommendations-top-category-topic-name,
+.real-estate-promo-title,
+.recommendations-nab-fav-survey-teaser-title,.recommendations-top-category-topic-name,
 .section-agent-sponsor-cta-title,
+.smartlink-title,
 .value-comp-preview-title,
 h1,
 h2 {
 	color: #F0E890!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Burlywood ____________________________________________________________________*/
 
-.map-sidebar.neighborhood-map .list li .legend-label,
-.topic,
-.css-bbixl2,
+._2P02evKh._3AsYwNHz,
 .channel-cube-body-inner,
 .classified-item-card-subline span:nth-child(3),
+.css-27f5wi,.css-bbixl2,
 .main-list-text,
+.map-sidebar.neighborhood-map .list li .legend-label,
 .profile-neighborhood-address,
-.real-estate-list-inline,
-.real-estate-listings-derivatives-estimate-subtitle,
+.real-estate-list-inline,.real-estate-listings-derivatives-estimate-subtitle,.real-estate-promo-subtitle,
+.topic,
 h3,
 h4 {
 	color: #e0b880!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Sandy Brown __________________________________________________________________*/
 
-.modal dl .control-label,
-.modal dl dt,
-.modal form .control-label,
-.modal form dt,
-.single-column dl .control-label,
-.single-column dl dt,
-.single-column form .control-label,
-.single-column form dt,
 .activity-type,
 .author-children .post-byline,
+.brand_refresh_2020 .text-input-label,
 .content-scope-line-hood-link,
 .filtered-feed-info-bar-maintained,
 .main-list-provided-by-text,
+.modal dl .control-label,.modal dl dt,.modal form .control-label,.modal form dt,
 .real-estate-listings-derivatives-text,
+.single-column dl .control-label,.single-column dl dt,.single-column form .control-label,.single-column form dt,
+.zrfwbTUm,
 h5,
 h6,
 label {
 	color: #F0A060!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Blue _________________________________________________________________________*/
 
 .activity-time-reference,
-.classified-item-card-subline span:first-child,
-.classified-single-item-scopeline,
-.comment-detail-scopeline-timestamp,
-.content-scope-line-date,
-.css-1yr85gk,
+.classified-item-card-subline span:first-child,.classified-single-item-scopeline,.classified-item-content-footer,
+.comment-detail-scopeline-timestamp,.content-scope-line-date,
+.css-1srqc6z > .css-1srqc6z:nth-child(2) .css-14ojare span:first-child,.css-1yr85gk,.css-9p9z55,
 .post-list-item-timestamp,
 .real-estate-listings-derivatives-percent,
 time {
 	color: #07beff!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Green ________________________________________________________________________*/
@@ -488,31 +515,25 @@ time {
 .classified-item-card-price,
 .condensed-listing-card-info-box .condensed-listing-list-price,
 .final-slide-listing-price,
-.listing-card-price,
-.listing-summary-price,
+.listing-card-price,.listing-summary-price,
 .main-listing-mortgage-estimate,
-.real-estate-listings-derivatives-estimate-subtitle span,
-.real-estate-listings-derivatives-estimate-title,
-.real-estate-listings-derivatives-price,
-.real-estate-promo-card-price,
-.value-comp-preview-listing-detail:nth-child(4) {
+.real-estate-listings-derivatives-estimate-subtitle span,.real-estate-listings-derivatives-estimate-title,.real-estate-listings-derivatives-price,.real-estate-promo-card-price,
+.value-comp-preview-listing-detail:nth-child(4)
+{
 	color: #07ff24!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Red __________________________________________________________________________*/
 
-
 .classified-item-price-strike {
 	color: #ff2d2d!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*__________________________________________________________________________________*/
 
 ._1evSvvdR,
+.classifieds-distance-filter-toggle,
+.css-1h0dzuf,.css-7uaioy,
 .section-control-button,
 input,
 input[type=email],
@@ -547,13 +568,18 @@ pre ::selection {
     color: #00b3ff!important;
 }
 
-.info-box-neighborhood-progress-detail {
+.comment-composer-text-input textarea::placeholder,
+.comment-composer-text-input-prompt.redesign::placeholder,
+.comment-composer-text-input.redesign::placeholder,
+.info-box-neighborhood-progress-detail,
+::placeholder
+{
     color: #faf2cc!important;
 }
 
 #map_canvas .neighborhood-name, #neighborhood-selection-modal .neighborhood-name {
-    text-shadow: 0 0 1px rgba(185, 167, 167, 0.38);
     color: #000;
+    text-shadow: 0 0 1px rgba(185, 167, 167, 0.38);
 }
 }
 
@@ -572,6 +598,7 @@ html {
 
 /*___ Background Gray ______________________________________________________________*/
 
+.divider span.sign-in-subtitle-text-other-options,
 .header-bar,
 .listings-desktop-experience-navigation-bar {
 	background-color: #060505!important;
@@ -579,84 +606,85 @@ html {
 
 /*___ Background 0000 ______________________________________________________________*/
 
+._1eW-tOzA,
 .alpha-bar,
 .css-1c3sz3l,
 .event-calendar-refine-bar-second,
-.pet-intro-modal > .modal-content > .cee-modal-header {
+.fsf-search-bar,
+.pet-intro-modal > .modal-content > .cee-modal-header,
+.search-bar {
 	background: rgba(0, 0, 0, 0)!important;
 }
 
 /*___ Background-color 0000 ________________________________________________________*/
 
+#layout_container .nav-item-selected,
+._3FcswJjf,
 .agency-card-footer,
 .avatar-menu-item:hover,
-.btn.active,
-.btn.disabled,
-.btn:active,
-.btn:focus,
-.btn:hover,
-.btn[disabled],
-.channel-media,
-.channel-media-nav,
-.classified-item-card-content,
-.classified-item-card-photo-placeholder-container,
+.btn.active,.btn.disabled,.btn:active,.btn:focus,.btn:hover,.btn[disabled],
+.card-container,
+.cee-modal-header,
+.channel-media,.channel-media-nav,
+.classified-item-card,.classified-item-card-content,.classified-item-card-photo-placeholder-container,.classified-item-content,
+.comment-composer-text-input-prompt.redesign,.comment-composer-text-input.redesign,
 .controls,
 .create-post-prompt-container,
-.css-1ad6d2i,
-.css-txitvo,
+.css-1ad6d2i,.css-1bzaznf,.css-1dkvlfs,.css-1srqc6z div:hover,.css-1u9vox0,.css-1vso4dr:hover,.css-7jp723,.css-cgizhq,.css-dc58fj,.css-fcrbio,.css-iyffu9,.css-txitvo,
 .dropdown-menu-item:hover:enabled,
 .empty-state-graphic-card,
 .filtered-feed-info-bar,
-.fsf-search-bar-container,
+.fsf-item-detail,.fsf-item-detail-content,.fsf-search-bar-container,
+.gBUxymLw,
 .groups-info-bar,
 .header-bar-global-search-input-submit,
 .header-bar-menu-link:hover,
-.info-box,
-.info-box-margin-top,
+.info-box,.info-box-margin-top,
 .key,
 .linkbox-editable,
 .listing-card-content,
 .metadata,
 .mod-option-a:hover,
-.modal,
-.modal-footer,
-.nav-menu-item-link:hover,
+.modal,.modal-footer,
+.nav-item:hover,.nav-menu-item-link:hover,
 .neighbors-container,
 .pet-card-content,
-.profile-component-container,
-.profile-info-bar-container,
-.real-estate-navigation-bar,
-.real-estate-navigation-bar-children,
-.recommendations-nab-fav-survey-teaser,
-.recommendations-top-category-search-box,
+.postbox-compose-fit-content,
+.profile-component-container,.profile-info-bar-container,
+.real-estate-navigation-bar,.real-estate-navigation-bar-children,
+.recommendations-nab-fav-survey-teaser,.recommendations-top-category-search-box,
 .search-bar,
 .section-agent-sponsor-cta,
 .selected,
 .slideshow-thumbnails-container,
 .tab-bar,
 .toggle-view-bar,
-[style="position: absolute; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.2); border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; width: 276px; height: 81px;"] {
+[style="position: absolute; left: 0px; top: 0px; background-color: rgba(0, 0, 0, 0.2); border-radius: 2px; box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px; width: 276px; height: 81px;"]
+{
 	background-color: rgba(0, 0, 0, 0)!important;
 }
 
 /*__ Blue __________________________________________________________________________*/
 
 .btn-hollow,
-.button-secondary {
+.button-secondary,
+.css-1nq1vdh {
 	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
 .btn-hollow:hover,
-.button-secondary:hover {
+.button-secondary:hover,
+.css-1nq1vdh:hover {
 	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
 	color: #ff0!important;
 }
 
 .btn-hollow:active,
-.button-secondary:active {
+.button-secondary:active,
+.css-1nq1vdh:active {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
@@ -665,7 +693,7 @@ html {
 #inv_cancel,
 .response-modal-skip-button {
 	background-image: linear-gradient(to bottom right, #da0404, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -687,7 +715,7 @@ html {
 .btn-primary[disabled],
 .button-primary:disabled {
 	background-image: linear-gradient(to bottom right, #da3a04, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -706,57 +734,71 @@ html {
 /*___ Green ________________________________________________________________________*/
 
 .btn-primary,
+.button-link-primary,
 .button-primary,
-.button-link-primary {
+.css-1yechgf,
+.css-3tna2
+{
 	background-image: linear-gradient(to bottom right, #81BC2E, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
 .btn-primary:hover,
+.button-link-primary:hover,
 .button-primary:hover,
-.button-link-primary:hover {
+.css-1yechgf:hover,
+.css-3tna2:hover
+{
 	background-image: linear-gradient(to bottom right, #92cd3f, #000)!important;
 	color: #ff0!important;
 }
 
 .btn-primary:active,
+.button-link-primary:active,
 .button-primary:active,
-.button-link-primary:active {
+.css-1yechgf:active,
+.css-3tna2:active
+{
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
 /*___ Blue/Green ________________________________________________________________________*/
 
+.css-89q57u,
 .button-link-tertiary {
 	background-image: linear-gradient(to bottom right, #0099BA, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
+.css-89q57u:hover,
 .button-link-tertiary:hover {
 	background-image: linear-gradient(to bottom right, #11aabb, #000)!important;
 	color: #ff0!important;
 }
 
+.css-89q57u:active,
 .button-link-tertiary:active {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
-
 
 /*___ Plain Black __________________________________________________________________*/
 
 .col-md-12,
 .comment-detail,
+.css-1lsiddz,
 .info-bar-container.with-navbar,
 .jPanelMenu-panel,
 .listing-card-container,
+.login-form,
 .navbar-container,
 .recommendations-top-category-topic-container,
 .slick-slide,
-.treat-map-legend {
+.treat-map-legend
+{
 	background-color: #000!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
@@ -765,23 +807,24 @@ html {
 
 .col-md-12:hover,
 .comment-detail:hover,
+.css-1lsiddz:hover,
 .info-bar-container.with-navbar:hover,
 .jPanelMenu-panel:hover,
 .listing-card-container:hover,
+.login-form:hover,
 .navbar-container:hover,
 .recommendations-top-category-topic-container:hover,
 .slick-slide:hover,
-.treat-map-legend:hover {
+.treat-map-legend:hover
+{
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 /*___ Plain ________________________________________________________________________*/
 
-.map-sidebar,
-.resident-panel,
-.classified-item-card-container,
-.classifieds-category-filter-container,
+.classified-item-card-container,.classifieds-category-filter-container,
 .comment-container,
+.css-121rl2v,.css-1dkvlfs,.css-1m53h5:not(.classified-item-card-title),.css-1ykz7th,.css-att17m,.css-b0rwp1,.css-s5oiio,.css-uwhv17,
 .dropdown-container,
 .dropdown-menu,
 .final-slide-listing-card-container,
@@ -790,40 +833,41 @@ html {
 .list,
 .listing-card,
 .main-listing,
+.map-sidebar,
 .menu-box,
-.modal-content,
+.modal-content,.modal-content,
 .pet-card,
 .post-container,
+.profile-component-container,
+.resident-panel,
 .ui-container,
-.value-comp-preview-listing,
-.value-comp-preview-user-listing,
+.value-comp-preview-listing,.value-comp-preview-user-listing,
 [style="position: absolute; left: 1px; top: 1px; border-radius: 2px; background-color: rgb(255, 255, 255); width: 274px; height: 79px;"] {
-	background-color: #111!important;
+	background-color: #1c1c1c!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-.map-sidebar:hover,
-.resident-panel:hover,
-.classified-item-card-container:hover,
-.classifieds-category-filter-container:hover,
+.classified-item-card-container:hover,.classifieds-category-filter-container:hover,
 .comment-container:hover,
+.css-121rl2v:hover,.css-1dkvlfs:hover,.css-1m53h5:not(.classified-item-card-title):hover,.css-1ykz7th:hover,.css-att17m:hover,.css-b0rwp1:hover,.css-s5oiio:hover,.css-uwhv17:hover,
 .dropdown-container:hover,
 .dropdown-menu:hover,
 .final-slide-listing-card-container:hover,
 .grey:hover,
 .header-bar-global-search-dropdown-inner:hover,
-.list:hover,
-.listing-card:hover,
+.list:hover,.listing-card:hover,
 .main-listing:hover,
+.map-sidebar:hover,
 .menu-box:hover,
-.modal-content:hover,
+.modal-content:hover,.modal-content:hover,
 .pet-card:hover,
 .post-container:hover,
+.profile-component-container:hover,
+.resident-panel:hover,
 .ui-container:hover,
-.value-comp-preview-listing:hover,
-.value-comp-preview-user-listing:hover,
+.value-comp-preview-listing:hover,.value-comp-preview-user-listing:hover,
 [style="position: absolute; left: 1px; top: 1px; border-radius: 2px; background-color: rgb(255, 255, 255); width: 274px; height: 79px;"]:hover {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -848,6 +892,7 @@ html {
 
 /*__ Green Gradient ________________________________________________________________*/
 
+._2SrcdpEL,
 .nav-bar-list-item-active {
 	background: linear-gradient(to bottom, #15534d 0%, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
@@ -855,41 +900,38 @@ html {
 	text-shadow: 1px 1px #555!important;
 }
 
-/*__ Yellow Gradient _______________________________________________________________*/
+/*___ Highlight Background _________________________________________________________*/
 
-selector {
-	background: linear-gradient(to bottom, #9d9d5d 0%, #000 100%)!important;
-	border-bottom: 1px solid #000!important;
-	border-radius: 22px!important;
-	text-shadow: 1px 1px #555!important;
+.classifieds-nav-link-container:hover
+ {
+	background: linear-gradient(to right, #383838, #0000)!important;
+	border-left-color: #434343!important;
 }
 
-/*__ Orange Gradient _______________________________________________________________*/
 
-selector {
-	background: linear-gradient(to bottom, #da3a04 0%, #000 100%)!important;
-	border-bottom: 1px solid #000!important;
-	border-radius: 22px!important;
-	text-shadow: 1px 1px #555!important;
-}
 }
 
 @-moz-document domain("nextdoor.com") {
 /*__________________________________________________________________________________*/
 
-.css-txitvo,
-.classified-item-card-container,
-.numbered-list-item-section,
+.css-1srqc6z > div:first-child,
+.css-1dkvlfs,
+.css-att17m,
+.css-b0rwp1,
+.css-1ykz7th,
+.css-121rl2v,
 .channel-media,
 .channel-media-nav,
 .classified-item-card-container,
 .comment-detail,
+.css-txitvo,
 .dropdown-menu li,
 .final-slide-listing-card-container,
 .list-item,
 .listing-card,
 .listing-card-container,
 .neighbor,
+.numbered-list-item-section,
 .post-container,
 .recommendations-top-category-topic-container,
 .slick-slide,
@@ -900,19 +942,26 @@ selector {
 
 /*__________________________________________________________________________________*/
 
-.css-txitvo:hover,
-.classified-item-card-container:hover,
-.numbered-list-item-section:hover,
+
+.css-1srqc6z > div:hover *,
+.css-1srqc6z > div:first-child:hover,
+.css-1dkvlfs:hover,
+.css-att17m:hover,
+.css-b0rwp1:hover,
+.css-1ykz7th:hover,
+.css-121rl2v:hover,
 .channel-media-nav:hover,
 .channel-media:hover,
 .classified-item-card-container:hover,
 .comment-detail:hover,
+.css-txitvo:hover,
 .dropdown-menu li:hover,
 .final-slide-listing-card-container:hover,
 .list-item:hover,
 .listing-card-container:hover,
 .listing-card:hover,
 .neighbor:hover,
+.numbered-list-item-section:hover,
 .post-container:hover,
 .recommendations-top-category-topic-container:hover,
 .slick-slide:hover,
@@ -945,86 +994,98 @@ img {
 	-webkit-box-reflect: below 0 -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(70%, transparent), to(rgba(250, 250, 250, 0.1)));
 }
 
-/*__________________________________________________________________________________*/
-
-li,
-tr {
-	filter: brightness(68%)!important;
-	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
-}
-
-.post-container:hover span,
-li:hover,
-tr:hover {
-	filter: brightness(100%)!important;
-	transition: color .125s ease-in, color .5s ease-out, filter .5s ease-in, filter .8s ease-out, box-shadow .125s ease-in, box-shadow .5s ease-out!important;
-}
 }
 
 @-moz-document domain("nextdoor.com") {
+
+.profile-intro-item-icon {
+    top: -6px;
+    left: 0;
+}
+
+.profile-intro-item-text {
+    margin-left: 54px;
+}
+
 /* All Groups _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/d7367586509a5e553c8b091a60b5463f.png"] {
+[href="/groups/?is=nav_menu"] svg {
 	background: url(https://i.ibb.co/T11w29x/invite-friends-big-picture.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/d7367586509a5e553c8b091a60b5463f.png"] {
+[href="/groups/?is=nav_menu"] svg {
 	background-size: 26px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
+	width: 25px;
+}
+
+/* Activity _______________________________________________________________*/
+
+[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/f59a5659edc16cdced338f155ebd6586.png"] {
+	background: url(https://i.ibb.co/cgfSgwt/trending.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/f59a5659edc16cdced338f155ebd6586.png"] {
+	background-size: 26px!important;
+	height: 25px!important;
+	padding-left: 44px!important;
 	width: 25px;
 }
 
 /* Avatar _______________________________________________________________*/
 
+[arialabel="Invite"] svg,
+.classifieds-nav-link-container:nth-child(2) svg,
 .channel-member-count-icon,
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/106826bbb41c62720fcf36ced316c65e.png"] {
 	background: url(https://i.ibb.co/g3wQg00/avatar-32x32.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
+[arialabel="Invite"] svg,
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/106826bbb41c62720fcf36ced316c65e.png"] {
     background-size: 26px!important;
+    height: 28px!important;
     padding-left: 40px!important;
-    height: 25px;
     width: 25px;
 }
 
+.classifieds-nav-link-container:nth-child(2) svg,
 .channel-member-count-icon {
-    background-size: 19px!important;
-    padding-left: 26px!important;
-    height: 20px;
-    width: 25px;
+    background-size: 24px!important;
+    height: 24px!important;
+    padding-left: 25px!important;
+    width: 10px!important;
 }
 
 /* Blocton Bypass _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/e1835fe4d776a77e7ccfb4c4d2542f10.png"] {
+[href="/neighborhood_feed/"] svg {
 	background: url(https://i.ibb.co/0nhdp3Q/house1.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/e1835fe4d776a77e7ccfb4c4d2542f10.png"] {
+[href="/neighborhood_feed/"] svg {
 	background-size: 38px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
 /* Businesses _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/e6e34aae6e07287732583f3bb040a3e4.png"],
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/12d4451e044cb5632158f3f75874b2ad.png"] {
+[href="/recommendations?is=nav_bar"] svg {
 	background: url(https://i.ibb.co/yBDPJCQ/Wal-Mart-Store.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/e6e34aae6e07287732583f3bb040a3e4.png"],
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/12d4451e044cb5632158f3f75874b2ad.png"] {
+[href="/recommendations?is=nav_bar"] svg {
 	background-size: 44px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
@@ -1037,14 +1098,31 @@ tr:hover {
 
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/c8303b0af763df922d1764bb9b035062.png"] {
     background-size: 32px!important;
+    height: 31px!important;
     padding-left: 44px!important;
-    height: 31px;
     width: 25px;
 }
 
 /* Comment _______________________________________________________________*/
 
+.nav-item-link {
+    margin-left: 16px;
+}
+
+path {
+    fill: #fff;
+}
+
+/* Comment (Double) __________________*/
+
+[aria-label="Messages"] svg
+{
+	background: url(https://i.ibb.co/BV659LN/1984.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
 .post-comment-count-icon,
+[alt="Comment"],
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/9c4900e347339cb9d86d0b58ea042156.png"],
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/ebaa270ec194fa5ba7873d39e1634862.png"]
 {
@@ -1053,15 +1131,22 @@ tr:hover {
 }
 
 .post-comment-count-icon,
+[alt="Comment"],
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/9c4900e347339cb9d86d0b58ea042156.png"],
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/ebaa270ec194fa5ba7873d39e1634862.png"]
 {
 	background-size: 25px!important;
-	padding-left: 25px!important;
 	height: 20px;
+	padding-left: 25px!important;
 	width: 25px;
 }
 
+[aria-label="Messages"] svg {
+    background-size: 39px!important;
+    height: 42px;
+    padding-left: 40px!important;
+    width: 1px;
+}
 
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/f06a75032f179eeede031ccd8a8c9c66.png"] {
 	background: url(https://i.ibb.co/VHfjyf4/Inbox.png) no-repeat!important;
@@ -1070,96 +1155,120 @@ tr:hover {
 
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/f06a75032f179eeede031ccd8a8c9c66.png"] {
     background-size: 29px!important;
-    padding-left: 31px!important;
     height: 27px;
+    padding-left: 31px!important;
     width: 25px;
 }
 
 /* Crime & Safety _______________________________________________________________*/
 
-[href="/crime_and_safety/"] img {
+[href="/crime_and_safety/"] svg {
 	background: url(https://i.ibb.co/Lhfjqf4/information-sign-1024x1024.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[href="/crime_and_safety/"] img {
+[href="/crime_and_safety/"] svg {
 	background-size: 25px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
 /* Documents _______________________________________________________________*/
 
-[href="/documents/"] img {
+[href="/documents/"] svg {
 	background: url(https://i.ibb.co/n3Wnw6V/Documents-Folder-Black.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[href="/documents/"] img {
+[href="/documents/"] svg {
 	background-size: 26px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
+}
+
+/* Email _______________________________________________________________*/
+
+[href="/invitation_email/?is=navbar_menu"] svg {
+	background: url(https://i.ibb.co/Dt0YByd/mention.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[href="/invitation_email/?is=navbar_menu"] svg {
+    background-size: 26px!important;
+    height: 24px!important;
+    padding-left: 29px!important;
+    width: 1px;
 }
 
 /* Events _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/57e9d14e6e61bedcd36dec55dafb1f94.png"],
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/80b0119020c091b7f24d17781d3d6da4.png"] {
+[href="/events/"] svg {
 	background: url(https://i.ibb.co/bQSKtFM/Calendar-Icon.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/57e9d14e6e61bedcd36dec55dafb1f94.png"],
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/80b0119020c091b7f24d17781d3d6da4.png"] {
+[href="/events/"] svg {
 	background-size: 25px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
 /* For Sale _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/c3d005ef33faf94a03570ed7e2706d9c.png"] {
+[href="/for_sale_and_free/?init_source=more_menu"] svg {
 	background: url(https://i.ibb.co/R4WvJgX/Tag-Replies.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/c3d005ef33faf94a03570ed7e2706d9c.png"] {
+[href="/for_sale_and_free/?init_source=more_menu"] svg {
 	background-size: 26px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
 /* General _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/bf3b2ceea6e0dfccbe9661235749263d.png"] {
+[href="/general/"] svg {
 	background: url(https://i.ibb.co/bLMZvfD/newspaper-ads-general.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/bf3b2ceea6e0dfccbe9661235749263d.png"] {
+[href="/general/"] svg {
 	background-size: 40px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
+	width: 25px;
+}
+
+/* Help Map _______________________________________________________________*/
+
+[href="/help_map/?is=nav_bar"] svg {
+	background: url(https://i.ibb.co/Fw425pw/location.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[href="/help_map/?is=nav_bar"] svg {
+	background-size: 26px!important;
+	height: 25px!important;
+	padding-left: 44px!important;
 	width: 25px;
 }
 
 /* Home _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/21b85d8bec9c27f07602567c1edf7024.png"],
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/b21779fff0b2a8f141294f69e27a1472.png"] {
+[href="/news_feed/"] svg {
 	background: url(https://i.ibb.co/Lkvsdyv/Home-48x48.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/21b85d8bec9c27f07602567c1edf7024.png"],
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/b21779fff0b2a8f141294f69e27a1472.png"] {
+[href="/news_feed/"] svg {
 	background-size: 25px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
@@ -1175,6 +1284,57 @@ tr:hover {
 	height: 26px!important;
 	padding-left: 31px!important;
 	width: 10px!important;
+}
+
+/* Leaf _______________________________________________________________*/
+
+[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/8548a6e533ef401c12f56c163691a7a0.png"] {
+	background: url(https://i.ibb.co/h9xCpJB/leaf-95.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/8548a6e533ef401c12f56c163691a7a0.png"] {
+	background-size: 31px!important;
+	height: 26px!important;
+	padding-left: 31px!important;
+	width: 10px!important;
+}
+
+/* Link _______________________________________________________________*/
+
+[href="/invitation_link/?is=navbar_menu"] svg {
+	background: url(https://i.ibb.co/vHvgbNX/link-28x28.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[href="/invitation_link/?is=navbar_menu"] svg {
+    background-size: 26px!important;
+    height: 24px!important;
+    padding-left: 29px!important;
+    width: 1px;
+}
+
+/* Heart _______________________________________________________________*/
+
+/* On ___________________*/
+
+select {
+	background: url(https://i.ibb.co/FB9kX4W/healthy-heart.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+/* Off ___________________*/
+
+[aria-label="Like"] img {
+	background: url(https://i.ibb.co/cD452WP/healthy-hear-darkt-32x32.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[aria-label="Like"] img {
+    background-size: 26px!important;
+    height: 26px!important;
+    padding-left: 28px!important;
+    width: 10px!important;
 }
 
 /* Lines _______________________________________________________________*/
@@ -1193,43 +1353,57 @@ tr:hover {
 
 /* Local Deals _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/592438f0fc1e6407d55d7209708214cf.png"] {
+[href="/offers?is=nav_bar"] svg {
 	background: url(https://i.ibb.co/8gHPXy6/man-with-percent-sign-02.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/592438f0fc1e6407d55d7209708214cf.png"] {
+[href="/offers?is=nav_bar"] svg {
 	background-size: 26px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
 /* Lost & Found _______________________________________________________________*/
 
-[href="/lost_and_found"] img {
+[href="/lost_and_found"] svg {
 	background: url(https://i.ibb.co/H7KjkKR/help-147419-640.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[href="/lost_and_found"] img {
+[href="/lost_and_found"] svg {
 	background-size: 25px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
+}
+
+/* Mail _______________________________________________________________*/
+
+[href="/invitation_postcards/?is=navbar_menu"] svg {
+	background: url(https://i.ibb.co/BjMrPyb/messages-24x24.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[href="/invitation_postcards/?is=navbar_menu"] svg {
+    background-size: 26px!important;
+    height: 24px!important;
+    padding-left: 29px!important;
+    width: 1px;
 }
 
 /* Map _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/7400842f94203c0b91cda07750b726f1.png"] {
+[href="/map/"] svg {
 	background: url(https://i.ibb.co/wJcY5Pb/location.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/7400842f94203c0b91cda07750b726f1.png"] {
+[href="/map/"] svg {
 	background-size: 26px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
@@ -1249,15 +1423,15 @@ tr:hover {
 
 /* Neighbors _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/b8cf8d69b3a52d7205cb8130d755bf5b.png"] {
+[href="/directory/"] svg {
 	background: url(https://i.ibb.co/N3ZfbLz/people.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/b8cf8d69b3a52d7205cb8130d755bf5b.png"] {
+[href="/directory/"] svg {
 	background-size: 26px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
@@ -1275,57 +1449,85 @@ tr:hover {
 
 /* Notification _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/23d2f80809bc8a9722267f9e9c6a6e92.png"] {
+[arialabel="Notifications"] svg {
 	background: url(https://i.ibb.co/8Px680k/Notification.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/23d2f80809bc8a9722267f9e9c6a6e92.png"] {
+[arialabel="Notifications"] svg {
 	background-size: 32px!important;
 	height: 26px!important;
 	padding-left: 31px!important;
 	width: 10px!important;
 }
 
+/* Office _______________________________________________________________*/
+
+[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/8d33a28d0c9f3aa0ad2f2e97fdee31b3.png"] {
+	background: url(https://i.ibb.co/7nqxWhF/briefcase-28x28.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/8d33a28d0c9f3aa0ad2f2e97fdee31b3.png"] {
+	background-size: 30px!important;
+	height: 25px!important;
+	padding-left: 44px!important;
+	width: 25px;
+}
+
 /* Pets _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/39cf31f9f30112d48b580b04df69bc1d.png"] {
+[href="/pet_directory"] svg {
 	background: url(https://i.ibb.co/G5xWXD7/pets-big.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/39cf31f9f30112d48b580b04df69bc1d.png"] {
+[href="/pet_directory"] svg {
 	background-size: 54px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
 /* Public Agencies _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/d1c71160013e6087d7bd43cc60b34235.png"] {
+[href="/agency/feed/"] svg {
 	background: url(https://i.ibb.co/QJphLTq/State-Senate-Building-SE.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/d1c71160013e6087d7bd43cc60b34235.png"] {
+[href="/agency/feed/"] svg {
 	background-size: 32px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
 	width: 25px;
 }
 
 /* Real Estate _______________________________________________________________*/
 
-[href="/real-estate?is=sidebar"] img {
+[href="/real-estate?is=sidebar"] svg {
 	background: url(https://i.ibb.co/pn9GQnn/Real-Estate.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[href="/real-estate?is=sidebar"] img {
+[href="/real-estate?is=sidebar"] svg {
 	background-size: 25px!important;
+	height: 25px!important;
 	padding-left: 44px!important;
-	height: 25px;
+	width: 25px;
+}
+
+/* Red Cross _______________________________________________________________*/
+
+.profile-emergency-contacts-contact-count-message {
+	background: url(https://i.ibb.co/XZ6BtNx/red-cross.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.profile-emergency-contacts-contact-count-message {
+	background-size: 26px!important;
+	height: 25px!important;
+	padding-left: 44px!important;
 	width: 25px;
 }
 
@@ -1343,6 +1545,7 @@ tr:hover {
 
 /* Saved _______________________________________________________________*/
 
+.classifieds-nav-link-container:nth-child(3) svg,
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/def1027ffef7fe3cd0fc3ec5f55bba8e.png"],
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/12aad9f7d0c0ab0a201b4943d858e1ad.png"] {
 	background: url(https://i.ibb.co/LdfRvhH/bookmark-21x21.png) no-repeat!important;
@@ -1356,10 +1559,10 @@ tr:hover {
     width: 10px!important;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/def1027ffef7fe3cd0fc3ec5f55bba8e.png"]{
-    background-size: 21px!important;
-    height: 22px!important;
-    padding-left: 21px!important;
+.classifieds-nav-link-container:nth-child(3) svg, [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/def1027ffef7fe3cd0fc3ec5f55bba8e.png"] {
+    background-size: 24px!important;
+    height: 24px!important;
+    padding-left: 25px!important;
     width: 10px!important;
 }
 
@@ -1379,12 +1582,26 @@ tr:hover {
 	width: 10px!important;
 }
 
+/* Share _______________________________________________________________*/
+
+[data-testid="share-button"] {
+	background: url(https://i.ibb.co/27rmYdq/share-36x36.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[data-testid="share-button"] {
+    background-size: 25px!important;
+    height: 30px!important;
+    padding-left: 27px!important;
+    width: 10px!important;
+}
+
 /* Smillie _______________________________________________________________*/
 
 .thank-icon,
 ._1JbBLmWj {
-	height: 30px;
-	left: -5px;
+	height: 30px!important;
+	left: -5px!important;
 }
 
 ._1JbBLmWj {
@@ -1395,39 +1612,53 @@ tr:hover {
 .thank-icon,
 ._1JbBLmWj {
 	background-size: 25px!important;
+	height: 25px!important;
 	padding-left: 29px!important;
-	height: 25px;
 	width: 25px;
+}
+
+/* Sort _______________________________________________________________*/
+
+[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/d891b858f66d3c4f3e2f406076ba5326.svg"] {
+	background: url(https://i.ibb.co/zRT4g2k/UpDown.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/d891b858f66d3c4f3e2f406076ba5326.svg"] {
+    background-size: 15px!important;
+    height: 25px!important;
+    padding-left: 20px!important;
+    width: 17px;
 }
 
 /* Star _______________________________________________________________*/
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/4beba58ac805de3699b8e3e418dab63e.png"] {
+[href="/channels/?is=nav_menu"] svg {
 	background: url(https://i.ibb.co/dPs9Fwm/star-26x25.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/4beba58ac805de3699b8e3e418dab63e.png"] {
+[href="/channels/?is=nav_menu"] svg {
     background-size: 27px!important;
+    height: 25px!important;
     padding-left: 41px!important;
-    height: 25px;
     width: 25px;
 }
 
-
 /* Tag _______________________________________________________________*/
 
-
+.classifieds-nav-link-container:nth-child(1) svg,
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/078bd07b29658cd789a646ce9646b4a1.png"] {
 	background: url(https://i.ibb.co/R4WvJgX/Tag-Replies.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
+.classifieds-nav-link-container:nth-child(1) svg,
 [src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/078bd07b29658cd789a646ce9646b4a1.png"] {
-    background-size: 27px!important;
-    padding-left: 41px!important;
-    height: 25px;
-    width: 25px;
+    background-size: 24px!important;
+    height: 24px!important;
+    padding-left: 25px!important;
+    width: 10px!important;
 }
 
 /* Topic _______________________________________________________________*/
@@ -1439,11 +1670,10 @@ tr:hover {
 
 .topic-icon img {
     background-size: 18px!important;
-    padding-left: 20px!important;
     height: 25px!important;
+    padding-left: 20px!important;
     width: 10px!important;
 }
-
 
 /* A _______________________________________________________________*/
 
@@ -1468,6 +1698,7 @@ tr:hover {
 
 /* B _______________________________________________________________*/
 
+[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/b32c104782a52753b682868f25043df9.png"],
 [src*="havatar-b.png"] {
 	background: url(https://i.ibb.co/tJnwxTK/Letter-B.png) no-repeat!important;
 	box-sizing: border-box;
@@ -1480,6 +1711,7 @@ tr:hover {
 	width: 30px!important;
 }
 
+[src="https://d19rpgkrjeba2z.cloudfront.net/static/gen/b32c104782a52753b682868f25043df9.png"],
 [src*="avatar-b.png"][style="height: 30px; width: 30px;"] {
 	background-size: 36px!important;
 	height: 39px!important;

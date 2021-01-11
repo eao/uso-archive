@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Delmor_S
 @description    `Аниме-стиль для reactor.cc и joyreactor.cc, а также всех его разделов и подразделов - anime.reactor.cc итд. Возможность выбрать темную/прозрачную тему (Также работает с reactor.com, joyreactor.com)Anime-style for reactor.com, joyreactor.com, and all its subreddits, like anime.reactor.com etc. Dark theme available.`
-@version        2020928.16.50
+@version        2021111.4.55
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown backgroundUserChoice "Фоновое изображение" {
@@ -130,6 +130,10 @@ input[type="password"] {
 
 .poll_res_bg_active {
     background: var(--backgroundColor);
+}
+
+.post_content h3 {
+    color: white;
 }
 /*========== DARK THEME END ==========*\/ EOT;
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Simply13
 @description    `Experimental compact style for new VUT design. Suitable for monitors with low DPI.Not final version, there is a lot of pages which should be compacted as well... I am affraid this style will never be finished...`
-@version        20201126.9.31
+@version        2021111.11.58
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -930,6 +930,13 @@ label.custom-checkbox input:checked ~ span.custom-control-indicator::before {
     margin-bottom: 0px;
     text-align: right;
 }
+/* Zvyraznit nazev pozadavku */
+#upravit-pozadavek > div.form-group:nth-child(8) > div.col-sm-9.col-md-7.col-lg-7 > div.form-control-static {
+	color: #b70b0b;
+    font-weight: bold;
+    font-size: 14px;
+}
+
 table {
     font-size: 12px;
 }

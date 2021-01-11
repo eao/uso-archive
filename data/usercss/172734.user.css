@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         bitshftr
 @description    `SupraForums went to a new platform on June 13th, 2019.  This resulted in a significantly different style, which a lot of users don't like.  This Stylish style makes better use of a desktop browser's screen and removes a lot of superfluous stuff that seasoned users don't want to see.Created by SupraForums user "bitshftr".`
-@version        2020123.5.43
+@version        2021111.4.14
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -89,6 +89,9 @@ div.p-header-logo--image img
   margin-bottom: 0;
 }
 
+.california-block-outer-upper-nav
+{ margin-bottom: 12px;
+}
 
 /* Reduce the vertical space between subtabs on thread results screens (like "Following") and the page numbers */
 .tabs--standalone /* /watched/participated-discussions */
@@ -128,8 +131,14 @@ div.p-header-logo--image img
 
 
 /* move the "premium" avatar badge off to the side of the avatar */
-.avatar-badge-wrapper .badge-premium
+.avatar-badge-wrapper .badge-premium-ml
 { left: 20px;
+  bottom: 0;
+  transform: unset;
+}
+
+.avatar-badge-wrapper .badge-premium-s
+{ left: 8px;
   bottom: 0;
   transform: unset;
 }
@@ -158,6 +167,11 @@ div.p-header-logo--image img
 /* Reduce the wasted vertical space above the signature */
 .california-message .message-signature
 { padding-top: 0;
+  margin-top: 8px;
+}
+
+.message-body
+{ min-height: 16px;
 }
 
 
@@ -205,6 +219,46 @@ div.p-header-logo--image img
 .structItem-cell
 { padding-top: 4px;
   padding-bottom: 6px;
+}
+
+.structItem
+{ padding-top: 4px !important;
+}
+
+.california-thread-item .structItem
+{ padding-left: 0;
+}
+
+.california-thread-item .structItem-cell
+{ padding: 0;
+}
+
+.california-thread-item .structItem-cell.avatar-cell
+{ height: 28px;
+  width: 34px;
+  padding-right: 6px;  
+}
+
+.california-thread-item .structItem-iconContainer
+{ padding: 0;
+  top: 22px;  
+}
+.california-thread-item .structItem-iconContainer .avatar
+{ height: 24px;
+  width: 24px;
+}
+
+.structItem-title
+{ margin-left: -34px;
+}
+
+
+/* Change the background of thread items */
+.california-thread-item .structItem
+{ background-color: unset;
+  border-top: 1px solid gray;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 
@@ -261,5 +315,4 @@ div.structItemContainer-group div.california-thread-item:nth-last-child(n+36) /*
 { left: 210px;
   padding-left: 0;
 }
-
 }
