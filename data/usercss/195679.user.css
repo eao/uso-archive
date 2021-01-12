@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           OLD new VK v1.0.1
+@name           OLD new VK v1.0.2
 @namespace      USO Archive
 @author         jakill02
 @description    `частично Имитирует Старый (Белый) дизайн Вконтакте, частично более новый, существовавший до Декабря 2020-го года, плюс некоторые изменения от автора, вроде отключённой вредной опции (пожаловаться) которая только мешается и которую можно нажать невзначай :Dтут: https://greasyfork.org/ru/scripts/419915 вы можете установить дополнительный Скрипт, который расширит функционал данного Стиля.`
-@version        2021110.13.27
+@version        2021112.1.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
-/* OLD new VK v1.0.1 */
+/* OLD new VK v1.0.2 */
 
         /*  страница Стиля: https://userstyles.org/styles/195679  */
 
@@ -262,10 +262,6 @@ body.new_header_design .top_audio_player:hover .top_audio_player_title {
 /* Подсветка пнопок Топ плеера */
 button.top_audio_player_btn {filter: brightness(2.4);}
 
-/* Стрелка Скачивание Музыки "SaveFrom.net" в ТопАудиоплеере (позицианирование) */
-/* a.savefrom_vk_download.sf-notify-on-remove-947425 */
-a.savefrom_vk_download {position: relative; top: 8px !important;}
-
 
 /* Позицианирование Иконки Ноты в неиспользованном ТопАудиоплеере */
 a#top_audio.top_nav_btn._top_nav_audio_btn {margin-top: 1px;}
@@ -474,6 +470,13 @@ background-repeat: no-repeat !important; padding: 0px 18px !important; margin-le
     flow - показать */
 [dir] #ads_left {display: none !important;}
 
+/* Стрелка Скачивание Музыки "SaveFrom.net" в ТопАудиоплеере (позицианирование) */
+/* a.savefrom_vk_download.sf-notify-on-remove-947425 */
+a.savefrom_vk_download {position: relative; top: 8px !important;}
+
+/* Стрелка Скачивание Музыки "SaveFrom.net" в Разделах Музыки (позицианирование) */
+.savefrom_vk_download.sf-audio-btn.audio_row__action {top: 0px !important; margin: auto 2px auto 0px !important;}
+
 /*===================================================================*/
 /* Отключить пункт меню - Пожаловаться */
 [dir=ltr] #pv_more_acts_tt #pv_more_act_spam {display: none;}
@@ -484,7 +487,7 @@ background-repeat: no-repeat !important; padding: 0px 18px !important; margin-le
     -o-[dir=ltr] #pv_more_acts_tt #pv_more_act_place {display: none;}
 /*====================================================================*/
 
-/*перемеещние Cохранки вверх*/
+/*перемещение Cохранки вверх*/
 -o-.pv_cont .pv_bottom_actions .pv_actions_more { margin-left: 0px; -margin-right: 0px;
      position: absolute;  top: 6em; left: 1.4%; display: block; background-color: rgba(0, 85, 255, 0) ! important; color: rgba(128, 128, 128, .5);
          opacity: 0.5; padding: 15px 28px 30px 0px; border-radius: 50%; border: 1.2px solid #fff0; font-weight: 600;}

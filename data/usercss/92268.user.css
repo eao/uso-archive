@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           Mozilla Addon Widescreen NEW design v.122
+@name           Mozilla Addon Widescreen NEW design v.123
 @namespace      USO Archive
 @author         decembre
 @description    `<mark>▶ It's better for a WIDESCREEN(1920x1080)!</mark>NEED and Work better with (for all the Dark color flavor):<a href="https://userstyles.org/styles/159780/">[UserStyles] Dark Mozilla Add-ons (AMO)  by maxigaz</a><a href="https://gitlab.com/maxigaz/amo-dark">[GitLab] Mozilla Add-ons Dark Theme  by maxigaz</a>ADD  domain("addons-dev.allizom.org") to it for :https://addons-dev.allizom.org/en-GB/firefox/`
-@version        20201111.10.51
+@version        2021112.0.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("addons.mozilla.org"), domain("addons-dev.allizom.org"), domain("addons.mozilla.org."), regexp("https://web.archive.org/web/.*/https://addons.mozilla.org/.*") {
 
 
-/* ==== MOZ - Mozilla Addon Widescreen NEW Design v.122 (new122) - OK DEV HERE - WATnew06  ==== */
+/* ==== MOZ - Mozilla Addon Widescreen NEW Design v.123 (new123) - OK DEV HERE - WATnew06  ==== */
 
 /* =================================================== 
 WORK WITH "Dark Mozilla Add-ons (AMO)":
@@ -3034,9 +3034,11 @@ background-color: #191f2d;
 .Paginate-page-number {
     margin: -8px 0 0 !important;
 }
+/* (new123) for Chrome */
 .UserProfile .UserProfile-wrapper .AddonsByAuthorsCard .Card-contents ul > li ,
 .UserProfile-addons-and-reviews .Card.CardList.UserProfile-reviews .Card-contents ul > li , 
 .AddonReviewList-reviews .CardList ul > li {
+    position: relative ;
     display: inline-block !important;
     width: 19% !important;
     height: 130px !important;
@@ -3044,6 +3046,7 @@ background-color: #191f2d;
     padding: 5px !important;
     overflow: hidden !important;
     border-radius: 5px !important;
+    z-index: 0 ;
 border: 1px solid red !important;
 }
 /* AUTHOR - THEME */
@@ -3352,7 +3355,7 @@ background-color: #191f2d !important;
     overflow: hidden !important;
     border-radius: 5px !important;
     transform: scale(1.5) !important;
-    z-index: 500 !important;
+    z-index: 5000000 !important;
 background-color: #191f2d !important;
 border: 1px solid red !important;
 }
@@ -4446,7 +4449,51 @@ a:visited {
 /* COLOR - ICON */
 
 
-
-
+/* WEB ARCHIVE MOZILLA */
+/* TOP BAR */ 
+/* #wm-ipp-base {
+    position: fixed;
+    display: inline-block;
+    width: 10%;
+    height: 40px !important;
+    top: 0;
+    overflow: hidden !important;
+visibility: hidden !important;
+opacity: 0 !important;
+    z-index: 5000;
+background: red !important;
+}*/
+#wm-ipp-base {
+    display: inline-block !important;
+    width: 99.9% !important;
+    height: 87px !important;
+    top: 0 !important;
+    z-index: 50000000 !important;
+visibility: hidden !important;
+background: red ;
+}
+#wm-ipp-base:hover {
+    display: inline-block !important;
+    width: 99.9% !important;
+    height: 87px !important;
+    top: 0 !important;
+    z-index: 50000000 !important;
+visibility: visible !important;
+background: black ;
+}
+#wm-ipp-base:before {
+    content: "X" !important;
+    position: fixed ;
+    width: 20px;
+    height: 87px !important;
+    line-height: 107px !important;
+    top: 0;
+text-align: center !important;
+visibility: visible !important;
+    z-index: 5000 !important;
+	background: url(https://external-content.duckduckgo.com/ip3/archive.org.ico) top center no-repeat !important;
+	background-size: contain !important;
+background-color: red  !important;
+}
 /* ==== END  ==== */
 }
