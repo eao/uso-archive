@@ -2,8 +2,8 @@
 @name           ◆Google 検索
 @namespace      USO Archive
 @author         sogiotos
-@description    `ver.2020-10<ul><li>リンク色を未訪問：青／訪問済：紫、太字にしてはっきり分けます。</ul>`
-@version        2020103.6.1
+@description    `ver.2021-01<ul><li>リンク色を未訪問：青／訪問済：紫、太字にしてはっきり分けます。</ul>`
+@version        2021112.2.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,7 +12,7 @@
 .AUiS2 /* 他の人はこちらも検索 */
 { display: none !important; }
 
-#search .g .rc a > h3 {
+#search .g a > h3 {
   color: #304ffe;
   font-weight: bold;
   -webkit-font-smoothing: antialiased;

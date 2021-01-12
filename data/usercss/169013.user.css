@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2020925.5.1
+@version        2021112.5.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -72,17 +72,13 @@
 	text-decoration: none!important;
 }
 
-.bd-sidebar .bd-toc-link,
-.bd-sidebar-wrap .nav-tabs li a,
-.bd-sidebar-wrap .toggle-sidebar a,
+.bd-sidebar .bd-toc-link,.bd-sidebar-wrap .nav-tabs li a,.bd-sidebar-wrap .toggle-sidebar a,
 .bd-toc .toc-nav .toc-content,
 .breadcrumb .breadcrumb-item a,
 .code-block a,
 .footer .footer-info h5,
-.home .section .section-title,
-.home .section .sm-title,
-.learn-roblox-pages .learning-materials-content .tab-content .learning-type,
-.learn-roblox-pages .learning-materials-content .tab-content .load-more a
+.home .section .section-title,.home .section .sm-title,
+.learn-roblox-pages .learning-materials-content .tab-content .learning-type,.learn-roblox-pages .learning-materials-content .tab-content .load-more a
 {
 	text-transform: capitalize!important;
 }
@@ -94,28 +90,17 @@
 .form-control,
 .header .bd-navbar-nav .nav-item > a.active,
 .input-group-btn .input-addon-btn,
-.learn-roblox-pages .learning-materials-content .tab-content .inner-wrap:hover,
-.learn-roblox-pages .time,
-.pager .disabled>a,.pager .disabled>a:focus,.pager .disabled>a:hover,
-.pager .first a,.pager .last a,
-.pager .pager-next a,.pager .pager-prev a,
-.rbx-select-group.active,
-.rbx-select-group:focus,.rbx-select-group:hover,
+.learn-roblox-pages .learning-materials-content .tab-content .inner-wrap:hover,.learn-roblox-pages .time,
+.pager .disabled>a,.pager .disabled>a:focus,.pager .disabled>a:hover,.pager .first a,.pager .last a,.pager .pager-next a,.pager .pager-prev a,
+.rbx-select-group.active,.rbx-select-group:focus,.rbx-select-group:hover,
 .rbx-tabs-horizontal .rbx-tab .rbx-tab-heading.active,.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:active,.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:focus,.rbx-tabs-horizontal .rbx-tab .rbx-tab-heading:hover,
 .rbx-tabs-horizontal .rbx-tab.active .rbx-tab-heading,
 .small-action,
-.topic-avatar,
-.topic-body,
-.topic-map .participants .user,.topic-map,
-.topic-status-info,
+.topic-avatar,.topic-body,.topic-map .participants .user,.topic-map,.topic-status-info,
 :focus,
-aside.onebox,
-aside.quote .title,
+aside.onebox,aside.quote .title,
 code,
-fieldset .chosen-container .chosen-single,
-fieldset .chosen-container-active.chosen-with-drop .chosen-single,
-fieldset input,
-fieldset select
+fieldset .chosen-container .chosen-single,fieldset .chosen-container-active.chosen-with-drop .chosen-single,fieldset input,fieldset select
 {
 	border: none!important;
 	outline: none!important;
@@ -160,42 +145,19 @@ table {
 	border-spacing: 12px!important;
 }
 
-
 /*___ Fonts ________________________________________________________________________*/
 
-.gotham-font .h1,
-.gotham-font .h2,
-.gotham-font .h3,
-.gotham-font .h4,
-.gotham-font .h5,
-.gotham-font .h6,
+.gotham-font .h1,.gotham-font .h2,.gotham-font .h3,.gotham-font .h4,.gotham-font .h5,.gotham-font .h6,
 .gotham-font .text,
-.gotham-font body,
-.gotham-font button,
-.gotham-font h1,
-.gotham-font h2,
-.gotham-font h3,
-.gotham-font h4,
-.gotham-font h5,
-.gotham-font h6,
-.gotham-font html,
-.gotham-font input,
-.gotham-font pre,
-.gotham-font select,
-.gotham-font textarea,
-.gotham-font,
-.sub-pages h5,
-.sub-pages h6,
-.message-summary-content .text-preview,
-.messages .messageDivider .message-summary-date,
-.messages .messageDivider.unread .message-summary-body .subject,
+.gotham-font body,.gotham-font button,
+.gotham-font h1,.gotham-font h2,.gotham-font h3,.gotham-font h4,.gotham-font h5,.gotham-font h6,
+.gotham-font html,.gotham-font input,.gotham-font pre,.gotham-font select,.gotham-font textarea,.gotham-font,
+.sub-pages h5,.sub-pages h6,
+.message-summary-content .text-preview,.messages .messageDivider .message-summary-date,.messages .messageDivider.unread .message-summary-body .subject,
 .rbx-login-partial-legacy h3,
 b,
 body,
-h1,
-h2, 
-h3,
-h4,
+h1,h2,h3,h4,
 strong
 {
 	font-family: cursive, Roboto, Arial, sans-serif!important;
@@ -203,10 +165,8 @@ strong
 
 .bd-toc .toc-nav .toc-content,
 .gotham-font .font-title,
-.gotham-font .h1,
-.gotham-font .h2,
-.gotham-font h1,
-.gotham-font h2
+.gotham-font .h1,.gotham-font .h2,
+.gotham-font h1,.gotham-font h2
 {
     font-size: 27px!important;
     font-weight: 400!important;
@@ -214,21 +174,17 @@ strong
 
 .breadcrumb-container li.breadcrumb-filter,
 .markdown-field-data a,
-.sub-pages h5,
-.sub-pages h6
+.sub-pages h5,.sub-pages h6
 {
 	font-size: 21px!important;
 }
 
-.light-theme .nav-item.nav-link,
 .bd-sidebar .bd-toc-link,
-.code-block .prettyprint ol li,
-.code-block ol li p,
+.code-block .prettyprint ol li,.code-block ol li p,
+.gotham-font div,
 .header .bd-navbar-nav .nav-item > a,
-.markdown-field-data .alert .prettyprint li,
-.markdown-field-data .alert,
-.markdown-field-data li,
-.markdown-field-data p,
+.light-theme .nav-item.nav-link,
+.markdown-field-data .alert .prettyprint li,.markdown-field-data .alert,.markdown-field-data li,.markdown-field-data p,
 .roblox-studio-lines,
 .text-label.text-overflow.message-summary-content,
 code,
@@ -238,28 +194,27 @@ pre
 	font-size: 19px!important;
 }
 
-.table .table-row td code,
-.table td,
+.light-theme .notification, .light-theme .notification-blue, .light-theme .notification-red,
+.table .table-row td code,.table td,
 html,
 kbd
 {
 	font-size: 17px!important;
 }
 
+.gotham-font .font-caption-header, .gotham-font .font-caption-header:active, .gotham-font .font-caption-header:focus, .gotham-font .font-caption-header:hover, .gotham-font .font-caption-header:link, .gotham-font .font-caption-header:visited, .gotham-font .small.font-caption-header, .gotham-font .small.font-caption-header:active, .gotham-font .small.font-caption-header:focus, .gotham-font .small.font-caption-header:hover, .gotham-font .small.font-caption-header:link, .gotham-font .small.font-caption-header:visited, .gotham-font .small.text-error, .gotham-font .small.text-error:active, .gotham-font .small.text-error:focus, .gotham-font .small.text-error:hover, .gotham-font .small.text-error:link, .gotham-font .small.text-error:visited, .gotham-font .small.text-pastname, .gotham-font .small.text-pastname:active, .gotham-font .small.text-pastname:focus, .gotham-font .small.text-pastname:hover, .gotham-font .small.text-pastname:link, .gotham-font .small.text-pastname:visited, .gotham-font .small.text-report, .gotham-font .small.text-report-ads, .gotham-font .small.text-report-ads:active, .gotham-font .small.text-report-ads:focus, .gotham-font .small.text-report-ads:hover, .gotham-font .small.text-report-ads:link, .gotham-font .small.text-report-ads:visited, .gotham-font .small.text-report:active, .gotham-font .small.text-report:focus, .gotham-font .small.text-report:hover, .gotham-font .small.text-report:link, .gotham-font .small.text-report:visited, .gotham-font .text-error, .gotham-font .text-error:active, .gotham-font .text-error:focus, .gotham-font .text-error:hover, .gotham-font .text-error:link, .gotham-font .text-error:visited, .gotham-font .text-pastname, .gotham-font .text-pastname:active, .gotham-font .text-pastname:focus, .gotham-font .text-pastname:hover, .gotham-font .text-pastname:link, .gotham-font .text-pastname:visited, .gotham-font .text-report, .gotham-font .text-report-ads, .gotham-font .text-report-ads:active, .gotham-font .text-report-ads:focus, .gotham-font .text-report-ads:hover, .gotham-font .text-report-ads:link, .gotham-font .text-report-ads:visited, .gotham-font .text-report:active, .gotham-font .text-report:focus, .gotham-font .text-report:hover, .gotham-font .text-report:link, .gotham-font .text-report:visited,
 .bd-sidebar-wrap .nav-tabs li a
 {
 	font-size: 16px!important;
 }
 
-.markdown-field-data .alert,
-.markdown-field-data li,
+.markdown-field-data .alert,.markdown-field-data li,
 .table td
 {
 	line-height: 32px!important;
 }
 
-.code-block .prettyprint ol li,
-.code-block ol li p,
+.code-block .prettyprint ol li,.code-block ol li p,
 .gotham-font .item-card-label,
 .markdown-field-data .alert .prettyprint li,
 .roblox-studio-lines,
@@ -295,27 +250,32 @@ selector {
     margin-left: 88%!important;
 }
 
+.container-footer {
+    bottom: auto;
+}
+
+.chat-main {
+    bottom: -53px;
+    right: 84%;
+    width: 289px;
+}
+
 /*___ Margins ______________________________________________________________________*/
 
 .access-block,
-.bd-content,
-.bd-sidebar-wrap,
-.bd-toc-wrap,
+.bd-content,.bd-sidebar-wrap,.bd-toc-wrap,
 .careers-cta,
 .col-xl-3,
 .control.fader.faded,
 .game-cards .game-card,
-.home .expanding-block,
-.home .section,
-.item-cards-stackable .item-card,
-.items-list .item-card,
+.home .expanding-block,.home .section,
+.item-cards-stackable .item-card,.items-list .item-card,
 .light-theme .messages .messageDivider.message-news,
 .loading-container.ember-view,
 .news-list,
 .no-gutter-ads .rbx-left-col,
 .numbers-grid,
-.page-template-page-technology .intro-copy,
-.page-template-page-technology .technology-blocks,
+.page-template-page-technology .intro-copy,.page-template-page-technology .technology-blocks,
 .right-panel,
 .section-content:not(.tab-horizontal-submenu),
 .topic-post
@@ -328,7 +288,7 @@ selector {
 }
 
 .content {
-    margin: 12px 0 0px 13%!important;
+    margin: 12px 0 0px 18%!important;
 }
 
 .bd-sidebar-wrap .nav-tabs {
@@ -349,8 +309,7 @@ selector {
 .game-cards .game-card,
 .has-description.no-logo,
 .home .section,
-.item-cards-stackable .item-card,
-.items-list .item-card,
+.item-cards-stackable .item-card,.items-list .item-card,
 .loading-container.ember-view,
 .menu-vertical,
 .news-list,
@@ -366,8 +325,7 @@ selector {
 }
 
 .markdown-field-data a,
-.table .api-tag,
-.table .table-row td code a,
+.table .api-tag,.table .table-row td code a,
 code,
 kbd,
 li>code,
@@ -392,6 +350,7 @@ pre>code
 	max-height: none!important;
 }
 
+.rbx-left-col,
 .places-list {
 	height: auto!important;
 }
@@ -415,8 +374,7 @@ pre>code
 .header-wrap,
 .main-container,
 .news-list,
-.page-template-page-technology .intro-copy,
-.page-template-page-technology .technology-blocks .row,
+.page-template-page-technology .intro-copy,.page-template-page-technology .technology-blocks .row,
 .wrap
 {
 	max-width: none!important;
@@ -465,10 +423,9 @@ ppp {
     width: 24%!important;
 }
 
-.col-sm-6,
-.gotham-font .game-cards .game-card
+.col-sm-6
 {
-    width: 40%!important;
+    width: 25%!important;
 }
 
 .game-cards .game-card,
@@ -477,13 +434,13 @@ ppp {
     width: 18%!important;
 }
 
+.light-theme .rbx-left-col, .topic-body {
+    width: 15%;
+}
+
 .catalog-container .splash .catalog-results .item-cards-stackable .item-card:nth-child(-n+5),
 .items-list .item-card {
     width: 12%!important;
-}
-
-.light-theme .rbx-left-col, .topic-body {
-    width: 11%;
 }
 
 .item-cards-stackable .item-card {
@@ -518,6 +475,9 @@ a[href]:visited {
 
 /*__________________________________________________________________________________*/
 
+.light-theme .notification,
+.light-theme .notification-blue,
+.light-theme .notification-red,
 .SquareTabGray a:hover,
 .SquareTabGray.selected a,
 .SquareTabGray.selected:hover a,
@@ -599,6 +559,7 @@ pre>code
 
 /*___ Khaki ________________________________________________________________________*/
 
+.light-theme .content,
 .breadcrumb-container li .breadcrumb-filter-name,
 .c-version .search-options .panel-heading,
 .category-list th,
@@ -669,6 +630,7 @@ time
 
 /*___ Green ________________________________________________________________________*/
 
+[ng-bind="product.normal.price.amount | currency: product.normal.price.currency.currencySymbol"],
 p code {
 	color: #07ff24!important;
 	font-weight: 700!important;
@@ -867,10 +829,11 @@ nav.post-controls .like-button:hover,nav.post-controls button:hover
 .btn-control-sm,
 .btn-secondary-md,
 .btn-toggle,
+.dark-theme .btn-cta-md,
 fieldset .chosen-container-active.chosen-with-drop .chosen-single
 {
 	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
@@ -881,6 +844,7 @@ fieldset .chosen-container-active.chosen-with-drop .chosen-single
 .btn-secondary-md:hover,
 .btn-toggle:hover,
 .btn:hover,
+.dark-theme .btn-cta-md:hover,
 fieldset .chosen-container-active.chosen-with-drop .chosen-single:hover
 {
 	background-image: linear-gradient(to bottom right, #154eeb, #000)!important;
@@ -892,6 +856,7 @@ fieldset .chosen-container-active.chosen-with-drop .chosen-single:hover
 .btn-secondary-md:active,
 .btn-toggle:active,
 .btn:active,
+.dark-theme .btn-cta-md:active,
 fieldset .chosen-container-active.chosen-with-drop .chosen-single:active
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
@@ -901,7 +866,7 @@ fieldset .chosen-container-active.chosen-with-drop .chosen-single:active
 
 #decline-btn {
 	background-image: linear-gradient(to bottom right, #f00, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
@@ -921,7 +886,7 @@ fieldset .chosen-container-active.chosen-with-drop .chosen-single:active
 .btn-secondary-xs,
 .btn-w-border {
 	background-image: linear-gradient(to bottom right, #da3a04, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
@@ -947,7 +912,7 @@ fieldset .chosen-container-active.chosen-with-drop .chosen-single:active
 .btn-primary-sm
 {
 	background-image: linear-gradient(to bottom right, #02b757, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
@@ -976,7 +941,7 @@ fieldset .chosen-container-active.chosen-with-drop .chosen-single:active
 
 .login-container .fb-button {
 	background-image: linear-gradient(to bottom right, #3b5998, #000)!important;
-	border-radius: 10px!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
@@ -1055,6 +1020,7 @@ fieldset .chosen-container-active.chosen-with-drop .chosen-single:active
 .card,
 .chat-main,
 .col-xl-3,
+.dark-theme .theme-bg,
 .dropdown-menu,
 .focus-on-gameplay .card,
 .game-cards .game-card,
@@ -1078,7 +1044,7 @@ fieldset .chosen-container-active.chosen-with-drop .chosen-single:active
 .topic-post,
 fieldset .chosen-container .chosen-drop
 {
-	background-color: #111!important;
+	background-color: #1c1c1c!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -1089,6 +1055,7 @@ fieldset .chosen-container .chosen-drop
 .card:hover,
 .chat-main:hover,
 .col-xl-3:hover,
+.dark-theme .theme-bg:hover,
 .dropdown-menu:hover,
 .focus-on-gameplay .card:hover,
 .game-cards .game-card:hover,
@@ -1181,6 +1148,7 @@ blockquote
 
 /*__ Light Blue Gradient _______________________________________________________________*/
 
+.light-theme .messages .messageDivider,
 .light-theme .nav-item.nav-link:hover,
 .light-theme .nav-item.nav-link.active,
 .code-block.light-theme,
@@ -1228,7 +1196,6 @@ pre.prettyprint
 }
 
 /*__________________________________________________________________________________*/
-
 
 [style="border-color: #E2231A"]:hover
  {
@@ -1377,6 +1344,34 @@ selector:hover {
 	padding-left: 38px!important;
 }
 
+/* Backpack _______________________________________________________________*/
+
+.icon-nav-inventory {
+	background: url(https://i.ibb.co/jktQ7j3/backpack.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.icon-nav-inventory {
+    background-size: 20px!important;
+    height: 27px!important;
+    padding-left: 32px!important;
+    width: 1px!important;
+}
+
+/* Blog _______________________________________________________________*/
+
+.icon-nav-blog {
+	background: url(https://i.ibb.co/BLBBPR8/Draft-1.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.icon-nav-blog {
+    background-size: 27px!important;
+    height: 29px!important;
+    padding-left: 32px!important;
+    width: 1px!important;
+}
+
 /* Logo _______________________________________________________________*/
 
 .light-theme .icon-default-logo-tagline,
@@ -1509,14 +1504,50 @@ selector:hover {
     height: 16px!important;
 }
 
+/* My Feed _______________________________________________________________*/
+
+.icon-nav-my-feed {
+	background: url(https://i.ibb.co/RBX7GgH/Harry-Potter-Lightning-svg.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.icon-nav-my-feed {
+    background-size: 24px!important;
+    height: 29px!important;
+    padding-left: 32px!important;
+    width: 1px!important;
+}
+
 /* Notification Logo _______________________________________________________________*/
 
+/* Logo ___________________*/
+
+.icon-logo-r,
 .icon-logo-notification {
 	background: url(https://i.ibb.co/fkTNCRN/logo2.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
 .icon-logo-notification {
+	background-size: 36px!important;
+	height: 33px!important;
+	padding-left: 38px!important;
+}
+
+.icon-logo-r {
+    background-size: 24px!important;
+    height: 26px!important;
+    padding-left: 26px!important;
+}
+
+/* Stream ___________________*/
+
+.icon-nav-notification-stream {
+	background: url(https://i.ibb.co/8Px680k/Notification.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.icon-nav-notification-stream {
 	background-size: 36px!important;
 	height: 33px!important;
 	padding-left: 38px!important;
@@ -1666,4 +1697,19 @@ selector:hover {
     margin-left: 10px!important;
     margin-top: 6px!important;
 }
+
+/* Trade _______________________________________________________________*/
+
+.icon-nav-trade {
+	background: url(https://i.ibb.co/N6vg17Q/trade.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+.icon-nav-trade {
+    background-size: 24px!important;
+    height: 29px!important;
+    padding-left: 32px!important;
+    width: 1px!important;
+}
+
 }
