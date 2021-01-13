@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           sspai homepage (new)
+@name           少数派首页卡片优化
 @namespace      USO Archive
 @author         BlueSky-07
-@description    `better reading experience for the homepage of sspai.com`
-@version        2020119.4.27
+@description    `显示更多卡片`
+@version        2021113.8.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,50 +17,81 @@
 .indexRight.index_right > div > a {
     display: none !important;
 }
-
+.card_con.noLogo {
+    margin-top: 0 !important;
+}
+.articleCard {
+    height: 120px;
+    width: 400px;
+    background: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
 .articleCard-box > div {
-  max-width: 48%;
-  margin: 0 5px;
-  display: inline-block;
-  overflow-y: hidden;
-  overflow-x: hidden;
+    max-width: 48%;
+    margin: 0 5px;
+    display: inline-block;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
-
 .img_box {
-  width: 300px !important;
+    max-width: 30% !important;
+    padding-top: unset !important;
+    position: unset !important;
+    transition: unset !important;
+    background: unset !important;
 }
-
+.img_box::after {
+    display: none;
+}
 .pai_content {
     padding: 0 !important;
 }
-
 .pai_card_content {
     width: 100% !important;
     padding: 10px !important;
 }
-
-
 .card_content .left {
-  display: -webkit-box !important;
+    display: -webkit-box !important;
 }
-
 .card_content .title.text_ellipsis2 {
-  margin-bottom: 5px !important;
+    margin-bottom: 5px !important;
 }
-
 .card_content {
-    width: auto !important;
+    width: 65% !important;
     padding: 10px !important;
 }
-
+.title {
+    font-size: 16px !important;
+    height: auto !important;
+}
+.content {
+    font-size: 12px !important;
+    line-height: unset !important;
+}
+.txt.text_ellipsis3 {
+    display: none;
+}
 .follow_title {
     margin: 0 0 10px !important;
 }
-
 .swiper-container {
     padding: 20px 0 0;
 }
-
+.advertisementCardBox {
+    background: unset !important;
+}
+.advertisementCardBox .card_img {
+    position: unset !important;
+    object-fit: contain !important;
+    width: 100% !important;
+    height: 100% !important;
+    transform: unset !important;
+}
+.advertisementCardBox:hover .img_box {
+    width: unset !important;
+}
 .advertisementCardBox:hover .card_content {
     transform: translateX(-2px) !important;
 }

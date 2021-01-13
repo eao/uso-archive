@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `FirefoxWork fine with google search.The others google's site are just randomly green or abandoned.firefox`
-@version        202111.6.23
+@version        2021113.5.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -548,40 +548,40 @@
   /**/      #res .g~.normal-header>div{color:#a11!important;text-align:center!important;}
   /*other people also*/#res .g.kno-kp.mnr-c.g-blk{display:none!important;}
   /*result*/#res .g .rc{}
-  /**/      #res .g .rc>div:nth-child(1){line-height:100%!important;overflow:visible!important;}
-  /**/      #res .g .rc>div:nth-child(1)>a    {font-size:initial!important;line-height:initial!important;}
-  /*site*/  #res .g .rc>div:nth-child(1)>a>div{font-size:initial!important;line-height:initial!important;padding:0px!important;position:static!important;}
-  /*site*/  #res .g .rc>div:nth-child(1)>a>div>img{display:none!important;}
-  /*site*/  #res .g .rc>div:nth-child(1)>a>div>cite  {font:24px/100% arial!important;color:#0a0!important;padding:0!important;}
-  /*site*/  #res .g .rc>div:nth-child(1)>a>div>cite *{font-size:inherit!important;line-height:inherit!important;color:inherit!important;}
-  /*title*/ #res .g .rc>div:nth-child(1)>a>h3        {font:30px/100% arial!important;color:#c60!important;padding:0px!important;margin:0px!important;white-space:nowrap!important;display:block!important;overflow:visible!important;}
-  /*title*/ #res .g .rc>div:nth-child(1)>a:visited>h3{color:#860!important;}
-  /*title*/ #res .g .rc>div:nth-child(1)>a>h3 *{font-size:inherit!important;line-height:inherit!important;color:inherit!important;display:block!important;overflow:visible!important;}
-  /*title*/ #res .g .rc>div:nth-child(1)>a>h3>.newtabicon{display:none!important;}
-  /*btn*/   #res .g .rc>div:nth-child(1)>div{display:none!important;}
-  /*desc*/  #res .g .rc>div:nth-child(2){max-width:initial!important;padding:3px 0 0!important;}
-  /*date*/  #res .g .rc>div:nth-child(2)>div{}
-  /*desc*/  #res .g .rc>div:nth-child(2)>div>span   {font:22px/100% arial!important;color:#aaa!important;width:initial!important;}
-  /*date*/  #res .g .rc>div:nth-child(2)>div>span>.f{font:20px/100% arial!important;color:#0af!important;}
-  /*descHL*/#res .g .rc>div:nth-child(2)>div>span>em{color:#a11!important;background:#000!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc          {width:100%!important;padding:5px 10px 10px 60px!important;margin:0px!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div      {font:22px/100% arial!important;overflow:visible!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div:hover{background:#063!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div>*    {overflow:visible!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div>*>*  {overflow:visible!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>div>*>*>*{overflow:visible!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a:link   {color:#960!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a:visited{color:#888!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a:hover  {color:#c60!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a b      {color:#a11!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(2){}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>.k6DEPe       {width:100%!important;text-align:right!important;}
-  /*site*/  #res .g .rc>div:nth-child(2)>div .P1usbc>.k6DEPe a:link{color:#0af!important;}
+  /**/      #res .g>*>div:nth-child(1){line-height:100%!important;overflow:visible!important;}
+  /**/      #res .g>*>div:nth-child(1)>a    {font-size:initial!important;line-height:initial!important;}
+  /*site*/  #res .g>*>div:nth-child(1)>a>div{font-size:initial!important;line-height:initial!important;padding:0px!important;position:static!important;}
+  /*site*/  #res .g>*>div:nth-child(1)>a>div>img{display:none!important;}
+  /*site*/  #res .g>*>div:nth-child(1)>a>div>cite  {font:24px/100% arial!important;color:#0a0!important;padding:0!important;}
+  /*site*/  #res .g>*>div:nth-child(1)>a>div>cite *{font-size:inherit!important;line-height:inherit!important;color:inherit!important;}
+  /*title*/ #res .g>*>div:nth-child(1)>a>h3        {font:30px/100% arial!important;color:#c60!important;padding:0px!important;margin:0px!important;white-space:nowrap!important;display:block!important;overflow:visible!important;}
+  /*title*/ #res .g>*>div:nth-child(1)>a:visited>h3{color:#860!important;}
+  /*title*/ #res .g>*>div:nth-child(1)>a>h3 *{font-size:inherit!important;line-height:inherit!important;color:inherit!important;display:block!important;overflow:visible!important;}
+  /*title*/ #res .g>*>div:nth-child(1)>a>h3>.newtabicon{display:none!important;}
+  /*btn*/   #res .g>*>div:nth-child(1)>div{display:none!important;}
+  /*desc*/  #res .g>*>div:nth-child(2){max-width:initial!important;padding:3px 0 0!important;}
+  /*date*/  #res .g>*>div:nth-child(2)>div{}
+  /*desc*/  #res .g>*>div:nth-child(2)>div>span   {font:22px/100% arial!important;color:#aaa!important;width:initial!important;}
+  /*date*/  #res .g>*>div:nth-child(2)>div>span>.f{font:20px/100% arial!important;color:#0af!important;}
+  /*descHL*/#res .g>*>div:nth-child(2)>div>span>em{color:#a11!important;background:#000!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc          {width:100%!important;padding:5px 10px 10px 60px!important;margin:0px!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>div      {font:22px/100% arial!important;overflow:visible!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>div:hover{background:#063!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>div>*    {overflow:visible!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>div>*>*  {overflow:visible!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>div>*>*>*{overflow:visible!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a:link   {color:#960!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a:visited{color:#888!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a:hover  {color:#c60!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(1) a b      {color:#a11!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>.VNLkW>div:nth-child(2){}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>.k6DEPe       {width:100%!important;text-align:right!important;}
+  /*site*/  #res .g>*>div:nth-child(2)>div .P1usbc>.k6DEPe a:link{color:#0af!important;}
   
-  /*rate*/  #res .g .rc>div:nth-child(2)>div>.dhIWPd.f{display:none!important;}
-  /*lack*/  #res .g .rc>div:nth-child(2)>div>.TXwUJf     {}
-  /*lack*/  #res .g .rc>div:nth-child(2)>div>.TXwUJf>span{font:22px/100% arial!important;color:#727!important;}
-  /*lack*/  #res .g .rc>div:nth-child(2)>div>.TXwUJf>s   {font:22px/100% arial!important;color:#ff0!important;}
+  /*rate*/  #res .g>*>div:nth-child(2)>div>.dhIWPd.f{display:none!important;}
+  /*lack*/  #res .g>*>div:nth-child(2)>div>.TXwUJf     {}
+  /*lack*/  #res .g>*>div:nth-child(2)>div>.TXwUJf>span{font:22px/100% arial!important;color:#727!important;}
+  /*lack*/  #res .g>*>div:nth-child(2)>div>.TXwUJf>s   {font:22px/100% arial!important;color:#ff0!important;}
   
   /*result*/#cnt #foot{width:initial!important;font:50px/100% arial!important;padding:10px 0 100px!important;}
   /*result*/#cnt #foot *{font-size:inherit!important;line-height:inherit!important;background:transparent!important;}
@@ -591,6 +591,8 @@
   /*result*/#foot #navcnt a:hover{background:#000!important;}
   
   
+  /*result mini video list*/.Xeztj{background:#333!important;}
+  /*result mini video list*/.Xeztj>div{background:#333!important;}
   /*result mini video list*/.MGqjK{background:#333!important;}
   /*result mini video list*/.MGqjK>div:hover{background:#222!important;}
   /*result mini video list*/.MGqjK>div:hover a{background:transparent!important;}

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Vincent Banh
 @description    `Reduces the height of Fimfiction's frontpage by adding the ability to scroll the new stories, updated stories, and popular stories lists.`
-@version        2020117.22.52
+@version        2021113.9.12
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,7 +15,8 @@ div.front_page .new_stories_outer .story-card-list {
     overflow-y: scroll !important;
     overflow-x: hidden;
     height: 800px;
-    max-height: none
+    max-height: none;
+    scrollbar-width: thin;
 }
 div.front_page .new_stories_outer .story-card-list::-webkit-scrollbar-track {
     background: transparent;
@@ -38,7 +39,8 @@ div.front_page .latest_stories_outer .story-card-list {
     overflow-y: scroll !important;
     overflow-x: hidden;
     height: 800px;
-    max-height: none
+    max-height: none;
+    scrollbar-width: thin;
 }
 div.front_page .latest_stories_outer .story-card-list::-webkit-scrollbar-track {
     background: transparent;
@@ -61,7 +63,8 @@ div.front_page .popular-stories-container .story-card-list {
     overflow-y: scroll !important;
     overflow-x: hidden;
     height: 800px;
-    max-height: none
+    max-height: none;
+    scrollbar-width: thin;
 }
 div.front_page .popular-stories-container .story-card-list::-webkit-scrollbar-track {
     background: transparent;
@@ -85,6 +88,7 @@ div.tab {
     height: 800px;
     max-height: none;
     z-index: 1;
+    scrollbar-width: thin;
 }
 div.tab::-webkit-scrollbar-track {
     background: transparent;
@@ -103,6 +107,7 @@ ul.chapters {
     min-height: 45px;
     max-height: 300px;
     z-index: 1;
+    scrollbar-width: thin;
 }
 ul.chapters::-webkit-scrollbar-track {
     background: transparent;

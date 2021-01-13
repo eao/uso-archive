@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jannek
 @description    `Dark mode für Kivinet.de`
-@version        2020126.14.1
+@version        2021113.8.24
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -285,5 +285,12 @@ ilContainerWidth {
 
 .jstree-default .jstree-node {
     margin-left: 12px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .ilLeftNav {
+        /* at last temporary, since it overlaps content */
+        display: block;
+    }
 }
 }

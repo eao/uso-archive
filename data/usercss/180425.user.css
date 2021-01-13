@@ -2,8 +2,8 @@
 @name           购物党去广告 GouWuDangAdClear
 @namespace      USO Archive
 @author         木风
-@description    `购物党广告清楚`
-@version        2020618.5.23
+@description    `购物党购物助手广告去除`
+@version        2021113.6.50
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,6 @@
 #bjd_bottom_detail,
 #gwd_website_icon,
 #mini_price_history_detail .app-tuiguang,
-#gwd_mini_compare,
 #gwd_mini_remind,
 #gwd_mini_seckill,
 #trend_com_detail {
@@ -23,7 +22,6 @@
 }
 
 #mini_price_history_detail {
-	max-width: 460px;
 	top: 37px;
 	border-top: 1px solid #ddd;
 }
@@ -71,6 +69,16 @@
 	width: 182px !important;
 }
 
+#gwd_mini_compare {
+	cursor: pointer;
+	flex-grow: 0 !important;
+	flex-shrink: 0 !important;
+	flex-basis: 155px !important;
+}
+#gwd_mini_compare_detail {
+	left: 309px !important;
+}
+
 @-moz-document domain("jd.com") {
 /* 修复京东导航栏宽度异常问题 */
 #shop-head {
@@ -98,23 +106,6 @@
 .dsj-content .dsj-promo-link {
 	width: 270px !important;
 }
-
-#mini_price_history_detail {
-	width: 588px;
-	max-width: 588px;
-}
-
-#mini_price_history_detail .max-min-priinfo {
-	width: 526px;
-}
-
-#mini_price_history_detail_chart {
-	left: 64px;
-}
-
-#mini_price_history_detail_btn {
-	margin-left: 57px;
-}
 }
 
 @-moz-document domain("jd.hk") {
@@ -137,14 +128,5 @@
 @-moz-document domain("tmall.com") {
 #gwd_minibar {
 	width: 508px;
-}
-
-#mini_price_history_detail {
-	width: 508px;
-	max-width: 508px;
-}
-
-#mini_price_history_detail_chart {
-	left: 25px;
 }
 }
