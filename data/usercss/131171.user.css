@@ -3,11 +3,13 @@
 @namespace      USO Archive
 @author         Erimus Koo
 @description    `2019-12-01 - Support 4k screen2017-08-06 - full artical width & icons2017-07-08 - update header (reduce icons)2017-05-23 - fixed 'save to board' btn which hovered on card.Hey, guys, its the new version, so I have not check all the part of the style, just wrote the part I used.And feedly offical css style is changes every some days. I use feedly almost daily, so I'll fixed it in short time. If there is some where you found strange, you can leave msg to me.# log* for 2016/8/8 test version, it looks coming soon.* 2016/12/04, it looks update the version again. so, made a little update and i start use this one.* 2016/12/15, update the top right botton groups.`
-@version        2020526.11.11
+@version        2021112.14.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("feedly.com") {
+/* 2021-01-12 */
+/* Adapt new class name */
 /* 2019-12-01 */
 /* 4k screen support */
 /* New Version 2017-08-06 */
@@ -74,7 +76,7 @@
 .fx .entry.u5 .visual { top: 0; height: 100% }
 /* card hover */
 .fx .entry.u5 .visual-overlay { background: none; padding: 5px; height: 100%; position: absolute; top: 0; }
-.fx .entry.u5 .visual-overlay button { background-color: rgba(0, 0, 0, .5); width: 26px; margin: 2px; border: none; }
+.fx .entry.u5 .visual-overlay button { background-color: rgba(0, 0, 0, .5); width: 26px!important; margin: 2px; border: none; }
 /* card selected */
 .fx .entry.selected { border: none!important; }
 .fx .entry.selected .visual { border: 1px solid #F69; }
@@ -91,7 +93,7 @@
 .fx .entry .metadata .ago { display: none; }
 .fx .entry.u5 .summary { display: none }
 /* unread title */
-.unread, .fx .entry.unread .title { color: #F69!important; }
+.unread, .fx .entry.unread .title, .entry--unread .entry__title { color: #F69!important; }
 /* full artical */
 .board.presentation-100 { max-width: 720px; margin-left: auto; margin-right: auto; }
 .entryholder { padding-bottom: 0; }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         bitshftr
 @description    `SupraForums went to a new platform on June 13th, 2019.  This resulted in a significantly different style, which a lot of users don't like.  This Stylish style makes better use of a desktop browser's screen and removes a lot of superfluous stuff that seasoned users don't want to see.Created by SupraForums user "bitshftr".`
-@version        2021111.4.14
+@version        2021112.20.10
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -225,15 +225,19 @@ div.p-header-logo--image img
 { padding-top: 4px !important;
 }
 
-.california-thread-item .structItem
+.california-thread-item .structItem,
+.california-conversation-item .structItem
 { padding-left: 0;
 }
 
-.california-thread-item .structItem-cell
+.california-thread-item .structItem-cell,
+.california-conversation-item .structItem-cell
 { padding: 0;
+  vertical-align: bottom;
 }
 
-.california-thread-item .structItem-cell.avatar-cell
+.california-thread-item .structItem-cell.avatar-cell,
+.california-conversation-item  .structItem-cell.avatar-cell
 { height: 28px;
   width: 34px;
   padding-right: 6px;  
@@ -241,15 +245,31 @@ div.p-header-logo--image img
 
 .california-thread-item .structItem-iconContainer
 { padding: 0;
-  top: 22px;  
+  top: 4px;  
 }
+
+.california-conversation-item .structItem-iconContainer
+{ padding: 0;
+  top: 10px;  
+}
+
 .california-thread-item .structItem-iconContainer .avatar
 { height: 24px;
   width: 24px;
 }
 
-.structItem-title
+.california-conversation-item .structItem-iconContainer .avatar
+{ height: 36px;
+  width: 36px;
+}
+
+.california-thread-item .structItem-title
 { margin-left: -34px;
+}
+
+/* move Conversation (PM) page numbers up to the same line as the participants */
+.california-conversation-item .structItem-parts > li
+{ display: inline;
 }
 
 

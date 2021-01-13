@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           Flickr Widescreen - ALLinONE (Part 2) v.162
+@name           Flickr Widescreen - ALLinONE (Part 2) v.163
 @namespace      USO Archive
 @author         decembre
 @description    `It's ONLY for a WIDESCREEN(1920x1080)!<b>►►  Additional Userstyles to my <mark>- <b><a href="https://userstyles.org/styles/52167/">Flickr Widescreen - ALLinONE (Part 1)</a>:</b></mark>for some userscripts (GM : Greasemonkey) i use since a long time and  additionals styles for some not often used Flickr's pages</b><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE TOTAL"</b> at once,you can use my userscript [Greasyfork]:<b><a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle)</a></b>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        202116.23.26
+@version        2021112.17.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("flickr.com") {
 
-/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2) v.162 (new162)  ==== */
+/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2) v.163 (new163)  ==== */
 
 /* START == ADDITIONALS STYLE ==== */
 
@@ -24,7 +24,101 @@
 .activity-card.ad-card.pro-upsell-card {
     display: none !important;
 }
+/* (new163) ADDS PHO - add txt" RELOAD" */
+.photo-page-ad-scrappy-view .sub-photo-moola-view {
+    opacity: 1 !important;
+}
+.photo-page-ad-scrappy-view .sub-photo-moola-view .find-out-more {
+    position: fixed ;
+    display: inline-block !important;
+    width: 1200px ;
+    height: 600px;
+    left: 2%;
+    margin-top: 0px;
+    font-size: 0px;
+    border: 1px solid gray;
+}
+.photo-page-ad-scrappy-view .sub-photo-moola-view .find-out-more:before {
+    content: "RELOAD ...." !important;
+    position: fixed;
+    width: 1200px;
+    height: 600px;
+    line-height: 550px;
+    left: 0% ;
+    font-size: 40px;
+color: gray;
+}
 
+/* (new163) FOLLOW - BLOCKED */
+.view.follow-view:first-of-type:empty + div {
+    display: inline-block !important;
+}
+.view.follow-view:first-of-type:empty + div:before {
+    content: "Blocked" ;
+    display: inline-block !important;
+    height: 15px !important;
+    line-height: 15px !important;
+    width: 120px !important;
+    font-size: 15px ;
+    text-align: center ;
+    white-space: nowrap;
+background: red !important;
+}
+.view.follow-view:first-of-type:empty + div:hover:before {
+    content: "This User Block You ..." ;
+    width: 194px;
+    font-size: 12px ;
+color: white ;
+background: red !important;
+transition: all ease 0.1s ;
+}
+/* PHOT PAGE */
+/* .view.follow-view:first-of-type:empty {
+    position: relative !important;
+    display: inline-block !important;
+    width: 64px;
+    height: 18px !important;
+    line-height: 18px !important;
+    margin-left: 20px !important;
+}
+.view.follow-view:first-of-type:empty:before {
+    content: "Blocked" ;
+    position: relative !important;
+    display: inline-block !important;
+    width: 64px;
+    height: 19px;
+    line-height: 20px;
+    font-size: 15px;
+    text-align: center ;
+color: red ;
+background: gold !important;
+}
+.view.follow-view:first-of-type:empty:hover:before {
+    content: "This User Block You ..." ;
+    width: 164px;
+color: white ;
+background: red !important;
+transition: all ease 0.2s ;
+} */
+a.owner-name-with-by.truncate + .view.follow-view:first-of-type:empty:not([data-view-signature*="follow-view__"])::after {
+    content: "Blocked";
+    position: relative;
+    display: inline-block;
+    height: 15px;
+    line-height: 15px;
+    padding: 2px;
+    text-align: center;
+    border-radius: 5px;
+    z-index: 50000;
+    transform: scale(1);
+    transition: all 0.7s ease 0s;
+border: 1px solid red;
+color: gold;
+background: red;
+}
+a.owner-name-with-by.truncate + .view.follow-view:first-of-type:empty:not([data-view-signature*="follow-view__"])::after {
+    animation: 40s ease 0s normal forwards 1 running fade;
+}
 /* (new161) POOL EDIT ABOUT / CHECK INVIT SENT */
 #Main h1#Tertiary + table tbody tr td#Hint + #GoodStuff:not(.admin_moderation)  {
     position: relative !important;
@@ -133,6 +227,33 @@ border: 1px solid blue ;
     top: 20.5px !important;
 }
 
+
+/* (163) START === NEW FEEDS PAGES */
+/*  NEW FEEDS - SUPP ADDS */
+.ad-card ,
+.html-feed-new-page-view .feed-b {
+    display: none ;
+}
+/* NEW FEEDS - COMPACT - DUMMY */
+.dummy-loader-container ,
+.dummy-loader-container.fading {
+    display: inline-block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+}
+.dummy-loader-container .layout-container.compact .item {
+    float: left !important;
+    width: 49% ;
+    height: 100% !important;
+    min-height: 350px ;
+    max-height: 350px ;
+    margin-right: 3px ;
+    margin-bottom: 0px;
+    margin-top: 5px !important;
+    padding: 5px ;
+border: 1px solid #333 !important;
+} 
 /* NEW FEEDS - WIDE */
 .feed-new-page-view .feed-new-page-container .feed-new-page-content-container ,
 .html-feed-new-page-view  .fluid-centered {
@@ -4568,6 +4689,7 @@ border: 1px solid peru !important;
 .fluid .coverphoto-content .title-block-content .title .follow-view:hover {
 border: 1px solid red !important;
 }
+
 
 .fluid.html-photo-page-scrappy-view body .fluid-droparound-overlay + .fluid-droparound-view:not(:hover) .droparound.subview-droparound:not(.notifs-droparound):not(.user-account-card-droparound), 
 .fluid.html-photo-page-scrappy-view body script + .fluid-droparound-view:not(:hover) .droparound.subview-droparound:not(.user-account-card-droparound):not(.notifs-droparound)  {

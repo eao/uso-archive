@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Flickr WideScreen - Dark & Grey v.162
+@name           Flickr WideScreen - Dark & Grey v.163
 @namespace      USO Archive
 @author         decembre
 @description    `It's the ideal companion of some others of my Flickr Userstyles.Add a Dark Gray Flavor for my Flickr Userstyles :<mark><a href="https://userstyles.org/styles/52167/"><b>Flickr Widescreen - ALLinONE (Part 1)</b></a></mark>AND<mark><a href="https://userstyles.org/styles/131452"><b>Flickr Widescreen - ALLinONE (Part 2)</b></a></mark><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        202116.23.27
+@version        2021112.18.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 
 /* STY03 ============================================================================================= */
 /* =================================================================================================== */
-/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.162 (new162)  - (STANDALONE) === */
+/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.163 (new163)  - (STANDALONE) === */
 /* =================================================================================================== */
 /* =================================================================================================== */
 
@@ -645,7 +645,8 @@ input[type="text"]:active {
 
 /* ============== BACKGROUND ================= */
 
-/* (new134) BACKGROUND-ZEBRA ========== */
+/* (new163) BACKGROUND-ZEBRA ========== */
+.testimonial:nth-child(odd) ,
 .suggestions li:nth-child(odd) ,
 .TopicListing>tbody>tr:nth-child(even) ,
 .camera-table tr:nth-child(odd) ,
@@ -1302,11 +1303,11 @@ html.html-favorites-page-view.scrolling-layout    #content   .view.fluid-magic-s
 
 /* (new161) BACKGROUND - #333 - === */
 
+.html-profile-page-view .profile-page-view .profile-testimonials-view .testimonials-container ,
+.profile-bio-page-view .section ,
 .group-topic-detail-col ,
-
 .group-discussion-page-view .left-column  ,
 .fluid.html-group-discussion-page-view  .group-discussion-page-view  .right-column .topic ,
-
 .fluid.html-group-discussion-page-view .view.fluid-group-coverphoto-view ,
 .fluid.html-group-discussions-list-page-view #content .group-discussions-list-page-view .fluid-group-coverphoto-view + .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed, 
 .fluid.html-group-home-page-view #content .group-home-page-view .fluid-group-coverphoto-view + .fluid-magic-groups-subnav-view .fluid-subnav-shim .fluid-subnav.with-overflow-menu.fixed ,
@@ -1590,7 +1591,10 @@ li.no_menu_li .button span:hover {
     border: 1px solid peru !important;
     background: rgba(0, 0, 0, 0.59) !important;
 }
-
+.profile-bio-page-view .bio-description .description::after  {
+    background: rgba(0, 0, 0, 0) linear-gradient(0deg, #222222, hsla(0, 0%, 100%, 0)) repeat scroll 0 0;
+    border-color: #333 !important;
+}
 
 /* ========== BACKGROUND-RGB =========== */
 /* ========== BACKGROUND-RGB =========== */
@@ -1800,8 +1804,9 @@ table.contact-list-table-default td.contact-list-sorted {
 /* ============== TITLE / LINKS COLOR ================= */
 /* ============== TITLE / LINKS COLOR ================= */
 
-/* (new145) TITLE / LINKS COLOR - WHITE === */
+/* (new163) TITLE / LINKS COLOR - WHITE === */
 
+.profile-bio-page-view .bio-description .bio-infos .bio-infos-container ul li span:last-of-type ,
 .photo-list-photo-interaction .interaction-bar .engagement:hover .engagement-item  ,
 .photo-list-photo-interaction .interaction-bar:hover .engagement .engagement-item ,
 .ju .row .meta span ,
@@ -2004,6 +2009,7 @@ p {
 
 
 /* TITLE / LINKS COLOR - GRAY0 - #656c7a + HOVER GREEN - #b9d56e + VISITED RED === */
+.user-infos .deleted ,
 .item-link:hover  ,
 #archives-navigation>a:hover , 
 .searchified-menu-button:hover ,
@@ -2401,8 +2407,10 @@ body.flickrfixruserscript .sub-photo-right-view .date-taken .date-taken-label {
 }
 
 
-/* (new161) LINKS / TITLE - COLOR - PERU - VISITED TAN - HOVER / HOVER:VISITED - === */
+/* (new163) LINKS / TITLE - COLOR - PERU - VISITED TAN - HOVER / HOVER:VISITED */
 
+.read-more-testimonial ,
+.profile-bio-page-view .bio-description .read-more ,
 .group-pool-subheader-view .ui-dropdown > span.truncate ,
 .groups-toolbar-content .groups-toolbar-share-content .fluid-share-button .fluid-share-button-label ,
 #global-nav #gn-wrap .nav.small-logo .toplink a span,
@@ -2705,8 +2713,8 @@ a:visited {
     color: gray !important;
 }
 
-/* PHOTO PAGE - USER NAME - COLOR - GRAY0 - #656c7a === */
-
+/* (new163) PHOTO PAGE - USER NAME - COLOR - GRAY0 - #656c7a === */
+.testimonial .user-infos ,
 .fluid.html-photo-page-scrappy-view .sub-photo-comments-view .comments .comment .comment-author a:hover ,
 .fluid.html-photo-page-scrappy-view .sub-photo-comments-view .comments .comment .comment-author a:hover:visited ,
 .fluid.html-photo-page-scrappy-view .sub-photo-comments-view .comments .comment .comment-author a:visited:before ,
