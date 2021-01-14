@@ -3,10 +3,11 @@
 @namespace      USO Archive
 @author         kypa
 @description    `Тъмна темичка за ФорумЪТ, без очертания и заоблени ръбове.Като за vBulletin версия 4.0.8.`
-@version        2019925.15.35
+@version        2021113.16.56
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
+
 
 @namespace url(http://www.w3.org/1999/xhtml);
 
@@ -648,6 +649,16 @@
 .dbtech_status_menu li {
 
     border-top-color: #187492 !important;
+
+}
+
+
+
+div[id^="dbtech_status_moodtext"] img {
+
+    background: #282828 !important;
+
+    border-color: #187492 !important;
 
 }
 
@@ -1865,6 +1876,14 @@ ul.userlist_hideavatars li {
 
 
 
+.thread_info .blockbody .info_subblock {	
+
+	height: auto !important;
+
+}
+
+
+
 
 
 /* similar thread check content inline css */
@@ -1910,6 +1929,10 @@ ul.userlist_hideavatars li {
   color:#cecece !important;
 
   transition: all 0.125s !important;
+
+  bottom: 0px !important;
+
+  height: 100% !important;
 
 }
 
@@ -2007,7 +2030,7 @@ ul.userlist_hideavatars li {
 
 	width: auto !important;
 
-	min-width: 200px !important;
+	min-width: 224px !important;
 
 }
 
@@ -2016,6 +2039,8 @@ ul.userlist_hideavatars li {
 .popupbody li {
 
 	border: 0px solid transparent !important;
+
+	background: #282828 !important;
 
 }
 
@@ -2441,7 +2466,7 @@ img[src^="./images/statistic/"] {
 
 .postbitlegacy.postbitim.postcontainer .postdetails.view_stat .postbody {
 
-	margin-left: 246px !important;
+	margin-left: 266px !important;
 
 	background: #282828 !important;
 
@@ -2479,7 +2504,7 @@ img[src^="./images/statistic/"] {
 
 .postbitlegacy .userinfo {
 
-  width: 222px !important;
+  width: 246px !important;
 
   background: #0b3542 !important;
 
@@ -2489,7 +2514,7 @@ img[src^="./images/statistic/"] {
 
 .postbitlegacy .userinfo .userinfo_extra {
 
-  width: 222px !important;
+  width: 246px !important;
 
 }
 
@@ -3406,11 +3431,19 @@ color: #cecece !important;
 
 
 
+.toolsmenu ul {
+
+	padding: 0px !important;
+
+}
+
+
+
 .toolsmenu .popupgroup .popupmenu {
 
-	padding-top: 0.2em !important;
+	padding-top: 0.36em !important;
 
-	padding-bottom: 0.2em !important;
+	padding-bottom: 0.36em !important;
 
 }
 
@@ -3442,7 +3475,7 @@ color: #cecece !important;
 
 	padding: 0px !important;
 
-	top: 1.8em !important;
+	top: 2em !important;
 
 }
 
@@ -3986,6 +4019,12 @@ textarea,
 
 select {
 
+	-moz-appearance: none !important;
+
+	-webkit-appearance: none !important;
+
+	appearance: none !important;
+
 	color: #ececec !important;
 
 	background: #187492 !important ;
@@ -3993,6 +4032,8 @@ select {
 	box-shadow: 0px 0px 4px 1px transparent !important;
 
 	border: 0px solid transparent !important;
+
+	border-radius: 0px !important;
 
 	transition: all 0.125s !important;
 
@@ -4629,7 +4670,7 @@ body a .understate {
 
 .textcontrols a.textcontrol,
 
-a.textcontrol {
+a.textcontrol, .click_show > p > span {
 
 	border: 0px solid transparent !important;
 
@@ -4647,7 +4688,7 @@ a.textcontrol {
 
 .textcontrols a:hover.textcontrol,
 
-a:hover.textcontrol {
+a:hover.textcontrol, .click_show > p > span:hover {
 
 	border: 0px solid transparent !important;
 
@@ -5387,9 +5428,23 @@ li.userprof_content {
 
 }
 
+
+
+.loginbutton {
+
+	cursor: pointer !important;
+
+}
+
 	
 
-.userprof_button {
+.userprof_button, .loginbutton {
+
+	-moz-appearance: none !important;
+
+	-webkit-appearance: none !important;
+
+	appearance: none !important;
 
 	color: #cecece !important;
 
@@ -5405,7 +5460,7 @@ li.userprof_content {
 
 	
 
-.userprof_button:hover {
+.userprof_button:hover, .loginbutton:hover {
 
 	color: #ffffff !important;
 
@@ -5416,14 +5471,6 @@ li.userprof_content {
 	box-shadow: 0px 0px 4px 1px #48aedc !important;
 
 	transition: 0.125s all !important;
-
-}
-
-	
-
-#profile_customization_button {
-
-	display: none !important;
 
 }
 
@@ -5911,6 +5958,16 @@ dl.stats dt, #sidebar_container dl.stats, #sidebar_container .blockbody.userprof
 
     
 
+.toplinks ul.nouser li a, .toplinks .logindetails {
+
+    border-radius: 0px !important;
+
+    background-color: #00000088 !important;
+
+}
+
+    
+
 .toplinks ul.isuser {
 
     background-color: #00000088 !important;
@@ -6037,8 +6094,6 @@ dl.stats dt, #sidebar_container dl.stats, #sidebar_container .blockbody.userprof
 
 .notifications .popupbody {
 
-    width: auto !important;
-
     color: #cecece !important;
 
 }
@@ -6089,17 +6144,9 @@ dl.stats dt, #sidebar_container dl.stats, #sidebar_container .blockbody.userprof
 
     
 
-.navbar .navtabs .navtab {
-
-    height: 33px !important;
-
-}
-
-    
-
 .navbar .navtabs #main_menu {
 
-    top: 40px !important;
+    top: 38px !important;
 
 }
 
@@ -6203,35 +6250,11 @@ dl.stats dt, #sidebar_container dl.stats, #sidebar_container .blockbody.userprof
 
     
 
-.navtabs li.selected {
-
-    background: #454545 !important;
-
-    color: #f4f4f4 !important;
-
-    transition: all 0.125s !important;
-
-}
-
-    
-
 .navtabs li.selected:hover a.navtab {
 
     background: #187492 !important;
 
     color: #f4f4f4 !important;
-
-    transition: all 0.125s !important;
-
-}
-
-    
-
-.navtabs li.selected a.navtab {
-
-    color: #f4f4f4 !important;
-
-    background: #454545 !important;
 
     transition: all 0.125s !important;
 
@@ -6426,6 +6449,14 @@ dl.stats dt, #sidebar_container dl.stats, #sidebar_container .blockbody.userprof
     margin-bottom: 0px !important;
 
     transition: all 0.125s !important;
+
+}
+
+       
+
+.notices li h3 {
+
+    font-size: 13px !important;
 
 }
 
@@ -7289,7 +7320,7 @@ editor_controls floatcontainer {
 
 .userprof_cell {
 
-	background-color: #cecece !important;
+	background-color: transparent !important;
 
 }
 
@@ -7646,20 +7677,29 @@ editor_controls floatcontainer {
 	border: 0px solid transparent !important;
 }
 
-#pagetitle .main_div {
+.body_wrapper > .main_div {
 	background: #0b3542 !important;
 	color: #cecece !important;
 	border: 0px solid transparent !important;
 	border-radius: 0px !important;
 }
 
-#pagetitle #posts_nw, .bx-wrapper {
+#posts_nw, .bx-wrapper {
 	border: 0px solid transparent !important;
 	background: #373737 !important;
 }
 
-#pagetitle #posts_nw > iframe {
+#posts_nw > iframe {
 	border-radius: 0px !important;
+}
+
+#content_container #content .navlinks a {
+  background: #0b3542 !important;
+  border-radius: 0px !important;
+}
+
+#content_container #content .navlinks a:hover {
+  background: #0e4658 !important;
 }
 
 #body {
@@ -7794,9 +7834,49 @@ editor_controls floatcontainer {
 
 
 
+.content > div[id^='post_message_']:after {
+    right: 0px !important;
+    width: 100% !important;
+    height: 4.08em !important;
+    background-image:  linear-gradient(#2220 0%, #222 88%, #222 100%) !important;
+}
+
+
+
+
 .block.searchresults .blockbody .searchbits .threadbit {
     margin-top: 0.25em !important;
     margin-bottom: 0em !important;
+}
+
+
+
+
+.block.searchresults .blockbody .searchbits .threadbit .threadinfo.thread .inner{
+    margin-top: 0.25em !important;
+}
+
+
+
+
+.threadbit .threaddetails {
+  bottom: 1.75em !important;
+}
+
+
+
+
+.threadbit .threadmeta {
+  margin-bottom: 0.25em !important;
+  margin-bottom: 0.5em !important;
+}
+
+
+
+
+.threadbit .pagination {
+  margin-top: 0px !important;
+  top: 0.25em !important;    
 }
 
 
@@ -8563,10 +8643,6 @@ body {
 
 
 
-
-
-
-
 @-moz-document domain("forum.bg") {
 
 @media screen and (max-width: 777px) {
@@ -8599,6 +8675,7 @@ html {
 body {
   min-width: 100% !important;
   margin: 0px !important;
+  overflow-x: visible !important;
 }
 
 .notices {
@@ -8906,6 +8983,38 @@ a.username.understate {
   height: 80px !important;
 }
 
+/* ново мнение */
+
+.editor_textbox_smilie {
+  margin-right: 0px !important;
+}
+
+.editor_smiliebox {
+  clear: left !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0em 1em !important;
+}
+
+#vB_Editor_001_smiliebox.smiliebox {
+  padding: 1em 0em !important;
+  height: auto !important;
+}
+
+#nrreview .postbit.blockrow, .blockrow.preview {
+  text-align: match-parent !important;
+}
+
+/* профил */
+
+#userprof_content_container.member_tabs.contentright {
+  margin-left: 0px !important;
+}
+
+}
+
+@media screen and (max-width: 1365px) {
+
 /* меню */
 
 .unav {
@@ -8975,35 +9084,8 @@ a.username.understate {
   background: #187492 !important;
 }
 
-/* ново мнение */
-
-.editor_textbox_smilie {
-  margin-right: 0px !important;
-}
-
-.editor_smiliebox {
-  clear: left !important;
-  width: auto !important;
-  height: auto !important;
-  padding: 0em 1em !important;
-}
-
-#vB_Editor_001_smiliebox.smiliebox {
-  padding: 1em 0em !important;
-  height: auto !important;
-}
-
-#nrreview .postbit.blockrow, .blockrow.preview {
-  text-align: match-parent !important;
-}
-
-/* профил */
-
-#userprof_content_container.member_tabs.contentright {
-  margin-left: 0px !important;
 }
 
 }
 
-}
 

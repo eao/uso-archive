@@ -2,8 +2,8 @@
 @name           Reddit Custom (RES Compatible) - KMV
 @namespace      USO Archive
 @author         KMVerum
-@description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.top - (New, Dec. 2020)poal.cosaidit.netvoat.coconspiracies.win - (New, Dec. 2020)thedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
-@version        202114.12.18
+@description    `Reddit Custom Theme - International Version.Credit to "jiRafa" for request.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.toppoal.cosaidit.netvoat.co - (RIP 20201225)conspiracies.winthedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/(all Wallpapers are here as well)`
+@version        2021114.0.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -1194,23 +1194,26 @@ RCUpdating08 "Pick any option to have this list added in Code #1." <<<EOT /*Upda
 /* Contact: http://www.reddit.com/r/KMV/
 /*
 
+>  Memo:
+>  Optional colour Settings in Code #2
+
+
 
     ======================================================= 
     |                      Wallpaper                      | 
     =======================================================
 
 
-All wallpapers are available for download here:
+All wallpapers are available for download:
 
     1) https://old.reddit.com/r/KMV
-    2) https:archive.org/details/KMV-Resources
+    2) https://archive.org/details/KMV-Resources
 
-        Extra:
-
-        2.1) Dark Versions are utilized in this theme.
-             The others are more suitable for OS.
-        2.2) Converted Cursors (.cur) for use in OS
-             are also located here (.zip).
+        2.1) "Dark Version" is utilized in this theme.
+             The others are designed for - and perhaps more suitable for OS.
+        2.2) Black Cursor and Pointer are converted for use in OS.
+             Located on archive.org.
+             Look for the *.zip.
 
 
 Default Wallpapers:
@@ -1258,8 +1261,10 @@ Online Tools for image-to-BASE64 conversion:
 
     2) https://www.base64encode.net/base64-image-encoder
 
+    PS Uploading a custom image on userstyles does this automatically.
 
-File-Formats:
+
+Wallpaper File-Formats:
 
     url("data:image/jpeg;base64,BASE64-CODE_HERE") !important;
     url("data:image/bmp;base64,BASE64-CODE_HERE") !important;
@@ -1269,10 +1274,12 @@ other formats works also (though less used as wallpapers),
 such as 
 
     GIF
-    ICO (x-icon)
+    ICO ("x-icon" used in code above)
     SVG
     WebP
 
+
+/*USER SETTINGS*/
 
 /*Default HTML Background Colour chosen (ignore)*/
 
@@ -1362,7 +1369,7 @@ body[class*="res-nightmode"][class*="res-v"] .footer-parent,
 
     
 
-/* =================== GUIDE TO WALLPAPERS =================== 
+/* =================== GUIDE TO WALLPAPERS ====================
 
 Manual installation of custom Wallpapers;
 
@@ -1371,7 +1378,7 @@ Formats used in CSS:
     1) BASE64
     2) URL
 
---------------------------------------------------------------
+===============================================================
 BASE64:
 
 What is it?
@@ -1460,8 +1467,8 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
               |                             |
          Transparent                      Solid
 
-                            PS:
-         Wallpapers are available for download at:
+                            
+               PPS: Wallpapers download url:
 
                https://old.reddit.com/r/KMV/
          https://archive.org/details/KMV-Resources
@@ -1591,6 +1598,7 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
 }
 
 /* --------------- BAK of Default Settings --------------- /*
+
 :root
 {
     --RCBackground: #090909;
@@ -1661,7 +1669,7 @@ https://www.w3schools.com/CSSref/playit.asp?filename=playcss_background-repeat
     --RCCDTText: #777;
     --RCCDTHeaders: #d8d8d8;
 }
-}
+
 ------------------------------------------------------------*/
 
 ::selection,
@@ -1925,6 +1933,7 @@ h5 a,
 h6 a,
 li a,
 p a,
+g [fill*="inherit"],
 strong a,
 span a,
 tbody a,
@@ -1973,6 +1982,15 @@ a ._12FoOEddL7j_RgMQN0SNeU
 {
     color:var(--RCTextLink)!important;
     transition:.4s!important;
+}
+
+/*Selected svg in sidebar*/
+path[fill-rule="evenodd"],
+div div div div svg[viewBox="0 0 20 20"] g path[d*="M6"],
+div div div svg g path[d*="M7"],
+svg g path[d*="M37"],svg g path[d*="M22"],svg g path[d*="M20"]
+{
+    fill:var(--RCTextLink)!important;
 }
 
 
@@ -4081,6 +4099,7 @@ a.message-count,
     color:var(--RCCHaveMsgBackground)!important;
 }
 .ra_3TRn5G7dbrfbhx8kYi._3aintJ344BVk82tG06NQea,
+._1V77mEI1g_5ZlCh_c2-Yab._2Wgcbg0LNUiJf4L2fVQJ7O,
 /*poal.co*/span.p-icon.hasmail.p-icon path
 {
     fill:var(--RCCHaveMsgBackground)!important;
@@ -4093,7 +4112,12 @@ a.message-count,
     background-color:var(--RCCHaveMsgBackground)!important;
     filter:brightness(1.5)!important;
 }
-
+a.message-count
+{
+    filter:brightness(.75)!important;
+    transition:.4s;
+}
+a.message-count:hover,
 /*poal.co*/span.hasmail
 {
     filter:brightness(1)!important;
@@ -4126,6 +4150,11 @@ a.message-count,
     border-right: 8px solid transparent!important;
     height: 3px;
     width: 0px!important;
+    filter:brightness(.75);
+}
+#mail.havemail:hover
+{
+    filter:brightness(1);
 }
 /*RES Floater Icon*/
 #NREMail.havemail
@@ -4615,7 +4644,6 @@ div.main-content div.more a,
 .give-gold.login-required.access-required.gold-give-gold:hover,
 ._33n6Hxno5QDQIbv7MzWYA6:hover,
 ._34yMY7-6MNnz3utfjExvIq,
-._2PAz5_NMDCV5XtywB9mVpg._1s79QnBguPbckxiiPvFXGP,
 ._326PJFFRv8chYfOlaEYmGt,
 button._22LJahVHZg-w-Ok4e54Ekf:hover
 {
@@ -4737,12 +4765,13 @@ label._3tm-97fb8noV8kwxNOON_9
 
 
 /*Round Buttons*/
+#view--layout--FUE,._1oAH8WzvQU6SeYEsM1msMu,
 /*Create Avatar*/._3F1tNW0P4Ff182mO_CefIg._3DnDqV66Np6rVEiI8QK7kl
 {
     background:var(--RCButton)!important;
     background-color:var(--RCButton)!important;
     color:var(--RCButtonText)!important;
-    border-radius:40px;
+    border-radius:40px!important;
     transition:.4s!important;
 }
 
@@ -4860,6 +4889,7 @@ label._3tm-97fb8noV8kwxNOON_9:hover,
 ._1HunhFR-0b-AYs0WG9mU_P:hover,
 ._1i7CStyaaHQU2aiG0GdpSA:hover,
 ._1khvWSB4GNuM2XwSjluHzO.Cvt0D6iVwU5TI0SY2nIGC,
+._1oAH8WzvQU6SeYEsM1msMu:hover,
 ._1Q1oKEA1qDipo5Tk0b_YlY:hover,
 ._1x6pySZ2CoUnAfsFhGe7J1:hover,
 ._27e9yld2jAIIWQNc4A70if:hover,
@@ -8744,4 +8774,66 @@ html body a:active
     filter:brightness(.6);
     transition:0s!important;
 }
+}
+
+@-moz-document url-prefix("https://old.reddit.com/r/AskReddit/") {
+/*Specific fixes*/
+
+/*r/AskReddit*/
+
+div a#chat,
+div a#chat:hover,
+div a#chat:active,
+div a#chat.active,
+div a#chat.active:hover,
+div a#chat.active:active
+{
+	background:
+        
+        url("https://b.thumbs.redditmedia.com/mQqN4dVR3YuxtaBtj8QWNUaslebLhVu4I7-5GgqZxfA.png")
+        
+        center no-repeat!important;
+	
+    border-right: 1px solid rgba(225,255,255,.25)!important;
+    border-color: #0000 !important;
+    border-radius:0px!important;
+    transform:rotate(0deg);
+    height:35px;
+    right:0px;
+}
+div a#chat,
+div a#chat.active
+{
+	filter: invert(50%)hue-rotate(180deg) !important;
+	transition: .2s;
+}
+div a#chat:hover,
+div a#chat.active:hover
+{
+    background-color: var(--RCButtonHover)!important;
+	filter: invert(10%)hue-rotate(180deg) !important;
+    border-radius:0px!important;
+	transition: .2s;
+}
+div a#chat:active,
+div a#chat.active:active
+{
+    filter:brightness(.6)!important;
+}
+/* "view the rest of the comments" button */
+.infobar p a,
+.infobar p a:hover,
+/*SidebarPost button*/.res-nightmode .side h6 a
+{
+    background: #0000;
+}
+/*Sidebar Tooltip*/
+.res-nightmode .side h6::before
+{
+    background:var(--RCBackgrounds)!important;
+    border-radius:4px!important;
+    border:none!important;
+    box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
+}
+
 }

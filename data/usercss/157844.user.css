@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         SLTW
 @description    `A Theme for 9gag to make it dark and overall a very nice experience.Added a few little Details and improvements.Has the Horizontal MenuThis is still a work in progress - so if you find any issues or have troubles with the theme please let me know.`
-@version        2020127.14.52
+@version        2021113.18.4
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -109,6 +109,32 @@ input {background-color: #f000; color: white;}
 .CS3 .comment-section-title h3 {color: #00fffb;}
 .CS3 .notice-message {background-color: transparent;}
 
+
+.comment-input-area-content__input-area_textarea {background: black !important;}
+[class="comment-list-item"]:hover,[class="comment-list-item comment-list-item_reply"]:hover, [class="comment-list-item comment-list-item_reply comment-list-item_highlighted"], .comment-list-item[data-v-8df947e6]:hover  {background: rgba(13, 12, 12, .72) !important; border-radius: 10px}
+.comment-list-item__text {color: white;}
+.comment-item-header__deleted[data-v-3457baac], .comment-item-header__username[data-v-3457baac] {color: #e32685 ;}
+.comment_system_module a {color: #22ec2f ;}
+
+.comment-tab-bar__label[data-v-786d06f2] {color: white;}
+.comment-tab-bar_action.active[data-v-786d06f2] {color:  #1ea827; border-color: #1ea827;}
+
+.comment-list-item__replies[data-v-8df947e6] {color: #0f0}
+
+.comment-list-item__replies .arrow-down-reverse[data-v-8df947e6] {    border-top: 0 !important;    border-bottom: 5px solid #0f0;}
+.comment-list-item__replies .arrow-down[data-v-8df947e6] {width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-top: 5px solid #0f0;display: inline-block;margin: 0 11px 2px 0;}
+
+
+.comment-list-item_highlighted[data-v-8df947e6] {animation-duration: 0s}
+@keyframes  comment-highlight-8df947e6 {}
+
+
+
+.vote-button_voted[data-v-33327dc2], .vote-button_voted[data-v-33327dc2]:hover {color: #e32685 !important;}
+
+
+
+
 /* pro badge */
 .CS3 a.badge.pro, .CS3 span.badge.pro {display:none;}
 
@@ -121,6 +147,9 @@ input {background-color: #f000; color: white;}
 .CS3 a.cmnt-btn {background-color: #000; border: 1px solid #bcbcbc;}
 .CS3 a.cmnt-btn:hover {background-color: #000; border: 1px solid #00ff1c;color: #0F0}
 
+
+.comment-input-area-footer__actions-area_action.post[data-v-cfe73014], .uni-modal__footer .button-primary {background: black; border: 1px solid #0f0}
+.comment-input-area-footer__actions-area_action.post[data-v-cfe73014]:hover, .uni-modal__footer .button-primary:hover {background: black; border: 2px solid #0f0}
 
 /*inside a post*/
 section#individual-post header h1 {color: white;}
@@ -296,9 +325,68 @@ textarea {background-color: black; color: white; border-color: #0f0;}
 /* adapt cyberpunk theme*/ 
 
 .cp-background {filter: invert();}
+
+
+
+
+
+.comment-notice-message[data-v-2b9d1eff] {background-color: transparent;}
+
+
+
+
 }
 
 @-moz-document domain("9gag.com") {
+/* rework the "Boards" part because 9gag is a fucking bitch */
+
+
+.board-system__wrapper[data-v-26238b91] {background: #1c1c1c;}
+.board-message_replies-button[data-v-18758dbe] { color: white;}
+.board-system__wrapper .board-system__left_part[data-v-26238b91] {background: #1c1c1c; border-right: 1px solid #1c1c1c;}
+.boards-headers-base[data-v-2b8c869d], .boards-list__header[data-v-2b8c869d]  {background: #1c1c1c;}
+.boards-headers-base[data-v-313c0066], .board-view__top-bar[data-v-313c0066]  {background: #1c1c1c;}
+.boards-headings[data-v-2b8c869d], .boards-list__header_title[data-v-2b8c869d] {color: white;}
+.board-system__list_item.display-list-item[data-v-d7b7a6aa]:hover, .board-system__list_item.display-list-item.active[data-v-d7b7a6aa] {background: black;}
+.board-system__list_item .list_item__board_info .title[data-v-d7b7a6aa] {color: white;}
+
+
+
+.board-message_wrapper.with-bg .bg-container[data-v-18758dbe] {background: black;}
+.board-message-header_username a[data-v-931a99e0] {color: #1ea827;}
+.board-system {color: white;}
+
+
+
+.boards-footer[data-v-660214ee] {border-top: 1px solid #0f0;  background-color: #000;}
+.boards-footer__join-board input[type=text][data-v-78fabff0] {background: black;}
+
+
+
+
+.context-menu[data-v-377f56f7] {background: black; border: solid 2px #0f0}
+
+
+
+
+
+.boards-footer__reply-board__actions-panel .reply-button[data-v-0708a0b2] {background: black; border: 1px solid #0f0}
+.boards-footer__reply-board__actions-panel .reply-button[data-v-0708a0b2]:hover {background: black; border: 3px solid #0f0}
+
+.boards-footer__reply-board__text-input[data-v-0708a0b2] {background: #1c1c1c; color: white;}
+
+
+
+.show-new-messages-button[data-v-64608a9f] {background: black; border: 1px solid #0f0}
+.show-new-messages-button[data-v-64608a9f]:hover {background: black; border: 3px solid #0f0}
+
+
+
+
+
+
+
+
 /*part to adapt "Boards" */
 
 .board-system__wrapper[data-v-0938f772] {background: #1c1c1c; color: white;}

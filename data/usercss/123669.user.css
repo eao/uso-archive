@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         iiiiiii
 @description    `nasa.gov with a black background.colors are changed, layout is mostly staying the same.home page already has a black background, other pages are changing.<B>www.nasa.gov </B> :                     <I>colors, articles  black background</I><B>blogs.nasa.gov</B> :                     <I> colors, sans-serif fonts, more compact,  black background</I>search results  lists:<B>nasasearch.nasa.gov</B> :           <I>colors, grey background</I><B>photojournal.jpl.nasa.gov</B> :    <I>colors, grey background</I>tested with mozilla & chromium`
-@version        202093.20.24
+@version        2021113.23.46
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,7 +30,7 @@ td {
   background-color: #f90000; 
 }
 th {
-  background-color: #33000; 
+  background-color: #330000; 
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
@@ -93,10 +93,7 @@ mark {
   background: #ff0;
   color: #000; 
 }
-.dropdown-menu {
-  background-color: #000;
- 
-}
+
 /* 
 ul,li {    
 
@@ -149,8 +146,26 @@ code {
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 1.1em;
 }
+/* header, nav */
+#navbar-nasa {
+background-color: #000;
+height: 85px;
+border: none;
+background: url(https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/starfield-banner.jpg);
+max-width: 1366px;
+}
+.dropdown-menu {
+	background-color: #000;
+}
+/* banners */
+.sitewide-banner {
+	color: white;
+	display: none;
+	margin: 0 auto;
+	max-width: 1366px;
+	position: relative;
+}
 /* cards */
-
 .headline, .embedded-headline {
 	background: rgba(55, 55, 55, 0.5);
 	color: #ccc;
@@ -230,7 +245,7 @@ code {
 #content .container-fluid {
 	padding: 0;
 	position: relative;
-	width: 98%;
+/*	width: 98%;   */
 }
 .side-bar.is-open + section #content {
     margin-left:0;
@@ -327,7 +342,7 @@ code {
    padding-right: 0px;
        padding-top: 0px;
 padding-bottom: 0px; 
-         margin-left: 7.5px;
+        margin-left: 7.5px;
   margin-right: 7.5px;  
     margin-bottom: 15px;
 

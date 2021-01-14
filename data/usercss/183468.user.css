@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pooya
 @description    `Minimal Clean White Theme for Trello.`
-@version        2020530.12.35
+@version        2021113.17.9
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -67,14 +67,17 @@
         margin-right: 8px;
         padding-bottom: 12px;
     }
+
+
     .list-header-name {
         /* margin-left: 5px !important; */
-        color: #737cf9 !important; /* list text color */
+        color: #5d5d5d !important; /* list text color */
         text-transform: uppercase !important; 
         font-size: 16px !important; 
         line-height: 18px !important;
         font-weight: 600 !important;
-        letter-spacing: 1px !important;    
+        letter-spacing: 1px !important; 
+        height: auto !important;
         }
 .list-header-num-cards {color: #dcdcdc;display:initial;}
 .list-header-extras-menu{border-radius: 55px !important;}
@@ -118,7 +121,7 @@
         border: none !important;
 /*         border-bottom: 1px solid #ddd !important; */
         border-radius: 4px !important;
-        padding: 6px 8px 5px;
+        /* padding: 6px 8px 5px; */
         margin-bottom: 10px;
         box-shadow:0px 0px 0px 1px #0000001a, 0px 1px 3px 0px #0000000f;
 		background-color:white !important;
@@ -232,6 +235,8 @@ span.js-badges > div[title="You are watching this card."] {display:none;}
 
     
     /**************** CARD CONTENT (popup window) *****************/
+
+#popover-boundary .js-react-root {display:none;}
 
     /* title */
     textarea.mod-card-back-title {font-size:24px !important;

@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        202119.9.11
+@version        2021113.23.55
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v6.5.1*/
+/* Dark Creator Studio v6.5.2*/
 /* Created by Leon Flame, edited by Lexan*/
 
 /* Dark Scrollbar*/
@@ -710,6 +710,10 @@ ytcp-table-footer.ytcp-subscribers-table{ /*Subscriber list*/
 
 #page-title-container{ /*Widescreen fix*/
     max-width: 20000px !important;
+}
+
+.body.ytcp-subscribers-table{ /*Subscriber list*/
+    background-color: var(--bg2-color);
 }
 
 ytcp-button.ytcd-inbox-item{

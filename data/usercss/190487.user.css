@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Señor C.
 @description    `Este es un Modo Oscuro que hice para la eVirtual de la Universidad Técnica de Manabí, porque a mi novia le encanta el modo oscuro :3`
-@version        2021110.22.45
+@version        2021113.22.30
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -27,12 +27,35 @@ body {
 *::-webkit-scrollbar-thumb {
 	background: rgba(255,255,255,.3);
 }
+  
+  /*OTRA VEZ ESA PUTA IMAGEEEN XD*/
+img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logo/0x150/1610406698/logo_utm_evirtual.png"] {
+		box-sizing:border-box!important;
+        width: 100px!important;
+        height:75px!important;
+        padding-left:100px!important; 
+        background: 		 							url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg)!important;
+        background-size: contain!important;
+	background-repeat: no-repeat!important;
+}
+/*el logo pequeño xd*/
+img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logocompact/300x300/1610406698/logo_utm_evirtual.png"] {
+		box-sizing:border-box!important;
+        width: 47px!important;
+        height:35px!important;
+        padding-left:47px!important; 
+        background: 		 							url(https://www.mediafire.com/convkey/d9d0/we0oprfc5wufvsszg.jpg)!important;
+        background-size: contain!important;
+	/*background-repeat: no-repeat!important;*/
+}
+  
+  
 /*----------Login----------*/
 .card-header {
     background-color: #121212!important;
     border-bottom: 1px solid rgba(255,255,255,.1);
 }
-img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logo/0x200/1605811633/logo_utm_evirtual.png"]{
+img[src="https://evirtual.utm.edu.ec/pluginfile.php/1/core_admin/logo/0x200/1610406698/logo_utm_evirtual.png"]{
 		box-sizing:border-box!important;
         width: 266px!important;
         height:200px!important;
