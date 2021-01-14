@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         tyf
 @description    `for RAW LH (lovehug.net, weloma.net)<ul><li>More comfortable manga list</li><li>Content images fit the window size</li><li>Hide the ADs</li><li>Two-page view mode in a wider window</li></ul>`
-@version        2021111.15.53
+@version        2021114.9.28
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -40,10 +40,7 @@
 	.panel>center,
 	center>br,
 	a.chapter[href="#"],
-	div[id^="rn_ad_"],
-	img[src="https://s4.imgmirror.club/images/20200112/5e1ad960d67b2_5e1ad962338c7.jpg"],
-	img[src="https://imgmirror.club/images/20200309/fe132b3d32acc39f5adcea9075bedad4LoveHeaven.jpg"],
-	img[src="https://s4.imgmirror.club/images/20200715/image_5f0ecf23aed2e.png"] {
+	div[id^="rn_ad_"] {
 		display: none !important;
 	}
 	
@@ -227,8 +224,8 @@
 	#content,
 	.chapter-content {
 		font-size: 0;
-		width: calc(100% - 4mm) !important;
-		max-width: calc((100vh - 22mm)*1.6);
+		width: auto !important;
+		max-width: calc(96vh / 1.4);
 		text-align: center;
 		direction: rtl;
 		margin: 0 auto;
@@ -274,12 +271,13 @@
 	
 	#content>img,
 	.chapter-content .chapter-img {
-		min-width: 50vh;
+		min-width: 60vh;
 		max-width: 100%;
-		height: calc(100vh - 20mm);
-		background-color: rgba(255, 255, 255, .4);
+		height: calc(100vh - 19mm);
+		background: none;
 		border: none;
-		margin: 0 auto 15px;
+		border-radius: 3mm;
+		margin: 0 auto 14px;
 	}
 	
 	.chapter-content .well {
@@ -308,125 +306,6 @@
 		overflow: hidden;
 	}
 	
-	.itemupdate,
-	.row-list {
-		vertical-align: top;
-		font-size: 11pt;
-		position: relative;
-		width: calc(100% / 2 - 6px);
-		height: calc(18vh + 40px);
-		display: inline-block;
-		margin: 6px 1px 0;
-		background: #ccccd3;
-		border-radius: 1.5mm;
-		box-shadow: 0 0 0 1px rgba(0, 0, 0, .2);
-		overflow: hidden;
-		transition: background-color .2s, box-shadow .2s, height .2s
-	}
-	
-	.itemupdate:hover,
-	.row-list:hover {
-		margin: 5px 1px 1px;
-		background-color: #dde;
-		box-shadow: 0 0 0 1px #86c, 0 2px 10mm rgba(0, 0, 0, .3);
-		z-index: 2;
-		transition: background-color 0s, box-shadow .1s;
-	}
-	
-	.itemupdate .group .title-h3 {
-		padding-left: 53%;
-		text-indent: -112%;
-		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-	
-	.itemupdate .group>li:not(:first-child) {
-		padding-left: 53%;
-	}
-	
-	.itemupdate .chapter {
-		font-size: 11pt;
-		margin-bottom: 3mm;
-	}
-	
-	.itemupdate .view,
-	.itemupdate time {
-		font-size: 11pt;
-	}
-	
-	.row-list .pull-left,
-	.itemupdate>a.cover {
-		position: absolute;
-		top: 2em;
-		width: calc(50% - 1mm);
-		padding: 0 2mm;
-		margin: 0;
-	}
-	
-	.doreamon .cover img,
-	img.myimg,
-	img.media-object.img-thumb {
-		width: 100%;
-		height: 18vh;
-		padding: 2px;
-		background-color: #fff;
-		border-radius: 1mm;
-		box-shadow: 0 0 1mm #333;
-		object-fit: cover;
-	}
-	
-	.media-body {
-		margin: 2.7em 1mm 0 49%;
-	}
-	
-	.media-body .media-heading {
-		position: absolute;
-		top: 2mm;
-		left: 0;
-		width: calc(100% - 2mm);
-		text-indent: -100%;
-		padding-left: 50%;
-		margin: 0;
-		display: -webkit-box;
-		-webkit-line-clamp: 2;
-		-webkit-box-orient: vertical;
-		overflow: hidden;
-	}
-	
-	.media-heading a {
-		color: maroon;
-		font-size: 11pt;
-		text-shadow: 1px 1px 2px #fff;
-	}
-	
-	.media-heading a:hover {
-		text-decoration: none;
-	}
-	
-	.media-body small {
-		display: inline-block;
-		width: 100%;
-		max-height: 15mm;
-		font-size: 0;
-		overflow: hidden;
-		margin: 2mm 0 2mm -1mm;
-		padding: 1mm;
-		border-radius: 5px;
-		background: rgba(120, 120, 120, .1);
-		box-shadow: inset 0 0 1mm rgba(0, 0, 0, .2);
-		transition: linear .3s;
-	}
-	
-	.media-body small:hover {
-		max-height: 40mm;
-		overflow: auto;
-		background: rgba(255, 255, 255, .3);
-		box-shadow: 0 0 3px 1px rgba(0, 0, 0, .3);
-	}
-	
 	.btn {
 		font-size: 10pt;
 		margin: 1px 2px 1px 0;
@@ -443,13 +322,6 @@
 	
 	.btn-xs:hover {
 		color: #fff;
-	}
-	
-	.itemupdate .title-h3 {
-		margin: .5em 0;
-		color: maroon;
-		font: bold 11pt Helvetica;
-		text-shadow: 0 0 2mm white;
 	}
 	
 	.hinhnen1 {
@@ -484,6 +356,8 @@
 		border-radius: 1em;
 		background-color: rgba(0, 0, 0, .5);
 		box-shadow: 0 0 1mm #888;
+		white-space: nowrap;
+		overflow: hidden;
 	}
 	
 	.breadcrumb>li+li:before {
@@ -513,20 +387,6 @@
 	.col-lg-4 .panel-body a:hover {
 		color: #fff;
 		background-color: #825;
-	}
-	
-	.row-list .media,
-	.media-body {
-		overflow: auto;
-	}
-	
-	.pop_info .group p {
-		margin-left: 190px;
-	}
-	
-	.pop_info .group strong {
-		float: left;
-		margin-left: -80px;
 	}
 	
 	.xt {
@@ -737,7 +597,7 @@
 	
 	}
 	
-	@media screen and (max-width: 1000px) {
+	@media screen and (max-width: 992px) {
 	
 		.row>.col-md-8:first-child,
 		.col-lg-8,
@@ -762,7 +622,7 @@
 		}
 	}
 	
-	@media screen and (min-width: 1000px) {
+	@media screen and (min-width: 992px) {
 		.container.manga .col-md-8.info-manga {
 			width: 66.66%;
 		}
@@ -857,8 +717,8 @@
 		}
 	
 		.col-md-8 .a6-ratio {
-			height: calc(33vh - 60mm);
-			min-height: 260px;
+			height: calc(33vh - 44mm);
+			min-height: 250px;
 		}
 	
 		.img-in-ratio {
@@ -915,34 +775,23 @@
 		}
 	}
 	
-	@media screen and (max-width: 133vh) {
-		.chapter-content .chapter-img {
-			border-radius: 2.5mm;
-			box-shadow: 0 0 2mm rgba(0, 0, 0, .5);
-		}
-	}
-	
 	@media screen and (min-width: 133vh) {
+	
+		#content,
+		.chapter-content {
+			max-width: calc(96vh * 1.4);
+		}
+	
 		.chapter-content .chapter-img {
-			max-width: 49.5%;
+			max-width: 49.9%;
 		}
 	
-		.chapter-content .chapter-img:first-of-type,
-		.chapter-content .chapter-img:last-of-type {
-			border-radius: 2.5mm;
-			box-shadow: 0 0 2mm rgba(0, 0, 0, .5);
-		}
-	}
-	
-	@media screen and (min-width: 133vh) {
 		.chapter-content .chapter-img:nth-of-type(even):not(:last-of-type) {
-			border-radius: 0 2.5mm 2.5mm 0;
-			box-shadow: 2mm 0 2mm rgba(0, 0, 0, .5);
+			border-radius: 0 3mm 3mm 0;
 		}
 	
 		.chapter-content .chapter-img:nth-of-type(odd):not(:first-of-type) {
-			border-radius: 2.5mm 0 0 2.5mm;
-			box-shadow: -2mm 0 2mm rgba(0, 0, 0, .5);
+			border-radius: 3mm 0 0 3mm;
 		}
 	}
 }

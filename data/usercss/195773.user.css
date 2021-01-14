@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         weeb :<
 @description    `go to church`
-@version        2021111.6.44
+@version        2021114.5.7
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -57,7 +57,7 @@ ytd-app /* front page back */
   rgba(0, 0, 0,0.5)
          ),                
                                             
-  url(https://pbs.twimg.com/media/EJ29LrhUYAUOXbg.jpg) !important;
+  url(https://64.media.tumblr.com/8e17b5e4bce0da1a8c529b5aec5face5/tumblr_ntvuyaooav1uf0koqo1_1280.jpg) !important;
     background-attachment: fixed !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
@@ -76,7 +76,7 @@ ytd-app /* front page back */
 ,#title.ytd-rich-grid-renderer /* recommeneded video header */
 ,#title.ytd-rich-shelf-renderer/* top news, latest etc headers */
   {
-    color: rgba(245,75,111) !important;
+    color: rgba(246,159,150) !important;
   }
 
 /*text secondary */
@@ -132,7 +132,7 @@ ytd-app /* front page back */
 ,ytd-post-renderer[uses-compact-lockup_][attachment=image] #home-content-text.ytd-post-renderer, ytd-post-renderer[uses-compact-lockup_][attachment=none] #home-content-text.ytd-post-renderer,ytd-post-renderer[uses-compact-lockup_] #author-text.yt-simple-endpoint.ytd-post-renderer/*latest youtube posts */
 ,#upnext.ytd-compact-autoplay-renderer/* up next */
   {
-    color: rgba(247,95,133) !important;
+    color: rgba(246,159,150) !important;
   }
 
   #simplebox-placeholder.ytd-comment-simplebox-renderer /* add public comment active*/

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `Vanilla Dark 2 VK Fix/Mod PART 1 of 2 is herehttps://userstyles.org/styles/132224read description and set all style settings there`
-@version        2021114.1.23
+@version        2021114.2.15
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -543,6 +543,7 @@
 .like_counter_wrap{border:1px solid #303030;color:#969696;background:#151515}
 .icon_heart{filter:var(--filt2)!important}
 .like_auto_width nobr{color:var(--color1)!important}
+.PhotoCarouselBlockItem__actions .like_btn.like.active .like_button_count{color:var(--color1)}
 
 /* фикс лайков для блога */
 body#like_body,body#button_24,body#like_body:before,body#button_24:before{background:transparent!important}
@@ -636,7 +637,11 @@ body#like_body,body#button_24,body#like_body:before,body#button_24:before{backgr
 /* фильтр иконок прикрепляемых к посту документов */ 
 .docs_item_icon{filter:invert(1)saturate(.5)hue-rotate(180deg)!important}
 .docs_choose_upload_area_label{filter:var(--filt2)brightness(1.2)saturate(.5)}
-    
+
+/* фильтр лампочки советов по постингу хуйни */ 
+[dir] .SitpostingEntrypoint__button{filter:var(--filt2)brightness(.6)}
+[dir] .SitpostingEntrypoint::before{background-color: var(--color2)}
+
 /* смайлики */
 .emoji_sprite{filter:invert(.95)saturate(0)brightness(.7)!important}
 .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_bottom, .ui_scroll_default_theme.ui_scroll_emoji_theme .ui_scroll_shadow_top,.emoji_cats_title_helper::after{filter:invert(.95)}
@@ -845,6 +850,16 @@ body.new_header_design .top_nav_btn#top_notify_btn.has_notify.active .top_nav_bt
 #mv_container .VerticalVideoLayerInfo #mv_reply_form_wrap div.submit_post_field ~ .placeholder .ph_content{padding-left:5px!important}
 #mv_container .VerticalVideoLayerInfo .VerticalVideoLayerInfo__commentsReply .reply_form,#mv_container .VerticalVideoLayerInfo .VerticalVideoLayerInfo__commentsReply .reply_field{color:#aaa}
 [dir] .VerticalVideoLayerInfo__subscribe--subscribed{filter:sepia(1)saturate(1.3)brightness(.7)hue-rotate(175deg)var(--filt2)}
+.ShortVideoTagList__title,.ShortVideoTagListItem__title,.ShortVideoTopInfo__title{color:var(--color2);transition:color .3s}
+.ShortVideoTagList:hover .ShortVideoTagList__title,[dir] .ShortVideoTagListItem:hover .ShortVideoTagListItem__title,.ShortVideoTopInfo__title:hover,.ShortVideoTopInfo__description:hover{color:var(--color1)}
+[dir] .ShortVideoTagListItem:hover,[dir] .ShortVideoGridItem{background:#00000059}
+.ShortVideoTopInfo__description{color:#aaa}
+[dir] .ShortVideoTopInfo__container,[dir] .ShortVideoTopInfo__withBorder{border-bottom: 1px solid var(--color3)}
+[dir] .ShortVideoTopInfo__photo {background-color:#0000}
+[dir] .ShortVideoTopInfo__shareIcon{filter:var(--filt2)brightness(3)}
+[dir] .ShortVideoTopInfo__qrCodeIcon{filter:var(--filt2)saturate(.5)}
+[dir] .ShortVideoTopInfo__phoneIcon{filter:invert(1)}
+[dir] .ShortVideoTopInfo__actions .Button--primary{color:#111}
 
 /* фикс загрузка аудио */
 .audio_progress{border:1px solid var(--color1)}

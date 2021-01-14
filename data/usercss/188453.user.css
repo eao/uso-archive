@@ -1,18 +1,18 @@
 /* ==UserStyle==
-@name           Youtube WideScreen (New Design Polymer) v.7
+@name           Youtube WideScreen (New Design Polymer) v.8
 @namespace      USO Archive
 @author         decembre
 @description    `For a wide Screen and the YouTube new Design:Player stay fixed at the LEFT side.- Videos related and in queue on the RIGHT side- Infos, Comment on the RIGHT side ( visible on hover their tabs)- Progress Bar is always visibleSo, you can watch the video AND read infos / Comments, choose next video without problem.Its Usercript version (GeasyFork):<b><a href="https://greasyfork.org/fr/scripts/409893-youtube-widescreen-new-design-polymer">Youtube WideScreen (New Design Polymer)</a></b>`
-@version        20201124.20.17
+@version        2021114.7.58
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 
 
-/* ==== 0- YouTube WideScreen (New Design Polymer) v.7 ==== */
+/* ==== 0- YouTube WideScreen (New Design Polymer) v.8 ==== */
 
-/* (new5) GM in USE:
+/* (new8) GM in USE:
 
 GM "Video Speed Buttons":
 https://greasyfork.org/fr/scripts/30506-video-speed-buttons
@@ -35,15 +35,18 @@ https://greasyfork.org/fr/scripts/28678-youtube-play-next-queue
 GM "YouTube Links";
 https://greasyfork.org/en/scripts/5566-youtube-links
 
-For embedded Youtube:
+- For embedded Youtube:
 GM "Allow full screen on embedded Youtube":
 https://greasyfork.org/fr/scripts/398281-allow-full-screen-on-embedded-youtube
 
-Seems work with:
+ - Seems work with:
+GM "Youtube Scrollable Suggestions" :
+https://greasyfork.org/en/scripts/397344-youtube-scrollable-suggestions
+
 GM "Youtube polymer engine fixes"
 https://greasyfork.org/en/scripts/405614-youtube-polymer-engine-fixes
 
-VIDEOS Restricted:
+- Note about: VIDEOS Restricted:
 GM "YouTube: Age Verification Bypass > v.1.5.3":
 https://greasyfork.org/en/scripts/375525-youtube-age-verification-bypass
 Work perfecly!important;
@@ -55,7 +58,7 @@ OR USE this ADDON:
 XPI "Ageless for YouTube" :
 https://addons.mozilla.org/en-US/firefox/addon/ageless/
 
-Note about Waterfox Classic:
+- Note about Waterfox Classic:
 For use with Waterfox Classic and  User Agent Switcher, choose:
 Force for the domain (the first one)
 Robot: Google Bot
@@ -76,7 +79,10 @@ ytd-consent-bump-lightbox#consent-bump ,
     display: none !important;
 }
 
-/* (new7) ADAP GM "YouTube Links"*/
+/* (new8) ADAP GM "YouTube Links"*/
+ytd-watch-flexy[fullscreen] #ujs-hdr-links-div {
+    display: none !important;
+}
 #masthead-container.ytd-app {
     z-index: 0;
 }
@@ -87,12 +93,12 @@ ytd-thumbnail:hover .ujs-links-cls.ujs-quality {
     opacity: 0.8;
 }
 #ujs-hdr-links-div {
-position: fixed !important;
-display: inline-block !important;
-bottom: -65px ;
-left: 7.5% ; ;
-z-index: 500000000 !important;
-    visibility: hidden ;
+    position: fixed !important;
+    display: inline-block !important;
+    bottom: -65px ;
+    left: 7.5% ; ;
+/* z-index: 500000000 !important; */
+/*     visibility: hidden ; */
     visibility: visible ;
 }
 #ujs-hdr-links-div:hover {
@@ -115,6 +121,24 @@ z-index: 500000000 !important;
     visibility: visible ;
 }
 
+/* (new9) PROGRESSBAR VISIBLE */
+.ytp-hide-info-bar .ytp-chrome-bottom {
+    opacity: 1 !important;
+visibility: visible !important;
+}
+.ytp-hide-info-bar.ytp-autohide .ytp-chrome-controls {
+    opacity: 0 !important;
+/* visibility: hidden !important; */
+}
+.ytp-hide-info-bar .ytp-progress-bar-container {
+    bottom: 39px;
+    display: inline-block !important;
+    height: 5px;
+    position: absolute;
+    width: 100%;
+    opacity: 1 !important;
+visibility: visible !important;
+}
 
 /* (new7) TEST VIDEO RESTRICTED:
 GM "YouTube: Age Verification Bypass 
@@ -145,7 +169,7 @@ background: rgba(255, 0, 0, 0.1);
 .html5-video-player.ytp-embed .html5-main-video.video-stream
 */
 /* html:not(.floater):not(.iri-always-visible) .html5-video-player:not(.ytp-fullscreen):not(.ytp-hide-controls):not(.ytp-embed) .html5-main-video, */
-html:not(.floater):not(.iri-always-visible) .html5-video-player.ytp-embed:not(.ytp-fullscreen):not(.ytp-hide-controls) .html5-main-video.video-stream {
+html:not(.floater):not(.iri-always-visible) .html5-video-player.ytp-embed:not(.ytp-embed):not(.ytp-fullscreen):not(.ytp-hide-controls) .html5-main-video.video-stream {
     height: 100% !important;
     max-height: 100% !important;
     min-height: 100% !important;
@@ -159,6 +183,42 @@ margin-top: 70px !important;
 html:not(.floater):not(.iri-always-visible) .html5-video-player.ytp-embed:not(.ytp-fullscreen):not(.ytp-hide-controls) .html5-endscreen.ytp-player-content.videowall-endscreen.ytp-endscreen-paginate.ytp-show-tiles  {
     display: none !important;
 }
+/* (new8) */
+/* .html5-video-player .video-stream {
+    display: inline-block !important;
+    height: calc(100% - 2px) !important;
+    max-height: calc(100% - 2px) !important;
+    min-height: calc(100% - 2px) !important;
+    max-height: 128px !important;
+    min-height: 128px !important;
+    position: absolute;
+    width: 99.7% !important;
+border: 1px solid #111 !important;
+} */
+/* (new8) TEST YOUTUBE EMBED (for REDDIT) PLAYER/POSTER COVER  SIZE */
+#movie_player.ytp-embed .html5-video-player .video-click-tracking {
+    display: inline-block !important;
+    height: calc(100% - 2px) !important;
+    max-height: calc(100% - 2px) !important;
+    min-height: calc(100% - 2px) !important;
+    max-height: 128px !important;
+    min-height: 128px !important;
+    position: absolute;
+    width: 99.7% !important;
+/* object-fit: contain; */
+border: 1px solid #111 !important;
+}
+#movie_player.ytp-embed .html5-video-player .ytp-cued-thumbnail-overlay-image {
+    position: absolute;
+    width: 100% !important;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain !important;
+    height: 100%;
+object-fit: contain;
+border: 3px solid red !important;
+}
+
 
 /* (new7) TEST EMBED YOUTUBE FULL SCREEN - TEST BYPASS AGE RESTRICTION BY ADDING:
 /embed/
@@ -203,11 +263,11 @@ https://www.wikihow.com/Bypass-Age-Restrictions-on-YouTube-Videos
     background-color: green !important;
 }
 
-/* (new7) SECONDARY - TEST LIVE CHAT :
+/* (new8) SECONDARY - TEST LIVE CHAT :
 CABVIEW: Live chat and Stream from the Bergen Line in Norway
 https://www.youtube.com/watch?v=ZHgXfhiDIIM
 === */
-
+ytd-watch-flexy[flexy_] #secondary.ytd-watch-flexy ,
 ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy {
     position: absolute;
     display: inline-block;
@@ -404,13 +464,13 @@ background: green ;
 https://greasyfork.org/fr/scripts/11485-youtube-ui-fix/discussions/64241
 https://www.youtube.com/watch?v=yUif6C_uJgk
  */
-.html5-video-player:not(.ytp-fullscreen) .html5-video-container {
+.html5-video-player:not(.ytp-fullscreen):not(.ytp-embed) .html5-video-container {
     height: 100% !important;
 }
-html:not(.floater):not(.iri-always-visible):not(.part_fullbrowser) #movie_player:not(.ytp-fullscreen):not(.ytp-hide-controls) {
+html:not(.floater):not(.iri-always-visible):not(.part_fullbrowser) #movie_player:not(.ytp-fullscreen):not(.ytp-hide-controls):not(.ytp-embed) {
     height: calc(100% + 35px) !important;
 }
-html:not(.floater):not(.iri-always-visible) .html5-video-player:not(.ytp-small-mode):not(.ytp-fullscreen):not(.ytp-hide-controls) .html5-main-video  {
+html:not(.floater):not(.iri-always-visible) .html5-video-player:not(.ytp-embed):not(.ytp-small-mode):not(.ytp-fullscreen):not(.ytp-hide-controls) .html5-main-video  {
     height: calc(100% - 35px) !important;
     max-height: calc(100% - 35px) !important;
     min-height: calc(100% - 35px) !important;
@@ -1152,17 +1212,19 @@ ytd-watch-flexy[flexy_][is-two-columns_][is-extra-wide-video_] #primary.ytd-watc
     padding-top: 0;
 }
 
-/* (new7) TEST THEATER MODE (not FULL SCREEN)  - , ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy */
+/* (new8) TEST THEATER MODE (not FULL SCREEN)  - , ytd-watch-flexy[fullscreen] #player-theater-container.ytd-watch-flexy */
 ytd-watch-flexy[theater]:not([fullscreen]) #player-theater-container.ytd-watch-flexy {
-    left: 9px !important;
+    left: 0px !important;
 /* border: 1px solid yellow !important; */
 }
-
+ytd-watch-flexy[theater]:not([fullscreen]) #player-theater-container.ytd-watch-flexy #player-container {
+    width: 100%;
+}
 /* (new2) FULL SCREEN */
 ytd-app[is-watch-page=""] app-drawer.ytd-app#guide ~ #page-manager.ytd-app[class="style-scope ytd-app"] {
     position: fixed ;
     display: flex;
-    width: 59.5% ;
+    width: 59.8% ;
     height: 100% ;
     height: 874px !important;
     --ytd-toolbar-offset:  var(--ytd-masthead-height, var(--ytd-toolbar-height));
@@ -1276,18 +1338,19 @@ ytd-watch-flexy[theater] #player-theater-container.ytd-watch-flexy +#columns #pr
     opacity: 1;
     transition: opacity 0.165s cubic-bezier(0, 0, 0.2, 1) 0.415s;
 }
-.video-stream.html5-main-video {
+#movie_player:not(.ytp-embed) .html5-video-player:not(.ytp-embed) .video-stream.html5-main-video {
     width: 99% !important;
 }
-/* (new2) */
+/* (new9) */
 .ytp-iv-video-content {
-    width: 99% !important;
+    width: 100% !important;
+    top: 55px;
 }
 
-/* (new2) VIDEO PLAYER center MOVIE  for
+/* (new9) VIDEO PLAYER center MOVIE  for
 https://www.youtube.com/watch?v=_DsyLuxfu64
 === */
-.video-stream.html5-main-video {
+#movie_player:not(.ytp-embed) .html5-video-player:not(.ytp-embed) .video-stream.html5-main-video {
     left: 0 !important;
 }
 
@@ -1361,7 +1424,7 @@ background: rgba(0, 0, 0, 0.44);
     padding-left: 23%;
 background: transparent !important;
 }
-.html5-video-player .caption-visual-line .ytp-caption-segment{
+.html5-video-player:not(.ytp-embed) .caption-visual-line .ytp-caption-segment{
     background: transparent !important;
 }
 
