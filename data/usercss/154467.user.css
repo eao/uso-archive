@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         quaritexa
 @description    `just clean&white`
-@version        2020102.11.17
+@version        2021115.5.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -444,7 +444,7 @@ div#mw-panel div.portal div.body,
 
 /* wiki logo */
 #p-logo {
-	margin-top: -111px;
+	margin-top: -111px !important;
 }
 
 /* languages (en/ru) */

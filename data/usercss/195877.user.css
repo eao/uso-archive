@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TGekko
 @description    `This uses very few simple styles to attempt to apply a moderately pleasant dark mode to websites. Due to its simplicity, this style will not work perfectly with every website.`
-@version        2021113.5.41
+@version        2021115.2.9
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,7 +18,7 @@ body {
 }
 a {
  background: #1117 !important;
- color: #F92 !important;
+ color: #F47521 !important;
 }
 a:visited {
  background: #1117 !important;
