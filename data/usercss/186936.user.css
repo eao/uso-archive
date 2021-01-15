@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        202118.11.53
+@version        2021114.14.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -75,7 +75,7 @@ ytd-rich-section-renderer  {display: none;}
 /* убрать рекламный баннер YouTube - Премиум, Музыка и тд. : - "none" - убрать: "flow"- показать */ 
 ytd-banner-promo-renderer {display: none;}
         /* убрать предложение "YouTube Premium" на вкладке с Видео (N) */
-        ytd-mealbar-promo-renderer {display: none}
+        ytd-mealbar-promo-renderer {display: none;}
 /* Убрать рекламный баннер предлагающий разные Товары "masthead-ad" : - "none" - убрать: "flow"- показать  */
 #masthead-ad.ytd-rich-grid-renderer {display: none;}
 /* убрать партнёрскую рекламу на вкладке с Видео */
@@ -86,11 +86,11 @@ ytd-checkbox-survey-renderer[dialog][dialog][dialog] {display: none;}
 /* Оповещения Снизу экрана (paper-toast): - ● ОТКЛЮЧЕНИЕ НЕ ЖЕЛАТЕЛЬНО! ● так как пропадут 
 и оповещения о добавлении в плейлисты, НО, если YouTube будет сильно задалбывать, можно отключить. */
     /*      : none - отключить ;     flow - не отключать    */
-    #toast {display: flow}
+    #toast {display: flow;}
 
     /* Отключить? ОПЛАЧЕННЫЕ Видеоролики(на правах рекламы) от пользователей и каналов на вкладке с Видео */
     /* none : - отключить  /  flow : - не отключать  */
-    ytd-compact-promoted-video-renderer {display: none}
+    ytd-compact-promoted-video-renderer {display: none;}
 
 /* убрать бесконечную подгрузку предлагаемых видео на вкладке "c Видео": - "none" - убрать: "flow"- показать */
 ytd-continuation-item-renderer.ytd-watch-next-secondary-results-renderer {display: none;}
@@ -115,7 +115,7 @@ yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;} 
                 ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
 
 /* Отключить Рекламный оверлэй в плеере на Паузе (N) */
-.ytp-ad-overlay-container {display: none}
+.ytp-ad-overlay-container {display: none;}
 
 /* Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.) 
     "none" - Отключить "flow" - Показать */
@@ -754,14 +754,14 @@ paper-icon-button.paper-tabs {
     height: 48px;
     padding: 12px;
     margin: 0 4px;
-    opacity: 0}
+    opacity: 0;}
 /* Скрытие элементов прокрутки меню Размела "Музыка" - отображать скрытые (если они есть) при наведении курсора */
 paper-icon-button.paper-tabs:hover {
     width: 48px;
     height: 48px;
     padding: 12px;
     margin: 0 4px;
-    opacity: 0.8}
+    opacity: 0.8;}
 
 /* Центровка Плейлистов "Yutube Music" - на Странице с Видео - зона: RU */
 ytd-compact-playlist-renderer.ytd-watch-next-secondary-results-renderer {
@@ -980,7 +980,7 @@ margin-top: 7px;}
                 /* позиционирование */
 #contents.ytd-channel-list-sub-menu-renderer {
     max-width: 360px; /*def: max-width: var(--ytd-channel-list-sub-menu-max-width, 560px)*/
-    display: flex; flex-direction: row; justify-content: space-between;}
+    display: flex; flex-direction: row; justify-content: space-between; margin: 0 auto!important;}
 /* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
 
 
@@ -1137,7 +1137,7 @@ line-height: var(--ytd-link-line-height, 1.6rem); font-weight: bold;} /*500;*/
 .yt-icon-button-4, .yt-icon-button-2 button.yt-icon-button {color: #989898 !important;} /*OLD-Chrome*/
 #voice-search-button.ytd-masthead .ytd-masthead[is-icon-button] {color: #989898 !important;} /*OLD-FF*/
 -o-ytd-button-renderer[is-icon-button][has-no-text]  {color: #989898 !important;} /*OLD-FF v2*/
-#voice-search-button.ytd-masthead .ytd-masthead[is-icon-button], #buttons.ytd-masthead .ytd-masthead[is-icon-button] {color: #989898} /*OLD-FF v3*/
+#voice-search-button.ytd-masthead .ytd-masthead[is-icon-button], #buttons.ytd-masthead .ytd-masthead[is-icon-button] {color: #989898;} /*OLD-FF v3*/
 
 /* цвет иконки колокольчика */
 #button.ytd-notification-topbar-button-renderer {color: #808080 !important;}
@@ -1208,13 +1208,11 @@ yt-icon-button#back-button .ytd-masthead {fill: #989898 !important;}
 
 
 /* Цвет Кода Страны (com, ru и тд) */
-#country-code.ytd-topbar-logo-renderer {color: #606060 !important; /*var(--yt-spec-text-secondary)*/ margin: 0 0 0 2px; -o-filter: invert(30%)}
+#country-code.ytd-topbar-logo-renderer {color: #606060 !important; /*var(--yt-spec-text-secondary)*/ margin: 0 0 0 2px; -o-filter: invert(30%);}
 /* Цвет Клавиатуры в поле поиска */
 ytd-masthead[dark] .gsst_e {filter: invert(60%);} /*80%*/
 /* Цвет Клавиатуры в поле поиска (сокращённый плеер) */
-.gsok_a {
-background: url(data:image/gif;base64,R0lGODlhEwALAKECAAAAABISEv///////yH5BAEKAAIALAAAAAATAAsAAAIdDI6pZ+suQJyy0ocV3bbm33EcCArmiUYk1qxAUAAAOw==) 
-no-repeat center; display: inline-block; height: 11px; line-height: 0; width: 19px; filter: invert(60%)}
+.gsok_a {display: inline-block; height: 11px; line-height: 0; width: 19px; filter: invert(60%);}
 /* высота пространства Иконки калвиатуры под высоту Поле поиска */
 a.gsst_a {line-height: 22px; margin: 0px 0px 0px 0px; -o-margin: 20px 0px -4px 0px;} 
 
@@ -1309,7 +1307,7 @@ ytd-grid-video-renderer #video-title.yt-simple-endpoint.ytd-grid-video-renderer 
 /* ЦВЕТ названия Плейлиста и параметры Шрифта в разделе; ПОИСК */
 #video-title.ytd-playlist-renderer {
     font-size: 1.4rem; /*(--yt-navbar-title-font-size, 1.8rem);*/
-    font-weight: 400;color: #167AC6}
+    font-weight: 400;color: #167AC6;}
 
 /* ТОЛЬКО ЦВЕТ названия Плейлиста в разделе; ПОИСК */
 -o-h3.ytd-playlist-renderer {color: #c62525;}
@@ -1729,7 +1727,7 @@ ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-comments]
 /* исправление бага с полем Поиска ДО наведения Мыши */
 #search-input.ytd-searchbox-spt input {
     background-color: transparent; border: none; box-shadow: none; color: inherit;
-    font-family: 'Roboto','Noto',sans-serif; font-size: 16px; font-weight: 400;
+    -o-font-family: 'Roboto','Noto',sans-serif; font-size: 16px; font-weight: 400;
     line-height: 22px; /* 24px */ margin-left: 0px; /* 4px */ max-width: 100%;
     outline: none; text-align: inherit; width: 100%; flex: 1; flex-basis: .000000001px;}
 /* исправление бага с полем Поиска ПОСЛЕ наведения Мыши */
@@ -2065,7 +2063,7 @@ ytd-thumbnail.ytd-grid-radio-renderer {
     width: 202px;
     margin-top: 7px;
     margin-left: 6px;
-    box-shadow: 0px 0px 1px 0px rgb(85, 102, 136)}
+    box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
 
 /* Позицианирование, Размер Шрифта и Цвет названия Джемов и Миксов YouTube в разделе Библиотека(История) в меню "ЕЩЁ" */
 ytd-grid-radio-renderer #video-title.ytd-grid-radio-renderer {
@@ -2087,7 +2085,7 @@ ytd-video-meta-block.ytd-grid-radio-renderer {
 
 /* Контур Джемов и Миксов справа на вкладке с Видео */
 ytd-compact-radio-renderer:not([watch-feed-big-thumbs]) ytd-thumbnail.ytd-compact-radio-renderer {
-margin-right: 8px; height: 94px; width: 168px; box-shadow: 0px 0px 1px 0px rgb(85, 102, 136)}
+margin-right: 8px; height: 94px; width: 168px; box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
 
 /* Контур Видео справа на вкладке с Видео */
 ytd-compact-video-renderer:not([watch-feed-big-thumbs]) ytd-thumbnail.ytd-compact-video-renderer {
@@ -2097,7 +2095,7 @@ margin-right: 8px; height: 94px; width: 168px; box-shadow: 0px 0px 1px 0px rgb(8
 /* ════════════  Оплаченные и Рекламные Видеоролики(на правах рекламы) - Оформление  ═════════════ */
 
 /* Оплаченные Видео ролики (центровка) */
-ytd-compact-promoted-video-renderer {padding: 7px 0px 0px 10px; display: flow}
+ytd-compact-promoted-video-renderer {padding: 7px 0px 0px 10px; display: flow;}
 /* Оплаченные Видео ролики (контур Превью) */
 ytd-thumbnail.ytd-compact-promoted-video-renderer {box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
 /* ═══════════════════════════════════════════════════════════════════════════════════════════════ */
@@ -2197,7 +2195,7 @@ position: relative; top: 0px; right: 11px;}
 
 /* Сокращённый Блок Прямых Трансляций */
 ytd-channel-featured-content-renderer {-o-height: 157px;/*153*/ overflow-y: auto; overflow-x: hidden;
-min-height: 153px; max-height: 190px}
+min-height: 153px; max-height: 190px;}
 
         /* Скроллбар для промотки множества Трансляций */
 /* Установка Самого Скроллбара */
@@ -2509,7 +2507,7 @@ color: rgba(118, 118, 118, .5);} /*rgb(178, 178, 178)*/
     overflow: var(--contenteditable-root-style_-_overflow);
     outline: var(--contenteditable-root-style_-_outline);
     padding: 4px 3px 6px 4px;
-    -o-box-shadow: inset 0px 0px 0px 1px rgb(208, 31, 31)}
+    -o-box-shadow: inset 0px 0px 0px 1px rgb(208, 31, 31);}
 
 /* Отставьте Комментарий (не активный) + Отступы */
 #placeholder-area.ytd-comment-simplebox-renderer {
@@ -2941,7 +2939,7 @@ ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer
     /* Интервал Верхнего поля заголовка "предложено" */
 ytd-metadata-row-renderer.ytd-metadata-row-container-renderer:first-child {padding-top: 11px;}
     /* Интервал Нижнего поля заголовка */
-ytd-metadata-row-renderer.ytd-metadata-row-container-renderer:last-child {padding-bottom: 2px}
+ytd-metadata-row-renderer.ytd-metadata-row-container-renderer:last-child {padding-bottom: 2px;}
 
 
     /* Интервал Нижнего поля заголовка (информация о лицензии) */
@@ -3017,7 +3015,7 @@ ytd-watch-flexy[flexy_][js-panel-height_] #playlist.ytd-watch-flexy {
     margin-bottom: 12px;}
 
 /* Цвет названий Видео - внутри плейлиста под Видео */
-#video-title.ytd-playlist-panel-video-renderer {color: #CACACA} /*#CACACA*/
+#video-title.ytd-playlist-panel-video-renderer {color: #CACACA;} /*#CACACA*/
 
 /* Цвет заголовка (ВИДЕО УДАЛЕНО) в Плейлисте */
 #unplayableText.ytd-playlist-panel-video-renderer {
@@ -3038,7 +3036,7 @@ ytd-playlist-panel-video-renderer[selected][watch-color-update_] {background-col
 
 /* Цвет подсвечиваемого мышкой Видео в плейлисте */
 ytd-playlist-panel-video-renderer[watch-color-update_]:hover:not(.dragging) {
-background-color: #262626; box-shadow: inset 0px 0px 25px 5px #525252} /*#262626, var(--yt-spec-badge-chip-background) */
+background-color: #262626; box-shadow: inset 0px 0px 25px 5px #525252;} /*#262626, var(--yt-spec-badge-chip-background) */
 
 /* =============================================================== */
 
@@ -3640,7 +3638,7 @@ yt-chip-cloud-chip-renderer {
 /*высота поля между контентом и Шапкой YouTube (верхним полем с иконками, копками и поиском) */
 /* без использования (#container.ytd-masthead) бессмысленный параметр: - думаю отключить*/
 -o-html:not(.style-scope) {
-    --ytd-toolbar-height: 47px}  /*47px*/
+    --ytd-toolbar-height: 47px;}  /*47px*/
 
 
 /*отступ текста в поле поиска - Вправо*/
@@ -3714,7 +3712,7 @@ ytd-button-renderer.style-suggestive[is-paper-button] paper-button.ytd-button-re
     box-sizing: border-box;
     background-color: var(--yt-spec-general-background-a);
     overflow: auto;
-    -o-min-height: 100px}
+    -o-min-height: 100px;}
 
 /*===================================================*/
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Ночная тема для Яндекс.Поиска, Картинок, Видео и Коллекций———————————————————————————————10.12.20 — Исправлены некоторые баги———————————————————————————————26.08.19 — Тема была полностью переработана• Переработан дизайн• Добавлена поддержка Яндекс.Коллекции`
-@version        20201228.17.34
+@version        2021114.18.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -443,6 +443,10 @@ body .keyboard__switcher {color: #eee !important;}
 
 .stream-inserts__horizontal-card_large_yes, .stream-inserts__horizontal-card_small_yes {background: none;}
 .stream-inserts__horizontal-card-subtitle {color: rgba(255,255,255,.4);}
+
+.divjson2-container_orientation_overlap.divjson2-container_halign_left[style="border-radius:0.2000em;width:12.0000em;background-image:linear-gradient(to bottom,#ffffff,#ffffff);background-size:auto;background-position:50% 50%;background-repeat:no-repeat"] {background-image: linear-gradient(to bottom,#333,#333) !important;}
+.divjson2-container_orientation_vertical.divjson2-container_valign_top[style="grid-template-rows:auto auto auto auto;border-radius:0.2000em;width:12.8000em;background-image:linear-gradient(to bottom,#ffffff,#ffffff);background-size:auto;background-position:50% 50%;background-repeat:no-repeat"] {background-image: linear-gradient(to bottom,#333,#333) !important;}
+.divjson2__block-inner_shadow_yes[style="grid-template-rows:auto 1fr auto;border-radius:0.3000em;width:12.8000em;height:13.8000em;background-image:linear-gradient(to bottom,#ffffff,#ffffff);background-size:auto;background-position:50% 50%;background-repeat:no-repeat"] {background-image: linear-gradient(to bottom,#333,#333) !important;}
 
 .nhl-item {background: rgba(255,255,255,.2);}
 
@@ -1593,7 +1597,7 @@ body, .b-page__body {background: #222; color: #eee; font-family: 'YS Text', Aria
 .yaplus .yaplus__link .link__inner {color: #eee;}
 .yaplus_available_yes:hover .yaplus__link .link__inner {color: #e85253;}
 
-.b-page_morda-redesign_yes.b-page_type_index .serp-header.serp-header_filters_light .header-favorites-button__link::before, .b-page_morda-redesign_yes.b-page_type_index .serp-header.serp-header_filters_light .head-filter_type_unlimited .head-filter__icon, .b-page_morda-redesign_yes.b-page_type_index .serp-header.serp-header_filters_light .head-filter_type_moderate .head-filter__icon, .b-page_morda-redesign_yes.b-page_type_index .serp-header.serp-header_filters_light .head-filter_type_family .head-filter__icon {filter: invert(0);}
+.b-page_morda-redesign_yes.b-page_type_index .header-favorites-button__link::before, .b-page_morda-redesign_yes.b-page_type_index .head-filter_type_unlimited .head-filter__icon, .b-page_morda-redesign_yes.b-page_type_index .head-filter_type_moderate .head-filter__icon, .b-page_morda-redesign_yes.b-page_type_index .head-filter_type_family .head-filter__icon {filter: invert(0);}
 
 .header-favorites-button__link::before, .head-filter_type_unlimited .head-filter__icon, .head-filter_type_moderate .head-filter__icon, .head-filter_type_family .head-filter__icon {filter: invert(1);}
 
@@ -1619,6 +1623,7 @@ body, .b-page__body {background: #222; color: #eee; font-family: 'YS Text', Aria
 a.user-account_hovered_yes {color: #e85253;}
 
 /* Tabs Navigation */
+.serp-header__under.serp-header__under {background-color: #222;}
 .serp-header .yaplus, .tabs-navigation {font-family: 'YS Text', Arial, Helvetica, sans-serif;}
 .tabs-navigation {background-color: #222;}
 .tabs-navigation.tabs-navigation .tabs-navigation__tab.tabs-navigation__tab:hover {color: #e85253 !important;}
@@ -1641,6 +1646,9 @@ a.user-account_hovered_yes {color: #e85253;}
 .advanced-search_light_yes .check-button_theme_light.check-button_hovered_yes {color: #e85253;}
 
 /* New */
+.AdvancedSearchContent-Filters:not(.AdvancedSearchContent-Filters_extended) .AdvancedSearchContent-FiltersInner:after, .AdvancedSearchContent-Switcher:after {background-color: #333;}
+.Icon_type_filters.Icon_tone_gray {filter: invert(1);}
+
 .b-page_advanced-search_new.b-page_type_search .b-page__advanced-search {background-color: #222;}
 .Theme_color_yandex-default .Button2_view_raised {color: #eee;}
 .Theme_color_yandex-default .Button2_view_raised:before {background-color: #333;}
@@ -1649,8 +1657,11 @@ a.user-account_hovered_yes {color: #e85253;}
 
 /* Tags */
 .tags.tags_position_header {background: #222;}
+.b-page.b-page_type_search .b-page__advanced-search {background: #222;}
 .carousel_controls-theme_circles.carousel.carousel.carousel .carousel__control_theme_circles.carousel__control_semicircles:before {background-color: #333;}
 .carousel_controls-theme_circles.carousel .carousel__control_theme_circles:after {filter: invert(1);}
+.Carousel .Carousel-Left:before, .Carousel .Carousel-Right:before {background-color: #222;}
+.Icon_type_arrow.Icon_size_m {filter: invert(1);}
 
 /* ===== Pop-Up ===== */
 .tooltip_theme_light {background: #333;}
@@ -1746,6 +1757,9 @@ a.user-account_hovered_yes {color: #e85253;}
 .Theme_root_default.Theme_color_yandex-default .Textinput_view_default .Textinput-Box {border-color: #444;}
 .Theme_color_yandex-default .Textinput_view_default.Textinput_hovered .Textinput-Box[class] {background-color: #333; border-color: #555;}
 .Theme_color_yandex-default .Textinput.Textinput_view_default.Textinput_focused .Textinput-Box[class] {border-color: #666;}
+
+.Theme_color_yandex-default .Button2.Button2_view_raised[aria-disabled=true]:before {background-color: #383838; color: #666;}
+.FilterCustomSize-Button.Button2_view_raised:before {background-color: #444;}
 
 /* ===== Search Page ===== */
 .notice {background: #383f48;}

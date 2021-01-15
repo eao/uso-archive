@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           OLD new VK v1.0.2
+@name           OLD new VK v1.0.3
 @namespace      USO Archive
 @author         jakill02
 @description    `частично Имитирует Старый (Белый) дизайн Вконтакте, частично более новый, существовавший до Декабря 2020-го года, плюс некоторые изменения от автора, вроде отключённой вредной опции (пожаловаться) которая только мешается и которую можно нажать невзначай :Dтут: https://greasyfork.org/ru/scripts/419915 вы можете установить дополнительный Скрипт, который расширит функционал данного Стиля.`
-@version        2021112.1.1
+@version        2021114.20.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
-/* OLD new VK v1.0.2 */
+/* OLD new VK v1.0.3 */
 
         /*  страница Стиля: https://userstyles.org/styles/195679  */
 
@@ -17,7 +17,7 @@
 
 /*№№№№№№№№№№ Классические шрифты Вконтакте + белый фон №№№№№№№№№№*/
 body {
-    background: #ffffff !important;
+    background: #ffffff !important;  /*Дефолтный цвет ВК #EDEEF0 , Белый Цвет #ffffff */
     margin: 0;
     padding: 0;
     direction: ltr;
@@ -262,6 +262,8 @@ body.new_header_design .top_audio_player:hover .top_audio_player_title {
 /* Подсветка пнопок Топ плеера */
 button.top_audio_player_btn {filter: brightness(2.4);}
 
+/* Позицианирование ТопАудиоплеера по отношению к Шапке */
+[dir=ltr] .audio_layer_container {margin-top: -1px !important;}
 
 /* Позицианирование Иконки Ноты в неиспользованном ТопАудиоплеере */
 a#top_audio.top_nav_btn._top_nav_audio_btn {margin-top: 1px;}
@@ -367,6 +369,25 @@ body.new_header_design #side_bar .left_label {
 
 
 /*№№№№№№№№№№№№№№№№№№№№№№№ ЦВЕТА №№№№№№№№№№№№№№№№№№№№№№№№№№№*/
+
+/* Контур Скруглённого заголовока (Все записи, Мои записи, Архив записае) - Цвет */
+.wall_module .ui_tabs {
+    box-shadow: 1.0px 0 0 0 rgba(203, 203, 203, .5), 0 -1.0px 0 0 rgba(203, 203, 203, .5), 
+    -1.0px 0 0 0 rgba(203, 203, 203, .5); border-bottom: 1px solid rgba(203, 203, 203, .5);
+     border-radius: 4px 4px 0px 0px;}
+
+/* Скруглённые Контуры Заголовков */
+#profile_friends .module_header, #profile_gifts .module_header, 
+#profile_photos_module .module_header, #profile_idols .module_header
+{box-shadow: 1.0px 0 0 0 rgba(203, 203, 203, .5), 0 -1.0px 0 0 rgba(203, 203, 203, .5), 
+            -1.0px 0 0 0 rgba(203, 203, 203, .5), inset 0 -0.5px 0 0 rgba(114, 114, 114, .3);
+            border-radius: 4px 4px 0px 0px;}
+
+/* Прямые Контуры Заголловков */
+#profile_friends_online .module_header, #profile_albums .module_header, 
+#profile_videos .module_header, #profile_audios .module_header
+{box-shadow: 0 0 0px 1px rgba(203, 203, 203, .5), 0 1px 0 0 rgba(203, 203, 203, .5); 
+border-radius: 0px 0px 0px 0px;}
 
 /* Заголовки цветом*/
 .module_header {background: #F0F2F5 !important;}
@@ -841,10 +862,11 @@ background-position-y: 2px !important;   /* "def.-60px " позиция в ст�
 
 /* Иконка - Экспресс (мой) */
 [dir] body.new_header_design #side_bar #l_fortune .left_icon {
-    background-image: url(https://i114.fastpic.ru/big/2021/0109/84/b56915e620205a74bb4c8871a1a0ef84.png )!important;
+    background-image: url(https://i114.fastpic.ru/big/2021/0113/e6/05c8286f7aefb569f72e389605fe55e6.png )!important;
 background-position-x: 1px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
 background-position-y: -1px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
-    filter: opacity(65%) invert(20%)!important;
+    filter: opacity(75%);
+    -o-filter: opacity(65%) invert(20%)!important;
   background-size: initial;
       background-attachment: initial;
       background-origin: initial;

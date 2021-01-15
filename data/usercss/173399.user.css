@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `LinkedIn Dark ThemeOthers were broken or incomplete, I tried my best to make this not be.To report issues, please use https://github.com/Jordy3D/Jordy3D.github.io/issuesUserStyles is dreadful.`
-@version        20201224.13.59
+@version        2021115.1.17
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -26,6 +26,8 @@
 .news-storyline__update-outlet,
 
 .container-with-shadow, .search-reusables__filters-bar-grouping,
+
+.theme--mercado .pv-top-card__edit-photo,
 
 /*Loading*/
 #app-boot-bg .line, .loading-bg .line,
@@ -111,6 +113,9 @@
 .search-results-loader__filter-block,
 
 .theme--mercado .social-details-first-prompt-block,
+
+.pe-add-featured-item__item,
+.pab-featured-item-detail__image-container, .pab-featured-item-detail__image-icon, .pab-featured-item__image-icon,
 
 /*Loading*/
 #app-boot-bg .feed-profile, .loading-bg .feed-profile,
@@ -207,6 +212,11 @@ theme--mercado .org-page-navigation--vertical .org-page-navigation__item .org-pa
 .pv-skills-prompt__canditate:hover,
 
 .search-typeahead-v2 .basic-typeahead__triggered-content,
+.theme--mercado .pab-featured-item-detail,
+
+button.mt3,
+
+.artdeco-button--inverse.artdeco-button, .artdeco-button--inverse.artdeco-button--primary, .artdeco-button--inverse.artdeco-button--primary:focus, .artdeco-button--inverse.artdeco-button--primary:hover, .artdeco-button--inverse.artdeco-button--primary:visited, .artdeco-button--inverse.artdeco-button--primary:visited:hover, .artdeco-button--inverse.artdeco-button:focus, .artdeco-button--inverse.artdeco-button:hover, .artdeco-button--inverse.artdeco-button:visited, .artdeco-button--inverse.artdeco-button:visited:hover, .artdeco-button--inverse.peek-carousel-controls__button, .artdeco-button--inverse.peek-carousel-controls__button:focus, .artdeco-button--inverse.peek-carousel-controls__button:hover, .artdeco-button--inverse.peek-carousel-controls__button:visited, .artdeco-button--inverse.peek-carousel-controls__button:visited:hover,
 
 /*Not Signed In*/
 .learning-cta__label,
@@ -470,6 +480,8 @@ li-icon,
 
 .entity-result__title-text--black a, .entity-result__title-text--black a:visited,
 
+.label-16dp, .label-inverse,
+
 /*Learning*/
 .secondary-nav-bar__link,
 
@@ -604,6 +616,11 @@ input, input:required:invalid, input:required:valid, input[type=date], input[typ
   border-bottom:  3px solid #057642 !important;
 }
 
+.artdeco-completeness-meter-circular--color-positive .artdeco-completeness-meter-circular__fill-ring
+{
+  border-color: #057642 !important;
+}
+
 #voyager-feed
 {
   padding-top: 25px !important;
@@ -622,7 +639,9 @@ input, input:required:invalid, input:required:valid, input[type=date], input[typ
   padding: 5px;
 }
 
-.recommendation-carousel-card
+.recommendation-carousel-card,
+
+.pv-top-card__edit-photo .profile-photo-edit__preview
 {
   border-radius: 10px;
 }

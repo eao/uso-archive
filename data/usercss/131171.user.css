@@ -2,8 +2,8 @@
 @name           Feedly - Full width grid view
 @namespace      USO Archive
 @author         Erimus Koo
-@description    `2019-12-01 - Support 4k screen2017-08-06 - full artical width & icons2017-07-08 - update header (reduce icons)2017-05-23 - fixed 'save to board' btn which hovered on card.Hey, guys, its the new version, so I have not check all the part of the style, just wrote the part I used.And feedly offical css style is changes every some days. I use feedly almost daily, so I'll fixed it in short time. If there is some where you found strange, you can leave msg to me.# log* for 2016/8/8 test version, it looks coming soon.* 2016/12/04, it looks update the version again. so, made a little update and i start use this one.* 2016/12/15, update the top right botton groups.`
-@version        2021112.14.18
+@description    `2021-01-12 - few updates2019-12-01 - Support 4k screen2017-08-06 - full artical width & icons2017-07-08 - update header (reduce icons)2017-05-23 - fixed 'save to board' btn which hovered on card.Hey, guys, its the new version, so I have not check all the part of the style, just wrote the part I used.And feedly offical css style is changes every some days. I use feedly almost daily, so I'll fixed it in short time. If there is some where you found strange, you can leave msg to me.# log* for 2016/8/8 test version, it looks coming soon.* 2016/12/04, it looks update the version again. so, made a little update and i start use this one.* 2016/12/15, update the top right botton groups.`
+@version        2021114.15.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -80,10 +80,12 @@
 /* card selected */
 .fx .entry.selected { border: none!important; }
 .fx .entry.selected .visual { border: 1px solid #F69; }
+
+/* card action button */
+.entry__toolbar>*{margin:2px}
 /* fix save to board */
-.fx .entry.u5 .tag-button { margin: 2px; }
-.fx .entry.u5 .tag-button > .button-dropdown > button { width: 26px; }
-.fx .tag-button > .button-dropdown > button.dark:hover { background-color: rgba(0, 0, 0, .5); }
+button[title="Save to board"]{margin:0!important}
+
 /* text */
 .fx .entry.u5 .content { height: 80px; line-height: 20px; margin: 5px 0 }
 /* ellipsis source */

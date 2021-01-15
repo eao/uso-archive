@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Saarim Shahid
 @description    `A theme for: tiktok.comUpdated very regularly!Please report issues here: http://m.me/sir.saarim.<a href="http://m.me/sir.saarim">Report Issue</a>`
-@version        202118.12.25
+@version        2021114.12.57
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -88,7 +88,8 @@ header .help-container .help-item,
 .app-promotion.jsx-3979932517 > span.jsx-3979932517,
 .inbox-content-header.jsx-2344352055 span.jsx-2344352055,
 .header-container.middle.jsx-1217828260,
-.app-promotion.jsx-3770168929 > span.show.jsx-3770168929 {
+.app-promotion.jsx-3770168929 > span.show.jsx-3770168929,
+.sug-container.jsx-26401869 {
 	background-color: #1D1E1F !important;
 }
 
@@ -248,6 +249,11 @@ circle {
 	background-color: red!important;
 }
 
+.sug-item.active.jsx-972420148:hover,
+.result-item.jsx-219294543:hover {
+	background-color: #000!important;
+}
+
 ._user_carousel_list-item.jsx-3854515938:hover,
 .recommend-card.jsx-3248104642:hover,
 .recommend-card.jsx-1370307881:hover,
@@ -353,7 +359,8 @@ header .help-container .help-item img,
 
 .comment-input-inner-wrapper.jsx-3076546058,
 .comment-input-inner-wrapper.jsx-780136105,
-.comment-input-inner-wrapper.jsx-1180591303 {
+.comment-input-inner-wrapper.jsx-1180591303,
+.search-input.jsx-1746001420 {
 	background-color: #444
 }
 
@@ -539,7 +546,8 @@ span,
 .wrap-content_3A4-J .desc_3TEXJ,
 .wrap-content_1wZWo .carousel-text-desc_3rM6a,
 .wrap-content_1wZWo .carousel-text-reason_23Lc3,
-font {
+font,
+.search-input.jsx-1746001420 input.with-icon.jsx-1746001420 {
 	color: aliceblue !important
 }
 }

@@ -3,13 +3,66 @@
 @namespace      USO Archive
 @author         qmqz
 @description    `Dark theme for TheDonald website.`
-@version        20201121.5.38
+@version        2021114.16.6
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("thedonald.win") {
+@-moz-document domain("thedonald.win"), domain("greatawakening.win") {
 html, body, .main-content, .home .container, .search .container, .post-single .container, .profile .container, .page .container, .logs .container, .comment .details a[data-action=minimize] {
 	background-color: #323232;	
+}
+
+.comment-parent .title {
+    color: #42a9fb;
+}
+
+.comment-parent .author {
+    color: #f3d01f;
+}
+
+.post .vote a[data-direction=down] {
+    -webkit-tap-highlight-color: transparent;
+    display: block;
+    margin: 0 auto 5px;
+    background-image: url(https://i.imgur.com/IN0VHwl.png);
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 43px;
+}
+
+.post-list .content {
+    margin: 8px 0 0 174px;
+}
+
+.post .vote {
+    display: inline-flex;
+}
+
+.post .vote .count {
+	min-width: 50px;
+    font-size: 18px;
+    padding-top: 16px;
+}
+
+.post .vote a[data-direction=down], .post .vote a[data-direction=up]  {
+    font-size: 18px;
+    margin-left: 8px;
+     margin-top: 0px;
+}
+
+.post .vote a[data-direction=up] {
+	margin-right: 8px;
+    margin-top: 0px!important;
+}
+
+.post .vote a[data-direction=down] {
+    margin-top: 0px!important;
+}
+
+.message-entry.unread {
+    background-color: #474747;
+    border: 1px solid #090909;
+    padding: 0px;
 }
 
 .form.reply textarea {

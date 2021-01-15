@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         CadetSparklez
 @description    `A fork of WCCF Tech NightmodeWork in progress`
-@version        20201212.19.6
+@version        2021114.19.25
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -247,22 +247,204 @@ body > main > aside:nth-child(2) > div > section.sticky-mobile > h2
     border-color: #0fa6f3;
 }
 
+/* for now */
+html body.home.blog main.wrap.clearfix div.clearfix section.content article.post:hover  h2:nth-child(n) > a:nth-child(n):not(:hover) 
+{
+    color:#dddddd;
+}
+
+article.post:nth-child(n) > div:nth-child(n):hover  h2:nth-child(n) > a:nth-child(n):not(:hover) 
+{
+    color:#dddddd;
+}
+
+article.post:nth-child(n):hover  div:nth-child(n) > h3:nth-child(n) > a:nth-child(n):not(:hover) 
+{
+    color:#dddddd;
+}
+
+/*
+html body.home.blog main.wrap.clearfix div.clearfix section.content article.post.post-1238646.clearfix div.thumb a img.attachment-thumbnail.size-thumbnail.wp-post-image:hover article.post:nth-child(n) > div:nth-child(n) > h2:nth-child(n) > a:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+*/
+
+/*
+article.post:nth-child(n) > div:nth-child(n) > a:nth-child(n) > img:nth-child(n):hover  h2:nth-child(n) > a:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+*/
+
 aside.aside:nth-child(10) > h2:nth-child(1)
 {
     text-align: center;
     /* padding-left: 280px; */
-    padding-bottom: 20px;
+    /*padding-bottom: 20px; */
 }
 
 /*            Exists Twice            */
-aside.aside:nth-child(n) > h2:nth-child(n) > a:nth-child(n)
+aside.aside:nth-child(10) > h2:nth-child(1) > a:nth-child(1)
 {
     color:#0cc;
-    padding-right: 254px;
+    /* padding-right: 254px;
     padding-left: 254px;
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px;*/
     background-color: #292929;
+}
+
+/*               Event Only             */
+
+#eventcontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > div:nth-child(n):hover
+{
+    color: #dddddd;
+}
+
+#eventcontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n):hover  h3:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+
+#eventcontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > h3:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+
+#eventcontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > div:nth-child(n):hover
+{
+    color: #dddddd;
+}
+
+#eventcontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n):hover  h3:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+
+#eventcontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > h3:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+
+.eventaccordian  input:checked + label
+{
+    background-color: #121212;
+    color: #FFFFFF;
+    border: 1px solid #ddd;
+    /*    border-top-color: rgb(221, 221, 221);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-bottom-color: rgb(221, 221, 221);
+        border-bottom-style: solid;
+        border-bottom-width: 1px; */
+    border-top: 2px solid #00aaaa;
+    border-bottom: 1px solid #fafafa;
+}
+
+.eventaccordian > label:nth-child(n)
+{
+     border: 1px solid #777777; 
+    /* border-top: 2px solid #DD2255; */
+    border-top: 2px solid #005960;
+    border-bottom: 1px solid #fafafa;
+}
+
+.eventaccordian  > label:nth-child(2)
+{
+     border-right: 1px solid #232323; 
+}
+
+.eventaccordian  > label:nth-child(4)
+{
+     border-left: 1px solid #232323; 
+}
+#eventcontent1 > ul:nth-child(n) > li:nth-child(n) > h3:nth-child(n) > a:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+
+#eventcontent2 > ul:nth-child(n) > li:nth-child(n) > h3:nth-child(n) > a:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+/*
+#eventcontent3 > ul:nth-child(n) > li:nth-child(n) > h3:nth-child(n) > a:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+*/
+#eventcontent1 > a:nth-child(2):hover
+{
+    background-color:  #191919;
+    color:  #00FFFF;
+}
+
+#eventcontent1 > a:nth-child(2) 
+{
+    background-color:  #111111;
+    font-size: 20px;
+    color:  #00BBBB;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 0px 1px #00FFFF;
+    border-color:  #444444;
+    /*
+    outline-color:  #00AAAA;
+    */
+}
+/*
+.aside-event .more
+{
+     background-color:  #00AAAA;
+}
+*/
+#eventcontent2 > a:nth-child(2):hover
+{
+    background-color:  #191919;
+    color:  #00FFFF;
+}
+
+#eventcontent2 > a:nth-child(2)
+{
+    background-color:  #111111;
+    font-size: 20px;
+    color:  #00BBBB;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 0px 1px #00FFFF;
+    border-color:  #444444;
+    /*
+    outline-color:  #00AAAA;
+    */
+}
+
+#dealscontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > div:nth-child(n):hover
+{
+    color: #dddddd;
+}
+
+#dealscontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n):hover  h3:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+
+#dealscontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > h3:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+
+#dealscontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > div:nth-child(n):hover
+{
+    color: #dddddd;
+}
+
+#dealscontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n):hover  h3:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+
+#dealscontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > h3:nth-child(n):hover
+{
+    color:#00FFFF;
 }
 
 .dealsaccordian input:checked + label
@@ -356,6 +538,11 @@ aside.aside:nth-child(n) > h2:nth-child(n) > a:nth-child(n)
     /*
     outline-color:  #00AAAA;
     */
+}
+
+aside.aside:nth-child(23) > h2:nth-child(1) > a:nth-child(1) > img:nth-child(1)
+{
+    padding-top:  10px;
 }
 
 .sidebar section h3 span {
@@ -1128,22 +1315,211 @@ body > main > aside:nth-child(2) > div > section.sticky-mobile > h2
     border-color: #0fa6f3;
 }
 
+/* for now */
+html body.home.blog main.wrap.clearfix div.clearfix section.content article.post:hover  h2:nth-child(n) > a:nth-child(n):not(:hover) 
+{
+    color:#dddddd;
+}
+
+article.post:nth-child(n) > div:nth-child(n):hover  h2:nth-child(n) > a:nth-child(n):not(:hover) 
+{
+    color:#dddddd;
+}
+
+article.post:nth-child(n):hover  div:nth-child(n) > h3:nth-child(n) > a:nth-child(n):not(:hover) 
+{
+    color:#dddddd;
+}
+
+/*
+html body.home.blog main.wrap.clearfix div.clearfix section.content article.post.post-1238646.clearfix div.thumb a img.attachment-thumbnail.size-thumbnail.wp-post-image:hover article.post:nth-child(n) > div:nth-child(n) > h2:nth-child(n) > a:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+*/
+
+/*
+article.post:nth-child(n) > div:nth-child(n) > a:nth-child(n) > img:nth-child(n):hover  h2:nth-child(n) > a:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+*/
+
 aside.aside:nth-child(10) > h2:nth-child(1)
 {
     text-align: center;
     /* padding-left: 280px; */
-    padding-bottom: 20px;
+    /*padding-bottom: 20px; */
 }
 
 /*            Exists Twice            */
-aside.aside:nth-child(n) > h2:nth-child(n) > a:nth-child(n)
+aside.aside:nth-child(10) > h2:nth-child(1) > a:nth-child(1)
 {
     color:#0cc;
-    padding-right: 254px;
-    padding-left: 254px;
+    /* padding-right: 254px;
+    padding-left: 254px; 
     padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 5px; */
     background-color: #292929;
+}
+
+/*               Event Only             */
+
+#eventcontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > div:nth-child(n):hover
+{
+    color: #dddddd;
+}
+
+#eventcontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n):hover  h3:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+
+#eventcontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > h3:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+
+/*
+#eventcontent1 > ul:nth-child(1):hover
+{
+    color:#00FFFF;
+}
+*/
+
+#eventcontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > div:nth-child(n):hover
+{
+    color: #dddddd;
+}
+
+#eventcontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n):hover  h3:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+
+#eventcontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > h3:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+
+.eventaccordian  input:checked + label
+{
+    background-color: #121212;
+    color: #FFFFFF;
+    border: 1px solid #ddd;
+    /*    border-top-color: rgb(221, 221, 221);
+        border-top-style: solid;
+        border-top-width: 1px;
+        border-bottom-color: rgb(221, 221, 221);
+        border-bottom-style: solid;
+        border-bottom-width: 1px; */
+    border-top: 2px solid #00aaaa;
+    border-bottom: 1px solid #fafafa;
+}
+
+.eventaccordian  > label:nth-child(n)
+{
+     border: 1px solid #777777; 
+    /* border-top: 2px solid #DD2255; */
+    border-top: 2px solid #005960;
+    border-bottom: 1px solid #fafafa;
+}
+
+.eventaccordian > label:nth-child(2)
+{
+     border-right: 1px solid #232323; 
+}
+
+.eventaccordian > label:nth-child(4)
+{
+     border-left: 1px solid #232323; 
+}
+#eventcontent1 > ul:nth-child(n) > li:nth-child(n) > h3:nth-child(n) > a:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+
+#eventcontent2 > ul:nth-child(n) > li:nth-child(n) > h3:nth-child(n) > a:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+/*
+#eventcontent3 > ul:nth-child(n) > li:nth-child(n) > h3:nth-child(n) > a:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+*/
+#eventcontent1 > a:nth-child(2):hover
+{
+    background-color:  #191919;
+    color:  #00FFFF;
+}
+
+#eventcontent1 > a:nth-child(2) 
+{
+    background-color:  #111111;
+    font-size: 20px;
+    color:  #00BBBB;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 0px 1px #00FFFF;
+    border-color:  #444444;
+    /*
+    outline-color:  #00AAAA;
+    */
+}
+/*
+.aside-event .more
+{
+     background-color:  #00AAAA;
+}
+*/
+#eventontent2 > a:nth-child(2):hover
+{
+    background-color:  #191919;
+    color:  #00FFFF;
+}
+
+#eventcontent2 > a:nth-child(2)
+{
+    background-color:  #111111;
+    font-size: 20px;
+    color:  #00BBBB;
+    border: 2px solid #000;
+    box-shadow: 0px 0px 0px 1px #00FFFF;
+    border-color:  #444444;
+    /*
+    outline-color:  #00AAAA;
+    */
+}
+
+#dealscontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > div:nth-child(n):hover
+{
+    color: #dddddd;
+}
+
+#dealscontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n):hover  h3:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+
+#dealscontent1 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > h3:nth-child(n):hover
+{
+    color:#00FFFF;
+}
+
+#dealscontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > div:nth-child(n):hover
+{
+    color: #dddddd;
+}
+
+#dealscontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n):hover  h3:nth-child(n):not(:hover) 
+{
+    color:#00FFFF;
+}
+
+#dealscontent2 > ul:nth-child(1) > li:nth-child(n) > a:nth-child(n) > h3:nth-child(n):hover
+{
+    color:#00FFFF;
 }
 
 .dealsaccordian input:checked + label
@@ -1237,6 +1613,11 @@ aside.aside:nth-child(n) > h2:nth-child(n) > a:nth-child(n)
     /*
     outline-color:  #00AAAA;
     */
+}
+
+aside.aside:nth-child(23) > h2:nth-child(1) > a:nth-child(1) > img:nth-child(1)
+{
+    padding-top:  10px;
 }
 
 .sidebar section h3 span {
