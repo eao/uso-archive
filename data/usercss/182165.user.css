@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.toppoal.cosaidit.netvoat.co - (RIP 20201225)communities.win + subdomainsconspiracies.wingreatawakening.winthedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/`
-@version        2021115.22.11
+@version        2021116.3.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -2068,7 +2068,7 @@ div#sr-header-area a:hover,
 .link:hover > .entry .title .domain a:hover,
 .md a:hover,
 .morelink a:hover,
-/*conspiracies.win*/.nav-main .inner a:hover,
+/*conspiracies.win*/.nav-main .inner a:hover,.popup-select a:hover,
 .pref-lang.choice:hover,
 .read-next-title:hover,
 .report-form-block-user a h3:hover, .report-form-block-user a p:hover,
@@ -2336,7 +2336,7 @@ div.boardlist a:active,
 .md p strong a:active,
 .menuarea .dropdown.lightdrop .selected:active,
 .morecomments a:active,
-/*conspiracies.win*/.actions a:active,.nav-main .inner a:active,
+/*conspiracies.win*/.actions a:active,.nav-main .inner a:active,.popup-select a:active,
 
 /*-------------------RES Nightmode Links-------------------*/
 .res-nightmode a:active,
@@ -2808,7 +2808,7 @@ Credit to u/CedricDur, 20201011*/
 .App__sidebar,
 .ReactModal__Overlay,
 /*4chan*/.jss261,.jss299,.jss606,
-/*conspiracies.win*/.shade,
+/*conspiracies.win*/.popup-select-background,.shade,
 ._12UrKOfuM441n-zHotruas,._2xA0SygQ9V-9Vkdad_4tnh,
 ._2vR2-7URvDAFSwQjhcvJ7m.r7zyyy152ZTdiHhea0cIj
 {
@@ -3088,6 +3088,7 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div section,
 #sr-header-area .dropdown.srdrop,
 #sr-header-area .width-clip,
 #sr-more-link,
+.brand-bar,
 .guider.res-ordinaryTip,
 .modal-dialog,
 .popover-title,
@@ -3111,6 +3112,16 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div section,
 {
     background:var(--RCBackgrounds)!important;
     background-color:var(--RCBackgrounds)!important;
+}
+
+/* *.win temporary Menubar*/
+.filter-bar.filter-bar-active
+{
+    transition:.4s;
+}
+.filter-bar.filter-bar-active:hover
+{
+    background:var(--RCBackgrounds)!important;
 }
 
 
@@ -3183,7 +3194,7 @@ table#srList[style="display: block;"],
 .modal-dialog,
 .nav-center .navbar-nav > li,
 .navbar .navbar-nav > li,
-/*conspiracies.win*/.popup-save.popup,.popup-captcha.popup,
+/*conspiracies.win*/.popup-save.popup,.popup-captcha.popup,.popup-select,
 .publisher-link li a,
 .ReactModal__Content,
 .report-modal .modal-content,

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Quite shitty StyleSheet I might say, quite difficult to change, but not impossible.`
-@version        202114.10.11
+@version        2021116.8.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -139,7 +139,7 @@ body:not(.device-mobile-optimized) ._22oPj[aria-disabled=false]:hover ._3fUtn {
 }
 }
 
-@-moz-document url-prefix("https://www.getgianni.com//specs") {
+@-moz-document url-prefix("https://www.getgianni.com//specs"), url-prefix("https://www.getgianni.com/specs") {
 p > span > span > span, a > span > span > span  {
 	color: #c2c2c2;
 }

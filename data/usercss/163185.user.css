@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Meant to be combined with (and installed after) <a href="https://userstyles.org/styles/86145/">crayon for mal</a>.`
-@version        20201229.12.23
+@version        2021116.8.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -314,7 +314,7 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 #horiznav_nav ul li a[href$="/moreinfo"].horiznav_active:before {font-size: 16px !important;}
 }
 
-@-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/anime\\/[^\\/]+\\/[^\\/]+\\/pics.*") {
+@-moz-document regexp("https://myanimelist.net/.*/.*/.*/pic.*") {
 /* Fixes for code changes to Anime/Manga pics page */
 
 .for-pc + #wrapper {width: 1234px !important;}

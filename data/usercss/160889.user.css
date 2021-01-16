@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `Github项目地址：https://github.com/QIUZAIYOU/Stylish1.常用页面夜间模式全覆盖2.去除垃圾元素`
-@version        2021111.3.51
+@version        2021116.5.18
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,7 +12,7 @@
     * © 版权信息
     * © 自用，上传只为保存
     * © 作者：QIUZAIYOU 
-    * © 最后更新：20210111
+    * © 最后更新：20210116
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -557,7 +557,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .TopicRelativeBoard-link,
     .zg-gray-normal,
     .zg-link-gray-normal,
-    .zg-link-gray {
+    .zg-link-gray,
+    .ContentItem-status {
         color: var(--color-66)!important
     }
     .post-link,

@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        2021115.2.24
+@version        2021116.4.2
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v6.5.3*/
+/* Dark Creator Studio v6.6*/
 /* Created by Leon Flame, edited by Lexan*/
 
 /* Dark Scrollbar*/
@@ -1094,6 +1094,10 @@ ytcp-checkbox-lit[indeterminate] #checkbox.ytcp-checkbox-lit, ytcp-checkbox-lit[
     stroke: var(--item-active-color);
 }
 
+ytcp-paper-tooltip-placeholder[type="custom-content"] #tooltip.ytcp-paper-tooltip-placeholder, ytcp-paper-tooltip-placeholder[type="menu"] #tooltip.ytcp-paper-tooltip-placeholder{
+    color: var(--text-darken2-color) !important;
+}
+
 /*Videos Tab*/
 #row-container.ytcp-video-row, #row-container.ytcp-video-row .floating-column.ytcp-video-row > .cell-body > ytcp-video-list-cell-video > div > h3 {
     color: var(--text-color) !important;
@@ -1656,6 +1660,10 @@ ytpp-channel-scorecard-table{
 }
 
 #notification-view-ratings.style-scope.ytpp-self-certification-questionnaire{
+    color: var(--accent-color);
+}
+
+#request-review-button.style-scope.ytpp-channel-scorecard-row{
     color: var(--accent-color);
 }
 

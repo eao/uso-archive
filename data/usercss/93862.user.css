@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         blk.
 @description    `Center main search column`
-@version        20201210.8.46
+@version        2021116.8.33
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -35,7 +35,7 @@ h3 {
     display: none!important;
 }
 
-.rc a:link {
+.tF2Cxc a:link {
     color: #004BCC!important;
 }
 
@@ -68,7 +68,7 @@ cite a:visited,
     justify-content: center;
 }
 
-.tsf,.lEXIrb {
+.tsf,.lEXIrb,#rcnt {
     width: 1000px!important;
     margin: auto!important;
 }
@@ -113,7 +113,7 @@ cite a:visited,
     margin-bottom: 8px!important;
     border-bottom: 1px solid #E0E0E0!important;
 }
-.rc {
+.tF2Cxc {
     width: 623px!important;
     background: #fff!important;
     -moz-border-radius: 5px!important;

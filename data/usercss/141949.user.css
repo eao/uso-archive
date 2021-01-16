@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MB48
 @description    `<b>Whitelist the website in your adblocker first, then install this style!</b> (this prevents site issues)<b>Dark Theme is optional and can be deactivated in "customize settings" above.</b><br>Cleans a popular anime image catalogue website off all current ads and visual disturbances.<br>Also includes a few minor tweaks like a bigger page selection at the bottom.<br>`
-@version        2021115.15.55
+@version        2021116.3.1
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown darktheme "Theme" {
@@ -53,12 +53,10 @@ body {
   .navbar .navbar-nav > li > a, .navSubmenu a, header a{
       color: #fff!important;
   }
-  #tag-list, .tag-list {
+  .aside {
+    color: #AAA!important;
     background-color: #333!important;
     border-right-color: #000!important;
-  }
-  .tag-list > li > span{
-    color: #AAA!important;
   }
   .tag-list li a{
     color: #4fc3f7;
@@ -156,7 +154,7 @@ body {
     line-height: 0px!important;
     opacity: 0.7
   }
-  aside {
+  .aside{
     color: #DDD!important;
     background-color: #333!important;
     border-right-color: #000!important;

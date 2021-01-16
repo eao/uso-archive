@@ -2,14 +2,14 @@
 @name           Twitch Dark Style by Strong_WTF
 @namespace      USO Archive
 @author         Strong_WTF
-@description    `Version: 0.9 (06.08.2020)[RU]Тема Twitch только для тёмного режима под новый дизайн.Свяжитесь со мной на твиче по нику Strong_WTF в случае обнаружения багов.[EN]Twitch theme only for dark mode for a new design.Contact me in Twitch by the nickname Strong_WTF in case of detection of bugs.`
-@version        202086.15.49
+@description    `Version: 1.0 (16.01.2021)[RU]Тема Twitch только для тёмного режима под новый дизайн.Свяжитесь со мной на твиче по нику Strong_WTF в случае обнаружения багов.[EN]Twitch theme only for dark mode for a new design.Contact me in Twitch by the nickname Strong_WTF in case of detection of bugs.`
+@version        2021116.11.46
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("twitch.tv") {
 /**                                                     **/
-/** Twitch Dark Style v0.9 by Strong_WTF **/
+/** Twitch Dark Style v1.0 by Strong_WTF **/
 /**                                                     **/
 
 :root {
@@ -31,6 +31,8 @@
 
 body {
     font-family: helvetica, sans-serif !important;
+    --color-text-tooltip-alt: hsla(0, 0%, 55%, 0.8);
+    --color-text-tooltip-alt-2: hsla(0, 0%, 55%, 0.8);
 }
 
 .tw-root--theme-dark body {
@@ -271,6 +273,11 @@ a {
     color: #1c1c1c;
 }
 
+/* sub stream */
+.tw-root--theme-dark .subscriber-stream-tag {
+    background-color: var(--purple1);
+}
+
 /* bits */
 .t-bits-card__footer, .tw-root--theme-dark .t-bits-card__footer, .tw-root--theme-light .t-bits-card__footer {
     background-color: var(--darkpurple);
@@ -282,7 +289,7 @@ a {
 
 /* avatar */
 .tw-avatar {
-    background-color: initial !important;
+    position: unset;
 }
 
 .tw-avatar__presence {
@@ -383,7 +390,7 @@ a {
 }
 
 .tw-toggle__input:checked+.tw-toggle__button {
-    background-color: var(--purple2);
+    background-color: var(--greybg);
 }
 
 .tw-badge--dashboard {

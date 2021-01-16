@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         pajamapop
 @description    `Comes in various parts! An extra is <i>barely</i> needed for Firefox. Customises and refines all aspects of the site. Optimised for symmetricality, friendly appearance and ease of use. Easily changeable background by <a href="https://userstyles.org/styles/169748/">installing another style</a>.<b>PS</b>. All ads and social media elements are removed ‎(ヽ`д´)┌┛★)`з゜)<b>*</b> This theme will put stats back on top for myanimelist profiles.`
-@version        20201229.12.16
+@version        2021116.8.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1088,6 +1088,7 @@ input[value="Vote Now"] + div a, .inputButton + #addtolistresult a, h2.mt8 + #ad
     padding-bottom: 1px !important;
     border-bottom: 2px solid #e0dee0 !important; }
 input[value="Vote Now"] + div {display: inline-block;margin-left: 4px !important;}
+h2.mt8 + #addtolist .inputButton + small a {padding-bottom: 2px !important;}
 
 /* Poll vote total */
 .forum_boardrow1 > table[cellspacing="5"] + div[style="text-align: center;"] + div,
@@ -1150,7 +1151,7 @@ textarea[class="textarea"][name="msg_text"] {min-height: 300px !important;}
 textarea[name="message"][class="textarea"] {min-height: 300px !important;}
 textarea[class="textarea"][name="profile_aboutme"] {min-height: 400px !important;}
 
-/* Tip/My Recs/Add Another */
+/* Tip, My Recs, Add Another */
 #recarea .spaceit_pad small {
     background: rgba(var(--colorGreen));
     color: white;
@@ -1264,7 +1265,7 @@ div[id^="ad"] > iframe, div[id^="google_ads"],
 div[style="margin:0 padding:0; padding-bottom:20px;"],
 .ad-sticky-wrapper, .ad-tag, .mal-ad-unit, #headerSmall + a,
 div.popup-background, .banner-footer-anime-streaming, #tbl-next-up,
-.amazon-ads
+.amazon-ads, .footer-app
     {display: none !important;}
 
 #ad-skin-left, #ad-skin-right {height: 0 !important;width: 200px !important;}
@@ -1914,6 +1915,7 @@ div[class*="-search-form-search"] .inputButton {
 /* Notification Settings */
 .settings-notification label {border-radius: 3px !important;}
 .settings-notification .button, .settings-notification label:before {font-family: Segoe UI !important;}
+.notification-setting-content .settings-notification {margin: 0 auto;width: 100%;}
 
 /* Blue */
 .settings-notification label {border: 1px solid rgba(var(--colorBlue)) !important;color: rgba(var(--colorBlue)) !important;}
@@ -2055,6 +2057,7 @@ tr td[valign="top"][width="25"], tr td[valign="top"][width="25"] + td + td td[va
     min-width: 50px;
     max-width: 50px; }
 td[valign="top"] > a[href^="/people/"] + br + small {display: inline-block;padding: 3px 0;} /* Language (Char/VA) */
+.h3_characters_voice_actors {font-size: 13px !important;}
 
 /* Staff */
 td[width="25"][valign="top"][class="borderClass bgColor1"] {background: none !important;}
@@ -2442,7 +2445,7 @@ h2 > .floatRightHeader + br + label {position: relative;top: -11px;margin-left: 
 
 /* 'Popup for Edit Details' script fix */
 #addtolist .inputButton + small .button_add {
-    display: inline !important; color: rgba(var(--colorTextLink)) !important;
+    display: inline-block !important; color: rgba(var(--colorTextLink)) !important;
     margin: 0 0 0 3px !important; padding: 0 0 1px !important; }
 #addtolist .inputButton + small .button_add:hover {color: rgba(var(--colorBlue)) !important;transition: 0.2s !important;}
 }
@@ -2806,7 +2809,7 @@ td[class="borderClass bgColor1"][width="30"] {border-radius: 0 0 0 5px;}
 td[class="borderClass bgColor1"][width="30"] + td + td {border-radius: 0 0 5px 0;}
 
 /* Spacing fix (Character pages) */
-#horiznav_nav ul li:first-of-type a[href*="/character/"] {margin-right: 6px !important;}
+#horiznav_nav ul li:first-of-type a[href*="/character/"].horiznav_active {margin-right: 6px !important;}
 
 /* Text alignment (Right aligned images) */
 tr td[valign="top"][align="right"][nowrap=""]:nth-child(3) {padding-right: 0 !important;}
@@ -4037,6 +4040,9 @@ h5 + .stat-score div[class$="fs12 fw-b"] {font-size: 13px !important;font-weight
     opacity: 0; transition: 0.9s; }
 .user-statistics-stats .updates:hover .data .graph-content .fn-grey2 {opacity: 1 !important;transition: 0.3s;}
 
+/* 'Watching · 44/104' */
+.updates .fn-grey2 .text:first-of-type:before {content: "· ";font-size: 10px;font-weight: normal;color: #787878;}
+
 /* Title length */
 .statistics-updates .data > a {
     display: inline-block;
@@ -5141,6 +5147,7 @@ h4 > a[href$="/friends"] {left: 352px !important;}
     padding: 7px 8px 8px !important; margin-top: 0 !important;
     border: none !important; border-bottom: 2px solid rgba(var(--colorBackground)) !important; }
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(2) {top: 9px !important;left: 390px !important;}
+.user-status.border-top.mt12.mb12 a[href$="/reviews"] span:hover {box-shadow: var(--colorLightShadow);}
 
 /* Recommendations */
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {left: 456px !important;}
@@ -5168,6 +5175,7 @@ h4 > a[href$="/friends"] {left: 352px !important;}
     padding: 7px 8px 8px !important; margin-top: 0 !important;
     border: none !important; border-bottom: 2px solid rgba(var(--colorBackground)) !important; }
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(3) {top: 10px !important;left: 455px !important;}
+.user-status.border-top.mt12.mb12 a[href$="/recommendations"] span:hover {box-shadow: var(--colorLightShadow);}
 
 /* Fixes for code being different on recommendations page */
 .container-left {display: table-cell !important;position: relative;top: -11px;left: -9px;}
@@ -5188,6 +5196,7 @@ h4 > a[href$="/friends"], h4 > a[href$="/friends"]:hover {left: 353px !important
     padding: 7px 8px 8px !important; margin-top: 0 !important;
     border: none !important; border-bottom: 2px solid rgba(var(--colorBackground)) !important; }
 .user-status.border-top.mt12.mb12 li.link:nth-of-type(5) {top: 9px !important;left: 578px !important;}
+.user-status.border-top.mt12.mb12 a[href$="/clubs"] span:hover {box-shadow: var(--colorLightShadow);}
 }
 
 @-moz-document regexp("^https:\\/\\/myanimelist\\.net\\/profile\\/[^\\/]+\\/friends.*") {
@@ -5201,6 +5210,7 @@ h4 > a[href$="/friends"], h4 > a[href$="/friends"]:hover {
     border: none !important; border-bottom: 2px solid rgba(var(--colorBackground)) !important; }
 h4 > a[href$="/friends"] {top: -1px !important;left: 350px !important;}
 h4 > a[href$="/friends"]:before {color: white !important;}
+h4 > a[href$="/friends"]:hover {box-shadow: var(--colorLightShadow);}
 }
 
 @-moz-document url-prefix("https://myanimelist.net/watch/"), regexp("^https:\\/\\/myanimelist\\.net\\/anime\\/[^\\/]+\\/[^\\/]+\\/episode.*"), regexp("^https:\\/\\/myanimelist\\.net\\/anime\\/[^\\/]+\\/[^\\/]+\\/video.*") {
@@ -5451,7 +5461,7 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 .goodresult {margin: 25px 0 -20px !important;}
 }
 
-@-moz-document url-prefix("https://myanimelist.net/history/"), url-prefix("https://myanimelist.net/blog.php?"), regexp("^https:\\/\\/myanimelist\\.net\\/anime\\/[^\\/]+\\/[^\\/]+\\/pics.*"), regexp("^https:\\/\\/myanimelist\\.net\\/character\\/[^\\/]+\\/[^\\/]+\\/pictures.*"), regexp("^https:\\/\\/myanimelist\\.net\\/people\\/[^\\/]+\\/[^\\/]+\\/pictures.*") {
+@-moz-document url-prefix("https://myanimelist.net/history/"), url-prefix("https://myanimelist.net/blog.php?"), regexp("https://myanimelist.net/.*/.*/.*/pic.*") {
 /* Fixes for code changes related to mobile/PC */
 
 .for-pc + #wrapper > #header {border: none !important;height: auto !important;margin: inherit !important;padding: inherit !important;}
@@ -5459,7 +5469,6 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 .for-pc + #wrapper > #header .non-link, .for-pc + #wrapper > #header .header-profile .header-profile-dropdown ul li:first-child a {font-size: 14px !important;}
 .for-pc .header-profile .header-profile-dropdown ul li:first-child a {padding-bottom: 15px !important;} /* 'Profile' */
 .for-pc + #wrapper > #header #nav li a {line-height: 36px !important;}
-.for-pc.h1.edit-info .h1-title {width: 867px !important;} /* 'Edit ??? Information' */
 
 .page-history #contentWrapper, .h1 a, .page-rwd .rwd-font-verdana ul a, .page-rwd.page-blog-detail #content {font-family: Segoe UI !important;}
 
@@ -5470,6 +5479,10 @@ tr:first-child > td[valign="top"][width="225"]:first-child + td #horiznav_nav {m
 body {word-break: unset !important;} /* Weird fix for 'Add to list' box */
 
 .for-pc .header-right a {font-size: 13px !important;font-weight: bold !important;} /* Right aligned text */
+
+.for-pc.h1.edit-info .h1-title {width: 867px !important;} /* 'Edit ??? Information' */
+
+/* History, Blog, Anime/Manga page pictures, Character pictures, VA pictures */
 }
 
 @-moz-document url-prefix("https://myanimelist.net/anime/season"), url-prefix("https://myanimelist.net/anime/genre"), url-prefix("https://myanimelist.net/anime/producer"), url-prefix("https://myanimelist.net/manga/genre"), url-prefix("https://myanimelist.net/manga/magazine") {

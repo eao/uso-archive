@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         msjanny
 @description    `Provides a few quality-of-life improvements for the battling system on <a href="http://www.furvilla.com/">FurVilla</a>:<br><ul><li>Condenses the page (less scrolling).  <li>Opens the opponent's stats automatically.  <li>Moves up the candycorn button; allows you to continue battling without exiting the modal.  <li>Use your consumables at the end of the battle even when the modal is open.  <li>Numbers the first page of the tourney leaderboard.  <li>Moves the "Begin scrapping" button on blacksmith pages; allows you to continue scrapping without exiting the modal.</ul>Under Customize Settings, you can number all pages of the leaderboard, disable the sliding animation, and move the end-of-battle stats up (ideal for shorter screens).<br>Please direct any comments, questions, concerns, issues, feedback, etc. <a href="http://www.furvilla.com/forums/thread/62734">here.</a>`
-@version        2020719.23.36
+@version        2021116.1.47
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown counter "Number the leaderboard" {
@@ -120,7 +120,7 @@ header .search-form {
 }
 /* hiding unnecessary content - alerts, logo, header, ads, shopkeeper*/
 /* (logo and breadcrumbs removed because both link to Town Hall - which already has a link) */
-.margin-10px, #logo, .modal-content .logo, .stat-panel .text-center:first-child, .battle-complete > br, .equipment-wrap > br, .left-column > br, .right-column .widget-header, .battle-end-stats .registration-well > .row:nth-child(5), .battle-end-stats .registration-well > .row:nth-child(7) {
+.margin-10px, #logo, .modal-content .logo, .stat-panel .text-center:first-child, .stat-panel .text-center:first-child img, .battle-complete > br, .equipment-wrap > br, .left-column > br, .right-column .widget-header, .battle-end-stats .registration-well > .row:nth-child(5), .battle-end-stats .registration-well > .row:nth-child(7) {
     display: none;
 }
 
@@ -147,7 +147,7 @@ header .search-form {
     width: auto;
     left: -32px;
     top: 0;
-    z-index: 95;
+    z-index: 121;
     -ms-transform: rotate(0deg);
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -307,6 +307,19 @@ header .search-form {
     overflow: auto;
 }
 
+/*PVP opponent villager profile link*/
+.enemy-panel .text-center:first-child {
+    display: block;
+}
+.enemy-panel .text-center:first-child .villager-avatar {
+    height: auto;
+    width: auto;
+    border-radius: 0;
+}
+.enemy-panel .text-center:first-child .villager-avatar a:before {
+    content: "link to villager profile"
+}
+
 /*shrinks margins*/
 .stat-panel hr {
     margin: 6px 0;
@@ -349,13 +362,10 @@ header .search-form {
     position: relative;
 }
 
-
-
 /*spacing equipment slots*/
 .equipment-wrap {
     overflow: hidden;
 }
-
 
 /*spacing equipment slots*/
 .equipment-wrap .row {
@@ -473,10 +483,6 @@ header .search-form {
     top: 165px;
     font-size: 0;
 }
-.stat-panel-toggle p {
-    position: relative;
-    z-index: 1;
-}
 
 /*fv does weird things when screens get small*/
 /*they pretend it makes things "responsive"*/
@@ -491,6 +497,19 @@ header .search-form {
     height: 96px;
 }
 
+
+/* battle effects */
+.underlay, .overlay {
+    height: 226px;
+    transform: none !important;
+}
+.enemy-panel .underlay, .enemy-panel .overlay {
+    transform: none !important;
+}
+.underlay img, .overlay img {
+    max-height: 226px;
+    width: auto !important;
+}
 
 /* ==========================================================================
    Modal consumables
@@ -631,7 +650,6 @@ header .search-form {
     margin-left: 0 !important;
 }
 
-/*[[collapse]]*/
 /*[[fleepass]]*/
 }
 
