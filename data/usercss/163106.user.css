@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Google - Results Counter v.36
+@name           Google - Results Counter v.39
 @namespace      USO Archive
 @author         decembre
 @description    `Add counter for Google results to my userstyles:<a href="https://userstyles.org/styles/116884/google-multi-columns-dark-and-gray-v-8">GooGle - Multi-Columns Dark and Gray</a>Add Support too for:- <a href="https://greasyfork.org/fr/scripts/7664-faviconizegoogle"><b>FaviconizeGoogle</b></a>:`
-@version        20201217.14.47
+@version        2021116.0.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,7 +15,7 @@ url-prefix(https://www.google)  { */
 @-moz-document regexp("https?://(www|news|play|host-b)\\.google(\\.com?)?(\\.[a-z][a-z])?/(|webhp|search|news|play|ig|service-a).*"), domain("encrypted.google.com")
 {
 
-/* ==== Google - Results Counter v.36 (new36) ==== */
+/* ==== Google - Results Counter v.39 (new39) ==== */
 /* Add Support too for:
  - FaviconizeGoogle - https://greasyfork.org/fr/scripts/7664-faviconizegoogle
 === */
@@ -42,12 +42,13 @@ body#gsr {
     background: #333;
     z-index: 10;
 }
+/* (new39) */
 #res .g h3  {
 margin-left: 0px;
-    padding: 1px 2px 1px 10px;
+    padding: 1px 2px 1px 25px;
 }
 
-/*  (new36) GM FaviconizeGoogle */
+/* (new36) GM FaviconizeGoogle */
 
 #res .g .r a[data-faviconized="yes"] h3:before  {
     counter-increment: myIndex  ! important;
@@ -67,9 +68,10 @@ margin-left: 0px;
     background: #333;
 border: 1px solid red !important;
 }
+/* (new39) */
 #search a[data-faviconized="yes"] h3  {
     height: 1.3em;
-    padding-left: 1.4em !important;
+    padding-left: 2em !important;
 /* border: 1px solid red !important; */
 }
 

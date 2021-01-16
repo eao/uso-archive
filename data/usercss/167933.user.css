@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Diskuid
 @description    `Tema original de <a href="https://animeflv.net">AnimeFLV</a> con toque oscuro para no lastimar la vista mientras se navega por el sitio web o se ve anime.<b>Caracteristicas:</b><ul><li>• Diseño original</li><li>• Tema color negro</li><li>• Sin publicidad molesta</li><li>• Reproductor de video más grande</li></ul><b>Compatibilidad:</b><ul><li>✔ Opera</li><li>✔ Firefox</li><li>✔ Chrome</li></ul><b>Contacto:</b>En caso de encontrar algún error, o tener alguna sugerencia pueden encontrarme en:<ul><li>• Twitter@Diskuid</li><li>• Discord:#Skuid.8107</li></ul>¡Gracias por usar <b>Clean Dark Theme - AnimeFLV</b>!`
-@version        2020812.19.37
+@version        2021115.22.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("animeflv.net") {
+@-moz-document domain("animeflv.net"), domain("animeflv.tv") {
 html,
 body {
 	width: 100%;
@@ -461,9 +461,24 @@ script[src^="//hadspms.com/"] {
 img[src*="bebi"] {
 	display: none!important;
 }
+
+/* AnimeFLV.tv */
+.Top.fa-gift {
+    display:none!important;
+}
+.adsbyadx {
+    display:none!important;
+}
+.anun {
+    display:none!important;
+}
+.Sidebar > *:last-child, .Wdgt:last-child {
+    margin-top: -12px!important;
 }
 
-@-moz-document url-prefix("https://animeflv.net/anime/"), url-prefix("https://www3.animeflv.net/anime/"), url-prefix("https://www.animeflv.net/anime/") {
+}
+
+@-moz-document url-prefix("https://animeflv.net/anime/"), url-prefix("https://www3.animeflv.net/anime/"), url-prefix("https://www.animeflv.net/anime/"), url-prefix("https://animeflv.tv/anime/"), url-prefix("https://www3.animeflv.tv/anime/"), url-prefix("https://www.animeflv.tv/anime/") {
 img[src^="//c.bebi.com/"] {
 	display: none!important;
 }
@@ -483,7 +498,71 @@ div[id$="-ps"] {
 }
 }
 
-@-moz-document url-prefix("https://animeflv.net/users/"), url-prefix("https://www3.animeflv.net/users/"), url-prefix("https://www.animeflv.net/users/") {
+@-moz-document url-prefix("https://animeflv.tv/ver/"), url-prefix("https://www3.animeflv.tv/ver/"), url-prefix("https://www.animeflv.tv/ver/") {
+/* Player */
+#player {
+	position: inherit!important;
+	background-color: #000;
+}
+#player[style]{
+	position: inherit!important;
+	display: none!important;
+}
+.jwplayer .jw-reset .jw-state-paused .jw-stretch-uniform .jw-breakpoint-7 .jw-skin-jw-skin-glow .jw-floating-dismissible .jw-flag-user-inactive[style]
+{
+	position: inherit!important;
+	display: none!important;
+}
+.jwplayer .jw-reset, .jw-state-playing .jw-stretch-uniform .jw-breakpoint-7 .jw-skin-jw-skin-glow .jw-floating-dismissible[style]
+{
+	position: inherit!important;
+	display: none!important;
+}
+div[id^="player"] {
+	position: inherit!important;
+}
+div[class="jwplayer jw-reset jw-state-paused jw-stretch-uniform jw-breakpoint-7 jw-skin-jw-skin-glow jw-floating-dismissible jw-flag-user-inactive"] {
+	position: inherit!important;
+}
+div[class="jwplayer jw-reset jw-state-playing jw-stretch-uniform jw-breakpoint-7 jw-skin-jw-skin-glow jw-floating-dismissible"] {
+	position: inherit!important;
+}
+.Container {
+	max-width: 95vw;
+}
+.CapiTcn {
+	max-width: 100%;
+	width: 100%;
+}
+.CapiTcn:before {
+	width: 90vw;
+	height: 75vh;
+}
+.c-container {
+	display: none;
+}
+
+/* ADS */
+#display-ad {
+	display: none!important;
+}
+.adsbyadx {
+    display:none!important;
+}
+.adbelowvideo {
+	display: none!important;
+}
+#rn_ad_native_eue1u {
+    display:none!important;
+}
+.WdgtCn:nth-child(3) {
+	display: none!important;
+}
+
+
+}
+
+@-moz-document url-prefix("https://animeflv.net/users/"), url-prefix("https://www3.animeflv.net/users/"), url-prefix("https://www.animeflv.net/users/"), url-prefix("https://animeflv.tv/users/"), url-prefix("https://www3.animeflv.tv/users/"), url-prefix("https://www.animeflv.tv/users/") {
 .panel-default {
 	border-color: #181b1e;
 }
@@ -522,7 +601,7 @@ a.list-group-item:hover {
 }
 }
 
-@-moz-document url-prefix("https://www.animeflv.net/ver/"), url-prefix("https://www3.animeflv.net/ver/"), url-prefix("https://www.animeflv.net/ver/") {
+@-moz-document url-prefix("https://www.animeflv.net/ver/"), url-prefix("https://www3.animeflv.net/ver/") {
 .Container {
 	max-width: 95vw;
 }
@@ -535,7 +614,7 @@ a.list-group-item:hover {
 	height: 75vh;
 }
 .CpCnC {
-	top: 85px;
+	/*top: 85px;*/
 }
 .c-container {
 	display: none;
@@ -608,7 +687,7 @@ div[id$="-ps"] {
 }
 }
 
-@-moz-document url("https://animeflv.net/"), url("https://animeflv.net"), url("https://animeflv.net/?"), url("https://www.animeflv.net/"), url("https://www.animeflv.net"), url("https://www.animeflv.net/?"), url("https://www3.animeflv.net/#_=_"), url("https://www3.animeflv.net/") {
+@-moz-document url("https://animeflv.net/"), url("https://animeflv.net"), url("https://animeflv.net/?"), url("https://www.animeflv.net/"), url("https://www.animeflv.net"), url("https://www.animeflv.net/?"), url("https://www3.animeflv.net/#_=_"), url("https://www3.animeflv.net/"), url("https://animeflv.tv/"), url("https://animeflv.tv"), url("https://animeflv.tv/?"), url("https://www.animeflv.tv/"), url("https://www.animeflv.tv"), url("https://www.animeflv.tv/?"), url("https://www3.animeflv.tv/#_=_"), url("https://www3.animeflv.tv/") {
 .WdgtCn {
 	display: none!important;
 }

@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           GooGle - Multi-Columns Dark and Gray v.38
+@name           GooGle - Multi-Columns Dark and Gray v.39
 @namespace      USO Archive
 @author         decembre
 @description    `Less scrolling with a multi columns interface.....Firefox OKChrome : OKNot working together with a "working" GooglemonkeyR:But all forks of it, at 2019.07, seems broken and need to be updated.When they work, use my userstyle:<a href="https://userstyles.org/styles/121836/">Google - GM - Google MonkeyR Companion</a>`
-@version        20201226.22.26
+@version        2021116.0.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,7 +30,7 @@ https://cse.google.fr/cse?cx=partner-pub-8110924381468607:6449306375&ie=ISO-8859
 regexp("https?://(www|news|play|host-b)\\.google(\\.com?)?(\\.[a-z][a-z])?/(|webhp|search|news|play|ig|service-a).*"), url-prefix("https://cse.google") {
 
 
-/* ==== Google - Multi-Columns Dark and Gray v.38 (new38) ==== */
+/* ==== Google - Multi-Columns Dark and Gray v.39 (new39) ==== */
 
 /* PB but work touch too GOOGLE PLAY STORE -
 https://play.google.com/store
@@ -2287,6 +2287,61 @@ border: 1px solid gray !important;
     overflow: hidden;
 background-color: black !important;
 }
+
+/* (new39) */
+.tF2Cxc .IsZvec>div>span+div:only-of-type:not(.fG8Fp) {
+   height: 20px;
+   width: 100% ;
+background-color: #111 !important;
+}
+.tF2Cxc .IsZvec>div>span+div:only-of-type:not(.fG8Fp):hover {
+    height: auto;
+}
+.tF2Cxc .IsZvec>div>span+div:only-of-type:not(.fG8Fp):after {
+   content: "▼" ;
+   position: absolute ;
+   height: 20px;
+   width: 20px ;
+top: 95px !important;
+right: 0 !important;
+text-align: center ;
+color: gold !important;
+/* background-color: yellow !important; */
+}
+.tF2Cxc .IsZvec>div>span+div:only-of-type:not(.fG8Fp):hover:after {
+   content: "▲" ;
+color: red !important;
+}
+
+/* (new39) MISSING WORD */
+.TXwUJf {
+    position: absolute;
+    width: 135px !important;
+    top: -5px;
+    right: 0;
+    white-space: nowrap ;
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+    opacity: 0.3 ;
+    transition: all ease 0.7s ;
+    color: red;
+background: gold !important;
+}
+.TXwUJf:hover {
+    width: 100% !important;
+ padding-right: 5px ;
+    text-align: right ;
+    opacity: 1 ;
+}
+.TXwUJf:before {
+   content: "◀" ;
+color: red !important;
+}
+.TXwUJf:hover:before {
+   content: "▶" ;
+color: green !important;
+}
+
 /* (new30A) - === */
 .DAVP1 .rSr7Wd g-inner-card .qV9w7d .KNcnob g-img .rISBZc {
     border-radius: 100% !important;
@@ -4126,10 +4181,13 @@ background-color: transparent !important;
     line-height: 20px !important;
     margin-top: 0px !important;
 }
+/* (new39) */
 #appbar.appbar #extabar #slim_appbar  #result-stats {
-    height: 20px !important;
-    line-height: 20px !important;
-    left: 0 !important;
+    position: absolute ;
+    height: 28px !important;
+    line-height: 28px !important;
+    left: 80% !important;
+    font-size: 10px ;
 }
 
 /* (new30A) - TOP - EXTRABAR - RESULTS Container - === */

@@ -3,8 +3,8 @@
 @namespace      USO Archive
 @author         ezekiy
 @description    `Darker, less intense colors for WaniKani reviews so you can study at night (or during the day) with less eye strain.`
-@version        2021115.3.26
-@license        NO-REDISTRIBUTION
+@version        2021115.15.27
+@license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url("https://www.wanikani.com/review/session") {
@@ -15,7 +15,7 @@
 	--rshadow: #125678;
 	--vpurp: #7613a8;
 	--vshadow: #560d7a;
-    --graytext: #c9c9c9;
+	--graytext: #c9c9c9;
 }
 /*PURPLE background for VOCAB*/
 #question #character.vocabulary{
@@ -23,7 +23,7 @@
 	text-shadow: 5px 5px 0 var(--vshadow);
 }
 .highlight-vocabulary{
-	background-color: #7613a8;
+	background-color: var(--vpurp);
 }
 /*PINK background for KANJI*/
 #question #character.kanji{
@@ -31,11 +31,11 @@
 	text-shadow: 5px 5px 0 var(--kshadow);
 }
 .highlight-kanji{
-	background-color: #b31d81;
+	background-color: var(--kpink);
 }
 /*BLUE background for RADICALS*/
 #question #character.radical{
-	background-image: linear-gradient(to bottom, var(--blue), var(--rshadow));
+	background-image: linear-gradient(to bottom, var(--rblue), var(--rshadow));
 	text-shadow: 5px 5px 0 var(--rshadow);
 }
 .highlight-radical{
@@ -53,6 +53,9 @@ h1{
 }
 #answer-form input[type=text]{
 	box-shadow: 3px 3px 0 #000;
+}
+#answer-form fieldset.correct button input[type=text]:disabled{
+    background-color: #77bb00 !important;
 }
 #user-response{
 	color: var(--graytext);

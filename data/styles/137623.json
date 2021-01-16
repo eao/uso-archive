@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "voz",
     "createdAt": "2017-01-13T18:21:05.000Z",
-    "updatedAt": "2020-10-03T06:47:57.000Z",
+    "updatedAt": "2021-01-15T17:02:41.000Z",
     "license": "CC-BY-NC-ND-4.0",
     "author": {
       "id": 388548,
@@ -16,7 +16,7 @@
   },
   "stats": {
     "installs": {
-      "total": 189,
+      "total": 192,
       "weekly": 0
     }
   },
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"voz.vn\") {\r\n  .u-bottomFixer.js-bottomFixTarget {\r\n    display: none !important; \r\n  }\r\n\r\n  .u-scrollButtons.js-scrollButtons {\r\n    opacity: 1 !important; \r\n    display: block !important; \r\n  }\r\n  .p-body-main {\r\n    display: block !important; \r\n  }\r\n  .p-body-inner {\r\n    max-width: inherit;\r\n  }\r\n}"
+    "css": "@-moz-document domain(\"voz.vn\") {\r\n  .u-bottomFixer.js-bottomFixTarget,\r\n  .p-body-sidebar {\r\n    display: none !important; \r\n  }\r\n\r\n  .u-scrollButtons.js-scrollButtons {\r\n    opacity: 1 !important; \r\n    display: block !important; \r\n  }\r\n  .p-body-main {\r\n    display: block !important; \r\n  }\r\n  .p-body-inner {\r\n    max-width: inherit;\r\n  }\r\n}"
   }
 }
