@@ -3,45 +3,17 @@
 @namespace      USO Archive
 @author         ExeWire
 @description    `Данный стиль был взят с моего расширения "ExNight", где располагаются 450 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/exnight/`
-@version        20201217.2.45
+@version        2021117.4.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("music.yandex.ru") {
-body:after {
-    content: 'Тёмный стиль Яндекс.Музыка из расширения "ExNight"'!important;
-    position: fixed!important;
-    border: 1px solid #fff!important;
-    color: #FFF!important;
-    background: #333!important;
-    left: 750px!important;
-    bottom: 0px!important;
-    z-index: 999!important;
-    padding: 0 3px!important;
-}
 *, ::placeholder {
 	color: #fff!important;
 }
 ::selection {
 	background: #fff!important;
 	color: #000!important;
-}
-/* FullScreen */
-body>div {
-	max-width: -webkit-fill-available!important;
-	max-width: -moz-available!important;
-	height: auto!important;
-	width: auto!important;
-}
-.centerblock-wrapper {
-	width: -webkit-fill-available!important;
-	width: -moz-available!important;
-}
-.bar {
-	width: -webkit-fill-available!important;
-	width: -moz-available!important;
-	max-width: -moz-available!important;
-	max-width: -webkit-fill-available!important;
 }
 a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__item_gray.deco-popup-menu__item.not-handled.d-link_no-hover-color.deco-link_no-hover-color, span.d-link.deco-link.multi-auth__item.typo-main.multi-auth__diag.deco-popup-menu__item.d-link_no-hover-color.deco-link_no-hover-color.d-link_no-hover, a.d-link.deco-link.multi-auth__item.typo-main.deco-popup-menu__item.d-link_no-hover-color.deco-link_no-hover-color, a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__my-music.deco-popup-menu__item.d-link_no-hover-color.deco-link_no-hover-color, a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__gift.deco-popup-menu__item.d-link_no-hover-color.deco-link_no-hover-color, a.d-track__title.deco-link.deco-link_stronger, .deco-link:hover, .deco-link:hover, .deco-link:hover, a.deco-link, a.d-link.deco-link.d-suggest__all-results.typo.deco-popup-suggest-menu__border_top.d-suggest__item.d-suggest__item_low.d-link_arrow.deco-link_arrow.d-link_no-hover-color.deco-link_no-hover-color.deco-pane_show-hover-pressed, .deco-playlist-notification__point, body .local-theme-black.deco-playlist-notification__point, body .local-theme-black .deco-playlist-notification__point, .deco-link:hover, a.d-link.deco-link.playlist__title-cover {
 	-webkit-text-fill-color: #fff!important;
@@ -115,7 +87,24 @@ a.d-link.deco-link.multi-auth__item.typo-main.multi-auth__item_gray.deco-popup-m
 .d-button-group .d-button{
 	margin-left: 10px!important;
 }
-/* КАПТЧА */
+/* FullScreen */
+body>div {
+	max-width: -webkit-fill-available!important;
+	max-width: -moz-available!important;
+	height: auto!important;
+	width: auto!important;
+}
+.centerblock-wrapper {
+	width: -webkit-fill-available!important;
+	width: -moz-available!important;
+}
+.bar {
+	width: -webkit-fill-available!important;
+	width: -moz-available!important;
+	max-width: -moz-available!important;
+	max-width: -webkit-fill-available!important;
+}
+/* КАПЧА */
 .central, .input-wrapper__content, .submit {
 	border: 1px solid #fff!important;
 }

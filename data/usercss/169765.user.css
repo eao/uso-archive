@@ -3,22 +3,11 @@
 @namespace      USO Archive
 @author         ExeWire
 @description    `Данный стиль был взят с моего расширения "ExNight", где располагаются 450 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/exnight/`
-@version        20201117.11.40
+@version        2021117.4.48
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://osu.ppy.sh/") {
-body:after {
-    content: 'Тёмный стиль osu из расширения "ExNight"'!important;
-    position: fixed!important;
-    border: 1px solid #fff!important;
-    color: #FFF!important;
-    background: #f00!important;
-    left: 0px!important;
-    bottom: 0px!important;
-    z-index: 999!important;
-    padding: 0 3px!important;
-}
 *, ::placeholder, .header-v4__title-action:before, .chat-conversation__unread-marker:after {
 	color: #fff!important;
 }
@@ -62,7 +51,7 @@ a:hover {
 .user-search-card:hover, .beatmapset-search-card:hover, .search-result-more:hover, .btn-circle:hover, .chat-conversation-list-item:hover, .btn-osu-big--forum-reply:hover {
 	background: #222!important;
 }
-.contest-list, .play-detail__score-detail, .play-detail__group--top, .spotlight-info, .comment, .comment__main, .beatmapsets__sort, .beatmapsets, .osu-layout__row, .wiki-page__toc, .beatmapsets-search__background:before, .beatmapsets-search__background, .beatmapsets-search, .news-post-preview__body, .page-extra, .osu-page--users, .notification-popup-item--group:hover .notification-read-button--fancy:before, .forum-topic-entry__icon, .forum-topic-title, .forum-post-info, .notification-popup-item__cover-overlay, .notification-popup-item__cover, .profile-links, .profile-header, .profile-page-toggle, .profile-page-button, .beatmap-discussion__discussion, .beatmap-discussion__top, .beatmap-discussion-nomination, .page-extra-tabs-before, .beatmap-discussion-new__timestamp-col, .beatmap-discussion-new__timestamp-col--label, .beatmap-discussion-vote[disabled], .beatmap-discussions-header-bottom, .beatmap-discussion--highlighted .beatmap-discussion__discussion:after, .wiki-notice, .bbcode pre, .user-group-badge, .search-forum-options__input, .form-text, .beatmapset-panel__panel, .forum-topic-entry, .bbcode-editor__content, .qtip, .user-card {
+.contest-list, .play-detail__score-detail, .play-detail__group--top, .spotlight-info, .comment, .comment__main, .beatmapsets__sort, .beatmapsets, .osu-layout__row, .wiki-page__toc, .beatmapsets-search__background:before, .beatmapsets-search__background, .beatmapsets-search, .news-post-preview__body, .page-extra, .osu-page--users, .notification-popup-item--group:hover .notification-read-button--fancy:before, .forum-topic-entry__icon, .forum-topic-title, .forum-post-info, .notification-popup-item__cover-overlay, .notification-popup-item__cover, .profile-links, .profile-header, .profile-page-toggle, .profile-page-button, .beatmap-discussion__discussion, .beatmap-discussion__top, .beatmap-discussion-nomination, .page-extra-tabs-before, .beatmap-discussion-new__timestamp-col, .beatmap-discussion-new__timestamp-col--label, .beatmap-discussion-vote[disabled], .beatmap-discussions-header-bottom, .beatmap-discussion--highlighted .beatmap-discussion__discussion:after, .wiki-notice, .bbcode pre, .user-group-badge, .search-forum-options__input, .form-text, .beatmapset-panel__panel, .forum-topic-entry, .bbcode-editor__content, .qtip, .user-card, .comments__items--pinned {
 	background: #0000!important;
 }
 .simple-menu__item--active::before, .update-streams-v2__bar, .page-mode__underline, .page-extra__subtitle:before, .bar--user-profile .bar__fill, .value-display:before, .medals-group__title:before, .value-display--kudosu:before, .page-mode-v2:after, .page-mode-v2__link:before, .turbolinks-progress-bar, .forum-topic-entry__user-icon, .simple-menu__item:hover:before, .page-mode-link__stripe, .beatmapset-panel__preview-bar, .bar--beatmapset-nomination-on, .beatmap-discussion-user-card__user-stripe, .chat-conversation__unread-marker:before, .title--page-extra-small:before {

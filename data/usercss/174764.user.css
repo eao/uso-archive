@@ -3,23 +3,11 @@
 @namespace      USO Archive
 @author         ExeWire
 @description    `Данный стиль был взят с моего расширения "ExNight", где располагаются 450 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/exnight`
-@version        20201117.11.43
+@version        2021117.4.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("twitter.com") {
-body:after{
-    content: 'Тёмный стиль Twitter из расширения "ExNight"'!important;
-    position: fixed!important;
-    border: 1px solid #333!important;
-    color: #FFF!important;
-    background: #333!important;
-    left: 0px!important;
-    bottom: 0px!important;
-    z-index: 999!important;
-    padding: 0 3px!important;
-    opacity:0.7!important;
-}
 *, ::placeholder {
 	color: #fff!important;
 }
@@ -48,10 +36,10 @@ html, body, .r-yfoy6g, .r-1uaug3w, .r-14lw9ot, .r-1xcajam.r-zchlnj {
 .r-93ewon, [role="blockquote"] {
 	border: 1px solid #fff!important;
 }
-[data-testid="login"], [data-testid="signup"], .r-urgr8i, .r-1q3imqu, .r-1uhd6vh, .r-p1n3y5 {
+[data-testid="login"], [data-testid="signup"], .r-urgr8i, .r-1q3imqu, .r-1uhd6vh, .r-p1n3y5, .r-glunga.r-1g94qm0 {
 	border: none!important;
 }
-.r-k0dy70, .r-z32n2g, .r-1kqtdi0, .r-18bvks7 {
+.r-k0dy70, .r-z32n2g, .r-1kqtdi0, .r-18bvks7, .r-9x6qib {
 	border-color: #fff!important;
 }
 .r-o4zss7, .r-1ila09b, .r-18p3no4, .r-1igl3o0 {

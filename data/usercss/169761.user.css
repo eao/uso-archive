@@ -3,21 +3,11 @@
 @namespace      USO Archive
 @author         ExeWire
 @description    `Данный стиль был взят с моего расширения "ExNight", где располагаются 440 других стилей, которые я перекрасил ЛИЧНО, не используя другие, взятые с сайта userstyles стили! Все стили, выложенные в открытый доступ на сайте "userstyles" и расширение, выложенное на сайте "exewire.gitlab.io", подвергаются лицензионному соглашению, которое гласит о том, что любое изменение продукта или его модификация и продвижение - запрещены!--Чтобы установить расширение,перейдите сюда и нажмите Install:https://exewire.gitlab.io/exnight/`
-@version        20201117.11.24
+@version        2021117.4.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("coub.com") {
-body:after {
-    content: 'Тёмный стиль Coub из расширения "ExNight"'!important;
-    position: fixed!important;
-    color: #FFF!important;
-    background: #333!important;
-    left: 0px!important;
-    bottom: 0px!important;
-    z-index: 999!important;
-    padding: 0 3px!important;
-}
 *, ::placeholder {
 	color: #fff!important;
 }
