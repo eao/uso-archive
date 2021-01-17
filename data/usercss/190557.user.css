@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Señor C.
 @description    `This is a Dark Mode for Instagram that's very similar to phone's version, hope you like it.`
-@version        2021111.0.14
+@version        2021117.1.20
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -114,13 +114,14 @@ div > ._8-yf5 {
 }
 
 
-span svg[aria-label="Me gusta"], span svg[aria-label="Like"]{
+/*los MEGUSTA XD*/
+span svg[aria-label="Me gusta"], span svg[aria-label="Like"], span svg[aria-label="Hou van"], span svg[aria-label="To se mi líbí"], span svg[aria-label="Synes godt om"], span svg[aria-label="Gefällt mir"], span svg[aria-label="Μου αρέσει!"], span svg[aria-label="Tykkää"], span svg[aria-label="J’aime"], span svg[aria-label="Suka"], span svg[aria-label="Mi piace"], span svg[aria-label="いいね！"], span svg[aria-label="좋아요"], span svg[aria-label="Liker"], span svg[aria-label="Vind ik leuk"], span svg[aria-label="Lubię to!"], span svg[aria-label="Curtir"], span svg[aria-label="Gosto"], span svg[aria-label="Нравится"], span svg[aria-label="Gilla"], span svg[aria-label="ถูกใจ"], span svg[aria-label="I-like"], span svg[aria-label="Beğen"], span svg[aria-label="赞"], span svg[aria-label="讚"], span svg[aria-label="লাইক"], span svg[aria-label="પસંદ"], span svg[aria-label="लाइक करें"], span svg[aria-label="Sviđa mi se"], span svg[aria-label="Tetszik"], span svg[aria-label="ಇಷ್ಟ"], span svg[aria-label="ലൈക്കുചെയ്യുക"], span svg[aria-label="पसंत करा"], span svg[aria-label="मनपराउनुहोस्"], span svg[aria-label="ਪਸੰਦ ਕਰੋ"], span svg[aria-label="කැමැත්ත"], span svg[aria-label="Páči sa mi to"], span svg[aria-label="விருப்பம்"], span svg[aria-label="ఇష్టం"], span svg[aria-label="Thích"], span svg[aria-label="讚好"], span svg[aria-label="Харесва ми"], span svg[aria-label="Îmi place"], span svg[aria-label="Свиђа ми се"], span svg[aria-label="Подобається"]{
  fill: rgb(255,255,255) !important;
 }
 
-.QBdPU > svg[aria-label="Me gusta"], .QBdPU > svg[aria-label="Like"]{
+/*.QBdPU > svg[aria-label="Me gusta"], .QBdPU > svg[aria-label="Like"]{
  fill: rgb(255,255,255) !important;
-}
+}*/
 
 .ZyFrc> svg{
  fill: rgb(237, 73, 86) !important;

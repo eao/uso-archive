@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Tronic Lin
 @description    `This stylus is based on the tyf version and add supports for new Mobile01 website. I must deeply appreciate tyf. Without him, without this stylus.`
-@version        2021116.6.58
+@version        2021116.17.27
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -19,11 +19,6 @@ div[id^="div-gpt-ad-"] {
 
 /* ========== Ad Removal ============ */
 
-.l-emCardGroup__main {
-    display: none !important;
-}
-
-
 .l-selectedThumb {
     display: block;
     width: 100%;
@@ -34,6 +29,15 @@ div[id^="div-gpt-ad-"] {
 
 .l-selectedList li {
     padding: 0.2rem 0;
+}
+
+.l-emCardGroup {
+    display: none;
+}
+
+.u-gapNextV--lg:nth-of-type(3)
+{
+    display: none;
 }
 
 /* ========== Custom CSS Start ============ */

@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "google",
     "createdAt": "2020-01-17T20:39:55.000Z",
-    "updatedAt": "2020-10-02T21:58:06.000Z",
+    "updatedAt": "2021-01-16T16:42:59.000Z",
     "license": "CC-BY-SA-4.0",
     "author": {
       "id": 757613,
@@ -17,8 +17,8 @@
   },
   "stats": {
     "installs": {
-      "total": 858,
-      "weekly": 24
+      "total": 1114,
+      "weekly": 17
     }
   },
   "screenshots": {
@@ -45,6 +45,6 @@
     ]
   },
   "style": {
-    "css": "@-moz-document regexp(\"^https:\\\\/\\\\/www.google\\\\..*?\\\\/search\\\\?.*\") {\r\n/* version 20201002.2330 v1.1.1\r\n  Available at: https://userstyles.org/styles/179230/google-search-old-style\r\n  For a configurable version go to: https://greasyfork.org/en/scripts/395346-google-search-old-style\r\n*/\r\n\r\n/* reduce result blocks font size */\r\n.g {\r\n  zoom: 90%;\r\n  --sz-norm: 14px;\r\n  --sz-gblk: 16px;\r\n  --margin-b: 27px;\r\n}\r\n/* target firefox as an alternative to \"zoom\" */\r\n@supports (-moz-appearance: none) {\r\n  .g {\r\n    font-size: calc(var(--sz-norm) * 0.9);\r\n    margin-bottom: calc(var(--margin-b) * 0.9) !important;\r\n  }\r\n  .g.g-blk span > span {\r\n    font-size: calc(var(--sz-gblk) * 0.9);\r\n  }\r\n  .g cite {\r\n    font-size: calc(var(--sz-norm) * 0.9);\r\n  }\r\n  .g h3 {\r\n    font-size: calc(0.9 * 20px) !important;\r\n  }\r\n}\r\n\r\n/* hide result favicon */\r\n.g img[height=\"16\"][src*=\"data:image\"][width=\"16\"] {\r\n  display: none;\r\n}\r\n\r\n/* invert the 2 lines */\r\n.g div.r > a > br:first-child ~ h3,\r\n.g .rc > div.yuRUbf > a > br:first-child ~ h3 {\r\n  display: block;\r\n  margin-bottom: -1px;\r\n}\r\n.g div.r > a > br:first-child ~ h3 ~ div,\r\n.g .rc > div.yuRUbf > a > br:first-child ~ h3 ~ div {\r\n  position: static;\r\n  margin-top: -0.2em;\r\n}\r\n.g div.r > a > br:first-child ~ h3 ~ div *,\r\n.g .rc > div.yuRUbf > a > br:first-child ~ h3 ~ div * {\r\n  color: green !important;\r\n}\r\n.g div.r > a > br:first-child,\r\n.g .rc > div.yuRUbf > a > br:first-child {\r\n  display: none;\r\n}\r\n.g div.r > a ~ div,\r\n.g .rc > div.yuRUbf > a ~ div {\r\n  position: static;\r\n  margin-top: -1.6em;\r\n  margin-bottom: 1.6em;\r\n}\r\n\r\n}"
+    "css": "@-moz-document regexp(\"^https:\\\\/\\\\/www.google\\\\..*?\\\\/search\\\\?.*\") {\r\n/* version 20210116.1720 v1.1.2\r\n  Available at: https://userstyles.org/styles/179230/google-search-old-style\r\n  For a configurable version go to: https://greasyfork.org/en/scripts/395346-google-search-old-style\r\n*/\r\n\r\n/* reduce result blocks font size */\r\n.g {\r\n  zoom: 90%;\r\n  --sz-norm: 14px;\r\n  --sz-gblk: 16px;\r\n  --margin-b: 27px;\r\n}\r\n/* target firefox as an alternative to \"zoom\" */\r\n@supports (-moz-appearance: none) {\r\n  .g {\r\n    font-size: calc(var(--sz-norm) * 0.9);\r\n    margin-bottom: calc(var(--margin-b) * 0.9) !important;\r\n  }\r\n  .g.g-blk span > span {\r\n    font-size: calc(var(--sz-gblk) * 0.9);\r\n  }\r\n  .g cite {\r\n    font-size: calc(var(--sz-norm) * 0.9);\r\n  }\r\n  .g h3 {\r\n    font-size: calc(0.9 * 20px) !important;\r\n  }\r\n}\r\n\r\n/* hide result favicon */\r\n.g img[height=\"16\"][src*=\"data:image\"][width=\"16\"] {\r\n  display: none;\r\n}\r\n\r\n/* invert the 2 lines */\r\n.g div.r > a > br:first-child ~ h3,\r\n.g .rc > div.yuRUbf > a > br:first-child ~ h3,\r\n.g .tF2Cxc > div.yuRUbf > a > br:first-child ~ h3 {\r\n  display: block;\r\n  margin-bottom: -1px;\r\n}\r\n.g div.r > a > br:first-child ~ h3 ~ div,\r\n.g .rc > div.yuRUbf > a > br:first-child ~ h3 ~ div,\r\n.g .tF2Cxc > div.yuRUbf > a > br:first-child ~ h3 ~ div {\r\n  position: static;\r\n  margin-top: -0.2em;\r\n}\r\n.g div.r > a > br:first-child ~ h3 ~ div *,\r\n.g .rc > div.yuRUbf > a > br:first-child ~ h3 ~ div *,\r\n.g .tF2Cxc > div.yuRUbf > a > br:first-child ~ h3 ~ div * {\r\n  color: green !important;\r\n}\r\n.g div.r > a > br:first-child,\r\n.g .rc > div.yuRUbf > a > br:first-child,\r\n.g .tF2Cxc > div.yuRUbf > a > br:first-child {\r\n  display: none;\r\n}\r\n.g div.r > a ~ div,\r\n.g .rc > div.yuRUbf > a ~ div,\r\n.g .tF2Cxc > div.yuRUbf > a ~ div {\r\n  position: static;\r\n  margin-top: -1.6em;\r\n  margin-bottom: 1.6em;\r\n}\r\n\r\n}"
   }
 }

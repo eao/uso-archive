@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Scott Herold
 @description    `A dark theme for the Apexfusion website for monitoring and controlling aquariums`
-@version        2019521.18.34
+@version        2021116.20.24
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -173,5 +173,8 @@ rect.highcharts-plot-background {
     margin-top: 45px;
     line-height: 35px;
     padding: 0 1em;
+}
+.dash-tri-display .dash-tri-flasks {
+    background-image: none;
 }
 }

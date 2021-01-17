@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Over 2700 lines of code.Its isn't 100% complete but most of the features are supported(fe. google translate widget, weather etc.)Supports:-Google Maps-Google Maps iframe-Captcha-News-SettingsPartial Support:-Flights-Books-Shopping-Finance`
-@version        20201217.15.21
+@version        2021116.14.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,7 +24,7 @@
              background-color: #0080ff;
         }
 
-body, html { /*put link to your image there V*/
+body, html { /*put link to your image here V*/
     background: url('https://i.imgur.com/GtTxUtL.png') center top no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -53,6 +53,9 @@ body, html { /*put link to your image there V*/
 #top_nav {
     position: relative;
 	top: 5px;
+}
+.mus_tt18 {
+	color: #d1d1d1;
 }
 .gLFyf {
     color: rgba(255, 255, 255, .7);
@@ -87,6 +90,9 @@ body, html { /*put link to your image there V*/
 .sbl1 {
 	color: #d1d1d1;
 }
+.U9URNb, a.FLP8od {
+	color: #ddd;
+}
 .aajZCb {
     background: #000000b8;
     box-shadow: 0 4px 6px #bfc6d947;
@@ -119,6 +125,10 @@ body, html { /*put link to your image there V*/
 	color: #ddd;
 	border-color: #363636b8;
 }
+.Cc3NMb, .ZIxWWd {
+	background: #000000b8;
+	color: #d0d1d4;
+}
 .GshZze:not(.hdtb-tl-sel):hover, .ZXJQ7c:hover {
     box-shadow: 0 1px 1px rgba(255, 255, 255, .1);
     background-color: #080808b8;
@@ -126,8 +136,21 @@ body, html { /*put link to your image there V*/
     border-color: #383838b8;
     color: #ddd;
 }
-.hdtb-mitem a, .hdtb-mitem a, .GshZze, .gb_ta svg, .gb_Fc svg, .gb_2c .gb_he, .gb_Rc .gb_he, .dyjrff, .aCOpRe em, .st em, .iv236, .smiUbb, .smiUbb a, #swml a, .fbar p, .fbar a, #fsettl, #fsett a, .wwUB2c, .PNyWAd, .NZmxZe, .fxgdke, .WuA9jb, span.lPqy4c, .VZTCjd h3, .VZTCjd:link, .VZTCjd:visited, .hBUZL, .Y6Fvnc, #res a.bVUuXc, .il8Sef a.f9UGee, .hdtbItm.hdtbSel, .hdtbItm a, #cdrlnk, .m0RhYb, .sh-dgr__grid-result, .sh-dgr__grid-result a, .VQN8fd:link, .VQN8fd h4, .gb_l .gb_sb, .gb_7b, .gb_ob>svg.gb_pb, .gb_Bb>svg.gb_Cb, .gb_Db>svg.gb_Eb, .gb_9b, .gb_yb.gb_yb, .gb_xb, .sh-ds__desc, ._-8, ._-cF span, #res a._-ks, .hdtb-mitem .hdtb-dd-b, .hdtb-mitem a, .GshZze, a.ab_button, a.ab_button:visited, .gb_nb>svg.gb_ob, .gb_Ab>svg.gb_Bb, .gb_Cb>svg.gb_Db, .gb_l .gb_rb, .gb_6b, .gb_8b, .gb_xb.gb_xb, .travel-disclaimer, .gb_sa svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, .zriOQb g-menu-item, .h-c-header__product-logo-text, .h-c-footer__link:visited, .h-c-footer__link, .sMi44c:hover .fxgdke, .gb_qa svg, .gb_Cc svg, .gb_Zc .gb_fe, .gb_Oc .gb_fe, .gRqDMe {
+.hdtb-mitem a, .hdtb-mitem a, .GshZze, .gb_ta svg, .gb_Fc svg, .gb_2c .gb_he, .gb_Rc .gb_he, .dyjrff, .aCOpRe em, .st em, .iv236, .smiUbb, .smiUbb a, #swml a, .fbar p, .fbar a, #fsettl, #fsett a, .wwUB2c, .PNyWAd, .NZmxZe, .fxgdke, .WuA9jb, span.lPqy4c, .VZTCjd h3, .VZTCjd:link, .VZTCjd:visited, .hBUZL, .Y6Fvnc, #res a.bVUuXc, .il8Sef a.f9UGee, .hdtbItm.hdtbSel, .hdtbItm a, #cdrlnk, .m0RhYb, .sh-dgr__grid-result, .sh-dgr__grid-result a, .VQN8fd:link, .VQN8fd h4, .gb_l .gb_sb, .gb_7b, .gb_ob>svg.gb_pb, .gb_Bb>svg.gb_Cb, .gb_Db>svg.gb_Eb, .gb_9b, .gb_yb.gb_yb, .gb_xb, .sh-ds__desc, ._-8, ._-cF span, #res a._-ks, .hdtb-mitem .hdtb-dd-b, .hdtb-mitem a, .GshZze, a.ab_button, a.ab_button:visited, .gb_nb>svg.gb_ob, .gb_Ab>svg.gb_Bb, .gb_Cb>svg.gb_Db, .gb_l .gb_rb, .gb_6b, .gb_8b, .gb_xb.gb_xb, .travel-disclaimer, .gb_sa svg, .gb_Ec svg, .gb_1c .gb_ge, .gb_Qc .gb_ge, .zriOQb g-menu-item, .h-c-header__product-logo-text, .h-c-footer__link:visited, .h-c-footer__link, .sMi44c:hover .fxgdke, .gb_qa svg, .gb_Cc svg, .gb_Zc .gb_fe, .gb_Oc .gb_fe, .gRqDMe, .gb_l .gb_ob, .gb_3b, .gb_tb {
     color: #afb9c6;
+}
+.gb_kb>svg.gb_lb, .gb_xb>svg.gb_yb, .gb_zb>svg.gb_Ab {
+	fill: #afb9c6;
+}
+.gb_kb:active, .gb_kb:focus:active {
+    background-color: #04080fb8;
+    box-shadow: 0 1px 3px 0 rgba(177, 189, 198, .3), 0 4px 8px 3px rgba(161, 172, 181, .15);
+}
+.gb_kb:hover {
+	background: #04080fb8;
+}
+.gb_Fb.gb_Jb {
+	background: #0000 !important;
 }
 .fSXkBc {
 	color: #afb9c6;
@@ -173,13 +196,19 @@ svg#wob_gsvg > text {
 .smiUbb a:hover, #swml a:hover, #Wprf1b, .fbar a:hover, #fsett a:hover {
 	color: #ccc;
 }
+a.gb_wb.gb_0f, a.gb_ub.gb_Hb, a.gb_ub.gb_Ib {
+	background: #0000;
+}
+.gb_Cb {
+	border-color: #181a1db8;
+}
 .unknown_loc {
 	background: #6e6e6eb8;
 }
 .YPxNKd {
 	background: #1b1b1bb8;
 }
-.d7sCQ {
+.d7sCQ, .h7eyVe {
 	border-color: #1b1b1bb8;
 }
 .keP9hb {
@@ -199,7 +228,7 @@ span.EZRelc {
 .cp7THd {
 	color: #858585;
 }
-.pTi5ve, .P1usbc, .f, .IThcWe, .gyWzne, .kno-ftr a, .vp45yf, .GlPvmc, .rjmdhd, .uo4vr, .kno-ftr.rpBMYb, .LHJvCe, .Y3v8qd, .isfR2, .uiBRm, .F3p6q, a.EbH0bb, .kxJ65e, .FGlSad, a.Ndm45b, .Aq14fc, .S23sjd, .f4A6t, .jUVTC, .CEMjEf, a:visited .I1HL6b, .I1HL6b, .l821if, .T96xUb, .iPyfyb .VQr16d, .ZIF80, .eHaQD {
+.pTi5ve, .P1usbc, .f, .IThcWe, .gyWzne, .kno-ftr a, .vp45yf, .GlPvmc, .rjmdhd, .uo4vr, .kno-ftr.rpBMYb, .LHJvCe, .Y3v8qd, .isfR2, .uiBRm, .F3p6q, a.EbH0bb, .kxJ65e, .FGlSad, a.Ndm45b, .Aq14fc, .S23sjd, .f4A6t, .jUVTC, .CEMjEf, a:visited .I1HL6b, .I1HL6b, .l821if, .T96xUb, .iPyfyb .VQr16d, .ZIF80, .eHaQD, .u2OlCc, .ocgo5c, .jCkZnd, .bYTA7, .shDvCe {
 	color: #80858a;
 }
 .RnpQO {
@@ -211,6 +240,9 @@ span.EZRelc {
 .QjH6g span {
 	filter: inherit;
 }
+.HmofF {
+	border-color: #222222b8;
+}
 .cbL4Ld {
 	background: #000;
 }
@@ -220,8 +252,44 @@ span.EZRelc {
 .a, cite, cite a:link, cite a:visited, .s75CSd, ._-ct, a.ab_button:hover, .h-c-icon--footer, a:visited .zTpPx, a .zTpPx, .Vouh6c, .nzKMdd, .L04Uw, .mmxugd {
 	color: #d0d1d4;
 }
-.IsZvec, .s, .hb8SAc, .WF4CUc, .o5GQac img, .lr_c_stnl, #rcnt .action-menu-item a.fl, .action-menu-item a.fl, .gb_4b, .jEdCLc, .u1M3kd.g6Ealc, .e1fR0c, .e1fR0c:hover, .aVSTQd {
+.IsZvec, .s, .hb8SAc, .WF4CUc, .o5GQac img, .lr_c_stnl, #rcnt .action-menu-item a.fl, .action-menu-item a.fl, .gb_4b, .jEdCLc, .u1M3kd.g6Ealc, .e1fR0c, .e1fR0c:hover, .aVSTQd, .r1JIJb, .wx62f, .gb_1b, .gb_Db.gb_Db {
     color: #adb7c4;
+}
+.gb_Db.gb_Db, .gb_Eb.gb_Eb {
+	background: #000000b8;
+	border-color: #2a2b2db8;
+}
+.gb_sb:active, .gb_sb:focus:active, .gb_Nb>.gb_Mb:active, .gb_Nb>.gb_Mb:focus:active, .gb_wb:active, .gb_wb:focus:active, .gb_Db:active, .gb_Db:active:focus, .gb_ub:active, .gb_ub:active:focus {
+    background-color: #181819b8;
+}
+.gb_Mb:hover {
+	background: #111111b8;
+}
+.gb_sb:hover, .gb_Nb>.gb_Mb:hover, .gb_wb:hover, .gb_Db:hover, .gb_ub:hover {
+    background-color: #070808b8;
+}
+.kdPwrb, .NYcQFd {
+	border-color: #000000b8;
+}
+.R9RxHd, .vO2mCd {
+	border-color: #151515b8;
+}
+.TieM1d {
+	color: #ddd;
+	border-color: #2f3031b8;
+	background: #000000b8;
+}
+.P2c8Dd {
+    background-color: #0000;
+    color: rgba(255, 255, 255, .87);
+}
+.B678Hb {
+    background: #000000b8;
+	backdrop-filter: blur(15px);
+    color: rgba(255, 255, 255, .87);
+}
+.LrP0oe {
+	color: #858585;
 }
 .CAe8ic {
 	color: #adb7c4 !important;
@@ -245,10 +313,10 @@ a, a.feGi6e {
     color: #1288df;
     -webkit-tap-highlight-color: rgba(255, 255, 255, .1);
 }
-a.fl:link, .fl a, .gl a:link, .WpKAof, .wUrVib, .EZRelc, .SW5pqf, title-with-lhs-icon:hover .ekf0x h3, .G7xsKe, .truncation-information:link, .truncation-information:visited, .q:active, .q:visited, .yYlJEf:visited, #gsr .yYlJEf:active, .lwmnhe, .wcluHf, .sh-sp__pswtr a, .V5niGc a, .w13wLe, .bj3hj:link, .bj3hj:visited, .TADXpd, a.Ndm45b:hover, .e2gLmd, .SDZsVb, .O8Q2Ie, .T9EeC:hover div, .T9EeC:hover .WeviRb {
+a.fl:link, .fl a, .gl a:link, .WpKAof, .wUrVib, .EZRelc, .SW5pqf, title-with-lhs-icon:hover .ekf0x h3, .G7xsKe, .truncation-information:link, .truncation-information:visited, .q:active, .q:visited, .yYlJEf:visited, #gsr .yYlJEf:active, .lwmnhe, .wcluHf, .sh-sp__pswtr a, .V5niGc a, .w13wLe, .bj3hj:link, .bj3hj:visited, .TADXpd, a.Ndm45b:hover, .e2gLmd, .SDZsVb, .O8Q2Ie, .T9EeC:hover div, .T9EeC:hover .WeviRb, .FoAEQ, .FLP8od:hover {
 	color: #1288df;
 }
-.xXEKkb, span.xxjNNe.z1asCe.lYxQe {
+.xXEKkb, span.xxjNNe.z1asCe.lYxQe, .z1asCe svg {
 	color: #1288df !important;
 }
 .uMdZh {
@@ -280,10 +348,16 @@ a.fl:link, .fl a, .gl a:link, .WpKAof, .wUrVib, .EZRelc, .SW5pqf, title-with-lhs
 .MXl0lf:hover {
 	background: #0a0a0ab8;
 }
+.rlc__slider, div.rl_feature, .rlc__slider-page {
+	background: #0000;
+}
+.rl_center {
+	border-color: #222222b8;
+}
 .cbphWd {
 	border-color: #151515b8;
 }
-.LMMXP, .hDeAhf, .k8XOCe:hover, .k8XOCe:active {
+.LMMXP, .hDeAhf, .k8XOCe:hover, .k8XOCe:active, .izosSe {
 	color: #d0d1d4;
 }
 .WpKAof:hover {
@@ -309,7 +383,7 @@ a.fl:link, .fl a, .gl a:link, .WpKAof, .wUrVib, .EZRelc, .SW5pqf, title-with-lhs
 .b0KoTc {
     color: rgba(255, 255, 255, .54);
 }
-.rhscol .I6TXqe, .rqTuzc {
+.rhscol .I6TXqe, .rqTuzc, .XaEgO {
 	border-color: #2f3031b8;
 }
 .rqTuzc {
@@ -348,7 +422,7 @@ g-fab.CNf3nf.wecD1d {
 .BlOseb.Oom88b g-fab, .k2Oeod.Oom88b g-fab {
     box-shadow: 0 7px 15px rgba(255, 255, 255, .2);
 }
-.CNf3nf {
+.CNf3nf, .R0Gzyf {
 	border-color: #2f3031b8;
 }
 .Lu0opc.Oom88b:hover g-fab {
@@ -360,10 +434,13 @@ g-fab.CNf3nf.wecD1d {
 #brs .med {
 	color: #ddd;
 }
+.vXQmIe, .OR9QXc {
+	color: #fff;
+}
 .YyVfkd {
     color: rgba(255, 255, 255, .87);
 }
-.izG2qf {
+.izG2qf, .jhg04d {
 	border-color: #1b1b1bb8;
 }
 .cbjjnc {
@@ -389,7 +466,7 @@ g-fab.CNf3nf.wecD1d {
 	background: #000000b8;
 	border-color: #2f3031b8;
 }
-.cEPPT {
+.cEPPT, .hhAfob {
 	border-color: #2f3031b8;
 }
 .F7UV7d, .pmjENe {
@@ -501,7 +578,7 @@ title-with-lhs-icon .ekf0x {
 .KymMLe:active .WGYX8:not([disabled]), a:active .WGYX8:not([disabled]), .WGYX8:active:not([disabled]) {
 	background: #000000b8;
 }
-.WGYX8:hover, .KymMLe:focus .WGYX8, a:focus .WGYX8, .KymMLe:active .WGYX8, a:active .WGYX8, .WGYX8:focus, .WGYX8:active, .EASEnb:link, .EASEnb:visited, .PVsnzc {
+.WGYX8:hover, .KymMLe:focus .WGYX8, a:focus .WGYX8, .KymMLe:active .WGYX8, a:active .WGYX8, .WGYX8:focus, .WGYX8:active, .EASEnb:link, .EASEnb:visited, .PVsnzc, .a3Pxdd {
 	color: #d0d1d4;
 }
 .vk_bk {
@@ -518,10 +595,13 @@ title-with-lhs-icon .ekf0x {
 	color: #80858a;
 	background: #000000b8;
 }
-.BMECx, .P7Vl4c .RCBpod, .xlBGCb, .ZgdoBb, .s4zfwb, .Od5Jsd, .ckp3Pb, .cwUqwd, .auw0zb, .j04ED, .j04ED a, .j04ED a:active, .j04ED a:link, .j04ED a:visited, .kX21rb, a:visited .JheGif, .r3IKmc, .psXvZ, .ngPLf, .lr_c_fi.disabled {
+.BMECx, .P7Vl4c .RCBpod, .xlBGCb, .ZgdoBb, .s4zfwb, .Od5Jsd, .ckp3Pb, .cwUqwd, .auw0zb, .j04ED, .j04ED a, .j04ED a:active, .j04ED a:link, .j04ED a:visited, .kX21rb, a:visited .JheGif, .r3IKmc, .psXvZ, .ngPLf, .lr_c_fi.disabled, .ynRric {
 	color: #80858a;
 }
-.ccBEnf {
+.vdxKZb {
+	background: #000000b8;
+}
+.ccBEnf, .iT3aZd+div {
 	border-color: #1b1b1bb8;
 }
 .vk_c {
@@ -540,8 +620,16 @@ title-with-lhs-icon .ekf0x {
 .pb5vrc {
 	background: #2f3031b8;
 }
-.vk_c, #rhs .fIcnad {
+.vk_c, #rhs .fIcnad, .IVvPP .vnLNtd.mnr-c {
 	border-color: #2f3031b8;
+}
+.EXBQhe {
+	background: #000000b8;
+	box-shadow: rgba(255, 255, 255, .3) 0px 1px 4px -1px;
+	backdrop-filter: blur(3px);
+}
+a.ng6NAf {
+    color: rgba(255, 255, 255, .54);
 }
 .USRMqe {
 	background: #000000b8;
@@ -572,11 +660,21 @@ title-with-lhs-icon .ekf0x {
 .IZACzd {
     color: rgba(255, 255, 255, .87);
 }
-.gKlQt {
+.gKlQt, .k6J3K {
 	border-color: #2a2b2db8;
 }
-.DGVTO, .HSryR .qIshu, .kp-blk .xpdclose .farUxc, .kp-blk .xpdopen .mJ2Mod {
+.WZ1JJe {
+	filter: invert(100);
+}
+.DGVTO, .HSryR .qIshu, .kp-blk .xpdclose .farUxc, .kp-blk .xpdopen .mJ2Mod, .AYBNrd td {
 	border-color: #1b1b1bb8;
+}
+.AYBNrd {
+	background: #0a0a0ab8;
+	border-color: #222;
+}
+.HIf9ae {
+	background: #0000;
 }
 .OZ8wsd {
     color: rgba(255, 255, 255, .54);
@@ -596,13 +694,16 @@ title-with-lhs-icon .ekf0x {
 .uDMnUc, .xtObwd, .GrfNd, .ooYbic, .oIcuye, .yxsAke {
 	color: #858585;
 }
+.fo9y0c {
+	background: #0000;
+}
 .uVGhGc {
 	background: #050505b8;
 }
 .BP43u {
     color: rgba(255, 255, 255, .62);
 }
-.sTx6hd[data-s="e"] span, .aM01wc[data-s="e"], .XCKyNd, .OPkOif, [src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARklEQVQ4jWNgGAWMDAwM/ylRy0QNV6Cb+h8HjVUtE5IEIa8gGwhXi+wFdD8y4jEMrpYJSQCZxuciFIuIiQW8aqgSCyMdAACpxRQBxhqZCQAAAABJRU5ErkJggg=='] {
+.sTx6hd[data-s="e"] span, .aM01wc[data-s="e"], .XCKyNd, .OPkOif, [src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARklEQVQ4jWNgGAWMDAwM/ylRy0QNV6Cb+h8HjVUtE5IEIa8gGwhXi+wFdD8y4jEMrpYJSQCZxuciFIuIiQW8aqgSCyMdAACpxRQBxhqZCQAAAABJRU5ErkJggg=='], [src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAQAAAAngNWGAAAA/0lEQVR4AYXNMSiEcRyA4cfmGHQbCZIipkuxnJgMStlMNmeyD2dwmc8+sZgxYJd9ErIZFHUyYYD7fkr6l4/rnvmtl7+KitrqV/fq2Y5eLY3Z9S48eRLe7BmVZ9qhTLhQ0algzZWQOVKSsCF8OjAnwbxDTWFDUhPK/jMr1H6HE/IqRky2DyvCefuwItwZzodVoYRiLqMkVCXrwpJ9twZ+sgfDYEFYl8wIWxZ9uFf7zkallxlJh4YrLGsKjZRx7VGHhLqwgFUN45DGdb8MeXGpgB4ABZdeDcpZEY51A+hyLKz4S1W4MQWm3AibWtgWmk6dyISa1pSdyWTOlLXVp0+eL9D/ZPfBTNanAAAAAElFTkSuQmCC'] {
 	filter: invert(100);
 }
 .VuHq7, #rhs .kp-blk, .y8Jpof.pPLc9e.kpQuGf, .nm6nmc.l0jSyf.kpQuGf {
@@ -662,6 +763,9 @@ g-fab.CNf3nf.LhCR5d {
 }
 .IxCT4b {
 	border-color: #141414b8;
+}
+.SmeuHe {
+	background: #08090ab8;
 }
 .MPFake {
 	filter: invert(100) !important;
@@ -723,6 +827,9 @@ input.KQRYIb {
 }
 .QNox7c {
 	padding: 10px;
+}
+.scrt td, .scrt tr:first-child td, .scrt .YMAGHf {
+	border-color: #1b1b1bb8;
 }
 #wp-tabs-container > div:nth-of-type(1) > div:nth-of-type(3) {
 	border-color: #1b1b1bb8 !important;
@@ -1247,6 +1354,9 @@ button.goog-date-picker-btn.goog-date-picker-previousMonth, button.goog-date-pic
 .QmUzgb:hover, .KNcnob {
 	background: #08090ab8;
 }
+.YEMaTe {
+	background: #08090ab8 !important;
+}
 #rcnt a.WpKAof:hover {
 	background: #0000;
 }
@@ -1265,7 +1375,7 @@ button.goog-date-picker-btn.goog-date-picker-previousMonth, button.goog-date-pic
 .gNWfue, .OgTjVe, .twDLJf, .dxeoqc, .dxeoqc:visited, .dxeoqc:link {
 	color: #888;
 }
-.cS2Ove {
+.cS2Ove, .TQc1id .I6TXqe {
 	border-color: #2f2f2fb8;
 }
 .tOCzVb, .tH3hpc {
@@ -1462,6 +1572,14 @@ input, select, .webanswers-webanswers_table__webanswers-table th, .lQ6Auc {
     box-shadow: inset 0px 1px 1px rgba(255, 255, 255, .1);
     border-color: #424242b8;
 }
+.rCjKj {
+	background: #000000b8;
+	border-color: #2a2b2db8;
+	backdrop-filter: blur(1px);
+}
+.CthZrc {
+	color: #d0d1d4;
+}
 .CV7Lzb {
 	color: #aaa;
 }
@@ -1541,7 +1659,7 @@ span.wqg8ad, div#_dJ-0X4HeCtyBhbIP2MePmAc32_0 {
 	background: #000000b8;
 	border-color: #2f3031b8;
 }
-.eEz1Rd {
+.eEz1Rd, .u1M3kd {
 	border-color: #2a2b2db8;
 }
 .zbTRdb {
@@ -1636,7 +1754,7 @@ g-right-button.Lu0opc.k2Oeod.SkGIjd.tHT0l, g-left-button.Lu0opc.BlOseb.SkGIjd.tH
 	border-color: #1b1b1bb8;
 }
 .XQvBOc {
-	border-color: #08090ab8;
+	border-color: #1b1b1bb8;
 }
 .ab_button {
     background-color: #08090ab8;
@@ -2294,6 +2412,37 @@ img.XqHOTb.IGEbUc, img.ZFAGbf {
 	color: #d0d1d4;
 	border-color: #1b1b1bb8;
 }
+.Gj7ine {
+    background: #292d33b8;
+    border-color: #6c7b99b8;
+    color: #bbb;
+}
+.O520L {
+    color: #5e646f;
+}
+.normal-header div.SkaRx {
+	color: #707070;
+}
+.gb_mb.gb_nb {
+	background: #0000;
+}
+.gb_l .gb_mb {
+	color: #d0d1d4;
+}
+.gb_sb.gb_sb {
+	background: #000000b8;
+	border-color: #2a2b2db8;
+}
+.gb_cb > .gb_ob, .gb_cb > .gb_ob:hover {
+	background: #0000;
+	box-shadow: none;
+}
+.gb_l .gb_jb {
+	background: #000000b8;
+}
+.gb_kb {
+    box-shadow: 0 1px 1px 0 rgba(164, 174, 185, .3), 0 1px 3px 1px rgba(155, 167, 179, .15);
+}
 
 /*Google Maps*/
 
@@ -2828,11 +2977,17 @@ input#gs_taif50, input#gs_htif50 {
 	backdrop-filter: blur(5px);
     color: #999;
 }
-.lightbox .bubble-point-left {
+.lightbox .bubble-point-left, .widget-settings-terrain, .widget-settings-map, .widget-settings-satellite, .widget-settings-traffic, .widget-settings-transit, .widget-settings-bike, .widget-settings-street-view, .widget-settings-covid-info-icon, .widget-settings-location-sharing, .widget-settings-globe, .widget-settings-your-places, .widget-settings-rate-review, .widget-settings-timeline, .widget-settings-link, .widget-settings-print, .widget-settings-languages, .widget-layer-section.qp.widget-layer-traffic-mode-selector > .kd-button.goog-menu-button.goog-inline-block > .goog-menu-button-outer-box.goog-inline-block > .goog-menu-button-inner-box.goog-inline-block > .goog-menu-button-dropdown.goog-inline-block {
 	filter: invert(100);
 }
 .GLOBAL__gm2-hairline-border {
 	border-color: #2a2d33b8;
+}
+.mat1qDhSMGD__title {
+	color: #d0d1d4;
+}
+input.tactile-searchbox-input {
+	background: #0000;
 }
 
 /*Google Maps iframe*/
@@ -2870,5 +3025,11 @@ input#gs_taif50, input#gs_htif50 {
 }
 [src='//www.gstatic.com/flights/app/expando_icon.png'] {
 	filter: invert(100);
+}
+.isv-r.PNCib.MSM1fd.BUooTd:hover {
+	box-shadow: 0 0 20px rgba(255, 255, 255, .35);
+	transform: scale(1.1);
+	transition: box-shadow ease-out .2s, transform ease-out .2s;
+	backdrop-filter: blur(10px);
 }
 }
