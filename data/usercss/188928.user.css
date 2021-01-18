@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Google dark search
+@name           Google dark search 2021
 @namespace      USO Archive
 @author         Jannek
-@description    `Code compleatly ripped from https://userstyles.org/styles/153816/darksearch-nass-o-fork but fixed some issues i had with this style.`
-@version        20201224.13.35
+@description    `Code compleatly copied from https://userstyles.org/styles/153816/darksearch-nass-o-fork but fixed some issues i had with this style.`
+@version        2021117.22.24
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -3348,7 +3348,6 @@ g-card,
 .gb_Ib,
 .gb_Mb,
 .gb_vb.gb_vb,
-
 .gb_ub,
 .gb_Kb,
 .Lj9fsd,
@@ -3370,7 +3369,6 @@ body,
 .NGwAH:first-child,
 .dGIF9:first-child,
 .gb_zb.gb_zb,
-.mIKy0c.dGWpb,
 .yg51vc,
 .Xeztj,
 .VqFMTc {
@@ -3431,7 +3429,10 @@ body,
 .ogvxFb,
 .mmxugd,
 .gBPM8 .tmS4cc.VgAC5d .gadasb,
-.sSf5xf {
+.sSf5xf,
+.gb_Vb,
+.gb_Vb,
+.gb_l .gb_mb {
     color: #D3D3D3 !important;
 }
 
@@ -3444,8 +3445,12 @@ body,
 
 .k8XOCe,
 .q2eaDe:hover,
-.MXl0lf:hover {
-    background-color: #202020
+.MXl0lf:hover,
+.gb_Vb,
+.gb_Vb,
+.gb_Db.gb_Db,
+.gb_Eb.gb_Eb {
+    background: #202020 !important
 }
 
 /* search bar in pictures */
@@ -3456,9 +3461,14 @@ body,
 /* account menue */
 .sfbg,
 ._-kp,
-.KGahvc {
-    background: var(--card-bg-col) !important
+.KGahvc,
+.gb_Pb,
+.gb_mb,
+.gb_l .gb_ob,
+.gb_l .gb_ob {
+    background: #101010 !important
 }
+
 
 .wqg8ad,
 .cJzOGc,
@@ -3491,6 +3501,11 @@ body,
 
 .gb_Pb:hover {
     background: none !important;
+}
+
+.vXQmIe {
+    background: var(--card-bg-col) !important;
+    outline: none;
 }
 }
 

@@ -1,0 +1,46 @@
+/* ==UserStyle==
+@name           ProSieben dark mode
+@namespace      USO Archive
+@author         Jannek
+@description    `simple dark mode for PriSieben`
+@version        2021117.21.48
+@license        CC-BY-4.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain("prosieben.de") {
+.element-highlight:not(.element-highlight-channel),
+body,
+.main,
+.channelepg-wrapper h2,
+.container-headline,
+.gallery-slide-counter,
+.gallery-total-image-count,
+.module-header h2,
+.p7s1-text-headline-h1,
+.tv-program-minibar-header h2 {
+    background-color: #0e0e0e;
+    color: #dedede;
+}
+
+.livestream-text,
+.teaser-details,
+.filter .filterAZ,
+.card,
+.teaser-description,
+.dKMqkr.ds-flex {
+    background-color: #1e1d1d;
+    color: #ececec;
+}
+
+.tv-program-header .tv-program-tape .day,
+.box-list-headline,
+.extended-html-embedded-teaser .teaser-headline,
+.teaser-headline {
+    color: #dedede;
+}
+
+.carousel-container .carousel-control-container .carousel-control {
+    background-color: #2f2d2d;
+    border: 1px solid #686767;
+}
+}

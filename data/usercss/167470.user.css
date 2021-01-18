@@ -3,18 +3,19 @@
 @namespace      USO Archive
 @author         さくらもち（sakuramochi）
 @description    `<em>Japanese:</em>いろいろなウェブサイトをプリ☆チャンにプリティーリメイクするスタイルシートです。※テーマカラーはみらいちゃんのリボンの色です。🎀✨■スタイルのインストール方法1. Stylus というブラウザの拡張機能をインストールします。(stylish ではなく Stylus を使用してください)- <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne">Stylus - Chrome Web Store</a>- <a href="https://addons.mozilla.org/ja/firefox/addon/styl-us/">Stylus – Get this Extension for 🦊 Firefox (ja)</a>2. このページをリロードすると「Install Style (スタイルをインストールする)」というボタンが現れるので、クリックしてインストールします。3. <a href="https://www.youtube.com/">YouTube</a> などを開くと、プリ☆チャンになっているはずです！<em>English:</em>This stylesheet changes several websites to Pri☆Chan.Hint: The primary color is the one of Mirai's ribbon.🎀✨■How to install1. Install the browser extension, Stylus. (You must use Stylus not stylish.)2. Reload this page, then you will see the button "Install Style". So click it to install this style.3. You will be able to go to Pri☆Chan here: <a href="https://www.youtube.com/">YouTube</a>!`
-@version        2020810.4.20
+@version        2021117.15.32
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 /* ==UserStyle==
 @name           キラッとプリチャン (Kiratto PriChan)
 @namespace      github.com/sakuramochi0/prichan-stylesheet
-@version        2.0.3
+@version        2.0.5
 @description    いろいろなウェブサイトをプリ☆チャンに変身させるスタイルです。(Style to change websites to Pri☆Chan.)
 @author         sakuramochi <sakuramochi.mochi.0@gmail.com>
 
 changelog:
+v2.0.5 - 2021-01-17 - Fix the regression of logo images and change the image host to Google Cloud Storage.
 v2.0.4 - 2020-08-02 - Fix the same problem, the background, and sidebar. (Thank you for reporting bugs. @r4ymond2 @jdramirez165)
 v2.0.3 - 2020-07-12 - Fix the problem where extra padding is appended to normal icon.
 v2.0.2 - 2019-02-23 - Fix the header color and the sidebar icon padding.
@@ -33,8 +34,8 @@ v1.0.0 - 2019-01-04 - Initial release.
         --primary: #ff508c;
         --primary-light: #ffabc8;
         --white: rgba(255, 255, 255, 0.8);
-        --background: linear-gradient(var(--white), var(--white)), url(https://pbs.twimg.com/media/DxCTexnV4AAA4Qs.jpg:orig);
-        --prichan-logo: url(https://pbs.twimg.com/media/DxCRtnUVAAU9jml.png:orig);
+        --background: linear-gradient(var(--white), var(--white)), url(https://storage.googleapis.com/sakuramochi-prichan/prichan-background.jpg);
+        --prichan-logo: url(https://storage.googleapis.com/sakuramochi-prichan/prichan-logo.png);
         --button-color: #065fd4;
         --button-color-light: #2c6dc4;
     }
@@ -67,15 +68,15 @@ v1.0.0 - 2019-01-04 - Initial release.
     }
 
     /* logo */
-    #logo-icon-container > svg {
-        display: none !important;
-    }
-
-    #logo-icon-container {
+    #logo {
         width: 140px !important;
         height: 35px !important;
         background-image: var(--prichan-logo);
         background-size: cover;
+    }
+
+    #logo img {
+        display: none;
     }
 
     #country-code {
@@ -138,17 +139,6 @@ v1.0.0 - 2019-01-04 - Initial release.
         background-color: var(--primary) !important;
     }
 
-    .header-bar-logo {
-        width: 140px !important;
-        height: 35px !important;
-        background-image: var(--prichan-logo);
-        background-size: cover;
-    }
-
-    .header-bar-logo > svg {
-        display: none;
-    }
-
     .header-bar h1.title {
         color: transparent;
     }
@@ -199,6 +189,18 @@ v1.0.0 - 2019-01-04 - Initial release.
         height: 35px !important;
         background-image: var(--prichan-logo);
         background-size: cover;
+    }
+
+    /* logo */
+    #home-icon {
+        width: 140px !important;
+        height: 40px !important;
+        background-image: var(--prichan-logo);
+        background-size: cover;
+    }
+
+    #home-icon svg {
+        display: none;
     }
 
     /* text color */

@@ -2,12 +2,12 @@
 @name           Moodle Dark Mode (WIP)
 @namespace      USO Archive
 @author         hamburg
-@description    `Dark Mode for Websites using Moodle CMSMoodle default UI looks terrible`
-@version        2021117.12.36
+@description    `Dark Mode for Websites using Moodle CMS`
+@version        2021117.12.52
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document regexp('http://moodle.*'), regexp('https://moodle.*') {
+@-moz-document regexp('(http|https)://moodle.*'), domain("moodle.itech-bs14.de") {
   body {
       background-color: #1b212c;
       color: #ffffff;

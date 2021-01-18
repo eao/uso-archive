@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Flickr WideScreen - Dark & Grey v.163
+@name           Flickr WideScreen - Dark & Grey v.164
 @namespace      USO Archive
 @author         decembre
 @description    `It's the ideal companion of some others of my Flickr Userstyles.Add a Dark Gray Flavor for my Flickr Userstyles :<mark><a href="https://userstyles.org/styles/52167/"><b>Flickr Widescreen - ALLinONE (Part 1)</b></a></mark>AND<mark><a href="https://userstyles.org/styles/131452"><b>Flickr Widescreen - ALLinONE (Part 2)</b></a></mark><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE"</b> at once,you can use my userscript [Greasyfork]:<a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle)</a>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        2021112.18.0
+@version        2021117.17.28
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,7 +11,7 @@
 
 /* STY03 ============================================================================================= */
 /* =================================================================================================== */
-/* ===== FLICKR - 00 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.163 (new163)  - (STANDALONE) === */
+/* ===== FLICKR - 0 - Flickr WideScreen - ALLinONE TOTAL DARK-Grey v.164 (new164)  - (STANDALONE) === */
 /* =================================================================================================== */
 /* =================================================================================================== */
 
@@ -666,9 +666,12 @@ input[type="text"]:active {
       background: #222 !important;
 }
 
-/* (new82) BACKGROUND - DIVERS ======= */
+/* (new164) BACKGROUND - DIVERS ======= */
 
-
+/* (new164) GALL EMPTY */
+.galleries-list-page-view .empty-galleries-list-container .background .bg {
+    filter: invert(0.8);
+}
 
 /* FEED - POOL - USER HEADER HOVER */
 .photo-card-view .photo-card .photo-card-header-view .photo-card-header.theme-overlay {

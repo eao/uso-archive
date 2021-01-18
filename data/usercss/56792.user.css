@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           Userstyles / Greasy Fork Enhancer Dark-Grey v.189
+@name           Userstyles / Greasy Fork Enhancer Dark-Grey v.190
 @namespace      USO Archive
 @author         decembre
 @description    `▶ It's (or just better) FOR  A WIDESCREEN : (1920x1080)! ▶ Adaptation for (the always working):<a href="https://greasyfork.org/fr/scripts/4336-ts-citrus-gfork"><b>[TS] Citrus GFork</b></a>Broken since 2020.12., but there is a fix:<b><a href="https://greasyfork.org/en/scripts/4336-ts-citrus-gfork/discussions/69927">If you want a temporary fix (before its author come back to us), try :  Unofficial fix of the &quot;Citrus GFork&quot; script</a></b>▶ You can test too my Userscript:<a href="https://greasyfork.org/fr/scripts/29452-userstyles-tables-sorter-simple">USERSTYLES - TABLES Sorter SIMPLE</a>"Sort Userstyles Table on Profile page:click on the top header of each column..."`
-@version        20201224.10.32
+@version        2021117.17.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://greasyfork.org/forum/"), url-prefix("https://74.86.192.75/"), domain("userstyles.org"), domain("greasyfork.org"), domain("sleazyfork.org") {
 
 
-/* ==== Userstyles / Greasy Fork Enhancer Dark-Grey  189.5  -  WATnew06 - with FIX by Konf - Without EDIT COMMENT  - TEST NEW FORUM GREASYFORK ==== */
+/* ==== Userstyles / Greasy Fork Enhancer Dark-Grey  190BIS  -  WATnew06 - with FIX by Konf - Without EDIT COMMENT  - TEST NEW FORUM GREASYFORK ==== */
 /* CITRUS FIX by Konf(2020.12.09) :
 https://greasyfork.org/en/discussions/requests/69803-help-to-fix-ts-citrus-gfork#comment-173029
 =================== */
@@ -639,13 +639,56 @@ a[href*="/help/installing-user-scripts"]::before  {
 background-color: transparent 
 }
 
-/* CSS - NO CITRUS */
+/* (new190bis) ADD VERS (+ DEL SCRIPT) - NO CITRUS */
+ol#user-deleted-script-list {
+    display: inline-block;
+    width: 100%;
+    max-width: 970px;
+    min-height: 100%;
+    margin-bottom: 0;
+    padding: 0;
+    text-align: left;
+    box-shadow: none;
+    background: rgba(235, 24, 24, 0.26);
+}
+#user-deleted-script-list  li:not(.ad-entry) {
+    padding: 0.5em;
+}
+#user-deleted-script-list  li:not(.ad-entry) h2 {
+    display: inline-block !important;
+    width: 100% ;
+    min-width: 100% ;
+    max-width: 100% ;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+#user-deleted-script-list > li::after ,
+#user-script-list > li::after {
+content: " version: "attr(data-script-version)"" ;
+display: inline-block ;
+position: relative ;
+/* float: right ; */
+/* clear: none ; */
+width: 100px ;
+bottom: 10px;
+right: -89% ;
+padding: 1px 4px ;
+font-size: 12px ;
+border-radius: 5px ;
+overflow: hidden ;
+text-overflow: ellipsis ;
+white-space: nowrap ;
+border: 1px solid #333 ;
+background-color: #111 ;
+}
+
+/* ICON - CSS - NO CITRUS */
 #browse-script-list>li[data-script-language="css"]::before ,
 li[data-script-language="css"]::before  {
 background-image: url("https://addons.cdn.mozilla.net/user-media/addon_icons/814/814814-64.png?modified=1542603952") ;
 background-color: green ;
 }
-/* CSS as JS - NO CITRUS */
+/* ICON - CSS as JS - NO CITRUS */
 #browse-script-list>li[data-script-language="css"][data-css-available-as-js="true"]::before,
 li[data-script-language="css"][data-css-available-as-js="true"]::before {
     content: "X" ;
@@ -682,17 +725,17 @@ background-size: 13px 13px ;
 background-position: center center ;
 background-repeat: no-repeat ;
 }
-/* JS SCRIPT - CITRUS */
+/* ICON - JS SCRIPT - CITRUS */
 .lang-js:not(.prettyprint) {
 background-image: url("http://userscripts-mirror.org/images/script_icon.png") !important;
 background-color: transparent ;
 }
-/* CSS - CITRUS  */
+/* ICON - CSS - CITRUS  */
 .lang-css:not(.prettyprint) {
 background-image: url("https://addons.cdn.mozilla.net/user-media/addon_icons/814/814814-64.png?modified=1542603952") !important;
 background-color: green !important;
 }
-/* JS / CSS - CITRUS */
+/* ICON - JS / CSS - CITRUS */
 [pagetype="ListingPage"] .lang-js:not(.prettyprint) ,
 [pagetype="UserProfile"] .lang-js:not(.prettyprint) ,
 [pagetype="UserProfile"] .lang-js:not(.prettyprint)  {
@@ -732,10 +775,6 @@ background-position: center left, center right ;
 background-repeat: no-repeat ;
 background-color: green ;
 }
-
-
-
-
 
 /* SET - === */
 html>body[pagetype="UserProfile"] #script-list-set ,
@@ -1679,22 +1718,31 @@ body[pagetype="ListingPage"] #script-table tr.filtered:hover > td:nth-child(2) .
 /* FILTER - HIDDE SCRIPT DESCRIPTION FOR FILTERED */
 #script-table tr.filtered > td:nth-child(2) .thetitle + div ,
 body[pagetype="ListingPage"] #script-table tr.filtered > td:nth-child(2) .thetitle + div {
-    display: none !important;
+/*     display: none !important; */
+display: table-cell !important;
+height: 2px !important;
+font-size: 2px !important;
+visibility: hidden !important;
 }
 
 /* FILTER - SHOW SCRIPT DESCRIPTION FOR FILTERED on DHOVER */
 #script-table tr.filtered:hover > td:nth-child(2) .thetitle + div ,
 body[pagetype="ListingPage"] #script-table tr.filtered:hover > td:nth-child(2) .thetitle + div {
-    position: absolute !important;
-    display: inline-block !important;
+/*     position: absolute !important; */
+/* display: inline-block !important; */
+display: table-cell !important;
+height: auto !important;
     width: 914px !important;
-    font-size: 15px !important;
+    font-size: 12px !important;
+line-height: 12px !important;
+/* left: 0 !important; */
 border: 1px solid peru !important;
 border-left: 3px solid red !important;
 border-right: 3px solid red !important;
 border-bottom: 4px solid red !important;
 background-color: #f7f6e9 !important;
     z-index: 50000 !important;
+visibility: visible !important;
 }
 #script-table tr.filtered > td span + span ,
 #script-table tr.filtered > td > span span ,
@@ -3301,10 +3349,11 @@ outline: 1px solid violet !important;
     text-align: left !important;
 border-left: 1px solid peru !important;
 }
-/* without script */
+/* (new190bis) without script */
 #user-script-list>li>article .description ,
 #browse-script-list>li>article .description {
-    display: inline-block!important;
+/*     display: inline-block!important; */
+float: left !important;
     width: 100% !important;
     min-width: 757px !important;
     max-width: 757px !important;
@@ -3868,12 +3917,13 @@ color: green ;
     left: 16%!important;
     text-align: left !important;
 }
-/* (new187) GM "Greasyfork - Add notes to the script" ADD NOTES BUT */
+/* (new190bis) GM "Greasyfork - Add notes to the script" ADD NOTES BUT */
 .note-obj-add-note-btn.note-obj-gf-note-btn.note-obj-gf-library-note-btn ,
 .note-obj-add-note-btn ,
 .note-obj-gf-library-note-btn ,
 #install-area > .note-obj-gf-info-note-btn {
 /* position: absolute !important; */
+/* display: inline-block; */
 float: right !important;
 clear: none !important;
 width: 18px !important;
@@ -3883,17 +3933,23 @@ left: -30px !important;
     align-items: center;
     border-radius: 3px;
     color: #fff;
-    display: inline-block;
     padding: 2px;
     white-space: nowrap;
-    background-image: url("data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiBhcmlhLWxhYmVsbGVkYnk9Im5ld0ljb25UaXRsZSIgc3Ryb2tlPSJyZ2IoMzgsIDM4LCAzOCkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgZmlsbD0ibm9uZSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSI+IDx0aXRsZSBpZD0ibmV3SWNvblRpdGxlIj5OZXc8L3RpdGxlPiA8cGF0aCBkPSJNMTkgMTRWMjJIMi45OTk5N1Y0SDEzIi8+IDxwYXRoIGQ9Ik0xNy40NjA4IDQuMDM5MjFDMTguMjQxOCAzLjI1ODE3IDE5LjUwODIgMy4yNTgxNiAyMC4yODkyIDQuMDM5MjFMMjAuOTYwOCA0LjcxMDc5QzIxLjc0MTggNS40OTE4NCAyMS43NDE4IDYuNzU4MTcgMjAuOTYwOCA3LjUzOTIxTDExLjU4NTggMTYuOTE0MkMxMS4yMTA3IDE3LjI4OTMgMTAuNzAyIDE3LjUgMTAuMTcxNiAxNy41TDcuNSAxNy41TDcuNSAxNC44Mjg0QzcuNSAxNC4yOTggNy43MTA3MSAxMy43ODkzIDguMDg1NzkgMTMuNDE0MkwxNy40NjA4IDQuMDM5MjFaIi8+IDxwYXRoIGQ9Ik0xNi4yNSA1LjI1TDE5Ljc1IDguNzUiLz4gPC9zdmc+")!important;
-    background-position: center center!important;
-    background-repeat: no-repeat!important;
+background-image: url("data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjI0cHgiIGhlaWdodD0iMjRweCIgdmlld0JveD0iMCAwIDI0IDI0IiBhcmlhLWxhYmVsbGVkYnk9Im5ld0ljb25UaXRsZSIgc3Ryb2tlPSJyZ2IoMzgsIDM4LCAzOCkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIgc3Ryb2tlLWxpbmVqb2luPSJtaXRlciIgZmlsbD0ibm9uZSIgY29sb3I9InJnYigzOCwgMzgsIDM4KSI+IDx0aXRsZSBpZD0ibmV3SWNvblRpdGxlIj5OZXc8L3RpdGxlPiA8cGF0aCBkPSJNMTkgMTRWMjJIMi45OTk5N1Y0SDEzIi8+IDxwYXRoIGQ9Ik0xNy40NjA4IDQuMDM5MjFDMTguMjQxOCAzLjI1ODE3IDE5LjUwODIgMy4yNTgxNiAyMC4yODkyIDQuMDM5MjFMMjAuOTYwOCA0LjcxMDc5QzIxLjc0MTggNS40OTE4NCAyMS43NDE4IDYuNzU4MTcgMjAuOTYwOCA3LjUzOTIxTDExLjU4NTggMTYuOTE0MkMxMS4yMTA3IDE3LjI4OTMgMTAuNzAyIDE3LjUgMTAuMTcxNiAxNy41TDcuNSAxNy41TDcuNSAxNC44Mjg0QzcuNSAxNC4yOTggNy43MTA3MSAxMy43ODkzIDguMDg1NzkgMTMuNDE0MkwxNy40NjA4IDQuMDM5MjFaIi8+IDxwYXRoIGQ9Ik0xNi4yNSA1LjI1TDE5Ljc1IDguNzUiLz4gPC9zdmc+")!important;
+background-position: center center!important;
+background-repeat: no-repeat!important;
     background-color: #3c81df;
 visibility: visible !important;
 opacity: 1 !important;
 }
-
+/* (new190bis) NOTES TXT in LIST */
+.note-obj-gf-note-tag, .note-obj-gf-ts-note-tag {
+    line-height: 21px;
+    margin-left: 5px;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 15px;
+}
 /* NOTES in LIST */
 #script-table  tr .note-obj-add-note-btn.note-obj-gf-note-btn.note-obj-gf-ts-note-btn {
 margin-top: -15px !important;
@@ -4379,15 +4435,11 @@ body[pagetype="UserProfile"] #main-header + .width-constraint > section.text-con
     z-index: 500 ;
 background: #333 !important;
 }
-/* #script-table tbody td:nth-child(2) .thetitle> a {
-    display: inline-block ;
-    width: 100% ;
-    max-width: 450px ;
-    min-width: 450px ;
-    height: auto !important;
-    word-wrap: break-word ;
-border: 1px solid red !important;
-} */
+/* (new190bis) CIT */
+body[pagetype="ListingPage"] {
+    float: left !important;
+}
+/* (new190bis) NOT CIT */
 #script-table tbody td:nth-child(2) .thetitle>a>b {
     display: inline-block ;
     width: 100% ;
@@ -4395,23 +4447,27 @@ border: 1px solid red !important;
     min-width: 450px ;
     height: auto !important;
     word-wrap: break-word ;
+    white-space: pre-wrap;
 /* border: 1px solid red !important; */
 }
+
 #script-table tbody td:nth-child(2) .thetitle>a>b iframe{
     display: none !important;
 border: 1px solid red !important;
 }
-/* CIT */
+/* (new190bis) FIX Konf CIT */
 body[pagetype="ListingPage"] #script-table thead tr {
     display: inline-table ;
     width: 100% ;
-    max-width: 970px ;
+    min-width: 960px ;
+    max-width: 960px ;
 }
 #script-table>thead>tr>td:first-of-type {
-    width: 25px ;
+width: 20px ;
 }
 #script-table>thead>tr>td[tag="name"] {
-    width: 452px ;
+/* width: 452px ; */
+width: 48.2%  !important;
     text-align: left ;
     text-indent: 130px ;
 }
@@ -4471,6 +4527,7 @@ background: #f77a7a ;
 #script-table>thead>tr>td {
     box-shadow: 3px 3px 2px black ;
 }
+
 #script-table>thead>tr>td[tag="ratings"] {
     width: 84px ;
 }
@@ -4551,6 +4608,64 @@ border-bottom: 1px solid red ;
     font-size: 17px ;
 border-bottom: 1px solid red ;
 }
+/* (new190bis) PB - FIX Konf CITUS -  SIZE + CHANGE HEADER  TD BACKGROUD ( FOR BACKGROND ACTIVE - Not !important;) */
+#script-table {
+  border-radius: 0;
+  box-shadow: 0 0 2px gray;
+  display: block;
+  margin: 5px auto;
+  max-width: 960px !important;
+  min-width: 960px !important;
+}
+
+#script-table thead td {
+    background-color: orange;
+    border-radius: 0 0 5px 5px;
+/*     box-shadow: 3px 3px 2px #888888; */
+}
+/* (new190bis) PB - FIX Konf CITUS -  CHANGE ROW BACKGROUD */
+body[pagetype="ListingPage"] #script-table tbody td {
+    background-color: #fffbdb;
+}
+body[pagetype="ListingPage"] #script-table tbody td:first-child {
+    background-color: #f9d5a6;
+}
+/* body[pagetype="ListingPage"] #script-table tbody .filtered td:nth-child(3) ,
+body[pagetype="ListingPage"] #script-table tbody td:nth-child(3) {
+    min-width: 5% !important;
+    background-color: red;
+} */
+/* (new190bis) */
+body[pagetype="PersonalProfile"]  #script-table tbody td:nth-child(2) .thetitle span.theversion:not(:empty) ,
+body[pagetype="PersonalProfile"]  #script-table tbody td:nth-child(2) .thetitle span:not(:empty) ,
+body[pagetype="ListingPage"] #script-table tbody td:nth-child(2) .thetitle span:not(:empty){
+    float: left ;
+/* width: 100% !important; */
+}
+/* VERS EMPTY */
+body[pagetype="PersonalProfile"]  #script-table tbody td:nth-child(2) .thetitle span.theversion:empty {
+    display: none ;
+}
+
+/* DESC*/
+body[pagetype="PersonalProfile"]  .thetitle + div {
+    float: left ;
+    line-height: 15px ;
+width: 100% !important;
+}
+body[pagetype="PersonalProfile"]  #script-table tbody td:nth-child(2) .thetitle span.note-obj-user-tag ,
+body[pagetype="ListingPage"] #script-table tbody td:nth-child(2) .thetitle span.note-obj-user-tag {
+    float: right
+/*     width: 100% !important; */
+}
+body[pagetype="ListingPage"] #script-table td .thetitle + div {
+    max-width: 450px;
+    min-width: 450px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+white-space: pre-wrap ;
+}
+
 
 /* ADAPT GM - GreasyFork script icon - === */
 #script-info>header>h2>div:first-of-type {
@@ -4708,10 +4823,10 @@ background: rgba(191, 191, 190, 0.33) ;
 .width-constraint #script-info>#script-content>#install-area>div[style*="background-color: yellow;"] {
      display: none !important;
 }
-/* SCRIPT INFOS - FEED - === */
+/* (new190) SCRIPT INFOS - FEED - === */
 #script-feedback-suggestion {
-    margin-top: 57px ;
-    margin-bottom: -25px ;
+    margin-top: 47px ;
+    margin-bottom: 0px ;
 }
 /* SCRIPT INFO - VERS/DIFF - === */
 .width-constraint #script-info ul#script-links + header + #script-content > p:not(:empty):not(#no-discussions):not(#support-url):not(#contribution) {
@@ -4790,6 +4905,24 @@ background: gold ;
     margin-top: 58px ;
 }
 
+/* (new190) CODE CONTAINER */
+.code-container {
+    width: 100% !important;
+}
+.prettyprint {
+    min-width: calc(100% - 52px) !important;
+    width: -moz-max-content;
+}
+pre.linenums.prettyprinted li{
+    box-shadow: -1px 1px 2px rgba(255, 211, 0, 0.2) !important;
+}
+pre.linenums.prettyprinted li.L0, pre.linenums.prettyprinted li.L1, pre.linenums.prettyprinted li.L2, pre.linenums.prettyprinted li.L3, pre.linenums.prettyprinted li.L4, pre.linenums.prettyprinted li.L5, pre.linenums.prettyprinted li.L6, pre.linenums.prettyprinted li.L7, pre.linenums.prettyprinted li.L8, pre.linenums.prettyprinted li.L9 {
+    background: transparent none repeat scroll 0 0;
+    margin-left: -17px !important;
+    max-width: calc(100% + 32px) !important;
+    min-width: calc(100% + 32px) !important;
+}
+
 
 /* COUNTER ALL */
 html {
@@ -4834,6 +4967,113 @@ body header#main-header + .width-constraint:first-of-type {
     padding: 0;
 /* background-color: aqua !important; */
 }
+
+/* (new190bis) PB SEARCH NO RESULTS - CIT */
+.width-constraint > p.alert {
+    display: none ;
+}
+body[pagetype="ListingPage"] .pagination +.width-constraint ,
+body[pagetype="ListingPage"] header#main-header + .width-constraint:first-of-type {
+position: fixed !important;
+    display: inline-block !important;
+/*     float: left !important; */
+/*     clear: both !important; */
+    height: 18px !important;
+    min-width: 960px ;
+    max-width: 960px ;
+    margin: 0px 0 0px 24.8% !important;
+top: 38px !important;
+    padding: 2px 0;
+z-index: 50 !important;
+/* background-color: aqua !important; */
+/* border: 1px solid red !important; */
+}
+body[pagetype="ListingPage"] #script-table + .width-constraint .sidebarred ,
+body[pagetype="ListingPage"] .pagination +.width-constraint .sidebarred ,
+body[pagetype="ListingPage"] header#main-header + .width-constraint:first-of-type  .sidebarred {
+    display: inline-block !important;
+    height: 17px;
+    line-height: 15px;
+/* background: green !important; */
+}
+/* ONLY ONE */
+/* body[pagetype="ListingPage"] #script-table + .width-constraint .sidebarred {
+    display: none !important;
+} */
+
+body[pagetype="ListingPage"] header#main-header + .width-constraint:first-of-type  .sidebarred-main-content > p {
+    position: relative ;
+    display: inline-block !important;
+    height: 17px;
+    line-height: 15px;
+width: 500px ; 
+    top: 27px ;
+    padding:  0 2px ;
+    font-size: 15px !important;
+z-index: 100 !important;
+
+}
+/* (new190bis) */
+body[pagetype="ListingPage"] header#main-header + .width-constraint:first-of-type  .sidebarred-main-content > p:first-of-type{
+position: absolute !important;
+    display: inline-block !important;
+    top: 5px;
+    padding: 0px ;
+    font-size: 0px !important;
+text-align: left !important;
+/*     z-index: 500;
+background: red !important; */
+}
+body[pagetype="ListingPage"] .pagination +.width-constraint:first-of-type .sidebarred .sidebarred-main-content > p:first-of-type a ,
+body[pagetype="ListingPage"] header#main-header + .width-constraint:first-of-type .sidebarred-main-content > p:first-of-type a {
+    display: inline-block !important;
+    height: 15px !important;
+    line-height: 15px !important;
+    margin-top: 1px;
+    font-size: 12px !important;
+padding: 0 !important;
+background: blue !important;
+}
+body[pagetype="ListingPage"] header#main-header + .width-constraint:first-of-type  .sidebarred-main-content > p:last-of-type{
+    display: none !important;
+}
+
+
+body[pagetype="ListingPage"] header#main-header + .width-constraint:first-of-type  ~ #script-table {
+    position: relative;
+    display: block !important;
+    max-width: 960px;
+margin-top: 65px;
+    top: 80px;
+    z-index: 0;
+}
+
+
+body[pagetype="ListingPage"] header#main-header + .width-constraint:first-of-type  ~ #script-table thead {
+    position: fixed;
+    height: 28px !important;
+    min-width: 960px;
+    max-width: 960px;
+    margin-top: -28px;
+    overflow: hidden !important;
+z-index: 5000 !important;
+background-color: yellow !important;
+}
+body[pagetype="ListingPage"] header#main-header + .width-constraint:first-of-type  ~ #script-table thead > tr > td {
+    z-index: 50000 !important;
+/* background-color: red !important; */
+}
+body[pagetype="ListingPage"] header#main-header + .width-constraint:first-of-type  ~ #script-table thead > tr > td:hover {
+    z-index: 50000 !important;
+background-color: green !important;
+}
+/* (new190bis) SEARCH - SOLVE DOUBLE HEADER */
+body[pagetype="ListingPage"] table+  .width-constraint:first-of-type ~ #script-table thead {
+    display: none !important;
+}
+
+
+
 /* (new188)  A VOIR */
 .sp-separator ~ .width-constraint ,
 body header#main-header + .width-constraint {
@@ -5300,8 +5540,30 @@ border: 1px solid red ;
 #additional-info>sub {
     font-size: 15px;
 }
+/* (new190) */
 
 
+/* #additional-info>small b , */
+#additional-info>small{
+    display: inline-block !important;
+    font-size: 15px;
+    line-height: 16px !important;
+padding-left: 5px !important;
+    text-indent: 10px !important;
+}
+#additional-info>small li{
+    display: block !important;
+    font-size: 15px !important;
+    line-height: 16px !important;
+/*     text-indent: 10px !important;   */
+}
+#additional-info>small li small ,
+#additional-info> li {
+    display: block !important;
+    font-size: 17px !important;
+    line-height: 17px !important;
+/* color: red !important; */
+}
 .script-author-description > table td blockquote ,
 .script-author-description > table td  {
     float: left ;
@@ -5344,21 +5606,23 @@ width: 99.9% ;
     margin-bottom: 0;
     text-align: left !important;
 }
+/* (new190) */
 .width-constraint #script-info > #script-content #additional-info > p  b {
-    display: inline-block !important;
+display: inline-block !important;
     float: none !important;
-width: 99.9% ;
+width: auto ;
     line-height: 17px ;
     margin-bottom: 0;
     text-align: left !important;
 }
-.width-constraint #script-info > #script-content #additional-info > p>a {
+.width-constraint #script-info > #script-content #additional-info > p > a {
     display: inline-block !important;
     float: none !important;
-    width: 99.9% ;
+    width: auto !important;
     line-height: 17px ;
     margin-bottom: 0;
     text-align: left !important;
+border: 1px solid red !important;
 }
 
 
@@ -5832,12 +6096,12 @@ background-color: rgba(7, 7, 7, 0.57) ;
     z-index: 1 ;
 background-color: black ;
 }
-/* without script */
+/* (new190bis) without script - NO CIT */
 #user-script-list > li h2 ,
 #browse-script-list > li h2 {
     display: inline-block ;
     width: 100% ;
-    max-width: 762px ;
+    max-width: 100%;
     word-wrap: break-word ;
     overflow: hidden ;
 }
@@ -5847,7 +6111,7 @@ background-color: black ;
     width: 100% ;
     line-height: 17px ;
 }
-#browse-script-list>li h2 span {
+#browse-script-list>li h2 span:not(.note-obj-user-tag) {
     width: 100% ;
     max-width: 720px ;
     overflow: hidden ;
@@ -5965,15 +6229,39 @@ top: 120px ;
 /* background: blue ; */
 }
 
-/* (new188) SHOW ALL LANG */
-body[pagetype="ListingPage"] .sidebarred-main-content>p {
+/* (new190bis) SHOW ALL LANG */
+body[pagetype="ListingPage"] .sidebarred-main-content > p {
+position: fixed !important;
+    display: inline-block !important;
+    top: 27px;
+/*     font-size: 0px !important; */
     font-size: 0px !important;
+z-index: 50000 !important;
 }
-body[pagetype="ListingPage"] .sidebarred-main-content>p>a[href*="/scripts?per_page="]  ,
-body[pagetype="ListingPage"] .sidebarred-main-content>p>a[href*="/scripts?filter_locale=0&page="] ,
-body[pagetype="ListingPage"] .sidebarred-main-content>p>a[href*="/scripts?filter_locale=0&per_page="] ,
-body[pagetype="ListingPage"] .sidebarred-main-content>p>a[href*="scripts?set=100"] ,
-body[pagetype="ListingPage"] .sidebarred-main-content .open-sidebar.sidebar-collapsed + h3 + p:not(:only-of-type) +p a[href*="scripts?filter_locale="] {
+/* (new190bis) */
+body[pagetype="ListingPage"] .sidebarred-main-content > p > a[href*="/scripts"] ,
+body[pagetype="ListingPage"] .sidebarred-main-content > p > a[href*="/scripts?language=css"] ,
+body[pagetype="ListingPage"] .sidebarred-main-content > p > a[href*="scripts?filter_locale="] ,
+body[pagetype="ListingPage"] .sidebarred-main-content> p > a[href*="/scripts?page="] {
+    position: fixed !important;
+    display: inline-block !important;
+    height: 15px !important;
+    line-height: 15px !important;
+    top: 43px;
+ left: 25%  !important;
+    margin-top: 1px;
+    padding: 0 !important;
+    font-size: 12px !important;
+    z-index: 50000 !important;
+background: blue !important;
+}
+/* (new190bis) ONLY ONE */
+/* body[pagetype="ListingPage"]   .pagination + .width-constraint .sidebarred-main-content>p>a[href*="/en/scripts?filter_locale="] , */
+body[pagetype="ListingPage"] .width-constraint:first-of-type .sidebarred-main-content>p>a[href*="/scripts?per_page="]  ,
+body[pagetype="ListingPage"] .width-constraint:first-of-type .sidebarred-main-content>p>a[href*="/scripts?filter_locale=0&page="] ,
+body[pagetype="ListingPage"] .width-constraint:first-of-type .sidebarred-main-content>p>a[href*="/scripts?filter_locale=0&per_page="] ,
+body[pagetype="ListingPage"] .width-constraint:first-of-type .sidebarred-main-content>p>a[href*="scripts?set=100"] ,
+body[pagetype="ListingPage"] .width-constraint:first-of-type sidebarred-main-content .open-sidebar.sidebar-collapsed + h3 + p:not(:only-of-type) + p a[href*="scripts?filter_locale="] {
     position: fixed !important;
     display: inline-block !important;
     top: 25px !important;
@@ -5981,10 +6269,11 @@ left: 25% !important;
     font-size: 11px !important;
 opacity: 1 !important;
 z-index: 500000 !important;
-color: gold ;
+color: yellow !important;
 }
 
 /* (new187) PUB /Learn New script */
+body[pagetype="ListingPage"]  .width-constraint~ .width-constraint .sidebarred-main-content > p > a ,
 .sidebarred-main-content .pagination + p  {
     display: none ;
 }

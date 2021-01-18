@@ -1,15 +1,15 @@
 /* ==UserStyle==
-@name           Flickr Widescreen - ALLinONE (Part 2) v.163
+@name           Flickr Widescreen - ALLinONE (Part 2) v.164
 @namespace      USO Archive
 @author         decembre
 @description    `It's ONLY for a WIDESCREEN(1920x1080)!<b>►►  Additional Userstyles to my <mark>- <b><a href="https://userstyles.org/styles/52167/">Flickr Widescreen - ALLinONE (Part 1)</a>:</b></mark>for some userscripts (GM : Greasemonkey) i use since a long time and  additionals styles for some not often used Flickr's pages</b><mark>NEW (2020.04):</mark>To install all parts of <b> "Flickr Widescreen - ALLinONE TOTAL"</b> at once,you can use my userscript [Greasyfork]:<b><a href="https://greasyfork.org/fr/scripts/392259-flickr-widescreen-bigone-v-151-usercss-userstyle-script">Flickr WideScreen - BigONE - UserCSS (userstyle)</a></b>Greasy Fork now supports User CSS as defined here for use with Stylus or as UserScript, read:<a href="https://greasyfork.org/fr/forum/discussion/65484/beta-user-css-support/p1">[Beta] User CSS support</a>`
-@version        2021112.17.55
+@version        2021117.17.28
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("flickr.com") {
 
-/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE (Part 2) v.163 (new163)  ==== */
+/* ==== FLICKR - 0 - Flickr WideScreen - ALLinONE (Part 2) v.164 (new163)  ==== */
 
 /* START == ADDITIONALS STYLE ==== */
 
@@ -49,88 +49,69 @@
 color: gray;
 }
 
-/* (new163) FOLLOW - BLOCKED */
-.view.follow-view:first-of-type:empty + div {
-    display: inline-block !important;
-}
-.view.follow-view:first-of-type:empty + div:before {
-    content: "Blocked" ;
-    display: inline-block !important;
-    height: 15px !important;
-    line-height: 15px !important;
-    width: 120px !important;
-    font-size: 15px ;
-    text-align: center ;
-    white-space: nowrap;
-background: red !important;
-}
-.view.follow-view:first-of-type:empty + div:hover:before {
-    content: "This User Block You ..." ;
-    width: 194px;
-    font-size: 12px ;
-color: white ;
-background: red !important;
-transition: all ease 0.1s ;
-}
-/* PHOT PAGE */
-/* .view.follow-view:first-of-type:empty {
-    position: relative !important;
-    display: inline-block !important;
-    width: 64px;
-    height: 18px !important;
-    line-height: 18px !important;
-    margin-left: 20px !important;
-}
-.view.follow-view:first-of-type:empty:before {
-    content: "Blocked" ;
-    position: relative !important;
-    display: inline-block !important;
-    width: 64px;
-    height: 19px;
-    line-height: 20px;
-    font-size: 15px;
-    text-align: center ;
-color: red ;
-background: gold !important;
-}
-.view.follow-view:first-of-type:empty:hover:before {
-    content: "This User Block You ..." ;
-    width: 164px;
-color: white ;
-background: red !important;
-transition: all ease 0.2s ;
-} */
-a.owner-name-with-by.truncate + .view.follow-view:first-of-type:empty:not([data-view-signature*="follow-view__"])::after {
-    content: "Blocked";
-    position: relative;
-    display: inline-block;
-    height: 15px;
-    line-height: 15px;
-    padding: 2px;
-    text-align: center;
-    border-radius: 5px;
-    z-index: 50000;
-    transform: scale(1);
-    transition: all 0.7s ease 0s;
-border: 1px solid red;
-color: gold;
-background: red;
-}
-a.owner-name-with-by.truncate + .view.follow-view:first-of-type:empty:not([data-view-signature*="follow-view__"])::after {
-    animation: 40s ease 0s normal forwards 1 running fade;
+/* (new164) POOL HAPPY INF */
+.InfoCase {
+    margin-left: 33%;
 }
 /* (new161) POOL EDIT ABOUT / CHECK INVIT SENT */
 #Main h1#Tertiary + table tbody tr td#Hint + #GoodStuff:not(.admin_moderation)  {
     position: relative !important;
     display: inline-block ;
-    width: 99% !important;
+    width: 1920px !important;
     left: 0px ;
     top: 0px;
     margin: 0px ;
     padding: 0 ;
 text-align: center !important;
 }
-
+/* INVITES NO FLICKR MEMBER - SHOW ADVANCED FORM */
+#advancedInvites {
+    position: absolute ;
+    display: inline-block !important;
+    width: 500px ;
+    right: 7px ;
+    top: 139px ;
+    padding: 5px ;
+}
+#advancedInvites {
+    display: inline-block !important;
+}
+#basicInvites[style="display: block;"] + #advancedInvites {
+    display: inline-block !important;
+    opacity: 0.2 ;
+    transition: all ease 0.7s ;
+}
+#basicInvites[style="display: block;"] + #advancedInvites:hover {
+    display: inline-block !important;
+    opacity: 1 ;
+}
+#advancedInvites p {
+    min-width: 465px !important;
+    left: -20px !important;
+}
+#advancedInvites p:first-of-type {
+    min-width: 465px !important;
+    min-height: 60px !important;
+    line-height: 17px;
+    left: -20px !important;
+}
+#advancedInvites p:last-of-type {
+    top: 40px !important;
+}
+#global-nav.styleguide-global-nav + #Main table tbody #basicInvites + #advancedInvites  + p {
+    position: absolute !important;
+    min-width: 500px ;
+    left: 1350px !important;
+}
+textarea#advanced_users {
+    width: 484px;
+}
+/* POOL INVIT CONF */
+.group-18-plus-confirmation-view {
+    position: absolute !important;
+    top: 99px !important;
+    left: 274px !important;
+}
 /* POOL - INVIT - CTS ADMIN */
 #Tertiary + .ThinCase>form[action="/groups_join.gne"] {
     display: inline-block ;
@@ -149,6 +130,13 @@ border: 1px solid gray;
     padding: 15px 0px 5px 20px !important;
 border: 1px solid red ;
 }
+#GoodStuff>form[action^="/help/forum/"] textarea {
+    max-width: 650px !important;
+    min-width: 650px !important;
+    min-height: 650px !important;
+    max-height: 650px !important;
+    padding: 5px !important;
+}
 
 .FlickrMailMessage ,
 #GoodStuff>form[action="groups_invite.gne"]  {
@@ -157,6 +145,116 @@ border: 1px solid red ;
     margin-top: 75px ;
     margin-left: -190px ;
     padding: 20px ;
+}
+/* ==== POOL - SEND INVIT ==== */
+
+/* POOL INVI/ADMIN/ (NOT) MAIL - MES */
+#global-nav.styleguide-global-nav + #Main  #subnav-refresh  + script#subnav-template-photopicker + script#subnav-template-positionmask + h1#Tertiary {
+    position: relative !important;
+    display: inline-block !important;
+    width: 100% !important;
+    height: 25px !important;
+    line-height: 20px !important;
+    left: 30px !important;
+    top: 80px !important;
+    margin-bottom: 35px !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+/* POOL INVIT - CHECK INVIT */
+#Main> #subnav-template-positionmask + h1 {
+    position: relative !important;
+    display: inline-block !important;
+    width: 100% !important;
+    height: 28px !important;
+    line-height: 24px !important;
+    left: 5px !important;
+    top: 75px !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+#Main> #subnav-template-positionmask + h1 + table:not(.PeopleResults):not(#Photo):not(#SubNav):not(.TopicListing) {
+    width: 100% !important;
+    min-height: 792px !important;
+    margin-top: 30px !important;
+}
+#Main> #subnav-template-positionmask + h1 + table:not(.PeopleResults):not(#Photo):not(#SubNav):not(.TopicListing) tbody tr ,
+#Main> #subnav-template-positionmask + h1 + table:not(.PeopleResults):not(#Photo):not(#SubNav):not(.TopicListing) tbody {
+    display: inline-block !important;
+    width: 100% !important;
+    min-height: 792px !important;
+}
+#Main > h1#Tertiary + .Problem {
+    position: relative !important;
+    display: inline-block !important;
+    width: 1120px !important;
+    height: 20px !important;
+    line-height: 20px !important;
+    left: 770px !important;
+    top: 30px !important;
+    margin-bottom: -77px !important;
+    text-align: left !important;
+}
+#invite-friends {
+    margin-top: 80px ;
+}
+#Main .subnav-refresh.groups.subnav-view.subnav-state-ready + script + script + h1 +  table tbody tr td#Hint  {
+    position: relative ;
+    display: inline-block ;
+    min-height: 20px ;
+    width: 100% ;
+    max-width: 450px ;
+    min-width: 450px ;
+    left: -10px ;
+    margin-top: -60px ;
+    padding: 5px ;
+    text-align: left ;
+    overflow: hidden ;
+}
+#Main .subnav-refresh.groups.subnav-view.subnav-state-ready + script + script + h1 +  table tbody tr td#Hint  p {
+    width: 430px !important;
+    padding: 5px ;
+}
+/* POOL INVIT - "invit sent to ... " */
+#Main > #subnav-template-positionmask + h1#Tertiary +table #GoodStuff {
+    position: relative ;
+    width: 100% ;
+    margin-top: -30px ;
+border: 1px solid gray ;
+}
+#GoodStuff p.NoResult + ul ,
+#GoodStuff p.Confirm + ul {
+    display: inline-block ;
+    max-height: 360px ;
+    min-height: 360px ;
+    width: 1760px ;
+    overflow: hidden ;
+    overflow-y: auto ;
+}
+#GoodStuff p.Confirm  {
+    margin-bottom: -12px ;
+    margin-top: 0px ;
+}
+#GoodStuff p.NoResult {
+    margin-bottom: -12px;
+    margin-top: -6px;
+}
+#GoodStuff p.NoResult + ul  li ,
+#GoodStuff p.Confirm + ul  li {
+    display: inline-block ;
+    width: 250px ;
+    float: left ;
+    white-space: nowrap ;
+    overflow: hidden ;
+    text-overflow: ellipsis ;
+}
+/* "PHO OFF" - CHECK - INVIT/HELP DISC */
+/* (new164) PEND URL SPECIF  */
+#Main h1#Tertiary + table tbody tr #GoodStuff {
+    position: relative ;
+    display: inline-block ;
+    width: 1900px ;
+    margin-top: -20px ;
 }
 /* (new161) POOL INVIT */
 #GoodStuff>form[action="groups_invite.gne"]  {
@@ -187,8 +285,12 @@ border: 1px solid red ;
     margin-left: 28px !important;
 }
 
-/* (new161) POOL ADMIN RULES*/
+/* (new164) POOL ADMIN RULES*/
 #GoodStuff>form[action$="/admin/rules/"] {
+    position: relative ;
+    max-width: 905px !important;
+    min-width: 905px !important;
+    left: -270px ;
     margin-top: 20px ;
     padding: 0px !important;
 }
@@ -211,6 +313,24 @@ border: 1px solid red ;
     right: 120px ;
     padding: 15px ;
 border: 1px solid blue ;
+}
+
+/* (new164) POOL ADM - PRIVACY */
+h1#Tertiary + table tbody tr td#Hint +  #GoodStuff > form +h3 + p + table {
+    display: inline-block !important;
+    width: 1900px !important;
+    text-align: center !important;
+}
+#Main #GoodStuff > form +h3 + p +table>tbody>tr>td {
+    display: inline-block ;
+    width: 1900px !important;
+    text-align: center !important;
+}
+h1#Tertiary + table tbody tr td#Hint +  #GoodStuff > form +h3 + p + table>tbody>tr>td form[action^="/groups/"] {
+    display: inline-block !important;
+    width: 100% !important;
+    max-width: 505px !important;
+    min-width: 505px !important;
 }
 
 /* (new161) EXPLO - MORE MENU + MODAL */
@@ -799,11 +919,14 @@ border: 1px solid red !important;
 border: 1px dashed red !important;
 background: blue !important;
 }
-/* ANTI JUMP TOP - ALL */
+/* (new164) ANTI JUMP TOP - ALL */
 html.styleguide body {
     box-sizing: border-box;
     position: relative;
     display: inline-block !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
     height: 100% !important;
     min-height: 100% !important;
     padding-bottom: 0px !important;
@@ -1245,66 +1368,77 @@ html #content .galleries-list-container.fluid-centered {
 .album-header-view > .album-header-content > .edit-cover-photo {
     top: 35px;
 }
-/* GAL - HEADER= */
+/* (new164) GAL - HEADER= */
 .gallery-page-view .gallery-page-container .details-section {
     position: sticky !important;
     top: 35px !important;
     margin-top: -95px !important;
     width: 100% !important;
-z-index: 50000 !important;
+z-index: 50 !important;
 }
-.gallery-page-view .gallery-page-container .details-section .description.short ,
-.gallery-page-view .gallery-page-container .details-section .description {
+.gallery-page-view .gallery-page-container .details-section .description:not(.hidden) ,
+.gallery-page-view .gallery-page-container .details-section .description:not(.hidden) {
     position: sticky !important;
+    display: inline-block !important;
     width: 100%;
     height: auto !important;
-    max-height: 48px;
     top: -85px !important;
     margin-top: 0px !important;
+    text-align: center !important;
 border-bottom: 1px solid gray ;
 background: #222  !important;
 }
-.gallery-page-view .gallery-page-container .details-section .description.short.no-read-more {
+/* (new164) */
+.gallery-page-view .gallery-page-container .details-section .description.hidden ,
+.gallery-page-view .gallery-page-container .details-section .description.hidden {
+    display: none !important;
+}
+.gallery-page-view .gallery-page-container .details-section .description.short.no-read-more:not(.hidden) {
     max-height: 100% !important;
 border-bottom: 1px solid gray ;
 background: #222  !important;
 }
 
-.gallery-page-view .gallery-page-container .details-section .description.short p {
-    width: 60%;
+.gallery-page-view .gallery-page-container .details-section .description.short:not(.hidden) p {
+    display: inline-block !important;
+    width: 30%;
     height: 100% !important;
     line-height: 15px ;
-    max-height: 17px !important;  
-     min-height: 17px !important;
-    margin-bottom: 20px !important;
-    padding: 3px 0 14px 0 ;
+    max-height: 30px !important;  
+    min-height: 30px !important;
+    margin-bottom: 0px !important;
+    padding: 3px 0  0 ;
+    text-align: left ;
     overflow: hidden !important;
 }
 .gallery-page-view .gallery-page-container .details-section .description:not(.short) p {
+    display: inline-block !important;
+    width: 30%;
     height: 100% !important;
     min-height: 400px !important;
     max-height: 400px !important;
-    padding-bottom: 30px !important;
+    padding: 5px !important;
+    text-align: left ;
     overflow-y: auto ;
 background: black !important;
 }
 .gallery-page-view .gallery-page-container .details-section .description .read-less-button, 
 .gallery-page-view .gallery-page-container .details-section .description .read-more-button {
-    margin-top: -10px ;
+    position: absolute ;
+    display: inline-block;
+    right: 610px  ;
+    top: 12px ;
     padding: 5px ;
-    border-radius: 0 0 5px 5px ;
+    border-radius:  5px ;
     font-size: 13px ;
 border: 1px solid #222 ;
 background: black !important;
 }
 .gallery-page-view .gallery-page-container .details-section .description .read-less-button {
-    margin-top: -5px  !important;
     opacity: 1 ;
 }
 .gallery-page-view .gallery-page-container .details-section .description .read-more-button {
-    margin-top: -18px ;
     padding: 1px ;
-    border-radius:  5px ;
     opacity: 0.5 ;
 }
 .gallery-page-view .gallery-page-container .details-section header h1 {
@@ -1331,15 +1465,23 @@ color: gray ;
     display: inline-block;
     width: 100%;
 }
+/* (new164) */
 .gallery-page-view .gallery-page-container .stats {
     position: fixed !important;
     display: inline-block !important;
     width: 370px !important;
-    right: 350px !important;
-    top: 7px!important;
+    right: 10px !important;
+    top: 45px!important;
     margin: 0 !important;
-    text-align: left !important;
-    z-index: 50000 !important;
+    text-align: right !important;
+    opacity: 1 !important;
+    z-index: 50 !important;
+}
+.gallery-page-view .gallery-page-container .stats span {
+    display: inline-block !important;
+    opacity: 1 !important;
+    z-index: 500000 !important;
+    color: gold !important;
 }
 .gallery-page-view .gallery-page-container .details-section header {
     display: block !important;
@@ -1358,6 +1500,9 @@ html #content .galleries-list-container.fluid-centered .photo-list-gallery-view 
     transform: none !important;
 }
 .gallery-page-view .gallery-page-container .photos-section .photo-list-container {
+    display: inline-block !important;
+    width: 100% !important;
+    height: auto !important;
     top: 10px !important;
 }
 .galleries-list-container.fluid-centered .galleries-list-toolbar-view {
@@ -1394,9 +1539,12 @@ html #content .galleries-list-container.fluid-centered .photo-list-gallery-view:
     z-index: 10 ;
 background: gold ;
 }
-/* GAL - LIST - THUMB - INFO BACKG/FAV STAR */
+/* (new164) GAL - LIST - THUMB - INFO BACKG/FAV STAR */
 .gallery-page-view .gallery-page-container .photos-section {
+    display: inline-block !important;
     width: 100% !important;
+    height: auto !important;
+    min-height: 900px !important;
     border-top: 1px solid #333;
 }
 .html-gallery-page-view .fluid-centered.gallery-page-container .photos-section .photo-list-container .photo-list-view .photo-list-gallery-photo-view.forced-aspect-ratio:not(:hover) .sub-photo-info-bar {
@@ -1407,32 +1555,70 @@ background: gold ;
     opacity: 0.5 !important;
     visibility: visible !important;
 }
-/* GAL - POPUP REORDER/COVER SELEC */
+/* (new164) GAL - POPUP REORDER/COVER SELEC */
 .modal.subview-modal.reorder-grid-modal ,
 .modal.subview-modal.photo-selector.gallery-coverphoto-selector {
     position: fixed !important;
     display: inline-block !important;
-    max-height: inherit;
-    min-height: 925px !important;
+    max-height: 95.9vh !important;
+    min-height: 95.9vh !important;
     max-width: inherit;
-    min-width: 1902px !important;
+    min-width: 1905px !important;
     left: 0% !important;
-    top: 0% !important;
+    top: 4% !important;
     margin-left: 2px !important;
     margin-top: 1px !important;
     overflow: hidden !important;
     z-index: 50000000 !important;
+background: #111 !important;
+}
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .nav {
+    height: 35px !important;
+}
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .fluid-modal-nav-bar ,
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .fluid-modal-nav-content ul ,
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .fluid-modal-nav-content ul.links  ,
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .fluid-modal-nav-content ul.links li {
+    height: 30px !important;
+    line-height: 30px !important;
+}
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .fluid-modal-nav-content ul.links li a {
+    height: 25px !important;
+    padding: 0 !important;
+}
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .close-x {
+    right: 42px;
+    top: 6px;
+    border-radius: 5px !important;
+border: 3px solid red  !important;
+background-color: red !important;
+}
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .close-x:hover {
+    opacity: 1;
 }
 .modal.subview-modal.photo-selector.gallery-coverphoto-selector .body.lines {
-    height: 805px;
+    height: 87.8vh;
 }
 .modal.subview-modal.photo-selector.gallery-coverphoto-selector .body.lines .content.has-footer {
-    height: 796px;
+    height: 87.5vh !important;
     border: 1px solid gray;
+}
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .foot {
+    height: 25px !important;
+    margin-top: 5px !important;
+    overflow: hidden;
+}
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .foot .buttons {
+    padding: 0;
+}
+.modal.subview-modal.photo-selector.gallery-coverphoto-selector .foot .buttons button.mini.action {
+    height: 23px;
+    line-height: 27px;
+    margin: 2px 25px 0 0 !important;
 }
 .reorder-grid-modal .content.subview ,
 .modal.subview-modal.reorder-grid-modal .body {
-    min-height: 931px !important;
+    min-height: 96vh !important;
 }
 .reorder-grid-view .drag-list-container .drag-drop-item {
     height: 90.462px !important;
@@ -1440,6 +1626,15 @@ background: gold ;
     margin-bottom: 8px;
     margin-left: 4px;
     margin-right: 4px;
+}
+.drag-tip ,
+.drag-interaction-containe .text-container {
+    color: gold;
+}
+.reorder-grid-modal-view header {
+    padding: 5px;
+    text-align: center;
+border-bottom: 1px solid gray;
 }
 /* GAL - ACT BAR */
 .gallery-page-view .action-bar ,
@@ -1467,7 +1662,7 @@ background: gold ;
     padding-left: 5px;
     padding-right: 5px;
 }
-/* ADD/REORDER/VIEWS SIZE/SHARE - IN ACT BAR */
+/* (new164) ADD/REORDER/VIEWS SIZE/SHARE - IN ACT BAR */
 .gallery-page-view .gallery-page-container .photos-section .photos-section-header {
     position: fixed !important;
     display: flex;
@@ -1490,6 +1685,8 @@ border-bottom: 1px solid red;
 .gallery-page-view .gallery-page-container .action-bar .actions .action.share {
     margin-right: 23px !important;
 }
+
+
 /* GAL - POP MENU ADD to POOL/GAL */
 .fluid.html-gallery-page-view .droparound.subview-droparound.auto-size .add-to-stuff-view.flickr-view-root-view {
     opacity: 1 !important;
@@ -1633,7 +1830,7 @@ content: "    🔻" ;
     overflow: hidden;
     overflow-y: auto;
 }
-/* GAL - COM COUNT */
+/* (new164) GAL - COM COUNT */
 .html-gallery-page-view .comments-section .gallery-comments-view .comments-list-section .comment-list-view .comment-list-container .comment-list {
     counter-reset: myIndex 00 !important;
 }
@@ -1643,7 +1840,7 @@ content: "    🔻" ;
     position: absolute ;
     width: 15px ;
     min-width: 17px ;
-    margin-left: 105px ;
+    margin-left: 95px ;
     top: 9px ;
     border-radius: 10px ;
     font-size: 10px ;
@@ -3219,7 +3416,7 @@ border-bottom: 1px dashed gray !important;
     margin-top:  -10px ;
     margin-left: -0px ;
 }
-/* ==== REC ACTIVITY ==== */
+/* (new164) REC ACTIVITY ==== */
 #Main .tt-col1 {
     position: relative;
     vertical-align: top;
@@ -3228,10 +3425,11 @@ border-bottom: 1px dashed gray !important;
 }
 #tt-recent-nav {
     height: 21px ;
-    width: 460px ;
-    left: -200px ;
-    top: -19px ;
-    text-align: center ;
+    width: 630px ;
+    left: -565px ;
+    top: -18px ;
+    text-align: left ;
+border: 1px solid gray ;
 }
 #tt-activity-box {
     position: relative ;
@@ -3244,9 +3442,9 @@ border-bottom: 1px dashed gray !important;
 }
 #tt-recent .tt-col2 {
     position: absolute ;
-    width: 210px ;
+    width: 380px ;
     height: 50px ;
-    left: 1645px ;
+    left: 1300px ;
     top: -43px ;
     overflow: hidden ;
 }
@@ -3439,16 +3637,33 @@ border-top: 1px solid gray  ;
     text-align: center  ;
     visibility: visible  ;
 }
+/* (new164) */
+.act-data>div:first-of-type ,
+.tt-comment-count.compact {
+    font-size: 0px  ;
+}
+.act-data>div:first-of-type h2 a {
+    font-size: 15px  ;
+}
+.act-data>div:first-of-type b + b ,
 .act-item > .act-data > div b {
     position: relative  ;
     display: inline-block  ;
-    height: 10px  ;
-    line-height: 8px  ;
-    vertical-align: middle  ;
+    height: 12px  ;
+    line-height: 10px  ;
+    vertical-align: top  ;
     margin-top: 0px   ;
     font-size: 10px  ;
 background: red  ;
 }
+.act-data>div:first-of-type b + b {
+    width: 70px ;
+    padding-left: 3px ;
+    overflow: hidden ;
+background: blue  ;
+}
+
+
 /* REC ACT - H2 - CONTACT */
 .act-item.f-contacted h2 {
     position: relative  ;
@@ -3783,13 +3998,15 @@ ul.tt-activity .f-contacted ul.act-details  li.act-detail-item .act-when {
     left: -33px;
     padding: 5px;
 }
-/* REC ACT - PAGI TT PAGE */
+/* (new164) REC ACT - PAGI TT PAGE */
 #tt-pages {
     position: absolute ;
     display: inline-block ;
-    height: 30px ;
-    left: 920px ;
+    height: 32px ;
+    left: 720px ;
     top: 0px ;
+    padding: 0 5px ;
+border: 1px solid gray ;
 }
 #tt-pages #paginator-module.Pages {
     height: 25px ;
@@ -3797,40 +4014,56 @@ ul.tt-activity .f-contacted ul.act-details  li.act-detail-item .act-when {
     text-align: center ;
 }
 #tt-pages #paginator-module.Pages .Results {
-    margin-top: -2px ;
+    margin-top: 3px ;
     text-align: center ;
 }
-/* REC ACT - FEED + SLID BUT */
+/* (new164) REC ACT - FEED + SLID BUT */
 #tt-pages + #Feeds {
     left: -50px  !important;
 }
-#tt-pages + #Feeds #AtomRSS ,
 #tt-pages + #Feeds {
     position: absolute ;
     display: inline-block ;
-    width: 350px ;
-    height: 30px ;
-    line-height: 20px !important;  
+    height: 15px ;
     top: 0px ;
-    left: 80px ;
+    left: 0px ;
     margin-top: 0 ;
-    padding: 0 ;
+    font-size: 0 ;
+}
+#tt-pages + #Feeds #AtomRSS  {
+    position: absolute ;
+    display: inline-block ;
+    width: 15px ;
+    height: 15px ;
+    top: 3px ;
+    left: 80px ;
+    font-size: 0 ;
 }
 #tt-pages + #Feeds #AtomRSS > div {
-    margin-bottom: -11px !important;
+    margin-bottom: -15px !important;
+}
+/* RSS MAIL */
+#tt-pages + #Feeds #AtomRSS > div {
+    height: 15px ;
+    line-height: 14px ;
+}
+#tt-pages + #Feeds #AtomRSS > div .image_link {
+    display: inline-block;
+    height: 15px ;
+    line-height: 15px ;
+}
+#tt-pages + #Feeds #AtomRSS>div>a img.absmiddle {
+    height: 17px !important;
+    width: 15px !important;
 }
 
-#tt-pages + #Feeds #AtomRSS > div{
-    margin-bottom: 0px ;
+/* RSS */
+#tt-pages + #Feeds #AtomRSS > a {
+    margin-left: 19px;
+    margin-top: -10px !important;
 }
 #tt-pages + #Feeds #AtomRSS > a + a {
-    display: inline-block ;
-    width: 25px ;
-    height: 20px ;
-    line-height: 20px ;
-    vertical-align: middle ;
-    left: -10px ;
-    padding: 0 ;
+    display: none ;
 }
 
 /* == PROF - CONT - MAIL ==== */
@@ -4075,8 +4308,8 @@ background-color: #333 !important;
 }
 /* STIG - FAV */
 .html-favorites-page-view #topPaginationContainer {
-    min-width: 600px !important;
-    max-width: 600px !important;
+    min-width: 400px !important;
+    max-width: 400px !important;
     left: 280px !important;
 }
 /* STIG - POOL BETA */
@@ -4671,9 +4904,8 @@ script + .fluid-droparound-view:hover .content.subview > .person-card-view.flick
     height: 30px !important;
     line-height: 30px !important;
     right: 170px !important;
-    top: 5px !important;
+    top: 2px !important;
     border-radius: 5px !important;
-    z-index: 5000000 !important;
 }
 
 .fluid .coverphoto-content .title-block-content .title .follow-view {
@@ -4681,9 +4913,8 @@ script + .fluid-droparound-view:hover .content.subview > .person-card-view.flick
     display: inline-block !important;
     width: 130px !important;
     right: 0px !important;
-    top: 10px !important;
+    top: 5px !important;
     text-align: center !important;
-    z-index: 5000000 !important;
 border: 1px solid peru !important;
 }
 .fluid .coverphoto-content .title-block-content .title .follow-view:hover {
@@ -5045,23 +5276,24 @@ a[id^="CFS"] span:not(.avatar):not(.title) {
 color: white !important;
 text-shadow: 1px 1px 2px #000 !important;
 }
-span:first-of-type:not(:only-of-type):not(.avatar):not(.title):not(.TabOut) ,
-a[id^="CFS"] span:first-of-type:not(:only-of-type):not(.avatar):not(.title) {
+/* (new164) CF MATCH MORE */
+span:first-of-type:not(:only-of-type):not(.avatar):not(.title):not(.TabOut):not(.truncate):not(.countdown-slideshow):not(.nav-r):not(.person-name):not(.comment-actions):not(.stats-label):not(.ui-dialog-arrow):not(.exif-value):not(.zoom):not(.counts):not(.foot-message):not(.sp-fw-spanbutton) ,
+a[id^="CFS"] span:first-of-type:not(:only-of-type):not(.avatar):not(.title):not(.truncate) {
     padding: 0 0 0 4px !important;
     border-radius: 2px 0px 0px 2px !important;
     white-space: normal !important;
     min-width: 5px ! important;
 }
-span:last-of-type:not(:only-of-type):not(.avatar):not(.title):not(.TabOut) ,
-a[id^="CFS"] span:last-of-type:not(:only-of-type):not(.avatar):not(.title) {
+span:last-of-type:not(:only-of-type):not(.avatar):not(.title):not(.TabOut):not(.truncate):not(.countdown-slideshow):not(.nav-r):not(.person-name):not(.comment-actions):not(.stats-label):not(.ui-dialog-arrow):not(.exif-value):not(.zoom):not(.counts):not(.foot-message):not(.sp-fw-spanbutton) ,
+a[id^="CFS"] span:last-of-type:not(:only-of-type):not(.avatar):not(.title):not(.truncate) {
     padding-right: 7px !important;
     border-radius: 0px 2px 2px 0px !important;
 }
-a[id^="CFS"] span:only-child:not(.avatar):not(.title) {
+a[id^="CFS"] span:only-child:not(.avatar):not(.title):not(.truncate) {
     padding: 0 7px !important;
     border-radius: 2px !important;
 }
-/*  GALL */
+/*  GAL */
 .photo-list-gallery-photo-view .photo-list-photo-container .sub-photo-info-bar .details-container .details a.attribution[id^="CFS"] span:not(.avatar):not(.title) {
     vertical-align: middle !important;
     height: 15px !important;
@@ -6903,7 +7135,22 @@ a.poplnk:link {
 
 /* ==== END == GM ADAPTATION ======= */
 }
-
+@-moz-document url-prefix("https://www.flickr.com/activity/"), url-prefix("https://www.flickr.com/recent_activity.gne?") {
+/* ===== START == (new164) URL PREF - MAIN H1 - ACTI === */
+#Main>h1 {
+    position: relative ;
+    height: 20px ;
+    line-height: 20px ;
+    width: 130px ;
+    left: 1520px ;
+    top: 6px ;
+    padding: 0 ;
+    font-size: 13px ;
+    text-align: center ;
+border: 1px solid gray ;
+}
+/* == END == URL PREF - MAIN H1 - ACTI  === */
+}
 @-moz-document url-prefix("https://www.flickr.com/photos/friends"), url-prefix("https://www.flickr.com/people/") {
 /* START ==== URL PREF - GM - "F.F.S" - SUPP TOOLTIP and Name action (pointer-events) where it's not USABLE - ==== */
 
