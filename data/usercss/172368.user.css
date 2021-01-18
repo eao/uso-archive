@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MouShu
 @description    `屏蔽了百度旗下常用页面常见广告，制作初衷是被这些奇葩广告折磨得心塞，考虑到百度也要赚钱，部分广告并不是删除而是让你看不见也点不了。<b>务必关闭广告拦截插件，否则百度将会使用shadow dom等工具 强 行 推 送 广 告 </b>可用页面：百度主页（仅一个推广链接）、搜索页、百科、知道、贴吧、文库、音乐========后续会有更新，如果发现哪天有新的广告出现或者屏蔽失效，请留言并告诉我详细情况========上B站的小伙伴可以站内搜索我的另一个作品<a href="https://userstyles.org/styles/171825/bilibili-g36" target="_blank">bilibili美化与精简</a>那个作品我也会更新的`
-@version        2020129.14.33
+@version        2021118.7.19
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -100,6 +100,8 @@ div>a[href*='hao123']{
 .cps_wrap,/*右侧广告*/
 li.home-place-item,
 body>div[class$='  clearfix'],
+.threadlist_bright>div.fengchao-wrap-feed,
+.p_postlist>div.fengchao-wrap-feed,
 .threadlist_bright>li:not(.j_thread_list):not(.thread_top_list_folder),/*帖间插入广告*/
 .l_post_bright[ad-dom-img="true"]/*帖内插入广告*/
 {

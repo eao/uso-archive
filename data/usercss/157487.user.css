@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         nullpagejp
 @description    `ウェザーニュース社のHTML版ピンポイント天気をコンパクトに表示します。デスクトップPC向けです。このサービスでは広範囲な自治体エリアの天気予報情報ではなく､緯度経度を指定してピンポイントの天気予報情報を見ることができます｡まずは､ https://weathernews.jp/onebox/area/JAPAN.html にアクセスして見たい場所を検索欄に地名や場所名､郵便番号､電話番号等で入力してください｡緯度経度で正確に場所を指定する場合は上記アドレスの"/area/"以降の部分を"/緯度(北緯)/経度(東経)/"に代えてください｡例えば秋葉原駅南なら"/35.697559/139.772552/"とします｡`
-@version        202095.3.20
+@version        2021118.10.57
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,6 +17,7 @@
   2020-02-08 崩れ修正
   2020-08-24 リニューアル対応
   2020-09-05 台風バナーによる崩れに対応
+  2021-01-18 新規バナーセクション追加に対応
   ======================================*/
 /*--- unwanteds ---*/
 [id*="-ad-"], [class*="-ad-"],
@@ -84,15 +85,18 @@ h1, h2, h3, h4 {padding: 0;}
 /*-- 5: 不明バナー --*/
 #main section:nth-of-type(5) {display: none;}
 
-/*-- 6: お天気ニュース → サイドバーにあるので不要 --*/
+/*-- 6: 不明バナー 2021/01/18 セクション挿入確認 --*/
 #main section:nth-of-type(6) {display: none;}
+
+/*-- 7: お天気ニュース → サイドバーにあるので不要 --*/
+#main section:nth-of-type(7) {display: none;}
 .list-news__item {width: auto; padding: 0;}
 .list-news .inner {width: auto;}
 .list-news__cont {padding-left: 0;}
 .list-news__txt {display: none; padding: 0;}
 
-/*-- 7: ～付近の天気(レーダー付) --*/
-#main section:nth-of-type(7) {display: block;}
+/*-- 8: ～付近の天気(レーダー付) --*/
+#main section:nth-of-type(8) {display: block;}
 .col-2--pc {display: block;}
 .inner {padding: 0;}
 .col-2--pc .col__item.c60 {width: auto;}
@@ -108,16 +112,16 @@ h1, h2, h3, h4 {padding: 0;}
 .weather-now .btn02, .weather-now .btn {display: none;}
 .col-2--pc .col__item > *:not(:last-child) {margin-bottom: 0;}
 
-/*-- 8: ～付近の週間天気 --*/
-#main section:nth-of-type(8) {display: block;}
+/*-- 9: ～付近の週間天気 --*/
+#main section:nth-of-type(9) {display: block;}
 .weather-weekly {display: block; width: auto; max-width: none; margin-top: 0;}
 
-/*-- 9: ライブ動画番組  → 不要 --*/
+/*-- 10: ライブ動画番組  → 不要 --*/
 #main section.block.no-ja {display: none;}
 .youtube {max-width: none;}
 .youtube__info {padding: 0;}
 
-/*-- 10: ～付近の観測値 --*/
+/*-- 11: ～付近の観測値 --*/
 #main section.block.no-global {display: block;}
 .obs-data {max-width: none;}
 .obs-data > *:not(:last-child) {margin-bottom: 0;}

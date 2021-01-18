@@ -3,8 +3,8 @@
 @namespace      USO Archive
 @author         T-J
 @description    `A Brick Hill site theme, based on new site concepts surfaced by spacebuilder.This by no-way is official, and issues may exist. Do not use in conjunction with dark theme, only light theme.`
-@version        2021117.21.9
-@license        NO-REDISTRIBUTION
+@version        2021118.12.18
+@license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.brick-hill.com/") {
@@ -16,10 +16,10 @@ element.style {
     border-radius: 5px;
 }
  body, html {
-     background-image: url('https://cdn.discordapp.com/attachments/582605365145894922/800445405007315034/background.png');
      background-color: #4F89AE;
-     background-repeat: no-repeat;
+     background-image: url(https://cdn.discordapp.com/attachments/582605365145894922/800445405007315034/background.png);
      background-position: top;
+     background-repeat: repeat-x;
      margin: auto;
      margin-top: auto;
      width: 1200px;
@@ -61,53 +61,87 @@ input, textarea {
     border-radius: 0px;
     box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
     border:1px solid #C8C9C9;
+    overflow: hidden;
 }
 .card .top:not(.absolute).blue {
-    background: url(https://cdn.discordapp.com/attachments/582605365145894922/800450083559571486/bluebanner.png) round right top;
-    height: 40px;
+    border: 1px solid #007ACC;
+    background: #007acc;
+    background: linear-gradient(rgba(65,156,216,1) 0%, rgba(2,123,204,1) 100%);
     color: #fff !important;
     font-weight: bold;
     font-size: 20px;
 }
 .card .top:not(.absolute).red {
-    background: url(https://cdn.discordapp.com/attachments/582605365145894922/800450087175716904/redbanner.png) round right top;
-    height: 40px;
+     border: 1px solid #DD1A21;
+    background: #DD1A21;
+    background: linear-gradient(rgba(254,87,70,1) 0%, rgba(221,26,33,1) 100%);
     color: #fff !important;
     font-weight: bold;
     font-size: 20px;
 }
 .card .top:not(.absolute).green {
-    background: url(https://cdn.discordapp.com/attachments/582605365145894922/800450084776575026/greenbanner.png) round right top;
-    height: 40px;
-    color: #fff !important;
-    font-weight: bold;
-    font-size: 20px;
-}
-.card .top:not(.absolute).orange {
-    background: url(https://cdn.discordapp.com/attachments/582605365145894922/800453406787239946/orangebanner.png) round right top;
-    height: 40px;
+    border: 1px solid #11A304;
+    background: #11A304;
+    background: linear-gradient(rgba(23,198,10,1) 0%, rgba(17,163,4,1) 100%);
     color: #fff !important;
     font-weight: bold;
     font-size: 20px;
 }
 .card .top:not(.absolute) {
-    background: url(https://cdn.discordapp.com/attachments/582605365145894922/800465598941364254/lightbluebanner.png) round right top;
-    height: 40px;
+    border: 1px solid #B6B6B6;
+    background: #B6B6B6;
+    background: linear-gradient(rgba(208,208,208,1) 0%, rgba(182,182,182,1) 100%);
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 20px;
+}
+.card .top:not(.absolute).orange {
+    border: 1px solid #D87C00;
+    background: #D87C00;
+    background: linear-gradient(rgba(243,154,0,1) 0%, rgba(216,124,0,1) 100%);
     color: #fff !important;
     font-weight: bold;
     font-size: 20px;
 }
 button:not(.plain), .button:not(.plain) {
     border-radius: 0px;
+    border: 1px solid #B6B6B6;
+    background: #B6B6B6;
+    background: linear-gradient(rgba(208,208,208,1) 0%, rgba(182,182,182,1) 100%);
 }
-button:not(.plain).blue, .button:not(.plain).blue {
-    background: url(https://cdn.discordapp.com/attachments/582605365145894922/800450083559571486/bluebanner.png) no-repeat right top;
+.thread-label {
+    border: 1px solid #B6B6B6;
+    background: #B6B6B6;
+    background: linear-gradient(rgba(208,208,208,1) 0%, rgba(182,182,182,1) 100%);
 }
-button:not(.plain).green, .button:not(.plain).green, button:not(.plain).bucks, .button:not(.plain).bucks {
-    background: url(https://cdn.discordapp.com/attachments/582605365145894922/800450084776575026/greenbanner.png) no-repeat right top;
+button:not(.plain).blue, .button:not(.plain).blue, .thread-label.blue {
+    border: 1px solid #007ACC;
+    background: #007acc;
+    background: linear-gradient(rgba(65,156,216,1) 0%, rgba(2,123,204,1) 100%);
 }
-button:not(.plain).orange, .button:not(.plain).orange, button:not(.plain).bits, .button:not(.plain).bits {
-    background: url(https://cdn.discordapp.com/attachments/582605365145894922/800453105145217054/orangebanner.png) no-repeat right top;
+button:not(.plain).green, .button:not(.plain).green, button:not(.plain).bucks, .button:not(.plain).bucks, .thread-label.green {
+    border: 1px solid #11A304;
+    background: #11A304;
+    background: linear-gradient(rgba(23,198,10,1) 0%, rgba(17,163,4,1) 100%);;
+}
+button:not(.plain).orange, .button:not(.plain).orange, button:not(.plain).bits, .button:not(.plain).bits, .thread-label.orange {
+    border: 1px solid #D87C00;
+    background: #D87C00;
+    background: linear-gradient(rgba(243,154,0,1) 0%, rgba(216,124,0,1) 100%);
+}
+button:not(.plain).red, .button:not(.plain).red, .thread-label.red {
+    border: 1px solid #DD1A21;
+    background: #DD1A21;
+    background: linear-gradient(rgba(254,87,70,1) 0%, rgba(221,26,33,1) 100%);
+}
+.modal .cancel-button, button:not(.plain) {
+    border: 1px solid #B6B6B6;
+    background: #B6B6B6;
+    background: linear-gradient(rgba(208,208,208,1) 0%, rgba(182,182,182,1) 100%);   
+}
+.admin-forum-options a, .admin-forum-options button {
+    background: transparent;
+    border: 0px;
 }
 .box.item-img.owns, .box.item-img.special {
     border: 1px solid #C8C9C9;
@@ -124,10 +158,116 @@ button:not(.plain).orange, .button:not(.plain).orange, button:not(.plain).bits, 
 .side-ad {
     display:none;
 }
+.card .thumbnail.dark {
+    background-color: white;
+}
+.card .item-card-details, .card .item-content {
+    background-color: white;
+    border: 0px;
+}
 .forum-tag {
-    background: url(https://cdn.discordapp.com/attachments/582605365145894922/800466200446500864/forumtag.png)round right top;
+    background: url(https://cdn.discordapp.com/attachments/582605365145894922/800681990281887755/forumtag.png)round right top;
 }
 .forum-tag::after {
-    border-right-color: transparent;
- }
+    border-right-color: #CFCFCF;
+}
+.select, select, input, textarea {
+    border-radius: 0px;
+}
+}
+
+@-moz-document url-prefix("https://www.brick-hill.com/dashboard/") {
+.input-group .input-button {
+    color: white;
+}
+}
+
+@-moz-document regexp("https://www.brick-hill.com/forum/") {
+*
+  {
+  }
+
+
+.card .top:not(.absolute) {
+    border: 1px solid #46BCF9;
+    background: #46BCF9;
+    background: linear-gradient(rgba(73,208,250,1) 0%, rgba(70,188,249,1) 100%);
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 20px;
+}
+.forum-links a {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+}
+
+@-moz-document url-prefix("https://www.brick-hill.com/trades") {
+.item-card-container {
+    border: 1px solid #B6B6B6;
+    border-radius: 0px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0);
+}
+}
+
+@-moz-document url-prefix("https://www.brick-hill.com/forum/") {
+.forum-links a {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+}
+}
+
+@-moz-document regexp("https://www.brick-hill.com/shop/") {
+*
+  {
+  }
+
+
+.card .thumbnail.dark {
+    border: 1px solid #C8C9C9;
+}
+.card {
+    border: 0px;
+}
+.card .creator {
+    display:none;
+}
+}
+
+@-moz-document regexp("https://www.brick-hill.com/customize/") {
+.modal .cancel-button, button:not(.plain) {
+    background: transparent;
+}
+}
+
+@-moz-document url-prefix("https://www.brick-hill.com/user/") {
+*
+  {
+  }
+
+
+button:not(.plain).blue, .button:not(.plain).blue, .thread-label.blue {
+    background: transparent;
+    border-color: white white orange white;
+    color: black;
+
+}
+button.tab-button.transparent, .button.tab-button.transparent {
+    background: transparent;
+    border-color: white white #C3CDD8 white;
+    color: black;
+}
+.profile-card.crate img {
+    border-radius: 0px;
+}
+.profile-card.award img {
+    border: 0px;
+}
+button:not(.plain).orange, .button:not(.plain).orange, button:not(.plain).red, .button:not(.plain).red {
+    border: 1px solid #007ACC;
+    background: #007acc;
+    background: linear-gradient(rgba(65,156,216,1) 0%, rgba(2,123,204,1) 100%);
+}
 }
