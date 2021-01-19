@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         soupy
 @description    `I couldn't find a good dark theme for Torn and the official one is taking too long so I made a quick dark mode for Torn`
-@version        2021112.15.36
+@version        2021119.12.15
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("torn.com") {
-/*Last update: Fix sidebar icons, Properties */
+/*Last update: Fix for bazaars */
 
 
 html:not([stylus-iframe]):after {
@@ -66,7 +66,7 @@ div.chat-box-input_1SBQR {
     filter: invert(1)
 }
 
-h2.header___30pTh {
+h2.header___ibZei {
     filter: invert(1)
 }
 
@@ -248,6 +248,10 @@ canvas.torn-item.item-converted {
 
 input.searchInput___2VbL4 {
     filter: invert(0)hue-rotate(0deg)
+}
+
+div.panelHeader___RM7mx {
+    filter: invert(1)hue-rotate(180deg)
 }
 }
 
@@ -1056,7 +1060,7 @@ ul.items-list.clearfix {
     filter: invert(0)
 }
 
-div.imgBar___1Lq7R img {
+div.imgBar___3LtdV img {
     filter: invert(1)hue-rotate(180deg)
 }
 
@@ -1084,7 +1088,7 @@ div.panelHeader___25hFj.black___2ue_b {
     filter: invert(1)hue-rotate(180deg)
 }
 
-div.imgContainer___3k34h {
+div.imgContainer___2HMyt {
     filter: invert(1)hue-rotate(180deg)
 }
 }

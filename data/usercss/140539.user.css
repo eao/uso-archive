@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `究極護眼`
-@version        20201113.14.39
+@version        2021119.6.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -223,6 +223,7 @@
   
   /*post*/           .GAagiRXJU88Nul1M7Ai0H{overflow:visible!important;margin:0px!important;}
   /*post content*/   .GAagiRXJU88Nul1M7Ai0H  {color:#ccc!important;font:32px/120% arial,"PMingLiU"!important;font-weight:100!important;}
+  /*post content*/   .GAagiRXJU88Nul1M7Ai0H b>span                {font:32px/120% "Microsoft JhengHei"!important;}
   /*post content*/   .GAagiRXJU88Nul1M7Ai0H span[style*="small"]  {font:26px/120% "Microsoft JhengHei"!important;}
   /*post content*/   .GAagiRXJU88Nul1M7Ai0H span[style*="medium"] {font:32px/120% "Microsoft JhengHei"!important;}
   /*post content*/   .GAagiRXJU88Nul1M7Ai0H span[style*="large"]  {font:40px/100% "Microsoft JhengHei"!important;font-weight:800!important;}
@@ -232,9 +233,11 @@
   /*post link*/      .GAagiRXJU88Nul1M7Ai0H a:not(.GsWOYqIgCihyKUG73_Li2):hover{background:#000!important;}
   
   /*post img*/       .GAagiRXJU88Nul1M7Ai0H sub{width:100%!important;}
-  /*post img*/       .GAagiRXJU88Nul1M7Ai0H sub>a.GsWOYqIgCihyKUG73_Li2,
+  /*post img*/       .GAagiRXJU88Nul1M7Ai0H span>a.GsWOYqIgCihyKUG73_Li2                    {max-width:initial!important;width:98.5%!important;}
+  /*post img*/       .GAagiRXJU88Nul1M7Ai0H sub>a.GsWOYqIgCihyKUG73_Li2                     {max-width:initial!important;width:98.5%!important;}
   /*post img*/       .GAagiRXJU88Nul1M7Ai0H ._2cNsJna0_hV8tdMj3X6_gJ>a.GsWOYqIgCihyKUG73_Li2{max-width:initial!important;width:98.5%!important;}
-  /*post img*/       .GAagiRXJU88Nul1M7Ai0H sub>a.GsWOYqIgCihyKUG73_Li2>img,
+  /*post img*/       .GAagiRXJU88Nul1M7Ai0H span>a.GsWOYqIgCihyKUG73_Li2>img                    {width:100%!important;}
+  /*post img*/       .GAagiRXJU88Nul1M7Ai0H sub>a.GsWOYqIgCihyKUG73_Li2>img                     {width:100%!important;}
   /*post img*/       .GAagiRXJU88Nul1M7Ai0H ._2cNsJna0_hV8tdMj3X6_gJ>a.GsWOYqIgCihyKUG73_Li2>img{width:100%!important;}
   /*post   quote*/   .GAagiRXJU88Nul1M7Ai0H blockquote a.GsWOYqIgCihyKUG73_Li2{max-width:initial!important;width:98%!important;}
   /*post   quote*/   .GAagiRXJU88Nul1M7Ai0H blockquote a.GsWOYqIgCihyKUG73_Li2>img[style="max-width: 140px; max-height: 140px;"]{max-width:140px!important;}

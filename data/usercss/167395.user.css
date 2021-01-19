@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Riley McDowell
 @description    `A simple dark theme for the Risk of Rain item cheat sheet page.`
-@version        201911.20.43
-@license        NO-REDISTRIBUTION
+@version        2021119.4.4
+@license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@document url("http://tgratzer.com/risk-of-rain-cheatsheet/") {
+@document url("http://risk-of-rain-cheatsheet.tgratzer.com") {
   html {
     background: #222;
   }

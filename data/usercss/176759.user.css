@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         FocusOnTheSun
 @description    `<strong>Ecosia dark theme - verified and working 2020</strong>A dark theme for the Ecosia search engine & services. Uses lightweight CSS to ensure a seamless dark theme experience.<strong>Compatibility:</strong> • Tested on browsers: Firefox, Chrome, Edge, Opera • Works with Ecosia mobile-mode • Tested on 'Stylish' and 'Stylus' extensions<strong>Currently works with the following Ecosia sites:</strong> • www.ecosia.org • info.ecosia.org • blog.ecosia.org<strong>If you find any issues while using this theme, please report the issue and we will fix it as soon as possible.</strong><strong>Development Team:</strong> • FocusOnTheSun - Search engine dark theme • Freaky Lord - Information site, blogs & consultancy`
-@version        2020119.17.45
+@version        2021119.9.38
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -21,6 +21,11 @@ body {
 }
 .search-header, .navbar-row, .results-wrapper {
     background: var(--dark-background) !important;
+}
+
+/* Background fix for 'Add Ecosia to Chrome' button */
+.col-lg-4 .margin-top-base {
+    background: var(--dark-background);
 }
 /* ---------- */
 
@@ -282,7 +287,7 @@ body {
 
 /* MOBILE */
 /* Main results */
-.mainline-results .result {
+.mainline-results .result, .results-page-stretcher {
     background: var(--dark-background);
 }
 .search-form-addon .search-form-addon-button {
@@ -465,7 +470,7 @@ body {
 }
 
 /* Image results */
-.image-thumbnail__details-title {
+.image-result__details-title {
     color: var(--text);
 }
 
@@ -517,6 +522,21 @@ body {
 /* No results */
 .search-no-results {
     color: var(--text);
+}
+
+/* Mobile mode */
+.panel__content {
+    background: var(--form) !important;
+    color: var(--text);
+}
+.list-item:hover {
+    background: var(--lighter-background);
+}
+.settings-dropdown__content {
+    background: var(--form);
+}
+.modal-dropdown__content {
+    background: var(--form) !important;
 }
 }
 
@@ -648,22 +668,22 @@ body {
 /* ---------- */
 
 /* News cards */
-.search-result-title {
+.result-title {
     color: var(--link) !important;
 }
-.search-result-title a, .search-result-title a:hover, .search-result-title a:focus {
+.result-title a, .result-title a:hover, .result-title a:focus {
     color: var(--link) !important;
 }
-.search-result-title a:visited {
+.result-title a:visited {
     color: var(--link-visited) !important;
 }
 .result-url, .result-url:hover, .result-url:visited, .result-url:focus {
     color: var(--link-green) !important;
 }
-.search-result__source, .search-result__source:hover, .search-result__source:visited, .search-result__source:focus {
+.result__source, .result__source:hover, .result__source:visited, .result__source:focus {
     color: var(--link-green) !important;
 }
-.search-result__text {
+.result__description {
     color: var(--text);
 }
 .results-info {
@@ -674,7 +694,7 @@ body {
 
 /* MOBILE */
 /* News & video & filters */
-.layout-card__content, .modal-dropdown__content {
+.layout-card__content, .modal-dropdown__content, .layout-card {
     background: var(--dark-background) !important;
 }
 .search-navigation__divider {
@@ -682,6 +702,12 @@ body {
 }
 .filter__selected {
     background: var(--lighter-background) !important;
+}
+.panel__content {
+    background: var(--form) !important;
+}
+.list-item:hover {
+    background: var(--lighter-background);
 }
 }
 
@@ -723,6 +749,12 @@ body {
 }
 .container {
     background: var(--dark-background) !important;
+}
+.info-section__content {
+    color: var(--text);
+}
+.info-section__background path {
+    color: var(--form) !important;
 }
 
 /* Logo */
@@ -944,7 +976,14 @@ input, .list > li, .list > li:focus, .list > li:active {
 .main-nav button:hover {
     background: var(--lighter-background) !important;
 }
-/* ---------- */
+
+/* Mobile mode */
+.settings__content {
+    background: var(--dark-background) !important;
+}
+.panel__content {
+    background: var(--form) !important;
+}
 }
 
 @-moz-document domain("ecosia.org") {

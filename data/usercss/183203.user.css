@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         fAZEN
 @description    `FreeFilm.to & FreeSerial.to Dark Theme Redesing`
-@version        202054.17.4
+@version        2021119.9.37
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 /* i really want this to be global */
 .rightPage, .filmspustiteh2, .filmspustite, .prnInfo, .reklama2, .komentare, .fb_iframe_widget, .spustitNavodHref, footer, header, .reklamaLeftFixed_etarget, .reklamaRightFixed { display: none !important; }
 .leftPage { width: 100%; }
-.film .video1, .film .video2, .film .video3, .film .video4, .film .video5, .film .video6 { height: 690px }
+.film .video1, .film .video2, .film .video3, .film .video4, .film .video5, .film .video6 { height: 690px !important; }
 body { background-color: #131212; color: #fff; background-image: url('https://fazen.sk/files/tomoviesbg.jpg'); background-size: cover; background-position: center center; background-attachment: fixed; }
 p, span, strong, .nadpisvypis, em, .name, .main h2 { color:#fff !important; }
 .itemSeriaVypis a, .itemSeriaVypis a strong, .navrhy li span { color: #000 !important; }
