@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Tritium Decay
 @description    `This theme tries to make the new Twitter design look less different from its previous design.The top bar is brought back and colors of things are made to match the older twitter. There is support for all default colour schemes.If you like it, please leave a positive rating.Contact me on  <a href="https://twitter.com/TritiumDecay">My Twitter</a> if you wish to suggest a change.Screenshots<a href="https://userstyles.org/style_screenshots/173651_additional_36525.jpeg?r=1591152038">Dark Mode</a><a href="https://userstyles.org/style_screenshots/173651_additional_36637.jpeg?r=1592244973">Profile Backgrounds</a><a href="https://userstyles.org/style_screenshots/173651_additional_36528.jpeg?r=1591152038">Light Mode</a><a href="https://userstyles.org/style_screenshots/173651_additional_36529.jpeg?r=1591152038">Lights Out Mode</a>-Basically all languages are supported`
-@version        2020129.1.44
+@version        2021119.0.14
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown profile "Expanded Profile Banners" {
@@ -200,7 +200,7 @@ scrollbar4 "Lights Out Scrollbar" <<<EOT html{
 	width: 290px!important;
     height: 50px!important;
 } EOT;
-highdpi2 "High DPI Timeline" <<<EOT [data-testid=primaryColumn] {
+highdpi2 "High DPI Timeline (Not maintained)" <<<EOT [data-testid=primaryColumn] {
     min-width: 30vw!important;
 	width: 30vw!important;
 	margin-left: calc(50vw - 100px - 15vw)!important;
@@ -223,22 +223,18 @@ a[href$="/photo/1"]:only-child
 img {
   position: relative;
 }
-
 div[data-testid="primaryColumn"] article div[data-testid="tweet"] 
 a[href$="/photo/1"]:only-child   >
 div:first-child >
 div.r-u8s1d:nth-child(2) {
     position:relative;
 }
-
-
 div[data-testid="primaryColumn"] article div[data-testid="tweet"] 
 a[href$="/photo/1"]:only-child   >
 div:first-child >
 div[style]:first-child {
     display:none;
 }
-
 div[data-testid="primaryColumn"] article div[data-testid="tweet"] 
 a[href$="/photo/1"]:only-child   >
 div:first-child >
@@ -248,7 +244,6 @@ div[aria-label][style]:first-child{
     margin-top:0px !important;
     position:relative;
 }
-
 div[data-testid="primaryColumn"] article div[data-testid="tweet"] 
 a[href$="/photo/1"]:only-child  >
 div:first-child >
@@ -264,6 +259,13 @@ div.r-u8s1d:first-child {
   	animation-duration: 1s;
 } EOT;
 tweetload2 "Default twitter behavior" <<<EOT  EOT;
+
+}
+@advanced dropdown trends "Show or hide trends" {
+	trends1 "Hide trends*" <<<EOT [aria-label*=": "]>[class="css-1dbjc4n"] {
+    height: 0px!important;
+} EOT;
+trends2 "Show trends (Not maintained)" <<<EOT  EOT;
 
 }
 
@@ -429,8 +431,19 @@ html{
 	border-top-width: 0px!important;
     border-bottom-width: 0px!important;
 }
-    
-    
+
+[class="css-1dbjc4n r-1ihkh82 r-j7yic r-rull8r r-qklmqi r-1or9b2r"]{
+    height: 1px !important;
+	border-top-width: 0px!important;
+    border-bottom-width: 0px!important;
+} 
+
+[class="css-1dbjc4n r-1ysxnx4 r-1igl3o0 r-rull8r r-qklmqi r-1or9b2r"]{
+    height: 1px !important;
+	border-top-width: 0px!important;
+    border-bottom-width: 0px!important;
+} 
+
     
 [class="css-1dbjc4n r-1uaug3w r-1ila09b r-rull8r r-qklmqi r-1kfrmmb r-1efd50x r-5kkj8d r-1or9b2r"]{
     height: 1px !important;
@@ -454,7 +467,8 @@ html{
 /*lower the font size*/
 
 [class*="r-1qd0xha r-1blvdjr r-16dba41 r-ad9z0x r-bcqeeo r-bnwqim r-qvutc0"][dir="auto"]{
-    line-height: 0.7!important;
+    line-height: 1.2!important;
+	font-size: 20px!important;
 }
 
 .r-qvutc0.r-bcqeeo.r-ad9z0x.r-1qd0xha.css-16my406.css-901oao,
@@ -463,32 +477,17 @@ html{
 }
 
 
+.r-1vr29t4{
+	font-size: 17px!important;
+	font-weight: 700!important;
+}
+
+
 .r-y3t9qe {
 	margin-right: 5px!important;
     margin-left: 5px!important;
 	font-size: 17px!important;
 }
-
-
-
-
-/*
-[style="font-size: 15px;"]{
-    font-size: 11px!important;
-}
-    
-
-
-.r-qvutc0.r-bnwqim.r-bcqeeo.r-ad9z0x.r-16dba41.r-a023e6.r-1qd0xha.r-jwli3a.css-901oao {
-    text-align: justify!important;
-    font-size: 13.8px!important;
-}
-
-
-[class="css-901oao css-16my406 r-1qd0xha r-ad9z0x r-bcqeeo r-qvutc0"]{
-    text-align: justify!important;
-    font-size: 13.8px!important;
-}*/
 
 
 
@@ -2153,16 +2152,16 @@ a.r-yfoy6g > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img:nth-ch
 }
 
 
-[class="css-1dbjc4n r-1uaug3w r-1uhd6vh r-1ylenci r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"]{
-    margin-bottom: 8px!important;
+[class="css-1dbjc4n r-1uaug3w r-1uhd6vh r-1867qdf r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"]{
+    margin-bottom: -8px!important;
 }
 
-[class="css-1dbjc4n r-1u4rsef r-9cbz99 r-1ylenci r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"]{
-    margin-bottom: 8px!important;
+[class="css-1dbjc4n r-1u4rsef r-9cbz99 r-1867qdf r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"]{
+    margin-bottom: -8px!important;
 }
 
-[class="css-1dbjc4n r-1ysxnx4 r-k0dy70 r-1ylenci r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"]{
-    margin-bottom: 8px!important;
+[class="css-1dbjc4n r-1ysxnx4 r-k0dy70 r-1867qdf r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"]{
+    margin-bottom: -8px!important;
 }
 
 
@@ -2176,9 +2175,22 @@ a.r-yfoy6g > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img:nth-ch
 }
 }
 
+
+/*Show or hide trends*/
+
+/*[[trends]]*/
+
+
+/*DROPDOWN - hide trends - trends1
 [aria-label*=": "]>[class="css-1dbjc4n"] {
     height: 0px!important;
 }
+/*
+
+/*DROPDOWN - show trends - trends2
+*/
+
+
 
 /*deleting chunk above search*/
 .r-1hycxz{
@@ -2233,8 +2245,8 @@ a.r-yfoy6g > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img:nth-ch
 }
 
 @-moz-document url-prefix("https://twitter.com/home"), url-prefix("https://twitter.com/i/bookmarks"), url-prefix("https://twitter.com/notifications") {
-[class^="css-1dbjc4n"][class$="r-t23y2h r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"]{
-    display: none!important;
+[class^="css-1dbjc4n"][class$="r-1867qdf r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"]{
+    margin-bottom:7px!important;
 }
 
 }
@@ -2264,9 +2276,9 @@ a.r-yfoy6g > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > img:nth-ch
 	display:none !important;
 }
 
-[class$="r-1ylenci r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"]{
+[class$="r-1867qdf r-1phboty r-rs99b7 r-ku1wi2 r-1udh08x"]{
     margin-top: 5px!important;
-    margin-bottom: 6px!important;
+    margin-bottom: 5px!important;
 }
 
 }

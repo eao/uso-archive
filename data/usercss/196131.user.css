@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         T-J
 @description    `A Brick Hill site theme, based on new site concepts surfaced by spacebuilder.This by no-way is official, and issues may exist. Do not use in conjunction with dark theme, only light theme.`
-@version        2021118.12.18
+@version        2021118.20.58
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,7 +17,7 @@ element.style {
 }
  body, html {
      background-color: #4F89AE;
-     background-image: url(https://cdn.discordapp.com/attachments/582605365145894922/800445405007315034/background.png);
+     background-image: url(https://cdn.discordapp.com/attachments/582605365145894922/800737679842082856/background2.png);
      background-position: top;
      background-repeat: repeat-x;
      margin: auto;
@@ -78,6 +78,11 @@ input, textarea {
     color: #fff !important;
     font-weight: bold;
     font-size: 20px;
+}
+.alert.error {
+     border: 1px solid #DD1A21;
+    background: #DD1A21;
+    background: linear-gradient(rgba(254,87,70,1) 0%, rgba(221,26,33,1) 100%);
 }
 .card .top:not(.absolute).green {
     border: 1px solid #11A304;
@@ -198,23 +203,25 @@ button:not(.plain).red, .button:not(.plain).red, .thread-label.red {
 }
 .forum-links a {
     font-weight: bold;
-    color: black;
+    color: #232527;
     font-size: 20px;
 }
 }
 
 @-moz-document url-prefix("https://www.brick-hill.com/trades") {
 .item-card-container {
-    border: 1px solid #B6B6B6;
+    border: 0px solid #B6B6B6;
     border-radius: 0px;
     box-shadow: 0px 2px 5px rgba(0,0,0,0);
+    background-color: #f7f8f9;
 }
+
 }
 
 @-moz-document url-prefix("https://www.brick-hill.com/forum/") {
 .forum-links a {
     font-weight: bold;
-    color: black;
+    color: #232527;
     font-size: 20px;
 }
 }
@@ -240,6 +247,15 @@ button:not(.plain).red, .button:not(.plain).red, .thread-label.red {
 .modal .cancel-button, button:not(.plain) {
     background: transparent;
 }
+input.rigid {
+    background-color: white;
+}
+.item-types a.active {
+color: #13B0FE;
+}
+body {
+    font-weight: 600;
+}
 }
 
 @-moz-document url-prefix("https://www.brick-hill.com/user/") {
@@ -248,26 +264,116 @@ button:not(.plain).red, .button:not(.plain).red, .thread-label.red {
   }
 
 
-button:not(.plain).blue, .button:not(.plain).blue, .thread-label.blue {
+button:not(.plain).blue, .thread-label.blue {
     background: transparent;
     border-color: white white orange white;
-    color: black;
+    border-bottom-width: thick;
+    color: #232527;
+    border-radius: 0px;
 
 }
 button.tab-button.transparent, .button.tab-button.transparent {
     background: transparent;
     border-color: white white #C3CDD8 white;
-    color: black;
+    border-bottom-width: thick;
+    color: #232527;
 }
 .profile-card.crate img {
     border-radius: 0px;
 }
-.profile-card.award img {
+.profile-card.award img, .profile-card:not(.crate) img {
+    border: 0px solid;
+    border-radius: 110px;
+}
+.crate-types .active {
+    background-color: #F57D20;
+    border-left: 0px;
+    border-right: 10px solid white;
+}
+.crate-types :hover {
+    border-left: 0px;
+    border-right: 10px solid white;
+}
+.crate-types li:first-child {
+    border-radius: 0px;
+}
+body {
+    color: #232527;
+}
+.card .top:not(.absolute).blue, .card .top:not(.absolute).red, .card .top:not(.absolute).green, .card .top:not(.absolute), .card .top:not(.absolute).orange {
+    color: #232527 !important;
+    border: 0px;
+    background: white;
+}
+button:not(.plain) {
+    padding: 10px 122px;
+}
+}
+
+@-moz-document url-prefix("https://www.brick-hill.com/play/") {
+button:not(.plain).blue {
+    border: 1px solid #11A304;
+    background: #11A304;
+    background: linear-gradient(rgba(23,198,10,1) 0%, rgba(17,163,4,1) 100%);
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 30px;
+    margin:-180px 0 0 -395px;
+    width: 230px;
+    height:60px;
+}
+.box.game-img img {
+    border-radius: 0px;
+    border: 1px solid #C3CDD8;
+}
+.card .top:not(.absolute).blue {
+    color: #3F4042 !important;
+    background: transparent;
+    border: 0px;
+    font-size: 25px;
+}
+.mt2 {
+    margin:20px 0 0 -395px;
+}
+.card .content {
+    overflow-y: visible;
+}
+.red-text {
+    margin:340px 0 0 -140px;
+}
+.small-text {
+    margin: -600px 0 0 120px;
+    font-size: 16px;
+    height: 610px;
+    display:none;
+}
+.favorite-text {
+    margin: -100px 0 0 -395px;
+}
+.box.game-img img {
+    width: 115%;
+}
+.item-stats {
+    padding-bottom: 3px;
+}
+}
+
+@-moz-document url-prefix("https://www.brick-hill.com/clan/") {
+button.tab-button.transparent {
+    color: white;
+}
+.fieldset {
+    border-radius: 0px;
+}
+.clan-img-holder img, .clan-img-holder {
+    border-radius: 110px;
+}
+.card .top:not(.absolute) {
+    background: white;
     border: 0px;
 }
-button:not(.plain).orange, .button:not(.plain).orange, button:not(.plain).red, .button:not(.plain).red {
-    border: 1px solid #007ACC;
-    background: #007acc;
-    background: linear-gradient(rgba(65,156,216,1) 0%, rgba(2,123,204,1) 100%);
+.card .top:not(.absolute) {
+    color: #232527 !important;
+    font-size: 25px;
 }
 }

@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           Youtube WideScreen (New Design Polymer) v.8
+@name           Youtube WideScreen (New Design Polymer) v.9
 @namespace      USO Archive
 @author         decembre
 @description    `For a wide Screen and the YouTube new Design:Player stay fixed at the LEFT side.- Videos related and in queue on the RIGHT side- Infos, Comment on the RIGHT side ( visible on hover their tabs)- Progress Bar is always visibleSo, you can watch the video AND read infos / Comments, choose next video without problem.Its Usercript version (GeasyFork):<b><a href="https://greasyfork.org/fr/scripts/409893-youtube-widescreen-new-design-polymer">Youtube WideScreen (New Design Polymer)</a></b>`
-@version        2021114.7.58
+@version        2021119.0.11
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 
 
-/* ==== 0- YouTube WideScreen (New Design Polymer) v.8 ==== */
+/* ==== 0- YouTube WideScreen (New Design Polymer) v.9 ==== */
 
 /* (new8) GM in USE:
 
@@ -47,9 +47,11 @@ GM "Youtube polymer engine fixes"
 https://greasyfork.org/en/scripts/405614-youtube-polymer-engine-fixes
 
 - Note about: VIDEOS Restricted:
-GM "YouTube: Age Verification Bypass > v.1.5.3":
+GM "YouTube: Age Verification Bypass [by u00F8)> v.1.6":
 https://greasyfork.org/en/scripts/375525-youtube-age-verification-bypass
-Work perfecly!important;
+Work perfecly!
+(Maybe just missing related video panel (i sent a request)
+
 Others Solutions:
 BKLET - Bookmarklet :
 BLET "Bypass YT login!" (watch a protected YouTube):
@@ -78,6 +80,14 @@ ytd-consent-bump-lightbox#consent-bump ,
 #offer-module {
     display: none !important;
 }
+
+
+/* (new9) YOUTUBE MUSIC */
+.content.ytmusic-player-page {
+     padding-top: 0 !important;
+}
+
+
 
 /* (new8) ADAP GM "YouTube Links"*/
 ytd-watch-flexy[fullscreen] #ujs-hdr-links-div {
@@ -195,12 +205,12 @@ html:not(.floater):not(.iri-always-visible) .html5-video-player.ytp-embed:not(.y
     width: 99.7% !important;
 border: 1px solid #111 !important;
 } */
-/* (new8) TEST YOUTUBE EMBED (for REDDIT) PLAYER/POSTER COVER  SIZE */
+/* (new9) TEST YOUTUBE EMBED (for REDDIT) PLAYER/POSTER COVER  SIZE */
 #movie_player.ytp-embed .html5-video-player .video-click-tracking {
     display: inline-block !important;
     height: calc(100% - 2px) !important;
-    max-height: calc(100% - 2px) !important;
-    min-height: calc(100% - 2px) !important;
+/*     max-height: calc(100% - 2px) !important; */
+/*     min-height: calc(100% - 2px) !important; */
     max-height: 128px !important;
     min-height: 128px !important;
     position: absolute;
@@ -470,12 +480,15 @@ https://www.youtube.com/watch?v=yUif6C_uJgk
 html:not(.floater):not(.iri-always-visible):not(.part_fullbrowser) #movie_player:not(.ytp-fullscreen):not(.ytp-hide-controls):not(.ytp-embed) {
     height: calc(100% + 35px) !important;
 }
+/* (new9) */
 html:not(.floater):not(.iri-always-visible) .html5-video-player:not(.ytp-embed):not(.ytp-small-mode):not(.ytp-fullscreen):not(.ytp-hide-controls) .html5-main-video  {
+    max-width: 100% !important;
     height: calc(100% - 35px) !important;
     max-height: calc(100% - 35px) !important;
     min-height: calc(100% - 35px) !important;
     top: 0 !important;
 }
+
 /* FULL :
 .ytp-fullscreen.ytp-big-mode
 .html5-video-player.ytp-transparent.ytp-exp-bottom-control-flexbox.ytp-large-width-mode.initialized-listeners.addedupdateevents.paused-mode.ytp-fullscreen.ytp-big-mode.ytp-iv-drawer-enabled

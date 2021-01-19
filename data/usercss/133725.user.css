@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sean Mayes
 @description    `If you use and like feel free to buy me a coffee,  paypal: rail.monkey@ntlworld.comAmazon - Dark slate - I'm back!Although it applies to many many amazon sites it is only tessted on amazon.co.uk so there may be some inconsistences on other other countries sites.PLEASE donate to keep me updated or give me a thanks in the comments, Paypal: rail.monkey@ntlworld.com`
-@version        2021115.12.38
+@version        2021118.20.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -4597,5 +4597,10 @@ div#bottom-part {
 }
 .wl-tabs-list-option[role=option] {
     border-bottom: 1px solid #545b6b;
+}
+.wl-tabs-list-option[role="option"]:active, 
+.wl-tabs-list-option[role="option"]:focus, 
+.wl-tabs-list-option[role="option"]:hover {
+    background-color: #22262f;
 }
 }

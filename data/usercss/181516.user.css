@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Nate-Dogg
 @description    `RetroWave NitroType Theme`
-@version        2020412.4.33
+@version        2021118.13.56
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -20,7 +20,7 @@
 
   .card--grit
   {
-    background-image: url("https://wallpapersite.com/images/wallpapers/red-2560x1600-curves-hd-10107.jpg");
+    background-image: url("https://i.imgur.com/OCUWjGK.png");
     background: fixed;
   }
 
@@ -46,7 +46,7 @@
   {
     background-image: url(https://c4.wallpaperflare.com/wallpaper/586/675/740/vaporwave-wallpaper-preview.jpg);
     color: #ffffff;
-    background-size: 140%;
+    background-size: 150%;
     background-position: center;
   }
 

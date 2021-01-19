@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Vinny Fonseca
 @description    `A dark and full screen theme for Telegram's web version, following their app's Night Mode color scheme.`
-@version        2021117.15.28
+@version        2021118.17.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -48,6 +48,7 @@
         color: var(--text);
     }
 
+    a,
     .btn-link {
         color: var(--link);
     }
@@ -201,6 +202,7 @@
         width: 70%;
     }
 
+    .im_message_date_split,
     .im_message_unread_split {
         background-color: var(--background);
     }
@@ -247,8 +249,8 @@
     }
 
     .im_message_media {
-        width: 50% !important;
-        min-width: 320px;
+        padding: 8px;
+        width: 320px !important;
     }
 
     .im_message_media,
@@ -274,7 +276,8 @@
     }
 
     .img_gif_video,
-    .img_gif_image_wrap {
+    .img_gif_image_wrap,
+    .img_gif_with_progress_wrap {
         width: 100% !important;
         height: auto !important;
     }
@@ -282,12 +285,11 @@
     .im_message_video,
     a.im_message_photo_thumb {
         margin-top: 12px;
-        padding: 8px;
         width: 100% !important;
     }
 
     .im_message_photo_caption {
-        padding: 0 8px 8px 8px;
+        margin-top: 8px;
         color: var(--text-other);
         font-style: italic;
     }
@@ -297,11 +299,26 @@
         margin-top: 0;
     }
 
+    .im_message_video_thumb {
+        margin: 0;
+        width: 100%;
+    }
+    .im_message_video_thumb:last-child {
+        margin-top: 4px;
+    }
+    .im_message_video_thumb:first-child {
+        margin-top: 0;
+    }
+
     .im_message_audio,
     .im_message_document,
     .im_message_upload_file,
     .im_message_video {
         margin-top: 0;
+    }
+
+    .im_message_document_name {
+        color: var(--link);
     }
 
     .im_message_download_progress_wrap,
@@ -313,29 +330,19 @@
         margin: 0;
     }
 
-    .im_message_webpage_wrap,
-    .im_message_reply {
+    .im_message_webpage_wrap {
         position: relative;
         margin: 0;
-        padding: 8px 8px 8px 12px;
+        padding: 0;
         border: 0;
     }
 
-    .im_message_webpage_wrap:before,
-    .im_message_reply:before {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        width: 2px;
-        background-color: var(--link);
-    }
-
-    .im_message_reply_wrap .im_message_reply_thumbed {
+    .im_message_reply {
+        position: relative;
         margin: 0;
-        margin-left: 2px;
+        padding: 8px;
+        border: 0;
+        border-left: 4px solid var(--link);
     }
 
     .im_message_reply_thumb_wrap {
