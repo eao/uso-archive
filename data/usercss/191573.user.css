@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `<i>Note:</i>  <b>Use the Dark Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/191573_additional_37559.jpeg" target="_blank"> <b>📝</b></a>More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        2021119.19.21
+@version        2021120.2.31
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image 🖼️" {
@@ -73,6 +73,7 @@ body {
 /*light*/
 #guide-content.ytd-app {
     background: #dcff0800;
+    border-right: 1px solid #0dffff26
 }
 #sections.ytd-guide-renderer > *.ytd-guide-renderer:not(:last-child) {
     background-color: #7bc09100;
@@ -522,12 +523,13 @@ ytd-app {
 }
 
 #container.ytd-masthead {/*top bar*/
-    background-color: #21043378;
-    background-image: none;
-    background-repeat: no-repeat;
+        background-color: #1d062ded;
+        background-image: none;
+        background-repeat: no-repeat;
 	background-position:bottom;
 	background-size: 100%;
 	opacity: 0.9;
+        border-bottom: 1px solid #0dffff26
 }
 
 /*color controller*/
@@ -897,7 +899,11 @@ yt-live-chat-renderer {
 }
 
 html[dark] .watch-skeleton .skeleton-bg-color {/*skeletal system*/
-    background-color: #800299;
+        background-color: #1f0423ed;
+	background-image: url(https://i.pinimg.com/originals/cf/cb/b6/cfcbb6ca7b85b2bd85af51822ab3e56e.gif);
+	background-position: center;
+	background-size: 100%;
+	background-blend-mode: screen
 }
 
 .sbfl_b {/*report search predictiion*/
@@ -966,6 +972,23 @@ div#voice-search-button:hover {
     background-color: #1e082394;
 }
 
+
+/*feed filter*/
+#chips-wrapper.ytd-feed-filter-chip-bar-renderer {
+    background-color: #1d062d91;
+    border-top: 1px solid #987d7d00;
+    border-bottom: 1px solid #0dffff;
+}
+
+yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected]:hover, yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]:hover, yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected]:focus, yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected]:focus {
+    background-color: #2996cb59;
+	border: 1px solid #17f5fb
+}
+
+yt-chip-cloud-chip-renderer[chip-style="STYLE_DEFAULT"][selected], yt-chip-cloud-chip-renderer[chip-style="STYLE_HOME_FILTER"][selected] {
+    background-color: #17caea;
+    color: #fff;
+}
 
 /********************************/
 /*2021 Youtube Retro Wave by YAD*/

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ms Love
 @description    `just learning`
-@version        2021120.0.25
+@version        2021120.3.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -17,7 +17,7 @@
 
   html#facebook
   {
-    background: url('http://i.imgur.com/4l9tIGF.jpg') fixed;
+    background: url('https://web.facebook.com/Midnight.Dreams.Reborns/photos/a.228738692072801/228738485406155') fixed;
     background-size: 100% auto;
     background-position: center bottom !important;
   }

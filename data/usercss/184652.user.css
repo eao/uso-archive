@@ -2,8 +2,8 @@
 @name           NSSL
 @namespace      USO Archive
 @author         Scott Collins
-@description    `Dark Style For Loblaws National Shunt`
-@version        2020124.6.22
+@description    `Dark Style For Loblaws National Shunt Service Ltd`
+@version        2021120.3.26
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,12 +24,20 @@ body, html {
 
 /*Trailer Spacing*/
 span.trailer {
-    padding: 1px;
-    margin: 0px;
+    padding: 0px;
+    margin: 0px 2px;
 }
 
+/*Comma
+span.trailer ~ span:not(:last-of-type)::after{
+    margin-left: -.2em;
+    content: ", ";
+}*/
+
+
 table.yard-locations {
-    margin: 0px;
+    margin: -2px;
+    background-color: #1c1c1c;
 }
 
 /*Ledgend Colours*/
@@ -93,7 +101,7 @@ span.trailer[taskStatus="pinned"] {
     text-shadow: 2px 2px 2px black;
 }
 span.trailer[taskStatus="rejected"] {
-    background-color: #f22;
+    background-color: #f009;
     text-shadow: 2px 2px 2px black;
 }
 
@@ -215,15 +223,22 @@ div.hovercard{
 }
 
 div.task {
-    font-size: 12px!important;
+    font-size: 13px!important;
+    background-color: #1c1c1c;
 }
 div.vehicle {
-    font-size: 12px;
+    font-size: 13px;
+    background-color: #1c1c1c;
 }
 
 /*Driver Status*/
 div.vehicle span[status="ONLINE"] {
     color: #99dd7f;
+}
+
+/*Active Move*/
+.task[taskStatus="accepted"], .task[taskStatus="assigned"], .task[taskStatus="pinned"] {
+    border-color: #ef0;
 }
 
 /*Trailer Status*/
@@ -235,6 +250,15 @@ div.task[taskStatus="assigned"] span[label="status"] {
 }
 div.task[taskStatus="accepted"] span[label="status"] {
     color: #85f6f7;
+}
+div.task[taskStatus="rejected"] span[label="status"] {
+    color: #ef0;
+}
+
+/*Rejected Background*/
+div.task.move-rejected {
+    background-color: #f006;
+    text-shadow: 2px 2px 2px black;
 }
 
 /*Priorities*/
@@ -281,5 +305,51 @@ div.priority span[style = "color: rgb(192, 0, 71);"] {
 /*Emergency*/
 div.priority span[style = "color: rgb(191, 1, 0);"] {
     color: #df807f!important;
+}
+}
+
+@-moz-document url-prefix("https://loblaw.nationalshunt.com/yardmanagement/reporting") {
+/*Report Background*/
+.swTitle {
+    background: #252525!important;
+    color: #e8e8e8!important;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 20pt;
+}
+.swMenuForm {
+    background-color: #252525!important;
+    border: none !important;
+}
+.container {
+    background-color: #252525!important;
+    border: none !important;
+}
+.swMenuItemLink {
+    color: #e8e8e8!important;
+    font-family: Calibri;
+    font-weight: bold;
+    font-size: 16px;
+}
+.swPrpExpand {
+    background: #252525!important;
+    color: #e8e8e8!important;
+}
+.swPrpCritEntry {
+    background: #252525!important;
+    color: #e8e8e8!important;
+}
+.swPageBlock {
+    background: #252525!important;
+    color: #e8e8e8!important;
+}
+.swRepResultLine, .swRepColHdrRow, .swRepCriteria, .swRepGrpHdrRow {
+    background: #252525!important;
+    color: #e8e8e8!important;
+    border: none!important;
+}
+div {
+    background: #252525!important;
+    color: #e8e8e8!important;
 }
 }
