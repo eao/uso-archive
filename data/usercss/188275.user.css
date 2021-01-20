@@ -3,30 +3,49 @@
 @namespace      USO Archive
 @author         olelele
 @description    `Tryb ciemny dla strony Jeja.pl. Zawiera podstawową obsługę wersji mobilnej.`
-@version        2020831.21.41
+@version        2021119.15.49
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("jeja.pl") {
-body {
-    background: #000000 !important;
+.images-box video {
+    position: inherit;
+    z-index: 99999;
 }
+body {
+    background: #000;
+}
+a.hand-up-down span {
+    color: orange !important;
+}
+
 
 .movie-top {
     -webkit-box-shadow: 0 28px 11px 0 rgba(0, 0, 0, .83);
     -moz-box-shadow: 0 28px 11px 0 rgba(0, 0, 0, .83);
     box-shadow: 0 28px 11px 0 rgba(0, 0, 0, .83);
 }
-
 .dow-right-text-shadow {
     box-shadow: inset 0 -190px 115px -84px rgb(45, 45, 45);
     -moz-box-shadow: inset 0 -190px 115px -84px rgb(45, 45, 45);
     -webkit-box-shadow: inset 0 -190px 115px -84px rgb(45, 45, 45);
 }
 
+.images-arrow-right {
+    padding-left: 20%;
+}
+.images-arrow-left {
+    padding-right: 20%;
+}
+
+.komunikat-18 {
+    background: #222;
+}
+
 p,
 span,
 strong,
+h4 a,
 h3,
 h2,
 h1,
@@ -46,11 +65,14 @@ label::before,
 .nick,
 .page-text,
 .left-wrap,
+.ico-kom span,
+.ico-ulu span,
+.ico-f span,
 .search::before,
 .active-login,
 .left-wrap div[style*="color: #212121;"],
-.dow-left-text li{
-    color: #777 !important;
+.dow-left-text li {
+    color: #999 !important;
 }
 
 
@@ -71,10 +93,8 @@ input,
 #search h2,
 #nav a,
 #search,
-#logo,
 #root,
 #content,
-#top::before,
 .list-c li,
 .sort a,
 .notifications li,
@@ -95,8 +115,6 @@ input,
     background-color: #222 !important;
 }
 
-.cnt_votes_down,
-.cnt_votes_up,
 .input::before {
     color: #555 !important;
 }
@@ -106,8 +124,6 @@ input,
     font-weight: bold;
 }
 
-
-
 .list-d li,
 .sort .active a,
 .movie-active,
@@ -115,10 +131,10 @@ input,
     background-color: #444 !important;
 }
 
-.cText p a[href^="https://www.jeja.pl/user,"] {
+.cText p a[href^="https://www.jeja.pl/user,"],
+a.comment-login {
     font-weight: bold;
 }
-
 
 .movie-active:hover {
     background-color: #555 !important;
@@ -129,59 +145,59 @@ input,
 li.success {
     background-color: #051d06 !important;
 }
+
 .info-1 p,
 li.success {
-    color: #526f54 !important;
+    color: #6dba46 !important;
 }
 
 .info-2,
 li.error {
     background-color: #220202 !important;
 }
+
 .info-2 p,
 li.error {
-    color: #7e6363 !important;
+    color: #ba4646 !important;
 }
 
 .info-3,
 li.info {
-    background-color: #0d1a2b !important;
+    background-color: #0c2443 !important;
 }
+
 .info-3 p,
 li.info {
-    color: #61748d !important;
+    color: #33afad !important;
 }
 
 /* Z jakiegoś powodu usuwanie konta na mobilnej nie ma klasy ehhhh */
 ul.notification li {
-    background-color: #0d1a2b;
-    color: #61748d;
+    background-color: #0c2443;
+    color: #33afad;
 }
 
 .info-4,
 li.warning {
-    background-color: #2e2709 !important;
+    background-color: #43390f !important;
 }
+
 .info-4 p,
 li.warning {
-    color: #7f6a05 !important;
+    color: #bead50 !important;
 }
 /* */
 #footer-wrapper {
     background: #222 !important;
 }
+.double:before,
+.list-comment:before {
+    background: #444 !important;
+}
 
-.ico-ulu span,
-.ico-kom span,
-.votedown.active span,
-.voteup.active span,
-.voteup:hover span,
-.votedown:hover span,
 .num .orangeColor.bolder {
     color: white !important;
 }
-
-
 
 .rej-text-roz,
 .rej-text-roz a,
@@ -189,13 +205,10 @@ li.warning {
 .list-a > li:before {
     background: #333;
 }
+
 .log-box-mes p {
     background-color: #777;
     color: #000 !important;
-}
-
-#nav h2 {
-    background-color: #111;
 }
 
 
@@ -203,12 +216,21 @@ li.warning {
     color: #b4b4b4;
 }
 
+#top,
+#top:before,
+h1#logo,
+#top .menu {
+    background: #111 !important;
+}
+
 .log-box-select-down,
 .lob-box-select:hover,
 .komentarze-add,
-.active,
+.zglos-add,
+.active:not(.ico-ulu),
 .active.checkbox,
 .menu-right a:hover,
+.tagCloud a,
 .slide-box:hover,
 #nav,
 h1,
@@ -219,33 +241,36 @@ h3,
     background-color: #222 !important;
 }
 
-.tagCloud a {
-    background-color: #222 !important;
-    color: #666;
-}
 
 .list-chat li {
     background-color: #666;
 }
 
-
 .log-box-select-arrow-on,
 .background-change,
-#search h2,
-.message-icon[alt="Online"] {
+#search h2 {
     display: none;
 }
 
-a,
-a:visited,
+a:not(.hand-up-down):not(.disabled-link),
 .pow-user-nag,
 input {
     color: #888 !important;
 }
 
+.pagination-number.active-page {
+    background-color: #555 !important;
+}
+
 
 /* Przyciski */
+.button-exp-users,
+.buttonBlue,
+.dys-add,
+.sendReport,
+.play,
 .add,
+.komunikat-18-button,
 .add-game,
 .add-pocz,
 .next-button,
@@ -257,6 +282,7 @@ input {
 .button-formlike,
 .sendComment,
 .list-e a,
+.list-d.a.slider:before,
 .komentarze-submit,
 .pagination-b a,
 button,
@@ -269,17 +295,14 @@ li.prev a,
     color: #777 !important;
 }
 
-
 .status {
     color: #669365 !important;
 }
 
 .titleThumb {
     color: #999 !important;
-    text-shadow: 1px 1px 10px #000 !important;
+    text-shadow: 1px 1px 10px #000;
 }
-
-
 
 .menu.has-notifications::before,
 .menu::before {
@@ -309,15 +332,14 @@ form h3,
 .notification a,
 .voteup.active,
 .votedown.active,
-.checkbox.active #nav h2 a {
+.checkbox.active #nav h2 a,
+.list-a h3 {
     background-color: rgb(0, 0, 0, 0) !important;
 }
-
 
 * {
     border-color: #444 !important;
 }
-
 
 .komentarz-odp-all,
 .komentarz-odp-all-hide {
@@ -325,32 +347,31 @@ form h3,
 }
 
 
-/** Przyciemnianie img i elementów, którym nie da się ustawić koloru **/
 /* Poprawione ikonki ktore normalnie nie maja przezroczystosci */
 .tematy-ikon,
-.komentarze-add-icon {
+.komentarze-add-icon,
+.zglos-add-icon {
     width: 1px;
     height: 1px;
     padding: 7px;
-    filter: invert();
 }
 
-.block-user:not(:hover) {
-    background: url('https://v4.jeja.pl/images/komentarz_icon_8_on.png') no-repeat left top !important;
-    filter: grayscale()
+.komentarz-down-button .block-user:not(:hover) {
+    background: url('https://v4.jeja.pl/images/komentarz_icon_8_on.png') no-repeat left top;
 }
-.delete-comment:not(:hover) {
-    background: url('https://v4.jeja.pl/images/komentarz_icon_7_on.png') no-repeat left top !important;
-    filter: grayscale()
+
+.komentarz-down-button .delete-comment:not(:hover) {
+    background: url('https://v4.jeja.pl/images/komentarz_icon_7_on.png') no-repeat left top;
 }
+
 .quote-text {
     background: url('https://i.imgur.com/1Eug9AQ.png') no-repeat left top !important;
-    filter: brightness(0.5)
 }
 
 img[src="https://v4.jeja.pl/images/tematy_icon_1.png"] {
     background: url('https://i.imgur.com/8yLXuqN.png') !important;
 }
+
 img[src="https://v4.jeja.pl/images/tematy_icon_2.png"] {
     background: url('https://i.imgur.com/Lbg0MUA.png') !important;
 }
@@ -362,99 +383,93 @@ img[src="https://v4.jeja.pl/images/tematy_icon_2.png"] {
     background: url('https://i.imgur.com/B2pth9l.png') no-repeat left top;
 }
 .icon-eye,
+.edit-date-show,
 .game-fb {
-    background: url('https://i.imgur.com/WC6PXsG.png') no-repeat left top;
+    background: url('https://i.imgur.com/NZUS8L2.png') no-repeat left top;
 }
 .icon-eye:hover {
-    background: url('https://i.imgur.com/fftOWZz.png') no-repeat left top;
+    background: url('https://i.imgur.com/NDJSh0R.png') no-repeat left top;
 }
-.komentarze-add-icon {
+.komentarze-add-icon,
+.zglos-add-icon {
     background: url('https://i.imgur.com/eAtFeCe.png') !important;
-    filter: brightness(0.6);
 }
-/* */
-.menu.has-notifications::after,
-.komentarz-thread-sh img {
-    filter: grayscale()
+.grupa-box-new,
+.temat-box-lista-bottom-new,
+.edit-date-show2,
+.temat-box-new {
+    width: 0px;
+    height: 0px;
+    padding: 9.5px;
+    background: url('https://v4.jeja.pl/images/box_new.png');
 }
-.pow-user-icon,
+
+.edit-date-show {
+    width: 0px;
+    padding: 6px 9px;
+}
+
+.message-icon {
+    width: 0px;
+    padding: 6px;
+    background-image: url('https://v4.jeja.pl/images/status_icon_on.png');
+}
+
+nav#nav h2 {
+    background: #666 !important;
+}
+
+
+
+/* Logo w wersji dla ciemnego tła (Źródło: https://www.jeja.pl/info,99,odswiezone-logo-jejapl.html) */
+.logo,
 #logo a {
-    filter: brightness(0.5) grayscale(50%);
+    padding: 21.5px 71.5px 21.5px 71.5px;
+    background-image: url('https://i.imgur.com/5seM0y7.png');
+    background-size: 143px 43px;
+    width: 0px;
+    height: 0px;
 }
-.logo {
-    filter: brightness(0.4) drop-shadow(1px 1px 3px #bab8b1);
+
+/** Przyciemnianie img i elementów, którym nie da się ustawić koloru **/
+.odz-boks,
+.logo,
+.list-badges,
+.list-g .badge img,
+.exp-smile,
+.icon-m-box {
+    filter: brightness(0.8);
 }
 
 .box-ster-row {
-    filter: invert() !important;
+    filter: invert();
+}
+
+.hand-up-down {
+    filter: grayscale(0.4);
 }
 
 .icon-home,
+.pagination-arrow-left,
+.pagination-arrow-right,
 .komentarze-ref-icon {
-    filter: brightness(2) grayscale();
+    filter: grayscale() brightness(2);
 }
-.file_label {
-    filter: brightness(1.5) grayscale();
-}
-.movie-active:hover .active-arrow {
-    filter: brightness(0.47) grayscale() !important;
-}
-a.hand-up-down {
-    filter: grayscale(60%) !important;
-}
-.active-arrow {
-    filter: brightness(0.36) grayscale()
+.delete-comment:not(:hover),
+.block-user:not(:hover) {
+    filter: grayscale();
 }
 
-.voteup,
-.votedown,
-.active-page,
-.icon-chat {
-    filter: brightness(1.6);
+.star-box .voteup:not(.active),
+.star-box .votedown:not(.active) {
+    filter: brightness(2);
 }
-
-.voteup.active,
-.votedown.active,
-.box-autor-image,
-.temat-box-new,
-li.r h3::before,
-.voteup:hover,
-.votedown:hover,
-.images-arrow-left:hover,
-.images-arrow-right:hover,
-.orangeColor {
-    filter: brightness(0.4) !important;
+.star-box .voteup:hover,
+.star-box .votedown:hover {
+    filter: brightness(1) grayscale(0.2);
 }
-
-.odz-hover .odz-boks:hover::after,
-.images-arrow-left,
-.images-arrow-right {
-    filter: brightness(0.2) !important;
-}
-
-.odz-boks img,
-.exp-smile {
-    filter: brightness(0.55);
-}
-
-.ico-ulu,
-.ico-kom,
-.ico-f,
-.ico-zgl,
-.ico-create-mem,
-.ico-down-template,
-.footer-icon-1,
-.footer-icon-2,
-.pow-user-nag img,
-.badge,
-.badge-1,
-.badge-2,
-.badge-3,
-.icon-user-minus,
-.icon-envelope,
-.icon-edit,
-.icon-quote-circle,
-img[src="https://v4.jeja.pl/images/pop_box_all_arrow.png"] {
-    filter: brightness(0.4) grayscale(50%);
+.star-box .voteup.active,
+.star-box .votedown.active {
+    filter: brightness(0.9);
 }
 }

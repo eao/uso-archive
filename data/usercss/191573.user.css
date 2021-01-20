@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `<i>Note:</i>  <b>Use the Dark Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/191573_additional_37559.jpeg" target="_blank"> <b>📝</b></a>More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        202119.22.55
+@version        2021119.19.21
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image 🖼️" {
@@ -682,17 +682,17 @@ paper-toggle-button[checked]:not([disabled]) .toggle-bar.paper-toggle-button {
 	animation-iteration-count: infinite;
 }
 @keyframes yadlive {
-0%  {background-color: #fff0; box-shadow: 0 0 9px 3px #ff00d4;}
-10% {background-color: #fff0; box-shadow: 0 0 7px 3px #9d00ff;}
-20% {background-color: #fff0; box-shadow: 0 0 9px 3px #fff;}
-30% {background-color: #fff0; box-shadow: 0 0 7px 3px #00d9ff;}
-40% {background-color: #fff0; box-shadow: 0 0 9px 3px #00ffc3;}
-50% {background-color: #fff0; box-shadow: 0 0 7px 3px #fff;}
-60% {background-color: #fff0; box-shadow: 0 0 9px 3px #ff00e1;}
-70% {background-color: #fff0; box-shadow: 0 0 7px 3px #fff;}
-80% {background-color: #fff0; box-shadow: 0 0 9px 3px #00ffea;}
-90% {background-color: #fff0; box-shadow: 0 0 7px 3px #bdff00;}
-100%{background-color: #fff0; box-shadow: 0 0 7px 3px #ff00d4;}
+0%  {background-color: #fff0; box-shadow: inset 0 0 9px 3px #ff00d4;}
+10% {background-color: #fff0; box-shadow: inset 0 0 7px 3px #9d00ff;}
+20% {background-color: #fff0; box-shadow: inset 0 0 9px 3px #fff;}
+30% {background-color: #fff0; box-shadow: inset 0 0 7px 3px #00d9ff;}
+40% {background-color: #fff0; box-shadow: inset 0 0 9px 3px #00ffc3;}
+50% {background-color: #fff0; box-shadow: inset 0 0 7px 3px #fff;}
+60% {background-color: #fff0; box-shadow: inset 0 0 9px 3px #ff00e1;}
+70% {background-color: #fff0; box-shadow: inset 0 0 7px 3px #fff;}
+80% {background-color: #fff0; box-shadow: inset 0 0 9px 3px #00ffea;}
+90% {background-color: #fff0; box-shadow: inset 0 0 7px 3px #bdff00;}
+100%{background-color: #fff0; box-shadow: inset 0 0 7px 3px #ff00d4;}
 }
 ytd-thumbnail-overlay-time-status-renderer[overlay-style=LIVE] {
     background-color: #c307d4e6;

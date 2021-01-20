@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         moen
 @description    `tmavý styl pro csfd`
-@version        2019428.10.33
+@version        2021119.13.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -96,8 +96,20 @@ form input.button {
   border-color: #333 !important;
 }
 
+.ct-general.th, .ct-general.th-0, .ct-general.th-1, .ct-general.th-2, .ct-general.th-3, .ct-general.th-4, .ct-general.th-5, .ct-general.th-5, .ct-general.th-5b, .ct-general.th-filter, .ct-general.th-form {
+  border-radius: 0;
+}
+
 .ct-general.th-4 {
   border-color: #333 !important;
+}
+
+#pg-web-film #rating {
+  border-radius: 0;
+}
+
+#page-footer {
+  border-radius: 0;
 }
 
 /*profil, posta*/
@@ -474,5 +486,4 @@ div#pg-user.page-content div.ct-general div.content-wrapper div.profile-content 
 }
 
 /* end */
-
 }

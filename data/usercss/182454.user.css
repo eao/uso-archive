@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Thiago Jaqueta
 @description    `Enables Dark Mode for The Astronauts website. Contrast/Readability taken into consideration.`
-@version        2020416.4.35
+@version        2021119.21.14
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -54,5 +54,9 @@
 
 html .site-body-content blockquote, html .comment blockquote {
 background-color: rgba(255, 255, 255, 0.06);
+}
+
+:root .has-vivid-red-background-color {
+    background-color: #821e1e;
 }
 }

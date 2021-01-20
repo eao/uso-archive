@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Vinny Fonseca
 @description    `A dark and full screen theme for Telegram's web version, following their app's Night Mode color scheme.`
-@version        2021118.17.2
+@version        2021119.16.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -231,8 +231,10 @@
         max-width: 88%;
     }
 
-    .im_content_message_wrap {
+    .im_content_message_wrap,
+    .im_grouped_short .im_content_message_wrap {
         position: relative;
+        margin: 8px 16px;
     }
 
     .im_message_author,
@@ -248,17 +250,24 @@
         transform: translateY(-50%);
     }
 
-    .im_message_media {
+    /*
+    .im_message_body {
         padding: 8px;
-        width: 320px !important;
+        border-radius: var(--radius);
+    }
+    */
+
+    .im_message_media {
+        display: inline-block;
+        padding: 8px;
+        max-width: 320px !important;
     }
 
     .im_message_media,
     .im_message_reply_wrap {
-        margin-bottom: 6px;
         border-radius: calc(var(--radius) / 2);
         background-color: var(--background);
-        overflow: visible;
+        overflow: hidden;
     }
 
     .im_history_select_active .im_message_selected:hover .im_message_media,
@@ -271,7 +280,7 @@
         background-color: var(--background-other);
     }
 
-    .im_message_text + .im_message_media {
+    .im_message_text:not([style *= "display: none;"]) + .im_message_media {
         margin-top: 8px;
     }
 
@@ -299,14 +308,20 @@
         margin-top: 0;
     }
 
-    .im_message_video_thumb {
+    .im_message_document_thumb_wrap,
+    img.im_message_document_thumb,
+    a.im_message_video_thumb {
+        display: block;
+        float: none;
         margin: 0;
-        width: 100%;
+        width: 100% !important;
+        max-width: none;
+        max-height: none;
     }
-    .im_message_video_thumb:last-child {
-        margin-top: 4px;
+    a.im_message_video_thumb:last-child {
+        margin-top: 8px;
     }
-    .im_message_video_thumb:first-child {
+    a.im_message_video_thumb:first-child {
         margin-top: 0;
     }
 
@@ -315,10 +330,20 @@
     .im_message_upload_file,
     .im_message_video {
         margin-top: 0;
+        width: 100%;
+    }
+
+    .im_message_document_thumb_wrap {
+        background-color: var(--background-chat);
     }
 
     .im_message_document_name {
         color: var(--link);
+    }
+
+    .im_message_document_info {
+        float: none;
+        margin-top: 8px;
     }
 
     .im_message_download_progress_wrap,
@@ -557,12 +582,6 @@
 
 
     /* Scrollbars */
-
-    /*.nano > .nano-pane {
-        top: 0 !important;
-        right: 0 !important;
-        background-color: var(--background-other) !important;
-    }*/
 
     .nano > .nano-pane > .nano-slider {
         background-color: var(--accent) !important;

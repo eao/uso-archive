@@ -3,130 +3,535 @@
 @namespace      USO Archive
 @author         Ms Love
 @description    `just learning`
-@version        2021119.9.9
+@version        2021120.0.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("etsy.com")
+@-moz-document domain("facebook.com"), domain("www.facebook.com"), domain("ilike.com")
 {
-  body, .ui-toolkit body, .ui-toolkit .body-max-width-980 #content
+
+  body
   {
-    background-color: #0000CC !important;
+    background-color: rgba(255,255,255,0.0) !important;
   }
 
-  .wt-bg-white, .ui-toolkit .bg-white, .ui-toolkit .btn-secondary:disabled, .ui-toolkit .btn-secondary.is-disabled, .ui-toolkit .btn-secondary, .ui-toolkit .global-nav, .wt-action-group .wt-action-group__item:not(.wt-btn--transparent):after, .nav-search-overlay .overlay-view, .ui-toolkit .tag-body, .ui-toolkit .panel-heading, .ui-toolkit .panel-header, .ui-toolkit thead, .primary .section, .ui-toolkit .wt-bg-white
+  html#facebook
   {
-    background-color: #0000CC !important;
+    background: url('http://i.imgur.com/4l9tIGF.jpg') fixed;
+    background-size: 100% auto;
+    background-position: center bottom !important;
   }
 
-  .ui-toolkit .alert-notice-lighter, .wt-bg-beeswax-tint, .ui-toolkit .card, .ui-toolkit .bg-gray-darker, .ui-toolkit .panel, .seller-nav .primary-bg-color, .ui-toolkit table, .ui-toolkit .bg-blinding-sandstorm, .ui-toolkit .bg-gray, .appstore-subapp .hero-background, .grace-management-subapp .clickable-row:hover .plan-table-row-content, .grace-management-subapp .clickable-row.is-open .plan-table-row-content, .ui-toolkit .help-center-background, .wt-bg-lavender-tint
+  .highlightIndicator, 
+.tinyman:after, 
+.fbTimelineSideAds,
+.ego_column,
+.buttonWrap, 
+.fbTimelineSpine, 
+.spinePointer, 
+.topBorder, 
+.bottomBorder, 
+#footerContainer, 
+.middleLink, 
+.slimHeader #pageNav li.tinyman::after, .slimHeader #pageNav li.middleLink::after, 
+.slimHeader #pageNav .middleLink a, 
+.moreSectionsLink
   {
-    background-color: #0000CC !important;
+    display: none !important;
   }
 
-  .gnav-header .sub-nav, a.wt-transparent-card:before, div.wt-transparent-card:before, button.wt-transparent-card:before, .wt-bg-gray, .wt-input, .wt-textarea, .wt-input-btn-group__input, .ui-toolkit .wt-bg-denim-tint, .ui-toolkit .select-multi, .wt-input-btn-group, .ui-toolkit .dropdown, .tabs li.active>a, .tabs li.active .tab-title, .tabs li>a.active, .tabs li .tab-title.active, .tabs li.ui-state-active>a, .tabs li.ui-state-active .tab-title, .tabs li>a.ui-state-active, .tabs li .tab-title.ui-state-active, .primary .section .section-header, .primary .section h2
+  div#userNavigationLabel, div#privacyFlyoutLabel, div._5ahz
   {
-    background-color: #444 !important;
+    -webkit-filter: invert(50%);
   }
 
-  .textarea, .input-group input.text, .input-group textarea.text
+  ._5ahz
   {
-    background-color: #444 !important;
-    color: #ccc !important;
+    background: none;
   }
 
-
-/** text **/
-  .ui-toolkit .text-gray-darker, .gnav-header .text-link, .ui-toolkit body, .ui-toolkit .text-gray, a:link, a:visited, .wt-btn.wt-btn--transparent, input, .ui-toolkit .btn-secondary, .wt-text-gray, .ui-toolkit .responsive-nav-experiment, .wt-btn.wt-btn--outline, .ui-toolkit .alert-notice-lighter, .gnav-user-card .name, .gnav-shop-card .name, .gnav-user-card .profile-link, .gnav-shop-card .shop-link, .gnav-shop-card .edit-shop-link, .ui-toolkit .nav-group-item, .ui-toolkit .underlined-nav-item, .ui-toolkit .badge-transparent, .ui-toolkit .text-gray-lightest, .ui-toolkit .unstyled-button, .ui-toolkit .select-custom, .wt-text-black, .wt-input, .wt-textarea, .wt-input-btn-group__input, .wt-action-group .wt-action-group__item:not(.wt-btn--transparent), .ui-toolkit .list-nav-item, .ui-toolkit .btn-transparent, .input-group .label, .input-group label, .section-alt .inline-message, #shop-status .section-help-pair strong, #shop-name .section-help-pair strong, .your-etsy-header, .page-header, .primary .section .section-header, .primary .section h2, .ui-toolkit
+  .fbChatSidebar.fixed_always._5pr2, ._5pr2 ._4oes, ._5vb_ ._5pr2 ._4oes
   {
-    color: #ccc !important;
+    background-color: rgba(255,255,255, 0.3);
   }
 
-  .ui-toolkit .text-gray-lighter, .ui-toolkit .text-link-secondary, .ui-toolkit .btn-link, #shop-status .section-help-pair p, #shop-name .section-help-pair p
+  div._5qqe, div#pagelet_canvas_nav_content
   {
-    color: #888 !important;
+    background: #333;
+    opacity: 0.1;
   }
 
-/** Icons **/
-  .nav-link .nav-icon, .wt-input-btn-group .wt-input-btn-group__btn, .stars-svg .rating.lit, .stars .rating.lit, .ui-toolkit .btn-secondary:disabled .ss-icon, .ui-toolkit .btn-secondary.is-disabled .ss-icon, .ui-toolkit .etsy-icon svg
+  div._5rzs, div._4-u2.mbm._5v6e, div#u_0_0, .cardRightCol
   {
-    color: #ccc !important;
+    background: rgba(255,255,255, 0.4);
   }
 
-/** Search bar **/
-  .wt-input-btn-group .wt-input-btn-group__input, input
+  ._2n_9
   {
-    background: #222 !important;
+    background-image: none !important;
+    background: none !important;
   }
 
-  .wt-input-btn-group.global-enhancements-search-input-btn-group, .ui-toolkit .wt-input-btn-group.global-enhancements-search-input-btn-group
+  #fbRequestsJewel .jewelButton
   {
-    background: #444 !important;
+    background: url("http://i.imgur.com/3biKw2Q.png") no-repeat center center!important;
   }
 
-  .ui-toolkit .select-custom
+  #fbMessagesJewel .jewelButton, ._1z4y a.jewelButton
   {
-    background: #666 !important;
+    background: url("http://i.imgur.com/7tQHVx8.png") no-repeat center center!important;
   }
 
-
-/** borders **/
-  .ui-toolkit .border-darker, .ui-toolkit .bt-xs-1, .ui-toolkit .bt-lg-1, .wt-btn.wt-btn--outline:before, .wt-btn.wt-btn--outline:after, .ui-toolkit .alert-notice-lighter, .ui-toolkit .b-xs-1, .ui-toolkit .btn-secondary, .ui-toolkit .card, .ui-toolkit .panel, .ui-toolkit .bl-xs-1, .ui-toolkit .bb-xs-1, .ui-toolkit .panel-body-row, .ui-toolkit table, .ui-toolkit th, .ui-toolkit td, .primary .section.section-alt, .primary .section .section-header, .primary .section h2, .tabs li.active>a, .tabs li.active .tab-title, .tabs li>a.active, .tabs li .tab-title.active, .tabs li.ui-state-active>a, .tabs li.ui-state-active .tab-title, .tabs li>a.ui-state-active, .tabs li .tab-title.ui-state-active, .tabs li>a, .tabs li .tab-title, .tabs, .primary .section
+  #fbNotificationsJewel .jewelButton
   {
-    border-color: #666 !important;
+    background: url("http://i.imgur.com/2hWgefd.png") no-repeat center center!important;
   }
 
-  .ui-toolkit .btn-secondary:active, .ui-toolkit .btn-secondary.is-active, .ui-toolkit .btn-secondary.is-selected
+  ._5lxt
   {
-    border-color: #ddd !important;
+    background-image: url("https://cdn2.iconfinder.com/data/icons/splashyIcons/arrow_state_grey_expanded.png") !important;
   }
 
-/** footer **/
-  .wt-fill-denim, .wt-fill-orange-tint
+  ._59fb
   {
-    fill: #222 !important;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAA4VBMVEUAAAAAAAAAAAD+/v739/eNj48AAAAAAAAAAAD9/f0AAAAAAACqqqwAAADf4d/5+fn19fX9/v75+fr8/v7p5+no6ek2NjYAAADi4uLo6enz8/P+/f7u7e7p6ent7e7t7u6jo6b6+vv6+vv9/v77+vuPj4/v7/Dw8PDs7O38/P3q6urq6uv39/fv7/DJycn39/n9/f35+vr5+vn8/P34+Pj3+Pn5+vv4+Pn39/j+/f78/Pz4+fn7+/z9/v76+vr8+/v6+vv49/j39/n7+/v49/n5+fn6+/v3+Pj39/f5+Pn5+fpynzd1AAAAMHRSTlMAQDHGxmsWMj7zDzaBCZ8rUP71xbbPTBDD0+H51tTQ0GTFxvr4RNDQyP3Q0MXSE8XUq4XhAAAAn0lEQVR42pWM1w6CQBREZxd77733LiAIWHAVAeH/P0gw2cQHXzzJ3Jn7cvCDWDoRT3399Uyr3YlmAVBCCAUGxaQwnkwBzAzjOgcWyzwKYg5AWTyIArAtAbtTBRxavRFSuzQodzQdx7IcZnWBXjD6MJkpmcFhwNA8shFsSfZ925dk7tA8zz6H4Q7V1ZS7qzxcYKW6zzU2+ksPiQD7T/3PG9u3FeYy5OuXAAAAAElFTkSuQmCC) !important;
   }
 
-  .wt-bg-denim, .wt-bg-orange-tint
+  ._1k69
   {
-    background-color: #222 !important;
+    border: 1px solid gray;
   }
 
-  .wt-bg-denim-dark
-  {
-    background-color: #333 !important;
-  }
-
-  .wt-fill-denim-tint
-  {
-    fill: #444 !important;
-  }
-
-  .wt-bg-denim-tint
-  {
-    background-color: #444 !important;
-  }
-
-/** Description listing **/
-  .wt-content-toggle__body.wt-content-toggle__body--truncated:after
-  {
-    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), #333);
-  }
-
-
-/** Icon Digital Download  Effects other paths...
-path{
-fill: #ccc !important;
-}
-**/
-
-  .wt-badge.wt-badge--sale-01
-  {
-    background: #307339 !important;
-  }
-
-  #advector-setup-view, .appstore-subapp .hero-background, .grace-management-subapp .hero-background, .grace-management-subapp .switch-plans-section, .ui-toolkit .seal-the-deal-background, .external-ads-subapp .banner-background
+  ._4f7n::after, ._4f7n, ._2s1x ._2s1y
   {
     background-image: none !important;
   }
+
+  ._4f7n, ._2s1x ._2s1y
+  {
+    background: rgba(5,0,77,0.8) !important;
+    border: none;
+  }
+
+  .fbNubFlyoutTitlebar
+  {
+    background: #05004d !important;
+    border: 1px solid #05004d !important;
+    border-radius: 1px !important;
+  }
+
+  ._1nc6 ._5w1r, ._1nc6 ._3okg:before
+  {
+    background-color: rgba(100,165,255,0.6);
+    background-image: none;
+  }
+
+  ._1nc7 ._5w1r, ._1nc7 ._3okg:before
+  {
+    background-color: rgba(255,255,255,0.7);
+    background-image: none;
+  }
+
+  ._5w1r
+  {
+    text-shadow: rgba(255, 255, 255,0.2) 0 1px 0;
+  }
+
+  ._3okg:after, ._3okg:before
+  {
+    display: none;
+  }
+
+  ._5ys_:after
+  {
+    background: none;
+  }
+
+  ._5w-6, ._510g
+  {
+    background-color: rgba(0,0,0,0);
+    color: gray;
+  }
+
+  .fbNubFlyoutBody, ._50mz .fbNubFlyoutInner
+  {
+    background-color: rgba(255,255,255,0.2) !important;
+  }
+
+  ._51sy, ._9c6, ._58gm ._51xa
+  {
+    border-color: black;
+    background-image: none;
+    background: rgba(255,255,255, 0.5);
+    color: #525252;
+    text-shadow: none;
+  }
+
+  .ego_page .UIStandardFrame_Content
+  {
+    background-color: rgba(255,255,255,0.7);
+  }
+
+  ._4-u8, ._55d0, ._5vgz, ._5otg, ._4nq7, ._5142, ._50nb,
+.UFIAddCommentInput, ._1kny, ._1f8g, ._2i-0
+  {
+    background: rgba(255,255,255, 0.4) !important;
+  }
+
+  #pagelet_composer, ._55d0, ._5t_y, ._5v9k, .UFIRow, ._5h60
+  {
+    background: rgba(255,255,255, 0.0) !important;
+  }
+
+  ._5t_y ._1dsp._42jz, ._6dh ._1dsp, ._1dsp, ._1eds
+  {
+    background-color: rgba(0,0,0,0);
+  }
+
+  div._5rzs, div#leftCol
+  {
+    background: rgba(255,255,255,0.4);
+  }
+
+  #contentCol,#left_column,#right_column
+  {
+    background-color: rgba(255,255,255,0.4) !important;
+    border: none !important;
+  }
+
+  .UIStandardFrame_Content
+  {
+    background-color: rgba(0,0,0,0.0) !important;
+  }
+
+  .UFIReplyList
+  {
+    background-color: rgba(0,0,0,0.0) !important;
+  }
+
+  .UFIList
+  {
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  .fbFeedTickerStory.tickerStoryClickable
+  {
+    background-color: rgba(0,0,0,0.0);
+  }
+
+  .tickerLineToggle.stat_elem
+  {
+    background-color: rgba(0,0,0,0.0);
+  }
+
+  .fbNubButton, .uiToggleFlyout, .fbChatSidebarFooter
+  {
+    box-shadow: 50px 50px 50px #e5e5ff inset !important;
+  }
+
+  .ptm.uiBoxWhite.topborder
+  {
+    background-color: rgba(0,0,0,0.0);
+  }
+
+  .uiHeader.uiHeaderTopAndBottomBorder.uiHeaderSection
+  {
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  ._4d6h._4p1p._4-u3._57d8
+  {
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  ._g3j
+  {
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  ._4-u3._g3h
+  {
+    background-color: rgba(0,0,0,0.1);
+  }
+
+  ._5em9, .lfloat, ._ohe, ._50f4, ._50f7
+  {
+    background-color: rgba(0,0,0,0.0);
+  }
+
+  ._12u8, ._p
+  {
+    background-color: rgba(0,0,0,0.0);
+  }
+
+  #contentCol
+  {
+    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0.0) !important;
+    padding-top: 15px !important;
+  }
+
+  .uiStream .uiStreamHeader .uiStreamHeaderChronologicalForm, .uiStream .uiStreamHeader .uiStreamHeaderText
+  {
+    background: none !important;
+    padding-right: 2px !important;
+    position: absolute !important;
+  }
+
+  .hasSmurfbar #blueBarHolder #blueBar
+  {
+    background-image: none !important;
+    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.4) !important;
+    border-bottom: 1px solid #2B60DE !important;
+    min-width: 981px !important;
+    position: relative;
+    z-index: 300 !important;
+  }
+
+  ._5bfg #pageNav .navLink, ._5bfg #pageNav .navItem .navLink
+  {
+    color: white !important;
+  }
+
+  #pageNav._5bfw #navAccount #navAccountLink .menuPulldown
+  {
+    background-image: url(http://i.imgur.com/fR40sw7.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: auto !important;
+    background-position: -3px -20px !important;
+  }
+
+  .hasSmurfbar ._59fb
+  {
+    background-image: url(http://i.imgur.com/Et2ZdQr.png) !important;
+    background-position: -65px -325px !important;
+  }
+
+  .fbChatSidebar
+  {
+    -webkit-background-clip: padding-box;
+    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 2px 0 2px -2px #B2B9C9;
+    display: none;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 205px;
+    z-index: 300;
+  }
+
+  .fbChatSidebar .fbFeedTicker .fbFeedTickerStory
+  {
+    background-color: white !important;
+    border-bottom-color: transparent;
+    line-height: 13px;
+    padding-right: 5px;
+  }
+
+  .uiSideNav .selectedItem .item, .uiSideNav .selectedItem .item:hover, .uiSideNav ul .selectedItem .subitem, .uiSideNav ul .selectedItem .subitem:hover
+  {
+    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    font-weight: bold;
+  }
+
+  .uiSideNav .item, .uiSideNav .subitem
+  {
+    color: #333;
+    display: block;
+    border-bottom: none !important;
+    min-height: 17px;
+    line-height: 13px;
+    padding: 3px 8px 0 28px;
+    text-decoration: none;
+  }
+
+  .uiSideNav .item:hover
+  {
+    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  #contentCurve
+  {
+    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0.5) !important;
+    border-bottom: 1px solid #CCC;
+    font-size: 1px;
+    height: 8px;
+    margin-bottom: 8px;
+  }
+
+  .hasVoiceToggle #pageNav .voiceBarToggle
+  {
+    display: none !important;
+  }
+
+  .pagesTimelineButtonPagelet
+  {
+    background-color: transparent !important;
+    border-bottom: none !important;
+    min-width: 122px;
+    padding: 13px 0 12px 1px;
+    top: 38px;
+    z-index: 4;
+  }
+
+  .fbTimelineScrubber
+  {
+    background-color: transparent !important;
+    padding: 8px 0 8px 1px;
+    top: 38px;
+    width: 122px;
+    z-index: 1;
+  }
+
+  div.fbChatSidebarDropdown .uiCloseButton
+  {
+    background-image: url(http://static.ak.fbcdn.net/rsrc.php/v2/yo/x/okE0Xwkxo7X.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: white !important;
+    background-position: -365px -20px;
+    border: 0;
+    height: 24px;
+    width: 26px;
+  }
+
+  ._4oes .button
+  {
+    background-color: white !important;
+    border-left: 1px solid #C9D0DA;
+    -webkit-box-shadow: inset 0 1px white;
+    display: block;
+    height: 24px;
+    width: 26px;
+  }
+
+  .ego_unit + .ego_unit, .ego_unit + .ego_appended_units .ego_unit
+  {
+    padding-top: 8px;
+    border-top: none !important;
+  }
+
+  .shareRedesignText, .shareRedesignContainer, .shareRedesign .shareMediaVideo
+  {
+    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .uiBoxGray
+  {
+    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border: 1px solid #CCC;
+  }
+
+  .fbSettingsList a.fbSettingsListLink:hover
+  {
+    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    display: block;
+    text-decoration: none;
+  }
+
+  .fbReminders .fbRemindersStory:hover
+  {
+    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    padding: 3px 5px;
+  }
+
+  .fbxPhoto .fbPhotoImageStage .stageContainer
+  {
+    background-color: transparent !important;
+    height: 453px;
+  }
+
+  .uiBlingBox
+  {
+    border-bottom: none !important;
+    display: inline-block;
+    padding: 3px 4px 3px 2px;
+  }
+
+  .uiBlingBox:hover
+  {
+    background-color: transparent !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .groupsJumpBarTop .groupsCleanLinksBorder
+  {
+    display: none !important;
+    background-color: white;
+    height: 4px;
+    margin-bottom: -4px;
+    margin-right: 0;
+    position: relative;
+  }
+
+  #fbProfileCover .coverNoImage
+  {
+    background: transparent !important;
+    border-bottom: 1px solid #C4CDE0 !important;
+    border-top: 1px solid #C4CDE0;
+    height: 129px;
+    position: relative;
+  }
+
+
+@-moz-document url-prefix("https://www.facebook.com/settings")
+  {
+    .hasLeftCol #contentCol {margin-left: 190px !important;
+  }
+
+  div._5rzs, div#leftCol, #contentCol, #left_column, #right_column
+  {
+    background-color: rgba(255,255,255,1) !important;
+  }
+}
+
+@-moz-document url-prefix("https://www.facebook.com/support")
+{
+  html
+  {
+    background: none !important;
+  }
+}
+
+@-moz-document url("https://www.facebook.com/?ref=tn_tnmn"), url("https://www.facebook.com/"), url("https://www.facebook.com/home.php"), url("https://www.facebook.com/?sk=h_chr"), url("https://www.facebook.com/?_rdr=p")
+{
+}
+
+@-moz-document url-prefix("https://www.facebook.com/settings")
+{
+
+  .hasLeftCol #contentCol
+  {
+    margin-left: 190px !important;
+  }
+
+  div._5rzs, div#leftCol, #contentCol, #left_column, #right_column
+  {
+    background-color: rgba(255,255,255,1) !important;
+  }
+}
+
+@-moz-document url-prefix("https://www.facebook.com/support")
+{
+  html
+  {
+    background: none !important;
+  }
+}
+
+@-moz-document url("https://www.facebook.com/?ref=tn_tnmn"), url("https://www.facebook.com/"), url("https://www.facebook.com/home.php"), url("https://www.facebook.com/?sk=h_chr"), url("https://www.facebook.com/?_rdr=p")
+{
+}
+
 }
