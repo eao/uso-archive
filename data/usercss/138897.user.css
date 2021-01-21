@@ -2,8 +2,8 @@
 @name           OcUK Forum - XEN - Complete
 @namespace      USO Archive
 @author         Sean Mayes
-@description    `A dark theme for the new forum at OcUK. Now complete and polished! If you use and like PLEASE donate just £1 for my hard work, paypal: rail.monkey@ntlworld.com`
-@version        2020827.0.4
+@description    `A dark theme for the new forum at OcUK. Now complete and polished! If you use and like feel free to buy me a coffee,  paypal: rail.monkey@ntlworld.com`
+@version        2021121.0.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1211,5 +1211,19 @@ a[href]:hover {
 }
 .deleted .primaryContent {
     background-color: #343b40 !important;
+}
+#header {
+    background-color: #2e3539;
+}
+.navTabs .navTab.selected .tabLinks, 
+.navTabs .navTab.selected .navLink {
+    background: #373f44 !important;
+}
+#loginBar {
+    background-color: #23282b;
+}
+#loginBar #loginBarHandle {
+    background-color: #23282b;
+    box-shadow: none !important;
 }
 }

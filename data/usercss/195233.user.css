@@ -3,11 +3,13 @@
 @namespace      USO Archive
 @author         TheLegendOfWolf_
 @description    `Blue YouTube.`
-@version        2021115.16.40
+@version        2021120.13.33
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.youtube.com") {
+
+
 
 
 
@@ -845,6 +847,8 @@ paper-listbox.yt-dropdown-menu {
 }
 
 
+
+
 /*mały pasek przy napisach*/
 
 
@@ -858,13 +862,11 @@ paper-listbox.yt-dropdown-menu {
     width: 0;
     left: 45px;
     bottom: 6px;
-    background-color: #12a0FF;
+    background-color: #FF0000;
     -moz-transition: left .1s cubic-bezier(0.4,0.0,1,1),width .1s cubic-bezier(0.4,0.0,1,1);
     -webkit-transition: left .1s cubic-bezier(0.4,0.0,1,1),width .1s cubic-bezier(0.4,0.0,1,1);
     transition: left .1s cubic-bezier(0.4,0.0,1,1),width .1s cubic-bezier(0.4,0.0,1,1);
 }
-
-
 
 /*komy v2*/
 
@@ -874,17 +876,11 @@ color: #12A0FF;
 
 }
 
-
-
 yt-formatted-string#text.style-scope.ytd-button-renderer.style-primary.size-default{
 
 color: #FFF;
 
 }
-
-
-
-
 
 /*Wspieranie*/
 
@@ -908,6 +904,43 @@ color: #FFF;
 	color: #12A0FF;
 	background-color: #03142d;
 }
+
+
+
+.offer-overview-item.ytd-sponsorships-offer-renderer {
+    display: block;
+    width: 100%;
+    padding: 11px 24px;
+    font-family: inherit;
+    background: #03142d;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+
+
+.offer-overview-item.selected.ytd-sponsorships-offer-renderer {
+    background-color: #12A0FF;
+}
+
+
+
+.offer-overview-item.ytd-sponsorships-offer-renderer:not(:last-of-type) {
+    border-bottom: 1px solid #12A0FF;
+}
+
+#tier-overview.ytd-sponsorships-offer-renderer {
+    width: 220px;
+	margin: 0;
+    flex-shrink: 0;
+	background-color: #03142d;
+}
+
+
+
 
 /*czat v2 ostatni raczej*/
 
@@ -1027,6 +1060,58 @@ ytd-button-renderer[disabled][is-paper-button] a.ytd-button-renderer {
     padding: 0 24px 8px;
 }
 
+/*poprawa kropki itd*/
+
+.ytp-swatch-background-color {
+     background: linear-gradient(-45deg, #12A0FF, #19D9FF);
+}
+
+
+.ytp-settings-button.ytp-hd-quality-badge:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    height: 9px;
+    width: 13px;
+    background-color: #19D9FF;
+    border-radius: 1px;
+    line-height: normal;
+}
+
+
+/*ustawienia odtwarzania*/
+
+.ytp-menuitem[aria-checked="true"] .ytp-menuitem-toggle-checkbox {
+    background: #088CFF;
+}
+
+.ytp-popup {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 2px;
+    background: #03142d;
+    text-shadow: 0 0 2px rgba(0,0,0,.5);
+    -moz-transition: opacity .1s cubic-bezier(0.0,0.0,0.2,1);
+    -webkit-transition: opacity .1s cubic-bezier(0.0,0.0,0.2,1);
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+	opacity: 0.9;
+}
+
+
+.ytp-swatch-color {
+    color: #088CFF;
+}
+
+/*logo YT!*/
+
+path.style-scope.ytd-topbar-logo-renderer{
+
+fill: #088CFF;
+
+}
 
 
 }

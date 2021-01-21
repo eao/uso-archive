@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `Github项目地址：https://github.com/QIUZAIYOU/Stylish1. 常用页面夜间模式全覆盖2. 去除广告3. 页面样式优化大部分已完成，部分施工中...目前常用页面应该已经全面覆盖了，除了「直播」和「游戏」相关页面，使用时可点击浏览器工具栏 stylus 图标，再点击本样式名称后面的操作菜单（竖着的三个点），勾选排除当前链接，这两个域名相关页面夜化后续会补上。`
-@version        2021120.12.26
+@version        2021120.13.47
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown BiliLive "首页直播板块" {
@@ -16,11 +16,11 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
 ==/UserStyle== */
 @-moz-document url-prefix("http://example.com") {
     /*===
-* © 版权信息
-* © 作者：QIUZAIYOU
-* © 最后更新：20210120
-* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-===*/
+    * © 版权信息
+    * © 作者：QIUZAIYOU
+    * © 最后更新：20210120
+    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -93,6 +93,7 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
         --filter-ccd0d7-66: invert(70%) sepia(2%) saturate(5%) hue-rotate(326deg) brightness(100%) contrast(81%)!important;
         --filter-d8-66: invert(83%) sepia(0%) saturate(1979%) hue-rotate(347deg) brightness(131%) contrast(68%)!important;
         --filter-99a2aa-66: invert(71%) sepia(0%) saturate(0%) hue-rotate(7deg) brightness(87%) contrast(90%)!important;
+        --filter-bec3cc-42: invert(97%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(93%) contrast(91%)!important;
         --filter-98a2aa-shopPink: invert(50%) sepia(81%) saturate(1975%) hue-rotate(308deg) brightness(100%) contrast(90%)!important;
         --filter-626a6e-blue: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%)!important;
         --filter-20-mangaBlue: invert(50%) sepia(91%) saturate(1050%) hue-rotate(180deg) brightness(101%) contrast(101%)!important;
@@ -401,7 +402,7 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
         mix-blend-mode: soft-light!important;
     }
     .sticky-bar {
-        box-shadow: 0 2px 4px 0 rgba(33,3,33,.5)!important;
+        box-shadow: 0 2px 4px 0 rgba(33, 3, 33, .5)!important;
     }
     /* -- 全站评论列表 -- */
     .page-container,
@@ -880,7 +881,8 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
     .card .focus-btn .focus,
     .big-gift-btn-home,
     .btn-confirm.disabled,
-    .form-login .input-box .btn-box .btn {
+    .form-login .input-box .btn-box .btn,
+    .follow-dialog-wrap .follow-dialog-window .bottom .btn:disabled {
         border-color: var(--color-42)!important;
         background: var(--color-37)!important;
         color: var(--color-86)!important;
@@ -1234,6 +1236,39 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
     .mask .popup-box .popup-content {
         color: var(--color-86)!important;
     }
+    /* -- 设置分组 -- */
+    .follow-dialog-wrap,
+    .follow-dialog-wrap .follow-dialog-window,
+    .follow-dialog-wrap .follow-dialog-window .content .group-list .add-group .input-group input {
+        background-color: var(--color-21)!important;
+    }
+    .follow-dialog-wrap .follow-dialog-window .content .group-list ul .follow-group-mask {
+        background: hsl(0deg 0% 13% / 55%)!important;
+    }
+    .follow-dialog-wrap .follow-dialog-window .content .group-list .add-group .add-btn {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/add_btn.png)!important;
+    }
+    .follow-dialog-wrap .follow-dialog-window .title,
+    .follow-dialog-wrap .follow-dialog-window .content .info .uname,
+    .follow-dialog-wrap .follow-dialog-window .content .group-list li label,
+    .follow-dialog-wrap .follow-dialog-window .content .group-list .add-group .add-btn {
+        color: var(--color-86)!important;
+    }
+    .follow-dialog-wrap .follow-dialog-window .content .info,
+    .follow-dialog-wrap .follow-dialog-window .content .group-list li .special-tip {
+        color: var(--color-66)!important;
+    }
+    .follow-dialog-wrap .follow-dialog-window .content .group-list li:hover label {
+        color: var(--bili-blue)!important;
+    }
+    .follow-dialog-wrap .follow-dialog-window .title,
+    .follow-dialog-wrap .follow-dialog-window .content .group-list .add-group .add-btn,
+    .follow-dialog-wrap .follow-dialog-window .bottom {
+        border-color: var(--color-42)!important;
+    }
+    .follow-dialog-wrap .follow-dialog-window .content .group-list li input[type=checkbox]:not(:checked)+i {
+        filter: var(--filter-bec3cc-42)!important;
+    }
     /* -- 其他 -- */
     .random-change {
         border-color: var(--color-42)!important;
@@ -1258,6 +1293,17 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
     }
     .h5share-container:hover .text-area .text {
         color: var(--bili-blue)!important;
+    }
+    [title*="封禁"],
+    .h .h-sign[title*="封禁"],
+    .up-info .up-info_right .desc[title*="封禁"] {
+        width: -webkit-fit-content!important;
+        width: -moz-fit-content!important;
+        width: fit-content!important;
+        background: var(--bili-red)!important;
+        color: var(--color-ff)!important;
+        padding: 1px 5px;
+        border-radius: 2px;
     }
     .h5share-container:hover .text-area {
         box-shadow: 0 3px 10px 0 var(--color-27)!important;
@@ -4415,7 +4461,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-follows .follow-sidenav .follow-list-container .follow-item.cur .num,
     #page-follows .follow-sidenav .follow-list-container .follow-item.cur .text,
     .h .h-f-btn,
-    .h .h-add-to-black .icon-ic_more {
+    .h .h-add-to-black .icon-ic_more,
+    .h .h-avatar .avatar-cover {
         color: var(--color-ff)!important;
     }
     .pgc-space-follow-item .bangumi-options .opt-list li.disabled,

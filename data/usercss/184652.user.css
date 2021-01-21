@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Scott Collins
 @description    `Dark Style For Loblaws National Shunt Service Ltd`
-@version        2021120.3.26
+@version        2021120.23.8
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -34,6 +34,11 @@ span.trailer ~ span:not(:last-of-type)::after{
     content: ", ";
 }*/
 
+/*Door Manager Popup*/
+div.popup.open {
+    background: #252525!important;
+    border: 1px solid #ffc428;
+}
 
 table.yard-locations {
     margin: -2px;

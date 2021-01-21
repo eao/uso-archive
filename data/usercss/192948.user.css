@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `Google Carbon ThemeMore of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        20201214.6.13
+@version        2021120.19.40
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadcarbon "Background Image" {
@@ -29,6 +29,13 @@ body {
 	color: #efefef!important;
 }
 /*update*/
+.k8XOCe {
+    background-color: #484a4ca6;
+}
+.s75CSd {
+	color: #d3d3d3
+}
+
 .I6a0ee:hover {
     background-color: #f8f9fa;
     border: 1px solid #dadce0;
