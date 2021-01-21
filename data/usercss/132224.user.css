@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `стиль РАЗРЕЗАН НА 2 ЧАСТИ. для нормального функционирования нужны обе / this style is CUT INTO 2 PARTS, you need both parts so it'd function properly. the second partVanilla Dark 2 VK Fix/Mod PART 2 of 2здесь / is here:https://userstyles.org/styles/165927/ЭТА ТЕМА - ДОПОЛНЕНИЕ/ИСПРАВЛЕНИЯ ДЛЯ VANILLA DARK 2, НЕ ОТДЕЛЬНЫЙ СТИЛЬ.НЕ ЗАБЫВАЕМ СНАЧАЛА УСТАНАВЛИВАТЬ https://userstyles.org/styles/126419/vanilla-dark-2 После обновления Vanilla Dark 2 этот фикс-мод возможно нужно будет переключить (ВЫКЛ/ВКЛ), чтобы он нормально работал.Паблос в ВКшечке: https://vk.com/worstmodThis Fix/Mod IS NOT A STANDALONE THEME.Make sure to install Vanilla Dark 2 first https://userstyles.org/styles/126419/vanilla-dark-2This Fix/Mod may need to be switched (OFF/ON) after Vanilla Dark 2 update to function properly.Check https://vk.com/worstmod if you have any questions/suggestions.`
-@version        2021114.0.34
+@version        2021121.10.27
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown vklogo "Старый ламповый логотип:" {
@@ -395,10 +395,10 @@ fuckstorieshard "я не могу их больше слушать." <<<EOT /* �
 
 }
 @advanced dropdown nomoneysend " ♻ Деньги я лучше оставлю при себе:" {
-	nomoneysendon "точняк.*" <<<EOT /* убрать из меню пункт отправить деньги *\/
-.page_actions_item[onclick*="Page.moneyTransferBox"]{display:none}
- EOT;
-nomoneysendoff "да не, я щедрый." <<<EOT  EOT;
+	nomoneysendoff "да не, я щедрый.*" <<<EOT  EOT;
+nomoneysendon "точняк." <<<EOT /* убрать денежные переводы *\/
+.page_actions_item[onclick*="Page.moneyTransferBox"]{display:none!important} EOT;
+nomoneysendfuckall "нафиг бабло и воспоминания" <<<EOT [dir] .page_photo.ProfileActions .page_actions_expanded{display:none} EOT;
 
 }
 @advanced dropdown countsfold "★ Сворачивать счётчики инфы страницы:" {
@@ -667,6 +667,14 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /*[[chaticonremove]]*/
 /*[[audiosendremove]]*/
 /*[[nomoneysend]]*/
+
+/* денежные переводы */
+[dir] .payments_money_transfer_amount_wrap{border:1px solid var(--color3);background-color: #0000}
+[dir] .payments_money_transfer_amount{background:#0000;color:var(--color2)}
+#payments_box.payments_money_transfer_box .payments_money_transfer_link_copy_input{color: var(--color1);-webkit-text-fill-color:var(--color2)}
+[dir] #payments_box.payments_money_transfer_box .payments_money_transfer_labeled_link{border-bottom: 1px solid var(--color3)}
+#payments_box.payments_money_transfer_box .payments_money_transfer_label{color:#aaa}
+[dir="ltr"] #payments_box.payments_money_transfer_box .payments_money_transfer_qr_box{filter:invert(1)hue-rotate(180deg)var(--filt2)}
 
 /*[[countsfold]]*/
 

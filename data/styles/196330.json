@@ -1,0 +1,40 @@
+{
+  "id": 196330,
+  "info": {
+    "name": "learnku社区",
+    "description": "对learnku社区样式进行修改",
+    "additionalInfo": "1.2\r\n缩小下拉区域以适应小屏幕。\r\n\r\n1.1\r\n下拉滚动条增大了一些。\r\n\r\n\r\n1.0\r\n将learnku社区的文档节点，放在右侧\r\n节点区域随屏幕滚动\r\n节点太多的话支持滚动条下拉\r\n缩小节点标题字体大小",
+    "format": "uso",
+    "category": "learnku",
+    "createdAt": "2021-01-21T04:02:53.000Z",
+    "updatedAt": "2021-01-21T06:09:27.000Z",
+    "license": "CC-BY-4.0",
+    "author": {
+      "id": 1109680,
+      "name": "牛铁柱",
+      "homepage": "https://wyz.xyz/"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 14,
+      "weekly": 14
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "196330_after.png",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document url-prefix(\"https://learnku.com\") {\r\n    \r\n    .book-main-column .toc-wraper {\r\n        position: fixed !important;\r\n        right: 0px !important;\r\n        top: 96px !important;\r\n        display: block !important;\r\n    \r\n    }\r\n    .book-main-column .remove.text-mute {display:none}\r\n    .book-main-column #toc {\r\n        height: 768px;\r\n        overflow: auto !important;\r\n    }\r\n    .book-main-column #toc li {\r\n        line-height: 16px !important;\r\n    }\r\n    }"
+  }
+}

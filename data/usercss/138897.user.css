@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Sean Mayes
 @description    `A dark theme for the new forum at OcUK. Now complete and polished! If you use and like feel free to buy me a coffee,  paypal: rail.monkey@ntlworld.com`
-@version        2021121.0.47
+@version        2021121.3.43
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1225,5 +1225,9 @@ a[href]:hover {
 #loginBar #loginBarHandle {
     background-color: #23282b;
     box-shadow: none !important;
+}
+.navTabs .navLink, 
+.navTabs .SplitCtrl {
+    background-color: #23282b;
 }
 }
