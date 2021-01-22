@@ -3,13 +3,12 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme & Ad Blocker for thecointribune.com`
-@version        20201129.10.52
+@version        2021121.15.44
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("thecointribune.com") {
-
-  /* General background */
+@-moz-document domain("thecointribune.com"), domain("cointribune.com") {
+/* General background */
   div#page.site, div#content.site-content{ background: #202020;}
   
   

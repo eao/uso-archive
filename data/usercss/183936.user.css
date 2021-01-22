@@ -3,23 +3,22 @@
 @namespace      USO Archive
 @author         Alecsander Camilo
 @description    `Tema Dark para Globo.com e O Globo, incluindo Esportes, Época, Extra, Gshow, Quem, Blogs do oGlobo, TechTudo e mais.`
-@version        2020118.0.53
+@version        2021121.20.50
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("globo.com"), domain("techtudo.com.br") {
-body, .mc-bottom, .full-width, .diretorio-home, #article > section > section, .catalog-wrapper, .container-adv-2 {
+body, .mc-bottom, .full-width, .diretorio-home, #article > section > section, .catalog-wrapper, .container-adv-2, #header-section, #barra-globocom, section.topglobocom.hui-spacing, .footer_links {
     background: #181818 !important;
     }
 
     /* Geral */
-    .article-header.article-header-- *, .protected-content p, p.content-publication-data__from, .shadow-video-flow-navigation__next-title, .mc-column.content-media.content-video p, p.content-publication-data__updated > time, p.content-publication-data__updated > span > time,
-    h1.content-head__title, #glb-materia .materia-titulo h1, h2.content-head__subtitle, .materia .materia__content .foto .foto-legenda, body.multicontent, .glbComentarios-texto-contador, .content-related-articles__title, .content-intertitle,
+    .article-header.article-header-- *, a.header-title.homeui-tc-techtudo, .protected-content p, p.content-publication-data__from, .shadow-video-flow-navigation__next-title, .mc-column.content-media.content-video p, p.content-publication-data__updated > time, p.content-publication-          data__updated > span > time, h1.content-head__title, #glb-materia .materia-titulo h1, h2.content-head__subtitle, .materia .materia__content .foto .foto-legenda, body.multicontent, .glbComentarios-texto-contador, .content-related-articles__title, .content-intertitle,
     div.wall.protected-content p, .content-media.content-photo  p, #boxComentarios p, .hui-section-title--with-separator, .hui-highlight-chapeu, .topglobocom__header-title, .topglobocom__content-title:before, div.row.medium-uncollapsed.content-top-image span,
     div.feed-post-body-resumo, .feed-post-metadata, #description_text, .mc-column.content-entenda-o-caso > h3, .feed__legend, .feed-post-header-chapeu, .load-more a:hover, .catalog-metadata-published-time, div.feed.theme div h3, .featured-text h1,
     .reading-time, .protected-content .card h4 a, #most-read h4 a, #read-more h4, #newslist li a, .paywall__site-container #menu-institutional ul li a, .franja-vitrine-primary__header-subtitle, .authorship ul li address, .content-media .content-media__description,
     .score .score-number, .scoreboard-bastian-feed, .search-widget__label-text, .icon.search-widget__label-icon, .social-links-widget .social-links-widget__title, .icon-link.icon-link--no-text svg use, div.paywall__site-container .article-related-link__subtitle,
-    .article-feed-item__title.article-feed-item__title--esp-pub a {
+    .article-feed-item__title.article-feed-item__title--esp-pub a, h2.franja-agrupador-quadruplo__header, body > section:nth-child(11) > header > h2 > span, section.franja-vertical.hui-container.hui-spacing > div > h2, div.franja-vertical__coluna__content > div > div > a > div > div > span, section:nth-child(14) > div.franja-agrupador-quadruplo__content > div > div > a > h3, section:nth-child(16) > div.franja-agrupador-quadruplo__content > div > div > a > div > div > span, h3.vitrine-globoplay__header-subtitle, h3.topglobocom__header-subtitle, #tns1-mw li::before, body > section:nth-child(16) > div.franja-agrupador-quadruplo__content > div > div > a > div > div > span, .highlight__subject-title.highlight__hat.highlight-font-subject-simple-article, .highlight__title.homeui-tc-techtudo, body > div.footer_links > div > div > ul > li > a, body > section:nth-child(12) > header > h2 > span {
         color: #BFBFBF;
     }
     :root {
@@ -117,13 +116,10 @@ body, .mc-bottom, .full-width, .diretorio-home, #article > section > section, .c
     }
 
     /* Bolsa de Valores, Esportes e Horóscopo */
-    div.widget-economia__footer, .widget-horoscopo__provider {
+    div.widget-economia__footer, .widget-horoscopo__provider, .horoscope__footer__top-area__provider {
         background-color: #181818;
     }
-    .widget-horoscopo__description, .widget-horoscopo__title, box-editorial-de-esportes__chamada, .titulo.box-editorial-de-esportes__titulo, .box-editorial-de-esportes__chamada, .widget-economia__content .widget-economia__currencies tr td,
-    .widget-economia__currencies th, .widget-economia__points, .widget-economia__finance-header, .widget-economia__datetime-container, .widget-horoscopo__period, #glb-corpo .miolo p, .margin-correct,
-    #glb-menu ul li a, #glb-corpo time strong, #glb-cabecalho > div > div > div > a, #glb-cabecalho span.titulo-pagina, h2, #glb-corpo > div.glb-conteudo > div.glb-principal.glb-bl-tudo-sobre-signo.espaco-divisoria-topo > div > ul > li > a > div > p,
-    #magazine_modules_highlight a p, #glb-corpo .glb-bl-servicos-relacionados ul li a h3, .widget-servicos-sobre-voce dl dd a, #glb-corpo > div.glb-conteudo > div.glb-principal.espaco-divisoria-topo.glb-bl-signo-no-amor > div.glb-bl-conteudo.glb-bl-chamada-artigo > ul > li > a > div > p{
+    .highlight__hat.widget-editorial__right-area__hat, .highlight__subtitle.widget-editorial__right-area__text-content, .horoscope__main__heading__date, .horoscope__main__sign-overview__description{
         color: #BFBFBF;
     }
     .link-saida {
@@ -198,11 +194,11 @@ body, .mc-bottom, .full-width, .diretorio-home, #article > section > section, .c
     div.paywall__site-container h1 a, div.paywall__site-container main section article div h1 a, .teaser__subtitle, .trc_rbox_header_span, .people-teaser__autor, .teaser__author, .teaser__before-title, .teaser__picture-caption, .last-news__date, .last-news__more a,
     .photo-gallery__current-title, .block__section-title, .block__mini-block-title, .mini-block-weather__temperatures, .mini-block-financial-indicators__coin-value, .mini-block-financial-indicators__change, .mini-block-financial-indicators__coin-name, .mini-block-weather__day,
     .block__mini-block-footer-link, .site-footer__direitosreservados_texto, .article__picture-caption, .article-feed-item__author, .most-read-item__author, .most-read-header__title, .article-feed-header__title, .article-related-links__title, .share-links__content, .link-disclosure,
-    .item-label-href span.branding, .teaser__title.teaser__title--esp-pub a, div.videoCube.trc_spotlight_item > a.item-label-href > span > span.video-label, .playlist__details__datetime, .playlist__details__description {
+    .item-label-href span.branding, .teaser__title.teaser__title--esp-pub a, div.videoCube.trc_spotlight_item > a.item-label-href > span > span.video-label, .playlist__details__datetime, .playlist__details__description, #newsletter-component div {
         color: #BFBFBF;
     }
-    .block.headline_urgent div, body > div.paywall__site-container > main > section > div > div > div > div > div > div > div > article, .site-header__editorial, .block__header, .site-footer__texts {
-        background-color: #181818;
+    .block.headline_urgent div, body > div.paywall__site-container > main > section > div > div > div > div > div > div > div > article, .site-header__editorial, .block__header, .site-footer__texts, .body, #bstn-rtcl > div > div > div > div > div > div {
+        background-color: #181818 !important;
     }
     .mini-block-weather__weather {
         background-color: #505050;
@@ -473,14 +469,8 @@ body, .mc-bottom, .full-width, .diretorio-home, #article > section > section, .c
     }
 
     /* Bolsa de Valores, Esportes e Horóscopo */
-    div.widget-economia__footer, .widget-horoscopo__provider {
+    div.widget-economia__footer, #globocom-horoscopo {
         background-color: #181818;
-    }
-    .widget-horoscopo__description, .widget-horoscopo__title, box-editorial-de-esportes__chamada, .titulo.box-editorial-de-esportes__titulo, .box-editorial-de-esportes__chamada, .widget-economia__content .widget-economia__currencies tr td,
-    .widget-economia__currencies th, .widget-economia__points, .widget-economia__finance-header, .widget-economia__datetime-container, .widget-horoscopo__period, #glb-corpo .miolo p, .margin-correct,
-    #glb-menu ul li a, #glb-corpo time strong, #glb-cabecalho > div > div > div > a, #glb-cabecalho span.titulo-pagina, h2, #glb-corpo > div.glb-conteudo > div.glb-principal.glb-bl-tudo-sobre-signo.espaco-divisoria-topo > div > ul > li > a > div > p,
-    #magazine_modules_highlight a p, #glb-corpo .glb-bl-servicos-relacionados ul li a h3, .widget-servicos-sobre-voce dl dd a, #glb-corpo > div.glb-conteudo > div.glb-principal.espaco-divisoria-topo.glb-bl-signo-no-amor > div.glb-bl-conteudo.glb-bl-chamada-artigo > ul > li > a > div > p{
-        color: #BFBFBF;
     }
     .link-saida {
         color: #EC7D00
@@ -643,9 +633,6 @@ body, .mc-bottom, .full-width, .diretorio-home, #article > section > section, .c
     #boxComentarios > p, .glbComentarios-texto-comentario, .glbComentarios-dados-usuario strong, .recentes.glbComentarios-barra-cor-produto, .populares.glbComentarios-barra-cor-produto {
         color: #BFBFBF !important;
     }
-    .feed-post-link.gui-color-primary {
-        color: 	#C0C0C0;
-    }
        
     /* Extra */
     .comment_term, #main div.story p, .father, .father, #main aside section.box.social.comments div ul li p a, #main span.info, #tutopicbanner h1 a, #main > div.content > article header h1, #main .published, #main .updated,
@@ -728,6 +715,10 @@ body, .mc-bottom, .full-width, .diretorio-home, #article > section > section, .c
         padding-bottom: 25px;
     }
 
+    /* Esconder */
+    .paywall-cpt-wrap {
+        display: none;
+    }
 }
 
 @-moz-document url-prefix("https://gshow.globo.com/novelas/fina-estampa/"), url-prefix("https://gshow.globo.com/realities"), url-prefix("https://gshow.globo.com/receitas-gshow/"), url-prefix("https://globoesporte.globo.com/futebol/times/vasco"), url-prefix("https://globoesporte.globo.com/futebol/times/santos"), url-prefix("https://globoesporte.globo.com/ce/futebol/times/ceara/"), url-prefix("https://globoesporte.globo.com/futebol/times/botafogo/"), url-prefix("https://globoesporte.globo.com/futebol/times/atletico-mg/") {

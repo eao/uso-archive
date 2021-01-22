@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "thecointribune",
     "createdAt": "2020-11-14T23:24:04.000Z",
-    "updatedAt": "2020-11-29T10:52:38.000Z",
+    "updatedAt": "2021-01-21T15:44:08.000Z",
     "license": "CC-BY-4.0",
     "author": {
       "id": 1068424,
@@ -17,7 +17,7 @@
   },
   "stats": {
     "installs": {
-      "total": 1,
+      "total": 5,
       "weekly": 0
     }
   },
@@ -35,6 +35,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"thecointribune.com\") {\r\n\r\n  /* General background */\r\n  div#page.site, div#content.site-content{ background: #202020;}\r\n  \r\n  \r\n  /* Title & text colors */\r\n  h1, h2, h3, h4, h5, h6, .TCT_list_articles_widget ul li a, h2.entry-title a{ color: #1678c1 !important;}\r\n  p{ color: #eee;}\r\n  \r\n  \r\n  /* Crypto prices */\r\n  .mcw-tab-content.active, .mcw-white-theme .mcw-tabs, .mcw-tabs .mcw-tab.active .mcw-tab-bg{ background: #202020;}\r\n  .mcw-multi-tabs .mcw-list-column{ color: #fff;}\r\n  \r\n  /* Removing ads */\r\n  .ad_width_100, .abonnez-vous-form, .TCT_buy_btn_sidebar_widget_wrap{ display: none;}\r\n}"
+    "css": "@-moz-document domain(\"thecointribune.com\"), domain(\"cointribune.com\") {\r\n/* General background */\r\n  div#page.site, div#content.site-content{ background: #202020;}\r\n  \r\n  \r\n  /* Title & text colors */\r\n  h1, h2, h3, h4, h5, h6, .TCT_list_articles_widget ul li a, h2.entry-title a{ color: #1678c1 !important;}\r\n  p{ color: #eee;}\r\n  \r\n  \r\n  /* Crypto prices */\r\n  .mcw-tab-content.active, .mcw-white-theme .mcw-tabs, .mcw-tabs .mcw-tab.active .mcw-tab-bg{ background: #202020;}\r\n  .mcw-multi-tabs .mcw-list-column{ color: #fff;}\r\n  \r\n  /* Removing ads */\r\n  .ad_width_100, .abonnez-vous-form, .TCT_buy_btn_sidebar_widget_wrap{ display: none;}\r\n}"
   }
 }

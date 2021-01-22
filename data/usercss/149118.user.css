@@ -2,8 +2,8 @@
 @name           Eldarya Map - Eldarya Mapa Poszukiwań
 @namespace      USO Archive
 @author         Relashia
-@description    `Style shows on the map items that can be found in the specific locations.<br/>Style is global, it works on every language version of Eldarya.<br/>--------------------------------------------------------<br/>Styl pokazuje na mapie przedmioty możliwe do znalezienia w danych lokacjach.<br/>Styl jest globalny, działa na każdej wersji językowej Eldaryi.`
-@version        20201218.17.32
+@description    `Style shows on the map items that can be found in the specific locations (TO & ANE).<br/>Style is global, it works on every language version of Eldarya.<br/>--------------------------------------------------------<br/>Styl pokazuje na mapie przedmioty możliwe do znalezienia w danych lokacjach (TO i ANE).<br/>Styl jest globalny, działa na każdej wersji językowej Eldaryi.`
+@version        2021121.18.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1669,6 +1669,29 @@ background-size : 40px 40px !important ;}
 div.map-location-tooltip [data-id="112"]:after { content: "-❤";
 position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 20px;  font-weight: bold; }
 
+/*Boki łodzi/Abords du bateau*/
+div.map-location-tooltip [data-id="113"] { 
+background-image : 
+url("https://www.eldarya.pl/assets/img/item/consumable/316d90bc2b0aab68138120393e1f2326.png"),
+url("https://www.eldarya.pl/assets/img/item/consumable/9209a71fbe045c6376ef225a009725a2.png"),
+url("https://www.eldarya.pl/assets/img/item/consumable/a0375c3cc38960143c685d3eec203f98.png"),
+url("https://www.eldarya.pl/assets/img/item/consumable/472cea3c763d76c125ada52223bde39f.png"),
+url("https://www.eldarya.pl/assets/img/item/consumable/34915449d30ccd2392dcdbbfef815df7.png"),
+url("https://www.eldarya.pl/assets/img/player/skin/icon/4fa25c05bfcc05ff883123de12ccf9f9.png"),
+url("https://www.eldarya.pl/assets/img/item/player/icon/1bbeb72788511cb4a7c68d1ce1256acc.png") !important;
+background-repeat: no-repeat!important;
+background-position:
+5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px,
+5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px,
+5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px,
+5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px,
+5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px
+!important;
+height: 185px!important;
+width: 210px!important;
+background-size : 40px 40px !important ;}
+div.map-location-tooltip [data-id="113"]:after { content: "-⚡";
+position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 20px;  font-weight: bold;}
 
 
 
@@ -1676,334 +1699,3 @@ position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-s
 
 
 
-
-
-
-
-
-
-
-/*EVENT - GWIAZDKA 2020*/
-/*Zamek Królowej Lodu/Château de la reine des glaces*/
-div.map-location-tooltip [data-id="46"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/consumable/4d5e3522bd85ca716d6dc5257d09e48b.png"),
-    url("https://www.eldarya.pl/assets/img/player/hair/icon/a5a6d33208d7bc340ad7b66ebdf7fb36.png"),
-    url("https://www.eldarya.fr/static/img/item/player/icon/8574fa8184812d8837afa5fdc080103d.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Śnieżna Burza/Tempête de flocons*/
-div.map-location-tooltip [data-id="47"] {
-    background-image: url("https://www.eldarya.pl/assets/img/item/consumable/365255a4d59e1035e274c22cecf57b76.png"),
-    url("https://www.eldarya.fr/static/img/player/hair/icon/d4380eeaceb38f3f63731f590d634af4.png"),
-    url("https://www.eldarya.pl/assets/img/item/player/icon/82b1ecdd16b3941029ad71b8865ba3aa.png"),
-    url("https://www.eldarya.pl/assets/img/item/player/icon/1e11c28081f45135ee37c635ae948904.jpg") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Wór z prezentami/Hotte en préparation*/
-div.map-location-tooltip [data-id="48"] {
-    background-image: url("https://www.eldarya.fr/assets/img/player/hair/icon/6b3ee1066a025f447c1a2b6ec087dbd4.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/57d2bcfb5d66818528de24cba322b6f0.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/95975219d3fe31334c782b15c7d85f9e.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Fabryka zabawek/Fabrique de jouets*/
-div.map-location-tooltip [data-id="49"] {
-    background-image: url("https://www.eldarya.pl/assets/img/item/consumable/4d5e3522bd85ca716d6dc5257d09e48b.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/35b5d81359fc0a03285c20b0c5877835.png"),
-    url("https://www.eldarya.pl/assets/img/item/player/icon/b7c2b09efea1454a9599c07502079b1b.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Oszronione drzewo/Arbre givré*/
-div.map-location-tooltip [data-id="50"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/egg/08ebf4698968136c7bec406e97bfb96d.png"),
-    url("https://www.eldarya.pl/assets/img/item/player/icon/4380917020e2781c6c5486647f9d3878.png"),
-    url("https://www.eldarya.pl/assets/img/item/player/icon/9bfd20d587ae4b43e43f0967ff544565.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Domek z piernika/Maison de pain d'épices*/
-div.map-location-tooltip [data-id="51"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/consumable/13f4b5c6fef7b1368a3d79f2ca730988.png"),
-    url("https://www.eldarya.fr/assets/img/item/player//icon/722fbfeecf797f06eb697634c8e5f417~1604522237.png"),    
-    url("https://www.eldarya.pl/assets/img/item/player/icon/07ecdcd4cd46d8aee40ec9d32085e669.png"),        
-    url("https://www.eldarya.pl/assets/img/item/player/icon/666a8769ef16274440ed1c8de2eed703.jpg") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Girlandowy las/Forêt de guirlandes*/
-div.map-location-tooltip [data-id="52"] {
-    background-image: url("https://www.eldarya.pl/assets/img/item/egg/060b07158677ced62206b93983f86946.png"),
-    url("https://www.eldarya.pl/assets/img/item/consumable/13f4b5c6fef7b1368a3d79f2ca730988.png"),
-    url("https://www.eldarya.fr/assets/img/item/player//icon/6a90f2c3ecca8b51f10ee16ad8814710~1604521496.png"),
-    url("https://www.eldarya.pl/assets/img/item/player/icon/af91879f62326e0eeecf8afb9cd7c431.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Kolorowa choinka/Grand sapin décoré*/
-div.map-location-tooltip [data-id="53"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/player/icon/3f671d74ba5ad147c40174406b018de5.png"),
-    url("https://www.eldarya.pl/assets/img/item/player/icon/3e38e74e3e4aaf24aff0a990f855926d.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/4ec45789d78ddfbcf2b3383947a5ab70.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/c936237bfad9f920e5c245168a2f1af7.jpg") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Zamarznięte jezioro/Lac gelé*/
-div.map-location-tooltip [data-id="54"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/consumable/175725c147351f1f12abd1f8bd67ce16.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/77033cf796db291e1b23d934ba1f53db.png"),
-    url("https://www.eldarya.fr/assets/img/item/player//icon/fad19b25ee73baf25b382c83393016cb.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/b62c613c022059503f424089a8fc4c02.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Stajnia reniferów/Écurie des rennes*/
-div.map-location-tooltip [data-id="55"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/player/icon/b9a974cc16bcc1a6f2cc723ab5b118db.png"),
-    url("https://www.eldarya.fr/assets/img/item/player//icon/06813cfdbf46af8675e45f48a1e2994e.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/03b154e1df805288fdafd3d932733bcd.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Wyspa Grunch/Île du Grunch*/
-div.map-location-tooltip [data-id="56"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/consumable/b85d04bb73a3c85994b4732bee2c5cdb.png"),
-    url("https://www.eldarya.fr/assets/img/player/hair/icon/7f7d91127cc2de1d01b3535c5ed6c175.png"),
-    url("https://www.eldarya.pl/assets/img/item/player/icon/83d6efac1000b3ac09cefda4a2be087b.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Cukierkowy Las/Forêt de sucre d'orge*/
-div.map-location-tooltip [data-id="83"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/player/icon/1ea48ecf168a06e1f7beabe7c020685b.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/7a1f3e9a3138afe2f0bc16903b08433a.png"),
-    url("https://www.eldarya.pl/assets/img/item/player/icon/12a4ad9af9db361da9ac5de3afa7608d.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Warsztat naprawy sani/Atelier de réparation des traîneaux*/
-div.map-location-tooltip [data-id="84"] {
-    background-image: url("https://www.eldarya.pl/assets/img/item/player/icon/a4fffbae04a9c58c318d97fd69cb9914.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/e8e38023ae7bb919a998662f921a80e0.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Domek skrzatów/Chaumière des lutins*/
-div.map-location-tooltip [data-id="85"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/consumable/175725c147351f1f12abd1f8bd67ce16.png"),
-    url("https://www.eldarya.fr/assets/img/player/hair/icon/99e13083ff42436d6451cac38c96d3a7.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/9c67d3d5c4aba601b384af9310fb7842.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Ośnieżone ścieżki/Pistes enneigées*/
-div.map-location-tooltip [data-id="86"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/player/icon/0e877811866b6289be1943a9fdecdbd5.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/5d475cd565eb447a3fe3e9d77192ed2f.png"),
-    url("https://www.eldarya.fr/static/img/item/player/icon/0e24967b0833eba581a7753113064235.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Morze Gwiazd/Mer des étoiles*/
-div.map-location-tooltip [data-id="87"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/player/icon/e91b64f0d290cbd36e6eb92f8652275f.png"),
-    url("https://www.eldarya.fr/static/img/item/player/icon/4968196f49ef9c99fe60067e76eb991e.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/28516d013e572f00347a007d0f5fe26c.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Północna Pustynia/Désert boréal*/
-div.map-location-tooltip [data-id="88"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/consumable/365255a4d59e1035e274c22cecf57b76.png"),
-    url("https://www.eldarya.fr/assets/img/item/player//icon/cc0816a79db0c487682e7cecd7c16b72.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Domek świątecznej rodziny/Chalet de la famille Noël*/
-div.map-location-tooltip [data-id="89"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/consumable/50fe24d26aafb5d41618ea311ff2f305.png"),
-    url("https://www.eldarya.fr/assets/img/player/skin/icon/193b672683c18d8bce57c58c5658a20f.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/c31c3724163e1e7752ff9a646344432e.png"),
-	url("https://www.eldarya.fr/assets/img/item/player//icon/6525b7b98bb7e619a9465cacac51b432~1604521016.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Biesiadny stół/Table du festin*/
-div.map-location-tooltip [data-id="90"] {
-    background-image: url("https://www.eldarya.fr/assets/img/item/consumable/b85d04bb73a3c85994b4732bee2c5cdb.png"),
-    url("https://www.eldarya.fr/static/img/player/eyes/icon/8c541448f616cb516687902486bcb858.png"),
-    url("https://www.eldarya.fr/assets/img/item/player//icon/339aeee032e664d89dbdf95d66aca57b.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}
-
-/*Bałwan/Bonhomme de neige*/
-div.map-location-tooltip [data-id="91"] {
-    background-image: url("https://www.eldarya.pl/assets/img/item/consumable/50fe24d26aafb5d41618ea311ff2f305.png"),
-    url("https://www.eldarya.fr/assets/img/item/player/icon/5f3f37b67ed25800268d840538723fd8.png"),
-    url("https://www.eldarya.fr/static/img/item/player/icon/87e709fa2f8217af8430ca2b3b04e9e7.png") !important;
-    background-repeat: no-repeat!important;
-    background-position: 5px 90px, 45px 90px, 85px 90px, 125px 90px,
-    5px 135px, 45px 135px, 85px 135px, 135px 135px,
-    5px 180px, 45px 180px, 85px 180px, 135px 180px,
-    5px 225px, 45px 225px, 85px 225px, 135px 225px,
-    5px 270px, 45px 270px, 85px 270px, 135px 270px !important;
-    height: 135px!important;
-    width: 175px!important;
-    background-size: 40px 40px !important;
-}

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         akira sun
 @description    `tucao player widescreen`
-@version        2020926.13.49
+@version        2021121.17.22
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -38,5 +38,8 @@
 }
 .dplayer-winfulled.dplayer-widescreen .dplayer-video-wrap {
     height:unset;
+}
+.danmaki-list{
+    height: 645px;
 }
 }

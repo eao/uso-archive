@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Tumblr Dark 2020
+@name           Tumblr Dark 2021
 @namespace      USO Archive
 @author         Izheil
-@description    `This theme applies to the new Tumblr dashboard, as well as some parts of x-kit.It's intended for those that don't want to go "full gothic" with Tumblr new dark mode, but still want a dark theme that will apply everywhere.It also removes the "sponsored" advertising that appears in the dashboard.`
-@version        20201119.2.25
+@description    `This theme applies to the new Tumblr dashboard, as well as some parts of x-kit.It's intended for those that don't want to go "full gothic" with Tumblr new dark mode, but still want a dark theme that will apply everywhere.It also removes the "sponsored" advertising that appears in the dashboard.<b>For the lastest version visit my <a href="https://github.com/Izheil/Dark-userstyles/tree/master/Specific%20site%20themes">repository</a>, since I won't be updating this theme here anymore.</b>`
+@version        2021121.17.28
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,9 +11,10 @@
 /* --------------------------------------------------------- 
 * This theme should apply to the new Tumblr theme (the one 
 * that appeared around 25/03/2020), as well as x-kit.
+* Make sure to use the dark palette
 * Author: Izheil
 * License: GPL
-* Version: v.1.0.20
+* Version: v.1.0.22
 * --------------------------------------------------------- */
 
 :root {
@@ -177,7 +178,7 @@ input[type="text"], #user_to_check_for {
 #create_tumblelog > div, .reblog-list-item, .post_header, blockquote, .post-brick-source-footer,
 .settings_group_wrapper, .ui_stats, .ui_notes, .marker_tooltip, .marker_tooltip_header, 
 #chart_glass.active .marker_tooltip .table_wrapper *, #fixed_navigation li a, .corp_page .vertical_tab_set,
-.embed-code, .header-item {
+.embed-code, .header-item, div[class*="reblog-trail"] {
     border-color: #555 !important}
 
 /* Binary switches */

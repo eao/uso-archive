@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Ночная тема для Яндекс.Поиска, Картинок, Видео и Коллекций———————————————————————————————10.12.20 — Исправлены некоторые баги———————————————————————————————26.08.19 — Тема была полностью переработана• Переработан дизайн• Добавлена поддержка Яндекс.Коллекции`
-@version        2021114.18.52
+@version        2021121.18.30
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -966,6 +966,9 @@ a.user-account_hovered_yes {color: #e85253;}
 .extralinks__popup .link {color: #eee;}
 .extralinks__popup .link_hovered_yes {background: #444;}
 
+.Extralinks-Item.Link[class] {color: #eee;}
+.Extralinks-Item.Link[class]:hover {background: #444;}
+
 .y-popup_theme_normal {border-color: rgba(255,255,255,.2);}
 .y-popup_theme_normal:before {background: #333;}
 .Extralinks-Popup .Extralinks-Link:hover {background: #444;}
@@ -1185,7 +1188,9 @@ body .calculator__btn.button2.button2_hovered_yes:after, body .calculator__btn.b
 .link_theme_black {color: #eee;}
 .link_theme_black.link_hovered_yes {color: #e85253;}
 .link_theme_normal {color: #7d9dc7;}
+.link_theme_normal.organic__url .organic__url-text b, .Link_theme_normal.OrganicTitle-Link b, .link_theme_normal.sitelinks__link b, .link_theme_minor.sitelinks__link b, .Link_theme_normal.Sitelinks-Item b, .link_theme_normal.related__link b, .Link_theme_normal.Showcase-Link b, .Link_theme_normal .Ether-MainThumbTitle b, .ProductCard-Title .Link_theme_normal b, .Link_theme_normal .ProductCardWithReview-ProductTitle b {color: #7d9dc7;}
 .Link:visited {color: #967dbb;}
+.link_theme_normal:visited.organic__url .organic__url-text b, .Link_theme_normal:visited.OrganicTitle-Link b, .link_theme_normal:visited.sitelinks__link b, .link_theme_minor:visited.sitelinks__link b, .Link_theme_normal:visited.Sitelinks-Item b, .link_theme_normal:visited.related__link b, .Link_theme_normal:visited.Showcase-Link b, .Link_theme_normal:visited .Ether-MainThumbTitle b, .ProductCard-Title .Link_theme_normal:visited b, .Link_theme_normal:visited .ProductCardWithReview-ProductTitle b {color: #967dbb;}
 .link_theme_normal:visited {color: #967dbb;}
 .link_theme_minor {color: #7d9dc7;}
 .link_theme_minor.link_hovered_yes {color: #e85253;}
