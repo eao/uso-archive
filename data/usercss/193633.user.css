@@ -2,8 +2,8 @@
 @name           Google Custom Background
 @namespace      USO Archive
 @author         Blyad
-@description    `Over 2700 lines of code.Its isn't 100% complete but most of the features are supported(fe. google translate widget, weather etc.)Supports:-Google Maps-Google Maps iframe-Captcha-News-SettingsPartial Support:-Flights-Books-Shopping-Finance`
-@version        2021116.14.20
+@description    `Over 3000 lines of code.Its isn't 100% complete but most of the features are supported(fe. google translate widget, weather etc.)Supports:-Google Maps-Google Maps iframe-Captcha-News-SettingsPartial Support:-Flights-Books-Shopping-Finance`
+@version        2021122.10.0
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -34,6 +34,9 @@ body, html { /*put link to your image here V*/
 .sfbg {
 	background: #000000b8;
 	backdrop-filter: blur(1px);
+	position: fixed;
+	top: -3px;
+	height: 100px;
 }
 .sh-dr__restricts {
 	background: #000000b8;
@@ -52,7 +55,7 @@ body, html { /*put link to your image here V*/
 }
 #top_nav {
     position: relative;
-	top: 5px;
+	bottom: 3px;
 }
 .mus_tt18 {
 	color: #d1d1d1;
@@ -84,7 +87,10 @@ body, html { /*put link to your image here V*/
 .FqnKTc, .I6TXqe {
 	border-color: #2f3031b8;
 }
-.lBbtTb, .sbl2 {
+.sbl2 {
+	color: #70757b;
+}
+.lBbtTb > svg > path {
 	color: #70757b;
 }
 .sbl1 {
@@ -113,7 +119,7 @@ body, html { /*put link to your image here V*/
 #appbar {
 	background: #000000b8;
 	position: relative;
-	top: 5px;
+	bottom: 3px;
 }
 .TXBhSe:not(:hover) {
 	color: #858585;
@@ -422,7 +428,7 @@ g-fab.CNf3nf.wecD1d {
 .BlOseb.Oom88b g-fab, .k2Oeod.Oom88b g-fab {
     box-shadow: 0 7px 15px rgba(255, 255, 255, .2);
 }
-.CNf3nf, .R0Gzyf {
+.CNf3nf, .R0Gzyf, .minidiv .RNNXgb {
 	border-color: #2f3031b8;
 }
 .Lu0opc.Oom88b:hover g-fab {
@@ -1122,6 +1128,10 @@ g-img.BA0A6c {
 }
 .klic, .klitem:hover {
 	background: #000000b8;
+}
+.O1vY7 {
+	fill: #858585;
+	color: #adb7c4;
 }
 .mlo-c {
     background-color: #000000b8;
@@ -2231,8 +2241,8 @@ a.gb_D.gb_vc {
 .kAoFgd > svg > svg > polygon {
 	fill: #00060db8;
 }
-.cUVNae .OhQAn {
-    color: rgba(0, 0, 0, .8);
+.cUVNae .OhQAn > svg {
+    color: rgba(0, 0, 0, .8) !important;
 }
 .rYGwVd {
 	filter: invert(100);
@@ -2443,6 +2453,7 @@ img.XqHOTb.IGEbUc, img.ZFAGbf {
 .gb_kb {
     box-shadow: 0 1px 1px 0 rgba(164, 174, 185, .3), 0 1px 3px 1px rgba(155, 167, 179, .15);
 }
+
 
 /*Google Maps*/
 

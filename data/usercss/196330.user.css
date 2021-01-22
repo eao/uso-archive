@@ -3,25 +3,21 @@
 @namespace      USO Archive
 @author         牛铁柱
 @description    `对learnku社区样式进行修改`
-@version        2021121.6.9
+@version        2021122.3.48
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://learnku.com") {
-    
-    .book-main-column .toc-wraper {
-        position: fixed !important;
-        right: 0px !important;
-        top: 96px !important;
+.book-main-column {
+    position: relative;
+    margin-left: -25%;
+}
+.book-main-column .toc-wraper {
+        position: absolute !important;
+        right: -290px !important;
+        top: 0px !important;
         display: block !important;
-    
+        height: 100%;
     }
     .book-main-column .remove.text-mute {display:none}
-    .book-main-column #toc {
-        height: 768px;
-        overflow: auto !important;
-    }
-    .book-main-column #toc li {
-        line-height: 16px !important;
-    }
     }

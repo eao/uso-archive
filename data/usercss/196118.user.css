@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         hamburg
 @description    `Dark Mode for Websites using Moodle CMS`
-@version        2021117.12.52
+@version        2021122.8.24
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -104,6 +104,12 @@
       outline: 0;
       -webkit-box-shadow: 0 0 0 0.2rem rgba(69,69,69,.75);
       box-shadow: 0 0 0 0.2rem rgba(69,69,69,.75);
+  }
+  .modal-content {
+      background-color: #323c53;
+  }
+  .calendar_event_course {
+      background-color: #0e1116;
   }
   header .card {
       background-image: unset;

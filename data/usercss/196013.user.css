@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         qmqz
 @description    `Winning theme for communities.win.`
-@version        2021116.11.3
+@version        2021122.11.12
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("communities.win"), domain("thedonald.win"), domain("greatawakening.win") {
+@-moz-document domain("communities.win"), domain("patriots.win"), domain("greatawakening.win") {
 html, body, .main-content, .home .container, .search .container, .post-single .container, .profile .container, .page .container, .logs .container, .comment .details a[data-action=minimize], .header .bg {
 	background-color: #323232;
 }

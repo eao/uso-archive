@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         qmqz
 @description    `Dark theme for TheDonald website.`
-@version        2021114.16.6
+@version        2021122.11.11
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("thedonald.win"), domain("greatawakening.win") {
+@-moz-document domain("patriots.win"), domain("greatawakening.win") {
 html, body, .main-content, .home .container, .search .container, .post-single .container, .profile .container, .page .container, .logs .container, .comment .details a[data-action=minimize] {
 	background-color: #323232;	
 }
