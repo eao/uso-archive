@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Eldarya map 2.0 [Update 20.01]  Origins/New Era
+@name           Eldarya map 2.0 [Update 22.01]  Origins/New Era
 @namespace      USO Archive
 @author         Ellone Kramer
 @description    `Added new location (New Era)Something is missing or incorrect?Also write me what need to add/remove.Style doesn't install, work and etc?DELETE STYLISH AND INSTALL STYLUS!!!Many thanks to the Eldarya Game group for the information provided!Добавлена новая локация (новая эра)Что-то пропущено или неправильно?Также напишите мне, что нужно добавить/удалить.Стиль не устанавливается, не работает и т.д?УДАЛИТЕ СТАЙЛИШ И ПОСТАВЬТЕ СТИЛУС!!!Огромное спасибо группе Eldarya Game за предоставленную информацию!`
-@version        2021120.16.4
+@version        2021122.19.32
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -995,7 +995,7 @@ div.map-location-tooltip [data-id="112"] {
     background-size : 40px 40px !important ;}
 /*Abords du bateau*/
 div.map-location-tooltip [data-id="113"] { 
-  background-image : url("https://www.eldarya.fr/assets/img/item/consumable/472cea3c763d76c125ada52223bde39f~1600416095.png"), url("https://www.eldarya.fr/assets/img/item/consumable/316d90bc2b0aab68138120393e1f2326~1595517037.png"), url("https://www.eldarya.fr/assets/img/item/consumable/9209a71fbe045c6376ef225a009725a2~1600333208.png"), url("https://www.eldarya.fr/assets/img/item/consumable/34915449d30ccd2392dcdbbfef815df7~1600415997.png"), url("https://www.eldarya.fr/assets/img/item/consumable/a0375c3cc38960143c685d3eec203f98.png")!important;
+  background-image : url("https://www.eldarya.fr/assets/img/item/player/icon/95ac9b91beb6dbd49d52969d63e2fb0d.png"), url("https://www.eldarya.fr/assets/img/item/consumable/472cea3c763d76c125ada52223bde39f~1600416095.png"), url("https://www.eldarya.fr/assets/img/item/consumable/316d90bc2b0aab68138120393e1f2326~1595517037.png"), url("https://www.eldarya.fr/assets/img/item/consumable/9209a71fbe045c6376ef225a009725a2~1600333208.png"), url("https://www.eldarya.fr/assets/img/item/player/icon/1bbeb72788511cb4a7c68d1ce1256acc~1604514552.png"), url("https://www.eldarya.fr/assets/img/item/consumable/34915449d30ccd2392dcdbbfef815df7~1600415997.png"), url("https://www.eldarya.fr/assets/img/player/skin/icon/765476be21bd951738c9c2e773fbfc71.png"), url("https://www.eldarya.fr/assets/img/item/consumable/a0375c3cc38960143c685d3eec203f98.png")!important;
     background-repeat: no-repeat!important;
     background-position:
     5px 90px, 45px 90px, 85px 90px, 135px 90px,

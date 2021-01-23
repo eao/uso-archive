@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         anagrammar
 @description    `A dark gray theme for <a href="https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne" style="color:#009999">Stylus</a>. Stylish is not supported. Intended for use with the default CodeMirror theme. There are advanced options for a compact layout with 2, 3 or 4 columns. The compact layout works with the new default UI, so the classic UI will remain the same if selected.`
-@version        2020315.9.47
+@version        2021122.19.57
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown CompactStyle "Compact Style" {
@@ -166,7 +166,9 @@ Yup "Yes" <<<EOT @media (min-width: 1024px) {
         overflow: hidden!important;
         text-overflow: ellipsis!important;
     }
-} EOT;
+}
+
+/*[[ColumnNumber]]*\/ EOT;
 
 }
 @advanced dropdown ColumnNumber "For Yes - Number of Columns" {
@@ -221,7 +223,7 @@ html.newUI .entry:nth-child(8n+8) {
 @-moz-document regexp("(chrome|moz)-extension://.*") {
 
 /*[[CompactStyle]]*/
-/*[[ColumnNumber]]*/
+
 
 html {
     background: hsl(0, 0%, 14%)!important;

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Vinny Fonseca
 @description    `A dark and full screen theme for Telegram's web version, following their app's Night Mode color scheme.`
-@version        2021122.12.40
+@version        2021122.18.2
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -169,15 +169,21 @@ a.tg_radio {
 
 .im_dialogs_search_field {
     padding-left: 32px !important;
+    border-color: var(--border) !important;
+}
+.im_dialogs_search_field:focus {
+    border-color: var(--accent) !important;
 }
 
 .im_dialog_peer {
     color: var(--text);
 }
 
-.im_dialogs_panel,
-.im_dialog_wrap {
+.im_dialogs_panel {
     border-bottom: 1px solid var(--border);
+}
+.im_dialog_wrap {
+    border-bottom: 1px solid var(--background-other);
 }
 
 .im_dialogs_scrollable_wrap a.im_dialog:hover {

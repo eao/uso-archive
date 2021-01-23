@@ -1,16 +1,16 @@
 /* ==UserStyle==
-@name           Youtube WideScreen (New Design Polymer) v.9
+@name           Youtube WideScreen (New Design Polymer) v.10
 @namespace      USO Archive
 @author         decembre
 @description    `For a wide Screen and the YouTube new Design:Player stay fixed at the LEFT side.- Videos related and in queue on the RIGHT side- Infos, Comment on the RIGHT side ( visible on hover their tabs)- Progress Bar is always visibleSo, you can watch the video AND read infos / Comments, choose next video without problem.Its Usercript version (GeasyFork):<b><a href="https://greasyfork.org/fr/scripts/409893-youtube-widescreen-new-design-polymer">Youtube WideScreen (New Design Polymer)</a></b>`
-@version        2021119.0.11
+@version        2021122.22.44
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
 
 
-/* ==== 0- YouTube WideScreen (New Design Polymer) v.9 ==== */
+/* ==== 0- YouTube WideScreen (New Design Polymer) v.10 ==== */
 
 /* (new8) GM in USE:
 
@@ -734,10 +734,10 @@ border-left: 5px solid #222;
 background-color: red;
 } */
 
-/* (new7)RIGHT COLUMN - WITH QUEUE TOP (BLUE) - NO normal SEARCH INPUT / NO LECT AUTO:
+/* (new10)RIGHT COLUMN - WITH QUEUE TOP (BLUE) - NO normal SEARCH INPUT / NO LECT AUTO + RESTRICTED :
 https://www.youtube.com/watch?v=C8XGd7Lg5GM
 === */
-
+.ujs-pos-rel ,
 #related ytd-watch-next-secondary-results-renderer #items.ytd-watch-next-secondary-results-renderer {
     position: fixed !important;
     display: inline-block !important;
@@ -755,6 +755,16 @@ border-right: 5px solid #222;
 border-left: 5px solid #222;
 /* background-color: violet; */
 }
+/* (new10) + RESTRICTED CONT */
+.ujs-pos-rel {
+    height: 87.2vh !important;
+    top: -35px !important;
+}
+yt-page-navigation-progress.ytd-app {
+    display: inline-block !important;
+background: blue !important;
+}
+
 /* WITH GM ENABLE - SEACH INPUT */
 #related #suggestions-search.playlist-or-live + ytd-watch-next-secondary-results-renderer {
     position: fixed;
@@ -1009,6 +1019,8 @@ GM "YouTube: Age Verification Bypass v.1.4r"
     overflow-y: auto;
 /* background-color: yellow !important; */
 }
+/* (new10) + ITEMS RESTRICTED */
+.null.ujs-pos-rel.ujs-pos-rel.ujs-pos-rel>a ,
 .ytd-page-manager.hide-skeleton[player-unavailable=""] #related ytd-watch-next-secondary-results-renderer + #related-skeleton + div a ,
 #items .ytd-watch-next-secondary-results-renderer:not(ytd-compact-autoplay-renderer) , 
 .style-scope.ytd-watch-next-secondary-results-renderer.suggestion-tag {
@@ -1023,7 +1035,6 @@ GM "YouTube: Age Verification Bypass v.1.4r"
     margin-left: 5px ;
 background-color: black !important;
 }
-
 /* NO DARK */
 .ytd-page-manager.hide-skeleton[player-unavailable=""] #related ytd-watch-next-secondary-results-renderer + #related-skeleton + div a , 
 html:not([dark]):not(.style-scope) #items .ytd-watch-next-secondary-results-renderer:not(ytd-compact-autoplay-renderer) , 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Alecsander Camilo
 @description    `Tema Dark para Globo.com e O Globo, incluindo Esportes, Época, Extra, Gshow, Quem, Blogs do oGlobo, TechTudo e mais.`
-@version        2021121.20.50
+@version        2021122.21.57
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -18,7 +18,10 @@ body, .mc-bottom, .full-width, .diretorio-home, #article > section > section, .c
     div.feed-post-body-resumo, .feed-post-metadata, #description_text, .mc-column.content-entenda-o-caso > h3, .feed__legend, .feed-post-header-chapeu, .load-more a:hover, .catalog-metadata-published-time, div.feed.theme div h3, .featured-text h1,
     .reading-time, .protected-content .card h4 a, #most-read h4 a, #read-more h4, #newslist li a, .paywall__site-container #menu-institutional ul li a, .franja-vitrine-primary__header-subtitle, .authorship ul li address, .content-media .content-media__description,
     .score .score-number, .scoreboard-bastian-feed, .search-widget__label-text, .icon.search-widget__label-icon, .social-links-widget .social-links-widget__title, .icon-link.icon-link--no-text svg use, div.paywall__site-container .article-related-link__subtitle,
-    .article-feed-item__title.article-feed-item__title--esp-pub a, h2.franja-agrupador-quadruplo__header, body > section:nth-child(11) > header > h2 > span, section.franja-vertical.hui-container.hui-spacing > div > h2, div.franja-vertical__coluna__content > div > div > a > div > div > span, section:nth-child(14) > div.franja-agrupador-quadruplo__content > div > div > a > h3, section:nth-child(16) > div.franja-agrupador-quadruplo__content > div > div > a > div > div > span, h3.vitrine-globoplay__header-subtitle, h3.topglobocom__header-subtitle, #tns1-mw li::before, body > section:nth-child(16) > div.franja-agrupador-quadruplo__content > div > div > a > div > div > span, .highlight__subject-title.highlight__hat.highlight-font-subject-simple-article, .highlight__title.homeui-tc-techtudo, body > div.footer_links > div > div > ul > li > a, body > section:nth-child(12) > header > h2 > span {
+    .article-feed-item__title.article-feed-item__title--esp-pub a, h2.franja-agrupador-quadruplo__header, body > section:nth-child(11) > header > h2 > span, section.franja-vertical.hui-container.hui-spacing > div > h2, 
+    div.franja-vertical__coluna__content > div > div > a > div > div > span, section:nth-child(14) > div.franja-agrupador-quadruplo__content > div > div > a > h3, section:nth-child(16) > div.franja-agrupador-quadruplo__content > div > div > a > div > div > span, 
+    h3.vitrine-globoplay__header-subtitle, h3.topglobocom__header-subtitle, #tns1-mw li::before, body > section:nth-child(16) > div.franja-agrupador-quadruplo__content > div > div > a > div > div > span,.highlight__subject-title.highlight__hat.highlight-font-subject-simple-article,
+    .highlight__title.homeui-tc-techtudo, body > div.footer_links > div > div > ul > li > a, body > section:nth-child(12) > header > h2 > span, section:nth-child(14) span, div.featured-text h4 a {
         color: #BFBFBF;
     }
     :root {
@@ -89,12 +92,16 @@ body, .mc-bottom, .full-width, .diretorio-home, #article > section > section, .c
     /* Comentários */
     .coral.coral-content.coral-comment-content, #tab-COMMENTS > button, #tabPane-COMMENTS p, .newsletter-component__text, .shadow-video-flow-video-info__description, .shadow-video-flow-video-info__issued, .show-table__source, .coral.coral-createComment::before,
     .coral.coral-guidelines p a, .coral.coral-comment .coral.coral-comment-topBar .coral.coral-comment-username *, .coral.coral-comment .coral.coral-comment-actionBar button, .coral.coral-comment-timestamp, .comment__date, .comments p, .comment__content,
-    .comments__count, .comments-header__links, div.glbComentarios-conteudo div.glbComentarios-dados-usuario strong, .glbComentarios-lista-bt-paginar span, .comments-header__message-title, .comment__author, .shadow-video-flow-navigation__button {
+    .comments__count, .comments-header__links, div.glbComentarios-conteudo div.glbComentarios-dados-usuario strong, .glbComentarios-lista-bt-paginar span, .comments-header__message-title, .comment__author, .shadow-video-flow-navigation__button, #post-comment-form button,
+    #coral-comments-sortMenu, .coral-comment-username, #barra-auth-area > ul > li > a, .globomail__link, .header-search__label, .auxiliary-menu-item__label {
         color: #BFBFBF;
     }
     .glbComentarios>.glbComentarios-disclaimer a#glbComentarios-perguntas, .glbComentarios>.glbComentarios-disclaimer a#glbComentarios-termo, #tabPane-COMMENTS p a, #tabPane-COMMENTS label, .shadow-video-flow-navigation__button-next:hover, .coral.coral-replyList-showAllButton,
-    .glbComentarios-lista.glbComentarios-lista-recentes button {
+    .glbComentarios-lista.glbComentarios-lista-recentes button, .barra-profile-header>span {
         color: #F8F8FF;
+    }
+    #coral-comments-sortMenu, .coral-comment-collapse-toggle, #barra-auth-area div div, #barra-auth-area div {
+        background-color: #181818
     }
 
     /* Propagandas Desnecessárias para quem possui AdBlock */

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `ニコ生のダークテーマです（ついでにニコニ広告ページもダーク化しています）。ChromeとFirefoxで動作確認済みです、同系統のブラウザであれば基本的に問題はないはずです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています（なっていない場所があればマシュマロにご報告いただければ可能な範囲で対応します）。その他なにかあれば<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion" target="_blank" rel="noopener">マシュマロ</a>にお願いします。--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
-@version        2021121.8.50
+@version        2021122.15.15
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -159,6 +159,7 @@ button[class*="toggle-button"][aria-pressed="true"]{
 
 /* フォローボタン */
 [class*="___toggle-button___"][aria-pressed=true],[class*="___toggle-button___"][aria-pressed="false"]{background-color: #a9a9a9;color: #616161 !important;border: 2px solid #5f5f5f;}
+[class^="___follow-toggle-form___"][data-follow-status="follow"] [class^="___follow-status___"]{background-color: #535353;}
 
 /* タグっぽいとこ */
 .___tag___1B5lq{border: 1px solid #565656;background-color: #2b2b2b !important;}
@@ -167,9 +168,13 @@ button[class*="toggle-button"][aria-pressed="true"]{
     border: solid 2px #676767;
 }
 [class*="___edit-mode-toggle-button___"]>svg>path{fill: #9a9a9a;}
+[class^="___program-information-main-area___"] > [class^="___tag-widget___"]::before{background-color:#515151 ;}
+[class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"]{background-color:#515151;}
+[class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"] > div > [class^="___text-box___"]{background-color:#515151;border:1px solid #9d9d9d}
+button[class^="___edit-mode-toggle-button"] > span,[class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"] > [class^="___faq-anchor___"]::after,[class^="___program-information-main-area___"] > [class^="___tag-widget___"] > form[class^="___tag-register-form___"] > [class^="___register-button___"]{color: #eee !important;}
 
 /*コメント入力欄の説明してる文字色*/
-input::placeholder{color: #ccc !important}
+input::placeholder{color: #fff !important}
 /*コメントまわりのボタン類*/
 .___submit-button___gas13, .___emotion-button___1Rolf, .___button___Re8M9{background-color: #696969;}
 /* ヘッダーのメニューあたり */
