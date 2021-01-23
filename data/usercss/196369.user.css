@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TheLegendOfWolf_
 @description    `No niebieski BOOP ok`
-@version        2021121.18.12
+@version        2021123.11.43
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -351,15 +351,40 @@ hr {
 
 
 
+/*cytaty*/
+
+blockquote {
+    font: 400 21px/25px sans-serif;
+    text-align: left;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-left: 5px solid #009aff;
+    padding: 0 1em;
+}
 
 
 
+/*dropdown*/
 
 
+.g1-hb-row .sub-menu {
+    background-color: #24609a;
+}
 
 
+.g1-hb-row .sub-menu .menu-item>a {
+    color: #00dcff;
+}
+
+.g1-hb-row .g1-link-toggle {
+    color: #01ffff;
+}
 
 
+a{
+color: #12A0FF;
+
+}
 
 
 

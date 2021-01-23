@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `究極護眼`
-@version        2021119.6.23
+@version        2021123.8.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -307,12 +307,12 @@
       /*go to*/._2bokd4pLvU5_-Lc97NVqzn ._1Hi94Pa6lplJ436NQaMbEt div[data-tip="不推文回覆"]+.FV7ERXXidvVujmAqBHlC7{bottom:40px!important;}
       /*go to*/._2bokd4pLvU5_-Lc97NVqzn ._1Hi94Pa6lplJ436NQaMbEt:hover .FV7ERXXidvVujmAqBHlC7{display:flex!important;color:#c60!important;}
       /*go to*/._2bokd4pLvU5_-Lc97NVqzn ._1Hi94Pa6lplJ436NQaMbEt:hover .FV7ERXXidvVujmAqBHlC7:hover{background:#000!important;}
-  /*view quote*/._15Y0ebHstpjSjX2xCZCZ8U{background:rgba(0,100,0,0.4)!important;}
-  /*view quote*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT{width:1400px!important;max-width:initial!important;}
-        /*menu*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT>._34nVMRZFMW1GWWAbT9EIza{}
+  /*view quote*/._15Y0ebHstpjSjX2xCZCZ8U{background:rgba(0,0,0,0.6)!important;}
+  /*view quote*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT{width:1400px!important;max-width:initial!important;height:100vh!important;}
+        /*menu*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT>div{max-height:initial!important;}
         /*menu*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT>._34nVMRZFMW1GWWAbT9EIza>div{width:100%!important;margin:0 auto!important;text-align:center!important;}
-       /*close*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT>._34nVMRZFMW1GWWAbT9EIza>div>div{width:100%!important;}
-       /*close*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT>._34nVMRZFMW1GWWAbT9EIza>div>div:hover{background:#000!important;}
+       /*close*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT>._34nVMRZFMW1GWWAbT9EIza>div>div{background:#000!important;width:100%!important;}
+       /*close*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT>._34nVMRZFMW1GWWAbT9EIza>div>div:hover{}
        /*close*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT>._34nVMRZFMW1GWWAbT9EIza>div i.i-close{color:#a11!important;font-size:40px!important;}
      /*overlay*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT>._3cD6jss2DikeGo9amwpiZm{background:rgba(0,0,0,0.4)!important;}
      /*overlay*/._15Y0ebHstpjSjX2xCZCZ8U>._2lZuKUyyBIXiZ1Ynp5M1YT>._3cD6jss2DikeGo9amwpiZm:hover{background:rgba(0,0,0,0.8)!important;}

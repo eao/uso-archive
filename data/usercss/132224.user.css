@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `стиль РАЗРЕЗАН НА 2 ЧАСТИ. для нормального функционирования нужны обе / this style is CUT INTO 2 PARTS, you need both parts so it'd function properly. the second partVanilla Dark 2 VK Fix/Mod PART 2 of 2здесь / is here:https://userstyles.org/styles/165927/ЭТА ТЕМА - ДОПОЛНЕНИЕ/ИСПРАВЛЕНИЯ ДЛЯ VANILLA DARK 2, НЕ ОТДЕЛЬНЫЙ СТИЛЬ.НЕ ЗАБЫВАЕМ СНАЧАЛА УСТАНАВЛИВАТЬ https://userstyles.org/styles/126419/vanilla-dark-2 После обновления Vanilla Dark 2 этот фикс-мод возможно нужно будет переключить (ВЫКЛ/ВКЛ), чтобы он нормально работал.Паблос в ВКшечке: https://vk.com/worstmodThis Fix/Mod IS NOT A STANDALONE THEME.Make sure to install Vanilla Dark 2 first https://userstyles.org/styles/126419/vanilla-dark-2This Fix/Mod may need to be switched (OFF/ON) after Vanilla Dark 2 update to function properly.Check https://vk.com/worstmod if you have any questions/suggestions.`
-@version        2021121.10.27
+@version        2021123.9.50
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown vklogo "Старый ламповый логотип:" {
@@ -110,7 +110,7 @@ audioplayhollowoff "Неа" <<<EOT  EOT;
 	lolsquareon "банзай*" <<<EOT /* .............. <ОКВАДРАЧИВАНИЕ> .............. *\/
 
 /* квадратные авки *\/
-.ow_ava.ow_ava_comm,.wddi_img,.feedback_img,.feedback_row_answer .feedback_img,.top_notify_cont .feedback_img,.im-mess.im-mess_fwd .copy_post_img,.like_tt_image, .poll_tt_image,.feed_friend_photo_wrap .ui_zoom_inner, .feed_friend_image,.submit_post_box .thumb_off, .submit_post_box .thumb_on,.ui_zoom_inner,.feedback_group_photo_img,.mention_tt_img,.feed_asc_user_thumb_img,a.fc_msgs_img,.mention_tt_person_img,.group_al_thumb,.tickets_image__i,.like_share_ava.wdd_imgs,img.settings_bl_photo,.apps_feed_user_photo img,.videocat_channel_header .videocat_channel_icon,.apps_frtt_photo,.fave_link_thumb,.olist_item_photo,.flist_sel_list .flist_item_thumb,.flist_sel_list .flist_item_action,.flist_sel_show_all,.flist_item_thumb,.profile_career_img,.ui_ownblock_img,.search_row .ui_zoom_inner,.friends_photo_wrap .ui_zoom_inner,.feedback_sticky_img,.videoplayer_end_info_author_photo,.market_item_owner_img,.im-member-item .im-member-item--photo,.im-member-item .im-member-item--photo img,.im-create .im-creation--avatar,.apps_i_group .apps_i_group_photo img,.apps_access_icon,.notifier_image,.mail_box_single_ava .mail_box_single_ava_img,.blog_entry_author_ava,.group_l_photo,.group_l_photo_img,.group_u_photo_img,.group_blb_user_thumb,.group_u_bigph_wrap .ui_zoom_inner,.group_u_photo,.gedit_admbox_thumb,.gedit_hostbox_thumb,.page_group_image,.im-prebody img,.bd_cell_img,.tu_thumb,.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img,.nim-peer.nim-peer_smaller .nim-peer--photo > img,.notify_tt_img,.notify_tt_thumb,.settings_blb_photo_img,.mv_chat_message_author_thumb_img,.mv_chat_reply_author_photo,.login_sure_thumb,.group_help_image,.post_friend_liked,.post_friend_liked:first-child,.submit_post_box .post_field_choose_image,.post_from_tt_image,.module_body .people_cell_img, .chat_tab_img, .post_img, .page_list_module .cell_img, .page_list_module .thumb, .ow_ava.ow_ava_small, .nim-peer .nim-peer--photo-w, .group_row_photo, .group_row_img, .right_list_img, .search_item_img, .group_box_image_wrap, .group_box_image_link, .fans_fan_img, .friends_phonebook .friends_photo_img, .friends_common_img, img.fc_contact_photo, .ow_ava.ow_ava_mid, .wall_module .reply_img, .wk_poll_usr, .wall_module .copy_post_img, .ts_contact_img, .fans_idolph_wrap, .bp_img, .blst_img, .friends_photo_img, .post_field_user_image, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img, .top_notify_cont .feedback_img, .feedback_img, .ui_zoom_inner, .top_profile_img, .im-prebody img, to .im_gr, .online.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img, .nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img, .nim-peer.nim-peer_smaller .nim-peer--photo > img, .fave_al_thumb, .fave_link_thumb, .ow_ava.ow_ava_comm,.audio_page_layout .audio_owner_item .audio_owner_item__img,.mv_live_gift_popup_author_thumb,.audio_page_layout .audio_owner_avatar,.app_widget_avatar,.ui_photo_grid_1,.ui_photo_grid_2,.ui_photo_grid_3,.ui_photo_grid_4,a.group_app_button_multi .group_app_button_icon,.feedback_sticky_icon,.feed_to_recomm .feed_to_recomm_icon,.bd_img,.friends_dropdown__list_item .friends_dropdown__list_image,.article_layer .article_layer__header .article_layer__header_owner_img,.article_ed_layer .article_ed_layer__author_img,.audio_page_layout .audio_community_item .audio_community_item__img,.im-page_classic .im-popular--avatar,.feedback_attachments .notification__media.circle,.wk_voting_avatar,.media_voting_footer_voted_friend,.like_tt_image,.voting_tt_image,.friends_photo_img::after,.payments_transfer_to_photo,.im-invitation--chat-photo-src,.audio_block_small_item__img,.poster__slider-item,.poster__slider-item._active:after,.bookmark_page_row .bookmark_page_row__image,.bookmarks_row_header_image,.bookmark_tag,.Avatar__wrapper,.notify_sources_tt_content .line_cell .thumb .cell_img,.bookmark_page_item .bookmark_page_item__image,.index_user_img,.index_new_user_row .index_user_ph,.login_user_img,.mv_author_photo_wrap,.mv_author_photo,.VerticalVideoLayerInfo__authorPhoto,.VideoLayerInfo__authorPhoto,.VerticalVideoLayerInfo__authorPhotoWrap,.VideoLayerInfo__authorPhotoWrap,.top_profile_vkconnect_img,[dir] .ShortVideoPost__avatarImage,[dir] .PhotoRecognizeBlockItem__ava{border-radius:2px!important} 
+.ow_ava.ow_ava_comm,.wddi_img,.feedback_img,.feedback_row_answer .feedback_img,.top_notify_cont .feedback_img,.im-mess.im-mess_fwd .copy_post_img,.like_tt_image, .poll_tt_image,.feed_friend_photo_wrap .ui_zoom_inner, .feed_friend_image,.submit_post_box .thumb_off, .submit_post_box .thumb_on,.ui_zoom_inner,.feedback_group_photo_img,.mention_tt_img,.feed_asc_user_thumb_img,a.fc_msgs_img,.mention_tt_person_img,.group_al_thumb,.tickets_image__i,.like_share_ava.wdd_imgs,img.settings_bl_photo,.apps_feed_user_photo img,.videocat_channel_header .videocat_channel_icon,.apps_frtt_photo,.fave_link_thumb,.olist_item_photo,.flist_sel_list .flist_item_thumb,.flist_sel_list .flist_item_action,.flist_sel_show_all,.flist_item_thumb,.profile_career_img,.ui_ownblock_img,.search_row .ui_zoom_inner,.friends_photo_wrap .ui_zoom_inner,.feedback_sticky_img,.videoplayer_end_info_author_photo,.market_item_owner_img,.im-member-item .im-member-item--photo,.im-member-item .im-member-item--photo img,.im-create .im-creation--avatar,.apps_i_group .apps_i_group_photo img,.apps_access_icon,.notifier_image,.mail_box_single_ava .mail_box_single_ava_img,.blog_entry_author_ava,.group_l_photo,.group_l_photo_img,.group_u_photo_img,.group_blb_user_thumb,.group_u_bigph_wrap .ui_zoom_inner,.group_u_photo,.gedit_admbox_thumb,.gedit_hostbox_thumb,.page_group_image,.im-prebody img,.bd_cell_img,.tu_thumb,.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img,.nim-peer.nim-peer_smaller .nim-peer--photo > img,.notify_tt_img,.notify_tt_thumb,.settings_blb_photo_img,.mv_chat_message_author_thumb_img,.mv_chat_reply_author_photo,.login_sure_thumb,.group_help_image,.post_friend_liked,.post_friend_liked:first-child,.submit_post_box .post_field_choose_image,.post_from_tt_image,.module_body .people_cell_img, .chat_tab_img, .post_img, .page_list_module .cell_img, .page_list_module .thumb, .ow_ava.ow_ava_small, .nim-peer .nim-peer--photo-w, .group_row_photo, .group_row_img, .right_list_img, .search_item_img, .group_box_image_wrap, .group_box_image_link, .fans_fan_img, .friends_phonebook .friends_photo_img, .friends_common_img, img.fc_contact_photo, .ow_ava.ow_ava_mid, .wall_module .reply_img, .wk_poll_usr, .wall_module .copy_post_img, .ts_contact_img, .fans_idolph_wrap, .bp_img, .blst_img, .friends_photo_img, .post_field_user_image, .nim-peer .nim-peer--photo .im_grid>img, .nim-peer .nim-peer--photo>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo .im_grid>img, .nim-dialog.nim-dialog_classic .nim-dialog--photo .nim-peer .nim-peer--photo>img, .top_notify_cont .feedback_img, .feedback_img, .ui_zoom_inner, .top_profile_img, .im-prebody img, to .im_gr, .online.nim-peer.nim-peer_smaller .nim-peer--photo .im_grid>img, .nim-peer.nim-peer_smaller .nim-peer--photo .im_grid > img, .nim-peer.nim-peer_smaller .nim-peer--photo > img, .fave_al_thumb, .fave_link_thumb, .ow_ava.ow_ava_comm,.audio_page_layout .audio_owner_item .audio_owner_item__img,.mv_live_gift_popup_author_thumb,.audio_page_layout .audio_owner_avatar,.app_widget_avatar,.ui_photo_grid_1,.ui_photo_grid_2,.ui_photo_grid_3,.ui_photo_grid_4,a.group_app_button_multi .group_app_button_icon,.feedback_sticky_icon,.feed_to_recomm .feed_to_recomm_icon,.bd_img,.friends_dropdown__list_item .friends_dropdown__list_image,.article_layer .article_layer__header .article_layer__header_owner_img,.article_ed_layer .article_ed_layer__author_img,.audio_page_layout .audio_community_item .audio_community_item__img,.im-page_classic .im-popular--avatar,.feedback_attachments .notification__media.circle,.wk_voting_avatar,.media_voting_footer_voted_friend,.like_tt_image,.voting_tt_image,.friends_photo_img::after,.payments_transfer_to_photo,.im-invitation--chat-photo-src,.audio_block_small_item__img,.poster__slider-item,.poster__slider-item._active:after,.bookmark_page_row .bookmark_page_row__image,.bookmarks_row_header_image,.bookmark_tag,.Avatar__wrapper,.notify_sources_tt_content .line_cell .thumb .cell_img,.bookmark_page_item .bookmark_page_item__image,.index_user_img,.index_new_user_row .index_user_ph,.login_user_img,.mv_author_photo_wrap,.mv_author_photo,.VerticalVideoLayerInfo__authorPhoto,.VideoLayerInfo__authorPhoto,.VerticalVideoLayerInfo__authorPhotoWrap,.VideoLayerInfo__authorPhotoWrap,.top_profile_vkconnect_img,[dir] .ShortVideoPost__avatarImage,[dir] .PhotoRecognizeBlockItem__ava,[dir] .ListAddControl__icon{border-radius:2px!important} 
 
 [dir] .like_share_ava.wdd_imgs .wdd_img_full{border-radius:0px!important;border:solid 2px transparent;box-shadow: 0px 0px 1px 1px var(--color2)}
 [dir] .like_share_ava.wdd_imgs .wdd_img_full .wdd_img{border-radius:0px!important} 
@@ -258,7 +258,6 @@ fastchatsimple "обычные (неплохо для сумрачных лич�
 [dir] .TopSearch__input::selection{background:#4e5e71!important}
 #ts_wrap .input_back .input_back_content{color:#999!important}
 .top_nav_btn .top_nav_btn_icon,[dir] body.new_header_design .top_nav_btn#top_audio:not(.active) .top_nav_btn_icon{filter:var(--filt2)saturate(.7)brightness(1.75)!important}
-.top_nav_btn:hover .top_nav_btn_icon{filter:var(--filt2)saturate(.9)brightness(2)!important}
 [dir] .top_audio_player:hover,[dir] .head_nav_item.fl_r:hover{background-color:rgba(0,0,0,0.5)!important;border-bottom:none!important}
 
 /* плеер в шапке фикс *\/
@@ -398,7 +397,8 @@ fuckstorieshard "я не могу их больше слушать." <<<EOT /* �
 	nomoneysendoff "да не, я щедрый.*" <<<EOT  EOT;
 nomoneysendon "точняк." <<<EOT /* убрать денежные переводы *\/
 .page_actions_item[onclick*="Page.moneyTransferBox"]{display:none!important} EOT;
-nomoneysendfuckall "нафиг бабло и воспоминания" <<<EOT [dir] .page_photo.ProfileActions .page_actions_expanded{display:none} EOT;
+nomoneysendfuckall "нафиг бабло и воспоминания" <<<EOT /* убрать денежные переводы и воспоминания *\/
+[dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--memories,[dir] .page_photo.ProfileActions .page_actions_item.PageActionItem--money-transfer{display:none} EOT;
 
 }
 @advanced dropdown countsfold "★ Сворачивать счётчики инфы страницы:" {
@@ -584,13 +584,17 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .top_profile_vkconnect_row:hover{background-color:var(--color3)}
 
 /* кнопки */
-.flat_button{background-color:rgba(14,14,14,.7)}
-.flat_button.secondary{background-color:rgba(10,10,10,.7)}
+[dir] .flat_button{background-color:rgba(14,14,14,.7)}
+[dir] .flat_button.secondary{background-color:rgba(10,10,10,.7)}
 #wk_content .reply_wrap .flat_button:not(.secondary){background-color:rgba(25,25,25,.7)}
 #wk_content .reply_wrap .flat_button:not(.secondary):hover{background-color:var(--color2)}
-.page_extra_actions_btn,.page_actions_btn,#profile_edit_act,#profile_gift_send_btn{background-color:rgba(14,14,14,.7)!important}
-.page_extra_actions_btn:hover,.page_actions_btn:hover,#profile_edit_act:hover,#profile_gift_send_btn:hover{background-color:rgba(30,30,30,.7)!important}
+[dir] .page_extra_actions_btn,[dir] .page_actions_btn,[dir] #profile_edit_act,[dir] .profile_btn_cut_left,[dir] .Profile__addFriendButton,[dir] .profile_msg_split .profile_btn_cut_right,.profile_msg_side_only .profile_btn_cut_right{background-color:rgba(14,14,14,.7)!important}
+[dir] .page_extra_actions_btn:hover,[dir] .page_actions_btn:hover,[dir] #profile_edit_act:hover,[dir] .profile_btn_cut_left:hover,[dir] .Profile__addFriendButton:hover,[dir] .profile_msg_split .profile_btn_cut_right:hover,.profile_msg_side_only .profile_btn_cut_right:hover{background-color:rgba(30,30,30,.7)!important}
+[dir] .profile_btn_cut_left:hover,[dir] .Profile__addFriendButton:hover,.profile_msg_side_only .profile_btn_cut_right:hover{color:var(--color1)}
 .page_actions_item:hover:not(.grey_hoverable){background:var(--color3)}
+[dir] .profile_side_icon{filter:brightness(.35)sepia(1)hue-rotate(180deg)var(--filt2)}
+[dir] .profile_btn_cut_right:hover .profile_side_icon{filter:brightness(.5)sepia(1)hue-rotate(180deg)var(--filt2)saturate(.8)}
+[dir] .profile_msg_split .flat_button.profile_btn_cut_left{border-right:1px solid var(--color3)!important}
 #wk_content #wk_like_wrap,#wk_content ._wk_subscribe_btn{background-color:rgba(25,25,25,.5)}
 #wk_content #wk_like_wrap:hover,#wk_content ._wk_subscribe_btn:hover,.flat_button.secondary.feed_ignore_owner_button:hover{background-color:var(--color2);color:#111}
 .feed_reposts_more_link:hover,#show_more_link:hover{background-color:var(--color2)!important}
@@ -601,10 +605,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .round_button.round_button_large_white:hover{background-color:#111;color:var(--color1)}
 .ownerButton__title{color:#888}
 .ownerButton b{color:#969696}
-
-/* сужаем разделитель годов в фотках */ 
-.photos_container .photos_period_delimiter{padding:8px 0px 10px}
-.photos_period_delimiter_fixed{padding:8px 20px 10px;background-color:rgba(0,0,0,/*[[headopaque]]*/)!important;font-weight:500}
 
 /* фикс окна быстрого чата - глюк при просмотре картинок*/
 .rb_box_wrap.fixed.rb_active.fc_tobottom.hidden{z-index:1!important}
@@ -667,6 +667,15 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /*[[chaticonremove]]*/
 /*[[audiosendremove]]*/
 /*[[nomoneysend]]*/
+
+/* действия профиля */ 
+[dir] .page_photo.ProfileActions .page_actions_expanded {margin-top:6px}
+[dir] .ProfileActions .page_actions_expanded .page_actions_item{height:30px;line-height:30px;padding:0 10px 0 10px;transition:color .3s}
+[dir] .ProfileActions .page_actions_expanded .page_actions_item:hover{color:var(--color1)!important}
+[dir] .page_actions_expanded .page_actions_item::before,[dir] .page_actions_expanded .page_actions_item:hover::before{margin:0 6px 0 0!important;transform:scale(.9);filter:sepia(1)brightness(.85)hue-rotate(180deg)var(--filt2)saturate(.8)!important}
+.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:hover > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--gift-blue:hover > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:active > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--gift-blue:active > span {color:var(--color1)}
+[dir] .ModalHeader--blue,[dir] .ModalFooter{background:#0000;border:none}
+[dir] .Modal .BaseModal__content{background:#00000080!important}
 
 /* денежные переводы */
 [dir] .payments_money_transfer_amount_wrap{border:1px solid var(--color3);background-color: #0000}

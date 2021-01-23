@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark and highlights`
-@version        20201218.15.42
+@version        2021123.4.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -80,6 +80,8 @@
 	text-transform: capitalize!important;
 }
 
+.vi-image-gallery.desktop,
+.nodestar-item-card-details__image-cell,
 #PicturePanel div.img,
 #gh-bt,
 #gh-ug,
@@ -173,6 +175,7 @@ body.vi-bb-flex.vi-white-spacing .vi-price #prcIsum
 	font-size: 21px!important;
 }
 
+.srp-ds6.srp-ds6-phase3 .srp-list .s-item__details,
 .accordion_content p,
 .b-textlink,
 .css_tab1 li label,.css_tab2 li label,
@@ -221,7 +224,9 @@ body ul#bc a
 
 .hl-cat-nav li a,
 .review-item-content,
-.seller-details
+.seller-details,
+.srp-ds6.srp-ds6-phase3 .srp-list .s-item__details .s-item__detail--primary,
+.srp-ds6.srp-ds6-phase3 .srp-list .s-item__details .s-item__detail--secondary
 {
 	line-height: 29px!important;
 }
@@ -443,6 +448,7 @@ img.img140
 .hl-cat-nav,
 .pagecontainer,
 .srp--list-view .srp-main--isLarge,.srp--list-view .x-header,.srp-list .s-item__title,
+.srp-list .s-item__detail--primary,
 .srp-rail__right .s-browse-related,
 .sz1280,
 .two-column.container,
@@ -581,6 +587,7 @@ a[href]:visited
 /*__________________________________________________________________________________*/
 
 #ebay-f a:hover,
+#gAC .ui-autocomplete.ghAC_newui .ui-menu-item .ghAC_cat,
 #gh-as-a:hover,#gh-sbc a:hover,#gh-sbc h3 a:hover,#gh-un,
 #vi-inc-coupn-msg b,
 .app-itemspecifics-mobile-wrapper__value--secondary,.asp .pnl-h span.seeall button.seeall:hover,
@@ -661,6 +668,7 @@ input[type="checkbox"]:checked + label,input[type="radio"]:checked + label
 .motors_icen_desc span,
 .my-container.item-list .my-row .purchase-info-col .bin-info .bin-label,
 .navlist--wrap button,
+.nodestar-item-card-details__condition-value,
 .offer-title span,
 .pagecontainer__leftnav .b-categorynavigations .b-textlink,.pagecontainer__leftnav .b-speciallinks .b-textlink,
 .pagination .pgn .load-more-btn,
@@ -734,10 +742,10 @@ ul.gh-o-err,ul.gh-o-l
 .lineitem-adjustments .adjustment-title,
 .mfe-lex .mfe-title,
 .motors-sv-common-hdr,
+.nodestar-item-card-details__item .nodestar-item-card-details__header-text,.nodestar-item-card-details__item .nodestar-item-card-details__title,.nodestar-item-card-details__product .nodestar-item-card-details__header-text,.nodestar-item-card-details__product .nodestar-item-card-details__title,
 .offer-entity h3 .offer-title,.offer-entity h4 .offer-title,
 .pd-data-th,.prodDetailDesc td,
-.review-item-title,
-.review-attr .rvw-val,
+.review-item-title,.review-attr .rvw-val,
 .rpTbl tr th,
 .seller-buckets .seller-bucket .seller-name,
 .sold_subtitle,
@@ -787,6 +795,7 @@ legend
 .logistics-details span,
 .m-item .item-info li span.info-label,
 .m-pagination__count-title,
+.nodestar-item-card-details__condition-label,
 .regular-text,
 .review-attr,
 .s-item__time-left,
@@ -1040,6 +1049,7 @@ html > body #gh
 
 /*___ Background 0000 ______________________________________________________________*/
 
+.app-theme-item-wrapper .item-image-wrapper #primary-gallery .vi-image-gallery,
 #app-info .fit-header,
 #fTblFTr td,#fTblFTr td,#fTblFTr th,
 #gh-ac-box,#gh-cat-box,
@@ -1130,8 +1140,10 @@ body.summary-ui .my-container.item-list .ajax-wrap
 .nav-tabs-m > li > a,
 .navlist--wrap button,
 .new-ui.desktop.vi-quantity .vi-quantity__cntr,
+.nodestar-item-card-details__wrapper,
 .nume-vr140 .recos li:hover,
 .oly.old .hdr .inner,
+.page-notice,
 .page-notice--information .page-notice__status,
 .pd-data-hdr,
 .policy_box,
@@ -1393,8 +1405,6 @@ button.btn--primary.sfk-btn--facebook:active
 
 /*___ Plain Black __________________________________________________________________*/
 
-#ds_div table,
-.main-content,
 #CenterPanel,
 #Left,
 #about,
@@ -1402,6 +1412,7 @@ button.btn--primary.sfk-btn--facebook:active
 #core-policy,
 #desc_div,
 #domain-nav,
+#ds_div table,
 #payment,
 #promotionsCntr,
 #return-policy,
@@ -1414,17 +1425,18 @@ button.btn--primary.sfk-btn--facebook:active
 .btf-content,
 .card.ebayui-dne-item-featured-card--topDeals,
 .carousel__list > li,
+.css_accordion,
 .desktop .module,
 .ebayui-dne-carousel.ebayui-dne-trending-widget,
 .ebayui-dne-event-banner:not(.no-description-timer),.ebayui-dne-featured-with-padding .ebayui-dne-item-featured-card > .row > .col .dne-itemtile,.ebayui-dne-item-pattern-card,
 .grid-ctr,
 .hl-color-block-banner,
 .item-grid-spoke > .row > .col,
+.main-content,
 .merch-module .carousel__container .card,
 .mfe-lex,
 .navlist,
 .pagecontainer__center,.pagecontainer__leftnav,
-.css_accordion,
 .pgCenter,
 .srp-main-content,.srp-rail__left,.srp-rail__right,
 .tab-content-m
@@ -1435,13 +1447,13 @@ button.btn--primary.sfk-btn--facebook:active
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-#ds_div table:hover,
 #CenterPanel:hover,
 #Left:hover,
 #about:hover,
 #app-info:hover,
 #core-policy:hover,
 #domain-nav:hover,
+#ds_div table:hover,
 #payment:hover,
 #promotionsCntr:hover,
 #return-policy:hover,

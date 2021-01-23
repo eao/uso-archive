@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jordy3D
 @description    `ToS;Didn't Read, but Dark now`
-@version        202095.9.11
+@version        2021123.12.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -29,7 +29,12 @@ body, html,
 .table-striped>tbody>tr:nth-of-type(odd),
 
 #index-html .hero-unit,
-.hero-unit, #bottom
+.hero-unit, #bottom,
+
+.panel,
+.card,
+
+.jumbotron
 {
     background: #363639;
 }
@@ -44,12 +49,18 @@ input, textarea,
 .navbar-fixed-top .navbar-inner,
 code,
 
-.form-search .input-prepend .btn
+.form-search .input-prepend .btn,
+
+.collapse.in,
+.card .card-service,
+.card-badge
 {
     background: #2e2e2f !important;
 }
 
-.modal-backdrop
+.modal-backdrop,
+
+.card-inline:nth-child(odd)
 {
     background: #2e2e2f;
 }
@@ -67,12 +78,56 @@ code,
     background-color: #D66F2C;
 }
 
+.list-group-item-warning
+{
+  background: #6a561a;
+}
+.list-group-item-secondary
+{
+  background: #1a636a;
+}
+.list-group-item-danger
+{
+  background: #6a251a;
+}
+.list-group-item-success
+{
+  background: #1a6a1a;
+}
+
+.list-group-item-warning:hover
+{
+  background: #6a561a5c !important;
+}
+.list-group-item-secondary:hover
+{
+  background: #1a636a5c !important;
+}
+.list-group-item-danger:hover
+{
+  background: #6a251a5c !important;
+}
+.list-group-item-success:hover
+{
+  background: #1a6a1a5c !important;
+}
+
+
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6,
 input, textarea, li,
 
 .navbar-tosdr-left .navbar-tosdr-title,
 
-.masthead-links li a
+.masthead-links li a,
+
+.btn-secondary a,
+
+.card-badge
+{
+  color: #ccc !important;
+}
+
+.list-group-item a
 {
   color: #ccc !important;
 }
@@ -91,9 +146,17 @@ input, textarea, li,
 #index-html .hero-unit h1 img,
 #inthenews a img,
 
-[class^="icon-"], [class*=" icon-"]
+[class^="icon-"], [class*=" icon-"],
+.jumbotron img,
+
+#news-section\ mt-5
 {
     filter: invert(1) hue-rotate(195deg) saturate(5) brightness(1.5);
     mix-blend-mode: lighten;
+}
+
+.badge i
+{
+    filter: brightness(1);
 }
 }

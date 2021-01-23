@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `test`
-@version        202112.6.18
+@version        2021123.9.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -343,7 +343,16 @@
   /*video settings*/.ytp-panel>.ytp-panel-menu{padding:0px!important;}
   /*video settings*/.ytp-panel>.ytp-panel-menu>.ytp-menuitem{font:20px/100% arial!important;height:32px!important;padding:10px 0px!important;}
   /*video settings*/.ytp-panel>.ytp-panel-menu>.ytp-menuitem[aria-checked="true"]>div{color:#a11!important;}
-  
+  /*player ending ad*/#movie_player>[class*="endscreen"]{}
+  /*player ending ad*/#movie_player>[class*="endscreen"]>*>a{}
+  /*player ending ad*/#movie_player>[class*="endscreen"]>*>a>.ytp-videowall-still-image{}
+  /*player ending ad*/#movie_player>[class*="endscreen"]>*>a>.ytp-videowall-still-info{}
+  /*player ending ad*/#movie_player>[class*="endscreen"]>*>a>.ytp-videowall-still-info>.ytp-videowall-still-info-bg{}
+  /*player ending ad*/#movie_player>[class*="endscreen"]>*>a>.ytp-videowall-still-info>.ytp-videowall-still-info-bg>.ytp-videowall-still-info-content{padding:0!important;}
+  /*player ending ad*/#movie_player>[class*="endscreen"]>*>a>.ytp-videowall-still-info>.ytp-videowall-still-info-bg>.ytp-videowall-still-info-content>.ytp-videowall-still-info-title   {font:20px/110% arial!important;color:#c60!important;background:rgba(0,0,0,0.7)!important;max-height:initial!important;}
+  /*player ending ad*/#movie_player>[class*="endscreen"]>*>a>.ytp-videowall-still-info>.ytp-videowall-still-info-bg>.ytp-videowall-still-info-content>.ytp-videowall-still-info-author  {display:none!important;}
+  /*player ending ad*/#movie_player>[class*="endscreen"]>*>a>.ytp-videowall-still-info>.ytp-videowall-still-info-bg>.ytp-videowall-still-info-content>.ytp-videowall-still-info-live    {display:none!important;}
+  /*player ending ad*/#movie_player>[class*="endscreen"]>*>a>.ytp-videowall-still-info>.ytp-videowall-still-info-bg>.ytp-videowall-still-info-content>.ytp-videowall-still-info-duration{font:20px/110% arial!important;color:#ff1!important;padding:3px 2px 0 5px!important;right:0px!important;bottom:0px!important;}
   /**/
   #primary #alerts{}
   
