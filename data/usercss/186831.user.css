@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Tronic Lin
 @description    `This stylus is based on the tyf version and add supports for new Mobile01 website. I must deeply appreciate tyf. Without him, without this stylus.`
-@version        2021117.9.30
+@version        2021124.5.49
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -32,6 +32,87 @@ div[id^="div-gpt-ad-"] {
 }
 
 .l-emCardGroup {
+    display: none;
+}
+
+/* ========== Remove Fucking Ads ============ */
+.l-content__main .u-gapNextV--lg:nth-of-type(1)
+{
+   
+}
+
+.u-gapNextV--lg:nth-of-type(2),
+.u-gapNextV--lg:nth-of-type(9)
+{}
+
+.u-gapNextV--lg:nth-of-type(5)
+{
+    
+}
+
+.u-gapNextV--lg:nth-of-type(6){
+    display: none;
+}
+
+.u-gapNextV--lg:nth-of-type(3),
+.u-gapNextV--lg:nth-of-type(4)
+{
+}
+
+.u-height250,
+.u-height120,
+.u-gapTop--lg
+{
+    display: none;
+}
+
+#Crt-1437355 {
+    display: none;
+}
+
+#div-gpt-ad-1563255979550-0 {
+    display: none;
+}
+
+#google_image_div,
+#div-gpt-ad-1564559506807-0,
+#_popIn_recommend_side,
+#_popIn_onlyRecommend_side,
+#Crt-810663
+#Crt-1437355
+{
+    display: none !important;
+}
+
+#_popIn_recommend_side, #_popIn_onlyRecommend_side, #dablewidget_Gokmprlv, #dablewidget_G7ZnmZ7W{
+    display: none !important;
+}
+
+.GoogleActiveViewElement{
+    display: none;
+}
+
+.ad_fixed{
+    display: none;
+}
+
+.ad_left_bottom {
+    display: none !important;
+}
+
+#dablewidget_QXeJaVoe,
+#pb
+{
+    display: none;
+}
+
+/* Market Page - Card Swiper */
+.l-cardSwiper{
+    display: none;
+}
+
+/* Article Page - Pop In Ads */
+#_popIn_recommend, #_popIn_onlyRecommend {
     display: none;
 }
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kest Nishtyakov
 @description    `Consta Stylus - красивый, современный и легко настраиваемый стиль для расширения Stylus.Версия: 1.0б`
-@version        2021122.9.5
+@version        2021124.4.40
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown any "Анимация кнопки \"Сохранить\" " {
@@ -168,14 +168,16 @@ body.dirty #save-button {
     color: var(--mtext) !important;
     background: var(--bg) !important;
     border-style: none !important;
-    border-radius: 0.8em;
+    border-radius: .8em;
     height: 100vh;
     overflow: hidden;
     padding: 0.7rem 0.7rem 0.7rem 1rem;
     border-right: none;
     -webkit-box-shadow: 0 0 3rem -1.2rem black;
     box-shadow: 0 0 3rem -1.2rem black;
-    flex-direction: column;
+}
+#stylus-edit #header, #stylus-manage #header {
+    border-radius: 0 1em 1em 0;
 }
 #backup-buttons .dropdown-content a:hover {
     color: var(--mtext) !important;

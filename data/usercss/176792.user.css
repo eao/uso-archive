@@ -3,11 +3,10 @@
 @namespace      USO Archive
 @author         Orca Orca
 @description    `Иконки действий заменены на старые.https://userstyles.org/styles/179505 - убирает рекламу.https://vk.com/coconutorca – пиарюсь, потому что могу.`
-@version        2020125.11.19
+@version        2021124.12.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
-
 @-moz-document url("https://catwar.su/cw3/")
 {
 
@@ -68,6 +67,11 @@ a[data-id='4'] img {
 
 a[data-id='5'] img {
     content: url('http://d.zaix.ru/3987.png'); /*попить воды*/
+  background-repeat: no-repeat;
+}
+
+a[data-id='33'] img {
+    content: url('http://d.zaix.ru/3987.png'); /*попить воды из лужи*/
   background-repeat: no-repeat;
 }
 

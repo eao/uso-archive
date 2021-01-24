@@ -2,8 +2,8 @@
 @name           VRT NWS Dark
 @namespace      USO Archive
 @author         EotT
-@description    `Dark version of VRT NWS2020-03/04: Corona updates2019-04-29: Update for 'Durf te vragen'`
-@version        20201016.20.49
+@description    `Dark version of VRT NWS2021-01-24: Verschillende verbeteringen2020-03/04: Corona updates2019-04-29: Update for 'Durf te vragen'`
+@version        2021124.11.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -127,7 +127,10 @@ div.kader,
 .vrt-discovery-section--swiper.vrt-discovery-section--light::before,
 .vrt-discovery-list__item-link:hover,
 .vrt-teaser-v2:hover,
-.vrt-search-meta__filters::before
+.vrt-search-meta__filters::before,
+.vrt-site-hero-header__title,
+.vrt-grid--education-edubox::after,
+.title .vrt-title--offset-marker, .paragraph-title .vrt-title--offset-marker
 {
 	background-color: rgb(35,35,35);
 }
@@ -157,8 +160,7 @@ div.kader,
 .vrt-header .vrt-sub-nav,
 .vrt-header .vrt-sub-nav::before,
 .vrt-nav-more .vrt-nav__items,
-.vrt-faux-dropdown__checkbox:checked ~ .vrt-faux-dropdown__list,
-.vrt-header__search-btn
+.vrt-faux-dropdown__checkbox:checked ~ .vrt-faux-dropdown__list
 {
 	background-color: rgb(40,40,40);
 }
@@ -235,12 +237,10 @@ div.kader,
 .vk-container .vk-search__suggestions-container--open,
 .search-sort,
 .vrt-tag--pill-extended .vrt-tag__wrapper,
-.vrt-site-services__link,
 .vrt-site-footer .vrt-language-switch,
 .vrt-site-footer__button,
 
 .vk-table .pagination-bottom .-btn:hover,
-.vrt-tag-links__item,
 .chapters-list .chapter a::before,
 .profile-actions__link,
 .vrt-audioplayer__player-share-links,
@@ -282,7 +282,6 @@ div.kader,
 .vrt-site-header .vrt-widget.vrt-widget-profile:hover,
 .search-sort__option a.active,
 .input-text,
-.vrt-site-services__link:hover,
 .vrt-autosuggest--dark .vrt-autosuggest__input,
 .vrt-autosuggest__list,
 .active .date,
@@ -350,7 +349,9 @@ div.kader,
 .dashhead .text,
 .vrt-discovery-list__item-title,
 .vrt-search-v2__input input,
-.vrt-teaser-v2__title{
+.vrt-teaser-v2__title,
+.vrt-grid__description,
+.text{
     color: rgb(200,200,200);
 }
 
@@ -422,9 +423,16 @@ div.kader,
 .new-header-enabled .vrt-page-title .vrt-title,
 .title, .paragraph-title,
 .liveblog-item__title, .modal__title, .article__title .vrt-title, .main .page--page-error .error__title .vrt-title, .newsletter__title .vrt-title,
-.vrt-header__search-btn
+.vrt-header__search-btn,
+.vrt-nav__label,
+.vrt-header__search-btn span,
+.vrt-category-chips__link:hover, .vrt-category-chips__link.active
 {
 	color:white;
+}
+
+.vrt-category-chips__link:hover, .vrt-category-chips__link.active{
+    border-color: white;
 }
 
 .site-search__toggle .icon svg path,
@@ -434,9 +442,10 @@ div.kader,
 .vrt-site-header__home svg path:nth-child(3),
 .vrt-site-header__home svg path:nth-child(7),
 .vrt-site-header__home svg path:nth-child(8),
-.vrt-site-footer svg path:nth-child(3),
+/*.vrt-site-footer svg path:nth-child(3),*/
 .vrt-site-footer svg path:nth-child(7),
 .vrt-site-footer svg path:nth-child(8),
+.vrt-site-footer__app-icon svg path:nth-child(3),
 /*.icon svg,*/
 .vrt-teaser--sport .vrt-teaser__image-footer svg path,
 .vrt-teaser--sport .vrt-teaser__external-link-icon svg path,
@@ -445,7 +454,8 @@ svg text,
 .vk-container .vk-search-btn-aside__icon svg path,
 .liveblog-item article:not(.liveblog-item--pinned):not(.liveblog-item--highlighted) .liveblog-item__time svg,
 .liveblog-item:first-child article:not(.liveblog-item--pinned) .liveblog-item__time svg,
-.vk-container .vk-header__tooltip .vk-btn__close .vk-header-btn__icon svg path{
+.vk-container .vk-header__tooltip .vk-btn__close .vk-header-btn__icon svg path,
+.vrt-header__search-btn svg{
 	fill:white !important;
 }
 
@@ -455,6 +465,7 @@ svg text,
 .vrt-nav__icon svg path,
 .vrt-nav__icon svg polygon,
 .vrt-header__logo svg path:nth-of-type(3),
+.vrt-site-footer__logo svg path.logo-text,
 .modal__close svg .fill-element,
 .vrt-header__wrapper svg{
 	fill:white;
@@ -491,7 +502,9 @@ svg text,
 .vrt-nav-widgets a.vrt-nav__link:hover,
 .vrt-faux-dropdown__label:hover,
 .vrt-profile-button__label:hover,
-.vrt-search-paging__info em{
+.vrt-search-paging__info em,
+.vrt-tag-links__link:hover,
+.vrt-category-chips__link:hover, .vrt-category-chips__link{
 	color:rgb(170,170,170);
 }
 
@@ -499,6 +512,10 @@ svg text,
 .vrt-liveblog .line,
 .vrt-liveblog .line:before, .vrt-liveblog .line:after{
 	background-color: rgb(170,170,170);
+}
+
+.vrt-category-chips__link:hover, .vrt-category-chips__link{
+    border-color: rgb(170,170,170);
 }
 
 .vrt-mosttrending .vrt-teaser--lisa:not(.vrt-teaser--krusty):not(.vrt-teaser--willie):hover .vrt-teaser__article:before, .vrt-mosttrending .vrt-teaser--lisa:not(.vrt-teaser--krusty):not(.vrt-teaser--willie):hover .search-item__group:before
@@ -528,13 +545,25 @@ svg text,
 }
 
 .vrt-tag-links__link,
-.vrt-site-services__link{
+.vrt-site-services__link,
+.vrt-nav__items li a:hover span,
+.vrt-header__search-btn:hover span,
+.vrt-nav__link:hover,
+.vrt-nav-more__label:hover, .vrt-nav__item--more.active .vrt-nav-more__label,
+.vrt-tag-links__title,
+.vrt-nav__item.active>.vrt-nav__link, .vrt-nav__item.active>.vrt-nav__item-inner .vrt-nav__link,
+.vrt-header__search-btn.active span{
     color: rgb(200,200,200);
 }
 
 .vrt-site-services__icon svg .fill-element,
 .vrt-search-paging__button:hover:not(:disabled) .icon{
     fill:rgb(200,200,200);
+}
+
+.vrt-nav-more__label .vrt-nav-more__icon svg,
+.vrt-site-services__link:hover svg{
+    fill:rgb(200,200,200) !important;
 }
 
 html,
@@ -551,7 +580,12 @@ html,
 .chapters-list .chapter a:hover,
 .vrt-tabs-v2__tab-button:hover, .is-active .vrt-tabs-v2__tab-button,
 .dashhead,
-.code-color{
+.code-color,
+.vrt-site-services__link:hover,
+.page-region .vrt-page-par .vrt-grid__title a,
+.vrt-page-title .vrt-title,
+.page-region .vrt-page-par .vrt-grid__title,
+.vrt-site-hero-header__title, .vrt-site-hero-header__intro{
 	color: white;
 }
 

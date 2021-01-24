@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `ニコ生のダークテーマです（ついでにニコニ広告ページもダーク化しています）。ChromeとFirefoxで動作確認済みです、同系統のブラウザであれば基本的に問題はないはずです。配置等の変更は行わず基本的に色調のみの変更をしています。放送用ページ以外のほとんどがダークテーマっぽくなっています（なっていない場所があればマシュマロにご報告いただければ可能な範囲で対応します）。その他なにかあれば<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion" target="_blank" rel="noopener">マシュマロ</a>にお願いします。--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
-@version        2021122.15.15
+@version        2021124.8.40
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -36,15 +36,25 @@ button[aria-controls="followed-program-notification-reader-target"]{background-c
 button[aria-controls="followed-program-notification-reader-target"]:hover{background-color: #343434;}
 div[class*="___popup-control___"] > [class*="___menu-panel___"]{background-color: #535353;}
 [data-item-name="visitAnchor"] > [class*="___visit-anchor___"]{background-color:transparent}
+[class^="___menu-popup-control"] > [class*="___program-menu"]{background-color: #464646;}
+span[class^="___status___"][data-status-type="onair"]{background-color:#ff2a2a;color:#fff !important}
+span[class^="___status___"][data-timeshift-available="true"]{background-color: #2285e8;color: #fff !important;}
 
 /* 謎 */
 .___content-area___3HJ4l{background: #252525;}
 .___tag-widget___3o0cE{background-color: #404040;}
 .___expander___BMnjT[aria-expanded="false"] .___expand-button___2TWkz::before{background: linear-gradient(90deg,hsla(0,0%,100%,0) 0,#373737);}
 
+
+[class^="___visit-anchor___"]::after{border-color: #e8e8e8;}
+
 /* 文字 */
 .___page___T8fzh,a,h1,h2,span,time,.___description___1XvXC,.___description___30cxJ,p,button,.___caption___2l1oP{color: #ddd !important;}
-.___status___1nZI5{color: #fff !important /* タイムシフト文字 */}
+[placeholder="番組を探す"]::placeholder{color: #1e1e1e !important;}
+
+/* SVG */
+[class^="___symbol-mark___"] > path{fill: #d5d5d5;}
+[class^="___toggle-button___"][aria-pressed="true"] [class^="___symbol-mark___"] > path{fill: #f79f51;}
 }
 
 @-moz-document url-prefix("https://site.live.nicovideo.jp/recent") {
@@ -95,7 +105,7 @@ body{background-color: #404040;}
 }
 }
 
-@-moz-document url-prefix("https://live2.nicovideo.jp/watch/") {
+@-moz-document url-prefix("https://live2.nicovideo.jp/"), url-prefix("https://live.nicovideo.jp/recent"), url-prefix("https://live.nicovideo.jp/") {
 /* 視聴ページ */
 
 /* header */
@@ -209,6 +219,14 @@ li a:hover{background-color: #464646 !important;border-radius: 12px;} /* タグ�
 
 .___list___280fl,.___list___3Tgas{background-color: #383838;border: #585858;}
 .___popup-toggle-button___1UajY:hover,.___popup-toggle-button___31Okx:hover{background-color: #424242;}
+
+/* 動画上市場 */
+div[class^="___balloon___"]{background-color: hsla(0, 0%, 28.2%, 0.9);}
+button[value="ネタを通報"]{background-color: hsla(0, 0%, 28.2%, 0.9);}
+button[value="ネタを通報"]:hover{background-color: hsla(0, 0%, 62%, .9);}
+.ItemDialogContent_ActionBtn-purchase{background-color: #373737;border-color: #fbb458;color: #ffa229;}
+[class="ItemDialogContent_LayoutRow"] > .ItemDialogContent_ActionBtn-purchase:hover{background-color: #707070;}
+.ItemDialogContent_Title{color:#d5d5d5}
 
 /* 文字設定 */
 h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezyFY,.nico-CommonHeaderRoot,.___player-status___BQ7B7,.___tab-area___3ACye,.___program-statistics-menu___NOQCW,.___broadcast-participation-area___2_M2S,.___description___1jHOS,.___supplier-name___1snUG,.___name-anchor___1Y9Wk,.___content___1_nBL,.___page-top-anchor___9sr8C,.nico-CommonHeaderRoot.common-header-1319btwt,.common-header-1319btw,.common-header-430bj8,.common-header-1u02t5o,.common-header-yrq9nc,div[class*="___description___"]{

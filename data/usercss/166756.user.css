@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Ночная тема для Яндекс.Поиска, Картинок, Видео и Коллекций———————————————————————————————10.12.20 — Исправлены некоторые баги———————————————————————————————26.08.19 — Тема была полностью переработана• Переработан дизайн• Добавлена поддержка Яндекс.Коллекции`
-@version        2021121.18.30
+@version        2021124.10.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1184,11 +1184,12 @@ body .calculator__btn.button2.button2_hovered_yes:after, body .calculator__btn.b
 .serp-item {color: #eee;}
 
 .Link {color: #7d9dc7;}
+.link_theme_normal.organic__url .organic__url-text b, .Link_theme_normal.OrganicTitle-Link b, .link_theme_normal.sitelinks__link b, .link_theme_minor.sitelinks__link b, .Link_theme_normal.Sitelinks-Item b, .link_theme_normal.related__link b, .Link_theme_normal.Showcase-Link b, .Link_theme_normal .Ether-MainThumbTitle b, .ProductCard-Title .Link_theme_normal b, .Link_theme_normal .ProductCardWithReview-ProductTitle b {color: #7d9dc7;}
 .Link:active, .Link:hover {color: #e85253;}
 .link_theme_black {color: #eee;}
 .link_theme_black.link_hovered_yes {color: #e85253;}
+.link_theme_normal.organic__url:hover .organic__url-text b, .Link_theme_normal.OrganicTitle-Link:hover b, .link_theme_normal.sitelinks__link:hover b, .link_theme_minor.sitelinks__link:hover b, .Link_theme_normal.Sitelinks-Item:hover b, .link_theme_normal.related__link:hover b, .Link_theme_normal.Showcase-Link:hover b, .Link_theme_normal:hover .Ether-MainThumbTitle b, .ProductCard-Title:hover .Link_theme_normal b, .Link_theme_normal:hover .ProductCardWithReview-ProductTitle b {color: #e85253;}
 .link_theme_normal {color: #7d9dc7;}
-.link_theme_normal.organic__url .organic__url-text b, .Link_theme_normal.OrganicTitle-Link b, .link_theme_normal.sitelinks__link b, .link_theme_minor.sitelinks__link b, .Link_theme_normal.Sitelinks-Item b, .link_theme_normal.related__link b, .Link_theme_normal.Showcase-Link b, .Link_theme_normal .Ether-MainThumbTitle b, .ProductCard-Title .Link_theme_normal b, .Link_theme_normal .ProductCardWithReview-ProductTitle b {color: #7d9dc7;}
 .Link:visited {color: #967dbb;}
 .link_theme_normal:visited.organic__url .organic__url-text b, .Link_theme_normal:visited.OrganicTitle-Link b, .link_theme_normal:visited.sitelinks__link b, .link_theme_minor:visited.sitelinks__link b, .Link_theme_normal:visited.Sitelinks-Item b, .link_theme_normal:visited.related__link b, .Link_theme_normal:visited.Showcase-Link b, .Link_theme_normal:visited .Ether-MainThumbTitle b, .ProductCard-Title .Link_theme_normal:visited b, .Link_theme_normal:visited .ProductCardWithReview-ProductTitle b {color: #967dbb;}
 .link_theme_normal:visited {color: #967dbb;}

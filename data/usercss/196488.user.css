@@ -1,0 +1,100 @@
+/* ==UserStyle==
+@name           BlurYouTube
+@namespace      USO Archive
+@author         Kest Nishtyakov
+@description    `Всегда можно лучше...`
+@version        2021124.7.54
+@license        CC-BY-NC-ND-4.0
+@preprocessor   uso
+@advanced color mainbg "Основной цвет фона" #111111
+@advanced color bg "Вторичный цвет фона" #222222
+
+==/UserStyle== */
+@-moz-document domain("youtube.com") {
+/* ПалитРА */
+:root {
+    --mainbg: /*[[mainbg]]*/;
+    --maina: /*[[bg]]*/99;
+    --mainaa: /*[[bg]]*/33;
+    --mtext: #CCC;
+    --blacka: #0008;
+    --blackaa: #0003;
+    --white: #fff;
+    --whitea: #fff8;
+    --whiteaa: #fff2;
+}
+#page-manager.ytd-app {
+  background-color: var(--mainbg);
+}
+.masthead-finish {
+  background-color: var(--maina);
+  backdrop-filter: blur(20px);
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.ytd-guide-renderer {
+  background-color: transparent !important;
+}
+#contentContainer.app-drawer[opened] {
+  background-color: var(--maina);
+  backdrop-filter: blur(20px);
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+
+#guide-content.ytd-app {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+#container.ytd-searchbox {
+  background-color: #00000060;
+  border-radius: 25px 0px 0px 25px;
+  border: none;
+  padding-left: 15px;
+}
+#search-icon-legacy.ytd-searchbox {
+  background-color: var(--blacka);
+  border-radius: 0px 25px 25px 0px;
+  border: none;
+}
+.sbdd_a .sbdd_b {
+  background: none;
+  box-shadow: none;
+  border: none;
+}
+.sbsb_a {
+  background: none;
+  background-color: var(--maina);
+  border: none;
+  border-radius: 0px 0px 15px 15px;
+  backdrop-filter: blur(20px);
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.sbsb_d {
+  background-color: var(--blackaa);
+}
+.sbsb_i {
+  padding-left: 8px;
+  margin-right: -10px;
+  color: var(--mtext);
+}
+.sbpqs_a {
+  padding-left: 8px;
+  color: var(--mtext) !important;
+}
+.sbqs_c {
+  padding-left: 8px;
+  color: var(--mtext) !important;
+}
+.sbfl_a {
+  color: var(--blacka);
+  padding-right: 8px;
+}
+.sbfl_a:hover {
+  color: var(--blackaa);
+}
+.sbfl_b {
+  background-color: transparent;
+}
+#search-icon-legacy.ytd-searchbox yt-icon.ytd-searchbox {
+    color: #FFF;
+}
+}
