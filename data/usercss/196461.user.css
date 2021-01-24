@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `ニコニコ大百科ページのダークテーマです。プレ垢じゃないので記事の編集・作成ページには手を着けていません。またかなり隠し文字（背景色と同色の色が文字に設定されているもの）に難儀しました。一部ページではネタバレ隠しが機能していない可能性がありますので、<a href="https://marshmallow-qa.com/watanuki_azuma" target="_blank">マシュマロ</a>に報告いただければ対応します。`
-@version        2021123.12.36
+@version        2021123.12.54
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,7 +12,7 @@
 body#basebody{background-color: #2b2b22;}
 #header{background-color: #5b5b5b;}
 .st-box,.st-box_side,.index-weekly-recommend-piko, .index-weekly-recommend-article, .index-option-recommend-tool, .index-option-recommend-service,.index-weekly-recommend-piko-contents, .index-weekly-recommend-article-contents, .index-option-recommend-tool-contents, .index-option-recommend-service-contents,.index-weekly-recommend, .index-option-recommend,.index-weekly-recommend-piko-info small,.index-weekly-recommend-article-detail,.index-newly-list{background-color: #404040;color: #dddddd;}
-a:link, a:visited, a.nicovideo:link, a.dic:link, a.ext:link, a.auto:link, a.nicovideo:visited, a.dic:visited, a.ext:visited, a.auto:visited{color: #51aa1f;}
+a:link, a:visited, a.nicovideo:link, a.dic:link, a.ext:link, a.auto:link, a.nicovideo:visited, a.dic:visited, a.ext:visited, a.auto:visited,a.auto-hdn:link, a.auto-hdn:visited{color: #51aa1f;}
 
 .st-box_heading-pushword::before,.side-pushword_counter_clap::before, .side-praised_counter_clap::before,.st-box_heading-kaite::before{mix-blend-mode: color-burn;}
 

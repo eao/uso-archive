@@ -3,14 +3,15 @@
 @namespace      USO Archive
 @author         tyf
 @description    `for RAW LH (lovehug.net, weloma.net)<ul><li>More comfortable manga list</li><li>Content images fit the window size</li><li>Hide the ADs</li><li>Two-page view mode in a wider window</li></ul>`
-@version        2021114.9.28
+@version        2021123.17.53
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("lovehug.net"), domain("weloma.net")
 {
-	body>br,
+	.chapter-before .chapter-selectbody>br,
 	body>iframe,
+	center>br,
 	#myCarousel,
 	#report_error,
 	#sbottom,
@@ -38,20 +39,17 @@
 	.sticky_bottom,
 	.doreamon>center,
 	.panel>center,
-	center>br,
 	a.chapter[href="#"],
 	div[id^="rn_ad_"] {
 		display: none !important;
 	}
 	
 	::-webkit-scrollbar {
-		width: 2pt;
-		height: 2pt;
-		background: #000
+		background: #333
 	}
 	
 	::-webkit-scrollbar-thumb {
-		background-color: #c48;
+		background-color: #e51;
 	}
 	
 	body {
@@ -59,8 +57,7 @@
 		min-height: 100vh;
 		font: 400 12pt sans-serif;
 		padding-top: 4mm;
-		background:
-			linear-gradient(87deg,
+		background: linear-gradient(87deg,
 				rgba(20, 20, 30, .8) 0,
 				rgba(20, 20, 30, .5) 35%,
 				rgba(20, 20, 30, .4) 55%,
@@ -71,7 +68,6 @@
 				rgba(30, 30, 30, .6) 70%,
 				rgba(30, 30, 30, .8) 100%);
 		overflow-x: hidden;
-	
 	}
 	
 	h1,
@@ -131,38 +127,37 @@
 		box-shadow: 0 0 3mm #333;
 	}
 	
-	.navbar,
-	.headroom:not(.chapter-content) {
+	#header {
 		display: block !important;
 		top: -40px !important;
 		height: auto !important;
 		opacity: .5;
 		box-shadow: 0 0 3mm #555;
+		z-index: 2000;
 		transform: none !important;
 		transition: all .8s 0.6s;
 		backdrop-filter: blur(5mm);
 		-webkit-backdrop-filter: blur(5mm);
 	}
 	
-	.navbar:hover,
-	.headroom:hover {
+	#header:hover {
 		top: 0 !important;
-		z-index: 100 !important;
 		opacity: .95;
 		transition: all .1s;
 	}
 	
-	.navbar {
-		margin: 0;
+	.container.cp {
+		padding-top: 0;
 	}
 	
 	.chapter-before .chapter-select {
 		position: fixed;
 		left: 0;
-		bottom: -45px;
+		bottom: -40px;
 		width: 100vw;
-		padding: 5px 0;
-		background-color: rgba(60, 60, 60, .8);
+		padding: 2mm calc(50vw - 250px) 1mm;
+		background-color: rgba(80, 80, 80, .8);
+		white-space: nowrap;
 		opacity: .6;
 		z-index: 9999;
 		box-shadow: 0 0 2mm rgba(0, 0, 0, .7);
@@ -176,6 +171,23 @@
 		background-color: rgba(135, 140, 140, .6);
 		opacity: 1;
 		transition: .2s;
+	}
+	
+	.select-chapter {
+		position: absolute;
+		left: calc(50vw - 20mm);
+		top: 3px;
+		width: 40mm;
+	}
+	
+	.chapter-select a.prev {
+		width: 11em;
+		float: left;
+	}
+	
+	.chapter-select a.next {
+		width: 11em;
+		float: right;
 	}
 	
 	body>.container,
@@ -273,11 +285,11 @@
 	.chapter-content .chapter-img {
 		min-width: 60vh;
 		max-width: 100%;
-		height: calc(100vh - 19mm);
+		height: calc(100vh - 17mm);
 		background: none;
 		border: none;
 		border-radius: 3mm;
-		margin: 0 auto 14px;
+		margin: 0 auto 13px;
 	}
 	
 	.chapter-content .well {
@@ -314,7 +326,6 @@
 	.btn-xs {
 		color: #ddd;
 		line-height: 1.6;
-		padding: .2em;
 		border: none;
 		padding: 0 .4em;
 		border-radius: 4px;
@@ -397,11 +408,6 @@
 		margin: 0 0 1.5mm;
 	}
 	
-	.select-chapter {
-		width: auto;
-		min-width: 50mm;
-		padding: 1mm 5mm 0;
-	}
 	
 	.pagination {
 		margin: 3mm 0 0;
@@ -479,7 +485,9 @@
 			box-shadow: 0 0 2mm #f0a;
 			opacity: 1;
 		}
-	
+	.thumb-item-flow:hover .img-in-ratio {
+		transform: scale(1.07);
+	}
 		.itemupdate {
 			padding: 0;
 		}
@@ -595,6 +603,9 @@
 			font-size: 13pt;
 		}
 	
+		.rows-cmt {
+			max-height: 200vh;
+		}
 	}
 	
 	@media screen and (max-width: 992px) {
@@ -703,7 +714,7 @@
 	
 	@media screen and (min-width: 1200pt) {
 		.thumb-item-flow {
-			width: calc(100% / 8);
+			width: calc(100% / 7);
 		}
 	
 		.itemupdate,
@@ -722,9 +733,9 @@
 		}
 	
 		.img-in-ratio {
-			background-size: cover
+			background-size: cover;
+			transition: .2s;
 		}
-	
 	}
 	
 	@media screen and (min-width: 1700pt) {
@@ -769,21 +780,17 @@
 			height: calc(50vh - 60mm);
 			min-height: 310px;
 		}
-	
-		.img-in-ratio {
-			background-size: cover
-		}
 	}
 	
-	@media screen and (min-width: 133vh) {
+	@media screen and (min-width: 140vh) {
 	
 		#content,
 		.chapter-content {
-			max-width: calc(96vh * 1.4);
+			max-width: 140vh;
 		}
 	
 		.chapter-content .chapter-img {
-			max-width: 49.9%;
+			max-width: 50%;
 		}
 	
 		.chapter-content .chapter-img:nth-of-type(even):not(:last-of-type) {

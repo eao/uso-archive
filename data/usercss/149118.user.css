@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Relashia
 @description    `Style shows on the map items that can be found in the specific locations (TO & ANE).<br/>Style is global, it works on every language version of Eldarya.<br/>--------------------------------------------------------<br/>Styl pokazuje na mapie przedmioty możliwe do znalezienia w danych lokacjach (TO i ANE).<br/>Styl jest globalny, działa na każdej wersji językowej Eldaryi.`
-@version        2021121.18.6
+@version        2021123.12.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1678,7 +1678,8 @@ url("https://www.eldarya.pl/assets/img/item/consumable/a0375c3cc38960143c685d3ee
 url("https://www.eldarya.pl/assets/img/item/consumable/472cea3c763d76c125ada52223bde39f.png"),
 url("https://www.eldarya.pl/assets/img/item/consumable/34915449d30ccd2392dcdbbfef815df7.png"),
 url("https://www.eldarya.pl/assets/img/player/skin/icon/4fa25c05bfcc05ff883123de12ccf9f9.png"),
-url("https://www.eldarya.pl/assets/img/item/player/icon/1bbeb72788511cb4a7c68d1ce1256acc.png") !important;
+url("https://www.eldarya.pl/assets/img/item/player/icon/1bbeb72788511cb4a7c68d1ce1256acc.png"),
+url("https://www.eldarya.pl/assets/img/item/player/icon/7794f5947f94a0d927c1fad95c2075a3.png") !important;
 background-repeat: no-repeat!important;
 background-position:
 5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px,

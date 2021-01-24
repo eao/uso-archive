@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Simon Nemeth
 @description    `Something to make the new Facebook more manageable. I'm not great at this so it may be messy but it works.`
-@version        2021115.16.38
+@version        2021123.23.24
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -69,6 +69,9 @@ html {
 }
 .op6gxeva {
     -webkit-filter: none;
+}
+.b3i9ofy5.kjebk5og.lb2jxski.i09qtzwb.hzruof5a.pmk7jnqg.j9ispegn.kr520xx4.bsnbvmp4 {
+    margin-top: 2px;
 }
 .scaledImageFitWidth  {
     border-radius: 10px;
@@ -143,6 +146,9 @@ html {
     padding-right: 0px;
 }
 ._6s5d {
+    background-color: #ffffff00;
+}
+._9dls {
     background-image: url(https://www.lidosofbritain.co.uk/fb/backg.jpg);
     background-position-x: center;
     background-repeat-y: no-repeat;

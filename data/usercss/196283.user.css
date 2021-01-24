@@ -3,10 +3,10 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `Github项目地址：https://github.com/QIUZAIYOU/Stylish1. 常用页面夜间模式全覆盖2. 去除广告3. 页面样式优化大部分已完成，部分施工中...目前常用页面应该已经全面覆盖了，除了「直播」和「游戏」相关页面，使用时可点击浏览器工具栏 stylus 图标，再点击本样式名称后面的操作菜单（竖着的三个点），勾选排除当前链接，这两个域名相关页面夜化后续会补上。`
-@version        2021123.4.50
+@version        2021123.15.19
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
-@advanced dropdown BiliLive "首页直播板块" {
+@advanced dropdown BiliLive "首页直播板块屏蔽" {
 	BiliLive_ON "开*" <<<EOT #bili_live,
  EOT;
 BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
@@ -15,12 +15,12 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
 
 ==/UserStyle== */
 @-moz-document url-prefix("http://example.com") {
-/*===
-* © 版权信息
-* © 作者：QIUZAIYOU
-* © 最后更新：20210123
-* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-===*/
+    /*===
+    * © 版权信息
+    * © 作者：QIUZAIYOU
+    * © 最后更新：20210123
+    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -33,7 +33,7 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
     #reportFirst2,
     /* 首页板块中间的Banner广告 */
     .storey-box div[id*="bili_"]>a[data-loc-id],
-    /* 首页直播板块（个人不喜，故添加了开关，默认开启） */
+    /* 首页直播板块（个人不喜，故添加了屏蔽开关，默认开启） */
     /*[[BiliLive]]*/
     /* 播放页广告 */
     #bannerAd,
@@ -45,7 +45,7 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-    :root {
+     :root {
         --color-14: #141414!important;
         --color-1b: #1b1b1b!important;
         --color-21: #212121!important;
@@ -168,25 +168,25 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
         line-height: 13px;
     }
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -886,7 +886,8 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
     .big-gift-btn-home,
     .btn-confirm.disabled,
     .form-login .input-box .btn-box .btn,
-    .follow-dialog-wrap .follow-dialog-window .bottom .btn:disabled {
+    .follow-dialog-wrap .follow-dialog-window .bottom .btn:disabled,
+    .header-info .manga-info .action-buttons .manga-button.primary:disabled {
         border-color: var(--color-42)!important;
         background: var(--color-37)!important;
         color: var(--color-86)!important;
@@ -5128,25 +5129,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
