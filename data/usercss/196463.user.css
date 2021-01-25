@@ -3,8 +3,8 @@
 @namespace      USO Archive
 @author         letsi
 @description    `A darkmode for mixcloud.com`
-@version        2021124.1.32
-@license        NO-REDISTRIBUTION
+@version        2021124.14.35
+@license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.mixcloud.com/") {
@@ -16,7 +16,56 @@
 .site-wrapper {
     position: relative;
     background: #1c1c1c;
-    box-shadow: 0 0 16px rgba(155, 188, 223, .1);
+    box-shadow: none;
+}
+
+.policy-intro {
+    background: #1f2228;
+    box-shadow: inset 0 -2px 0 0 #1f2228;
+    color: #dae5ef;
+}
+
+.policy-content h2,
+.policy-intro b {
+    color: #a3b2bd;
+}
+
+.policy-nav a:hover {
+    color: #8abdd7;
+}
+
+.policy-nav a {
+    color: #4fa6d3;
+}
+
+.policy-toc .toc-links a {
+    color: #c2dcf0;
+    border-bottom: 1px solid rgba(195, 207, 221, .33);
+}
+
+.policy-toc .toc-links a:hover {
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.policy-content div[id]:nth-child(2n) {
+    background: #171717;
+}
+
+.policy-content div[id]:nth-child(2n):before {
+    box-shadow: 190px 0 0 #171717, -530px 0 0 #171717;
+}
+
+.policy-content ol:not([class]) li:before {
+    color: #6dbee8;
+}
+
+.policy-content .halves {
+    background: rgba(49, 49, 49, .5);
+}
+
+.policy-content b {
+    color: #a8c1db;
 }
 
 .profile-new-design-header .profile-header:after {
@@ -89,6 +138,32 @@ h1 {
     color: #e3e8ff;
 }
 
+.blank-list li:first-child {
+    border-top: 1px solid #696969;
+}
+
+.blank-list li {
+    border: 1px solid #696969;
+}
+
+.blank-list .label {
+    background-color: #313131;
+}
+
+code {
+    border: 1px solid #171717!important;
+    background-color: #171717!important;
+    color: #fff!important;
+}
+
+.new-application {
+    background: #282828;
+}
+
+.fieldset {
+    border-bottom: 1px solid #4d7797;
+}
+
 .iIGcCU circle.ring-remaining {
     stroke: rgb(139, 157, 232);
 }
@@ -105,6 +180,10 @@ h1 {
     color: rgb(139, 157, 232);
 }
 
+.jKwuem:hover {
+    color: rgb(163 177 235);
+}
+
 .YOGda {
     color: rgb(205, 209, 229);
 }
@@ -113,19 +192,39 @@ h1 {
     color: rgb(181, 186, 208);
 }
 
+.hoqOVN {
+    color: rgb(176, 181, 204);
+}
+
 .iOFOIC svg path {
     fill: rgb(190, 160, 255);
+}
+
+.iOFOIC:hover svg path {
+    fill: rgb(216 198 255);
 }
 
 .iOFOIC {
     color: rgb(190, 160, 255);
 }
 
+.iOFOIC:hover {
+    color: rgb(216 198 255);
+}
+
 .fpUQjM {
     color: rgb(255, 255, 255);
 }
 
+.fpUQjM:hover {
+    color: rgb(215, 215, 215);
+}
+
 .fpUQjM svg path {
+    fill: rgb(255, 255, 255);
+}
+
+.fpUQjM:hover svg path {
     fill: rgb(255, 255, 255);
 }
 
@@ -133,17 +232,43 @@ h1 {
     fill: rgb(199, 201, 217);
 }
 
+.hyVBsv:hover svg path {
+    fill: rgb(255 255 255);
+}
+
 [data-tooltip]:before,
 [m-tooltip]:before {
-    background: rgb(239, 241, 255);
+    background: rgb(85 85 85);
+}
+
+.icon-tile.white {
+    background-color: #2f2f2f;
+    border: 1px solid #2b2b2b;
+}
+
+.duGWfD {
+    background-color: #1c1c1c;
+}
+
+.gwTSos {
+    background-color: #171717;
+    color: rgb(247, 239, 224);
+}
+
+.kBRTqU {
+    color: rgb(232, 229, 225);
 }
 
 .ebNGnO {
     background-color: #212121;
 }
 
+.hyVBsv {
+    color: rgb(199, 201, 217);
+}
+
 .hyVBsv:hover {
-    color: rgb(198, 210, 255);
+    color: rgb(215, 215, 215);
 }
 
 .kKbhFE:hover {
@@ -171,6 +296,42 @@ h1 {
 .hyGLlT {
     background-color: rgb(0, 119, 255);
     color: rgb(255, 255, 255);
+}
+
+.cFSrMO:hover {
+    color: rgb(215, 215, 215);
+}
+
+.zLVpv:hover {
+    background-color: rgb(77, 89, 136);
+    color: rgb(255, 255, 255);
+}
+
+.blgiQL circle {
+    fill: rgb(126, 88, 225);
+}
+
+.menu-loading-link:before,
+.menu,
+.menu-loading-avatar,
+.menu-loading-link:after,
+.menu-loading-username {
+    background: #2f2f2f;
+}
+
+.fxbTwi,
+.kmwSXK,
+.fqMbcy,
+.gagBn,
+.cwMBRR,
+.hoWNvP,
+.bIkWAc,
+.brYkOO,
+.jtcGew,
+.kbRQdi,
+.hEsjXz,
+.lmwHyl {
+    background-color: #2f2f2f;
 }
 
 .btn-outline.fake-active,
@@ -281,6 +442,14 @@ h1 {
 
 .header-action-row {
     background-color: #1c1c1c;
+}
+
+.iJenMj {
+    color: rgb(255, 53, 53);
+}
+
+.cqwDnZ {
+    background: rgb(242, 199, 191);
 }
 
 .header-actions .actions a.btn.btn-toggled,
@@ -513,5 +682,92 @@ fieldset[disabled] .btn:hover {
 
 .profile-username-exclusive svg {
     color: #d05aff;
+}
+
+.incomplete-nag {
+    background: #146db7;
+}
+
+.incomplete-nag b {
+    color: #d4dce5 !important;
+    opacity: 1;
+}
+
+.incomplete-nag .meter {
+    background: #bdbdbd;
+}
+
+.incomplete-nag .meter-inner {
+    background: #4e94d5;
+}
+
+.incomplete-nag .checklist {
+    background: #112e44;
+}
+
+.incomplete-nag .checklist span {
+    color: #ddeaf4;
+}
+
+.fieldset label b {
+    color: #cacaca;
+}
+
+.fieldset label span {
+    color: #91a9c1;
+}
+
+.info-msg,
+.warning-msg {
+    color: white;
+}
+
+.site-wrapper.site-wrapper-bluegrey,
+body.site-wrapper-bluegrey .container.site-wrapper {
+    background-color: #212121;
+}
+
+.select-upsell-page .select-upsell-body-section {
+    background-color: #1c1c1c;
+}
+
+.select-upsell-page .select-upsell-creator-quote .select-upsell-quote-user .select-upsell-quote-user-avatar {
+    border: 1px solid #212121;
+}
+
+.select-upsell-page .select-upsell-posts .posts-row .post-container h3,
+.select-upsell-page .select-upsell-creator-quote blockquote:before,
+.select-upsell-page .select-upsell-creator-quote .select-upsell-quote-user h4,
+.select-upsell-page .select-upsell-shows-section h3,
+.icon-tile h3.icon-tile-title,
+.select-upsell-page h2 {
+    color: #6c92b7;
+}
+
+.select-upsell-page .select-upsell-p,
+.select-upsell-page .select-upsell-shows-section .select-upsell-offline-shows-section .select-upsell-offline-shows .select-upsell-cloudcast-card .cloudcast-card-name,
+.select-upsell-page .select-upsell-benefits-content-component .select-upsell-benefits-wrapper .icon-tile .icon-tile-description {
+    color: #d6e0ea;
+}
+
+.select-upsell-page .select-upsell-shows-section .select-upsell-offline-shows-section .select-upsell-offline-shows .select-upsell-cloudcast-card .cloudcast-card-creator-name {
+    color: white;
+}
+
+.select-upsell-page .select-upsell-shows-section .select-upsell-offline-shows-section .select-upsell-offline-shows .select-upsell-cloudcast-card .cloudcast-card-creator-name a {
+    color: #a3d7f2;
+}
+
+.select-upsell-page .select-upsell-header.sticky {
+    background-color: #191919;
+    box-shadow: none;
+}
+
+.select-upsell-page .select-upsell-header.sticky .select-upsell-header-content h1 {
+    color: #f7f7f7;
+}
+
+.select-upsell-page .select-upsell-header.sticky .select-upsell-header-content p {
+    color: #92c6fb;
 }
 }

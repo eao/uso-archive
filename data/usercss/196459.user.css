@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         daniel1919
 @description    `Black theme for Fitbit studio`
-@version        2021123.11.51
+@version        2021124.23.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -33,6 +33,11 @@
 .pt-dialog {
     background: #252526;
     color: #ccc;
+}
+
+.pt-dialog .pt-dialog-body ul {
+    max-height:65vh;
+    overflow:auto;
 }
 
 .pt-dialog .pt-dialog-header {
@@ -226,6 +231,7 @@ div.project-list-item {
 div.project-list-item a.pt-menu-item {
     display:inline-block;
     width:100%;
+    padding: 7px 30px;
 }
 
 div.project-list-item a.pt-menu-item:hover {

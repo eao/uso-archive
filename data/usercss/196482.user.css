@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Tronic Lin
 @description    `1. 還給大家真正的 Mobile01：讓使用者享受無廣告、無干擾的瀏覽環境。2. 一致的使用者體驗：固定網站寬度，支援 1280 x 800、1366 x 768、1440 x 900 等小螢幕的使用者，大螢幕使用者也可以輕鬆瀏覽頁面上的所有資訊。3. 全面黑化：使用者無須再做任何選擇，預設就是全黑的畫面。4. 改善文字易讀性：適當的字體大小，眼睛不再有負擔。`
-@version        2021124.7.24
+@version        2021124.15.33
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -936,4 +936,11 @@ article {
     padding: 10px 20px;
 }
 
+.c-popUp__content .l-actions{
+    padding-left: 0rem;
+}
+
+.c-popUp__content .u-gapTop--md{
+    margin-left: 0;
+}
 }

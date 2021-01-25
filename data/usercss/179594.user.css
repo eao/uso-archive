@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         rowbot
 @description    `Go back to the past with this theme!Default Settings:Theme Color: #000097Background Color: #008080Font: Arial`
-@version        20201129.0.15
+@version        2021124.22.34
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color BkgColor "Background Color" #008080
@@ -12,7 +12,8 @@
 @advanced text unknown "Arial, Cursive, Serif, Monospace" "Fonts above"
 
 ==/UserStyle== */
-@-moz-document domain("brick-hill.com") {
+@-moz-document domain("www.brick-hill.com") {
+
 body {
     background-color: /*[[BkgColor]]*/;
     font-family: /*[[Font]]*/ !important;
@@ -86,12 +87,12 @@ button:not(.plain).blue, .button:not(.plain).blue, button:not(.plain).red, .butt
     border-color: #000000;
     border: 3.5px outset #0594de;
     border-radius: 0px; }
-
+    
 .crate-types .active,.crate-types :hover {
     background-color: /*[[mColor]]*/;
     border-left: 0px solid #fe5746;
     color: #fff;
-    background-image: url("https://i.imgur.com/A1WUBTP.png");
+    background-image: url("https://i.imgur.com/ULy1Mov.png");
     background-repeat: no-repeat;
     background-position: 90% center;
     image-rendering: pixelated;
@@ -137,7 +138,14 @@ button:not(.plain).blue, .button:not(.plain).blue, button:not(.plain).red, .butt
     width: 20%;
     min-width: 250px; }
 
-
+.hover-card.viewed {
+    background-color: #dcdcdc;
+}
+    
+.hover-card:hover {
+    background-color: #eaeaea
+}
+    
 .friend-card:hover {
     background-color:/*[[mColor]]*/;
     border-radius: 1px;
@@ -182,8 +190,6 @@ button:not(.plain).blue, .button:not(.plain).blue, button:not(.plain).red, .butt
     height: 100%;
     background-color: #808080; }
 
-.thread {
-    border-bottom: 1px solid #808080; }
 
 .trade-item-box {
     border: 1px solid #808080;
@@ -200,7 +206,7 @@ button:not(.plain).blue, .button:not(.plain).blue, button:not(.plain).red, .butt
     padding-right: 5px; }
 }
 
-@-moz-document domain("brick-hill.com") {
+@-moz-document domain("www.brick-hill.com") {
 .label {
     color: #363636; }
 
@@ -239,7 +245,7 @@ button:not(.plain).blue, .button:not(.plain).blue, button:not(.plain).red, .butt
     color: #555; }
 
 .pages .page.active {
-    color: #000097; }
+    color: /*[[mColor]]*/; }
 
 .forum-tag {
     background: #808080;
@@ -267,6 +273,7 @@ select {
     background-color: #fff;
     border-radius: 0px;
     border: 2.5px #808080;
+    font-family: /*[[Font]]*/ !important;
     border-right: #fff;
     border-bottom: #fff;
     border-style: outset; }
@@ -277,6 +284,7 @@ textarea {
     border: 2.5px #808080;
     border-right: #fff;
     border-bottom: #fff;
+    font-family: /*[[Font]]*/ !important;
     border-style: outset; }
 
 input.rigid,
@@ -285,6 +293,7 @@ textarea.rigid {
     border: 2.5px #808080;
     border-right: #fff;
     border-bottom: #fff;
+    font-family: /*[[Font]]*/ !important;
     border-style: outset; }
 
 
@@ -296,9 +305,13 @@ textarea.rigid {
     border-bottom: #fff;
     border-style: outset; 
 }
+
+.bits-text, .bits-icon {
+    color: #e6670c;
+}
 }
 
-@-moz-document url-prefix("https://www.brick-hill.com/forum/thread/") {
+@-moz-document url-prefix("https://www.brick-hill.com/forum/thread") {
 .card .top:not(.absolute),
 .card .top:not(.absolute).blue,
 .card .top:not(.absolute).green,
@@ -318,6 +331,7 @@ textarea.rigid {
     border: 1px #fff;
     border-right: #808080;
     border-bottom: #808080;
+    overflow: hidden;
     border-style: ridge; }
 
 .card .content {
