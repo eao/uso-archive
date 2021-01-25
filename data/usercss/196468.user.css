@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Black Triangles
+@name           Black Polys
 @namespace      USO Archive
 @author         Jen Loreman
 @description    `Simplistic, black, perfection. Everything except background is pretty much the same as roblox dark, this isn't meant to be anything complex or overly different. It also isn't very customizable yet, sorry about that.`
-@version        2021124.4.37
+@version        2021125.4.36
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -139,7 +139,7 @@
 
   .avatar-back
   {
-    background-image: url(https://cdn.discordapp.com/attachments/657374783192825856/802753856580222976/Untitled.png);
+    background-image: url(https://cdn.discordapp.com/attachments/327863256498831370/803118629851365426/Untitled.png);
   }
 
   .notification-blue
