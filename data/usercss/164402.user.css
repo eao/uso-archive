@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ryousuke
 @description    `GK Dark & Gold - Site et forums`
-@version        20201215.18.29
+@version        2021125.16.26
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -112,7 +112,9 @@ section.ed__news__panel {
 .gk__menu-dark {
     box-shadow: #000 0 0 10px;
 }
-
+.g2__a-btn.is--role-secondary {
+    background-color: #edaf00;
+}
 .gk__link__see-more a:link,
 .gk__link__see-more--left a:link,
 .gk__link__see-more--inverted a:link,
@@ -762,7 +764,10 @@ button.gk__form__control--button {
 #main-outlet {
     background-image: none;
 }
-
+.col-lg-4,
+.col-lg-8 {
+    padding-top: 1em;
+}
 .btn,
 .btn-primary,
 .btn-primary.disabled,
@@ -1490,5 +1495,56 @@ span.highlighted {
 }
 .g2__gka-rcp > ul > li {
     color: #edaf00;
+}
+.g2__m-v-wgt > footer:before {
+    background-color: #edaf00;
+}
+.g2__a-lnkab.is--role-secondary {
+    color: #000000;
+    background-color: #edaf00;
+}
+.g2__pnl--pr.is--selected .g2__a-bdg.is--check {
+    color: #000;
+}
+.g2__m-tmt-hdr > li {
+    background-color: #030000;
+}
+.g2__m-tmt-fxr.is--pending {
+    border-color: #edaf00;
+    background-color: #030000;
+}
+.g2__m-tmt-fxr.is--pending > :last-child:after {
+    background-color: #edaf00;
+}
+.g2__o-tmt-bkt > main > ul:not(:last-of-type) > li:after,
+.g2__o-tmt-bkt > main > ul:not(:last-of-type) > li:before {
+    background-color: #edaf00;
+}
+.g2__o-tmt-bkt > main > ul > li > span {
+    background-color: #edaf00;
+}
+.g2__m-tmt-fxr.is--active {
+    background-color: #edaf00;
+}
+.g2__i-gm__xxs.g2__body-md.g2__font-dovegray {
+    color: #000;
+}
+.g2__m-tmt-fxr > :last-child:after {
+    background-color: #000000;
+}
+.g2__m-tmt-fxr.is--unactive {
+    background-color: #4a4118;
+}
+.g2__i-gm__xxs.g2__body-md.g2__font-boulder {
+    color: #edaf00;
+}
+.g2__m-tmt-hdr > li > div > i:before,
+.g2__m-tmt-hdr > li > div > span {
+    color: #000;
+}
+.g2__pnl--ed .is--selected.g2__pnl--pr,
+.g2__pnl--ed {
+    border: 2px solid #edaf00;
+    border-radius: 8px;
 }
 }

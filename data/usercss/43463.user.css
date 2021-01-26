@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         zigboom
 @description    `Google redesigned in dark Grays, custom images, gradients, advanced CSS3 effects and more. For web designs, check out https://www.zigboom.com`
-@version        2021117.16.4
+@version        2021125.17.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1369,12 +1369,12 @@ border-radius: 24px !important;
     color: #aaa !important;
 }
 
-.VOEIyf .jBmls, .de07yb, .To2ZZb.DbQnIe {
+.VOEIyf .jBmls, .de07yb, .To2ZZb.DbQnIe, .dm7YTc .b42OPe {
     background: #282828 !important;
     border-color: #444 !important;
 }
 
-.VOEIyf .jBmls {
+.VOEIyf .jBmls, .dm7YTc .b42OPe {
     border-radius: 24px !important;
 }
 
