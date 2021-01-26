@@ -2,8 +2,8 @@
 @name           ニコ生(Re) ダークテーマ(Niconico Live Dark Theme)
 @namespace      USO Archive
 @author         Azuma
-@description    `ニコ生のダークテーマです（ついでにニコニ広告ページもダーク化しています）。ChromeとFirefoxで動作確認済みです、同系統のブラウザであれば基本的に問題はないはずです。配置等の変更は行わず基本的に色調のみの変更をしています。ニコ生に関連するページのほとんどがダークテーマっぽくなっています（なっていない場所があればマシュマロにご報告いただければ可能な範囲で対応します）。その他なにかあれば<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion" target="_blank" rel="noopener">マシュマロ</a>にお願いします。--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
-@version        2021125.8.1
+@description    `ニコ生のダークテーマです（ついでにニコニ広告ページもダーク化しています）。ChromeとFirefoxで動作確認済みです、同系統のブラウザであれば基本的に問題はないはずです。配置等の変更は行わず基本的に色調のみの変更をしています。ニコ生に関連するページのほとんどがダークテーマっぽくなっています（なっていない場所があればマシュマロにご報告いただければ可能な範囲で対応します）。その他なにかあれば<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion" target="_blank" rel="noopener">マシュマロ</a>にお願いします。--対処不能な不具合について--Firefox系で「放送中の注目番組」に表示されている映像の音量コントロールボタンに表示上の不具合がありますが本スタイルによるものではありません。修正は難しそうなのでニコニコに報告すれば直るかもしれません…--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
+@version        2021126.7.38
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -50,8 +50,7 @@ div[data-search-form-focused="false"] > form[class*="___search-form___"] > [clas
 div[data-search-form-focused="true"] > form[class*="___search-form___"] > button[class^="___search-button___"]{background-color: #555;}
 [class^="___site-header___"] [class*=___program-navigation___][data-search-form-focused=true] [class*=___text-box___]{background-color: #515151;}
 
-
-
+[aria-label="メニュー"]{background-color:#1e1e1e !important;border:1px solid #8e8e8e}
 
 /* 謎 */
 .___content-area___3HJ4l{background: #252525;}
@@ -294,6 +293,11 @@ h1,p,blockquote,pre,h2, .DropDownMenu, .___airtime___1A2J2, .___onair-time___ezy
 /* ギフトタブ周辺border色 */
 .___rich-view-status___3mt-b{border: 1px solid #2b2b2b;}
 
+/* not a community member */
+[class^="___broadcast_time___"]{background-color: hsla(0, 0%, 26.7%, 0.9);}
+[class^="___status___"][data-status="onair"],[data-item-name="programProviderMenu"] > [class^="___follow-anchor___"] > span{color:#fff !important}
+[data-item-name="programProviderMenu"] > [class^="___follow-anchor___"]::after{border-color: #ff8f00;}
+[data-item-name="programProviderMenu"] > [class^="___follow-anchor___"]{background-color: #b36d30;border:2px solid #cc8600;color: #fff !important;}
 
 /*削除する要素*/
 .___banner-panel___XbLIX, .___ga-ns-banner-panel___3bb4p ,.___banner-panel___1WjFA, .___banner-ad___3I1Ik, #footer-ad, #program-information-ad,a[class*="___premium-merit-appeal-banner"],a[class*="___app-download-banner"]{display: none;}

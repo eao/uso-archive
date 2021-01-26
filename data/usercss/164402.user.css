@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ryousuke
 @description    `GK Dark & Gold - Site et forums`
-@version        2021125.16.26
+@version        2021126.12.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -29,7 +29,11 @@ body {
 .gk__staff-note__inset .note .numbers span {
     color: #f5a623;
 }
-
+.gk__submenu__item--highlight > span > a:link,
+.gk__submenu__item--highlight > span > a:visited {
+    color: #000;
+    background: #f5a623;
+}
 .gk__panel,
 section > .gk__panel--tip,
 .gk__panel--npdg,
@@ -295,9 +299,15 @@ legend {
 .co__search__field.gk__form__control--button:active {
     color: #fff;
     border: 1px solid #f5a623;
-    background-color: #242424;
+    background: #edaf0036;
 }
-
+.gk__fact-sheet__tabs__item > a.is-active {
+    color: #f5a623;
+    background: #440900;
+}
+.gk__fact-sheet__tabs__item > a {
+    background: #1f1f1f;
+}
 .co__search__button {
     color: #f5a623;
     border: 1px solid #f5a623;
@@ -477,6 +487,15 @@ label,
 }
 a.g2__font-codgray--has-hover {
     color: #f5a623;
+}
+.g2__font-dovegray--has-hover:hover {
+    color: #edaf00;
+}
+.g2__a-btn-pnp {
+    color: #e5e5e5;
+}
+a:visited .g2__a-hnw__m__tg__pm:before {
+    color: #edaf00;
 }
 .g2__gka-rslt-nw__goty__lst > div > figure > figcaption,
 .co__main__section__title,
@@ -1042,7 +1061,10 @@ blockquote {
     border: 1px solid #f5a623;
     background-color: #030000;
 }
-
+.gk__form__filter__dropdown:before {
+    border-color: #edaf00;
+    background-color: #edaf00;
+}
 .gk__list--unstyle,
 .category-name,
 .fancy-title,

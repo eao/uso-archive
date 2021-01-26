@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `firefox`
-@version        2021110.5.5
+@version        2021126.4.14
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1229,9 +1229,10 @@
     .creation-center>.card-base>.series-info-box>.series-info>.series-link>span{font-size:inherit!important;line-height:inherit!important;color:#a11!important;height:initial!important;padding:0!important;}
     .creation-center>.card-base>.series-info-box>.series-info>.caption-text{font:20px/100% arial!important;color:#ccc!important;}
     .creation-center>.card-base>#div_illustration{padding:0!important;}
-    .creation-center>.card-base>#div_illustration>.image-setting      {}
+    .creation-center>.card-base>#div_illustration>.image-setting      {display:block!important;}
     .creation-center>.card-base>#div_illustration>.image-setting>a    {width:100%!important;height:auto!important;display:block!important;}
-    .creation-center>.card-base>#div_illustration>.image-setting>a>img{width:100%!important;height:auto!important;display:block!important;}
+    .creation-center>.card-base>#div_illustration>.image-setting>a>img{width:100%!important;height:auto!important;display:block!important;max-height:initial!important;}
+    .creation-center>.card-base>#div_illustration>.image-setting>.sticky-bottom{display:none!important;}
     .creation-center>.card-base>#div_illustration>hr{display:none!important;}
     .creation-center>.card-base>[class="article-content"]         {padding:0!important;}
     .creation-center>.card-base>[class="article-content"]>#article{}

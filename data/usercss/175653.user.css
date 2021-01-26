@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         MikeZ
 @description    `A darker theme for kurier.at`
-@version        2019925.13.0
+@version        2021126.11.17
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,7 +16,7 @@
 ==/UserStyle== */
 
 @-moz-document domain("kurier.at") {
-    body {
+ body {
         background-color: #111;
         color: #eee;
     }
@@ -77,4 +77,16 @@
     .cleverpush-bell {
         background-color: #800111 !important;
     }
+
+.pammesberger.plusContent {
+    max-height: 1200px !important;
+}
+
+.pammesberger.plusContent:before {
+    content: none;
+}
+
+#cfs-paywall-container {
+    display: none;
+}
 }

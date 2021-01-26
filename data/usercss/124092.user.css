@@ -2,21 +2,33 @@
 @name           WISS EDU+
 @namespace      USO Archive
 @author         sven.glueckspilz
-@description    `Tweaking the new LMS for Usability & Fun :-)Valid for https://wiss-de.weedu.ch/ (requires valid login)`
-@version        20171124.11.0
-@license        NO-REDISTRIBUTION
+@description    `Tweaking the WISS LMS for Usability & Fun :-)Valid for https://wiss-de.weedu.ch/ (requires valid login)`
+@version        2021126.8.41
+@license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document domain("wiss-de.weedu.ch") {
-    body{
+:root{
+    --green : #104202;
+}
+
+body{
     background:url(http://www.mastersong.de/templates/tk_engina_free/images/background.jpg) no-repeat;
 		background-attachment:fixed;
 		background-position:center center;
 		background-color:#051008;    
     }
-.box {
+
+a, ul.minimizedBoxes li i {
+    color: var(--green);
+}
+
+actionbar pagination ul li a.active, actionbar pagination ul li a:hover {
+    background-color: var(--green);
+}
+
+box {
     display: inline-block;
     width: 100%;
     border: 1px solid #b3b3b3;
@@ -24,24 +36,25 @@
     margin: 3px;
     margin-bottom: 20px;
     width: 48%;
-    float: left;
     border-radius: 10px;
     border: 2px solid green;
     background-color: white;   
 }
-    .box hgroup{
-        border-radius: 10px;
-    }
-  box.full {
+
+box hgroup{
+    border-radius: 10px;
+}
+
+box.full {
     width: 48%;
     float: left;
 }
-    .box hgroup div {
+box hgroup div {
     float: left;
     width: 70%;
 }
 
-    .box hgroup div.actions{
+box hgroup div.actions{
     float: left;
     width: 30%;
 }
@@ -54,7 +67,7 @@
     padding: 5px;
     cursor: default;
     user-select: none;
-    border: 1px solid #c10a27;
+    border: 1px solid #104202;
 }
     navigation ul a{
         font-size: 2em;
@@ -104,7 +117,7 @@ content.col-1-1{
     }
     navigation.col-1-1{
         padding: 0 10px; 
-        border-top: 4px solid #c10a27;
+        border-top: 4px solid var(--green);
         background-color:white;
         margin-bottom: -10px;
     }
@@ -121,5 +134,11 @@ content.col-1-1{
     
     .breadcrumb{
         background-color:lime;
+    }
+
+@media screen and (max-width: 1300px){ 
+    box, box.full, box hgroup div, table.ng-scope {
+        width: 99% !important;
+        float: none;
     }
 }

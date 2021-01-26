@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           购物党去广告 GouWuDangAdClear
+@name           购物党去广告
 @namespace      USO Archive
 @author         木风
 @description    `购物党购物助手广告去除`
-@version        2021114.13.40
+@version        2021126.1.31
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -22,7 +22,7 @@
 }
 
 #mini_price_history_detail {
-	top: 37px;
+	top: 36px;
 	border-top: 1px solid #ddd;
 }
 
@@ -91,9 +91,11 @@
 	width: 100%;
 }
 
-
-.jdm-tbar-tab-qrcode {
-	display: none;
+#gwd-price-protect,
+.gwd-middle-act-bar,
+.jdm-tbar-tab-qrcode,
+.bjgou-subsidy-bar {
+	display: none !important;
 }
 
 #gwd_minibar {
