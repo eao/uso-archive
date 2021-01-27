@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `test`
-@version        2021123.9.59
+@version        2021127.5.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -666,19 +666,17 @@
   
   /*playlist right*/
   /**/     ytd-browse>ytd-two-column-browse-results-renderer{}
-  /**/     ytd-browse>ytd-two-column-browse-results-renderer>#primary>#contents>ytd-item-section-renderer>#contents>ytd-playlist-video-list-renderer>#contents>ytd-playlist-video-renderer{}
-  /*BG*/   ytd-playlist-video-renderer{background:#040!important;}
+  /**/     ytd-browse>ytd-two-column-browse-results-renderer>#primary #contents>ytd-item-section-renderer>#contents>ytd-playlist-video-list-renderer{margin:0!important;}
+  /**/     ytd-browse>ytd-two-column-browse-results-renderer>#primary #contents>ytd-item-section-renderer>#contents>ytd-playlist-video-list-renderer>#contents>ytd-playlist-video-renderer{}
+  /*BG*/   ytd-playlist-video-renderer              {background:#040!important;}
   /*BG*/   ytd-playlist-video-renderer:nth-child(2n){background:#030!important;}
-  /*BG*/   ytd-playlist-video-renderer:hover{background:#000!important;}
-  /*NO.*/  ytd-playlist-video-renderer>#index{font-size:30px!important;line-height:100%!important;color:#0a0!important;padding:0px!important;}
+  /*BG*/   ytd-playlist-video-renderer:hover        {background:#000!important;}
+  /*NO.*/  ytd-playlist-video-renderer #index{font:30px/100% arial!important;color:#0a0!important;padding:0px!important;}
   /**/     ytd-playlist-video-renderer>#content{padding:0px!important;}
-  /**/     ytd-playlist-video-renderer>#content>a{}
-  /*img*/  ytd-playlist-video-renderer>#content>a>#thumbnail{}
-  /**/     ytd-playlist-video-renderer>#content>a>#meta{}
-  /*title*/ytd-playlist-video-renderer>#content>a>#meta>h3{}
-  /*title*/ytd-playlist-video-renderer>#content>a:link>#meta>h3>#video-title{font-size:30px!important;line-height:100%!important;color:#c60!important;max-height:initial!important;margin:0px!important;overflow:visible!important;}
-  /*title*/ytd-playlist-video-renderer>#content>a:visited #video-title{color:#888!important;}
-  /**/     ytd-playlist-video-renderer>#content>a>#meta>.playlist{display:none!important;}
+  /*img*/  ytd-playlist-video-renderer>#content>#thumbnail{}
+  /*title*/ytd-playlist-video-renderer>#content>#meta>h3>a{font:26px/100% arial!important;color:#c60!important;max-height:initial!important;margin:0!important;overflow:visible!important;}
+  /*title*/ytd-playlist-video-renderer>#content>#meta>h3>a:visited{color:#888!important;}
+  /**/     ytd-playlist-video-renderer>#content>#meta>ytd-video-meta-block{display:none!important;}
   /**/     ytd-playlist-video-renderer>#menu{display:none!important;}
 }
 @-moz-document regexp("http(s)?://www\.youtube\.com/"){

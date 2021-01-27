@@ -1,0 +1,55 @@
+/* ==UserStyle==
+@name           ipon.hu 2021 Better Comment Section
+@namespace      USO Archive
+@author         Joe King
+@description    `Makes the comment section take less space and more readable.`
+@version        2021127.10.17
+@license        CC0-1.0
+@preprocessor   uso
+==/UserStyle== */
+@-moz-document domain('ipon.hu') {
+    .forum-list--post__item__text {
+        font-size: 14px;
+        line-height: 21px;
+        font-family: Arial;
+        margin-top: -10px;
+    }
+    .forum-list--post__item__comment-text {
+        font-size: 14px;
+        line-height: 21px;
+        font-family: Arial;
+    }
+    .forum-list--post__item__comment-text-wrapper {
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+    .forum-list--post__item__post-wrapper {
+        padding-top: 10px;
+    }
+    .forum-list--post__item {
+        margin-bottom: 10px;
+    }
+    .article-comments .forum-list--post__item__post-wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 10px;
+    }
+    .forum-list--post__item-actions-wrapper {
+        margin-top: 5px;
+    }
+    .article-comments .forum-list--post__item__comments {
+        padding-left: 120px;
+        padding-right: 30px;
+    }
+    .forum-list--post__item__comment {
+        margin-top: 10px;
+    }
+    .forum-list--post__item__comments {
+        padding-top: 0;
+    }
+    .article-comments {
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+    }
+}

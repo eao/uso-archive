@@ -1,0 +1,39 @@
+{
+  "id": 196651,
+  "info": {
+    "name": "ipon.hu 2021 Better Comment Section",
+    "description": "Makes the comment section take less space and more readable.",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "ipon",
+    "createdAt": "2021-01-27T10:17:34.000Z",
+    "updatedAt": "2021-01-27T10:17:34.000Z",
+    "license": "CC0-1.0",
+    "author": {
+      "id": 1113285,
+      "name": "Joe King"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "196651_after.png",
+      "archived": true
+    }
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document domain('ipon.hu') {\r\n    .forum-list--post__item__text {\r\n        font-size: 14px;\r\n        line-height: 21px;\r\n        font-family: Arial;\r\n        margin-top: -10px;\r\n    }\r\n    .forum-list--post__item__comment-text {\r\n        font-size: 14px;\r\n        line-height: 21px;\r\n        font-family: Arial;\r\n    }\r\n    .forum-list--post__item__comment-text-wrapper {\r\n        margin-top: -10px;\r\n        margin-bottom: 10px;\r\n    }\r\n    .forum-list--post__item__post-wrapper {\r\n        padding-top: 10px;\r\n    }\r\n    .forum-list--post__item {\r\n        margin-bottom: 10px;\r\n    }\r\n    .article-comments .forum-list--post__item__post-wrapper {\r\n        padding-left: 30px;\r\n        padding-right: 30px;\r\n        padding-bottom: 10px;\r\n    }\r\n    .forum-list--post__item-actions-wrapper {\r\n        margin-top: 5px;\r\n    }\r\n    .article-comments .forum-list--post__item__comments {\r\n        padding-left: 120px;\r\n        padding-right: 30px;\r\n    }\r\n    .forum-list--post__item__comment {\r\n        margin-top: 10px;\r\n    }\r\n    .forum-list--post__item__comments {\r\n        padding-top: 0;\r\n    }\r\n    .article-comments {\r\n        margin-left: auto;\r\n        margin-right: auto;\r\n        width: 800px;\r\n    }\r\n}"
+  }
+}
