@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Atx
 @description    `Do you like my style? Please support my work and fund me a coffee (via PayPal to the left of "Install" button). Also share style with your friends. Thank you for being awesome!Darkest Fusion supports almost every Google site. Due to a style size limit Darkest Fusion has been divided into 2 parts. That one contains dark theme for most common used Google sites: <strong>About, Account management, Alerts, Books, Calendar, Contacts, Drive, Finance, Groups, Hangouts, Maps, My Activity, One, Patents, Payments, Passwords, Photos, Scholar, Search, Sheets, Tasks, Translate, Travel and Trends</strong>.<strong><mark>Second style is available >>> <a href="https://userstyles.org/styles/180430/google-darkest-fusion-2-2">there</a> <<<</mark></strong>Keep and Support currently have stock dark themes.Originally based on great work by DeathTBO who abandoned his project so I decided to continue his work by rebuilting everything from scratch. I hope you like my vision for Dark Google :)`
-@version        2021125.23.52
+@version        2021126.20.33
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown google_logo "Google logo color" {
@@ -400,8 +400,8 @@ C5 "Lake" <<<EOT https://i.imgur.com/EMalQHU.jpg EOT;
 * Name:			Google Darkest Fusion
 * Homepage:		https://userstyles.org/styles/167419/
 * Author:		Atx
-* Version:		v6.56
-* Updated: 		26.01.2021
+* Version:		v6.57
+* Updated: 		27.01.2021
 */
 
 activating_style_indicator
@@ -624,7 +624,7 @@ body, div[role="menu"], div[role="tooltip"], .download .section-intro, .a-u-j, .
 	background: #1C1C1C !important;
 }
 
-div[role="option"]:hover, div[role="menuitem"]:hover, .a-s-yd-J > *, .a-b-Ia, div[role="menuitem"]:hover > *, .DINOSe, .a-nEbBXb .a-t-J-ha, .ca-k-ra-B > .h-ra-B > .h-ra:hover, .a-nEbBXb .a-U-ye-ha > .a-U-J, .a-HZnjzd-xb-dc, .a-da-Mf-B .a-nf-Rc-Gd, .l-Mg-wg-o .a-q-zb-j, .g-ia, .a-nEbBXb .lb-k-Gb > button[name="cancel"], .a-Cd-oa, .inviter-recipient-area, .inviter-role-selector, .m5sHL, .slc-input, form[action$="/search"], .a-nb-fi, .Wweoae, .lb-k, .lb-k-x, .s55KNe .jGNTYb, .ndfHFb-c4YZDc-JqEhuc, .s55KNe:not(.KBj6Qd) .GZwC2b .jGNTYb, .aabwZd:not(.KBj6Qd) .GZwC2b, .a-Rc-Fa.a-c-d, .a-b-d.a-b-Wf-Ma-ba-d, .a-l-Sa-Wa-ka, .y-C-ka:hover, .y-C-ka:active, .y-C-ka:focus, .GmCard, #accounts-button, #textarea.body, .boqDrivePeopleWebPersonchipChip, .Y6NKxf, .a-U-ye-ha > .a-U-J, .a-t-J-ha, .l-u-xb, .wMElNe, .A7IrWb {
+div[role="menuitem"]:hover, .a-s-yd-J > *, .a-b-Ia, div[role="menuitem"]:hover > *, .DINOSe, .a-nEbBXb .a-t-J-ha, .ca-k-ra-B > .h-ra-B > .h-ra:hover, .a-nEbBXb .a-U-ye-ha > .a-U-J, .a-HZnjzd-xb-dc, .a-da-Mf-B .a-nf-Rc-Gd, .l-Mg-wg-o .a-q-zb-j, .g-ia, .a-nEbBXb .lb-k-Gb > button[name="cancel"], .a-Cd-oa, .inviter-recipient-area, .inviter-role-selector, .m5sHL, .slc-input, form[action$="/search"], .a-nb-fi, .Wweoae, .lb-k, .lb-k-x, .s55KNe .jGNTYb, .ndfHFb-c4YZDc-JqEhuc, .s55KNe:not(.KBj6Qd) .GZwC2b .jGNTYb, .aabwZd:not(.KBj6Qd) .GZwC2b, .a-Rc-Fa.a-c-d, .a-b-d.a-b-Wf-Ma-ba-d, .a-l-Sa-Wa-ka, .y-C-ka:hover, .y-C-ka:active, .y-C-ka:focus, .GmCard, #accounts-button, #textarea.body, .boqDrivePeopleWebPersonchipChip, .Y6NKxf, .a-U-ye-ha > .a-U-J, .a-t-J-ha, .l-u-xb, .wMElNe, .A7IrWb {
 	background: #2C2C2C !important;
 }
 
@@ -652,7 +652,7 @@ div[role="option"]:hover, div[role="menuitem"]:hover, .a-s-yd-J > *, .a-b-Ia, di
 	background: #4285F4 !important;
 }
 
-.a-dkl3Ye .L202Xe, .a-dkl3Ye .l-u-xb.l-u-o, .a-dkl3Ye .l-u-xb.l-u-Ab, .g-ia, .g-Gh, .a-Cd-oa, .a-D-B-WErN3d-j, .Kk7lMc-Yb-Il-j, .a-Kk7lMc-ae3xF-j, .a-b-Ia-J, .a-d-vc, .RwLyCe, .a-nEbBXb .a-Va-Zb-ut, .ca-k-wb-j, .ca-k-oa, .lb-k-V, .a-jn-Ma-nb-J, .gssb_e, .a-jn-yd, .a-fd-ba-lp, .a-fd-ba-Q, .le-Ba, .a-Cd-Ba-j, .l-Mg-wg-o .a-q-zb-j, .e-dl-k-V, .s55KNe .jGNTYb, .h-w.a-w.a-w-Xi > .a-w-x > div, .ndfHFb-c4YZDc-JqEhuc-oKdM2c, .ndfHFb-c4YZDc-xl07Ob-hgDUwe, .boqDriveElementsCoreWebScrollcontainerSeamCoverTop, .boqDriveElementsCoreWebScrollcontainerSeamCoverBottom, #accounts-button, .boqDrivePeopleWebPersonchipChip, .appsMaterialWizChipAssistivechipHairline, .a-U-xc > .a-da-ji::before, .AVUQbb, .N7iPof, .a-t-D, .a-ub-Gd, .a-ub-ra-B > .h-ra-B, .y-C-Ed-V, .a-t-cb, .a-S-dc, .l-u-xb, .wMElNe, .VLrnY {
+.a-dkl3Ye .L202Xe, .a-dkl3Ye .l-u-xb.l-u-o, .a-dkl3Ye .l-u-xb.l-u-Ab, .g-ia, .g-Gh, .a-Cd-oa, .a-D-B-WErN3d-j, .Kk7lMc-Yb-Il-j, .a-Kk7lMc-ae3xF-j, .a-b-Ia-J, .a-d-vc, .RwLyCe, .a-nEbBXb .a-Va-Zb-ut, .ca-k-wb-j, .ca-k-oa, .lb-k-V, .a-jn-Ma-nb-J, .gssb_e, .a-jn-yd, .a-fd-ba-lp, .a-fd-ba-Q, .le-Ba, .a-Cd-Ba-j, .l-Mg-wg-o .a-q-zb-j, .e-dl-k-V, .s55KNe .jGNTYb, .h-w.a-w.a-w-Xi > .a-w-x > div, .ndfHFb-c4YZDc-JqEhuc-oKdM2c, .ndfHFb-c4YZDc-xl07Ob-hgDUwe, .boqDriveElementsCoreWebScrollcontainerSeamCoverTop, .boqDriveElementsCoreWebScrollcontainerSeamCoverBottom, #accounts-button, .boqDrivePeopleWebPersonchipChip, .appsMaterialWizChipAssistivechipHairline, .a-U-xc > .a-da-ji::before, .AVUQbb, .N7iPof, .a-t-D, .a-ub-Gd, .a-ub-ra-B > .h-ra-B, .y-C-Ed-V, .a-t-cb, .a-S-dc, .l-u-xb, .wMElNe, .VLrnY, [data-tile-entry-id] > div {
 	border-color: #4C4C4C !important;
 }
 
@@ -2731,15 +2731,15 @@ div[aria-label][aria-hidden="false"][img-loaded], a[href^="/?authuser="]:hover, 
 	background-color: #161616 !important;
 }
 
-.gb_K,  .gb_Sb > [class*="gb_"]:active, .gb_Sb > [class*="gb_"]:focus, .gb_zb:hover, .gb_sb.gb_ag, .gb_Ob:focus, .gb_yb:focus, .gb_yb:active, .gb_Bc, .gb_Ub > .gb_Tb:hover, .gb_Db.gb_Db:hover, .gb_Ub:hover, .gb_Eb:hover, .gb_Vb > .gb_Ub:active, .gb_Vb > .gb_Ub:focus:active, .gb_Ab.gb_Ab:hover, .gb_Qb > .gb_Pb:hover, .gb_Qb > .gb_Pb:active, .gb_Qb > .gb_Pb:focus:active, a[class^="gb_"][href^="https://accounts.google.com/AddSession"]:hover, div[aria-hidden] > a[class^="gb_"]:hover {
+a[class^="gb_"][href^="https://accounts.google.com/AddSession"]:hover, [class^="gb_"][role="group"]:hover, [class^="gb_"][role="group"]:focus, [class^="gb_"][role="group"]:active, [class^="gb_"] > a[href*="?authuser="]:hover, [class^="gb_"] > a[href*="?authuser="]:focus, [class^="gb_"] > a[href*="?authuser="]:active {
 	background-color: #1C1C1C !important;
 }
 
-.gb_k:not(.gb_l):hover .gb_t, .gb_ub:focus, .gb_ub:hover:focus, [class^="gb_"] > a[href^="https://policies.google.com/privacy"]:hover, [class^="gb_"] > a[href^="https://policies.google.com/privacy"]:focus, [class*="gb_"] > a[href^="https://myaccount.google.com/termsofservice"]:hover, [class*="gb_"] > a[href^="https://myaccount.google.com/termsofservice"]:focus,  .gb_lb, .vk-btn, .NQV3m, .fFW7wc-ibnC6b-sM5MNb:not(.OWB6Me):hover, .fFW7wc-ibnC6b-sM5MNb:not(.OWB6Me):focus, :not(.gb_va).gb_6c, .LpN4Jc, .IyGLgf, [class^="gb_"] > a[class^="gb_"][href^="https://accounts.google.com/Logout"], [class^="gb_"] > a[class^="gb_"][href^="https://myaccount.google.com/?utm_sourc"] {
+.gb_k:not(.gb_l):hover .gb_t, .gb_ub:focus, .gb_ub:hover:focus, [class^="gb_"] > a[href^="https://policies.google.com/privacy"]:hover, [class^="gb_"] > a[href^="https://policies.google.com/privacy"]:focus, [class*="gb_"] > a[href^="https://myaccount.google.com/termsofservice"]:hover, [class*="gb_"] > a[href^="https://myaccount.google.com/termsofservice"]:focus,  .gb_lb, .vk-btn, .NQV3m, .fFW7wc-ibnC6b-sM5MNb:not(.OWB6Me):hover, .fFW7wc-ibnC6b-sM5MNb:not(.OWB6Me):focus, :not(.gb_va).gb_6c, .LpN4Jc, .IyGLgf, [class^="gb_"] > a[class^="gb_"][href^="https://accounts.google.com/Logout"], [class^="gb_"] > a[class^="gb_"][href^="https://myaccount.google.com/?utm_sourc"], [class^="gb_"] > button[class^="gb_"][role="button"] {
 	background-color: #2C2C2C !important;
 }
 
-.gb_lb:hover, .vk-btn:hover, :not(.gb_va).gb_6c:hover, .gb_Ib:hover, [class^="gb_"] > a[class^="gb_"][href^="https://accounts.google.com/Logout"]:hover, [class^="gb_"] > a[class^="gb_"][href^="https://myaccount.google.com/?utm_source"]:hover {
+.gb_lb:hover, .vk-btn:hover, :not(.gb_va).gb_6c:hover, .gb_Ib:hover, [class^="gb_"] > a[class^="gb_"][href^="https://accounts.google.com/Logout"]:hover, [class^="gb_"] > a[class^="gb_"][href^="https://myaccount.google.com/?utm_source"]:hover, [class^="gb_"] > button[class^="gb_"][role="button"]:hover {
 	background-color: #3C3C3C !important;
 }
 
@@ -2747,7 +2747,7 @@ Cb.gb_Cb:hover {
 	background-color: #4C4C4C !important;
 }
 
-div[aria-label][aria-hidden="false"][img-loaded], div[aria-label][aria-hidden="false"] > div > div > a[href^="https://accounts.google."], .gb_ga, .gb_4b, .gb_2b > .gb_lc, .gb_6b, .gb_ea, .gb_ba, .gb_qb, .gb_z[aria-hidden="false"], .vk-btn:hover, .gb_Db, .gb_A, .gb_F, .gb_Hb, .gb_H, .gb_Lb, .gb_Nb, [class^="gb_"] > [href*="webhp?authuser="], .gb_sb, .gb_K, .gb_J, .gb_Eb, .gb_lb.gb_lb, .gb_zb.gb_zb, .gb_yb, .gb_Ub, .gb_nb, #gsr > div[style*="background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(190, 190, 190); height: auto; overflow: hidden;"], .gb_Bb.gb_Bb, .gb_k:hover a, .gb_8f, .gb_H > span, .gb_Fb, .gb_Hb, .gb_ub, .NQV3m, .gb_Ib, .gb_xb, .gb_Jb.gb_Jb, .fFW7wc-ibnC6b, .k77Iif, .yePe5c, .gb_6c, .gb_7c, .gb_Mb, .gb_Kb, .gb_wb, .Pvpvv, [aria-label] > [class^="gb_"], body[bgcolor="#ffffff"] > .a {
+div[aria-label][aria-hidden="false"][img-loaded], div[aria-label][aria-hidden="false"] > div > div > a[href^="https://accounts.google."], [class^="gb_"] > [href*="webhp?authuser="], #gsr > div[style*="background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: 1px solid rgb(190, 190, 190); height: auto; overflow: hidden;"], .gb_Bb.gb_Bb, .gb_k:hover a, .gb_8f, .gb_H > span, .gb_Fb, .gb_Hb, .gb_ub, .NQV3m, .gb_Ib, .gb_xb, .gb_Jb.gb_Jb, .fFW7wc-ibnC6b, .k77Iif, .yePe5c, .gb_6c, .gb_7c, .gb_Mb, .gb_Kb, .gb_wb, .Pvpvv, [aria-label] > [class^="gb_"], body[bgcolor="#ffffff"] > .a, [class^="gb_"] > button[class^="gb_"][role="button"], [class^="gb_"] > a[class^="gb_"][href^="https://accounts.google.com/Logout"], [class^="gb_"] > a[class^="gb_"][href^="https://myaccount.google.com/?utm_sourc"] {
 	border-color: #4C4C4C !important;
 }
 
@@ -2764,7 +2764,7 @@ div[aria-label][aria-hidden="false"][img-loaded], div[aria-label][aria-hidden="f
 	/*keep old color for "Google Account" button*/;
 }
 
-[class^="gb_"], .fFW7wc-ibnC6b-ssJRIf, .k8Lt0 .YObd6b, .DP1T8c, .CYYjLc, .gb_Ib, .PNgVMb, body[bgcolor="#ffffff"] > div.c, body[bgcolor="#ffffff"] > .a font, .docs-drivelogo-text  {
+[class^="gb_"], .fFW7wc-ibnC6b-ssJRIf, .k8Lt0 .YObd6b, .DP1T8c, .CYYjLc, .gb_Ib, .PNgVMb, body[bgcolor="#ffffff"] > div.c, body[bgcolor="#ffffff"] > .a font, .docs-drivelogo-text, [class^="gb_"] > button[class^="gb_"][role="button"] {
 	color: #FAFAFA !important;
 }
 

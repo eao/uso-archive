@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.5.3
+@name           Compact Tube (White) v1.5.4
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2021114.14.1
+@version        2021126.15.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.3 */
+/* CompactTube (White) v1.5.4 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -17,42 +17,27 @@
         https://greasyfork.org/scripts/415761-hide-ytb-guide-menu   */
 
 
-/*█▀▀▀▀▀▀▀▀▀▀▀▀▀   включение ТЁМНОЙ ТЕМЫ для шапки  /  enabling DARK THEME for the Header   ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-  █                                                                                                                  █
-  █    ENG: To Enable elements, erase the " x " symbols in front of the parameters, to disable them, add " x " again.█ 
-  █    RU: для Включения элементов сотрите символы " x " перед параметрами, для отключения снова допишите " x ".     █
-  █                                                                                                                  █ */
-                                               /* switch ON dark Header / включить тёмную Шапку */
- x  #container.ytd-masthead.ytd-masthead,#logo-icon-container.ytd-topbar-logo-renderer 
- x  #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer
-        {background-color: #202020;          /* switch ON YouTube logo for dark Header / включить Логотип YouTube для тёмной шапки */
-        box-shadow: inset 0px -2px 0px 0px 
-        rgb(0, 0, 0); fill: #fff !important;}
-/* █         PS: after editing, do not forget to save changes / после редактирования не забудь сохранить изменения   █
-   █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ */
+/* ™™™™™™™™™™™™™™™™™™™  ОТКЛЮЧАЕМЫЕ ЭЛЕМЕНТЫ / DISCONNECTABLE ELEMENTS  ™™™™™™™™™™™™™™™™™™™ */
 
-
-/* ■■■■■■■■■■■■■■■■■■■  ОТКЛЮЧАЕМЫЕ ЭЛЕМЕНТЫ / DISCONNECTABLE ELEMENTS  ■■■■■■■■■■■■■■■■■■■ */
-
-/* Watched Videos Mark / Отметка просмотренных Видео (✓) */
+/* Watched Videos Mark / Отметка просмотренных Видео (V) */
         /* ENG: to disable, delete " x " symbol before the line.
-           RU: для отключения, сотрите символ " х " перед строкой. */
+           RU:  для отключения, сотрите символ " х " перед строкой. */
    x  ytd-thumbnail-overlay-resume-playback-renderer:after {display: none !important;}
 
     /* ENG: Remove Filter-Bar of video on the Main page: - "none" - remove: "flow" - show */
-    /* RU: Убрать Фильтр-Бар видео на Главной странице: - "none" - убрать: "flow"- показать */
+    /* RU:  Убрать Фильтр-Бар видео на Главной странице: - "none" - убрать: "flow"- показать */
     ytd-feed-filter-chip-bar-renderer {display: flow;}
 
     /* ENG: Disable Chip(Tags) Filter-Bar on the Video tab: - "none" - turn off: "flow" - do not turn off */
-    /* RU: Отключить Фильтр-Бар Чипов(тегов) на вкладке с Видео:  - "none" - отключить: "flow" - не отключать */
+    /* RU:  Отключить Фильтр-Бар Чипов(тегов) на вкладке с Видео:  - "none" - отключить: "flow" - не отключать */
     #chips.yt-chip-cloud-renderer {display: flow;}
 
 
-/* █► ENG: Use Classic fonts (excludes the problematic "Roboto" font).
+/* ##> ENG: Use Classic fonts (excludes the problematic "Roboto" font).
             to disable, add "x" before the line. to enable, erase "x".
             example: "  x  body * {font-family: Arial, Tahoma, sans-serif! important;} "
-            ──────────────────────────────────────────────────────────────────
-      RU: Задействовать Классические шрифты (исключает проблемный шрифт "Roboto").
+            ——————————————————————————————————————————————————————————————————
+        RU: Задействовать Классические шрифты (исключает проблемный шрифт "Roboto").
             для отключения допишите "x" перед строкой, для включения, сотрите "x". 
             пример: "  x  body * {font-family: Arial, Tahoma, sans-serif! !important;} "    */
 
@@ -61,136 +46,163 @@
                 /* note/заметка: 
                     ENG: Opera uses "Tahoma" as the main font, while Chrome uses "Arial".
                     choose the one you want by disabling the other one. 
-                    ─────────────────────────────────────────────────────────
+                    —————————————————————————————————————————————————————————
                     RU: Опера использует "Tahoma" как основной шрифт, в то время как Хром использует "Arial".
-                    выберите нужный вам, отключив другой.    ◄█ */
+                    выберите нужный вам, отключив другой.    <## */
 
 
-/* убрать отключаемые новости об акциях - типа COVID-19: - "none" - убрать: "flow"- показать */
+/* RU:  убрать отключаемые новости об акциях - типа COVID-19: - "none" - убрать: "flow"- показать */
+/* ENG: remove switchable news about promotions - like COVID-19: - "none" - remove: "flow" - show */
 ytd-compact-promoted-item-renderer[view-style=COMPACT_PROMOTED_ITEM_STYLE_RICH_GRID] #dismissable.ytd-compact-promoted-item-renderer {display: none;}
-/* убрать неотключаемые РАЗЪЯСНЕНИЯ YouTube о COVID-19 и тд. (под Видео): - "none" - убрать: "flow"- показать */
+
+/* RU:  убрать неотключаемые РАЗЪЯСНЕНИЯ YouTube о COVID-19 и тд. (под Видео): - "none" - убрать: "flow"- показать */
+/* ENG: remove non-switchable YouTube EXPLANATIONS about COVID-19, etc. (under Video): - "none" - remove: "flow" - show */
 #clarify-box.ytd-watch-flexy {display: none;}
-/* убрать новости YouTube: - "none" - убрать: "flow"- показать */
+
+/* RU:  убрать новости YouTube: - "none" - убрать: "flow"- показать */
+/* ENG: remove YouTube news: - "none" - remove: "flow" - show */
 ytd-rich-section-renderer  {display: none;}
-/* убрать рекламный баннер YouTube - Премиум, Музыка и тд. : - "none" - убрать: "flow"- показать */ 
+
+/* RU:  убрать рекламный баннер YouTube - Премиум, Музыка и тд. : - "none" - убрать: "flow"- показать */ 
+/* ENG: remove YouTube banner ad - Premium, Music, etc. : - "none" - remove: "flow" - show */
 ytd-banner-promo-renderer {display: none;}
-        /* убрать предложение "YouTube Premium" на вкладке с Видео (N) */
+
+        /* RU:  убрать предложение "YouTube Premium" на вкладке с Видео (N) */
+        /* ENG: remove the "YouTube Premium" sentence on the Video tab (N) */
         ytd-mealbar-promo-renderer {display: none;}
-/* Убрать рекламный баннер предлагающий разные Товары "masthead-ad" : - "none" - убрать: "flow"- показать  */
+
+/* RU:  Убрать рекламный баннер предлагающий разные Товары "masthead-ad" : - "none" - убрать: "flow"- показать  */
+/* ENG: Remove advertising banner offering different Products "masthead-ad": - "none" - remove: "flow" - show */
 #masthead-ad.ytd-rich-grid-renderer {display: none;}
-/* убрать партнёрскую рекламу на вкладке с Видео */
+
+/* RU:  убрать партнёрскую рекламу на вкладке с Видео */
+/* ENG: remove affiliate ads on the Video tab */
 .ytd-companion-slot-renderer {display: none;}
-/* отключить Опросы YouTube : - "none" - отключить: "flow"- не отключать */
+
+/* RU:  отключить Опросы YouTube : - "none" - отключить: "flow"- не отключать */
+/* ENG: disable YouTube Polls: - "none" - disable: "flow" - do not disable */
 ytd-checkbox-survey-renderer[dialog][dialog][dialog] {display: none;}
 
-/* Оповещения Снизу экрана (paper-toast): - ● ОТКЛЮЧЕНИЕ НЕ ЖЕЛАТЕЛЬНО! ● так как пропадут 
-и оповещения о добавлении в плейлисты, НО, если YouTube будет сильно задалбывать, можно отключить. */
-    /*      : none - отключить ;     flow - не отключать    */
+/* RU:  Оповещения Снизу экрана (paper-toast): - •• ОТКЛЮЧЕНИЕ НЕ ЖЕЛАТЕЛЬНО! •• так как пропадут 
+        и оповещения о добавлении в плейлисты, НО, если YouTube будет сильно задалбывать, можно отключить. */
+/* ENG: Alerts Bottom of the screen (paper-toast): - •• TURNING OFF IS NOT DESIRABLE! •• since notifications about 
+        adding to playlists will disappear along with them, BUT, if YouTube is very annoying, you can turn it off. */
+    /* RU:    : none - отключить ;     flow - не отключать    */
+    /* ENG:   : none - disable;        flow - do not disable */
     #toast {display: flow;}
 
-    /* Отключить? ОПЛАЧЕННЫЕ Видеоролики(на правах рекламы) от пользователей и каналов на вкладке с Видео */
-    /* none : - отключить  /  flow : - не отключать  */
+    /* RU:  Отключить? ОПЛАЧЕННЫЕ Видеоролики(на правах рекламы) от пользователей и каналов на вкладке с Видео */
+    /* ENG: Disable? PAID Videos (as advertising) from users and channels on the Video tab * /
+    /* RU:    none : - отключить  /  flow : - не отключать  */
+    /* ENG:   none: - disable     /  flow: - do not disable */
     ytd-compact-promoted-video-renderer {display: none;}
 
-/* убрать бесконечную подгрузку предлагаемых видео на вкладке "c Видео": - "none" - убрать: "flow"- показать */
-ytd-continuation-item-renderer.ytd-watch-next-secondary-results-renderer {display: none;}
-ytd-continuation-item-renderer.ytd-item-section-renderer {display: none;} /* ENG: zone */
-yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;} /* Old ver. */
+/* RU:  убрать бесконечную подгрузку предлагаемых видео на вкладке "c Видео": - "none" - убрать: "flow"- показать */
+/* ENG: remove endless loading of offered videos on the "Video" tab: - "none" - remove: "flow" - show */
+ytd-continuation-item-renderer.ytd-watch-next-secondary-results-renderer {display: none;} /* RU: zone */
+ytd-continuation-item-renderer.ytd-item-section-renderer {display: none;}                 /* ENG: zone */
+yt-next-continuation.ytd-watch-next-secondary-results-renderer {display: none;}           /* Old ver. */
 
-/* убрать ярлык "прокрутите экран вниз" в полноэкранном режиме Видео: - "none" - убрать: "flow"- показать */
+/* RU:  убрать ярлык "прокрутите экран вниз" в полноэкранном режиме Видео: - "none" - убрать: "flow"- показать */
+/* ENG: remove the "scroll down" shortcut in full screen Video mode: - "none" - remove: "flow" - show */
 .ytp-fullerscreen-edu-button.ytp-button {display: none;}
 
     /* Убрать секцию главного Меню "Ваши Фильмы": - "none" - убрать: "flow"- показать */
     ytd-guide-entry-renderer.ytd-guide-collapsible-section-entry-renderer:nth-child(3) {display: flow;}
 
-    /* Отключить рекламный обзор Роликов в плеере "Карусели" в разделах Игры(Gaming), Музыка(Music) и тд.
-    (останутся только Превью картинки)  : - "none" - отключить: "flow"- не отключать */
+    /* RU:  Отключить рекламный обзор Роликов в плеере "Карусели" в разделах Игры(Gaming), Музыка(Music) и тд.
+            (останутся только Превью картинки)  : - "none" - отключить: "flow"- не отключать */
+    /* ENG: Disable advertising review of Videos in the "Carousel" player in the sections (Gaming), (Music), etc.
+            (only the Preview picture will remain): - "none" - disable: "flow" - do not disable */
     ytd-default-promo-panel-renderer-inline-playback-renderer {display: flow;}
 
-    /* блокировать Рекламу в выкладке на Главной Странице (блокирует но оставляет пустое место)
-    : - "none" - убрать: "flow"- показать.  */
+    /* RU:  блокировать Рекламу в выкладке на Главной Странице (блокирует но оставляет пустое место)
+       ENG: block Ads in the layout on the Main Page (blocks but leaves empty space)
+    RU:     "none" - убрать:   "flow"- показать.  
+    ENG:    "none" - remove:   "flow" - show.    */
     .ytd-display-ad-renderer {display: none;}
-                /* либо можно удалять каждый первый результат в Выкладке на Главной Странице 
-                : - "none" - убрать: "flow"- показать.  */
+                /* RU:  либо можно удалять каждый первый результат в Выкладке на Главной Странице
+                   ENG: or you can delete every first result in the Layout on the Main Page
+                RU:     "none" - убрать: "flow"- показать.  
+                ENG:    "none" - remove: "flow" - show.     */
                 ytd-rich-item-renderer.ytd-rich-grid-renderer.style-scope:nth-of-type(1) {display: flow;}
 
-/* Отключить Рекламный оверлэй в плеере на Паузе (N) */
+/* RU:  Отключить Рекламный оверлэй в плеере на Паузе (N) */
+/* ENG: Disable Advertising overlay in the player on Pause (N) */
 .ytp-ad-overlay-container {display: none;}
 
-/* Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.) 
-    "none" - Отключить "flow" - Показать */
+/* RU:  Отключить Предлагаемые Видео в Видеоплеере на Паузе: на СТОРОННИХ сайтах (vk.com и тд.)
+   ENG: Disable Suggested Videos in Video Player on Pause: on THIRD PARTY sites (vk.com, etc.)
+    RU:  "none" - Отключить: "flow" - Показать 
+    ENG: "none" - Disable:   "flow" - Show         */
 .ytp-expand-pause-overlay .ytp-pause-overlay {display: none;}
 
-/* Расширенный Лоток Эмоджи для Удобства выбора Эмоджи в ЛайвЧате */
+/* RU:  Расширенный Лоток Эмоджи для Удобства выбора Эмоджи в ЛайвЧате (для включения, сотрите символ 'x' перед сторокой) */
+/* ENG: Extended Emoji Tray for Convenient Emoji selection in Live Chat (to enable, erase the 'x' symbol before the line) */
 x  yt-emoji-picker-renderer.yt-live-chat-message-input-renderer {
     min-height: 280px; /*def: 130px*/ max-height: 280px; /*def: 220px*/ margin: 16px -24px 0;}
 
-/* отключить окошко ЛайвЧат'а - под Видео: - "none" - отключить: "flow"- показать */
+/* RU:  отключить окошко ЛайвЧат'а - под Видео: - "none" - отключить: "flow"- показать */
+/* ENG: disable the LiveChat window - under Video: - "none" - disable: "flow" - show */
 ytd-live-chat-frame {display: flow;}
 
 
+/* ====================================================================================== */
+/*     ____________________________________________________________
+      |                                                            |
+      |      #### [> Экспериментальные возможности <] ####         | 
+      |      #### [>     Experimental Features     <] ####         | 
+      |   ======================================================   |  
+      |   при их использовании я не даю никаких гарантий что всё   | 
+      |        будет работать правильно и снимаю с себя всю        |        
+      | ответственность, вы испрользуете их на свой страх и риск.  |
+      |                                                            |
+      |     when using them, I do not give any guarantees that     |
+      |     everything will work correctly and I disclaim all      |
+      |      responsibility, you use them at your own peril.       |
+      |____________________________________________________________|     */
 
-/*╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗*/
-/*║      Альтернативный способ затенения заголовка видео в полном экране и функциональных клавиш плеера,              ║*/
-/*║               Предположительно уменьшит нагрузку на СТАРЫХ БРАУЗЕРАХ.                                             ║*/
-
-/* убрать НОВОЕ затенение в видео при паузе : - "none" - Действует: "flow"- НЕ действует (по умолчанию отключено: "flow") */
-.ytp-gradient-top, .ytp-gradient-bottom {display: flow;}
-
-/* АЛЬТЕРНАТИВНОЕ затенение нижних функциональных кнопок и Названия Видео для СТАРЫХ браузеров */
-/* Для активации: после отключения НОВОГО затенения, сотрите два значения "-o-" перед параметрами .ytp-chrome-top, .ytp-chrome-bottom */
-/* по умолчанию ОТКЛЮЧЕНО: (копия строки по умолчанию) -o-.ytp-chrome-top, -o-.ytp-chrome-bottom {background-color: rgba(0, 0, 0, .5) ;} */
--o-.ytp-chrome-top, -o-.ytp-chrome-bottom {background-color: rgba(0, 0, 0, .5);}
-
-/* ниже расположена ПОЛНАЯ версия АЛЬТЕРНАТИВНОГО затенения нижних функциональных кнопок и Названия Видео */
-    /* Верх */
--o-.ytp-chrome-top{background-color: rgba(0, 0, 0, .5) ; margin: 0px -12px 0px -12px; padding: 0px 12px 0px 12px;} /* Верх */
--o-.ytp-title-channel {margin-left: 7px;} /* центровка Заначка Канала при просмотре на Сторонних Сайтах */
-    /* Низ */
--o-.ytp-chrome-bottom {background-color: rgba(0, 0, 0, .5) ; -o-margin: 0px 0px 0px -12px; -o-padding: 0px 12px 0px 12px;} /* Низ */
--o-.ytp-play-button:not(.ytp-play-button-playlist)::before {background-color: rgba(3, 3, 3, .56) ; /* Низ - перед кнопкой Play */
-content: ''; display: block; height: 100%; width: 12px; position: absolute; top: 0; left: -12px;}
--o-.ytp-fullscreen-button::after {background-color: rgba(3, 3, 3, .56) ; /* Низ - после кнопки Full Screen */
-content: ''; display: block; height: 100%; width: 12px; position: absolute; top: 0; left: 100%;}
-
-/*╚═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝*/
-
-/* ══════════════════════════════════════════════════════════════════════════════════════ */
-/*    ┌────────────────────────────────────────────────────────────┐
-      │        ░▒▓█ ► Экспериментальные возможности ◄ █▓▒░         │ 
-      │   ══════════════════════════════════════════════════════   │
-      │   при их использовании я не даю никаких гарантий что всё   │ 
-      │        будет работать правильно и снимаю с себя всю        │        
-      │ ответственность, вы испрользуете их на свой страх и риск.  │
-      └────────────────────────────────────────────────────────────┘     */
-/* :Экспериментальная Возможность: - убрать левую Мини Панель Меню: - "none" - убрать: "flow"- показать */
+/* RU:  :Экспериментальная Возможность: - убрать левую Мини Панель Меню: - "none" - убрать: "flow"- показать */
+/* ENG: :Experimental Feature: - remove the left Mini Guide Menu Bar: - "none" - remove: "flow" - show */
 ytd-mini-guide-renderer.ytd-app {display: flow;}
 
-/* :Экспериментальная Возможность: - отцентровать элементы после того как была убрана левая Мини Панель Меню. 
+/* RU  :Экспериментальная Возможность: - отцентровать элементы после того как была убрана левая Мини Панель Меню. 
    - для того чтобы задействовать эту опцию, сотрите "-o-"  перед "ytd-app". чтобы отключить, снова допишите "-o-" */
+/* ENG: :Experimental Feature: - to center elements after the left Mini Guide Menu Bar has been removed.
+    - to enable this option, erase "-o-" before "ytd-app". to disable, add "-o-" again */
 -o-ytd-app[mini-guide-visible_] ytd-page-manager.ytd-app {margin-left: 0px;} /*def: 72px*/
 
-/* Отступ плашек с Видео от левого Края Плейлиста (внутри плейлиста) */
+/* RU:  Отступ плашек с Видео от левого Края Плейлиста (внутри плейлиста) */
 /* [связано с левой Мини Панелью Меню] */
+/* ENG: Indentation of video blocks from the left edge of the Playlist (inside the playlist) */
+/* [linked to left Mini Guide Menu Bar] */
 ytd-browse[page-subtype=playlist] ytd-two-column-browse-results-renderer.ytd-browse {
-    padding-left: 427px; }  /* 427px по умолчанию, ( поменяйте на 499px если убрана левая Мини Панель Меню:) */
+    padding-left: 427px; }  /* RU:  427px по умолчанию, (поменяйте на 499px если убрана левая Мини Панель Меню:) */
+                            /* ENG: 427px by default, (change it to 499px if left Mini Guide Menu Bar was removed:) */
 
-/* отступ текста в Заголовке уведомляющем о состоянии видео в плейлисте */
+/* RU:  отступ текста в Заголовке уведомляющем о состоянии видео в плейлисте */
 /* [связано с левой Мини Панелью Меню] */
+/* ENG: indent text in the Title notifying about the state of the video in the playlist */
+/* [linked to left Mini Guide Menu Bar] */
 ytd-alert-with-button-renderer[is-displayed] {
-    padding-left: 24px; }    /* 24px по умолчанию, ( поменяйте на 96px если убрана левая Мини Панель Меню:) */
+    padding-left: 24px; }    /* RU:  24px по умолчанию, ( поменяйте на 96px если убрана левая Мини Панель Меню:) */
+                             /* ENG: 24px by default, (change it to 96px if left Mini Guide Menu Bar was removed:) */
 
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
+/* ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ */
 
 
 
-/* ##########################  Количество Видео в Сетке на Главной странице  ############################ */
+/* ##########################  RU:  Количество Видео в Сетке на Главной странице  ############################ */
+/* ####################  ENG: how many Videos in the Grid on the Main Page you will see  ##################### */
 
-/*сетка на 6 миниатюр Главной страницы - modern Chrome*/
+/*RU:  сетка на 6 миниатюр Главной страницы - modern Chrome*/
+/*ENG: grid of 6 thumbnails on the Home page - modern Chrome*/
 [style] * {
 
-    --ytd-rich-grid-items-per-row: 6; /*6; - Количество Видео в ряд на главной странице/Number of Videos in a row on the main page */
+    --ytd-rich-grid-items-per-row: 6; /*6;*/ /* RU:  Количество Видео в ряд на главной странице.
+                                                ENG: Number of Videos in a row on the main page. */
 
     --ytd-rich-grid-posts-per-row: 4; /*4;*/
 
@@ -198,13 +210,16 @@ ytd-alert-with-button-renderer[is-displayed] {
 }
 
 /**************************************************************************************/
-/* !!!!!!!!    размер Миниатюр Видео на главной страницы - дефолт 89%    !!!!!!!!!!!! */
-#contents.ytd-rich-grid-renderer, #grid-title.ytd-rich-grid-renderer {
-    width: 89%;}
+/* !!!!!!!!    RU:  размер Миниатюр Видео на главной страницы - дефолт 89%    !!!!!!!!!!!! */
+/* !!!!!!!!    ENG: Home Page Thumbnail Size - default 89%                    !!!!!!!!!!!! */
+#contents.ytd-rich-grid-renderer, #grid-title.ytd-rich-grid-renderer {width: 89%;}
+
 /**************************************************************************************/
 
-        /*сетка на 6 миниатюр Главной страницы для старых браузеров*/
-/* ## ВАЖНО: при изменении размера окна браузера, обновите страницу чтобы миниатюры ПРАВИЛЬНО просчитались заново ## */
+        /*RU:  сетка на 6 миниатюр Главной страницы для старых браузеров*/
+        /*ENG: grid of 6 thumbnails on the Home page for old browsers* /
+/* ## RU:  ВАЖНО: при изменении размера окна браузера, обновите страницу чтобы миниатюры ПРАВИЛЬНО просчитались заново ## */
+/* ## ENG: IMPORTANT: when you resize the browser window, refresh the page so that the thumbnails are re-calculated CORRECTLY ## */
 .ytd-rich-item-renderer-2 {width: calc( 100% / 6 - 17px - 0.01px );}
 .ytd-rich-item-renderer-3 {width: calc( 100% / 6 - 17px - 0.01px );}
 /* =========== исправление положения иконок в Главном меню для старых браузеров ==============*/
@@ -215,10 +230,14 @@ ytd-alert-with-button-renderer[is-displayed] {
     margin-bottom: 0px;
     margin-left: 12px;}
 /*============================================================================================*/
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
+/* ••••••••••••••••••••••••••••••••• (end of paragraph) •••••••••••••••••••••••••••••••• */
+/* ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: " ПОИСК "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  раздел: " ПОИСК "  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 
 /* белый фон Основного блока и контур */
@@ -291,7 +310,7 @@ ytd-horizontal-card-list-renderer.ytd-item-section-renderer:first-child {
 
 /* border: 1px solid rgb(202, 43, 43); - тестовый бордюр*/
 
-/* Кнопки промотки Элемента: Запросы, похожие на... (Старый вариант, конфликс с разделом "ВИДЕОИГРЫ(Gaming)"" )*/
+/* Кнопки промотки Элемента: Запросы, похожие на... (Старый вариант, конфликс с разделом "ВИДЕОИГРЫ(Gaming)" )*/
 -o-.arrow.ytd-horizontal-card-list-renderer, -o-.ytd-horizontal-card-list-renderer[arrow] {
 cursor: pointer; width: 32px; height: 55px; border-radius: 24px;
 background-color: var(--yt-spec-brand-background-solid); color: var(--yt-spec-icon-inactive);
@@ -394,8 +413,9 @@ flex-basis: 1e-9px; margin-right: 4px; margin-top: -5px;    /*test*/}
 max-height: 2.4rem; /*calc(2 * var(--yt-navbar-title-line-height, 2.4rem));*/
 overflow: hidden; font-size: 1.4rem; font-weight: 400; color: #167AC6;
 line-height: var(--yt-navbar-title-line-height, 2.4rem);}
+[dark] #video-title.ytd-radio-renderer {color: #3ea6ff;}
 
-/* Позицианирование Фона Блока с Фильмом и стилизация блока - в Разделе " Поиск "*/
+/* Позицианирование Фона Блока с Фильмом и стилизация блока - в Разделе " Поиск " */
 ytd-movie-renderer.ytd-item-section-renderer {margin-top: var(--ytd-item-section-item-margin, 6px)/* 16px */;
 padding: 10px 0px 0px 0px; background-color: var(--yt-playlist-background-item, #f7f6f6); box-shadow: inset 0px 0px 1px 0.1px var(--yt-spec-grey-2, #e1e1e1);}
 
@@ -564,10 +584,10 @@ ytd-horizontal-card-list-renderer.ytd-watch-card-section-sequence-renderer {widt
 #buttons.ytd-video-renderer {margin-left: -6.5px;} /* div#buttons.ytd-video-renderer */
 
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: " ВИДЕОИГРЫ(Gaming) "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  раздел: " ВИДЕОИГРЫ(Gaming) "  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /* Кнопки промотки контента в разделах: Gaming*/
 .ytd-horizontal-card-list-renderer[arrow] {
@@ -652,8 +672,8 @@ ytd-game-card-renderer.ytd-horizontal-card-list-renderer {
 /* Вкладка "ещё" в разделе: Gaming - Темы в Сетке Игр */
 ytd-grid-channel-renderer.ytd-grid-renderer {margin-top: 8px;}
 
-/* ╔═════════════ Стилизация Верхнего МЕНЮ информации об игре: ══════════════╗ 
-   ║ Главная, В Эфире, Недавние, Обзор, Летсплеи, Официальные Видео, Об Игре ║ */
+/* ¶™™™™™™™™™™™™™ Стилизация Верхнего МЕНЮ информации об игре: ™™™™™™™™™™™™™™¶ 
+   ¶ Главная, В Эфире, Недавние, Обзор, Летсплеи, Официальные Видео, Об Игре ¶ */
 
     /* Цвет выделителей, Параметры Шрифтов и Отступы в МЕНЮ */
     paper-tabs.ytd-interactive-tabbed-header-renderer {
@@ -682,13 +702,13 @@ ytd-grid-channel-renderer.ytd-grid-renderer {margin-top: 8px;}
     #tabsContainer.paper-tabs {padding: 0px 0px 0px 0px; position: relative; height: 100%; white-space: nowrap; 
     overflow: hidden; overflow-x: hidden; overflow-y: hidden; -o-flex: var(--layout-flex-auto_-_flex)/*держать выключенным*/;}
 /*flex: var(--layout-flex-auto_-_flex - влияет на отображение Меню Настройки страницы Канала в творческой студии*/
+/* ¶                                                                         ¶
+   ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ */
 
-/* ╚═════════════════════════════════════════════════════════════════════════╝ */
-
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: " Фильмы и шоу "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  раздел: " Фильмы и шоу "  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 
 /* Размер Постеров Фильмов в разделе: Фильмы и шоу */
@@ -712,10 +732,10 @@ ytd-grid-movie-renderer {
     box-shadow: 0px 0px 3px 0px rgb(85, 102, 136);}
 
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: " Yutube Music " - youtube.com/music  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  раздел: " Yutube Music " - youtube.com/music  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 
 /* центровка горизонтального списка "Радиостанций"  */
@@ -773,19 +793,19 @@ ytd-compact-playlist-renderer.ytd-item-section-renderer {margin-left: 10px; padd
 /* Контур - Плейлистов "Yutube Music" - на Странице с Видео */
 ytd-compact-playlist-renderer:not([watch-feed-big-thumbs]) ytd-playlist-thumbnail.ytd-compact-playlist-renderer {
 margin-right: 8px; height: 94px; width: 168px; box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
-/* подгонка Обложек Плейлистов "Yutube Music" - на Странице с Видео  (при сильном увеличении значения влияет на прочие изображения) (□) */
+/* подгонка Обложек Плейлистов "Yutube Music" - на Странице с Видео  (при сильном увеличении значения влияет на прочие изображения) ([]) */
 yt-img-shadow.ytd-playlist-custom-thumbnail-renderer.no-transition:after {margin-left: 94.3px /*98.5px*/; content: " ";}
 
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: " YouTube(premium) "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
-/* ╔════════════════════════════════════════════════════════════════════════════════════════════╗
-   ║ ВНИМАНИЕ: для меня работа над данным разделом невозможна по причине его платности,         ║
-   ║ я могу поправить только то что вижу сам, поэтому не гарантирую его правильное отображение. ║ 
-   ╚════════════════════════════════════════════════════════════════════════════════════════════╝ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  раздел: " YouTube(premium)  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
+/* ¶™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™¶ 
+   ¶ ВНИМАНИЕ: для меня работа над данным разделом невозможна по причине его платности,         ¶
+   ¶ я могу поправить только то что вижу сам, поэтому не гарантирую его правильное отображение. ¶ 
+   ¶®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®¶ */
 
 /* компенсация Сдвига рекламных элементов: "YouTube Music Premium" */
 yt-music-pass-small-feature-info-renderer.ytd-grid-renderer  {
@@ -808,10 +828,11 @@ yt-offer-item-renderer {margin-left: 6px; /*test*/
     margin-right: 12px; /*18px*/ vertical-align: top;
     margin-bottom: var(--ytd-margin-3x);}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: " ГЛАВНАЯ "  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  раздел: " ГЛАВНАЯ "  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 
 /* Отключить Аватары каналов на Главной странице v2 - NEW */
@@ -951,11 +972,11 @@ display: flex; flex-direction: row; align-items: center; -o-margin-top: -3px;}
 .grid.ytd-video-meta-block #channel-name.ytd-video-meta-block {-o-margin-left: 5.5px;}
 
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: " в ТРЕНДЕ " ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  раздел: " в ТРЕНДЕ " ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /* #     Блок иконок в Трендах (Музыка) (Видеоигры) (Новости) (Фильмы)       # */
             /*Размер иконок, позиционирование*/
@@ -981,10 +1002,11 @@ margin-top: 7px;}
 #contents.ytd-channel-list-sub-menu-renderer {
     max-width: 360px; /*def: max-width: var(--ytd-channel-list-sub-menu-max-width, 560px)*/
     display: flex; flex-direction: row; justify-content: space-between; margin: 0 auto!important;}
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: ПОДПИСКИ  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  раздел: ПОДПИСКИ  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
         /* УПРАВЛЕНИЕ ПОДПИСКАМИ: - ПОЗИЦИАНИРОВАНИЕ АВАТАРОВ (youtube.com/feed/channels) */
 yt-img-shadow.ytd-channel-renderer {margin-right: -16px;} /* не работает после обновления YouTube */
@@ -1000,9 +1022,9 @@ max-width: 90px; /*ytb-def: 360px*/
 min-width: 90px; /*ytb-def: 240*/
 flex: 1; flex-basis: 1e-9px;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: БИБЛИОТЕКА(История)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  раздел: БИБЛИОТЕКА(История)  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /*Библиотека(История) - Блок Статистики*/
 /* цвет блока, затенение(рамка), позиционирование  ($)*/
@@ -1118,19 +1140,19 @@ line-height: var(--ytd-link-line-height, 1.6rem); font-weight: bold;} /*500;*/
 /* ============================================ */
 
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  изменение ЦВЕТА  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  изменение ЦВЕТА  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /* Контур логотипа YouTube для ШАПКИ в Тёмной Теме */
 -o-.ytd-topbar-logo-renderer:nth-last-child(n+2) 
 {filter: drop-shadow(0px 0px 0.55px rgba(255, 255, 255, .4)) drop-shadow(0px 0px 0.55px rgba(255, 255, 255, .4));}
 
 /* цвет шапки */
-#container.ytd-masthead {background-color: #fff ; -o-border-right: 1px solid var(--yt-spec-10-percent-layer);}
+/* -o-#container.ytd-masthead {background-color: #fff ; -o-border-right: 1px solid var(--yt-spec-10-percent-layer);} */
 
-/* цвет иконки Меню ≡ */
+/* цвет иконки Меню '=' */
 #guide-icon {color: #989898 !important;}
 /* цвет иконки Загрузки видео и Сервисов */
 #button.ytd-topbar-menu-button-renderer {color: #989898 !important;} /*MODERN-Chrome*/
@@ -1142,8 +1164,12 @@ line-height: var(--ytd-link-line-height, 1.6rem); font-weight: bold;} /*500;*/
 /* цвет иконки колокольчика */
 #button.ytd-notification-topbar-button-renderer {color: #808080 !important;}
 
+/* варианты поиска - цвет верхнего контура ".gstl_50.sbdd_a" */
+.sbsb_a {box-shadow: inset 0 2px 0 0 rgb(204, 204, 204)!important;}
+[dark] .sbsb_a {box-shadow: inset 0 2px 0 0 rgb(204, 204, 204) !important;}
+
 /* цвет поля поиска */
-#container.ytd-searchbox {background-color: rgba(255, 255, 255, .06) !important; border-color: rgba(111, 110, 110, .4) !important;
+#container.ytd-searchbox {-o-background-color: rgba(255, 255, 255, .06) !important; border-color: rgba(111, 110, 110, .4) !important;
 -o-border: 1px solid #1c62b9;  box-shadow: inset 0px 0px 0px 0px var(--ytd-searchbox-legacy-border-shadow-color);}
 /* background-color: #fff !important; border-color: #CCCCCC !important; */
 
@@ -1186,7 +1212,7 @@ yt-icon.ytd-searchbox  {color: #919191 !important;}
 /* цвет Иконки Лупы в Минимальном после поиска */
 yt-icon-button#search-button .ytd-masthead {fill: #989898 !important;}
 
-/* цвет Иконки НАЗАД (←) в Минимальном после поиска */
+/* цвет Иконки НАЗАД (<—) в Минимальном после поиска */
 yt-icon-button#back-button .ytd-masthead {fill: #989898 !important;}
 
 
@@ -1202,13 +1228,15 @@ yt-icon-button#back-button .ytd-masthead {fill: #989898 !important;}
 #logo-icon-container > svg > g > g:nth-child(1) > path {fill: #f00 !important;}
 
 /*YouTube - текст в Логотипе   [оригинальные Чёрный: var(--yt-spec-static-brand-black) и Белый: var(--yt-spec-wordmark-text)] #212121 */
-#logo-icon-container.ytd-topbar-logo-renderer #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer {fill: #212121 ; 
-    -o-stroke: #000000a6; stroke-width: 0.2rem; -o-stroke-linecap: square; -o-stroke-linejoin: miter;}
+/* -o-#logo-icon-container.ytd-topbar-logo-renderer #youtube-paths.ytd-topbar-logo-renderer path.ytd-topbar-logo-renderer {fill: #212121 ; 
+    -o-stroke: #000000a6; stroke-width: 0.2rem; -o-stroke-linecap: square; -o-stroke-linejoin: miter;} */
 
 
 
 /* Цвет Кода Страны (com, ru и тд) */
-#country-code.ytd-topbar-logo-renderer {color: #606060 !important; /*var(--yt-spec-text-secondary)*/ margin: 0 0 0 2px; -o-filter: invert(30%);}
+/* -o-#country-code.ytd-topbar-logo-renderer {color: #606060 !important; /*var(--yt-spec-text-secondary)*/
+/*    margin: 0 0 0 2px; -o-filter: invert(30%);} */
+
 /* Цвет Клавиатуры в поле поиска */
 ytd-masthead[dark] .gsst_e {filter: invert(60%);} /*80%*/
 /* Цвет Клавиатуры в поле поиска (сокращённый плеер) */
@@ -1259,8 +1287,10 @@ ytd-badge-supported-renderer.ytd-grid-playlist-renderer {
     -o-box-shadow: inset 0px 0px 0px 1px rgb(255, 0, 0);}
 /* отдельное ПОЗИЦИОНИРОВАНИЕ Бэйджа [Сейчас в прямом Эфире] на ГЛАВНОЙ странице */
 ytd-badge-supported-renderer.ytd-rich-grid-video-renderer {margin: 3px -6px 0 5.5px;}
-/* отдельное ПОЗИЦИОНИРОВАНИЕ Бэйджа [Сейчас в прямом Эфире] на ГЛАВНОЙ странице - NEW */
-ytd-badge-supported-renderer.ytd-rich-grid-media {margin: 2px 4px 1px 5.5px;}
+/* отдельное ПОЗИЦИОНИРОВАНИЕ Бэйджа [Сейчас в прямом Эфире][360°] на ГЛАВНОЙ странице - NEW */
+ytd-badge-supported-renderer.ytd-rich-grid-media {margin: 2px 4px 1px 5.5px;} /* X */
+.video-badge.ytd-rich-grid-media {margin: 3px 0px 1px 5.5px;} /* 4px 4px 0 0; */
+
 /* отдельное ПОЗИЦИОНИРОВАНИЕ Бэйджа [Сейчас в прямом Эфире] в Разделе ПОДПИСКИ (отступ Сверху) */
 #video-badges.ytd-grid-video-renderer {margin-top: 4px; -o-margin-left: 0px;}
 
@@ -1292,22 +1322,28 @@ ytd-toggle-button-renderer.style-compact-gray[is-paper-button] {
 
 /*цвет названия видео - Главная - NEW */
 #video-title.ytd-rich-grid-media {color: #167AC6 !important;}
+[dark] #video-title.ytd-rich-grid-media {color: #3ea6ff !important;}
 /*цвет названия видео - Главная (Старый - перестало работать после обновления Ютуба)*/
 #video-title.ytd-rich-grid-video-renderer {color: #167AC6 !important;}
+[dark] #video-title.ytd-rich-grid-video-renderer {color: #3ea6ff !important;}
 
-/* цвет названия видео - подписки*/
+/* цвет названия видео - подписки и каналы */
 ytd-grid-video-renderer #video-title.yt-simple-endpoint.ytd-grid-video-renderer {color: #167AC6 !important;}
+[dark] ytd-grid-video-renderer #video-title.yt-simple-endpoint.ytd-grid-video-renderer {color: #3ea6ff !important;}
 /* цвет названия видео - в тренде*/
 #video-title.ytd-video-renderer {color: #167AC6 !important;}
+[dark] #video-title.ytd-video-renderer {color: #3ea6ff !important;}
 
 /* цвет названия Плейлистов */
 #video-title.ytd-grid-playlist-renderer {color: #167AC6 !important;}
+[dark] #video-title.ytd-grid-playlist-renderer {color: #3ea6ff !important;}
 
 
 /* ЦВЕТ названия Плейлиста и параметры Шрифта в разделе; ПОИСК */
 #video-title.ytd-playlist-renderer {
     font-size: 1.4rem; /*(--yt-navbar-title-font-size, 1.8rem);*/
     font-weight: 400;color: #167AC6;}
+[dark] #video-title.ytd-playlist-renderer {color: #3ea6ff;}
 
 /* ТОЛЬКО ЦВЕТ названия Плейлиста в разделе; ПОИСК */
 -o-h3.ytd-playlist-renderer {color: #c62525;}
@@ -1339,12 +1375,12 @@ ytd-page-manager > *.ytd-page-manager {background: var(--yt-spec-general-backgro
 ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
 
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ОБЩЕЕ  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  ОБЩЕЕ  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /* Размер Логотипа YouTube */
 /* 100px 30px; - дефолт в Старом Дизайне YouTube */
@@ -1353,9 +1389,10 @@ ytd-app {background: var(--yt-spec-general-background-b , #F1F1F1) !important;}
     height: 30px; /*def: 24*/
     flex: none;}
 
-/*       ╔══╗ 
-   ≡≡≡≡≡ ║▼▲║ Скроллбар для всего Ютуба (Тёмная и Светлая темы) ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
-         ╚══╝                                  */
+/*        __
+         |  |
+   ===== |^v| Скроллбар для всего Ютуба (Тёмная и Светлая темы) ==================================
+         |__|                                  */
 /* Установка Самого Скроллбара */
 ::-webkit-scrollbar {width: 13px;   height: 13px;} /*1.3em*/
 /* Ползунок Скроллбара  */
@@ -1372,7 +1409,8 @@ border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
 /* Подсвечивание Ползука при наведении курсора Мыши */
 ::-webkit-scrollbar-thumb:hover {background: rgba(155, 155, 155, .58);}
 
-/* ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ */
+/* =============================================================================================== */
+/* ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ */
 
 /* отступ сверху Шапки каналов до блоков с Видео (только на каналах) */
 -o-ytd-browse[page-subtype=channels] {padding: 2px 0px 0px 0px;}
@@ -1391,10 +1429,10 @@ border: 1px solid var(--yt-opalescence-grey-opacity-lighten-4);}
                 top: -2px;} /* компенсация сдвига в 2px  от (ytd-browse[page-subtype=channels]) */
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-/* ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓ */
+/* V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V */
 
-/* Отметки просмотренных Видео (✓) */
-    /* обычное состояние (✓) */
+/* Отметки просмотренных Видео (V) */
+    /* обычное состояние (V) */
 ytd-thumbnail-overlay-resume-playback-renderer:after {
     content: url("https://vk.com/emoji/e/e29c94.png");
     filter: contrast(350%);
@@ -1429,7 +1467,7 @@ ytd-thumbnail-overlay-resume-playback-renderer:after {
     transition-timing-function: ease;
     transition-delay: 0s;}
 
-    /* подсвеченное состояние (✓) */
+    /* подсвеченное состояние (V) */
 ytd-thumbnail-overlay-resume-playback-renderer:hover:after {
     content: url("https://vk.com/emoji/e/e29c94.png");
     filter: contrast(350%);
@@ -1454,28 +1492,42 @@ ytd-thumbnail-overlay-resume-playback-renderer:hover:after {
     display: block;
     width: 14%;
     min-width: 16px;}
-/* ✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓✓ */
+/* V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V V */
 
-/* ■■■■■■■ Настройка Меню: - "Сохранить в... " ■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
+/* ™™™™™™™ Настройка Меню: - "Сохранить в... " ™™™™™™™ */
 /* Ширина Скроллбара в Меню: - "Сохранить в... " */
 #playlists.ytd-add-to-playlist-renderer.scrollable::-webkit-scrollbar {width: 14px;}
 /* Ширана Меню: - "Сохранить в... " */
 #playlists.ytd-add-to-playlist-renderer {max-height: 300px; max-width: 600px; width: 286px;}   /* Ширина Меню */
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
-/* ╔══════════════════ Следующее Видео ══════════════════╗ */
+/* #™™™™™™™™™™™™™™™™™™ Следующее Видео ™™™™™™™™™™™™™™™™™™# */
 /*  v1  url(https://i114.fastpic.ru/big/2020/1217/84/1706b50a545778f90a56296079637784.png) 
     v2  url(https://i114.fastpic.ru/big/2020/1229/f6/adc9217d94819e25855a2f9484fc6af6.png)  
                                                                                             */
-/* Пометка "Следующее Видео" (Next ➞) */
+/* Пометка "Следующее Видео" (Next —>) */
     /* arrow-right-f09f949-!!! */
 ytd-compact-autoplay-renderer.ytd-watch-next-secondary-results-renderer:before
 {content: "Next " url(https://i114.fastpic.ru/big/2020/1217/84/1706b50a545778f90a56296079637784.png);
-    -o-filter: invert(0.5) brightness(80%);
+    /* -o-filter: invert(0.5) brightness(80%); */
+    filter: invert(0.0) brightness(80%);
     margin: 0px 0px 0px 0px;
     position: relative; left: 10px; top: -2px;
     display: block;
-    color: #808080; /* var(--yt-spec-text-secondary) */
+    color: rgb(128, 128, 128); /* var(--yt-spec-text-secondary) */
+    font-size: 1.3rem;
+    font-weight: 400 !important;
+    padding: 0px 0px 7px 0px !important;
+    height: 26px;
+    width: auto;}
+[dark] ytd-compact-autoplay-renderer.ytd-watch-next-secondary-results-renderer:before
+{content: "Next " url(https://i114.fastpic.ru/big/2020/1217/84/1706b50a545778f90a56296079637784.png);
+    filter: invert(0.0) brightness(150%);
+    margin: 0px 0px 0px 0px;
+    position: relative; left: 10px; top: -2px;
+    display: block;
+    color: rgb(128, 128, 128); /* var(--yt-spec-text-secondary) */
     font-size: 1.3rem;
     font-weight: 400 !important;
     padding: 0px 0px 7px 0px !important;
@@ -1489,7 +1541,8 @@ ytd-compact-autoplay-renderer.ytd-watch-next-secondary-results-renderer {
     padding-bottom: 7px;
     border-bottom: 1px solid var(--yt-spec-10-percent-layer);
     margin-bottom: 8px;}
-/* ╚═════════════════════════════════════════════════════╝ */
+/* #                                                     # */
+/* ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ */
 
 /* Название Канала под Видео на вкладке с Видео (позицианирование) */
 ytd-channel-name#channel-name.ytd-video-owner-renderer {margin-top: -16px;}
@@ -1622,6 +1675,7 @@ paper-button.ytd-expander {
     font-weight: 500;
     line-height: var(--ytd-link-line-height, 1.6rem);
     letter-spacing: var(--yt-link-letter-spacing, normal);}
+-o-[dark] .more-button.ytd-comment-renderer, -o-.less-button.ytd-comment-renderer {color: #3ea6ff;}
 
 /*раскрывающий элемент "ЕЩЁ" - в Библиотеке (ИСТОРИИ)*/
 #show-more-button.ytd-grid-renderer 
@@ -1692,7 +1746,7 @@ flex-direction: row; align-items: center; display: inline-flex; flex: none; text
 
 /* настройка текста подсвечиваемого Меню - ВОСПРОИЗВЕСТИ ВСЕ для Плейлистов, Миксов, Джемов на страницах с Видео и тд. */
 span.ytd-thumbnail-overlay-hover-text-renderer {font-size: 1.2rem; text-align: center; margin-right: 6px;} /* текст: "ВОСПРОИЗВЕСТИ ВСЕ" */
--o-yt-icon.ytd-thumbnail-overlay-hover-text-renderer {-o-margin-left: -5px; -o-margin-right: 3px; justify-content: center;} /* Иконка: "►" */
+-o-yt-icon.ytd-thumbnail-overlay-hover-text-renderer {-o-margin-left: -5px; -o-margin-right: 3px; justify-content: center;} /* Иконка: "|>" */
 
 /* Исправление бага со смещение Ответов в Колокольчике */
 ytd-comments.ytd-multi-page-menu-renderer {margin: 0px 0px 0px 0px;}
@@ -1713,8 +1767,8 @@ ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-comments]
 ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-comments] 
 {height: 641px; width: 100%;}
 
-/* временный Фикс кнопки Плей (►) для некоторых Браузеров, которую испортил  YouTube */
-/* Temporary Fix for Play button (►) for some Browsers, which broked by YouTube */
+/* временный Фикс кнопки Плей ([>) для некоторых Браузеров, которую испортил  YouTube */
+/* Temporary Fix for Play button ([>) for some Browsers, which broked by YouTube */
 -o-.ytp-chrome-controls .ytp-play-button svg {display: flex; flex-direction: column; width: 100%; height: 2.961em; 
     -o-margin-top: -38px; /* for testing */ -o-background-color: #f73384; /* for testing */} /*другой вариант: width: 3.8em; height: 3em; */
 
@@ -1753,13 +1807,13 @@ ytd-watch-next-secondary-results-renderer:after {
     background: var(--yt-spec-general-background-b);    /* var(--yt-spec-general-background-b) */
     box-shadow: 0px 3px 0px 3px var(--yt-spec-general-background-b); /* test #fb0f0f */
     border-top: 1px solid var(--yt-spec-10-percent-layer);}
-        /*――――――――――――――――――――――――――――――――――――――――――――――――――――――*/
+        /*——————————————————————————————————————————————————————*/
         /* Бордюр под Последним Видео в Колонке Видео Справа на Вкладке с Видео - Зона: ENG */
         /* для " пространство ниже общего Контента - v1 old " 
             отключать в "пространство ниже столбца Видео Справа" border-top: 1px */
         -o-.ytd-watch-next-secondary-results-renderer:last-child:after 
         {border-top: 1px solid var(--yt-spec-10-percent-layer);}
-        /*――――――――――――――――――――――――――――――――――――――――――――――――――――――*/
+        /*——————————————————————————————————————————————————————*/
         /* Бордюр под Последним Видео в Колонке Видео Справа на Вкладке с Видео - Зона: RU */
         /* для " пространство ниже общего Контента - v1 old " 
             отключать в "пространство ниже столбца Видео Справа" border-top: 1px */
@@ -1828,11 +1882,11 @@ ytd-author-comment-badge-renderer {
 /* Решение проблемы с Размером аватарок у Избранных каналов и Размером Превью в Плейлистах - v2 */
 img#img {min-height: 100% ; min-width: 100%; max-height: 100%; max-width: 100%;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ИЗБРАННОЕ КАНАЛА  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  ИЗБРАННОЕ КАНАЛА  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /*избранное канала - Значки*/
 yt-img-shadow.ytd-mini-channel-renderer {margin-right: 6px; height: 34px; width: 34px; 
@@ -1913,15 +1967,16 @@ font-weight: 500; line-height: 1.6rem; /*1.6rem;*/ position: relative; top: -10p
 {padding: 2px 7px 2px 7px; font-size: 1.1rem;/*x-small;*/ text-transform: none;}
 /*вертикальный отступ между блоками Избранных каналов - OLD-Chrome*/
 .ytd-vertical-channel-section-renderer-1 #items.ytd-vertical-channel-section-renderer > *.ytd-vertical-channel-section-renderer:not(:first-child) {padding-top: 6px;}
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ЦЕНТРОВКА ВИДЕО (позиционирование)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  ЦЕНТРОВКА ВИДЕО (позиционирование)  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 
 /* расстояние между Видео на вкладке "Видео" Канала  :   margin-top, right, bottom и left (U,R,D,L,) :*/
-/* ► "margin-right: 3.999px" и "position: relative; left: 0.1px" исправляют баг Ютуба с неравномерностью сетки и как следствие 
-выпадание крайнего Правого Видео и перестроение Сетки из 6 миниатюр в 5 , поэтому НЕДОПУСТИМО использовать "margin-right: 4px" ◄ 
+/* [> "margin-right: 3.999px" и "position: relative; left: 0.1px" исправляют баг Ютуба с неравномерностью сетки и как следствие 
+выпадание крайнего Правого Видео и перестроение Сетки из 6 миниатюр в 5 , поэтому НЕДОПУСТИМО использовать "margin-right: 4px" <]
 Вариант номер 2: "margin-right: 3.5px" и "position: relative; left: 1.5px" - прозапас */
 #items.ytd-grid-renderer > ytd-grid-video-renderer.ytd-grid-renderer {margin-right: 3.999px; margin-bottom: 13px; width: 210px; position: relative; left: 0.1px;}
 
@@ -1940,28 +1995,28 @@ ytd-playlist-thumbnail.ytd-grid-playlist-renderer {width: 202px;/*202px*/ height
 
 /* Центровка ВСЕХ надписей под Плейлистами и под Видео на ГЛАВНОЙ странице  - СМОТРИ в разделе: " ГЛАВНАЯ " !!! */
 
-/*╔════════════════════════════════════ БОКОВЫЕ и НИЖНИЕ ПАНЕЛИ на(в) Плейлистах ════════════════════════════════════╗*/
-/* Фикс пропорций Обложек Плейлистов (□) V */
+/*¶™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ БОКОВЫЕ и НИЖНИЕ ПАНЕЛИ на(в) Плейлистах ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™¶*/
+/* Фикс пропорций Обложек Плейлистов ([]) V */
 #playlist-thumbnails.ytd-playlist-thumbnail * {
     width: auto;
     height: 100% !important;}
 
 
-/* боковые Панели на горизонтальных Превью плейлистов: - УМЕНЬШЕНИЕ к правому краю (очень криво) (□) */
+/* боковые Панели на горизонтальных Превью плейлистов: - УМЕНЬШЕНИЕ к правому краю (очень криво) ([]) */
 ytd-thumbnail-overlay-side-panel-renderer {-o-width: 41.5% ! important; -o-margin-right: 0px; -o-padding: 0px 0px 0px 0px;
 -o-max-height: 100%; -o-font-size: 1.2rem ! important; -o-opacity: 1; max-width: 43.9%;}/*max-width: 41.5%*/
 
-        /* Нижняя Панель под Превью Плейлиста на странице плейлиста (□) */
-/* Значёк "►" - компенсационное опзиционирование после использования: ytd-thumbnail-overlay-side-panel-renderer */
+        /* Нижняя Панель под Превью Плейлиста на странице плейлиста ([]) */
+/* Значёк "|>" - компенсационное опзиционирование после использования: ytd-thumbnail-overlay-side-panel-renderer */
 ytd-thumbnail-overlay-side-panel-renderer[bottom-panel] yt-formatted-string.ytd-thumbnail-overlay-side-panel-renderer {
     -o-margin-right: -44px;
     margin: 0px -44px 0px 0px;}
-        /* Нижняя Панель под Превью Плейлиста на странице плейлиста (□) */
+        /* Нижняя Панель под Превью Плейлиста на странице плейлиста ([]) */
 /* "Текст ВОСПРОИЗВЕСТИ ВСЕ" - компенсационное опзиционирование после использования: ytd-thumbnail-overlay-side-panel-renderer */
 ytd-thumbnail-overlay-side-panel-renderer[bottom-panel] yt-icon.ytd-thumbnail-overlay-side-panel-renderer {
     margin: 0px 8px 0px -50px;}
 
-/* Нижняя Панель под Превью Плейлиста на странице плейлиста: (□)
+/* Нижняя Панель под Превью Плейлиста на странице плейлиста: ([])
 - компенсацию положения панели после использования: ytd-thumbnail-overlay-side-panel-renderer*/
 ytd-thumbnail-overlay-side-panel-renderer[bottom-panel] {
     margin: 0px 0px 0px 0px;    padding: 0px 101px 0px 101px; /*0px 105px 0px 105px*/
@@ -1978,7 +2033,8 @@ ytd-thumbnail-overlay-side-panel-renderer[bottom-panel] {
     font-weight: var(--ytd-subheadline_-_font-weight); line-height: var(--ytd-subheadline_-_line-height);
     letter-spacing: var(--ytd-subheadline_-_letter-spacing); display: flex; /*flex*/
     flex-direction: column; align-items: center; justify-content: center;}
-/*╚════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝*/
+/*¶                                                                                                                    ¶*
+/*™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™*/
 
 
         /* ВИДЕО горизонтальные */
@@ -2077,6 +2133,7 @@ ytd-grid-radio-renderer #video-title.ytd-grid-radio-renderer {
     font-weight: 500;
     line-height: var(--ytd-link-line-height, 1.6rem);
     letter-spacing: var(--yt-link-letter-spacing, normal);}
+[dark] ytd-grid-radio-renderer #video-title.ytd-grid-radio-renderer {color: #3ea6ff;}
 
 /* Позицианирование Ников Исполнителей Джемов и Миксов YouTube в разделе Библиотека(История) в меню "ЕЩЁ" */
 ytd-video-meta-block.ytd-grid-radio-renderer {
@@ -2092,13 +2149,13 @@ ytd-compact-video-renderer:not([watch-feed-big-thumbs]) ytd-thumbnail.ytd-compac
 margin-right: 8px; height: 94px; width: 168px; box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
 
 
-/* ════════════  Оплаченные и Рекламные Видеоролики(на правах рекламы) - Оформление  ═════════════ */
+/* ============  Оплаченные и Рекламные Видеоролики(на правах рекламы) - Оформление  ============= */
 
 /* Оплаченные Видео ролики (центровка) */
 ytd-compact-promoted-video-renderer {padding: 7px 0px 0px 10px; display: flow;}
 /* Оплаченные Видео ролики (контур Превью) */
 ytd-thumbnail.ytd-compact-promoted-video-renderer {box-shadow: 0px 0px 1px 0px rgb(85, 102, 136);}
-/* ═══════════════════════════════════════════════════════════════════════════════════════════════ */
+/* =============================================================================================== */
 
 
 /*===============================================================================*/
@@ -2139,12 +2196,12 @@ position: relative; top: 0px; left: 5px;}
     white-space: normal;
     -o-position: relative; bottom: 0px; left: 5px;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  ЦЕНТРОВКА ЭЛЕМЕНТОВ ОФОРМЛЕНИЯ и ОФОРМЛЕНИЕ ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  ЦЕНТРОВКА ЭЛЕМЕНТОВ ОФОРМЛЕНИЯ и ОФОРМЛЕНИЕ ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
-                    /* КАНАЛ: - ГЛАВНАЯ */
+                    /* ®®®® КАНАЛ: - ГЛАВНАЯ ®®®® */
 
 /*Блок расположения Аватара канала (на странице Каналов)*/
 /* цвет блока, Бордюр, позиционирование */
@@ -2338,9 +2395,9 @@ ytd-search-sub-menu-renderer {
 
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-                    /* КАНАЛ: - ВИДЕО*/
+                    /* ®®®® КАНАЛ: - ВИДЕО ®®®® */
 
 /* (ВИДЕО на КАНАЛЕ) Фильтр Выравнивающий Яркость фонов при их наложении */
 -o-ytd-grid-renderer {-o-background: var(--yt-spec-brand-background-primary); filter: contrast(100.537%);}
@@ -2438,12 +2495,12 @@ yt-sort-filter-sub-menu-renderer {
     letter-spacing: var(--ytd-tab-system_-_letter-spacing);
     text-transform: none;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-                    /* КАНАЛ: - ПЛЕЙЛИСТЫ */
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+                    /* ®®®® КАНАЛ: - ПЛЕЙЛИСТЫ ®®®® */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-                    /* КАНАЛ: - СООБЩЕСТВО */
+                    /* ®®®® КАНАЛ: - СООБЩЕСТВО ®®®® */
 
 /* БЛОК СООБЩЕСТВО - канала ($) */
 ytd-backstage-post-thread-renderer[enable-borders-on-community] {
@@ -2471,9 +2528,9 @@ ytd-backstage-items.ytd-section-list-renderer
 /* Опрос в разделе "Сообщество" отступ от левого края рамки */
 paper-listbox#poll-votes.ytd-backstage-poll-renderer {padding-left: 4px;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-                    /* КАНАЛ: - Обсуждение */
+                    /* ®®®® КАНАЛ: - Обсуждение ®®®® */
 /* использует блок из Комментариев под видео и ничего с этим нельзя поделать */
         /* НАСТРОЙКА КОММЕНТАРИЕВ */
 
@@ -2541,9 +2598,9 @@ color: rgba(118, 118, 118, .5);} /*rgb(178, 178, 178)*/
     position: var(--layout-relative_-_position);
     max-width: 100%;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-                    /* КАНАЛ: - КАНАЛЫ */
+                    /* ®®®® КАНАЛ: - КАНАЛЫ ®®®® */
 
 /* Позицианирование Кнопки [Вы подписаны] на вкладке "Каналы"  Канала v1. */
 #subscribe.ytd-grid-channel-renderer {position: relative; top: 16px;
@@ -2552,9 +2609,9 @@ color: rgba(118, 118, 118, .5);} /*rgb(178, 178, 178)*/
 -o-ytd-subscribe-button-renderer.ytd-grid-channel-renderer {position: relative; top: 16px;
     margin-top: 0px; margin-right: 80.99px;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-                    /* КАНАЛ: - О КАНАЛЕ */
+                    /* ®®®® КАНАЛ: - О КАНАЛЕ ®®®® */
 
 /* Левое поле Информации ($) */
 #left-column.ytd-channel-about-metadata-renderer {
@@ -2592,9 +2649,9 @@ color: rgba(118, 118, 118, .5);} /*rgb(178, 178, 178)*/
         -o-box-shadow: inset 0px 0px 0px 1px var(--ytd-searchbox-legacy-button-border-color);
         margin-top: -17px;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  СТРАНИЦА ВИДЕО  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  СТРАНИЦА ВИДЕО  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /* Блок комментариев на странице с Видео - ПЕРЕДЕЛАТЬ - НЕ ТО, портит Тренды*/
 ytd-comments {
@@ -2872,10 +2929,10 @@ ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer {curso
 ytd-toggle-button-renderer.force-icon-button a.ytd-toggle-button-renderer {padding-right: 4px;} /*var(--yt-button-icon-padding, 8px)*/
 
 
-/*╔═══════════════════════════════════════════════════════════════════╗*/
-/*║           ИНФОРМАЦИЯ о КОНТЕНТЕ использованном в видео            ║*/
-/*║   - настройка, размер Инфы и пренадлежности к игре или фильму -   ║*/
-/*║  для теста использую: https://www.youtube.com/watch?v=0hTqbPtGUgw ║*/
+/*#===================================================================#*/
+/*#           ИНФОРМАЦИЯ о КОНТЕНТЕ использованном в видео            #*/
+/*#   - настройка, размер Инфы и пренадлежности к игре или фильму -   #*/
+/*#  для теста использую: https://www.youtube.com/watch?v=0hTqbPtGUgw #*/
 
 /* Размер и позиционирование блока с инормацией о контенте под Видео (игры, фильмы и тд)*/
 #contents.ytd-rich-metadata-row-renderer *.ytd-rich-metadata-row-renderer {
@@ -2909,9 +2966,9 @@ display: block; width: 40px; height: 40px; margin-top: 15px; margin-right: 16px;
 /* Иконка пренадлежности к разделам Видеоигры и тд. - Размер и позиционирование - сделать Квадратной*/
 ytd-rich-metadata-renderer[component-style=RICH_METADATA_RENDERER_STYLE_TOPIC] ytd-thumbnail.ytd-rich-metadata-renderer 
 {--yt-img-border-radius: 3px;} /*56px*/
-/* ═══════════════════════════════════════════════════════════════════ */
+/* =================================================================== */
 
-/* ©■©■©■© "Данные Лицензирования" под видео (Компания, Исполнитель, Альбом, Лицензиар) ©■©■©■© */
+/* °•°•°•° "Данные Лицензирования" под видео (Компания, Исполнитель, Альбом, Лицензиар) °•°•°•° */
 
     /* Общий размер Шрифта и % видимости */
     /* Отключаю, переделываю Параметры Индивидуально: 
@@ -2954,7 +3011,8 @@ margin-top: -2px;} */
     /* Интервал первого поля заголовка(не нужно) */
 /* -o-ytd-metadata-row-header-renderer.ytd-metadata-row-container-renderer:first-child
 {padding: 10px 0px 0px 0px;}*/
-/*©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©■©*/
+
+/*°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•°•*/
 
 
 /* кнопка [ПОДПИСАТЬСЯ],[ВЫ ПОДПИСАНЫ] под Видео - Позицианирование */
@@ -2982,6 +3040,10 @@ yt-live-chat-item-list-renderer[allow-scroll] #item-scroller.yt-live-chat-item-l
 /* ================= чёрный ПЛЕЙЛИСТ под видео ================= */
 /* Цвет Бэкграунда и Рамки Плейлиста под Видео */
 .playlist-items.ytd-playlist-panel-renderer {
+background-color: #424242; /* var(--yt-spec-general-background-a); , моё: #222222 */
+height: 100%; overflow-y: auto; padding-top: 4px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px;
+box-shadow: 0px 0px 1px 1px rgba(178, 178, 178, .16);}
+[dark] .playlist-items.ytd-playlist-panel-renderer {
 background-color: #424242; /* var(--yt-spec-general-background-a); , моё: #222222 */
 height: 100%; overflow-y: auto; padding-top: 4px; padding-right: 0px; padding-bottom: 5px; padding-left: 0px;
 box-shadow: 0px 0px 1px 1px rgba(178, 178, 178, .27);}
@@ -3036,7 +3098,89 @@ ytd-playlist-panel-video-renderer[selected][watch-color-update_] {background-col
 
 /* Цвет подсвечиваемого мышкой Видео в плейлисте */
 ytd-playlist-panel-video-renderer[watch-color-update_]:hover:not(.dragging) {
-background-color: #262626; box-shadow: inset 0px 0px 25px 5px #525252;} /*#262626, var(--yt-spec-badge-chip-background) */
+    background-color: #262626 !important;
+    box-shadow: inset 1px 0 0 0 #222222, inset -1px 0 0 0 #222222, 
+    inset 2.3px 0 0 0 #3ea6ff, inset -2.3px 0 0 0 #3ea6ff, 
+    inset 0 0 10px 0 #3ea6ff, inset 0 0 0 1px #3ea6ff, inset -1px 0 0 0 #3ea6ff;
+    -o-background-color: #262626; -o-box-shadow: inset 0px 0px 25px 5px #525252;} /*#262626, var(--yt-spec-badge-chip-background) */
+
+/* ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶  цвет Заголовка чёного Плейлиста  ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ */
+
+/* Цвет Бэкграунда Заголовка Плейлиста - в Развёрнутом состоянии */
+ytd-playlist-panel-renderer[collapsible] .header.ytd-playlist-panel-renderer {
+    padding: 12px 6px 0 16px;
+    background-color: #1A1A1A;} /* #202020 */
+[dark] ytd-playlist-panel-renderer[collapsible] .header.ytd-playlist-panel-renderer {
+    padding: 12px 6px 0 16px;
+    background-color: var(--yt-spec-brand-background-primary);}
+
+/* Цвет Бэкграунда Заголовка Плейлиста - в Свёрнутом состоянии */
+ytd-playlist-panel-renderer[collapsible][collapsed] .header.ytd-playlist-panel-renderer {
+    padding-bottom: 12px;
+    background-color: var(--yt-spec-brand-background-primary);}
+
+/* Текст "YouTube" и имя создателя плейлиста - в Развёрнутом Виде */
+ytd-playlist-panel-renderer[collapsible] .publisher.ytd-playlist-panel-renderer {
+    --yt-endpoint-color: #fff; /*#AAAAAA;*/
+    color: #AAAAAA;} /*#AAAAAA;*/
+/* Текст "YouTube" и имя создателя плейлиста - в Свёрнутом Виде */
+ytd-playlist-panel-renderer[collapsible][collapsed] .publisher.ytd-playlist-panel-renderer {
+    --yt-endpoint-color: var(--yt-spec-text-primary);
+    color: var(--yt-spec-text-secondary);}
+
+        /* Переназначение Цветов Заголовка и Автора */
+        yt-formatted-string[has-link-only_]:not([force-default-style]) a.yt-simple-endpoint.yt-formatted-string:visited {
+        color: var(--yt-endpoint-color, var(--yt-spec-text-primary));}
+        /* def. color: var(--yt-endpoint-visited-color, var(--yt-spec-text-primary)) */
+
+/* Текст в Заголовке - в Развёрнутом состоянии */
+ytd-playlist-panel-renderer[collapsible] .title.ytd-playlist-panel-renderer {
+    --yt-endpoint-color: #fff; /* var(--yt-spec-text-primary) */
+    color: #fff;} /* var(--yt-spec-text-primary) */
+/* Текст в Заголовке - в Свёрнутом состоянии */
+ytd-playlist-panel-renderer[collapsible][collapsed] .title.ytd-playlist-panel-renderer {
+    --yt-endpoint-color: var(--yt-spec-text-primary);
+    color: var(--yt-spec-text-primary);}
+
+/* Счётчик Видео - в Развёрнутом состоянии */
+ytd-playlist-panel-renderer[collapsible] .index-message-wrapper.ytd-playlist-panel-renderer {
+    font-size: 1.2rem; font-weight: 400; line-height: 1.5rem; color: #AAAAAA;}
+/* Счётчик Видео - в Свёрнутом состоянии */
+ytd-playlist-panel-renderer[collapsible][collapsed] .index-message-wrapper.ytd-playlist-panel-renderer {
+    font-size: 1.2rem; font-weight: 400; line-height: 1.5rem; color: var(--yt-spec-text-secondary);}
+
+/* состояние Доступа Плейлиста - в Развёрнутом состоянии */
+ytd-playlist-panel-renderer[collapsible] .badge-style-type-medium-grey.ytd-badge-supported-renderer {
+        background: rgba(255, 255, 255, .102); /* var(--yt-spec-badge-chip-background) */
+        color: #AAAAAA;}
+/* состояние Доступа Плейлиста - в Свёрнутом состоянии */
+ytd-playlist-panel-renderer[collapsible][collapsed] .badge-style-type-medium-grey.ytd-badge-supported-renderer {
+        background: var(--yt-spec-badge-chip-background);
+        color: var(--yt-spec-text-secondary);}
+        /* (цвет Иконки) состояние Доступа Плейлиста - в Развёрнутом состоянии */
+        ytd-playlist-panel-renderer[collapsible] yt-icon.ytd-badge-supported-renderer {
+        width: var(--ytd-badge-icon-size, 13px);
+        height: var(--ytd-badge-icon-size, 13px);
+        color: #AAAAAA;}
+        /* (цвет Иконки) состояние Доступа Плейлиста - в Свёрнутом состоянии */
+        ytd-playlist-panel-renderer[collapsible][collapsed] yt-icon.ytd-badge-supported-renderer {
+        width: var(--ytd-badge-icon-size, 13px);
+        height: var(--ytd-badge-icon-size, 13px);
+        color: var(--ytd-badge-icon-color, var(--yt-spec-text-secondary));}
+            /* (Цвет значка) развернуть/свернуть плейлист '^/v' - в Развёрнутом состоянии */
+            ytd-playlist-panel-renderer[collapsible] #expand-button.ytd-playlist-panel-renderer {
+            color: #fff; margin-right: 4px;}
+            /* (Цвет значка) развернуть/свернуть плейлист '^/v' - в Свёрнутом состоянии */
+            ytd-playlist-panel-renderer[collapsible][collapsed] #expand-button.ytd-playlist-panel-renderer {
+            color: var(--yt-spec-icon-active-other); margin-right: 4px;}
+                /* (цвет Разделителя "-" ) - в Развёрнутом состоянии */
+                ytd-playlist-panel-renderer[collapsible] .publisher.ytd-playlist-panel-renderer:not(:empty) + 
+                .index-message-wrapper.ytd-playlist-panel-renderer::before {color: #AAAAAA;}
+                /* (цвет Разделителя "-" ) - в Свёрнутом состоянии */
+                ytd-playlist-panel-renderer[collapsible][collapsed] .publisher.ytd-playlist-panel-renderer:not(:empty) + 
+                .index-message-wrapper.ytd-playlist-panel-renderer::before {color: var(--yt-spec-text-secondary);}
+
+/* ¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶¶ */
 
 /* =============================================================== */
 
@@ -3071,7 +3215,7 @@ ytd-compact-video-renderer.ytd-watch-next-secondary-results-renderer:not([expans
 /* ============================================================== */
 
 
-/* ∞∞∞∞∞∞∞∞∞∞∞∞ Плеер Эпизодов Видео: (Чёрный - оформление) ∞∞∞∞∞∞∞∞∞∞∞∞ */
+/* «»«»«»«»«»«» Плеер Эпизодов Видео: (Чёрный - оформление) «»«»«»«»«»«» */
     /* Тело Плеера Эпизодов */
 #contents.ytd-macro-markers-list-renderer {
     overflow-y: auto; display: flex; flex-direction: column;
@@ -3165,12 +3309,12 @@ h4.ytd-macro-markers-list-item-renderer {
     background-color: var(--yt-spec-brand-background-primary); /*этот цвет: rgba(33, 33, 33, .98) */
     display: flex; align-items: flex-start;}
 
-/* ∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞∞ */
+/* »«»«»«»«»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»«»«»«»«»»«»«»«»«»«»«»«»«»«»«»«»»«»«»«» */
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  раздел: " НАСТРОЙКИ " (youtube.com/account)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  раздел: " НАСТРОЙКИ " (youtube.com/account)  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 /* ============= подгонка текста в разделе: " НАСТРОЙКИ " ============== */
 
 /* отступы перед Шапками зарделов */
@@ -3225,10 +3369,10 @@ padding-left: 6px; padding-right: 6px;
     display: flex;
     flex-direction: column;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  Элементы Управления Видео на Экране  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  Элементы Управления Видео на Экране  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /* Кнопка - Плей(Пауза) */
 .ytp-bezel {
@@ -3264,10 +3408,10 @@ z-index: 18; pointer-events: none;}
 /* Толщина Спиннера (в Полном Экране) */
 .ytp-big-mode .ytp-spinner-circle {border-width: 8px;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  меню (Поделиться)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  меню (Поделиться)  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /* Позицианирование Кнопок Промотки в меню (Поделиться) */
 #scroll-button-forward.yt-third-party-share-target-section-renderer  /* Правая */
@@ -3308,10 +3452,9 @@ z-index: 18; pointer-events: none;}
 .scroll-button-icon.yt-third-party-share-target-section-renderer {
     width: 24px; height: 24px; margin: 0 0px 0 -2.0px;}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  Нотификационное Меню Колокольчика + Выпадающие Меню  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  Нотификационное Меню Колокольчика + Выпадающие Меню  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /* Выпадающие Меню ЛайвЧата : - Внешний Контур и Тень */
 ytd-menu-popup-renderer.yt-live-chat-app 
@@ -3401,13 +3544,13 @@ h2.yt-multi-page-menu-section-renderer {
     flex: var(--layout-flex_-_flex);
     flex-basis: var(--layout-flex_-_flex-basis);}
 
-/* Толщина СкроллБаров  в Меню  Колокольчика*/
+/* Толщина СкроллБаров  в Меню  Колокольчика */
 .menu-container.ytd-multi-page-menu-renderer::-webkit-scrollbar {width: 8px;   height: 8px;} /*Def. 8px*/
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-
-/* ███▓▒░ ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ оформления: при просмотре YouTube не заходя на Аккаунт ░▒▓███ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
+/* ™™™""" ДОПОЛНИТЕЛЬНЫЕ НАСТРОЙКИ оформления: при просмотре YouTube не заходя на Аккаунт """™™™ */
 
 /* Мини Кнопки [Подписаться] под каналами - "не заходя на Аккаунт" (позицианирование) */
 ytd-button-renderer.ytd-grid-channel-renderer.style-compact-gray.size-default {
@@ -3436,13 +3579,14 @@ paper-button#button.ytd-button-renderer.style-destructive.size-default {
 /* Позицианирование Большой кнопки [Подписатьсяв] под Видео - "не заходя на Аккаунт"  */
     ytd-button-renderer.ytd-video-secondary-info-renderer.style-destructive.size-default {margin-right: 4px;}
 
-/* Верхний бордюр для Правого меню (︙) рядом с кнопкой [ВОЙТИ] */
+/* Верхний бордюр для Правого меню (…) рядом с кнопкой [ВОЙТИ] */
 ytd-multi-page-menu-renderer.ytd-popup-container {box-shadow: inset 0px 1px 0px 0px var(--yt-spec-10-percent-layer);}
 
-/* ███▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░ (конец параграфа) ░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓▒░░▒▓███ */
+/* ™™™"""™™™"""™™™"""™™™"""™™™"""™™™""" (конец параграфа) """™™™"""™™™"""™™™"""™™™"""™™™"""™™™ */
+/* ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ */
 
 
-/* ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■  Главное ЛЕВОЕ Меню (Гид Меню)  ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+/* ®®®®®®®®®®®®®®®®®®®®®®®®®®®®®  Главное ЛЕВОЕ Меню (Гид Меню)  ®®®®®®®®®®®®®®®®®®®®®®®®®®®®® */
 
 /* интервалы по высоте между строками - Левого Главного меню (Гид меню) */
 ytd-guide-section-renderer {
@@ -3501,9 +3645,29 @@ ytd-guide-entry-renderer[active] .title.ytd-guide-entry-renderer {
     font-weight: 500;
     line-height: var(--yt-guide-highlight-line-height, 1.8rem);}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
-/* ■■■■■■■■  Исправления Интеграции Чужих дополнений (опционально) ■■■■■■■■ */
+/* Рабочая Шапка - белая */
+ytd-masthead {
+    --paper-input-container-input-align: baseline; 
+    --yt-spec-wordmark-text: rgb(33, 33, 33) !important; /* текст лого */
+    --yt-spec-call-to-action: #065fd4 !important; /* Кнопка войти в акаунт */
+    --yt-spec-text-secondary: #606060 !important; /* Код страны */
+    --yt-searchbox-background: #fff !important; /* серчбокс */
+    display: block; width: 100%; background: rgb(255, 255, 255); /* БГ */
+    box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, .102);} /* rgba(128, 128, 128, .16) */
+
+/* Рабочая Шапка - чёрная */
+[dark] ytd-masthead {
+    --paper-input-container-input-align: baseline; 
+    --yt-spec-wordmark-text: rgb(255, 255, 255) !important; /* текст лого */
+    --yt-spec-call-to-action: #3ea6ff !important; /* Кнопка войти в акаунт */
+    --yt-spec-text-secondary: #aaaaaa !important; /* Код страны */
+    --yt-searchbox-background: #0F0F0F !important; /* серчбокс */
+    display: block; width: 100%; background: rgb(32, 32, 32); /* БГ */
+    box-shadow: inset 0px -2px 0px 0px rgb(0, 0, 0);} /* rgba(0, 0, 0, .16) */
+
+/* ®®®®®®®®  Исправления Интеграции Чужих дополнений (опционально) ®®®®®®®® */
 
 /* (i) По своему усмотрению могу добавлять фиксы позицианирования интенграции чужих элементов,
        которые могут работать параллельно стилю, если это не будет идти ему во вред (i)*/
@@ -3517,11 +3681,11 @@ ytd-guide-entry-renderer[active] .title.ytd-guide-entry-renderer {
 .yt-ppbuttonBlack {position: relative; top: 16px; left: 79px !important;    /* Тёмные Кнопки */
     box-shadow: inset 0 0 5px 1px #191919, 0 0 2px 0 var(--ytd-searchbox-legacy-button-border-color);}
 
-/* ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ (конец параграфа) ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ ◘ */
+/* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
 
-/* ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄ */
-/* █  уменьшить свободное прострранство между ГОРИЗОНТАЛЬНЫМИ блоками с Видео на странице Канала  █ */
+/* #™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™# */
+/* #  уменьшить свободное прострранство между ГОРИЗОНТАЛЬНЫМИ блоками с Видео на странице Канала  # */
 #items.yt-horizontal-list-renderer {margin-bottom: 14px;} /*Низ самого верхнего блока - Низ*/
 .grid-subheader.ytd-shelf-renderer {margin-top: 14px; margin-bottom: 0px;} /*Название блока - Верх*/
 #subtitle.ytd-shelf-renderer {margin-top: 6px;} /*Описание Блока - Верх*/
@@ -3604,17 +3768,18 @@ flex: none; width: 246px; height: 138px; box-shadow: 0px 0px 1px 0px rgb(85, 102
     margin-right: 11px;} /*отступ текста от правого края превью*/
 
 /*******************/
-/* ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ (конец последнего параграфа) ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ ■ */
+
+/* #=®=#=®=#=®=#=®=#=®=#=®=#=®  (конец последнего параграфа)  ®=#=®=#=®=#=®=#=®=#=®=#=®=# */
 
 
-/*╔═══════════════════════════════════════════════════════════════════════════════════════════════╗*/
-/*║ █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█ ║*/
-/*║ █                        Граница основной части кода от  "Funny"                            █ ║*/
-/*║ █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ ║*/
-/*╚═══════════════════════════════════════════════════════════════════════════════════════════════╝*/
+/*®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®*/
+/*# #™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™# #*/
+/*# #                        Граница основной части кода от  "Funny"                            # #*/
+/*# ™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™ #*/
+/*®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®*/
 
 
-/*˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅ перенесено сверху ˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅˅*/
+/*vvvvvvvvvvvvvvvvvvvvvvvvvvvvv перенесено сверху vvvvvvvvvvvvvvvvvvvvvvvvvvvvv*/
                                 /* видимо что-то связанное с Сеткой главной страницы */
 #rich-shelf-header.ytd-rich-shelf-renderer {
     margin: 10px 0;}
@@ -3628,7 +3793,7 @@ yt-chip-cloud-chip-renderer {
     margin-left: 0;
     font-size: 10pt;}
 
-/*˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄ перенесено сверху ˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄˄*/
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ перенесено сверху ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
 
 /*Высота шапки Ютуба : - думаю отключить */
 /*создаёт дополнительную пустую строку под шапкой после выхода из полноэкранного просмотра Видео */
@@ -3747,6 +3912,32 @@ ytd-inline-form-renderer[style=INLINE_FORM_STYLE_TITLE] #text-displayed.ytd-inli
 /*расположение Поля Поиска по вертикали (вправо - влево)*/
 #center.ytd-masthead {
     margin-right: auto; /*margin-right: auto*/
-    margin-left: -5px; /*margin-left: -5px*/
-}
+    margin-left: -5px;} /*margin-left: -5px*/
+
+
+/*|™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™|*/
+/*|      Альтернативный способ затенения заголовка видео в полном экране и функциональных клавиш плеера,              |*/
+/*|              Предположительно уменьшит нагрузку на СТАРЫХ БРАУЗЕРАХ.                                              |*/
+
+/* убрать НОВОЕ затенение в видео при паузе : - "none" - Действует: "flow"- НЕ действует (по умолчанию отключено: "flow") */
+.ytp-gradient-top, .ytp-gradient-bottom {display: flow;}
+
+/* АЛЬТЕРНАТИВНОЕ затенение нижних функциональных кнопок и Названия Видео для СТАРЫХ браузеров */
+/* Для активации: после отключения НОВОГО затенения, сотрите два значения "-o-" перед параметрами .ytp-chrome-top, .ytp-chrome-bottom */
+/* по умолчанию ОТКЛЮЧЕНО: (копия строки по умолчанию) -o-.ytp-chrome-top, -o-.ytp-chrome-bottom {background-color: rgba(0, 0, 0, .5) ;} */
+-o-.ytp-chrome-top, -o-.ytp-chrome-bottom {background-color: rgba(0, 0, 0, .5);}
+
+/* ниже расположена ПОЛНАЯ версия АЛЬТЕРНАТИВНОГО затенения нижних функциональных кнопок и Названия Видео */
+    /* Верх */
+-o-.ytp-chrome-top{background-color: rgba(0, 0, 0, .5) ; margin: 0px -12px 0px -12px; padding: 0px 12px 0px 12px;} /* Верх */
+-o-.ytp-title-channel {margin-left: 7px;} /* центровка Заначка Канала при просмотре на Сторонних Сайтах */
+    /* Низ */
+-o-.ytp-chrome-bottom {background-color: rgba(0, 0, 0, .5) ; -o-margin: 0px 0px 0px -12px; -o-padding: 0px 12px 0px 12px;} /* Низ */
+-o-.ytp-play-button:not(.ytp-play-button-playlist)::before {background-color: rgba(3, 3, 3, .56) ; /* Низ - перед кнопкой Play */
+content: ''; display: block; height: 100%; width: 12px; position: absolute; top: 0; left: -12px;}
+-o-.ytp-fullscreen-button::after {background-color: rgba(3, 3, 3, .56) ; /* Низ - после кнопки Full Screen */
+content: ''; display: block; height: 100%; width: 12px; position: absolute; top: 0; left: 100%;}
+/*|                                                                                                                    |*/
+/*™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™*/
+
 }
