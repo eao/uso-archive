@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           haikyuu roblox theme
+@name           haikyuu tetsuro kuroo roblox theme
 @namespace      USO Archive
 @author         Grximmy
-@description    `haikyuu roblox theme`
-@version        2020123.5.8
+@description    `haikyuu tetsuro kuroo roblox theme`
+@version        2021128.4.27
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -108,7 +108,7 @@
     width: 100% !important;
     height: 100% !important;
     position: fixed !important;
-    background-image: url(https://i.pinimg.com/564x/da/ac/42/daac428b89ef8b69133e07c135e1e26e.jpg) !important;
+    background-image: url(https://wallpapercave.com/wp/wp1818286.jpg) !important;
       /* Background */
     background-size: cover !important;
     background-attachment: fixed !important;
@@ -139,7 +139,7 @@
 
   #navigation
   {
-    background-color: #fff;
+    background-color: #000;
   }
 
   .notification-red

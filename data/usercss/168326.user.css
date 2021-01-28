@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Chad ROSSOUW
 @description    `Minimalist gmail style which makes the most of your preset background. This version is for those who's backgrounds contain dark colours.`
-@version        2019111.4.40
+@version        2021128.1.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("mail.google.com") {
-	.yO {
+.yO {
         background: rgb(255, 255, 255);
         background: rgba(255, 255, 255, 0);
         color: #FFF;
@@ -27,6 +27,7 @@
         border: 0.5px solid #FFF;
         border-bottom: none;
     }
+
     .x7 {
         background: rgb(255, 255, 224);
         background: rgba(255, 255, 224, 0.1);
@@ -105,4 +106,8 @@
    .ibp-main-new-ui {
      display: none!important;
    }
+
+.xY>.T-Jo-Jp {
+    background-image: url(https://www.gstatic.com/images/icons/material/system/2x/check_box_white_20dp.png);
+}
 }

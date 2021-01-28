@@ -3,15 +3,14 @@
 @namespace      USO Archive
 @author         doublehelix
 @description    `Colorizes the Commonwealth Bank NetBank transaction amounts and balance views with simple background and text colors for easy distinction between CR/DR.`
-@version        201615.3.20
-@license        NO-REDISTRIBUTION
+@version        2021128.5.30
+@license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @namespace url(http://www.w3.org/1999/xhtml);
 
-@-moz-document regexp("^https://www[1-3]?\.my\.commbank\.com\.au\/netbank\/.*$")
+@-moz-document regexp("^https://(www[1-3]?\.)?(my\.)?commbank\.com\.au(\/retail)?\/netbank\/.*$")
 {
-
     #BodyContainer { background: none; }
 
     #futureTransactionsGrid table.FieldPanel td.CurrencyField span,
@@ -45,5 +44,21 @@
         background: #fee;
         color: #c00;
         border: 1px solid #e66;
+    }
+
+    .transaction-item__amounts-credit__text,
+    .transaction-item__amounts-debit .honeycomb-currency {
+        width: 100%;
+        display: inline-block;
+        padding: 0.6em;
+        border-radius: 4px;
+    }
+    .transaction-item__amounts-credit__text {
+        background-color: #ecfeec;
+        color: #1a7d1a;
+    }
+    .transaction-item__amounts-debit .honeycomb-currency {
+        background-color: #feecec;
+        color :#7d1a1a;
     }
 }

@@ -11,11 +11,11 @@
     "about": null,
     "license": "ccbyncsa"
   },
-  "updated": "2019-11-01T02:40:07.000Z",
-  "weekly_install_count": 135,
-  "total_install_count": 11601,
-  "rating": 1,
-  "after_screenshot_name": "https://userstyles.org/style_screenshots/168326_after.jpeg?r=1602144809",
+  "updated": "2021-01-28T01:45:50.000Z",
+  "weekly_install_count": 81,
+  "total_install_count": 13369,
+  "rating": 1.7,
+  "after_screenshot_name": "https://userstyles.org/style_screenshots/168326_after.jpeg?r=1611821354",
   "obsoleting_style_id": null,
   "obsoleting_style_name": null,
   "obsolete": 0,
@@ -27,9 +27,9 @@
   "category": "site",
   "raw_subcategory": "google",
   "subcategory": "google",
-  "additional_info": null,
+  "additional_info": "V1.1 - Changed checkbox for selected emails to improve visual clarity.",
   "style_tags": [],
-  "css": "@-moz-document domain(\"mail.google.com\") {\r\n\t.yO {\r\n        background: rgb(255, 255, 255);\r\n        background: rgba(255, 255, 255, 0);\r\n        color: #FFF;\r\n        border: 0.5px solid #FFF;\r\n        border-bottom: none;\r\n    }\r\n\r\n\ttr:last-child {\r\n\t \tborder-bottom: 0.5px solid #FFF;   \r\n\t}\r\n\r\n    .zE {\r\n        background: rgb(255, 255, 255);\r\n        background: rgba(255, 255, 255, 0.1);\r\n        color: #FFF;\r\n        border: 0.5px solid #FFF;\r\n        border-bottom: none;\r\n    }\r\n    .x7 {\r\n        background: rgb(255, 255, 224);\r\n        background: rgba(255, 255, 224, 0.1);\r\n    }\r\n    .z0>.L3 {\r\n        background: rgb(255, 255, 224);\r\n        background: rgba(255, 255, 224, 0.1);\r\n        border: 1px solid #FFF;\r\n        color: #FFF;\r\n    }\r\n    .z0>.L3:hover {\r\n        background: rgb(255, 255, 224);\r\n        background: rgba(255, 255, 224, 0.2);\r\n    }\r\n    .gb_Ra {\r\n        background: rgb(255, 255, 224);\r\n        background: rgba(255, 255, 224, 0.1);\r\n        border: 1px solid #FFF;\r\n    }\r\n    .gb_Ra:hover {\r\n        background: rgb(255, 255, 224);\r\n        background: rgba(255, 255, 224, 0.2);\r\n    }\r\n\r\n    .gb_Sa {\r\n        background: rgb(255, 255, 225);\r\n        background: rgba(255,255,255,0.2);   \r\n    }\r\n\r\n    .gb_fa {\r\n        background-color: rgb(255, 255, 255);\r\n        background-color: rgba(255, 255, 255, 0);\r\n    }\r\n  \r\n    .gb_ja {\r\n        background-color: rgb(255, 255, 255);\r\n        background-color: rgba(255, 255, 255, 0);\r\n    }\r\n  \t.gb_ja:focus {\r\n        background-color: rgb(255, 255, 255);\r\n        background-color: rgba(255, 255, 255, 0);\r\n    }\r\n\r\n    .qd {\r\n        background: rgb(255, 255, 225);\r\n        background: rgba(255,255,255,0.2);  \r\n        border: 1px solid white;\r\n        color: white;\r\n    }\r\n\r\n    .y2 {\r\n       color: #AAA;\r\n    }\r\n\r\n\t.aKh {\r\n        background-color: rgb(255, 255, 225);\r\n        background-color: rgba(255,255,255,0);     \r\n\t\tborder: 1px solid white;\r\n\t\tborder-bottom: none;\r\n        border-left: none;\r\n\t}\r\n\r\n\t.aKk {\r\n       \tbackground-color: rgb(255, 255, 225);\r\n        background-color: rgba(255,255,255,0);                                  \r\n\t}\r\n\r\n\t.aRz.J-KU {\r\n        border-left: 0.5px solid white;                                   \r\n\t}\r\n\r\n\t.aKx>.aKz {\r\n       color: #FFF;                                     \r\n\t}\r\n  \r\n   .ibp-main-new-ui {\r\n     display: none!important;\r\n   }\r\n}",
+  "css": "@-moz-document domain(\"mail.google.com\") {\r\n.yO {\r\n        background: rgb(255, 255, 255);\r\n        background: rgba(255, 255, 255, 0);\r\n        color: #FFF;\r\n        border: 0.5px solid #FFF;\r\n        border-bottom: none;\r\n    }\r\n\r\n\ttr:last-child {\r\n\t \tborder-bottom: 0.5px solid #FFF;   \r\n\t}\r\n\r\n    .zE {\r\n        background: rgb(255, 255, 255);\r\n        background: rgba(255, 255, 255, 0.1);\r\n        color: #FFF;\r\n        border: 0.5px solid #FFF;\r\n        border-bottom: none;\r\n    }\r\n\r\n    .x7 {\r\n        background: rgb(255, 255, 224);\r\n        background: rgba(255, 255, 224, 0.1);\r\n    }\r\n    .z0>.L3 {\r\n        background: rgb(255, 255, 224);\r\n        background: rgba(255, 255, 224, 0.1);\r\n        border: 1px solid #FFF;\r\n        color: #FFF;\r\n    }\r\n    .z0>.L3:hover {\r\n        background: rgb(255, 255, 224);\r\n        background: rgba(255, 255, 224, 0.2);\r\n    }\r\n    .gb_Ra {\r\n        background: rgb(255, 255, 224);\r\n        background: rgba(255, 255, 224, 0.1);\r\n        border: 1px solid #FFF;\r\n    }\r\n    .gb_Ra:hover {\r\n        background: rgb(255, 255, 224);\r\n        background: rgba(255, 255, 224, 0.2);\r\n    }\r\n\r\n    .gb_Sa {\r\n        background: rgb(255, 255, 225);\r\n        background: rgba(255,255,255,0.2);   \r\n    }\r\n\r\n    .gb_fa {\r\n        background-color: rgb(255, 255, 255);\r\n        background-color: rgba(255, 255, 255, 0);\r\n    }\r\n  \r\n    .gb_ja {\r\n        background-color: rgb(255, 255, 255);\r\n        background-color: rgba(255, 255, 255, 0);\r\n    }\r\n  \t.gb_ja:focus {\r\n        background-color: rgb(255, 255, 255);\r\n        background-color: rgba(255, 255, 255, 0);\r\n    }\r\n\r\n    .qd {\r\n        background: rgb(255, 255, 225);\r\n        background: rgba(255,255,255,0.2);  \r\n        border: 1px solid white;\r\n        color: white;\r\n    }\r\n\r\n    .y2 {\r\n       color: #AAA;\r\n    }\r\n\r\n\t.aKh {\r\n        background-color: rgb(255, 255, 225);\r\n        background-color: rgba(255,255,255,0);     \r\n\t\tborder: 1px solid white;\r\n\t\tborder-bottom: none;\r\n        border-left: none;\r\n\t}\r\n\r\n\t.aKk {\r\n       \tbackground-color: rgb(255, 255, 225);\r\n        background-color: rgba(255,255,255,0);                                  \r\n\t}\r\n\r\n\t.aRz.J-KU {\r\n        border-left: 0.5px solid white;                                   \r\n\t}\r\n\r\n\t.aKx>.aKz {\r\n       color: #FFF;                                     \r\n\t}\r\n  \r\n   .ibp-main-new-ui {\r\n     display: none!important;\r\n   }\r\n\r\n.xY>.T-Jo-Jp {\r\n    background-image: url(https://www.gstatic.com/images/icons/material/system/2x/check_box_white_20dp.png);\r\n}\r\n}",
   "discussions": [
     {
       "id": 83812,
@@ -70,9 +70,17 @@
       "created": "2020-08-26T12:27:11.000Z",
       "author_name": "Fanky Fonk",
       "author_id": 1015919
+    },
+    {
+      "id": 89930,
+      "name": "AMAZING!!!!!!",
+      "rating": 3,
+      "created": "2020-11-23T06:54:13.000Z",
+      "author_name": "Zihna Esso",
+      "author_id": 1074142
     }
   ],
-  "discussionsCount": 5,
+  "discussionsCount": 6,
   "commentsCount": 2,
   "userjs_url": "/styles/userjs/168326/clear-gmail-dark-background.user.js",
   "style_settings": []
