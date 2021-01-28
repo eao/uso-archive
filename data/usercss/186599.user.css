@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         chen_zhe_
 @description    `洛谷圆角化 by _•́へ•́╬_ uid=90693`
-@version        20201114.14.20
+@version        2021128.0.47
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -52,7 +52,7 @@ div[data-v-04eab0ae]
 {
 	margin-bottom: 4px;
 }
-button[data-v-86f36770],button[data-v-370e72e2],button[data-v-04eab0ae]
+button[data-v-86f36770],button[data-v-370e72e2],button[data-v-04eab0ae],button[data-v-66021821]
 {
 	border-radius: 25px;
 }

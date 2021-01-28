@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         daniel1919
 @description    `Black theme for Fitbit studio`
-@version        2021125.17.29
+@version        2021127.20.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -23,7 +23,12 @@
 }
 
 .pt-toast {
-    background-color: #252526;
+    background-color: #1e1e1e;
+}
+
+.pt-toast:not([class*="pt-intent-"]) {
+    border:1px solid #6495ed;
+    box-shadow:  0 0 12px 1px #6495ed;
 }
 
 .pt-toast:not([class*="pt-intent-"]) .pt-icon-standard {
@@ -31,8 +36,14 @@
 }
 
 .pt-dialog {
-    background: #252526;
+    background: #1e1e1e;
     color: #ccc;
+    border:1px solid #6495ed;
+    box-shadow:  0 0 12px 1px #6495ed;
+}
+
+.pt-dialog .pt-non-ideal-state {
+    background: #1e1e1e;
 }
 
 .pt-dialog .pt-dialog-body ul {
@@ -51,9 +62,7 @@
     transition:  all 0.3s ease;
     color: #737373;
 }
-.pt-dialog .pt-non-ideal-state {
-    background:#252526;
-}
+
 
 .pt-button.pt-intent-primary:not(.pt-disabled):not(.logout-button), 
 main a.pt-button.pt-large[class*="pt-intent-"],
@@ -111,7 +120,7 @@ a.pt-button.pt-minimal.pt-intent-primary.logout-button:hover {
 }
 
 .pt-navbar {
-    background-color:#1E1E1E !important;
+    background-color:#1a1a1a !important;
 }
 
 .fileBrowserPane {
@@ -343,7 +352,7 @@ div.project-list-item a.pt-menu-item:hover {
 .project-configuration-checkbox-group .pt-card.pt-interactive,
 .project-configuration-supported-locales .pt-card,
 .project-configuration-app-cluster-storage .pt-card{
-    background:#2b2a2a;
+    background:#1a1a1a;
 }
 
 .project-configuration-editor.pt-dark select:focus {
@@ -351,7 +360,7 @@ div.project-list-item a.pt-menu-item:hover {
 }
 
 .project-configuration-editor.pt-dark input[type="text"] {
-    background:#1E1E1E;
+    background:#1a1a1a;
 }
 
 .CodeMirror {

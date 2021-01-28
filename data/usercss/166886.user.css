@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         hiroinoue
 @description    `夜間の閲覧時に目に優しい、ダークテーマです。背景をダークグレー、文字をライトグレーにしています。広告部分などの色設定はいじっていないため、『Yahooニュース サイドペイン非表示』と共に使うことを前提としています。`
-@version        2021121.7.53
+@version        2021128.0.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -187,5 +187,14 @@ domain('headlines.yahoo.co.jp') {
         color: #eef !important;
     }
 
+
+    /* 検索ボックス */
+    form.searchNewsrm,
+    form.searchNewsrm div div div input
+    {
+        background-color: #444444 !important;
+        color: #eeeeee !important;
+    
+    }
 
 }

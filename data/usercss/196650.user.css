@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ult!mate
 @description    `A Modified version of Waifu_Warrior 's SatchelOne (Image/Colour Swap) Zero Two Theme.Not sure if the customize settings work yet you'll just have to edit the code`
-@version        2021127.10.2
+@version        2021127.14.14
 @license        CC0-1.0
 @preprocessor   uso
 @advanced color accent-colour "Accent colour" #E3BF78
@@ -15,9 +15,8 @@
 @advanced text -img-thumbnail-custom "Background Image (Custom)" "https://example.com/image.png"
 
 ==/UserStyle== */
-@namespace url(http://www.w3.org/1999/xhtml);
-@-moz-document domain("www.satchelone.com"), domain("www.showmyhomework.co.uk")
-{
+@-moz-document domain("www.satchelone.com"), domain("www.showmyhomework.co.uk") {
+/*@namespace url(http://www.w3.org/1999/xhtml);*/
 /*
     Thanks for looking at my satchel one CSS theme, variables at the top are for easy accent colour change, the image URL is commented so you can easily find it, I hope you have fun. This is very hacked together but,
     I may eventually get round to making it clean and to removing redundant lines and classes, there are probably quite a few in there.
@@ -115,7 +114,8 @@ div.row div div div div div div h4 a:hover {
 }
 div.row div div div div {
     /*#82828247 base background color*/
-    background-color: var(--tShade-5);
+    /*background-color: var(--tShade-5);*/
+    background-colour: transparent;
     border-radius: 15px;
 }
 div.row div div div div div {
@@ -134,6 +134,7 @@ div.well.homework-information {
 }
 .sidebar-menu__item {
     background-color: var(--tShade-3);
+    border-radius: 10px;
 }
 div.satchel-menu {
     background-color: var(--tShade-3);
@@ -249,10 +250,6 @@ div.activity-feed-entry.activity-feed-entry--form div {
 div.activity-feed-entry div.activity-feed-entry-content {
     background-color: #ffff;
     color: var(--accent-colour);
-}
-.col-xs-16 {
-    background-color: var(--tShade-1);
-    border-radius: 20px;
     box-shadow: 0 0 11px 1px rgb(0 0 0);
 }
 .btn-default {
@@ -292,6 +289,7 @@ div.activity-feed-entry div.activity-feed-entry-content {
     color: #fff;
     background-color: var(--accent-colour);
     border-color: var(--accent-shade-colour);
+    transition: all 0.3s
 }
 .btn-primary:active,
 .btn-primary:hover,
@@ -406,8 +404,9 @@ div.activity-feed-entry div.activity-feed-entry-content {
     transition: all 0.5s;
 }
 .col-xs-16 {
-    background-color: var(--tShade-1);
+    /*background-color: var(--tShade-1);*/
     border-radius: 20px;
+    background: transparent;
 }
 .activity-feed-entry .activity-feed-entry-content__textarea__text textarea {
     border: 0;
@@ -493,6 +492,7 @@ a {
 .__0111a .awaiting-grade-container img {
     width: 100%;
     border-radius: 15px;
+    box-shadow: 0 0 11px 1px rgb(0 0 0);
     transition: all 0.3s;
 }
 .satchel-top-bar .ember-basic-dropdown-trigger {
@@ -530,5 +530,22 @@ a {
 }
 .game-answer {
     transition: all 0.3s;
+}
+.btn-link, .btn-upload-link {
+    border: none;
+    padding: 0;
+    transition: all 0.2s;
+}
+.__ea52b.floating-avatar {
+    display: inline-block;
+    margin-right: 10px;
+    float: right;
+}
+.tab-container.tabs-extended ul.tabs li a.active {
+    border-bottom-color: #0e79c9;
+    border-radius: 10px;
+}
+.__ead82 .discussion-panel__feed-container .comment-item--peer .comment-item__body {
+    background: transparent;
 }
 }

@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "google",
     "createdAt": "2021-01-17T15:06:06.000Z",
-    "updatedAt": "2021-01-19T15:44:53.000Z",
+    "updatedAt": "2021-01-27T17:06:34.000Z",
     "license": "NO-REDISTRIBUTION",
     "author": {
       "id": 1104032,
@@ -17,8 +17,8 @@
   },
   "stats": {
     "installs": {
-      "total": 14,
-      "weekly": 13
+      "total": 56,
+      "weekly": 34
     }
   },
   "screenshots": {

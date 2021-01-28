@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Andrei Krutsko
 @description    `onliner.by - антибыдло`
-@version        2020430.13.23
+@version        2021127.16.42
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -34,6 +34,38 @@ Description: http://krutsko.com/files/_onliner.css
     display: none !important;
   }
   a[href="/user/180106"]{
+      text-decoration: line-through;
+      color:red;
+  }
+
+  /*
+   * User ignore
+   * 30245
+   * 30245- Ергалай
+   *
+   */ 
+  div[class="b-mtauthor"][data-user_id="30245"], 
+  div[class="b-mtauthor"][data-user_id="30245"] ~ div[class="b-msgpost-txt"], 
+  div[class="b-mtauthor"][data-user_id="30245"] ~ ul[class="b-tls-msg"]{
+    display: none !important;
+  }
+  a[href="/user/30245"]{
+      text-decoration: line-through;
+      color:red;
+  }
+
+  /*
+   * User ignore
+   * 43170
+   * 43170- Денис Поляков
+   *
+   */ 
+  div[class="b-mtauthor"][data-user_id="43170"], 
+  div[class="b-mtauthor"][data-user_id="43170"] ~ div[class="b-msgpost-txt"], 
+  div[class="b-mtauthor"][data-user_id="43170"] ~ ul[class="b-tls-msg"]{
+    display: none !important;
+  }
+  a[href="/user/43170"]{
       text-decoration: line-through;
       color:red;
   }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         daniel1919
 @description    `A dark theme for Fitbit studio`
-@version        2021125.17.22
+@version        2021127.20.30
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -352,5 +352,9 @@ div.project-list-item a.pt-menu-item:hover {
 
 .project-configuration-editor.pt-dark input[type="text"] {
     background:#1E1E1E;
+}
+
+.project-configuration-editor.pt-dark #file-name {
+    background:#2b2a2a;
 }
 }
