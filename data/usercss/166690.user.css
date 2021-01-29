@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `GYAO! 動画をフル画面表示させます。 このスタイルは、Chrome版または Firefox版の「Stylus」で使用出来ます。 また、他の拡張機能上でも利用できる可能性があります。◎ サイト側のシステム変更などで動画の全画面表示ができない仕様になった場合でも、強制的に全画面表示に出来ます。 動画プレーヤーの全画面ボタンの操作が不要で、ブラウザの「F11」ボタンを使用して「全画面表示」「通常表示」を切り換えます。◎ ブラウザウインドウ幅を 1200px未満にすると「通常表示」になります。 動画の選択や動画データの閲覧は、この状態で行います。◎ ブラウザウインドウ幅を 1200px以上でウインドウ全体がプレイヤーになります。 好みのサイズで動画表示が可能で、更に「F11」でモニター全域を使った全画面表示になります。◎ 切り換わる仕切り幅の 1200pxは、オプション選択で 1024px に変更が可能です。このスタイルの詳細は、以下のリンク先を参照ください。　　https://ameblo.jp/personwritep/entry-12424796231.html`
-@version        20201210.9.44
+@version        2021128.14.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://gyao.yahoo.co.jp") {
-/* GYAO動画のフル画面表示 ver. 2020.12.10 **************************/
+/* GYAO動画のフル画面表示 ver. 2021.01.28 **************************/
 /**/
 /* GYAO 全ページ共通のスタイル ***********************************/
 /* 基本配色 */
@@ -581,4 +581,17 @@ body {
     ● ウインドウ幅 1023px 以下では「通常表示」になります。
     ● ウインドウ幅 1024px 以上で「動画のフル画面表示」になります。    
 *****************************************************/
+}
+
+@-moz-document url-prefix("https://gyao.yahoo.co.jp/specials/") {
+#cnt p > a, #cnt h3 {
+    font-family: Meiryo;
+    color: #fff; }
+
+#cnt div:not(.video-js):not(.module_visual_header) p {
+    font-family: Meiryo;
+    color: #fff; }
+
+#cnt .frame_layer {
+    font-family: Meiryo; }
 }

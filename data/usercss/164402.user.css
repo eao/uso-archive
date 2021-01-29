@@ -2,8 +2,8 @@
 @name           Gamekult Dark & Gold
 @namespace      USO Archive
 @author         Ryousuke
-@description    `GK Dark & Gold - Site et forums`
-@version        2021126.12.8
+@description    `GK Dark & Gold - Site et forumsupdated 28/01/2021`
+@version        2021128.17.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -92,6 +92,9 @@ section.ed__news__panel {
 }
 .g2__m-h-s-cta__nb {
     color: #000;
+}
+.g2__a-pcg-s {
+    background-color: #111111;
 }
 .gk__text__blockquote {
     color: #838383;
@@ -205,7 +208,28 @@ section.ed__news__panel {
     border-top: solid 1px #f5a623;
     border-bottom: solid 1px #f5a623;
 }
-
+.gk__text__square__container > table > thead > tr {
+    height: 2.2em!important;
+}
+th {
+    border-bottom: 2px solid;
+    border-right: 1px solid
+}
+th:last-child {
+    border-right: 0px;
+}
+td,
+td:last {
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-color: #edaf00;
+}
+td.category {
+    border-color: #edaf00!important;
+}
+td:last-child {
+    border-right: 0px solid;
+}
 .gk__sidebar {
     box-shadow: 0 1px 10px 0 #000;
     background-color: #00000000;
@@ -403,7 +427,7 @@ button.gk__form__control--button {
 .gk__text__square__title--instroke,
 .ed__tn__s--t {
     color: #f5a623;
-    background-color: #000;
+    background-color: #111;
 }
 
 .ed__tn__n--webtv--e > div > div,
@@ -816,7 +840,10 @@ button.gk__form__control--button {
     border: 1px solid #000;
     background-color: #3a3a3a;
 }
-
+.list-controls ul.nav-pills > li > a:hover {
+    color: #edaf00;
+    background-color: #222;
+}
 .list-controls .combo-box .combo-box-header {
     background: #1e1e1e;
     color: #fff;
@@ -971,17 +998,17 @@ th.topics {
 }
 
 .select-kit .select-kit-row.is-highlighted {
-    background: #f5a623;
-    color: #000;
+    background: #000;
+    color: #edaf00;
 }
 
 .gk__text__table tr:nth-child(even) {
-    background: #100000;
+    background: #111;
     color: #f5a623;
 }
 
 .gk__text__table tr:nth-child(odd) {
-    background: #030000;
+    background: #0a0a0a;
     color: #f5a623;
 }
 
@@ -1248,7 +1275,7 @@ aside.onebox {
     border-color: #313131;
 }
 .discourse-no-touch #main .btn {
-    border: 1px solid #191919;
+    border: 1px solid #222;
     background-color: #111111;
 }
 .modal-inner-container {
@@ -1455,7 +1482,7 @@ span.highlighted {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(#111));
     background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0, #111 100%);
 }
-/*award*/
+/*award and fixes*/
 .g2__lyt__ctnr.is--light {
     background-color: #181819;
 }
@@ -1568,5 +1595,204 @@ span.highlighted {
 .g2__pnl--ed {
     border: 2px solid #edaf00;
     border-radius: 8px;
+}
+.g2__gka-rslt {
+    background-color: #181819;
+}
+.g2__gka-rslt__t {
+    color: #edaf00;
+}
+.g2__gka-rslt__st {
+    color: #ececec;
+}
+.g2__gka-rslt > ul > li {
+    color: #edaf00;
+}
+.gk__modal__content,
+.gk__modal__content--pm {
+    border: 1px solid #edaf00;
+    background-color: #111;
+}
+.gk__user-note__inset,
+.gk__user-note {
+    background-color: #111;
+}
+.gk__user-note__inset .note .numbers span {
+    color: #edaf00;
+}
+.gk__form__control--file {
+    color: #edaf00;
+    background-color: #242424;
+}
+.gk__login__info {
+    background-color: #111;
+}
+.pr__game-h__overflow-menu__list > ul > li:hover {
+    background-color: #242424;
+}
+.co__main__section__stats__block__inner__note__show-infos__block {
+    border: 1px solid #edaf00;
+    background-color: #000;
+}
+.co__main__section__stats__block__inner__note__show-infos__block:before {
+    border-color: #edaf00;
+    background-color: #edaf00;
+}
+.co__main__section__stats__block__inner__repartition__show-more {
+    color: #edaf00;
+    background-color: #111;
+}
+.gk__percentage__inset,
+.gk__user-note--inverted .gk__user-note__inset,
+.gk__user-note--inverted,
+.gk__percentage {
+    background-color: #000;
+}
+.gk__percentage__inset .note .numbers span {
+    color: #edaf00;
+}
+.g2__a-bady.is--role-main {
+    color: #000000;
+    background-color: #edaf00;
+}
+.g2__a-bady.is--role-secondary {
+    color: #000000;
+    background-color: #edaf00;
+    font-weight: 600;
+}
+.gk__data-table__item {
+    border-color: #0000;
+}
+td:last-child {
+    border-color: #0000;
+}
+aside.fo__comments__sb .gk__close--md-dark {
+    color: #edaf00;
+}
+.fo__comments__sb__reverse:hover:after {
+    background-color: #222;
+}
+.gk__button__md--light:hover {
+    background-color: #111;
+    color: #edaf00;
+}
+.gk__text__table a:link {
+    color: #b3b3b3;
+}
+.google-dfp-ad {
+    display: none!important;
+}
+table.topic-list > thead > tr > th {
+    color: #edaf00;
+    background-color: #111111;
+}
+.select-kit .select-kit-body {
+    background: #1e1e1e;
+}
+.select-kit.single-select .select-kit-filter.is-expanded {
+    border: 1px solid #edaf00;
+    box-shadow: #edaf00 0 0 4px
+}
+input[type="text"] {
+    color: #d6d6d6;
+}
+.select-kit .no-content {
+    background: #030000;
+}
+.select-kit-row span.category-name {
+    color: #edaf00;
+}
+.user-content {
+    background-color: #1e1e1e;
+}
+.user-stream .item {
+    background-color: #131313;
+    border-bottom: 1px solid #f5a623;
+}
+.user-content .user-notifications-filter-select-kit {
+    border-bottom: 0.5px solid #edaf00;
+}
+.large-notification a span:first-child {
+    color: #fcfcfc;
+}
+.user-main .about.collapsed-info .details,
+.user-main .about .details,
+.user-main .about .details .primary,
+.user-main .about .details .secondary {
+    border-bottom: 0px solid #1e1e1e;
+    background-color: #1e1e1e!important;
+}
+.user-main .about .secondary {
+    border-top: 1px solid #1e1e1e;
+    background-color: #1e1e1e!important;
+}
+.user-main .about .secondary dd {
+    color: #fcfcfc;
+}
+.menu-panel li a.widget-link:focus,
+.menu-panel li a.widget-link:hover {
+    background-color: #edaf00;
+}
+.glyphs .svg-icon {
+    color: #edaf00!important;
+}
+.menu-panel li a.widget-link:hover svg.svg-icon.svg-node {
+    color: #000!important;
+}
+div.menu-links-header .menu-links-row li a.active {
+    border: 2px solid #edaf00;
+    border-bottom: 2px solid #edaf00;
+}
+.user-menu .quick-access-panel {
+    border-top: 1px solid #edaf00;
+}
+div.menu-links-header .menu-links-row li a.active:hover svg.svg-icon.svg-node {
+    color: #edaf00!important;
+    transform: scale(1.4);
+    transition: 200ms ease-in-out;
+}
+.discourse-no-touch #main .btn:hover {
+    color: #000;
+    background-color: #edaf00;
+}
+/*comparateur prix*/
+.is--active.gk__pt__tbs__lst__itm {
+    color: #edaf00;
+    background-color: #151515;
+}
+.gk__pt__tbs__drpdwn-btn {
+    color: #edaf00;
+    border: 1px solid #edaf00;
+    background-color: #151515;
+}
+.gk__pt__tbs__lst__itm,
+.gk__pt__tbs__lst__itm.is--active {
+    border: 1px solid #edaf00;
+}
+.gk__pt__lst {
+    background-color: #151515;
+}
+.gk__pt__prc {
+    color: #242424;
+    background-color: #edaf00;
+}
+.gk__pt__lst__itm:first-of-type .gk__pt__slr,
+.gk__pt__slr {
+    color: #edaf00;
+}
+.is--xs .gk__pt__cta__btn:after {
+    color: #000;
+}
+.gk__pt__inr {
+    background-color: #151515;
+}
+.gk__pt.has--tbs .gk__pt__inr {
+    border: 1px solid #edaf00;
+}
+.gk__pt__lst__itm + .gk__pt__lst__itm:before {
+    background-color: #edaf00;
+}
+.is--active.gk__pt__tbs__lst__itm:hover {
+    background-color: #000;
 }
 }

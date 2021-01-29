@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Kurwa ta strona to taka padaka XDD Dostałem bana za samo stworzenie konta o nazwie "Jan Paweł 2 Get Money Live Life"`
-@version        2021126.22.10
+@version        2021128.13.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -24,134 +24,150 @@
              background-color: #3c4e71;
         }
 
-body {
-	background: #050505;
+body, main {
+	background: #1e2839;
+}
+body, .btn:hover, .btn, .dropdown-item {
 	color: #d1d5d9;
+}
+.btn-link {
+    color: #d9ebff;
+}
+.btn-link:hover, a:hover {
+    color: #f5faff;
+}
+header .input-group-navbar .btn, header .input-group-navbar .form-control, .form-control {
+	background: #1e2839;
+}
+input#searchautocomplete {
+	background: #1e2839 !important;
+}
+.bg-white {
+	background: #29364E !important;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: #3b434a #3b434a #475564;
+}
+.border-bottom, .border, .border-top {
+	border-color: #475564 !important;
+}
+a {
+    color: #e2efff;
+}
+.card {
+    background-color: #29364E;
+    border-color: rgba(255, 255, 255, .125);
+}
+#timeline .card-body-item:hover {
+    background: #334362;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #d5e7f9;
+    background-color: #29364E;
+    border-color: #475564 #475564 #29364E;
+}
+textarea.form-control.border-0.p-0.shadow-none {
+	background: #0000 !important;
+}
+.form-control {
+	border-color: #3b434a;
+}
+.form-control {
+	color: #d5e7f9;
+}
+.input-group-text {
+    color: #d5e7f9;
+    background-color: #1e2839;
+    border-color: #3b434a;
+}
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+	background: #29364E;
+}
+button.hover-blue:hover, button.hover-red:hover {
+	background: #29364E;
+}
+.text-muted {
+    color: #9fa5aa!important;
+}
+[src='https://albicla.com/imgcache/150x150/c/data/img/no-avatar.png'], [src='/imgcache/150x150/c/data/img/no-avatar.png'], [src='/imgcache/35x35/c/data/img/no-avatar.png'] {
+	filter: invert(100);
+	border-color: #d0cbb6 !important;
+}
+footer a, footer {
+	color: #999;
+}
+.user-post a.mention {
+    color: #70b3ff;
+}
+.user-post a.mention:hover {
+    color: #5a92d2;
+}
+.dropdown-menu {
+    color: #d1d5d9;
+    background-color: #29364E;
+    border-color: rgba(255, 255, 255, .15);
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #e6e8eb;
+    background-color: #334362;
+}
+#avatar {
+	background: #29364E;
+}
+#avatar img, #avatar-edit button {
+	border-color: #29364E;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #335479;
+    border-color: #335479;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #22364f;
+    border-color: #22364f;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2b4464;
+    border-color: #2b4464;
+}
+.alert-success {
+    color: #42ff6d;
+    background-color: #398a4d;
+    border-color: #398049;
+}
+.alert-warning {
+    color: #fbff00;
+    background-color: #9b8338;
+    border-color: #806c32;
 }
 .checkbox {
 	background: #0000;
 }
-.form-control {
-    color: #b9cadb !important;
-    background-color: #000 !important;
-    border-color: #3e4042;
+.form-label-group input:not(:placeholder-shown), .form-control {
+	background: #29364E !important;
+	color: #d5e7f9 !important;
 }
 .form-label-group input:not(:placeholder-shown) ~ label {
-	color: #888;
-}
-.text-muted {
-    color: #9ca9b5!important;
+	color: #aaa;
 }
 .select2-container--default .select2-selection--single .select2-selection__rendered {
 	color: #bbb;
 }
-.select2-container--default .select2-selection--single, .select2-dropdown {
-	background: #000;
-	border-color: #555;
+.select2-container--default .select2-selection--single {
+	background: #29364E;
+	border-color: #475564
 }
 .select2-container--default .select2-search--dropdown .select2-search__field {
-	border-color: #555;
+	border-color: #475564;
+	background: #29364E;
 }
-input {
-	background: #000;
-	color: #fff;
+.select2-dropdown {
+	background: #29364E;
+	border-color: #475564;
 }
-a:hover {
-    color: #fafdff;
-}
-a {
-    color: #75b5ff;
-}
-.alert-success {
-    color: #6eff8f;
-    background-color: #244a2d;
-    border-color: #185526;
-}
-.alert-warning {
-    color: #ffcc38;
-    background-color: #1e1806;
-    border-color: #2b2209;
-}
-main {
-	background: #000205;
-}
-.card {
-    background-color: #000;
-    border-color: rgba(255, 255, 255, .125);
-}
-.bg-white {
-    background-color: #000!important;
-}
-.border, .border-top, .border-bottom {
-    border-color: #2e3033!important;
-}
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-    color: #b9c8d7;
-    background-color: #000;
-    border-color: #2e3033 #2e3033 #000;
-}
-#avatar img {
-	border-color: #000;
-}
-[src='https://albicla.com/imgcache/150x150/c/data/img/no-avatar.png'], [src='/imgcache/150x150/c/data/img/no-avatar.png'], [src='/imgcache/35x35/c/data/img/no-avatar.png'] {
-	filter: invert(100);
-	border-color: #fff !important;
-}
-#avatar {
-	background: #000;
-}
-.input-group-text {
-    color: #b9c8d7;
-    background-color: #191c1f;
-    border-color: #3e4042;
-}
-#avatar-edit button {
-	border-color: #000;
-}
-.dropdown-item:focus, .dropdown-item:hover {
-    color: #e6e8eb;
-    background-color: #08090a;
-}
-.dropdown-menu {
-    color: #d1d5d9;
-    background-color: #000;
-    border-color: rgba(255, 255, 255, .15);
-}
-.dropdown-item, .btn:hover, .btn {
-	color: #d1d5d9;
-}
-header .input-group-navbar .btn, header .input-group-navbar .form-control {
-    background: #03060b;
-}
-#timeline .card-body-item:hover {
-	background: #111;
-}
-button.hover-blue:hover, button.hover-red:hover {
-	background: #000;
-}
-.lightbox .lb-image {
-	border-color: #000;
-}
-html {
-    color: rgb(245, 245, 245);
-}
-.user-post a.mention, .official {
-    color: #61a7f7;
-}
-hr {
-	border-color: #222;
-}
-.lb-outerContainer {
-	background: #000;
-}
-.tt-menu {
-    background-color: #000;
-    border-color: rgba(255, 255, 255, .2);
-    -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, .2);
-    -moz-box-shadow: 0 5px 10px rgba(255, 255, 255, .2);
-    box-shadow: 0 5px 10px rgba(255, 255, 255, .2);
-}
-.lb-cancel, .lb-nav a.lb-prev, .lb-nav a.lb-next {
-	filter: invert(100);
+.select2-container--default .select2-results__option--selected {
+	background: #334362;
 }
 }
