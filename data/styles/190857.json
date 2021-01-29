@@ -3,11 +3,11 @@
   "info": {
     "name": "Vivaldi - Candy stripes border for selected tabs",
     "description": "- Related link\r\n<a href=\"https://forum.vivaldi.net/topic/10549/modding-vivaldi\" title=\"Modding Vivaldi | Vivaldi Forum\">Modding Vivaldi | Vivaldi Forum</a>",
-    "additionalInfo": null,
+    "additionalInfo": "- Update\r\n--2021-01-29: Support to Vivaldi 3.6",
     "format": "uso",
     "category": "global",
     "createdAt": "2020-10-16T09:35:29.000Z",
-    "updatedAt": "2020-10-16T09:35:29.000Z",
+    "updatedAt": "2021-01-29T08:57:20.000Z",
     "license": "CC-BY-4.0",
     "author": {
       "id": 512793,
@@ -16,7 +16,7 @@
   },
   "stats": {
     "installs": {
-      "total": 0,
+      "total": 8,
       "weekly": 0
     }
   },
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "/* i really want this to be global */\r\n/* Vivaldi - Candy stripes border for selected tabs */\r\n.tab-position .tab .tab-selection line,\r\n.tab-position .tab .tab-selection rect\r\n{\r\n  stroke-width: 6 !important;\r\n}\r\n.tab-position .tab .tab-selection line.inner,\r\n.tab-position .tab .tab-selection rect.inner\r\n{\r\n  stroke: GhostWhite !important;\r\n}\r\n.tab-position .tab .tab-selection line.outer,\r\n.tab-position .tab .tab-selection rect.outer\r\n{\r\n  stroke-dasharray: 4, 16 !important;\r\n  stroke-dashoffset: 0 !important;\r\n  stroke: DeepPink !important;\r\n}"
+    "css": "/* i really want this to be global */\r\n/* Vivaldi 3.6 - Candy stripes border for selected tabs */\r\n.svg-tab-selection {\r\n  padding-bottom: 0px !important;\r\n}\r\n.svg-tab-selection line,\r\n.svg-tab-selection rect\r\n{\r\n  stroke-width: 6 !important;\r\n}\r\n.svg-tab-selection line.inner,\r\n.svg-tab-selection rect.inner\r\n{\r\n  stroke: GhostWhite !important;\r\n}\r\n.svg-tab-selection line.outer,\r\n.svg-tab-selection rect.outer\r\n{\r\n  stroke-dasharray: 12, 10 !important;\r\n  stroke-dashoffset: 0 !important;\r\n  stroke: DeepPink !important;\r\n}"
   }
 }

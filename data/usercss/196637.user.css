@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Kurwa ta strona to taka padaka XDD Dostałem bana za samo stworzenie konta o nazwie "Jan Paweł 2 Get Money Live Life"`
-@version        2021128.13.5
+@version        2021129.10.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -169,5 +169,14 @@ footer a, footer {
 }
 .select2-container--default .select2-results__option--selected {
 	background: #334362;
+}
+.lightbox .lb-image {
+	border-color: #29364E;
+}
+.lb-outerContainer {
+	background-color: #29364E;
+}
+.lb-nav a.lb-prev, .lb-nav a.lb-next, .lb-cancel {
+	filter: invert(100)
 }
 }

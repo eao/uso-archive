@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KABA
 @description    `Recommend to use with this plugin.https://chrome.google.com/webstore/detail/trello-card-numbers/kadpkdielickimifpinkknemjdipghaf`
-@version        2020723.7.23
+@version        2021129.11.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -45,9 +45,10 @@
 .list-card {
     max-width: none;
     box-shadow: 0 1px 2px 1px rgba(0,0,0, .05);
+    transition: .2s; /* for .list-card.active-card BG color */
 }
 .list-card-labels {
-    float: right;
+    float: inline-end;
     margin: -2px -8px 0 0;
 }
 .list-card-title {
@@ -65,8 +66,8 @@
 }
 
 .card-label.mod-card-front {
-    padding-left: 0;
-    padding-right: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
     transition: .4s;
 }
 .body-card-label-text     .card-label.mod-card-front,
@@ -94,8 +95,8 @@
 .badge.is-due-now,
 .badge.is-due-past {
     margin-top: 2px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
     background: 0;
 }
 .badge.is-due-complete { color: var(--color-success) }
@@ -139,11 +140,11 @@
 .js-attachment-list {
     display: inline-flex;
     flex-wrap: wrap;
-    margin-left: -8px;
+    margin-inline-start: -8px;
 }
 .attachment-thumbnail {
     display: flex;
-    margin-left: 8px;
+    margin-inline-start: 8px;
 }
 .attachment-thumbnail-preview {
     display: block;
@@ -153,13 +154,13 @@
 .attachment-thumbnail-details {
     flex-grow: 1;
     padding: 4px;
-    padding-left: 12px;
+    padding-inline-start: 12px;
     transition: .2s;
 }
 .js-attachment-list:hover .attachment-thumbnail { width: 100% }
 .js-attachment-list:not(:hover) .attachment-thumbnail-details {
-    padding-left: 0;
-    padding-right: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
     width: 0;
     height: 0;
     overflow: hidden;
@@ -168,19 +169,22 @@
 /* - Markdown */
 .markeddown h1,
 .markeddown h2,
-.markeddown h3 { margin: 1.5em 0 .75em }
+.markeddown h3 { margin: 1.125em 0 .8rem }
 .markeddown p,
 .markeddown ol,
 .markeddown ul,
-.markeddown dl { margin: 0 0 .8em }
+.markeddown dl { margin: 0 0 .8rem }
 .markeddown ol > li,
 .markeddown ul > li {
     margin: 0;
-    margin-left: 1.5em;
+    margin-inline-start: 1.5em;
 }
-.markeddown li + li { margin-top: .25em }
+.markeddown li + li { margin-top: .2rem }
+.markeddown li ol,
+.markeddown li ul { margin: .2rem 0 0 }
+.markeddown li li { margin-top: 0 }
 .markeddown > :last-child { margin-bottom: 0 }
 
 .markeddown pre::after { line-height: 0 } /* Adjust bottom space */
-.markeddown pre code { margin-right: 12px } /* padding-right */
+.markeddown pre code { margin-inline-end: 12px } /* padding-inline-end */
 }
