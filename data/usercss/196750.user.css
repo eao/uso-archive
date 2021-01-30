@@ -2,8 +2,8 @@
 @name           Gamekult Dark & Gold - Wider
 @namespace      USO Archive
 @author         Ryousuke
-@description    `Version large`
-@version        2021129.12.47
+@description    `Version largeUpdated: 30/01/2021`
+@version        2021130.10.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -35,7 +35,7 @@ body {
     max-width: 70%;
 }
 .gk__text__container {
-    max-width: 95%;
+    max-width: 70%;
 }
 .gk__text__container--full {
     padding-bottom: 2em;
@@ -206,7 +206,8 @@ section.ed__news__panel {
     color: #f5a623;
 }
 .ed__review__pn {
-    margin-top: 10px;
+    max-width: 70%;
+    margin: 0 auto;
 }
 
 .gk__text__square,
@@ -926,12 +927,16 @@ aside.gk__text__video {
 .gk__text__header--buyersguide {
     text-align: justify;
 }
-article.js-start-progression-bar .gk__text__container {
-    max-width: 70%;
-}
 .ed__review__article__header--after-img {
-    margin-top: 1em;
+    margin-top: 2em;
     max-width: 60%;
+}
+.ed__review__article__header--after-img .row--nmrg {
+    padding-left: 0em;
+    margin: auto!important;
+}
+.ed__review__article__header--after-img .gk__text__container {
+    max-width: 100%;
 }
 .pm__article--hidden:after {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(36, 36, 36, 0)), to(#242424));
@@ -1279,6 +1284,11 @@ table.topic-list > tbody > tr {
 }
 .gk__note__block__verdict {
     color: #eeeeee !important;
+    display: block;
+}
+.gk__note__block__verdict .gk__text__container {
+    padding-left: 0em!important;
+    max-width: 100%;
 }
 .gk__text__subhead a:link,
 .gk__text__subhead a:visited {
@@ -2042,7 +2052,75 @@ div.menu-links-header .menu-links-row li a.active:hover svg.svg-icon.svg-node {
 .g2__m-art-cta {
     border-color: #0000;
 }
+ul.gk__note__labels.gk__list.row--nmrg.star-xs.center-xs.start-md {
+    padding-left: 0em;
+}
+.ed__review__article__footer__conclusion {
+    max-width: 80%!important;
+    margin: 0 auto
+}
+.ed__review__article__footer {
+    padding: 2.5rem 3.75rem 1.25rem 3.75rem;
+}
+.ed__review__article__header__infos.col-xs-12.col-sm-7.col-md-7 {
+    max-width: 65%;
+    -webkit-flex-basis: 65%;
+    -ms-flex-preferred-size: 65%;
+    flex-basis: 65%;
+}
+.ed__review__article__header__price.col-xs-12.col-sm-5.col-md-5 {
+    max-width: 35%;
+    -webkit-flex-basis: 35%;
+    -ms-flex-preferred-size: 35%;
+    flex-basis: 35%;
+}
+.col-xs-12.col-sm-8.col-md-6 {
+    max-width: 50%;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+}
+.gk__text__container--full.gk__text__content.ed__editorial__footer--light .row--nmrg {
+    padding-left: 0em;
+    padding-right: 0em;
+    max-width: 50%;
+    margin: 0 auto!important
+}
+aside.gk__block__col.col-md-4.col-xs-12 .row--nmrg {
+    padding-left: 0em;
+}
+.us__review-h__mda__graph-horizontal > li:hover {
+    background-color: #2f2f2f;
+}
+section.row--nmrg.gk__panel.us__reviews-h {
+    padding-left: 20px;
+}
+.us__reviews-h__list {
+    width: 100%;
+    border: 0.15em solid #edaf00;
+    border-radius: 8px;
+    padding: 2em;
+}
+.us__reviews-h__list__review + .us__reviews-h__list__review,
+.us__review-h__sm + .us__review-h__sm {
+    border-top: 1px solid #edaf00;
+}
+.me__gallery {
+    width: 283px;
+    padding: 1em;
+}
+li.col-xs-12.col-sm-6.col-md-4.middle-xs.center-xs {
+    max-width: 15%;
+    -webkit-flex-basis: 15%;
+    -ms-flex-preferred-size: 15%;
+    flex-basis: 15%;
+    margin: 0 auto;
+}
 /*comparateur prix*/
+.gk__pt__tbs__lst__itm {
+    color: #505050;
+    background-color: #171717;
+}
 .is--active.gk__pt__tbs__lst__itm {
     color: #edaf00;
     background-color: #151515;

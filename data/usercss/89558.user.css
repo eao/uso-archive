@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2021112.6.10
+@version        2021130.12.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -72,181 +72,79 @@
 	text-decoration: none!important;
 }
 
-.b_scopebar>ul li,.b_traits,
-.card__label,
-.me_section h2,
-.ns-toggle-container__per-interest-settings-title,
-.vs_cont .moduleCont .module .vsmodule .vs_title,
-div.me_sidenav a,div.me_sidenav a:visited
- {
+selector
+{
 	text-transform: capitalize!important;
 }
 
-#fbpgbt,
-#mu .add_interests_card,
-#slideexp4_22D00Ec .b_slidebar .slide,
-.b_scopebar .b_active,.b_searchboxForm,
-.ftrD_MmVert,
 .inline_tile .carousel .item .card,
-.iuscp,
-.pb-title-nav-strip__nav-link_selected,
-.vtv2 a,
-:focus,
-a.ent-dtab-ovr,
-a.ent-dtab-rt
- {
+.br-item .br-ahSlot1,
+.b_searchboxForm,
+:focus
+{
 	border: none!important;
-	outline: none!important;
 	box-shadow: none!important;
+	outline: none!important;
+
 }
 
-.rcOpdB:hover {
-    border: 1px solid #fffe02;
-}
-
-.rcRB:hover {
-    border: 1px solid #0094ff;
-}
-
-.rcOptB:hover {
-    border: 1px solid #fff;
-}
-
-.b_slidebar .slide,.b_slideexp .b_viewport,
-.mc_vtvc_con_rc,
-.vsa #mmcar .b_slidesContainer
-{
-    overflow: visible;
-}
-
-.ent-dtab-content > div {
-    display: inline-block;
-}
-
-.infnmpt .infpd a,
-.mc_vtvc_meta_row,
-*[data-layout="row"].dgControl>ul
-{
-    white-space: pre-line;
-}
-
-.ins_exp .pa_pre>#ads_units {
-    overflow-y: scroll;
+*[data-layout="row"].dgControl>ul,
+.mmgrid>div {
+    white-space: pre-line!important;
 }
 
 /*___ Fonts ________________________________________________________________________*/
 
-#b_results>.b_algo h2
- {
-	font-size: 31px!important;
-}
-
-#mmvdp_meta_title,#mmvdp_meta_title:hover,#mmvdp_meta_title:visited,
-.b_traits,
-.cCodeBg,
-.me_section h2,
-.query-list__empty
- {
+#b_results>li a,
+#b_context .pa_item.pa_hCard p strong,
+selector
+{
 	font-size: 21px!important;
 }
 
-#detailPage .pimc #detailMeta .ptitle,
-.b_no h4,.b_scopebar li,
-.bnc-ftn,
-.card_template .card_header,
-.hb_title_col,.hb_titlerow,.hb_value_col,
-.hbic_col,
-.im-interest-row__display-name,
-.infnmpt .infpd a,
-.item-filter__item,
-.notHP .toggle_item,
-.ns-toggle-container__interest-type-title,
-.nws_itm a.itm_cap .na_t,
-.pb-title-nav-strip__nav-link,
-.rwrl_small:not(.rwrl_resetFont),
-.sa_items .sa_pr, .sa_items .sa_prStxt,
+.br-standardPrice.demoted,
+.b_no h4,
 body,
 h2 .b_alert,
 h2 .b_secondaryText
- {
+{
 	font-size: 19px!important;
 }
 
-#b_tween,
-#imagemeta,
-#vsp_ads_c #ads_units .richImage .captionContainer .price,
-.b_algoTextCarousel .b_slidebar .slide .b_text,.b_cnvsug a,
-.bnc-ft.bnc-ft.bnc-ft__sport-team-suggestions,
-.clear-history__description,
-.im-trending-news-preference__category-name,
-.mc_vtvc_title,
-.mu-image-feed-card__source-website,.mu-image-feed__explanation,
-.nav-panel__nav,
-.ns-toggle-container__per-interest-settings-title,
-.rel_ent_tw,
-.sa_products .sa_crd_cont .sa_seller,
-.sb_count,
-.show-history-control__description,
-.tl_cl .tl_date
- {
+.br-item .br-ahSlot1,
+.mc_vtvc_title
+{
 	font-size: 17px!important;
 }
 
-#ans_nws .na_cnt .b_attribution,
-#b_context .b_entitySubTitle,
-#b_results .b_entitySubTitle,#b_results .na_cnt .b_attribution,
-.b_secondaryFocus,
-.bnp_hfly_description,
-.card__footnote,.card__label,.card_template table td,
-.carousel .item .card .subtit,.carousel .item .card .tit,
-.pimc .cmab .action,
-.rebateText,
-.safesearch,
-.vrhc,
-.vrhde
- {
+selector
+{
 	font-size: 15px!important;
 }
 
-#fbpgdg h2
-{
-    line-height: 39px;
-}
-
-#b_context .b_caption,#b_context .b_factrow,#b_context .b_snippet,#b_context p,
-#b_results .b_caption,#b_results .b_factrow,#b_results .b_snippet,
+#b_context .b_caption,
+#b_context .b_factrow,
+#b_context .b_snippet,
+#b_context p,
+#b_results .b_caption,
+#b_results .b_factrow,
+#b_results .b_snippet,
+#b_results p,
 #snct,
 .b_deep,
-.rwrl_small:not(.rwrl_resetFont)
+.mc_vtvc_title
 {
-    line-height: 29px;
+	line-height: 23px!important;
 }
 
-#b_results p
-{
-    line-height: 25px;
-}
-
-#ans_nws .na_cnt .citm_spt,#ans_nws .na_cnt .itm_tlt_snp .itm_spt,
-.ans_nws .na_cnt .b_secondaryText,
-.epv_data .epv_desc,
-.epv_relation,
-.infnmpt .infpd a,
-.na_cl .citm_cap .na_t,.na_cnt .itm_tlt_snp .itm_spt,
-.tl_cl .citm_card .tl_title
-{
-    line-height: 23px;
-}
-
-.mc_vtvc .mc_vtvc_title
- {
-	line-height: 21px!important;
+.mc_vtvc_meta_row {
+    font-size: 63%!important;
 }
 
 /*___ Remove Items _________________________________________________________________*/
 
-.tl_cl .b_overlay .btn.next::before
- {
+selector
+{
 	left: -9999px!important;
 	position: absolute!important;
 	top: -9999px!important;
@@ -254,277 +152,143 @@ h2 .b_secondaryText
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
 
-.twoCol.ltr #filmStripContainer.middle {
-    left: 38%;
-}
-
-.carousel .nav_left {
-    left: 153px;
-}
-
-#b_tween {
-    margin-top: -6px;
-}
-
-#detailPage:not(.l2) .vs_container .expander_container .expander_content {
-    margin-left: -115px;
-    padding-left: 100px;
-}
-
-.na_cl .news_footer {
-    bottom: -23px;
+body .b_overlay .btn.rounded.prev {
+    left: -32px;
 }
 
 .mc_vtvc_meta_block {
-    bottom: -96px;
+    bottom: 19px!important;
 }
 
-[aria-label="Search Videos"] .dg_b .dg_u .mc_vtvc_meta_block {
-    bottom: -15px;
+#minPrce, #maxPrce {
+    padding-left: 18px!important;
+    padding-right: 8px!important;
 }
 
-.card_template table td:nth-child(2)
- {
-    padding-left: 6px!important;
+.br-freesponslug {
+    margin-bottom: 22px;
 }
 
-.mc_vtvc_meta_pubdate {
-    padding-bottom: 14px;
-}
-
-.dg_b {
-    margin-right: 0;
-}
-
-#vm_res {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
-}
-
-.iuscp {
-    margin-left: auto;
-    margin-right: auto;
+.br-item .br-ahSlot1 {
+    margin-left: -8px;
+    margin-top: -15px;
 }
 
 /*___ Margins ______________________________________________________________________*/
 
-#b_content,#b_results>li,
-#detailInfo,
 #mmComponent_images_2>ul>li,
-#ms_mc .main-content,
-#slideexp0_4E4032c .b_slidebar .slide,
-#vm_res,
-.ent-dtab-content a,
-.me_sectioncontent,.me_sidenav,
-.mu-image-feed,
-.nav-panel__nav,
-.richImage .imgContainer,
-.vs_cont .moduleCont .module,
-[id*="mc_cwvc_"]
- {
+#filterContainer,
+#b_results>li,
+.mc_fgvc_u 
+{
 	margin: 12px!important;
 }
 
-#b_results>.b_algo h2 {
-    margin: 18px 0px 14px;
+#b_context {
+    margin: 0 0 0 39px;
 }
 
-#b_pole {
-    margin: -25px 0 14px -7%;
-}
-
-.b_underSearchbox,
-.me_section
+#b_context li
 {
-    margin: 18px 20px 14px;
+	margin: 0 0 16px 0!important;
 }
 
-[id*="slideexp0_"] .slide,
-[id*="slideexp1_"] .slide
- {
-	margin: 3px 6px!important;
+.mmgrid>div
+{
+	margin: 12px 12px!important;
+}
+
+#slideexp0_EF897c .b_viewport {
+    margin: 0 26px;
 }
 
 /*___ Paddings _____________________________________________________________________*/
 
-#ms_mc .main-content,
-.me_sidenav,
-.mu-image-feed,
-.nav-panel__nav,
+#mmComponent_images_2>ul>li,
+.b_ad,
 .dg_b .dg_u,
-.dg_b,
-.vs_cont .moduleCont .module
- {
+.br-item,
+.mc_vtvc .mc_vtvc_meta
+{
 	padding: 12px!important;
 }
 
-.nav__item {
-    padding: 8px 12px 8px 0px;
+#b_content {
+    padding: 41px 0 20px 16px;
 }
 
-.ovrly #detailheader #dhct,
-.vs_container .richImage .captionContainer {
-    padding: 12px 17px;
-}
-
-#b_content,
-#b_results>li#mfa_root,
-#rfCarousel .car_anL,
-#rfCarousel .items
+selector
 {
-    padding: 0;
+	padding: 3px 6px!important;
 }
 
 /*___ Heights ______________________________________________________________________*/
 
-.na_cl .citm_cap.wimg .na_t
- {
-    -webkit-line-clamp: 12;
-}
-
-#ans_nws .na_cnt .citm_spt,#ans_nws .na_cnt .itm_tlt_snp .itm_spt,
-.ans_nws .na_cnt .b_secondaryText,
-.b_bigdeskvcurl+.b_imagePair>p,
-.na_cnt .itm_tlt_snp .itm_spt,.na_cnt .na_t
- {
+#b_content .pa_item.pa_hCard .pa_title
+{
 	max-height: none!important;
 }
 
-#mainImageViewer .richImage .imgContainer>img {
-    max-height: 94%;
-}
-
-#b_content .b_deep p,
-.b_deep .b_snipwithnsl,.b_slidebar,.b_slideexp .b_viewport.scrollbar,.b_slidesContainer,.b_subModule .ent-dtab-content,
-.item .card,
-.mc_vtvc .mc_vtvc_title,.mc_vtvc_meta_row,
-.na_cl.bc .na_citem,.na_cl.bc .slide.see_more
- {
+selector
+{
 	height: auto!important;
 }
 
-.mmgrid>div {
-    height: 25rem!important;
+.mc_vtvc .mc_vtvc_meta {
+    height: 13rem!important;
 }
 
-#mmComponent_images_2>ul>li {
-    height: 20rem!important;
-}
-
-.rc_vlHorizontalImage .b_slidebar .b_dataList li
- {
-	height: 5em!important;
-}
-
-#rfCarousel .carousel-controls {
-    height: 4rem;
-}
-
-.b_slidebar.b_sldrp
-{
-    height: 16em!important;
-}
-
-#ent-car-exp .carousel-controls,
-.carousel .carousel-scroll-content,.carousel .carousel-scroll-wrapper
-{
-    height: 235px;
-}
-
-#ent-car-exp .item .card {
-    height: 169px;
+.mc_vtvc .mc_vtvc_title {
+    height: 6rem!important;
 }
 
 /*___ Widths _______________________________________________________________________*/
 
-#cvnMt,
-.b_algoTextCarousel .b_slidebar .slide .b_text,
-.centered-content,
-.dcajx .dcbtn,
-.im-content,
-.me_section
- {
+selector
+{
 	max-width: none!important;
 }
 
-#b_results .b_algo .b_vlist2col.b_deep h3,
-#b_results .b_algo .b_vlist2col.b_deep ul,
-[id*="tabcontrol_"]>li
+#tabcontrol_9_A8F31C_menu>li
 {
-    width: auto!important;
+	width: auto!important;
 }
 
-.carousel .item .card .cico
- {
-    height: 6em!important;
-	width: 6em!important;
-}
-
-.carousel .item .card .cico img,
-.tab-menu.tab-hasnav,
-.tl_cl .tl_title
- {
-	height: 100%!important;
+.b_ad li,
+.hrzntl_layout #b_results
+{
 	width: 100%!important;
 }
 
-.centered-content,
-.dg_b,
-.im-content,
-.iuscp,
-.mu-image-feed,
-.tl_cl .tl_citm .citm_card,
-.vs_cont .mc_caro,.vs_cont .module,.vs_cont .vs>.carousel
- {
+selector
+{
 	width: 98%!important;
 }
 
-#mmComponent_images_2>ul {
-    width: 96%;
-}
-
-.mc_vtvc_th {
-    margin-left: auto;
-    margin-right: auto;
-    width: 84%;
-}
-
-#mmComponent_images_2,
-.me_content .col-lg-8,
-.notHP .hpqs_label
-{
-    width: 82.666667%;
-}
-
-.twoCol.ltr #filmStripContainer.middle
- {
-    width: 68%;
-}
-
+#resultsContainer,
 #b_results
- {
-	width: 60%!important;
-}
-
-#mmComponent_images_2>ul>li,
-.dg_b .dg_u {
-    width: 21.4%!important;
-}
-
-#b_context {
-    width: 34%;
-}
-
-.b_imgSet .b_hList li.square_m, .b_imgSet .b_hList li.tall_m,
-.dcajx .dcbtn
 {
-    width: 18%;
+	width: 68%!important;
 }
 
-[id*="mc_cwvc_"] {
-    width: 18rem!important;
+.b_deep ul {
+    width: 49%!important;
 }
+
+#b_context
+{
+	width: 26%!important;
+}
+
+.pageRecoContainer td 
+{
+	width: 26%!important;
+}
+
+
+
+
+
 
 
 
@@ -578,6 +342,7 @@ input[type="radio"]:checked+label
 
 /*__________________________________________________________________________________*/
 
+.eb_menIns span,
 #actionbar .hint, #actionbar .text,
 #b_opalpers.b_op_with_button .b_op_flyout_no,
 #b_results .df_c .b_entityTitle,
@@ -586,7 +351,9 @@ input[type="radio"]:checked+label
 #sw_as .sa_as #sa_ul .b_focusLabel, #sw_as .sa_as .b_footnote, #sw_as .sa_as .b_ad .b_adlabel, #sw_as .sa_as .b_expando .b_subModule,
 #sw_as .sa_as .b_attribution,#sw_as .sa_as .b_demoteText,#sw_as .sa_as .b_expando .b_attribution, #sw_as .sa_as .b_expando .b_factrow, #sw_as .sa_as .b_expando .b_footnote,#sw_as .sa_as .b_expando .b_suppModule, #sw_as .sa_as .b_algo .b_vList td, #sw_as .sa_as .b_expando .b_secondaryText,
 #sw_as .sa_as .b_factrow,#sw_as .sa_as .b_secondaryText,#sw_as .sa_as .b_tHeader,#sw_as .sa_as .ctxtb, #sw_as .sa_as .sa_rmvd,#sw_as .sa_as .sa_sg .sa_tm,
+.l2_desc,
 .b_algoTextCarousel .b_slidebar .slide .b_text,.b_listcapAT,.b_topborder .expreftext,
+.b_mtbrd a:last-of-type,
 .banLiText,
 .bnc-flyout__empty-state__subtext,.bnc-sport-team-suggestion__team,
 .bnp_hfly_description,
@@ -605,6 +372,7 @@ input[type="radio"]:checked+label
 .im-interest-row__display-name,.im-modal-setting-row-with-toggle__description,.im-my-interests__settings-text-button,.im-trending-news-preference__show-less-text,.im-trending-news-preference__show-more-text,
 .item-filter__item,
 .mc_vtvc_meta_pubdate span:first-child,.mc_vtvc_meta_row span:first-child,
+.mmsp,
 .mu-image-feed__explanation,
 .nav-panel__nav,
 .ns-service-selector__link-description,.ns-toggle-container__interest-type-title,.ns-toggle-container__uber-toggle-title,
@@ -633,11 +401,13 @@ span#fltIdtLnk
 #b_results>.b_top .b_prominentFocusLabel, #b_results>.b_top .b_topTitle, #b_results>.b_top .b_focusTextExtraSmall, #b_results>.b_top .b_focusTextExtraSmall a, #b_results>.b_top .b_focusTextSmall, #b_results>.b_top .b_focusTextSmall a, #b_results>.b_top .b_focusTextMedium, #b_results>.b_top .b_focusTextMedium a, #b_results>.b_top .b_focusTextLarge, #b_results>.b_top .b_focusTextLarge a,
 #mmvdp_meta_title, #mmvdp_meta_title:hover, #mmvdp_meta_title:visited,
 .b_traits,
+.b_vList .tabcap table tr th,
 .bnc-ft.bnc-ft.bnc-ft__sport-team-suggestions,.bnc-ftn,.bnp_hfly_tittle,
 .card_template .card_header,
 .epv_title,
 .filter-selector__title,
 .ftrP11,
+#b_results>li a,
 .hb_title_col,
 .im-trending-news-preference__category-name,
 .mc_vtvc_title,
@@ -646,6 +416,7 @@ span#fltIdtLnk
 .na_cnt .na_t,
 .ns-service-selector__link-title,.ns-toggle-container__per-interest-settings-title,
 .rc_vlHorizontalImage .rc_vlImgFact .b_dataList li a,
+.sp_pssl,
 .vs_cont .moduleCont .module .vsmodule.vert_iotd .vs_iotd .vs_rowitem.vs_iotd_bs .vs_bs_title,
 h1,
 h2
@@ -660,6 +431,7 @@ h2
 #mmvdp_meta_properties div:nth-child(2),
 .b_caption .b_factrow strong,.b_caption p strong,
 .b_secondaryText strong,
+.br-adClickOut,
 .hb_detrow,
 .im-interest-row__details,
 .mc_vtvc_meta_row span:nth-child(2),
@@ -694,6 +466,7 @@ h4
 .b_tHeader,
 .b_underSearchbox .b_label,
 .card__label,
+.sb_doct_txt,
 .tl_cl .tl_pub,
 .vrhch,
 h5,h6,
@@ -705,12 +478,15 @@ label
 
 /*___ Blue _________________________________________________________________________*/
 
+.br-item .br-ahSlot1,
 #b_context .b_factrow,#b_results>.b_top .b_focusTextLarge,
 #mmvdp_meta_properties div,
 .ans_nws .na_cnt .b_secondaryText,
+.b_algo div.wpcbc .b_fcv2 tr td+td,
 .mc_vtvc_meta_pubdate,.mc_vtvc_meta_row span:nth-child(2),
 .query-list__query-time-column,
 .tl_cl .tl_date,
+.video_summary,
 .vrhmd,
 p>.news_dt,
 time
@@ -722,6 +498,12 @@ time
 /*___ Green ________________________________________________________________________*/
 
 #pa_pre_r #ads_units .richImage .captionContainer a.price,
+#vsp_ads_c #ads_units .richImage .captionContainer .price.curr,
+.br-focusPrice,
+.maxCurrency,
+.minCurrency,
+.pa_item.pa_hCard p strong,
+.pa_item.pa_vCard p strong,
 .sa_items .sa_pr, .sa_items .sa_prStxt,
 [aria-label="Change Safe Search settings: SafeSearch: Strict"]
  {
@@ -731,6 +513,7 @@ time
 
 /*___ Red __________________________________________________________________________*/
 
+.br-standardPrice.demoted,
 .bnc-flyout__empty-state__text,
 .query-list__empty,
 [aria-label="Change Safe Search settings: SafeSearch: Off"]
@@ -785,6 +568,7 @@ pre ::selection {
 
 /*___ Misc _________________________________________________________________________*/
 
+#vsp_ads_c #ads_units .richImage .captionContainer .titl,
 .mc_vtvc_meta_channel
  {
     color: #00ffd0!important;
@@ -799,11 +583,13 @@ pre ::selection {
     color: #00b3ff!important;
 }
 
+#vsp_ads_c .richImage .captionContainer .tit,
 strong
  {
     color: #ffc96c!important;
 }
 
+.b_ad .b_attribution>span,
 .cCodeBg [style="color:#CC0000"] {
     color: #ffd500!important;
 }
@@ -812,6 +598,9 @@ strong
     color: #00deff!important;
 }
 
+.inline_tile .carousel {
+    color: #111;
+}
 
 
 
@@ -857,21 +646,23 @@ html {
 
 /*___ Background Gray ______________________________________________________________*/
 
+#stickyheader,
 #b_header,
 #detailPage #detailheader,
 #mmvdp,
 #vdp_inline_car,
 .b_footer,
+.img_badges,
 .mm_vdcv,
 .ovrly #detailheader #dhct
  {
 	background-color: #060505!important;
 }
 
-#ftr_pane,
-#miniheader.detail .relatedGroup,
 #b_pole .b_wpTabsWrapper,
+#ftr_pane,
 #miniheader table,
+#miniheader.detail .relatedGroup,
 #rfPane,
 .pb-title-nav-strip
  {
@@ -881,13 +672,17 @@ html {
 /*___ Background 0000 ______________________________________________________________*/
 
 #actionbar,
+#ent-car-exp .item.col .b_vList li:first-child .card,
 #fbpgbt,
 #ftrB,
 #mfa_root .mfa_btn,
 #mm_vdmb,
 #page_content,
+#resultsContainer,
+.b_ilHeader,
 .b_icbtns .ibs_btn,
 .carousel,
+.inline_tile,
 .ftrHSe,.ftrHh,.ftrHh:hover,.ftrVS,.ftrH_MmVert:focus,.ftrH_MmVert:hover,
 .infopt,
 .iuscp,
@@ -899,22 +694,32 @@ html {
 
 /*___ Background-color 0000 ________________________________________________________*/
 
+#b_results>li,
 #b_tween .ftrB a.ftrH.b_selected,#b_tween .ftrB a.ftrH:focus,#b_tween .ftrB a.ftrH:hover,
 #buttons-section,
 #detailPage,#detailPage:not(.mob) #detailCanvas,
+#lMapContainer .banLi,#lMapContainer,
 #mainImageRegion,
 #miniheader_data .sug,
 #tta_copyIcon:focus,#tta_copyIcon:hover,#tta_playicontgt:focus,#tta_playicontgt:hover,#tta_srcsl,#tta_tgtsl,
 .b_ans.b_topborder .btm_sml a,.b_scard,.b_searchboxForm,.b_subModule .ent-dtab-content,
+.b_caption .captionMediaCard .b_imagePair.wide_wideAlgo,
+.b_tophb .bgtopgr,.b_tophb .bgtopwh,
 .bnc-flyout__imlink,.bnc-sport-team-suggestions,
-.ent-dtab-content > div:first-child,.ent-dtab-content a,
-.ent-dtab-content,
+.br-freesponslug .br_slug,
+.br-item .br-ahSlot1,
+.dg_b,
+.ent-dtab-content > div:first-child,.ent-dtab-content a,.ent-dtab-content,
 .ftrD_MmVert,
 .insights .ins_exp .ins_exp_title:hover,.insights .ins_exp .insbt,.insights .ins_exp .insbt:hover,
+.insights .rsic,
 .interest-manager,
+.iuscp .ent,
+.mc_vplvc,
 .mc_vtvc,.mc_vtvc_th,
 .me_content,
 .nws_itm,
+.pa_hover,
 .rc_vlHorizontalImage .rc_vlCard,
 .sa_titlePane,
 .safesearch__switcher.safesearch__switcher_active,.safesearch__switcher:hover,
@@ -923,6 +728,9 @@ html {
 .top-searches__header,
 .true-collection,
 .tta_incell,.tta_outcell,.tta_outtxt>textarea,
+.vertcard .b_float_img .cico,
+.vhcicimg,.vhcicimg.head,
+.video_metadata,
 .vs_cont .moduleCont .module .vsmodule.vert_iotd .vs_iotd .vs_rowitem.vs_iotd_bs,.vs_cont .moduleCont,.vs_container .richImage,.vs_preview .richImage,
 [id*="tabcontrol_"]>li,[id*="_nav"],
 div.me_sidenav a,div.me_sidenav a:visited
@@ -932,8 +740,9 @@ div.me_sidenav a,div.me_sidenav a:visited
 
 /*__ Blue __________________________________________________________________________*/
 
-#b_content a.cbtn,
+#mm_vdpib_disbtn,
 #action_visible>a,
+#b_content a.cbtn,
 #bop_container .mm_seemore a.btn_seemore,
 #fbpgdg .button:first-Child,
 .b_cnvsug a,
@@ -954,8 +763,9 @@ a.clear-history__privacy-dashboard-link
 	color: #fff!important;
 }
 
-#b_content a.cbtn:hover,
+#mm_vdpib_disbtn:hover,
 #action_visible>a:hover,
+#b_content a.cbtn:hover,
 #bop_container .mm_seemore a.btn_seemore:hover,
 #fbpgdg .button:first-Child:hover,
 .b_cnvsug a:hover,
@@ -973,8 +783,9 @@ a.clear-history__privacy-dashboard-link:hover
 	color: #ff0!important;
 }
 
-#b_content a.cbtn:active,
+#mm_vdpib_disbtn:active,
 #action_visible>a:active,
+#b_content a.cbtn:active,
 #bop_container .mm_seemore a.btn_seemore:active,
 #fbpgdg .button:first-Child:active,
 .b_cnvsug a:active,
@@ -1071,16 +882,21 @@ a.clear-history__privacy-dashboard-link:active
 
 /*___ Plain Black __________________________________________________________________*/
 
-#b_context #wpc_ag,#b_context .b_ans,
+#b_context #wpc_ag,
+#b_context .b_ans,
+#b_context>li.b_ad,
 #b_results,
 #detailInfo,
+#filterContainer,
+#inline_cluster .item,
 #ms_mc .main-content,
-#slideexp0_4E4032c .b_slidebar .slide,
+.b_vstackc .b_scard,
 .bnp_fly_hp,
 .clear-history,
-.dg_b,
+xxx.dg_b,
 .filter-selector,
 .im-interest-type-section,
+.inline_tile,
 .insights,
 .me_sectioncontent,.me_sidenav,
 .mu-image-feed,
@@ -1089,10 +905,12 @@ a.clear-history__privacy-dashboard-link:active
 .query-list__container,
 .richImage .imgContainer,
 .show-history-control,
+.ta_c,
 .top-searches__container,
 .value-prop-banner,
 .vs_cont .moduleCont .module,
 [id*="mc_cwvc_"],
+[id*="slideexp"] .b_slidebar .slide,
 optgroup
  {
 	background-color: #000!important;
@@ -1101,16 +919,21 @@ optgroup
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-#b_context #wpc_ag:hover,#b_context .b_ans:hover,
+#b_context #wpc_ag:hover,
+#b_context .b_ans:hover,
+#b_context>li.b_ad:hover,
 #b_results:hover,
 #detailInfo:hover,
+#filterContainer:hover,
+#inline_cluster .item:hover,
 #ms_mc .main-content:hover,
-#slideexp0_4E4032c .b_slidebar .slide:hover,
+.b_vstackc .b_scard:hover,
 .bnp_fly_hp:hover,
 .clear-history:hover,
-.dg_b:hover,
+xxx.dg_b:hover,
 .filter-selector:hover,
 .im-interest-type-section:hover,
+.inline_tile:hover, 
 .insights:hover,
 .me_sectioncontent:hover,.me_sidenav:hover,
 .mu-image-feed:hover,
@@ -1119,10 +942,12 @@ optgroup
 .query-list__container:hover,
 .richImage .imgContainer:hover,
 .show-history-control:hover,
+.ta_c:hover,
 .top-searches__container:hover,
 .value-prop-banner:hover,
 .vs_cont .moduleCont .module:hover,
 [id*="mc_cwvc_"]:hover,
+[id*="slideexp"] .b_slidebar .slide:hover,
 optgroup:hover
  {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -1132,10 +957,13 @@ optgroup:hover
 
 #b_opalpers .b_op_flyout,
 #b_pole .b_poleContent,
-#b_results>li,
+#b_results>li:not(.b_ans),
 #carousel #crs_pane .itile,#carousel #crs_pane .pntile,
+#ent-car-exp.carousel .colrow_1 .item,#ent-car-exp.carousel .colrow_2 .item,
+#ent-car-exp.carousel .tcolrow_1 .item,#ent-car-exp.carousel .tcolrow_2 .item,
 #ent-car-exp.carousel,
 #id_hbfo,
+#mmComponent_images_2>ul>li,
 #sw_as .sa_drw,
 #vrhcid.vrhc,
 .bnc-f,
@@ -1145,6 +973,7 @@ optgroup:hover
 .entityPreview,
 .ftrDC,
 .insights .ins_exp,
+.mc_fgvc_u,
 .me-modal,
 .menuBtn .hiddenContainer,
 .modal,
@@ -1152,6 +981,7 @@ optgroup:hover
 .mu-image-feed-card,
 .na_cl .na_citem,
 .pb-modal__content-and-button-bar-wrapper,
+.br-item,
 .sa_items .slide,
 .std_fact_template
  {
@@ -1167,6 +997,7 @@ optgroup:hover
 #carousel #crs_pane .itile:hover,#carousel #crs_pane .pntile:hover,
 #ent-car-exp.carousel:hover,
 #id_hbfo:hover,
+#mmComponent_images_2>ul>li:hover,
 #sw_as .sa_drw:hover,
 #vrhcid.vrhc:hover,
 .bnc-f:hover,
@@ -1176,13 +1007,16 @@ optgroup:hover
 .entityPreview:hover,
 .ftrDC:hover,
 .insights .ins_exp:hover,
+.mc_fgvc_u:hover,
 .me-modal:hover,
+.menuBtn .hiddenContainer:hover,
 .menuBtn .hiddenContainer:hover,
 .modal:hover,
 .ms-modal__content-and-button-bar-wrapper:hover,
 .mu-image-feed-card:hover,
 .na_cl .na_citem:hover,
 .pb-modal__content-and-button-bar-wrapper:hover,
+.br-item:hover,
 .sa_items .slide:hover,
 .std_fact_template:hover
  {
@@ -1203,9 +1037,9 @@ optgroup:hover
 
 /*__ Blue Gradient _________________________________________________________________*/
 
-selector
+#mm_vdpib
  {
-	background: linear-gradient(to bottom, #03193c, #000 100%)!important;
+	background: linear-gradient(to bottom, #00809d, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
 	border-radius: 22px!important;
 }
@@ -1253,11 +1087,13 @@ selector
 
 #im-interest-type-section__City .im-interest-row:hover,#im-interest-type-section__SportsTeam .im-interest-row:hover,#im-trending-news-preferences .im-interest-row:hover,
 #sw_as .sa_hv,#sw_as li.pp_tile.sa_hv,
+.b_vList .tabcap table tr:hover,
 .bnc-sport-team-suggestion:focus,.bnc-sport-team-suggestion:hover,
 .hb_section:active,.hb_section:focus,.hb_section:hover,
 .ns-service-selector__link_selected,.ns-toggle-container:hover,
 .query-list__query-row:hover,
-div.me_sidenav a:hover
+div.me_sidenav a:hover,
+div.wpcbc .b_fcv2 tr:hover
  {
 	background: linear-gradient(to right, #383838, #0000)!important;
 	border-left-color: #434343!important;
@@ -1294,6 +1130,7 @@ div.me_sidenav a:hover
 	background: radial-gradient(ellipse at center, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%)!important;
 }
 
+.expBySlide,
 #vdp_sib_int {
 	background: radial-gradient(ellipse at center, #00809d 0%,rgba(14,14,14,1) 70%)!important;
 }
@@ -1301,6 +1138,8 @@ div.me_sidenav a:hover
 .touchQuery .suggestion-color {
 	background: radial-gradient(ellipse at center, #00809d 0%,rgba(14, 14, 14, 0) 70%)!important;
 }
+
+
 
 
 
@@ -1312,8 +1151,7 @@ div.me_sidenav a:hover
 #b_results>li,
 #carousel #crs_pane .itile,#carousel #crs_pane .pntile,
 #detailheader .rsi,
-#filmStrip .richImage .overlayContainer,
-#filmStrip .richImage img,
+#filmStrip .richImage .overlayContainer,#filmStrip .richImage img,
 #im-trending-news-preferences .im-interest-row,
 #miniheader_data .sug,
 #mmComponent_images_2>ul>li,
@@ -1323,17 +1161,16 @@ div.me_sidenav a:hover
 #slideexp0_4E4032c .b_slidebar .slide,
 #sw_as .sa_drw .sa_sg,
 #tta_copyIcon,
-#tta_playiconsrc,
-#tta_playicontgt,
+#tta_playiconsrc,#tta_playicontgt,
 #tta_speechiconsrc,
-.b_overlay .btn.rounded .cr>div,
-.b_slidebar .slide,
-.b_vlist2col.b_deep li,
+.b_overlay .btn.rounded .cr>div,.b_slidebar .slide,.b_vlist2col.b_deep li,.b_vstackc .b_scard,
 .bnc-sport-team-suggestion,
+.br-item,
 .card,.card_template,
 .carouselChevRightSvg,
 .dg_b .dg_u,
 .ent_tmln tr,
+.mc_fgvc_u,
 .na_cl .na_citem,
 .ns-toggle-container,
 .spl_ent-trgr div,
@@ -1350,9 +1187,7 @@ li.square_m
 #b_results>li:hover,
 #carousel #crs_pane .itile:hover,#carousel #crs_pane .pntile:hover,
 #detailheader .rsi:hover,
-#filmStrip .richImage .overlayContainer:hover,
-#filmStrip .richImage img:hover,
-#filmStrip .richImage.selected img,
+#filmStrip .richImage .overlayContainer:hover,#filmStrip .richImage img:hover,#filmStrip .richImage.selected img,
 #im-trending-news-preferences .im-interest-row:hover,
 #miniheader_data .sug:hover,
 #mmComponent_images_2>ul>li:hover,
@@ -1361,18 +1196,15 @@ li.square_m
 #rfCarousel .item:hover,
 #slideexp0_4E4032c .b_slidebar .slide:hover,
 #sw_as .sa_drw .sa_sg:hover,
-#tta_copyIcon:hover,
-#tta_playiconsrc:hover,
-#tta_playicontgt:hover,
-#tta_speechiconsrc:hover,
-.b_overlay .btn.rounded .cr>div:hover,
-.b_slidebar .slide:hover,
-.b_vlist2col.b_deep li:hover,
+#tta_copyIcon:hover,#tta_playiconsrc:hover,#tta_playicontgt:hover,#tta_speechiconsrc:hover,
+.b_overlay .btn.rounded .cr>div:hover,.b_slidebar .slide:hover,.b_vlist2col.b_deep li:hover,.b_vstackc .b_scard:hover,
 .bnc-sport-team-suggestion:hover,
+.br-item:hover,
 .card:hover,.card_template:hover,
 .carouselChevRightSvg:hover,
-.ent_tmln tr:hover,
 .dg_b .dg_u:hover,
+.ent_tmln tr:hover,
+.mc_fgvc_u:hover,
 .na_cl .na_citem:hover,
 .ns-toggle-container:hover,
 .spl_ent-trgr div:hover,
@@ -1401,8 +1233,9 @@ img
 
 /*__________________________________________________________________________________*/
 
-#filmStrip .richImage img,
-#filmStrip .richImage .overlayContainer
+#filmStrip .richImage .overlayContainer,#filmStrip .richImage img,
+#hoverpane,
+.img_info.hon
  {
 	opacity: 1!important;
 }
@@ -1439,9 +1272,10 @@ img
     background-color: #0000!important;
 }
 
-.b_onpage_expansion .b_chevron_up svg,
-.b_onpage_expansion .b_chevron_down svg {
-    transform: none;
+.b_onpage_expansion .b_chevron_down svg,
+.b_onpage_expansion .b_chevron_up svg
+{
+    transform: none!important;
 }
 
 .hbic_chevdown, .hbic_chevup {
@@ -1450,8 +1284,8 @@ img
 
 /* Up _________________*/
 
-.hbic_chevup,
 .b_expansion_chevron.b_chevron_up svg,
+.hbic_chevup,
 [aria-label="Expand"] svg
 {
 	background: url(https://i.ibb.co/bvZmSFj/red-up.png) no-repeat!important;
@@ -1484,9 +1318,9 @@ img
     content: "";
 }
 
+#df_listaa .b_module_expansion .b_expansion_wrapper.b_expand .b_expansion_chevron svg,
 .b_ans.b_topborder .btm_sml .chevronUp:after, .b_ans.b_topborder .btm_sml .chevronDown:after,
 .hbic_chevdown,
-#df_listaa .b_module_expansion .b_expansion_wrapper.b_expand .b_expansion_chevron svg,
 .safesearch__switcher
 {
 	background: url(https://i.ibb.co/z7MRv74/down-arrow-30x30.png) no-repeat!important;
@@ -1505,40 +1339,47 @@ img
     width: 1px!important;
 }
 
-.b_ans.b_topborder .btm_sml .chevronUp:after, .b_ans.b_topborder .btm_sml .chevronDown:after,
-#df_listaa .b_module_expansion .b_expansion_wrapper.b_expand .b_expansion_chevron svg {
+#df_listaa .b_module_expansion .b_expansion_wrapper.b_expand .b_expansion_chevron svg,
+.b_ans.b_topborder .btm_sml .chevronUp:after, .b_ans.b_topborder .btm_sml .chevronDown:after
+{
     background-size: 24px!important;
     padding-left: 25px!important;
 }
 
 /* Left _________________*/
 
+.carouselChevLeftSvg,
 [id*="_navl"] svg,
-.carouselChevLeftSvg
+[title="Previous image result"]
 {
 	background: url(https://i.ibb.co/mRKFvH8/left-arrow-30x30.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
+.carouselChevLeftSvg,
 [id*="_navl"] svg,
-.carouselChevLeftSvg {
+[title="Previous image result"]
+{
     background-size: 29px!important;
     padding-left: 29px!important;
 }
 
 /* Right _________________*/
 
-[id*="_navr"] svg,
 .b_overlay .btn.rounded .cr>div,
-.carouselChevRightSvg
+.carouselChevRightSvg,
+[id*="_navr"] svg,
+[title="Next image result"]
 {
 	background: url(https://i.ibb.co/LQDKzQT/right-arrow-30x30.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
-[id*="_navr"] svg,
 .b_overlay .btn.rounded .cr>div,
-.carouselChevRightSvg {
+.carouselChevRightSvg,
+[id*="_navr"] svg,
+[title="Next image result"]
+{
     background-size: 29px!important;
     padding-left: 29px!important;
 }
@@ -1562,8 +1403,25 @@ img
 input[type="checkbox"] {
     appearance: none;
 }
+
+.br_fv .br_fv_control.checked,
+.br_cb .br_fv_control {
+    background: #fff0;
+    border: none;
+}
+
+.br_cb .br_fv_control.checked:after {
+    border: solid #fff0;
+    color: #fff0;
+}
+
+.br_fv {
+    height: 2rem!important;
+}
+
 /* Checked ________________________*/
 
+[role="group"] [aria-checked="True"] .br_fv_control.checked,
 .ms-checkbox__checked,
 input[type="checkbox"]:checked
 {
@@ -1573,6 +1431,7 @@ input[type="checkbox"]:checked
 
 /* Unchecked ________________________*/
 
+[role="group"] [aria-checked="False"] .br_fv_control,
 input[type="checkbox"],
 .ms-checkbox:not(.ms-checkbox__checked)
 {
@@ -1580,13 +1439,23 @@ input[type="checkbox"],
 	box-sizing: border-box;
 }
 
-input[type="checkbox"]:checked,
 .ms-checkbox:not(.ms-checkbox__checked),
-.ms-checkbox__checked {
+.ms-checkbox__checked,
+input[type="checkbox"]:checked
+{
     background-size: 21px!important;
     height: 26px!important;
     padding-left: 22px!important;
     width: 10px!important;
+}
+
+[role="group"] [aria-checked="True"] .br_fv_control.checked,
+[role="group"] [aria-checked="False"] .br_fv_control
+{
+    background-size: 29px!important;
+    height: 42px!important;
+    padding-left: 22px!important;
+    width: 1px!important;
 }
 
 /* Comment ____________________________________________________________*/
@@ -1818,6 +1687,7 @@ input[type="checkbox"]:checked,
 	background: url(https://image.ibb.co/hVxuzR/search.png) no-repeat!important;
 	box-sizing: border-box;
 }
+
 #mfa_root .fba_sbicn,
 .b_searchboxSubmit
 {
@@ -1881,8 +1751,9 @@ input[type="checkbox"]:checked,
     box-sizing: border-box;
 }
 
-.im-unfollow-star,
-.bnc-sport-team-suggestion__track {
+.bnc-sport-team-suggestion__track,
+.im-unfollow-star
+{
     background-size: 18px!important;
     padding-left: 19px!important;
 }
@@ -2205,5 +2076,9 @@ selector:active {
     height: 46px!important;
     padding-left: 53px;
 }
+
+}
+
+@-moz-document domain("bing.com") {
 
 }

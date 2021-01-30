@@ -2,8 +2,8 @@
 @name           Gamekult Dark & Gold
 @namespace      USO Archive
 @author         Ryousuke
-@description    `GK Dark & Gold - Site et forumsupdated 29/01/2021`
-@version        2021129.12.45
+@description    `GK Dark & Gold - Site et forumsupdated 30/01/2021`
+@version        2021130.10.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1764,7 +1764,14 @@ div.menu-links-header .menu-links-row li a.active:hover svg.svg-icon.svg-node {
 .g2__m-art-cta {
     border-color: #0000;
 }
+.us__review-h__mda__graph-horizontal > li:hover {
+    background-color: #2f2f2f;
+}
 /*comparateur prix*/
+.gk__pt__tbs__lst__itm {
+    color: #505050;
+    background-color: #171717;
+}
 .is--active.gk__pt__tbs__lst__itm {
     color: #edaf00;
     background-color: #151515;

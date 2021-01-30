@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AUDIMEN
 @description    `Темно-сияющий форум и сайт 4pda.ru в стиле темы SamSony'aОбсудить стиль можно тут: https://4pda.ru/forum/index.php?showtopic=510060Важные дополнения к стилю, описаны под спойлером в этом сообщении: https://4pda.ru/forum/index.php?showtopic=275959&view=findpost&p=10128625`
-@version        2021126.16.42
+@version        2021130.11.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -536,6 +536,9 @@ div[class="popupmenu-new"][id*="post-member"] > .popupmenu-item-last .popupmenu-
     box-shadow: 0 0 50px #00144C;
     color: #009fff !important;
 }
+.post-block.spoil.open > .block-body:after {
+    outline: solid 1px rgba(0, 7, 27, 0.1) !important;
+}
 .post-block.hidden > .block-title {
     box-shadow: 0 0 30px #fF0000;
     color: #ff0000 !important;
@@ -696,7 +699,7 @@ ul.status, .load_frame {
 ul.status > li > a, .load_frame > li > a {
     color: #474747 !important;
 }
-.usercp_menu {
+.usercp_menu, .block-body:after {
     color: #00ffff !important;
 }
 .usercp_menu_out, .dipt {
