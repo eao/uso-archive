@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ryousuke
 @description    `GK Dark & Gold - Site et forumsupdated 29/01/2021`
-@version        2021129.11.7
+@version        2021129.12.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -1760,6 +1760,9 @@ div.menu-links-header .menu-links-row li a.active:hover svg.svg-icon.svg-node {
     background: -webkit-linear-gradient(right, #111 0%, rgba(255, 255, 255, 0) 100%);
     background: -o-linear-gradient(right, #111 0%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(to left, #111 0%, rgba(255, 255, 255, 0) 100%);
+}
+.g2__m-art-cta {
+    border-color: #0000;
 }
 /*comparateur prix*/
 .is--active.gk__pt__tbs__lst__itm {

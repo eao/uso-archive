@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Flickr WideScreen - Pool No Beta - Small v.161
+@name           Flickr WideScreen - Pool No Beta - Small v.161a
 @namespace      USO Archive
 @author         decembre
 @description    `Compact view for Poll no Beta :Small thumbnails for less scrolling and faster explore a pool in Beta mode...`
-@version        202114.13.30
+@version        2021129.13.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,10 +11,10 @@
 
 @-moz-document domain("flickr.com") {
 
-/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE - Pool Beta - Small v.161 ==== */
+/* ==== FLICKR - 00 - Flickr WideScreen - ALLinONE - Pool Beta - Small v.161a ==== */
 
 
-/* (new160) POOL no BETA - JU - ROWS - TEST ANTI JUMP - === */
+/* (new161) POOL no BETA - JU - ROWS - TEST ANTI JUMP - === */
 #pool-photos.ju {
     display: inline-block !important;
     min-width: 1898px !important;
@@ -25,7 +25,7 @@
     overflow: hidden !important;
     overflow-y: auto !important;
 }
-/* (new160) POOL no BETA - JU ROW - SIDEBAR - CLOSE red */
+/* (new161) POOL no BETA - JU ROW - SIDEBAR - CLOSE red */
 #pool-photos.ju .row:not(:empty) ,
 #pool-photos.ju.photo-display-container .row:not(:empty) {
     display: inline-block !important;
@@ -39,7 +39,7 @@
 background: transparent !important;
 }
 
-/* (new160) POOL no BETA - JU ROW - SIDEBAR - OPEN green */
+/* (new161) POOL no BETA - JU ROW - SIDEBAR - OPEN green */
 body.breakout-justified #main #pool-photos.photo-display-container.ju[style*="padding-left: 345px;"] .row:not(:empty) ,
 body.breakout-justified #main #pool-photos.photo-display-container.ju[style*="padding-left: 345px;"] .row:not(:empty)  {
     display: inline-block !important;
@@ -55,7 +55,7 @@ body.breakout-justified #main #pool-photos.photo-display-container.ju[style*="pa
 background: transparent !important;
 }
 
-/* (new160) POOL no BETA - JU POOL - SIDEBAR OPEN - CONTAINER + PAGI - === */
+/* (new161) POOL no BETA - JU POOL - SIDEBAR OPEN - CONTAINER + PAGI - === */
 body.breakout-justified #main #pool-photos.photo-display-container.ju[style*="padding-left: 345px;"] {
     width: 100% !important;
     padding-left: 0 !important;

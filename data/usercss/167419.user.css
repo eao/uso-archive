@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Atx
 @description    `Do you like my style? Please support my work and fund me a coffee (via PayPal to the left of "Install" button). Also share style with your friends. Thank you for being awesome!Darkest Fusion supports almost every Google site. Due to a style size limit Darkest Fusion has been divided into 2 parts. That one contains dark theme for most common used Google sites: <strong>About, Account management, Alerts, Books, Calendar, Contacts, Drive, Finance, Groups, Hangouts, Maps, My Activity, One, Patents, Payments, Passwords, Photos, Scholar, Search, Sheets, Tasks, Translate, Travel and Trends</strong>.<strong><mark>Second style is available >>> <a href="https://userstyles.org/styles/180430/google-darkest-fusion-2-2">there</a> <<<</mark></strong>Keep and Support currently have stock dark themes.Originally based on great work by DeathTBO who abandoned his project so I decided to continue his work by rebuilting everything from scratch. I hope you like my vision for Dark Google :)`
-@version        2021126.20.33
+@version        2021129.23.46
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown google_logo "Google logo color" {
@@ -121,23 +121,23 @@ T2 "Stretch (for wallpapers)" <<<EOT background-size: cover !important;
 }
 @advanced dropdown gmail "Dark e-mails for Gmail" {
 	G2 "Disabled*" <<<EOT /*_[[gmail]]_*\/ EOT;
-G1 "Enabled Full (Default)" <<<EOT .Bu, .bAn, .bAt, .nr.wR, .bAt > tbody, .bAt > tbody > tr, .Su .nH.aBz, .iC, .h-c-header__bar, .h-c-footer, .r4, .v .fY, .v .f1, .HM, .aC3, :not(.aDj).aDi::after, .ve-nj-Qc, .J-at1-auR[disabled], .ve-Cj-El-Fl, .ve-Cj-Qc-qb {
+G1 "Enabled Full (Default)" <<<EOT .Bu, .bAn, .bAt, .nr.wR, .bAt > tbody, .bAt > tbody > tr, .Su .nH.aBz, .iC, .h-c-header__bar, .h-c-footer, .r4, .v .fY, .v .f1, .HM, .aC3, :not(.aDj).aDi::after, .ve-nj-Qc, .J-at1-auR[disabled], .ve-Cj-El-Fl, .ve-Cj-Qc-qb, .top-area {
 	background-color: #131313 !important;
 }
 
-.alO, .agd .J-M-JJ input, .a8B, .a8F, .g-gmail-main, #linkdialog-text, #linkdialog-email-tab-input, #linkdialog-onweb-tab-input, .ve-Fi-ie, .ve-Ci-Zb-Di-Yb-ih, .ve-Gf-Lf, button[name="cancel"], .Nd-eg-Gf, .Nd-hg-Kc, .ZF-z6, .ZF-zT, .ZF-Av .lJ, .ZF-Av .lN, .J-JB-KA-K8::before, .nr, .vR > .vN {
+.alO, .agd .J-M-JJ input, .a8B, .a8F, .g-gmail-main, #linkdialog-text, #linkdialog-email-tab-input, #linkdialog-onweb-tab-input, .ve-Fi-ie, .ve-Ci-Zb-Di-Yb-ih, .ve-Gf-Lf, button[name="cancel"], .Nd-eg-Gf, .Nd-hg-Kc, .ZF-z6, .ZF-zT, .ZF-Av .lJ, .ZF-Av .lN, .J-JB-KA-K8::before, .nr, .vR > .vN, .bottom-area {
 	background-color: #1C1C1C !important;
 }
 
-.adI, .hU, .bzx, .h9.gt, .J-M, .g-gmail-hero, .section--secure, .section--organize .content--organize, .To.Ze, .Kj-JD, .KA.Kj-JD-Jh, .vO, .wO, .J-Z, .aaZ, .ah.aiv, .ah.uR, .aFf .ak[style*="background-image"], .aaZ .dC, .aaZ .J-M, .aaZ .vN.vQ, .J-Ks-KO .J-N-Jo, .asi .J-Ks-KO::before, .aoT, .aoP .Ar, .Am.editable, .aDg > .aDj, .aXjCH > .et > div.ah.aiv, .GQ, .IG, .azX, .aNU, .Ap, .aNQ, .Od-kh-lh, .ve-Kj-Qc-qb, .ve-Mi-ie, .LW-KX-Jm, .LW-KX .J-KU-Jz, .LW-KX .J-KU-Jg, .LW-KX .J-KU, .Nd-Zf-Bf, .Nd-Zf-Kc .Nd-cg-Kc,.quantumWizMenuPaperselectPopup, .d-Qs-Jh-JF, .d-Qs-Md, .qY, .ve-Ym-kf-Ym-mh, .d-u-Q, [aria-selected="false"] > .Od-lh-mh, .a-R-kb-u, .Nd-eg-nc, .ve-Ve-Nd-Sf .ve-Hl-Il, .ve-Bi-Ve .ve-Nd-Jl-Kl .ve-Hl-Il, .ve-Di-ie, .d-u-Q, .gb_5e, .gb_4e, .J-JB-KA-JB:not(.J-JB-KA-K8):not(.J-JB-KA-KO):hover::before, .vh, .gb_Ve, .gb_We, .gssb_e, .gssb_m, .gssb_i, .gssb_m  {
+.adI, .hU, .bzx, .h9.gt, .J-M, .g-gmail-hero, .section--secure, .section--organize .content--organize, .To.Ze, .Kj-JD, .KA.Kj-JD-Jh, .vO, .wO, .J-Z, .aaZ, .ah.aiv, .ah.uR, .aFf .ak[style*="background-image"], .aaZ .dC, .aaZ .J-M, .aaZ .vN.vQ, .J-Ks-KO .J-N-Jo, .asi .J-Ks-KO::before, .aoT, .aoP .Ar, .Am.editable, .aDg > .aDj, .aXjCH > .et > div.ah.aiv, .GQ, .IG, .azX, .aNU, .Ap, .aNQ, .Od-kh-lh, .ve-Kj-Qc-qb, .ve-Mi-ie, .LW-KX-Jm, .LW-KX .J-KU-Jz, .LW-KX .J-KU-Jg, .LW-KX .J-KU, .Nd-Zf-Bf, .Nd-Zf-Kc .Nd-cg-Kc,.quantumWizMenuPaperselectPopup, .d-Qs-Jh-JF, .d-Qs-Md, .qY, .ve-Ym-kf-Ym-mh, .d-u-Q, [aria-selected="false"] > .Od-lh-mh, .a-R-kb-u, .Nd-eg-nc, .ve-Ve-Nd-Sf .ve-Hl-Il, .ve-Bi-Ve .ve-Nd-Jl-Kl .ve-Hl-Il, .ve-Di-ie, .d-u-Q, .gb_5e, .gb_4e, .J-JB-KA-JB:not(.J-JB-KA-K8):not(.J-JB-KA-KO):hover::before, .vh, .gb_Ve, .gb_We, .gssb_e, .gssb_m, .gssb_i, .gssb_m, .raw_message_text {
 	background-color: #2C2C2C !important;
 }
 
-.ams.bkH, .ams.bkG, .hV, .bzx .bzr:hover, .bzx .bzr:focus, .J-N-JT, .J-N-JW, .alB, .alD, .T-I-KE, .J-JB-KA, .J-JB-KA-JS, .J-JB-KA-Jk, .J-JB-KA-LG, .ah .Jd-Je, .Od-kh-w, div.Kj-JD-Jl > button.J-at1-atl:disabled, .Nd-Zf-nc-w, .quantumWizMenuPaperselectOption.isSelected, .appsShareTeamdriveAclfixerButton:hover .exportOverlay, .J-ayz-axF.KO, .ve-Ym-kf-Ym-mh:hover, .d-u-Q:hover, button[name="cancel"]:hover, .Od-lh-mh[aria-selected="true"] > div, [aria-selected="true"] > .Od-lh-mh, .Nd-eg-nc-w, .d-u-Q.d-u-w {
+.ams.bkH, .ams.bkG, .hV, .bzx .bzr:hover, .bzx .bzr:focus, .J-N-JT, .J-N-JW, .alB, .alD, .T-I-KE, .J-JB-KA, .J-JB-KA-JS, .J-JB-KA-Jk, .J-JB-KA-LG, .ah .Jd-Je, .Od-kh-w, div.Kj-JD-Jl > button.J-at1-atl:disabled, .Nd-Zf-nc-w, .quantumWizMenuPaperselectOption.isSelected, .appsShareTeamdriveAclfixerButton:hover .exportOverlay, .J-ayz-axF.KO, .ve-Ym-kf-Ym-mh:hover, .d-u-Q:hover, button[name="cancel"]:hover, .Od-lh-mh[aria-selected="true"] > div, [aria-selected="true"] > .Od-lh-mh, .Nd-eg-nc-w, .d-u-Q.d-u-w, .ams.bkI {
 	background-color: #3C3C3C !important;
 }
 
-.ams.bkH:hover, .ams.bkG:hover, .rZ, .TK .TO:active, .n6 .ah9.aiu:active, .CL:active, .TO.nZ, .TO.ol, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW, .gssb_l {
+.ams.bkH:hover, .ams.bkG:hover, .rZ, .TK .TO:active, .n6 .ah9.aiu:active, .CL:active, .TO.nZ, .TO.ol, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW, .gssb_l, .ams.bkI:hover {
 	background-color: #4C4C4C !important;
 }
 
@@ -158,7 +158,7 @@ hr {
 	border: 0; border-top: 1px solid #4C4C4C !important;
 }
 
-[style*="border:1px solid #eee"], [style*="border:1px solid #fafafa"], [style*="border:1px solid #ffffff"], .J-Kh, .alB, .alD, .r7 td.r8, .r7 td.r9, .r7 td.r5, .qV, .qX, .al8, .al7, .PS, .Az.AM, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW, .KA.Kj-JD, .a8F, .HM .I5, .HM .aDi::before, .Od-kh-Ld, #linkdialog-text, #linkdialog-email-tab-input, #linkdialog-onweb-tab-input, .ve-Mi-ie, .Od-kh-lh, .ve-Ue-Nd-Nf .ve-eb-Kc, .ve-Ii-Ue .ve-Nd-Rl-Sl .ve-eb-Kc, .Nd-Zf-lg, .Nd-Zf-Bf, .quantumWizTogglePaperradioOffRadio, .d-Qs-M8-ayz, .d-Qs-KO-ayz, .d-Qs-RG, .ve-Ci-Zb-ie, .ve-Fi-ie, .ve-Ym-kf-Ym-mh, .ve-nj-Qc, .ve-Fc-Ye-Fo-qg, .d-u-Q:hover, .d-u-Q, .Od-lh-mh, .a-R-kb-u, .Nd-eg-Gf, .Nd-eg-qg, .ve-eb-Kc, .d-Rb:not(:focus), .ve-Ve-Nd-Sf .ve-Hl-Il, .ve-Bi-Ve .ve-Nd-Jl-Kl .ve-Hl-Il, .Nd-jg-ig-G, .ve-Ai-Zb-ie f, .J-JB-KA, .vR > .vN, .gssb_e  {
+[style*="border:1px solid #eee"], [style*="border:1px solid #fafafa"], [style*="border:1px solid #ffffff"], .J-Kh, .alB, .alD, .r7 td.r8, .r7 td.r9, .r7 td.r5, .qV, .qX, .al8, .al7, .PS, .Az.AM, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW, .KA.Kj-JD, .a8F, .HM .I5, .HM .aDi::before, .Od-kh-Ld, #linkdialog-text, #linkdialog-email-tab-input, #linkdialog-onweb-tab-input, .ve-Mi-ie, .Od-kh-lh, .ve-Ue-Nd-Nf .ve-eb-Kc, .ve-Ii-Ue .ve-Nd-Rl-Sl .ve-eb-Kc, .Nd-Zf-lg, .Nd-Zf-Bf, .quantumWizTogglePaperradioOffRadio, .d-Qs-M8-ayz, .d-Qs-KO-ayz, .d-Qs-RG, .ve-Ci-Zb-ie, .ve-Fi-ie, .ve-Ym-kf-Ym-mh, .ve-nj-Qc, .ve-Fc-Ye-Fo-qg, .d-u-Q:hover, .d-u-Q, .Od-lh-mh, .a-R-kb-u, .Nd-eg-Gf, .Nd-eg-qg, .ve-eb-Kc, .d-Rb:not(:focus), .ve-Ve-Nd-Sf .ve-Hl-Il, .ve-Bi-Ve .ve-Nd-Jl-Kl .ve-Hl-Il, .Nd-jg-ig-G, .ve-Ai-Zb-ie f, .J-JB-KA, .vR > .vN, .gssb_e, .raw_message, .raw_message_text, .top-area > table > tbody > tr > th, .top-area > table > tbody > tr > td  {
 	border-color: #4C4C4C !important;
 }
 
@@ -166,12 +166,16 @@ hr {
 	color: #FAFAFA !important;
 }
 
-.J-JN-M-I-Jm, .hx .gD, .amn > .ams, .ig .g3, .hI .g3, .iv .g3, div.Kj-JD-Jz, .bzq.bzr.IdsTHf, .J-N, .v .f1, .v .f1 .f0, .bAY .rm, .hU.hM, .Az .Ay, .J-N, .J-LC, .J-JK, .Am.editable, .J-J5-Ji .J-Z-M-I-Jm, .aiv .am > .ao5, .aiv .aq, div[id^="gmail-m_"], div[id^="gmail-m_"] > p, .content__copy, .content__text, .h-c-copy, .vv-vk-avi, .byf, .ve-Ji-Zb-Ki-Yb-hh .a-Ki, .ve-Ji-Zb-Ki-Yb-hh .a-kb-u, .Nd-Zf-Bf-lg, .Nd-ke-De-pe, .quantumWizMenuPaperselectOption, .appsShareTeamdriveAclfixerNoAccessToggle, .tg > .vU , .ve-Ck-kf-cb, .ve-Ij-Mj, .ve-Ij-hd, .ve-nj-Qc, .d-u-Q, #linkdialog-text, #LW-Ke-JD-LV-J7, .ve-Cj-El-Fl, .Od-lh-cb, .LW-Ke-JD-LV-J7, .Od-Jf-Oc-tc, .asd, .ve-Ak-Ze-cbm, .ve-lj-vf, .ve-Ak-Ze-cb, .ve-Gj-Xf, .gb_5e input::placeholder, .boo > .ZG, .bs3, .J-JB-KA-JS, .J-JB-KA-Jk, .aD, .bY, .nr, .bs0 > .acM.acN, .bAq, .vZ > .v1, .gssb_m, .gb_Ve input::placeholder  {
+.J-JN-M-I-Jm, .amn > .ams, .ig .g3, .hI .g3, .iv .g3, div.Kj-JD-Jz, .bzq.bzr.IdsTHf, .J-N, .v .f1, .v .f1 .f0, .bAY .rm, .hU.hM, .Az .Ay, .J-N, .J-LC, .J-JK, .Am.editable, .J-J5-Ji .J-Z-M-I-Jm, .aiv .am > .ao5, .aiv .aq, div[id^="gmail-m_"], div[id^="gmail-m_"] > p, .content__copy, .content__text, .h-c-copy, .vv-vk-avi, .byf, .ve-Ji-Zb-Ki-Yb-hh .a-Ki, .ve-Ji-Zb-Ki-Yb-hh .a-kb-u, .Nd-Zf-Bf-lg, .Nd-ke-De-pe, .quantumWizMenuPaperselectOption, .appsShareTeamdriveAclfixerNoAccessToggle, .tg > .vU , .ve-Ck-kf-cb, .ve-Ij-Mj, .ve-Ij-hd, .ve-nj-Qc, .d-u-Q, #linkdialog-text, #LW-Ke-JD-LV-J7, .ve-Cj-El-Fl, .Od-lh-cb, .LW-Ke-JD-LV-J7, .Od-Jf-Oc-tc, .asd, .ve-Ak-Ze-cbm, .ve-lj-vf, .ve-Ak-Ze-cb, .ve-Gj-Xf, .gb_5e input::placeholder, .boo > .ZG, .bs3, .J-JB-KA-JS, .J-JB-KA-Jk, .aD, .bY, .nr, .bs0 > .acM.acN, .bAq, .vZ > .v1, .gssb_m, .gb_Ve input::placeholder, .raw_message_text, .gF > .gD, .iw > .qu > .gD, .iw > .qu > .go, .iw > .hb .g2 {
 	color: #CCC !important;
 }
 
 .J-J5-Ji .J-Z-M-I-Jm, .aiv .am > .Sr, .acP {
 	color: #AAA !important;
+}
+
+.gI > .qu > .go {
+    color: #1C1C1C !important;
 }
 
 .vN.vQ.a3q .vT, .a-Cb-w > .a-ub-eb {
@@ -194,7 +198,7 @@ hr {
 	color: #0A0A0A !important;
 }
 
-.ams.bkH, .ams.bkG, .bzx .bzr, .bzx .bzr:hover, .bzx .bzr:focus {
+.ams.bkH, .ams.bkG, .bzx .bzr, .bzx .bzr:hover, .bzx .bzr:focus, .ams.bkI {
 	box-shadow: inset 0 0 0 1px #4C4C4C !important;
 }
 
@@ -219,11 +223,11 @@ hr {
 	filter: invert(100%) hue-rotate(180deg) contrast(110%) saturate(90%);
 }
 
-.SD > [class*="g"], .T-I > [class*="h"], .bi4 > .T-KT:not(.T-KT-Jp):not(.byM)::before, .adK > .zzm .ha .pH-A7, .ha .aoj, .f.gW, :not(.pG) > .a9q, .J-N-Jz div.J-N-JX.aDE, .J-Ph-hFsbo, .J-Ks-KO .J-N-Jo, .aaA.eY, .J-Z-M-I-J6-H > .J-Z-M-I-JG, .aaA.eS, .ve-fk-b-xh, .ve-fk-mk-nk, .ve-Nd-Sf-ei-u, .ve-fk-Nd-gk-df, .a-Cb-w, .bs1 + .bs3::before, .btj + .aD::before, .bs5::after, .btl.acK, .btl > .btn::before, .gsoi_msra {
+.SD > [class*="g"], .T-I > [class*="h"], .bi4 > .T-KT:not(.T-KT-Jp):not(.byM)::before, .adK > .zzm .ha .pH-A7, .ha .aoj, .f.gW, :not(.pG) > .a9q, .J-N-Jz div.J-N-JX.aDE, .J-Ph-hFsbo, .J-Ks-KO .J-N-Jo, .aaA.eY, .J-Z-M-I-J6-H > .J-Z-M-I-JG, .aaA.eS, .ve-fk-b-xh, .ve-fk-mk-nk, .ve-Nd-Sf-ei-u, .ve-fk-Nd-gk-df, .a-Cb-w, .bs1 + .bs3::before, .btj + .aD::before, .bs5::after, .btl.acK, .btl > .btn::before, .gsoi_msra, .amn > .ams::before {
 	filter: invert(85%) !important;
 }
 
-.adJ > .hc, .zi > .hc, .ajy > .ajz, .J-JN-M-I-JG, .ob > .adG, span.Kj-JD-K7-Jq, .aeu, .zz, .asi .J-Ks-KO::before, .J-M-JJ .A0, .J-Z-I-J6-H, .J-Z-M-I .aUI.Y1, .a8E, .biy.Je, .hB, .mL, .Un::after, .mI, .SB, div.J-J5-Ji.J-Z-M-I-Jm > div.aaA.aaB.e4, .J-J5-Ji.J-Z-M-I-Jm > .aaA.aaB.eP, .J-J5-Ji.J-Z-M-I-Jm > .aaA.aaB.fc, .vv-vk-Jq-JX, .byd, .byf::before, .ve-nk-db-Ki, .ve-nk-uk-vk, .J-LC-Jo, .ve-nk-Nd-ok-zg, .Nd-ke-I-kf-re, .ve-zj-kh-Nf, .quantumWizMenuPaperselectDropDown, .d-Na-J3, .tk > .W2, .tk > .W3, .tk > .W4, .ve-fk-db-Di, .Nd-ke-I-pf-re, .ve-dk-b-th, .ve-dk-kk-lk, .vN > .vM {
+.adJ > .hc, .zi > .hc, .ajy > .ajz, .J-JN-M-I-JG, .ob > .adG, span.Kj-JD-K7-Jq, .aeu, .zz, .asi .J-Ks-KO::before, .J-M-JJ .A0, .J-Z-I-J6-H, .J-Z-M-I .aUI.Y1, .a8E, .biy.Je, .hB, .mL, .Un::after, .mI, .SB, div.J-J5-Ji.J-Z-M-I-Jm > div.aaA.aaB.e4, .J-J5-Ji.J-Z-M-I-Jm > .aaA.aaB.eP, .J-J5-Ji.J-Z-M-I-Jm > .aaA.aaB.fc, .vv-vk-Jq-JX, .byd, .byf::before, .ve-nk-db-Ki, .ve-nk-uk-vk, .J-LC-Jo, .ve-nk-Nd-ok-zg, .Nd-ke-I-kf-re, .ve-zj-kh-Nf, .quantumWizMenuPaperselectDropDown, .tk > .W2, .tk > .W3, .tk > .W4, .ve-fk-db-Di, .Nd-ke-I-pf-re, .ve-dk-b-th, .ve-dk-kk-lk, .vN > .vM, .mK {
 	filter: invert(100%) !important;
 }
 
@@ -233,23 +237,23 @@ button[name="cancel"] {
 }
 
 /*_[[gmail]]_*\/ EOT;
-G3 "Enabled without dark e-mails" <<<EOT .bAt, .bAt > tbody, .bAt > tbody > tr, .Su .nH.aBz, .iC, .h-c-header__bar, .h-c-footer, .r4, .v .fY, .v .f1, .HM, .aC3, :not(.aDj).aDi::after, .ve-nj-Qc, .J-at1-auR[disabled], .ve-Cj-El-Fl, .ve-Cj-Qc-qb {
+G3 "Enabled without dark e-mails" <<<EOT .bAt, .bAt > tbody, .bAt > tbody > tr, .Su .nH.aBz, .iC, .h-c-header__bar, .h-c-footer, .r4, .v .fY, .v .f1, .HM, .aC3, :not(.aDj).aDi::after, .ve-nj-Qc, .J-at1-auR[disabled], .ve-Cj-El-Fl, .ve-Cj-Qc-qb, .top-area {
 	background-color: #131313 !important;
 }
 
-.alO, .agd .J-M-JJ input, .a8B, .a8F, .g-gmail-main, #linkdialog-text, #linkdialog-email-tab-input, #linkdialog-onweb-tab-input, .ve-Fi-ie, .ve-Ci-Zb-Di-Yb-ih, .ve-Gf-Lf, button[name="cancel"], .Nd-eg-Gf, .Nd-hg-Kc, .ZF-z6, .ZF-zT, .ZF-Av .lJ, .ZF-Av .lN, .J-JB-KA-K8::before, .nr, .vR > .vN  {
+.alO, .agd .J-M-JJ input, .a8B, .a8F, .g-gmail-main, #linkdialog-text, #linkdialog-email-tab-input, #linkdialog-onweb-tab-input, .ve-Fi-ie, .ve-Ci-Zb-Di-Yb-ih, .ve-Gf-Lf, button[name="cancel"], .Nd-eg-Gf, .Nd-hg-Kc, .ZF-z6, .ZF-zT, .ZF-Av .lJ, .ZF-Av .lN, .J-JB-KA-K8::before, .nr, .vR > .vN, .bottom-area {
 	background-color: #1C1C1C !important;
 }
 
-.adI, .hU, .bzx, .h9.gt, .J-M, .g-gmail-hero, .section--secure, .section--organize .content--organize, .To.Ze, .Kj-JD, .KA.Kj-JD-Jh, .vO, .wO, .J-Z, .aaZ, .ah.aiv, .ah.uR, .aFf .ak[style*="background-image"], .aaZ .dC, .aaZ .J-M, .aaZ .vN.vQ, .J-Ks-KO .J-N-Jo, .asi .J-Ks-KO::before, .aoT, .aoP .Ar, .Am.editable, .aDg > .aDj, .aXjCH > .et > div.ah.aiv, .GQ, .IG, .azX, .aNU, .Ap, .aNQ, .Od-kh-lh, .ve-Kj-Qc-qb, .ve-Mi-ie, .LW-KX-Jm, .LW-KX .J-KU-Jz, .LW-KX .J-KU-Jg, .LW-KX .J-KU, .Nd-Zf-Bf, .Nd-Zf-Kc .Nd-cg-Kc,.quantumWizMenuPaperselectPopup, .d-Qs-Jh-JF, .d-Qs-Md, .qY, .ve-Ym-kf-Ym-mh, .d-u-Q, [aria-selected="false"] > .Od-lh-mh, .a-R-kb-u, .Nd-eg-nc, .ve-Ve-Nd-Sf .ve-Hl-Il, .ve-Bi-Ve .ve-Nd-Jl-Kl .ve-Hl-Il, .ve-Di-ie, .d-u-Q, .gb_5e, .gb_4e, .J-JB-KA-JB:not(.J-JB-KA-K8):not(.J-JB-KA-KO):hover::before, .vh, .gb_Ve, .gb_We, .gssb_e, .gssb_m, .gssb_i, .gssb_m {
+.adI, .hU, .bzx, .h9.gt, .J-M, .g-gmail-hero, .section--secure, .section--organize .content--organize, .To.Ze, .Kj-JD, .KA.Kj-JD-Jh, .vO, .wO, .J-Z, .aaZ, .ah.aiv, .ah.uR, .aFf .ak[style*="background-image"], .aaZ .dC, .aaZ .J-M, .aaZ .vN.vQ, .J-Ks-KO .J-N-Jo, .asi .J-Ks-KO::before, .aoT, .aoP .Ar, .Am.editable, .aDg > .aDj, .aXjCH > .et > div.ah.aiv, .GQ, .IG, .azX, .aNU, .Ap, .aNQ, .Od-kh-lh, .ve-Kj-Qc-qb, .ve-Mi-ie, .LW-KX-Jm, .LW-KX .J-KU-Jz, .LW-KX .J-KU-Jg, .LW-KX .J-KU, .Nd-Zf-Bf, .Nd-Zf-Kc .Nd-cg-Kc,.quantumWizMenuPaperselectPopup, .d-Qs-Jh-JF, .d-Qs-Md, .qY, .ve-Ym-kf-Ym-mh, .d-u-Q, [aria-selected="false"] > .Od-lh-mh, .a-R-kb-u, .Nd-eg-nc, .ve-Ve-Nd-Sf .ve-Hl-Il, .ve-Bi-Ve .ve-Nd-Jl-Kl .ve-Hl-Il, .ve-Di-ie, .d-u-Q, .gb_5e, .gb_4e, .J-JB-KA-JB:not(.J-JB-KA-K8):not(.J-JB-KA-KO):hover::before, .vh, .gb_Ve, .gb_We, .gssb_e, .gssb_m, .gssb_i, .gssb_m, .raw_message_text {
 	background-color: #2C2C2C !important;
 }
 
-.ams.bkH, .ams.bkG, .hV, .bzx .bzr:hover, .bzx .bzr:focus, .J-N-JT, .J-N-JW, .alB, .alD, .T-I-KE, .J-JB-KA, .J-JB-KA-JS, .J-JB-KA-Jk, .J-JB-KA-LG, .ah .Jd-Je, .Od-kh-w, div.Kj-JD-Jl > button.J-at1-atl:disabled, .Nd-Zf-nc-w, .quantumWizMenuPaperselectOption.isSelected, .appsShareTeamdriveAclfixerButton:hover .exportOverlay, .J-ayz-axF.KO, .ve-Ym-kf-Ym-mh:hover, .d-u-Q:hover, button[name="cancel"]:hover, .Od-lh-mh[aria-selected="true"] > div, [aria-selected="true"] > .Od-lh-mh, .Nd-eg-nc-w, .d-u-Q.d-u-w {
+.ams.bkH, .ams.bkG, .hV, .bzx .bzr:hover, .bzx .bzr:focus, .J-N-JT, .J-N-JW, .alB, .alD, .T-I-KE, .J-JB-KA, .J-JB-KA-JS, .J-JB-KA-Jk, .J-JB-KA-LG, .ah .Jd-Je, .Od-kh-w, div.Kj-JD-Jl > button.J-at1-atl:disabled, .Nd-Zf-nc-w, .quantumWizMenuPaperselectOption.isSelected, .appsShareTeamdriveAclfixerButton:hover .exportOverlay, .J-ayz-axF.KO, .ve-Ym-kf-Ym-mh:hover, .d-u-Q:hover, button[name="cancel"]:hover, .Od-lh-mh[aria-selected="true"] > div, [aria-selected="true"] > .Od-lh-mh, .Nd-eg-nc-w, .d-u-Q.d-u-w, .ams.bkI {
 	background-color: #3C3C3C !important;
 }
 
-.ams.bkH:hover, .ams.bkG:hover, .rZ, .TK .TO:active, .n6 .ah9.aiu:active, .CL:active, .TO.nZ, .TO.ol, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW, .gssb_l {
+.ams.bkH:hover, .ams.bkG:hover, .rZ, .TK .TO:active, .n6 .ah9.aiu:active, .CL:active, .TO.nZ, .TO.ol, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW, .gssb_l, .ams.bkI:hover {
 	background-color: #4C4C4C !important;
 }
 
@@ -270,7 +274,7 @@ hr {
 	border: 0; border-top: 1px solid #4C4C4C !important;
 }
 
-[style*="border:1px solid #eee"], [style*="border:1px solid #fafafa"], [style*="border:1px solid #ffffff"], .J-Kh, .alB, .alD, .r7 td.r8, .r7 td.r9, .r7 td.r5, .qV, .qX, .al8, .al7, .PS, .Az.AM, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW, .KA.Kj-JD, .a8F, .HM .I5, .HM .aDi::before, .Od-kh-Ld, #linkdialog-text, #linkdialog-email-tab-input, #linkdialog-onweb-tab-input, .ve-Mi-ie, .Od-kh-lh, .ve-Ue-Nd-Nf .ve-eb-Kc, .ve-Ii-Ue .ve-Nd-Rl-Sl .ve-eb-Kc, .Nd-Zf-lg, .Nd-Zf-Bf, .quantumWizTogglePaperradioOffRadio, .d-Qs-M8-ayz, .d-Qs-KO-ayz, .d-Qs-RG, .ve-Ci-Zb-ie, .ve-Fi-ie, .ve-Ym-kf-Ym-mh, .ve-nj-Qc, .ve-Fc-Ye-Fo-qg, .d-u-Q:hover, .d-u-Q, .Od-lh-mh, .a-R-kb-u, .Nd-eg-Gf, .Nd-eg-qg, .ve-eb-Kc, .d-Rb:not(:focus), .ve-Ve-Nd-Sf .ve-Hl-Il, .ve-Bi-Ve .ve-Nd-Jl-Kl .ve-Hl-Il, .Nd-jg-ig-Gf, .ve-Ai-Zb-ie, .J-JB-KA, .vR > .vN, .gssb_e  {
+[style*="border:1px solid #eee"], [style*="border:1px solid #fafafa"], [style*="border:1px solid #ffffff"], .J-Kh, .alB, .alD, .r7 td.r8, .r7 td.r9, .r7 td.r5, .qV, .qX, .al8, .al7, .PS, .Az.AM, .J-LC-JT, .J-LC-JW, .J-JK-JT, .J-JK-JW, .KA.Kj-JD, .a8F, .HM .I5, .HM .aDi::before, .Od-kh-Ld, #linkdialog-text, #linkdialog-email-tab-input, #linkdialog-onweb-tab-input, .ve-Mi-ie, .Od-kh-lh, .ve-Ue-Nd-Nf .ve-eb-Kc, .ve-Ii-Ue .ve-Nd-Rl-Sl .ve-eb-Kc, .Nd-Zf-lg, .Nd-Zf-Bf, .quantumWizTogglePaperradioOffRadio, .d-Qs-M8-ayz, .d-Qs-KO-ayz, .d-Qs-RG, .ve-Ci-Zb-ie, .ve-Fi-ie, .ve-Ym-kf-Ym-mh, .ve-nj-Qc, .ve-Fc-Ye-Fo-qg, .d-u-Q:hover, .d-u-Q, .Od-lh-mh, .a-R-kb-u, .Nd-eg-Gf, .Nd-eg-qg, .ve-eb-Kc, .d-Rb:not(:focus), .ve-Ve-Nd-Sf .ve-Hl-Il, .ve-Bi-Ve .ve-Nd-Jl-Kl .ve-Hl-Il, .Nd-jg-ig-Gf, .ve-Ai-Zb-ie, .J-JB-KA, .vR > .vN, .gssb_e, .raw_message, .raw_message_text, .top-area > table > tbody > tr > th, .top-area > table > tbody > tr > td {
 	border-color: #4C4C4C !important;
 }
 
@@ -278,12 +282,16 @@ hr {
 	color: #FAFAFA !important;
 }
 
-.J-JN-M-I-Jm, .amn > .ams, .ig .g3, .hI .g3, div.Kj-JD-Jz, .bzq.bzr.IdsTHf, .J-N, .v .f1, .v .f1 .f0, .bAY .rm, .hU.hM, .Az .Ay, .J-N, .J-LC, .J-JK, .Am.editable, .J-J5-Ji .J-Z-M-I-Jm, .aiv .am > .ao5, .aiv .aq, div[id^="gmail-m_"], div[id^="gmail-m_"] > p, .content__copy, .content__text, .h-c-copy, .vv-vk-avi, .byf, .ve-Ji-Zb-Ki-Yb-hh .a-Ki, .ve-Ji-Zb-Ki-Yb-hh .a-kb-u, .Nd-Zf-Bf-lg, .Nd-ke-De-pe, .quantumWizMenuPaperselectOption, .appsShareTeamdriveAclfixerNoAccessToggle, .tg > .vU , .ve-Ck-kf-cb, .ve-Ij-Mj, .ve-Ij-hd, .ve-nj-Qc, .d-u-Q, #linkdialog-text, #LW-Ke-JD-LV-J7, .ve-Cj-El-Fl, .Od-lh-cb, .LW-Ke-JD-LV-J7, .Od-Jf-Oc-tc, .asd, .ve-Ak-Ze-cbm, .ve-lj-vf, .ve-Ak-Ze-cb, .ve-Gj-Xf, .gb_5e input::placeholder, .boo > .ZG, .bs3, .J-JB-KA-JS, .J-JB-KA-Jk, .aD, .bY, .nr, .bs0 > .acM.acN, .bAq, .vZ > .v1, .gssb_m, .gb_Ve input::placeholder  {
+.J-JN-M-I-Jm, .amn > .ams, .ig .g3, .hI .g3, div.Kj-JD-Jz, .bzq.bzr.IdsTHf, .J-N, .v .f1, .v .f1 .f0, .bAY .rm, .hU.hM, .Az .Ay, .J-N, .J-LC, .J-JK, .Am.editable, .J-J5-Ji .J-Z-M-I-Jm, .aiv .am > .ao5, .aiv .aq, div[id^="gmail-m_"], div[id^="gmail-m_"] > p, .content__copy, .content__text, .h-c-copy, .vv-vk-avi, .byf, .ve-Ji-Zb-Ki-Yb-hh .a-Ki, .ve-Ji-Zb-Ki-Yb-hh .a-kb-u, .Nd-Zf-Bf-lg, .Nd-ke-De-pe, .quantumWizMenuPaperselectOption, .appsShareTeamdriveAclfixerNoAccessToggle, .tg > .vU , .ve-Ck-kf-cb, .ve-Ij-Mj, .ve-Ij-hd, .ve-nj-Qc, .d-u-Q, #linkdialog-text, #LW-Ke-JD-LV-J7, .ve-Cj-El-Fl, .Od-lh-cb, .LW-Ke-JD-LV-J7, .Od-Jf-Oc-tc, .asd, .ve-Ak-Ze-cbm, .ve-lj-vf, .ve-Ak-Ze-cb, .ve-Gj-Xf, .gb_5e input::placeholder, .boo > .ZG, .bs3, .J-JB-KA-JS, .J-JB-KA-Jk, .aD, .bY, .nr, .bs0 > .acM.acN, .bAq, .vZ > .v1, .gssb_m, .gb_Ve input::placeholder, .raw_message_text, .gF > .gD, .iw > .qu > .gD, .iw > .qu > .go, .iw > .hb .g2 {
 	color: #CCC !important;
 }
 
 .J-J5-Ji .J-Z-M-I-Jm, .aiv .am > .Sr, .acP {
 	color: #AAA !important;
+}
+
+.gI > .qu > .go {
+    color: #1C1C1C !important;
 }
 
 .vN.vQ.a3q .vT, .a-Cb-w > .a-ub-eb {
@@ -306,7 +314,7 @@ hr {
 	color: #0A0A0A !important;
 }
 
-.ams.bkH, .ams.bkG, .bzx .bzr, .bzx .bzr:hover, .bzx .bzr:focus {
+.ams.bkH, .ams.bkG, .bzx .bzr, .bzx .bzr:hover, .bzx .bzr:focus, .ams.bkI {
 	box-shadow: inset 0 0 0 1px #4C4C4C !important;
 }
 
@@ -322,11 +330,11 @@ hr {
 	box-shadow: 0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #4C4C4C !important;
 }
 
-.adK > .zzm .ha .pH-A7, .ha .aoj, .f.gW, :not(.pG) > .a9q, .J-N-Jz div.J-N-JX.aDE, .J-Ph-hFsbo, .J-Ks-KO .J-N-Jo, .aaA.eY, .J-Z-M-I-J6-H > .J-Z-M-I-JG, .aaA.eS, .ve-fk-b-xh, .ve-fk-mk-nk, .ve-Nd-Sf-ei-u, .ve-fk-Nd-gk-df, .a-Cb-w, .bs1 + .bs3::before, .btj + .aD::before, .bs5::after, .btl.acK, .btl > .btn::before, .gsoi_msra {
+.adK > .zzm .ha .pH-A7, .ha .aoj, .f.gW, :not(.pG) > .a9q, .J-N-Jz div.J-N-JX.aDE, .J-Ph-hFsbo, .J-Ks-KO .J-N-Jo, .aaA.eY, .J-Z-M-I-J6-H > .J-Z-M-I-JG, .aaA.eS, .ve-fk-b-xh, .ve-fk-mk-nk, .ve-Nd-Sf-ei-u, .ve-fk-Nd-gk-df, .a-Cb-w, .bs1 + .bs3::before, .btj + .aD::before, .bs5::after, .btl.acK, .btl > .btn::before, .gsoi_msra, .amn > .ams::before {
 	filter: invert(85%) !important;
 }
 
-.adJ > .hc, .zi > .hc, .J-JN-M-I-JG, .ob > .adG, span.Kj-JD-K7-Jq, .aeu, .zz, .asi .J-Ks-KO::before, .J-M-JJ .A0, .J-Z-I-J6-H, .J-Z-M-I .aUI.Y1, .a8E, .biy.Je, .mL, .Un::after, .mI, .SB, div.J-J5-Ji.J-Z-M-I-Jm > div.aaA.aaB.e4, .J-J5-Ji.J-Z-M-I-Jm > .aaA.aaB.eP, .J-J5-Ji.J-Z-M-I-Jm > .aaA.aaB.fc, .vv-vk-Jq-JX, .byd, .byf::before, .ve-nk-db-Ki, .ve-nk-uk-vk, .J-LC-Jo, .ve-nk-Nd-ok-zg, .Nd-ke-I-kf-re, .ve-zj-kh-Nf, .quantumWizMenuPaperselectDropDown, .tk > .W2, .tk > .W3, .tk > .W4, .ve-fk-db-Di, .Nd-ke-I-pf-re, .ve-dk-b-th, .ve-dk-kk-lk, .vN > .vM {
+.adJ > .hc, .zi > .hc, .J-JN-M-I-JG, .ob > .adG, span.Kj-JD-K7-Jq, .aeu, .zz, .asi .J-Ks-KO::before, .J-M-JJ .A0, .J-Z-I-J6-H, .J-Z-M-I .aUI.Y1, .a8E, .biy.Je, .mL, .Un::after, .mI, .SB, div.J-J5-Ji.J-Z-M-I-Jm > div.aaA.aaB.e4, .J-J5-Ji.J-Z-M-I-Jm > .aaA.aaB.eP, .J-J5-Ji.J-Z-M-I-Jm > .aaA.aaB.fc, .vv-vk-Jq-JX, .byd, .byf::before, .ve-nk-db-Ki, .ve-nk-uk-vk, .J-LC-Jo, .ve-nk-Nd-ok-zg, .Nd-ke-I-kf-re, .ve-zj-kh-Nf, .quantumWizMenuPaperselectDropDown, .tk > .W2, .tk > .W3, .tk > .W4, .ve-fk-db-Di, .Nd-ke-I-pf-re, .ve-dk-b-th, .ve-dk-kk-lk, .vN > .vM, .mK {
 	filter: invert(100%) !important;
 }
 
@@ -352,11 +360,11 @@ G4 "Dark e-mails only" <<<EOT .Bu, .bAn, .nr.wR {
 	color: #FAFAFA  !important;
 }
 
-.hx .gD, .iv .g3, .amn > .ams {
+.iv .g3, .amn > .ams {
 	color: #CCC !important;
 }
 
-.hx .hb {
+.hx .hb, .gF > .gD {
 	color: #AAA !important;
 }
 
@@ -400,8 +408,8 @@ C5 "Lake" <<<EOT https://i.imgur.com/EMalQHU.jpg EOT;
 * Name:			Google Darkest Fusion
 * Homepage:		https://userstyles.org/styles/167419/
 * Author:		Atx
-* Version:		v6.57
-* Updated: 		27.01.2021
+* Version:		v6.58
+* Updated: 		29.01.2021
 */
 
 activating_style_indicator
@@ -2344,7 +2352,7 @@ bar-chart.fe-bar-chart-directive > .bar-chart-content > div > div > div > svg > 
 	background-color: #1C1C1C !important;
 }
 
-.kp-blk, .Qx67ob, .liveresults-sports-immersive__str-rs-cl, .cyFc6e, .t4Mnue, .o2ji6GoAIDp__menu, .imso-hov:focus, .hPFJud, .xpdopen > div > div > div > div > div > div > table, div.rl_feature, .rlc__slider, .rlc__slider-page, .vk_ard, .vk_aru, .w3RMhb:not(.rlf__ami):hover, .bq6vPc, .H73aad, .kappbar, .HIf9ae, .zd2Jbb, g-inner-card:not(.TVQGqd):not(.zf84ud), .lr-imso-ls-wodt, .flt-date, .keQQHc, #flt-destination-searchbox, #flt-origin-searchbox, td.hudp-date:hover, .Sjzt1b, a.Sjzt1b, .ksb, .wVudU, .gt-is, .pla-ikpdmo__header-row th, #qbp, input[type="submit"], .sbdd_a input, .gbqfba, .sxIvj, .ecRggb, .imso-hov:hover, #knowledge-finance-wholepage__entity-summary, .bm7Wje, .uch-xa-tl, .yvg0ob span, .KIdUu, .EEmK6c, .gstl_50.sbdd_a, .gstl_50 .sbdd_b, .gt-is-itm, .zaokob, .oDcTJb, .POlcrc.yJnCgb, .POlcrc.pHJT2, .P2c8Dd, .B678Hb, .ab_dropdown, .hdtb-mn-o, .hdtbItm, #lb > div, .yyjhs, #fsett, .sbib_a, .jTw2d, .imso-hov, .tb_c, .e7RZX, .zRQJhd, .YZ7eec, .xpdopen > span, .uMdZh:active, .rllt__local-item-selected, .ktf, .mslg > td > form > .ab_button, #lst-ib, .gssb_m, .F9PbJd, .fwcbM, .fnKRDd, .TWG7zb.TNpQ1d, .jCaeMe, .Eemr5e, .fiEaaf, .QhOZ7e, .lFfDUb, .BBHxge, .mMbopd, .nGzje, .imso_gf__bg-on, .vk_c, .kp-blk .mod:first-child, .cdr_dlg .goog-date-picker, .cu-container .mnr-c, .Teq10, .Mw2I7, .kno-nf-fs, .G9CET, a.gb_O, a.gb_P, ._-nw, .sh-ma-menu__menu:focus-within ._-nC, .sh-ma-menu__selected-value:valid ~ ._-nC, .sh-dvp__drop-down-container.goog-flat-menu-button, .sbsb_a, .sh-rso__content, .sh-mv__media, .sh-rso__header, .qmv19b, .TwNUtc, .wdQ5Cf, .NcAwsd, .orgdxf, .yZZ28b, .pla-hovercard-container, .CNf3nf, .exp-button, .Q3eSMc, .liveresults-sports-immersive__empty-tile, .imspo_mff__mff, .Ar8os, .EF2Bkc, .yOo6xe, .MSOQIb, .KT6Tgd .CxtIIb[aria-selected="true"], .Rj2Mlf:not(:disabled), .WyBc1, .Z2qvYb, .rl_item, .LR1OTe, .yEKpFf, .flt-actionblock, .FzXTfd a, .JP1Bwd, .I6TXqe, .USRMqe, .uais2d, .YcWSDf, .h312td, .Ix6LGe, .sFZIhb, .EwuLE, .act-tim-txt-cnt > div, .act-tim-fs-cnt:fullscreen, [jsmodel="Z6Tw2c"] > div, .glue-button.glue-button--medium-emphasis, .glue-button--medium-emphasis.glue-social__title.glue-social__title--zippy.glue-expansion-panel-toggle, .glue-button--medium-emphasis.glue-social__copy-btn, .glue-link:hover, .glue-link:focus, .glue-link:active, .glue-inline-link:hover, .glue-inline-link:focus, .glue-inline-link:active, .x7DFme, .tk51le, .Ntw4te, .action-menu-panel, .ru14E, .rKFBM, .xVtsMb, .cb2Ef, #jkXfPe, #LLsDr, #QDMvGf, .AYBNrd, .WGYX8, [class*="__kltc"], .jq2rAe, .kLhEKe, .G3kJ5b, .AUiS2, #uuF09 .i4RxRc, #I0MMff .i4RxRc, input.w7Nvcd, .nZWEZc .ttwCMe, .J3Tg1d, .nChh6e, .J6UZg, .NJfJb, .ey2qkf, .nzQQJ, [class*="__mobile-promo"], .uMdZh, .tFPnEd, .MGqjK, .lgJJud, .cF4V5c, .U8shWc, .KPV9xf, .tw-src-ltr, .jhH5U, .FAl3Ic, .w2IEs, .gQWC2e, .k8XOCe, .MXl0lf, .bV4oAc, .Hwkikb, .iqv4K .MjJo9, ._-ks, .KZmu8e, .iDGvh, .iMCzjd, .w90itc, .UnFsfe, .gEYEQc, .KGahvc, .OUYpmf, .X25d9b, .GiS6oc, ._-kE {
+.kp-blk, .Qx67ob, .liveresults-sports-immersive__str-rs-cl, .cyFc6e, .t4Mnue, .o2ji6GoAIDp__menu, .imso-hov:focus, .hPFJud, .xpdopen > div > div > div > div > div > div > table, div.rl_feature, .rlc__slider, .rlc__slider-page, .vk_ard, .vk_aru, .w3RMhb:not(.rlf__ami):hover, .bq6vPc, .H73aad, .kappbar, .HIf9ae, .zd2Jbb, g-inner-card:not(.TVQGqd):not(.zf84ud), .lr-imso-ls-wodt, .flt-date, .keQQHc, #flt-destination-searchbox, #flt-origin-searchbox, td.hudp-date:hover, .Sjzt1b, a.Sjzt1b, .ksb, .wVudU, .gt-is, .pla-ikpdmo__header-row th, #qbp, input[type="submit"], .sbdd_a input, .gbqfba, .sxIvj, .ecRggb, .imso-hov:hover, #knowledge-finance-wholepage__entity-summary, .bm7Wje, .uch-xa-tl, .yvg0ob span, .KIdUu, .EEmK6c, .gstl_50.sbdd_a, .gstl_50 .sbdd_b, .gt-is-itm, .zaokob, .oDcTJb, .POlcrc.yJnCgb, .POlcrc.pHJT2, .P2c8Dd, .B678Hb, .ab_dropdown, .hdtb-mn-o, .hdtbItm, #lb > div, .yyjhs, #fsett, .sbib_a, .jTw2d, .imso-hov, .tb_c, .e7RZX, .zRQJhd, .YZ7eec, .xpdopen > span, .uMdZh:active, .rllt__local-item-selected, .ktf, .mslg > td > form > .ab_button, #lst-ib, .gssb_m, .F9PbJd, .fwcbM, .fnKRDd, .TWG7zb.TNpQ1d, .jCaeMe, .Eemr5e, .fiEaaf, .QhOZ7e, .lFfDUb, .BBHxge, .mMbopd, .nGzje, .imso_gf__bg-on, .vk_c, .kp-blk .mod:first-child, .cdr_dlg .goog-date-picker, .cu-container .mnr-c, .Teq10, .Mw2I7, .kno-nf-fs, .G9CET, a.gb_O, a.gb_P, ._-nw, .sh-ma-menu__menu:focus-within ._-nC, .sh-ma-menu__selected-value:valid ~ ._-nC, .sh-dvp__drop-down-container.goog-flat-menu-button, .sbsb_a, .sh-rso__content, .sh-mv__media, .sh-rso__header, .qmv19b, .TwNUtc, .wdQ5Cf, .NcAwsd, .orgdxf, .yZZ28b, .pla-hovercard-container, .CNf3nf, .exp-button, .Q3eSMc, .liveresults-sports-immersive__empty-tile, .imspo_mff__mff, .Ar8os, .EF2Bkc, .yOo6xe, .MSOQIb, .KT6Tgd .CxtIIb[aria-selected="true"], .Rj2Mlf:not(:disabled), .WyBc1, .Z2qvYb, .rl_item, .LR1OTe, .yEKpFf, .flt-actionblock, .FzXTfd a, .JP1Bwd, .I6TXqe, .USRMqe, .uais2d, .YcWSDf, .h312td, .Ix6LGe, .sFZIhb, .EwuLE, .act-tim-txt-cnt > div, .act-tim-fs-cnt:fullscreen, [jsmodel="Z6Tw2c"] > div, .glue-button.glue-button--medium-emphasis, .glue-button--medium-emphasis.glue-social__title.glue-social__title--zippy.glue-expansion-panel-toggle, .glue-button--medium-emphasis.glue-social__copy-btn, .glue-link:hover, .glue-link:focus, .glue-link:active, .glue-inline-link:hover, .glue-inline-link:focus, .glue-inline-link:active, .x7DFme, .tk51le, .Ntw4te, .action-menu-panel, .ru14E, .rKFBM, .xVtsMb, .cb2Ef, #jkXfPe, #LLsDr, #QDMvGf, .AYBNrd, .WGYX8, [class*="__kltc"], .jq2rAe, .kLhEKe, .G3kJ5b, .AUiS2, #uuF09 .i4RxRc, #I0MMff .i4RxRc, input.w7Nvcd, .nZWEZc .ttwCMe, .J3Tg1d, .nChh6e, .J6UZg, .NJfJb, .ey2qkf, .nzQQJ, [class*="__mobile-promo"], .uMdZh, .tFPnEd, .MGqjK, .lgJJud, .cF4V5c, .U8shWc, .KPV9xf, .tw-src-ltr, .jhH5U, .FAl3Ic, .w2IEs, .gQWC2e, .k8XOCe, .MXl0lf, .bV4oAc, .Hwkikb, .iqv4K .MjJo9, ._-ks, .KZmu8e, .iDGvh, .iMCzjd, .w90itc, .UnFsfe, .gEYEQc, .KGahvc, .OUYpmf, .X25d9b, .GiS6oc, ._-kE, .THG0oc.cv2VAd {
 	background-color: #2C2C2C !important;
 }
 
@@ -2700,7 +2708,7 @@ img[src="/textinputassistant/tia.png"], .A9x0mb, .dir-tt .img, .MOIkmc, .tdu-tra
 }
 
 @-moz-document regexp("https:\\/\\/(www\\.)?([\\w]+[.])*(\\b(?!(business|careers|classroom|keep|maps|voice)\\b)\\w+\\.)google\\.(com|([a-z]{2}))(\\.[a-z]{2})?\\/(?!(intl\\/([a-z]{2})_([a-z]{2})\\/business|hl|translate|tools\\/feedback|gmail|uc\\?)).*") {
-body:not([jsaction^="LhiQec"]):not(.qJTHM), body#gsr div#cnt, html, .freebirdFormeditorViewEditingsurfaceEl body, #docs-editor, .a-D-B, .N7iPof, .forms > .unfixed-wrapper, md-content[ng-class], .hcfe-content, .page-business-index-emerge > .main > .light-gray, .page-business-insights > .main > .light-gray, .Cv8Rjc, .PpML1d, .ZMOaid.uGCjIb, .gN5aAe, .YisXab, .uGCjIb[style^="background: white"], .zYQnTe, .vNuDAe, .dFPtBe, #nugget-bar, .unfixed-wrapper, .rTY96b, .imso-fpm, .frame::before, #gb-main, .Cfu0qd:nth-child(2n), .gws-flights__footer-background, .a-qc-La, .Rn1jbe, .hqwb1b, .devsite-landing-row:not([background]), .trends-wrapper, g-tabs.u8H8Fd, .S4EObe .exaJlc, [background="grey"], #topstuff .sh-sp__pswtr, .trending-feed-page-wrapper > .feed-content, #main.paper-drawer-panel > paper-header-panel#content-container > #mainPanel.paper-header-panel, .J9Shxc, .jwExI, .ABd7Db, .mEVcIe, #viewport, .RvYhPd, .RvYhPd::before, .eReC4e, .Nxb87, .Xeztj, .AQfYHe, .VmOpGe, .dr1yeb, .HskPDe, .YSlUOe, .SSPGKf:not([jsrenderer^="LbnRB"]), .UzqbDd, body[bgcolor="#ffffff"] > .a
+body:not([jsaction^="LhiQec"]):not(.qJTHM):not([jscontroller="pjICDe"]), body#gsr div#cnt, html, .freebirdFormeditorViewEditingsurfaceEl body, #docs-editor, .a-D-B, .N7iPof, .forms > .unfixed-wrapper, md-content[ng-class], .hcfe-content, .page-business-index-emerge > .main > .light-gray, .page-business-insights > .main > .light-gray, .Cv8Rjc, .PpML1d, .ZMOaid.uGCjIb, .gN5aAe, .YisXab, .uGCjIb[style^="background: white"], .zYQnTe, .vNuDAe, .dFPtBe, #nugget-bar, .unfixed-wrapper, .rTY96b, .imso-fpm, .frame::before, #gb-main, .Cfu0qd:nth-child(2n), .gws-flights__footer-background, .a-qc-La, .Rn1jbe, .hqwb1b, .devsite-landing-row:not([background]), .trends-wrapper, g-tabs.u8H8Fd, .S4EObe .exaJlc, [background="grey"], #topstuff .sh-sp__pswtr, .trending-feed-page-wrapper > .feed-content, #main.paper-drawer-panel > paper-header-panel#content-container > #mainPanel.paper-header-panel, .J9Shxc, .jwExI, .ABd7Db, .mEVcIe, #viewport, .RvYhPd, .RvYhPd::before, .eReC4e, .Nxb87, .Xeztj, .AQfYHe, .VmOpGe, .dr1yeb, .HskPDe, .YSlUOe, .SSPGKf:not([jsrenderer^="LbnRB"]):not([jsrenderer="YOiC1e"]), .UzqbDd, body[bgcolor="#ffffff"] > .a
 /*customization begin*/
 {
 	background: url("/*[[custom_wallpaper]]*/") bottom fixed !important;
@@ -2731,7 +2739,10 @@ div[aria-label][aria-hidden="false"][img-loaded], a[href^="/?authuser="]:hover, 
 	background-color: #161616 !important;
 }
 
-a[class^="gb_"][href^="https://accounts.google.com/AddSession"]:hover, [class^="gb_"][role="group"]:hover, [class^="gb_"][role="group"]:focus, [class^="gb_"][role="group"]:active, [class^="gb_"] > a[href*="?authuser="]:hover, [class^="gb_"] > a[href*="?authuser="]:focus, [class^="gb_"] > a[href*="?authuser="]:active {
+a[class^="gb_"][href^="https://accounts.google.com/AddSession"]:hover, [class^="gb_"][role="group"]:hover, [class^="gb_"][role="group"]:focus, [class^="gb_"][role="group"]:active, [class^="gb_"] > a[href*="?authuser="]:hover, [class^="gb_"] > a[href*="?authuser="]:focus, [class^="gb_"] > a[href*="?authuser="]:active,
+a[href*="/mail/data/u"]:hover,
+a[href*="/mail/data/u"]:focus,
+a[href*="/mail/data/u"]:active{
 	background-color: #1C1C1C !important;
 }
 
@@ -2768,7 +2779,7 @@ div[aria-label][aria-hidden="false"][img-loaded], div[aria-label][aria-hidden="f
 	color: #FAFAFA !important;
 }
 
-body, div[aria-label] > div[class^="gb_"] > div > a, .gb_ga, .gb_fa, #gb a.gb_D, .Rq5Gcb, .vk-btn, a.gb_e, .gb_F, #gb a.gb_H, #gb a.gb_J, #gb a.gb_J:visited, #gb a.gb_J:active, #gb a.gb_K, #gb a.gb_K:visited, .gb_Sb.gb_Ub, .gb_nb.gb_nb, .gb_h.gb_i > .gb_g, .gb_Bb.gb_Bb, .gb_L:visited, .gb_ub:visited, .gb_Fb,.gb_Jb, .gb_zb, .UL2LKb, .fFW7wc-ibnC6b-K4efff, .gb_Lb, .gb_Mb, .pzGYBf, .ZfzyDb p, .k8Lt0 .JUYJVd p, .k8Lt0 .JUYJVd > div:first-child, .k8Lt0 .JUYJVd [class~="cb-heading"], .k8Lt0 .JUYJVd > h2, .gb_Hb, .c7O9k, .a1l33d, .QnUTxd {
+body, div[aria-label] > div[class^="gb_"] > div > a, .gb_ga, .gb_fa, #gb a.gb_D, .Rq5Gcb, .vk-btn, a.gb_e, .gb_F, #gb a.gb_H, #gb a.gb_J, #gb a.gb_J:visited, #gb a.gb_J:active, #gb a.gb_K, #gb a.gb_K:visited, .gb_Sb.gb_Ub, .gb_nb.gb_nb, .gb_h.gb_i > .gb_g, .gb_Bb.gb_Bb, .gb_L:visited, .gb_ub:visited, .gb_Fb,.gb_Jb, .gb_zb, .UL2LKb, .fFW7wc-ibnC6b-K4efff, .gb_Lb, .gb_Mb, .pzGYBf, .ZfzyDb p, .k8Lt0 .JUYJVd p, .k8Lt0 .JUYJVd > div:first-child, .k8Lt0 .JUYJVd [class~="cb-heading"], .k8Lt0 .JUYJVd > h2, .gb_Hb, .c7O9k, .a1l33d, .QnUTxd, .de-Ei-Zb-Fi-Yb-jh div {
 	color: #CCC !important;
 }
 

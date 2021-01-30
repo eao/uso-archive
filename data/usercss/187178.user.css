@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           YouTube Redesign V1.9 (2020)
+@name           YouTube Redesign V2 (2021)
 @namespace      USO Archive
 @author         George Chris
 @description    `This is the first Version of my Redesign.`
-@version        202096.15.47
+@version        2021129.16.25
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain(www.youtube.com) {
-}
+
 /* i really want this to be global */
 ::-webkit-scrollbar {
   width: 5px;
@@ -272,6 +272,34 @@ user-select: none;
 }
 #search-input.ytd-searchbox-spt input {
 	padding: 0px 10px;
+    position: relative;
+    margin-left: 0px;
+    width: 96%;
+}
+@media only screen and (max-width: 1068px) {
+  #search-input.ytd-searchbox-spt input {
+     width: 95%;                   
+  }
+}
+@media only screen and (max-width: 1380px) {
+  #search-input.ytd-searchbox-spt input {
+     width: 95%;                   
+  }
+}
+@media only screen and (max-width: 750px) {
+  #search-input.ytd-searchbox-spt input {
+     width: 85%;                   
+  }
+}
+@media only screen and (max-width: 400px) {
+  #search-input.ytd-searchbox-spt input {
+     width: 90%;                   
+  }
+}
+@media only screen and (max-width: 920px) {
+  #search-input.ytd-searchbox-spt input {
+     width: 93%;                   
+  }
 }
 ytd-searchbox[has-focus] #container.ytd-searchbox {
     border: 2px solid red;
@@ -577,7 +605,7 @@ yt-live-chat-renderer[hide-timestamps] {
     background: none;
 }
 ytd-watch-flexy:not([is-two-columns_]) #chat.ytd-watch-flexy, ytd-watch-flexy:not([is-two-columns_]) #chat-container.ytd-watch-flexy, ytd-watch-flexy:not([is-two-columns_]) #donation-shelf.ytd-watch-flexy ytd-donation-shelf-renderer.ytd-watch-flexy, ytd-watch-flexy:not([is-two-columns_]) #donation-shelf.ytd-watch-flexy ytd-donation-unavailable-renderer.ytd-watch-flexy, ytd-watch-flexy:not([is-two-columns_]) #playlist.ytd-watch-flexy, ytd-watch-flexy:not([is-two-columns_]) #panels.ytd-watch-flexy ytd-engagement-panel-section-list-renderer.ytd-watch-flexy {
-	border-radius: 20px;
+	border-radius: 10px;
 }
 #chat.ytd-watch-flexy, #donation-shelf.ytd-watch-flexy ytd-donation-shelf-renderer.ytd-watch-flexy, #donation-shelf.ytd-watch-flexy ytd-donation-unavailable-renderer.ytd-watch-flexy, #playlist.ytd-watch-flexy, #panels.ytd-watch-flexy ytd-engagement-panel-section-list-renderer.ytd-watch-flexy{
 	border-radius: 20px;
@@ -790,4 +818,119 @@ style-scope ytd-app {
 }
 #header {
 	visibility: visible !important;
+}
+.ytp-autonav-toggle-button {
+    border: 2px solid #f00;
+    width: 26px;
+    background-image: none !important;
+}
+.ytp-autonav-toggle-button:after {
+	background: #f00;
+    margin-top: 1px;
+    margin-left: 1px;
+    height: 10px;
+    width: 10px;
+    
+}
+.ytp-autonav-toggle-button[aria-checked="true"]:after {
+	background-image: none !important;
+    background-color: #3ea6ff;
+}
+.ytp-big-mode .ytp-autonav-toggle-button {
+    height: 18px;
+    width: 39px;
+    border-radius: 18px;
+}
+.ytp-big-mode .ytp-autonav-toggle-button:after {
+    height: 15.5px;
+    width: 15.5px;
+    border-radius: 25.5px;
+    margin-top: 1.25px;
+}
+.ytp-big-mode .ytp-autonav-toggle-button:after {
+    height: 15.5px;
+    width: 15.5px;
+    border-radius: 25.5px;
+    margin-top: 1.25px;
+}
+.ytp-big-mode .ytp-autonav-toggle-button {
+    border: 3px solid #f00 !important;
+}
+ytd-thumbnail.ytd-rich-grid-media:before {
+	background-color: transparent !important;
+}
+#header.ytd-engagement-panel-title-header-renderer {
+	border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+ytd-transcript-footer-renderer {
+	border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#content.ytd-engagement-panel-section-list-renderer {
+	border-bottom-left-radius: 20px;
+   border-bottom-right-radius: 20px; 
+}
+yt-report-form-modal-renderer[dialog][dialog][dialog] {
+border-radius: 20px;
+}
+yt-upsell-dialog-renderer[dialog][dialog][dialog] {
+border-radius: 20px;
+}
+svg.style-scope.yt-upsell-dialog-renderer {
+position: relative !important;
+left: 110% !important;
+}
+yt-tooltip-renderer {
+	border-radius: 15px;
+}
+.ytp-promotooltip-container {
+	border-radius: 15px;
+}
+div#voice-search-button.style-scope.ytd-masthead {
+	position: relative;
+    left: -43px;
+}
+ytd-voice-search-dialog-renderer.style-scope.ytd-popup-container.permission-denied {
+	border-radius: 15px;
+}
+#header-text.ytd-voice-search-dialog-renderer {
+	text-align: center !important;
+}
+#header.ytd-movie-offer-module-renderer {
+border-top-left-radius: 15px;
+border-top-right-radius: 15px;
+}
+#wide-clickable-area.ytd-movie-offer-module-renderer[inactive] {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+ytd-movie-offer-module-renderer.ytd-watch-next-secondary-results-renderer {
+border-radius: 15px;
+}
+#contents.ytd-rich-metadata-row-renderer *.ytd-rich-metadata-row-renderer {
+	border-radius: 13px;
+}
+ytd-button-renderer.style-destructive[is-paper-button] {
+	border-radius: 20px;
+}
+ytd-button-renderer.style-destructive[is-paper-button]:hover:before {
+	content: "Log to Sub";
+    position: absolute;
+    margin-left: 12px;
+    line-height: 38px;
+    font-size: 15px;
+    color: white;
+}
+ytd-button-renderer.style-destructive[is-paper-button]:hover {
+	color: transparent; 
+    background: #3c3c3c;
+}
+ytd-modal-with-title-and-button-renderer[modal] {
+	border-radius: 15px;
+}
+ytd-clarification-renderer[background-style=info] {
+	border-radius: 10px;
+    margin: 10px 0px;
+}
 }

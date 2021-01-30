@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Тёмная тема для Народной карты ЯндексАвтор: https://n.maps.yandex.ru/#!/users/225790763Dark theme for Yandex Map EditorAuthor: https://mapeditor.yandex.com/#!/users/225790763`
-@version        20201225.17.55
+@version        2021129.19.42
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown darkmapclub "Dark Map Club" {
@@ -403,11 +403,6 @@ a:hover {color: #e85253;}
 darkmapsupport0 "Off" <<<EOT  EOT;
 
 }
-@advanced dropdown userrating "Hide User Rating" {
-	userrating0 "Off*" <<<EOT /**\/ EOT;
-userrating1 "On" <<<EOT .nk-user-rating-view {display: none;} EOT;
-
-}
 
 ==/UserStyle== */
 @-moz-document url("https://yastatic.net/tableau/tableau.html?service-id=nmaps&device=desktop&preset=ru&target=blank"), url("https://yastatic.net/tableau/tableau.html?service-id=nmaps&device=desktop&preset=com&target=blank"), url("https://yastatic.net/tableau/tableau.html?service-id=nmaps&device=desktop&preset=tr&target=blank"), domain("n.maps.yandex.ru"), domain("mapeditor.yandex.com"), domain("mapeditor.yandex.com.tr") {
@@ -521,7 +516,7 @@ userrating1 "On" <<<EOT .nk-user-rating-view {display: none;} EOT;
 .ymaps-2-1-77-copyright__link {color: #eee !important;}
 .ymaps-2-1-77-copyright__link:hover {color: #e85253 !important;}
 
-.nk-map-region-view__coords, .nk-map-region-view__sat-image-date, .ymaps-2-1-77-scaleline__label {background: rgba(0,0,0,.5); color: #eee;}
+.nk-map-coords-view__coords, .nk-map-sat-image-date-view, .ymaps-2-1-77-scaleline__label {background: rgba(0,0,0,.5); color: #eee;}
 
 /* ===== Gallery ===== */
 .nk-on-map-gallery-view__content {border-radius: 3px;}
@@ -699,7 +694,7 @@ a.ymaps-2-1-77-traffic-info__source-link:hover {color: #e85253;}
 .nk-map-zoom-control-view:after, .nk-map-zoom-control-view__zoom-in:after, .nk-map-zoom-control-view__zoom-out:after {background: #282828; border-color: #222;}
 .nk-map-type-control-view {border-color: #222;}
 
-/*[[userrating]]*/
+/**/
 .nk-user-rating-view {background-color: #15222f; border-color: #222;}
 
 .nk-map-region-view__actions-and-path {left: 68px;}
@@ -1137,5 +1132,47 @@ h3[style="color:rgba(0, 0, 0, 1);"] {color: #eee !important;}
 }
 
 /*[[darkmapsupport]]*/
+
+@-moz-document url-prefix("https://forms.yandex.ru/surveys/1810"), url-prefix("https://forms.yandex.com/surveys/10013268") {
+/* ===== Dark Theme for Yandex Support Form ===== */
+
+.b-page__body {background: #282828; color: #eee;}
+
+a {color: #3da1f8;}
+a:hover {color: #e85253;}
+
+.radiobox_view_classic.radiobox_theme_normal {color: #eee;}
+.radiobox_view_classic.radiobox_theme_normal .radiobox__box:before {background-color: #282828; border-color: rgba(255,255,255,.2);}
+.radiobox_view_classic.radiobox_theme_normal .radiobox__radio_hovered_yes .radiobox__box:before {border-color: rgba(255,255,255,.3);}
+.radiobox_view_classic.radiobox_theme_normal .radiobox__radio_pressed_yes .radiobox__box:before {background-color: rgba(255,255,255,.1);}
+.radiobox_view_classic.radiobox_theme_normal .radiobox__radio_checked_yes .radiobox__box:before {background-color: rgba(153,122,0,.4); border-color: #fc0;}
+.radiobox_view_classic.radiobox_theme_normal .radiobox__radio_hovered_yes.radiobox__radio_checked_yes .radiobox__box:before {border-color: #ffeba0;}
+.radiobox_view_classic.radiobox_theme_normal .radiobox__radio_checked_yes.radiobox__radio_pressed_yes .radiobox__box:before {background-color: rgba(153,122,0,.6); border-color: #ffeba0;}
+.radiobox_view_classic.radiobox_theme_normal .radiobox__radio_checked_yes .radiobox__box:after {background-color: #fff;}
+
+.checkbox_theme_normal {color: #eee;}
+.checkbox_theme_normal .checkbox__box:before {background-color: #282828;}
+.checkbox_view_classic.checkbox_theme_normal .checkbox__box:before {border-color: rgba(255,255,255,.2);}
+.checkbox_view_classic.checkbox_theme_normal.checkbox_hovered_yes .checkbox__box:before {border-color: rgba(255,255,255,.3);}
+.checkbox_view_classic.checkbox_theme_normal.checkbox_pressed_yes .checkbox__box:before {background-color: rgba(255,255,255,.1);}
+.checkbox_view_classic.checkbox_theme_normal.checkbox_checked_yes .checkbox__box:before {background-color: rgba(153,122,0,.4); border-color: #fc0;}
+.checkbox_view_classic.checkbox_theme_normal.checkbox_checked_yes.checkbox_hovered_yes .checkbox__box:before {border-color: #ffeba0;}
+.checkbox_view_classic.checkbox_theme_normal.checkbox_checked_yes.checkbox_pressed_yes .checkbox__box:before {background-color: rgba(153,122,0,.6); border-color: #ffeba0;}
+.checkbox_view_classic.checkbox_size_m .checkbox__tick, .checkbox_view_classic.checkbox_size_n .checkbox__tick {filter: invert(1);}
+
+.survey__required {color: #e85253;}
+.input_theme_normal .input__box:before {background-color: #282828; border-color: rgba(255,255,255,.2);}
+.input_theme_normal.input_hovered_yes .input__box:before {border-color: rgba(255,255,255,.3);}
+.input_theme_normal.input_focused_yes .input__box:before {border-color: #ffdb4d;}
+.input_theme_normal, .input_theme_normal .input__control {color: #eee;}
+.input_size_m .input__clear {filter: invert(1);}
+
+.link_theme_pseudo {color: #3da1f8;}
+.link_theme_pseudo.link_hovered_yes {color: #e85253;}
+
+.footer_view_iframe {border-top-color: #333;}
+
+.logo2__company, .logo2__service {filter: invert(1) grayscale(1) contrast(2);}
+}
 
 /*[[darkmapclub]]*/

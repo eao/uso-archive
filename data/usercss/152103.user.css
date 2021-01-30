@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         radiochild577
 @description    `The most complete and updated night (dark or black) theme for Yahoo Fantasy as of Fall 2018. Should work for all Fantasy sports on Yahoo.com, but only tested for Football, Basketball and Baseball. I used <a href="https://userstyles.org/styles/119567/yahoo-fantasy-football-dark-full-width"> theo shu's theme</a> as a template but made a lot of modifications/updates. Designed for Firefox, but can be imported to Chrome to work with that browser - just copy the CSS and "import" to Chrome in the style settings of that browser.NOTE - this has only been tested in Firefox using the Stylus CSS add-on.`
-@version        2021125.15.32
+@version        2021129.19.33
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -539,7 +539,7 @@ a
   background: #161719;
 }
 
-.Pstart-lg, .Ptop-sm, .Va-mid, .Px-med, .Py-sm, .Pstart-lg, #team-card .Navtarget, #team-card .Navitem-main
+.Pstart-lg, .Ptop-sm, .Va-mid, .Px-med, .Py-sm, .Pstart-lg, #team-card .Navitem-main
 {
   color: #fff;
 }
@@ -705,18 +705,18 @@ a
   color: #000;
 }
 
-.Btn, .Btn-secondary, .Btn-primary
+.Btn, .Btn-secondary, .Btn-primary, .Btn-short, .Btn-short.Btn
 {
-  background-color: #161719;
-  border: 1px solid #444;
-  color: #EEE;
+  background-color: #161719 !important;
+  border: 1px solid #444 !important;
+  color: #EEE !important;
 }
 
-.Btn:hover, .Btn-secondary:hover, .Btn-primary:hover
+.Btn:hover, .Btn-secondary:hover, .Btn-primary:hover, .Btn-short:hover, .Btn-short.Btn:hover
 {
-  background-color: #494c5c;
-  border: 1px solid #AAA;
-  color: #8EC0FF;
+  background-color: #494c5c !important;
+  border: 1px solid #AAA !important;
+  color: #8EC0FF !important;
 }
 
 #Stencil .Mend-med
@@ -997,11 +997,48 @@ td.Alt.Ta-end.Nowrap.Bdrend {
 }
 
 #Stencil td.Bdr.Ta-c {
-    color:#000
+    color:#000;
+    border-color: #000;
 }
 
 #Stencil .Bg-selected{
     background:transparent
+}
+
+#Stencil .Rollover-baseball, #Stencil .Rollover-basketball, #Stencil .Rollover-football, #Stencil .Rollover-hockey {
+    background-color: #2b2b2c;
+}
+
+#glossary, #Stencil .Linkable:hover {
+    color:#8EC0FF !important
+}
+
+.Bd.Bdrtop.No-p.yfa-dynamic.teamnotes-content, .Ov-h.W-100.Px-lg.Py-sm.Bdrbot {
+    border-color:#000 !important
+}
+
+.Dropdown.Hover > li.hover, .Nav-main > .Navitem li:hover {
+    background: #494c5c !important;
+    color: #8EC0FF !important;
+}
+
+.Nav-main > .Navitem {
+    color: #FFF !important;
+}
+
+.Nav-v.Dropdown.Nowrap.Nav-main > .Navitem > .Navtarget {
+    color: #EEE !important;
+}
+
+.Nav-v.Dropdown.Nowrap.Nav-main > .Navitem > .Navtarget:hover {
+    color: #8EC0FF !important;
+}
+
+.Nav-v.Dropdown.Nowrap.Nav-main {
+    background: rgba(28, 29, 31, 0.95);
+    border-left: 0.5px solid #555;
+    border-right: 0.5px solid #555;
+    border-bottom: 0.5px solid #555
 }
 
 }
