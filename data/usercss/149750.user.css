@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「最新版エディタ（標準）」及び「新タグ編集エディタ」をアレンジし、ブログ編集の環境を改善します。<br>このスタイルは Chrome / Firefox / Edge の拡張機能「Stylus」にインストールして使用出来ます。<br><br>ブログを編集する際に、ウインドウ幅に係らず エディタの幅が980pxから変化しません。 デスクトップを広く使いたい場合や、エディタを拡大して使う場合は、このコンパクトサイズが有効です。<br><br>この Ameblo Writer Compact に関する詳細は、以下のページを参照ください。<br>　https://ameblo.jp/personwritep/entry-12333180456.html<br>`
-@version        2020127.13.12
+@version        2021131.9.1
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://blog.ameba.jp/ucs/entry/srventryin"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryup"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryouterpreview"), url-prefix("https://blog.ameba.jp/ucs/entry/imagedelete") {
-/* Ameblo Writer Compact ver.42 基本CSS ****************/
+/* Ameblo Writer Compact ver.43 基本CSS ****************/
 /* 縦スクロールバー抑止 */
 html {
     overflow: initial; }
@@ -209,7 +209,7 @@ html {
 
 /* 編集枠 左パレット **************************/
 .l-editor {
-    height: 576px;
+    height: 779px;
     width: 664px;
     margin: 0 8px 8px 0;
     padding: 0;
@@ -391,17 +391,11 @@ html {
     border-color: var(--bdc1); }
 
 /* 編集枠 ***********************************/
-#cke_1_contents {
-    height: 498px !important; }
-
 .cke_contents {
     padding: 4px 0;
     border-color: var(--bdc1);
     background: var(--bgc2);
     z-index: 3; }
-
-.cke_contents > .cke_wysiwyg_frame {
-    height: 496px !important; }
 
 /* 編集枠の緑枠禁止 */
 .cke_editable:focus {
@@ -424,7 +418,7 @@ html {
 /* 通常・HTML 切替タブ */
 .p-editModeTab {
     position: absolute;
-    top: 540px;
+    top: 743px;
     z-index: 3; }
 
 .p-editModeTab__item__button--gray {
@@ -447,7 +441,7 @@ html {
 
 /* WYSIWIGモード */
 .p-editorStyle {
-    top: 552px;
+    top: 754px;
     right: 250px; }
 
 .p-editorStyle__label {
@@ -459,8 +453,7 @@ html {
 
 /* 文字数カウント */
 .cke_wordcount {
-    margin-top: 10px;
-    margin-right: 100px;
+    margin: 10px 100px 6px 0;
     padding: 0 15px; }
 
 .cke_path_item {
@@ -480,7 +473,6 @@ html {
 
 /* HTML編集枠 */
 .CodeMirror {
-    height: 496px !important;
     font-family: inherit; }
 
 .CodeMirror-sizer {
@@ -584,7 +576,7 @@ html {
 
 /* 右パレット 機能ベース */
 .l-sideModule__content {
-    height: 542px; }
+    height: 745px; }
 
 /* 右パレット内文字色 */
 .p-sideModule__subNavItem.is-selected > .p-sideModule__subNavItem__text--large {
@@ -2474,8 +2466,10 @@ table.colorPaletteTable {
 .tagEditor-inputArea {
     margin-bottom: 2px; }
 
+.tagEditor-inputArea__body {
+    height: 747px; }
+
 .tagEditor-inputArea__body__text {
-    height: 542px;
     border-radius: 0 0 0 4px;
     border-color: var(--bdc1); }
 
@@ -2724,53 +2718,54 @@ p.close {
 @-moz-document url-prefix("https://blog.ameba.jp/ucs/entry/srventry") {
 /* 編集枠 縦拡張オプション ******************************/
 /* 最新版エディタ **************************/
-/* 編集枠 左パレット *********************/
+/* 編集枠 エリア ****************/
 .l-editor {
-    height: 726px; }
+    height: calc(100vh - 160px); }
 
-/* 編集枠  通常表示 */
+/* 編集枠  通常表示 **************/
 #cke_1_contents {
-    height: 648px !important; }
+    height: calc(100vh - 238px) !important; }
 
 .cke_contents > .cke_wysiwyg_frame {
-    height: 646px !important; }
+    height: 100% !important; }
 
+/* iframe内 */
 .cke_editable {
-    min-height: 646px;
-    overflow-y: scroll; }
-
-/* 編集枠 HTML表示 */
-.CodeMirror {
-    height: 646px !important; }
-
-/* デザイン幅で表示 */
-.p-editorStyle {
-    top: 702px; }
-
-/* 通常・HTML 切替タブ */
-.p-editModeTab {
-    top: 690px; }
+    min-height: 100vh; }
 
 /* ドラッグ&ドロップエリア */
 .p-photos-editorDropArea {
-    height: 670px; }
+    height: 670px;
+    height: calc(100vh - 234px); }
 
-/* 右パレット ****************************/
+/* 編集枠 HTML表示 *************/
+.CodeMirror {
+    height: calc(100vh - 238px) !important; }
+
+/* 通常・HTML 切替タブ **********/
+.p-editModeTab {
+    position: absolute;
+    top: calc(100vh - 196px);
+    z-index: 3; }
+
+/* デザイン幅で表示 */
+.p-editorStyle {
+    top: calc(100vh - 184px); }
+
+/* 編集パレット *****************/
 .l-sideModule__content {
-    height: 692px; }
+    height: calc(100vh - 194px); }
 
-/* 動画リスト */
-.p-images-imageList--movie {
-    height: 600px; }
+.p-sideModule__inner--history {
+    height: calc(100vh - 236px); }
 
 /* タグ編集エディタ 拡張設定 *****************/
 /* 編集枠全体 */
-.tagEditor-inputArea__body__text {
-    height: 692px; }
+.tagEditor-inputArea__body {
+    height: calc(100vh - 192px); }
 
-/* プレビュー部 */
-.tagEditor-inputArea__body__lightPreview__inner {
-    height: 690px; }
+.tagEditor-inputArea__body__text {
+    height: 100%; }
 }
 
 @-moz-document url-prefix("https://blog.ameba.jp/ucs/entry/srventry") {

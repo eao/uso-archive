@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         George Chris
 @description    `This is the first Version of my Redesign.`
-@version        2021129.16.25
+@version        2021131.8.19
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -760,7 +760,7 @@ h2.ytd-simple-menu-header-renderer {
 	border-radius: 20px;
 }
 paper-listbox.yt-dropdown-menu .iron-selected.yt-dropdown-menu:before {
-	content: "✔";
+	content: "â";
     position: absolute;
     top: auto;
     left: auto;
@@ -932,5 +932,16 @@ ytd-modal-with-title-and-button-renderer[modal] {
 ytd-clarification-renderer[background-style=info] {
 	border-radius: 10px;
     margin: 10px 0px;
+}
+#dismissed.ytd-compact-video-renderer {
+	border-radius: 10px !important;
+}
+ytd-info-panel-content-renderer[has-menu] {
+	border-radius: 10px !important;
+	margin: 10px 0px !important; 
+}
+ytd-info-panel-content-renderer[has-menu] .content.ytd-info-panel-content-renderer {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 }

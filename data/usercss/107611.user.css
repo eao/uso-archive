@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         云三
 @description    `惨不忍睹……反馈：<br /><a href="http://tieba.baidu.com/f?kw=%E5%91%A8%E4%BA%94%E5%8F%94" target=_blank >周五叔的贴吧</a><br />夜间加成版本：<br /><a href="https://userstyles.org/styles/111196/2017" target=_blank >userstyles.org - 夜间加成的西贝2017</a>——————————特点：<ol>	<li>资讯缩略图还原成方角；</li>	<li>完全去广告；</li>	<li>去冗余内容，宽屏；</li>	<li>去掉章鱼烧表情；</li>	<li>屏蔽注册用户头像；</li>	<li>屏蔽稿源投递者链接；</li></ol>`
-@version        2018613.15.5
+@version        2021131.9.40
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown pz "去掉热门评论" {
@@ -107,6 +107,12 @@ body {
 /* 文字内文字颜色 和 广告链接颜色 */	
 .cnbeta-article-body p,.cnbeta-article  {
 	 color: #666;
+}
+a[href*="click."],
+a[href*="track."],
+a[href*="c.duomai.com."], 
+a[href*="click."] {
+    display: none !important;
 }
 .cnbeta-article-body p a[href*="click"] {
     pointer-events: none;

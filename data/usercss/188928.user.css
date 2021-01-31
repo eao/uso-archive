@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jannek
 @description    `Code compleatly copied from https://userstyles.org/styles/153816/darksearch-nass-o-fork but fixed some issues i had with this style.`
-@version        2021127.22.44
+@version        2021131.1.23
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -3452,7 +3452,9 @@ body,
 .Y92sLc .WuF8Hb,
 .Q7Oxbd,
 .L4Xh0b,
-.YIikAd {
+.YIikAd,
+.U1hlv,
+.B58ezc {
     color: #D3D3D3 !important;
 }
 
@@ -3469,7 +3471,8 @@ body,
 .gb_Vb,
 .gb_Vb,
 .gb_Db.gb_Db,
-.gb_Eb.gb_Eb {
+.gb_Eb.gb_Eb,
+.AvBz0e {
     background: #202020 !important
 }
 
@@ -3512,7 +3515,8 @@ body,
 .ygdOJd,
 .HNdZMe,
 .mus_tt17,
-.VqFMTc {
+.VqFMTc,
+.vfxGNc {
     color: #808080 !important;
 }
 
