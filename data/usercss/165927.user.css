@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `Vanilla Dark 2 VK Fix/Mod PART 1 of 2 is herehttps://userstyles.org/styles/132224read description and set all style settings there`
-@version        2021128.13.32
+@version        2021130.13.7
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -950,6 +950,7 @@ a .app_widget_tiles_title{color:#bbb}
 .feedback_row_answer::after, .feedback_row_answer::before{border-style:solid;border-width:0px 6px 6px 6px;border-color:transparent transparent #000 transparent}
 .notifications_new_events{background:transparent;border-top:none;color:var(--color2)}
 .notifications_new_events:hover{background:rgba(0,0,0,.5);color:var(--color1)}
+[dir] .top_notify_cont .feedback_row:not(.dld).hover,[dir] .top_notify_cont .feedback_row:not(.dld):hover{background-color:#0000!important}
 
 /* страница уведомлений и всплывающие ответы */
 .feedback_row_wrap.feedback_row_clickable._post_wrap.clear_fix:hover{background:rgba(25,25,25,.5)}

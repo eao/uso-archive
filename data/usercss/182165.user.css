@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Reddit Custom Theme - International Version.Compatibility:RES - (https://redditenhancementsuite.com/)all *.reddit.com domains found to date(many main-) custom Subreddit themessnew.notabug.iowww.removeddit.comwww.reveddit.com4chan.org8kun.toppoal.cosaidit.netvoat.co - (RIP 20201225)communities.win + subdomainsconspiracies.wingreatawakening.winpatriots.winthedonald.winarchive.fo/is/md/vnGoogle reCAPTCHAGoogle WebcacheWaybackMachine (web.archive.org)Includes custom black cursor + pointers based on;https://userstyles.org/styles/175086/Recommended add-on: Custom Browser Scrollbars:https://userstyles.org/styles/182441/Tested on Brave, Chrome, Chromium, Firefox, Firefox Nightly, Tor & Waterfox.PS; Waterfox is a little wonky on custom wallpapers.If problems occur, choose "none".Stylus recommended:https://add0n.com/stylus.htmlContact:https://old.reddit.com/r/KMV/`
-@version        2021121.20.35
+@version        2021130.21.57
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown RCWallpaper "Wallpaper" {
@@ -45,7 +45,9 @@ WPBASE64 "Manual BASE64 Setup (Inject in Code #1)" <<<EOT data:image/jpeg;base64
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
 .post-list div.post:focus-within,
-dark-theme .post-list div.post:focus-within
+dark-theme .post-list div.post:focus-within,
+[id*="thing_t3"] div.usertext-body.may-blank-within.md-container div.md,
+[id*="thing_t3"] div.entry div.expando
 {
     background:
         linear-gradient(90deg, var(--RCRESHighlightBox) 0%, #0000 30%),
@@ -61,7 +63,9 @@ RCPostBG01 "Border" <<<EOT /*Option Chosen - [Border]*\/
 
 .rpBJOHq2PR60pnwJlUyP0 .scrollerItem:focus-within,
 .post-list div.post:focus-within,
-dark-theme .post-list div.post:focus-within
+dark-theme .post-list div.post:focus-within,
+[id*="thing_t3"] div.usertext-body.may-blank-within.md-container div.md,
+[id*="thing_t3"] div.entry div.expando
 {
     box-shadow:0px 0px 3px 0px var(--RCBox-Shadow)!important;
     transition:2s;
@@ -871,16 +875,43 @@ div[data-slot],
 [class*="RightAd"],
 [data-before-content*="advertisement"],
 [id*="google_ads_iframe"],
-section.description.box.col.col-12 div.col.col-12 span[style="display:inline-block;"],
 .ad-container,
-.adc-resp-bg,.adg-rects,
+.adc-resp-bg,
 .NqMdak8MgbuSVZAABdAw9
 ._1rmObrmUCfC5t42SbwkzYC
 {
+    display:none;
+}
+[id*="ad_1"]::before,
+[id*="ad_2"]::before,
+[id*="ad_3"]::before,
+[id*="ad_4"]::before,
+[id*="ad_5"]::before,
+[id*="ad_6"]::before,
+[id*="ad_7"]::before,
+[id*="ad_8"]::before,
+[id*="ad_9"]::before,
+[id*="ad_10"]::before
+{
     display:none!important;
 }
+[id*="ad_1"],
+[id*="ad_2"],
+[id*="ad_3"],
+[id*="ad_4"],
+[id*="ad_5"],
+[id*="ad_6"],
+[id*="ad_7"],
+[id*="ad_8"],
+[id*="ad_9"],
+[id*="ad_10"]
+{
+    display:none;
+    min-height:0px;
+}
 
-[class*="promotedlink"]
+[class*="promotedlink"],
+._3xuFbFM3vrCqdGuKGhhhn0
 {
     display:none;
 } EOT;
@@ -895,52 +926,47 @@ div[data-slot],
 [class*="RightAd"],
 [data-before-content*="advertisement"],
 [id*="google_ads_iframe"],
-section.description.box.col.col-12 div.col.col-12 span[style="display:inline-block;"],
 .ad-container,
-.adc-resp-bg,.adg-rects,
+.adc-resp-bg,
 .NqMdak8MgbuSVZAABdAw9
 ._1rmObrmUCfC5t42SbwkzYC
+{
+    display:none;
+}
+[id*="ad_1"]::before,
+[id*="ad_2"]::before,
+[id*="ad_3"]::before,
+[id*="ad_4"]::before,
+[id*="ad_5"]::before,
+[id*="ad_6"]::before,
+[id*="ad_7"]::before,
+[id*="ad_8"]::before,
+[id*="ad_9"]::before,
+[id*="ad_10"]::before
 {
     display:none!important;
 }
-
-
-/* Optional - Promotions Removal
-
-[class*="promotedlink"]
+[id*="ad_1"],
+[id*="ad_2"],
+[id*="ad_3"],
+[id*="ad_4"],
+[id*="ad_5"],
+[id*="ad_6"],
+[id*="ad_7"],
+[id*="ad_8"],
+[id*="ad_9"],
+[id*="ad_10"]
 {
     display:none;
-}
+    min-height:0px;
+} EOT;
+RCPromosOnly "Promotions Only" <<<EOT /*Promotions Removed*\/
 
-*\/ EOT;
-RCPromosOnly "Promotions Only" <<<EOT /*Promotions Only Removed*\/
-
-[class*="promotedlink"]
+[class*="promotedlink"],
+._3xuFbFM3vrCqdGuKGhhhn0
 {
     display:none;
-}
-
-
-/* Optional - Ad Removal
-
-div[data-slot],
-[class*="ArticleAd"],
-[class*="GoogleAd"],
-[class*="HomeAds"],
-[class*="LeftAd"],
-[class*="RightAd"],
-[data-before-content*="advertisement"],
-[id*="google_ads_iframe"],
-section.description.box.col.col-12 div.col.col-12 span[style="display:inline-block;"],
-.ad-container,
-.adc-resp-bg,.adg-rects,
-.NqMdak8MgbuSVZAABdAw9
-._1rmObrmUCfC5t42SbwkzYC
-{
-    display:none;
-}
-
-*\/ EOT;
+} EOT;
 
 }
 @advanced dropdown RCAwards "Reddit Awards" {
@@ -3143,9 +3169,10 @@ html body center div#SOLID div#CONTENT div.html1 div.html div.body div section,
 
 /* -------------- Solid Backgrounds + Border -------------- */
 
-body:not(.subscriber) .link .title a[class*="title"]::after,
+/*body:not(.subscriber) .link .title a[class*="title"]::after,*/
 body:not(.subscriber) .sidebox.submit-link::before,.submit-text::before,
 /*conspiracies.win*/body.theme-light div#panel.wrapper.profile.panel.slideout-panel.slideout-panel-left header.header,/*status.comunities.win*/html body.dashboard.login div.content div.container div.row div.form-bg,[id*="tooltip"][class*="tooltip"],
+#alert_message,
 #alert_message .drop-choices,
 #boardlist section.description.box.col.col-12 h2.box-title,#search-form.box h2.box-title,
 #context-menu,
@@ -4851,15 +4878,15 @@ button:hover, .res-nightmode button:hover,
 html body center div#HEADER table tbody tr td a:hover,
 .AnimatedForm__selectboxOption:hover,
 .AppSelectorModal__actionButton.m-blue:hover,
+.blueButton:hover,
 .btn:hover,
 .btn-edon:hover,
 .btn-holder a.btn:hover,
 .btn.smooth-links:hover,
 .btn-whoaverse.contribute:hover,
 .btn-whoaverse:hover,
-.blueButton:hover,
+.button-sort-active,
 a.c-btn-primary:hover,
-
 /*conspiracies.win*/
 div.container aside.sidebar a.submit-link:hover,
 div.container aside.sidebar a.submit-text:hover,
@@ -6437,6 +6464,11 @@ span.flairrichtext.flaircolorlight.linkflairlabel:hover,
 
 
 /*Spoiler Warning*/
+.spoiler-stamp span,
+.res-nightmode .spoiler-stamp span
+{
+    color: var(--RCspoiler) !important;
+}
 .spoiler-stamp,
 .res-nightmode .spoiler-stamp
 {
@@ -7792,6 +7824,7 @@ ytp-bottom:hover,
 .CwaK9:hover,
 .dd-menu li,
 .dismiss:hover,
+.downvote,
 .drop-choices a.choice,
 .dropdown.srdrop .selected,
 .entry .buttons li a,
@@ -7892,6 +7925,7 @@ ytp-bottom:hover,
 .togglecommenthead,
 .TquXA:hover,
 .ui-datepicker-next,.ui-datepicker-prev,
+.upvote,
 .yt-dropdown-menu:hover,
 .yt-simple-endpoint:hover,
 .ytd-menu-service-item-renderer:hover,
@@ -8091,6 +8125,7 @@ ytp-bottom:active,
 .CwaK9:active,
 .dd-menu li:active,
 .dismiss:active,
+.downvote:active,
 .drop-choices a.choice:active,
 .dropdown.srdrop .selected:active,
 .entry .buttons li a:active,
@@ -8195,6 +8230,7 @@ ytp-bottom:active,
 .togglecommenthead:active,
 .TquXA:active,
 .ui-datepicker-next:active,.ui-datepicker-prev:active,
+.upvote:active,
 .yt-dropdown-menu:active,
 .yt-simple-endpoint:active,
 .ytd-menu-service-item-renderer:active,

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Игорь Шадрин
 @description    `aliexpress.ru`
-@version        202118.6.38
+@version        2021130.13.22
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1414,5 +1414,8 @@ body {
 
 ._2oxCa, .is04A {
     background-color: #333 !important;}
+
+.MainLayout_root__2kdom {
+    background: #3b3b3b !important;}
 
 }

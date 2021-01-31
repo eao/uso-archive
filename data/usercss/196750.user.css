@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ryousuke
 @description    `Version largeUpdated: 30/01/2021`
-@version        2021130.10.51
+@version        2021130.15.49
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -19,15 +19,14 @@ body {
     background-color: #202020;
 }
 .gk__tile {
-    width: 90%;
+    width: 70%;
 }
 .row--nowrap.row-to-col .simple-height.card-xs {
     height: auto;
-    max-height: 500px!important;
 }
-@media screen and (min-width: 2400px) {
+@media screen and (min-width: 2600px) {
     .gk__tile {
-        width: 70%;
+        width: 50%;
     }
 }
 .ed__news__header__cover + .ed__news__header__content,
@@ -2116,7 +2115,27 @@ li.col-xs-12.col-sm-6.col-md-4.middle-xs.center-xs {
     flex-basis: 15%;
     margin: 0 auto;
 }
+.ed__buyersguide__header__content.row--nmrg.middle-xs {
+    padding: 2em;
+    max-width: 70%;
+    margin: 0 auto!important;
+}
+section.gk__panel .gk__text__container {
+    margin-top: 2em;
+}
+.ed__buyersguide__container--center {
+    max-width: 70%;
+}
+.pr__game-h__lg.row--nmrg.top-xs.js-game-block {
+    padding-left: 0em;
+}
+.ed__buyersguide__container + .ed__buyersguide__container {
+    border-color: #000;
+}
 /*comparateur prix*/
+.gk__pt__tbs__lst__itm:hover {
+    background-color: #edaf00;
+}
 .gk__pt__tbs__lst__itm {
     color: #505050;
     background-color: #171717;

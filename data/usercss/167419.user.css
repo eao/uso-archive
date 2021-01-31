@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Atx
 @description    `Do you like my style? Please support my work and fund me a coffee (via PayPal to the left of "Install" button). Also share style with your friends. Thank you for being awesome!Darkest Fusion supports almost every Google site. Due to a style size limit Darkest Fusion has been divided into 2 parts. That one contains dark theme for most common used Google sites: <strong>About, Account management, Alerts, Books, Calendar, Contacts, Drive, Finance, Groups, Hangouts, Maps, My Activity, One, Patents, Payments, Passwords, Photos, Scholar, Search, Sheets, Tasks, Translate, Travel and Trends</strong>.<strong><mark>Second style is available >>> <a href="https://userstyles.org/styles/180430/google-darkest-fusion-2-2">there</a> <<<</mark></strong>Keep and Support currently have stock dark themes.Originally based on great work by DeathTBO who abandoned his project so I decided to continue his work by rebuilting everything from scratch. I hope you like my vision for Dark Google :)`
-@version        2021129.23.46
+@version        2021130.17.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown google_logo "Google logo color" {
@@ -408,8 +408,8 @@ C5 "Lake" <<<EOT https://i.imgur.com/EMalQHU.jpg EOT;
 * Name:			Google Darkest Fusion
 * Homepage:		https://userstyles.org/styles/167419/
 * Author:		Atx
-* Version:		v6.58
-* Updated: 		29.01.2021
+* Version:		v6.59
+* Updated: 		30.01.2021
 */
 
 activating_style_indicator
@@ -966,11 +966,11 @@ body, .v83gc, .GENA3c, .Gk2izd, .qmv2fc:hover, .p9lUpf, .W0m3G::before, .MDfQ7, 
 	background-color: #1C1C1C !important;
 }
 
-.Kk7lMc-DWWcKd-OomVLb-haAclf, .kMp0We.Wm6kRe:hover, .GrxScd .kMp0We:focus, .kMp0We.gk6SMd, .GrxScd .kMp0We.u3bW4e, .GrxScd .kMp0We.n2fNkc, .KwL08c.kMp0We, .KwL08c > .kMp0We, .JPdR6b.qjTEB, .JtukPc, .gHQcAb, .XsU8xf, .IIB0tc .ULpymb, .jZ0DTb, .VOEIyf .jBmls, .DyOaYd, .HLI7qf, .ncFHed, .I7OXgf, .B8NVZb, .JPdR6b, .SaBhMc, .xWId8e, .LOewLb.KKjvXb, .FpmPAb, .wWdzec, .ef2wWc, .FwR7Pc, .akJTWe, .M842Cd, .Lzfnue, .mv-event-container, .ui-rtsr-unselected, .tg-timedevents, .wk-allday, .bubble-mid, .bubble-top, .bubble-bottom, .agenda .scrollbox, .BYXlo, .gb_Ue, .gssb_m, .gssb_e{
+.Kk7lMc-DWWcKd-OomVLb-haAclf, .kMp0We.Wm6kRe:hover, .GrxScd .kMp0We:focus, .kMp0We.gk6SMd, .GrxScd .kMp0We.u3bW4e, .GrxScd .kMp0We.n2fNkc, .KwL08c.kMp0We, .KwL08c > .kMp0We, .JPdR6b.qjTEB, .JtukPc, .gHQcAb, .XsU8xf, .IIB0tc .ULpymb, .jZ0DTb, .VOEIyf .jBmls, .DyOaYd, .HLI7qf, .ncFHed, .I7OXgf, .B8NVZb, .JPdR6b, .SaBhMc, .xWId8e, .LOewLb.KKjvXb, .FpmPAb, .wWdzec, .ef2wWc, .FwR7Pc, .akJTWe, .M842Cd, .Lzfnue, .mv-event-container, .ui-rtsr-unselected, .tg-timedevents, .wk-allday, .bubble-mid, .bubble-top, .bubble-bottom, .agenda .scrollbox, .BYXlo, .gssb_m, .gssb_e {
 	background-color: #2C2C2C !important;
 }
 
-.GXlaye.qRI4pc.u3bW4e .CeoRYc, .GXlaye.qRI4pc:hover, .rF3YF.u3bW4e, .rF3YF:hover, .Cd9hpd:hover, .Cd9hpd .mAozAc.u3bW4e, .z80M1:hover, .qmv2fc.KKjvXb, .BvQsje, .Kb2sf, .W0m3G .r4nke, .VKy0Ic[aria-selected="true"], .oKubKe[aria-selected="true"], .ncFHed .MocG8c.KKjvXb, .KSxb4d.RKLVef:hover, body.geSgge .KSxb4d.RKLVef:hover, .KSxb4d.N4XV7d.RKLVef:hover, body.geSgge .KSxb4d.N4XV7d.RKLVef:hover, .DWWcKd-OomVLb-LgbsSe-ZmdkE .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf, .DWWcKd-OomVLb-LgbsSe-FNFY6c .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf, .Kk7lMc-Ia7Qfc-CZjX4e .DWWcKd-OomVLb-LgbsSe-gk6SMd .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf, .Kk7lMc-Ia7Qfc-CZjX4e .DWWcKd-OomVLb-LgbsSe-XpnDCe .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf, .cAYGed.KKjvXb .Ioup7e, .cAYGed.KKjvXb .BMQm1d, .Cd9hpd:hover .mAozAc.u3bW4e, .Cd9hpd .mAozAc.iWO5td, .oFBMuc:hover, .CCRNT, .uQ1ixe .CeoRYc, .g3dbUc.smECzc:hover, .g3dbUc.KCIIIb:hover, .yzYBvd:hover, .Qfwgwb, .XOE24, .VmTz5c, .QhgNnf:hover, .v9Riof:hover, .v9Riof.KwL08c, .st-dtitle-nonmonth, .st-dtitle:not(.st-dtitle-today), .ui-rtsr-unselected:hover, .ui-rtsr-selected, .tg-times-pri, .tg-times-sec, .agenda .date-label, .gssb_i, .AouyCd {
+.GXlaye.qRI4pc.u3bW4e .CeoRYc, .GXlaye.qRI4pc:hover, .rF3YF.u3bW4e, .rF3YF:hover, .Cd9hpd:hover, .Cd9hpd .mAozAc.u3bW4e, .z80M1:hover, .qmv2fc.KKjvXb, .BvQsje, .Kb2sf, .W0m3G .r4nke, .VKy0Ic[aria-selected="true"], .oKubKe[aria-selected="true"], .ncFHed .MocG8c.KKjvXb, .KSxb4d.RKLVef:hover, body.geSgge .KSxb4d.RKLVef:hover, .KSxb4d.N4XV7d.RKLVef:hover, body.geSgge .KSxb4d.N4XV7d.RKLVef:hover, .DWWcKd-OomVLb-LgbsSe-ZmdkE .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf, .DWWcKd-OomVLb-LgbsSe-FNFY6c .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf, .Kk7lMc-Ia7Qfc-CZjX4e .DWWcKd-OomVLb-LgbsSe-gk6SMd .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf, .Kk7lMc-Ia7Qfc-CZjX4e .DWWcKd-OomVLb-LgbsSe-XpnDCe .DWWcKd-OomVLb-LgbsSe-Bz112c-haAclf, .cAYGed.KKjvXb .Ioup7e, .cAYGed.KKjvXb .BMQm1d, .Cd9hpd:hover .mAozAc.u3bW4e, .Cd9hpd .mAozAc.iWO5td, .oFBMuc:hover, .CCRNT, .uQ1ixe .CeoRYc, .g3dbUc.smECzc:hover, .g3dbUc.KCIIIb:hover, .yzYBvd:hover, .Qfwgwb, .XOE24, .VmTz5c, .QhgNnf:hover, .v9Riof:hover, .v9Riof.KwL08c, .st-dtitle-nonmonth, .st-dtitle:not(.st-dtitle-today), .ui-rtsr-unselected:hover, .ui-rtsr-selected, .tg-times-pri, .tg-times-sec, .agenda .date-label, .gssb_i, .AouyCd, .wmCMbe {
 	background-color: #3C3C3C !important;
 }
 
@@ -1002,7 +1002,7 @@ body, .v83gc, .GENA3c, .Gk2izd, .qmv2fc:hover, .p9lUpf, .W0m3G::before, .MDfQ7, 
 	color: #FAFAFA !important;
 }
 
-.rSoRzd, .gb_Ee.gb_He, .GXlaye .snByac, .rF3YF svg, .rF3YF span, .Cd9hpd .snByac, .uQ1ixe .snByac, .MSZkRb .r4nke, .pCoqfc, .MANBAf, .KSxb4d.pCcXPe, body.geSgge .KSxb4d.pCcXPe, .NI2kfb, .QA0Szd-xl07Ob .uyYuVb, .shdZ7e .zHQkBf, .qmv2fc, .WpDZC, .NtP29, .W0m3G .r4nke, .VKy0Ic, .l4V7wb .NPEfkd, .MocG8c, .ULpymb .zHQkBf, .hGcgEd, .fKz7Od, .HLI7qf .c7fp5b, .z80M1:not(.RDPZE), .I7OXgf, .EgH9k .JAPzS, .EgH9k .DN1TJ, .u5sQsb, .qAeuG, .qAeuG.N4XV7d, .qAeuG.pCcXPe, .KSxb4d, .KSxb4d.N4XV7d, body.geSgge .KSxb4d, body.geSgge .KSxb4d.N4XV7d, .O1gyfd, .NkK3Fc span[role="heading"], .MDfQ7, .nxPHec, .LwdFEc, .a3PaRd, .aDCdzb, .r5F2ye .VZhFab, .oPF3Ce, .cuBluc, .PTIB6e, .LV4Pme, .bsCOTd, .OWyNBb.m1fiJb, .SoBqBf, .OWyNBb, .W0m3G, .j3nyw, div[class^="gb_"], span[class^="gb_"], .wWdzec, .YK7obe .yzYBvd, .dtaVuc, .akJTWe, .agOyMd div.DN1TJ, .pRmc7, .QlVw3e svg, .QhgNnf, .ETUnje.NlL62b > div, .Ccr7R, .tg-time-pri, .tg-time-sec, .event-details-label, .Ccr7Rb, .OOp5xb, .VYaxId.RDPZE, .oj6B2e, .CVM8jc, .ULpymb .snByac, .aXw0de .Wipb0c, .c1wk3e, .pZ7y4c, .gb_ff, .gssb_a, .cu6vzc .zHQkBf, .g3dbUc.KCIIIb, .smECzc > span > .yzifAd, .WNgOac {
+.rSoRzd, .gb_Ee.gb_He, .GXlaye .snByac, .rF3YF svg, .rF3YF span, .Cd9hpd .snByac, .uQ1ixe .snByac, .MSZkRb .r4nke, .pCoqfc, .MANBAf, .KSxb4d.pCcXPe, body.geSgge .KSxb4d.pCcXPe, .NI2kfb, .QA0Szd-xl07Ob .uyYuVb, .shdZ7e .zHQkBf, .qmv2fc, .WpDZC, .NtP29, .W0m3G .r4nke, .VKy0Ic, .l4V7wb .NPEfkd, .MocG8c, .ULpymb .zHQkBf, .hGcgEd, .fKz7Od, .HLI7qf .c7fp5b, .z80M1:not(.RDPZE), .I7OXgf, .EgH9k .JAPzS, .EgH9k .DN1TJ, .u5sQsb, .qAeuG, .qAeuG.N4XV7d, .qAeuG.pCcXPe, .KSxb4d, .KSxb4d.N4XV7d, body.geSgge .KSxb4d, body.geSgge .KSxb4d.N4XV7d, .O1gyfd, .NkK3Fc span[role="heading"], .MDfQ7, .nxPHec, .LwdFEc, .a3PaRd, .aDCdzb, .r5F2ye .VZhFab, .oPF3Ce, .cuBluc, .PTIB6e, .LV4Pme, .bsCOTd, .OWyNBb.m1fiJb, .SoBqBf, .OWyNBb, .W0m3G, .j3nyw, div[class^="gb_"], span[class^="gb_"], .wWdzec, .YK7obe .yzYBvd, .dtaVuc, .akJTWe, .agOyMd div.DN1TJ, .pRmc7, .QlVw3e svg, .QhgNnf, .ETUnje.NlL62b > div, .Ccr7R, .tg-time-pri, .tg-time-sec, .event-details-label, .Ccr7Rb, .OOp5xb, .VYaxId.RDPZE, .oj6B2e, .CVM8jc, .ULpymb .snByac, .aXw0de .Wipb0c, .c1wk3e, .pZ7y4c, .gb_ff, .gssb_a, .cu6vzc .zHQkBf, .g3dbUc.KCIIIb, .smECzc > span > .yzifAd, .WNgOac, .s6I1Kd {
 	color: #CCC !important;
 }
 
@@ -1047,7 +1047,7 @@ body, .v83gc, .GENA3c, .Gk2izd, .qmv2fc:hover, .p9lUpf, .W0m3G::before, .MDfQ7, 
 	border: none !important;
 }
 
-.J2aUD.T8M5bd .qmFsL::before, .SGFqbe.T8M5bd .qmFsL::before, .gHQcAb {
+.J2aUD.T8M5bd .qmFsL::before, .SGFqbe.T8M5bd .qmFsL::before, .gHQcAb, .wmCMbe {
 	/*box-shadow: inset 0 1px 1px 0 rgba(76,76,76,.14),inset 0 2px 1px -1px rgba(76,76,76,.12);*/
 	box-shadow: none !important;
 }
@@ -2708,7 +2708,7 @@ img[src="/textinputassistant/tia.png"], .A9x0mb, .dir-tt .img, .MOIkmc, .tdu-tra
 }
 
 @-moz-document regexp("https:\\/\\/(www\\.)?([\\w]+[.])*(\\b(?!(business|careers|classroom|keep|maps|voice)\\b)\\w+\\.)google\\.(com|([a-z]{2}))(\\.[a-z]{2})?\\/(?!(intl\\/([a-z]{2})_([a-z]{2})\\/business|hl|translate|tools\\/feedback|gmail|uc\\?)).*") {
-body:not([jsaction^="LhiQec"]):not(.qJTHM):not([jscontroller="pjICDe"]), body#gsr div#cnt, html, .freebirdFormeditorViewEditingsurfaceEl body, #docs-editor, .a-D-B, .N7iPof, .forms > .unfixed-wrapper, md-content[ng-class], .hcfe-content, .page-business-index-emerge > .main > .light-gray, .page-business-insights > .main > .light-gray, .Cv8Rjc, .PpML1d, .ZMOaid.uGCjIb, .gN5aAe, .YisXab, .uGCjIb[style^="background: white"], .zYQnTe, .vNuDAe, .dFPtBe, #nugget-bar, .unfixed-wrapper, .rTY96b, .imso-fpm, .frame::before, #gb-main, .Cfu0qd:nth-child(2n), .gws-flights__footer-background, .a-qc-La, .Rn1jbe, .hqwb1b, .devsite-landing-row:not([background]), .trends-wrapper, g-tabs.u8H8Fd, .S4EObe .exaJlc, [background="grey"], #topstuff .sh-sp__pswtr, .trending-feed-page-wrapper > .feed-content, #main.paper-drawer-panel > paper-header-panel#content-container > #mainPanel.paper-header-panel, .J9Shxc, .jwExI, .ABd7Db, .mEVcIe, #viewport, .RvYhPd, .RvYhPd::before, .eReC4e, .Nxb87, .Xeztj, .AQfYHe, .VmOpGe, .dr1yeb, .HskPDe, .YSlUOe, .SSPGKf:not([jsrenderer^="LbnRB"]):not([jsrenderer="YOiC1e"]), .UzqbDd, body[bgcolor="#ffffff"] > .a
+body:not([jsaction^="LhiQec"]):not(.qJTHM):not(.EIlDfe), body#gsr div#cnt, body[jsaction*="dragenter:.CLIENT;"], .freebirdFormeditorViewEditingsurfaceEl body, #docs-editor, .a-D-B, .N7iPof, .forms > .unfixed-wrapper, md-content[ng-class], .hcfe-content, .page-business-index-emerge > .main > .light-gray, .page-business-insights > .main > .light-gray, .Cv8Rjc, .PpML1d, .ZMOaid.uGCjIb, .gN5aAe, .YisXab, .uGCjIb[style^="background: white"], .zYQnTe, .vNuDAe, .dFPtBe, #nugget-bar, .unfixed-wrapper, .rTY96b, .imso-fpm, .frame::before, #gb-main, .Cfu0qd:nth-child(2n), .gws-flights__footer-background, .a-qc-La, .Rn1jbe, .hqwb1b, .devsite-landing-row:not([background]), .trends-wrapper, g-tabs.u8H8Fd, .S4EObe .exaJlc, [background="grey"], #topstuff .sh-sp__pswtr, .trending-feed-page-wrapper > .feed-content, #main.paper-drawer-panel > paper-header-panel#content-container > #mainPanel.paper-header-panel, .J9Shxc, .jwExI, .ABd7Db, .mEVcIe, #viewport, .RvYhPd, .RvYhPd::before, .eReC4e, .Nxb87, .Xeztj, .AQfYHe, .VmOpGe, .dr1yeb, .HskPDe, .YSlUOe, .SSPGKf:not([jsrenderer^="LbnRB"]):not([jsrenderer="YOiC1e"]), .UzqbDd, body[bgcolor="#ffffff"] > .a
 /*customization begin*/
 {
 	background: url("/*[[custom_wallpaper]]*/") bottom fixed !important;
@@ -2739,7 +2739,7 @@ div[aria-label][aria-hidden="false"][img-loaded], a[href^="/?authuser="]:hover, 
 	background-color: #161616 !important;
 }
 
-a[class^="gb_"][href^="https://accounts.google.com/AddSession"]:hover, [class^="gb_"][role="group"]:hover, [class^="gb_"][role="group"]:focus, [class^="gb_"][role="group"]:active, [class^="gb_"] > a[href*="?authuser="]:hover, [class^="gb_"] > a[href*="?authuser="]:focus, [class^="gb_"] > a[href*="?authuser="]:active,
+a[class^="gb_"][href^="https://accounts.google.com/AddSession"]:hover, [class^="gb_"][role="group"]:hover, [class^="gb_"][role="group"]:focus, [class^="gb_"][role="group"]:active, [class^="gb_"] > a[href*="authuser="]:hover, [class^="gb_"] > a[href*="authuser="]:focus, [class^="gb_"] > a[href*="authuser="]:active,
 a[href*="/mail/data/u"]:hover,
 a[href*="/mail/data/u"]:focus,
 a[href*="/mail/data/u"]:active{

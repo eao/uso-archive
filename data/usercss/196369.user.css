@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TheLegendOfWolf_
 @description    `No niebieski BOOP ok`
-@version        2021123.11.43
+@version        2021130.13.4
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -440,6 +440,52 @@ color: #12A0FF;
 body::-webkit-scrollbar-button:single-button:active {
     background: #14141422;
 }
+
+
+
+
+
+
+
+
+
+.search-form .search-field {
+    width: 100%;
+    padding-right: 40px;
+    border: solid #12A0FF;
+}
+
+
+
+[type=email], [type=number], [type=password], [type=reset], [type=search], [type=tel], [type=text], [type=url] {
+    height: 36px;
+    color: #12A0FF;
+}
+
+
+
+
+
+
+
+
+.g1-dropable .g1-drop-with-anim.g1-drop-expanded>.g1-drop-content, .g1-dropable .g1-drop-with-anim.g1-drop-expanded>.g1-drop-toggle>.g1-drop-toggle-arrow, .g1-hoverable .g1-dropable .g1-drop-with-anim:hover>.g1-drop-content, .g1-hoverable .g1-dropable .g1-drop-with-anim:hover>.g1-drop-toggle>.g1-drop-toggle-arrow {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    transition: visibility 0s ease-in-out 175ms,opacity 375ms ease-in-out 175ms,transform 375ms ease-in-out 175ms;
+    background: #24609a;
+}
+
+
+
+
+
+
 
 
 
