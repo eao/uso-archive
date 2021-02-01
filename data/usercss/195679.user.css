@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           OLD new VK v1.0.4
+@name           OLD new VK v1.0.5
 @namespace      USO Archive
 @author         jakill02
 @description    `частично Имитирует Старый (Белый) дизайн Вконтакте, частично более новый, существовавший до Декабря 2020-го года, плюс некоторые изменения от автора, вроде отключённой вредной опции (пожаловаться) которая только мешается и которую можно нажать невзначай :Dтут: https://greasyfork.org/ru/scripts/419915 вы можете установить дополнительный Скрипт, который расширит функционал данного Стиля.`
-@version        2021122.10.2
+@version        2021131.12.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
-/* OLD new VK v1.0.4 */
+/* OLD new VK v1.0.5 */
 
         /*  страница Стиля: https://userstyles.org/styles/195679  */
 
@@ -493,7 +493,7 @@ background-repeat: no-repeat !important; padding: 0px 18px !important; margin-le
 /* Подсвечивание для пунктов "Воспоминания", "Денежные Переводы" и прочих... */
 .ProfileActions .page_actions_expanded .page_actions_item:hover
 {background-color: rgba(200, 218, 223, .1) !important; -o-color: var(--steel_gray_200) !important;
-filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /* 24px */
+filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;}
 
 /* Цвет текста подсвеченного пункта "Позвонить" */
 .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:hover>span 
@@ -513,8 +513,41 @@ filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /
     width: 24px !important; /* 24px */
     height: 24px !important;} /* 24px */
 
+/*__________ всплывающее меню "Позвонить" __________*/
+/* скрытие модерновых иконок ВК и настройка Подсветки */
+.FancyElementTT__icon 
+{color: transparent !important; /* прозрачность скрывает модерновые иконки ВК */
+opacity: .72;} /* степень подсветки */
+
+/* Позицианирование всплывающего меню "Позвонить" и отступы */
+div.eltt.eltt_fancy.eltt_fancy_actions.eltt_arrow_size_normal.eltt_align_left.eltt_bottom.eltt_vis
+{width: 172px !important; height: auto !important; padding: 4px 4px 4px 4px;
+left: -5px !important; top: 30px !important; display: block;}
+
+/* Ширина пунктов Меню всплывающего меню "Позвонить" */
+[dir=ltr] .eltt .eltt_fancy_action {padding: 3px 0 5px 12px;}
+
+/* Иконка Аудиозвонок */
+div.Icon.Icon--20.Icon--w-20.Icon--h-20.Icon--phone_outline_20 {
+        background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;  
+    -o-position: relative; left: -12px;
+    background-position-x: -26px !important;
+    background-position-y: -194px !important;
+    filter: opacity(100%) brightness(0.9) contrast(0.9) saturate(1.2) !important;}
+/* Иконка Видеозвонок */
+div.Icon.Icon--20.Icon--w-20.Icon--h-20.Icon--videocam_outline_20 {
+      background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;
+    -o-position: relative; left: -12px;;
+    background-position-x: -26px !important;     /* позиция в столбце Иконок по горизонтали */
+    background-position-y: -420px !important;   /* позиция в столбце Иконок по вертикали */
+    filter: opacity(95%) brightness(0.9) contrast(0.9) saturate(1.2) !important;}  
+/*_____________________________________________*/ 
+
 /* Иконка - Воспоминания */
 [dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--memories::before {
+    background-repeat: no-repeat;
     background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;
     position: relative; left: -12px;
     background-position-x: -23px !important;     /* позиция в столбце Иконок по горизонтали */
@@ -524,7 +557,8 @@ filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /
 
 /* Иконка - Денежные Переводы */
 [dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--money-transfer::before {
-    background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;
     position: relative; left: -12px;
     background-position-x: -23px !important;     /* позиция в столбце Иконок по горизонтали */
     background-position-y: -148px !important;   /* позиция в столбце Иконок по вертикали */
@@ -532,24 +566,27 @@ filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /
     background-origin: initial; background-clip: initial; background-color: initial;}
 
 /* Не уведомдять о записях */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--posts-subscription[data-act='0']::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--posts-subscription[data-act='0']::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;
     position: relative; left: -12px;
     background-position-x: -23px !important;
     background-position-y: -318px !important;
     filter: opacity(100%) !important;}
 
 /* Уведомдять о записях */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--posts-subscription[data-act='1']::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--posts-subscription[data-act='1']::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;
     position: relative; left: -12px;
     background-position-x: -23px !important;
     background-position-y: -296px !important;
     filter: opacity(100%) !important;}
 
 /* Удалить из Закладок */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--bookmark-crossed::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;  
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--bookmark-crossed::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;  
     -o-content: url(https://vk.com/emoji/e/e29c96.png);
     -o-margin: 0px -6px 0px 0px;
     -o-padding: 0px 0px 0px 0px;
@@ -558,24 +595,27 @@ filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /
     background-position-y: -89px !important;
     filter: opacity(100%) saturate(1.0) brightness(1.0) contrast(1.0) !important;}
 /* Добавить в Закладки */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--bookmark::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;  
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--bookmark::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;  
     position: relative; left: -12px;
     background-position-x: -23px !important;
     background-position-y: -67px !important;
     filter: opacity(100%) !important;}
 
 /* Пожаловаться */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--abuse::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;  
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--abuse::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;  
     position: relative; left: -12px;
     background-position-x: -23px !important;
     background-position-y: -170px !important;
     filter: opacity(100%) !important;}
 
 /* Заблокировать */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--block::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--block::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;
     position: relative; left: -12px;
     background-position-x: -23px !important;
     background-position-y: -23px !important;
@@ -584,8 +624,9 @@ filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /
     filter: opacity(100%) !important;}
 
 /* Разблокировать */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--unblock::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--unblock::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;
     position: relative; left: -12px;
     background-position-x: -23px !important;
     background-position-y: -45px !important;
@@ -593,18 +634,19 @@ filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /
     -o-height: 18px !important; /* 24px */
     filter: opacity(100%) !important;}
 
-
 /* Позвонить */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;  
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;  
     position: relative; left: -12px;
     background-position-x: -23px !important;
     background-position-y: -192px !important;
     filter: opacity(100%) brightness(0.9) contrast(0.9) saturate(1.2) !important;}
 
 /* Скрывать новости */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--feed-ignore::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;  
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--feed-ignore::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;  
     -o-content: url(https://vk.com/emoji/e/e29c96.png);
     -o-margin: 0px -6px 0px 0px;
     -o-padding: 0px 0px 0px 0px;
@@ -614,8 +656,9 @@ filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /
     filter: opacity(100%) brightness(0.9) contrast(0.9) saturate(1.2) !important;}
 
 /* Показывать новости */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--feed-unignore::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;  
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--feed-unignore::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;  
     -o-content: url(https://vk.com/emoji/e/e29c96.png);
     -o-margin: 0px -6px 0px 0px;
     -o-padding: 0px 0px 0px 0px;
@@ -626,8 +669,9 @@ filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /
 
 
 /* пригласить в беседу */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--add-to-chat::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;  
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--add-to-chat::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;  
     -o-content: url(https://vk.com/emoji/e/e29e95.png);
     -o-margin: 0px -6px 0px 0px;
     -o-padding: 0px 0px 0px 0px;
@@ -637,8 +681,9 @@ filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /
     filter: opacity(100%) !important;}
 
 /* Не сообщать о Трансляции */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--live-unsubscribe::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;  
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--live-unsubscribe::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;  
     -o-content: url(https://vk.com/emoji/e/e29c96.png);
     -o-margin: 0px -6px 0px 0px;
     -o-padding: 0px 0px 0px 0px;
@@ -648,8 +693,9 @@ filter: opacity(100%) brightness(0.6) contrast(1.2) saturate(1.5) !important;} /
     filter: opacity(100%) !important;}
 
 /* Cообщать о Трансляции */
-[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--live-subscribe::before
-    {background-image: url(https://i114.fastpic.ru/big/2021/0122/8f/ac32a04d6c801e49ed0f34eb9adb5d8f.png)!important;  
+[dir] .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--live-subscribe::before {
+    background-repeat: no-repeat;
+    background-image: url(https://i114.fastpic.ru/big/2021/0131/4f/d74b40f8a9e65fc238c4913e98404c4f.png)!important;  
     -o-content: url(https://vk.com/emoji/e/e29c96.png);
     -o-margin: 0px -6px 0px 0px;
     -o-padding: 0px 0px 0px 0px;
@@ -758,14 +804,6 @@ a.savefrom_vk_download {position: relative; top: 8px !important;}
 
 /* ============ Настройки поля ввода текста в Фотке ============== */
 
-/* Комент в Ответ (в Ответах) */
-/* .wall_module .reply_box div.submit_post_field, [dir=ltr] .wall_module .reply_box div.submit_post_field[contenteditable=true] */
-.wall_module .reply_box div.submit_post_field, .wall_module .reply_box div.submit_post_field[contenteditable=true]
-{border: 4px solid rgb(255, 255, 255);  border-radius: 8px;}
-/* -o-#reply_field19_-147438032_1303_1608554438.reply_field.submit_post_field
-{border: 4px solid rgb(255, 255, 255) !important; border-radius: 8px;} */
-
-
 /*цвет поля ввода текста*/
 [dir] .pv_cont .pv_reply_form_wrap .submit_post_field 
 {background-color: rgba(214, 216, 217, .4); margin-left: 4px; width: auto; margin-right: 4px;}
@@ -777,6 +815,19 @@ a.savefrom_vk_download {position: relative; top: 8px !important;}
         /* Отступ тексата от края слева внутри Поля ввода Текста */
 [dir=ltr] .wall_module .reply_box div.submit_post_field, [dir=ltr] .wall_module .reply_box div.submit_post_field[contenteditable=true] 
 {padding-left: 10px;}
+
+/***********************************************************/
+
+/* Комент в Ответ (в Ответах) */
+/* .wall_module .reply_box div.submit_post_field, [dir=ltr] .wall_module .reply_box div.submit_post_field[contenteditable=true] */
+.wall_module .reply_box div.submit_post_field, .wall_module .reply_box div.submit_post_field[contenteditable=true]
+{border: 4px solid rgb(255, 255, 255);  border-radius: 8px;}
+/* -o-#reply_field19_-147438032_1303_1608554438.reply_field.submit_post_field
+{border: 4px solid rgb(255, 255, 255) !important; border-radius: 8px;} */
+
+/* тень под вашим ответом в комментах в "Ответах" */
+[dir] .feedback_row_answer {box-shadow: 0 0.5px 2.0px 0.1px #7594b5, 
+0 -0.1px 0 0 #7594b5, 0.1px 0 0 0 #7594b5, -0.1px 0 0px 0px #7594b5;}
 
 
 /* #################################################################### */

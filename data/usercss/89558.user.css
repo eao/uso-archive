@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2021130.12.1
+@version        2021131.13.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -284,15 +284,6 @@ selector
 {
 	width: 26%!important;
 }
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document domain("bing.com") {
@@ -601,27 +592,6 @@ strong
 .inline_tile .carousel {
     color: #111;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 @-moz-document domain("bing.com") {
@@ -1138,11 +1108,6 @@ div.wpcbc .b_fcv2 tr:hover
 .touchQuery .suggestion-color {
 	background: radial-gradient(ellipse at center, #00809d 0%,rgba(14, 14, 14, 0) 70%)!important;
 }
-
-
-
-
-
 }
 
 @-moz-document domain("bing.com") {
@@ -1239,7 +1204,6 @@ img
  {
 	opacity: 1!important;
 }
-
 }
 
 @-moz-document domain("bing.com") {
@@ -1821,15 +1785,9 @@ input[type="checkbox"]:checked
     padding-left: 22px!important;
     width: 10px!important;
 }
-
-
-
-
-
 }
 
 @-moz-document domain("bing.com") {
-
 /* Social Media _________________________________________________________*/
 
 /* Blog _____________*/
@@ -2076,7 +2034,6 @@ selector:active {
     height: 46px!important;
     padding-left: 53px;
 }
-
 }
 
 @-moz-document domain("bing.com") {

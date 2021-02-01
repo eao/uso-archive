@@ -2,8 +2,8 @@
 @name           deutschlandfunk.de eyesaving
 @namespace      USO Archive
 @author         xyz777
-@description    `kleine Überarbeitung, weniger Kontrast und ein mehr Highlights`
-@version        2021130.21.33
+@description    `kleine Überarbeitung mit weniger Kontrast`
+@version        2021131.16.21
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -40,6 +40,10 @@ body{
 
 .dlf-livesendung {
     background: #FCE7CF !important;
+}
+
+.dlf-live {
+     border-radius: 4px;
 }
 
 .dlfn-teaser {
@@ -84,6 +88,13 @@ body{
 }
 
 article img {
+    border-radius: 4px;
+    box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
+    background: none !important;
+    padding: 1px;
+}
+
+.tabsarticle img {
     border-radius: 4px;
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 20px 0 rgba(0, 0, 0, 0.19);
     background: none !important;

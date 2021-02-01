@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Tak jak powyżej.`
-@version        20201031.15.29
+@version        2021131.16.40
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -238,6 +238,155 @@ nav.mainSubmenu a, nav.submenu a {
 }
 .embed.image .image-footer .caption {
 	color: #464646;
+}
+.esi.breadcrumbs, .info-header__date, .info-header__date--modified, .full__article__tags__label, .article__full__tags__label, .esi__podcast .list-element--duration, .chart__vertical__content__left__section .list-element .track .title-track, .chart__vertical__content__right__section .list-element .track .title-track {
+	color: #666;
+}
+.bg--white, .bg__white {
+	background: #000;
+}
+.bg--white.container, .bg__white.container {
+    box-shadow: 0 0 20px rgba(255, 255, 255, .1);
+}
+.breadcrumbs a.current, .breadcrumbs a:hover {
+	color: #111;
+}
+.main__header {
+	color: #ccc;
+}
+.article__full .article__header {
+	border-color: #2f2f2f;
+}
+.info-header__icon {
+	color: #262626;
+}
+.info-header__date--published__date:after, .info-header__date--modified--published__date:after {
+	background: #282828;
+}
+.article__full__lead, .article__full__body, .list-element__title, article .article__full__body blockquote.type--1 span, article .article__full__body blockquote.type--1 p, article .article__full__body blockquote, .likeus, .list-element__flex--title, .full__article__tags__list__item, .article__full__tags__list__item, .chart__vertical__content__left__section .list-element .track .artist-track, .chart__vertical__content__right__section .list-element .track .artist-track {
+	color: #fff;
+}
+.article__full__body h2, .article__full__body h4, .article__full__body h5, .article__full__body .embed.social .social__text, .article__full .column__right .esi.top .list-element__flex--title, .esi__podcast .list-element--title, .list-element__speciaEvent--right--title, .full__subcategory .list-element.list-element__second.list-element .list-element__title, .esi__event.prezenter .esi__event--marker {
+	color: #eee;
+}
+.article__full__body h2:before, .article__full__body h4:before, .article__full__body h5:before, .article__full__body .embed.social .social__text:before, .article__full__body h2:after, .article__full__body h4:after, .article__full__body h5:after, .article__full__body .embed.social .social__text:after, .main__header--lines:before, .main__header--lines:after {
+	background: #ccc;
+}
+.article__full .column__right .esi.top .list-elements, .article__full .column__right .esi.top .list-element__flex {
+	border-color: #212121;
+}
+.full__article__body .embed__article__new.embed__old--article .list-element__title, .full__article__body .embed__sounding__new.embed__old--article .list-element__title, .article__full__content .embed__article__new.embed__old--article .list-element__title, .article__full__content .embed__sounding__new.embed__old--article .list-element__title {
+	border-color: #2e2e2e;
+}
+article .article__full__body blockquote:after {
+	background: #000;
+}
+.article__full__author--name {
+	color: #bbb;
+}
+.article__full__author--name span {
+	color: #515151;
+}
+.related-articles, #footer__main, .border__bottom--secondary, .block__news .list-element__flex, .border__right--secondary, .esi.top .list-element__flex, .esi.top, .full__subcategory__content, .full__category__content {
+	border-color: #222;
+}
+.article__full .actions-link {
+	border-color: #101010
+}
+.article__full .actions-link .voicer .actions-link__label {
+	color: #999;
+}
+.article__full .actions-link .jsmodule-voicer.modify__antyradio .voicer-button[data-template=square].up {
+	color: #c1c1c1;
+	border-color: #c1c1c1;
+}
+.article__full .actions-link .jsmodule-voicer.modify__antyradio .voicer-button[data-template=square].up:not(.voted):not(.voted):hover {
+	background: #c1c1c1;
+	color: #000;
+}
+.article__full .column__left .social-share .share__googlenews {
+	border-color: #3b3b3b;
+}
+.article__full .column__left .social-share .share__googlenews:hover {
+	background: #151515;
+	border-color: #151515;
+}
+.footer__full-strip__bottom__text__copyright {
+	color: #aaa;
+}
+.list-element.view__3.first__big__element .list-element__image picture.waiting, .list-element.view__3.first__big__element .list-element__image picture.loading, .article__full__figure picture.waiting, .article__full__figure picture.loading, .chart__vertical__content__left__section .list-element .cover picture.waiting, .chart__vertical__content__left__section .list-element .cover picture.loading, .chart__vertical__content__right__section .list-element .cover picture.waiting, .chart__vertical__content__right__section .list-element .cover picture.loading {
+	background: #050505;
+}
+.list-element__speciaEvent {
+	background: #000;
+}
+.block__miniSpeciaEvent.view__1 .block__miniSpeciaEvent__text--shortTitle, .block__miniSpeciaEvent.view__4 .block__miniSpeciaEvent__text--shortTitle, .list-element__flex--time {
+	color: #777;
+}
+.full__article__tags__list__item:before, .article__full__tags__list__item:before {
+	background: #212121;
+}
+.tag__description, .main__header--border {
+	border-color: #2f2f2f;
+}
+.block__miniSpeciaEvent.view__1 .block__miniSpeciaEvent__text--shortTitle:after, .block__miniSpeciaEvent.view__4 .block__miniSpeciaEvent__text--shortTitle:after {
+	background: #777;
+}
+.pagination.pagination__site .select__custom__arrow, .pagination.pagination__site .select__custom__label__text {
+	color: #eee;
+}
+.select__custom__list {
+	border-color: #222;
+	color: #eee;
+}
+.pagination.pagination__site .select__custom__list:after {
+	background: #131313;
+}
+.btn--disabled {
+	background: #131313;
+	color: #000;
+}
+.chart__vertical__content__left__section .list-element .track, .chart__vertical__content__right__section .list-element .track, .chart__vertical__content__left__section .list-element .action, .chart__vertical__content__right__section .list-element .action {
+	background: #000;
+}
+.esi__event.prezenter .esi__event--overflow {
+	border-color: #131313;
+}
+.footer__desc__text {
+	color: #aaa;
+}
+.footer__desc {
+	border-color: #222;
+}
+.footer__desc__text .simplebar-track.simplebar-vertical {
+	background: #060606;
+}
+.footer__desc__text .simplebar-scrollbar:before {
+	background: #323232;
+}
+.date__change span:nth-child(2) {
+	color: #ccc;
+}
+.date__change {
+	color: #ccc;
+	border-color: #2f2f2f;
+}
+.full__chart .chart__vertical__content__left__section .list-element .action .vote-btn.voted {
+	border-color: #bcbcbc;
+}
+.full__chart .chart__vertical__content__left__section .list-element .action .vote-btn.voted {
+	color: #bcbcbc;
+}
+input.title_track {
+	background: #000;
+	color: #fff;
+}
+.scroll-to-bullets a, .featured-title, .label-new.menu-item > a:after, .nav-pagination > li > .current, .nav-pagination > li > span:hover, .nav-pagination > li > a:hover, .has-hover:hover .badge-outline .badge-inner, button[type="submit"], .button.wc-forward:not(.checkout):not(.checkout-button), .button.submit-button, .button.primary:not(.is-outline), .featured-table .title, .is-outline:hover, .has-icon:hover .icon-label, .nav-dropdown-bold .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold > li > a:hover, .nav-dropdown-bold.dark .nav-column li > a:hover, .nav-dropdown.nav-dropdown-bold.dark > li > a:hover, .is-outline:hover, .tagcloud a:hover, .grid-tools a, input[type='submit']:not(.is-form), .box-badge:hover .box-text, input.button.alt, .nav-box > li > a:hover, .nav-box > li.active > a, .nav-pills > li.active > a, .current-dropdown .cart-icon strong, .cart-icon:hover strong, .nav-line-bottom > li > a:before, .nav-line-grow > li > a:before, .nav-line > li > a:before, .banner, .header-top, .slider-nav-circle .flickity-prev-next-button:hover svg, .slider-nav-circle .flickity-prev-next-button:hover .arrow, .primary.is-outline:hover, .button.primary:not(.is-outline), input[type='submit'].primary, input[type='submit'].primary, input[type='reset'].button, input[type='button'].primary, .badge-inner {
+	background: #000;
+}
+.notificatonTrackForm input[type="submit"] {
+	color: #000;
+	border-color: #000;
 }
 }
 

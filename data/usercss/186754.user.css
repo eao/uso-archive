@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Most credit goes to @anqxyr. I've only managed to make it work on all domains, fix every single visible error and many more. -Why didn't you send those fixes to @qnxyr?Discussion doesn't work for me, infinity loading.`
-@version        2021131.2.18
+@version        2021131.12.58
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -753,14 +753,12 @@ table.wiki-content-table td {
 background-color: #888;
 border: 1px solid #444;
 padding: 0.3em 0.7em;
-color: #191919;
 }
     /* ------------- */
 
 /* ------------blyad fixes------------ */
 #toc {
     background: #444;
-
 }
 #account-options li a:hover {
 	color: #eee;
@@ -910,12 +908,47 @@ div[style="border:solid 10px #F7E3D6; padding:5px; margin: 10px;"] {
 [src='http://scp-wiki.wdfiles.com/local--files/the-bowe-decommission-part-one/Asterisk.png'] {
 	filter: invert(1) brightness(50%);
 }
-
-/*Replacing MTF logos to .png*/
-[src='http://scp-wiki.wdfiles.com/local--files/secure-facility-dossier-site-64/AR_logo_WBG.png'] /*Anderson Robotics trade logo*/ {
-	content: url('https://i.imgur.com/OjfeUZs.png');
+.section table td:nth-child(2), .section table th:nth-child(2) {
+	color: #191919;
+}
+[src='http://scp-wiki.wdfiles.com/local--files/secure-facility-dossier-site-64/AR_logo_WBG.png'] /*Anderson Robotics trade logo 2014*/ {
+	content: url('http://scp-wiki.wdfiles.com/local--files/anderson-robotics-hub/anderson_robotics_by_sunnyclockwork.png');
 	filter: invert(1) brightness(50%);
 }
+[src='http://scp-wiki.wdfiles.com/local--files/anderson-robotics-hub/anderson_robotics_by_sunnyclockwork.png'] /*Anderson Robotics trade logo 2014*/ {
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-wiki.wdfiles.com/local--files/anderson-robotics-hub/AndersonLogo1.jpg'] /*Anderson Robotics trade logo 1998*/ {
+	content: url('https://i.imgur.com/5wQw5R7.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-wiki.wdfiles.com/local--files/task-forces/'] {
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-wiki.wdfiles.com/local--files/task-forces/Alpha1.png'], [src='http://scp-wiki.wdfiles.com/local--files/anderson-robotics-hub/mtf_gamma_13___asimov_s_lawbringers_by_sunnyclockwork.png'], [src='ttp://scp-wiki.wdfiles.com/local--files/task-forces/Alpha4.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/alpha9alt.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/beta4.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Beta7.png'], [src='(http://scp-wiki.wdfiles.com/local--files/task-forces/Gamma5b.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Gamma6.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Gamma13.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Delta5.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Epsilon6village.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/epsilon9.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Epsilon11.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Zeta9.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Eta4.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Eta10.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Eta11.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Theta4.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/theta-90.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Iota10.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Kappa10.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Lambda4.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Lambda5.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Lambda12.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/lambda14.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Mu3.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Mu4.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Mu13.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Nu7.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/OmicronR.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Pi1.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/rho1.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Rho9.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Rho19.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Sigma3.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Sigma66.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Tau5.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Psi7.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/psi8.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/Omega0.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/omega12.png'], [src='http://scp-wiki.wdfiles.com/local--files/task-forces/stigma9.png'] {
+	filter: invert(1) brightness(50%);
+}
+.yui-navset .yui-nav a em, .yui-navset .yui-navset-top .yui-nav a em {
+	border-color: #666;
+}
+table.page-history td.optionstd a {
+	border-color: #777;
+}
+[style="float:left; padding: 2px 8px; background-color: #FFF;"] {
+	background-color: #191919 !important;
+}
+
+/*Custom Cursor*/
+	/*Images used from custom-cursor.com*/
+html {
+    cursor: url(https://cdn.custom-cursor.com/db/7526/32/scp-logo-cursor.png), default!important;
+}
+a:hover {
+	cursor: url(https://cdn.custom-cursor.com/db/7525/32/scp-logo-pointer.png), pointer!important;
+}
+/*End of Custom Cursor*/
+
+/*Replacing MTF logos to .png*/
 [src='http://scp-wiki.wdfiles.com/local--resized-images/task-forces/Alpha1.png/small.jpg'] /*MTF Alpha-1 ("Red Right Hand")*/ {
 	content: url('http://scp-wiki.wdfiles.com/local--files/task-forces/Alpha1.png');
 	max-height: 240px;

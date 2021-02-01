@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.5.4
+@name           Compact Tube (White) v1.5.5
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2021126.15.49
+@version        2021131.16.44
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.4 */
+/* CompactTube (White) v1.5.5 */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -200,7 +200,7 @@ ytd-alert-with-button-renderer[is-displayed] {
 /*RU:  сетка на 6 миниатюр Главной страницы - modern Chrome*/
 /*ENG: grid of 6 thumbnails on the Home page - modern Chrome*/
 [style] * {
-
+    
     --ytd-rich-grid-items-per-row: 6; /*6;*/ /* RU:  Количество Видео в ряд на главной странице.
                                                 ENG: Number of Videos in a row on the main page. */
 
@@ -859,6 +859,24 @@ ytd-rich-item-renderer {
     margin-right: calc(var(--ytd-rich-grid-item-margin) / 6.0); /*5.9*/
     margin-bottom: 14px; /*20px*/
     width: calc( 100% / var(--ytd-rich-grid-items-per-row) - var(--ytd-rich-grid-item-margin) - -3.00px);} /*0.01px, мой вариант: -3.00px */
+[mini-mode] ytd-rich-item-renderer {
+    position: relative; left: 0px; /* -6px */
+    flex: 1;
+    flex-direction: row;
+    -o-width: 150px !important; /*150px*/
+    min-width: 174px; /*170px*/
+    -o-max-width: 190px; /*1200px*/
+    margin: 0px 10.0px 14px 1.0px; /* margin: 0px 10.0px 14px 1.0px; 
+                                    , 0px 4.5px 14px 7.5px; if {position: relative; left: -6px;} */
+    -o-padding: 0px 0px 0px 0px;
+    -o-margin-left: calc(var(--ytd-rich-grid-item-margin) / 9.5)  !important;
+    -o-margin-right: calc(var(--ytd-rich-grid-item-margin) / 1.5) !important;}
+ytd-rich-grid-renderer[mini-mode] #contents.ytd-rich-grid-renderer, ytd-rich-grid-renderer[mini-mode] #submenu.ytd-rich-grid-renderer {
+padding: 32px 6px 0px 6px;
+    -o-margin: 10px 0px 0px 0px;
+    /* max-width: calc( var(--ytd-rich-grid-items-per-row) * 
+        (var(--ytd-rich-grid-mini-item-max-width) 
+            + var(--ytd-rich-grid-item-margin)) )*/;}
 
 /*========== + ===========*/
 /* Главная*/
@@ -904,11 +922,12 @@ ytd-thumbnail.ytd-rich-grid-video-renderer {
     max-height: 3.2rem;}
 /* Названия ВИДЕО на ГЛАВНОЙ странице - Ращзмер Шрифта в уменьшенном состоянии Миниатюр - NEW */
 ytd-rich-grid-media[mini-mode] #video-title.ytd-rich-grid-media {
-    font-size: 1.1rem;
+    font-size: 1.1rem; /* 1.1rem */
     margin-top: 10px; /*? Компенсация совпадания ячеек по вертикали при сокращёнии меню (к основной сетке) ?*/
-    margin-bottom: 10px;  /*? Компенсация совпадания ячеек по вертикали при сокращёнии меню (к основной сетке) ?*/
+    margin-bottom: -12px;/* 10px */  /*? Компенсация совпадания ячеек по вертикали при сокращёнии меню (к основной сетке) ?*/
     -o-margin-right: -6px;                 /*test*/
     -o-line-height: 1.7rem;
+    padding-left: 1px; /* 2021 test */
     line-height: 1.6rem;
     max-height: 3.4rem;
     -o-letter-spacing: 0.29px;; /*0.29px;*/
@@ -1164,22 +1183,22 @@ line-height: var(--ytd-link-line-height, 1.6rem); font-weight: bold;} /*500;*/
 /* цвет иконки колокольчика */
 #button.ytd-notification-topbar-button-renderer {color: #808080 !important;}
 
-/* варианты поиска - цвет верхнего контура ".gstl_50.sbdd_a" */
-.sbsb_a {box-shadow: inset 0 2px 0 0 rgb(204, 204, 204)!important;}
-[dark] .sbsb_a {box-shadow: inset 0 2px 0 0 rgb(204, 204, 204) !important;}
+/* варианты поиска - цвет верхнего контура ".gstl_50.sbdd_a" + отступ сверху */
+.sbsb_a {box-shadow: inset 0 1px 0 0 rgb(204, 204, 204)!important; margin-top: 1px;}
+[dark] .sbsb_a {box-shadow: inset 0 1px 0 0 rgb(204, 204, 204) !important; margin-top: 1px;}
 
 /* цвет поля поиска */
-#container.ytd-searchbox {-o-background-color: rgba(255, 255, 255, .06) !important; border-color: rgba(111, 110, 110, .4) !important;
+-o-#container.ytd-searchbox {-o-background-color: rgba(255, 255, 255, .06) !important; border-color: rgba(111, 110, 110, .4) !important;
 -o-border: 1px solid #1c62b9;  box-shadow: inset 0px 0px 0px 0px var(--ytd-searchbox-legacy-border-shadow-color);}
 /* background-color: #fff !important; border-color: #CCCCCC !important; */
 
 /* цвет поля поиска - КНОПКА */
-#search-icon-legacy.ytd-searchbox {border-color: rgba(110, 110, 110, .3) !important; background-color: rgba(204, 204, 204, .15) !important;}
+-o-#search-icon-legacy.ytd-searchbox {border-color: rgba(110, 110, 110, .3) !important; background-color: rgba(204, 204, 204, .15) !important;}
 /* border-color: #CCCCCC !important; background-color: #F8F8F8 !important; */
 
-    /* цвет поля поиска - КНОПКА (подсвеченная) 
+/* цвет поля поиска - КНОПКА (подсвеченная) 
     [v1:   border-color: rgba(110, 110, 110, .51)    background-color: rgba(204, 204, 204, .26)] */
-    #search-icon-legacy.ytd-searchbox:hover {border-color: rgba(110, 110, 110, .43) !important; background-color: rgba(187, 187, 187, .19) !important;}
+    -o-#search-icon-legacy.ytd-searchbox:hover {border-color: rgba(110, 110, 110, .43) !important; background-color: rgba(187, 187, 187, .19) !important;}
 
 /* Цвет вводимого текста в поле поиска (NEW) */
 #container.ytd-searchbox input.ytd-searchbox {color: rgb(100, 100, 100);}
@@ -1200,7 +1219,8 @@ ytd-searchbox[has-focus] #container.ytd-searchbox {
    border: 1px solid #1c62b9 !important;
     -o-background: rgba(208, 104, 104, .671) !important;
     padding: 0px 3px 0px 4px;
-    box-shadow: inset 569px 0px 0px 0px rgba(255, 255, 255, .82);} /*534px , 536px */
+    box-shadow: inset 0 1.5px 1px #D4D4D4 /*внутренняя тень-контур*/, inset 569px 0px 0px 0px rgba(255, 255, 255, .82);} /*534px , 536px */
+
 
 /* Цвет вводимого текста в поле поиска - старые варианты */
 -o-input.ytd-searchbox {color: rgb(145, 145, 145)!important; -o-filter: invert(25%);} /* V */
@@ -1208,7 +1228,8 @@ ytd-searchbox[has-focus] #container.ytd-searchbox {
 -o-#container.ytd-searchbox input.ytd-searchbox {color: rgb(128, 128, 128) !important; -o-filter: invert(0%);}
 
 /* цвет иконки Лупы в поле поиска */
-yt-icon.ytd-searchbox  {color: #919191 !important;} 
+yt-icon.ytd-searchbox  {fill: #919191 !important; transition-duration: 0ms; transition-timing-function: linear; transition-delay: 0s;} 
+
 /* цвет Иконки Лупы в Минимальном после поиска */
 yt-icon-button#search-button .ytd-masthead {fill: #989898 !important;}
 
@@ -1307,7 +1328,15 @@ ytd-toggle-button-renderer.style-compact-gray[is-paper-button] {
     color: var(--yt-button-compact-text-color, var(--yt-luna-black-opacity-lighten-2));
         margin-left: 5.5px;
         padding: 0px 0px 0px 0px; 
-        font-size: 1.2rem ;
+        font-size: 1.1rem ; /* 1.2rem */
+        text-transform: uppercase;
+        box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, .4);} /*rgb(204, 204, 204)*/
+[mini-mode] ytd-toggle-button-renderer.style-compact-gray[is-paper-button] {
+    background-color: var(--yt-button-compact-background-color, var(--yt-opalescence-soft-grey));
+    color: var(--yt-button-compact-text-color, var(--yt-luna-black-opacity-lighten-2));
+        margin-left: 5.5px;
+        padding: 0px 0px 0px 0px; 
+        font-size: 1.0rem ;
         text-transform: uppercase;
         box-shadow: inset 0px 0px 0px 1px rgba(154, 154, 154, .4);} /*rgb(204, 204, 204)*/
 
@@ -2212,9 +2241,28 @@ position: relative; top: 0px; left: 5px;}
     z-index: 1;
     min-width: 0;
     background: var(--yt-spec-brand-background-primary);
+-o-box-shadow: 0px 0px 0px 1px rgb(0, 255, 70);
     -o-box-shadow: 0px 0px 0px 1px rgba(178, 178, 178, .27);
     -o-border-right: 1px solid var(--yt-spec-10-percent-layer);
     -o-border-left: 1px solid var(--yt-spec-10-percent-layer);}
+
+/*Блок расположения Аватара канала (на странице Каналов) - левая добавочная часть*/
+#channel-header.ytd-c4-tabbed-header-renderer:before {
+    overflow: hidden;
+    color: red;
+    position: absolute; left: -50%; top: 0;
+    content: "" !important;
+    display: inline-block;
+    height: 100%;
+    width: 200%;
+    padding: 10px 107px 4px;
+    -o-position: relative;
+    z-index: -1 !important;
+    min-width: 0;
+    -o-opacity: .5;
+    background: #fff; /* var(--yt-spec-brand-background-primary) */
+    -o-box-shadow: 0px 0px 0px 1px rgb(200, 0, 255);}
+[dark] #channel-header.ytd-c4-tabbed-header-renderer:before {background: #202020; /* var(--yt-spec-brand-background-primary) */}
 
     
 /*блок верхнего меню канала (на странице Каналов)*/
@@ -2224,9 +2272,27 @@ position: relative; top: 0px; left: 5px;}
     background: var(--yt-spec-brand-background-primary);
     -o-border-right: 1px solid var(--yt-spec-10-percent-layer);
     -o-border-left: 1px solid var(--yt-spec-10-percent-layer);
-    border-bottom: 1px solid var(--yt-spec-10-percent-layer);
-    box-shadow: 0px 0.8px 0.6px -0.6px var(--ytd-searchbox-legacy-button-border-color);
+-o-border-bottom: 1px solid var(--yt-spec-10-percent-layer);                            /* использовал */
+-o-box-shadow: 0px 0.8px 0.6px -0.6px var(--ytd-searchbox-legacy-button-border-color);  /* использовал */
     -o-box-shadow: 0px 0px 1px 0px var(--ytd-searchbox-legacy-button-border-color) /*old ver.*/;}
+/*блок верхнего меню канала (на странице Каналов) - левая добавочная часть*/
+#tabs-inner-container.ytd-c4-tabbed-header-renderer:before {
+    overflow: hidden;
+    color: red;
+    position: absolute; left: -50%; top: 0;
+    content: "" !important;
+    display: inline-block;
+    height: 71%;
+    width: 200%;
+    padding: 10px 107px 4px;
+    z-index: -1 !important;
+    min-width: 0;
+    -o-opacity: .5;
+    background: #fff; /* var(--yt-spec-brand-background-primary) */
+        border-bottom: 1px solid var(--yt-spec-10-percent-layer);
+        box-shadow: 0px 0.8px 0.6px -0.6px var(--ytd-searchbox-legacy-button-border-color);
+    -o-box-shadow: 0px 0px 0px 1px rgb(200, 0, 255);}
+[dark] #tabs-inner-container.ytd-c4-tabbed-header-renderer:before {background: #202020;}
 
 
 /*центровка блока с Аватарками избранных каналов (на странице Каналов)*/
@@ -3487,9 +3553,10 @@ iron-dropdown.ytd-popup-container {box-shadow: 0px 0px 0.4px 0.3px rgb(0, 0, 0),
 /* Нотификационное Меню Колокольчика (выделенное) */
 ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-notifications] > .menu-container.ytd-multi-page-menu-renderer 
 {overflow: auto; margin-right: 0px; -o-background: rgb(251, 8, 8) !important;}
-/* Нотификационное Меню Колокольчика (НЕ выделенное) */
+/* Нотификационное Меню Колокольчика (НЕ выделенное) */ 
+/* /!\ overflow: auto !important - показать скроллбар ; margin-right: 0px !important - отцентровать окно со скроллбаром /!\ */
 ytd-multi-page-menu-renderer[menu-style=multi-page-menu-style-type-notifications] > .menu-container.ytd-multi-page-menu-renderer:not(:hover)
-{overflow: auto; margin-right: 0px; -o-background: rgb(251, 8, 8) !important;}
+{overflow: auto !important; margin-right: 0px !important; -o-background: rgb(251, 8, 8) !important;}
 
 /* Секция в меню Нотификаций Колокольчика */
 ytd-notification-renderer {
@@ -3647,25 +3714,92 @@ ytd-guide-entry-renderer[active] .title.ytd-guide-entry-renderer {
 
 /* ••••••••••••••••••••••••••••••••• (конец параграфа) ••••••••••••••••••••••••••••••••• */
 
+/* ##############  Автоскрываемое Мини Гид меню ############## */
+/* OFF */
+        /* Граница срабатывания - вход */
+ytd-mini-guide-renderer:after {
+    transition: all 100ms ease-in-out 0.4s;
+    border-radius: 0% 40% 0% 0% / 0% 30% 0% 0%;
+    z-index: -1; display: inline-block; content: ""; box-shadow: 1px 0 0 0  rgb(255, 0, 0);
+    position: absolute; top: 0; left: 0px; width:100%; height: 100%; padding-left: 46px; opacity: 0;}
+/* OFF */
+ ytd-mini-guide-renderer.ytd-app {
+    transition: margin-left 100ms ease-in-out 0.4s;
+    margin-left: -66px /* -66px */; 
+    box-shadow: 1px 0px 0px 0px rgb(215, 215, 215); 
+    -o-padding-right: 4px; 
+    opacity: 1;
+    -o-background: rgb(168, 23, 23);}
+/* OFF */
+ [dark] ytd-mini-guide-renderer.ytd-app {
+    transition: margin-left 100ms ease-in-out 0.4s;
+    margin-left: -66px /* -66px */; 
+    box-shadow: 1px 0px 0px 0px rgba(55, 55, 55, .63); 
+    -o-padding-right: 4px; 
+    opacity: 1;
+    -o-background: rgb(168, 23, 23);}
+
+/* ON */
+ytd-mini-guide-renderer.ytd-app:hover {
+    transition: margin-left 180ms ease-in-out 0s;
+    margin-left: 0px; 
+    box-shadow: 1px 0px 0px 0px rgb(215, 215, 215); 
+    padding-right: 0px; 
+    opacity: 1}
+/* ON */
+[dark] ytd-mini-guide-renderer.ytd-app:hover {
+    transition: margin-left 180ms ease-in-out 0s;
+    margin-left: 0px; 
+    box-shadow: 1px 0px 0px 0px rgba(55, 55, 55, .63); 
+    padding-right: 0px; 
+    opacity: 1}
+/* ON */
+        /* Граница срабатывания - выход */
+ytd-mini-guide-renderer:hover:after {
+    transition: all 180ms ease-in-out 0s;
+    z-index: -1; display: inline-block; content: ""; opacity: 0;
+    position: absolute; top: 0; left: -54px; width:100%; height: 100%;}
+
 /* Рабочая Шапка - белая */
 ytd-masthead {
-    --paper-input-container-input-align: baseline; 
+    --ytd-searchbox-legacy-border-color: #ccc !important; /* контур серчбокса */
+    --ytd-searchbox-legacy-button-border-color: #d3d3d3 !important; /* контур кнопки серчбокса */
+    --ytd-searchbox-legacy-button-hover-border-color: #c6c6c6 !important; /* контур кнопки серчбокса подсвеченный */
+    --ytd-searchbox-legacy-button-color: #f8f8f8 !important; /* БГ кнопки серчбокса */
+    --ytd-searchbox-legacy-button-hover-color: #f0f0f0!important; /* БГ кнопки серчбокса подсвеченный */
+    --ytd-searchbox-legacy-border-shadow-color: #eee !important; /* Тень внутри серчбокса */
+        --paper-input-container-input-align: baseline; 
     --yt-spec-wordmark-text: rgb(33, 33, 33) !important; /* текст лого */
     --yt-spec-call-to-action: #065fd4 !important; /* Кнопка войти в акаунт */
     --yt-spec-text-secondary: #606060 !important; /* Код страны */
-    --yt-searchbox-background: #fff !important; /* серчбокс */
+    --yt-searchbox-background: #fff !important; /* серчбокс БГ */
     display: block; width: 100%; background: rgb(255, 255, 255); /* БГ */
     box-shadow: inset 0px -1px 0px 0px rgba(0, 0, 0, .102);} /* rgba(128, 128, 128, .16) */
 
+    /* контур внутри кнопки серчбокса */
+    #search-icon-legacy.ytd-searchbox:hover {box-shadow: inset 0 0px 2px rgba(0, 0, 0, .2) !Important;
+    transition-duration: 0ms; transition-timing-function: linear; transition-delay: 0s;}
+    #search-icon-legacy.ytd-searchbox {box-shadow: inset 0 0px 1px rgba(0, 0, 0, .1) !Important;
+    transition-duration: 0ms; transition-timing-function: linear; transition-delay: 0s;}
+
+
 /* Рабочая Шапка - чёрная */
 [dark] ytd-masthead {
-    --paper-input-container-input-align: baseline; 
+    --ytd-searchbox-legacy-border-color: #303030 !important; /* контур серчбокса */
+    --ytd-searchbox-legacy-button-border-color: rgb(59, 59, 59) !important; /* контур кнопки серчбокса */
+    --ytd-searchbox-legacy-button-hover-border-color: rgb(67, 67, 67) !important; /* контур кнопки серчбокса подсвеченный */
+    --ytd-searchbox-legacy-button-color: rgb(49, 49, 49) !important; /* БГ кнопки серчбокса  #393939 , #313131*/
+    --ytd-searchbox-legacy-button-hover-color: rgb(53, 53, 53)!important; /* БГ кнопки серчбокса подсвеченный */
+    --ytd-searchbox-legacy-border-shadow-color: rgba(48, 48, 48, .5) !important; /* Тень внутри серчбокса */
+        --paper-input-container-input-align: baseline; 
     --yt-spec-wordmark-text: rgb(255, 255, 255) !important; /* текст лого */
     --yt-spec-call-to-action: #3ea6ff !important; /* Кнопка войти в акаунт */
     --yt-spec-text-secondary: #aaaaaa !important; /* Код страны */
-    --yt-searchbox-background: #0F0F0F !important; /* серчбокс */
-    display: block; width: 100%; background: rgb(32, 32, 32); /* БГ */
+    --yt-searchbox-background: #121212 !important; /* серчбокс БГ - #0F0F0F*/
+    -o-display: block; -o-width: 100%; 
+    background: rgb(32, 32, 32); /* БГ  - rgb(32, 32, 32);*/
     box-shadow: inset 0px -2px 0px 0px rgb(0, 0, 0);} /* rgba(0, 0, 0, .16) */
+
 
 /* ®®®®®®®®  Исправления Интеграции Чужих дополнений (опционально) ®®®®®®®® */
 
