@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `<a href="https://userstyles.org/users/292720">邪ンヌ（復讐者）</a>さんが公開されている<a href="https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flash">NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）</a>の更新版です。上記CSSから現在使用されていないであろう記述を削除し新要素に対応しています。もとになっているCSS通り動画部分を上に移動することでスクロールすることなく動画視聴が可能になっています。インストールボタン横の "Customize Settings" でいくつかの要素改変オプションを追加することができます。広告非表示をデフォルトにしています。表示することもできますがニコニ広告エリアをダークテーマ化していないのでおかしなことになることをあらかじめご了承ください。動作確認は一応ChromeとFirefoxで行っています。何かあれば<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion">マシュマロ</a>に投げていただければできる範囲で何とかします。あわせて<a href="https://userstyles.org/styles/190570/re-niconico-live-dark-theme">ニコ生のテーマ</a>も出しているので、ぜひご活用ください。また、この場を借りまして、オリジナルの製作者様に感謝申し上げます。`
-@version        20201217.3.37
+@version        202121.11.35
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown ----------- "かんたんコメントエリア" {
@@ -390,13 +390,9 @@ button.ActionButton.TwitterAccountPanel-button{
 .TagContainer-editButton, .ActionButton.CommentCommandPaletteNode[data-type="size"], .CommentCommandPaletteNode[data-type="layout"]{
     background-color: #252525 !important;
 }
-.LikeButton{
-    background-color: #666;
-}
-.LikeButton:hover {background-color: #404040}
-.SharePanelVisibleButton{
-    background-color: #000;
-}
+/* likebutton */
+.LikeActionButton{background-color: #666;}
+.LikeActionButton:hover{background-color: #404040;}
 .ActionButton.VideoMenuContainer-button,.ActionButton.CalendarButton,.ActionButton.ReloadButton,.ActionButton.CommentPanelAutoScrollButton,.ActionButton.ArrowPrevButton,.ActionButton.ArrowNextButton,.ControllerButton{
     background-color: #252525
 }

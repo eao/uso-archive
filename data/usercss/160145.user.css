@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         HolyShit
 @description    `RSLoad.net в серых тонах`
-@version        20201130.8.35
+@version        202121.7.43
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document domain("rsload.net") {
+@-moz-document regexp("https?:\\/\\/rsload\\.net\\/.*") {
 body {
     background-color: black !important;
     color: white !important;

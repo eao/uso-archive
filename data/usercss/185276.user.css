@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Saarim Shahid
 @description    `A theme for: tiktok.comUpdated very regularly!Please report issues here: http://m.me/sir.saarim.<a href="http://m.me/sir.saarim">Report Issue</a>`
-@version        2021117.13.8
+@version        202121.9.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -90,7 +90,9 @@ header .help-container .help-item,
 .header-container.middle.jsx-1217828260,
 .app-promotion.jsx-3770168929 > span.show.jsx-3770168929,
 .sug-container.jsx-26401869,
-.promotion-download.jsx-3770168929 {
+.promotion-download.jsx-3770168929,
+.profile-card-container.jsx-1596287054,
+.profile-card-container.jsx-288187331 {
 	background-color: #1D1E1F !important;
 }
 
@@ -157,7 +159,8 @@ header .help-container .help-item,
 .comment-container.jsx-1331557196:not(.no-top-line)::before,
 .comment-post-outside-container.jsx-1331557196,
 .header-container.middle.jsx-2537748390,
-.side-bar.jsx-532438284 .user-list.jsx-532438284 {
+.side-bar.jsx-532438284 .user-list.jsx-532438284,
+.copy-link-container.jsx-3430037935 {
 	border-color: rgb(245, 137, 158) !important;
 }
 
@@ -353,7 +356,8 @@ header .help-container .help-item img,
 .stage-2.jsx-3758851661 .close.jsx-3758851661,
 .contact-container .contact-wrapper .contact-row .contact-card img,
 .logo-container.jsx-832362280,
-.comment-input-inner-wrapper.jsx-1180591303 .editor.jsx-1180591303 .at-icon.jsx-1180591303 {
+.comment-input-inner-wrapper.jsx-1180591303 .editor.jsx-1180591303 .at-icon.jsx-1180591303,
+.comment-input-inner-wrapper.jsx-62533259 .editor.jsx-62533259 .at-icon.jsx-62533259 {
 	filter: invert(100%);
 	-webkit-filter: invert(100%);
 }
@@ -365,7 +369,8 @@ header .help-container .help-item img,
 .comment-input-inner-wrapper.jsx-3076546058,
 .comment-input-inner-wrapper.jsx-780136105,
 .comment-input-inner-wrapper.jsx-1180591303,
-.search-input.jsx-1746001420 {
+.search-input.jsx-1746001420,
+.comment-input-inner-wrapper.jsx-62533259 {
 	background-color: #444
 }
 
@@ -553,7 +558,10 @@ span,
 .wrap-content_1wZWo .carousel-text-reason_23Lc3,
 font,
 .search-input.jsx-1746001420 input.with-icon.jsx-1746001420,
-.side-bar.jsx-4190720015 .user-list-header.jsx-4190720015 {
+.side-bar.jsx-4190720015 .user-list-header.jsx-4190720015,
+.profile-card-container.jsx-1596287054,
+.profile-card-container.jsx-288187331,
+.copy-link-container.jsx-3430037935 .link-container.jsx-3430037935 {
 	color: aliceblue !important
 }
 }

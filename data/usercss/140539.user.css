@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `究極護眼`
-@version        2021123.8.31
+@version        202121.11.27
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -280,10 +280,11 @@
   /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt:hover ._3imUf8qB9LmLpk_t5PjDm4{display:inline-flex!important;}
   /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt:hover ._3ExaynSI6tUp5h1U50MHtI{height:40px!important;}
   /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4>.IaEsn1SdyIFGVnMWy02Or{font:36px/40px arial!important;height:initial!important;padding:0!important;margin:0 10px 0 0!important;}
-  /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4>div        {font-size:42px!important;line-height:40px!important;color:#000!important;width:initial!important;height:initial!important;margin:0!important;}
-  /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4>div>label  {font-size:42px!important;line-height:40px!important;}
-  /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4>div>label>i{font-size:42px!important;line-height:40px!important;color:#000!important;}
-  /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4>label{font-size:30px;padding:0!important;margin:0 20px 0 0!important;}
+  /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4>div            {font-size:42px!important;line-height:40px!important;color:#000!important;width:initial!important;height:initial!important;margin:0 20px 0 0!important;}
+  /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4>div>div        {font-size:42px!important;line-height:40px!important;width:initial!important;height:initial!important;}
+  /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4>div>div>label  {font-size:42px!important;line-height:40px!important;width:initial!important;}
+  /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4>div>div>label>i{font-size:42px!important;line-height:40px!important;color:#000!important;}
+  /*rated*/     ._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4>div>label{font-size:30px;padding:0!important;margin:0!important;}
         /*like*/._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4 label[for*="like"],
         /*like*/._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4 i.i-thumb-up,
         /*like*/._1Hi94Pa6lplJ436NQaMbEt ._3imUf8qB9LmLpk_t5PjDm4 i.i-arrow-up-bold      {color:#292!important;}

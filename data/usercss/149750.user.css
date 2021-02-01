@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「最新版エディタ（標準）」及び「新タグ編集エディタ」をアレンジし、ブログ編集の環境を改善します。<br>このスタイルは Chrome / Firefox / Edge の拡張機能「Stylus」にインストールして使用出来ます。<br><br>ブログを編集する際に、ウインドウ幅に係らず エディタの幅が980pxから変化しません。 デスクトップを広く使いたい場合や、エディタを拡大して使う場合は、このコンパクトサイズが有効です。<br><br>この Ameblo Writer Compact に関する詳細は、以下のページを参照ください。<br>　https://ameblo.jp/personwritep/entry-12333180456.html<br>`
-@version        2021131.9.1
+@version        202121.3.16
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://blog.ameba.jp/ucs/entry/srventryin"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryup"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryouterpreview"), url-prefix("https://blog.ameba.jp/ucs/entry/imagedelete") {
-/* Ameblo Writer Compact ver.43 基本CSS ****************/
+/* Ameblo Writer Compact ver.43a 基本CSS ****************/
 /* 縦スクロールバー抑止 */
 html {
     overflow: initial; }
@@ -209,12 +209,12 @@ html {
 
 /* 編集枠 左パレット **************************/
 .l-editor {
-    height: 779px;
+    height: 778px;
     width: 664px;
     margin: 0 8px 8px 0;
     padding: 0;
     border-radius: 4px;
-    box-shadow: inset 0 0 0 1px var(--bdc1);
+    box-shadow: inset -1px -1px 0 0 var(--bdc1);
     background: rgb(162, 192, 205, .7);
     overflow: visible; }
 
@@ -403,7 +403,6 @@ html {
 
 /* ホワイトモード編集枠 */
 .cke_editable {
-    min-height: 496px;
     overflow-y: scroll;
     margin: 0 auto !important;
     padding: 12px 8px 0;
@@ -418,7 +417,7 @@ html {
 /* 通常・HTML 切替タブ */
 .p-editModeTab {
     position: absolute;
-    top: 743px;
+    top: 742px;
     z-index: 3; }
 
 .p-editModeTab__item__button--gray {
@@ -576,7 +575,7 @@ html {
 
 /* 右パレット 機能ベース */
 .l-sideModule__content {
-    height: 745px; }
+    height: 744px; }
 
 /* 右パレット内文字色 */
 .p-sideModule__subNavItem.is-selected > .p-sideModule__subNavItem__text--large {
@@ -2732,11 +2731,6 @@ p.close {
 /* iframe内 */
 .cke_editable {
     min-height: 100vh; }
-
-/* ドラッグ&ドロップエリア */
-.p-photos-editorDropArea {
-    height: 670px;
-    height: calc(100vh - 234px); }
 
 /* 編集枠 HTML表示 *************/
 .CodeMirror {

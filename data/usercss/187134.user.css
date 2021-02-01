@@ -2,8 +2,8 @@
 @name           NicoVideo Dark Theme Custom
 @namespace      USO Archive
 @author         石
-@description    `NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flashを改変したものです。素人なりにcssの解説サイトを見ながら雑に継ぎ足し使っているので無駄な部分もあるかもしれません。2020/08/01追記ヘッダーのメニュー（common-header-xxxxxx）について、私の力不足で:hover時の背景色変化がうまく適用できませんでした。仕方なく現在は非ホバー時と同じ色にしてあります。2020/08/25サイト側の更新でヘッダーメニューを開いたときに全画面が暗くなってしまうようになっていたのを直しました。`
-@version        2020930.11.27
+@description    `NicoVideo Dark Theme for HTML5 & FLASH（ニコニコ動画）https://userstyles.org/styles/114620/nicovideo-dark-theme-for-html5-flashを改変したものです。素人なりにcssの解説サイトを見ながら雑に継ぎ足し使っているので無駄な部分もあるかもしれません。2021/02/01いいねボタンの色を修正2020/08/25サイト側の更新でヘッダーメニューを開いたときに全画面が暗くなってしまうようになっていたのを直しました。2020/08/01ヘッダーのメニュー（common-header-xxxxxx）について、私の力不足で:hover時の背景色変化がうまく適用できませんでした。仕方なく現在は非ホバー時と同じ色にしてあります。`
+@version        202121.9.56
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -477,16 +477,16 @@ a:hover, a:link, a:visited, a:active, a:focus {
     color: #ccc !important;
 }
 
-.LikeButton {
+.LikeActionButton {
     background: #333;
     border: 2px solid #888;
 }
-.LikeButton:hover {
+.LikeActionButton:hover {
     background: #555;
     border: 2px solid #999;
 }
 
-#LikeIcon_svg__frame-0 > path:nth-child(1) {
+[id^="LikeIcon_svg__frame-"] > path:nth-child(1) {
     fill: #d66;   
 }
 

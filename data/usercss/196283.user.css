@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `Github项目地址：https://github.com/QIUZAIYOU/Stylish1. 常用页面夜间模式全覆盖2. 去除广告3. 页面样式优化大部分已完成，部分施工中...目前常用页面应该已经全面覆盖了，除了「直播」和「游戏」相关页面，使用时可点击浏览器工具栏 stylus 图标，再点击本样式名称后面的操作菜单（竖着的三个点），勾选排除当前链接，这两个域名相关页面夜化后续会补上。`
-@version        2021129.1.2
+@version        202121.6.50
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -18,7 +18,7 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210129
+    * © 最后更新：20210201
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -5172,6 +5172,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .home-wrap .home-input .list li:hover {
         background-color: var(--color-27)!important;
     }
+    .filter-wrap .filter-wrap_bottom {
+        background-color: var(--color-42)!important;
+    }
     .up-feedback .up-fb-btn:hover {
         background-color: var(--color-66)!important;
     }
@@ -5245,7 +5248,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .live-user-item .item-right .uname,
     #live-list .headline-live h3,
     .live-room-item .item-title,
-    #live-list .headline-room h3 {
+    #live-list .headline-room h3,
+    .game-item .info .type {
         color: var(--color-86)!important;
     }
     .so-icon,
@@ -5269,7 +5273,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #live-list .headline-room h3 .num-txt,
     .article-item .content .desc,
     .topic-item .content .desc,
-    .up-feedback .up-fb-btn {
+    .up-feedback .up-fb-btn,
+    .game-item .info .desc,
+    .game-item .info .grade-wrap {
         color: var(--color-66)!important;
     }
     .bili-footer .boston-postcards li .tips,
@@ -5334,7 +5340,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .live-user-item .item-right .tags>span,
     .article-item,
     .topic-item,
-    #all-list .mixin-list ul:not(:last-child) {
+    #all-list .mixin-list ul:not(:last-child),
+    .game-item .info .type {
         border-color: var(--color-42)!important;
     }
     .history-dlg .hsbtn .cancel:hover,

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2021131.13.55
+@version        202121.3.51
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -77,9 +77,10 @@ selector
 	text-transform: capitalize!important;
 }
 
-.inline_tile .carousel .item .card,
-.br-item .br-ahSlot1,
+#b_results>li.b_ans.b_topborder.b_tophb,
 .b_searchboxForm,
+.br-item .br-ahSlot1,
+.inline_tile .carousel .item .card,
 :focus
 {
 	border: none!important;
@@ -93,6 +94,17 @@ selector
     white-space: pre-line!important;
 }
 
+html.pum-open.pum-open-overlay.pum-open-fixed .pum-overlay {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+
+html {
+    overflow-y: scroll!important;
+    -webkit-overflow-scrolling: touch!important;
+}
+
 /*___ Fonts ________________________________________________________________________*/
 
 #b_results>li a,
@@ -102,8 +114,8 @@ selector
 	font-size: 21px!important;
 }
 
-.br-standardPrice.demoted,
 .b_no h4,
+.br-standardPrice.demoted,
 body,
 h2 .b_alert,
 h2 .b_secondaryText
@@ -111,6 +123,7 @@ h2 .b_secondaryText
 	font-size: 19px!important;
 }
 
+#rdcans .rdc_commentbody,
 .br-item .br-ahSlot1,
 .mc_vtvc_title
 {
@@ -176,9 +189,9 @@ body .b_overlay .btn.rounded.prev {
 
 /*___ Margins ______________________________________________________________________*/
 
-#mmComponent_images_2>ul>li,
-#filterContainer,
 #b_results>li,
+#filterContainer,
+#mmComponent_images_2>ul>li,
 .mc_fgvc_u 
 {
 	margin: 12px!important;
@@ -217,7 +230,7 @@ body .b_overlay .btn.rounded.prev {
     padding: 41px 0 20px 16px;
 }
 
-selector
+tr a
 {
 	padding: 3px 6px!important;
 }
@@ -236,6 +249,12 @@ selector
 
 .mc_vtvc .mc_vtvc_meta {
     height: 13rem!important;
+}
+
+#rdcans div.slide,
+.b_slidesContainer
+{
+    height: 10rem!important;
 }
 
 .mc_vtvc .mc_vtvc_title {
@@ -284,6 +303,22 @@ selector
 {
 	width: 26%!important;
 }
+
+.b_vList .tabcap td:last-child {
+    width: 7rem;
+}
+
+.b_vList .tabcap td {
+    width: 2rem;
+}
+
+
+
+
+
+.b_vList .tabcap td {
+    width: 2rem;
+}
 }
 
 @-moz-document domain("bing.com") {
@@ -291,6 +326,7 @@ selector
 
 #b_results .b_adurl cite a,#b_results cite a.sb_metalink,#b_results cite.sb_crmb a,
 #bk_wr_container cite a,
+#rdcans .rdc_readmoretext,
 #sw_as .as_rmhswarning>span>a,
 .im-interest-adder-row__launcher-button,
 a[href],
@@ -310,6 +346,7 @@ a[href]:visited {
 
 #b_results .b_adurl cite a:hover,#b_results cite a.sb_metalink:hover,#b_results cite.sb_crmb a:hover,
 #bk_wr_container cite a:hover,
+#rdcans .rdc_readmoretext:hover,
 #sw_as .as_rmhswarning>span>a:hover,
 .b_ans.b_topborder:hover .expreftext,.b_scopebar .b_active a,
 .bnc-flyout__imlink.bnc-flyout__imlink:hover,
@@ -333,6 +370,7 @@ input[type="radio"]:checked+label
 
 /*__________________________________________________________________________________*/
 
+#rdcans .rdc_commentbody,
 .eb_menIns span,
 #actionbar .hint, #actionbar .text,
 #b_opalpers.b_op_with_button .b_op_flyout_no,
@@ -1142,6 +1180,7 @@ div.wpcbc .b_fcv2 tr:hover
 .std_fact_template,
 .value-prop-banner__prop,
 .vs_container .expander_content>ul>li,
+tr,
 li.square_m
  {
 	filter: brightness(75%)!important;
@@ -1176,6 +1215,7 @@ li.square_m
 .std_fact_template:hover,
 .value-prop-banner__prop:hover,
 .vs_container .expander_content>ul>li:hover,
+tr:hover,
 li.square_m:hover
  {
 	filter: brightness(100%)!important;
