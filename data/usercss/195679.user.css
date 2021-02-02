@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           OLD new VK v1.0.5
+@name           OLD new VK v1.0.6
 @namespace      USO Archive
 @author         jakill02
 @description    `частично Имитирует Старый (Белый) дизайн Вконтакте, частично более новый, существовавший до Декабря 2020-го года, плюс некоторые изменения от автора, вроде отключённой вредной опции (пожаловаться) которая только мешается и которую можно нажать невзначай :Dтут: https://greasyfork.org/ru/scripts/419915 вы можете установить дополнительный Скрипт, который расширит функционал данного Стиля.`
-@version        2021131.12.51
+@version        202121.23.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
-/* OLD new VK v1.0.5 */
+/* OLD new VK v1.0.6 */
 
         /*  страница Стиля: https://userstyles.org/styles/195679  */
 
@@ -113,7 +113,7 @@ font-family: tahoma, arial, verdana, sans-serif, Lucida Sans !important;}
 /*№№№№№№№№№№№№№№№№№ Колокольчик - настройка №№№№№№№№№№№№№№№№№№№№*/
 
 
-/* колокольчик */
+/* колокольчик X */
 body.new_header_design .top_nav_btn {
     display: flex;
     align-items: center;
@@ -122,40 +122,61 @@ body.new_header_design .top_nav_btn {
     -o-background: #555 !important;
     width: var(--header-height);
     -o-filter: brightness(1.6) contrast(1.9);}
+/* v2. 2021 - V */
+.TopNavBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px; /* 92% */
+    -o-background: #555 !important;
+    width: var(--header-height);
+    -o-filter: brightness(1.6) contrast(1.9);}
 
-/* Размер Иконки Колокольчика */
+/* Размер Иконки Колокольчика X */
 .top_nav_btn .top_nav_btn_icon {width: 20px !important; height: 20px !important;}
+/* v2. 2021 - V */
+.TopNavBtn__icon {width: 20px !important; height: 20px !important;}
 
-/* Колокольчик (Старый) пустое состояние */
-body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon  {background-image: url(https://i114.fastpic.ru/big/2021/0108/1e/66502ee9447e13ec564553629258cd1e.png) !important; background-repeat: no-repeat; -o-filter: invert(10%)!important;}
 
-/* Колокольчик (Старый) есть новые оповещения */
+
+/* Колокольчик (Старый) пустое состояние X */
+/* v2. 2021 - V */
+[dir] .TopNavBtn.TopNavBtn__notify .TopNavBtn__icon  
+{background-image: url(https://i114.fastpic.ru/big/2021/0108/1e/66502ee9447e13ec564553629258cd1e.png) !important; 
+background-repeat: no-repeat; -o-filter: invert(10%)!important;}
+
+/* Колокольчик (Старый) есть новые оповещения X */
 /* [dir] .top_nav_btn#top_notify_btn.has_notify .top_nav_btn_icon, [dir] .top_nav_btn#top_notify_btn.active .top_nav_btn_icon */
-body.new_header_design .top_nav_btn#top_notify_btn.has_notify .top_nav_btn_icon, .top_nav_btn#top_notify_btn.active .top_nav_btn_icon {background-image: url(https://i114.fastpic.ru/big/2021/0108/cf/6422046a07033ecb68a6d733cabc33cf.png) !important;}
+/* v2. 2021 - V */
+[dir] .TopNavBtn.has_notify .TopNavBtn__icon, .TopNavBtn.TopNavBtn__notify.active .TopNavBtn__icon
+{background-image: url(https://i114.fastpic.ru/big/2021/0108/cf/6422046a07033ecb68a6d733cabc33cf.png) !important;}
 
-/* Колокольчик (НОВЫЙ) + Цвет */
--o-body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon 
+/* Колокольчик (НОВЫЙ) + Цвет X */
+-o-[dir] .TopNavBtn.TopNavBtn__notify .TopNavBtn__icon 
 {background-image: url(https://vk.com/images/svg_icons/ic_head_notify.svg);
     filter: brightness(1.450) contrast(1.6);}
 
-/* Цвет Поля колокольчика (Активное) */
-body.new_header_design .top_nav_btn.active {
-    background-color: #416A9A !important;} /* var(--steel_gray_60 */
+/* Цвет Поля колокольчика (Активное) X */
+/* v2. 2021 - TEST */
+.TopNavBtn.active {background-color: #416A9A !important;} /* var(--steel_gray_60 */
 
-/* Цвет Поля колокольчика (Не Активное) */
-body.new_header_design .top_nav_btn {
-    background-color: #4A76A8;}
+/* Цвет Поля колокольчика (Не Активное) X */
+/* v2. 2021 - V */
+.TopNavBtn {background-color: #4A76A8;}
 
-/* Цвет Поля колокольчика (Наведение курсора) */
-body.new_header_design .top_nav_btn:hover {
-    background-color: rgb(65, 106, 154) !important;}
+/* Цвет Поля колокольчика (Наведение курсора) X */
+/* v2. 2021 - V */
+.TopNavBtn:hover {background-color: rgb(65, 106, 154) !important; -o-opacity: 1;}
 
-/* Цвет количества уведомлений колокольчика */
-[dir] body.new_header_design .top_notify_count {
-    background-color: #FF724C !important;} /* #ff3347 */
+        
+/* Цвет количества уведомлений колокольчика X */
+/* v2. 2021 - V */
+[dir] .TopNavBtn__notifyCount {background-color: #FF724C !important;} /* #ff3347 */
 
-/* Цвет и форма Бордюра уведомлений колокольчика */
-[dir] body.new_header_design .top_notify_count {
+
+/* Цвет и форма Бордюра уведомлений колокольчика X */
+/* v2. 2021 - V */
+        [dir] .TopNavBtn__notifyCount {
         align-items: center !important;
         vertical-align: middle !important;
         justify-content: center !important;
@@ -165,13 +186,18 @@ body.new_header_design .top_nav_btn:hover {
     border-width: 2px !important;
     border-color: #4a76a8 !important;}
 
-/* Цвет и форма Бордюра уведомлений колокольчика (активное состояние) */
+/* Цвет и форма Бордюра уведомлений колокольчика (активное состояние) X */
 [dir] body.new_header_design .top_nav_btn.active .top_notify_count::after, 
 [dir] body.new_header_design .top_nav_btn.active:hover .top_notify_count::after {
     border-color: #4a76a8 !important;} /* var(--steel_gray_60) */
+        /* v2. 2021 - TEST */
+    [dir] .top_nav_btn.active .TopNavBtn__notifyCount::after, 
+    [dir] .top_nav_btn.active:hover .TopNavBtn__notifyCount::after {
+    border-color: #4a76a8 !important;} /* var(--steel_gray_60) */
 
-/* Доп Настройки Счётчика Колокольчика */
-[dir] body.new_header_design .top_notify_count {
+/* Доп Настройки Счётчика Колокольчика X */
+/* v2. 2021 - V */
+        [dir] .TopNavBtn__notifyCount {
     display: none; /*none*/
     padding: 1px 4px !important;
     color: #fff !important;
@@ -184,6 +210,7 @@ body.new_header_design .top_nav_btn:hover {
     z-index: 1 !important;}
 
 /*###################################################*/
+
 
 
 /*№№№№№№№№№№№№№№ Личные Сообщения №№№№№№№№№№№№№№*/
@@ -268,15 +295,18 @@ button.top_audio_player_btn {filter: brightness(2.4);}
 /* Позицианирование ТопАудиоплеера по отношению к Шапке */
 [dir=ltr] .audio_layer_container {margin-top: -1px !important;}
 
-/* Позицианирование Иконки Ноты в неиспользованном ТопАудиоплеере */
-a#top_audio.top_nav_btn._top_nav_audio_btn {margin-top: 1px;}
-/* НЕ-Подсвеченная Иконки Ноты в неиспользованном ТопАудио плеере */
-[dir] body.new_header_design .top_nav_btn#top_audio .top_nav_btn_icon {
+/* Позицианирование Иконки Ноты в неиспользованном ТопАудиоплеере X */
+/* v2. 2021 - V */
+a#top_audio.TopNavBtn.TopNavBtn__audio {margin-top: 1px;}
+/* НЕ-Подсвеченная Иконки Ноты в неиспользованном ТопАудио плеере X */
+/* v2. 2021 - V */
+[dir] .TopNavBtn.TopNavBtn__audio .TopNavBtn__icon {
     background-image: url(https://i114.fastpic.ru/big/2021/0109/ee/4d7d36da84b9693e3d3dc9f6ed64bcee.png) !important;
-    -filter: contrast(100%);
+    -o-filter: contrast(100%);
     opacity: 0.7 !important;}
 /* Подсвеченная Иконки Ноты в неиспользованном ТопАудиоплеере */
-[dir] body.new_header_design .top_nav_btn#top_audio:hover:after {
+/* v2. 2021 - V */
+[dir] .TopNavBtn.TopNavBtn__audio:hover:after {
     background-image: url(https://i114.fastpic.ru/big/2021/0109/23/143efc1d6c6a0d74f08087f256beee23.png) !important;
     -o-filter: brightness(150%) !important;
     content: "";
@@ -1239,6 +1269,30 @@ background-position-y: -222px !important;   /* "def.-60px " позиция в с
       background-clip: initial; 
       background-color: initial;}
 
+/* Иконка - Игровые-приложения (genre15) */
+[dir] body.new_header_design #side_bar .genre15 .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -222px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
+/* Иконка - Игровые-приложения (genre11) */
+[dir] body.new_header_design #side_bar .genre11 .left_icon {
+    background-image: url(https://i114.fastpic.ru/big/2021/0108/b7/ff7667cbdf8431b2fc852cddd02bb3b7.png)!important;
+background-position-x: 2px !important;     /* "def. 0px" позиция в столбце Иконок по вертикали */
+background-position-y: -222px !important;   /* "def.-60px " позиция в столбце Иконок по горизонтали */
+    filter: opacity(75%) !important;
+  background-size: initial;
+      background-attachment: initial;
+      background-origin: initial;
+      background-clip: initial; 
+      background-color: initial;}
+
 
 /* Иконка - Контент-приложения (genre_app) */
 [dir] body.new_header_design #side_bar .genre_app .left_icon {
@@ -1264,7 +1318,6 @@ background-position-y: -446px !important;   /* "def.-60px " позиция в с
       background-origin: initial;
       background-clip: initial; 
       background-color: initial;}
-
 
 /* №№№№№№№№№№№№№№№№  xxxxxxxxxxx XXXXXXXXXX xxxxxxxxxxx  №№№№№№№№№№№№№№№№ */
 

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         reptarsrage
 @description    `Dark theme for the Jira website.Contribute on GitHub!https://github.com/Reptarsrage/jira-carbon`
-@version        2021123.0.17
+@version        202122.0.7
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 @advanced color Primary "Primary Background" #21252D
@@ -1222,6 +1222,14 @@
 
   .ghx-expander svg g path {
     fill: /*[[Primary-Text]]*/ !important;
+  }
+
+  .user-content-block font {
+    color: /*[[Primary-Text]]*/ !important;
+  }
+
+  .user-content-block a font {
+    color: /*[[Link]]*/ !important;
   }
 }
 

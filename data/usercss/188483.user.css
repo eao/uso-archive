@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Lexan
 @description    `This theme is an edit of a Dark Mode theme made by Leon Flame, please be sure to check out their theme here: https://userstyles.org/styles/185017/youtube-studio-vidiq-darkIf you would like to check out my channel, it can be found here: https://www.youtube.com/daniel55555d`
-@version        2021122.13.48
+@version        202121.22.56
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("studio.youtube.com") {
-/* Dark Creator Studio v6.7*/
+/* Dark Creator Studio v6.8*/
 /* Created by Leon Flame, edited by Lexan*/
 
 /* Dark Scrollbar*/
@@ -1793,6 +1793,19 @@ ytcp-author-comment-badge.creator {
     border: solid 2px;
     border-color: #444;
     border-radius: 6px;
+}
+
+/*Comments - Reporting*/
+yt-report-form-modal-renderer[dialog][dialog][dialog], yt-confirm-dialog-renderer[dialog][dialog][dialog]{
+    background-color: var(--bg2-color);
+}
+
+.scrollable.paper-dialog-scrollable{
+    color: var(--text-darken2-color);
+}
+
+.buttons.yt-confirm-dialog-renderer{
+    border-top: none;
 }
 
 /*Video Editor*/

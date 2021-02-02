@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `стиль РАЗРЕЗАН НА 2 ЧАСТИ. для нормального функционирования нужны обе / this style is CUT INTO 2 PARTS, you need both parts so it'd function properly. the second partVanilla Dark 2 VK Fix/Mod PART 2 of 2здесь / is here:https://userstyles.org/styles/165927/ЭТА ТЕМА - ДОПОЛНЕНИЕ/ИСПРАВЛЕНИЯ ДЛЯ VANILLA DARK 2, НЕ ОТДЕЛЬНЫЙ СТИЛЬ.НЕ ЗАБЫВАЕМ СНАЧАЛА УСТАНАВЛИВАТЬ https://userstyles.org/styles/126419/vanilla-dark-2 После обновления Vanilla Dark 2 этот фикс-мод возможно нужно будет переключить (ВЫКЛ/ВКЛ), чтобы он нормально работал.Паблос в ВКшечке: https://vk.com/worstmodThis Fix/Mod IS NOT A STANDALONE THEME.Make sure to install Vanilla Dark 2 first https://userstyles.org/styles/126419/vanilla-dark-2This Fix/Mod may need to be switched (OFF/ON) after Vanilla Dark 2 update to function properly.Check https://vk.com/worstmod if you have any questions/suggestions.`
-@version        2021128.19.0
+@version        202121.21.42
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown vklogo "Старый ламповый логотип:" {
@@ -138,8 +138,8 @@ audioplayhollowoff "Неа" <<<EOT  EOT;
 /* прямоугольные списки друзей *\/
 [dir] .friends_lists .friends_lists_group{border-radius:2px}
 
-/* квадратный счётчик уведомлений *\/  
-[dir] .top_notify_count{padding:2px 3px!important;border-radius:2px;height:11px!important;line-height:10px!important;left:24px}
+/* квадратный счётчик уведомлений *\/
+[dir] .TopNavBtn .TopNavBtn__notifyCount{padding:2px 3px!important;border-radius:2px!important;height:11px!important;line-height:10px!important;left:22px;top:3px}
 [dir] .ui_rmenu_count{font-weight:900;padding:1px 6px 2px;border-radius:2px;font-size:11px;color:var(--color5);}
 [dir] #side_bar ol li .left_row .left_count_wrap{border-radius:2px!important}
 
@@ -560,7 +560,6 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .im-page .im-page--dialogs-footer,.im-create.im-create_classic .im-create--footer{background-color:rgba(0,0,0,.9)!important;border-top:1px solid #111!important}
 .video_item .video_item_thumb_wrap,.videocat_featured_video{background-color:rgba(0,0,0,.5)!important}
 .wall_comments_header{background-color:rgba(0,0,0,.6) !important;border-color:#111 !important}
-.wall_module .replies_list{border-top:1px solid #111!important}
 #feed_rows .page_media_thumbed_link,#wide_column .page_media_thumbed_link,.im-mess-stack--content .page_media_thumbed_link,.medadd_c_linkcon{background-color:rgba(0,0,0,.5)!important;border-color:transparent}
 .page_status_editor .editor{background-color:rgba(0,0,0,.85)!important;border:none}
 .page_status_editor .editor div[contenteditable=true]{background-color:transparent;border:none}
@@ -583,6 +582,15 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 
 .top_profile_vkconnect_name{color:var(--color1)}
 .top_profile_vkconnect_row:hover{background-color:var(--color3)}
+
+[dir] .deep_active:not(.closed_comments) .replies .reply .reply_wrap,.deep_active:not(.closed_comments) .replies .replies_wrap_deep,.deep_active .post_replies_header,[dir] .wall_module .replies_list{border-top:none!important}
+[dir] .deep_active .post_replies_header,[dir] .deep_active.wall_module .post_replies_header{padding:8px 20px 8px}
+[dir] .deep_active .post_replies_header:hover{background:#1e1e1e4d}
+[dir] .post_replies_reorder_wrap{width:100%}
+[dir] .deep_active .post_replies_header .post_replies_reorder{padding:8px 70% 8px 0!important}
+[dir] .eltt.eltt_fancy_actions{background:#000000e6!important}
+[dir] .eltt .eltt_fancy_action:hover{background:#1e1e1e4d!important}
+[dir] .FancyElementTT__icon{filter:var(--filt2)}
 
 /* кнопки */
 [dir] .flat_button{background-color:rgba(14,14,14,.7)}
@@ -669,7 +677,7 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 /*[[audiosendremove]]*/
 /*[[nomoneysend]]*/
 
-/* действия профиля */ 
+/* действия профиля */
 [dir] .page_photo.ProfileActions .page_actions_expanded {margin-top:6px}
 [dir] .ProfileActions .page_actions_expanded .page_actions_item{height:30px;line-height:30px;padding:0 10px 0 10px;transition:color .3s}
 [dir] .ProfileActions .page_actions_expanded .page_actions_item:hover{color:var(--color1)!important}
@@ -677,6 +685,8 @@ body[style*='(https://vk.com/images/error404.png)']:before{background:#595959 ur
 .ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:hover > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--gift-blue:hover > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--call-blue:active > span,.ProfileActions .page_actions_expanded .page_actions_item.PageActionItem--gift-blue:active > span {color:var(--color1)}
 [dir] .ModalHeader--blue,[dir] .ModalFooter{background:#0000;border:none}
 [dir] .Modal .BaseModal__content{background:#00000080!important}
+[dir] .ProfileActions .page_actions_expanded .page_actions_separator{display:none}
+[dir] .page_actions_dd_label{filter:saturate(0)}
 
 /* денежные переводы */
 [dir] .payments_money_transfer_amount_wrap{border:1px solid var(--color3);background-color: #0000}

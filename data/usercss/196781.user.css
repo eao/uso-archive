@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TTC
 @description    `Стиль для Biathlon.com.ua`
-@version        2021130.19.16
+@version        202121.21.42
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,7 +30,7 @@ body {
 }
 .el-table--head.points {
     color: #000000b3;
-    font-size: 0.81em;
+    font-size: 0em;
     font-family: Arial;
 }
 a {
@@ -116,16 +116,12 @@ a {
     display: inline-block;
     letter-spacing: -0.02em;
 }
-.el-said--name {
-    font-size: 0.81em;
-    color: #000;
-}
 .el-said--date {
     color: #000;
     font-size: 0.67em;
 }
 .el-event--rumor {
-    color: #002b71;
+    color: #333;
     font-size: 0.81em;
 }
 .el-voited--sector {
@@ -192,10 +188,6 @@ a {
     display: block;
     padding-top: 0.40em;
 }
-.el-discussion--talk {
-    font-size: 0.88em;
-    color: #000;
-}
 .el-discussion--date {
     color: #000;
     font-size: 0.69em;
@@ -245,7 +237,7 @@ a {
     letter-spacing: -0.01em;
 }
 .el-case--lead {
-    color: #002b71;
+    color: rgb(22, 72, 140);
     font-size: 0.9em;
     font-family: tahoma;
     font-weight: 800;
@@ -277,26 +269,67 @@ a {
     color: #ffffff;
     border: 0px none transparent;
 }
-.btn-light {
-    color: #4e5f72;
+a:hover,
+a:focus{
+	text-decoration: underline;
+    color: #6dc4de;
+}
+.el-list--disc > li {
+    color: #405f91;
+    font-size: 0.88em;
+    font-weight: 600;
+}
+.swiper-button.blue {
+    border-radius: 34px;
+    background-color: #405f91;
+    width: 34px;
+    height: 34px;
+    background-size: auto;
+    margin-top: -17px;
+}
+.el-speedbar {
+    color: #000;
+    font-size: 0.81em;
+    font-weight: 600;
+}
+.el-table--points > tbody > tr > td:nth-child(2) a:hover, .el-table--nations > tbody > tr > td:nth-child(3) a:hover, .el-table--sprints > tbody > tr > td:nth-child(3) a:hover, .el-table--pursuits > tbody > tr > td:nth-child(3) a:hover, .el-table--users > tbody > tr > td:nth-child(1) a:hover, .el-table--ratings > tbody > tr > td:nth-child(1) a:hover, .el-table--compositions > tbody > tr > td:nth-child(2) a:hover, .el-table--names > tbody > tr > td:nth-child(1) a:hover, .el-table--info > tbody > tr > td:nth-child(2) a:hover{
+    color: #6dc4de;
+    text-decoration: underline
+}
+.el-list--disc > li > a:hover{
+    color: #6dc4de;
+    text-decoration: underline
+}
+.el-uncos--term:hover, .sc-footer--menu > li > a:hover, .sc-footer--more > li > a:hover, .sc-footer--say:hover, .el-latest--talk:hover, .el-discussion--talk:hover, .el-material--speech:hover, .el-event--utter:hover, .el-news--word:hover{
+    color: #6dc4de;
+    text-decoration: underline
+}
+.bl-registr--wash {
+    font-size: 0.88em;
+    font-family: Arial;
+    letter-spacing: -0.02em;
+    margin-bottom: 2.10em;
+}
+.form-forget {
+    color: #333;
     font-size: 0.81em;
     font-family: Arial;
-    font-weight: 400;
-    background-color: rgba(94,142,188,1.00);
-    border-radius: 1.25em;
-    border: 1px solid rgba(186,208,229,1.00);
-    line-height: 1.2;
+    text-decoration: underline;
+    margin-top: 1.00em;
     display: inline-block;
-    padding-top: 0.93em;
-    padding-bottom: 0.93em;
-    padding-left: 1.77em;
-    padding-right: 1.77em;
+    margin-left: 0.90em;
+}
+.bl-registr--tie {
+    color: #000000b3;
+    font-size: 0.69em;
+    padding-left: 1.80em;
+    margin-bottom: 1.00em;
 }
 .btn-light {
     color: #333;
     font-size: 0.81em;
     font-family: Arial;
-    font-weight: 400;
+    font-weight: 550;
     background-color: rgba(94,142,188,1.00);
     border-radius: 1.25em;
     border: 1px solid #405f91;
@@ -306,5 +339,158 @@ a {
     padding-bottom: 0.93em;
     padding-left: 1.77em;
     padding-right: 1.77em;
+}
+.bl-add--tie {
+    color: #000;
+    font-size: 1.13em;
+    font-family: Arial;
+    font-weight: 700;
+    margin-bottom: 1.30em;
+}
+.el-latest--note {
+    color: #002b71;
+    font-size: 0.88em;
+    font-weight: 700;
+}
+.el-discussion--talk {
+    font-size: 0.88em;
+    font-weight: bold;
+    color: #000;
+}
+.el-nav--light .el-nav--center > a:hover, .el-nav--light .el-nav--center > a.active{
+    color: #6dc4de
+}
+.el-client--guide.out{
+    color: #6dc4de
+}
+.el-said--rumor:hover, .el-said--name:hover{
+    color: #6dc4de;
+    text-decoration: underline
+}
+.el-said--name {
+    font-size: 0.81em;
+    color: #000;
+    font-weight: bold;
+}
+.btn-more:hover{
+    background-color: #6dc4de;
+    color: #ffffff
+}
+.btn-more:after{
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-width: 2px;
+    -webkit-transform: rotateZ(-45deg);
+            transform: rotateZ(-45deg);
+    border-color: #405f91;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    display: inline-block;
+    margin-left: 0.50em;
+    position: relative;
+    top: -0.10em
+}
+.bl-forecast-view--note{
+    color: #6dc4de;
+    font-size: 0.81em;
+    line-height: 1.2;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 1px solid #6dc4de;
+    background-color: rgba(255,255,255,1.00);
+    padding-left: 1.06em;
+    padding-right: 1.06em;
+    padding-top: 0.38em;
+    padding-bottom: 0.38em;
+    margin-left: 1.30em
+}
+.el-new{
+    color: #ffffff;
+    font-size: 0.63em;
+    font-family: Arial;
+    letter-spacing: -0.01em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #6dc4de;
+    padding-left: 0.20em;
+    padding-right: 0.20em;
+    padding-top: 0.20em;
+    margin-left: 0.90em
+}
+.sc-head {
+    background-color: rgb(22, 72, 140);
+    border-radius: 0.38em;
+    -webkit-box-shadow: 0px 5px 24px rgba(32,60,87,0.11);
+    box-shadow: 0px 5px 24px rgba(32,60,87,0.11);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-height: 4.10em;
+    padding-left: 0em;
+    padding-right: 2.00em;
+    margin-bottom: 7px;
+    position: relative;
+}
+.el-source--refer{
+    color:#6dc4de;
+    font-size:0.81em;
+    text-decoration:underline;
+    margin-left: 1.20em
+}
+.el-quote--the{
+    color:#6dc4de;
+    font-size:0.94em;
+    font-weight:700
+}
+.el-pdf--utter{
+    color:#6dc4de;
+    font-size:0.63em;
+    font-family:Arial;
+    font-weight: 800;
+    margin-left: 0.40em
+}
+.el-pdf--speech{
+    color:#6dc4de;
+    font-size:0.75em;
+    font-family:Arial;
+    text-decoration: underline
+}
+.el-university--rumor{
+    color:#6dc4de;
+    font-size:0.81em;
+    text-decoration: underline
+}
+.el-client--speech{
+    color:#6dc4de;
+    font-size:0.81em;
+    font-family:Arial;
+    font-weight:700;
+    margin-left: 0.50em
+}
+.typo-rumor{
+    color:#6dc4de;
+    font-family:Arial;
+    font-weight:700;
+    margin-bottom: 1.50em
+}
+.el-voited .el-voited--bar > div {
+    height: inherit;
+    background-color: rgb(22, 72, 140);
+}
+.el-voited--guide {
+    color: #ffffff;
+    font-size: 0.69em;
+    font-family: Arial;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 0.70em;
+    margin-top: 0.08em;
 }
   /* i really want this to be global */

@@ -2,8 +2,8 @@
 @name           Youtube RetroWave
 @namespace      USO Archive
 @author         YAD
-@description    `<a href="https://i.ibb.co/dWyvGM1/sc1.jpg" target="_blank"> 🖼️<b>Screenshot 1</b></a><a href="https://i.ibb.co/ZxVgY2Y/sc2.jpg" target="_blank"> 🖼️<b>Screenshot 2</b></a><i>Note:</i>  <b>Use the Dark Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/191573_additional_37559.jpeg" target="_blank"> <b>📝</b></a>More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        2021130.12.22
+@description    `<b>HOW TO INSTALL AND CUSTOMIZE THIS STYLE?? </b><a href="https://drive.google.com/file/d/1-aU9SPSNVVqsdIxcehLcMMRLPOUxMC4X/view?usp=sharing" target="_blank"> 🖼️<b>Click Here!!</b></a><a href="https://i.ibb.co/dWyvGM1/sc1.jpg" target="_blank"> 🖼️<b>Screenshot 1</b></a> <a href="https://i.ibb.co/ZxVgY2Y/sc2.jpg" target="_blank"> 🖼️<b>Screenshot 2</b></a><a href="https://i.ibb.co/t493v18/Tik-Tok-logo.png" target="_blank"> 🖼️<b>TikTok Logo Link</b></a> <i>Note:</i>  <b>Use the Dark Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/191573_additional_37559.jpeg" target="_blank"> <b>📝</b></a>More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
+@version        202121.13.41
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image 🖼️" {
@@ -69,7 +69,8 @@
 /********************************/
 
 body {
-    color: #fff!important
+    color: #fff!important;
+    text-shadow: 0px 1px 2px #2c0d3b;
 }
 
 /*light*/
@@ -951,6 +952,10 @@ ytd-toggle-button-renderer.style-text[is-icon-button] {/*thumbs*/
 span.yt-view-count-renderer {/*views*/
     color: #f0f0f0;
 }
+yt-formatted-string.ytd-video-primary-info-renderer {
+    text-shadow: 0px 1px 2px #2c0d3b;
+}
+
 #star-survey.ytd-inline-survey-renderer {/*survey*/
     background-color: #521a66ba;
     background-image: linear-gradient(200deg, #3504444a 0%, #d81b9f4d 100%);
