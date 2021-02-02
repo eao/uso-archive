@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2020124.2.42
+@version        202122.8.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -146,12 +146,17 @@ selector
     margin-left: -54px;
 }
 
+.msh19ytf.msh19ytf {
+	top: 2rem;
+}
+
 /*___ Margins ______________________________________________________________________*/
 
-.tr9rh885.k4urcfbm .j83agx80.btwxx1t3.taijpn5t,
-[role="main"],
-._6x84,
-.ph5uu5jm
+.rq0escxv.rj1gh0hx.buofh1pr.ni8dbmo4.stjgntxs.l9j0dhe7[style="min-width: 168px; padding: 4px;"],
+.n1f8r23x,
+[data-pagelet*="ProfileAppSection_"],
+[role="navigation"],
+[role="main"]
  {
 	margin: 12px!important;
 }
@@ -167,7 +172,9 @@ selector
 
 /*___ Paddings _____________________________________________________________________*/
 
-.oi9244e8,
+.rq0escxv.rj1gh0hx.buofh1pr.ni8dbmo4.stjgntxs.l9j0dhe7[style="min-width: 168px; padding: 4px;"],
+.n1f8r23x,
+[role="navigation"],
 [role="main"]
  {
 	padding: 12px!important;
@@ -197,6 +204,7 @@ selector
 
 /*___ Widths _______________________________________________________________________*/
 
+.gwyu0f6a,
 .owwhemhu,
 .f9o22wc5,
 .gderk4og,
@@ -215,8 +223,16 @@ selector
 	width: auto!important;
 }
 
-pppp.jbcpqwzg {
+ppp.iyyx5f41 {
     width: 100%;
+}
+
+.gfomwglr {
+    width: calc(48% - 4px);
+}
+
+ppp[data-pagelet="ChatTab"] .jbcpqwzg {
+    width: 36%;
 }
 
 .ecyo15nh,
@@ -231,11 +247,11 @@ pppp.jbcpqwzg {
     width: 67%;
 }
 
-.ihn2p22f {
+ppp.ihn2p22f {
     width: 30%;
 }
 
-img [style="height: 40px; width: 40px;"] {
+pppimg [style="height: 40px; width: 40px;"] {
     transform: scale(1.2)!important;
 }
 
@@ -459,12 +475,15 @@ selector
 
 .aph9nnby,
 .b3i9ofy5,
-.is6700om,
 .cwj9ozl2,
+.hybvsw6c,
+.is6700om,
 .nfl8ryma,
 .tdjehn4e,
 .tqsryivl,
-[style="background-color: rgb(233, 178, 114);"]
+[role="tooltip"],
+[style="background-color: rgb(233, 178, 114);"],
+[style="border-radius: max(0px, min(8px, ((100vw - 4px) - 100%) * 9999)) / 8px;"]
  {
 	background-color: rgba(0, 0, 0, 0)!important;
 }
@@ -573,12 +592,12 @@ selector:active
 
 /*___ Plain Black __________________________________________________________________*/
 
-._6x84,
-.hybvsw6c,
-.rq0escxv.lpgh02oy.du4w35lb.pad24vr5.rirtxc74.dp1hu0rb.fer614ym.hlyrhctz.o387gat7.qbu88020.ni8dbmo4.stjgntxs.czl6b2yu,
-.rq0escxv.lpgh02oy.du4w35lb.pad24vr5.rirtxc74.dp1hu0rb.fer614ym.rek2kq2y.bx45vsiw.o387gat7.qbu88020.ni8dbmo4.stjgntxs.czl6b2yu,
-.svg55zg0,
-[aria-label="Gaming"][role="main"]
+[style*="translate(-50%"],
+.rq0escxv.rj1gh0hx.buofh1pr.ni8dbmo4.stjgntxs.l9j0dhe7[style="min-width: 168px; padding: 4px;"],
+.n1f8r23x,
+[role="complementary"],
+[role="navigation"],
+[role="main"]
  {
 	background-color: #000!important;
 	border-radius: 22px!important;
@@ -586,21 +605,21 @@ selector:active
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-._6x84:hover,
-.hybvsw6c:hover,
-.rq0escxv.lpgh02oy.du4w35lb.pad24vr5.rirtxc74.dp1hu0rb.fer614ym.hlyrhctz.o387gat7.qbu88020.ni8dbmo4.stjgntxs.czl6b2yu:hover,
-.rq0escxv.lpgh02oy.du4w35lb.pad24vr5.rirtxc74.dp1hu0rb.fer614ym.rek2kq2y.bx45vsiw.o387gat7.qbu88020.ni8dbmo4.stjgntxs.czl6b2yu:hover,
-.svg55zg0:hover,
-[aria-label="Gaming"][role="main"]:hover
+.rq0escxv.rj1gh0hx.buofh1pr.ni8dbmo4.stjgntxs.l9j0dhe7[style="min-width: 168px; padding: 4px;"]:hover,
+[style="translate(-50%"]:hover,
+.n1f8r23x:hover,
+[role="complementary"]:hover,
+[role="navigation"]:hover,
+[role="main"]:hover
  {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 /*___ Plain ________________________________________________________________________*/
 
-.__fb-light-mode,
-.rq0escxv.l9j0dhe7.du4w35lb.j83agx80.cbu4d94t.pfnyh3mw.ofv0k9yr.cwj9ozl2,
-.j34wkznp.qp9yad78.pmk7jnqg.kr520xx4
+[data-pagelet*="ProfileAppSection_"],
+[role="dialog"],
+[role="listbox"]
  {
 	background-color: #151515!important;
 	border-radius: 22px!important;
@@ -608,9 +627,10 @@ selector:active
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-.__fb-light-mode:hover,
-.rq0escxv.l9j0dhe7.du4w35lb.j83agx80.cbu4d94t.pfnyh3mw.ofv0k9yr.cwj9ozl2:hover,
-.j34wkznp.qp9yad78.pmk7jnqg.kr520xx4:hover {
+[data-pagelet*="ProfileAppSection_"]:hover,
+[role="dialog"]:hover,
+[role="listbox"]:hover
+{
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
@@ -686,6 +706,10 @@ selector
 @-moz-document domain("facebook.com") {
 /*__________________________________________________________________________________*/
 
+.l9j0dhe7[style="margin-left: 4px; margin-right: 4px;"],
+.rq0escxv.rj1gh0hx.buofh1pr.ni8dbmo4.stjgntxs.l9j0dhe7,
+.n1f8r23x,
+.rq0escxv.j83agx80.rj1gh0hx.cbu4d94t.buofh1pr.g5gj957u.ph5uu5jm.b3onmgus.n1dktuyu.e5nlhep0.ecm0bbzt,
 ._19_p,._1y2l li.jewelItemNew a,
 ._2eea,
 ._3__-._3hx- ._4tdt,
@@ -703,7 +727,10 @@ selector
 
 /*__________________________________________________________________________________*/
 
-
+.l9j0dhe7[style="margin-left: 4px; margin-right: 4px;"]:hover,
+.rq0escxv.rj1gh0hx.buofh1pr.ni8dbmo4.stjgntxs.l9j0dhe7:hover,
+.n1f8r23x:hover,
+.rq0escxv.j83agx80.rj1gh0hx.cbu4d94t.buofh1pr.g5gj957u.ph5uu5jm.b3onmgus.n1dktuyu.e5nlhep0.ecm0bbzt:hover,
 ._19_p:hover,._1y2l li.jewelItemNew a:hover,
 ._2eea:hover,
 ._32hm,._3__-._3hx- ._4tdt:hover,._3nzk ._3nzq ul .friendBrowserListUnit:hover,
@@ -739,9 +766,18 @@ img
     opacity: 0;
 }
 
-selector:hover
+.i2p6rm4e
  {
 	opacity: 1!important;
+}
+
+ppp.bixrwtb6 {
+    object-fit: contain;
+    transform: scale(1.5);
+}
+
+.o7247eei:hover {
+    transform: none;
 }
 
 }
@@ -842,11 +878,13 @@ selector:hover
 
 /* Down ___________________________________*/
 
+.sp_rwX6oq1JZW3.sx_98a673,
 .sp_C4PPltd7Ge0.sx_a217a2 {
 	background: url(https://i.ibb.co/z7MRv74/down-arrow-30x30.png) no-repeat!important;
 	box-sizing: border-box;
 }
 
+.sp_rwX6oq1JZW3.sx_98a673,
 .sp_C4PPltd7Ge0.sx_a217a2 {
     background-size: 28px!important;
     height: 26px!important;

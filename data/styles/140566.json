@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "lowcygier",
     "createdAt": "2017-03-26T03:21:50.000Z",
-    "updatedAt": "2020-06-11T13:40:13.000Z",
+    "updatedAt": "2021-02-02T11:53:15.000Z",
     "license": "CC-BY-NC-4.0",
     "author": {
       "id": 409289,
@@ -16,7 +16,7 @@
   },
   "stats": {
     "installs": {
-      "total": 81,
+      "total": 82,
       "weekly": 0
     }
   },
@@ -34,6 +34,6 @@
     "data": []
   },
   "style": {
-    "css": "@-moz-document domain(\"lowcygier.pl\") {\r\nfooter, \r\n.alert-adblock , \r\n.adblock-info, \r\n.promo-boxes, \r\n.moneymaker-widget,\r\n.socials-icons-list,\r\n.big-img,\r\n.inactive,\r\n.tiles-container { display: none !important }\r\n.post-widget.entry { padding: 5px; }\r\nbody:not(.paged).main-page .intro>.container{ padding-bottom:0px }\r\n.top-background { background-position: center 0px; background-image: none !important; background: #eff2f6; }\r\n\r\n}"
+    "css": "@-moz-document domain(\"lowcygier.pl\") {\r\nfooter, \r\n.alert-adblock , \r\n.adblock-info, \r\n.promo-boxes, \r\n.moneymaker-widget,\r\n.socials-icons-list,\r\n.big-img,\r\n.inactive,\r\n.tiles-container,\r\n.left-side,\r\n.right-side { display: none !important }\r\n.post-widget.entry { padding: 5px; }\r\nbody:not(.paged).main-page .intro>.container{ padding-bottom:0px }\r\n.top-background { background-position: center 0px; background-image: none !important; background: #eff2f6; }\r\n\r\n}"
   }
 }

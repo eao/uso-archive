@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           A better layout for RAW LH
 @namespace      USO Archive
-@author         tyf
-@description    `for RAW LH (lovehug.net, weloma.net)<ul><li>More comfortable manga list</li><li>Content images fit the window size</li><li>Hide the ADs</li><li>Two-page view mode in a wider window</li></ul>`
-@version        2021124.18.55
+@author         Evan Tseng
+@description    `for RAW LH (lovehug.net, weloma.net)<ul><li>More comfortable manga list</li><li>Content images fit the window size</li><li>Two-page view mode in a wider window</li></ul>`
+@version        202122.5.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -12,7 +12,6 @@
 	#rd-side_icon,
 	.chapter-content br,
 	.chapter-content center,
-	.mrb10,
 	.end,
 	img[src$="LoveHug_600cfd96e98ff.jpg"] {
 		display: none !important;
@@ -53,11 +52,11 @@
 	.rd_sidebar form,
 	.rd_sidebar input,
 	.rd_sidebar .ss-box {
-		width: 100%!important;
+		width: 100% !important;
 	}
 	
 	.rd_sidebar main {
-		background: rgba(200,200,200,.5);
+		background: rgba(200, 200, 200, .5);
 		zoom: 1.2;
 	}
 	
@@ -76,7 +75,7 @@
 		opacity: .5;
 		box-shadow: 0 0 3mm #555;
 		z-index: 2000;
-		overflow: visible!important;
+		overflow: visible !important;
 		transform: none !important;
 		transition: .8s 0.6s, width 0s;
 		backdrop-filter: blur(5mm);
@@ -195,6 +194,29 @@
 		background-color: rgba(255, 255, 255, .4);
 	}
 	
+	.mrb10 {
+		position: absolute;
+		right: 2mm;
+		width: 17em;
+		;
+		font-size: 11pt;
+		background: rgba(0, 0, 0, .2);
+		padding: 2mm;
+		border-radius: 1em;
+		opacity: .3;
+		transition: .3s;
+	}
+	
+	.mrb10:hover {
+		opacity: 1;
+	}
+	
+	.btn_report {
+		padding: 0 2mm;
+		border: none;
+		line-height: 1.8;
+	}
+	
 	.chapter-pagination {
 		top: 0;
 	}
@@ -234,6 +256,11 @@
 	
 	.mCustomScrollbar {
 		overflow: hidden;
+	}
+	
+	.manga-badge,
+	.thumb-item-flow .thumb_attr.chapter-title {
+		opacity: .8;
 	}
 	
 	.btn {
@@ -325,7 +352,14 @@
 	}
 	
 	.pagination {
-		margin: 3mm 0 0;
+		margin: 1mm 0 0;
+	}
+	
+	.pagination-v4>li>a {
+		margin-right: 2mm;
+		border: none;
+		background: #456;
+		box-shadow: 0 0 0 1px #222;
 	}
 	
 	.title_doctruyen .centertext a.link_right {
@@ -400,6 +434,10 @@
 			opacity: 1;
 		}
 	
+		.thumb-item-flow .img-in-ratio {
+			transition: .2s;
+		}
+	
 		.thumb-item-flow:hover .img-in-ratio {
 			transform: scale(1.07);
 		}
@@ -459,12 +497,6 @@
 			min-height: 160px;
 		}
 	
-		.info-manga .card-body {
-			max-height: 20em;
-			transition: .3s;
-			overflow: hidden;
-		}
-	
 		.btn-success {
 			background: #188;
 		}
@@ -477,7 +509,17 @@
 			max-height: none;
 		}
 	
-		.info-manga .card-body::after {
+		.card-body {
+			padding: 3mm 0;
+		}
+	
+		.info-manga .card-body {
+			max-height: 20em;
+			transition: .3s;
+			overflow: hidden;
+		}
+	
+		.info-manga .card-body:after {
 			position: absolute;
 			bottom: 0;
 			left: 0;
@@ -514,6 +556,7 @@
 	}
 	
 	@media screen and (max-width: 992px) {
+	
 		.list>.col-md-8,
 		.row>.col-md-8:first-child,
 		.col-lg-8,
@@ -613,6 +656,7 @@
 	}
 	
 	@media screen and (min-width: 137vh) {
+	
 		#content,
 		.chapter-content {
 			max-width: 137vh;
