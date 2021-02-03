@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Most credit goes to @anqxyr. I've only managed to make it work on all domains, fix every single visible error and many more. -Why didn't you send those fixes to @qnxyr?Discussion doesn't work for me, infinity loading.`
-@version        2021131.12.58
+@version        202122.20.35
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -369,7 +369,7 @@ src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd
              background:rgba(255, 0, 0, .3);
         }
 
-#page-title, body {
+body {
 font-family: "Fira Sans", "DejaVu Sans Condensed", verdana, arial, helvetica, sans-serif !important;
   background: #191919 url("data:image/png;base64,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") repeat !important;
 }
@@ -459,10 +459,8 @@ div#container-wrap {
 /* ------------------------------------------------------------- */
 
 .page-rate-widget-box {
-  display: inline-block;
-  margin-bottom: 10px;
-  margin-right: 2em;
   color: #808080;
+	background: #808080;
 }
 
 .page-rate-widget-box .rate-points {
@@ -494,7 +492,7 @@ div#container-wrap {
 }
 
 .page-rate-widget-box .cancel {
-  background-color: #191919;
+  background-color: #808080;
   border: solid 1px #808080;
   border-left: 0;
   border-radius: 0 5px 5px 0;
@@ -581,7 +579,7 @@ color: #aaa;
 
 /* ------------------------------------------------------------- */
 
-blockquote {
+blockquote, div.blockquote {
 background-color: #808080;
 color: #191919;
 border: 1px dashed #191919;
@@ -752,6 +750,7 @@ padding: 0.3em 0.7em;
 table.wiki-content-table td {
 background-color: #888;
 border: 1px solid #444;
+color: #000;
 padding: 0.3em 0.7em;
 }
     /* ------------- */
@@ -937,6 +936,9 @@ table.page-history td.optionstd a {
 [style="float:left; padding: 2px 8px; background-color: #FFF;"] {
 	background-color: #191919 !important;
 }
+[src='http://scp-wiki.wdfiles.com/local--files/unfounded-hub/UnFounded.png'] {
+	filter: invert(91%) sepia(0%) saturate(50%) hue-rotate(316deg) brightness(100%) contrast(93%);
+}
 
 /*Custom Cursor*/
 	/*Images used from custom-cursor.com*/
@@ -947,6 +949,57 @@ a:hover {
 	cursor: url(https://cdn.custom-cursor.com/db/7525/32/scp-logo-pointer.png), pointer!important;
 }
 /*End of Custom Cursor*/
+[style="color: black"] {
+	color: #999 !important;
+}
+div.pseudo-tags ul {
+	border-color: #777;
+}
+[style="border:solid 1px #999999; background:#ccffcc; padding:5px; margin-bottom: 10px;"] {
+	background: #202f20 !important;
+	border-color: #666 !important;
+}
+#side-bar div.menu-item a:active, #side-bar div.menu-item a:visited, #side-bar div.menu-item .text, #side-bar div.menu-item a {
+	color: #999;
+}
+.page-rate-widget-box {
+	background: #0000;
+	border-color: #0000;
+}
+#login-status ul a {
+	color: #999;
+}
+#skrollr-body::before {
+    background-image: linear-gradient(to bottom, rgba(var(--bright-accent), 0.5) 0, rgba(var(--bright-accent), 0.25) 10rem, #191919 22rem, #0000 100%);
+}
+.class1 > div, .item1 > div {
+	color: #999;
+}
+div#page-title {
+	text-shadow: 0 1px 1px #000;
+}
+[style="display: block; border:solid 1px #999999; background:#F5F5F5; padding:1px 15px; margin: auto; width: 84%;"], [style="display: block; border:solid 1px #999999; background:#F5F5F5; padding:1px 15px; margin: auto;"] {
+	background: #808080 !important;
+	border-color: #666 !important;
+	color: #000 !important;
+}
+#top-bar div.top-bar > ul > li > a, #top-bar div.mobile-top-bar > ul > li > a {
+	color: #aaa !important;
+}
+div.sideright > div.colorbars-container > div.colorbars {
+	background: #808080;
+}
+div.objclassbar div.sideleft, div.objclassbar div.sideright {
+	border-color: #666;
+}
+[style="border: 1px solid black; background-color: #FEE8D8; padding: 6px;"] {
+	border-color: #000 !important;
+	background: #201106 !important;
+}
+[style="border:solid 1px #999999; background:#E2F4FF; padding-left: 16px; padding-right: 16px;margin-bottom: 16px;"] {
+	background: #192126 !important;
+	border-color: #666 !important;
+}
 
 /*Replacing MTF logos to .png*/
 [src='http://scp-wiki.wdfiles.com/local--resized-images/task-forces/Alpha1.png/small.jpg'] /*MTF Alpha-1 ("Red Right Hand")*/ {
@@ -1166,6 +1219,43 @@ a:hover {
 	filter: invert(1) brightness(50%);
 }
 /*End of replacing MTF logos to .png*/
+}
+
+@-moz-document url-prefix("http://scp-wiki.wikidot.com/scp") {
+/*#top-bar {
+	margin-top: 137px;
+}
+#header {
+	background-image: var(--logo-image);
+    background-position: left .75rem top 1.1875rem;
+	width: 90vw;
+	position: relative;
+	background-size: auto calc(var(--header-height-on-desktop) - 2.125rem);
+}
+#side-bar {
+	background: #191919;
+	margin-top: 12px;
+}*/
+}
+
+@-moz-document url-prefix("http://scp-wiki.wikidot.com/scp-series") {
+#top-bar {
+	margin-top: inherit;
+}
+#header {
+	background-position: inherit;
+	width: inherit;
+	background-size: inherit;
+	background-image: inherit;
+	position: inherit;
+}
+#header {
+    background: url(https://scp-wiki.wdfiles.com/local--files/component:theme/logo.png) 10px 40px no-repeat;
+}
+#side-bar {
+	background: #0000;
+	margin-top: inherit;
+}
 }
 
 @-moz-document url-prefix("http://ferryfm13.thirteen.axc.nl/scp/timers/getTimer.php") {

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           OLD new VK v1.0.6
+@name           OLD new VK v1.0.7
 @namespace      USO Archive
 @author         jakill02
 @description    `частично Имитирует Старый (Белый) дизайн Вконтакте, частично более новый, существовавший до Декабря 2020-го года, плюс некоторые изменения от автора, вроде отключённой вредной опции (пожаловаться) которая только мешается и которую можно нажать невзначай :Dтут: https://greasyfork.org/ru/scripts/419915 вы можете установить дополнительный Скрипт, который расширит функционал данного Стиля.`
-@version        202121.23.5
+@version        202122.14.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("vk.com") {
-/* OLD new VK v1.0.6 */
+/* OLD new VK v1.0.7 */
 
         /*  страница Стиля: https://userstyles.org/styles/195679  */
 
@@ -114,14 +114,6 @@ font-family: tahoma, arial, verdana, sans-serif, Lucida Sans !important;}
 
 
 /* колокольчик X */
-body.new_header_design .top_nav_btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 42px; /* 92% */
-    -o-background: #555 !important;
-    width: var(--header-height);
-    -o-filter: brightness(1.6) contrast(1.9);}
 /* v2. 2021 - V */
 .TopNavBtn {
     display: flex;
@@ -133,7 +125,6 @@ body.new_header_design .top_nav_btn {
     -o-filter: brightness(1.6) contrast(1.9);}
 
 /* Размер Иконки Колокольчика X */
-.top_nav_btn .top_nav_btn_icon {width: 20px !important; height: 20px !important;}
 /* v2. 2021 - V */
 .TopNavBtn__icon {width: 20px !important; height: 20px !important;}
 
@@ -146,7 +137,6 @@ body.new_header_design .top_nav_btn {
 background-repeat: no-repeat; -o-filter: invert(10%)!important;}
 
 /* Колокольчик (Старый) есть новые оповещения X */
-/* [dir] .top_nav_btn#top_notify_btn.has_notify .top_nav_btn_icon, [dir] .top_nav_btn#top_notify_btn.active .top_nav_btn_icon */
 /* v2. 2021 - V */
 [dir] .TopNavBtn.has_notify .TopNavBtn__icon, .TopNavBtn.TopNavBtn__notify.active .TopNavBtn__icon
 {background-image: url(https://i114.fastpic.ru/big/2021/0108/cf/6422046a07033ecb68a6d733cabc33cf.png) !important;}
@@ -157,8 +147,8 @@ background-repeat: no-repeat; -o-filter: invert(10%)!important;}
     filter: brightness(1.450) contrast(1.6);}
 
 /* Цвет Поля колокольчика (Активное) X */
-/* v2. 2021 - TEST */
-.TopNavBtn.active {background-color: #416A9A !important;} /* var(--steel_gray_60 */
+/* v2. 2021 - V :  - var(--steel_gray_60, заполненный #416A9A */
+[dir] .TopNavBtn.TopNavBtn--active {background-color: #4a76a8 !important;} /*var(--steel_gray_200_alpha12), пустой #4a76a8 */
 
 /* Цвет Поля колокольчика (Не Активное) X */
 /* v2. 2021 - V */
@@ -167,6 +157,8 @@ background-repeat: no-repeat; -o-filter: invert(10%)!important;}
 /* Цвет Поля колокольчика (Наведение курсора) X */
 /* v2. 2021 - V */
 .TopNavBtn:hover {background-color: rgb(65, 106, 154) !important; -o-opacity: 1;}
+/* Цвет Поля колокольчика (Наведение курсора) - Активное */
+[dir] .TopNavBtn.TopNavBtn--active:hover {background-color: rgb(65, 106, 154) !important;} /*var(--steel_gray_200_alpha12)*/
 
         
 /* Цвет количества уведомлений колокольчика X */
@@ -208,6 +200,31 @@ background-repeat: no-repeat; -o-filter: invert(10%)!important;}
     position: absolute;
     top: 7px; left: 19px !important;
     z-index: 1 !important;}
+
+
+/* ===== (всплываюший осписок Нотификаций колокольчика) ===== */
+
+/* позиция всплывающего списка Нотификаций колокольчика */
+#top_notify_wrap {margin-top: -2px; border-top: 1px solid #C5D0DB !important}
+
+/* Скроллбар в покое (всплываюший осписок Нотификаций колокольчика) */
+[dir] .ui_scroll_default_theme>.ui_scroll_bar_container>.ui_scroll_bar_outer>.ui_scroll_bar_inner {
+    background: #97a5b0; /* var(--light_blue_100) - #dae2ea , #afafc1 */
+    box-shadow: 0 0 0 1px #97a5b0 !important;
+    border-radius: 3px;}
+/* Скролбар в движении (всплываюший осписок Нотификаций колокольчика) */
+[dir] .ui_scroll_default_theme.ui_scroll_scrolled>.ui_scroll_bar_container>.ui_scroll_bar_outer>.ui_scroll_bar_inner {
+    background: #7A9AB4 !important; /* var(--steel_gray_140) - #C5D0DB , #89b3dd */  
+    box-shadow: 0 0 0 1px #7A9AB4 !important;}
+/* Скроллбар с наведение Мышки (всплываюший осписок Нотификаций колокольчика) */
+[dir] .ui_scroll_default_theme .ui_scroll_bar_container:hover>.ui_scroll_bar_outer>.ui_scroll_bar_inner {
+    background: #7A9AB4; /* var(--steel_gray_140) - #C5D0DB , #89b3dd */
+    box-shadow: 0 0 0 1px #7A9AB4 !important;
+    border-radius: 3px;}
+/* Изменения состояния Скроллбара (всплываюший осписок Нотификаций колокольчика)*/
+.ui_scroll_default_theme>.ui_scroll_bar_container>.ui_scroll_bar_outer>.ui_scroll_bar_inner {
+    transition: background-color 200ms linear,width 150ms linear;
+    width: 6px;}
 
 /*###################################################*/
 

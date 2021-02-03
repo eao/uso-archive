@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           2020 Libero Mail
+@name           2021 Libero Mail
 @namespace      USO Archive
 @author         Maghetto
-@description    `This customization makes the LiberoMail site very simple and free from unnecessary frills.Update: 23 NOVEMBER 2020`
-@version        20201123.16.6
+@description    `This customization makes the LiberoMail site very simple and free from unnecessary frills.Update: 2 FEBRUARY 2021`
+@version        202122.20.59
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -15,7 +15,11 @@ body {
 }
 
 #io-ox-quicklaunch > button.btn.btn-link.lcell:nth-child(2) > div.lcell > div.icon:nth-child(2) > i.fa.fa-envelope-o.app-icon-mail:after {
-    content: " - v1.2" !important;
+    content: " - v1.3" !important;
+}
+
+#io-ox-core > div.abs.io-ox-dialog-wrapper:nth-child(7) {
+    display: none !important;
 }
 
 #io-ox-core > div.abs.io-ox-dialog-wrapper:nth-child(6) {
