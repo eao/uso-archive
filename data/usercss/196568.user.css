@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BlastEndedSqrt
 @description    `A dark theme for Astral Codex Ten, the new blog of Scott Alexander, long may he reign!`
-@version        2021125.7.4
+@version        202123.12.1
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -193,5 +193,12 @@ form.comment-input > .comment-input-head {
 
 table.post-meta tr td.post-meta-item {
     font-weight: 500;
+}
+
+:root{
+    --cover_bg_color:#111;
+    --web_bg_color:#111;
+    --input_background:#111;
+    --cover_input_background:#111;
 }
 }

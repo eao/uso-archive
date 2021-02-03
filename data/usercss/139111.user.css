@@ -2,8 +2,8 @@
 @name           SV
 @namespace      USO Archive
 @author         Стас Бармин
-@description    `SV - Simple View of VK 0.7.4Redesign of header, messages, chatbox, sidebar, background and much more!thx Michail Nikolayev`
-@version        20201231.14.35
+@description    `SV - Simple View of VK 0.7.5Redesign of header, messages, chatbox, sidebar, background and much more!thx Michail Nikolayev`
+@version        202123.7.53
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -45,7 +45,7 @@ body.new_header_design .audio_page_player2.audio_page_player_fixed {
 /*КНОПКИ В ШАПКЕ*/
 /*фикс фона*/
 [dir] body.new_header_design .top_nav_link:hover,
-[dir] body.new_header_design .top_nav_btn:hover {
+[dir] body.new_header_design .TopNavBtn:hover {
     background-color: rgba(255, 255, 255, 0);
 }
 [dir] body.new_header_design .top_audio_player:hover {
@@ -65,11 +65,11 @@ body.new_header_design .top_audio_player:hover .top_audio_player_title {
     color: rgba(255, 255, 255, .9);
 }
 /*кнопки*/
-[dir] body.new_header_design .top_nav_btn#top_notify_btn .top_nav_btn_icon {
+[dir] .TopNavBtn.TopNavBtn__notify .TopNavBtn__icon {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIGhlaWdodD0iMjQiIHdpZHRoPSIyNCIgc3R5bGU9IiI+PHJlY3QgaWQ9ImJhY2tncm91bmRyZWN0IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4PSIwIiB5PSIwIiBmaWxsPSJub25lIiBzdHJva2U9Im5vbmUiLz48ZyBjbGFzcz0iY3VycmVudExheWVyIiBzdHlsZT0iIj48dGl0bGU+TGF5ZXIgMTwvdGl0bGU+PHBhdGggZD0iTTEyIDIuMWM0IDAgNi45IDMuMyA2LjkgNy41djEuNmMwIC4zLjIuNi43IDEuMWwuMy4zYzEgMSAxLjUgMS43IDEuNSAyLjcgMCAuNSAwIC44LS4zIDEuMi0uNCAxLTEuNCAxLjQtMi44IDEuNGgtMmMtLjYgMi4zLTIgMy42LTQuMyAzLjYtMi4yIDAtMy44LTEuMy00LjQtMy43di4xSDUuN2MtMS41IDAtMi40LS41LTIuOS0xLjQtLjItLjQtLjItLjctLjItMS4yIDAtMSAuNC0xLjYgMS41LTIuN2wuMy0uM2MuNS0uNS43LS44LjctMVY5LjVDNS4xIDUuNCA4IDIuMSAxMiAyLjF6bTIuNSAxNS44aC01Yy41IDEuMiAxLjMgMS44IDIuNSAxLjhzMi0uNiAyLjUtMS44ek0xMiAzLjljLTMgMC01LjEgMi40LTUuMSA1Ljd2MS42YzAgLjktLjQgMS41LTEuMiAyLjRsLS4zLjJjLS44LjgtMSAxLjItMSAxLjV2LjRjLjIuMi41LjQgMS4zLjRoMTIuNmMuOCAwIDEuMS0uMiAxLjItLjRsLjEtLjRjMC0uMy0uMi0uNy0xLTEuNWE0MSA0MSAwIDAxLS4zLS4yYy0uOC0xLTEuMi0xLjUtMS4yLTIuNFY5LjZDMTcuMSA2LjMgMTUgNCAxMiA0eiIgZmlsbD0iI2ZmZmZmZiIgaWQ9InN2Z18xIiBjbGFzcz0ic2VsZWN0ZWQiIGZpbGwtb3BhY2l0eT0iMSIvPjwvZz48L3N2Zz4=);
     fill: rgba(255, 255, 255, 0);
 }
-[dir] body.new_header_design .top_nav_btn .top_notify_count {
+[dir] .TopNavBtn .TopNavBtn__notifyCount {
     padding: 1px 4px;
 }
 [dir] body.new_header_design .top_audio_player_prev .top_audio_player_btn_icon {

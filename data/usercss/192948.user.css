@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `Google Carbon ThemeMore of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        2021120.19.40
+@version        202123.8.59
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadcarbon "Background Image" {
@@ -29,6 +29,97 @@ body {
 	color: #efefef!important;
 }
 /*update*/
+.mmxugd {/*Searches related*/
+    color: #e1e9ff;
+}
+
+.TWG7zb:hover {
+    color: #fff;
+}
+.TWG7zb.TNpQ1d {
+    background: #212121!important;
+    border: 1px solid #4d4d4d!important;
+    border-bottom: 0px!important;
+    color: #fafafa!important;
+    padding: 7px;
+	border-radius: 10px 10px 0px 0px
+}
+.CQke1c {
+    background: #212121!important;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 4px 16px rgb(0, 0, 0);
+}
+.fnKRDd {
+    background: #222222!important;
+    border: 1px solid #4d4d4d;
+    box-sizing: border-box;
+    color: #b6b6b6;
+    padding: 20px;
+    width: 100%;
+}
+.cYHv6c {/*?*/
+    filter: contrast(0.5) saturate(23.5) sepia(8) brightness(6.5);
+}
+
+.fWfAye {
+    background: #1e1e1e!important;
+    border: 1px solid #0f0f0f;
+    box-shadow: 0 4px 16px rgb(0 0 0 / 20%);
+}
+.Ntw4te {
+    background: #171516!important;
+    border: 1px dashed #00f2ff;
+    color: #fff!important;
+}
+
+
+.gb_sc {/*icons*/
+    filter: contrast(0.5) saturate(23.5) sepia(8) brightness(6.5);
+}
+
+#jkXfPe, #LLsDr {
+    background: #171516;
+    border-top: 1px solid #11bcdd;
+    color: #ffffff;
+    margin-top: 15px;
+    position: relative;
+    box-shadow: inset 0px 0px 1px 1px #11bcdd;
+}
+
+#QDMvGf {
+    background: #1e1e1e;
+    border: 1px solid rgba(0,0,0,.2);
+    box-shadow: 0 4px 16px rgb(0 0 0 / 20%);
+    box-sizing: border-box;
+    font-family: arial,sans-serif;
+    font-size: 13px;
+    min-width: 460px;
+    position: absolute;
+    text-align: left;
+    z-index: 997;
+}
+
+.WTHmze {
+    color: #93a9ec!important;
+}
+.gsfi, .lst {
+    color: #5e5e5e!important;
+}
+.lst-c .sbib_a {
+    background: #1b1b1b!important
+}
+.lst-c .sbib_a:focus-within {
+	background: #1b1b1b!important
+}
+.lst-c .sbib_a:hover {
+	background: #1b1b1b!important
+}
+#searchform .sbfcn, #searchform .sbhcn {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: #30c4e8;
+	background: #1b1b1b!important
+}
+
 .k8XOCe {
     background-color: #484a4ca6;
 }
@@ -1228,6 +1319,13 @@ div.Qy8Xkb {
 .SPmIAf {
     color: #fff;
 }
+.w6PoOe:hover {
+    color: #2962ff;
+}
+.SPmIAf:hover {
+    color: #2962ff;
+}
+
 
 .GHDvEf, .GHDvEf:hover, .GHDvEf.selected, .GHDvEf.selected:hover {/*cache button*/
     display: inline-block;
@@ -2152,6 +2250,9 @@ Style Attribute {
 /*collection page*/
 .SSPGKf {
     background-color: #111111;
+}
+header#gb.gb_qa.gb_Wa.gb_Te.gb_Jc {
+    background-color: #1a1a1a!important
 }
 
 /*create alert*/

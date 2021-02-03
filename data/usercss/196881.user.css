@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         kmstyler
 @description    `Restores the old FB desktop interface.`
-@version        202122.20.26
+@version        202123.7.13
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -40,6 +40,7 @@ div[class="j83agx80 btwxx1t3 bp9cbjyn jifvfom9"]{display:none!important}
 
 span[class="d2edcug0 hpfvmrgz qv66sw1b c1et5uql rrkovp55 jq4qci2q a3bd9o3v lrazzd5p oo9gr5id"]{display:none!important}
 div[class="cxgpxx05 sj5x9vvc"]{display:none!important}
+
 
 body{zoom:1}
 @media (max-width: 1920px){.msh19ytf.msh19ytf{max-width:fit-content}} 
@@ -114,6 +115,18 @@ div[class="q9uorilb bvz0fpym c1et5uql sf5mxxl7XXXX"]{border-radius: 0px 0px 0px 
 *[class*="6s"]{border-radius: 0px 0px 0px 0px!important}
 div[class*="j9ispegn"]{border-radius: 0px 0px 0px 0px!important}
 div[class*="inkptoze"]{border-radius: 0px 0px 0px 0px!important}
+
+div[aria-label="Share"]{background-color:#29487d!important}
+
+div[aria-label="Post"]{background-color:#29487d!important}
+
+
+div[class*="emzo"]{border-radius: 0px 0px 0px 0px!important}
+
+div[class*="k4urcZZZZZ"]{opacity:0.9!important}
+
+div[aria-label="Save"]{background-color:#29487d!important}
+*[aria-label="Promote"]{background-color:#29487d!important}
 
 }
 

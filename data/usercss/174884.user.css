@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         KMVerum
 @description    `Dark Theme for archive.orgLink Colours are customizable.Includes smooth hovers, transitions, Media Dim, eBook Dark Mode (colour inversion), custom scrollbars and cursors;https://userstyles.org/styles/176247/https://userstyles.org/styles/177189/https://userstyles.org/styles/182441/https://userstyles.org/styles/175086/To easily switch from eBook inversion to normal, see the complimentary theme;https://userstyles.org/styles/179071/archive-org-disable-ebook-inversion-kmvAll options are in separate codes. Delete any of them to disable.PS: Due to properties of Custom CSS, one needs uninstall in order to Update.Stylus recommended:https://add0n.com/stylus.htmlThe rest of my themes:https://userstyles.org/users/370722/Contact:https://www.reddit.com/r/KMV/`
-@version        202112.0.57
+@version        202123.4.29
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced color ArchiveLinks "Links Colour" #9B8440
@@ -79,6 +79,7 @@ em,
 i,
 #descript,
 #error h2,
+body.ia-module .stealth,
 .month .month-day-container,
 .site
 {
@@ -143,6 +144,11 @@ body.ia-module .columns-items .sortbar .up-down div.in
     transition: all 0.4s ease-in-out;
 }
 
+body.ia-module .stealth
+{
+    transition: all 0.4s ease-in-out;
+}
+
 a:visited,
 a:visited *
 {
@@ -152,6 +158,7 @@ a:visited *
 
 a:hover,
 a:hover *,
+body.ia-module .stealth:hover,
 body.top center.mt-big div.mt-big:hover > div > span,
 body.top center.mt-big div.mt-big .micro-label:hover,
 body.top center.mt-big div.mt-big:hover .micro-label
@@ -165,6 +172,7 @@ a:active *,
 #flag-button:active,
 #share-button:active,
 .favorite-btn .button:active,
+body.ia-module .stealth:active,
 body.top center.mt-big div.mt-big:hover > div > span,
 body.top center.mt-big div.mt-big .micro-label:hover,
 body.top center.mt-big div.mt-big:hover .micro-label,
@@ -231,8 +239,9 @@ body,
 #react-wayback-search,
 body.navia #nav-tophat,
 body.navia .navbar .dropdown-ia.hatted,
-.search-toolbar/*.col-xs-12*/,
 .alert-danger,
+.search-toolbar/*.col-xs-12*/,
+.details-ia,
 .ia-banner,
 .rbt-menu
 {
@@ -1346,6 +1355,15 @@ img[class*="attachment-"]:hover,
 {
     filter:brightness(1);
     transition: .4s;
+}
+
+
+/*Upload Popup Position*/
+#overlay_alert
+{
+    top: 73.1%;
+    right: 0%;
+    left: 10%;
 }
 }
 
