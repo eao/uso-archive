@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        2020831.5.9
+@version        202124.5.21
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -87,8 +87,11 @@
 .nf-flat-button,
 .nfDropDown.theme-lakira .label,
 .profiles-gate-container li a.focused .profile-icon,
+.profiles-gate-container li a.focused .profile-icon::after,
 .profiles-gate-container li a:focus .profile-icon,
+.profiles-gate-container li a:focus .profile-icon::after,
 .profiles-gate-container li a:hover .profile-icon,
+.profiles-gate-container li a:hover .profile-icon::after,
 .title-card .title-card-focus-ring,
 :focus
 {
@@ -134,13 +137,14 @@ tr:hover
 	color: #fff!important;
 }
 
-.slider .handle.handleNext,
-.slider .handle.handlePrev,
-.ShowDetails a,
-.MoreLikeThis a,
-.Trailers a,
 .Episodes a,
-.Overview a {
+.MoreLikeThis a,
+.Overview a,
+.ShowDetails a,
+.Trailers a,
+.slider .handle.handleNext,
+.slider .handle.handlePrev
+{
 	display: none;
 }
 
@@ -158,7 +162,6 @@ tr:hover
     z-index: 5;
     margin-top: -28rem;
 }
-
 
 /*___ Fonts ________________________________________________________________________*/
 
@@ -194,10 +197,10 @@ selector {
 
 
 .loadingTitle .ratio-16x9 {
+	display: none!important;
 	left: -9999px!important;
 	position: absolute!important;
 	top: -9999px!important;
-	display: none!important;
 }
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
@@ -219,9 +222,9 @@ selector {
     margin-left: 0!important;
 }
 
-
 /*___ Margins ______________________________________________________________________*/
 
+.gallery .rowContainer,
 .profiles-gate-container li,
 .rowList,
 .slider .sliderMask .sliderContent .slider-item {
@@ -255,6 +258,7 @@ selector {
 .profile-lolopi-confirm,
 .profiles-gate-container .profile-lolopi-header,
 .profiles-gate-container li,
+.responsive-account-container,
 .rowList,
 .seBox
 {
@@ -267,7 +271,7 @@ selector {
 
 /*___ Heights ______________________________________________________________________*/
 
-selector {
+.section-container.collapsed {
 	max-height: none!important;
 }
 
@@ -282,9 +286,10 @@ selector {
 
 /*___ Widths _______________________________________________________________________*/
 
-.profiles-gate-container .profile-lolopi-header,
 .profiles-gate-container .lolopi-row .row-header,
-.profiles-gate-container .profile-lolopi-container .slider {
+.profiles-gate-container .profile-lolopi-container .slider,
+.profiles-gate-container .profile-lolopi-header
+{
 	max-width: none!important;
 }
 
@@ -383,6 +388,7 @@ input[type="radio"]:checked+label {
 .maturity-number,
 .maturity-rating,
 .nf-svg-button-tooltip,
+.responsive-account-container,
 .simsWrapper .simsSynopsis,
 li,
 p {
@@ -419,8 +425,17 @@ h4 {
 
 /*___ Sandy Brown __________________________________________________________________*/
 
+.dvds .dvdLabel,
+.dvds .peopleLabel,
+.dvds .suggestionsLabel,
 .error-page--content--errorCode span,
 .jawBonePane .overview .inline-list .list-label,
+.people .dvdLabel,
+.people .peopleLabel,
+.people .suggestionsLabel,
+.suggestions .dvdLabel,
+.suggestions .peopleLabel,
+.suggestions .suggestionsLabel,
 h5,
 h6,
 label {
@@ -524,6 +539,7 @@ html {
 /*___ Background Gray ______________________________________________________________*/
 
 .pinning-header .main-header,
+.site-footer-wrapper,
 [style="top: -68px; position: fixed; background: rgb(20, 20, 20);"] {
 	background-color: #060505!important;
 }
@@ -550,6 +566,7 @@ html {
 .profiles-gate-container li a.focused .addProfileIcon,
 .profiles-gate-container li a:focus .addProfileIcon,
 .profiles-gate-container li a:hover .addProfileIcon,
+.titleCard--container .titleCard--metadataWrapper,
 [style="height: 100vh; background-color: rgb(51, 51, 51); color: rgb(247, 247, 247); padding: 45px 0px 0px 45px;"]
 {
 	background-color: rgba(0, 0, 0, 0)!important;
@@ -583,8 +600,33 @@ p button:nth-child(2):active
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
 
+/*__ Gray __________________________________________________________________________*/
+
+.ltr-v8pdkb.color-secondary:not(:disabled)
+{
+	background-image: linear-gradient(to bottom right, #6d6d6e4f, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
+	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
+}
+
+.ltr-v8pdkb.color-secondary:not(:disabled):hover:hover
+{
+	background-image: linear-gradient(to bottom right, #7e7e7f5f, #000)!important;
+	color: #ff0!important;
+}
+
+.ltr-v8pdkb.color-secondary:not(:disabled):hover:active
+{
+	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+}
+
 /*__ Red __________________________________________________________________________*/
 
+.akira-button.akira-button-red,
+.btn.account-cancel-button,
+.ltr-v8pdkb.color-primary,
 .nf-flat-button-primary,
 .profile-button span,
 p button:first-child
@@ -596,6 +638,9 @@ p button:first-child
 	color: #fff!important;
 }
 
+.akira-button.akira-button-red:hover,
+.btn.account-cancel-button:hover,
+.ltr-v8pdkb.color-primary:hover,
 .nf-flat-button-primary:hover,
 .profile-button span:hover,
 p button:first-child:hover
@@ -604,6 +649,9 @@ p button:first-child:hover
 	color: #ff0!important;
 }
 
+.akira-button.akira-button-red:active,
+.btn.account-cancel-button:active,
+.ltr-v8pdkb.color-primary:active,
 .nf-flat-button-primary:active,
 .profile-button span:active,
 p button:first-child:active
@@ -651,12 +699,14 @@ p button:first-child:active
 
 /*___ Plain Black __________________________________________________________________*/
 
+.gallery .rowContainer,
 .list-profiles,
 .lolomoRow.lolomoRow_title_card,
 .profile-actions-container,
 .profile-lolopi-confirm,
 .profile-lolopi-header,
 .profiles-gate-container,
+.responsive-account-container,
 .rowList
 {
 	background-color: #000!important;
@@ -665,12 +715,14 @@ p button:first-child:active
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.gallery .rowContainer:hover,
 .list-profiles:hover,
 .lolomoRow.lolomoRow_title_card:hover,
 .profile-actions-container:hover,
 .profile-lolopi-confirm:hover,
 .profile-lolopi-header:hover,
 .profiles-gate-container:hover,
+.responsive-account-container:hover,
 .rowList:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -678,6 +730,7 @@ p button:first-child:active
 
 /*___ Plain ________________________________________________________________________*/
 
+.titleCard--container,
 .nf-svg-button-tooltip,
 .profiles-gate-container li {
 	background-color: #111!important;
@@ -686,6 +739,7 @@ p button:first-child:active
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+.titleCard--container:hover,
 .nf-svg-button-tooltip:hover,
 .profiles-gate-container li:hover {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
@@ -700,6 +754,19 @@ p button:first-child:active
 }
 
 .rowList .rowListItem:hover {
+	background: linear-gradient(to bottom, #300202 0%, #590505 100%)!important;
+	border-bottom: 1px solid #000!important;
+}
+
+/*___ Green Gradient _________________________________________________________________*/
+
+.ui-message-success {
+	background: linear-gradient(to bottom, #5fa53f 0%, #000 100%)!important;
+	border-bottom: 1px solid #000!important;
+	border-radius: 22px!important;
+}
+
+.ui-message-success:hover {
 	background: linear-gradient(to bottom, #300202 0%, #590505 100%)!important;
 	border-bottom: 1px solid #000!important;
 }
@@ -762,9 +829,11 @@ p button:first-child:active
 
 /*___ Highlight Background _________________________________________________________*/
 
+.titleCardList--container:hover,
+.episodeSelector .episodeSelector-container .episode-item.current,
 .bob-overview-wrapper
  {
-	background: linear-gradient(to right, #18191a, #0000)!important;
+	background: linear-gradient(to right, #242627, #0000)!important;
 	border-left-color: #434343!important;
 }
 
@@ -778,7 +847,11 @@ p button:first-child:active
 @-moz-document domain("netflix.com") {
 /*__________________________________________________________________________________*/
 
+.titleCard--container,
+.titleCardList--container,
+.account-section,
 .notification,
+.profile-hub li,
 .profiles-gate-container li.profile,
 .rowList .rowListItem,
 .slider .sliderMask .sliderContent .slider-item
@@ -788,7 +861,12 @@ p button:first-child:active
 
 /*__________________________________________________________________________________*/
 
+.titleCard--container:hover,
+.titleCardList--container:hover,
+.episodeSelector .episodeSelector-container .episode-item.current,
+.account-section:hover,
 .notification:hover,
+.profile-hub li:hover,
 .profiles-gate-container li.profile:hover,
 .rowList .rowListItem:hover,
 .slider .sliderMask .sliderContent .slider-item:hover
@@ -872,7 +950,6 @@ selector:hover {
     padding-left: 34px!important;
 }
 
-
 /* Chromecast Button ____________________________________________________________________*/
 
 .svg-icon.svg-icon-nfplayerMdx {
@@ -929,6 +1006,19 @@ selector:hover {
     width: 10px!important;
 }
 
+/* Info _______________________________________________________________*/
+
+[data-uia="billboard-more-info"] svg {
+	background: url(https://i.ibb.co/Lhfjqf4/information-sign-1024x1024.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[data-uia="billboard-more-info"] svg {
+    background-size: 30px!important;
+    height: 30px!important;
+    padding-left: 32px!important;
+    width: 10px!important;
+}
 
 /* List Button ____________________________________________________________________*/
 
@@ -1034,6 +1124,7 @@ selector:hover {
 
 /* Thumbs Up/Down __________________________________________________________________________*/
 
+[aria-label="thumbs up"] svg,
 .meta-thumb-container.thumb-up svg,
 [aria-label="Already rated: thumbs up (click to remove rating)"] svg,
 [aria-label="Rate thumbs up"] svg {
@@ -1050,11 +1141,14 @@ selector:hover {
 	width: 24px!important;
 }
 
+[aria-label="thumbs down"] svg,
 [aria-label="Rate thumbs down"] svg {
 	background: url(https://i.ibb.co/6XfG8VP/thumbs-dowm.png) no-repeat!important;
 	box-sizing: border-box!important;
 }
 
+[aria-label="thumbs down"] svg,
+[aria-label="thumbs up"] svg,
 [aria-label="Rate thumbs down"] svg {
 	background-size: 22px!important;
 	height: 24px!important;

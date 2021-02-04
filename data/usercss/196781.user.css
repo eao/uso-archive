@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TTC
 @description    `Стиль для Biathlon.com.ua`
-@version        202123.23.18
+@version        202124.12.23
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -428,7 +428,7 @@ a:focus{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    border-bottom: solid 7px #fcf820; 
+    border-bottom: solid 4px #fcf820; 
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
