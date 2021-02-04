@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         zigboom
 @description    `WIRED - dark, clean and easy on the eyes.`
-@version        202084.19.40
+@version        202123.17.48
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("wired.com") {
 /*   -=< Darker WIRED by Zigboom Designs >=-   */
 
-body, html, .app-shell-component--homepage, .article-main-component--fullbleed.article-main-component--has-gallery .article-main-component__wrapper--fullbleed.article-main-component__wrapper--has-gallery, .article-body-component li, .app-shell-component--article .outer-wrapper,.article-main-component, .review-main-component, .listicle-main-component, .listicle-main-component__intro, .listicle-item-product-component__make, .page__main-content, .navigation-border-thin-decoration .standard-navigation, .display-hero-failsafe, .content-header__rubric-block .content-header__rubric-date-block>*, .content-header__rubric-block>*, .content-header--overlay-fill-gradient .content-header__dek, .content-header__dek, .page--article, .link-banner {
+body, html, .app-shell-component--homepage, .article-main-component--fullbleed.article-main-component--has-gallery .article-main-component__wrapper--fullbleed.article-main-component__wrapper--has-gallery, .article-body-component li, .app-shell-component--article .outer-wrapper,.article-main-component, .review-main-component, .listicle-main-component, .listicle-main-component__intro, .listicle-item-product-component__make, .page__main-content, .navigation-border-thin-decoration .standard-navigation, .display-hero-failsafe, .content-header__rubric-block .content-header__rubric-date-block>*, .content-header__rubric-block>*, .content-header--overlay-fill-gradient .content-header__dek, .content-header__dek, .page--article, .link-banner, .content-header--card .content-header__container-theme-standard .content-header__accreditation, .content-header--card .content-header__container-theme-standard .content-header__title-block, .content-header--card .content-header__container-theme-standard.content-header--position-below .lead-asset__caption {
  background:#181818 !important;
  color:#aaa !important;
 }

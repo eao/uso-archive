@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        202122.8.5
+@version        202123.13.4
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -78,6 +78,8 @@ selector
 	text-transform: capitalize!important;
 }
 
+.linmgsc8,
+.opwvks06,
 .s1tcr66n,
 .qbxu24ho,
 :focus
@@ -165,9 +167,9 @@ selector
     margin: 36px;
 }
 
-selector
+[data-pagelet*="FeedUnit_"]
  {
-	margin: 3px 6px!important;
+	margin: 12px 0!important;
 }
 
 /*___ Paddings _____________________________________________________________________*/
@@ -592,12 +594,13 @@ selector:active
 
 /*___ Plain Black __________________________________________________________________*/
 
-[style*="translate(-50%"],
-.rq0escxv.rj1gh0hx.buofh1pr.ni8dbmo4.stjgntxs.l9j0dhe7[style="min-width: 168px; padding: 4px;"],
 .n1f8r23x,
+.rq0escxv.rj1gh0hx.buofh1pr.ni8dbmo4.stjgntxs.l9j0dhe7[style="min-width: 168px; padding: 4px;"],
 [role="complementary"],
+[role="main"],
 [role="navigation"],
-[role="main"]
+[style*="translate(-100%, -50%)"],
+[style*="translate(-50%"]
  {
 	background-color: #000!important;
 	border-radius: 22px!important;
@@ -605,28 +608,31 @@ selector:active
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
-.rq0escxv.rj1gh0hx.buofh1pr.ni8dbmo4.stjgntxs.l9j0dhe7[style="min-width: 168px; padding: 4px;"]:hover,
-[style="translate(-50%"]:hover,
 .n1f8r23x:hover,
+.rq0escxv.rj1gh0hx.buofh1pr.ni8dbmo4.stjgntxs.l9j0dhe7[style="min-width: 168px; padding: 4px;"]:hover,
 [role="complementary"]:hover,
+[role="main"]:hover,
 [role="navigation"]:hover,
-[role="main"]:hover
+[style*="translate(-100%, -50%)"]:hover,
+[style="translate(-50%"]:hover
  {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
 /*___ Plain ________________________________________________________________________*/
 
+[data-pagelet*="FeedUnit_"],
 [data-pagelet*="ProfileAppSection_"],
 [role="dialog"],
 [role="listbox"]
  {
-	background-color: #151515!important;
+	background-color: #1c1c1c!important;
 	border-radius: 22px!important;
 	border: 1px solid rgba(0, 0, 0, .25)!important;
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(55, 55, 55, 1) 0 1px 0, 10px 10px 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
 
+[data-pagelet*="FeedUnit_"]:hover,
 [data-pagelet*="ProfileAppSection_"]:hover,
 [role="dialog"]:hover,
 [role="listbox"]:hover

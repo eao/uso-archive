@@ -3,8 +3,8 @@
 @namespace      USO Archive
 @author         alije
 @description    `тёмная тема для школьного портала московской области в стиле flat`
-@version        2020101.18.39
-@license        CC-BY-NC-ND-4.0
+@version        202123.22.5
+@license        CC-BY-SA-4.0
 @preprocessor   uso
 @advanced dropdown a-color "ссылки" {
 	blue "синие*" <<<EOT #2291BE EOT;
@@ -33,7 +33,7 @@ blue "синяя" <<<EOT #258eb9 EOT;
 @-moz-document domain("school.mosreg.ru") {
 	@font-face {
     font-family: "Product Sans Bold";
-    src: url(http://fontsfree.net//wp-content/fonts/basic/sans-serif/FontsFree-Net-ProductSans-Bold.ttfhttp://fontsfree.net//wp-content/fonts/basic/sans-serif/FontsFree-Net-ProductSans-Bold.ttf);
+    src: url(https://fontsfree.net//wp-content/fonts/basic/sans-serif/FontsFree-Net-ProductSans-Bold.ttf);
    }
   .header-logotype_mosreg {
 		background: url(https://i.ibb.co/B62nPPr/1.png) no-repeat center !important;

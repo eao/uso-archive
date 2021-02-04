@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         daniel1919
 @description    `Darker theme for fitbit studio`
-@version        2021127.21.57
+@version        202123.18.36
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -35,6 +35,16 @@
     color:#ccc;
 }
 
+.pt-toast.pt-intent-success {;
+    border:1px solid #13b974;
+    box-shadow:  0 0 12px 1px #1ddd8e;
+}
+
+.pt-toast.pt-intent-danger {
+    border:1px solid #f23737;
+    box-shadow:  0 0 12px 1px #ee5252;
+}
+
 .pt-dialog {
     background: #18181A;
     color: #ccc;
@@ -60,6 +70,17 @@
 }
 .pt-dialog .pt-non-ideal-state {
     background:#18181A;
+}
+
+.pt-button:hover {
+	background-color: #32373B !important;
+}
+
+button.pt-button.pt-icon-build.pt-disabled:not([class*="pt-intent-"]) {
+    font-weight: bold;
+    -webkit-animation: glow 1.5s ease-in-out infinite alternate;
+    -moz-animation: glow 1.5s ease-in-out infinite alternate;
+    animation: glow 1.5s ease-in-out infinite alternate;
 }
 
 .pt-button.pt-intent-primary:not(.pt-disabled):not(.logout-button), 
@@ -196,9 +217,6 @@ a.pt-button.pt-minimal.pt-intent-primary.logout-button:hover {
     background:#32373B;
 }
 
-.pt-button:hover {
-	background-color: rgba(92, 134, 166, .4) !important;
-}
 
 .pt-tabs {
     border-bottom: none;
@@ -246,8 +264,8 @@ div.project-list-item a.pt-menu-item {
 }
 
 div.project-list-item a.pt-menu-item:hover {
-    transition: all 0.3s ease;
-    box-shadow: 0 0 10px 1px #176eaa;
+    border:1px solid #6495ed !important;
+    box-shadow:  0 0 12px 1px #6495ed !important;
 }
 
 .pt-menu-item:hover, .pt-submenu > .pt-popover-open > .pt-menu-item {
@@ -330,6 +348,7 @@ div.project-list-item a.pt-menu-item:hover {
     border:1px solid #6495ed;
     background:#18181A;
     color:#ccc;
+    box-shadow:  0 0 12px 1px #6495ed;
 }
 
 .pt-popover .pt-menu .pt-menu-divider {
@@ -346,6 +365,11 @@ div.project-list-item a.pt-menu-item:hover {
 
 .pt-dark .pt-navbar-divider {
 	border-left-color: #646464;
+}
+
+/** NOTE: BUILD BUTTON */
+.pt-navbar-group > button.pt-button.pt-intent-success {
+    color:rgb(46, 225, 151) !important;
 }
 
 .pt-dark .pt-button-group.pt-minimal .pt-button::after {
@@ -374,8 +398,28 @@ div.project-list-item a.pt-menu-item:hover {
     background:#1e1e1e;
 }
 
+.pt-input:focus{
+        border:1px solid #6495ed !important;
+    box-shadow:  0 0 12px 1px #6495ed !important;
+}
+
+.project-configuration-color-area {
+    background-color:#2b2a2a !important;
+}
+
 .project-configuration-editor.pt-dark select:focus {
-    border: 1px solid #007FD4;
+    border:1px solid #6495ed;
+    box-shadow:  0 0 12px 1px #6495ed;
+}
+
+.pt-dark .pt-card.pt-interactive {
+    border:1px solid transparent;
+    margin: 6px 0;
+}
+
+.pt-dark .pt-card.pt-interactive:hover {
+    border:1px solid #6495ed;
+    box-shadow:  0 0 12px 1px #6495ed;
 }
 
 .project-configuration-editor.pt-dark input[type="text"] {
@@ -384,5 +428,17 @@ div.project-list-item a.pt-menu-item:hover {
 
 .project-configuration-editor.pt-dark #file-name {
     background:#2b2a2a;
+}
+
+@keyframes glow {
+     from {
+      color: #fff;
+    text-shadow: 0 0 10px #6495ed, 0 0 20px #6495ed, 0 0 30px #6495ed, 0 0 40px #6495ed, 0 0 50px #6495ed, 0 0 60px #6495ed, 0 0 60px #6495ed, 0 0 60px #6495ed;
+  }
+  
+  to {
+     color: #dddcdc;
+    text-shadow: 0 0 20px #6495ed, 0 0 30px #6495ed, 0 0 40px #6495ed, 0 0 50px #6495ed, 0 0 60px #6495ed, 0 0 60px #6495ed, 0 0 60px #6495ed, 0 1 60px #6495ed;
+  }
 }
 }

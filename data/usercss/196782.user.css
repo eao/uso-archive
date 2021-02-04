@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         xyz777
 @description    `kleine Überarbeitung mit weniger Kontrast`
-@version        2021131.16.21
+@version        202123.19.35
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -131,5 +131,8 @@ article img {
 
 footer {
     background: #FCE7CF !important;    
+}
+.section-headline {
+    border-radius: 4px;
 }
 }

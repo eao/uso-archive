@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         AlexPS
 @description    `Тёмная тема для Народной карты ЯндексАвтор: https://n.maps.yandex.ru/#!/users/225790763Dark theme for Yandex Map EditorAuthor: https://mapeditor.yandex.com/#!/users/225790763`
-@version        2021129.19.42
+@version        202123.14.21
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown darkmapclub "Dark Map Club" {
@@ -865,6 +865,8 @@ a.ymaps-2-1-77-traffic-info__source-link:hover {color: #e85253;}
 .nk-icon_disabled > svg > circle:nth-child(3), .nk-icon_disabled > svg > path:nth-child(5), .nk-icon_id_opened-envelope > svg > g > path {fill: #666;}
 
 .nk-geoobject-render-conflicts-viewer-view {background-color: #473f1f;}
+
+.nk-poi-conflicts-viewer-view {background-color: #473f1f;}
 
 .nk-geoobject-notice-view_type_blocked, .nk-geoobject-notice-view_type_verified {background: #333; color: #bbb;}
 .nk-geoobject-notice-view_type_blocked, .nk-geoobject-notice-view_type_nailed {background-color: #333; color: #bbb;}

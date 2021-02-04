@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>Dark Twitter++ is a simple dark mode for Twitter that works regardless of whether you have the old or new design that also works well with <a href="https://userstyles.org/styles/155039/a-better-twitter">A Better Twitter</a>.Tell me if anything isn't themed properly, or hard to read; I'll be sure to fix it as soon as possible!Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        20201123.17.14
+@version        202123.19.5
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color color "Custom Theme Color" #1DA1F2
@@ -126,8 +126,7 @@ off "Off" <<<EOT ::-webkit-scrollbar {
 form input,
 textarea,
 select,
-input,
-body {
+input {
 	background: var(--dark50)
 }
 
@@ -250,7 +249,8 @@ div[contenteditable],
 #calbody,
 .Trends,
 .column,
-.TopNav {
+.TopNav,
+body {
 	background: var(--dark100) !important
 }
 

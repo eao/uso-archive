@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         asusdhj
 @description    `调整部分小说网站的字间距、行间距`
-@version        20201218.14.11
+@version        202123.13.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -48,9 +48,9 @@ url-prefix("https://www.x4399.com"),
 url-prefix("http://www.147xs.com"),
 url-prefix("https://www.cnoz.org"),
 url-prefix("http://www.b5200.net"),
-url-prefix("https://www.booktxt.com"),
-url-prefix("https://www.booktxt.net"),
-url-prefix("http://http://www.mcmssc.com"),
+url-prefix("https://www.booktxt"),
+url-prefix("http://www.mcmssc.com"),
+url-prefix("https://www.guibuyu.org"),
 url-prefix("https://www.cangqionglongqi.com/") {
     #content {
         line-height: 200% !important;

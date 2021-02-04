@@ -2,10 +2,61 @@
 @name           RPS in Pieces v2
 @namespace      USO Archive
 @author         blankedyblank
-@description    `Improves Rockpapershotgun's new new theme. Hides ads, removes several areas of whitespace and unnecessary text. Dark mode ready!<b>Makes RPS read like the old, in a new theme.</b><b>Customisable options:</b>Working on it.`
-@version        202123.4.18
+@description    `Improves Rockpapershotgun's new new theme. Hides ads, removes several areas of whitespace and unnecessary text. Dark mode ready!<b>Makes RPS read like the old, in a new theme.</b>Strongly recommend getting the theme its new homepage instead: https://github.com/Bzly/RPS-in-Pieces<b>Customisable options:</b>Working on it.`
+@version        202123.13.53
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
+@advanced dropdown darkMode "Dark Mode" {
+	darkModeYes "Enabled*" <<<EOT /* DARK MODE *\/
+body:not(.docked) {
+	color: #a9a9a9;
+	background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
+}
+
+#content, .app_header, .app_footer {
+	background: #212121 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
+    border-color: #161616;
+}
+
+:root, #comments .container .post[data-user-type=supporter] {
+    --color: #00866B
+}
+
+.app_header .username .flair.supporter {
+    --color: #9976E0;
+}
+
+.username .flair.supporter {
+    --color: #64409d;
+}
+
+.app_header .nav_secondary a, .app_header .nav_primary a, .app_footer nav:not(.social_follow) a, .app_footer nav:not(.social_follow) button {
+    color: #a9a9a9;
+}
+
+.article_header .title, .summary .name, .summary .title, .page_title {
+    color: #bbb;
+}
+
+#content textarea {
+    background: #3d3d3d url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
+    color: #a9a9a9;
+}
+
+article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
+    color: #a9a9a9;
+} EOT;
+darkModeNo "Disabled" <<<EOT  EOT;
+
+}
+@advanced dropdown dealsPosts "Deals Posts" {
+	dealsPostsYes "Enabled*" <<<EOT  EOT;
+dealsPostsNo "Disabled" <<<EOT li article.summary[data-article-type="deals"] {
+	    display: none;
+} EOT;
+
+}
+
 ==/UserStyle== */
 @-moz-document domain("rockpapershotgun.com") {
 
@@ -36,7 +87,6 @@
 #content_above {
     padding-right: 0 !important;
 }
-
 
 /* HOMEPAGE */
 body[data-page="homepage"] .spotlight .container {
@@ -345,6 +395,10 @@ body[data-page="blog"] .page_title_wrapper {
         top:-0.2em;
         left:-0.05em;
     }
+	
+    #comments textarea {
+        height: 9em;
+    }
 
 /* SITE FOOTER */
 .app_footer, .nav_wrapper {
@@ -372,7 +426,7 @@ body[data-page="blog"] .page_title_wrapper {
 }
 
 .app_footer .about {
-    row-gap: 0;
+    grid-row-gap: 0;
 }
 
 .app_footer .about .logo {
@@ -385,45 +439,8 @@ body[data-page="blog"] .page_title_wrapper {
     grid-template-columns: repeat(7,auto);
 }
 
+/*[[darkMode]]*/
 
-/* DARK MODE */
-body:not(.docked) {
-	color: #a9a9a9;
-	background: #161616 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
-}
-
-#content, .app_header, .app_footer {
-	background: #212121 url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat !important;
-    border-color: #161616;
-}
-
-:root, #comments .container .post[data-user-type=supporter] {
-    --color: #00866B
-}
-
-.app_header .username .flair.supporter {
-    --color: #9976E0;
-}
-
-.username .flair.supporter {
-    --color: #64409d;
-}
-
-.app_header .nav_secondary a, .app_header .nav_primary a, .app_footer nav:not(.social_follow) a, .app_footer nav:not(.social_follow) button {
-    color: #a9a9a9;
-}
-
-.article_header .title, .summary .name, .summary .title, .page_title {
-    color: #bbb;
-}
-
-#content textarea {
-    background: #3d3d3d url('https://raw.githubusercontent.com/Bzly/RPS-in-Pieces/main/noise.png') repeat;
-    color: #a9a9a9;
-}
-
-article:not([data-article-type="features"]):not([data-article-type="reviews"]) .strapline {
-    color: #a9a9a9;
-}
+/*[[dealsPosts]]*/
 	
 }

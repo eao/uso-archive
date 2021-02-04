@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         awesome_doze
 @description    `Vanilla Dark 2 VK Fix/Mod PART 1 of 2 is herehttps://userstyles.org/styles/132224read description and set all style settings there`
-@version        202121.22.49
+@version        202123.17.34
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -78,8 +78,12 @@
 .audio_pl_edit_box .ape_add_audios_btn:hover,.audio_pl_edit_box .ape_add_pl_audios_btn:hover{background-color:#0B0B0B}
 .audio_pl_item .audio_pl__cover{background-color:rgba(0,0,0,.5)}
 .audio_pl_item.audio_pl__empty .audio_pl__cover{filter:saturate(0)brightness(.5)}
-[dir] .audio_pl_edit_box .ape_pl_item .ape_pl_item_inner{border-bottom:1px solid var(--color3)!important}
-[dir] .audio_pl_edit_box .ape_pl_item:hover{border-color:var(--color3)!important;border-bottom:none!important;background:rgba(26,26,26,.6)!important}
+[dir] .audio_pl_edit_box .ape_pl_item .ape_pl_item_inner{border-bottom:1px solid #111!important}
+[dir] .audio_pl_edit_box .ape_pl_item .ape_pl_item_inner{padding:9px 60px 9px 47px}
+[dir] .audio_pl_edit_box .ape_pl_item::before{top:7px}
+[dir] .audio_atp_list .ape_check{padding:8px 10px 0}
+[dir] .audio_pl_edit_box .ape_pl_item:hover{border-bottom:none;border-top:1px solid #0000;background:rgba(26,26,26,.6)!important}
+[dir] .audio_pl_edit_box .ape_pl_item:hover .ape_pl_title{color:var(--color1)}
 .popup_box_container .box_body,.audio_pl_edit_box,.audio_atp_list,.audio_pl_edit_box,[dir] .audio_pl_edit_box .ape_pl_item{background:transparent!important}
 .audio_pl_snippet .audio_pl_snippet__cover{background-color:#0C0C0C;border:1px solid var(--color3);border-bottom:none}
 .audio_pl_snippet .audio_pl_snippet__info_author{color:var(--color2)}
@@ -92,7 +96,10 @@
 .audio_row .audio_row_cover_wrap{background:transparent!important}
 .eltt.eltt_bottom.eltt_arrow_size_normal>.eltt_arrow_back .eltt_arrow{border-bottom:7px solid rgba(0,0,0,.85)}
 .audio_atp_list .ape_check{filter:invert(.91)}
-.audio_row__action_playlist::before,._audio_row__more_action_add_to_playlist::after{filter:var(--filt2)}
+[dir] .audio_row__more_actions .audio_row__action_playlist{padding:5px 12px 5px 24px;color:#aaa!important}
+[dir] .audio_row__more_actions .audio_row__action_playlist:hover{color:var(--color1)!important}
+[dir] .audio_row__more_actions .audio_row__more_action_pl_new::before{top:8px;filter:var(--filt2)brightness(.6)}
+[dir] .audio_row__more_actions .audio_row__more_action_add_to_playlist::after{filter:var(--filt2)brightness(.8)}
 .audio_numeric .audio_row .audio_row__sound_bars,.audio_numeric .audio_row:hover .audio_row__cover_icon{filter:var(--filt2)saturate(.5)}
 .audio_promo_play:not(:hover){background-color:var(--color5);color:var(--color2)}
 .audio_page__shuffle_all{display:none}
@@ -234,6 +241,21 @@
 
 .wl_post .audio_artist_snippet:last-child{margin-bottom:6px}
 [dir] .wall_module:not(.search_results) .post--with-likes:not(.post_copy):not(.post_btl):not(.post_wf):not(.post_fr_likes) .wall_text .thumbed_link:last-child{margin-bottom:-4px}
+
+/* подкасты */
+[dir] .podcast_snippet__title:hover,[dir] .PodcastEpisodeLayer__title{color:var(--color1)}
+[dir] .post .podcast_snippet__content{background:#0003!important}
+[dir] .podcast_snippet__button{background:#0000001f!important;color:#aaa}
+[dir] .podcast_snippet__button:hover{background:#99999908!important;color:#ccc}
+[dir] .podcast_snippet__button_icon--play{filter:invert(.9)sepia(1)saturate(2)brightness(.3)hue-rotate(150deg)var(--filt2)}
+[dir] .podcast_snippet__button:hover .podcast_snippet__button_icon--play{filter:invert(.9)sepia(1)saturate(2)brightness(.5)hue-rotate(150deg)var(--filt2)}
+[dir] .podcast_snippet__controls{background:#0000!important}
+[dir] .PodcastEpisodeLayer__content{background:#000000bf}
+[dir] .podcast_snippet__title{color:var(--color2)}
+[dir] .PodcastEpisodeLayer__author{color:#999}
+[dir] .PodcastEpisodeLayer__author:hover{color:var(--color1)}
+[dir] .PodcastEpisodeLayer__info,[dir] .PodcastEpisodeLayer__desc{border-bottom:1px solid #222}
+[dir] .podcast_snippet .audio_podcast ._audio_player__place::before,[dir] .PodcastEpisodeLayer__header .audio_podcast ._audio_player__place::before{background-color:#6666661f!important}
 
 /* аудиозапись доступна только по подписке */
 .audio_subscription_popup .box_controls,.audio_subscription_popup .box_layout .box_title_wrap.box_grey{background-color:rgba(0,0,0,.67)!important}

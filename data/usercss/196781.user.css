@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TTC
 @description    `Стиль для Biathlon.com.ua`
-@version        202121.21.42
+@version        202123.23.18
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,8 +11,8 @@
     color: #002b71;
 }
 .el-table--points > tbody > tr > td, .el-table--nations > tbody > tr > td, .el-table--sprints > tbody > tr > td, .el-table--pursuits > tbody > tr > td, .el-table--users > tbody > tr > td, .el-table--ratings > tbody > tr > td, .el-table--compositions > tbody > tr > td, .el-table--names > tbody > tr > td, .el-table--info > tbody > tr > td, .el-table--olimps > tbody > tr > td {
-    padding-top: 0.50em;
-    padding-bottom: 0em;
+    padding-top: 0.10em;
+    padding-bottom: 0.10em;
 }
 .el-table--points > tbody > tr > td:nth-child(1), .el-table--nations > tbody > tr > td:nth-child(1), .el-table--sprints > tbody > tr > td:nth-child(1), .el-table--pursuits > tbody > tr > td:nth-child(1) {
     font-size: 0.75em;
@@ -20,7 +20,7 @@
     font-weight: 700;
     width: 30px;
     text-align: center;
-    padding-top: 0.55em;
+    padding-top: 0.1em;
 }
 body {
     line-height: 1.2;
@@ -67,7 +67,7 @@ a {
     text-align: center;
 }
 .form-control {
-    color: #002b71;
+    color: #000;
     font-size: 0.81em;
     font-family: Arial;
     font-weight: 400;
@@ -311,7 +311,7 @@ a:focus{
     margin-bottom: 2.10em;
 }
 .form-forget {
-    color: #333;
+    color: #002b71;
     font-size: 0.81em;
     font-family: Arial;
     text-decoration: underline;
@@ -326,11 +326,11 @@ a:focus{
     margin-bottom: 1.00em;
 }
 .btn-light {
-    color: #333;
+    color: #fff;
     font-size: 0.81em;
     font-family: Arial;
     font-weight: 550;
-    background-color: rgba(94,142,188,1.00);
+    background-color: #405f91;
     border-radius: 1.25em;
     border: 1px solid #405f91;
     line-height: 1.2;
@@ -373,7 +373,7 @@ a:focus{
     font-weight: bold;
 }
 .btn-more:hover{
-    background-color: #6dc4de;
+    background-color: #405f91;
     color: #ffffff
 }
 .btn-more:after{
@@ -428,6 +428,7 @@ a:focus{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    border-bottom: solid 7px #fcf820; 
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -492,5 +493,205 @@ a:focus{
     top: 0;
     margin-left: 0.70em;
     margin-top: 0.08em;
+}
+.flag img {
+    vertical-align: baseline;
+}
+.td_flag img {
+    vertical-align: baseline;
+}
+.form-utter {
+    color: #405060;
+    font-size: 0.88em;
+    font-family: Arial;
+    margin-right: 1.10em;
+}
+.sc-footer--menu > li {
+    color: #fcf820;
+    margin-bottom: 0.60em;
+}
+.el-land--gossip {
+    font-size: 0.81em;
+    vertical-align: text-top;
+}
+.layer {
+    padding-top: 0.20em;
+    padding-bottom: 1.90em;
+}
+.btn-gossip {
+    color: #ffffff;
+    background-color: #405f91;
+    padding-left: 1.85em;
+    padding-right: 1.85em;
+    border-radius: 50px;
+    padding-top: 0.95em;
+    padding-bottom: 0.95em;
+}
+.bl-auth--unite {
+    color: #002b71;
+    font-size: 0.81em;
+    font-family: Arial;
+    text-decoration: underline;
+}
+.bl-auth--the {
+    color: rgb(22, 72, 140);
+    font-size: 0.94em;
+    font-family: Arial;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.form-input {
+    color: #000;
+    font-size: 0.81em;
+    font-family: Arial;
+}
+    .sp-name--refer {
+    color: #000;
+    font-size: 1.38em;
+    font-family: Arial;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    padding-left: 1.10em;
+}
+.el-table--info > tbody > tr > td:nth-child(1) {
+    color: rgb(22, 72, 140);
+    font-size: 0.88em;
+    font-weight: 500;
+    padding-left: 1.40em;
+    width: 13.10em;
+    border-right: 6px solid #ffffff;
+    padding-top: 0.22em;
+    padding-bottom: 0.22em;
+}
+.nice-select .option {
+    padding: 5px 20px;
+    color: #000;
+    line-height: 20px;
+    min-height: 20px;
+}
+.el-carton--body {
+    padding-left: 2.50em;
+    padding-right: 2.50em;
+    padding-top: 1.0em;
+    padding-bottom: 0.50em;
+}
+.el-table--results > tbody > tr > td:nth-child(4) {
+    width: 9.70em;
+    color: #333;
+}
+.el-table--results > tbody > tr > td {
+    padding-top: 0.22em;
+    padding-bottom: 0.22em;
+}
+.el-table--results > tbody > tr > td:last-child, .el-table--olimps > tbody > tr > td:nth-child(4) {
+    color: rgb(22, 72, 140);
+    font-weight: 700;
+    text-align: center;
+    width: 3.00em;
+    border-left: 6px solid #ffffff;
+}
+.el-table--shootings > thead > tr > th {
+    padding-left: 0.92em;
+    color: #333;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-align: left;
+    padding-top: 0.22em;
+    padding-bottom: 0.5em;
+}
+.el-table--shootings > tbody > tr > td:first-child, .el-table--season > thead > tr > th {
+    background-color: #eff7f9;
+    color: rgb(22, 72, 140);
+    font-size: 0.88em;
+    font-weight: 700;
+    text-align: center;
+    width: 4.30em;
+    padding-left: 0em;
+    word-spacing: -4px;
+}
+.el-ball--total {
+    color: #333;
+    font-size: 0.88em;
+    font-weight: 700;
+}
+.col-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-bottom: 0.50em;
+}
+.el-ball--points {
+    color: #333333;
+    font-size: 0.75em;
+    font-weight: 500;
+    margin-left: 0em;
+}
+.el-table--info > tbody > tr > td:nth-child(2) img {
+        vertical-align: baseline;
+}
+.el-table--shootings > tbody > tr > td, .el-table--season > tbody > tr > td {
+    border-left: 1px solid #e4eaf2;
+    border-top: 1px solid #e4eaf2;
+    padding-top: 0.22em;
+    padding-bottom: 0.22em;
+    padding-left: 0.70em;
+}
+.el-table--season > tbody > tr > td {
+    color: #333;
+    font-size: 0.88em;
+    text-align: left;
+    }
+.el-table--season > tbody > tr > td {
+    color: #333;
+    font-size: 0.88em;
+    text-align: center;
+    padding-left: 0em;
+}
+.el-table--season > thead > tr > th {
+    padding-top: 0.22em;
+    padding-bottom: 0.22em;
+    border-left: 1px solid #cad6e6;
+    border-top: 1px solid #cad6e6;
+}
+.el-table--head.progress {
+    color: rgb(22, 72, 140);
+    font-size: 1.13em;
+    font-family: Arial;
+    font-weight: 700;
+    margin-bottom: 0.70em;
+}
+.el-carton--body > p {
+    font-size: 0.88em;
+    line-height: 1.6;
+    margin-bottom: 1.50em;
+}
+.el-table--shootings > tbody > tr > td, .el-table--season > tbody > tr > td {
+    border-left: 1px solid #e4eaf2;
+    border-top: 1px solid #e4eaf2;
+    padding-top: 0.22em;
+    padding-bottom: 0.22em;
+}
+    .el-table--shootings > tbody > tr > td:first-child, .el-table--season > thead > tr > th {
+    color: #000;
+} 
+.el-table--record > tbody > tr > td:not(:first-child) {
+    color: #002b71;
+}
+.el-table--record > tbody > tr > td:not(:first-child) {
+    color: #002b71;
+    padding-top: 0.22em;
+    padding-bottom: 0.22em;
+}
+.el-material--speech {
+    color: #002b71;
+    font-size: 0.88em;
+    font-weight: 600;
+}
+.el-material {
+    margin-bottom: 0.5em;
+}
+.el-material--date {
+    color: #333;
 }
   /* i really want this to be global */
