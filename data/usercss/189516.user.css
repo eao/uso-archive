@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `As in title`
-@version        20201028.18.58
+@version        202125.1.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -30,7 +30,7 @@
 body, html, #main, .header, .accordion, .accordion__content, .compatibility-section--light-embedded, .accordian-wrapper, .faq-question, .game-support, .background-white, .chatmix, .catalog-list-product__wrapper, .sorting-dropdown__label, .c015, .c01132, .form-field__label, .dashboard-body, .checkout-v3__body, .checkout-v3__container, .checkout-v3__container, .checkout-v3__wrapper, .form-field.form-field--checkbox .form-field__label {
 	background: #000;
 }
-body, .catalog-breadcrumbs__item, .sticky-nav__list-item, .reviews a, .reviews a:hover, .button--link, .sticky-nav__left, .button--link, .compatibility-section--light-embedded .compatibility-item, .accordion__toggle, .faq.faq--light .faq-section__answer, .faq.faq--light .faq-section__answer a, .faq.faq--light .faq-section__question, .faq.faq--light .faq-section__title, .faq.faq--light .title-divider, .faq.faq--light .view-more-link a, .breadcrumb-wrapper a, .button, .social-icons__link svg, .frontpage-grid__product-category a, .post-category, .blog-post__header-title a, .post__author, .post__read-time, .frontpage-grid__benefit-banner--theme-light .frontpage-grid__benefit-banner-inner, .content-group__theme-light, .prod-tile__link, .prod-tile__link:active, .prod-tile__link:focus, .prod-tile__link:hover, .dev-portal--center, .facet__header, .facet__collapse-arrow, .constraint, .constraint:hover .constraint__count, .catalog-list-product__link:active, .catalog-list-product__link:focus, .catalog-list-product__link:hover, .catalog-list-product__link, .true-tracking__body, .catalog-pagination__link, .dashboard-body .dashboard-nav__item-link, .blog-categories a, .checkout-progress__step--current {
+body, .catalog-breadcrumbs__item, .sticky-nav__list-item, .reviews a, .reviews a:hover, .button--link, .sticky-nav__left, .button--link, .compatibility-section--light-embedded .compatibility-item, .accordion__toggle, .faq.faq--light .faq-section__answer, .faq.faq--light .faq-section__answer a, .faq.faq--light .faq-section__question, .faq.faq--light .faq-section__title, .faq.faq--light .title-divider, .faq.faq--light .view-more-link a, .breadcrumb-wrapper a, .button, .social-icons__link svg, .frontpage-grid__product-category a, .post-category, .blog-post__header-title a, .post__author, .post__read-time, .frontpage-grid__benefit-banner--theme-light .frontpage-grid__benefit-banner-inner, .content-group__theme-light, .prod-tile__link, .prod-tile__link:active, .prod-tile__link:focus, .prod-tile__link:hover, .dev-portal--center, .facet__header, .facet__collapse-arrow, .constraint, .constraint:hover .constraint__count, .catalog-list-product__link:active, .catalog-list-product__link:focus, .catalog-list-product__link:hover, .catalog-list-product__link, .true-tracking__body, .catalog-pagination__link, .dashboard-body .dashboard-nav__item-link, .blog-categories a, .checkout-progress__step--current, .catalog-list-product__user-exclusive {
 	color: #e2e2e2;
 }
 .media-set__link:hover {
@@ -191,7 +191,7 @@ time.post-date {
 	background: #050505;
 }
 .catalog-list-item:active, .catalog-list-item:focus, .catalog-list-item:hover {
-	border-color: #fff;
+	border-color: #fff !important;
 }
 .sorting-dropdown__select {
 	background: #000;
@@ -527,9 +527,6 @@ input {
 	color: #858585;
 	border-color: #2b2b2b;
 }
-.row.row--gutters+.row.row--gutters:last-of-type {
-	filter: invert(100);
-}
 .grid.cmsplugin-grid--634204 {
 	background: #1a1a1a !important;
 }
@@ -551,5 +548,50 @@ input {
 }
 .form-field__help-text {
 	color: #858585;
+}
+.catalog-list-product__related-items .glide__arrow {
+	background: #000;
+	color: #fff;
+}
+.catalog-list-product__related-items .glide__arrow:hover {
+	background: #1b1b1b;
+}
+.catalog-list-product__related-items .glide__slide:hover {
+	border-color: #fff;
+}
+.sticky-nav.sticky-nav__theme-light {
+	background: #000;
+	color: #e2e2e2;
+}
+.sticky-nav.sticky-nav__theme-light .sticky-nav__list-item:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+.sticky-nav.sticky-nav__theme-light .sticky-nav-brand, .sticky-nav.sticky-nav__theme-light .sticky-nav__list-item {
+	color: #e2e2e2;
+}
+.prod-grid.grid--grey .catalog-list-product__wrapper {
+	background: #1b1b1b;
+}
+.prod-grid.grid--grey .catalog-list-product__image, .prod-grid.grid--grey .catalog-list-product__image img, .prod-grid.grid--grey .catalog-list-product__related-items .glide__slide {
+	background: #000;
+}
+.prod-grid.grid--grey .catalog-list-product__related-text span {
+	color: #a7a7a7;
+}
+.catalog-list-product__wrapper.wrapper--related:active, .catalog-list-product__wrapper.wrapper--related:focus, .catalog-list-product__wrapper.wrapper--related:hover {
+    border-color: #fff;
+    box-shadow: 0 5px 14px -5px rgba(255, 255, 255, .5);
+}
+.split-banner.split-banner__content-split--right.split-banner__columns-equal.split-banner--theme-light {
+	background: inherit !important;
+}
+}
+
+@-moz-document url-prefix("https://steelseries.com/gg/moments"), url-prefix("https://pl.steelseries.com/gg/moments"), url-prefix("https://pl.steelseries.com/gg"), url-prefix("https://steelseries.com/gg") {
+.grid__inner {
+	background: #0000 !important;
+}
+ .row.row--gutters+.row.row--gutters:last-of-type {
+	filter: inherit !important;
 }
 }

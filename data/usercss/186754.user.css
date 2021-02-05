@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Most credit goes to @anqxyr. I've only managed to make it work on all domains, fix every single visible error and many more. -Why didn't you send those fixes to @qnxyr?Discussion doesn't work for me, infinity loading.`
-@version        202122.20.35
+@version        202125.11.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -949,6 +949,62 @@ a:hover {
 	cursor: url(https://cdn.custom-cursor.com/db/7525/32/scp-logo-pointer.png), pointer!important;
 }
 /*End of Custom Cursor*/
+
+/*Internal Departments logos to .png*/
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/admin.png'] /*Administrative Department*/ {
+	content: url('https://i.imgur.com/6Z8MOO5.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/ecd.png'] /*Department of External Affairs (DEA)*/ {
+	content: url('https://i.imgur.com/oHdrCQR.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/eng.png'] /*Engineering and Technical Service Department*/ {
+	content: url('https://i.imgur.com/VqRn3AQ.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/com.png'] /*Ethics Committee*/ {
+	content: url('https://i.imgur.com/oKeePJQ.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/int.png'] /*Intelligence Agency*/ {
+	content: url('https://i.imgur.com/iRFR4ao.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/isd.png'] /*Internal Security Department*/ {
+	content: url('https://i.imgur.com/J3odaHE.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/log.png'] /*Logistics Department*/ {
+	content: url('https://i.imgur.com/IXsCsJy.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/ind.png'] /*Manufacturing Department*/ {
+	content: url('https://i.imgur.com/2xRtsdM.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/med.png'] /*Medical Department*/ {
+	content: url('https://i.imgur.com/AJoo8cD.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/mtf.png'] /*Mobile Task Forces*/ {
+	content: url('https://i.imgur.com/fJULmjj.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/sd.png'] /*Scientific Department*/ {
+	content: url('https://i.imgur.com/mwglVQN.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/sec.png'] /*Security Department*/ {
+	content: url('https://i.imgur.com/zjW7gZF.png');
+	filter: invert(1) brightness(50%);
+}
+[src='http://scp-ru.wdfiles.com/local--files/list-of-foundation-s-internal-departments/trib(1).png'] /*Internal Tribunal Department*/ {
+	content: url('https://i.imgur.com/89Qovjs.png');
+	filter: invert(1) brightness(50%);
+}
+/*End of Internal Departments logos to .png*/
+
 [style="color: black"] {
 	color: #999 !important;
 }
@@ -999,6 +1055,12 @@ div.objclassbar div.sideleft, div.objclassbar div.sideright {
 [style="border:solid 1px #999999; background:#E2F4FF; padding-left: 16px; padding-right: 16px;margin-bottom: 16px;"] {
 	background: #192126 !important;
 	border-color: #666 !important;
+}
+#page-content > p > span[style="font-size:90%;"]:after {
+	content: "Dark Theme by @qnxyr | Fixed and Maintained by @blyad.";
+}
+[style="border: 1px solid white; text-align: left;"] {
+	border-color: #191919 !important;
 }
 
 /*Replacing MTF logos to .png*/

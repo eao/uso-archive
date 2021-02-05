@@ -2,20 +2,26 @@
 @name           Facebook Rep the HUD
 @namespace      USO Archive
 @author         YAD
-@description    `working in progress(do not download yet)`
-@version        202124.20.8
+@description    `<i>Note:</i> <b>TURN ON DARK MODE</b>`
+@version        202125.12.6
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown yadbg "Background Image" {
 1 "Default*" <<<EOT https://i.ibb.co/fMr01Vc/redhud.jpg EOT;
+3 "Blue" <<<EOT https://i.ibb.co/TMNS0Qg/yadblue.jpg EOT;
+4 "Purple" <<<EOT https://i.ibb.co/m452PVS/yadpurple.jpg EOT;
+5 "Hot Pink" <<<EOT https://i.ibb.co/vB47sHd/yadhotpink.jpg EOT;
+6 "Orange" <<<EOT https://i.ibb.co/0h86rmw/yadorange.jpg EOT;
+7 "Green" <<<EOT https://i.ibb.co/zxtttvv/yadgreen.jpg EOT;
+2 "None" <<<EOT http://none EOT;
 
 	yadbg-custom-dropdown "Custom" <<<EOT /*[[yadbg-custom]]*\/ EOT;
 }
 @advanced text yadbg-custom "Background Image (Custom)" "https://example.com/image.png"
 @advanced color yadtheme "Theme Color" #C01F1F
-@advanced dropdown hudassets "HUD Assets" {
-	1 "ON*" <<<EOT background-size: 35%, 100%, 25%, 23%!important; EOT;
-4 "OFF" <<<EOT background-size: 0px, 100%, 0px, 0px!important; EOT;
+@advanced dropdown yadhud2 "HUD Assets(under maintenance)" {
+	1 "ON*" <<<EOT 20%,20%,20% EOT;
+2 "OFF" <<<EOT 0%0%,0% EOT;
 
 }
 
@@ -28,19 +34,19 @@
 
 
 body {
-    color: #ffffff!important;
-	background-color: #080618;
-        background: url(https://i.pinimg.com/originals/d8/70/d6/d870d6e859f739605289f0aa66c96abb.gif), 
+        color: #ffffff!important;
+    background: 
 	url(/*[[yadbg]]*/),
-    url(https://cdn.dribbble.com/users/230034/screenshots/1319843/radiohalo-800.gif),url(https://i.ibb.co/VMnJx9y/data.gif)!important;
+	url(https://i.ibb.co/gMCVggK/yadright.gif),
+	url(https://i.ibb.co/FwkpP7B/yadleft.gif),
+	url(https://i.ibb.co/VMnJx9y/data.gif) #080618!important;
 	background-attachment:fixed!important;
 	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat!important;
-	background-position: 108% 50%, center, left, 50% 95%!important;
+	background-position: center, 99% 50%, 2% 50%, 50% 95%!important;
 	background-blend-mode: screen!important;
+        background-size: 100%, /*[[yadhud2]]*/!important
 }
-body {
-        /*[[hudassets]]*/
-}
+
 a {
     color: #fff;
 }
@@ -64,7 +70,7 @@ path[d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16
 }
 ._6luv {/*form*/
     background-color: #ffffff21;
-    box-shadow: 0px 0px 0px 1px #ffffff73;
+    box-shadow: 0px 0px 0px 1px /*[[yadtheme]]*/4a;
 }
 ._4-u8 {
     background-color: #ffffff21;
@@ -74,7 +80,7 @@ path[d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16
 }
 ._csi ._1gb4 {/*notif*/
     background-color: #18191ad4;
-	box-shadow: 0px 0px 0px 1px #ffffff73;
+	box-shadow: 0px 0px 0px 1px /*[[yadtheme]]*/4a;
 }
 ._1gax {/*add account*/
     align-items: center;
@@ -114,7 +120,7 @@ path[d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16
 
 ._6s5d {/*background*/
     -webkit-font-smoothing: antialiased;
-	background-color: #000!important;	
+	background-color: #14141a!important;	
 }
 
 .qsy8amke {/*2nd bg*/
@@ -143,7 +149,7 @@ path[d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16
     background-color: #27272766;
 }
 .nwpbqux9 {
-    box-shadow:inset 0 0 0 0.5px #ffffff4d;
+    box-shadow:inset 0 0 0 1px /*[[yadtheme]]*/4d;
     background-color: #1a2637ad;
 	backdrop-filter: blur(2px)
 }
@@ -173,7 +179,7 @@ path[d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16
     transition-timing-function: var(--fds-animation-fade-in);
     background-color: #1a2637ad;
     border-radius: 10px;
-    box-shadow:inset 0 0 0 0.3px #ffffffeb;
+    box-shadow:inset 0 0 0 0.3px /*[[yadtheme]]*/eb;
 	backdrop-filter: blur(2px);
 	color: #fff!important
 }
@@ -186,19 +192,19 @@ path[d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16
     background: linear-gradient(
 0deg
 , #1a2637ad 25%, /*[[yadtheme]]*/4a 80%);
-	box-shadow:inset 0 0 0 1px #00f9ff3d;
+	box-shadow:inset 0 0 0 1px /*[[yadtheme]]*/3d;
 	border-radius: 10px;
 	backdrop-filter: blur(2px)
 }
 
 .gky8063y {/*notif*/
     background-color: #3434347a;
-	box-shadow: 0px 0px 0px 1px #ffffff4d
+	box-shadow: 0px 0px 0px 1px /*[[yadtheme]]*/4d
 }
 
 div.j83agx80.oo9gr5id.buofh1pr.ni8dbmo4.stjgntxs.cxgpxx05.dflh9lhu.sj5x9vvc.scb9dxdr {
 	background-color: #1a1a1a9e;
-	box-shadow:inset 0px 0px 0px 1px #3b3b3b
+	box-shadow:inset 0px 0px 0px 1px /*[[yadtheme]]*/4a
 }
 /*online ring*/
 .s06bi357 {
@@ -240,7 +246,7 @@ div.j83agx80.oo9gr5id.buofh1pr.ni8dbmo4.stjgntxs.cxgpxx05.dflh9lhu.sj5x9vvc.scb9
 }
 .ooq845xs {
     border-bottom-color: #f2f7ff00;
-	box-shadow: 0px 0px 9px 1px #fff
+	box-shadow: 0px 0px 9px 1px /*[[yadtheme]]*/4a
 }
 .eltiug27 {
     fill: #14a7d5;
@@ -289,13 +295,13 @@ div.j83agx80.oo9gr5id.buofh1pr.ni8dbmo4.stjgntxs.cxgpxx05.dflh9lhu.sj5x9vvc.scb9
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #414141;
-  box-shadow: 0 0 3px 2px #fff;
+  box-shadow: 0 0 3px 2px /*[[yadtheme]]*/4a
 }
 
 /*buttons*/
 .s1i5eluu {
     background-color: #7f7f7f40;
-	box-shadow: 0 0 0px 1px #ffffff40;
+	box-shadow: 0 0 0px 1px /*[[yadtheme]]*/4a
 }
 ._8icy ._6lth {
     background-color: #ffffff3d;
@@ -315,7 +321,12 @@ div.j83agx80.oo9gr5id.buofh1pr.ni8dbmo4.stjgntxs.cxgpxx05.dflh9lhu.sj5x9vvc.scb9
 /*option circle*/
 .hn33210v {
     background-color: #18131c8f;
-	box-shadow: 0 0 0px 1px #ffffff40;
+	box-shadow: 0 0 0px 1px /*[[yadtheme]]*/4a
+}
+
+/*search outline*/
+.b3i9ofy5 {
+    box-shadow: 0px 0px 0px 1px /*[[yadtheme]]*/4a
 }
 
 /*icons*/
@@ -433,9 +444,18 @@ img[src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/2uPlV4oORjU.png"] {
     content: url(https://img.icons8.com/wired/54/ffffff/save-all.png);
 	opacity: 0.5
 }
-
-
-
+/*logout*/
+._2e9n, ._4-xi, ._5p3j {
+    color: #a2a2a2;
+}
+._x5o .uiInputLabel label.uiInputLabelLabel {
+    color: #fff;
+}
+._2s1x ._2s1y {
+    background-color: #261f1f87;
+    border-bottom: 1px solid #ffffff2e;
+    color: #fff;
+}
 
 
 

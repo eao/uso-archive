@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        2021115.12.27
+@version        202125.11.14
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -115,7 +115,7 @@
 .css-1imiysb div div div div[data-bn-type="text"], .css-1nqr2qp, .css-16nd02l input, .css-gymlse {
     color: #fff !important;
 }
-.css-9cwl6c, .css-vurnku[data-type="table-td"] {
+.css-9cwl6c, .css-vurnku[data-type="table-td"], .css-158vs6f {
     color: #76808F !important;
 }
 }
@@ -199,13 +199,13 @@
 
 @-moz-document regexp("https://www.binance.com/.+/earn.*") {
 /* Binance Earn */
- .css-1hawo8q, .css-1j562lq, .css-sfadok, .css-17a0d0u, .css-12719hn, .css-1bitln1, .css-mn0qrq {
+ .css-1hawo8q, .css-1j562lq, .css-sfadok, .css-17a0d0u, .css-12719hn, .css-1bitln1, .css-mn0qrq, .css-oxf8ce, .css-15yg91t {
     background-color: #202020 !important;
 }
 .css-pjvc4s, .css-1hawo8q .content .tabs {
     background-color: #111 !important;
 }
-.css-1hawo8q .heading .main, .css-9aixja, .css-1hawo8q .content .tabs .item .title, .css-sfadok .coin, .css-17a0d0u .coin, .css-1bitln1 .coin, .css-12719hn .title, .css-1k5sh5n, .css-rz32rr, .css-mn0qrq .coin {
+.css-1hawo8q .heading .main, .css-9aixja, .css-1hawo8q .content .tabs .item .title, .css-sfadok .coin, .css-17a0d0u .coin, .css-1bitln1 .coin, .css-12719hn .title, .css-1k5sh5n, .css-rz32rr, .css-mn0qrq .coin, .css-oxf8ce .heading .main {
     color: #fff !important;
 }
 .css-1hawo8q .content .tabs .item.active .title {

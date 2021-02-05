@@ -1,9 +1,9 @@
 /* ==UserStyle==
-@name           Ecosia - Dark theme 2020
+@name           Ecosia - Dark theme 2021
 @namespace      USO Archive
 @author         FocusOnTheSun
-@description    `<strong>Ecosia dark theme - verified and working 2020</strong>A dark theme for the Ecosia search engine & services. Uses lightweight CSS to ensure a seamless dark theme experience.<strong>Compatibility:</strong> • Tested on browsers: Firefox, Chrome, Edge, Opera • Works with Ecosia mobile-mode • Tested on 'Stylish' and 'Stylus' extensions<strong>Currently works with the following Ecosia sites:</strong> • www.ecosia.org • info.ecosia.org • blog.ecosia.org<strong>If you find any issues while using this theme, please report the issue and we will fix it as soon as possible.</strong><strong>Development Team:</strong> • FocusOnTheSun - Search engine dark theme • Freaky Lord - Information site, blogs & consultancy`
-@version        2021119.9.38
+@description    `<strong>Ecosia dark theme - verified and working 2021</strong>A dark theme for the Ecosia search engine & services. Uses lightweight CSS to ensure a seamless dark theme experience.<strong>Compatibility:</strong> • Tested on browsers: Firefox, Chrome, Edge, Opera • Works with Ecosia mobile-mode • Tested on 'Stylish' and 'Stylus' extensions<strong>Currently works with the following Ecosia sites:</strong> • www.ecosia.org • info.ecosia.org • blog.ecosia.org<strong>If you find any issues while using this theme, please report the issue and we will fix it as soon as possible.</strong><strong>Development Team:</strong> • FocusOnTheSun - Search engine dark theme • Freaky Lord - Information site, blogs & consultancy`
+@version        202125.10.19
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -205,6 +205,9 @@ body {
 	color: var(--text) !important;
 	border: 1px solid var(--border);
 }
+[title="Wikipedia"] path {
+    fill: #CCCCCC !important;
+}
 
 /* Extra results buttons */
 .result-media .slider-control {
@@ -367,6 +370,9 @@ body {
 .entity-disambiguation-text, .entity-disambiguation-headline, .entity-title, .entity p {
     color: var(--text);
 }
+.card-top {
+    background: var(--darker-background);
+}
 
 /* Sidebar shop */
 .sidebar-product-ad-container {
@@ -426,16 +432,16 @@ body {
 }
 
 /* Search bar */
-.search-form, .input {
+.search-form, input {
     background: #292929 !important;
     color: var(--text) !important;
 }
 
 /* Search suggestions */
-.suggestions {
+.search-form__suggestions-list {
     background: var(--form) !important;
 }
-.suggestions a {
+.search-form__suggestions-list a {
     color: var(--text) !important;
 }
 .suggestion-item.selected {
@@ -493,6 +499,14 @@ body {
     color: #949494 !important;
 }
 
+/* Navbar dropdowns (maps, more) */
+.dropdown li:hover {
+    background: var(--lighter-background) !important;
+}
+[data-track-id="more_wikipedia"] path, [data-track-id="more_amazon"] path {
+    fill: white;
+}
+
 /* Pill buttons */
 .pill {
     background: var(--dark-background) !important;
@@ -516,6 +530,11 @@ body {
     color: var(--text) !important;
 }
 .notifications-dropdown a:hover {
+    background: var(--lighter-background) !important;
+}
+
+/* Hamburger dropdown */
+.main-nav-menu li:hover {
     background: var(--lighter-background) !important;
 }
 
@@ -571,13 +590,13 @@ body {
     background: #272727 !important;
     color: var(--text) !important;
 }
-.suggestions-wrapper li, .suggestion-list {
+.search-form__suggestions-list li {
     background: var(--form) !important;
 }
-.suggestions-wrapper li:hover {
+.search-form__suggestions-list li:hover {
     background: var(--lighter-background) !important;
 }
-.suggestions-wrapper a {
+.search-form__suggestions-list a {
     color: var(--text) !important;
 }
 
@@ -747,11 +766,12 @@ body {
     box-shadow: 0 0px 7px 0 rgba(255, 255, 255, 0.2);
     background: var(--form);
 }
-.container {
+.container, .search-section__content, .above-fold-cta-section {
     background: var(--dark-background) !important;
+    color: var(--text) !important;
 }
-.info-section__content {
-    color: var(--text);
+.info-section__content, h2 {
+    color: var(--text) !important;
 }
 .info-section__background path {
     color: var(--form) !important;
@@ -817,7 +837,7 @@ body {
     border: 1px solid var(--lighter-background);
 }
 .main-nav-menu li:hover {
-    background: var(--lighter-background);
+    background: var(--lighter-background) !important;
 }
 /* ---------- */
 
@@ -833,14 +853,20 @@ body {
 .suggestion-list {
     background: var(--form) !important;
 }
-.suggestions-wrapper li {
+.search-form__suggestions li {
     background: var(--form) !important;
 }
-.suggestions-wrapper li:hover {
+.search-form__suggestions li:hover {
     background: var(--lighter-background) !important;
 }
-.suggestions-wrapper a {
+.search-form__suggestions a {
     color: var(--text) !important;
+}
+
+/* MOBILE MODE */
+/* Sidebar */
+.panel__content {
+	background: var(--form) !important;
 }
 }
 
