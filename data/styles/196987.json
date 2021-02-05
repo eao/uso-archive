@@ -1,0 +1,93 @@
+{
+  "id": 196987,
+  "info": {
+    "name": "Facebook Rep the HUD",
+    "description": "working in progress(do not download yet)",
+    "additionalInfo": null,
+    "format": "uso",
+    "category": "facebook",
+    "createdAt": "2021-02-04T17:47:13.000Z",
+    "updatedAt": "2021-02-04T20:08:47.000Z",
+    "license": "NO-REDISTRIBUTION",
+    "author": {
+      "id": 1047658,
+      "name": "YAD",
+      "paypalEmail": "earlyzeven@gmail.com"
+    }
+  },
+  "stats": {
+    "installs": {
+      "total": 0,
+      "weekly": 0
+    }
+  },
+  "screenshots": {
+    "main": {
+      "name": "196987_after.gif",
+      "archived": true
+    },
+    "additional": [
+      {
+        "name": "196987_additional_37704.jpeg",
+        "archived": true
+      }
+    ]
+  },
+  "discussions": {
+    "stats": {
+      "discussionsCount": 0,
+      "commentsCount": 0
+    },
+    "data": []
+  },
+  "style": {
+    "css": "@-moz-document domain(\"www.facebook.com\") {\r\n\r\n/********************************/\r\n /*Facebook Rep the HUD by YAD*/\r\n/********************************/\r\n\r\n\r\nbody {\r\n    color: #ffffff!important;\r\n\tbackground-color: #080618;\r\n        background: url(https://i.pinimg.com/originals/d8/70/d6/d870d6e859f739605289f0aa66c96abb.gif), \r\n\turl(/*[[yadbg]]*/),\r\n    url(https://cdn.dribbble.com/users/230034/screenshots/1319843/radiohalo-800.gif),url(https://i.ibb.co/VMnJx9y/data.gif)!important;\r\n\tbackground-attachment:fixed!important;\r\n\tbackground-repeat: no-repeat, no-repeat, no-repeat, no-repeat!important;\r\n\tbackground-position: 108% 50%, center, left, 50% 95%!important;\r\n\tbackground-blend-mode: screen!important;\r\n}\r\nbody {\r\n        /*[[hudassets]]*/\r\n}\r\na {\r\n    color: #fff;\r\n}\r\n\r\npath[d=\"M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z\"] {\r\n\tfill: #ffffff21\r\n}\r\n/*login*/\r\n._95k9 {\r\n    background: #f0f2f500;\r\n    min-width: 500px;\r\n}\r\n#facebook ._8esf ._8e63 {\r\n    color: #cfcfcfed;\r\n}\r\n#facebook ._8esf ._58mk {\r\n    color: #eaeaeaf2;\r\n}\r\n#facebook ._8esj._8esf ._8eso {\r\n    color: #ffffff8a;\r\n}\r\n._6luv {/*form*/\r\n    background-color: #ffffff21;\r\n    box-shadow: 0px 0px 0px 1px #ffffff73;\r\n}\r\n._4-u8 {\r\n    background-color: #ffffff21;\r\n}\r\n._4-u5 {/*find your account*/\r\n    background-color: #e9ebee00;\r\n}\r\n._csi ._1gb4 {/*notif*/\r\n    background-color: #18191ad4;\r\n\tbox-shadow: 0px 0px 0px 1px #ffffff73;\r\n}\r\n._1gax {/*add account*/\r\n    align-items: center;\r\n    background-color: #95959557;\r\n}\r\n._1gaz {\r\n    background-color: #3d464f91;\r\n\tcolor: #fff\r\n}\r\n._97vt ._30ny {/*failed login*/\r\n    background: #f0f5f300;\r\n}\r\n._53jh {\r\n    background-color: #f0f2f500;\r\n    background-image: linear-gradient(#18191a78, #3d464f4f 50%);\r\n    border-bottom: 1px solid #ffffff40;\r\n}\r\n\r\n\r\n.cddn0xzi {/*top bar*/\r\n    background-color: #1a2637ad;\r\n\t\r\n\t border-bottom: 1px solid #ffffff4a;\r\n\t box-shadow: 0px 4px 0px 1px #00000085;\r\n\t backdrop-filter: blur(5px);\r\n\tbackground-blend-mode: screen;\r\n}\r\n\r\n.fer614ym {/*columns*/\r\n    background: linear-gradient(\r\n-2deg\r\n, #1a2637ad 25%, /*[[yadtheme]]*/4a 80%);\r\n    border-left: 1px solid #ffffff4a;\r\n    border-right: 1px solid #ffffff4a;\r\n\tbackground-blend-mode: screen!important;\r\n}\r\n\r\n._6s5d {/*background*/\r\n    -webkit-font-smoothing: antialiased;\r\n\tbackground-color: #000!important;\t\r\n}\r\n\r\n.qsy8amke {/*2nd bg*/\r\n    background-color: #18191ad1;\r\n}\r\n.qsy8amke {/*3rd bg*/\r\n    background-color: #14141487;\r\n}\r\n.tqsryivl {/*media bg*/\r\n    background-color: #1a26373b;\r\n}\r\n.nred35xi {/*msgr bg*/\r\n    background-color: #161617f0\r\n}\r\n\r\n.hybvsw6c {/*poster*/\r\n    background:  linear-gradient(\r\n-0deg\r\n, #18131cb5 25%, /*[[yadtheme]]*/4a 80%);\r\n}\r\n.cwj9ozl2 {\r\n    background-color: #0000;\r\n\tbackdrop-filter: blur(0px)\r\n}\r\n.b3i9ofy5 {/*comment and search*/\r\n    background-color: #27272766;\r\n}\r\n.nwpbqux9 {\r\n    box-shadow:inset 0 0 0 0.5px #ffffff4d;\r\n    background-color: #1a2637ad;\r\n\tbackdrop-filter: blur(2px)\r\n}\r\n.oo9gr5id {\r\n    color: #fff;\r\n}\r\n/*box pointer*/\r\n.b74d5cxt {\r\n    border-left-color: #ffffffbf;\r\n}\r\n.j7g94pet {\r\n    border-bottom-color: #ffffffbf;\r\n}\r\n.np69z8it {\r\n    border-top-color: #ffffffbf;\r\n}\r\n.et4y5ytx {\r\n    border-right-color: #ffffffbf;\r\n}\r\n\r\n\r\n/********************************/\r\n /*Facebook Rep the HUD by YAD*/\r\n/********************************/\r\n\r\n.s13u9afw {/*profile tooltip*/\r\n    transition-timing-function: var(--fds-animation-fade-in);\r\n    background-color: #1a2637ad;\r\n    border-radius: 10px;\r\n    box-shadow:inset 0 0 0 0.3px #ffffffeb;\r\n\tbackdrop-filter: blur(2px);\r\n\tcolor: #fff!important\r\n}\r\n\r\n.ja2t1vim {\r\n   backdrop-filter: blur(2px)\r\n}\r\n\r\n.rp3cc1xn::before {/*search drop*/\r\n    background: linear-gradient(\r\n0deg\r\n, #1a2637ad 25%, /*[[yadtheme]]*/4a 80%);\r\n\tbox-shadow:inset 0 0 0 1px #00f9ff3d;\r\n\tborder-radius: 10px;\r\n\tbackdrop-filter: blur(2px)\r\n}\r\n\r\n.gky8063y {/*notif*/\r\n    background-color: #3434347a;\r\n\tbox-shadow: 0px 0px 0px 1px #ffffff4d\r\n}\r\n\r\ndiv.j83agx80.oo9gr5id.buofh1pr.ni8dbmo4.stjgntxs.cxgpxx05.dflh9lhu.sj5x9vvc.scb9dxdr {\r\n\tbackground-color: #1a1a1a9e;\r\n\tbox-shadow:inset 0px 0px 0px 1px #3b3b3b\r\n}\r\n/*online ring*/\r\n.s06bi357 {\r\n    stroke: #ffffffbf;\r\n\tanimation: yadonline 0.6s ease-in-out infinite both alternate;\r\n}\r\n.gjkn0k4t {\r\n    stroke-width: 4;\r\n}\r\n@keyframes yadonline {\r\n\t0% {stroke-width: 20;}\r\n}\r\n\r\n/*loading skeleton*/\r\n.g6srhlxm {\r\n    background-color: #ffffffbf;\r\n}\r\n\r\n/*active page icon*/\r\n.aaxa7vy3 {\r\n    fill: #ffffff;\r\n    filter: drop-shadow(2px 4px 6px #fff0);\r\n    animation-name: yadglow;\r\n    animation-duration: 3s;\r\n    animation-iteration-count: infinite;\r\n    animation-delay: 4s;\r\n}\r\n@keyframes yadglow {\r\n  0% {transform: rotate3d(0, 1, 0, 0deg); fill: #fde6ff;}\r\n100% {transform: rotate3d(0, 1, 0, 360deg); fill: #fde6ff;}\r\n}\r\n\r\n\r\n\r\n\r\n/*active page icon*/\r\n.aaxa7vy3 {\r\n    fill: #ffffffbf;\r\n}\r\n.ooq845xs {\r\n    border-bottom-color: #f2f7ff00;\r\n\tbox-shadow: 0px 0px 9px 1px #fff\r\n}\r\n.eltiug27 {\r\n    fill: #14a7d5;\r\n}\r\n\r\n.nfl8ryma {/*icon bg*/\r\n    background-color: #1a263775;\r\n}\r\n.is6700om {/*notif dot*/\r\n    background-color: #00ddffc7;\r\n}\r\n\r\n/*dp circle*/\r\n.ng4oes9w {\r\n    border-top-color: #ffffff21;\r\n}\r\n.og13rbbo {\r\n    border-left-color: #fff;\r\n}\r\n.nxp5a7ae {\r\n    border-bottom-color: #ffffff21;\r\n}\r\n.epui8hbc {\r\n    border-right-color: #fff;\r\n}\r\n\r\n/*scrollbar*/\r\n#contentWrapper.iron-dropdown > * {\r\n    overflow: hidden;  \r\n}\r\n#contentWrapper.iron-dropdown > *:hover {\r\n    overflow: auto;\r\n}\r\n::-webkit-scrollbar {\r\n  width: 7px;\r\n}\r\n/* Track */\r\n::-webkit-scrollbar-track {\r\n  background: #171717; \r\n}\r\n/* Handle */\r\n::-webkit-scrollbar-thumb {\r\n  background: #403f3f99; \r\n  border-radius: 10px;\r\n}\r\n/* Handle on hover */\r\n::-webkit-scrollbar-thumb:hover {\r\n  background: #414141;\r\n  box-shadow: 0 0 3px 2px #fff;\r\n}\r\n\r\n/*buttons*/\r\n.s1i5eluu {\r\n    background-color: #7f7f7f40;\r\n\tbox-shadow: 0 0 0px 1px #ffffff40;\r\n}\r\n._8icy ._6lth {\r\n    background-color: #ffffff3d;\r\n}\r\n._8icy._9ah- ._6lth:hover {\r\n\tbackground-color: #ffffff82;\r\n}\r\n._4jy2 {/*create*/\r\n    background-color: #ffffff3d;\r\n    border-color: #fff;\r\n}\r\n._4jy2:hover {/*create*/\r\n    background-color: #00ddffc7;\r\n    border-color: #fff;\r\n}\r\n\r\n/*option circle*/\r\n.hn33210v {\r\n    background-color: #18131c8f;\r\n\tbox-shadow: 0 0 0px 1px #ffffff40;\r\n}\r\n\r\n/*icons*/\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yB/r/squBo4GNUfh.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/coronavirus.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/-XF4FQcre_i.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/find-user-male.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/mk4dH3FK0jT.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/crowd.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/9BDqQflVfXI.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/small-business.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/A1HlI2LVo58.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/video.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yv/r/QAyfjudAqqG.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/event-accepted.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yf/r/GA7Y4WRJMp8.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/wedding-photo.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yl/r/_JPdPzLmp9j.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/commercial.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/qR88GIDM38e.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/combo-chart.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/x1JqqPh_PS1.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/stock-share.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/6Wl4cU2AiL8.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/student-male.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yc/r/y7p-dcTnGV_.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/high-priority.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yy/r/xH4w-lk44we.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/get-cash.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yP/r/Zy9sJGThmCS.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/star.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/WAO9fJenkhr.png\"] {\r\n    content: url(https://img.icons8.com/wired/54/ffffff/user-group-man-woman.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yA/r/A2tHTy6ibgT.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/trust.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yn/r/XEWvxf1LQAG.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/controller.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/uGfRd5KPhOI.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/facebook-gaming.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/U_sRIAvZ0k2.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/new-job.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yG/r/dghnujhRAoU.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/video-call.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/YF1bztyGuX-.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/facebook-messenger.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/y2/r/HBcx-giUZ2Y.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/facebook-messenger.png);\r\n\tfilter: hue-rotate(112deg);\r\n\ttransform: rotate(660deg);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/y1/r/l6e-P1BHJLy.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/time-machine.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/aD733-bMVVs.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/sell.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yZ/r/i7hepQ2OeZg.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/flag.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yI/r/WcCzeboYevF.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/stocks.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/kULMG0uFcEQ.png\"] {\r\n    content: url(https://img.icons8.com/ffffff/54/partly-cloudy-day.png);\r\n\topacity: 0.5\r\n}\r\nimg[src=\"https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/2uPlV4oORjU.png\"] {\r\n    content: url(https://img.icons8.com/wired/54/ffffff/save-all.png);\r\n\topacity: 0.5\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n/********************************/\r\n /*Facebook Rep the HUD by YAD*/\r\n/********************************/\r\n}",
+    "settings": [
+      {
+        "key": "yadbg",
+        "label": "Background Image",
+        "type": "image",
+        "options": [
+          {
+            "key": "1",
+            "label": "Default",
+            "value": "https://i.ibb.co/fMr01Vc/redhud.jpg",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "yadtheme",
+        "label": "Theme Color",
+        "type": "color",
+        "options": [
+          {
+            "key": "placeholder",
+            "label": "placeholder",
+            "value": "#C01F1F",
+            "default": true
+          }
+        ]
+      },
+      {
+        "key": "hudassets",
+        "label": "HUD Assets",
+        "type": "dropdown",
+        "options": [
+          {
+            "key": "1",
+            "label": "ON",
+            "value": "background-size: 35%, 100%, 25%, 23%!important;",
+            "default": true
+          },
+          {
+            "key": "4",
+            "label": "OFF",
+            "value": "background-size: 0px, 100%, 0px, 0px!important;",
+            "default": false
+          }
+        ]
+      }
+    ]
+  }
+}

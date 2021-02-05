@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Tritium Decay
 @description    `This theme tries to make the new Twitter design look less different from its previous design.The top bar is brought back and colors of things are made to match the older twitter. There is support for all default colour schemes.If you like it, please leave a positive rating.Contact me on  <a href="https://twitter.com/TritiumDecay">My Twitter</a> if you wish to suggest a change.Screenshots<a href="https://userstyles.org/style_screenshots/173651_additional_36525.jpeg?r=1591152038">Dark Mode</a><a href="https://userstyles.org/style_screenshots/173651_additional_36637.jpeg?r=1592244973">Profile Backgrounds</a><a href="https://userstyles.org/style_screenshots/173651_additional_36528.jpeg?r=1591152038">Light Mode</a><a href="https://userstyles.org/style_screenshots/173651_additional_36529.jpeg?r=1591152038">Lights Out Mode</a>-Basically all languages are supported`
-@version        2021120.2.33
+@version        202124.17.52
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced dropdown profile "Expanded Profile Banners" {
@@ -306,7 +306,8 @@ trends2 "Show trends (Not maintained)" <<<EOT  EOT;
     --bgcolour: rgb(21, 32, 43) !important;
 }
 
-[style*="background-color: rgb(21, 32, 43);"] {
+
+[style*="background-color: rgb(21, 32, 43);"], [style*="background-color: #15202B;"] {
 	--headercolour: rgb(28, 41, 56) !important;
     --bgcolour: rgb(21, 32, 43) !important;
     --bg2colour: rgb(16, 23, 30) !important;
@@ -317,7 +318,7 @@ trends2 "Show trends (Not maintained)" <<<EOT  EOT;
 }
 
 
-[style*="background-color: rgb(255, 255, 255);"] {
+[style*="background-color: rgb(255, 255, 255);"], [style*="background-color: #FFFFFF;"] {
 	--headercolour: rgb(255, 255, 255) !important;
     --bgcolour: rgb(255, 255, 255) !important;
     --bg2colour: rgb(230, 236, 240) !important;
@@ -327,7 +328,8 @@ trends2 "Show trends (Not maintained)" <<<EOT  EOT;
     --border2colour: rgb(230, 236, 240) !important;
 }
 
-[style*="background-color: rgb(0, 0, 0);"] {
+
+[style*="background-color: rgb(0, 0, 0);"], [style*="background-color: #000000;"] {
 	--headercolour: rgb(0, 0, 0) !important;
     --bgcolour: rgb(0, 0, 0) !important;
     --bg2colour: rgb(0, 0, 0) !important;
@@ -1693,7 +1695,7 @@ h1.r-1awozwy {
 
 [class="css-1dbjc4n r-1jgb5lz r-1ye8kvj r-13qz1uu"] > [role="navigation"]{
 	position: sticky!important;
-    top: 98px!important;
+    top: 97px!important;
     z-index:9000!important;
     border-bottom-width: 0px!important;
     border-color: var(--bgcolour)!important;

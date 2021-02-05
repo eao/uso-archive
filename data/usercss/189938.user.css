@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Brian Khanzadeh
 @description    `I wasn't a big fan of the available Wired themes, so I combined some of them and fixed their bugs`
-@version        2020126.1.14
+@version        202124.16.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -164,6 +164,9 @@ code,kbd,pre,samp, .newsletter-sign-up-component__email-input {
 }
 /*MAINPAGE*/
 /*ARTICLE*/
+.content-header__row {
+    background: #181818 !important;
+}
 .standard-navigation,main,.page--article, .link-banner--standard-navigation{
     background-color: #181818;
 }

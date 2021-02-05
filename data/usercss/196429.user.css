@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         rotary heart
 @description    `Dark theme for the forums`
-@version        202122.0.30
+@version        202124.21.11
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -207,5 +207,8 @@
   }
 .tagItem {
     background: #666;
+}
+.fr-box.fr-basic .fr-element {
+    color: #fff;
 }
 }

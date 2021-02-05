@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         alije
 @description    `тёмная тема для школьного портала московской области в стиле flat`
-@version        202123.22.5
+@version        202124.22.18
 @license        CC-BY-SA-4.0
 @preprocessor   uso
 @advanced dropdown a-color "ссылки" {
@@ -605,5 +605,8 @@ tspan {
 }
 .grid.marks a.dLO {
     color: #89b77d;
+}
+  .s2 {
+    color: #9e9e9e;
 }
 }

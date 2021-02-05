@@ -2,8 +2,8 @@
 @name           Gamekult Dark & Gold - Wider
 @namespace      USO Archive
 @author         Ryousuke
-@description    `Version largeUpdated: 30/01/2021`
-@version        2021130.15.49
+@description    `Version largeUpdated: 04/02/2021`
+@version        202124.16.3
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -2131,6 +2131,25 @@ section.gk__panel .gk__text__container {
 }
 .ed__buyersguide__container + .ed__buyersguide__container {
     border-color: #000;
+}
+.row--nmrg.middle-xs {
+    padding-left: 0em;
+}
+ul.col-md-5.col-xs-12.start-sm.start-xs.end-md.pm__header__features {
+    max-width: 25%;
+    -webkit-flex-basis: 25%;
+    -ms-flex-preferred-size: 25%;
+    flex-basis: 25%;
+}
+h1.col-md-7.col-sm-12.col-xs-12.pm__text__t3 {
+    max-width: 75%;
+    -webkit-flex-basis: 75%;
+    -ms-flex-preferred-size: 75%;
+    flex-basis: 75%;
+}
+img.pm__show__header__logo {
+    margin: 1rem auto 1rem;
+    max-height: 135px;
 }
 /*comparateur prix*/
 .gk__pt__tbs__lst__itm:hover {

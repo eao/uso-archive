@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Alecsander Camilo
 @description    `Tema Dark para Globo.com e O Globo, incluindo Esportes, Época, Extra, Gshow, Quem, Blogs do oGlobo, TechTudo e mais.`
-@version        2021122.21.57
+@version        202124.14.18
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -21,7 +21,7 @@ body, .mc-bottom, .full-width, .diretorio-home, #article > section > section, .c
     .article-feed-item__title.article-feed-item__title--esp-pub a, h2.franja-agrupador-quadruplo__header, body > section:nth-child(11) > header > h2 > span, section.franja-vertical.hui-container.hui-spacing > div > h2, 
     div.franja-vertical__coluna__content > div > div > a > div > div > span, section:nth-child(14) > div.franja-agrupador-quadruplo__content > div > div > a > h3, section:nth-child(16) > div.franja-agrupador-quadruplo__content > div > div > a > div > div > span, 
     h3.vitrine-globoplay__header-subtitle, h3.topglobocom__header-subtitle, #tns1-mw li::before, body > section:nth-child(16) > div.franja-agrupador-quadruplo__content > div > div > a > div > div > span,.highlight__subject-title.highlight__hat.highlight-font-subject-simple-article,
-    .highlight__title.homeui-tc-techtudo, body > div.footer_links > div > div > ul > li > a, body > section:nth-child(12) > header > h2 > span, section:nth-child(14) span, div.featured-text h4 a {
+    .highlight__title.homeui-tc-techtudo, body > div.footer_links > div > div > ul > li > a, body > section:nth-child(12) > header > h2 > span, .video-grid__header__title.with-border-bottom span {
         color: #BFBFBF;
     }
     :root {
