@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `Stylusを850px以下の幅で使用時、ウインドウ上部のメニューは邪魔になります。 管理画面・スタイル編集画面のこのメニューを簡素にしプルダウン化しました。 下部データ部のみがスクロールするフロートメニューで、インストールスタイルやセクション数が多い場合に重宝します。◎2画面を起動して比較修正する場合に、LT800の小幅モードは適したデザインです◎編集時にCSSコードを誤操作で失う事を防ぎ、ボタン配色で機能理解を補助する工夫◎暗配色・明配色の切換、編集ヘッダーのプルダウン抑止、などのオプション<br>このスタイルは Chrome / Firefox のStylusに共用です。 詳細は以下のページを参照ください。<br>     https://ameblo.jp/personwritep/theme-10105424967.html`
-@version        2020722.12.55
+@version        202126.5.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
-/* Stylus LT800 ver.2020.07.22 */
+/* Stylus LT800 ver.2021.02.06 */
 /* 共通設定 *******************************************/
 /* インターフェイス フォント指定 */
 .actions:lang(ja) *,
@@ -46,6 +46,7 @@ body {
 #header label,
 #faviconsHelp,
 #header span a,
+#toc,
 #lint table {
     color: var(--bgc6); }
 
@@ -130,7 +131,13 @@ body.all-styles-hidden-by-filters:after {
 /* 検索・ソート */
 #search,
 #manage\.newUI\.sort {
-    border-radius: 4px;
+    color: var(--bgc6);
+    background: var(--bgc7); }
+
+#filters input::-webkit-input-placeholder {
+    color: var(--bgc6); }
+
+#searchMode {
     color: var(--bgc6);
     background: var(--bgc7); }
 
@@ -280,6 +287,12 @@ body.all-styles-hidden-by-filters:after {
 .disabled h2 .style-name-link {
     font-weight: bold; }
 
+.disabled h2 .style-name-link,
+.disabled .applies-to,
+.newUI .disabled.entry .svg-icon {
+    opacity: 0.5;
+    color: var(--bgc6); }
+
 /* 無効化表示 非表示 */
 .disabled h2::after {
     font-size: 0;
@@ -323,6 +336,9 @@ body.all-styles-hidden-by-filters:after {
 #manage-settings {
     display: block;
     padding: 1rem 0; }
+
+#stylus-manage .settings-column {
+    margin-top: 0; }
 
 /* リストフィルター */
 #filters {
@@ -384,26 +400,31 @@ body.all-styles-hidden-by-filters:after {
     width: 220px; }
 
 #stylus-manage #update-all {
-    margin: 6px 0 1em !important;
-    width: 100%;
-    border-radius: 4px;
-    background: var(--bgc4);
-    box-shadow: inset 0 0 0 1px var(--bgc3); }
+    margin: 0;
+    width: 100%; }
+
+.firefox #stylus-manage #update-all {
+    margin-bottom: 1em; }
 
 #apply-all-updates {
+    margin-top: 1em;
     height: auto;
     width: 100%;
     padding-right: 300px; }
 
 #update-all-no-updates {
     display: block;
-    padding: 8px 25px; }
+    margin: 1em 0 0;
+    padding: 8px 25px;
+    border-radius: 4px;
+    background: var(--bgc4);
+    box-shadow: inset 0 0 0 1px var(--bgc3); }
 
 #check-all-updates-force {
-    background: linear-gradient(#f00 0%, #ac0000 100%);
+    margin-top: -6px;
     height: auto;
     width: 100%;
-    margin-top: 0; }
+    background: linear-gradient(#f00 0%, #ac0000 100%); }
 
 /* 新しいスタイルを作成 */
 #add-style-wrapper {
@@ -414,6 +435,18 @@ body.all-styles-hidden-by-filters:after {
 
 #add-style-as-usercss-wrapper {
     display: inline-flex; }
+
+/* アクション */
+#actions summary {
+    display: none; }
+
+#manage-options-button {
+    position: absolute;
+    top: 95px;
+    left: 520px; }
+
+.firefox #manage-options-button {
+    position: unset; }
 
 /* 管理 オプション */
 #stylus-manage #options {
@@ -484,6 +517,9 @@ body.all-styles-hidden-by-filters:after {
 #backup > p {
     margin: 0;
     width: 230px; }
+
+#backup #backup-buttons {
+    flex-wrap: nowrap; }
 
 /* スタイルを取得 */
 #manage-text {
@@ -584,6 +620,13 @@ body.all-styles-hidden-by-filters:after {
 .firefox #options #editor\.keyMap optgroup {
     background: #aaa; }
 
+/* セクションリスト */
+#sections-list #toc li {
+    font-size: small; }
+
+#sections-list #toc li.current:not(:only-child) {
+    color: #fc0; }
+
 /* コードエラー警告 */
 #lint {
     margin-top: 1rem;
@@ -601,20 +644,23 @@ body.all-styles-hidden-by-filters:after {
 #sections > div {
     border-top: none !important; }
 
-#sections > div:before {
+#sections > .section:not(.removed):before {
     content: "Code";
-    font: bold 16px Meiryo;
-    color: var(--bgc6); }
+    font: 16px Meiryo;
+    color: var(--bgc6);
+    text-shadow: 0 0 var(--bgc6); }
 
-#sections > div > label {
-    font: bold 16px Meiryo;
+#sections > .section > label {
+    font: 16px Meiryo;
+    margin-left: -2.2rem;
     color: transparent; }
 
-#sections > div > label::after {
-    position: absolute;
-    top: 0;
-    left: 0.4em;
-    color: var(--bgc6); }
+#sections > .section > label::after {
+    counter-increment: codebox;
+    content: counter(codebox) "　: " attr(data-text);
+    font: 16px Meiryo;
+    color: var(--bgc6);
+    text-shadow: 0 0 var(--bgc6); }
 
 /* コード編集枠 */
 .CodeMirror-focused {
@@ -684,7 +730,7 @@ button.remove-applies-to {
 
 /* ページ内 検索ダイアログ */
 #search-replace-dialog {
-    background: var(--bgc6); }
+    background: var(--bgc7); }
 
 #search-replace-dialog [data-type="main"] {
     padding: 10px 10px 2px; }
@@ -799,6 +845,11 @@ button.remove-applies-to {
 #help-popup button[role="close"] {
     display: none; }
 
+#help-popup .beautify-hint input[type="search"] {
+    font-weight: bold;
+    color: #000;
+    background: #eee; }
+
 /* 幅850px以下の場合 ***********************************/
 @media screen and (max-width: 850px) {
 /* 編集画面 ヘッダー */
@@ -881,7 +932,7 @@ button.remove-applies-to {
 #stylus-edit #actions {
     margin-right: -12px;
     padding: 18px 0 0;
-    width: 390px;
+    width: 400px;
     flex-shrink: 0; }
 
 /* 保存ボタン */
@@ -903,6 +954,10 @@ button.remove-applies-to {
 .firefox #stylus-edit #cancel-button::before {
     font-size: 13px;
     line-height: 18px; }
+
+/* メニューラッパー */
+#stylus-edit #details-wrapper {
+    min-width: 400px; }
 
 /* 編集 オプション */
 #stylus-edit #options {
@@ -944,6 +999,37 @@ button.remove-applies-to {
     column-count: 2;
     min-width: 570px; }
 
+/* セクションリスト */
+#sections-list {
+    display: none;
+    position: relative;
+    border-radius: 4px;
+    background: var(--bgc4);
+    margin-top: 1.4em !important;
+    padding: 0 1.4em 0 0.6em;
+    width: calc(100% - 2em);
+    max-height: 1.8em;
+    overflow: hidden;
+    transition-property: max-height, padding-top, padding-bottom;
+    transition-delay: 3s;
+    transition-duration: 0.2s;
+    box-shadow: inset 0 0 0 1px var(--bgc3); }
+
+#sections-list:hover {
+    max-height: 76px;
+    padding: 2.4em 1.4em 0.4em 0.6em;
+    transition-delay: 0.5s; }
+
+#sections-list summary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0 1em;
+    width: calc(100% - 2em);
+    background: var(--bgc3);
+    z-index: 1; }
+
 /* コードエラー警告 */
 #lint {
     position: relative;
@@ -971,6 +1057,7 @@ button.remove-applies-to {
     margin: 0.4em 3em; }
 
 #stylus-edit #options:not([open]),
+#sections-list:not([open]),
 #lint:not([open]) {
     padding: 0 1em;
     height: 1.8em;
@@ -1021,6 +1108,13 @@ button.remove-applies-to {
     color: var(--bgc6); }
 
 /* チェックボタン */
+#stylus-popup #installed .checkmate input[type="checkbox"]:not(.slider) {
+    left: 9px;
+    top: 6px;
+    height: 12px;
+    width: 12px;
+    z-index: 1; }
+
 #stylus-popup #disableAll {
     margin: 2px 0 0; }
 
@@ -1065,19 +1159,37 @@ button.remove-applies-to {
 
 #stylus-popup .search-results-nav button {
     color: var(--bgc6); }
+
+/* 検索オプション */
+#stylus-popup #search-params .select-resizer {
+    background: #fff; }
+
+#stylus-popup #search-params label {
+    color: var(--bgc6); }
+
+/* 次のスタイルを書く */
+#stylus-popup #write-for-frames {
+    margin-top: 6px; }
+
+#stylus-popup #write-for-frames::after {
+    margin: -3px; }
 }
 
 @-moz-document regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
 /* ブラウザ 拡張機能設定画面 ダイアログ *********************/
 #stylus-options {
-    width: 500px;
+    width: 600px;
     color: var(--bgc6); }
-
-.firefox #stylus-options {
-    width: inherit; }
 
 #stylus-options #options {
     background: var(--bgc0); }
+
+#stylus-options .items a {
+    color: var(--bgc6);
+    text-decoration: none; }
+
+#stylus-options .items a:hover {
+    text-decoration: underline; }
 
 #stylus-options select.cloud-name,
 #stylus-options input[type=number] {
@@ -1262,9 +1374,14 @@ input[type="checkbox"]:not(.slider):not(:disabled):checked:hover {
 #stylus-edit #options {
     display: block; } }
 
+@media screen and (max-width: 850px) {
+#sections-list {
+    display: block; } }
+
 /* *************************************************
 このセクションの適用先を「URL」等に変更してスタイルを保存すると
-管理・編集画面の小幅時のヘッダーのオプションが非表示になります。
+➀管理・編集画面の小幅時のヘッダーのオプションが非表示になります。
+➁編集画面の小幅時のヘッダーのセクションが非表示になります。
 **************************************************/
 }
 
@@ -1345,6 +1462,17 @@ input[type="checkbox"]:not(.slider):not(:disabled):checked:hover {
 .newUI .entry:hover .svg-icon:hover {
     fill: #fff; }
 
+.newUI .disabled.entry .svg-icon {
+    fill: #64b5f6; }
+
+.newUI .disabled.entry:hover .svg-icon {
+    opacity: 1;
+    fill: #ddd; }
+
+.newUI .disabled.entry:hover .svg-icon:hover {
+    fill: #fff; }
+
+/* 旧UI */
 .entry .svg-icon {
     fill: #64b5f6; }
 
@@ -1490,5 +1618,6 @@ input[type="checkbox"]:not(.slider) {
     overflow: hidden;
     color: var(--bgc6);
     border: 1px solid var(--bgc8);
+    background: var(--bgc7);
     pointer-events: none; } }
 }

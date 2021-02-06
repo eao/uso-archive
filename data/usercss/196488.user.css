@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Kest Nishtyakov
 @description    `Всегда можно лучше...`
-@version        2021124.7.54
+@version        202126.5.18
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced color mainbg "Основной цвет фона" #111111
@@ -38,6 +38,9 @@
   background-color: var(--maina);
   backdrop-filter: blur(20px);
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+}
+.gsfs {
+    color: var(--mtext);
 }
 
 #guide-content.ytd-app {
