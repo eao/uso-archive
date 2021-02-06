@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `<b>HOW TO INSTALL AND CUSTOMIZE THIS STYLE?? </b><a href="https://drive.google.com/file/d/1oq1UqCJVSiPubdwwi9qS55ygWaBzsCmc/view?usp=sharing" target="_blank"> 👉<b>Click Here!!</b></a><a href="https://i.ibb.co/dWyvGM1/sc1.jpg" target="_blank"> 🖼️<b>Screenshot 1</b></a> <a href="https://i.ibb.co/ZxVgY2Y/sc2.jpg" target="_blank"> 🖼️<b>Screenshot 2</b></a><a href="https://i.ibb.co/t493v18/Tik-Tok-logo.png" target="_blank"> 🖼️<b>TikTok Logo Link</b></a> <i>Note:</i>  <b>Use the Dark Theme on Apperance Settings</b> <a href="https://userstyles.org/style_screenshots/191573_additional_37559.jpeg" target="_blank"> <b>📝</b></a>More of my Styles?  <a href="https://userstyles.org/users/1047658" target="_blank" title="YAD"><b>Click Here! </b></a>`
-@version        202122.9.42
+@version        202125.12.48
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 @advanced dropdown yadbgchanger "Background Image 🖼️" {
@@ -338,7 +338,7 @@ text-shadow: 0 0 8px}
     text-shadow: 0 0 8px var(--paper-purple-a200);
 }
 
-#logo-icon-container.ytd-topbar-logo-renderer {/*logo*/
+yt-icon.ytd-topbar-logo-renderer {/*logo*/
     animation-name: logoyad;
 	filter: none;
     animation-duration: 0.8s;

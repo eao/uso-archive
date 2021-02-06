@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        202125.11.14
+@version        202125.22.53
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -103,7 +103,7 @@
  .css-1imiysb, .css-9cxewd, .css-1sqj6hg, .css-vurnku[data-type="table-td"], .css-vurnku[data-type="table-th"] {
     background-color: #202020 !important;
 }
-.css-1h9vsz4 {
+.css-1h9vsz4, .css-1s52m11 {
     background-color: #111 !important;
 }
 .css-lultvz, .css-kfkjb4:hover {
@@ -112,40 +112,31 @@
 .css-kfkjb4 {
     color: rgb(30, 32, 38) !important;
 }
-.css-1imiysb div div div div[data-bn-type="text"], .css-1nqr2qp, .css-16nd02l input, .css-gymlse {
+.css-1imiysb div div div div[data-bn-type="text"], .css-1nqr2qp, .css-16nd02l input, .css-gymlse, .css-u95vxr, .css-18zjn67 {
     color: #fff !important;
 }
-.css-9cwl6c, .css-vurnku[data-type="table-td"], .css-158vs6f {
+.css-9cwl6c, .css-vurnku[data-type="table-td"], .css-158vs6f, .css-1bg2038 {
     color: #76808F !important;
 }
 }
 
 @-moz-document regexp("https://www.binance.com/.+/my/wallet/account/saving") {
 /* Earn Wallet */
- .css-1bwwatp, .css-1o5c6og, .css-1ow88ql, .css-h8vadw, .css-oda0l7, .css-jmlio4 {
+ .css-1bwwatp, .css-1o5c6og, .css-1ow88ql, .css-h8vadw, .css-oda0l7, .css-jmlio4, .rc-table-content table thead tr th, .rc-table-content table tbody tr td {
     background-color: #202020 !important;
 }
 .css-h8vadw, .css-4sk89q {
     border-color: #202020 !important;
 }
-.css-12kltb8, .css-1vmy8s8 {
-    color: #fff !important;
-}
-.css-d3ui9e.active {
-    color: #fff !important;
-}
-.css-1yydi9k > div:hover {
-    color: #fff;
-}
-.rc-table-content table thead tr th, .rc-table-content table tbody tr td {
-    background-color: #202020 !important;
-}
-.rc-table-cell {
+.css-12kltb8, .css-1vmy8s8, .css-1hcqoug, .css-d3ui9e.active, .css-1yydi9k > div:hover, .rc-table-cell {
     color: #fff !important;
 }
 .css-jmlio4 {
     margin: 0 !important;
     padding: 16px 0 0 !important;
+}
+.css-d3ui9e:hover{
+    color: #76808F !important;
 }
 }
 
@@ -199,16 +190,16 @@
 
 @-moz-document regexp("https://www.binance.com/.+/earn.*") {
 /* Binance Earn */
- .css-1hawo8q, .css-1j562lq, .css-sfadok, .css-17a0d0u, .css-12719hn, .css-1bitln1, .css-mn0qrq, .css-oxf8ce, .css-15yg91t {
+ .css-1hawo8q, .css-1j562lq, .css-sfadok, .css-17a0d0u, .css-12719hn, .css-1bitln1, .css-mn0qrq, .css-oxf8ce, .css-15yg91t, .css-1x1ll39, .css-oxf8ce .content .tabs, .css-1yag08, .css-1mvffl4 {
     background-color: #202020 !important;
 }
 .css-pjvc4s, .css-1hawo8q .content .tabs {
     background-color: #111 !important;
 }
-.css-1hawo8q .heading .main, .css-9aixja, .css-1hawo8q .content .tabs .item .title, .css-sfadok .coin, .css-17a0d0u .coin, .css-1bitln1 .coin, .css-12719hn .title, .css-1k5sh5n, .css-rz32rr, .css-mn0qrq .coin, .css-oxf8ce .heading .main {
+.css-1hawo8q .heading .main, .css-9aixja, .content .tabs .item .title, .css-1yag08 .coin, .css-17a0d0u .coin, .css-1bitln1 .coin, .css-12719hn .title, .css-1k5sh5n, .css-rz32rr, .css-mn0qrq .coin, .css-oxf8ce .heading .main, .css-1mvffl4 .coin{
     color: #fff !important;
 }
-.css-1hawo8q .content .tabs .item.active .title {
+.content .tabs .item.active .title {
     color: #000 !important;
 }
 .css-vurnku.duration, .css-17a0d0u .cell .text, .css-1bitln1 .cell .text {
@@ -326,16 +317,16 @@ input.css-1vgh1xx {
  .css-11ut0zx {
     background-color: #111 !important;
 }
-.css-k1w8nb, .css-1l2gayd, .css-nkpzbo, .css-10i7i1h, .css-1g4bkrf {
+.css-k1w8nb, .css-1l2gayd, .css-nkpzbo, .css-10i7i1h, .css-1g4bkrf, .css-ai4wqy {
     background-color: #202020 !important;
 }
-.css-w6vv8o, .css-2gtxtw, .css-mjtoek, .css-1qogyxd, .css-gymlse {
+.css-w6vv8o, .css-2gtxtw, .css-mjtoek, .css-1qogyxd, .css-gymlse, .css-z0ygu9, .css-1pupe9w, .css-l3oyu9, .css-u95vxr, .css-xnx9is, .css-1t392ot {
     color: #fff !important;
 }
 .css-k1w8nb {
     border-radius: 0;
 }
-.css-xivc9r, .css-hrh325, .css-1jyr6bw, .css-18h5seh {
+.css-xivc9r, .css-hrh325, .css-1jyr6bw, .css-18h5seh, .css-x86rzc {
     background-color: #fff !important;
 }
 .css-1g4bkrf {

@@ -1,14 +1,14 @@
 /* ==UserStyle==
-@name           Compact Tube (White) v1.5.5
+@name           Compact Tube (White) v1.5.5+
 @namespace      USO Archive
 @author         jakill02
 @description    `RU) - пытается имитировать старый (классический) дизайн Ютуба.     Предупреждение: Этот стиль написан для использования на Компьютерах и не предназначен для Телефонов и Планшетов..---------ENG) - trying to imitate the old (classic) Youtube layout.     Warning: This style is written for use on Computers and is not intended for Phones and Tablets..RU) (Стиль в классических цветах и привычных формах.)данный Стиль является модицикацией основанной на стиле от (Funny 😂) который был взять с сайта: "YouTube OldOnNew" https://sites.google.com/view/compacttube/home все права на оригинальный стиль принадлежат его создателю, я не на что не претендую.-----------------------ENG) (Style in classic colors and familiar shapes.)This Style is a modification based on the Style by (Funny 😂) which was taken from the site: "YouTube OldOnNew" https://sites.google.com/view/compacttube/homeAll rights to original style belong to its original creator, I do not pretend to anything.`
-@version        2021131.16.44
+@version        202125.14.52
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document domain("youtube.com") {
-/* CompactTube (White) v1.5.5 */
+/* CompactTube (White) v1.5.5+ */
 
                 /* Style Page: https://userstyles.org/styles/186936/ */
 
@@ -353,7 +353,7 @@ display: flex; flex-direction: row;}
 
 /* Размер поля Поиска и позицианирование (new ver.) */
 ytd-search[center-results] ytd-two-column-search-results-renderer.ytd-search {
-flex: 1; flex-basis: 1e-9px; -width: 855px; min-width: 478px;
+flex: 1; flex-basis: 1e-9px; -o-width: 855px; min-width: 478px;
 max-width: 855px;  padding-left: 18.05%;  margin-left: -80px;  margin-right: auto;}
 
 /* Размер поля Поиска и позицианирование (old ver.) */
@@ -876,7 +876,7 @@ padding: 32px 6px 0px 6px;
     -o-margin: 10px 0px 0px 0px;
     /* max-width: calc( var(--ytd-rich-grid-items-per-row) * 
         (var(--ytd-rich-grid-mini-item-max-width) 
-            + var(--ytd-rich-grid-item-margin)) )*/;}
+            + var(--ytd-rich-grid-item-margin)) )*/}
 
 /*========== + ===========*/
 /* Главная*/
@@ -930,7 +930,7 @@ ytd-rich-grid-media[mini-mode] #video-title.ytd-rich-grid-media {
     padding-left: 1px; /* 2021 test */
     line-height: 1.6rem;
     max-height: 3.4rem;
-    -o-letter-spacing: 0.29px;; /*0.29px;*/
+    -o-letter-spacing: 0.29px; /*0.29px;*/
     position: relative; top: -8px;}
 
 /* Центровка Названий ВИДЕО на ГЛАВНОЙ странице + Ращзмер Шрифта (старый вариант, неработает послео бновления Ютуба) */
@@ -955,7 +955,7 @@ ytd-rich-grid-video-renderer[mini-mode] #video-title.ytd-rich-grid-video-rendere
     -o-line-height: 1.7rem;
     line-height: 1.6rem;
     max-height: 3.4rem;
-    -o-letter-spacing: 0.29px;; /*0.29px;*/
+    -o-letter-spacing: 0.29px; /*0.29px;*/
     position: relative; top: -8px;}
 
  /*? Размер НАЗВАНИЯ Каналов ТОЛЬКО на Главной странице и позиционирование ?*/
@@ -1688,7 +1688,7 @@ paper-button.ytd-expander {
     overflow: hidden !important;
     text-align: left !important;
     justify-content: left !important;
-    height: 17px;;
+    height: 17px;
     width: auto;
     margin: -0.0rem auto -2px -92px !important;
     -o-border-top: 2.5px solid transparent;
@@ -2057,7 +2057,7 @@ ytd-thumbnail-overlay-side-panel-renderer[bottom-panel] {
 /* Оригинал "ytd-thumbnail-overlay-side-panel-renderer" - про запас */
 -o-ytd-thumbnail-overlay-side-panel-renderer {
     position: absolute; right: 0; top: 0; bottom: 0; background-color: var(--yt-spec-static-overlay-background-heavy);
-    color: var(--yt-spec-static-overlay-text-primary); text-align: center;;
+    color: var(--yt-spec-static-overlay-text-primary); text-align: center;
     font-size: var(--ytd-subheadline_-_font-size); /* font-size: var(--ytd-subheadline_-_font-size); */
     font-weight: var(--ytd-subheadline_-_font-weight); line-height: var(--ytd-subheadline_-_line-height);
     letter-spacing: var(--ytd-subheadline_-_letter-spacing); display: flex; /*flex*/
@@ -2455,7 +2455,7 @@ ytd-search-sub-menu-renderer {
     font-weight: var(--ytd-user-comment_-_font-weight);
     line-height: var(--ytd-user-comment_-_line-height);
     letter-spacing: var(--ytd-user-comment_-_letter-spacing);
-    -position: relative; left: 5.5px;
+    -o-position: relative; left: 5.5px;
     margin-bottom: -7px; /*test*/
     margin-left: 6px;}
 
@@ -2642,7 +2642,7 @@ color: rgba(118, 118, 118, .5);} /*rgb(178, 178, 178)*/
 /* Количестко Комментариев (размер Шрифта) */
 .count-text.ytd-comments-header-renderer {
     vertical-align: middle;
-    font-size: 1.4rem;;
+    font-size: 1.4rem;
     font-weight: var(--ytd-subheadline_-_font-weight);
     line-height: var(--ytd-subheadline_-_line-height);
     letter-spacing: var(--ytd-subheadline_-_letter-spacing);}
@@ -2745,13 +2745,16 @@ position: relative; top: 11px; left: 0px; -o-margin-top: 4px;
 /* Блок с Видео справа */
 ytd-watch-flexy[theater] #secondary.ytd-watch-flexy, ytd-watch-flexy[fullscreen] #secondary.ytd-watch-flexy {
                     -o-overflow-x: hidden; /* test : не нужен */
-    -o-margin-top: var(--ytd-margin-3x);
-    -o-padding-right: 0px;
-    -o-padding-left: 0px;
+    -o-margin-top: var(--ytd-margin-3x); /* -o-margin-top: var(--ytd-margin-3x); */
+    padding-right: 66px; /* -o-padding-right: 0px; */
+    padding-left: 16px; /* -o-padding-left: 0px; */
+    padding-top: 2px; /* test 2021 */
     height: 100%;
-    margin-top: 11px;
-    margin-left: 15px;
-    margin-right: 80px; /*100px ,v2: 88px , v3: 80px*/
+    -o-width: 100% !important; /* test */
+        min-width: 340px !important; /* test */
+    margin-top: 9px; /*11px*/
+    margin-left: -1px; /*15px*/
+    margin-right: 38px; /*100px ,v2: 88px , v3: последнее было - 80px*/
     position: relative; right: 14px; /* 14px -  TEST */
         -o-background: var(--yt-spec-brand-background-primary);
         -o-box-shadow: 0px 0px 1px 1px rgb(226, 226, 226);
@@ -2763,6 +2766,8 @@ ytd-watch-next-secondary-results-renderer {
     display: -webkit-flex;
     display: flex;
     margin-left: auto;
+    -o-padding-left: 0px;
+    -o-padding-right: 0px;
     margin-right: -28px; /*-24px, v2: -38px, v3: -28px*/
         position: relative; right: 14px; /* 14px -  TEST */
     -ms-flex-direction: column;
@@ -2770,6 +2775,24 @@ ytd-watch-next-secondary-results-renderer {
     flex-direction: column;
        background: var(--yt-spec-brand-background-primary);
     box-shadow: 0px 0px 1px 1px var(--ytd-searchbox-legacy-button-border-color);}
+
+/* Доп. настройка Правой колонки с видео в режиме НЕ Театра */
+ytd-watch-flexy:not([theater]):not([fullscreen]) #secondary.ytd-watch-flexy {
+    padding-top: var(--ytd-margin-6x);
+    margin-left: -15px;
+    padding-left: 16px;
+    min-width:301px !important;} /* test */
+
+/* позицианирование меню (. . .) на видео */
+ytd-menu-renderer.ytd-compact-video-renderer {
+    --paper-icon-button_-_padding: 0;
+    --paper-icon-button_-_width: 24px;
+    --paper-icon-button_-_height: 24px;
+    --yt-button-icon-padding: 0;
+    --yt-button-icon-size: 24px;
+    position: absolute;
+    top: 1.9%;
+    right: 0;}
 
 
 /* Позиционирование видео в Блоке на странице с Видео */
@@ -3089,7 +3112,7 @@ margin-top: -2px;} */
 #chat.ytd-watch-flexy, #donation-shelf.ytd-watch-flexy ytd-donation-shelf-renderer.ytd-watch-flexy, #donation-shelf.ytd-watch-flexy ytd-donation-unavailable-renderer.ytd-watch-flexy, #playlist.ytd-watch-flexy, #panels.ytd-watch-flexy ytd-engagement-panel-section-list-renderer.ytd-watch-flexy {
     margin-bottom: var(--ytd-margin-1x);
     -o-background: rgb(255, 255, 255);
-    -o-box-shadow: 0px 22px 0px 0px rgb(255, 255, 255), 0px 22px 0px 1px rgb(226, 226, 226);;
+    -o-box-shadow: 0px 22px 0px 0px rgb(255, 255, 255), 0px 22px 0px 1px rgb(226, 226, 226);
     -o-padding-top: 1px;
     -o-padding-bottom: 1px;
     margin-left: -15px;
@@ -4073,5 +4096,4 @@ content: ''; display: block; height: 100%; width: 12px; position: absolute; top:
 content: ''; display: block; height: 100%; width: 12px; position: absolute; top: 0; left: 100%;}
 /*|                                                                                                                    |*/
 /*™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™*/
-
 }

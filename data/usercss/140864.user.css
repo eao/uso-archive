@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Martinius Ulberg
 @description    `Flat Dark & Clean skin for Discord. Can be used in the desktop app with the help of Better Discord. Just paste the CSS code into the Custom CSS. Do not include the first and last line of the code.Having the Dark theme selected in options is recommended.`
-@version        202027.19.1
+@version        202125.23.50
 @license        CC-BY-4.0
 @preprocessor   uso
 @advanced color detail "Detail" #7289DA
@@ -16,7 +16,7 @@
 
 ==/UserStyle== */
 @-moz-document domain("discordapp.com") {
-/* Discord Flat Dark & Clean v.0.9.2*/
+/* Discord Flat Dark & Clean v.0.9.3*/
 /* by MarUlberg */
 /* Inspired by kirnbauer's */
 /* "Youtube Dark Style Material [BETA]" */
@@ -51,7 +51,8 @@
 .lookOutlined-3sRXeN.colorBrand-3pXr91,
 .lookFilled-1Gx00P.colorBrand-3pXr91,
 .divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI:after, 
-.divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI:before{
+.divider-3gKybi.dividerRed-MKoLlr .dividerContent-2L12VI:before,
+.embedFull-2tM8--{
     border-color: #7289DA  !important;
 }
 
@@ -117,12 +118,16 @@
     background-color: #000000  !important;
     border-color: #7289DA  !important;
 }
-.unread-3zKkbm{
+.unread-2lAfLh,
+.container-1D34oG{
     background-color: #212121  !important;
 }
 .container-1r6BKw.themed-ANHk51,
 .members-1998pB,
-.container-2Rl01u.da-container.clickable-2ap7je.da-clickable{
+.container-2Rl01u.da-container.clickable-2ap7je.da-clickable,
+.members-1998pB, 
+.members-1998pB>div,
+.container-1taM1r{
     background-color: #424242  !important;
 }
 .mention{
@@ -186,6 +191,10 @@ form.modal-content,
 .themed-OHr7kt.item-PXvHYJ:not(.primary-3j8BhM){
     border-radius: 8px 8px 0px 0px !important;
 }
+.container-1taM1r .header-2V-4Sw{
+    border-radius: 9px 16px 0px 0px !important;
+    background-color: #000000  !important;
+}
 .mentioned-xhSam7,
 .isMentioned-N-h9aa,
 .embedInner-1-fpTo,
@@ -195,20 +204,22 @@ form.modal-content,
 .placeholder{
     border-radius:  0px  0px 8px 8px  !important;
 }
+.content-1x5b-n,
 .private-channels .channel.selected a,
 .private-channels .channel:hover a,
 .contentSelectedText-3wUhMi,
 .contentHoveredText-2D9B-x,
 .itemHover-EnbcjT:hover,
-.unread-3zKkbm,
+.unread-2lAfLh,
 #bd-settings-sidebar .ui-tab-bar-item.selected,
 #bd-settings-sidebar .ui-tab-bar-item:hover,
 #bd-customcss-detach-controls-button button:nth-child(1),
 .channel-2QD9_O.selected-1HYmZZ a,
 .channel-2QD9_O:hover a,
 .content-3at_AU,
-.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ{
-    border-radius: 8px 0px 0px 8px  !important;
+.side-8zPYf6 .themed-OHr7kt.selected-3s45Ha.item-PXvHYJ,
+.layout-2DM8Md{
+    border-radius: 8px 0px 0px 12px  !important;
 }
 /* No Border */
 .search-bar-inner,
@@ -291,7 +302,7 @@ a.downloadLink-2oSgiF{
     margin-top: 8px !important;
 }
 .attachButtonInner-1iyZ9F{
-    margin-right: 8px !important;
+    margin-right: 0px !important;
 }
 .friendsTable-133bsv .friendsRow-2yicud:hover{
     -webkit-filter: brightness(120%);
@@ -326,7 +337,7 @@ a.downloadLink-2oSgiF{
     border-radius: 5px 0px 0px 5px !important;
 }
 /* unread text chat */
-.unread-3zKkbm{
+.unread-2lAfLh{
     left: 235px !important;
     height: 10px !important;
     width: 10px !important;
@@ -354,9 +365,10 @@ a.downloadLink-2oSgiF{
     margin-right: 0px !important;
     margin-left: 9px !important;
 }
-* ::-webkit-scrollbar{
+.container-3w7J-x div::-webkit-scrollbar{
     width: 0px !important;
 }
+.auto-Ge5KZx::-webkit-scrollbar-track,
 .scrollerWrap-2su1QI ::-webkit-scrollbar-thumb,
 .ui-standard-sidebar-view .content-region ::-webkit-scrollbar-thumb{
     min-height:35px !important;
@@ -364,10 +376,12 @@ a.downloadLink-2oSgiF{
     border: none !important;
     border-radius: 0px !important;
 }
+.auto-Ge5KZx::-webkit-scrollbar,
 .scrollerWrap-2su1QI ::-webkit-scrollbar,
 .ui-standard-sidebar-view .content-region ::-webkit-scrollbar{
     width: 14px !important;
 }
+.auto-Ge5KZx::-webkit-scrollbar,
 .scrollerWrap-2su1QI ::-webkit-scrollbar-track-piece,
 .ui-standard-sidebar-view .content-region ::-webkit-scrollbar-track-piece{
     background-color: transparent !important;

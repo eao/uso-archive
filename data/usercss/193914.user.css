@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme & AdBlocker for cointelegraph.com`
-@version        20201227.21.23
+@version        202125.15.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@ body{ background-color: #202020 !important;}
 
 
 /* Article colors */
-.post-content, .post-content a, .post-meta__title h1, .post-meta__item amp-timeago, .post-meta__item a, .editors-choice__list a, .post-list__item-title *, .post-list__title, .wide-slider__item-title *, .wide-slider__title *, .main-slider__navigation-item a{ color: #fff !important;}
+.post-content, .post-content a, .post-meta__title h1, .post-meta__item amp-timeago, .post-meta__item a, .editors-choice__list a, .post-list__item-title *, .post-list__title, .wide-slider__item-title *, .wide-slider__title *, .main-slider__navigation-item a, .post__title, .post__article, .post-content>p, .post-meta__publish-date, .post-meta__author-name{ color: #fff !important;}
 
 
 /* Ads and unwanted content blocker */

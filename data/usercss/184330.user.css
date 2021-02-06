@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Biller
 @description    `A clean dark orange theme for youtube.<b>[MAKE SURE TO <u>ENABLE DARK THEME</u> FROM YOUTUBE]</b>Feel free to leave a feedback and any donation will be appreciated.Thank you very much for your support!`
-@version        2020124.11.6
+@version        202125.13.26
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -20,8 +20,12 @@ h3{
     color: #ff8100 !important;
 }
 
-a:visited, a:link{
-  color: #ff8100;
+a:visited{
+  color: #ff8100 !important;
+}
+
+a:link{
+    color: #ff8100;
 }
 
 a:active, a:hover{
@@ -169,11 +173,6 @@ yt-icon:hover{
     color: white !important;
 }
 
-[aria-pressed="true"]{
-    border: 1px solid #ff8100 !important;
-    border-radius: 30px;
-}
-
 paper-toggle-button[checked]:not([disabled]) .toggle-button.paper-toggle-button{
     background-color: #ff8100 !important;
 }
@@ -304,7 +303,7 @@ ytd-searchbox[has-focus]
 [aria-selected="true"]{
     background-color: #323232 !important;
     color: white !important;
-    border: 1px solid #ff8100 !important;
+    border: 2px solid #ff8100 !important;
 }
 
 .sbfl_b{
@@ -757,7 +756,7 @@ a.yt-uix-button-epic-nav-item:hover{
 }
 
 .resume-playback-progress-bar{
-background: #ff8100;
+	background: #ff8100;
 }
 
 #other-channels-sidebar:hover{
@@ -1148,6 +1147,68 @@ ytd-notification-renderer.unread #new.ytd-notification-renderer{
 
 ytd-thumbnail-overlay-time-status-renderer[overlay-style="LIVE"]{
     background-color: #323232 !important;
+}
+
+.ytd-search-filter-renderer[aria-selected="true"]{
+    border: 0px solid #ff8100 !important;
+    border-top: 1px solid #ff8100 !important;
+    border-bottom: 1px solid #ff8100 !important;
+}
+
+.badge-style-type-live-now.ytd-badge-supported-renderer{
+    color: #fd0707 !important;
+    border: 2px solid #fd0707 !important;
+}
+
+yt-live-chat-author-chip[is-highlighted] #author-name.owner.yt-live-chat-author-chip, #author-name.owner.yt-live-chat-author-chip{
+    background-color: #202020 !important;
+}
+
+.ytp-swatch-color{
+    color: #fd0707 !important;
+}
+
+.ytp-settings-button.ytp-hd-quality-badge::after{
+    background-color: #fd0707 !important;
+}
+
+.ytp-live-badge[disabled]::before{
+    background: #fd0707 !important;
+}
+
+.ytp-offline-slate-buttons{
+    background-color: black !important;
+    border: 2px solid #ff8100 !important;
+}
+
+.badge-style-type-simple.ytd-badge-supported-renderer{
+    color: #ff8100 !important;
+    border: 2px solid #ff8100 !important;
+}
+
+.badge-style-type-ypc.ytd-badge-supported-renderer{
+    color: #17d211 !important;
+    border: 2px solid #17d211 !important;
+}
+
+ytd-thumbnail-overlay-toggle-button-renderer[use-expandable-tooltip][toggled] #label.ytd-thumbnail-overlay-toggle-button-renderer{
+    color: #ff8100 !important;
+}
+
+ytd-toggle-button-renderer.style-default-active[is-icon-button]{
+    border-top: 2px solid #ff8100 !important;
+    border-left: 2px solid #ff8100 !important;
+    border-right: 2px solid #ff8100 !important;
+    border-bottom: 2px solid #ff8100 !important;
+    border-radius: 30px !important;
+}
+
+.sbpqs_a{
+    color: #ead50d !important;
+}
+
+.ytp-chrome-controls .ytp-button[aria-pressed]::after{
+    background-color: #ff8100 !important;
 }
 }
 

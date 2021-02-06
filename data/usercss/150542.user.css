@@ -2,8 +2,8 @@
 @name           Focus Finder
 @namespace      USO Archive
 @author         codestaila
-@description    `Globally highlights the currently focused or hovered input field or action item. This helps visually navigating and observing the structure of a website.`
-@version        201819.11.44
+@description    `Globally highlights the currently focused or hovered input field, button or action item. This helps visually navigating and observing the structure of a website.`
+@version        202125.22.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -16,8 +16,9 @@
     *  - 0.1.1: Color changed to green, a little more complex behaviour, code cleanup
     *  - 0.1.2: Buttons highlighted with stronger border, not colored background when active/focused
     *  - 0.1.3: More stronger colorization, to have a stronger visual cue. Cleanup.
+    *  - 0.1.4: Added the button element.
     */
-/***********************************
+    /***********************************
     * Modifications for highlighting the focused and hovered text area
     * - Adds some "shadow glow" to visualize the outline of a hovered input
     * - Adds some "outline glow" to clearly show the currently focused input
@@ -26,6 +27,7 @@
 
 select:focus,
 a:focus,
+button:focus,
 input:focus,
 textarea:focus,
 input[type="button"]:focus,
@@ -51,6 +53,7 @@ input[type="color"]:focus {
 
 select:hover,
 a:hover,
+button:hover,
 input:hover,
 textarea:hover,
 input[type="text"]:hover,
