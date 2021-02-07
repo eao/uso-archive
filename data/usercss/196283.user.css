@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `Github项目地址：https://github.com/QIUZAIYOU/Stylish1. 常用页面夜间模式全覆盖2. 去除广告3. 页面样式优化大部分已完成，部分施工中...目前常用页面应该已经全面覆盖了，除了「直播」和「游戏」相关页面，使用时可点击浏览器工具栏 stylus 图标，再点击本样式名称后面的操作菜单（竖着的三个点），勾选排除当前链接，这两个域名相关页面夜化后续会补上。`
-@version        202126.14.52
+@version        202127.6.0
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -15,12 +15,12 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
 
 ==/UserStyle== */
 @-moz-document url-prefix("http://example.com") {
-/*===
-* © 版权信息
-* © 作者：QIUZAIYOU
-* © 最后更新：20210206
-* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-===*/
+    /*===
+    * © 版权信息
+    * © 作者：QIUZAIYOU
+    * © 最后更新：20210207
+    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -45,7 +45,7 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-    :root {
+     :root {
         --color-14: #141414!important;
         --color-1b: #1b1b1b!important;
         --color-21: #212121!important;
@@ -175,25 +175,25 @@ BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
         line-height: 13px;
     }
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -1715,13 +1715,15 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     .music-container,
     .live-panel-item .live-up-img,
     .card .focus-btn .unfocus .unfocus-text:hover,
-    .vote-container {
+    .vote-container,
+    .shop-panel .shop-list {
         background-color: var(--color-27)!important;
     }
     .userinfo-content .btn-box>a {
         background-color: var(--color-37)!important;
     }
     /* -- 字体 -- */
+    .shop-desc .desc-box .title,
     .user-panel .content .bottom .number-part .numbers,
     .user-panel .content .bottom .number-part .text,
     .tc-black,
@@ -1764,6 +1766,8 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     .feed-title {
         color: var(--color-86)!important;
     }
+    .shop-panel .panel-desc,
+    .shop-desc .desc-box .sub-title,
     .card .main-content .button-bar {
         color: var(--color-66)!important;
     }
@@ -2007,7 +2011,9 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .coin-operated-m,
     .van-popover.van-followed,
     .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap,
-    .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list {
+    .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list,
+    .wide-members .avatar-list .van-icon-general_back_s,
+    .wide-members .avatar-list .van-icon-general_enter_s {
         background-color: var(--color-21)!important;
     }
     .up-info .btn-panel .following,
@@ -2250,6 +2256,9 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .comment-bilibili-fold .reply-notice .notice-item a,
     .main-container .review-module .review-list .review-item .review-header .review-star li i.icon-star-full {
         color: var(--bili-yellow)!important;
+    }
+    .wide-members .avatar-list .van-icon-general_enter_s:after {
+        background: linear-gradient(270deg, var(--color-21), hsla(0, 0%, 100%, 0));
     }
     /* -- 边框 -- */
     .main-container .tool-bar .mobile-info .mobile-more,
@@ -6055,7 +6064,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
         border-color: var(--color-42)!important;
     }
     /* -- 图标 -- */
-    [class*="icon-"]::after {
+    [class*="gui-"] [class*="icon-"]::after {
         filter: var(--filter-00-86)!important;
     }
 }

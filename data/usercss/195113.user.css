@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `Dark mode for app.fluencia.com`
-@version        202113.19.19
+@version        202127.1.54
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -131,7 +131,7 @@ body:not(.body-fresh) .help-bar-completed-slides,
 .skill-list .number-list .skills-item-skill:hover,
 .level-list-item:hover,
 .unit-list-item:hover {
-    background-color: #555;
+    background-color: #444;
 }
 .prompt .info strong, .prompt .dialogue strong {
     color: #b234b2;
@@ -153,7 +153,7 @@ body:not(.body-fresh) #quiz-question .tip {
     border-radius: 4px;
 }
 body:not(.body-fresh) .feedback .feedback-item-0 {
-    background-color: hsl(215, 50%, 35%);
+    background-color: hsl(0, 55%, 30%);
 }
 body:not(.body-fresh) .feedback .feedback-item-1 {
     background-color: hsl(285, 50%, 35%);
@@ -161,7 +161,7 @@ body:not(.body-fresh) .feedback .feedback-item-1 {
 }
 body:not(.body-fresh) .verb-table .text-highlighted,
 body:not(.body-fresh) .feedback-note {
-    color: hsl(55, 70%, 65%);
+    color: hsl(55, 50%, 80%);
 }
 body:not(.body-fresh) .input .input-second-attempt {
     background: #444;
@@ -348,5 +348,26 @@ body:not(.body-fresh) .alert {
 }
 .search-view a {
     color: #ddd;
+}
+body:not(.body-fresh) .input .quiz-input-disabled {
+    background-color: #444;
+}
+.profile-nav {
+    color: #ddd;
+}
+.profile-nav-option-active {
+    background-color: #444;
+}
+.profile-content {
+    background-color: #333;
+}
+.profile-nav-option:hover {
+    background-color: #555;
+}
+.profile-title {
+    color: #ddd;
+}
+.notifications-unsubscribe .checkbox-nested .edit-label, .user-edit-form .checkbox-nested .edit-label {
+    color: #ccc;
 }
 }

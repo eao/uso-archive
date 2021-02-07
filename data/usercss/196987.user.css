@@ -3,11 +3,12 @@
 @namespace      USO Archive
 @author         YAD
 @description    `<i>Note:</i> <b>TURN ON DARK MODE</b>`
-@version        202126.16.59
+@version        202127.6.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown yadbg "Background Image" {
 1 "Default*" <<<EOT https://i.ibb.co/fMr01Vc/redhud.jpg EOT;
+8 "Black" <<<EOT https://i.ibb.co/vm4nJzy/yadblack.jpg EOT;
 3 "Blue" <<<EOT https://i.ibb.co/TMNS0Qg/yadblue.jpg EOT;
 4 "Purple" <<<EOT https://i.ibb.co/m452PVS/yadpurple.jpg EOT;
 5 "Hot Pink" <<<EOT https://i.ibb.co/vB47sHd/yadhotpink.jpg EOT;
@@ -274,7 +275,7 @@ div.j83agx80.oo9gr5id.buofh1pr.ni8dbmo4.stjgntxs.cxgpxx05.dflh9lhu.sj5x9vvc.scb9
 	box-shadow: 0px 0px 9px 1px /*[[yadtheme]]*/4a
 }
 .eltiug27 {
-    fill: #14a7d5;
+    fill: /*[[yadtheme]]*/ad;
 }
 
 .nfl8ryma {/*icon bg*/
@@ -345,7 +346,7 @@ div.j83agx80.oo9gr5id.buofh1pr.ni8dbmo4.stjgntxs.cxgpxx05.dflh9lhu.sj5x9vvc.scb9
     border-color: #fff;
 }
 ._4jy2:hover {/*create*/
-    background-color: #00ddffc7;
+    background-color: /*[[yadtheme]]*/c7;
     border-color: #fff;
 }
 /*add friend etc*/
@@ -526,7 +527,9 @@ img[src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/2uPlV4oORjU.png"] {
 .synb87wq {
     background-color: /*[[yadtheme]]*/75;
 }
-
+.q2y6ezfg {
+    background-color: /*[[yadtheme]]*/4d;
+}
 
 
 /********************************/
