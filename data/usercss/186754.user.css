@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Blyad
 @description    `Most credit goes to @anqxyr. I've only managed to make it work on all domains, fix every single visible error and many more. -Why didn't you send those fixes to @qnxyr?Discussion doesn't work for me, infinity loading.`
-@version        202125.11.38
+@version        202126.18.23
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -357,14 +357,14 @@ src: url('https://fontlibrary.org/assets/fonts/dejavu-sans/f5ec8426554a3a67ebcdd
         margin-bottom: 0px !important;
     }
     
-		::-webkit-scrollbar-track {
+		::-webkit-scrollbar-track, #side-bar:hover::-webkit-scrollbar-track, #side-bar::-webkit-scrollbar-track {
    			background: rgba(0, 0, 0, .1);
 		}
         html[hide-scrollbar="true"] ::-webkit-scrollbar{display:none}
         ::-webkit-scrollbar {
              background-color: rgba(0, 0, 0, 0);
         }
-        ::-webkit-scrollbar-thumb {
+        ::-webkit-scrollbar-thumb, #side-bar:hover::-webkit-scrollbar-thumb {
              border-radius: 0px;
              background:rgba(255, 0, 0, .3);
         }
@@ -1062,6 +1062,30 @@ div.objclassbar div.sideleft, div.objclassbar div.sideright {
 [style="border: 1px solid white; text-align: left;"] {
 	border-color: #191919 !important;
 }
+#page-content .collapsible-block {
+    box-shadow: 2px 1.5px 1px rgba(176,16,0,0.7), 0 0 0px 1px #666;
+}
+.collapsible-block-link {
+	color: #777;
+}
+#side-bar {
+	background: #0000 !important;
+}
+h1 {
+	color: #999;
+}
+.yui-navset .yui-content, .yui-navset .yui-navset-top .yui-content {
+	border-color: #666;
+}
+#page-content > .collapsible-block {
+	background: #333;
+	border-color: #777879;
+}
+.addendum {
+	background: #242424;
+	border-color: #666;
+}
+
 
 /*Replacing MTF logos to .png*/
 [src='http://scp-wiki.wdfiles.com/local--resized-images/task-forces/Alpha1.png/small.jpg'] /*MTF Alpha-1 ("Red Right Hand")*/ {

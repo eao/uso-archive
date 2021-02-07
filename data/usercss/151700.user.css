@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `Compact design with Drop-down menus. ( Windows width less than 850px )This style is for Stylus / Chrome and Firefox.<br><br>When the Window width is wide,"LT800" is a design just adding button look. On the other hand, if the window width is less than 850px, it will change to a compact design pursuing user friendliness. In addition, it designed to reduce the loss of CSS code by user's misoperation. This style is also very convenient when editing while comparing old and new codes with double windows.<br>`
-@version        2020722.12.59
+@version        202126.15.20
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
-/* Stylus LT800 (en-US) ver.2020.07.22 */
+/* Stylus LT800 (en-US) ver.2021.02.07 */
 /* Interface for Installed and Edit Styles  ============== */
 /* background for all */
 body {
@@ -33,6 +33,7 @@ body {
 #header label,
 #faviconsHelp,
 #header span a,
+#toc,
 #lint table {
     color: var(--bgc6); }
 
@@ -101,7 +102,13 @@ body.all-styles-hidden-by-filters:after {
 /* search and sort */
 #search,
 #manage\.newUI\.sort {
-    border-radius: 4px;
+    color: var(--bgc6);
+    background: var(--bgc7); }
+
+#filters input::-webkit-input-placeholder {
+    color: var(--bgc6); }
+
+#searchMode {
     color: var(--bgc6);
     background: var(--bgc7); }
 
@@ -201,6 +208,12 @@ body.all-styles-hidden-by-filters:after {
 .disabled h2 .style-name-link {
     font-weight: bold; }
 
+.disabled h2 .style-name-link,
+.disabled .applies-to,
+.newUI .disabled.entry .svg-icon {
+    opacity: 0.5;
+    color: var(--bgc6); }
+
 /* hide "disabled" */
 .disabled h2::after {
     font-size: 0;
@@ -244,6 +257,9 @@ body.all-styles-hidden-by-filters:after {
 #manage-settings {
     display: block;
     padding: 1rem 0; }
+
+#stylus-manage .settings-column {
+    margin-top: 0; }
 
 /* filter */
 #filters {
@@ -306,26 +322,31 @@ body.all-styles-hidden-by-filters:after {
     width: 220px; }
 
 #stylus-manage #update-all {
-    margin: 4px 0 1em !important;
-    width: 100%;
-    border-radius: 4px;
-    background: var(--bgc4);
-    box-shadow: inset 0 0 0 1px var(--bgc3); }
+    margin: 0;
+    width: 100%; }
+
+.firefox #stylus-manage #update-all {
+    margin-bottom: 1em; }
 
 #apply-all-updates {
+    margin-top: 1em;
     height: auto;
     width: 100%;
     padding-right: 300px; }
 
 #update-all-no-updates {
     display: block;
-    padding: 6px 25px; }
+    margin: 1em 0 0;
+    padding: 8px 25px;
+    border-radius: 4px;
+    background: var(--bgc4);
+    box-shadow: inset 0 0 0 1px var(--bgc3); }
 
 #check-all-updates-force {
-    background: linear-gradient(#f00 0%, #ac0000 100%);
+    margin-top: -6px;
     height: auto;
     width: 100%;
-    margin-top: 0; }
+    background: linear-gradient(#f00 0%, #ac0000 100%); }
 
 /* Write new styles */
 #add-style-wrapper {
@@ -336,6 +357,18 @@ body.all-styles-hidden-by-filters:after {
 
 #add-style-as-usercss-wrapper {
     display: inline-flex; }
+
+/* Actions */
+#actions summary {
+    display: none; }
+
+#manage-options-button {
+    position: absolute;
+    top: 95px;
+    left: 520px; }
+
+.firefox #manage-options-button {
+    position: unset; }
 
 /* Options -manage- */
 #stylus-manage #options {
@@ -406,6 +439,9 @@ body.all-styles-hidden-by-filters:after {
 #backup > p {
     margin: 0;
     width: 230px; }
+
+#backup #backup-buttons {
+    flex-wrap: nowrap; }
 
 /* get styles */
 #manage-text {
@@ -496,6 +532,13 @@ body.all-styles-hidden-by-filters:after {
 .firefox #options #editor\.keyMap optgroup {
     background: #aaa; }
 
+/* Sections List */
+#sections-list #toc li {
+    font-size: small; }
+
+#sections-list #toc li.current:not(:only-child) {
+    color: #fc0; }
+
 /* Issues */
 #lint {
     margin-top: 1rem;
@@ -513,11 +556,10 @@ body.all-styles-hidden-by-filters:after {
 #sections > div {
     border-top: none !important; }
 
-#sections > div > label {
-    top: -2px;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--bgc6); }
+#sections > .section:not(.removed) > label {
+    font: normal 14px Meiryo;
+    color: var(--bgc6);
+    text-shadow: 0 0 var(--bgc6); }
 
 /* code editing frame */
 .CodeMirror-focused {
@@ -580,7 +622,7 @@ button.remove-applies-to {
 
 /* search-replace in code */
 #search-replace-dialog {
-    background: var(--bgc6); }
+    background: var(--bgc7); }
 
 #search-replace-dialog [data-type="main"] {
     padding: 10px 10px 2px; }
@@ -694,6 +736,11 @@ button.remove-applies-to {
 #help-popup button[role="close"] {
     display: none; }
 
+#help-popup .beautify-hint input[type="search"] {
+    font-weight: bold;
+    color: #000;
+    background: #eee; }
+
 /* Edit Style ======== Less than 850px  ============ */
 @media screen and (max-width: 850px) {
 /* menu header -edit- */
@@ -726,6 +773,7 @@ button.remove-applies-to {
     display: block;
     margin: 0;
     padding: 15px 12px 0 0;
+    min-width: 100px;
     flex-grow: 1; }
 
 #basic-info > *:not(:last-child) {
@@ -773,7 +821,7 @@ button.remove-applies-to {
 #stylus-edit #actions {
     padding: 18px 0 0;
     margin-right: -12px;
-    width: 356px;
+    width: 370px;
     flex-shrink: 0; }
 
 /* shadow of save button */
@@ -782,6 +830,10 @@ button.remove-applies-to {
 
 #save-button:enabled {
     box-shadow: 0 0 0 100vw var(--bgc5); }
+
+/* details-wrapper */
+#stylus-edit #details-wrapper {
+    min-width: 400px; }
 
 /* options -edit- */
 #stylus-edit #options {
@@ -821,6 +873,38 @@ button.remove-applies-to {
 
 #stylus-edit #options-wrapper {
     column-count: 2; }
+
+/* Sections List */
+#sections-list {
+    display: none;
+    position: relative;
+    border-radius: 4px;
+    background: var(--bgc4);
+    margin-top: 1.4em !important;
+    padding: 0 1.4em 0 0.6em;
+    width: calc(100% - 2em);
+    max-height: 1.7em;
+    min-height: 1.7em;
+    overflow: hidden;
+    transition-property: max-height, padding-top, padding-bottom;
+    transition-delay: 3s;
+    transition-duration: 0.2s;
+    box-shadow: inset 0 0 0 1px var(--bgc3); }
+
+#sections-list:hover {
+    max-height: 76px;
+    padding: 2em 1.4em 0.4em 0.6em;
+    transition-delay: 0.5s; }
+
+#sections-list summary {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0.1em 1em 0.2em;
+    width: calc(100% - 2em);
+    background: var(--bgc3);
+    z-index: 1; }
 
 /* show error */
 #lint {
@@ -898,6 +982,14 @@ button.remove-applies-to {
 #stylus-popup .blocked-info p {
     color: var(--bgc6); }
 
+/* checkmate */
+#stylus-popup #installed .checkmate input[type="checkbox"]:not(.slider) {
+    left: 9px;
+    top: 7px;
+    height: 12px;
+    width: 12px;
+    z-index: 1; }
+
 /* installed list */
 #stylus-popup .style-name {
     color: var(--bgc6); }
@@ -933,6 +1025,17 @@ button.remove-applies-to {
 
 #stylus-popup .search-results-nav button {
     color: var(--bgc6); }
+
+/* search-params */
+#stylus-popup #search-params .select-resizer {
+    background: #fff; }
+
+#stylus-popup #search-params label {
+    color: var(--bgc6); }
+
+/* write-for-frames */
+#stylus-popup #write-for-frames::after {
+    margin: -3px; }
 }
 
 @-moz-document regexp("chrome-extension://.*"), regexp("moz-extension://.*") {
@@ -943,6 +1046,13 @@ button.remove-applies-to {
 
 .firefox #stylus-options {
     width: inherit; }
+
+#stylus-options .items a {
+    color: var(--bgc6);
+    text-decoration: none; }
+
+#stylus-options .items a:hover {
+    text-decoration: underline; }
 
 #stylus-options #options {
     background: var(--bgc0); }
@@ -1124,10 +1234,15 @@ input[type="checkbox"]:not(.slider):not(:disabled):checked:hover {
 #stylus-edit #options {
     display: block; } }
 
+@media screen and (max-width: 850px) {
+#sections-list {
+    display: block; } }
+
 /* *************************************************
 If you change the setting "Applies to" of this section to "URL" etc.
-and save the style, "option menu" will be hidden from the drop 
-header of management / editing screen.
+and save the style, "Option menu" will be hidden from the drop 
+header of management / editing screen. 
+And also "Sections menu" is the same.
 **************************************************/
 }
 
@@ -1208,6 +1323,17 @@ header of management / editing screen.
 .newUI .entry:hover .svg-icon:hover {
     fill: #fff; }
 
+.newUI .disabled.entry .svg-icon {
+    fill: #64b5f6; }
+
+.newUI .disabled.entry:hover .svg-icon {
+    opacity: 1;
+    fill: #ddd; }
+
+.newUI .disabled.entry:hover .svg-icon:hover {
+    fill: #fff; }
+
+/* old UI */
 .entry .svg-icon {
     fill: #64b5f6; }
 
@@ -1333,5 +1459,6 @@ follow that theme.
     overflow: hidden;
     color: var(--bgc6);
     border: 1px solid var(--bgc8);
+    background: var(--bgc7);
     pointer-events: none; } }
 }

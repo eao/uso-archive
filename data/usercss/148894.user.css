@@ -3,12 +3,12 @@
 @namespace      USO Archive
 @author         Ataron
 @description    `アメーバブログの「最新版エディタ（標準）」及び「新タグ編集エディタ」をアレンジし、ブログ編集の環境を改善します。<br>このスタイルは Chrome / Firefox / Edge の拡張機能「Stylus」にインストールして使用出来ます。<br><br>ウインドウ幅に応じてエディタの幅が変化します。 このため、ブログ本文幅を720px以上に拡張したスキンを余裕を持って編集出来ます。 また「新タグ編集エディタ」の3画面表示を使う場合などにも有効です。<br><br>この Ameblo Writer Compact に関する詳細は、以下のページを参照ください。<br>　https://ameblo.jp/personwritep/entry-12333180456.html<br>`
-@version        202121.3.20
+@version        202127.0.16
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 @-moz-document url-prefix("https://blog.ameba.jp/ucs/entry/srventryin"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryup"), url-prefix("https://blog.ameba.jp/ucs/entry/srventryouterpreview"), url-prefix("https://blog.ameba.jp/ucs/entry/imagedelete.do") {
-/* Ameblo Writer ver.43a 基本CSS ************************/
+/* Ameblo Writer ver.43b 基本CSS ************************/
 /* 縦スクロールバー抑止 */
 html {
     overflow: initial; }
@@ -646,7 +646,6 @@ html {
     top: 14px;
     right: 6px;
     width: 15px;
-    background-position: -92px 0;
     color: #333;
     background: var(--bgc2); }
 

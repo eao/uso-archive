@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Azuma
 @description    `ニコ生のダークテーマです（ついでにニコニ広告ページもダーク化しています）。ChromeとFirefoxで動作確認済みです、同系統のブラウザであれば基本的に問題はないはずです。配置等の変更は行わず基本的に色調のみの変更をしています。ニコ生に関連するページのほとんどがダークテーマっぽくなっています（なっていない場所があればマシュマロにご報告いただければ可能な範囲で対応します）。その他なにかあれば<a href="https://marshmallow-qa.com/watanuki_azuma?utm_medium=url_text&utm_source=promotion" target="_blank" rel="noopener">マシュマロ</a>にお願いします。--対処不能な不具合について--Firefox系で「放送中の注目番組」に表示されている映像の音量コントロールボタンに表示上の不具合がありますが本スタイルによるものではありません。修正は難しそうなのでニコニコに報告すれば直るかもしれません…--<s>どうにもならなかった</s>どうにかなった箇所について--・コメント欄上の広告、ギフトホバー時の背景色<s>（いじっても効果がありませんでした…）</s>→奇特な人に教えていただいたおかげでなんとかなりました…`
-@version        202126.9.19
+@version        202126.13.5
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -338,7 +338,7 @@ aside[class^="___banner-panel"],[class^="___banner-ad___"], #footer-ad, #program
 
 /*たぶんコメント入れるとこ*/
 [class^="___item-placeholder___"]{border: solid 2px #ccc !important}
-span[class^="___comment-length-score____"] > span[data-value="75"]{background: #575757;}
+span[class^="___comment-length-score____"] > span[data-value]{background: #575757;}
 
 /* command palette tab */
 [class^="___command-palette___"]{background-color:hsla(0, 0%, 31.8%, 0.90) ;}
@@ -381,7 +381,7 @@ button[class^="___close-button___"] > svg > path{fill: #d5d5d5 !important;}
     .container{background: #303030;}
 }
 
-@-moz-document url-prefix("https://nicoad.nicovideo.jp/my") {
+@-moz-document url-prefix("https://nicoad.nicovideo.jp/my"), url-prefix("https://nicoad.nicovideo.jp/nage")  {
 /*ニコニ広告部分*/
     
 /* 文字設定 */

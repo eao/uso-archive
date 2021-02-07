@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         YAD
 @description    `<i>Note:</i> <b>TURN ON DARK MODE</b>`
-@version        202126.11.36
+@version        202126.16.59
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown yadbg "Background Image" {
@@ -66,8 +66,10 @@ a {
 
 /*logo*/
 path[d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"] {
-	fill: /*[[yadtheme]]*/38!important
+	fill: /*[[yadtheme]]*/38!important;
+        d: path("M36,18.49A17.52,17.52,0,1,1,18.49,1,17.51,17.51,0,0,1,36,18.49Z");
 }
+
 path[d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"] {
 	d: path("/*[[yadlogo]]*/")!important;
 	fill: #ffffff8a
@@ -136,6 +138,10 @@ path[d="M25 23l.8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0
     border-left: 1px solid #ffffff4a;
     border-right: 1px solid #ffffff4a;
 	background-blend-mode: screen!important;
+    animation: yaddown 0.4s linear 
+}
+@keyframes yaddown {
+	0%{transform: translatey(-900px)}
 }
 
 ._6s5d {/*background*/
@@ -346,6 +352,9 @@ div.j83agx80.oo9gr5id.buofh1pr.ni8dbmo4.stjgntxs.cxgpxx05.dflh9lhu.sj5x9vvc.scb9
 .oo1teu6h {
     background-color: /*[[yadtheme]]*/33;
 }
+.q66pz984 {
+    color: #ffffffab;
+}
 
 /*option circle*/
 .hn33210v {
@@ -502,7 +511,21 @@ img[src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/2uPlV4oORjU.png"] {
     color: #ffffffbf;
 }
 
+/*online dot and time*/
+.jllm4f4h {
+    background-color: /*[[yadtheme]]*/;
+}
+.g5o1ygfq {
+    color: #fff;
+}
+.cd5y7b5h {
+    background-color: #252a3d69;
+}
 
+/*see all*/
+.synb87wq {
+    background-color: /*[[yadtheme]]*/75;
+}
 
 
 

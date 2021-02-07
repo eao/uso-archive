@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Señor C.
 @description    `This is a Dark Mode for Instagram that's very similar to phone's version, hope you like it.`
-@version        2021117.1.20
+@version        202126.18.5
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -166,4 +166,27 @@ span button.-fzfL {
 .IhCmn {
     background-color: #fff !important;
 }
+  /*---------------------OTRAS PAGINAS-----------------------*/
+
+/*los botones xd*/
+.embedSpriteComment, .embedSpriteGlyph, .embedSpriteHeartOpen, .embedSpriteHeartOpenRed, .embedSpriteLogoLarge, .embedSpritePlayButton, .embedSpriteSaveOpen, .embedSpriteShare, .embedSpriteStoryRing, .embedSpriteVerifiedBadgeSmall, .embedSpriteWordmark {
+    filter: invert(1)!important;
+}
+/*parte de los links xd*/
+.PrimaryCTA {
+    background-color: #000!important;
+    border-bottom: 1px solid  rgb(30,30,30) !important;
+}
+
+/*textos de abajo*/
+.Embed a {
+    color: #fff !important;
+}
+
+/*xd*/
+.Caption{
+ color: #fff !important;
+}
+  
+  
 }

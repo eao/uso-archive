@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         apmPlus
 @description    `firefox`
-@version        202123.6.13
+@version        202126.14.17
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -1260,13 +1260,15 @@
     .creation-center>.card-base>#replys>.reply-box:nth-child(2n){background:#030!important;}
     .creation-center>.card-base>#replys>.reply-box>a{}
     .creation-center>.card-base>#replys>.reply-box>div{}
-    .creation-center>.card-base>#replys>.reply-box>div>a      {font:24px/100% arial!important;}
-    .creation-center>.card-base>#replys>.reply-box>div>article{font:24px/100% arial!important;color:#ccc!important;}
-    .creation-center>.card-base>#replys>.reply-box>div>div    {font:20px/100% arial!important;color:#aa1!important;}
-    .creation-center>.card-base>#replys>.reply-box>div>div>span{font-size:inherit!important;line-height:inherit!important;color:#888!important;}
+    .creation-center>.card-base>#replys>.reply-box>div>a       {font:24px/100% arial!important;}
+    .creation-center>.card-base>#replys>.reply-box>div>article {font:24px/100% arial!important;color:#ccc!important;}
+    .creation-center>.card-base>#replys>.reply-box>div>div     {font:20px/100% arial!important;color:#aa1!important;}
+    .creation-center>.card-base>#replys>.reply-box>div>div>span{font-size:inherit!important;line-height:inherit!important;color:#888!important;padding:0 5px 0 0!important;width:100%!important;display:block!important;text-align:right!important;}
     .creation-center>.card-base>#replys>.reply-box:hover>div>div>span{color:inherit!important;}
-    .creation-center>.card-base>#replys>.reply-box.author{background:#020!important;padding:0 0 0 40px!important;}
+    .creation-center>.card-base>#replys>.reply-box.author{background:#020!important;padding:0 0 0 40px!important;margin:0 auto 5px!important;}
+    .creation-center>.card-base>#replys>.reply-box.author>.user-avatar-img{display:none!important;}
     .creation-center>.card-base>#replys>.reply-box.author>div{font:14px/100% arial!important;}
+    .creation-center>.card-base>#replys>.reply-box.author>div>a{color:#0af!important;}
     .creation-center>.card-base>#replys>.c-reply__editor      {display:none!important;}
     .creation-center>.card-base>#replys:hover>.c-reply__editor{display:flex!important;display:-webkit-box!important;display:-ms-flexbox!important;}
     .creation-center>.card-base>#replys>.c-reply__editor>.user-avatar-img{}
