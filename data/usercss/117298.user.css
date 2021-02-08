@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         bolnoygad
 @description    `Работает на всех известных мне зеркалах animevost ( org | biz | am )Убирает всю рекламу даже без использования блокировщика рекламы. Увеличен размер плеера(опция). Есть возможность выбрать темную тему.`
-@version        202066.17.22
+@version        202127.23.55
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown bigplayer "Увеличенный плеер" {
@@ -116,7 +116,7 @@ div.staticInfo,
 .functionPanel,
 #player,
 #player2 {
-    width: 1003px !important;
+    width: 1004px !important;
 }
 
 .userinfo {

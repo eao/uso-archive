@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Jannek
 @description    `Dark mode für Kivinet.de`
-@version        2021125.20.35
+@version        202127.20.30
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -293,5 +293,19 @@ ilContainerWidth {
         /* at last temporary, since it overlaps content */
         display: block;
     }
+}
+
+::selection {
+    background: #999;
+    color: #fff;
+}
+::-moz-selection {
+    background: #999;
+    color: #fff;
+}
+
+.il_HAccordionHeadActive,
+.il_VAccordionHeadActive {
+    background-color: #959594;
 }
 }

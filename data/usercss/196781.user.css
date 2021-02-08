@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TTC
 @description    `Стиль для Biathlon.com.ua`
-@version        202124.12.23
+@version        202127.22.38
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -693,5 +693,41 @@ a:focus{
 }
 .el-material--date {
     color: #333;
+}
+.el-list--disc > li + li {
+    margin-top: 1.0em;
+}
+.el-carton--body {
+    padding-left: 2.50em;
+    padding-right: 2.50em;
+    padding-top: 0.5em;
+    padding-bottom: 0.50em;
+}
+.el-lang--sel {
+    color: #ffffff;
+    font-size: 0.81em;
+    font-family: Arial;
+}
+.form-agree > div {
+    font-size: 0.81em;
+    font-family: Arial;
+    }
+.el-menu .el-menu--cry.all {
+    background-image: url(https://i.imgur.com/xu2g6Pa.png);
+}
+.el-menu .el-menu--cry.news {
+    background-image: url(https://i.imgur.com/t0qfBmH.png);
+}
+.el-menu .el-menu--cry.result {
+    background-image: url(https://i.imgur.com/DiwkYZo.png);
+}
+.el-menu .el-menu--cry.date {
+    background-image: url(https://i.imgur.com/i9xHGIk.png);
+}
+.el-menu .el-menu--cry.tourney {
+    background-image: url(https://i.imgur.com/mOwqiUA.png);
+}
+.el-menu .el-menu--cry.chat {
+    background-image: url(https://i.imgur.com/Ifkh2GZ.png);
 }
   /* i really want this to be global */
