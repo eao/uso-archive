@@ -7,7 +7,7 @@
     "format": "uso",
     "category": "duelingnexus",
     "createdAt": "2019-12-11T02:21:52.000Z",
-    "updatedAt": "2021-02-05T20:12:42.000Z",
+    "updatedAt": "2021-02-08T01:56:08.000Z",
     "license": "CC0-1.0",
     "author": {
       "id": 871364,
@@ -16,8 +16,8 @@
   },
   "stats": {
     "installs": {
-      "total": 1563,
-      "weekly": 22
+      "total": 1573,
+      "weekly": 20
     }
   },
   "screenshots": {
@@ -195,7 +195,7 @@
             "key": "bg24",
             "label": "Background 24",
             "value": "https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__legacy_of_the_duelist_vgs_bg_by_maxiuchiha22_dd6hhft.jpg",
-            "default": false
+            "default": true
           },
           {
             "key": "bg25",
@@ -207,7 +207,7 @@
             "key": "bg26",
             "label": "Background 26",
             "value": "https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__zexal___barian_bg_by_maxiuchiha22_dd6hgzf.jpg",
-            "default": true
+            "default": false
           },
           {
             "key": "bg27",

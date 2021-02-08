@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Вика Пименова
 @description    `All Eldarya locations: https://vk.com/album-56022934_208393093Основные изменения:Текст верхнего меню немного увеличен, а его фон затемнёнНа рынке у торгов был убран значок маны, а цены стали гораздо больше и жирнееВ гардеробе и в магазине одежды сократилось пустое пространствоИконки на чердаке теперь занимают не только правую сторонуГлавная героиня больше не светится при наведении и не перенаправляет в гардеробВ банке добавлено белое обрамление для надписейФон на главной странице и в гардеробе больше не размытыйГардероб теперь не прыгаетИнвентарь теперь похож на чердакИконки на рынке не выходят за рамкиИконки во вкладке "Мои торги" расположены горизонтально, как это было в старой версии сайтаДобавлена возможность изменить фон и цвет тени букв верхнего меню`
-@version        20201217.11.2
+@version        202128.11.47
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown menu_color "Тени слов в меню (Shadows of words in the top menu)" {
@@ -101,6 +101,39 @@ i3blur "Размытое (Blur)" <<<EOT https://i.ibb.co/mz6hjPW/966-V6s7y-Sl-A2
 	image-custom-dropdown "Custom" <<<EOT /*[[image-custom]]*\/ EOT;
 }
 @advanced text image-custom "Фон (Background) (Custom)" "https://example.com/image.png"
+@advanced dropdown icons "Размер иконок на рынке (Marketplace icon size)" {
+	ic1 "Маленькие (Small)*" <<<EOT .marketplace-search-items li, .marketplace-itemsForSale-items li, .marketplace-auctions-item, .marketplace-sales-item {
+    height: 245px;
+    margin: 10px 5px;
+}
+
+.marketplace-abstract .abstract-icon {
+    width: 75px;
+    height: 75px;
+}
+
+.marketplace-abstract .abstract-icon > img {
+    width: 75px;
+} EOT;
+ic0 "Нормальные (Normal)" <<<EOT .marketplace-search-items li, .marketplace-itemsForSale-items li, .marketplace-auctions-item, .marketplace-sales-item {
+    height: 255px;
+    margin: 10px 5px;
+}
+
+.marketplace-itemsForSale-items li.marketplace-itemsForSale-item {
+    height: 155px;
+}
+
+#marketplace-active-auctions .marketplace-abstract .abstract-icon {
+    width: 75px;
+    height: 75px;
+}
+
+#marketplace-active-auctions .marketplace-abstract .abstract-icon > img {
+    width: 75px;
+} EOT;
+
+}
 
 ==/UserStyle== */
 @-moz-document url-prefix("https://www.eldarya.ru"), url-prefix("https://www.eldarya.fr"), url-prefix("https://www.eldarya.com"), url-prefix("https://www.eldarya.pl"), url-prefix("https://www.eldarya.es"), url-prefix("https://www.eldarya.com.br"), url-prefix("https://www.eldarya.it"), url-prefix("https://www.eldarya.de"), url-prefix("https://www.eldarya.hu") {
@@ -335,12 +368,9 @@ i3blur "Размытое (Blur)" <<<EOT https://i.ibb.co/mz6hjPW/966-V6s7y-Sl-A2
     width: 0;
 }
 
-/*Иконки на рынке поменьше*/
+/*Иконки на рынке поменьше (или нет)*/
 
-.marketplace-search-items li, .marketplace-itemsForSale-items li, .marketplace-auctions-item, .marketplace-sales-item {
-    height: 245px;
-    margin: 10px 5px;
-}
+/*[[icons]]*/
 
 .marketplace-abstract .abstract-content {
     margin: 5px 0;
@@ -348,15 +378,6 @@ i3blur "Размытое (Blur)" <<<EOT https://i.ibb.co/mz6hjPW/966-V6s7y-Sl-A2
 
 .marketplace-abstract .abstract-container, .marketplace-abstract .abstract-icon {
     top: -8px;
-}
-
-.marketplace-abstract .abstract-icon {
-    width: 75px;
-    height: 75px;
-}
-
-.marketplace-abstract .abstract-icon > img {
-    width: 75px;
 }
 
 .page-main-container marketplace-main-container #marketplace-menu .nl-button{
@@ -427,7 +448,7 @@ i3blur "Размытое (Blur)" <<<EOT https://i.ibb.co/mz6hjPW/966-V6s7y-Sl-A2
     margin: 70px auto auto;
 }
 
-/*Корректировка для Рождества*/
+/*Корректировка для Дня Святого Валентина*/
 
 #timer-help-container #event-timer, #timer-help-container #clock-icon {
     padding: 3px 0px 0px 0px;
@@ -437,8 +458,8 @@ i3blur "Размытое (Blur)" <<<EOT https://i.ibb.co/mz6hjPW/966-V6s7y-Sl-A2
     margin-top: 18px !important;
 }
 
-#christmas2020-page-main-container {
-    padding: 60px 50px 0px 0px;
+#valentines-day2021-page-main-container {
+    padding: 45px 0px 0px 0px;
 }
 
 #currencies.event {

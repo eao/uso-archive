@@ -3,11 +3,11 @@
 @namespace      USO Archive
 @author         Sef Eiba
 @description    `Enjoy the best Dueling Nexus theme. Designed with love.Apart from the instant visual enhancements. The custom vector game field scales to fit any screen size. The layout have been enhanced specially the card description/chat area alongside various other minor changes and game-play animations to enhance your user experience.  ♦ ♦ ♦ Important note: for Firefox users whom experiencing some animation lag, make sure to go to Customize Settings and select Firefox on the Browser option♦ ♦ ♦ You can select any background you prefer besides the included images  (by clicking on Customize Settings) from this page. You can also change various settings.♦ ♦ ♦ Make sure you turn on auto-updates for styles on Stylish/Stylus extension settings.This skin only affects the duelingnexus game/duel & deck editor window so far.Amazing Yu-Gi-Oh! backgrounds are created by: maxiuchiha22https://www.deviantart.com/maxiuchiha22`
-@version        202125.20.12
+@version        202128.1.56
 @license        CC0-1.0
 @preprocessor   uso
 @advanced dropdown background "Duel Background Image" {
-bg26 "Background 26*" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__zexal___barian_bg_by_maxiuchiha22_dd6hgzf.jpg EOT;
+bg24 "Background 24*" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__legacy_of_the_duelist_vgs_bg_by_maxiuchiha22_dd6hhft.jpg EOT;
 bg30 "Nexus Background" <<<EOT https://cdn.discordapp.com/attachments/486534021992677378/683119685407211556/20201002_-_DN_-_TEMP_BG_-_v1-1.jpg EOT;
 bg1 "Background 1" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__5d_s___apocalyptic_future_bg_by_maxiuchiha22_dd6ellh.jpg EOT;
 bg2 "Background 2" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__5d_s___arena_bg_by_maxiuchiha22_dd6ellq.jpg EOT;
@@ -32,8 +32,8 @@ bg20 "Background 20" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c1
 bg21 "Background 21" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__gx___generic_out_door_bg_by_maxiuchiha22_dd6el10.jpg EOT;
 bg22 "Background 22" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__gx___obelisk_blue_bg_by_maxiuchiha22_dd6el19.jpg EOT;
 bg23 "Background 23" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__gx___out_side_academy_bg_by_maxiuchiha22_dd6el1f.jpg EOT;
-bg24 "Background 24" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__legacy_of_the_duelist_vgs_bg_by_maxiuchiha22_dd6hhft.jpg EOT;
 bg25 "Background 25" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__zexal___arena_bg_by_maxiuchiha22_dd6hgyy.jpg EOT;
+bg26 "Background 26" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__zexal___barian_bg_by_maxiuchiha22_dd6hgzf.jpg EOT;
 bg27 "Background 27" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__zexal___city_day_bg_by_maxiuchiha22_dd6hgzq.jpg EOT;
 bg28 "Background 28" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__zexal___city_night_bg_by_maxiuchiha22_dd6hgzz.jpg EOT;
 bg29 "Background 29" <<<EOT https://rawcdn.githack.com/sefeiba/duelingnexus/a6c19a039ab239895bc4f29ae453b9c481a44efe/yu_gi_oh__zexal___school_bg_by_maxiuchiha22_dd6hh0b.jpg EOT;

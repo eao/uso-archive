@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         zigboom
 @description    `Google redesigned in dark Grays, custom images, gradients, advanced CSS3 effects and more. For web designs, check out https://www.zigboom.com`
-@version        2021125.17.46
+@version        202128.12.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -19,7 +19,7 @@ margin: 0px !important;
 
 
                     
-/* Pop-up */
+/* Highlights */
 
 .gb_ia.gb_aa, .gb_Rc.gb_ga.gb_va.gb_ha, .gb_Z:hover .gb_4, .gb_ia, .gb_ka, .gb_ja, .gb_ga, .gb_ob, 
     #fsett, #_L8b, .gb_sb, .gb_Zc, .gb_xb, .gb_la, ._qgo, form#tsf .aajZCb, 
@@ -29,20 +29,6 @@ margin: 0px !important;
  background-color: #282828 !important; 
 }
 
-
-form#tsf .aajZCb {
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
-    border-width: 0 1px 1px 1px;
-    border-style: solid;
-    margin-left: 1px;
-    margin-right: 1px;
-}
 
 .gb_ga, .gb_Z:hover:not(.gb_0) a {
    border: 1px solid #555 !important;
@@ -183,7 +169,7 @@ border: 0px solid !important;}
 .related {color: #660000 !important;}
 .tablib_selected {background-color: #000000 !important}
 
-div[style="width: 100%; clear: both;"] table, #box *, #body_body, .selectionTools, #GMdisplay, .thread, .thread-l, .thread-r, .thread-header-date, .reply_compose_container, .footer-links-selected, #wml, #wng, #col2, #gen-query, #ps-footer-bg, .list tr, #ps-titlebar, #ps-titlebar + div, td[style="border-top: 1px solid rgb(51, 102, 204); padding: 3px 7px; background: rgb(229, 236, 249) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"], #talk_container, .talk_roster, .me_entry, .roster_msgs_entry, .roster_msgs_entry div[style="padding: 3px;"], .roster_buzz, #inner_roster, .roster_entry, #chat_content, .mole_color, #mole_parent, .wackhistory, .wackmsgtype_i, .wackfooter, .gadget_set, .goog-popupiconpicker, .goog-tabpane, .goog-tabpane-tab, .goog-tabpane-cont, .goog-icon-picker-iconbox, #nav, .blk, #footcnt #fbar, .kpbb, .cwtlwm, #gb.gb_3c, .gb_3c.gb_e, .gb_e, .gb_bc, .gb_Fa.gb_Qc.gb_bg.gb_f, .GHDvEf, .action-menu-panel, .action-menu-item:hover {
+div[style="width: 100%; clear: both;"] table, #box *, #body_body, .selectionTools, #GMdisplay, .thread, .thread-l, .thread-r, .thread-header-date, .reply_compose_container, .footer-links-selected, #wml, #wng, #col2, #gen-query, #ps-footer-bg, .list tr, #ps-titlebar, #ps-titlebar + div, td[style="border-top: 1px solid rgb(51, 102, 204); padding: 3px 7px; background: rgb(229, 236, 249) none repeat scroll 0% 0%; -moz-background-clip: -moz-initial; -moz-background-origin: -moz-initial; -moz-background-inline-policy: -moz-initial;"], #talk_container, .talk_roster, .me_entry, .roster_msgs_entry, .roster_msgs_entry div[style="padding: 3px;"], .roster_buzz, #inner_roster, .roster_entry, #chat_content, .mole_color, #mole_parent, .wackhistory, .wackmsgtype_i, .wackfooter, .gadget_set, .goog-popupiconpicker, .goog-tabpane, .goog-tabpane-tab, .goog-tabpane-cont, .goog-icon-picker-iconbox, #nav, .blk, #footcnt #fbar, .kpbb, .cwtlwm, #gb.gb_3c, .gb_3c.gb_e, .gb_e, .gb_bc, .gb_Fa.gb_Qc.gb_bg.gb_f, .GHDvEf, .action-menu-panel, .action-menu-item:hover, .cu-container .mnr-c {
 background: transparent !important;
 }
 
@@ -1020,7 +1006,7 @@ box-shadow: 4px 4px 10px rgba(0,0,0,0.8) !important;
 }
 
 /* Main text color */
-div, td, font[color="#000000"], .qbtbha .qbtbtxt.qbclr, .gt-rw-span, .gt-syn-span, .gt-card-ttl-txt, #contribute-target, #source, ._IId, span.gb_3a, .gt-ct-text, #gb#gb span.gb_P, .ellip span, .gt-baf-word-clickable, #swml-loc, .result-dict-wrapper, .vk_bk,  .translation, .JolIg, #Wprf1b, .kno-ecr-pt, .gt-lc.gt-lc-mobile .gt-def-synonym-title, .gt-lc.gt-lc-mobile .gt-cd-cl, .gt-lc.gt-lc-mobile .cd-expand-label, .wqg8ad, .aCOpRe em, .st em { 
+div, td, font[color="#000000"], .qbtbha .qbtbtxt.qbclr, .gt-rw-span, .gt-syn-span, .gt-card-ttl-txt, #contribute-target, #source, ._IId, span.gb_3a, .gt-ct-text, #gb#gb span.gb_P, .ellip span, .gt-baf-word-clickable, #swml-loc, .result-dict-wrapper, .vk_bk,  .translation, .JolIg, #Wprf1b, .kno-ecr-pt, .gt-lc.gt-lc-mobile .gt-def-synonym-title, .gt-lc.gt-lc-mobile .gt-cd-cl, .gt-lc.gt-lc-mobile .cd-expand-label, .wqg8ad, .aCOpRe em, .st em, .VZqTOd { 
     color: #999999 !important; 
 }
 

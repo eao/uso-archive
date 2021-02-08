@@ -3,15 +3,15 @@
 @namespace      USO Archive
 @author         pgain2004
 @description    `A dark theme for niconico/nicovideo/ニコニコ/ニコ動画 html5 player(live not included), search/tag result and ranking pages. Player size automatically adapt to screen width and height on "large" & "auto", comment panel hide/show trigger by hover action; better fit for widescreen.`
-@version        2020827.14.19
+@version        202128.9.28
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
-@-moz-document regexp("http(s)?://www.nicovideo.jp/(?:watch/(?:sm|nm|so)?[0-9]+([?].*)?|(?:search|tag|ranking)(?:/)?.*)") {
+@-moz-document regexp("http(s)?://www.nicovideo.jp/(?:watch/(?:sm|nm|so)?[0-9]+([?].*)?|(?:search|tag|ranking)(?:/)?.*)"), regexp("http(s)?://www.nicovideo.jp/watch/[0-9]+/.*") {
 /*General*/
  
   *{transition-timing-function:ease;transition-duration:.15s!important;transition-property:border-color,height,border-radius,background-color,color,box-shadow,opacity,fill,transform!important}
-  body{background:#111216;color:#789}
+  body,.BaseLayout{background:#111216;color:#789}
   
 	/*Font-color*/
 	font[color="#001835"],span[style*="#001835"]{color:#007cff !important}
@@ -38,6 +38,7 @@
   .nico-CommonHeaderRoot .common-header-mzke3k{background:0}
   .nico-CommonHeaderRoot a[class^="common-header"]:hover,.nico-CommonHeaderRoot label[class^="common-header"]:hover, .nico-CommonHeaderRoot > *[class^="common-header"] > *[class^="common-header"] > *[class^="common-header"] > *[class^="common-header"] div[class^="common-header"]:hover, .nico-CommonHeaderRoot a[class^="common-header"]:hover *[class^="common-header"]{background-color:#333}
   .nico-CommonHeaderRoot *[class^="common-header"]{color:#fff}
+	.nico-CommonHeaderRoot a[href^="https://www.nicovideo.jp/my"]+div{background:0!important}
 
   /*Footer*/
   /*.ads{display:none}*/
@@ -83,10 +84,10 @@
 	.columnChange.open{background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAASCAYAAAC5DOVpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAG1JREFUeNpi6J+z8sz///8ZqIGZGKgIRg3DBNXds//jk2chxpCOaUsXf/j8NYaQOhZiXPP333+iXM5CqWvoHwEVWdGxHeVpjMxMjNRzWWtpKqMAL/cSokwjJW9Wdc36T7W8CXLlaN6krmEAAQYAaMyKmyyv3ZsAAAAASUVORK5CYII=")}
 }
 
-@-moz-document regexp("http(s)?://www.nicovideo.jp/watch/(?:sm|nm|so)?[0-9]+([?].*)?") {
+@-moz-document regexp("http(s)?://www.nicovideo.jp/watch/(?:sm|nm|so)?[0-9]+([?].*)?"), regexp("http(s)?://www.nicovideo.jp/watch/[0-9]+/.*") {
 /*Html5 Player*/
 
-  .IchibaContainer,.WatchAppContainer-switchToFlash,.MarqueeContainer,.BottomContainer-side,.VideoMenuContainer-area .UadButtonBalloon,.MiniBannerAdContainer,.BottomContainer-card:nth-child(2),.NicoSpotAdContainer,.BottomSideContainer,.BottomContainer-adContainer,.LikeTeaching,.Balloon-arrowWrap,.WakutkoolFooterContainer,.WakutkoolHeaderContainer,.WakutkoolNoticeContainer{display:none}
+  .IchibaContainer,.WatchAppContainer-switchToFlash,.MarqueeContainer,.BottomContainer-side,.VideoMenuContainer-area .UadButtonBalloon,.MiniBannerAdContainer,.BottomContainer-card:nth-child(2),.NicoSpotAdContainer,.BottomSideContainer,.BottomContainer-adContainer,.LikeTeaching,.Balloon-arrowWrap,.WakutkoolFooterContainer,.WakutkoolHeaderContainer,.WakutkoolNoticeContainer,.Balloon,.EasyCommentContainer-caption{display:none}
   
   .HeaderContainer,.BottomContainer,.HeaderContainer{background:0 0}
   
@@ -144,12 +145,17 @@
   #CommentRenderer{width:100%!important}
   #CommentRenderer canvas{width:100%!important;height:auto!important}
   .ControllerBoxCommentAreaContainer,.EasyCommentContainer{background-color:#111216;border:0}
-  .LikeButton,.EasyCommentButton{border-color:#657586;background-color:#111216;color:#789;border-radius:4px}
-  .LikeButton:hover,.EasyCommentButton:hover{background-color:#272727}
+  .LikeActionButton,.EasyCommentButton{border-color:#657586;background-color:#111216;color:#789;border-radius:4px}
+  .LikeActionButton:hover,.EasyCommentButton:hover{background-color:#272727}
   .EasyCommentButton-iconWrapper{display:none!important}
   .CommentShutter:empty{background-color:#0007}
   .ControllerBoxCommentAreaContainer.is-noLogin:hover .ControllerBoxCommentAreaContainer-commentShutter{background-color:#000a}
   .CommentShutter .Link{background-color:#069}
+	.EasyCommentContainer{height:24px}
+.EasyCommentContainer-prevButton,.EasyCommentContainer-nextButton{border:none}
+.EasyCommentContainer-scrollButton{background-color:#069}
+.EasyCommentContainer-scrollButton svg{fill:#111216}
+.EasyCommentContainer-scrollButton:disabled svg{fill:#789}
 
 
   /*Frame display order*/
@@ -181,6 +187,7 @@
   .CommentPanelContainer .CommentPanel,.CommentPanelContainer .CommentPanelDataGrid{color:#789}
   .CommentPanelContainer .CommentPanelDataGrid [class*="___header___"],.CommentPanelContainer .CommentPanelDataGrid [class*="___header-table___"],.CommentPanelDataGrid [class*="___table___"]{width:409px!important}
   .CommentPanelDataGrid [data-name="no"]{max-width:50px!important}
+  .CommentPanelContainer [data-row-nicoru-rank="1"],.CommentPanelContainer [data-row-nicoru-rank="3"]{background-color:#333}
   .CommentPanelContainer .expandToolInner{width:409px!important}
   .CommentPanelContainer .react-grid-Row:hover,div[role="row"]:hover{background:#272727!important}
   .CommentPanelContextMenuContainer{background-color:#111216;border-color:#789}
@@ -239,7 +246,7 @@
   .TagSuggestionInput-input{background:#657586;box-shadow:inset 0 0 3px #000;color:#000}
   .SearchBox-optionMenuItem:hover{background:#556576}
   .VideoDescriptionContainer{width:auto}
-  .VideoDescriptionSeriesContainer{border-color:#272727}
+  .VideoDescriptionSeriesContainer{border-color:#272727;margin:0}
   .VideoMetaOverflowMenuContainer-menu{background-color:#272727;border:0;box-shadow:0 1px 3px #000}
   .VideoMetaOverflowMenuContainer-menuBlock:not(:first-of-type){border-color:#111216}
   .VideoMetaOverflowMenuContainer .VideoMetaOverflowMenuOpenButton svg{fill:#657586}
@@ -247,6 +254,7 @@
   .FollowButton-label{color:#069}
   .FollowButton-button{border-color:#07a}
   .FollowButton svg{fill:#07a}
+	.ContentTree-content + .ContentTree-content{border-color:#272727}
 }
 
 @-moz-document regexp("http(s)?://www.nicovideo.jp/search/.*") {
