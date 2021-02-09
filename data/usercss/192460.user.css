@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         dadedidodu
 @description    `Masque les boutons PO pour les explos Hide gold button for exploration`
-@version        20201111.15.41
+@version        202128.13.45
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -11,15 +11,23 @@
 {
 /** -------------------------  PET  ------------------------- **/
 
-#map-container #map-location-preview-inner #buttons-container #explore-now-button {
+#map-container #map-location-preview-inner #buttons-container 
+
+#explore-now-button {
     display : none;
 }
 
-.gold-button {
+#pending-map-location-data #pending-actions button{
+    display : none
+}
+
+#gold-button {
     display : none;   
 }
 
 #treasure-hunt-result-overlay #result-content button.gold-button {
     display : none;
 }
+
+
 }

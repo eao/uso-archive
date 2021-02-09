@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Lemonager
 @description    `Стиль делает темную тему форума более тусклой и приятной для глаза. Все цвета подобраны очень хорошо и не отбивают желание пользоваться темой.`
-@version        20201113.16.29
+@version        202128.13.45
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -186,7 +186,19 @@
     overflow: hidden;
     margin-top: 20px;
 }
-
+.block--messages.block .message, .js-quickReply.block .message, .block--messages .block-row, .js-quickReply .block-row {
+    color: #c0c9d8;
+    background: #22242b;
+    border-width: 0;
+    border-style: solid;
+    border-top-color: #505662;
+    border-right-color: #505662;
+    border-bottom-color: #505662;
+    border-left-color: #505662;
+    border-radius: 8px;
+    border-radius: 0;
+    border: none;
+}
 .fsp .tabs--list {
     font-size: 1.3rem;
     color: #bdc6db;
@@ -263,6 +275,23 @@
 }
 .subNodeLink.subNodeLink--unread:before {
     color: #e6e7ebcf;
+}
+.subNodeLink::before {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 400;
+    display: inline-block;
+    font-size: inherit;
+    text-rendering: auto;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translate(0, 0);
+    width: auto !important;
+    width: 1em;
+    padding-right: .3em;
+    text-decoration: none;
+    color: #bdc6db;
 }
 .block-container .uix_newIndicator {
     font-size: 12px;
@@ -719,13 +748,7 @@ a.button.button--cta:focus {
     -moz-osx-font-smoothing: grayscale;
     line-height: 1.2;
 }
-.fr-box.fr-basic .fr-wrapper {
-    background: #2d2f36;
-    border: 1px solid #3f424a;
-    border-top: 0;
-    top: 0;
-    left: 0;
-}
+
 .button.button--link,
 a.button.button--link {
     font-size: 1.2rem;
@@ -767,53 +790,60 @@ a.button.button--primary:focus {
     overflow-x: auto;
     min-height: 52px;
 }
-.fr-toolbar .fr-command.fr-btn,
-.fr-popup .fr-command.fr-btn {
-    background: transparent;
-    color: #cecece;
-    -moz-outline: 0;
-    outline: 0;
-    border: 0;
-    line-height: 1;
-    cursor: pointer;
-    text-align: left;
-    margin: 0px 1px;
-    -webkit-transition: background .2s ease 0s;
-    -moz-transition: background .2s ease 0s;
-    -ms-transition: background .2s ease 0s;
-    -o-transition: background .2s ease 0s;
+.fr-box.fr-basic {
+    background: #292b31;
+}
+.input:focus, .input.is-focused, .inputGroup:focus-within, #XF .fr-box.fr-basic.is-focused, .codeEditor.CodeMirror.CodeMirror-focused {
+    --input-border-heavy: #637692;
+    --input-border-light: #637692;
+}
+
+.fr-box.fr-basic.is-focused {
+    background: #292b31;;
+}
+.fr-box.fr-basic.is-focused .fr-toolbar.fr-top {
+    background: #292b31
+}
+.fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
+	background: #22242b;
+	/* border: 1px solid #3f424a; */
+	border-top: transparent;
+}
+.fr-toolbar .fr-more-toolbar {
+    float: left;
     border-radius: 0;
     -moz-border-radius: 0;
     -webkit-border-radius: 0;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
+    background-color: #31343bc9;
+    -webkit-transition: height .2s;
+    -moz-transition: height .2s;
+    -ms-transition: height .2s;
+    -o-transition: height .2s;
+    height: 0;
     z-index: 2;
-    position: relative;
+    overflow: hidden;
+    position: absolute;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    text-decoration: none;
-    user-select: none;
-    -o-user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    float: left;
-    padding: 0;
-    width: 32px;
-    height: 32px;
+    width: 100%;
 }
-.fr-box.fr-basic .fr-element {
-    color: #e0e6f0;
-    padding: 16px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    overflow-x: auto;
-    min-height: 52px;
+.menu-row.menu-row--separated + .menu-row {
+	/* border-top: 1px solid #505662; */
 }
+.fr-sr-only {
+	font-size: 13px;
+	/* position: static; */
+	/* width: auto; */
+	/* height: auto; */
+	/* clip: auto; */
+	/* overflow: visible; */
+	/* margin: 0; */
+}
+
 .bbCodeBlock-title {
     padding: 10px 16px;
     font-size: 1.2rem;
@@ -847,15 +877,30 @@ a.button.button--primary:focus {
     vertical-align: top;
     float: left;
 }
-.fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper {
+.file {
+    position: relative;
+    width: 165px;
+    height: 165px;
+    margin-right: 10px;
     background: #22242b;
-    border: 1px solid #3f424a;
-    border-top: transparent;
+    border-radius: 4px;
 }
 .fr-toolbar .fr-command.fr-btn.fr-dropdown.fr-active,
 .fr-popup .fr-command.fr-btn.fr-dropdown.fr-active {
     color: #cccccc;
     background: #31333a1a;
+}
+.alert.is-unread {
+    color: #c0c9d8;
+    background: #272a32;
+}
+.message-cell.message-cell--vote {
+    position: relative;
+    background: #2e2f38;
+    border-left: 0 solid;
+    border-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 .fr-popup.fr-active {
     margin-top: 15px;
@@ -1712,12 +1757,23 @@ span.trophy--earned {
     font-size: 1.2rem;
     color: #e0e6f0;
 }
+.message-expandLink {
+    display: none;
+    position: absolute;
+    top: 60%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 100;
+    background: transparent;
+    background: linear-gradient(to bottom, rgba(49,55,66,0) 0%, #22242b 70%);
+}
 .node-icon i:before {
     font-family: 'Font Awesome 5 Pro';
     font-style: normal;
     font-weight: 400;
     display: inline-block;
-    font: normal normal normal 18px/1"Material Design Icons";
     font-size: inherit;
     text-rendering: auto;
     line-height: 1;
@@ -1727,24 +1783,7 @@ span.trophy--earned {
     width: auto !important;
     color: #bdc6db;
 }
-.subNodeLink:before {
-    font-family: 'Font Awesome 5 Pro';
-    font-style: normal;
-    font-weight: 400;
-    display: inline-block;
-    font: normal normal normal 18px/1"Material Design Icons";
-    font-size: inherit;
-    text-rendering: auto;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    transform: translate(0, 0);
-    width: auto !important;
-    width: 1em;
-    padding-right: .3em;
-    text-decoration: none;
-    color: #bdc6db;
-}
+
 .DC_LinkProxy {
     max-width: 650px;
     padding: 20px;
@@ -2212,7 +2251,7 @@ a.button:focus {
 }
 .message-signature--expandable .uix_signatureExpand {
     background: linear-gradient(to bottom, rgba(34, 36, 43, 0), #22242b 40%);
-    color: #31333a;
+    color: #7f828c;
 }
 .bbCodeBlock-expandLink {
     background: linear-gradient(to bottom, rgba(45, 47, 54, 0) 0%, #2d2f36 60%);
@@ -2241,7 +2280,10 @@ a.button:focus {
     border-bottom-color: #3f424a;
     border-left-color: #3f424a;
 }
-
+.message-articleUserInfo {
+    background: #262930;
+    border-top: 0 solid;
+}
 .cm-s-default.CodeMirror .CodeMirror-gutters {
     background: #2d2f36;
     border-right: 1px solid #3f424a;

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        202121.3.51
+@version        202128.14.45
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -72,11 +72,12 @@
 	text-decoration: none!important;
 }
 
-selector
+.b_scopebar>ul li
 {
 	text-transform: capitalize!important;
 }
 
+.b_scopebar>ul li,
 #b_results>li.b_ans.b_topborder.b_tophb,
 .b_searchboxForm,
 .br-item .br-ahSlot1,
@@ -107,6 +108,7 @@ html {
 
 /*___ Fonts ________________________________________________________________________*/
 
+.b_scopebar>ul li,
 #b_results>li a,
 #b_context .pa_item.pa_hCard p strong,
 selector
@@ -242,7 +244,10 @@ tr a
 	max-height: none!important;
 }
 
-selector
+#b_content .b_deep p,
+.b_slidesContainer,
+.inline_tile.multi_ln_cap .tit,
+.inline_tile.multi_ln_cap
 {
 	height: auto!important;
 }
@@ -251,8 +256,7 @@ selector
     height: 13rem!important;
 }
 
-#rdcans div.slide,
-.b_slidesContainer
+#rdcans div.slide
 {
     height: 10rem!important;
 }
@@ -329,6 +333,7 @@ selector
 #rdcans .rdc_readmoretext,
 #sw_as .as_rmhswarning>span>a,
 .im-interest-adder-row__launcher-button,
+.vertcard .lc_btnset .oe_ibsvc .ibs_btn div,
 a[href],
 cite,
 td span
@@ -358,6 +363,7 @@ a[href]:visited {
 .pb-title-nav-strip__nav-link_selected a,
 .pin .ins_exp_content:hover,.pin .ins_exp_title:hover,.pin .insbt:hover .text,.pin .pagesIncl:hover,
 .pstp_ratings .b_focusTextExtraSmall,
+#lMapContainer .lc_btnset a:hover .ibs_btn div,
 a[href]:hover,
 cite:hover,
 h1,
@@ -370,17 +376,16 @@ input[type="radio"]:checked+label
 
 /*__________________________________________________________________________________*/
 
-#rdcans .rdc_commentbody,
-.eb_menIns span,
 #actionbar .hint, #actionbar .text,
 #b_opalpers.b_op_with_button .b_op_flyout_no,
 #b_results .df_c .b_entityTitle,
 #df_listaa .b_module_expansion .b_expansion_text,
 #mmvdp_meta_properties a,#mmvdp_meta_properties a:hover,#mmvdp_meta_properties a:visited,#mmvdp_meta_properties div:nth-child(1),#mmvdp_meta_properties,
+#rdcans .rdc_commentbody,
 #sw_as .sa_as #sa_ul .b_focusLabel, #sw_as .sa_as .b_footnote, #sw_as .sa_as .b_ad .b_adlabel, #sw_as .sa_as .b_expando .b_subModule,
 #sw_as .sa_as .b_attribution,#sw_as .sa_as .b_demoteText,#sw_as .sa_as .b_expando .b_attribution, #sw_as .sa_as .b_expando .b_factrow, #sw_as .sa_as .b_expando .b_footnote,#sw_as .sa_as .b_expando .b_suppModule, #sw_as .sa_as .b_algo .b_vList td, #sw_as .sa_as .b_expando .b_secondaryText,
 #sw_as .sa_as .b_factrow,#sw_as .sa_as .b_secondaryText,#sw_as .sa_as .b_tHeader,#sw_as .sa_as .ctxtb, #sw_as .sa_as .sa_rmvd,#sw_as .sa_as .sa_sg .sa_tm,
-.l2_desc,
+.b_algoArticleTextCarousel .b_slidebar .slide .b_text,
 .b_algoTextCarousel .b_slidebar .slide .b_text,.b_listcapAT,.b_topborder .expreftext,
 .b_mtbrd a:last-of-type,
 .banLiText,
@@ -393,6 +398,7 @@ input[type="radio"]:checked+label
 .ctl_labels .clbl_secondary,
 .dc_mn,.dc_prn,
 .df_alsocon,.df_c .rwrl,
+.eb_menIns span,
 .epv_Summary,.epv_data .epv_desc,.epv_relation,.epv_subTitle,
 .filter-selector__partner-filter-name,
 .ftrSSL,
@@ -400,6 +406,7 @@ input[type="radio"]:checked+label
 .hbic_col,
 .im-interest-row__display-name,.im-modal-setting-row-with-toggle__description,.im-my-interests__settings-text-button,.im-trending-news-preference__show-less-text,.im-trending-news-preference__show-more-text,
 .item-filter__item,
+.l2_desc,
 .mc_vtvc_meta_pubdate span:first-child,.mc_vtvc_meta_row span:first-child,
 .mmsp,
 .mu-image-feed__explanation,
@@ -428,7 +435,9 @@ span#fltIdtLnk
 /*___ Khaki ________________________________________________________________________*/
 
 #b_results>.b_top .b_prominentFocusLabel, #b_results>.b_top .b_topTitle, #b_results>.b_top .b_focusTextExtraSmall, #b_results>.b_top .b_focusTextExtraSmall a, #b_results>.b_top .b_focusTextSmall, #b_results>.b_top .b_focusTextSmall a, #b_results>.b_top .b_focusTextMedium, #b_results>.b_top .b_focusTextMedium a, #b_results>.b_top .b_focusTextLarge, #b_results>.b_top .b_focusTextLarge a,
+#b_results>li a,
 #mmvdp_meta_title, #mmvdp_meta_title:hover, #mmvdp_meta_title:visited,
+.b_algoArticleTextCarousel .b_slidebar .slide .b_title,
 .b_traits,
 .b_vList .tabcap table tr th,
 .bnc-ft.bnc-ft.bnc-ft__sport-team-suggestions,.bnc-ftn,.bnp_hfly_tittle,
@@ -436,7 +445,6 @@ span#fltIdtLnk
 .epv_title,
 .filter-selector__title,
 .ftrP11,
-#b_results>li a,
 .hb_title_col,
 .im-trending-news-preference__category-name,
 .mc_vtvc_title,
@@ -507,11 +515,12 @@ label
 
 /*___ Blue _________________________________________________________________________*/
 
-.br-item .br-ahSlot1,
 #b_context .b_factrow,#b_results>.b_top .b_focusTextLarge,
 #mmvdp_meta_properties div,
 .ans_nws .na_cnt .b_secondaryText,
 .b_algo div.wpcbc .b_fcv2 tr td+td,
+.b_listnav .b_ans_stamp,
+.br-item .br-ahSlot1,
 .mc_vtvc_meta_pubdate,.mc_vtvc_meta_row span:nth-child(2),
 .query-list__query-time-column,
 .tl_cl .tl_date,
@@ -748,11 +757,11 @@ div.me_sidenav a,div.me_sidenav a:visited
 
 /*__ Blue __________________________________________________________________________*/
 
-#mm_vdpib_disbtn,
 #action_visible>a,
 #b_content a.cbtn,
 #bop_container .mm_seemore a.btn_seemore,
 #fbpgdg .button:first-Child,
+#mm_vdpib_disbtn,
 .b_cnvsug a,
 .btn,
 .dcajx.dcsbxhdr .dcbtn,
@@ -771,11 +780,11 @@ a.clear-history__privacy-dashboard-link
 	color: #fff!important;
 }
 
-#mm_vdpib_disbtn:hover,
 #action_visible>a:hover,
 #b_content a.cbtn:hover,
 #bop_container .mm_seemore a.btn_seemore:hover,
 #fbpgdg .button:first-Child:hover,
+#mm_vdpib_disbtn:hover,
 .b_cnvsug a:hover,
 .btn:hover,
 .dcajx.dcsbxhdr .dcbtn:hover,
@@ -791,11 +800,11 @@ a.clear-history__privacy-dashboard-link:hover
 	color: #ff0!important;
 }
 
-#mm_vdpib_disbtn:active,
 #action_visible>a:active,
 #b_content a.cbtn:active,
 #bop_container .mm_seemore a.btn_seemore:active,
 #fbpgdg .button:first-Child:active,
+#mm_vdpib_disbtn:active,
 .b_cnvsug a:active,
 .btn:active,
 .dcajx.dcsbxhdr .dcbtn:active,
@@ -1033,8 +1042,8 @@ optgroup:hover
 
 /*___ Red Gradient _________________________________________________________________*/
 
-#sw_as .as_rmhswarning,
 #buttons.float_button_bar,
+#sw_as .as_rmhswarning,
 .filter-selector,
 .safesearch-banner__container
  {
@@ -1113,8 +1122,8 @@ div.wpcbc .b_fcv2 tr:hover
 	border-left-color: #434343!important;
 }
 
-#sw_as li.pp_tile.sa_hv:last-child,#sw_as .sa_hv:last-child,
 #im-trending-news-preferences .im-interest-row:last-child:hover,
+#sw_as li.pp_tile.sa_hv:last-child,#sw_as .sa_hv:last-child,
 .ns-service-selector__link_selected:last-child,.ns-toggle-container:last-child
 {
 	border-bottom-left-radius: 22px!important;
@@ -1138,8 +1147,9 @@ div.wpcbc .b_fcv2 tr:hover
 	background: radial-gradient(ellipse at center, rgba(125,126,125,1) 0%,rgba(14,14,14,1) 100%)!important;
 }
 
-.expBySlide,
-#vdp_sib_int {
+#vdp_sib_int,
+.expBySlide
+{
 	background: radial-gradient(ellipse at center, #00809d 0%,rgba(14,14,14,1) 70%)!important;
 }
 
@@ -1163,9 +1173,7 @@ div.wpcbc .b_fcv2 tr:hover
 #rfCarousel .item,
 #slideexp0_4E4032c .b_slidebar .slide,
 #sw_as .sa_drw .sa_sg,
-#tta_copyIcon,
-#tta_playiconsrc,#tta_playicontgt,
-#tta_speechiconsrc,
+#tta_copyIcon,#tta_playiconsrc,#tta_playicontgt,#tta_speechiconsrc,
 .b_overlay .btn.rounded .cr>div,.b_slidebar .slide,.b_vlist2col.b_deep li,.b_vstackc .b_scard,
 .bnc-sport-team-suggestion,
 .br-item,

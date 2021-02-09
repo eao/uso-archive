@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Digi7al
 @description    `This style changes the TruckersMP website to a Red accent, instead of Green.Created by Digital (https://forum.truckersmp.com/index.php?/profile/4963-digital)`
-@version        2019624.18.15
+@version        202128.23.8
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -75,16 +75,13 @@ li.hide-tiny > a > span {
 .roundcorner {
     border: 2px solid #B92025;
 }
-.fa-facebook {
-    color: #3B5998;
-}
-.fa-twitter {
-    color: #00ACED;
-}
 .tab-v2 .nav-tabs li.active a {
     border-top: 2px solid #B92025;
 }
 .panel-u {
     border-color: #333;
+}
+.service-block-v8 .service-block-desc h3:after {
+    background: #B92025;
 }
 }

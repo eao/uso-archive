@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Ashalinda
 @description    `Changes styles for New Era(If you don't know Russian, please, use translator.)`
-@version        20201130.13.43
+@version        202128.16.24
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown background "Background (Фоновая картинка)" {
@@ -25,11 +25,11 @@ library "Library (Библиотека)" <<<EOT https://www.eldarya.fr/assets/im
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent ;
 color: transparent !important; EOT;
-dark "Dark (Темные)" <<<EOT color: #321540; EOT;
-violet "Violet" <<<EOT color: #ac26b1; EOT;
-magenta "Dark magenta" <<<EOT color: #a91aa9; EOT;
-yellow "Yellow" <<<EOT color: #f7cb2b; EOT;
-blue "Blue" <<<EOT color: #2185ec; EOT;
+dark "Dark (Темные)" <<<EOT color: #321540 !important; EOT;
+violet "Violet" <<<EOT color: #ac26b1 !important; EOT;
+magenta "Dark magenta" <<<EOT color: #a91aa9 !important; EOT;
+yellow "Yellow" <<<EOT color: #f7cb2b !important; EOT;
+blue "Blue" <<<EOT color: #2185ec !important; EOT;
 
 }
 
@@ -65,10 +65,12 @@ blue "Blue" <<<EOT color: #2185ec; EOT;
 #name-container h1,
 #name-container h2.section-title,
 #name-container h3,
-#name-container h4.gender{
+#name-container h4.gender,
+#title-container h2.section-title,
+#title-container p{
     line-height: 45px;
 
-    /*[[titles]]*/
+    /*[[titles]]*/;
 }
 
 /*меняет цвет основных кнопок*/
@@ -134,7 +136,7 @@ blue "Blue" <<<EOT color: #2185ec; EOT;
 #inner-grid #carousel #carousel-inner .carousel-news div h4,
 #inner-grid #carousel #carousel-inner .carousel-news div h5,
 #inner-grid #carousel #carousel-inner .carousel-news div p {
-    color: #3c0353;
+    color: #ffffff;
 }
 /*СТРАНИЦА PROFILE*/
 body.season-s2 .flavr-button.active, body.season-s2 .nl-button.active{
@@ -180,7 +182,6 @@ li.main-menu-event a {
     padding: 5px 30px;
     font-size: 16px;
 }
-
 }
 
 @-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/player/wardrobe.*") {
@@ -449,7 +450,6 @@ div#marketplace-itemDetail > *:first-child{
 /*СТРАНИЦА ФАМИЛЬЯРА (PET)*/
 /*фон для таймера*/
 p.timer {
-    background: antiquewhite;
     border: 2px solid white;
     padding: 0 10px;
     border-radius: 13px;
@@ -474,7 +474,6 @@ a#go-eggs {
 #bonus-bar #levels-container .level .energy-required {
     color: #3f00ff;
     font-size: 14px;
-    padding: 2px 15px;
 }
 /*всплывающие подсказки на ресурсах*/
 #pet-resources .resource-label {
@@ -495,14 +494,6 @@ a#go-eggs {
 #pet-infos .evolve-info .cant-evolve{
     padding: 10px 0;
     display: inline-block;
-}
-/* Изменяет размеры окна поимки фама */
-.flavr-container.new-layout-popup .flavr-overlay .flavr-fixer {
-    margin: 100px 30px 30px;
-}
-.flavr-container.new-layout-popup .flavr-outer {
-    max-width: 85%;
-    min-width: 535px;
 }
 
 #name-container h2 {
@@ -546,5 +537,21 @@ a#go-eggs {
 /* мини-игры повыше */	
 div#main-section {
     padding: 90px 40px 30px;
+}
+}
+
+@-moz-document regexp("https://www.eldarya.(fr|com|com.br|pl|de|dk|es|hu|it|nl|ro|ru|se|uk)/minigames/purrotroc.*") {
+/*purrotroc*/
+
+/* Цвет заголовков страниц */
+h1.section-title,
+h2.section-subtitle{
+    line-height: 45px;
+
+    /*[[titles]]*/;
+}
+
+.need-label {
+    font-size: 16px;
 }
 }

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Zorglube
 @description    `This a new style-sheet for the website "On va Sortir". This style remove most of the advertisements that could be seen on the site. This style also change the background of the site and turn transparent the different frame of the site. This style is working for : onvasortir.com and urbeez.comHope you'll like it. If you have any question or suggestion mail me. ZorglubeP.S.: - If you just want to remove the advertisement without changing the skin of the site see : style 28567 by user 38129.       - If you want to HIDE the old party use this style : style 31931 by user 53538`
-@version        201579.18.4
+@version        202128.18.44
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 @advanced dropdown myBackground "Choose your background" {
@@ -12,17 +12,13 @@ Default "Default*" <<<EOT http://82517.free.fr/img/love-black-complete-dark.jpg 
 	myBackground-custom-dropdown "Custom" <<<EOT /*[[myBackground-custom]]*\/ EOT;
 }
 @advanced text myBackground-custom "Choose your background (Custom)" "https://example.com/image.png"
+@advanced color myBackgroudColor "Background Color" #000000
 
 ==/UserStyle== */
 @-moz-document domain("onvasortir.com"), domain("urbeez.com") {
     body {
-       background:url("/*[[myBackground]]*/")fixed repeat center top !important;
+       background-color: /*[[myBackgroudColor]]*/ !important;
        color: grey !important;
-    }
-    
-    #divbody {
-        background: url("/*[[myBackground]]*/") fixed repeat center top !important;
-        color: grey !important;
     }
     
     #debutpage>table:nth-child(1) {

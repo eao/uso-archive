@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         BamaBraves
 @description    `Dark`
-@version        20201225.4.57
+@version        202128.19.42
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -72,91 +72,84 @@
 	text-decoration: none!important;
 }
 
-selector {
+selector
+ {
 	text-transform: capitalize!important;
 }
 
-#site-control-content>.widget-container .container-col.container-theme-grey,
-#site-control-content>.widget-container .container-col.container-theme-grey::after,
-.c-accordion,
-.c-facet-button,
-.ctd-card,
-.delay-disclaimer,
-.fast-track .checkout-panel,
-.fulfillment-group__item-row,
-.large-view .order-summary__fast-track,
-.order__body,
-.pf-container .listViewControls__tabs--selected,
-.recommendations--single .pager-carousel,
-.shop-carousel-with-dotd .carousel-with-dotd-CarouselWithDOTD .carousel-with-dotd-Carousel .flex-carousel-arrow-right button,
-.shop-facets .app-container.lv,
+#site-control-content .widget-container .container .container-col.container-theme-grey,
+#widgets-view .widget-container .container .container-col.container-theme-grey,
+.c-checkbox-custom-input input:focus~.c-checkbox-focus-ring,
+.shop-compare .recommendationSku,
+.shop-compare .recommendationSku-sticky,
+.shop-compare .recommendationSkuFirst,
+.shop-compare .sticky-container.is-recs-available .table-lv-compare:not(.recommendationSku-sticky),
+.shop-facets .get-it-fast-together,
+.shop-facets .lv .bordered-section,
 .shop-facets .lv .facet,
-.shop-media-gallery .media-gallery-v2 .tab-title.selected,
-.shop-shopping-assistant .appContainer .rail,
-.st-judes-donation__payment--fast-track,
-.thank-you-enhancement__account-info-card, .thank-you-enhancement__finance-card, .thank-you-enhancement__iconic-promo, .thank-you-enhancement__lease-card, .thank-you-enhancement__order-confirmation-card, .thank-you-enhancement__recommendations-card, .thank-you-enhancement__schedule-delivery-card,
+.shop-holiday-search-container .facets-scrolling .row .col-xs-3.facets-column > .sticky-container,
 .widget-image-asset-carousel .ImageAssetCarousel .carousel-item.carousel-item-border,
 .widget-polaroid,
+.widget-primary-message .rotating-panel,
+.widget-primary-message.rotatingPanelHorizontal.half-width .pm-full-bleed-wrapper.white-background-border,
+.widget-primary-message.rotatingPanelHorizontal[data-panel-type=dotIndicator] .pill-background,
+.widget-product-feature-v2 .wf-border-right,
 :focus
-{
+ {
 	border: none!important;
 	box-shadow: none!important;
 	outline: none!important;
 }
 
-.flex-carousel-slider, .pl-flex-carousel-slider {
-    overflow: visible;
-}
-
-.col-xs-4 img {
-	transform: scale(1.3);
-}
-
 /*___ Fonts ________________________________________________________________________*/
 
-#main-results >body,
-.price-block__primary-price,
-.shop-commerce-elements .jYfhhT .commerce-element .pricing
-{
+.priceView-customer-price span
+ {
+	font-size: 31px!important;
+}
+
+.fulfillment-fulfillment-summary [style="color:#96291A;margin-bottom:8px"] strong,.priceView-open-box-price .open-box-lowest-price,
+.shop-sku-list-item .sku-title .sku-header,
+.v-line-clamp,
+.widget-product-feature-v2 .wf-wrapper .wf-offer-row .product-title
+ {
 	font-size: 21px!important;
 }
 
-.pf-container .listViewControls__tabs-container,
-.price-block__reg-price,
-.price-block__savings-price,
-.widget-icon-headline .body
-{
+.body-copy,
+.c-section-title-text,
+.fulfillment-fulfillment-summary a,
+.fulfillment-fulfillment-summary strong,
+.gift-with-purchase-price__free-gift-message-medium-block,
+.gift-with-purchase-price__free-gift-message-medium-inline,
+.priceView-hero-price.priceView-previous-price span
+ {
 	font-size: 19px!important;
 }
 
-.availability__info,
-.body-copy,
-.btn.btn-sm,
-[style="margin-top: 10px; font-size: 13px; line-height: 16px;"],
+.gift-with-purchase-price__total-message-medium,
+.priceView-open-box-title,
 body
-{
+ {
 	font-size: 17px!important;
 }
 
-.disclaimer,
-.pricing-lib-price-7-1943-6 .priceView-buy-new-option__price-medium,
-.small,
-.widget-topper .disclaimer,
-[style="display:block;font-size:13px"],
-[style="margin-bottom:0;font-size:11px;text-decoration:none;color:#0146BE"]
-{
+p span
+ {
 	font-size: 15px!important;
 }
 
-[style="margin-top: 10px; font-size: 13px; line-height: 16px;"] {
-	line-height: 21px!important;
+
+.gift-with-purchase-price__total-message-medium
+ {
+	line-height: 33px!important;
 }
 
 /*___ Remove Items _________________________________________________________________*/
 
-.fluid-large-view__lower-container:after,
-[id*="shop-digital-ad-"],
-[id*="shop-google-adsense-"] {
+.shop-sku-list .embedded-leaderboard,
+[id*='shop-display-ad-']
+ {
 	left: -9999px!important;
 	position: absolute!important;
 	top: -9999px!important;
@@ -164,156 +157,112 @@ body
 
 /*___ Left/Right/Top/Bottom ________________________________________________________*/
 
-.widget-inspiration .variation-full-bleed .inspiration-background {
-	left: -1%;
+.widget-image-asset-carousel.full-bleed {
+    margin-left: -2px;
+    margin-right: -19em;
 }
 
-.widget-flex .flex-image {
-	bottom: -11px;
-}
-
-#pm-panel-0 .row {
-	margin-left: 70px!important;
-	width: 95%;
-}
-
-.row {
-	margin-left: 34px;
-}
-
-[style="margin-bottom:0;font-size:11px;text-decoration:none;color:#0146BE"] span {
-	padding-left: 12px!important;
-}
-
-#cust-timeline-drawer {
-    margin-top: 0px!important;
-}
-
-.blue-assist {
-    top: 99%;
-}
-
-.shop-header .header-large .global-navigation[aria-label="Main"] button {
-    top: 9px;
+.c-checkbox-custom-input, .c-checkbox-custom-input:before {
+    top: -5px;
 }
 
 /*___ Margins ______________________________________________________________________*/
 
-.add-to-order-carousel .pl-flex-carousel ul>li.item,
-.app-background,
-.checkout__col--primary,
-.checkout__col--secondary,
-.facet-section,
-.row:not(:first-child):not(:empty),
-.size-l .container-v2,
-[id*="shop-product-carousels-"] {
+#site-control-content .widget-container .container>.full-bleed-row,
+#widgets-view .widget-container .container>.full-bleed-row,
+.widget-product-feature-v2 .wf-wrapper .wf-offer-row .wf-offer
+ {
 	margin: 12px!important;
 }
 
-selector {
-	margin: 3px 6px!important;
+.facet-section:not(:empty)
+ {
+	margin: 13px 0!important;
 }
 
-#order-view .col-xs-4 {
-    margin: 18px 11px 0 -4rem!important;
+#site-control-content .widget-container .container>.contained-row,
+#widgets-view .widget-container .container>.contained-row
+{
+    margin: 2em 12px;
 }
 
 /*___ Paddings _____________________________________________________________________*/
 
-.checkout__col--primary,
-.checkout__col--secondary,
-.fluid-large-view__disclaimers,
-.fluid-large-view__main-content,
-.fluid-large-view__sidebar-content,
-.row:not(:first-child):not(:empty),
-.size-l .container-v2,
-[id*="shop-product-carousels-"] {
+#site-control-content .widget-container .container>.contained-row,
+#widgets-view .widget-container .container>.contained-row,
+.facet-section:not(:empty)
+ {
 	padding: 12px!important;
 }
 
-.btn,
-.card-member .btn-link-unstyled,
-.shop-location-tooltip .location-tooltip-lv .store-loc-btn {
+.btn.btn-link.btn-sm.show-link,
+.open-box-option__button,
+.shop-location-tooltip .location-tooltip-lv .store-loc-btn
+ {
 	padding: 3px 6px!important;
 }
 
 /*___ Heights ______________________________________________________________________*/
 
-.widget-flex .flex-image {
+selector
+ {
 	max-height: none!important;
 }
 
-selector {
+.recently-viewed-flyout-app,
+.thank-you-enhancement__recommendations-product-title
+ {
 	height: auto!important;
 }
 
-.col-xs-8 .widget-flex .col-xs-3 .flex-image-inner-wrapper,
-.col-xs-12 .widget-flex .col-xs-2 .flex-image-inner-wrapper {
-	height: 25rem;
+.recently-viewed-flyout-app .sku-card-product-title
+ {
+	height: 25rem!important;
 }
 
 /*___ Widths _______________________________________________________________________*/
 
 #site-control-content .widget-container .container>.contained-row,
-#site-control-content>.container,
-#site-control-content>.widget-container>.container,
+#site-control-content .widget-container .container>.full-bleed-row .col-xs-12,
+#site-control-content .widget-container .container>.full-bleed-row .col-xs-6,
 #widgets-view .widget-container .container>.contained-row,
-.checkout__container,
-.container-v2,
-.order-details-page__xl-width,
-.pf-container
-{
+#widgets-view .widget-container .container>.full-bleed-row .col-xs-12,
+#widgets-view .widget-container .container>.full-bleed-row .col-xs-6,
+.shop-carousel-with-dotd .carousel-with-dotd-CarouselWithDOTD.carousel-with-dotd-large-view,
+.widget-image-asset-carousel.full-bleed .ImageAssetCarousel
+ {
 	max-width: none!important;
 }
 
-.shop-location-card .phone {
+#site-control-content .widget-container .container,
+#widgets-view .widget-container .container
+ {
 	width: auto!important;
 }
 
-.col-xs-4.container-col.container-border-left>.widget-topper,
-.widget-inspiration .variation-full-bleed .inspiration-background {
-	width: 100%;
-}
-
-#site-control-content>.container,
-#site-control-content>.widget-container>.container,
-.container-v2 .col-xl-9,
-.container-v2,
-.customer-domain-my-devices .cdmd__l,
-.large-view .thank-you-enhancement__account-info-card,
-.large-view .thank-you-enhancement__finance-card,
-.large-view .thank-you-enhancement__iconic-promo,
-.large-view .thank-you-enhancement__lease-card,
-.large-view .thank-you-enhancement__order-confirmation-card,
-.large-view .thank-you-enhancement__recommendations-card,
-.large-view .thank-you-enhancement__schedule-delivery-card,
-.order-details-page__xl-width,
-.shop-header .header-large .top-navigation-section .top-navigation-container
-{
+selector
+ {
 	width: 98%!important;
 }
 
-.order-details-page__column-wrapper {
-	width: 78%!important;
+.widget-image-asset-carousel .ImageAssetCarousel>.col-xs-12 .image-asset-carousel-bg {
+    width: 87%;
 }
 
-.col-xs-8 {
-    width: 76.666667%;
-}
 
-.checkout__col--primary {
-    width: 63.666667%;
-}
 
-.order-details-page__add-to-order-wrapper {
-    width: 37rem;
-}
+
+
+
+
+
 }
 
 @-moz-document domain("bestbuy.com") {
 /*__________________________________________________________________________________*/
 
 #account-menu-app .greeting-container button,
+#main-results .fulfillment-fulfillment-summary a,
 .btn-default-link,
 .button--link,
 .c-facet-category,
@@ -323,21 +272,21 @@ selector {
 .shop-header .header-large .active .products_flyout .byCategories .categories_ul .categories_li a,
 .shop-header .header-large .global-navigation>ul>li>button,
 .shop-header .header-large .utility-navigation>ul>li>button,
+.shop-media-gallery .media-gallery-v2 .see-more-images-button,
+.shop-sku-list-item .shop-compare-checkbox label,
 [data-track="Store Availability: Change Location"] .css-901oao.r-ek8w24,
-a[href],
-td span
+a[href]
 {
 	color: #0ff!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 a[href]:visited {
 	color: #fc79fc!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*__________________________________________________________________________________*/
 
+#main-results .fulfillment-fulfillment-summary a:hover,
 .btn-default-link:hover,
 .btn-link:hover,
 .button--link:hover,
@@ -347,18 +296,21 @@ a[href]:visited {
 .shop-header .header-large .active .products_flyout .byCategories .categories_ul .categories_li:hover .categories_btn,
 .shop-header .header-large .active .products_flyout .byCategories .categories_ul .categories_li:hover a,
 .shop-header .header-large .global-navigation>ul>li>button:hover,
+.shop-header .header-large .item-parent-menu button:hover,
 .shop-header .header-large .utility-navigation>ul>li>button:hover,
+.shop-media-gallery .media-gallery-v2 .see-more-images-button:hover,
 .shop-media-gallery .media-gallery-v2 .tab-title.selected,
 .shop-save-for-later .appContainer button.save-for-later-save:hover,
+.shop-sku-list-item .shop-compare-checkbox label:hover,
 [data-track="Store Availability: Change Location"] .css-901oao.r-ek8w24:hover,
 a[href]:hover span,
 a[href]:hover,
 h1,
+input[type="checkbox"]:checked > span,
 input[type="checkbox"]:checked+label,
 input[type="radio"]:checked+label
 {
 	color: #ff0!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*__________________________________________________________________________________*/
@@ -367,6 +319,8 @@ input[type="radio"]:checked+label
 .c-facet-button,
 .c-facet-count,
 .css-901oao.r-ek8w24.r-n6v787,
+.disclaimer,
+.gift-with-purchase-price__free-gift-message,
 .gift-with-purchase-price__free-gift-message-medium-inline,
 .price-match-guarantee-heading-icon,
 .pricing-basic-banner__special-offer__banner-detail,
@@ -375,30 +329,38 @@ input[type="radio"]:checked+label
 .shop-compare .product-details-text,
 .shop-compare .table-row,
 .shop-complete-your-purchase .description-button>span,
+.shop-header .header-large .item-parent-menu button,
 .shop-header .sw-banner .sw-banner-body,
 .shop-location-card .loc-address,
+.shop-compare .divider-container .divider-text,
 .shop-location-list .location-zip-wrapper .btn-default-link,
 .shop-location-tooltip .shop-location-card .loc-address,
-.shop-media-gallery .media-gallery-v2 .tab-title,
 .shop-my-devices-list .pagination__list-ended,
 .shop-search-survey .survey-question,
 .shop-sku-list .item-count,
+.small,
+.v-base,
+.v-dark-gray,
 body,
 li,
-p {
+p,
+span
+{
 	color: #fff!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Khaki ________________________________________________________________________*/
 
 .c-accordion-trigger,
+.c-section-title-text,
 .css-901oao.css-bfa6kz.r-ek8w24,
 .heading-4,
 .pricing-basic-banner,
+.pricing-lib-price-8-2043-12 .priceView-open-box-title,
 .shop-compare .displayName,
 .shop-compare .recsHeader,
 .shop-location-card .btn-unstyled,
+.shop-media-gallery .media-gallery-v2 .tab-title,
 .shop-my-devices-list .dg-list-item__card .dg-list-item__item-name,
 .shop-save-for-later .appContainer button.save-for-later-save,
 .total-cost-clarity-content__finance-message strong,
@@ -410,8 +372,6 @@ h1,
 h2
 {
 	color: #F0E890!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Burlywood ____________________________________________________________________*/
@@ -424,11 +384,9 @@ h2
 .st-judes-donation__form-title,
 .st-judes-donation__title,
 .widget-topper .disclaimer,
-h3,
+h3,h3 span,
 h4 {
 	color: #e0b880!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Sandy Brown __________________________________________________________________*/
@@ -454,16 +412,17 @@ h4 {
 .widget-topper .valueRedColor-theme .header,
 h5,
 h6,
-label {
+label
+th span
+{
 	color: #F0A060!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Blue _________________________________________________________________________*/
 
 .availability__info strong,
 .container .slim-order-details-summary__order-date,
+.gift-with-purchase-price__free-gift-message-medium-block, .gift-with-purchase-price__free-gift-message-medium-inline,
 .price-block__savings-price,
 .price-summary__savings-value,
 .priceView-offer-badge strong,
@@ -471,8 +430,6 @@ label {
 [style="display: block; color: rgb(48, 136, 0);"],
 time {
 	color: #07beff!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Green ________________________________________________________________________*/
@@ -480,38 +437,38 @@ time {
 .cash-money,
 .dollar-amount,
 .dollar-amount.warranty__price.bold,
+.fulfillment-fulfillment-summary strong,
+.gift-with-purchase-price__total-message,
+.gift-with-purchase-price__total-message-medium,
 .open-box-option__link,
 .open-box-option__link-medium,
 .orderHeader__total,
 .price-block__primary-price,
 .price-summary__item-total-value,
 .price-summary__total-value,
+.priceView-customer-price span,
 .priceView-customer-price,
-.pricing-lib-price-7-1943-5 .total-cost-clarity-content__monthly-payment strong,
-.pricing-lib-price-7-1943-6 .priceView-open-box-price .open-box-lowest-price,
+.priceView-open-box-price .open-box-lowest-price,
 .shop-commerce-elements .jYfhhT .added-to-cart,
 .shop-commerce-elements .jYfhhT .commerce-element .pricing,
 .shop-complete-your-purchase .lv .package-summary span:nth-child(2),
 .total-cost-clarity-content__monthly-payment strong
 {
 	color: #07ff24!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*___ Red __________________________________________________________________________*/
 
 .btn[disabled],
+.fulfillment-fulfillment-summary [style="color:#96291A;margin-bottom:8px"] strong,
 .price-block__reg-price,
-.priceView-hero-price.priceView-previous-price,
-.priceView-layout-mini .pricing-lib-price-7-1943-6 .priceView-previous-price,
-.pricing-lib-price-7-1943-6 .priceView-buy-new-option__price-medium,
+.priceView-hero-price.priceView-previous-price span,
+.priceView-previous-price,
+.priceView-buy-new-option__price-medium,
 .pricing-price__regular-price,
 [style="color: rgb(187, 6, 40);"]
 {
 	color: #ff0707!important;
-	font-weight: 700!important;
-	text-shadow: 1px 1px #000!important;
 }
 
 /*__________________________________________________________________________________*/
@@ -549,7 +506,6 @@ pre ::selection {
 }
 
 .css-901oao.r-ek8w24.r-glunga,
-.gift-with-purchase-price__total-message-medium,
 .shop-sku-list-item .is-sponsored,
 .widget-polaroid .polaroid-text .disclaimer
 {
@@ -582,8 +538,12 @@ body {
 
 .checkout-header,
 .shop-compare .compareLV .compareAppContainer .compareProductContent .comparison-page-save-for-later-container,
+.shop-compare .divider-container .divider-text,
 .shop-footer .appContainer .footer-email-wrap,
-.shop-header .header-large .top-navigation-section {
+.shop-header .header-hamburger .top-nav,
+.shop-header .header-large .top-navigation-section,
+.widget-jump-link-navigation .pure-white
+{
 	background-color: #060505!important;
 }
 
@@ -591,6 +551,7 @@ body {
 .r-14lw9ot,
 .shop-compare .sticky-bg-color,
 .shop-footer .appContainer.lv,
+.shop-header .header-hamburger .bottom-nav,
 .shop-header .header-large .fullbleed-wrapper
 {
 	background-color: #1a1a1a!important;
@@ -606,7 +567,10 @@ body {
 .ctd-welcome,
 .fast-track,
 .fulfillment-list-entry,
+.natural-language-platform-non-product-search .appContainer .nlp-link-list.horizontal,
 .order-summary-card__fast-track,
+.recently-viewed-flyout-app,
+.shop-header .header-large .item-child-menu, .shop-header .header-large .item-parent-menu,
 .widget-carousel,
 .widget-primary-message.rotatingPanelHorizontal[data-panel-type=dotIndicator] .pill-background
 {
@@ -621,11 +585,14 @@ body {
 .cart-redesign .finance-banner__container,
 .checkout__gray-bg,
 .customer-domain-my-devices,
+.empty-cart-carousel .product-carousel,
 .flex-carousel-arrow-left button, .flex-carousel-arrow-right button,
 .large-view .order-summary__fast-track,
 .order,
 .price-block__savings-price,
 .recommendations--single .pager-carousel,
+.reward-calculator__container,
+.shop-header .appContainer .search-bar #header-clear-search-icon,
 .shop-header .header-large .store-locator-lv .store-loc-btn,
 .shop-location-list .location-card-list-container .store .your-store-badge,
 .shop-location-list .location-zip-wrapper,
@@ -646,8 +613,8 @@ body {
 .btn,
 .shop-location-tooltip .location-tooltip-lv .store-loc-btn
 {
-	background-image: linear-gradient(to bottom right, #043dda, #000)!important;
-	border-radius: 10px!important;
+	background-image: linear-gradient(to bottom right, #402dff, #000)!important;
+	border-radius: 22px!important;
 	border: none!important;
 	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 	color: #fff!important;
@@ -662,6 +629,28 @@ body {
 
 .btn:active,
 .shop-location-tooltip .location-tooltip-lv .store-loc-btn:active
+{
+	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+}
+
+/*__ Disabled __________________________________________________________________________*/
+
+.btn:disabled
+{
+	background-image: linear-gradient(to bottom right, #15141f, #000)!important;
+	border-radius: 10px!important;
+	border: none!important;
+	box-shadow: 1px 1px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
+	color: #fff!important;
+}
+
+.btn:disabled:hover
+{
+	background-image: linear-gradient(to bottom right, #eb1515, #000)!important;
+	color: #ff0!important;
+}
+
+.btn:disabled:active
 {
 	box-shadow: inset 2px 2px 1px black, inset 2px 3px 5px rgba(0, 0, 0, 0.3), inset -2px -3px 5px rgba(255, 255, 255, 0.5)!important;
 }
@@ -721,19 +710,26 @@ body {
 ._-_-_-_-core-src-components-modal-___modal__modal-dialog___13K6x,
 .c-overlay,
 .card,
-.facet-section,
+.facet-section:not(:empty),
 .fast-track .checkout-panel,
 .flex-carousel-slider ul>li.item .v-base,
+.flex-carousel-slider ul>li.item, .pl-flex-carousel-slider ul>li.item,
 .fulfillment-group__item-row,
 .pl-flex-carousel-slider ul>li.item .v-base,
 .popover,
 .shop-carousel-with-dotd .carousel-with-dotd-CarouselWithDOTD .carousel-with-dotd-Box,
 .shop-compare .talk-bubble,
 .shop-compare-tray .product-container,
+.shop-header .header-hamburger .left-utility-flyout,
+.shop-header .header-hamburger .utility-flyout-order-status,
+.shop-header .header-hamburger .utility-flyout-recently-viewed,
+.shop-header .header-large .menu-box-left,
 .shop-header .header-large .menu-box-right,
+.shop-header .header-large .sidecar-menu,
 .shop-location-list .location-card-list-container .store,
 .shop-my-devices-list .dg-list-item__card,
-.shop-product-carousels .bEnzdc .product-carousel .pager-carousel .pager-carousel-content .child-items-wrapper .child-items>li
+.shop-product-carousels .bEnzdc .product-carousel .pager-carousel .pager-carousel-content .child-items-wrapper .child-items>li,
+.widget-product-feature-v2 .wf-wrapper .wf-offer-row .wf-offer
 {
 	background-color: #1c1c1c!important;
 	border-radius: 22px!important;
@@ -745,19 +741,26 @@ body {
 ._-_-_-_-core-src-components-modal-___modal__modal-dialog___13K6x:hover,
 .c-overlay:hover,
 .card:hover,
-.facet-section:hover,
+.facet-section:not(:empty):hover,
 .fast-track .checkout-panel:hover,
 .flex-carousel-slider ul>li.item .v-base:hover,
+.flex-carousel-slider ul>li.item, .pl-flex-carousel-slider ul>li.item:hover,
 .fulfillment-group__item-row:hover,
 .pl-flex-carousel-slider ul>li.item .v-base:hover,
 .popover:hover,
+.recently-viewed-flyout-app:hover,
 .shop-carousel-with-dotd .carousel-with-dotd-CarouselWithDOTD .carousel-with-dotd-Box:hover,
 .shop-compare .talk-bubble:hover,
 .shop-compare-tray .product-container:hover,
+.shop-header .header-hamburger .left-utility-flyout:hover,
+.shop-header .header-hamburger .utility-flyout-order-status:hover,
+.shop-header .header-large .menu-box-left:hover,
 .shop-header .header-large .menu-box-right:hover,
+.shop-header .header-large .sidecar-menu:hover,
 .shop-location-list .location-card-list-container .store:hover,
 .shop-my-devices-list .dg-list-item__card:hover,
-.shop-product-carousels .bEnzdc .product-carousel .pager-carousel .pager-carousel-content .child-items-wrapper .child-items>li:hover
+.shop-product-carousels .bEnzdc .product-carousel .pager-carousel .pager-carousel-content .child-items-wrapper .child-items>li:hover,
+.widget-product-feature-v2 .wf-wrapper .wf-offer-row .wf-offer:hover
 {
 	box-shadow: inset 0 0 5px rgba(0, 0, 0, .4), rgba(155, 155, 155, 1) 0 1px 0, 10px 10px 5px rgba(10, 10, 10, .4), rgba(155, 155, 155, 1) 0 1px 0!important;
 }
@@ -823,6 +826,7 @@ body {
 
 /*__ Orange Gradient _______________________________________________________________*/
 
+.shop-compare .recommendationSkuFirst,
 .c-facet-button {
 	background: linear-gradient(to bottom, #da3a04 0%, #000 100%)!important;
 	border-bottom: 1px solid #000!important;
@@ -833,7 +837,9 @@ body {
 /*___ Highlight Background _________________________________________________________*/
 
 .c-accordion-trigger:hover,
-.shop-compare .accordion-content .table-row:hover
+.shop-compare .accordion-content .table-row:hover,
+.shop-header .header-large .item-child-menu:hover,
+.shop-header .header-large .item-parent-menu:hover
 {
 	background: linear-gradient(to right, #383838, #0000)!important;
 	border-left-color: #434343!important;
@@ -876,6 +882,7 @@ body {
 .carousel_new .carouselItem:hover,
 .col-xs-2:hover,
 .col-xs-4:hover,
+.col-xs-4:hover p,
 .container-v2 .col-xs-2:hover,
 .css-1dbjc4n:hover,
 .flex-carousel-slider ul>li.item:hover,
@@ -939,7 +946,7 @@ selector:hover {
 }
 
 @-moz-document domain("bestbuy.com") {
-.shop-header .header-large .menu-box-left {
+ppp.shop-header .header-large .menu-box-left {
 	width: 124rem!important;
 	max-height: none!important;
 }
@@ -1004,7 +1011,42 @@ selector:hover {
 	width: 56px!important;
 }
 
-/* Arrow Down _______________________________________________________________*/
+/* Arrows ____________________________________________________________*/
+
+/* Up _________________*/
+
+[aria-label="Expand"] svg
+{
+	background: url(https://i.ibb.co/bvZmSFj/red-up.png) no-repeat!important;
+	box-sizing: border-box;
+}
+
+[aria-label="Expand"] svg
+{
+	background-size: 29px!important;
+	height: 33px!important;
+	padding-left: 39px!important;
+	width: 25px!important;
+}
+
+/* Down _________________*/
+
+.shop-facets .c-show-hide-trigger svg,
+.c-accordion-trigger svg,
+.gvpHeadicon.drop-arrow-icon.flyBtn svg {
+	background: url(https://i.ibb.co/z7MRv74/down-arrow-30x30.png) no-repeat!important;
+}
+
+.shop-facets .c-show-hide-trigger svg,
+.c-accordion-trigger svg,
+.gvpHeadicon.drop-arrow-icon.flyBtn svg {
+	background-size: 22px!important;
+	height: 41px!important;
+	padding-left: 33px!important;
+	width: 31px!important;
+}
+
+/* Left _________________*/
 
 .c-accordion-trigger svg,
 .gvpHeadicon.drop-arrow-icon.flyBtn svg {
@@ -1017,6 +1059,27 @@ selector:hover {
 	height: 41px!important;
 	padding-left: 33px!important;
 	width: 31px!important;
+}
+
+/* Right _________________*/
+
+.btn.btn-link.btn-sm.btn-ficon.c-button-icon.c-button-icon-center.range-submit svg,
+.shop-header .header-large .item-parent-menu button .gvpHeadicon svg {
+	background: url(https://i.ibb.co/LQDKzQT/right-arrow-30x30.png) no-repeat!important;
+}
+
+.shop-header .header-large .item-parent-menu button .gvpHeadicon svg {
+	background-size: 22px!important;
+	height: 41px!important;
+	padding-left: 33px!important;
+	width: 31px!important;
+}
+
+.btn.btn-link.btn-sm.btn-ficon.c-button-icon.c-button-icon-center.range-submit svg {
+    background-size: 22px!important;
+    height: 22px!important;
+    padding-left: 23px!important;
+    width: 1px!important;
 }
 
 /* Avatar _______________________________________________________________*/
@@ -1164,11 +1227,13 @@ input[type="checkbox"] {
 
 /* Close _______________________________________________________________*/
 
+.header-close-icon svg,
 .ficon-close:before,
 [src="https://www.bestbuy.com/~assets/bby/_com/shop/search-bar/dist/client/images/a51ebb878664f2b84ad04a7656f93c6f.svg"] {
 	background: url(https://i.ibb.co/vQQ9rSD/Close-30x30.png) no-repeat!important;
 }
 
+.header-close-icon svg,
 .ficon-close:before,
 [src="https://www.bestbuy.com/~assets/bby/_com/shop/search-bar/dist/client/images/a51ebb878664f2b84ad04a7656f93c6f.svg"] {
 	background-size: 19px!important;
@@ -1531,6 +1596,7 @@ input[type="checkbox"] {
 
 /* Store _______________________________________________________________*/
 
+.shop-compare .table-cell-data .fulfillment-fulfillment-summary [style="margin-top:0"] svg,
 .shop-header .header-large .store-locator-lv .store-loc-btn svg {
 	background: url(https://i.ibb.co/QdqWk20/claim-Your-Business.png) no-repeat!important;
 }
@@ -1540,6 +1606,13 @@ input[type="checkbox"] {
 	height: 19px!important;
 	padding-left: 24px!important;
 	width: 19px!important;
+}
+
+.shop-compare .table-cell-data .fulfillment-fulfillment-summary [style="margin-top:0"] svg {
+    background-size: 30px!important;
+    height: 41px!important;
+    padding-left: 37px!important;
+    width: 42px!important;
 }
 
 /* Tablets _______________________________________________________________*/
@@ -1582,6 +1655,7 @@ input[type="checkbox"] {
 
 /* Truck (Free Shipping) _______________________________________________________________*/
 
+.shop-compare .table-cell-data .fulfillment-fulfillment-summary [style="margin-top:12px"] svg,
 [data-lid="ubr_free"] .gvpHeadicon.flyBtn svg {
 	background: url(https://image.ibb.co/mJPz0x/truck-92x56.png) no-repeat!important;
 }
@@ -1591,6 +1665,13 @@ input[type="checkbox"] {
 	height: 63px!important;
 	padding-left: 88px!important;
 	width: 88px!important;
+}
+
+.shop-compare .table-cell-data .fulfillment-fulfillment-summary [style="margin-top:12px"] svg {
+    background-size: 48px!important;
+    height: 52px!important;
+    padding-left: 46px!important;
+    width: 50px!important;
 }
 
 /* TV _______________________________________________________________*/
