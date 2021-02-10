@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         TTC
 @description    `Стиль для Biathlon.com.ua`
-@version        202127.22.38
+@version        202129.21.23
 @license        CC0-1.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -34,8 +34,8 @@ body {
     font-family: Arial;
 }
 a {
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+    -webkit-transition: all 0.0s;
+    transition: all 0.0s;
     color: #002b71;
     text-decoration: none;
     outline: none;
@@ -271,9 +271,11 @@ a {
 }
 a:hover,
 a:focus{
-	text-decoration: underline;
     color: #6dc4de;
 }
+.el-carton--body a:hover,a:focus{
+    text-decoration: underline;
+   } 
 .el-list--disc > li {
     color: #405f91;
     font-size: 0.88em;
@@ -291,6 +293,8 @@ a:focus{
     color: #000;
     font-size: 0.81em;
     font-weight: 600;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 .el-table--points > tbody > tr > td:nth-child(2) a:hover, .el-table--nations > tbody > tr > td:nth-child(3) a:hover, .el-table--sprints > tbody > tr > td:nth-child(3) a:hover, .el-table--pursuits > tbody > tr > td:nth-child(3) a:hover, .el-table--users > tbody > tr > td:nth-child(1) a:hover, .el-table--ratings > tbody > tr > td:nth-child(1) a:hover, .el-table--compositions > tbody > tr > td:nth-child(2) a:hover, .el-table--names > tbody > tr > td:nth-child(1) a:hover, .el-table--info > tbody > tr > td:nth-child(2) a:hover{
     color: #6dc4de;
@@ -729,5 +733,46 @@ a:focus{
 }
 .el-menu .el-menu--cry.chat {
     background-image: url(https://i.imgur.com/Ifkh2GZ.png);
+}
+.el-carton--split {
+    border-top: 1px solid #edf1f4;
+    margin-top: 0.50em;
+    margin-bottom: 0.5em;
+}
+.el-carton--head {
+    margin-bottom: 0.50em;
+}
+.sp-name {
+    margin-top: 1.0em;
+    margin-bottom: 1.0em;
+}
+.el-carton--body .el-case--head {
+    padding-left: 0em;
+    padding-top: 0.50em;
+}
+.sc-footer--more > li.email {
+    background-image: url(https://i.imgur.com/RPcahjV.png);
+}
+.sc-footer--more > li.new {
+    background-image: url(https://i.imgur.com/4ydEb7d.png);
+}
+.el-case.voit {
+    background-image: url(https://i.imgur.com/bcjMm9C.png);
+}
+.bl-forecast-btns a:hover {
+     text-decoration: none;
+     color: #fff;
+}
+.el-latest {
+    margin-bottom: 0.50em;
+}
+.el-latest + .el-latest{
+    padding-top: 0.20em;
+}
+.bl-filter--item {
+    font-size: 0.81em;
+}
+.el-case--head {
+    margin-bottom: 1.0em;
 }
   /* i really want this to be global */

@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         slyfox88
 @description    `Politico Dark Gray Nightmode for Politico.com`
-@version        2020820.7.14
+@version        2021210.0.17
 @license        CC-BY-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -37,7 +37,6 @@ body {
 .PibTypography-text {
     color: #444;
 }
-
 
 p,
 a,

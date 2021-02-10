@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Reza Rahemtola
 @description    `A simple Dark Theme for Binance that works on the main pages of the site, such as Wallets, Dashboard, Binance Earn, BNB Vault, Announcement articles and more.`
-@version        202128.20.11
+@version        202129.23.16
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -244,10 +244,10 @@
  .css-146q23, .css-1p01izn, .css-vt77s9, .css-1hgx5yb, .css-1x6vcjp {
     background-color: #202020 !important;
 }
-.css-vk9wn5, .css-16y8rpw, .css-off8uh, .css-11bw57b, .css-1tvu0s4, .css-r03l5g, .css-r03l5g .css-vurnku, .css-1lehdpr .css-vurnku, .css-1uua3kq div, .css-1ylvtlm, .css-1m231ps, .css-2y5yw2, .css-12fp601, .css-1afj3g1, .css-1om6huk {
+.css-vk9wn5, .css-16y8rpw, .css-off8uh, .css-11bw57b, .css-1tvu0s4, .css-r03l5g, .css-r03l5g .css-vurnku, .css-1lehdpr .css-vurnku, .css-1uua3kq div, .css-1ylvtlm, .css-1m231ps, .css-2y5yw2, .css-12fp601, .css-1afj3g1, .css-1om6huk, .css-180eiyx, .css-1124n14, .css-1y1ygs8, .css-kjdqn9, .css-vr1wsl, .css-py3k49, .css-u95vxr, .css-1g02g2m, .css-cvky42, .css-177e67h, .css-tn1ffv, .css-1aqr5xt, .css-1wuyyej {
     color: #fff !important;
 }
-.css-1qbirax {
+.css-1qbirax, .css-yv6506 > div.active, .css-1jlo1ku {
     color: #76808F !important;
 }
 .css-jlbk6n {

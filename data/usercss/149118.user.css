@@ -3,33 +3,160 @@
 @namespace      USO Archive
 @author         Relashia
 @description    `Style shows on the map items that can be found in the specific locations (TO & ANE).<br/>Style is global, it works on every language version of Eldarya.<br/>--------------------------------------------------------<br/>Styl pokazuje na mapie przedmioty możliwe do znalezienia w danych lokacjach (TO i ANE).<br/>Styl jest globalny, działa na każdej wersji językowej Eldaryi.`
-@version        2021123.12.55
+@version        202129.20.38
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
 /* i really want this to be global */
 
 
-#map-container .map-location-tooltip .energy-required, #map-container .map-location-tooltip .time-to-explore{
-	left: -75px; top: 20px;
+/*WYGLĄD MAPKI*/
+/*przesunięcie okienka mapki*/
+#treasure-hunt-interface
+{
+    top: 70px;
+    left: 30px;
 }
 
-.pet-interface-container #right-container .lens {
-    border-radius: 20px;
-    background:rgba(255, 255, 255, .89);
-}
-#map-container .map-location-tooltip .map-location-name{
-	z-index: 25;
-	left: 10px;
-	top: 25px;
-	width: 200px;
+/*usunięcie przycięcia mapki i lekkie zaokrąglenie krawędzi*/
+#map-container #current-map
+{
+    clip-path: none;
+    border-radius: 10px;
 }
 
-#map-container .map-location-tooltip .map-location-infos{
+/*usunięcie przycięcia cienia mapki i zaokrąglenie krawędzi przy odbieraniu poszukiwań i w ich trakcie*/
+#treasure-hunt-result-overlay::before
+{
+    clip-path: none;
+    height: 92%;
+    border-radius: 10px;
+}
+#pending-map-location-data-outer.active
+{
+    clip-path: none;
+    height: 92%;
+    border-radius: 10px;
+}
+#map-container #map-location-preview
+{
+    clip-path: none;
+    border-radius: 10px;
+}
+#capture-interface-outer.active
+{
+    clip-path: none;
+    height: 92%;
+    border-radius: 10px;
+}
+
+/*nie ma suwaka przy znalezionych łupach*/
+#treasure-hunt-result-overlay #result-content .mCSB_scrollTools .mCSB_draggerContainer
+{
+    display: none;
+}
+
+/*wyżej tytuł w okienku poszukiwań i lekkie rozciągnięcie*/
+#treasure-hunt-result-overlay #result-content #result-header
+{
+    height: 40%;
+    margin-top: -10%;
+    margin-bottom: -5%
+}
+#treasure-hunt-result-overlay #result-content #map-result-name
+{
+    top: 30%;
+}
+#treasure-hunt-result-overlay #result-content p#th-again
+{
+    line-height: 16px;
+    margin-top: 1%
+}
+#treasure-hunt-result-overlay #result-content #result-list .th-event
+{
+    margin: 2px 0;
+}
+#treasure-hunt-result-overlay #result-content #result-list
+{
+    width: 100%;
+    max-height: 155px;
+    overflow: auto;
+}
+
+/*usuwa podświetlenie przy itemach znalezionych na poszukiwaniach*/
+#treasure-hunt-result-overlay #result-content #result-list .th-result .th-result-img
+{
+    filter: none;
+}
+
+/*usuwa animację przy itemach znalezionych na poszukiwaniach*/
+#treasure-hunt-result-overlay #result-content-outer #result-content.found-objects #result-glow
+{
+    display: none;
+}
+
+/*usuwa animację przy chowańcu znalezionym na poszukiwaniach*/
+#capture-interface #capture-pet-image #capture-glow
+{
+    display: none;
+}
+
+/*zmienia rozmiar przycisku "mój chowaniec"*/
+.pet-interface-container.treasure-hunt-interface-open #right-container #close-treasure-hunt-interface
+{
+    width: 38%;
+}
+
+/*zmienia położenie ikonki z ilością energii chowańca*/
+#treasure-hunt-interface .pet-resource-container
+{
+    top: 1px;
+    left: -20px;
+}
+
+
+
+
+
+/*WYGLĄD OKIENKA LOKACJI*/
+/*kształt i tło okienka*/
+.pet-interface-container #treasure-hunt-interface .lens
+{
+    border-radius: 10px;
+    background:rgba(255, 255, 255, .95);
+}
+/*brak obrazka w tle okienka lokacji*/
+#map-container .map-location-tooltip .tooltip-bg
+{
+    background: none;
+}
+/*nazwa lokacji*/
+#map-container .map-location-tooltip .map-location-name
+{
+	z-index: 15;
+	left: 8px;
+	top: 40px;
+	width: 205px;
+}
+/*info o energii i czasie poszukiwań*/
+#map-container .map-location-tooltip .energy-required, #map-container .map-location-tooltip .time-to-explore
+{
+	left: -75px; top: 33px;
+}
+#map-container .map-location-tooltip .map-location-infos
+{
 	box-shadow: none;
 	z-index: 20;
 	background:rgba(255, 255, 255, 0);
 }
+
+
+
+
+
+
+
+
 
 
 /*THE ORIGINS*/
@@ -1248,14 +1375,14 @@ url("http://www.eldarya.fr/static/img/item/player/icon/a5ef9c412686d2590cc7647ce
 url("http://www.eldarya.fr/static/img/item/player/icon/49db74af8d9dd6a32f9749e858ad6e59.png") !important ;
 background-repeat: no-repeat!important;
 background-position:
-5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px,
-5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px,
-5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px,
-5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px,
-5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px
+5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px, 205px 90px,
+5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px, 205px 135px,
+5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px, 205px 180px,
+5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px, 205px 225px,
+5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px, 205px 270px
 !important;
-height: 185px!important;
-width: 210px!important;
+height: 135px!important;
+width: 245px!important;
 background-size : 40px 40px !important ;}
 div.map-location-tooltip [data-id="95"]:after { content: "+⚡ | -❤";
 position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 20px;  font-weight: bold; }
@@ -1295,14 +1422,14 @@ url("https://www.eldarya.fr/static/img/item/player/icon/331b1f1dea6572ea49fd981b
 url("https://www.eldarya.fr/static/img/player/hair/icon/e91c6cf7f708c4f53fcb755c56e8ab30.png") !important ;
 background-repeat: no-repeat!important;
 background-position:
-5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px,
-5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px,
-5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px,
-5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px,
-5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px
+5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px, 205px 90px,
+5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px, 205px 135px,
+5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px, 205px 180px,
+5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px, 205px 225px,
+5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px, 205px 270px
 !important;
-height: 185px!important;
-width: 210px!important;
+height: 135px!important;
+width: 245px!important;
 background-size : 40px 40px !important ;}
 div.map-location-tooltip [data-id="97"]:after { content: "+⚡ | +❤";
 position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 20px;  font-weight: bold; }
@@ -1348,7 +1475,7 @@ background-position:
 5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px
 !important;
 height: 135px!important;
-width: 165px!important;
+width: 170px!important;
 background-size : 40px 40px !important ;}
 div.map-location-tooltip [data-id="99"]:after { content: "+/-⚡";
 position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 20px;  font-weight: bold; }
@@ -1387,14 +1514,14 @@ url("https://www.eldarya.fr/static/img/item/player/icon/d51ff4e8737485bc99bba9c6
 url("https://www.eldarya.pl/static/img/item/player/icon/3a03eb268088654b16a3c6bbeb6a4673.png") !important ;
 background-repeat: no-repeat!important;
 background-position:
-5px 90px, 45px 90px, 85px 90px, 125px 90px,
-5px 135px, 45px 135px, 85px 135px, 125px 135px,
-5px 180px, 45px 180px, 85px 180px, 125px 180px,
-5px 225px, 45px 225px, 85px 225px, 125px 225px,
-5px 270px, 45px 270px, 85px 270px, 125px 270px
+5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px,
+5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px,
+5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px,
+5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px,
+5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px
 !important;
-height: 185px!important;
-width: 175px!important;
+height: 135px!important;
+width: 210px!important;
 background-size : 40px 40px !important ;}
 
 /*Księżycowy ogród/Jardin de la lune*/
@@ -1408,14 +1535,14 @@ url("https://www.eldarya.fr/assets/img/item/player/icon/c6074fe2f618f9458e81efd6
 url("https://www.eldarya.fr/assets/img/item/player/icon/fa9157e5f91b3b3d14cbf6cdcb6b21fb.png") !important ;
 background-repeat: no-repeat!important;
 background-position:
-5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px,
-5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px,
-5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px,
-5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px,
-5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px
+5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px, 205px 90px,
+5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px, 205px 135px,
+5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px, 205px 180px,
+5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px, 205px 225px,
+5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px, 205px 270px
 !important;
-height: 185px!important;
-width: 210px!important;
+height: 135px!important;
+width: 245px!important;
 background-size : 40px 40px !important ;}
 div.map-location-tooltip [data-id="102"]:after { content: "-⚡";
 position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 20px;  font-weight: bold; }
@@ -1503,14 +1630,14 @@ url("https://www.eldarya.pl/static/img/item/player/icon/b803c931474cf7acbba75293
 url("https://www.eldarya.fr/assets/img/player/hair/icon/d17de84ac211f11d0cdfb5ab9a349938.png") !important ;
 background-repeat: no-repeat!important;
 background-position:
-5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px,
-5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px,
-5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px,
-5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px,
-5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px
+5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px, 205px 90px,
+5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px, 205px 135px,
+5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px, 205px 180px,
+5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px, 205px 225px,
+5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px, 205px 270px
 !important;
-height: 185px!important;
-width: 210px!important;
+height: 135px!important;
+width: 245px!important;
 background-size : 40px 40px !important ;}
 div.map-location-tooltip [data-id="106"]:after { content: "+⚡";
 position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 20px;  font-weight: bold; }
@@ -1633,14 +1760,14 @@ url("https://www.eldarya.fr/assets/img/player/skin/icon/d087e9c9d3aa88e10fdaf023
 url("https://www.eldarya.fr/assets/img/item/player/icon/bb1d632f7f371edefb1204dbe767f26f.png") !important;
 background-repeat: no-repeat!important;
 background-position:
-5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px,
-5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px,
-5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px,
-5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px,
-5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px
+5px 90px, 45px 90px, 85px 90px, 125px 90px, 165px 90px, 205px 90px,
+5px 135px, 45px 135px, 85px 135px, 125px 135px, 165px 135px, 205px 135px,
+5px 180px, 45px 180px, 85px 180px, 125px 180px, 165px 180px, 205px 180px,
+5px 225px, 45px 225px, 85px 225px, 125px 225px, 165px 225px, 205px 225px,
+5px 270px, 45px 270px, 85px 270px, 125px 270px, 165px 270px, 205px 270px
 !important;
-height: 225px!important;
-width: 210px!important;
+height: 185px!important;
+width: 245px!important;
 background-size : 40px 40px !important ;}
 div.map-location-tooltip [data-id="111"]:after { content: "-⚡ | +❤";
 position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 20px;  font-weight: bold; }
@@ -1693,10 +1820,3 @@ width: 210px!important;
 background-size : 40px 40px !important ;}
 div.map-location-tooltip [data-id="113"]:after { content: "-⚡";
 position: absolute;	top: 55px; left: 120px; font-family: "Alegreya Sans", sans-serif;  color: #321540;  font-size: 20px;  font-weight: bold;}
-
-
-
-
-
-
-
