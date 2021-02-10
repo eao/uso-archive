@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         Justin Ikeako
 @description    `<strong>Hey! 👋🏽</strong>Darklingo++ is a delightful switch on the default Duolingo UI. This style presents you with a <strong>Dark Mode</strong>, the ability to change the <strong>Theme Color</strong> , and it makes both leagues and the scrollbar optional. <i>(More to come in the future)</i>If you find anything that isn't themed correctly, feel free to tell me; feedback is always welcome! 😁 And if you <i>really</i> like this style or any of my others, you can <a href="https://paypal.me/justinikeako">donate</a> (only if you want to 🤗).Made with 💖 by <a href="https://userstyles.org/users/709142">Justin Ikeako</a>.`
-@version        202123.19.14
+@version        2021210.4.15
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced color custom-color "Custom Theme Color" #1F98D2
@@ -1389,7 +1389,8 @@ a {
 }
 
 /* Healing Crack */
-._15U-t .lYUW1:not(._17z4M) svg > g > g > g:not([transform="matrix(2,0,0,2,-48,-152.5)"]) g[opacity="1"] > [fill="rgb(255,255,255)"] {
+._15U-t .lYUW1:not(._17z4M) svg > g > g > g:not([transform="matrix(2,0,0,2,-48,-152.5)"]) g[opacity="1"] > [fill="rgb(255,255,255)"],
+._2qVNv ._2XCwy svg > g > g > g:not([transform="matrix(2,0,0,2,-48,-152.5)"]) g[opacity="1"] > [fill="rgb(255,255,255)"] {
 	fill: var(--100)
 }
 
@@ -1827,27 +1828,34 @@ html {
   background-color: var(--brand-blue)
 }
 
+._1OKiq,
+._3BfIv,
 ._3ycGc {
 	background-color: var(--brand-green)
 }
 
-._1Do3j {
+._2tERm,
+._1Do3j,
+.OPutV {
 	background-color: var(--brand-red)
 }
 
 ._2FApd .twkSI,
+._2FApd,
+.KC6xz,
 .Q2YDq {
 	background-color: var(--brand-orange)
 }
 
-._3Gx6D {
+
+._3Gx6D,
+.SSzTP {
 	background-color: var(--brand-gold-light)
 }
 
 .SSzTP._3x-Tr,
 .SSzTP.jXGxO,
-._3dqWQ,
-.SSzTP {
+._3dqWQ {
 	background-color: var(--brand-gold-dark)
 }
 
@@ -2298,7 +2306,7 @@ html {
 
 
 
-/* Dimentions */
+/* Dimensions */
 
 
 /* 10 x 38 */

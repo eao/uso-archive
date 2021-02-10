@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         kmstyler
 @description    `Restores the old FB desktop interface.`
-@version        202123.7.13
+@version        2021210.8.39
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -42,6 +42,7 @@ span[class="d2edcug0 hpfvmrgz qv66sw1b c1et5uql rrkovp55 jq4qci2q a3bd9o3v lrazz
 div[class="cxgpxx05 sj5x9vvc"]{display:none!important}
 
 
+
 body{zoom:1}
 @media (max-width: 1920px){.msh19ytf.msh19ytf{max-width:fit-content}} 
 div[role=main] {max-width: 1260px; width:100%;}
@@ -58,7 +59,7 @@ div[role=main] {max-width: 1260px; width:100%;}
 .rq0escxv.lpgh02oy.du4w35lb.pad24vr5.rirtxc74.dp1hu0rb.fer614ym.bx45vsiw.o387gat7.qbu88020.ni8dbmo4.stjgntxs.czl6b2yu *{border-radius: 4px;font-weight: 400; font-size:19px}
 [data-pagelet="RightRail"] * {border-radius: 4px; font-size:19px}
 
- [role="banner"]{position: fixed;z-index: 3;display: flex; justify-content: center;width: 100%;height: 59px;background-color: #29487d; border-bottom: 1px solid #29487d;  zoom: 0.8; opacity:0.8!important}
+ [role="banner"]{position: fixed;z-index: 3;display: flex; justify-content: center;width: 100%;height: 59px;background-color: #29487d; border-bottom: 1px solid #29487d;  zoom: 0.8; opacity:1.0!important}
 
  .hpfvmrgz.dp1hu0rb.buofh1pr.cbu4d94t.j83agx80{align-items: center;}
 .j83agx80.cbu4d94t.d6urw2fd.dp1hu0rb.l9j0dhe7.du4w35lb{align-items:center;}
@@ -127,6 +128,7 @@ div[class*="k4urcZZZZZ"]{opacity:0.9!important}
 
 div[aria-label="Save"]{background-color:#29487d!important}
 *[aria-label="Promote"]{background-color:#29487d!important}
+
 
 }
 

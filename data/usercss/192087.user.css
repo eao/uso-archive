@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         vagrale13 vagrale13
 @description    `Google theme with Dash logo and background colorsWork for:https://www.google.comhttps://www.google.gr`
-@version        2020129.9.9
+@version        2021210.8.11
 @license        CC-BY-NC-SA-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -86,5 +86,12 @@ div#hplogo a img {
     font-size: 0px;
     margin-bottom: 0px;
 }
-  
+.szppmdbYutt__middle-slot-promo img {
+    width: 0px;
+    height: 0px;
+}
+.RNNXgb {
+    margin-top: -60px;
+}
+
 }

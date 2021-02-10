@@ -2,8 +2,8 @@
 @name           百度系列改造
 @namespace      USO Archive
 @author         huaao zang
-@description    `这个项目目前匹配了百度首页，百度搜索界面，百度资讯界面，百度视频界面，百度图片界面，百度知道搜索界面，百度知道问答界面，百度文库搜索界面，更多界面开发中……（由于在学校，只能用笔记本进行编写，所以像素超过1366×768的大显示器无法进行检验，可能有一些显示问题）。`
-@version        20201120.10.23
+@description    `这个项目目前匹配了百度首页，百度搜索界面，百度资讯界面，百度视频界面，百度图片界面，百度知道搜索界面，百度知道问答界面，百度文库搜索界面，更多界面开发中……（胸弟们，要是觉得好用，帮忙向朋友们推荐一下，希望突破两位数的下载量啊……）。`
+@version        2021210.8.1
 @license        CC-BY-NC-4.0
 @preprocessor   uso
 ==/UserStyle== */
@@ -104,7 +104,7 @@ body {
 #wrapper
 {
     min-width:1200px;
-    width: calc(100% + 0%)!important;/*加号两边有空格*/
+    width:calc(100% + 8%)!important;
 }
 /*预设结束*/
 
@@ -113,7 +113,6 @@ body {
 #s_tab {
     background-color:rgba(255,255,255,.95)!important;
     height: 45px!important;
-    width:100%;
 }
 .s_form {
     height: 40px;
@@ -163,14 +162,13 @@ body {
 }
 .hint_common_restop,
 #rs_top_new,/*相关搜索*/
-#content_left>.result
-,#content_left>div:first-child
-,#content_left .result-op,
+#content_left>.result,
+#content_left .result-op,
 #rs,
-#op_wiseapp_td
-,.ec-pl-container
-,.hit_top_new
-,#content_left>div:first-child[class$="_rs"]/*相关推荐*/
+#op_wiseapp_td,
+.ec-pl-container,
+.hit_top_new,
+#content_left div:first-child[class$="_rs"]/*相关推荐*/
 ,.content_none
 ,.EC_ppim_new_gap_bottom/*广告*/
 ,#content_left .new-pmd/*广告*/
@@ -180,13 +178,13 @@ body {
     padding: 15px;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px 1px;
+    transition: background-color 1s;
 }
 .c-container .new-pmd
 {
     padding:0!important;
     background:rgba(255, 255, 255, 0)!important;
     box-shadow:none!important;
-    
 }
 .ec_tuiguang_pplink/*加大广告字样*/
 {
@@ -202,9 +200,8 @@ body {
 {
     padding:15px!important;
 }
-#content_left .result:hover
-,#content_left>div:first-child:hover
-,#content_left .result-op:hover,
+#content_left .result:hover,
+#content_left .result-op:hover,
 #rs:hover,
 #op_wiseapp_td:hover,
 .hit_top_new:hover,
@@ -215,8 +212,18 @@ body {
 ,#content_left .new-pmd:hover
 {
     background-color: rgba(255,255,255,0.95);
-    transition: background-color 1s;
 }
+    /*春晚专栏 */
+
+.c-group-wrapper>.result-op
+{
+    margin-top:15px;
+    margin-left:15px;
+}
+
+    /*春晚专栏 */
+
+
 /*左侧面板设置结束*/
 
 
@@ -228,30 +235,30 @@ body {
     top:-30px;
     left:95px;
 }
-.cr-content
-,.ad-widget-header
-,.hint_right_middle/*安全提示*/
-,#content_right .c-result-content
+.hint_right_top/* 百度安全提示 */
+,.hint_right_middle
 {
-    background-color: rgba(255, 255, 255, .8) !important;
-    padding: 25px 16px 25px 17px;
+    padding:15px 23px 0px 22px;
     border-radius: 15px 15px 15px 15px;
-    width:0;
-    min-width:272px;
+    background:white;
+    opacity:0.8;
 }
-#content_right .c-result-content
-,.new-pmd
-{
-    width:0!important;
-    min-width:368px;
-}
-#content_right .c-result-content:hover
-,.cr-content:hover
-,.ad-widget-header:hover
+.hint_right_top:hover
 ,.hint_right_middle:hover
 {
-    background-color:white!important;
-    transition:background 1s;
+    opacity:1;
+}
+.cr-content
+,.ad-widget-header
+{
+    background-color: rgba(255, 255, 255, .8) !important;
+    padding: 25px 16px 0px 17px;
+    border-radius: 15px 15px 15px 15px;
+}
+.cr-content:hover
+,.ad-widget-header:hover
+{
+    background:white!important;
 }
 #content_right>div:first-child{/* 去广告 */
     display:none;
@@ -284,8 +291,10 @@ body {
 #page a:hover{
     border-color: rgb(51, 136, 255);
 }
-#foot{
-    width:calc(100% + 140px)!important;
+#foot
+{
+/*     display:none; */
+    
 }
 /*底部页码设置结束*/
 }
@@ -359,7 +368,6 @@ body{
 ,#noresult:hover
 {
     background:rgba(255,255,255);
-    transition: background-color 1s;
 }
 #gotoPage
 {
@@ -408,7 +416,7 @@ body
 {
     margin:0;
     padding:0;
-    background-image: url(https://i2.hdslb.com/bfs/archive/8ec792cd49d16c185ef280a7d67d0a2bc91ec965.jpg);
+    background-image: url(https://hqtexture.com/uploads/posts/2012-10/1349523070-1619955-5.jpg);
     background-repeat:no-repeat;
     background-position:center center;
     background-size:cover;
@@ -521,11 +529,6 @@ body
     background-color:rgba(255, 255, 255,0.95);
     height:45px!important;
 }
-.s_tab b
-,.s_tab a
-{
-    margin-right:15px;
-}
 #bdpcImgTopTab
 {
     position:relative;
@@ -546,6 +549,12 @@ body
 /* 头部设置结束 */
 
 /* 主体设置开始 */
+.fc-link
+,.imgitem
+{
+    background:rgba(210, 210, 210, .95);
+    margin-bottom:10px!important;
+}
 .fc-info-hover/*广告字*/
 {
     display:none;
@@ -616,11 +625,6 @@ body
     border-right-width: 0;
     display: inline-block;
 }
-#search-box>ul
-{
-    height:36px;
-    padding-top:10px;
-}
 #search-btn
 {
     width: 112px;
@@ -649,7 +653,7 @@ body
 .picker-header/**/
 {
     position:absolute;
-    top:-47px;
+    top:-57px;
     width:360px;
     right:0;
 }
@@ -671,7 +675,6 @@ body
 ,.c-container/*相关搜索*/
 ,.aside-inner/*右边栏*/
 ,#ec_zwd_ctner/*广告*/
-,.wgt-iknow-special-business/*官方*/
 {
     background-color:rgba(244, 244, 244, .9);
     border:1px solid white;
@@ -697,15 +700,6 @@ body
 .list-footer:hover
 {
     opacity:1;
-}
-.list>.dl:hover
-,.c-container:hover/*相关搜索*/
-,.aside-inner:hover/*右边栏*/
-,#ec_zwd_ctner:hover/*广告*/
-,.wgt-iknow-special-business:hover/*官方*/
-{
-    background-color:rgba(255,255,255,1);
-    transition: background-color 1s;
 }
 /*左侧列表结束*/
 
@@ -810,7 +804,6 @@ body
 ,#wgt-related:hover
 {
     background-color:rgba(244, 244, 244, 1);
-    transition: background-color 1s;
 }
 .wgt-best-operator
 ,.wgt-answers-operator
@@ -890,7 +883,7 @@ body
 /*广告屏蔽结束*/
 }
 
-@-moz-document regexp("https?://wenku.baidu.com/search(.*)") {
+@-moz-document regexp("https?://wenku.baidu.com/search(\\?)(.*)") {
 /*代码8，百度文库搜索界面,待改进*/
 /*预设开始*/
 body
@@ -983,14 +976,15 @@ body
     border-radius:0 15px 15px 0;
 }
 .new-filter-box/*筛选*/
-,.search-topic-block/*推荐结果*/
-,.search-result>dl/*搜索结果*/
+
+,.search-result dl/*搜索结果*/
 ,div[id^=bdfs]/*广告*/
 ,.vip-card
 ,#top-recommend-dsp-ad/*精选*/
 ,.footer-box-recommend
 ,.search-result>.clearfix
-,.search-result>p
+,.mt10
+,.specialDisplay-inner
 {
     min-width:590px;
     background-color:rgba(255,255,255,.85);
@@ -998,10 +992,6 @@ body
     border-radius:15px;
     padding:15px 10px 15px 20px!important;
     font-size:1.2em;
-}
-.search-topic-block/*推荐结果*/
-{
-    margin-bottom:15px;
 }
 .specialDisplay-container
 {
@@ -1028,20 +1018,20 @@ div[id^=bdfs]
     margin:15px 0 15px 0px;
     font-size:1.2em;
 }
-.new-filter-box:hover/*筛选*/
-,.new-sort-box>span:hover/*排序*/
-,.header-box-recommend ul:hover
+.new-filter-box:hover
 ,.header-box-recommend span:hover
-,.search-topic-block:hover/*推荐结果*/
-,.search-result>dl:hover/*搜索结果*/
-,div[id^=bdfs]:hover/*广告*/
+,.header-box-recommend ul:hover
+,.new-sort-box .mr10:hover
+,.mr15:hover
+,.new-sort-box .mr15:last-child:hover
+,.search-result dl:hover
 ,.vip-card:hover
-,#top-recommend-dsp-ad:hover/*精选*/
 ,.footer-box-recommend:hover
 ,.search-result>.clearfix:hover
-,.search-result>p:hover
+,.mt10:hover
+,.specialDisplay-inner:hover
 {
-    background:white!important;
+    background:white;
     transition:background 1s;
 }
 .search-result>.clearfix
